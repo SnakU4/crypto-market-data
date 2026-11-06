@@ -28,9 +28,11 @@ from typing import Any
 UTC=dt.timezone.utc
 CMC_BASE="https://pro-api.coinmarketcap.com/public-api"
 FAPI_BASE="https://fapi.binance.com"
+BYBIT_BASE="https://api.bybit.com"
+OKX_BASE="https://www.okx.com"
 COINGECKO_GLOBAL="https://api.coingecko.com/api/v3/global"
 DEFILLAMA_CHAINS="https://api.llama.fi/v2/chains"
-USER_AGENT="CMC100-Forward-Forecast-Research/0.2 (public endpoints; contact via GitHub repository)"
+USER_AGENT="CMC100-Forward-Forecast-Research/0.4 (public endpoints; contact via GitHub repository)"
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DOCS=ROOT/"docs"
 
@@ -153,7 +155,7 @@ def map_perp(coin, by_base):
     exact.sort(key=lambda x:0 if x.get("quoteAsset")=="USDT" else 1)
     if exact:
         item=exact[0]
-        return {"symbol":item["symbol"],"base_asset":item["baseAsset"],"quote_asset":item["quoteAsset"],"mapping":"EXACT_BASE_ASSET","contract_type":"PERPETUAL","trading_status":"TRADING"}
+        return {"symbol":item["symbol"],"base_asset":item["baseAsset"],"quote_asset":item["quoteAsset"],"mapping":"EXACT_BASE_ASSET","exchange":"BINANCE","contract_type":"PERPETUAL","trading_status":"TRADING"}
     # 1000PEPEUSDT is not an exact base-asset match to PEPE. Make visible but DO NOT treat as verified mapping.
     prefix=by_base.get("1000"+symbol,[])
     return {"symbol":None,"mapping":"NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW","review_candidates":[x.get("symbol") for x in prefix[:3]],"trading_status":"UNKNOWN"}
@@ -245,6 +247,182 @@ class Client:
         return None
 
 
+def api_success(payload, provider):
+    """Reject provider-level errors even when the HTTP request returned 200."""
+    if not isinstance(payload,dict): return False
+    if provider=="BYBIT":return payload.get("retCode") in (0,"0") and isinstance(payload.get("result"),dict)
+    if provider=="OKX":return payload.get("code") in (0,"0") and isinstance(payload.get("data"),list)
+    return False
+
+
+def bybit_instruments(client):
+    """Public USDT linear perpetual contracts; cursor pagination is mandatory."""
+    out={};cursor=None;seen=set()
+    for _ in range(8):
+        args={"category":"linear","limit":1000}
+        if cursor:args["cursor"]=cursor
+        raw=client.fetch(f"{BYBIT_BASE}/v5/market/instruments-info",args)
+        if not api_success(raw,"BYBIT"):
+            return {} if not out else out
+        result=raw["result"]
+        for v in result.get("list",[]):
+            if not isinstance(v,dict):continue
+            if v.get("contractType")!="LinearPerpetual" or v.get("status")!="Trading":continue
+            if v.get("settleCoin")!="USDT" or v.get("quoteCoin")!="USDT":continue
+            base=v.get("baseCoin");sym=v.get("symbol")
+            if isinstance(base,str) and isinstance(sym,str) and sym==base+"USDT":out[base.upper()]=v
+        nxt=result.get("nextPageCursor") or ""
+        if not nxt or nxt in seen:break
+        seen.add(nxt);cursor=nxt
+    return out
+
+
+def bybit_kline_features(raw,captured_at):
+    """Convert closed 1-hour Bybit candles to Binance-compatible canonical format.
+
+    Bybit returns reverse chronological records whose first timestamp is BAR START.
+    Exclude unclosed bars. No taker-buy volume in this endpoint: keep it missing.
+    """
+    if not api_success(raw,"BYBIT"):return {}
+    candles=[]
+    for row in raw.get("result",{}).get("list",[]):
+        try:
+            st=int(row[0]); o,h,l,close=row[1:5]
+            turnover=row[6]; ending=st+3600000-1
+            candles.append([st,o,h,l,close,row[5],ending,turnover,None,None,None,None])
+        except (ValueError,TypeError,IndexError):continue
+    return compute_kline_features(candles,captured_at)
+
+
+def bybit_oi_change(raw,asof):
+    """Open interest history is in provider-specific units; only use ratio.
+
+    Absolute USD value must come from the current Bybit ticker openInterestValue.
+    """
+    if not api_success(raw,"BYBIT"):return None
+    end=utc_parse(asof)
+    if end is None:return None
+    points=[]
+    for row in raw.get("result",{}).get("list",[]):
+        try:
+            t=dt.datetime.fromtimestamp(int(row["timestamp"])/1000,UTC)
+            v=safe_float(row["openInterest"])
+            if v is not None and v>0 and t<=end:points.append((t,v))
+        except (TypeError,ValueError,KeyError,OverflowError):pass
+    points.sort(key=lambda x:x[0])
+    if not points:return None
+    target=points[-1][0]-dt.timedelta(hours=24)
+    before=[(t,v) for t,v in points if t<=target+dt.timedelta(minutes=30) and t>=target-dt.timedelta(minutes=30)]
+    return num_pct_delta(points[-1][1], before[-1][1]) if before else None
+
+
+def okx_instruments(client):
+    raw=client.fetch(f"{OKX_BASE}/api/v5/public/instruments",{"instType":"SWAP"})
+    if not api_success(raw,"OKX"):return {}
+    out={}
+    for x in raw["data"]:
+        if not isinstance(x,dict):continue
+        inst=x.get("instId");settle=x.get("settleCcy");state=x.get("state")
+        if state!="live" or settle!="USDT" or not isinstance(inst,str):continue
+        if not inst.endswith("-USDT-SWAP"):continue
+        base=inst[:-len("-USDT-SWAP")]
+        if base and base.upper()==base:out[base]=x
+    return out
+
+
+def okx_kline_features(raw,captured_at):
+    """OKX 'confirm'=1 is complete, all other bars are excluded."""
+    if not api_success(raw,"OKX"):return {}
+    candles=[]
+    for row in raw.get("data",[]):
+        try:
+            if row[8]!="1":continue
+            st=int(row[0]);ending=st+3600000-1
+            candles.append([st,row[1],row[2],row[3],row[4],row[5],ending,row[7],None,None,None,None])
+        except (ValueError,TypeError,IndexError):continue
+    return compute_kline_features(candles,captured_at)
+
+
+def provider_fallback(client,assets,max_workers,limit_perps,problems):
+    """Independent market-data exchanges; never represent proxy as Binance.
+
+    Returns (provider name, count mapped) and alters assets in place. The output
+    retains both exchange provenance and missing measurements explicitly.
+    """
+    bybit=bybit_instruments(client)
+    if bybit:
+        provider="BYBIT"
+        raw=client.fetch(f"{BYBIT_BASE}/v5/market/tickers",{"category":"linear"})
+        if not api_success(raw,"BYBIT"):
+            problems.append("BYBIT_TICKERS_UNAVAILABLE")
+            raw={}
+        snapshot_time=timestamp_to_iso(raw.get("time")) if raw else None
+        tickers={r.get("symbol"):r for r in raw.get("result",{}).get("list",[]) if isinstance(r,dict)}
+        eligible=[]
+        for c in assets:
+            match=bybit.get(c["symbol"].upper())
+            if not match:continue
+            c["perpetual"]={"exchange":provider,"symbol":match["symbol"],"base_asset":match["baseCoin"],"quote_asset":"USDT","mapping":"EXACT_BASE_ASSET_BYBIT","trading_status":"Trading","contract_type":"LinearPerpetual","execution_reference":"RESEARCH_PROXY_NOT_BINANCE"}
+            v=tickers.get(match["symbol"],{})
+            market={"source_exchange":"BYBIT","source_type":"EXCHANGE_MARKET_DATA_PROXY","ticker_observed_utc":snapshot_time,"oi_notional_unit":"USDT_APPROX_USD"}
+            if v:
+                market["oi_usd"]=round_safe(v.get("openInterestValue"),2)
+                if market["oi_usd"] is not None:market["oi_observed_utc"]=snapshot_time
+                market["estimated_next_funding_rate_fraction"]=round_safe(v.get("fundingRate"),10)
+                if market["estimated_next_funding_rate_fraction"] is not None:market["funding_quote_time_utc"]=snapshot_time
+            c["perp_market"]=market
+            eligible.append((c,match["symbol"]))
+        if len(eligible)>limit_perps:
+            problems.append(f"BYBIT_ENRICHMENT_CAPPED_{limit_perps}_OF_{len(eligible)}")
+            eligible=eligible[:limit_perps]
+        def work(arg):
+            coin,sym=arg
+            bars=client.fetch(f"{BYBIT_BASE}/v5/market/kline",{"category":"linear","symbol":sym,"interval":"60","limit":200})
+            out=bybit_kline_features(bars,iso_now())
+            history=client.fetch(f"{BYBIT_BASE}/v5/market/open-interest",{"category":"linear","symbol":sym,"intervalTime":"1h","limit":28})
+            ch=bybit_oi_change(history,iso_now())
+            if ch is not None:out["oi_change_24h_pct"]=ch
+            return coin,out
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
+            for coin,out in pool.map(work,eligible):
+                coin["perp_market"].update(out)
+        return provider,len(eligible)
+
+    problems.append("BINANCE_BLOCKED_AND_BYBIT_NOT_AVAILABLE_TRYING_OKX")
+    okx=okx_instruments(client)
+    if not okx:return "NONE",0
+    provider="OKX"
+    raw=client.fetch(f"{OKX_BASE}/api/v5/public/open-interest",{"instType":"SWAP"})
+    oi={r.get("instId"):r for r in raw.get("data",[]) if isinstance(r,dict)} if api_success(raw,"OKX") else {}
+    eligible=[]
+    for c in assets:
+        sym=c["symbol"].upper();match=okx.get(sym)
+        if not match:continue
+        inst=match["instId"]
+        c["perpetual"]={"exchange":provider,"symbol":inst,"base_asset":sym,"quote_asset":"USDT","mapping":"EXACT_BASE_ASSET_OKX","trading_status":"live","contract_type":"SWAP","execution_reference":"RESEARCH_PROXY_NOT_BINANCE"}
+        x=oi.get(inst,{})
+        c["perp_market"]={"source_exchange":provider,"source_type":"EXCHANGE_MARKET_DATA_PROXY","oi_notional_unit":"USD","oi_usd":round_safe(x.get("oiUsd"),2),"oi_observed_utc":timestamp_to_iso(safe_float(x.get("ts"))) if x.get("oiUsd") is not None else None}
+        eligible.append((c,inst))
+    if len(eligible)>limit_perps:
+        problems.append(f"OKX_ENRICHMENT_CAPPED_{limit_perps}_OF_{len(eligible)}")
+        eligible=eligible[:limit_perps]
+    def work(arg):
+        coin,inst=arg
+        bars=client.fetch(f"{OKX_BASE}/api/v5/market/history-candles",{"instId":inst,"bar":"1H","limit":200})
+        out=okx_kline_features(bars,iso_now())
+        funding=client.fetch(f"{OKX_BASE}/api/v5/public/funding-rate",{"instId":inst})
+        if api_success(funding,"OKX") and funding["data"]:
+            v=funding["data"][0];f=round_safe(v.get("fundingRate"),10)
+            if f is not None:
+                out["estimated_next_funding_rate_fraction"]=f
+                out["funding_quote_time_utc"]=timestamp_to_iso(safe_float(v.get("ts")))
+        return coin,out
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
+        for coin,out in pool.map(work,eligible):
+            coin["perp_market"].update(out)
+    return provider,len(eligible)
+
+
 def collect(client,strict=True,max_workers=5,limit_perps=120):
     start=iso_now()
     problems=[]
@@ -312,15 +490,25 @@ def collect(client,strict=True,max_workers=5,limit_perps=120):
                 coin,extra=f.result()
                 if extra:
                     coin["perp_market"]={**(coin["perp_market"] or {}),**extra}
+    # Binance HTTP 451 can be jurisdictional. Use *independent* exchanges as
+    # publicly documented research proxies, never as fabricated Binance market data.
+    proxy_provider="NONE"
+    if constituents and not by_base:
+        try:proxy_provider,_=provider_fallback(client,assets,max_workers,limit_perps,problems)
+        except Exception as exc:
+            problems.append(f"ALTERNATIVE_DERIVATIVES_DATA_FAILED: {type(exc).__name__}: {str(exc)[:160]}")
     end=iso_now()
     cmc_full=len(constituents)==100
     quote_count=sum(bool(a["cmc_quote"] and a["cmc_quote"].get("price_usd") is not None) for a in assets)
     mapped=sum(bool(a["perpetual"].get("symbol")) for a in assets)
+    binance_mapped=sum(bool(a["perpetual"].get("symbol") and a["perpetual"].get("exchange")=="BINANCE") for a in assets)
+    bybit_mapped=sum(bool(a["perpetual"].get("symbol") and a["perpetual"].get("exchange")=="BYBIT") for a in assets)
+    okx_mapped=sum(bool(a["perpetual"].get("symbol") and a["perpetual"].get("exchange")=="OKX") for a in assets)
     candle_count=sum(bool(a["perp_market"] and a["perp_market"].get("bars_available")) for a in assets)
     oi_count=sum(bool(a["perp_market"] and a["perp_market"].get("oi_usd") is not None) for a in assets)
     end_at=utc_parse(end)
     def is_recent(field, minutes):
-        return sum(bool(a["perp_market"] and (t:=utc_parse(a["perp_market"].get(field))) and dt.timedelta(0)<=(end_at-t)<=dt.timedelta(minutes=minutes)) for a in assets)
+        return sum(bool(a["perp_market"] and (t:=utc_parse(a["perp_market"].get(field))) and dt.timedelta(seconds=-2)<=(end_at-t)<=dt.timedelta(minutes=minutes)) for a in assets)
     fresh_closed_bars=is_recent("kline_last_close_utc", 125)
     fresh_oi=is_recent("oi_observed_utc", 125)
     fresh_funding=is_recent("funding_quote_time_utc", 125)
@@ -329,9 +517,9 @@ def collect(client,strict=True,max_workers=5,limit_perps=120):
     bars_require=math.ceil(mapped*.90)
     if not cmc_full:quality="FAILED_NO_OFFICIAL_UNIVERSE"
     elif quote_count<95 or fresh_quotes<95:quality="DATA_PARTIAL"
-    elif mapped<60 or candle_count<bars_require or oi_count<oi_require or fresh_closed_bars<bars_require or fresh_oi<oi_require:quality="DATA_PARTIAL"
+    elif binance_mapped<60 or mapped<60 or candle_count<bars_require or oi_count<oi_require or fresh_closed_bars<bars_require or fresh_oi<oi_require:quality="DATA_PARTIAL"
     else:quality="DATA_PASS"
-    return {"schema_version":"v0.2","snapshot_started_utc":start,"snapshot_completed_utc":end,"status":quality,"index":{"source":"official_coinmarketcap_cmc100_keyless_api","source_url":f"{CMC_BASE}/v3/index/cmc100-latest","last_update":rebalance,"verified_constituents":len(constituents)},"coverage":{"official_cmc100_verified":len(constituents),"cmc_usd_quote_count":quote_count,"cmc_usd_quotes_fresh_90min":fresh_quotes,"binance_usd_m_exact_contract_mapping":mapped,"binance_hourly_klines":candle_count,"binance_closed_bars_fresh_125min":fresh_closed_bars,"binance_open_interest_history":oi_count,"binance_oi_fresh_125min":fresh_oi,"binance_estimated_funding_fresh_125min":fresh_funding},"market_context":{"coingecko_global":macro.get("data") if isinstance(macro,dict) else None,"defillama_top_chains_by_tvl":chain_stats},"assets":assets,"source_access_log":client.calls,"problems":problems,"research_boundary":"Only measured public sources. No forecast scores, news conclusions, or executions. No claims of full crypto information coverage."}
+    return {"schema_version":"v0.4","snapshot_started_utc":start,"snapshot_completed_utc":end,"status":quality,"index":{"source":"official_coinmarketcap_cmc100_keyless_api","source_url":f"{CMC_BASE}/v3/index/cmc100-latest","last_update":rebalance,"verified_constituents":len(constituents)},"coverage":{"official_cmc100_verified":len(constituents),"cmc_usd_quote_count":quote_count,"cmc_usd_quotes_fresh_90min":fresh_quotes,"binance_usd_m_exact_contract_mapping":binance_mapped,"binance_hourly_klines":sum(bool(a["perpetual"].get("exchange")=="BINANCE" and a["perp_market"] and a["perp_market"].get("bars_available")) for a in assets),"binance_closed_bars_fresh_125min":fresh_closed_bars if binance_mapped else 0,"binance_open_interest_history":sum(bool(a["perpetual"].get("exchange")=="BINANCE" and a["perp_market"] and a["perp_market"].get("oi_usd") is not None) for a in assets),"binance_oi_fresh_125min":fresh_oi if binance_mapped else 0,"binance_estimated_funding_fresh_125min":fresh_funding if binance_mapped else 0,"alternative_provider":proxy_provider,"bybit_linear_exact_contract_mapping":bybit_mapped,"okx_swap_exact_contract_mapping":okx_mapped,"alternative_hourly_klines":candle_count if not binance_mapped else 0,"alternative_oi_current_usd":oi_count if not binance_mapped else 0,"alternative_oi_change_24h":sum(bool(a["perp_market"] and a["perp_market"].get("oi_change_24h_pct") is not None and a["perpetual"].get("exchange")!="BINANCE") for a in assets),"alternative_funding_quote":fresh_funding if not binance_mapped else 0,"alternative_closed_bars_fresh_125min":fresh_closed_bars if not binance_mapped else 0},"market_context":{"coingecko_global":macro.get("data") if isinstance(macro,dict) else None,"defillama_top_chains_by_tvl":chain_stats},"assets":assets,"source_access_log":client.calls,"problems":problems,"research_boundary":"Only measured public sources. No forecast scores, news conclusions, or executions. No claims of full crypto information coverage."}
 
 
 def html_page(snapshot, compact):
@@ -352,17 +540,17 @@ def output_artifacts(snapshot, docs=DOCS):
     archived=archive/f"{stamp}_{digest}.json"
     if not archived.exists():archived.write_text(payload,encoding="utf8")
     (docs/"latest.json").write_text(payload,encoding="utf8")
-    fields=["cmc_id","symbol","name","quote_updated_utc","price_usd","ret_1h_pct","ret_24h_pct","ret_7d_pct","volume_24h_usd","volume_change_24h_pct","perp_symbol","perp_mapping","perp_last_closed_bar_utc","perp_ret_6h_pct","perp_ret_24h_pct","perp_vol_24h_usd","perp_rv_24h_pct","perp_taker_imbalance_24h","oi_usd","oi_change_24h_pct","estimated_next_funding_rate_fraction","funding_quote_time_utc"]
+    fields=["cmc_id","symbol","name","quote_updated_utc","price_usd","ret_1h_pct","ret_24h_pct","ret_7d_pct","volume_24h_usd","volume_change_24h_pct","perp_symbol","perp_exchange","perp_mapping","perp_last_closed_bar_utc","perp_ret_6h_pct","perp_ret_24h_pct","perp_vol_24h_usd","perp_rv_24h_pct","perp_taker_imbalance_24h","oi_usd","oi_change_24h_pct","estimated_next_funding_rate_fraction","funding_quote_time_utc"]
     rows=[]
     for c in snapshot["assets"]:
         q=c["cmc_quote"] or {};m=c["perp_market"] or {};z=c["perpetual"]
-        rows.append({"cmc_id":c["cmc_id"],"symbol":c["symbol"],"name":c["name"],"quote_updated_utc":q.get("quote_last_updated_utc"),"price_usd":q.get("price_usd"),"ret_1h_pct":q.get("ret_1h_pct"),"ret_24h_pct":q.get("ret_24h_pct"),"ret_7d_pct":q.get("ret_7d_pct"),"volume_24h_usd":q.get("volume_24h_usd"),"volume_change_24h_pct":q.get("volume_change_24h_pct"),"perp_symbol":z.get("symbol"),"perp_mapping":z.get("mapping"),"perp_last_closed_bar_utc":m.get("kline_last_close_utc"),"perp_ret_6h_pct":m.get("perp_ret_6h_pct"),"perp_ret_24h_pct":m.get("perp_ret_24h_pct"),"perp_vol_24h_usd":m.get("perp_closed_24h_quote_volume"),"perp_rv_24h_pct":m.get("perp_realized_volatility_24h_pct"),"perp_taker_imbalance_24h":m.get("perp_taker_imbalance_24h"),"oi_usd":m.get("oi_usd"),"oi_change_24h_pct":m.get("oi_change_24h_pct"),"estimated_next_funding_rate_fraction":m.get("estimated_next_funding_rate_fraction"),"funding_quote_time_utc":m.get("funding_quote_time_utc")})
+        rows.append({"cmc_id":c["cmc_id"],"symbol":c["symbol"],"name":c["name"],"quote_updated_utc":q.get("quote_last_updated_utc"),"price_usd":q.get("price_usd"),"ret_1h_pct":q.get("ret_1h_pct"),"ret_24h_pct":q.get("ret_24h_pct"),"ret_7d_pct":q.get("ret_7d_pct"),"volume_24h_usd":q.get("volume_24h_usd"),"volume_change_24h_pct":q.get("volume_change_24h_pct"),"perp_symbol":z.get("symbol"),"perp_exchange":z.get("exchange"),"perp_mapping":z.get("mapping"),"perp_last_closed_bar_utc":m.get("kline_last_close_utc"),"perp_ret_6h_pct":m.get("perp_ret_6h_pct"),"perp_ret_24h_pct":m.get("perp_ret_24h_pct"),"perp_vol_24h_usd":m.get("perp_closed_24h_quote_volume"),"perp_rv_24h_pct":m.get("perp_realized_volatility_24h_pct"),"perp_taker_imbalance_24h":m.get("perp_taker_imbalance_24h"),"oi_usd":m.get("oi_usd"),"oi_change_24h_pct":m.get("oi_change_24h_pct"),"estimated_next_funding_rate_fraction":m.get("estimated_next_funding_rate_fraction"),"funding_quote_time_utc":m.get("funding_quote_time_utc")})
     sio=io.StringIO();writer=csv.DictWriter(sio,fieldnames=fields,lineterminator="\n");writer.writeheader();writer.writerows(rows)
     flat=sio.getvalue();(docs/"latest.csv").write_text(flat,encoding="utf8")
-    compact_cols=["cmc_id","symbol","name","price_usd","ret_1h_pct","ret_24h_pct","ret_7d_pct","volume_24h_usd","perp_symbol","perp_ret_6h_pct","oi_usd","oi_change_24h_pct","estimated_next_funding_rate_fraction"]
+    compact_cols=["cmc_id","symbol","name","price_usd","ret_1h_pct","ret_24h_pct","ret_7d_pct","volume_24h_usd","perp_symbol","perp_exchange","perp_ret_6h_pct","oi_usd","oi_change_24h_pct","estimated_next_funding_rate_fraction"]
     s2=io.StringIO();w=csv.DictWriter(s2,fieldnames=compact_cols,extrasaction="ignore",lineterminator="\n");w.writeheader();w.writerows(rows)
     compact=s2.getvalue();
-    context=(f"# V6 CMC100 verified quantitative snapshot\n\nSnapshot collected: {snapshot['snapshot_completed_utc']} (NOT forecast freeze)\nIndex last_update: {snapshot['index']['last_update']}\nSnapshot status: {snapshot['status']}\nCoverage: {json.dumps(snapshot['coverage'])}\n\nOnly actual measured values appear. Empty fields mean unavailable. Quoted 24h changes are trailing observations, NOT next-24h outcomes. Funding estimate is NOT settled funding. Check per-row observation timestamps in latest.json before using data.\n\n```csv\n{compact}```\n\nResearch must expand beyond this mechanical data panel autonomously, use Web Search and document separately cited incremental evidence. Do not treat market snapshots as predictions.\n")
+    context=(f"# V6 CMC100 verified quantitative snapshot\n\nSnapshot collected: {snapshot['snapshot_completed_utc']} (NOT forecast freeze)\nIndex last_update: {snapshot['index']['last_update']}\nSnapshot status: {snapshot['status']}\nDerivative market data may be from BYBIT/OKX and is NOT Binance execution or settlement data. Read perp_exchange column.\nCoverage: {json.dumps(snapshot['coverage'])}\n\nOnly actual measured values appear. Empty fields mean unavailable. Quoted 24h changes are trailing observations, NOT next-24h outcomes. Funding estimate is NOT settled funding. Check per-row observation timestamps in latest.json before using data.\n\n```csv\n{compact}```\n\nResearch must expand beyond this mechanical data panel autonomously, use Web Search and document separately cited incremental evidence. Do not treat market snapshots as predictions.\n")
     (docs/"forecast_context.md").write_text(context,encoding="utf8")
     (docs/"index.html").write_text(html_page(snapshot,compact),encoding="utf8")
     (docs/".nojekyll").touch()
