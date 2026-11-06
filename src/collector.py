@@ -69,10 +69,22 @@ def num_pct_delta(end,start):
     return round_safe(100*(a/b-1),6) if a is not None and b not in (None,0) else None
 
 
+def require_cmc_api_success(payload, label):
+    """CMC keyless JSON may return error_code 0 (integer) or '0' (string)."""
+    if not isinstance(payload, dict):
+        raise ValueError(f"{label}: API response is not a JSON object")
+    status = payload.get("status") or {}
+    if not isinstance(status, dict):
+        raise ValueError(f"{label}: API status is not a JSON object")
+    code = status.get("error_code", 0)
+    if code not in (0, "0", None):
+        message = status.get("error_message") or status.get("notice") or "no error detail provided"
+        raise ValueError(f"{label}: error_code={code!r}; error_message={str(message)[:350]}")
+
+
 def normalize_index(payload):
     """Only official CMC100 constituent response. Full 100 unique IDs required."""
-    if not isinstance(payload,dict) or (payload.get("status") or {}).get("error_code",0) not in (0,None):
-        raise ValueError("CMC100 API returned an error")
+    require_cmc_api_success(payload, "CMC100")
     root=payload.get("data")
     if not isinstance(root,dict) or not isinstance(root.get("constituents"),list):
         raise ValueError("CMC100 response lacks data.constituents[]")
@@ -92,8 +104,7 @@ def normalize_index(payload):
 
 def normalize_quotes(payload):
     """Official CMC v3 quotes/latest: data[] with quote[]; keyed by unique CMC ID."""
-    if not isinstance(payload,dict) or (payload.get("status") or {}).get("error_code",0) not in (0,None):
-        raise ValueError("CMC quotes API returned error")
+    require_cmc_api_success(payload, "CMC quotes")
     data=payload.get("data")
     if isinstance(data,dict): data=list(data.values())
     if not isinstance(data,list): raise ValueError("CMC quotes/latest data expected list")
@@ -213,7 +224,15 @@ class Client:
                     data=response.read(15_000_001)
                     if len(data)>15_000_000:raise ValueError("response over 15 MB")
                 parsed=json.loads(data)
-                self.calls.append({"url":full,"request_started_utc":t,"received_at_utc":iso_now(),"status":"OK"})
+                cmc_status=parsed.get("status") if isinstance(parsed,dict) else None
+                cmc_code=cmc_status.get("error_code") if isinstance(cmc_status,dict) else None
+                call_log={"url":full,"request_started_utc":t,"received_at_utc":iso_now(),"status":"OK"}
+                if cmc_code is not None:
+                    call_log["api_error_code"]=cmc_code
+                    if cmc_code not in (0,"0"):
+                        call_log["status"]="API_ERROR"
+                        call_log["api_error_message"]=str(cmc_status.get("error_message") or "")[:250]
+                self.calls.append(call_log)
                 return parsed
             except urllib.error.HTTPError as exc:
                 err=f"HTTP {exc.code}"
