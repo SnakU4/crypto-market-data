@@ -1,0 +1,39 @@
+name: CMC100 Wide Research Capture
+on:
+  workflow_dispatch:
+  schedule:
+    # Broad public sources collected 3x before the midnight UTC forecast;
+    # actual capture timestamps govern any point-in-time usage.
+    - cron: '19 17,21,22,23 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cmc100-research-capture
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Existing and research collector unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect open public sources; keep all failures in audit
+        run: python src/research_collector.py --max-workers 5
+      - name: Commit research snapshots and append-only observed histories
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research/
+          if ! git diff --cached --quiet; then
+            git commit -m "Public research observation $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
