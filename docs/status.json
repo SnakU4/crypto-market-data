@@ -1,6 +1,6 @@
 {
   "status": "DATA_PARTIAL",
-  "snapshot_completed_utc": "2026-11-06T07:03:42Z",
+  "snapshot_completed_utc": "2026-11-06T07:21:35Z",
   "coverage": {
     "official_cmc100_verified": 100,
     "cmc_usd_quote_count": 100,
@@ -10,21 +10,37 @@
     "binance_closed_bars_fresh_125min": 0,
     "binance_open_interest_history": 0,
     "binance_oi_fresh_125min": 0,
-    "binance_estimated_funding_fresh_125min": 0
+    "binance_estimated_funding_fresh_125min": 0,
+    "alternative_provider": "OKX",
+    "bybit_linear_exact_contract_mapping": 0,
+    "okx_swap_exact_contract_mapping": 77,
+    "alternative_hourly_klines": 77,
+    "alternative_oi_current_usd": 77,
+    "alternative_oi_change_24h": 0,
+    "alternative_funding_quote": 77,
+    "alternative_closed_bars_fresh_125min": 77
   },
-  "problems": [],
+  "problems": [
+    "BINANCE_BLOCKED_AND_BYBIT_NOT_AVAILABLE_TRYING_OKX"
+  ],
   "source_errors": [
     {
       "url": "https://fapi.binance.com/fapi/v1/exchangeInfo",
-      "received_at_utc": "2026-11-06T07:03:42Z",
+      "received_at_utc": "2026-11-06T07:21:24Z",
       "status": "ERROR",
       "error": "HTTP 451"
     },
     {
       "url": "https://fapi.binance.com/fapi/v1/premiumIndex",
-      "received_at_utc": "2026-11-06T07:03:42Z",
+      "received_at_utc": "2026-11-06T07:21:24Z",
       "status": "ERROR",
       "error": "HTTP 451"
+    },
+    {
+      "url": "https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000",
+      "received_at_utc": "2026-11-06T07:21:24Z",
+      "status": "ERROR",
+      "error": "HTTP 403"
     }
   ]
 }
