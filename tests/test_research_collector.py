@@ -64,6 +64,11 @@ class ResearchCollectorTests(unittest.TestCase):
         self.assertEqual(r.match_asset('Markets are stable and near the peak',coins)[0],[])
         self.assertEqual(r.match_asset('Large $NEAR token release',coins)[0],[2])
 
+    def test_stablecoin_hosts_are_separate_public_service(self):
+        sources={name:url for name,_,_,url in r.SOURCE_CATALOG}
+        self.assertEqual(sources['llama_stablecoin_supply'], 'https://stablecoins.llama.fi/stablecoincharts/all')
+        self.assertEqual(sources['llama_stablecoin_chains'], 'https://stablecoins.llama.fi/stablecoinchains')
+
     def test_stablecoin_no_future_history_and_correct_window(self):
         raw=[{'date':str(int(dt.datetime(2026,11,i,tzinfo=dt.timezone.utc).timestamp())),
               'totalCirculating':{'peggedUSD':i*100}} for i in range(1,10)]
@@ -131,6 +136,10 @@ class ResearchCollectorTests(unittest.TestCase):
             self.assertEqual(out['status']['family_coverage']['ORDERBOOK_LIQUIDITY']['coin_coverage'],100)
             self.assertEqual(out['status']['family_coverage']['TOKEN_SUPPLY_REPORTED']['coin_coverage'],1)
             self.assertEqual(out['status']['family_coverage']['DEFI_PROTOCOL_TVL']['coin_coverage'],1)
+            self.assertEqual(out['status']['coin_metrics_with_defillama'],2) # BTC TVL + ETH chain; CMC supply excluded
+            self.assertEqual(out['status']['coin_count_with_event_candidate'],1)
+            self.assertEqual(out['status']['family_coverage']['PROTOCOL_REVENUE']['status'],'SOURCE_OK_NO_VERIFIED_COIN_MAPPING')
+            self.assertIn('PROTOCOL_REVENUE',out['status']['successful_sources_with_zero_coin_mapping'])
             self.assertEqual(out['status']['family_coverage']['TOKEN_UNLOCK_SCHEDULE']['status'],'UNAVAILABLE_OR_EVENT_ONLY')
             self.assertEqual(len(out['oi_new_records']),100)
             r.write_bundle(out,pathlib.Path(d))

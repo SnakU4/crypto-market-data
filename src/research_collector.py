@@ -46,8 +46,8 @@ SOURCE_CATALOG=[
     ('llama_dex','DEX_VOLUME','json','https://api.llama.fi/overview/dexs?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true'),
     ('llama_options','OPTIONS_ACTIVITY','json','https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true'),
     ('llama_perp_oi','DECENTRALIZED_PERP_OI','json','https://api.llama.fi/overview/open-interest?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true'),
-    ('llama_stablecoin_supply','STABLECOIN_SUPPLY','json','https://api.llama.fi/stablecoincharts/all'),
-    ('llama_stablecoin_chains','STABLECOIN_CHAIN_SUPPLY','json','https://api.llama.fi/stablecoinchains'),
+    ('llama_stablecoin_supply','STABLECOIN_SUPPLY','json','https://stablecoins.llama.fi/stablecoincharts/all'),
+    ('llama_stablecoin_chains','STABLECOIN_CHAIN_SUPPLY','json','https://stablecoins.llama.fi/stablecoinchains'),
     ('coingecko_trending','SOCIAL_ATTENTION','json','https://api.coingecko.com/api/v3/search/trending'),
     ('alternative_fng','MARKET_SENTIMENT','json','https://api.alternative.me/fng/?limit=2'),
     ('coindesk','CRYPTO_NEWS','rss','https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml'),
@@ -159,6 +159,15 @@ class Network:
             except Exception as ex:err=type(ex).__name__+': '+str(ex)[:100]
             if i==0:time.sleep(.5)
         rec={'source_id':name,'source_type':kind,'url':url,'started_utc':started,'observed_utc':now(),'status':status,'error':err}
+        # Transport success is not evidence that the payload had usable values or a verified CMC match.
+        if status=='OK' and kind=='json':
+            rec['response_shape']='object' if isinstance(result,dict) else 'array' if isinstance(result,list) else type(result).__name__
+            if isinstance(result,dict):
+                rec['response_top_level_keys']=sorted(str(k) for k in result)[:30]
+                if 'protocols' in result:
+                    records=result['protocols']
+                    rec['response_protocol_records']=len(records) if isinstance(records,(list,dict)) else None
+            elif isinstance(result,list):rec['response_records']=len(result)
         self.calls.append(rec)
         return result
 
@@ -590,7 +599,11 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
         'PROTOCOL_REVENUE':'protocol_revenue','TOKEN_VALUE_ACCRUAL':'token_holder_revenue',
         'DEX_VOLUME':'dex_protocol_volume','OPTIONS_ACTIVITY':'options_activity',
         'DECENTRALIZED_PERP_OI':'decentralized_perp_oi','SOCIAL_ATTENTION':'trending','TOKEN_SUPPLY_REPORTED':'token_supply'}
-    for family,key in family_map.items():families[family]['coin_coverage']=len({r['cmc_id'] for r in findings[key]})
+    for family,key in family_map.items():
+        families[family]['coin_coverage']=len({r['cmc_id'] for r in findings[key]})
+        if families[family]['coin_coverage']==0 and families[family]['successful_sources']>0:
+            families[family]['status']='SOURCE_OK_NO_VERIFIED_COIN_MAPPING'
+            families[family]['gap']='HTTP_OK_BUT_NO_EXTRACTED_CMC_ID_MATCH;RAW_PROVIDER_AGGREGATES_NOT_COIN_SIGNALS'
     family_gaps={
        'TOKEN_UNLOCK_SCHEDULE':'NO_VERIFIED_FREE_BULK_PIT_TOKEN_UNLOCK_CALENDAR;RSS_EVENT_DISCOVERY_ONLY',
        'TOKEN_SUPPLY_CHAIN':'NO_FULL_POINT_IN_TIME_CIRCULATING_SUPPLY_HISTORY',
@@ -616,7 +629,13 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
             'sources_configured':len(network.calls),'sources_ok':sum(r['status']=='OK' for r in network.calls),
             'sources_failed':sum(r['status']!='OK' for r in network.calls),'rss_events_stored':len(events),
             'rss_events_with_cmc_candidate':sum(bool(e['cmc_ids']) for e in events),
-            'coin_metrics_with_defillama':sum(bool(x['research_metric_families']) for x in coin_row),
+            # Exclude CMC supply and CoinGecko trending: neither is DefiLlama.
+            'coin_metrics_with_defillama':sum(bool(set(x['research_metric_families']) & {
+                 'chain_tvl','protocol_tvl','protocol_fees','protocol_revenue','token_holder_revenue',
+                 'dex_protocol_volume','options_activity','decentralized_perp_oi'}) for x in coin_row),
+            'coin_count_with_event_candidate':sum(bool(x['research_event_candidate_ids']) for x in coin_row),
+            'successful_sources_with_zero_coin_mapping':[f for f,v in families.items()
+                 if v.get('status')=='SOURCE_OK_NO_VERIFIED_COIN_MAPPING'],
             'perp_oi_change_24h_measured':len(deltas),
             'family_coverage':dict(families),'source_attempts':sorted(network.calls,key=lambda x:x['source_id']),
             'limitations':['OPEN_ENDED_RESEARCH_NOT_EXHAUSTIVE','EVENT_HEADLINE_IS_NOT_PROOF_OF_EVENT',
