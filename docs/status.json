@@ -1,16 +1,30 @@
 {
-  "status": "FAILED_NO_OFFICIAL_UNIVERSE",
-  "snapshot_completed_utc": "2026-11-06T06:52:54Z",
+  "status": "DATA_PARTIAL",
+  "snapshot_completed_utc": "2026-11-06T07:01:02Z",
   "coverage": {
-    "official_cmc100_verified": 0
+    "official_cmc100_verified": 100,
+    "cmc_usd_quote_count": 100,
+    "cmc_usd_quotes_fresh_90min": 100,
+    "binance_usd_m_exact_contract_mapping": 0,
+    "binance_hourly_klines": 0,
+    "binance_closed_bars_fresh_125min": 0,
+    "binance_open_interest_history": 0,
+    "binance_oi_fresh_125min": 0,
+    "binance_estimated_funding_fresh_125min": 0
   },
-  "error": "CMC100 API returned an error",
-  "source_access_log": [
+  "problems": [],
+  "source_errors": [
     {
-      "url": "https://pro-api.coinmarketcap.com/public-api/v3/index/cmc100-latest",
-      "request_started_utc": "2026-11-06T06:52:53Z",
-      "received_at_utc": "2026-11-06T06:52:54Z",
-      "status": "OK"
+      "url": "https://fapi.binance.com/fapi/v1/exchangeInfo",
+      "received_at_utc": "2026-11-06T07:01:01Z",
+      "status": "ERROR",
+      "error": "HTTP 451"
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/premiumIndex",
+      "received_at_utc": "2026-11-06T07:01:01Z",
+      "status": "ERROR",
+      "error": "HTTP 451"
     }
   ]
 }
