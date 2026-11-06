@@ -1,0 +1,61 @@
+name: CMC100 Market Snapshot
+on:
+  workflow_dispatch:
+  schedule:
+    # Forecast runs close to 00:00 UTC. Avoid minute 0 and capture BEFORE the cutoff.
+    # Cron can be late; actual collection and source timestamps are preserved.
+    - cron: '37,47 23 * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: cmc100-snapshot
+  cancel-in-progress: false
+jobs:
+  collector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Fetch official universe and public market features
+        id: capture
+        run: |
+          python src/collector.py --max-workers 5 --limit-perps 120
+      - name: Commit immutable archive and latest snapshot/status
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "CMC100 public snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+      - name: Configure Pages
+        if: success()
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        if: success()
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  publish:
+    needs: collector
+    if: success()
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
