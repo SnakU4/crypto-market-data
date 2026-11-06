@@ -1,1 +1,16 @@
-{"status":"NOT_RUN","coverage":{"official_cmc100_verified":0},"message":"This package has not been executed against live APIs."}
+{
+  "status": "FAILED_NO_OFFICIAL_UNIVERSE",
+  "snapshot_completed_utc": "2026-11-06T06:52:54Z",
+  "coverage": {
+    "official_cmc100_verified": 0
+  },
+  "error": "CMC100 API returned an error",
+  "source_access_log": [
+    {
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/index/cmc100-latest",
+      "request_started_utc": "2026-11-06T06:52:53Z",
+      "received_at_utc": "2026-11-06T06:52:54Z",
+      "status": "OK"
+    }
+  ]
+}
