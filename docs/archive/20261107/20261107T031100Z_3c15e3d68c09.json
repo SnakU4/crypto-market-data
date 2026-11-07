@@ -1,0 +1,5287 @@
+{
+  "assets": [
+    {
+      "cmc100_weight": 67.76,
+      "cmc_id": 1,
+      "cmc_quote": {
+        "market_cap_usd": 1528051050882.95,
+        "price_usd": 75990.5885659,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0022484,
+        "ret_24h_pct": -0.1614827,
+        "ret_7d_pct": -1.5519626,
+        "volume_24h_usd": 27383211786.4,
+        "volume_change_24h_pct": -43.7661521
+      },
+      "name": "Bitcoin",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 2.53265e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.539Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2642659451.49,
+        "perp_closed_24h_quote_volume": 5853786683.35,
+        "perp_realized_volatility_24h_pct": 1.14832,
+        "perp_ret_1h_pct": 0.000921,
+        "perp_ret_24h_pct": -0.20196,
+        "perp_ret_6h_pct": 0.211499,
+        "perp_ret_7d_pct": -1.787976,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.479,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "BTC",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "BTC-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "BTC"
+    },
+    {
+      "cmc100_weight": 0.18,
+      "cmc_id": 2,
+      "cmc_quote": {
+        "market_cap_usd": 4072151787.03,
+        "price_usd": 52.339568,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0435646,
+        "ret_24h_pct": -0.3132552,
+        "ret_7d_pct": -5.3354923,
+        "volume_24h_usd": 161169295.69,
+        "volume_change_24h_pct": -35.7014401
+      },
+      "name": "Litecoin",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.640Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 27060000.81,
+        "perp_closed_24h_quote_volume": 14748490.97,
+        "perp_realized_volatility_24h_pct": 1.89326,
+        "perp_ret_1h_pct": -0.248044,
+        "perp_ret_24h_pct": -0.343119,
+        "perp_ret_6h_pct": -0.834598,
+        "perp_ret_7d_pct": -5.529454,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3537,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "LTC",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "LTC-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "LTC"
+    },
+    {
+      "cmc100_weight": 3.29,
+      "cmc_id": 52,
+      "cmc_quote": {
+        "market_cap_usd": 74115654549.9,
+        "price_usd": 1.1668705,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.9306537,
+        "ret_24h_pct": -3.8744776,
+        "ret_7d_pct": -7.0078917,
+        "volume_24h_usd": 2376052690.84,
+        "volume_change_24h_pct": -17.1790548
+      },
+      "name": "XRP",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.75991e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.769Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 93697037.04,
+        "perp_closed_24h_quote_volume": 288947662.09,
+        "perp_realized_volatility_24h_pct": 2.53138,
+        "perp_ret_1h_pct": -0.857458,
+        "perp_ret_24h_pct": -3.971713,
+        "perp_ret_6h_pct": -0.409347,
+        "perp_ret_7d_pct": -7.007485,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.771,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "XRP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "XRP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "XRP"
+    },
+    {
+      "cmc100_weight": 0.5,
+      "cmc_id": 74,
+      "cmc_quote": {
+        "market_cap_usd": 11329532097.52,
+        "price_usd": 0.0723267,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3527605,
+        "ret_24h_pct": 0.3306101,
+        "ret_7d_pct": -4.4046723,
+        "volume_24h_usd": 443769963.81,
+        "volume_change_24h_pct": -50.6582267
+      },
+      "name": "Dogecoin",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.290Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 90946313.95,
+        "perp_closed_24h_quote_volume": 131022836.69,
+        "perp_realized_volatility_24h_pct": 1.67853,
+        "perp_ret_1h_pct": -0.399449,
+        "perp_ret_24h_pct": 0.374792,
+        "perp_ret_6h_pct": -0.385728,
+        "perp_ret_7d_pct": -4.604222,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4415,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "DOGE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "DOGE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "DOGE"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 131,
+      "cmc_quote": {
+        "market_cap_usd": 609652289.45,
+        "price_usd": 47.2943446,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.2848366,
+        "ret_24h_pct": 4.8462217,
+        "ret_7d_pct": -2.5789022,
+        "volume_24h_usd": 59639244.39,
+        "volume_change_24h_pct": -18.4363913
+      },
+      "name": "Dash",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.973Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 3217542.15,
+        "perp_closed_24h_quote_volume": 8188779.15,
+        "perp_realized_volatility_24h_pct": 4.25308,
+        "perp_ret_1h_pct": 0.446523,
+        "perp_ret_24h_pct": 4.837994,
+        "perp_ret_6h_pct": -0.295483,
+        "perp_ret_7d_pct": -2.778349,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.7595,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "DASH",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "DASH-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "DASH"
+    },
+    {
+      "cmc100_weight": 0.51,
+      "cmc_id": 328,
+      "cmc_quote": {
+        "market_cap_usd": 11458461130.83,
+        "price_usd": 608.5963218,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0669664,
+        "ret_24h_pct": -1.7242705,
+        "ret_7d_pct": 2.2597304,
+        "volume_24h_usd": 111095162.89,
+        "volume_change_24h_pct": -30.0262097
+      },
+      "name": "Monero",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "XMR"
+    },
+    {
+      "cmc100_weight": 0.24,
+      "cmc_id": 512,
+      "cmc_quote": {
+        "market_cap_usd": 5399095522.66,
+        "price_usd": 0.1526605,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.8229053,
+        "ret_24h_pct": -2.0830895,
+        "ret_7d_pct": -9.6853405,
+        "volume_24h_usd": 109873133.83,
+        "volume_change_24h_pct": -43.0938563
+      },
+      "name": "Stellar",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5.18667e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.858Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 10102738.23,
+        "perp_closed_24h_quote_volume": 9422561.46,
+        "perp_realized_volatility_24h_pct": 2.65005,
+        "perp_ret_1h_pct": -0.793032,
+        "perp_ret_24h_pct": -1.952974,
+        "perp_ret_6h_pct": -0.973268,
+        "perp_ret_7d_pct": -9.783058,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4217,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "XLM",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "XLM-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "XLM"
+    },
+    {
+      "cmc100_weight": 12.17,
+      "cmc_id": 1027,
+      "cmc_quote": {
+        "market_cap_usd": 274425352630.16,
+        "price_usd": 2245.7453531,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0417735,
+        "ret_24h_pct": 0.2155843,
+        "ret_7d_pct": 0.2794896,
+        "volume_24h_usd": 10406659763.2,
+        "volume_change_24h_pct": -45.2254085
+      },
+      "name": "Ethereum",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5.14855e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.581Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1544736987.46,
+        "perp_closed_24h_quote_volume": 4284229698.59,
+        "perp_realized_volatility_24h_pct": 1.26696,
+        "perp_ret_1h_pct": 0.017367,
+        "perp_ret_24h_pct": 0.171259,
+        "perp_ret_6h_pct": 0.795211,
+        "perp_ret_7d_pct": 0.073962,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3986,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ETH",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ETH-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ETH"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 1321,
+      "cmc_quote": {
+        "market_cap_usd": 1108993773.04,
+        "price_usd": 6.9772009,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4002309,
+        "ret_24h_pct": -0.3000836,
+        "ret_7d_pct": -2.8623386,
+        "volume_24h_usd": 28672253.04,
+        "volume_change_24h_pct": -32.646069
+      },
+      "name": "Ethereum Classic",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -3.26552e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.726Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5727295.26,
+        "perp_closed_24h_quote_volume": 4646898.73,
+        "perp_realized_volatility_24h_pct": 2.06777,
+        "perp_ret_1h_pct": -0.54216,
+        "perp_ret_24h_pct": -0.257548,
+        "perp_ret_6h_pct": -0.655551,
+        "perp_ret_7d_pct": -2.978427,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4161,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ETC",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ETC-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ETC"
+    },
+    {
+      "cmc100_weight": 1.01,
+      "cmc_id": 1437,
+      "cmc_quote": {
+        "market_cap_usd": 22853814383.97,
+        "price_usd": 1348.0457326,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2727585,
+        "ret_24h_pct": 2.8332166,
+        "ret_7d_pct": 6.0681441,
+        "volume_24h_usd": 1284843915.59,
+        "volume_change_24h_pct": -8.4492471
+      },
+      "name": "Zcash",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.951Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 183773384.64,
+        "perp_closed_24h_quote_volume": 1570949946.99,
+        "perp_realized_volatility_24h_pct": 5.50647,
+        "perp_ret_1h_pct": -0.212626,
+        "perp_ret_24h_pct": 2.706989,
+        "perp_ret_6h_pct": 0.923879,
+        "perp_ret_7d_pct": 5.609309,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.895,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ZEC",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ZEC-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ZEC"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 1659,
+      "cmc_quote": {
+        "market_cap_usd": 298924203.21,
+        "price_usd": 113.2499429,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.4027284,
+        "ret_24h_pct": -1.2488416,
+        "ret_7d_pct": 6.7718781,
+        "volume_24h_usd": 1151070.24,
+        "volume_change_24h_pct": -21.5144445
+      },
+      "name": "Gnosis",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "GNO"
+    },
+    {
+      "cmc100_weight": 0.23,
+      "cmc_id": 1831,
+      "cmc_quote": {
+        "market_cap_usd": 5278355977.15,
+        "price_usd": 262.4291694,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.5427021,
+        "ret_24h_pct": -4.8892375,
+        "ret_7d_pct": -9.6659888,
+        "volume_24h_usd": 177773613.34,
+        "volume_change_24h_pct": -30.3912822
+      },
+      "name": "Bitcoin Cash",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.0001124451,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.683Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 23866241.33,
+        "perp_closed_24h_quote_volume": 61065569.54,
+        "perp_realized_volatility_24h_pct": 3.79338,
+        "perp_ret_1h_pct": -0.658617,
+        "perp_ret_24h_pct": -4.950746,
+        "perp_ret_6h_pct": -0.621,
+        "perp_ret_7d_pct": -9.848173,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.8333,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "BCH",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "BCH-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "BCH"
+    },
+    {
+      "cmc100_weight": 4.05,
+      "cmc_id": 1839,
+      "cmc_quote": {
+        "market_cap_usd": 91396487671.68,
+        "price_usd": 694.9718545,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1110183,
+        "ret_24h_pct": 0.0155035,
+        "ret_7d_pct": -1.3789643,
+        "volume_24h_usd": 1338432825.96,
+        "volume_change_24h_pct": -21.6979812
+      },
+      "name": "BNB",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.1223e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.797Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 44571739.31,
+        "perp_closed_24h_quote_volume": 30078652.03,
+        "perp_realized_volatility_24h_pct": 0.88574,
+        "perp_ret_1h_pct": 0.040253,
+        "perp_ret_24h_pct": 0.046006,
+        "perp_ret_6h_pct": 0.419932,
+        "perp_ret_7d_pct": -1.288016,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4451,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "BNB",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "BNB-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "BNB"
+    },
+    {
+      "cmc100_weight": 1.34,
+      "cmc_id": 1958,
+      "cmc_quote": {
+        "market_cap_usd": 30164710490.85,
+        "price_usd": 0.317429,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0582695,
+        "ret_24h_pct": -0.1896129,
+        "ret_7d_pct": -2.2947197,
+        "volume_24h_usd": 297113507.32,
+        "volume_change_24h_pct": -33.6437096
+      },
+      "name": "TRON",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.0001721661,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.791Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 24047004.88,
+        "perp_closed_24h_quote_volume": 6365332.01,
+        "perp_realized_volatility_24h_pct": 0.45702,
+        "perp_ret_1h_pct": -0.040918,
+        "perp_ret_24h_pct": -0.191709,
+        "perp_ret_6h_pct": -0.307634,
+        "perp_ret_7d_pct": -3.008277,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4914,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "TRX",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "TRX-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "TRX"
+    },
+    {
+      "cmc100_weight": 0.36,
+      "cmc_id": 1975,
+      "cmc_quote": {
+        "market_cap_usd": 8070409111.37,
+        "price_usd": 10.7878752,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.501306,
+        "ret_24h_pct": -1.1427809,
+        "ret_7d_pct": -6.3807682,
+        "volume_24h_usd": 242304784.84,
+        "volume_change_24h_pct": -41.5925915
+      },
+      "name": "Chainlink",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.525Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 23266896.84,
+        "perp_closed_24h_quote_volume": 37339848.63,
+        "perp_realized_volatility_24h_pct": 2.03535,
+        "perp_ret_1h_pct": -0.451988,
+        "perp_ret_24h_pct": -1.036222,
+        "perp_ret_6h_pct": -0.617,
+        "perp_ret_7d_pct": -6.449376,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.55,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "LINK",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "LINK-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "LINK"
+    },
+    {
+      "cmc100_weight": 0.3,
+      "cmc_id": 2010,
+      "cmc_quote": {
+        "market_cap_usd": 6796738093.96,
+        "price_usd": 0.1845517,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2875205,
+        "ret_24h_pct": -0.2431565,
+        "ret_7d_pct": -4.8910502,
+        "volume_24h_usd": 189496394.23,
+        "volume_change_24h_pct": -50.4290331
+      },
+      "name": "Cardano",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 7.8033e-06,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.898Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 23552009.42,
+        "perp_closed_24h_quote_volume": 23777456.4,
+        "perp_realized_volatility_24h_pct": 2.10255,
+        "perp_ret_1h_pct": -0.486486,
+        "perp_ret_24h_pct": -0.378788,
+        "perp_ret_6h_pct": -0.80819,
+        "perp_ret_7d_pct": -5.200824,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3969,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ADA",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ADA-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ADA"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 2011,
+      "cmc_quote": {
+        "market_cap_usd": 293979887.39,
+        "price_usd": 0.26706,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.7717507,
+        "ret_24h_pct": 5.3828012,
+        "ret_7d_pct": 4.0194266,
+        "volume_24h_usd": 18571919.95,
+        "volume_change_24h_pct": -68.9989171
+      },
+      "name": "Tezos",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.000311935,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.771Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1249342.35,
+        "perp_closed_24h_quote_volume": 2399066.83,
+        "perp_realized_volatility_24h_pct": 6.32699,
+        "perp_ret_1h_pct": -0.634328,
+        "perp_ret_24h_pct": 4.925138,
+        "perp_ret_6h_pct": -3.932179,
+        "perp_ret_7d_pct": 3.820663,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.2046,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "XTZ",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "XTZ-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "XTZ"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 2087,
+      "cmc_quote": {
+        "market_cap_usd": 993337013.82,
+        "price_usd": 7.1127913,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0282366,
+        "ret_24h_pct": -1.1220899,
+        "ret_7d_pct": 0.2028566,
+        "volume_24h_usd": 4500962.87,
+        "volume_change_24h_pct": 0.7827572
+      },
+      "name": "KuCoin Token",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "KCS"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 2280,
+      "cmc_quote": {
+        "market_cap_usd": 686707315.58,
+        "price_usd": 0.8122421,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.388515,
+        "ret_24h_pct": 0.3361649,
+        "ret_7d_pct": -5.5602518,
+        "volume_24h_usd": 55550922.41,
+        "volume_change_24h_pct": -54.8138784
+      },
+      "name": "Filecoin",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.397Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 11671662.31,
+        "perp_closed_24h_quote_volume": 37442250.47,
+        "perp_realized_volatility_24h_pct": 3.30309,
+        "perp_ret_1h_pct": -0.441555,
+        "perp_ret_24h_pct": 0.507677,
+        "perp_ret_6h_pct": -0.721624,
+        "perp_ret_7d_pct": -5.802483,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.7309,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "FIL",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "FIL-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "FIL"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 2634,
+      "cmc_quote": {
+        "market_cap_usd": 666579655.0,
+        "price_usd": 0.0310231,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2799464,
+        "ret_24h_pct": 1.3838672,
+        "ret_7d_pct": -1.9317568,
+        "volume_24h_usd": 11746905.84,
+        "volume_change_24h_pct": 11.2838463
+      },
+      "name": "XDC Network",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "XDC"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 2694,
+      "cmc_quote": {
+        "market_cap_usd": 476909557.09,
+        "price_usd": 0.7380835,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0511712,
+        "ret_24h_pct": -1.6013928,
+        "ret_7d_pct": -4.235615,
+        "volume_24h_usd": 7641114.29,
+        "volume_change_24h_pct": -24.8015656
+      },
+      "name": "Nexo",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "NEXO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 3077,
+      "cmc_quote": {
+        "market_cap_usd": 463313496.02,
+        "price_usd": 0.0053883,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.6453039,
+        "ret_24h_pct": -1.2613991,
+        "ret_7d_pct": -8.5638904,
+        "volume_24h_usd": 6817106.58,
+        "volume_change_24h_pct": -23.9425797
+      },
+      "name": "VeChain",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "VET"
+    },
+    {
+      "cmc100_weight": 0.1,
+      "cmc_id": 3155,
+      "cmc_quote": {
+        "market_cap_usd": 2334340163.32,
+        "price_usd": 193.3563176,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0121995,
+        "ret_24h_pct": 1.5155168,
+        "ret_7d_pct": -0.6190231,
+        "volume_24h_usd": 51365815.13,
+        "volume_change_24h_pct": -35.3297307
+      },
+      "name": "Quant",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.514Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 320390.84,
+        "perp_closed_24h_quote_volume": 880226.54,
+        "perp_realized_volatility_24h_pct": 11.48876,
+        "perp_ret_1h_pct": -0.856073,
+        "perp_ret_24h_pct": 20.716612,
+        "perp_ret_6h_pct": -1.173333,
+        "perp_ret_7d_pct": 9.224875,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.9759,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "QNT",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "QNT-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "QNT"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 3602,
+      "cmc_quote": {
+        "market_cap_usd": 343349957.91,
+        "price_usd": 17.0756788,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3156894,
+        "ret_24h_pct": -0.2320403,
+        "ret_7d_pct": -1.2042848,
+        "volume_24h_usd": 8737754.47,
+        "volume_change_24h_pct": -33.8503747
+      },
+      "name": "Bitcoin SV",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "BSV"
+    },
+    {
+      "cmc100_weight": 0.11,
+      "cmc_id": 3635,
+      "cmc_quote": {
+        "market_cap_usd": 2529418841.92,
+        "price_usd": 0.0498284,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3274425,
+        "ret_24h_pct": 1.2583562,
+        "ret_7d_pct": -3.6673042,
+        "volume_24h_usd": 4059432.91,
+        "volume_change_24h_pct": -30.9689588
+      },
+      "name": "Cronos",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.396Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 947655.12,
+        "perp_closed_24h_quote_volume": 717931.67,
+        "perp_realized_volatility_24h_pct": 2.10345,
+        "perp_ret_1h_pct": -0.26026,
+        "perp_ret_24h_pct": 1.425081,
+        "perp_ret_6h_pct": -0.140309,
+        "perp_ret_7d_pct": -3.803823,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6637,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "CRO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "CRO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "CRO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 3773,
+      "cmc_quote": {
+        "market_cap_usd": 355312610.14,
+        "price_usd": 0.1462725,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.5790454,
+        "ret_24h_pct": -0.4925878,
+        "ret_7d_pct": -11.3165797,
+        "volume_24h_usd": 122072283.75,
+        "volume_change_24h_pct": -26.7771138
+      },
+      "name": "Artificial Superintelligence Alliance",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.756Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1357075.3,
+        "perp_closed_24h_quote_volume": 1492411.62,
+        "perp_realized_volatility_24h_pct": 2.70083,
+        "perp_ret_1h_pct": -0.949796,
+        "perp_ret_24h_pct": -0.544959,
+        "perp_ret_6h_pct": -1.016949,
+        "perp_ret_7d_pct": -11.568746,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3772,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "FET",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "FET-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "FET"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 3794,
+      "cmc_quote": {
+        "market_cap_usd": 751462609.89,
+        "price_usd": 1.3909878,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0519312,
+        "ret_24h_pct": -1.7602562,
+        "ret_7d_pct": -8.8107901,
+        "volume_24h_usd": 26237512.84,
+        "volume_change_24h_pct": -42.755306
+      },
+      "name": "Cosmos",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.152Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4438844.65,
+        "perp_closed_24h_quote_volume": 4460212.22,
+        "perp_realized_volatility_24h_pct": 3.15345,
+        "perp_ret_1h_pct": -0.215517,
+        "perp_ret_24h_pct": -1.768034,
+        "perp_ret_6h_pct": -0.430108,
+        "perp_ret_7d_pct": -8.798424,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3566,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ATOM",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ATOM-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ATOM"
+    },
+    {
+      "cmc100_weight": 0.1,
+      "cmc_id": 3897,
+      "cmc_quote": {
+        "market_cap_usd": 2213610860.18,
+        "price_usd": 105.410041,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2471212,
+        "ret_24h_pct": -0.2837688,
+        "ret_7d_pct": -5.095543,
+        "volume_24h_usd": 15236385.09,
+        "volume_change_24h_pct": -58.8656349
+      },
+      "name": "OKB",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.641Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 20904466.96,
+        "perp_closed_24h_quote_volume": 10019864.12,
+        "perp_realized_volatility_24h_pct": 1.80396,
+        "perp_ret_1h_pct": -0.217597,
+        "perp_ret_24h_pct": -0.406043,
+        "perp_ret_6h_pct": 0.12341,
+        "perp_ret_7d_pct": -5.118748,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3828,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "OKB",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "OKB-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "OKB"
+    },
+    {
+      "cmc100_weight": 0.38,
+      "cmc_id": 3957,
+      "cmc_quote": {
+        "market_cap_usd": 8588677946.47,
+        "price_usd": 9.3369621,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0480918,
+        "ret_24h_pct": -0.0660553,
+        "ret_7d_pct": -1.2544494,
+        "volume_24h_usd": 141583.48,
+        "volume_change_24h_pct": -16.6505813
+      },
+      "name": "UNUS SED LEO",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "LEO"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 4030,
+      "cmc_quote": {
+        "market_cap_usd": 864282436.65,
+        "price_usd": 0.095204,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -1.4159489,
+        "ret_24h_pct": 1.9856236,
+        "ret_7d_pct": -0.1775228,
+        "volume_24h_usd": 57986587.39,
+        "volume_change_24h_pct": -15.9482094
+      },
+      "name": "Algorand",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -4.57078e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.998Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 3007711.57,
+        "perp_closed_24h_quote_volume": 4280332.87,
+        "perp_realized_volatility_24h_pct": 4.82599,
+        "perp_ret_1h_pct": -1.182941,
+        "perp_ret_24h_pct": 2.002999,
+        "perp_ret_6h_pct": -0.334903,
+        "perp_ret_7d_pct": -0.146797,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.7209,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ALGO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ALGO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ALGO"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 4269,
+      "cmc_quote": {
+        "market_cap_usd": 1018344844.75,
+        "price_usd": 9.7261501,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 1.2778211,
+        "ret_24h_pct": 2.036945,
+        "ret_7d_pct": 3.1175354,
+        "volume_24h_usd": 14526326.83,
+        "volume_change_24h_pct": 48.2259514
+      },
+      "name": "GateToken",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "GT"
+    },
+    {
+      "cmc100_weight": 0.13,
+      "cmc_id": 4642,
+      "cmc_quote": {
+        "market_cap_usd": 2981254118.3,
+        "price_usd": 0.0672557,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.7083918,
+        "ret_24h_pct": -1.9651862,
+        "ret_7d_pct": -6.8301389,
+        "volume_24h_usd": 44735799.21,
+        "volume_change_24h_pct": -38.72839
+      },
+      "name": "Hedera",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -3.88664e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.108Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5940973.54,
+        "perp_closed_24h_quote_volume": 4273412.94,
+        "perp_realized_volatility_24h_pct": 2.05916,
+        "perp_ret_1h_pct": -0.856341,
+        "perp_ret_24h_pct": -1.95649,
+        "perp_ret_6h_pct": -1.191878,
+        "perp_ret_7d_pct": -6.826696,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4394,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "HBAR",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "HBAR-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "HBAR"
+    },
+    {
+      "cmc100_weight": 0.08,
+      "cmc_id": 4705,
+      "cmc_quote": {
+        "market_cap_usd": 1819934021.7,
+        "price_usd": 4064.8494372,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0116253,
+        "ret_24h_pct": 0.506141,
+        "ret_7d_pct": 4.3649797,
+        "volume_24h_usd": 143796834.73,
+        "volume_change_24h_pct": -16.4147097
+      },
+      "name": "PAX Gold",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "PAXG"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 4847,
+      "cmc_quote": {
+        "market_cap_usd": 649869951.2,
+        "price_usd": 0.345516,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.6998655,
+        "ret_24h_pct": 0.7718199,
+        "ret_7d_pct": 15.7936733,
+        "volume_24h_usd": 20832623.98,
+        "volume_change_24h_pct": -46.6044193
+      },
+      "name": "Stacks",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 3.19067e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.652Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2658442.48,
+        "perp_closed_24h_quote_volume": 6441262.61,
+        "perp_realized_volatility_24h_pct": 5.63341,
+        "perp_ret_1h_pct": -0.345026,
+        "perp_ret_24h_pct": 1.40433,
+        "perp_ret_6h_pct": 0.492896,
+        "perp_ret_7d_pct": 16.778976,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5162,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "STX",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "STX-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "STX"
+    },
+    {
+      "cmc100_weight": 0.13,
+      "cmc_id": 5176,
+      "cmc_quote": {
+        "market_cap_usd": 3038495882.47,
+        "price_usd": 4054.4440104,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0428132,
+        "ret_24h_pct": 0.4253751,
+        "ret_7d_pct": 4.5848007,
+        "volume_24h_usd": 292403239.48,
+        "volume_change_24h_pct": -37.1720404
+      },
+      "name": "Tether Gold",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "XAUt"
+    },
+    {
+      "cmc100_weight": 2.37,
+      "cmc_id": 5426,
+      "cmc_quote": {
+        "market_cap_usd": 53393609259.79,
+        "price_usd": 90.3471712,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1539919,
+        "ret_24h_pct": 0.0591774,
+        "ret_7d_pct": -6.5528503,
+        "volume_24h_usd": 2237674557.68,
+        "volume_change_24h_pct": -52.8249484
+      },
+      "name": "Solana",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.625Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 316444212.01,
+        "perp_closed_24h_quote_volume": 597389372.7,
+        "perp_realized_volatility_24h_pct": 1.61526,
+        "perp_ret_1h_pct": -0.187762,
+        "perp_ret_24h_pct": 0.044282,
+        "perp_ret_6h_pct": 0.522803,
+        "perp_ret_7d_pct": -6.546019,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4495,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SOL",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SOL-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SOL"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 5488,
+      "cmc_quote": {
+        "market_cap_usd": 1147056716.98,
+        "price_usd": 0.1430598,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.055472,
+        "ret_24h_pct": 1.2131566,
+        "ret_7d_pct": 4.2028852,
+        "volume_24h_usd": 31001513.8,
+        "volume_change_24h_pct": -14.2494581
+      },
+      "name": "JUST",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "JST"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 5690,
+      "cmc_quote": {
+        "market_cap_usd": 815649818.71,
+        "price_usd": 1.5722575,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.310824,
+        "ret_24h_pct": 2.1730704,
+        "ret_7d_pct": -1.4713028,
+        "volume_24h_usd": 19445605.31,
+        "volume_change_24h_pct": -27.2237291
+      },
+      "name": "Render",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.364Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2745748.56,
+        "perp_closed_24h_quote_volume": 2392162.13,
+        "perp_realized_volatility_24h_pct": 3.8345,
+        "perp_ret_1h_pct": -0.694444,
+        "perp_ret_24h_pct": 2.47557,
+        "perp_ret_6h_pct": -0.694444,
+        "perp_ret_7d_pct": -1.502818,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.7001,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "RENDER",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "RENDER-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "RENDER"
+    },
+    {
+      "cmc100_weight": 0.16,
+      "cmc_id": 5805,
+      "cmc_quote": {
+        "market_cap_usd": 3693752997.3,
+        "price_usd": 8.3165669,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2088026,
+        "ret_24h_pct": -0.0983865,
+        "ret_7d_pct": -3.2624029,
+        "volume_24h_usd": 170175862.67,
+        "volume_change_24h_pct": -43.1948602
+      },
+      "name": "Avalanche",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 9.13036e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.174Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 12211649.99,
+        "perp_closed_24h_quote_volume": 15678707.91,
+        "perp_realized_volatility_24h_pct": 1.90842,
+        "perp_ret_1h_pct": -0.420168,
+        "perp_ret_24h_pct": -0.156476,
+        "perp_ret_6h_pct": -0.741893,
+        "perp_ret_7d_pct": -3.479172,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5759,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "AVAX",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "AVAX-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "AVAX"
+    },
+    {
+      "cmc100_weight": 0.12,
+      "cmc_id": 5994,
+      "cmc_quote": {
+        "market_cap_usd": 2662091818.33,
+        "price_usd": 4.5e-06,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4846876,
+        "ret_24h_pct": -1.8022597,
+        "ret_7d_pct": -5.6485528,
+        "volume_24h_usd": 41304368.55,
+        "volume_change_24h_pct": -38.2429642
+      },
+      "name": "Shiba Inu",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 7.64271e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.413Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 6452659.76,
+        "perp_closed_24h_quote_volume": 5812403.26,
+        "perp_realized_volatility_24h_pct": 1.83505,
+        "perp_ret_1h_pct": -0.572561,
+        "perp_ret_24h_pct": -1.996961,
+        "perp_ret_6h_pct": -1.225115,
+        "perp_ret_7d_pct": -5.603178,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4494,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SHIB",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SHIB-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SHIB"
+    },
+    {
+      "cmc100_weight": 0.22,
+      "cmc_id": 6535,
+      "cmc_quote": {
+        "market_cap_usd": 4923423701.07,
+        "price_usd": 3.755364,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0917387,
+        "ret_24h_pct": 1.2117547,
+        "ret_7d_pct": -13.0756288,
+        "volume_24h_usd": 485623284.16,
+        "volume_change_24h_pct": -34.4594466
+      },
+      "name": "NEAR Protocol",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 6.64611e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.546Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 49797560.14,
+        "perp_closed_24h_quote_volume": 85751823.82,
+        "perp_realized_volatility_24h_pct": 3.09056,
+        "perp_ret_1h_pct": -0.133369,
+        "perp_ret_24h_pct": 0.726392,
+        "perp_ret_6h_pct": 1.052632,
+        "perp_ret_7d_pct": -13.513514,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5688,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "NEAR",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "NEAR-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "NEAR"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 6538,
+      "cmc_quote": {
+        "market_cap_usd": 417805027.95,
+        "price_usd": 0.2639034,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.3675683,
+        "ret_24h_pct": 3.0869034,
+        "ret_7d_pct": -7.7874931,
+        "volume_24h_usd": 27283146.89,
+        "volume_change_24h_pct": -26.8693397
+      },
+      "name": "Curve DAO Token",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.268Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5556936.55,
+        "perp_closed_24h_quote_volume": 6093650.56,
+        "perp_realized_volatility_24h_pct": 3.00854,
+        "perp_ret_1h_pct": 0.151976,
+        "perp_ret_24h_pct": 3.251077,
+        "perp_ret_6h_pct": -0.037922,
+        "perp_ret_7d_pct": -7.960894,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5308,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "CRV",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "CRV-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "CRV"
+    },
+    {
+      "cmc100_weight": 0.07,
+      "cmc_id": 6636,
+      "cmc_quote": {
+        "market_cap_usd": 1550963505.52,
+        "price_usd": 0.9065004,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.017424,
+        "ret_24h_pct": -1.8501782,
+        "ret_7d_pct": -5.7276094,
+        "volume_24h_usd": 54656235.02,
+        "volume_change_24h_pct": -41.3700918
+      },
+      "name": "Polkadot",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -2.49754e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.330Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 7654192.69,
+        "perp_closed_24h_quote_volume": 7773634.48,
+        "perp_realized_volatility_24h_pct": 1.9142,
+        "perp_ret_1h_pct": -0.077348,
+        "perp_ret_24h_pct": -1.845219,
+        "perp_ret_6h_pct": -1.513831,
+        "perp_ret_7d_pct": -5.909895,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4195,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "DOT",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "DOT-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "DOT"
+    },
+    {
+      "cmc100_weight": 0.19,
+      "cmc_id": 7083,
+      "cmc_quote": {
+        "market_cap_usd": 4354396375.8,
+        "price_usd": 6.9792236,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.2375832,
+        "ret_24h_pct": -0.0859064,
+        "ret_7d_pct": -0.703376,
+        "volume_24h_usd": 370554430.3,
+        "volume_change_24h_pct": -61.9682691
+      },
+      "name": "Uniswap",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.750Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 43789417.0,
+        "perp_closed_24h_quote_volume": 61448161.69,
+        "perp_realized_volatility_24h_pct": 3.59044,
+        "perp_ret_1h_pct": 0.086256,
+        "perp_ret_24h_pct": -0.386321,
+        "perp_ret_6h_pct": 1.118373,
+        "perp_ret_7d_pct": -1.009527,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3682,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "UNI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "UNI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "UNI"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 7186,
+      "cmc_quote": {
+        "market_cap_usd": 628719899.37,
+        "price_usd": 1.9153272,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1895313,
+        "ret_24h_pct": -0.6105656,
+        "ret_7d_pct": -0.4994767,
+        "volume_24h_usd": 18255958.07,
+        "volume_change_24h_pct": -50.5141063
+      },
+      "name": "PancakeSwap",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "CAKE"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 7226,
+      "cmc_quote": {
+        "market_cap_usd": 842971292.16,
+        "price_usd": 8.4321621,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.2399041,
+        "ret_24h_pct": 0.0612022,
+        "ret_7d_pct": 18.0211346,
+        "volume_24h_usd": 114834199.78,
+        "volume_change_24h_pct": -35.1523748
+      },
+      "name": "Injective",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -3.0777e-06,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.624Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5438050.14,
+        "perp_closed_24h_quote_volume": 27294785.22,
+        "perp_realized_volatility_24h_pct": 4.77073,
+        "perp_ret_1h_pct": 0.035621,
+        "perp_ret_24h_pct": 0.633063,
+        "perp_ret_6h_pct": -0.142231,
+        "perp_ret_7d_pct": 17.84865,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5614,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "INJ",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "INJ-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "INJ"
+    },
+    {
+      "cmc100_weight": 0.09,
+      "cmc_id": 7278,
+      "cmc_quote": {
+        "market_cap_usd": 2001519154.13,
+        "price_usd": 129.6290349,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.7572262,
+        "ret_24h_pct": -0.6272301,
+        "ret_7d_pct": -0.8007023,
+        "volume_24h_usd": 207843376.65,
+        "volume_change_24h_pct": -40.531938
+      },
+      "name": "Aave",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -7.56509e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.976Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 14040998.95,
+        "perp_closed_24h_quote_volume": 31431977.74,
+        "perp_realized_volatility_24h_pct": 3.13493,
+        "perp_ret_1h_pct": -0.880214,
+        "perp_ret_24h_pct": -0.59108,
+        "perp_ret_6h_pct": -0.796691,
+        "perp_ret_7d_pct": -0.834673,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6138,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "AAVE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "AAVE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "AAVE"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 7950,
+      "cmc_quote": {
+        "market_cap_usd": 502966049.76,
+        "price_usd": 0.0057324,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3832026,
+        "ret_24h_pct": -2.2176721,
+        "ret_7d_pct": -5.7801806,
+        "volume_24h_usd": 2905942.85,
+        "volume_change_24h_pct": 6.4407071
+      },
+      "name": "Flare",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "FLR"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 8000,
+      "cmc_quote": {
+        "market_cap_usd": 270060178.02,
+        "price_usd": 0.3255432,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3354503,
+        "ret_24h_pct": -1.3112592,
+        "ret_7d_pct": -2.6727863,
+        "volume_24h_usd": 39953868.02,
+        "volume_change_24h_pct": -14.0050237
+      },
+      "name": "Lido DAO",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -1.09531e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.354Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2740643.61,
+        "perp_closed_24h_quote_volume": 2214866.34,
+        "perp_realized_volatility_24h_pct": 2.58849,
+        "perp_ret_1h_pct": -0.489596,
+        "perp_ret_24h_pct": -1.215067,
+        "perp_ret_6h_pct": -1.004566,
+        "perp_ret_7d_pct": -2.663873,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4646,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "LDO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "LDO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "LDO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 8526,
+      "cmc_quote": {
+        "market_cap_usd": 482224713.68,
+        "price_usd": 1.7862585,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.5383614,
+        "ret_24h_pct": 4.4294329,
+        "ret_7d_pct": 8.7226064,
+        "volume_24h_usd": 39456898.61,
+        "volume_change_24h_pct": -4.8855616
+      },
+      "name": "Raydium",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -4.55959e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.136Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2748008.43,
+        "perp_closed_24h_quote_volume": 6189926.12,
+        "perp_realized_volatility_24h_pct": 4.0038,
+        "perp_ret_1h_pct": -0.712021,
+        "perp_ret_24h_pct": 4.355706,
+        "perp_ret_6h_pct": -0.838889,
+        "perp_ret_7d_pct": 8.458407,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.8696,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "RAY",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "RAY-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "RAY"
+    },
+    {
+      "cmc100_weight": 0.06,
+      "cmc_id": 8916,
+      "cmc_quote": {
+        "market_cap_usd": 1354485779.22,
+        "price_usd": 2.4262511,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2462011,
+        "ret_24h_pct": -0.333318,
+        "ret_7d_pct": -3.4124649,
+        "volume_24h_usd": 30142448.75,
+        "volume_change_24h_pct": -41.6639935
+      },
+      "name": "Internet Computer",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -1.94972e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.160Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5550343.39,
+        "perp_closed_24h_quote_volume": 4255786.07,
+        "perp_realized_volatility_24h_pct": 2.6253,
+        "perp_ret_1h_pct": -0.493218,
+        "perp_ret_24h_pct": -0.493218,
+        "perp_ret_6h_pct": -1.74513,
+        "perp_ret_7d_pct": -3.545817,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4976,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ICP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ICP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ICP"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 9481,
+      "cmc_quote": {
+        "market_cap_usd": 287414322.42,
+        "price_usd": 1.652445,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4712736,
+        "ret_24h_pct": -1.9512482,
+        "ret_7d_pct": -11.3266002,
+        "volume_24h_usd": 20794347.16,
+        "volume_change_24h_pct": -43.2864864
+      },
+      "name": "Pendle",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.150Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2770289.15,
+        "perp_closed_24h_quote_volume": 1291633.26,
+        "perp_realized_volatility_24h_pct": 2.06577,
+        "perp_ret_1h_pct": -0.602047,
+        "perp_ret_24h_pct": -1.95962,
+        "perp_ret_6h_pct": -0.840841,
+        "perp_ret_7d_pct": -11.427039,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4132,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PENDLE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PENDLE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PENDLE"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 10529,
+      "cmc_quote": {
+        "market_cap_usd": 298912402.09,
+        "price_usd": 0.0155562,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0459763,
+        "ret_24h_pct": 0.2635452,
+        "ret_7d_pct": -2.6017962,
+        "volume_24h_usd": 7761037.34,
+        "volume_change_24h_pct": -21.7551324
+      },
+      "name": "Sun [New]",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "SUN"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 11092,
+      "cmc_quote": {
+        "market_cap_usd": 1216759098.84,
+        "price_usd": 1.7382471,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0057558,
+        "ret_24h_pct": 0.7008707,
+        "ret_7d_pct": -3.236291,
+        "volume_24h_usd": 8962584.96,
+        "volume_change_24h_pct": -25.9504502
+      },
+      "name": "Bitget Token",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "BGB"
+    },
+    {
+      "cmc100_weight": 0.14,
+      "cmc_id": 11419,
+      "cmc_quote": {
+        "market_cap_usd": 3120592472.42,
+        "price_usd": 1.0940368,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3119194,
+        "ret_24h_pct": -1.3610441,
+        "ret_7d_pct": -7.6290711,
+        "volume_24h_usd": 77163715.24,
+        "volume_change_24h_pct": -35.7190766
+      },
+      "name": "Gram (prev. Toncoin)",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.492Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 6985240.42,
+        "perp_closed_24h_quote_volume": 4804986.16,
+        "perp_realized_volatility_24h_pct": 2.30599,
+        "perp_ret_1h_pct": -0.545455,
+        "perp_ret_24h_pct": -1.174345,
+        "perp_ret_6h_pct": -0.635786,
+        "perp_ret_7d_pct": -7.757167,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.728,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "GRAM",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "GRAM-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "GRAM"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 11840,
+      "cmc_quote": {
+        "market_cap_usd": 239062323.74,
+        "price_usd": 0.1043589,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.6840727,
+        "ret_24h_pct": -0.3768303,
+        "ret_7d_pct": -12.0290706,
+        "volume_24h_usd": 33002693.96,
+        "volume_change_24h_pct": -31.2207337
+      },
+      "name": "Optimism",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 2.03072e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.474Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 3839251.02,
+        "perp_closed_24h_quote_volume": 7487222.2,
+        "perp_realized_volatility_24h_pct": 3.86462,
+        "perp_ret_1h_pct": -0.836979,
+        "perp_ret_24h_pct": 0.057582,
+        "perp_ret_6h_pct": -1.80825,
+        "perp_ret_7d_pct": -11.584125,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5541,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "OP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "OP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "OP"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 11841,
+      "cmc_quote": {
+        "market_cap_usd": 1130651637.01,
+        "price_usd": 0.16405,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4885154,
+        "ret_24h_pct": -1.4717198,
+        "ret_7d_pct": 1.4125278,
+        "volume_24h_usd": 146084143.75,
+        "volume_change_24h_pct": -15.6126754
+      },
+      "name": "Arbitrum",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -3.94704e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.656Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 14401730.93,
+        "perp_closed_24h_quote_volume": 36602936.83,
+        "perp_realized_volatility_24h_pct": 3.38401,
+        "perp_ret_1h_pct": -0.273506,
+        "perp_ret_24h_pct": -0.647896,
+        "perp_ret_6h_pct": -0.995595,
+        "perp_ret_7d_pct": 1.152827,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 1.0325,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ARB",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ARB-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ARB"
+    },
+    {
+      "cmc100_weight": 0.06,
+      "cmc_id": 13502,
+      "cmc_quote": {
+        "market_cap_usd": 1279890564.7,
+        "price_usd": 0.3417204,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3101755,
+        "ret_24h_pct": -2.2560676,
+        "ret_7d_pct": -14.9691892,
+        "volume_24h_usd": 192954771.08,
+        "volume_change_24h_pct": -40.1608098
+      },
+      "name": "Worldcoin",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 2.96351e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.576Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 30370982.48,
+        "perp_closed_24h_quote_volume": 64964435.65,
+        "perp_realized_volatility_24h_pct": 2.99544,
+        "perp_ret_1h_pct": -0.437701,
+        "perp_ret_24h_pct": -2.374821,
+        "perp_ret_6h_pct": -1.101449,
+        "perp_ret_7d_pct": -15.145486,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.436,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "WLD",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "WLD-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "WLD"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 16086,
+      "cmc_quote": {
+        "market_cap_usd": 342927235.26,
+        "price_usd": 4e-07,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0047601,
+        "ret_24h_pct": 0.0021688,
+        "ret_7d_pct": 0.2690874,
+        "volume_24h_usd": 18836581.58,
+        "volume_change_24h_pct": -31.0923866
+      },
+      "name": "BitTorrent [New]",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "BTT"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 20396,
+      "cmc_quote": {
+        "market_cap_usd": 832935632.58,
+        "price_usd": 0.0299648,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2314502,
+        "ret_24h_pct": -0.9222554,
+        "ret_7d_pct": -9.4724371,
+        "volume_24h_usd": 7040382.21,
+        "volume_change_24h_pct": -46.2222949
+      },
+      "name": "Kaspa",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "KAS"
+    },
+    {
+      "cmc100_weight": 0.16,
+      "cmc_id": 20947,
+      "cmc_quote": {
+        "market_cap_usd": 3596778945.12,
+        "price_usd": 0.8689879,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4050295,
+        "ret_24h_pct": 0.6002996,
+        "ret_7d_pct": -3.6815944,
+        "volume_24h_usd": 280756559.47,
+        "volume_change_24h_pct": -48.1515361
+      },
+      "name": "Sui",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.18662e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.832Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 26378015.71,
+        "perp_closed_24h_quote_volume": 40361186.45,
+        "perp_realized_volatility_24h_pct": 2.19196,
+        "perp_ret_1h_pct": -0.687128,
+        "perp_ret_24h_pct": 0.405233,
+        "perp_ret_6h_pct": -0.401975,
+        "perp_ret_7d_pct": -4.113224,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4136,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SUI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SUI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SUI"
+    },
+    {
+      "cmc100_weight": 0.08,
+      "cmc_id": 21159,
+      "cmc_quote": {
+        "market_cap_usd": 1799804994.06,
+        "price_usd": 0.3696206,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.5358978,
+        "ret_24h_pct": -1.4664467,
+        "ret_7d_pct": -10.899917,
+        "volume_24h_usd": 100548625.81,
+        "volume_change_24h_pct": -49.9834498
+      },
+      "name": "Ondo",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.286Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 10142408.95,
+        "perp_closed_24h_quote_volume": 16529930.45,
+        "perp_realized_volatility_24h_pct": 2.11194,
+        "perp_ret_1h_pct": -0.619445,
+        "perp_ret_24h_pct": -1.494928,
+        "perp_ret_6h_pct": -1.019313,
+        "perp_ret_7d_pct": -11.298077,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4829,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ONDO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ONDO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ONDO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 21794,
+      "cmc_quote": {
+        "market_cap_usd": 532574379.23,
+        "price_usd": 0.6024026,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1401293,
+        "ret_24h_pct": 0.0933595,
+        "ret_7d_pct": -5.9503421,
+        "volume_24h_usd": 22094800.11,
+        "volume_change_24h_pct": -47.9527756
+      },
+      "name": "Aptos",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.46969e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.537Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4067845.88,
+        "perp_closed_24h_quote_volume": 4984032.26,
+        "perp_realized_volatility_24h_pct": 2.54782,
+        "perp_ret_1h_pct": -0.414319,
+        "perp_ret_24h_pct": 0.016644,
+        "perp_ret_6h_pct": -1.636929,
+        "perp_ret_7d_pct": -6.16802,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5708,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "APT",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "APT-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "APT"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 22691,
+      "cmc_quote": {
+        "market_cap_usd": 316946137.97,
+        "price_usd": 0.0413507,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.3255963,
+        "ret_24h_pct": 1.5846909,
+        "ret_7d_pct": -5.5281183,
+        "volume_24h_usd": 42121198.0,
+        "volume_change_24h_pct": -32.5137963
+      },
+      "name": "Starknet",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.780Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4650593.26,
+        "perp_closed_24h_quote_volume": 15131883.01,
+        "perp_realized_volatility_24h_pct": 3.38183,
+        "perp_ret_1h_pct": 0.218606,
+        "perp_ret_24h_pct": 1.400836,
+        "perp_ret_6h_pct": 1.127451,
+        "perp_ret_7d_pct": -5.71298,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4966,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "STRK",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "STRK-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "STRK"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 22861,
+      "cmc_quote": {
+        "market_cap_usd": 431580952.81,
+        "price_usd": 0.436116,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2078208,
+        "ret_24h_pct": 3.1126957,
+        "ret_7d_pct": -7.1724485,
+        "volume_24h_usd": 23936500.01,
+        "volume_change_24h_pct": -43.2674354
+      },
+      "name": "Celestia",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 2.29368e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.882Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4822574.79,
+        "perp_closed_24h_quote_volume": 7013155.43,
+        "perp_realized_volatility_24h_pct": 4.33867,
+        "perp_ret_1h_pct": -0.411523,
+        "perp_ret_24h_pct": 3.198294,
+        "perp_ret_6h_pct": -0.547945,
+        "perp_ret_7d_pct": -7.002562,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5958,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "TIA",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "TIA-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "TIA"
+    },
+    {
+      "cmc100_weight": 0.12,
+      "cmc_id": 22974,
+      "cmc_quote": {
+        "market_cap_usd": 2630032331.24,
+        "price_usd": 224.7747176,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0076682,
+        "ret_24h_pct": 1.9273559,
+        "ret_7d_pct": -5.0710039,
+        "volume_24h_usd": 100598685.15,
+        "volume_change_24h_pct": -26.9449975
+      },
+      "name": "Bittensor",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.12223e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.160Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 14689189.34,
+        "perp_closed_24h_quote_volume": 14572684.29,
+        "perp_realized_volatility_24h_pct": 2.65305,
+        "perp_ret_1h_pct": -0.124583,
+        "perp_ret_24h_pct": 1.851264,
+        "perp_ret_6h_pct": 0.035652,
+        "perp_ret_7d_pct": -5.266934,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6596,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "TAO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "TAO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "TAO"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 23095,
+      "cmc_quote": {
+        "market_cap_usd": 247098989.15,
+        "price_usd": 2.8e-06,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.6386294,
+        "ret_24h_pct": -2.5436415,
+        "ret_7d_pct": -6.3438573,
+        "volume_24h_usd": 26888684.03,
+        "volume_change_24h_pct": -33.3710048
+      },
+      "name": "Bonk",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -5.47217e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.820Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1675446.31,
+        "perp_closed_24h_quote_volume": 2095972.96,
+        "perp_realized_volatility_24h_pct": 2.94549,
+        "perp_ret_1h_pct": -0.708215,
+        "perp_ret_24h_pct": -2.605071,
+        "perp_ret_6h_pct": -2.401671,
+        "perp_ret_7d_pct": -6.533333,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5329,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "BONK",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "BONK-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "BONK"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 23149,
+      "cmc_quote": {
+        "market_cap_usd": 357836562.59,
+        "price_usd": 0.046474,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3785057,
+        "ret_24h_pct": 1.5540784,
+        "ret_7d_pct": -4.9358885,
+        "volume_24h_usd": 27603003.46,
+        "volume_change_24h_pct": -27.450836
+      },
+      "name": "Sei",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.20371e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.672Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2081108.55,
+        "perp_closed_24h_quote_volume": 1279083.52,
+        "perp_realized_volatility_24h_pct": 2.86508,
+        "perp_ret_1h_pct": -0.642536,
+        "perp_ret_24h_pct": 1.532064,
+        "perp_ret_6h_pct": -1.002988,
+        "perp_ret_7d_pct": -5.05526,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.489,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SEI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SEI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SEI"
+    },
+    {
+      "cmc100_weight": 0.09,
+      "cmc_id": 24478,
+      "cmc_quote": {
+        "market_cap_usd": 2072235990.13,
+        "price_usd": 5e-06,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1316585,
+        "ret_24h_pct": 2.5315617,
+        "ret_7d_pct": 1.9048844,
+        "volume_24h_usd": 429047938.83,
+        "volume_change_24h_pct": -10.3377328
+      },
+      "name": "Pepe",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 0.0001,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.773Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 37873233.97,
+        "perp_closed_24h_quote_volume": 203803352.24,
+        "perp_realized_volatility_24h_pct": 4.16289,
+        "perp_ret_1h_pct": -0.268994,
+        "perp_ret_24h_pct": 2.38933,
+        "perp_ret_6h_pct": -0.887129,
+        "perp_ret_7d_pct": 1.178516,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.7376,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PEPE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PEPE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PEPE"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 26997,
+      "cmc_quote": {
+        "market_cap_usd": 665065723.69,
+        "price_usd": 1.6404535,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0596742,
+        "ret_24h_pct": 1.7716311,
+        "ret_7d_pct": -2.8013385,
+        "volume_24h_usd": 47266048.04,
+        "volume_change_24h_pct": -50.4363899
+      },
+      "name": "LayerZero",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.661Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 7604758.24,
+        "perp_closed_24h_quote_volume": 7405828.42,
+        "perp_realized_volatility_24h_pct": 3.67921,
+        "perp_ret_1h_pct": -0.358968,
+        "perp_ret_24h_pct": 1.840682,
+        "perp_ret_6h_pct": 1.036461,
+        "perp_ret_7d_pct": -2.893567,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4007,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ZRO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ZRO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ZRO"
+    },
+    {
+      "cmc100_weight": 0.07,
+      "cmc_id": 27075,
+      "cmc_quote": {
+        "market_cap_usd": 1486274618.09,
+        "price_usd": 0.450113,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0897889,
+        "ret_24h_pct": 2.7132511,
+        "ret_7d_pct": -4.7351852,
+        "volume_24h_usd": 20280770.47,
+        "volume_change_24h_pct": -47.2783852
+      },
+      "name": "Mantle",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "MNT"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 28081,
+      "cmc_quote": {
+        "market_cap_usd": 342277670.26,
+        "price_usd": 0.3676479,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.6495343,
+        "ret_24h_pct": 5.847388,
+        "ret_7d_pct": 1.196606,
+        "volume_24h_usd": 7058096.6,
+        "volume_change_24h_pct": -22.2651717
+      },
+      "name": "SPX6900",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.386Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 476255.73,
+        "perp_closed_24h_quote_volume": 1109882.92,
+        "perp_realized_volatility_24h_pct": 4.1554,
+        "perp_ret_1h_pct": 1.488013,
+        "perp_ret_24h_pct": 6.23017,
+        "perp_ret_6h_pct": 3.834226,
+        "perp_ret_7d_pct": 1.097996,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.8475,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SPX",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SPX-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SPX"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 28177,
+      "cmc_quote": {
+        "market_cap_usd": 513478060.52,
+        "price_usd": 0.0652039,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.8697617,
+        "ret_24h_pct": 2.9727528,
+        "ret_7d_pct": -0.073943,
+        "volume_24h_usd": 18278954.98,
+        "volume_change_24h_pct": -8.0039672
+      },
+      "name": "Pyth Network",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.195Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1984905.44,
+        "perp_closed_24h_quote_volume": 3530397.03,
+        "perp_realized_volatility_24h_pct": 4.09756,
+        "perp_ret_1h_pct": -1.199332,
+        "perp_ret_24h_pct": 3.039899,
+        "perp_ret_6h_pct": -1.049111,
+        "perp_ret_7d_pct": -0.671551,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.8614,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PYTH",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PYTH-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PYTH"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 28298,
+      "cmc_quote": {
+        "market_cap_usd": 198758601.36,
+        "price_usd": 0.0039502,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.6964066,
+        "ret_24h_pct": -2.0601204,
+        "ret_7d_pct": -15.596708,
+        "volume_24h_usd": 13489378.75,
+        "volume_change_24h_pct": -55.0865501
+      },
+      "name": "Beam",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "BEAM"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 28321,
+      "cmc_quote": {
+        "market_cap_usd": 975964629.02,
+        "price_usd": 0.0916783,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4752257,
+        "ret_24h_pct": -2.9258881,
+        "ret_7d_pct": -1.8177889,
+        "volume_24h_usd": 83656248.78,
+        "volume_change_24h_pct": -19.2762984
+      },
+      "name": "Polygon (prev. MATIC)",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.83524e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.295Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5549473.98,
+        "perp_closed_24h_quote_volume": 3250025.75,
+        "perp_realized_volatility_24h_pct": 2.38159,
+        "perp_ret_1h_pct": -0.639844,
+        "perp_ret_24h_pct": -3.068134,
+        "perp_ret_6h_pct": -1.335344,
+        "perp_ret_7d_pct": -1.705826,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4896,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "POL",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "POL-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "POL"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 29210,
+      "cmc_quote": {
+        "market_cap_usd": 803035782.39,
+        "price_usd": 0.2419242,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4188846,
+        "ret_24h_pct": -2.0455483,
+        "ret_7d_pct": -6.673851,
+        "volume_24h_usd": 17905488.26,
+        "volume_change_24h_pct": -43.0693242
+      },
+      "name": "Jupiter",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.000129628,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.154Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2985056.87,
+        "perp_closed_24h_quote_volume": 2288166.65,
+        "perp_realized_volatility_24h_pct": 2.45216,
+        "perp_ret_1h_pct": -0.53542,
+        "perp_ret_24h_pct": -2.107823,
+        "perp_ret_6h_pct": -1.186579,
+        "perp_ret_7d_pct": -7.079646,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4835,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "JUP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "JUP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "JUP"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 29270,
+      "cmc_quote": {
+        "market_cap_usd": 653524810.98,
+        "price_usd": 0.6067311,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0293265,
+        "ret_24h_pct": 2.3951559,
+        "ret_7d_pct": -2.8344863,
+        "volume_24h_usd": 39744279.84,
+        "volume_change_24h_pct": -42.1696621
+      },
+      "name": "Aero",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.0002293865,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.114Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4800475.47,
+        "perp_closed_24h_quote_volume": 5864666.03,
+        "perp_realized_volatility_24h_pct": 3.89287,
+        "perp_ret_1h_pct": -0.082008,
+        "perp_ret_24h_pct": 2.766532,
+        "perp_ret_6h_pct": 0.494886,
+        "perp_ret_7d_pct": -2.605915,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5025,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "AERO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "AERO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "AERO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 29420,
+      "cmc_quote": {
+        "market_cap_usd": 373406170.13,
+        "price_usd": 0.5665809,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3869885,
+        "ret_24h_pct": -1.0110375,
+        "ret_7d_pct": -4.5846967,
+        "volume_24h_usd": 45244467.41,
+        "volume_change_24h_pct": -29.2829623
+      },
+      "name": "Virtuals Protocol",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 2.87457e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.587Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2223944.16,
+        "perp_closed_24h_quote_volume": 2299334.5,
+        "perp_realized_volatility_24h_pct": 2.04337,
+        "perp_ret_1h_pct": -0.54472,
+        "perp_ret_24h_pct": -0.997026,
+        "perp_ret_6h_pct": -0.840925,
+        "perp_ret_7d_pct": -4.841964,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4724,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "VIRTUAL",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "VIRTUAL-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "VIRTUAL"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 29814,
+      "cmc_quote": {
+        "market_cap_usd": 562982155.23,
+        "price_usd": 0.5831897,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.3318939,
+        "ret_24h_pct": 0.6262533,
+        "ret_7d_pct": -6.9751297,
+        "volume_24h_usd": 29878318.83,
+        "volume_change_24h_pct": -43.8604352
+      },
+      "name": "ether.fi",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.784Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 4178209.27,
+        "perp_closed_24h_quote_volume": 5441624.84,
+        "perp_realized_volatility_24h_pct": 2.76529,
+        "perp_ret_1h_pct": -0.068717,
+        "perp_ret_24h_pct": 0.553155,
+        "perp_ret_6h_pct": 0.258532,
+        "perp_ret_7d_pct": -7.284029,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6223,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ETHFI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ETHFI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ETHFI"
+    },
+    {
+      "cmc100_weight": 0.1,
+      "cmc_id": 30171,
+      "cmc_quote": {
+        "market_cap_usd": 2218983597.5,
+        "price_usd": 0.1643692,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.3248179,
+        "ret_24h_pct": 0.1343133,
+        "ret_7d_pct": -14.7431963,
+        "volume_24h_usd": 295662130.0,
+        "volume_change_24h_pct": -42.8045715
+      },
+      "name": "Ethena",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 6.31817e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.130Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 14258053.45,
+        "perp_closed_24h_quote_volume": 37633562.83,
+        "perp_realized_volatility_24h_pct": 3.45189,
+        "perp_ret_1h_pct": 0.268982,
+        "perp_ret_24h_pct": 0.164885,
+        "perp_ret_6h_pct": -0.316033,
+        "perp_ret_7d_pct": -14.852308,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5738,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ENA",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ENA-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ENA"
+    },
+    {
+      "cmc100_weight": 0.89,
+      "cmc_id": 32196,
+      "cmc_quote": {
+        "market_cap_usd": 20122281245.72,
+        "price_usd": 79.512935,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.5341748,
+        "ret_24h_pct": 1.9776912,
+        "ret_7d_pct": -10.9465111,
+        "volume_24h_usd": 869232229.11,
+        "volume_change_24h_pct": -41.6890777
+      },
+      "name": "Hyperliquid",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 8.06812e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.011Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 127065453.48,
+        "perp_closed_24h_quote_volume": 141584634.95,
+        "perp_realized_volatility_24h_pct": 2.08645,
+        "perp_ret_1h_pct": 0.461325,
+        "perp_ret_24h_pct": 1.830737,
+        "perp_ret_6h_pct": 1.584766,
+        "perp_ret_7d_pct": -11.30688,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3948,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "HYPE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "HYPE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "HYPE"
+    },
+    {
+      "cmc100_weight": 0.07,
+      "cmc_id": 33038,
+      "cmc_quote": {
+        "market_cap_usd": 1505305459.41,
+        "price_usd": 0.0642753,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1343449,
+        "ret_24h_pct": -1.1900825,
+        "ret_7d_pct": -3.8378252,
+        "volume_24h_usd": 12073251.75,
+        "volume_change_24h_pct": -22.8465909
+      },
+      "name": "Sky",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.21574e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.776Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 891793.2,
+        "perp_closed_24h_quote_volume": 351559.46,
+        "perp_realized_volatility_24h_pct": 1.94043,
+        "perp_ret_1h_pct": -1.018833,
+        "perp_ret_24h_pct": -1.293103,
+        "perp_ret_6h_pct": -1.156158,
+        "perp_ret_7d_pct": -4.026343,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5023,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "SKY",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "SKY-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "SKY"
+    },
+    {
+      "cmc100_weight": 0.07,
+      "cmc_id": 33251,
+      "cmc_quote": {
+        "market_cap_usd": 1476995806.78,
+        "price_usd": 0.0464754,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.1954753,
+        "ret_24h_pct": -2.0646981,
+        "ret_7d_pct": -6.9753358,
+        "volume_24h_usd": 54682382.62,
+        "volume_change_24h_pct": -58.7824302
+      },
+      "name": "World Liberty Financial",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.057Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 7819566.77,
+        "perp_closed_24h_quote_volume": 10023957.03,
+        "perp_realized_volatility_24h_pct": 1.64402,
+        "perp_ret_1h_pct": 0.194007,
+        "perp_ret_24h_pct": -1.337296,
+        "perp_ret_6h_pct": -0.085985,
+        "perp_ret_7d_pct": -6.797674,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3245,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "WLFI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "WLFI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "WLFI"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 34104,
+      "cmc_quote": {
+        "market_cap_usd": 1133250870.96,
+        "price_usd": 2.1029051,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4031127,
+        "ret_24h_pct": -1.5176668,
+        "ret_7d_pct": -1.4133527,
+        "volume_24h_usd": 15727994.49,
+        "volume_change_24h_pct": -30.1605289
+      },
+      "name": "Morpho",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.56839e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.323Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 3490655.28,
+        "perp_closed_24h_quote_volume": 2240723.52,
+        "perp_realized_volatility_24h_pct": 2.69442,
+        "perp_ret_1h_pct": -0.298281,
+        "perp_ret_24h_pct": -1.196453,
+        "perp_ret_6h_pct": -0.31716,
+        "perp_ret_7d_pct": -1.126866,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.718,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "MORPHO",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "MORPHO-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "MORPHO"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 34466,
+      "cmc_quote": {
+        "market_cap_usd": 410043755.51,
+        "price_usd": 0.0065231,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.4456033,
+        "ret_24h_pct": -1.9210955,
+        "ret_7d_pct": -11.3308774,
+        "volume_24h_usd": 69332438.53,
+        "volume_change_24h_pct": -33.021353
+      },
+      "name": "Pudgy Penguins",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.05646e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.453Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 6559337.65,
+        "perp_closed_24h_quote_volume": 9025670.31,
+        "perp_realized_volatility_24h_pct": 2.65507,
+        "perp_ret_1h_pct": -0.427938,
+        "perp_ret_24h_pct": -1.778984,
+        "perp_ret_6h_pct": -0.503971,
+        "perp_ret_7d_pct": -11.601085,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4306,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PENGU",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PENGU-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PENGU"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 35336,
+      "cmc_quote": {
+        "market_cap_usd": 337715468.64,
+        "price_usd": 1.1981388,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0349563,
+        "ret_24h_pct": -1.2521492,
+        "ret_7d_pct": -24.6546706,
+        "volume_24h_usd": 386177732.11,
+        "volume_change_24h_pct": -18.4845837
+      },
+      "name": "OFFICIAL TRUMP",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 3.80042e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.733Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 13972028.82,
+        "perp_closed_24h_quote_volume": 87141930.6,
+        "perp_realized_volatility_24h_pct": 4.07843,
+        "perp_ret_1h_pct": -0.33389,
+        "perp_ret_24h_pct": -1.728395,
+        "perp_ret_6h_pct": -3.084416,
+        "perp_ret_7d_pct": -24.858402,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3419,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "TRUMP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "TRUMP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "TRUMP"
+    },
+    {
+      "cmc100_weight": 0.08,
+      "cmc_id": 35491,
+      "cmc_quote": {
+        "market_cap_usd": 1875795096.03,
+        "price_usd": 0.8173695,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2909907,
+        "ret_24h_pct": -1.7439078,
+        "ret_7d_pct": -14.1399523,
+        "volume_24h_usd": 1552655.02,
+        "volume_change_24h_pct": -21.7384758
+      },
+      "name": "MemeCore",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "M"
+    },
+    {
+      "cmc100_weight": 0.05,
+      "cmc_id": 35509,
+      "cmc_quote": {
+        "market_cap_usd": 1032646601.65,
+        "price_usd": 20.9977941,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.8333866,
+        "ret_24h_pct": -0.7615557,
+        "ret_7d_pct": -6.8593321,
+        "volume_24h_usd": 24879063.57,
+        "volume_change_24h_pct": -47.4544146
+      },
+      "name": "Venice Token",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.823Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 3873943.66,
+        "perp_closed_24h_quote_volume": 6215485.67,
+        "perp_realized_volatility_24h_pct": 3.57,
+        "perp_ret_1h_pct": -0.619268,
+        "perp_ret_24h_pct": -0.689688,
+        "perp_ret_6h_pct": 0.473141,
+        "perp_ret_7d_pct": -6.734395,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4821,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "VVV",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "VVV-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "VVV"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 35697,
+      "cmc_quote": {
+        "market_cap_usd": 851204103.02,
+        "price_usd": 0.0749531,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.010388,
+        "ret_24h_pct": -0.207128,
+        "ret_7d_pct": -4.5807669,
+        "volume_24h_usd": 4060754.84,
+        "volume_change_24h_pct": -33.1212853
+      },
+      "name": "Pi",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.887Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2062541.83,
+        "perp_closed_24h_quote_volume": 1409879.15,
+        "perp_realized_volatility_24h_pct": 1.10885,
+        "perp_ret_1h_pct": 0.0,
+        "perp_ret_24h_pct": -0.372142,
+        "perp_ret_6h_pct": -0.079979,
+        "perp_ret_7d_pct": -4.740119,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3859,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PI",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PI-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PI"
+    },
+    {
+      "cmc100_weight": 0.08,
+      "cmc_id": 36341,
+      "cmc_quote": {
+        "market_cap_usd": 1884678308.12,
+        "price_usd": 0.6803504,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.2195439,
+        "ret_24h_pct": -2.3376149,
+        "ret_7d_pct": -1.538584,
+        "volume_24h_usd": 64930267.26,
+        "volume_change_24h_pct": -44.1426393
+      },
+      "name": "Aster",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 1.11291e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.406Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 10323966.95,
+        "perp_closed_24h_quote_volume": 7556141.23,
+        "perp_realized_volatility_24h_pct": 2.10222,
+        "perp_ret_1h_pct": -0.351545,
+        "perp_ret_24h_pct": -2.227652,
+        "perp_ret_6h_pct": -0.395315,
+        "perp_ret_7d_pct": -1.562726,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6452,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "ASTER",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "ASTER-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "ASTER"
+    },
+    {
+      "cmc100_weight": 0.08,
+      "cmc_id": 36507,
+      "cmc_quote": {
+        "market_cap_usd": 1806218107.09,
+        "price_usd": 0.0039347,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1701217,
+        "ret_24h_pct": -1.008849,
+        "ret_7d_pct": -4.434815,
+        "volume_24h_usd": 110679419.64,
+        "volume_change_24h_pct": -33.7392878
+      },
+      "name": "Pump.fun",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 3.16491e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:15.243Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 21671804.1,
+        "perp_closed_24h_quote_volume": 80984904.67,
+        "perp_realized_volatility_24h_pct": 3.71703,
+        "perp_ret_1h_pct": -0.35542,
+        "perp_ret_24h_pct": -1.083669,
+        "perp_ret_6h_pct": -1.480924,
+        "perp_ret_7d_pct": -4.848485,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6686,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PUMP",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PUMP-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PUMP"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 36645,
+      "cmc_quote": {
+        "market_cap_usd": 280144358.04,
+        "price_usd": 0.0588401,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.3875423,
+        "ret_24h_pct": 1.9863035,
+        "ret_7d_pct": -27.892909,
+        "volume_24h_usd": 46139689.17,
+        "volume_change_24h_pct": -48.5568221
+      },
+      "name": "Plasma",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 4.68372e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.265Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 7772496.56,
+        "perp_closed_24h_quote_volume": 18542667.7,
+        "perp_realized_volatility_24h_pct": 3.35102,
+        "perp_ret_1h_pct": 0.631831,
+        "perp_ret_24h_pct": 2.273516,
+        "perp_ret_6h_pct": 3.150709,
+        "perp_ret_7d_pct": -27.604423,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5963,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "XPL",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "XPL-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "XPL"
+    },
+    {
+      "cmc100_weight": 0.17,
+      "cmc_id": 37263,
+      "cmc_quote": {
+        "market_cap_usd": 3783420470.09,
+        "price_usd": 0.0945608,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3088306,
+        "ret_24h_pct": -2.7400768,
+        "ret_7d_pct": -3.6052139,
+        "volume_24h_usd": 42529028.4,
+        "volume_change_24h_pct": -13.0857815
+      },
+      "name": "Canton",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -0.0001489303,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.531Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2802246.37,
+        "perp_closed_24h_quote_volume": 4470517.13,
+        "perp_realized_volatility_24h_pct": 6.62198,
+        "perp_ret_1h_pct": -0.137348,
+        "perp_ret_24h_pct": -2.817191,
+        "perp_ret_6h_pct": -0.137348,
+        "perp_ret_7d_pct": -3.422908,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 1.1073,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "CC",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "CC-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "CC"
+    },
+    {
+      "cmc100_weight": 0.01,
+      "cmc_id": 38482,
+      "cmc_quote": {
+        "market_cap_usd": 306612469.41,
+        "price_usd": 0.0864644,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.0472685,
+        "ret_24h_pct": 0.0123666,
+        "ret_7d_pct": -3.8337729,
+        "volume_24h_usd": 4012250.98,
+        "volume_change_24h_pct": -32.1234961
+      },
+      "name": "Falcon Finance",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "FF"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 38590,
+      "cmc_quote": {
+        "market_cap_usd": 508603838.35,
+        "price_usd": 0.5086038,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -1.4860928,
+        "ret_24h_pct": 6.4735819,
+        "ret_7d_pct": -4.1522348,
+        "volume_24h_usd": 4024138.54,
+        "volume_change_24h_pct": -25.9082473
+      },
+      "name": "币安人生",
+      "perp_market": null,
+      "perpetual": {
+        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
+        "review_candidates": [],
+        "symbol": null,
+        "trading_status": "UNKNOWN"
+      },
+      "symbol": "币安人生"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 38828,
+      "cmc_quote": {
+        "market_cap_usd": 400928898.94,
+        "price_usd": 0.1090347,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.3602379,
+        "ret_24h_pct": -2.8456014,
+        "ret_7d_pct": -0.0893493,
+        "volume_24h_usd": 10164216.05,
+        "volume_change_24h_pct": -17.6982324
+      },
+      "name": "Kite",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:16.475Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 1007592.92,
+        "perp_closed_24h_quote_volume": 247899.58,
+        "perp_realized_volatility_24h_pct": 2.58998,
+        "perp_ret_1h_pct": -0.656395,
+        "perp_ret_24h_pct": -2.852813,
+        "perp_ret_6h_pct": -1.143065,
+        "perp_ret_7d_pct": -0.538518,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.3578,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "KITE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "KITE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "KITE"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 38849,
+      "cmc_quote": {
+        "market_cap_usd": 415601273.25,
+        "price_usd": 1.383713,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.0792554,
+        "ret_24h_pct": 10.511457,
+        "ret_7d_pct": 38.0544636,
+        "volume_24h_usd": 40439603.53,
+        "volume_change_24h_pct": 11.3607081
+      },
+      "name": "Pieverse",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:13.914Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 5002767.0,
+        "perp_closed_24h_quote_volume": 11561753.66,
+        "perp_realized_volatility_24h_pct": 10.40981,
+        "perp_ret_1h_pct": -0.924731,
+        "perp_ret_24h_pct": 9.91729,
+        "perp_ret_6h_pct": -0.295773,
+        "perp_ret_7d_pct": 37.81035,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6866,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "PIEVERSE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "PIEVERSE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "PIEVERSE"
+    },
+    {
+      "cmc100_weight": 0.02,
+      "cmc_id": 38892,
+      "cmc_quote": {
+        "market_cap_usd": 447497783.31,
+        "price_usd": 0.024861,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": -0.1448159,
+        "ret_24h_pct": -4.4501608,
+        "ret_7d_pct": -6.313272,
+        "volume_24h_usd": 7012480.99,
+        "volume_change_24h_pct": -38.0814561
+      },
+      "name": "Stable",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.382Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 234497.02,
+        "perp_closed_24h_quote_volume": 395138.28,
+        "perp_realized_volatility_24h_pct": 3.82563,
+        "perp_ret_1h_pct": -0.438771,
+        "perp_ret_24h_pct": -3.740841,
+        "perp_ret_6h_pct": -0.16,
+        "perp_ret_7d_pct": -5.953278,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.4081,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "STABLE",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "STABLE-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "STABLE"
+    },
+    {
+      "cmc100_weight": 0.03,
+      "cmc_id": 39064,
+      "cmc_quote": {
+        "market_cap_usd": 647203589.71,
+        "price_usd": 0.0389708,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.6011244,
+        "ret_24h_pct": 0.4863362,
+        "ret_7d_pct": -1.6116971,
+        "volume_24h_usd": 11262018.66,
+        "volume_change_24h_pct": -45.0163277
+      },
+      "name": "Midnight",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": -9.57301e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.479Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 2443796.02,
+        "perp_closed_24h_quote_volume": 2495278.88,
+        "perp_realized_volatility_24h_pct": 4.23994,
+        "perp_ret_1h_pct": 0.154385,
+        "perp_ret_24h_pct": 0.079706,
+        "perp_ret_6h_pct": 0.8995,
+        "perp_ret_7d_pct": -1.84835,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.5156,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "NIGHT",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "NIGHT-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "NIGHT"
+    },
+    {
+      "cmc100_weight": 0.04,
+      "cmc_id": 39125,
+      "cmc_quote": {
+        "market_cap_usd": 870871934.38,
+        "price_usd": 3.4834877,
+        "quote_last_updated_utc": "2026-11-07T03:09:05.000Z",
+        "ret_1h_pct": 0.7550027,
+        "ret_24h_pct": 0.9440076,
+        "ret_7d_pct": 26.104579,
+        "volume_24h_usd": 73780633.96,
+        "volume_change_24h_pct": -36.8039686
+      },
+      "name": "Lighter",
+      "perp_market": {
+        "bars_available": 199,
+        "estimated_next_funding_rate_fraction": 5e-05,
+        "funding_quote_time_utc": "2026-11-07T03:10:14.597Z",
+        "kline_last_close_utc": "2026-11-07T02:59:59.999Z",
+        "oi_notional_unit": "USD",
+        "oi_observed_utc": "2026-11-07T03:10:49.713Z",
+        "oi_usd": 24622894.06,
+        "perp_closed_24h_quote_volume": 62482022.97,
+        "perp_realized_volatility_24h_pct": 7.10163,
+        "perp_ret_1h_pct": 0.326335,
+        "perp_ret_24h_pct": 0.523742,
+        "perp_ret_6h_pct": 4.531504,
+        "perp_ret_7d_pct": 25.315634,
+        "perp_taker_imbalance_24h": null,
+        "perp_volume_ratio_24h_vs_prior24h": 0.6105,
+        "source_exchange": "OKX",
+        "source_type": "EXCHANGE_MARKET_DATA_PROXY"
+      },
+      "perpetual": {
+        "base_asset": "LIT",
+        "contract_type": "SWAP",
+        "exchange": "OKX",
+        "execution_reference": "RESEARCH_PROXY_NOT_BINANCE",
+        "mapping": "EXACT_BASE_ASSET_OKX",
+        "quote_asset": "USDT",
+        "symbol": "LIT-USDT-SWAP",
+        "trading_status": "live"
+      },
+      "symbol": "LIT"
+    }
+  ],
+  "coverage": {
+    "alternative_closed_bars_fresh_125min": 77,
+    "alternative_funding_quote": 77,
+    "alternative_hourly_klines": 77,
+    "alternative_oi_change_24h": 0,
+    "alternative_oi_current_usd": 77,
+    "alternative_provider": "OKX",
+    "binance_closed_bars_fresh_125min": 0,
+    "binance_estimated_funding_fresh_125min": 0,
+    "binance_hourly_klines": 0,
+    "binance_oi_fresh_125min": 0,
+    "binance_open_interest_history": 0,
+    "binance_usd_m_exact_contract_mapping": 0,
+    "bybit_linear_exact_contract_mapping": 0,
+    "cmc_usd_quote_count": 100,
+    "cmc_usd_quotes_fresh_90min": 100,
+    "official_cmc100_verified": 100,
+    "okx_swap_exact_contract_mapping": 77
+  },
+  "index": {
+    "last_update": "2026-11-07T03:10:00.000Z",
+    "source": "official_coinmarketcap_cmc100_keyless_api",
+    "source_url": "https://pro-api.coinmarketcap.com/public-api/v3/index/cmc100-latest",
+    "verified_constituents": 100
+  },
+  "market_context": {
+    "coingecko_global": {
+      "active_cryptocurrencies": 22839,
+      "ended_icos": 3376,
+      "fear_and_greed_index": {
+        "sentiment": "fear",
+        "value": 41
+      },
+      "market_cap_change_percentage_24h_usd": -2.739852673723108,
+      "market_cap_percentage": {
+        "bnb": 3.546777322294524,
+        "btc": 59.272960283219746,
+        "eth": 10.643390920425311,
+        "figr_heloc": 1.0430052868770503,
+        "sol": 2.071101786787458,
+        "trx": 1.1697611759908344,
+        "usdc": 2.7290985456661714,
+        "usdt": 6.858586807736615,
+        "xrp": 2.876336678378708,
+        "zec": 0.8898101285908769
+      },
+      "markets": 1522,
+      "ongoing_icos": 49,
+      "total_market_cap": {
+        "aed": 9460103740768.236,
+        "ars": 3976815256083862.5,
+        "aud": 3747934446391.194,
+        "bch": 9818944835.53947,
+        "bdt": 320756033979750.8,
+        "bhd": 971894948701.0328,
+        "bits": 33934560332718.92,
+        "bmd": 2575579564597.9404,
+        "bnb": 3707903044.0772433,
+        "brl": 14175861144568.832,
+        "btc": 33934560.33271892,
+        "cad": 3635816892364.682,
+        "chf": 2113183189786.1077,
+        "clp": 2517963849737884.5,
+        "cny": 17192251151647.709,
+        "czk": 56236363224235.47,
+        "dkk": 17278275509105.281,
+        "dot": 2846586021678.803,
+        "eos": 32285730125068.14,
+        "eth": 1148110549.756905,
+        "eur": 2310681206379.0425,
+        "gbp": 1928261728207.1045,
+        "gel": 6683628970131.654,
+        "hkd": 20198081282511.742,
+        "huf": 839638938058928.6,
+        "idr": 4.663988254552181e+16,
+        "ils": 8205551812750.398,
+        "inr": 242226211264747.56,
+        "jpy": 408139333227708.1,
+        "krw": 3512575410198668.5,
+        "kwd": 800585425120.9299,
+        "link": 238831308865.44766,
+        "lkr": 856386796136920.8,
+        "ltc": 49285671660.42233,
+        "mmk": 5408588306677443.0,
+        "mxn": 47971045087688.59,
+        "myr": 10460716401614.533,
+        "ngn": 3469846545221991.0,
+        "nok": 24364725123140.06,
+        "nzd": 4644032664085.676,
+        "php": 162544818595037.3,
+        "pkr": 712238634087426.4,
+        "pln": 10162575037955.37,
+        "rub": 211005829061197.25,
+        "sar": 9670515713298.064,
+        "sats": 3393456033271892.5,
+        "sek": 25484072001914.324,
+        "sgd": 3303438349553.3184,
+        "sol": 28534697667.918186,
+        "thb": 86330016937979.44,
+        "try": 129142920500272.55,
+        "twd": 84415392903566.88,
+        "uah": 116666027537592.86,
+        "usd": 2575579564597.9404,
+        "vef": 2.3085330648478263e+20,
+        "vnd": 6.614903808585759e+16,
+        "xag": 49578515805.54547,
+        "xau": 633438038.1172175,
+        "xdr": 1887683472166.864,
+        "xlm": 16881540676763.021,
+        "xrp": 2208246601673.978,
+        "yfi": 1296249026.4748325,
+        "zar": 42544633770424.13
+      },
+      "total_volume": {
+        "aed": 249392468037.7544,
+        "ars": 104838995303069.23,
+        "aud": 98805113267.53261,
+        "bch": 258852434.72635442,
+        "bdt": 8455947328302.312,
+        "bhd": 25621630224.352467,
+        "bits": 894601579968.0425,
+        "bmd": 67898847818.60996,
+        "bnb": 97749783.37944011,
+        "brl": 373711863451.2382,
+        "btc": 894601.5799680424,
+        "cad": 95849408523.14073,
+        "chf": 55708899770.8871,
+        "clp": 66379950592907.66,
+        "cny": 453231599074.00323,
+        "czk": 1482533997753.0474,
+        "dkk": 455499420591.1449,
+        "dot": 75043269384.97173,
+        "eos": 851134209405.3768,
+        "eth": 30267123.00734297,
+        "eur": 60915451320.46593,
+        "gbp": 50833898295.20653,
+        "gel": 176197510089.29282,
+        "hkd": 532472949420.71216,
+        "huf": 22135024388866.848,
+        "idr": 1229546285723298.5,
+        "ils": 216319278759.5485,
+        "inr": 6385700866092.635,
+        "jpy": 10759594017800.451,
+        "krw": 92600448655020.19,
+        "kwd": 21105474159.39326,
+        "link": 6296202578.197545,
+        "lkr": 22576540652839.375,
+        "ltc": 1299296036.3976905,
+        "mmk": 142584185476689.94,
+        "mxn": 1264639126229.8684,
+        "myr": 275771170415.2843,
+        "ngn": 91474006769709.52,
+        "nok": 642316310479.2683,
+        "nzd": 122428548299.43126,
+        "php": 4285096082135.9307,
+        "pkr": 18776427368488.625,
+        "pln": 267911403488.34546,
+        "rub": 5562651945680.573,
+        "sar": 254939464410.29575,
+        "sats": 89460157996804.25,
+        "sek": 671825149741.2363,
+        "sgd": 87087062212.14914,
+        "sol": 752247424.6709865,
+        "thb": 2275879480805.294,
+        "try": 3404536837621.507,
+        "twd": 2225405106909.287,
+        "uah": 3075614109639.574,
+        "usd": 67898847818.60996,
+        "vef": 6.085882082963361e+18,
+        "vnd": 1743857395079236.5,
+        "xag": 1307016155.1304197,
+        "xau": 16699042.632508934,
+        "xdr": 49764151947.82433,
+        "xlm": 445040478310.4183,
+        "xrp": 58215013822.11422,
+        "yfi": 34172431.16594432,
+        "zar": 1121585080726.274
+      },
+      "upcoming_icos": 0,
+      "updated_at": 1794020636,
+      "volume_change_percentage_24h_usd": -35.20640875339638
+    },
+    "defillama_top_chains_by_tvl": [
+      {
+        "name": "Ethereum",
+        "tvl_usd": 43381161743.96
+      },
+      {
+        "name": "Base",
+        "tvl_usd": 5768745439.71
+      },
+      {
+        "name": "Solana",
+        "tvl_usd": 5253993812.46
+      },
+      {
+        "name": "BSC",
+        "tvl_usd": 5077195464.75
+      },
+      {
+        "name": "Tron",
+        "tvl_usd": 5034098633.32
+      },
+      {
+        "name": "Bitcoin",
+        "tvl_usd": 4041552527.07
+      },
+      {
+        "name": "Hyperliquid L1",
+        "tvl_usd": 2462231534.0
+      },
+      {
+        "name": "Arbitrum",
+        "tvl_usd": 1436109389.36
+      },
+      {
+        "name": "Robinhood Chain",
+        "tvl_usd": 1076882052.19
+      },
+      {
+        "name": "Monad",
+        "tvl_usd": 951403339.09
+      },
+      {
+        "name": "Polygon",
+        "tvl_usd": 647945238.17
+      },
+      {
+        "name": "Avalanche",
+        "tvl_usd": 612350368.05
+      },
+      {
+        "name": "Arc",
+        "tvl_usd": 603921734.45
+      },
+      {
+        "name": "Plasma",
+        "tvl_usd": 480299591.1
+      },
+      {
+        "name": "Sui",
+        "tvl_usd": 441314146.59
+      },
+      {
+        "name": "OP Mainnet",
+        "tvl_usd": 411406450.38
+      },
+      {
+        "name": "Anubis",
+        "tvl_usd": 337634543.48
+      },
+      {
+        "name": "Stellar",
+        "tvl_usd": 215086114.39
+      },
+      {
+        "name": "Ink",
+        "tvl_usd": 188104928.61
+      },
+      {
+        "name": "Near",
+        "tvl_usd": 176531758.32
+      },
+      {
+        "name": "Flare",
+        "tvl_usd": 166521520.79
+      },
+      {
+        "name": "X Layer",
+        "tvl_usd": 150572843.12
+      },
+      {
+        "name": "Pharos",
+        "tvl_usd": 136201534.36
+      },
+      {
+        "name": "Provenance",
+        "tvl_usd": 126660469.93
+      },
+      {
+        "name": "Cronos",
+        "tvl_usd": 109979947.88
+      }
+    ]
+  },
+  "problems": [
+    "BINANCE_BLOCKED_AND_BYBIT_NOT_AVAILABLE_TRYING_OKX"
+  ],
+  "research_boundary": "Only measured public sources. No forecast scores, news conclusions, or executions. No claims of full crypto information coverage.",
+  "schema_version": "v0.4",
+  "snapshot_completed_utc": "2026-11-07T03:11:00Z",
+  "snapshot_started_utc": "2026-11-07T03:10:48Z",
+  "source_access_log": [
+    {
+      "api_error_code": "0",
+      "received_at_utc": "2026-11-07T03:10:48Z",
+      "request_started_utc": "2026-11-07T03:10:48Z",
+      "status": "OK",
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/index/cmc100-latest"
+    },
+    {
+      "api_error_code": "0",
+      "received_at_utc": "2026-11-07T03:10:48Z",
+      "request_started_utc": "2026-11-07T03:10:48Z",
+      "status": "OK",
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=1%2C2%2C52%2C74%2C131%2C328%2C512%2C1027%2C1321%2C1437%2C1659%2C1831%2C1839%2C1958%2C1975%2C2010%2C2011%2C2087%2C2280%2C2634%2C2694%2C3077%2C3155%2C3602%2C3635%2C3773%2C3794%2C3897%2C3957%2C4030%2C4269%2C4642%2C4705%2C4847%2C5176%2C5426%2C5488%2C5690%2C5805%2C5994&convert=USD&skip_invalid=true"
+    },
+    {
+      "api_error_code": "0",
+      "received_at_utc": "2026-11-07T03:10:48Z",
+      "request_started_utc": "2026-11-07T03:10:48Z",
+      "status": "OK",
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=6535%2C6538%2C6636%2C7083%2C7186%2C7226%2C7278%2C7950%2C8000%2C8526%2C8916%2C9481%2C10529%2C11092%2C11419%2C11840%2C11841%2C13502%2C16086%2C20396%2C20947%2C21159%2C21794%2C22691%2C22861%2C22974%2C23095%2C23149%2C24478%2C26997%2C27075%2C28081%2C28177%2C28298%2C28321%2C29210%2C29270%2C29420%2C29814%2C30171&convert=USD&skip_invalid=true"
+    },
+    {
+      "api_error_code": "0",
+      "received_at_utc": "2026-11-07T03:10:48Z",
+      "request_started_utc": "2026-11-07T03:10:48Z",
+      "status": "OK",
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=32196%2C33038%2C33251%2C34104%2C34466%2C35336%2C35491%2C35509%2C35697%2C36341%2C36507%2C36645%2C37263%2C38482%2C38590%2C38828%2C38849%2C38892%2C39064%2C39125&convert=USD&skip_invalid=true"
+    },
+    {
+      "error": "HTTP 451",
+      "received_at_utc": "2026-11-07T03:10:48Z",
+      "status": "ERROR",
+      "url": "https://fapi.binance.com/fapi/v1/exchangeInfo"
+    },
+    {
+      "error": "HTTP 451",
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "status": "ERROR",
+      "url": "https://fapi.binance.com/fapi/v1/premiumIndex"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://api.coingecko.com/api/v3/global"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://api.llama.fi/v2/chains"
+    },
+    {
+      "error": "HTTP 403",
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "status": "ERROR",
+      "url": "https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/instruments?instType=SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=XRP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=BTC-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=DASH-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=LTC-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:49Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=DOGE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=XRP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=DASH-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=DOGE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:49Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=LTC-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ETH-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=XLM-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ETC-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=BCH-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ZEC-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=XLM-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETC-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BCH-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ZEC-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=TRX-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=LINK-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=BNB-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ADA-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=XTZ-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=LINK-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=TRX-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BNB-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ADA-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:50Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=XTZ-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=QNT-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=CRO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=FIL-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=FET-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:50Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ATOM-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:51Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=QNT-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:51Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=CRO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:51Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=FIL-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:51Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=FET-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:51Z",
+      "request_started_utc": "2026-11-07T03:10:51Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ATOM-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:52Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=OKB-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:52Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ALGO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:52Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=HBAR-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:52Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=STX-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:52Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SOL-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=OKB-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ALGO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=HBAR-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=STX-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=RENDER-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=AVAX-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SHIB-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=RENDER-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=AVAX-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=CRV-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=NEAR-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SHIB-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=DOT-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=UNI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=CRV-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=INJ-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=NEAR-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=DOT-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=AAVE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=UNI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=INJ-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:53Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=LDO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=AAVE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=RAY-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ICP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PENDLE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:53Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=LDO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=RAY-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=GRAM-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ICP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PENDLE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=OP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=GRAM-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:54Z",
+      "request_started_utc": "2026-11-07T03:10:54Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=OP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:55Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=WLD-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:55Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ARB-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:55Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SUI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=WLD-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ONDO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ARB-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=APT-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=STRK-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ONDO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=TAO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=TIA-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=APT-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=STRK-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=BONK-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=TAO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=TIA-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SEI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PEPE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BONK-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ZRO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SPX-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SEI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:56Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PEPE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PYTH-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ZRO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SPX-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=POL-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:56Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=JUP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PYTH-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=AERO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=VIRTUAL-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=POL-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=JUP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ETHFI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=AERO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=VIRTUAL-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ENA-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETHFI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:57Z",
+      "request_started_utc": "2026-11-07T03:10:57Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ENA-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=HYPE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=SKY-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=WLFI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=MORPHO-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=SKY-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=WLFI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PENGU-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=TRUMP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=MORPHO-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=VVV-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PI-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PENGU-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=TRUMP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=ASTER-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=VVV-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PI-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PUMP-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=XPL-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=ASTER-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=CC-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:10:59Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=KITE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PUMP-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=XPL-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=PIEVERSE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=KITE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:10:59Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=CC-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=NIGHT-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=STABLE-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=PIEVERSE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/market/history-candles?instId=LIT-USDT-SWAP&bar=1H&limit=200"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=STABLE-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=NIGHT-USDT-SWAP"
+    },
+    {
+      "received_at_utc": "2026-11-07T03:11:00Z",
+      "request_started_utc": "2026-11-07T03:11:00Z",
+      "status": "OK",
+      "url": "https://www.okx.com/api/v5/public/funding-rate?instId=LIT-USDT-SWAP"
+    }
+  ],
+  "status": "DATA_PARTIAL"
+}
