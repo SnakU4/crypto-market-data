@@ -1,0 +1,39 @@
+name: CMC100 Expanded Evidence Discovery
+on:
+  workflow_dispatch:
+  schedule:
+    # 2 broad 100-coin runs/day; the evening pass precedes the 00:00 UTC forecast.
+    # Schedules are best-effort, not an exact time guarantee.
+    - cron: '18 11,23 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cmc100-expanded-evidence
+  cancel-in-progress: false
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test 100-coin wide discovery and 10k record archiving
+        run: python -m unittest discover -s tests -p 'test_expanded_discovery.py' -v
+      - name: Gather public CMC100 and adjacent-industry evidence
+        env:
+          DISCOVERY_WORKERS: '5'
+        run: python src/expanded_discovery.py
+      - name: Publish compressed full archive and audit
+        if: success()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/expanded_discovery/
+          if ! git diff --cached --quiet; then
+            git commit -m "Broad evidence $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

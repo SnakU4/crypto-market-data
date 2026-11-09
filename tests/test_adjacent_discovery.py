@@ -20,6 +20,30 @@ class DiscoveryTests(unittest.TestCase):
         return {'assets': assets, 'index': {'verified_constituents': 100},
                 'snapshot_completed_utc':'2026-11-09T02:00:00Z'}
 
+    def test_old_articles_stay_in_archive_but_not_active_index(self):
+        plan=d.plan(self.market())
+        hn=[q for q in plan if q[0].startswith('hn_')]
+        self.assertTrue(hn)
+        self.assertTrue(all('numericFilters=' in q[3] for q in hn))
+        old=(d.utcnow()-dt.timedelta(days=10))
+        class Mock:
+            def __init__(self):self.calls=[]
+            def get(self,ident,kind,target):
+                self.calls.append(dict(source_id=ident,transport_status='OK',observed_utc=d.iso(d.utcnow())))
+                if ident=='github_releases_bitcoin__bitcoin':
+                    return [{'name':'Old release','html_url':'https://github.com/example/repo/releases/old','published_at':d.iso(old)}]
+                if ident=='google_theme_QUANTUM_SECURITY':
+                    return b'<rss><channel><item><title>Fresh science</title><link>https://example.com/fresh</link></item></channel></rss>'
+                if ident.startswith('hn_'):return {'hits':[]}
+                if ident.startswith('bluesky_'):return {'posts':[]}
+                if ident.startswith('github_'):return []
+                return {'articles':[]} if kind=='json' else b'<rss><channel/></rss>'
+        out=d.consolidate(self.market(),Mock(),cap=10,workers=2)
+        self.assertEqual(out['status']['full_archive_leads'],2)
+        self.assertEqual(out['status']['read_index_leads'],1)
+        self.assertEqual(out['status']['index_older_than_7d_excluded'],1)
+        self.assertEqual(out['events'][0]['title'],'Fresh science')
+
     def test_open_ended_plan_and_targeted_queries(self):
         plans=d.plan(self.market(),None)
         self.assertGreater(len(plans),40)
