@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """No-key broad crypto-adjacent information discovery for the official CMC100.
 
-Public metadata only, conservative identity tagging, archived first observations.
-An open-ended *lead detector*, not a coin forecast or exhaustive internet search.
+Public research metadata and provider-supplied excerpts; no coin/sector-to-price mapping.
+Preserve all unique observed leads in an immutable PIT archive. Publish a diversified
+read index for the later AI investigation. Not a coin forecast or exhaustive search.
 Only Python standard library; individual requests are audited and failures nonfatal.
 """
 from __future__ import annotations
@@ -28,6 +29,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'docs'/'discovery'
 USER_AGENT='CMC100-Adjacent-Discovery/1.0 (public research, no credentials)'
 MAX_RESPONSE=5_000_000
+INDEX_CAP=500  # Bounds the AI read index; NEVER truncates the immutable full run archive.
 
 # Open registry: these are INITIAL SEARCH DIRECTIONS, not a taxonomy of all relevant signals.
 THEMES={
@@ -90,8 +92,6 @@ GITHUB_RELEASE_REPOS=[
  'pytorch/pytorch','huggingface/transformers','vllm-project/vllm',
  'NVIDIA/TensorRT-LLM','microsoft/quantum','hashicorp/vault',
 ]
-# Short/common tickers are never matched by bare word alone.
-AMBIGUOUS={'AI','ONE','PI','SOL','LINK','ATOM','OP','NEAR','IN','ON','CC','M','AMP','GAS','STABLE','SKY','HYPE','NIGHT','LIT','TRUMP','JUP','TAO','W','MOVE','FLOW','POL','GT','APT','SUI','TON','INJ'}
 STOPWORDS=set('the this that from with because about their after before into over under when where have more than new how not will may first ever across crypto blockchain bitcoin ethereum technology research open source using people company companies network systems large latest today tomorrow years government model models report news startup users token tokens future fund data world and for now all most some show study could should has had was were are its you your they our there they them being also'.split())
 
 
@@ -116,9 +116,22 @@ def key_url(u):
     if not isinstance(u,str) or not u.startswith(('http://','https://')):return None
     p=urllib.parse.urlsplit(u)
     if not p.netloc:return None
-    return urllib.parse.urlunsplit((p.scheme.lower(),p.netloc.lower(),p.path.rstrip('/'),'', ''))
+    # Preserve meaningful article identifiers (?id=123, ?p=123). Only strip tracking.
+    tracking={'fbclid','gclid','ref','ref_src','tracking','mc_cid','mc_eid','igshid'}
+    params=[(k,v) for k,v in urllib.parse.parse_qsl(p.query,keep_blank_values=True)
+            if not k.lower().startswith('utm_') and k.lower() not in tracking]
+    return urllib.parse.urlunsplit((p.scheme.lower(),p.netloc.lower(),p.path.rstrip('/'),
+                                    urllib.parse.urlencode(sorted(params)),''))
 
 def clean(text,limit=300):return re.sub(r'\s+',' ',html.unescape(str(text or ''))).strip()[:limit]
+
+
+def excerpt(text,limit=400):
+    """Small provider-distributed description/abstract, not copied article text."""
+    raw=html.unescape(str(text or ''))
+    raw=re.sub(r'<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>',' ',raw,flags=re.I|re.S)
+    raw=re.sub(r'<[^>]+>',' ',raw)
+    return clean(raw,limit)
 
 
 class HTTP:
@@ -154,24 +167,31 @@ def xml_items(payload,source,observed,limit=35):
         for x in list(element):
             k=x.tag.rsplit('}',1)[-1]
             if k=='link':link=link or x.get('href') or (x.text or '').strip()
-            if k in ('title','pubDate','published','updated','guid','id'):fields[k]=(x.text or '').strip()
+            if k in ('title','pubDate','published','updated','guid','id','description','summary','subtitle'):
+                fields[k]=(x.text or '').strip()
         title=clean(fields.get('title'))
         target=link or fields.get('guid') or fields.get('id')
         when=parse_time(fields.get('published') or fields.get('pubDate') or fields.get('updated'))
         if title and target and str(target).startswith('http'):
+            # Only RSS/Atom excerpts explicitly supplied by the publisher.
+            abstract=fields.get('summary') or fields.get('description') or fields.get('subtitle')
+            max_len=650 if source.startswith('arxiv_') else 360
             entries.append(dict(title=title,url=target,published_utc=iso(when) if when else None,
+                                excerpt=excerpt(abstract,max_len),context_origin='PUBLISHER_FEED_EXCERPT' if abstract else 'TITLE_ONLY',
                                 source_id=source,source_type='RSS',observed_utc=observed))
         if len(entries)>=limit:break
     return entries
 
-
 def hn_items(obj,source,observed):
-    return [{'title':clean(x.get('title')),'url':x.get('url') or 'https://news.ycombinator.com/item?id='+str(x.get('objectID')),
+    return [{'title':clean(x.get('title')),
+             'url':x.get('url') or 'https://news.ycombinator.com/item?id='+str(x.get('objectID')),
+             'discussion_url':'https://news.ycombinator.com/item?id='+str(x.get('objectID')),
              'published_utc':iso(p) if (p:=parse_time(x.get('created_at') or x.get('created_at_i'))) else None,
              'source_id':source,'source_type':'HN_DISCUSSION','observed_utc':observed,
-             'engagement':{'points':x.get('points'),'comments':x.get('num_comments')}} for x in (obj.get('hits') or [])[:35]
-            if isinstance(x,dict) and x.get('title')]
-
+             'excerpt':excerpt(x.get('story_text') or '',400),
+             'context_origin':'HN_SUBMITTED_STORY_TEXT' if x.get('story_text') else 'TITLE_ONLY',
+             'engagement':{'points':x.get('points'),'comments':x.get('num_comments')}}
+            for x in (obj.get('hits') or [])[:35] if isinstance(x,dict) and x.get('title')]
 
 def bluesky_items(obj,source,observed):
     ret=[]
@@ -187,7 +207,7 @@ def bluesky_items(obj,source,observed):
         ret.append({'title':text,'url':target,'published_utc':iso(when) if when else None,
                     'source_id':source,'source_type':'BLUESKY_POST','observed_utc':observed,
                     'engagement':{'likes':x.get('likeCount'),'reposts':x.get('repostCount'),'replies':x.get('replyCount')},
-                    'author_handle':handle})
+                    'author_handle':handle,'context_origin':'PUBLIC_POST_TEXT'})
     return ret
 
 
@@ -201,7 +221,8 @@ def gdelt_items(obj,source,observed):
         ret.append({'title':title,'url':target,'published_utc':iso(when) if when else None,
                     'source_id':source,'source_type':'GDELT_NEWS','observed_utc':observed,
                     'publication_time_basis':'GDELT_SEEN_TIME_NOT_ORIGINAL_PUBLISH_DATE',
-                    'source_domain':a.get('domain'),'language':a.get('language')})
+                    'source_domain':a.get('domain'),'language':a.get('language'),
+                    'context_origin':'TITLE_ONLY'})
     return ret
 
 
@@ -219,7 +240,9 @@ def github_items(obj,source,observed,limit=16):
                     'source_id':source,'source_type':'GITHUB_RELEASE_OR_ADVISORY','observed_utc':observed,
                     'repo':source.removeprefix('github_releases_') if source.startswith('github_releases_') else None,
                     'severity':item.get('severity') if source=='github_advisories' else None,
-                    'publication_time_basis':'GITHUB_PUBLISHED_AT_OR_CREATED_AT'})
+                    'publication_time_basis':'GITHUB_PUBLISHED_AT_OR_CREATED_AT',
+                    'excerpt':excerpt(item.get('body') or item.get('description'),520),
+                    'context_origin':'GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY' if (item.get('body') or item.get('description')) else 'TITLE_ONLY'})
     return out
 
 
@@ -227,16 +250,10 @@ def themes_for(text):
     return sorted([theme for theme,pattern in THEME_WORDS.items() if re.search(pattern,text,re.I)])
 
 
-def coins_for(text,assets):
-    # Candidate mentions only, never interpreted as a catalyst or directional effect.
-    hits=[];low=text.casefold()
-    for c in assets:
-        name=str(c.get('name') or '');symbol=str(c.get('symbol') or '').upper()
-        name_match=bool(len(name)>=5 and re.search(r'(?<!\w)'+re.escape(name.casefold())+r'(?!\w)',low))
-        cashtag=bool(re.search(r'(?<!\w)\$'+re.escape(symbol)+r'(?!\w)',text,re.I)) if symbol else False
-        if name_match or cashtag:hits.append(c['cmc_id'])
-    return sorted(set(hits))
-
+# Intentionally NO coin matching at collection time. Relevance and exposures are
+# hypotheses for a later AI investigation; even a headline without a ticker may
+# matter. CMC IDs are retained only in the separate market snapshot and in
+# anomaly-triggered search provenance, not used for selection or evidence scoring.
 
 def anomaly_coins(market,n=7):
     """Ex-ante *query priorities*, not forecast rankings.
@@ -294,11 +311,53 @@ def plan(market,previous=None):
     return specs
 
 
-def consolidate(market,network,previous=None,cap=500,workers=4):
+def balanced_index(all_events, source_families, cap=INDEX_CAP):
+    """Round-robin families AND sources; never use coin mentions or themes.
+
+    All source-derived events remain in the full immutable archive regardless
+    of this compact connector read index. Within each source, newest first.
+    """
+    if cap is None or cap<0:raise ValueError('cap must be nonnegative or None')
+    if cap==0:return []
+    by_family=defaultdict(lambda:defaultdict(list))
+    for item in all_events:
+        family=source_families.get(item['source_id'],'OTHER')
+        by_family[family][item['source_id']].append(item)
+    # Round-robin sources within family. Round-robin families across the whole index.
+    family_cursors={}
+    for fam,sources in by_family.items():
+        for v in sources.values():
+            v.sort(key=lambda a:(a.get('published_utc') or a.get('first_observed_utc') or '',a['event_id']),reverse=True)
+        family_cursors[fam]={'names':sorted(sources),'positions':{key:0 for key in sources},'rotation':0}
+    selected=[];added=set()
+    families=sorted(by_family)
+    while len(selected)<cap:
+        advanced=False
+        for fam in families:
+            cursor=family_cursors[fam];names=cursor['names']
+            if not names:continue
+            # Each visit picks one result from the next source with remaining entries.
+            for shift in range(len(names)):
+                idx=(cursor['rotation']+shift)%len(names);name=names[idx]
+                rows=by_family[fam][name];pos=cursor['positions'][name]
+                if pos>=len(rows):continue
+                cursor['positions'][name]+=1;cursor['rotation']=(idx+1)%len(names)
+                item=rows[pos]
+                if item['event_id'] not in added:
+                    selected.append(item);added.add(item['event_id'])
+                    advanced=True
+                break
+            if len(selected)>=cap:break
+        if not advanced:break
+    return selected
+
+
+def consolidate(market,network,previous=None,cap=INDEX_CAP,workers=4):
     assets=market.get('assets') or []
     if len(assets)!=100 or len(set(int(x['cmc_id']) for x in assets))!=100 or market.get('index',{}).get('verified_constituents')!=100:
         raise ValueError('Official CMC100 market snapshot requires 100 unique IDs')
     started=iso(utcnow());specs=plan(market,previous)
+    source_families={ident:family for ident,family,kind,target in specs}
     def job(spec):
         ident,family,kind,target=spec
         raw=network.get(ident,kind,target)
@@ -325,13 +384,13 @@ def consolidate(market,network,previous=None,cap=500,workers=4):
         if not when:missing_date+=1
         event_id=hashlib.sha256(canon.encode()).hexdigest()[:24]
         e['event_id']=event_id;e['title']=clean(e['title'])
+        e['source_family']=source_families.get(e['source_id'],'OTHER')
         e['publication_time_status']=('GDELT_FIRST_SEEN_NOT_PUBLISHED' if e['source_type']=='GDELT_NEWS' else
                                     'GITHUB_PUBLISHED_OR_CREATED' if e['source_type']=='GITHUB_RELEASE_OR_ADVISORY' else
                                     'VERIFIED_FEED_OR_PLATFORM') if when else 'UNKNOWN'
-        e['candidate_coin_ids']=coins_for(e['title'],assets)
-        e['theme_leads']=themes_for(e['title'])
-        e['direct_price_catalyst_verification']='NOT_VERIFIED'
-        e['price_direction']='UNKNOWN'
+        # Theme labels are optional search navigation; they never exclude or rank a lead.
+        e['theme_leads']=themes_for(e['title']+' '+e.get('excerpt',''))
+        e['coin_relevance_status']='NOT_ASSESSED_BY_COLLECTOR'
         e['first_observed_utc']=first_seen.get(event_id) or e['observed_utc']
         if event_id in all_events:
             old=all_events[event_id]
@@ -340,17 +399,20 @@ def consolidate(market,network,previous=None,cap=500,workers=4):
         else:
             e['discovered_via']=[e['source_id']];all_events[event_id]=e
     all_sorted=sorted(all_events.values(),key=lambda a:(a['published_utc'] or a['first_observed_utc'],a['event_id']),reverse=True)
-    events=all_sorted[:cap]
+    # Archive ALL deduplicated eligible leads; only the connector index is bounded.
+    events=balanced_index(all_sorted,source_families,cap)
     first_seen.update({e['event_id']:e['first_observed_utc'] for e in all_sorted})
-    coin_counts=Counter(str(cid) for e in events for cid in e['candidate_coin_ids'])
     theme_counts=Counter(t for e in events for t in e['theme_leads'])
+    family_full=Counter(source_families.get(e['source_id'],'OTHER') for e in all_sorted)
+    family_index=Counter(source_families.get(e['source_id'],'OTHER') for e in events)
+    source_full=Counter(e['source_id'] for e in all_sorted)
+    source_index=Counter(e['source_id'] for e in events)
     source_rows=[];by_source={c['source_id']:c for c in network.calls}
     for ident,family,kind,target in specs:
         call=by_source.get(ident) or {}
         source_rows.append({'source_id':ident,'family':family,'transport_status':call.get('transport_status','UNOBSERVED'),
                             'valid_leads':parsed[ident],'url':target,'error':call.get('error'),
                             'observed_utc':call.get('observed_utc')})
-    statuses={s['source_id']:s for s in source_rows}
     # No fabricated X/Reddit coverage. This is a proper API integration backlog, not a proxy claim.
     gaps=[{'channel':'X_TWITTER','status':'NOT_COLLECTED','reason':'NO_VALIDATED_FREE_OFFICIAL_HIGH_COVERAGE_API'},
           {'channel':'REDDIT','status':'NOT_COLLECTED','reason':'PUBLIC_API_APP_AUTHORIZATION_NEEDED;RSS_RETIRES_2026-11-13'},
@@ -363,43 +425,55 @@ def consolidate(market,network,previous=None,cap=500,workers=4):
             'sources_returning_leads':sum(s['valid_leads']>0 for s in source_rows),
             'sources_no_valid_leads':[s['source_id'] for s in source_rows if s['valid_leads']==0],
             'raw_leads':len(findings),'unique_leads_before_cap':len(all_sorted),
-            'unique_leads_stored':len(events),'leads_with_coin_candidate':sum(bool(e['candidate_coin_ids']) for e in events),
-            'unique_coins_with_candidate':len(coin_counts),
+            'unique_leads_stored':len(events), # LEGACY: index count, not full archive size
+            'full_archive_leads':len(all_sorted),'read_index_leads':len(events),
+            'read_index_capacity':cap,'read_index_selection':'FAMILY_AND_SOURCE_BALANCED_NO_COIN_MATCH',
+            'coin_matching_performed':False,
+            'read_index_source_counts':dict(source_index),'full_archive_source_counts':dict(source_full),
+            'read_index_family_counts':dict(family_index),'full_archive_family_counts':dict(family_full),
+            'full_archive_excerpts_available':sum(bool(e.get('excerpt')) for e in all_sorted),
+            'read_index_excerpts_available':sum(bool(e.get('excerpt')) for e in events),
             'leads_with_themes':sum(bool(e['theme_leads']) for e in events),
             'theme_lead_counts':dict(theme_counts),
             'future_dated_excluded':future_count,'unverified_publication_dates':missing_date,
-            'discovery_limits':['HEADLINES_AND_PUBLIC_POST_EXCERPTS_NOT_FULL_ARTICLE_TEXT',
-                                 'THEME_IS_NOT_A_VERIFIED_COIN_CATALYST','COIN_MENTIONS_ARE_UNVERIFIED_CANDIDATES',
-                                 'NO_DETERMINISTIC_THEME_TO_COIN_ALPHA_MAPPING','NO_PRICE_FORECASTING',
-                                 'MAXIMUM_RECORDS_BOUNDED_TO_CONTROL_GITHUB_SIZE'],
+            'discovery_limits':['PROVIDER_DISTRIBUTED_EXCERPTS_NOT_FULL_ARTICLES',
+                                 'THEMES_ARE_NAVIGATION_NOT_PRIORITIZATION','NO_COIN_ENTITY_LINKING',
+                                 'NO_PREDICTION','FINITE_PER_SOURCE_API_REQUEST_RESULTS',
+                                 'NO_FULL_INTERNET_COVERAGE','ARCHIVE_GIT_SIZE_MUST_BE_MONITORED'],
             'access_gaps':gaps,'source_audit':source_rows}
-    return {'schema_version':'adjacent-discovery-v1','status':status,'events':events,
-            'first_seen':first_seen,'query_plan':[{'source_id':i,'family':f,'kind':k,'url':u} for i,f,k,u in specs],
-            'per_coin_candidate_counts':dict(coin_counts)}
+    return {'schema_version':'adjacent-discovery-v2','status':status,'events':events,
+            'all_events':all_sorted,'first_seen':first_seen,
+            'query_plan':[{'source_id':i,'family':f,'kind':k,'url':u} for i,f,k,u in specs]}
 
 
 def write_bundle(data,out=OUT):
     out.mkdir(parents=True,exist_ok=True)
-    for key,name in [('status','status.json')]:
-        (out/name).write_text(json.dumps(data[key],ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf8')
-    # Provide a compact text-only latest record for connector ingestion, plus JSON audit.
-    compact={k:v for k,v in data.items() if k!='first_seen'}
-    (out/'latest.json').write_text(json.dumps(compact,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n',encoding='utf8')
-    (out/'first_seen.json').write_text(json.dumps(data['first_seen'],ensure_ascii=False,sort_keys=True)+'\n',encoding='utf8')
-    columns=['event_id','source_id','source_type','title','url','published_utc','publication_time_status',
-             'first_observed_utc','candidate_coin_ids','theme_leads','direct_price_catalyst_verification']
-    with (out/'leads.csv').open('w',newline='',encoding='utf-8') as f:
-        w=csv.DictWriter(f,fieldnames=columns,extrasaction='ignore');w.writeheader()
-        for e in data['events']:
-            r=dict(e);r['candidate_coin_ids']=';'.join(map(str,r['candidate_coin_ids']))
-            r['theme_leads']=';'.join(r['theme_leads']);w.writerow(r)
-    ts=(data['status']['capture_started_utc']).replace(':','').replace('-','')
+    ts=data['status']['capture_started_utc'].replace(':','').replace('-','')
     day=ts[:8];archive=out/'archive'/day/(ts+'_discovery.json')
     archive.parent.mkdir(parents=True,exist_ok=True)
     if archive.exists():raise FileExistsError('Immutable discovery archive already exists: '+str(archive))
-    archive.write_text(json.dumps({'status':data['status'],'events':data['events']},ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf8')
+    full=data['all_events']
+    data['status']['full_archive_path']=archive.relative_to(ROOT).as_posix() if archive.is_relative_to(ROOT) else str(archive)
+    archive_payload={'schema_version':data['schema_version'], 'status':data['status'],
+                     'events':full,'query_plan':data['query_plan']}
+    archive.write_text(json.dumps(archive_payload,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n',encoding='utf8')
+    # The index is a connector-friendly selection. The full archive is never capped.
+    (out/'status.json').write_text(json.dumps(data['status'],ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf8')
+    compact={k:v for k,v in data.items() if k not in ('first_seen','all_events')}
+    (out/'latest.json').write_text(json.dumps(compact,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n',encoding='utf8')
+    (out/'first_seen.json').write_text(json.dumps(data['first_seen'],ensure_ascii=False,sort_keys=True)+'\n',encoding='utf8')
+    columns=['event_id','source_id','source_family','source_type','title','excerpt','context_origin','url','published_utc',
+             'publication_time_status','first_observed_utc','discovered_via','theme_leads','coin_relevance_status']
+    def store_csv(path,rows):
+        with path.open('w',newline='',encoding='utf-8') as f:
+            w=csv.DictWriter(f,fieldnames=columns,extrasaction='ignore');w.writeheader()
+            for e in rows:
+                r=dict(e);r['theme_leads']=';'.join(r['theme_leads'])
+                r['discovered_via']=';'.join(r.get('discovered_via') or [])
+                w.writerow(r)
+    store_csv(out/'leads.csv',full)
+    store_csv(out/'read_index.csv',data['events'])
     return archive
-
 
 def main():
     market_path=ROOT/'docs'/'latest.json'
@@ -417,7 +491,7 @@ def main():
         except (ValueError,OSError):pass
     data=consolidate(market,HTTP(),previous)
     archive=write_bundle(data)
-    print(json.dumps({'status':'RECORDED','archive':str(archive),**{k:v for k,v in data['status'].items() if k in ('attempted_source_requests','successful_transport','sources_returning_leads','unique_leads_stored','unique_coins_with_candidate')}},indent=2))
+    print(json.dumps({'status':'RECORDED','archive':str(archive),**{k:v for k,v in data['status'].items() if k in ('attempted_source_requests','successful_transport','sources_returning_leads','read_index_leads','full_archive_leads','coin_matching_performed')}},indent=2))
     # Partial sources are not a failure; audit always makes them visible.
     return 0
 
