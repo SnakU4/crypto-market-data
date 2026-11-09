@@ -1,0 +1,35 @@
+name: Cross-Sector Crypto Discovery
+on:
+  workflow_dispatch:
+  schedule:
+    # Four public-source passes per day; no guarantee of exact start time.
+    - cron: '13 0,6,12,18 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cmc100-cross-sector-discovery
+  cancel-in-progress: false
+jobs:
+  public-discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test discovery logic
+        run: python -m unittest discover -s tests -p 'test_adjacent_discovery.py' -v
+      - name: Collect technical, social and cross-sector public research leads
+        run: python src/adjacent_discovery.py
+      - name: Commit independent PIT research observations
+        if: success()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/discovery/
+          if ! git diff --cached --quiet; then
+            git commit -m "Cross-sector research $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
