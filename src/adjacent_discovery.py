@@ -291,10 +291,11 @@ def plan(market,previous=None):
     for ident,family,target in STATIC_FEEDS:specs.append((ident,family,'xml',target))
     # Separate discovery channels: technology media, broad news search, developer social posts,
     # specialized technical discussions, worldwide news monitoring. Theme list is extendable.
+    hn_cutoff_unix=int((utcnow()-dt.timedelta(days=7)).timestamp())
     for idx,(name,phrases) in enumerate(THEMES.items()):
         q=phrases[0]
         specs.append((f'google_theme_{name}','MULTISECTOR_NEWS','xml',url('https://news.google.com/rss/search',{'q':q+' when:2d','hl':'en-US','gl':'US','ceid':'US:en'})))
-        if idx<11:specs.append((f'hn_theme_{name}','DEVELOPER_DISCUSSIONS','json',url('https://hn.algolia.com/api/v1/search_by_date',{'query':phrases[1],'tags':'story','hitsPerPage':'35'})))
+        if idx<11:specs.append((f'hn_theme_{name}','DEVELOPER_DISCUSSIONS','json',url('https://hn.algolia.com/api/v1/search_by_date',{'query':phrases[1],'tags':'story','hitsPerPage':'35','numericFilters':f'created_at_i>{hn_cutoff_unix}'})))
         if idx<9:specs.append((f'bluesky_theme_{name}','SOCIAL_DISCUSSIONS','json',url('https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts',{'q':name.replace('_',' ').lower(),'sort':'latest','limit':'35'})))
         if idx<3:specs.append((f'gdelt_theme_{name}','WORLD_NEWS','json',url('https://api.gdeltproject.org/api/v2/doc/doc',{'query':phrases[1],'mode':'ArtList','format':'json','maxrecords':'50','timespan':'2d'})))
     for repo in GITHUB_RELEASE_REPOS:
@@ -400,7 +401,11 @@ def consolidate(market,network,previous=None,cap=INDEX_CAP,workers=4):
             e['discovered_via']=[e['source_id']];all_events[event_id]=e
     all_sorted=sorted(all_events.values(),key=lambda a:(a['published_utc'] or a['first_observed_utc'],a['event_id']),reverse=True)
     # Archive ALL deduplicated eligible leads; only the connector index is bounded.
-    events=balanced_index(all_sorted,source_families,cap)
+    # Keep historical evidence in the full archive, never surface stale stories as
+    # current 24h catalysts simply to fill the balanced connector index.
+    cutoff_for_index=capture_time-dt.timedelta(days=7)
+    fresh_for_index=[e for e in all_sorted if (parse_time(e.get('published_utc')) or parse_time(e['first_observed_utc']))>=cutoff_for_index]
+    events=balanced_index(fresh_for_index,source_families,cap)
     first_seen.update({e['event_id']:e['first_observed_utc'] for e in all_sorted})
     theme_counts=Counter(t for e in events for t in e['theme_leads'])
     family_full=Counter(source_families.get(e['source_id'],'OTHER') for e in all_sorted)
@@ -427,7 +432,8 @@ def consolidate(market,network,previous=None,cap=INDEX_CAP,workers=4):
             'raw_leads':len(findings),'unique_leads_before_cap':len(all_sorted),
             'unique_leads_stored':len(events), # LEGACY: index count, not full archive size
             'full_archive_leads':len(all_sorted),'read_index_leads':len(events),
-            'read_index_capacity':cap,'read_index_selection':'FAMILY_AND_SOURCE_BALANCED_NO_COIN_MATCH',
+            'read_index_capacity':cap,'read_index_selection':'FAMILY_AND_SOURCE_BALANCED_RECENT_7D_NO_COIN_MATCH',
+            'index_older_than_7d_excluded':len(all_sorted)-len(fresh_for_index),'index_max_age_days':7,
             'coin_matching_performed':False,
             'read_index_source_counts':dict(source_index),'full_archive_source_counts':dict(source_full),
             'read_index_family_counts':dict(family_index),'full_archive_family_counts':dict(family_full),
