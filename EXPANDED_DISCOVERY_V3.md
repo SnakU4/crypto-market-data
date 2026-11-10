@@ -1,3 +1,5 @@
+> **Update (2026-11-10):** Stage-1 content-depth and daily-novelty improvements are documented in [EXPANDED_DISCOVERY_V4.md](EXPANDED_DISCOVERY_V4.md). This v3 description is retained for historical provenance.
+
 # CMC100 Expanded Evidence Discovery v3 — **Stage 1, not forecasting**
 
 ## Purpose
