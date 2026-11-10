@@ -62,6 +62,13 @@ jobs:
               assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']
               assert sum(1 for _ in p.open())==item['count']
           assert manifest['verified_9_out_of_10'] is False
+          assert manifest['context_handoff']['front_layer_bytes'] < 650000, 'LLM attention budget too large'
+          item=manifest['full_text_export_for_actions_artifact']['coin_deep_dive']
+          deep=root/'export'/'coin_deep_dive_complete.jsonl'
+          assert deep.exists()
+          assert hashlib.sha256(deep.read_bytes()).hexdigest()==item['sha256']
+          assert sum(1 for _ in deep.open())==100
+          assert not manifest['context_handoff']['front_layer_is_full_raw_evidence']
           print('V8 ACCEPTED: 100 coins; complete raw archives SHA-verified; '
                 +str(structured)+' structured rows; '
                 +str(manifest['pit_record_filter']['discovery']['asof_eligible'])
