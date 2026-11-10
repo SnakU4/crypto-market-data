@@ -104,6 +104,26 @@ PROJECT_PRIMARY_FEEDS = (
     ('github_polkadot','https://github.com/paritytech/polkadot-sdk/releases.atom'),
     ('github_cosmos','https://github.com/cosmos/gaia/releases.atom'),
     ('github_optimism','https://github.com/ethereum-optimism/optimism/releases.atom'),
+    ('github_chainlink','https://github.com/smartcontractkit/chainlink/releases.atom'),
+    ('github_avalanchego','https://github.com/ava-labs/avalanchego/releases.atom'),
+    ('github_cardano','https://github.com/IntersectMBO/cardano-node/releases.atom'),
+    ('github_stellar','https://github.com/stellar/stellar-core/releases.atom'),
+    ('github_rippled','https://github.com/XRPLF/rippled/releases.atom'),
+    ('github_near','https://github.com/near/nearcore/releases.atom'),
+    ('github_sui','https://github.com/MystenLabs/sui/releases.atom'),
+    ('github_aptos','https://github.com/aptos-labs/aptos-core/releases.atom'),
+    ('github_litecoin','https://github.com/litecoin-project/litecoin/releases.atom'),
+    ('github_dogecoin','https://github.com/dogecoin/dogecoin/releases.atom'),
+    ('github_zcash','https://github.com/zcash/zcash/releases.atom'),
+    ('github_monero','https://github.com/monero-project/monero/releases.atom'),
+    ('github_polygon','https://github.com/0xPolygon/bor/releases.atom'),
+    ('github_stacks','https://github.com/stacks-network/stacks-core/releases.atom'),
+    ('github_sei','https://github.com/sei-protocol/sei-chain/releases.atom'),
+    ('github_injective','https://github.com/InjectiveLabs/injective-core/releases.atom'),
+    ('github_celestia','https://github.com/celestiaorg/celestia-node/releases.atom'),
+    ('github_helium','https://github.com/helium/gateway-rs/releases.atom'),
+    ('github_ondo','https://github.com/ondoprotocol/ondo-v1/releases.atom'),
+    ('github_ethconsensus','https://github.com/ethereum/consensus-specs/releases.atom'),
 )
 # Public issuer/standards/security feeds and non-crypto technology sources.
 ADDITIONAL_FEEDS = (
@@ -386,7 +406,12 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
     all_events,future,old=merge_records(findings,seen,cutoff,now_utc)
     all_events.sort(key=lambda e:(e['published_utc'] or e['first_observed_utc'],e['event_id']),reverse=True)
     new_events=[e for e in all_events if e['event_id'] not in seen]
-    quality=enrich(all_events, max_articles=(max(0,min(200,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','80')))) if isinstance(network,HTTP) else 0))
+    for e in all_events:
+        e['previously_seen'] = e['event_id'] in seen
+    quality=enrich(
+        all_events,
+        max_articles=(max(0,min(450,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','320')))) if isinstance(network,HTTP) else 0),
+        max_resolutions=(max(0,min(200,int(os.environ.get('DISCOVERY_RESOLUTION_BUDGET','120')))) if isinstance(network,HTTP) else 0))
     # Distinguish newly observed URLs from distinct headlines and information.
     historic_titles={e['story_title_hash'] for e in all_events if e['event_id'] in seen}
     new_title_clusters={e['story_title_hash'] for e in new_events if e['story_title_hash'] not in historic_titles}
@@ -424,6 +449,8 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         'first_run_baseline':not bool(seen),
         'new_urls_by_source_family':dict(Counter(f for e in new_events for f in e['source_families'])),
         'information_quality':quality,
+        'full_text_acquisition_performed':False,
+        'secondary_enrichment_policy':'ROBOTS_RESPECTING_BOUNDED_EXCERPT',
         'distinct_story_title_hashes':len({x['story_title_hash'] for x in all_events}),
         'target_unique_per_run':TARGET_UNIQUE,'target_met':len(all_events)>=TARGET_UNIQUE,
         'target_shortfall':max(0,TARGET_UNIQUE-len(all_events)),
