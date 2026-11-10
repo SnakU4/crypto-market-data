@@ -109,6 +109,17 @@ class PackTests(unittest.TestCase):
         coin_json=self.root/"docs/research_pack/coin_batches/batch_01.json"
         self.assertEqual(len(json.loads(coin_json.read_text())["coins"]),20)
 
+    def test_compact_attention_budget_preserves_full_deep_dive(self):
+        value=build(self.root,CUTOFF)
+        man=publish(value,self.root)
+        self.assertLess(man["context_handoff"]["front_layer_bytes"],650000)
+        self.assertFalse(man["context_handoff"]["front_layer_is_full_raw_evidence"])
+        self.assertEqual(man["full_text_export_for_actions_artifact"]["coin_deep_dive"]["count"],100)
+        path=self.root/"docs/research_pack/export/coin_deep_dive_complete.jsonl"
+        self.assertEqual(len(path.read_text().splitlines()),100)
+        compact=self.root/"docs/research_pack/coin_batches/batch_01.json"
+        self.assertEqual(len(json.loads(compact.read_text())["coins"]),20)
+
     def test_wrong_checksum_fails_closed(self):
         self.engine_archive.write_bytes(self.engine_archive.read_bytes()+b"x")
         with self.assertRaisesRegex(ValueError,"UNVERIFIED_ARCHIVE"):
