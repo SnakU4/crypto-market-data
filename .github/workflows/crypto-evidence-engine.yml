@@ -1,0 +1,36 @@
+name: Crypto Evidence Engine - Structured Sources
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 11,23 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: crypto-structured-evidence
+  cancel-in-progress: false
+jobs:
+  structured:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline engine tests
+        run: |
+          python -m compileall -q src/crypto_evidence_engine.py tests/test_crypto_evidence_engine.py
+          python -m unittest discover -s tests -p 'test_crypto_evidence_engine.py' -v
+      - name: Fetch public structured evidence
+        run: python src/crypto_evidence_engine.py
+      - name: Publish independent immutable snapshots
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/evidence_engine/
+          if ! git diff --cached --quiet; then
+            git commit -m "Structured evidence $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
