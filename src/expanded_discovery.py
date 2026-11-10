@@ -539,6 +539,8 @@ def write_bundle(bundle,out=OUT):
         'new_title_clusters_within_run':status.get('incremental_new_title_clusters_within_run',0),
         'new_urls_with_substantive_context':status.get('incremental_new_urls_with_substantive_context',0),
         'distinct_url_leads':status.get('distinct_url_leads',0),
+        'quality_score_out_of_10':status.get('stage1_quality_scorecard',{}).get('score_out_of_10'),
+        'eligible_for_9_out_of_10':status.get('stage1_quality_scorecard',{}).get('eligible_for_9_out_of_10',False),
         'substantive_excerpts':status.get('information_quality',{}).get('substantive_excerpts',0),
         'article_fetch_attempted':status.get('information_quality',{}).get('article_fetch_attempted',0),
         'google_news_resolution_attempted':status.get('information_quality',{}).get('google_news_resolution_attempted',0),
@@ -555,6 +557,27 @@ def write_bundle(bundle,out=OUT):
     write_json(metrics_path,{'schema_version':'expanded-daily-metrics-v1','runs':runs,'days':days,
         'caveat':'URL novelty only versus rolling 14-day registry; initial baseline not organic daily flow'})
     status['daily_metrics_path']=str((metrics_path.relative_to(ROOT) if metrics_path.is_relative_to(ROOT) else metrics_path.relative_to(out)))
+    # Compact evidence-oriented triage subset; NOT a verified coin/event corpus.
+    qualified=[e for e in bundle['events'] if e.get('excerpt_adds_information') or
+               e.get('evidence_class') in ('PRIMARY_GOVERNANCE_EVENT',
+                                            'PRIMARY_SECURITY_CATALOG_ENTRY',
+                                            'DERIVATIVE_MARKET_OBSERVATION')]
+    qualified.sort(key=lambda e:(
+        e.get('previously_seen',False),
+        not bool(e.get('direct_primary')),
+        not bool(e.get('candidate_fact_spans')),
+        e.get('published_utc') or e.get('first_observed_utc') or '',
+        e['event_id']))
+    write_json(out/'evidence_candidates.json',{
+        'schema_version':'stage1-evidence-candidates-v1',
+        'capture_utc':status['capture_utc'],
+        'selection':'SUBSTANTIVE_EXCERPT_OR_PRIMARY_STRUCTURED_EVENT; NOT VERIFIED',
+        'total_qualifying':len(qualified),
+        'events':qualified[:600]})
+    write_json(out/'quality_scorecard.json',status.get('stage1_quality_scorecard',{}))
+    status['evidence_candidates_count']=len(qualified)
+    status['evidence_candidates_index_count']=min(600,len(qualified))
+    status['stage1_quality_scorecard_path']='docs/expanded_discovery/quality_scorecard.json'
     write_json(out/'status.json',status)
     write_json(out/'latest.json',{'schema_version':'expanded-discovery-v3','status':{k:v for k,v in status.items() if k not in ('query_count_per_coin','search_results_per_queried_coin','zero_result_coin_queries','source_error_examples')},
                                   'events':bundle['index']})
