@@ -255,6 +255,48 @@ def save(result,out=OUT):
     meta["stage1_9_of_10_verified"]=combined["certified_9_out_of_10"]
     def write_json(path,value):
         path.write_text(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":"))+"\n",encoding="utf8")
+    # New transaction hashes / scheduled rows are first OBSERVED, not newly
+    # announced or independently verified financial events.
+    prior_ids={e.get("observation_id") for e in prior["observations"]} if prior else set()
+    event_sources={"btc_recent_transactions","ethereum_recent_transactions",
+                   "patternplus_unlocks","patternplus_calendar"}
+    events=[]
+    for rec in result["observations"]:
+        if rec["source"] not in event_sources:continue
+        source=rec["source"]
+        item_id=rec["source_item_id"]
+        if source=="btc_recent_transactions":
+            evidence_url="https://mempool.space/tx/"+item_id
+            grade="PUBLIC_MEMPOOL_TX_SAMPLE_UNCONFIRMED"
+        elif source=="ethereum_recent_transactions":
+            evidence_url="https://eth.blockscout.com/tx/"+item_id
+            grade="PUBLIC_BLOCK_EXPLORER_TX_SAMPLE"
+        elif source=="patternplus_unlocks":
+            evidence_url="https://pattern.plus/api/v1/unlocks.json"
+            grade="DERIVED_UNLOCK_SCHEDULE_UNCORROBORATED"
+        else:
+            evidence_url="https://pattern.plus/api/v1/calendar.json"
+            grade="DERIVED_EVENT_CALENDAR_UNCORROBORATED"
+        events.append({"observation_id":rec["observation_id"],
+                       "source":source,"source_item_id":item_id,
+                       "first_observed_in_available_previous_comparison":rec["observation_id"] not in prior_ids,
+                       "baseline":prior is None,
+                       "evidence_grade":grade,"evidence_url":evidence_url,
+                       "attributes":rec.get("attributes",{}),
+                       "observed_utc":rec["observed_utc"],
+                       "identity_status":rec.get("coin_identity_status"),
+                       "cmc_id":rec.get("cmc_id"),
+                       "network_context_cmc_id":rec.get("network_context_cmc_id")})
+    write_json(out/"event_candidates.json",{
+        "schema_version":"structured-events-v1",
+        "capture_utc":meta["capture_utc"],
+        "total_event_candidates":len(events),
+        "first_observed_count":sum(e["first_observed_in_available_previous_comparison"] for e in events),
+        "baseline":prior is None,
+        "caveat":"UNLOCKS_AND_CALENDAR_DERIVED_NOT_OFFICIAL; NETWORK_TX_SAMPLES_NOT_100_COIN_WALLET_FLOWS",
+        "events":events[:300]})
+    meta["event_candidates_total"]=len(events)
+    meta["event_candidates_first_observed"]=sum(e["first_observed_in_available_previous_comparison"] for e in events)
     write_json(out/"integrated_quality_report.json",combined)
     write_json(out/"identity_audit.json",meta["identity_mapping"])
     write_json(out/"delta_candidates.json",{
