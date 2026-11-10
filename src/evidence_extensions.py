@@ -36,7 +36,7 @@ EXTRA_SOURCES = (
     {"key":"defillama_dex_volume","family":"DEFI_PROTOCOL_ACTIVITY",
      "url":"https://api.llama.fi/overview/dexs?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true","max_bytes":5_000_000},
     {"key":"defillama_fees","family":"DEFI_PROTOCOL_ACTIVITY",
-     "url":"https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true","max_bytes":5_000_000},
+     "url":"https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true","max_bytes":11_000_000},
 )
 
 def num(x):
