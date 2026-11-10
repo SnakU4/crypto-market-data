@@ -64,7 +64,9 @@ def evaluate(events, status):
       "non_search_family_share_at_least_30pct":nonsearch_ratio>=0.30,
       "structured_primary_events_observed":structured>=10,
       "all_required_evidence_families_present":all(root[k]>0 for k in
-          ("PROJECT_PRIMARY","PUBLIC_COMMUNITY","GOVERNANCE_EVENTS","SECURITY_EVENTS","DEFI_METRICS")),
+          ("PROJECT_PRIMARY","PUBLIC_COMMUNITY","GOVERNANCE_EVENTS","SECURITY_EVENTS","DEFI_METRICS","DERIVATIVES_METRICS")),
+      "derivatives_data_live":root["DERIVATIVES_METRICS"]>0,
+      "direct_onchain_and_tokenomics_sources_covered":False,
       "data_freshness_and_PIT_review_passed":False,
       "independent_corroboration_review_passed":False,
     }
@@ -79,4 +81,4 @@ def evaluate(events, status):
             "limitations":["QUERIED_COIN_NOT_VERIFIED_MATCH","FACT_SPANS_NOT_VERIFIED_CLAIMS",
                            "UNREVIEWED_PIT_AND_CORROBORATION_GATES_FAIL_CLOSED",
                            "STRUCTURED_TVL_OBSERVATIONS_NOT_PUBLICATION_TIME_EVENTS",
-                           "NO_DERIVATIVES_OR_ONCHAIN_COVERAGE_CLAIM_WITHOUT_LIVE_SOURCE"]}
+                           "NO_COMPREHENSIVE_DERIVATIVES_OR_ONCHAIN_COVERAGE_WITHOUT_LIVE_SOURCE"]}
