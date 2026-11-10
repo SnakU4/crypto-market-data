@@ -292,7 +292,7 @@ def publish(data,root=ROOT,out=None,full_export=True):
         "counts":{
             "coins":len(coverage),
             "with_anchored_okx":sum(x["anchored"]>0 for x in coverage),
-            "without_anchored_okx":sum(x["anchored_okx_observations"]==0 for x in coverage),
+            "without_anchored_okx":sum(x["anchored"]==0 for x in coverage),
             "with_unverified_cross_source_candidates":
                 sum(x["tentative"]>0 for x in coverage),
             "with_at_least_one_substantive_discovery_search_lead":
