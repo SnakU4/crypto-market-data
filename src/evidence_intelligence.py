@@ -88,6 +88,15 @@ def assign_identity(observations,market):
                 record["candidate_cmc_id"]=matches[0]["cmc_id"]
                 record["coin_identity_status"]="CROSS_PROVIDER_NAME_SYMBOL_CANDIDATE"
                 candidates+=1
+        elif source=="patternplus_unlocks":
+            attrs=record.get("attributes",{})
+            key=(str(attrs.get("source_project_name","")).casefold(),
+                 str(attrs.get("source_symbol","")).casefold())
+            matches=names.get(key,[]) if all(key) else []
+            if len(matches)==1:
+                record["candidate_cmc_id"]=matches[0]["cmc_id"]
+                record["coin_identity_status"]="THIRD_PARTY_UNLOCK_NAME_SYMBOL_CANDIDATE"
+                candidates+=1
         elif source=="kraken_futures_tickers":
             pair=str(record.get("attributes",{}).get("pair") or "")
             base=pair.split(":")[0].upper() if ":" in pair else ""
