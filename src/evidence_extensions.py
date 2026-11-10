@@ -25,6 +25,14 @@ EXTRA_SOURCES = (
      "url":"https://eth.blockscout.com/api/v2/stats","max_bytes":350_000},
     {"key":"geckoterminal_trending_pools","family":"DEX_ONCHAIN_MARKET",
      "url":"https://api.geckoterminal.com/api/v2/networks/trending_pools?page=1","max_bytes":2_000_000},
+    {"key":"btc_recent_transactions","family":"DIRECT_WALLET_ACTIVITY_SAMPLE",
+     "url":"https://mempool.space/api/mempool/recent","max_bytes":200_000},
+    {"key":"ethereum_recent_transactions","family":"DIRECT_WALLET_ACTIVITY_SAMPLE",
+     "url":"https://eth.blockscout.com/api/v2/transactions","max_bytes":1_500_000},
+    {"key":"patternplus_unlocks","family":"TOKEN_UNLOCK_SCHEDULE_CANDIDATE",
+     "url":"https://pattern.plus/api/v1/unlocks.json","max_bytes":5_000_000},
+    {"key":"patternplus_calendar","family":"EXTERNAL_EVENT_CALENDAR",
+     "url":"https://pattern.plus/api/v1/calendar.json","max_bytes":5_000_000},
 )
 
 def num(x):
@@ -153,6 +161,128 @@ def parse_geckoterminal_pools(raw,now):
                                     "token_contract_not_verified":True}))
     return out
 
+def parse_btc_recent_transactions(raw,now):
+    if not isinstance(raw,list):raise ValueError("BITCOIN_TX_INVALID")
+    rows=[]
+    for item in raw[:25]:
+        if not isinstance(item,dict):continue
+        ident=item.get("txid")
+        if not isinstance(ident,str) or not re.fullmatch(r"[0-9a-fA-F]{64}",ident):continue
+        m={}
+        for key in ("fee","vsize","value"):
+            value=num(item.get(key))
+            if value is not None and value>=0:m[key]=value
+        rows.append(row("btc_recent_transactions",ident.lower(),
+                        "Bitcoin mempool transaction "+ident[:16],m,now,
+                        {"chain":"bitcoin","level":"network_transaction",
+                         "confirmation_status":"UNCONFIRMED_WHEN_LISTED",
+                         "first_public_utc":"UNKNOWN",
+                         "observed_from":"MEMPOOL_RECENT_SAMPLE_NOT_CMC100_WALLET_FLOW"}))
+    return rows
+
+
+def parse_ethereum_transactions(raw,now):
+    data=raw.get("items") if isinstance(raw,dict) else None
+    if not isinstance(data,list):raise ValueError("ETHEREUM_TX_INVALID")
+    rows=[]
+    for item in data[:40]:
+        if not isinstance(item,dict):continue
+        ident=item.get("hash")
+        if not isinstance(ident,str) or not re.fullmatch(r"0x[0-9a-fA-F]{64}",ident):continue
+        m={}
+        value=num(item.get("value"))
+        if value is not None and value>=0:m["value_wei"]=value
+        fee=item.get("fee",{})
+        if isinstance(fee,dict):
+            value=num(fee.get("value"))
+            if value is not None and value>=0:m["fee_wei"]=value
+        rows.append(row("ethereum_recent_transactions",ident.lower(),
+                        "Ethereum transaction "+ident[:18],m,now,
+                        {"chain":"ethereum","level":"network_transaction",
+                         "block_number":item.get("block"),
+                         "block_timestamp_utc":item.get("timestamp"),
+                         "transaction_status":item.get("status"),
+                         "time_semantics_warning":"BLOCK_TIMESTAMP_NOT_FIRST_DISCOVERY",
+                         "observed_from":"GENERAL_TRANSACTION_SAMPLE_NOT_CMC100_TOKEN_FLOW"}))
+    return rows
+
+
+def extract_calendar_list(raw):
+    if isinstance(raw,list):return raw
+    if isinstance(raw,dict):
+        for field in ("unlocks","events","items","calendar","data","rows","schedule"):
+            field_value=raw.get(field)
+            if isinstance(field_value,list):return field_value
+            if isinstance(field_value,dict):
+                for nested in ("unlocks","events","items","rows"):
+                    if isinstance(field_value.get(nested),list):return field_value[nested]
+    raise ValueError("EVENT_CALENDAR_STRUCTURE_UNRECOGNIZED")
+
+
+def schedule_date(raw_value):
+    """Only source-stated calendar day; do not create fictional publication time."""
+    import datetime as dt
+    if isinstance(raw_value,(int,float)):
+        try:return dt.datetime.fromtimestamp(float(raw_value)/(1000 if raw_value>1e11 else 1),dt.timezone.utc).date().isoformat()
+        except (ValueError,OverflowError):return None
+    if not isinstance(raw_value,str):return None
+    value=raw_value.strip()
+    try:return dt.date.fromisoformat(value[:10]).isoformat()
+    except ValueError:return None
+
+
+def parse_patternplus_unlocks(raw,now):
+    items=extract_calendar_list(raw)
+    out=[]
+    for entry in items[:3000]:
+        if not isinstance(entry,dict):continue
+        day=next((schedule_date(entry.get(key)) for key in
+                  ("date","unlock_date","unlockDate","unlockAt","unlock_at","timestamp","day")
+                  if schedule_date(entry.get(key))),None)
+        if not day:continue
+        project=entry.get("coin") or entry.get("project") or entry.get("token") or entry.get("asset") or entry.get("slug")
+        if isinstance(project,dict):project=project.get("slug") or project.get("name") or project.get("symbol")
+        project=str(project or entry.get("symbol") or "").strip()
+        if not project:continue
+        identifier=project+"|"+day+"|"+str(entry.get("type") or entry.get("kind") or "unlock")
+        if len(identifier)>300:continue
+        fields={}
+        for name in ("tokens","amount","unlockTokens","unlockAmount","tokens_unlocked",
+                     "percent_of_circulating","pctCirculating","unlockPercentOfCirculating",
+                     "unlockUsd","value_usd"):
+            n=num(entry.get(name))
+            if n is not None:fields["reported_"+name]=n
+        out.append(row("patternplus_unlocks",identifier,"Published unlock schedule candidate "+project+" "+day,
+                       fields,now,{"project_label":project,"scheduled_date_utc":day,
+                                   "schedule_source":"https://pattern.plus/api/v1/unlocks.json",
+                                   "provider_attribution":"Data: PatternPlus (pattern.plus); CC BY 4.0",
+                                   "verification":"AGGREGATED_THIRD_PARTY_UNCORROBORATED",
+                                   "source_row_keys":sorted(str(x) for x in entry.keys())[:40],
+                                   "time_semantics_warning":"SCHEDULED_DAY_NOT_PUBLICATION_TIMESTAMP"}))
+    return out
+
+
+def parse_patternplus_calendar(raw,now):
+    items=extract_calendar_list(raw)
+    out=[]
+    for item in items[:2000]:
+        if not isinstance(item,dict):continue
+        date=next((schedule_date(item.get(key)) for key in
+                   ("date","event_date","eventDate","scheduledAt","timestamp","day")
+                   if schedule_date(item.get(key))),None)
+        if not date:continue
+        title=str(item.get("title") or item.get("name") or item.get("event") or "").strip()
+        if not title:continue
+        category=str(item.get("category") or item.get("type") or "UNCLASSIFIED")[:80]
+        key=category+"|"+date+"|"+title[:160]
+        out.append(row("patternplus_calendar",key,"Scheduled event "+title,{},now,
+                       {"scheduled_date_utc":date,"category":category,
+                        "provider_attribution":"Data: PatternPlus (pattern.plus); CC BY 4.0",
+                        "verification":"AGGREGATED_THIRD_PARTY_UNCORROBORATED",
+                        "time_semantics_warning":"SCHEDULED_DAY_NOT_ACTUAL_OCCURRENCE"}))
+    return out
+
+
 EXTRA_PARSERS={
     "okx_swap_tickers":parse_okx_tickers,
     "okx_swap_open_interest":parse_okx_open_interest,
@@ -161,4 +291,8 @@ EXTRA_PARSERS={
     "btc_fee_estimates":parse_bitcoin_fees,
     "ethereum_blockscout_stats":parse_ethereum_stats,
     "geckoterminal_trending_pools":parse_geckoterminal_pools,
+    "btc_recent_transactions":parse_btc_recent_transactions,
+    "ethereum_recent_transactions":parse_ethereum_transactions,
+    "patternplus_unlocks":parse_patternplus_unlocks,
+    "patternplus_calendar":parse_patternplus_calendar,
 }
