@@ -1,0 +1,27 @@
+name: Stage 1 Evidence Regression Tests
+on:
+  push:
+    paths:
+      - 'src/expanded_discovery.py'
+      - 'src/structured_evidence.py'
+      - 'src/evidence_scorecard.py'
+      - 'src/discovery_quality.py'
+      - 'tests/**'
+      - '.github/workflows/quality-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run all Stage-1 unit tests without network calls
+        run: |
+          python -m compileall -q src tests
+          python -m unittest discover -s tests -p 'test_*discovery*.py' -v
+          python -m unittest discover -s tests -p 'test_structured_evidence.py' -v
