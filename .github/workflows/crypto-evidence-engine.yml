@@ -1,13 +1,9 @@
 name: Crypto Evidence Engine - Structured Sources
 on:
   push:
+    # One deployment-time live acceptance run, NOT a new competing run for
+    # every code/test commit (which caused archive rebase conflicts).
     paths:
-      - 'src/crypto_evidence_engine.py'
-      - 'src/evidence_extensions.py'
-      - 'src/evidence_intelligence.py'
-      - 'tests/test_evidence_intelligence.py'
-      - 'tests/test_event_sources.py'
-      - 'tests/test_crypto_evidence_engine.py'
       - '.github/workflows/crypto-evidence-engine.yml'
   workflow_dispatch:
   schedule:
@@ -20,7 +16,7 @@ concurrency:
 jobs:
   structured:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
