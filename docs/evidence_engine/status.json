@@ -1,0 +1,57 @@
+{
+  "archive_path": "docs/evidence_engine/archive/20261110/20261110T175912Z_observations.jsonl.gz",
+  "archive_sha256": "8092e11c8f061ad1d11f88f02bdaacbd2f05dc4480d5b3b0396741cbfbaf4a17",
+  "capture_utc": "2026-11-10T17:59:12Z",
+  "configured_sources": 4,
+  "limitations": [
+    "NOT_CMC100_COIN_MATCHED",
+    "NO_HISTORICAL_PUBLICATION_TIME_FOR_SNAPSHOTS",
+    "NO_DIRECT_TOKEN_UNLOCKS",
+    "NO_WALLET_TRANSFERS_OR_CONTRACT_EVENT_INDEX",
+    "MARKET_DATA_MAY_NOT_BE_ACCESSIBLE_FROM_GITHUB_RUNNER"
+  ],
+  "official_cmc100_count": 100,
+  "records": 422,
+  "records_by_family": {
+    "ONCHAIN_AGGREGATE_PROXY": 422
+  },
+  "schema_version": "crypto-evidence-engine-v1",
+  "source_audit": [
+    {
+      "error": null,
+      "family": "ONCHAIN_AGGREGATE_PROXY",
+      "records": 422,
+      "source": "defillama_chains",
+      "status": "OK",
+      "url": "https://api.llama.fi/v2/chains"
+    },
+    {
+      "error": null,
+      "family": "STABLECOIN_SUPPLY",
+      "records": 0,
+      "source": "defillama_stablecoins",
+      "status": "OK",
+      "url": "https://stablecoins.llama.fi/stablecoinchains"
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "family": "DERIVATIVES_MARKET",
+      "records": 0,
+      "source": "bybit_linear_tickers",
+      "status": "ERROR",
+      "url": "https://api.bybit.com/v5/market/tickers?category=linear"
+    },
+    {
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "family": "DERIVATIVES_INSTRUMENTS",
+      "records": 0,
+      "source": "bybit_instruments",
+      "status": "ERROR",
+      "url": "https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000"
+    }
+  ],
+  "stage1_9_of_10_verified": false,
+  "successful_sources": 2,
+  "verification_status": "UNCORROBORATED_LIVE_MARKET_OBSERVATIONS",
+  "verified_cmc_id_matches": 0
+}
