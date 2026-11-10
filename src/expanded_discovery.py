@@ -29,6 +29,12 @@ try:
     from discovery_quality import enrich
 except ModuleNotFoundError:  # when imported as a module from the repo root
     from src.discovery_quality import enrich
+try:
+    from structured_evidence import collect_structured
+    from evidence_scorecard import candidate_facts, evaluate
+except ModuleNotFoundError:
+    from src.structured_evidence import collect_structured
+    from src.evidence_scorecard import candidate_facts, evaluate
 
 UTC = dt.timezone.utc
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -402,6 +408,15 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         for job,rows in ex.map(work,jobs):
             by_source[job['id']]=len(rows)
             findings.extend((r,job) for r in rows)
+    structured_audit=[]
+    if isinstance(network,HTTP):
+        # Independently audited data: NOT a claim of 100-coin linkage.
+        structured_rows,structured_audit=collect_structured(now_utc)
+        findings.extend(structured_rows)
+        for row,source in structured_rows:
+            by_source[source['id']]+=1
+        for item in structured_audit:
+            network.calls.append(item)
     seen=previous_seen or {}
     all_events,future,old=merge_records(findings,seen,cutoff,now_utc)
     all_events.sort(key=lambda e:(e['published_utc'] or e['first_observed_utc'],e['event_id']),reverse=True)
@@ -412,6 +427,8 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         all_events,
         max_articles=(max(0,min(450,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','320')))) if isinstance(network,HTTP) else 0),
         max_resolutions=(max(0,min(300,int(os.environ.get('DISCOVERY_RESOLUTION_BUDGET','240')))) if isinstance(network,HTTP) else 0))
+    for e in all_events:
+        e['candidate_fact_spans']=candidate_facts(e)
     # Distinguish newly observed URLs from distinct headlines and information.
     historic_titles={e['story_title_hash'] for e in all_events if e['event_id'] in seen}
     new_title_clusters={e['story_title_hash'] for e in new_events if e['story_title_hash'] not in historic_titles}
@@ -439,7 +456,7 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
     blocked=[r for r in audit if r['status']!='OK']
     stats={'schema_version':'expanded-discovery-v3','capture_utc':iso(now_utc),
         'market_snapshot_utc':market.get('snapshot_completed_utc'),'official_cmc100_verified':100,
-        'requests_planned':len(jobs),'requests_executed':len(audit),'requests_ok':sum(r['status']=='OK' for r in audit),
+        'requests_planned':len(jobs)+len(structured_audit),'requests_executed':len(audit),'requests_ok':sum(r['status']=='OK' for r in audit),
         'requests_blocked':len(blocked),'requests_with_leads':sum(bool(v) for v in by_source.values()),
         'raw_leads':len(findings),'distinct_url_leads':len(all_events), 'new_since_prior':len(new_events),
         'incremental_new_url_leads':len(new_events),
@@ -467,10 +484,12 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         'future_dated_excluded':future,'older_than_7days_excluded':old,
         'query_origin_is_relevance_verdict':False, 'coin_matching_performed':False,
         'source_error_examples':blocked[:40],
+        'structured_source_audit':structured_audit,
         'access_gaps':ACCESS_GAPS,
         'limits':['GOOGLE_NEWS_RSS_IS_NOT_ALL_NEWS','SEARCH_ENGINE_COVERAGE_VARIABLE',
                   'NETWORK_RATE_LIMITS_AND_SCHEDULE_DELAYS','BOUNDED_PUBLIC_ARTICLE_EXCERPTS_ONLY',
                   'QUERY_ORIGIN_NOT_COIN_MATCH','NUMBER_OF_LEADS_NOT_ALPHA_QUALITY']}
+    stats['stage1_quality_scorecard']=evaluate(all_events,stats)
     return {'status':stats,'events':all_events,'new_events':new_events,'index':index,
             'first_seen':merged_first,'audit':audit,'jobs':jobs}
 
