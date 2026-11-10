@@ -232,22 +232,29 @@ def publish(data,root=ROOT,out=None,full_export=True):
     # Front layer must fit an LLM context. Full 100-coin details go to the
     # artifact separately; truncation must NEVER be disguised as full review.
     def short_evidence(x):
-        return {k:x.get(k) for k in ("evidence_id","source","item","metrics",
-            "identity_status","observed_utc","published_utc")}
+        return {k:x.get(k) for k in ("evidence_id","source","item","metrics","observed_utc")}
     def short_lead(x):
-        return {**{k:x.get(k) for k in ("evidence_id","title","url",
-            "source_families","published_utc","direct_primary",
-            "content_substantive","claim_status","identity_status")},
-            "excerpt_preview":(x.get("excerpt") or "")[:180]}
+        link=str(x.get("url") or "")
+        opaque="news.google.com" in link
+        return {
+            "ref":x.get("evidence_id"),
+            "title":str(x.get("title") or "")[:130],
+            "excerpt_hint":str(x.get("excerpt") or "")[:140],
+            "url":link[:220] if not opaque else None,
+            "source":(x.get("source_families") or ["UNSPECIFIED"])[0],
+            "date":x.get("published_utc"),
+            "has_substance":x.get("content_substantive"),
+            "primary":x.get("direct_primary"),
+            "quality":"OPAQUE_SEARCH_HEADLINE_NOT_VERIFIED" if opaque else "SOURCE_LEAD_NOT_VERIFIED"}
     compact=[]
     for c in cards:
         compact.append({**c,
           "anchored_okx_instrument_observations":[short_evidence(x) for x in c["anchored_okx_instrument_observations"][:2]],
-          "unverified_coin_candidate_observations":[short_evidence(x) for x in c["unverified_coin_candidate_observations"][:4]],
-          "network_context_NOT_coin_flows":[short_evidence(x) for x in c["network_context_NOT_coin_flows"][:2]],
-          "news_search_origin_leads_UNVERIFIED":[short_lead(x) for x in c["news_search_origin_leads_UNVERIFIED"][:4]],
-          "validation_tasks":["Primary-source check both directions; verify relevance and 24h novelty."],
-          "attention_budget_note":"COMPACT_TRIAGE_ONLY; full details in Actions coin_deep_dive_complete.jsonl"})
+          "unverified_coin_candidate_observations":[short_evidence(x) for x in c["unverified_coin_candidate_observations"][:3]],
+          "network_context_NOT_coin_flows":[short_evidence(x) for x in c["network_context_NOT_coin_flows"][:1]],
+          "news_search_origin_leads_UNVERIFIED":[short_lead(x) for x in c["news_search_origin_leads_UNVERIFIED"][:3]],
+          "validation_tasks":[],
+          "attention_budget_note":None})
     batches=[]
     for start in range(0,100,20):
         path=coin_dir/("batch_%02d.json"%(start//20+1))
@@ -273,7 +280,7 @@ def publish(data,root=ROOT,out=None,full_export=True):
             (base/"global_context.json").stat().st_size+(base/"research_queue.json").stat().st_size,
         "front_layer_is_full_raw_evidence":False,
         "deep_dive_full_coin_cards_in_artifact":full_export,
-        "discovery_selected_per_coin":4,
+        "discovery_selected_per_coin":3,
         "remaining_source_records_exported_without_truncation":full_export}
     if full_export:
         export=base/"export";export.mkdir(parents=True,exist_ok=True)
