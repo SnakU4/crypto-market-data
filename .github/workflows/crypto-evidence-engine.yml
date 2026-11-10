@@ -1,5 +1,10 @@
 name: Crypto Evidence Engine - Structured Sources
 on:
+  push:
+    paths:
+      - 'src/crypto_evidence_engine.py'
+      - 'tests/test_crypto_evidence_engine.py'
+      - '.github/workflows/crypto-evidence-engine.yml'
   workflow_dispatch:
   schedule:
     - cron: '42 11,23 * * *'
