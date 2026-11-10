@@ -465,7 +465,7 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         if 'query_cmc_id' in job:unique_queries_per_coin[str(job['query_cmc_id'])]+=1
     audit=network.calls
     blocked=[r for r in audit if r['status']!='OK']
-    stats={'schema_version':'expanded-discovery-v3','capture_utc':iso(now_utc),
+    stats={'schema_version':'expanded-discovery-v5','capture_utc':iso(now_utc),
         'market_snapshot_utc':market.get('snapshot_completed_utc'),'official_cmc100_verified':100,
         'requests_planned':len(jobs)+len(structured_audit),'requests_executed':len(audit),'requests_ok':sum(r['status']=='OK' for r in audit),
         'requests_blocked':len(blocked),'requests_with_leads':sum(bool(v) for v in by_source.values()),
@@ -566,7 +566,8 @@ def write_bundle(bundle,out=OUT):
         e.get('previously_seen',False),
         not bool(e.get('direct_primary')),
         not bool(e.get('candidate_fact_spans')),
-        e.get('published_utc') or e.get('first_observed_utc') or '',
+        -(parse_time(e.get('published_utc') or e.get('first_observed_utc')).timestamp()
+          if parse_time(e.get('published_utc') or e.get('first_observed_utc')) else 0),
         e['event_id']))
     write_json(out/'evidence_candidates.json',{
         'schema_version':'stage1-evidence-candidates-v1',
@@ -579,7 +580,7 @@ def write_bundle(bundle,out=OUT):
     status['evidence_candidates_index_count']=min(600,len(qualified))
     status['stage1_quality_scorecard_path']='docs/expanded_discovery/quality_scorecard.json'
     write_json(out/'status.json',status)
-    write_json(out/'latest.json',{'schema_version':'expanded-discovery-v3','status':{k:v for k,v in status.items() if k not in ('query_count_per_coin','search_results_per_queried_coin','zero_result_coin_queries','source_error_examples')},
+    write_json(out/'latest.json',{'schema_version':'expanded-discovery-v5','status':{k:v for k,v in status.items() if k not in ('query_count_per_coin','search_results_per_queried_coin','zero_result_coin_queries','source_error_examples')},
                                   'events':bundle['index']})
     # Human- and connector-readable shards (not a substitute for the immutable gzip).
     shard_dir=out/'latest_shards';shard_dir.mkdir(exist_ok=True)
