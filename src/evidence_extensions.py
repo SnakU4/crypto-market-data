@@ -33,6 +33,10 @@ EXTRA_SOURCES = (
      "url":"https://pattern.plus/api/v1/unlocks.json","max_bytes":5_000_000},
     {"key":"patternplus_calendar","family":"EXTERNAL_EVENT_CALENDAR",
      "url":"https://pattern.plus/api/v1/calendar.json","max_bytes":5_000_000},
+    {"key":"defillama_dex_volume","family":"DEFI_PROTOCOL_ACTIVITY",
+     "url":"https://api.llama.fi/overview/dexs?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true","max_bytes":5_000_000},
+    {"key":"defillama_fees","family":"DEFI_PROTOCOL_ACTIVITY",
+     "url":"https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true","max_bytes":5_000_000},
 )
 
 def num(x):
@@ -292,6 +296,39 @@ def parse_patternplus_calendar(raw,now):
     return out
 
 
+def protocol_activity_rows(raw,now,source):
+    if not isinstance(raw,dict) or not isinstance(raw.get("protocols"),list):
+        raise ValueError("DEFILLAMA_ACTIVITY_SCHEMA_INVALID")
+    candidates=[]
+    for protocol in raw["protocols"]:
+        if not isinstance(protocol,dict):continue
+        key=str(protocol.get("defillamaId") or protocol.get("module") or protocol.get("id") or protocol.get("name") or "")
+        if not key or len(key)>180:continue
+        metrics={}
+        for orig in ("total24h","total48hto24h","total7d","total30d","change_1d",
+                     "change_7d","change_1m"):
+            val=num(protocol.get(orig))
+            if val is not None:metrics[orig]=val
+        if "total24h" not in metrics:continue
+        candidates.append((metrics["total24h"],key,protocol,metrics))
+    candidates.sort(reverse=True,key=lambda x:x[0])
+    result=[]
+    for _,key,protocol,metrics in candidates[:200]:
+        result.append(row(source,key,
+               ("DeFi DEX volume " if source=="defillama_dex_volume" else "DeFi fees ")+str(protocol.get("name") or key),
+               metrics,now,{"name":str(protocol.get("name") or "")[:120],
+                            "defillama_protocol_id":str(protocol.get("defillamaId") or ""),
+                            "gecko_id":str(protocol.get("gecko_id") or ""),
+                            "category":str(protocol.get("category") or ""),
+                            "chains":(protocol.get("chains") or [])[:10],
+                            "methodology_warning":"PROVIDER_AGGREGATE_NOT_DIRECT_CONTRACT_EVENT"}))
+    return result
+
+
+def parse_defillama_dex_volume(raw,now):return protocol_activity_rows(raw,now,"defillama_dex_volume")
+def parse_defillama_fees(raw,now):return protocol_activity_rows(raw,now,"defillama_fees")
+
+
 EXTRA_PARSERS={
     "okx_swap_tickers":parse_okx_tickers,
     "okx_swap_open_interest":parse_okx_open_interest,
@@ -304,4 +341,6 @@ EXTRA_PARSERS={
     "ethereum_recent_transactions":parse_ethereum_transactions,
     "patternplus_unlocks":parse_patternplus_unlocks,
     "patternplus_calendar":parse_patternplus_calendar,
+    "defillama_dex_volume":parse_defillama_dex_volume,
+    "defillama_fees":parse_defillama_fees,
 }
