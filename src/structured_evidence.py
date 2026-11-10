@@ -160,6 +160,57 @@ def defillama_observations(payload,observed,limit=40):
     return out
 
 
+def funding_records(payload, observed, symbol):
+    if not isinstance(payload,list):
+        raise ValueError("INVALID_BINANCE_FUNDING")
+    out=[]
+    for p in payload[:3]:
+        if not isinstance(p,dict) or p.get("symbol")!=symbol:
+            continue
+        try:
+            rate=float(p["fundingRate"])
+            millis=int(p["fundingTime"])
+            when=dt.datetime.fromtimestamp(millis/1000,UTC)
+        except (ValueError,TypeError,KeyError,OverflowError):
+            continue
+        if when>observed+dt.timedelta(minutes=2) or when<observed-dt.timedelta(days=7):
+            continue
+        out.append({"url":"https://www.binance.com/en/futures/"+symbol+"?fundingTime="+str(millis),
+                    "title":"Perpetual funding observation "+symbol,
+                    "excerpt":f"Settled funding rate for {symbol}: {rate:.8f} at {iso(millis//1000)}",
+                    "published_utc":iso(millis//1000),
+                    "publication_time_status":"EXCHANGE_FUNDING_SETTLEMENT_TIME",
+                    "observed_utc":observed.isoformat(),"source_type":"BINANCE_FUNDING",
+                    "context_origin":"STRUCTURED_DERIVATIVES_OBSERVATION",
+                    "structured_fields":{"exchange_symbol":symbol,"funding_rate":rate,
+                                         "funding_time_ms":millis},
+                    "evidence_class":"DERIVATIVE_MARKET_OBSERVATION",
+                    "direct_primary":True})
+    return out
+
+
+def oi_records(payload, observed, symbol):
+    if not isinstance(payload,dict) or payload.get("symbol")!=symbol:
+        raise ValueError("INVALID_BINANCE_OPEN_INTEREST")
+    try:
+        amount=float(payload["openInterest"])
+        millis=int(payload["time"])
+        when=dt.datetime.fromtimestamp(millis/1000,UTC)
+    except (ValueError,TypeError,KeyError,OverflowError):
+        return []
+    if when>observed+dt.timedelta(minutes=2) or when<observed-dt.timedelta(days=1):
+        return []
+    return [{"url":"https://www.binance.com/en/futures/"+symbol+"/openInterest",
+             "title":"Open interest snapshot "+symbol,
+             "excerpt":f"Observed open interest on Binance USD-M {symbol}: {amount:.6f} base units",
+             "published_utc":None,
+             "publication_time_status":"EXCHANGE_MARKET_TIMESTAMP_NOT_PUBLICATION",
+             "observed_utc":observed.isoformat(),"source_type":"BINANCE_OPEN_INTEREST",
+             "context_origin":"STRUCTURED_DERIVATIVES_OBSERVATION",
+             "structured_fields":{"exchange_symbol":symbol,"open_interest_base_units":amount,
+                                  "market_timestamp_ms":millis},
+             "evidence_class":"OBSERVATION_NOT_EVENT","direct_primary":True}]
+
 def collect_structured(observed, fetcher=fetch_json):
     """All providers independent. Return records paired with provenance jobs."""
     cutoff=observed-dt.timedelta(days=7)
@@ -168,13 +219,20 @@ def collect_structured(observed, fetcher=fetch_json):
       ("cisa_kev","SECURITY_EVENTS","CISA_KEV_GITHUB",CISA_URL,None,kev_records),
       ("defillama_tvl","DEFI_METRICS","DEFILLAMA_PUBLIC_API",DEFILLAMA_URL,None,defillama_observations),
     ]
+    for symbol in ("BTCUSDT","ETHUSDT"):
+        specs.append(("funding_"+symbol,"DERIVATIVES_METRICS","BINANCE_FUNDING",
+                      "https://fapi.binance.com/fapi/v1/fundingRate?symbol="+symbol+"&limit=3",
+                      None,lambda raw, now, sym=symbol: funding_records(raw,now,sym)))
+        specs.append(("oi_"+symbol,"DERIVATIVES_METRICS","BINANCE_OPEN_INTEREST",
+                      "https://fapi.binance.com/fapi/v1/openInterest?symbol="+symbol,
+                      None,lambda raw, now, sym=symbol: oi_records(raw,now,sym)))
     findings=[];audit=[]
     for name,family,endpoint,url,body,parser in specs:
         job={"id":"structured_"+name,"family":family,"lens":family,"endpoint":endpoint,
              "kind":"structured","target":url}
         try:
             raw=fetcher(url,body)
-            rows=parser(raw,observed,cutoff) if name!="defillama_tvl" else parser(raw,observed)
+            rows=parser(raw,observed,cutoff) if name in ("snapshot","cisa_kev") else parser(raw,observed)
             findings.extend((r,job) for r in rows)
             audit.append({"id":job["id"],"family":family,"endpoint":endpoint,
                           "status":"OK","count":len(rows),"error":None,"target":url})
