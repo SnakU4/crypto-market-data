@@ -30,6 +30,32 @@ jobs:
           python -m unittest discover -s tests -p 'test_event_sources.py' -v
       - name: Fetch public structured evidence
         run: python src/crypto_evidence_engine.py
+      - name: Verify complete archive, provenance and unified acceptance report
+        run: |
+          python - <<'PY'
+          import gzip, hashlib, json, pathlib
+          root=pathlib.Path('.')
+          out=root/'docs'/'evidence_engine'
+          meta=json.loads((out/'status.json').read_text())
+          archive=root/meta['archive_path']
+          assert archive.exists() and archive.suffix=='.gz'
+          assert hashlib.sha256(archive.read_bytes()).hexdigest()==meta['archive_sha256']
+          with gzip.open(archive,'rt',encoding='utf8') as inp:
+              count=sum(1 for line in inp if json.loads(line))
+          assert count==meta['records']
+          report=json.loads((out/'integrated_quality_report.json').read_text())
+          events=json.loads((out/'event_candidates.json').read_text())
+          deltas=json.loads((out/'delta_candidates.json').read_text())
+          assert report['certified_9_out_of_10']==meta['stage1_9_of_10_verified']
+          assert report['anchored_cmc100_asset_count']<=100
+          assert events['total_event_candidates']==meta['event_candidates_total']
+          assert deltas['capture_utc']==meta['capture_utc']
+          assert len(meta['source_audit'])==meta['configured_sources']
+          print('VERIFIED PIT ARCHIVE',count,'records;',
+                'sources',meta['successful_sources'],'/',meta['configured_sources'],
+                'quality diagnostic',report['diagnostic_score_out_of_10'],
+                '9/10 certified',report['certified_9_out_of_10'])
+          PY
       - name: Publish independent immutable snapshots
         shell: bash
         run: |
