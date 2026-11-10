@@ -119,6 +119,10 @@ class PackTests(unittest.TestCase):
         self.assertEqual(len(path.read_text().splitlines()),100)
         compact=self.root/"docs/research_pack/coin_batches/batch_01.json"
         self.assertEqual(len(json.loads(compact.read_text())["coins"]),20)
+        coverage=json.loads((self.root/"docs/research_pack/coverage_matrix.json").read_text())
+        self.assertEqual(coverage["counts"]["coins"],100)
+        self.assertEqual(coverage["counts"]["with_anchored_okx"],1)
+        self.assertTrue(all(x["verified_new_24h_primary_catalysts_by_builder"]==0 for x in coverage["assets"]))
 
     def test_wrong_checksum_fails_closed(self):
         self.engine_archive.write_bytes(self.engine_archive.read_bytes()+b"x")
