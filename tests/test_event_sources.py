@@ -5,7 +5,8 @@ import unittest
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"src"))
 from evidence_extensions import (
     parse_btc_recent_transactions,parse_ethereum_transactions,
-    parse_patternplus_calendar,parse_patternplus_unlocks,schedule_date)
+    parse_patternplus_calendar,parse_patternplus_unlocks,schedule_date,
+    parse_defillama_dex_volume,parse_defillama_fees)
 from evidence_intelligence import integrated_quality
 
 NOW=dt.datetime(2026,11,10,19,0,tzinfo=dt.timezone.utc)
@@ -36,6 +37,27 @@ class EventSourceTests(unittest.TestCase):
         self.assertEqual(rows[0]["attributes"]["scheduled_date_utc"],"2026-11-15")
         self.assertIsNone(rows[0]["published_utc"])
         self.assertEqual(rows[0]["attributes"]["verification"],"AGGREGATED_THIRD_PARTY_UNCORROBORATED")
+    def test_real_unlock_schema_has_float_dilution_and_provenance(self):
+        rows=parse_patternplus_unlocks({"unlocks":[
+            {"token":"apt-aptos","name":"Aptos","symbol":"APT",
+             "date":"2026-11-14","amount":11358962.17,
+             "pct_circulating":1.1,"pct_total":0.4,
+             "basis":"published","file":"schedule.json","categories":["team"]}]},NOW)
+        self.assertEqual(rows[0]["metrics"]["reported_pct_circulating"],1.1)
+        self.assertEqual(rows[0]["attributes"]["source_project_name"],"Aptos")
+        self.assertEqual(rows[0]["attributes"]["source_symbol"],"APT")
+        self.assertEqual(rows[0]["attributes"]["source_basis"],"published")
+    def test_defillama_activity_protocols(self):
+        raw={"protocols":[
+            {"name":"DexA","defillamaId":"dex-a","gecko_id":"dexa",
+             "total24h":40000000,"total7d":150000000,"change_1d":22.5},
+            {"name":"NoActive","defillamaId":"inactive","total24h":None}]}
+        x=parse_defillama_dex_volume(raw,NOW)
+        y=parse_defillama_fees(raw,NOW)
+        self.assertEqual(len(x),1)
+        self.assertEqual(x[0]["metrics"]["total24h"],40000000)
+        self.assertEqual(len(y),1)
+        self.assertEqual(y[0]["source"],"defillama_fees")
     def test_calendar_source_allows_non_coin_macro_events(self):
         rows=parse_patternplus_calendar({"events":[
             {"title":"US CPI release","date":"2026-11-20","category":"macro"}]},NOW)
