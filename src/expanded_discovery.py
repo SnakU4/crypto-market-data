@@ -25,7 +25,10 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict, deque
 from email.utils import parsedate_to_datetime
-from discovery_quality import enrich
+try:
+    from discovery_quality import enrich
+except ModuleNotFoundError:  # when imported as a module from the repo root
+    from src.discovery_quality import enrich
 
 UTC = dt.timezone.utc
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -383,7 +386,7 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
     all_events,future,old=merge_records(findings,seen,cutoff,now_utc)
     all_events.sort(key=lambda e:(e['published_utc'] or e['first_observed_utc'],e['event_id']),reverse=True)
     new_events=[e for e in all_events if e['event_id'] not in seen]
-    quality=enrich(all_events, max_articles=max(0,min(200,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','80')))))
+    quality=enrich(all_events, max_articles=(max(0,min(200,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','80')))) if isinstance(network,HTTP) else 0))
     # Distinguish newly observed URLs from distinct headlines and information.
     historic_titles={e['story_title_hash'] for e in all_events if e['event_id'] in seen}
     new_title_clusters={e['story_title_hash'] for e in new_events if e['story_title_hash'] not in historic_titles}
@@ -463,6 +466,36 @@ def write_bundle(bundle,out=OUT):
                 new_archive_sha256=hashlib.sha256(delta.read_bytes()).hexdigest())
     def write_json(p,obj):
         p.write_text(json.dumps(obj,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n',encoding='utf8')
+    # Append run-level novelty and maintain daily sums. Historical first-run
+    # baseline is distinct from later incremental acquisition.
+    metrics_path=out/'daily_metrics.json'
+    try:
+        previous_metrics=json.loads(metrics_path.read_text(encoding='utf8')) if metrics_path.exists() else {'runs':[]}
+    except (ValueError,OSError):
+        previous_metrics={'runs':[]}
+    runs=[r for r in previous_metrics.get('runs',[]) if r.get('capture_utc')!=status['capture_utc']]
+    runs.append({
+        'capture_utc':status['capture_utc'],
+        'date_utc':status['capture_utc'][:10],
+        'first_run_baseline':status.get('first_run_baseline',False),
+        'new_url_leads':status.get('incremental_new_url_leads',0),
+        'new_title_clusters_within_run':status.get('incremental_new_title_clusters_within_run',0),
+        'new_urls_with_substantive_context':status.get('incremental_new_urls_with_substantive_context',0),
+        'distinct_url_leads':status.get('distinct_url_leads',0),
+        'substantive_excerpts':status.get('information_quality',{}).get('substantive_excerpts',0),
+        'article_fetch_attempted':status.get('information_quality',{}).get('article_fetch_attempted',0),
+    })
+    runs=sorted(runs,key=lambda r:r['capture_utc'])[-120:]
+    days={}
+    for item in runs:
+        day=days.setdefault(item['date_utc'],{'runs':0,'new_url_leads':0,'new_urls_with_substantive_context':0,'initial_baseline_runs':0})
+        day['runs']+=1
+        day['new_url_leads']+=item['new_url_leads']
+        day['new_urls_with_substantive_context']+=item['new_urls_with_substantive_context']
+        day['initial_baseline_runs']+=int(item['first_run_baseline'])
+    write_json(metrics_path,{'schema_version':'expanded-daily-metrics-v1','runs':runs,'days':days,
+        'caveat':'URL novelty only versus rolling 14-day registry; initial baseline not organic daily flow'})
+    status['daily_metrics_path']=str((metrics_path.relative_to(ROOT) if metrics_path.is_relative_to(ROOT) else metrics_path.relative_to(out)))
     write_json(out/'status.json',status)
     write_json(out/'latest.json',{'schema_version':'expanded-discovery-v3','status':{k:v for k,v in status.items() if k not in ('query_count_per_coin','search_results_per_queried_coin','zero_result_coin_queries','source_error_examples')},
                                   'events':bundle['index']})
