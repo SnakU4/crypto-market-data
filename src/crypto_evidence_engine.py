@@ -12,6 +12,13 @@ import json
 import math
 import os
 from pathlib import Path
+from collections import defaultdict, Counter
+try:
+    from evidence_extensions import EXTRA_SOURCES, EXTRA_PARSERS
+    from evidence_intelligence import assign_identity, load_previous, compute_deltas, integrated_quality, stamp
+except ModuleNotFoundError:
+    from src.evidence_extensions import EXTRA_SOURCES, EXTRA_PARSERS
+    from src.evidence_intelligence import assign_identity, load_previous, compute_deltas, integrated_quality, stamp
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -31,11 +38,13 @@ SOURCES=(
      "url":"https://stablecoins.llama.fi/stablecoinchains","max_bytes":2_500_000},
     {"key":"kraken_futures_tickers","family":"DERIVATIVES_MARKET",
      "url":"https://futures.kraken.com/derivatives/api/v3/tickers","max_bytes":5_000_000},
-    {"key":"bybit_linear_tickers","family":"DERIVATIVES_MARKET",
+    {"key":"bybit_linear_tickers","family":"DERIVATIVES_MARKET","enabled":False,
+     "disable_reason":"GITHUB_ACTIONS_HTTP_403_PREVIOUS_LIVE_RUN",
      "url":"https://api.bybit.com/v5/market/tickers?category=linear","max_bytes":5_000_000},
-    {"key":"bybit_instruments","family":"DERIVATIVES_INSTRUMENTS",
+    {"key":"bybit_instruments","family":"DERIVATIVES_INSTRUMENTS","enabled":False,
+     "disable_reason":"GITHUB_ACTIONS_HTTP_403_PREVIOUS_LIVE_RUN",
      "url":"https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000","max_bytes":5_000_000},
-)
+) + EXTRA_SOURCES
 
 
 def iso(x):return x.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00","Z")
@@ -155,64 +164,135 @@ PARSERS={"kraken_futures_tickers":parse_kraken_tickers,
          "defillama_chains":parse_chains,
          "defillama_stablecoins":parse_stablecoins,
          "bybit_linear_tickers":parse_bybit_tickers,
-         "bybit_instruments":parse_bybit_instruments}
+         "bybit_instruments":parse_bybit_instruments, **EXTRA_PARSERS}
 
 def capture(market,fetcher=get_json,now=None,sources=SOURCES):
+    """Source-isolated collection; never allow one blocked API to hide another."""
+    fixed_time=now is not None or fetcher is not get_json
     now=now or dt.datetime.now(UTC)
     assets=market.get("assets") or []
     if len(assets)!=100 or len({int(a["cmc_id"]) for a in assets})!=100 or market.get("index",{}).get("verified_constituents")!=100:
         raise ValueError("OFFICIAL_CMC100_UNIVERSE_REQUIRED")
     observed=[];audit=[]
     for spec in sources:
+        if spec.get("enabled") is False:
+            audit.append({"source":spec["key"],"family":spec["family"],
+                          "status":"DISABLED_ACCESS_RESTRICTED","records":0,
+                          "error":spec.get("disable_reason") or "NOT_ENABLED",
+                          "url":spec["url"]})
+            continue
         try:
             payload=fetcher(spec["url"],spec["max_bytes"])
-            rows=PARSERS[spec["key"]](payload,now)
+            # The request completion time is the earliest defensible publicly
+            # observed time. In deterministic offline tests use supplied NOW.
+            response_at=now if fixed_time else dt.datetime.now(UTC)
+            rows=PARSERS[spec["key"]](payload,response_at)
             observed.extend(rows)
-            audit.append({"source":spec["key"],"family":spec["family"],"status":"OK",
-                          "records":len(rows),"error":None,"url":spec["url"]})
+            audit.append({"source":spec["key"],"family":spec["family"],
+                          "status":"OK" if rows else "OK_NO_RECORDS",
+                          "records":len(rows),"observed_utc":iso(response_at),
+                          "error":None,"url":spec["url"]})
         except (OSError,ValueError,TypeError,KeyError,urllib.error.URLError) as ex:
             audit.append({"source":spec["key"],"family":spec["family"],"status":"ERROR",
                           "records":0,"error":type(ex).__name__+": "+str(ex)[:180],
                           "url":spec["url"]})
-    # instrument catalog is metadata, not an extra signal: record duplication
-    # across sources is intentional, but no name/ticker-to-CMC matching.
-    count_by_family={}
-    for row in observed:
-        a=next((x for x in sources if x["key"]==row["source"]),None)
-        if a:count_by_family[a["family"]]=count_by_family.get(a["family"],0)+1
-        elif row["source"]=="defillama_stablecoinchains":
-            count_by_family["STABLECOIN_SUPPLY"]=count_by_family.get("STABLECOIN_SUPPLY",0)+1
-    metrics={"schema_version":"crypto-evidence-engine-v1",
-             "capture_utc":iso(now),"official_cmc100_count":100,
-             "configured_sources":len(sources),"successful_sources":sum(x["status"]=="OK" for x in audit),
-             "records":len(observed),"records_by_family":count_by_family,
+    complete_at=now if fixed_time else dt.datetime.now(UTC)
+    count_by_family=Counter()
+    source_to_family={x["key"]:x["family"] for x in sources}
+    for item in observed:
+        family=source_to_family.get(item["source"])
+        if not family and item["source"]=="defillama_stablecoinchains":
+            family="STABLECOIN_SUPPLY"
+        if family:count_by_family[family]+=1
+    identity=assign_identity(observed,market)
+    metrics={"schema_version":"crypto-evidence-engine-v2",
+             "capture_utc":iso(complete_at),"capture_started_utc":iso(now),
+             "official_cmc100_count":100,
+             "market_snapshot_utc":market.get("snapshot_completed_utc"),
+             "configured_sources":len(sources),
+             "attempted_sources":sum(x["status"]!="DISABLED_ACCESS_RESTRICTED" for x in audit),
+             "successful_sources":sum(x["status"]=="OK" for x in audit),
+             "records":len(observed),"records_by_family":dict(count_by_family),
              "source_audit":audit,
-             "verified_cmc_id_matches":0,
-             "verification_status":"UNCORROBORATED_LIVE_MARKET_OBSERVATIONS",
+             "identity_mapping":identity,
+             "verified_cmc_id_matches":identity["anchored_distinct_cmc_ids"],
+             "verification_status":"EXCHANGE_SNAPSHOT_ANCHORED; FULL_TOKEN_CONTRACT_VERIFICATION_OPEN",
              "stage1_9_of_10_verified":False,
-             "limitations":["NOT_CMC100_COIN_MATCHED","NO_HISTORICAL_PUBLICATION_TIME_FOR_SNAPSHOTS",
-                            "NO_DIRECT_TOKEN_UNLOCKS","NO_WALLET_TRANSFERS_OR_CONTRACT_EVENT_INDEX",
-                            "MARKET_DATA_MAY_NOT_BE_ACCESSIBLE_FROM_GITHUB_RUNNER"]}
+             "limitations":["NO_GUARANTEED_DIRECT_TOKEN_UNLOCK_FEED",
+                            "NO_WALLET_TRANSACTION_INDEX_CMC100_COVERAGE",
+                            "NO_UNVERIFIED_TICKER_AUTOMATIC_CMC_MATCH",
+                            "POINT_IN_TIME_OBSERVED_WHEN_RECEIVED_NOT_INFERRED_PUBLICATION",
+                            "NO_PREDICTIVE_ALPHA_CLAIM"]}
     return {"metrics":metrics,"observations":observed}
 
 def save(result,out=OUT):
+    """Hash-verified PIT deltas against previous run; preserve complete archive."""
     out.mkdir(parents=True,exist_ok=True)
-    stamp=result["metrics"]["capture_utc"].replace(":","").replace("-","")
-    folder=out/"archive"/stamp[:8]
+    meta_base=result["metrics"]
+    capture_at=stamp(meta_base["capture_utc"])
+    prior,prior_audit=load_previous(ROOT,out,capture_at)
+    deltas=compute_deltas(result["observations"],prior,capture_at)
+    stamp_str=meta_base["capture_utc"].replace(":","").replace("-","")
+    folder=out/"archive"/stamp_str[:8]
     folder.mkdir(parents=True,exist_ok=True)
-    archive=folder/(stamp+"_observations.jsonl.gz")
+    archive=folder/(stamp_str+"_observations.jsonl.gz")
     if archive.exists():raise FileExistsError("IMMUTABLE_SNAPSHOT_ALREADY_EXISTS")
     with archive.open("wb") as target:
         with gzip.GzipFile(filename="",mode="wb",fileobj=target,mtime=0,compresslevel=6) as gz:
             for row in result["observations"]:
                 gz.write((json.dumps(row,ensure_ascii=False,separators=(",",":"))+"\n").encode())
-    meta={**result["metrics"],"archive_path":str(archive.relative_to(ROOT)) if archive.is_relative_to(ROOT) else str(archive),
-          "archive_sha256":hashlib.sha256(archive.read_bytes()).hexdigest()}
-    (out/"status.json").write_text(json.dumps(meta,indent=2,sort_keys=True)+"\n")
-    # Small accessible preview, full immutable archive never silently capped.
-    (out/"latest.json").write_text(json.dumps({
+    meta={**meta_base,
+          "archive_path":str(archive.relative_to(ROOT)) if archive.is_relative_to(ROOT) else str(archive),
+          "archive_sha256":hashlib.sha256(archive.read_bytes()).hexdigest(),
+          "prior_archive_audit":prior_audit,
+          "deltas":{k:v for k,v in deltas.items() if k!="triage_candidates"}}
+    discovery_path=ROOT/"docs"/"expanded_discovery"/"status.json"
+    try:
+        discovery=json.loads(discovery_path.read_text(encoding="utf8")) if discovery_path.exists() else None
+    except (OSError,ValueError):discovery=None
+    combined=integrated_quality(meta,discovery,capture_at)
+    meta["integrated_quality_report"]=combined
+    meta["stage1_9_of_10_verified"]=combined["certified_9_out_of_10"]
+    def write_json(path,value):
+        path.write_text(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":"))+"\n",encoding="utf8")
+    write_json(out/"integrated_quality_report.json",combined)
+    write_json(out/"identity_audit.json",meta["identity_mapping"])
+    write_json(out/"delta_candidates.json",{
+        "schema_version":"evidence-delta-candidates-v1",
+        "capture_utc":meta["capture_utc"],
+        "prior_archive_audit":prior_audit,
+        **deltas})
+    history_path=out/"daily_metrics.json"
+    try: history=json.loads(history_path.read_text()) if history_path.exists() else {"runs":[]}
+    except (OSError,ValueError):history={"runs":[]}
+    runs=[x for x in history.get("runs",[]) if x.get("capture_utc")!=meta["capture_utc"]]
+    runs.append({"capture_utc":meta["capture_utc"],"records":meta["records"],
+                 "successful_sources":meta["successful_sources"],
+                 "anchored_cmc_ids":meta["verified_cmc_id_matches"],
+                 "novel_first_seen_items":deltas["first_seen_observations"],
+                 "changed_metric_candidates":deltas.get("triage_count",0),
+                 "quality_score":combined["diagnostic_score_out_of_10"],
+                 "nine_of_ten_certified":combined["certified_9_out_of_10"]})
+    write_json(history_path,{"schema_version":"evidence-engine-daily-v1",
+            "runs":sorted(runs,key=lambda x:x["capture_utc"])[-120:]})
+    write_json(out/"status.json",meta)
+    # Stratify quick-read preview, so derivatives never disappear behind TVL.
+    groups=defaultdict(list)
+    for rec in result["observations"]:groups[rec["source"]].append(rec)
+    preview=[]
+    keys=sorted(groups)
+    while keys and len(preview)<500:
+        remaining=[]
+        for key in keys:
+            if groups[key]:
+                preview.append(groups[key].pop(0))
+                if groups[key]:remaining.append(key)
+                if len(preview)>=500:break
+        keys=remaining
+    write_json(out/"latest.json",{
         "capture_utc":meta["capture_utc"],"source_audit":meta["source_audit"],
-        "observations":result["observations"][:500]},ensure_ascii=False,separators=(",",":"))+"\n")
+        "preview_note":"STRATIFIED_FIRST_500_NOT_COMPLETE_ARCHIVE",
+        "observations":preview})
     return meta
 
 def main():
