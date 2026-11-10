@@ -248,13 +248,12 @@ def publish(data,root=ROOT,out=None,full_export=True):
             "quality":"OPAQUE_SEARCH_HEADLINE_NOT_VERIFIED" if opaque else "SOURCE_LEAD_NOT_VERIFIED"}
     compact=[]
     for c in cards:
-        compact.append({**c,
+        compact.append({**{k:v for k,v in c.items()
+                            if k not in ("validation_tasks","attention_budget_note")},
           "anchored_okx_instrument_observations":[short_evidence(x) for x in c["anchored_okx_instrument_observations"][:2]],
-          "unverified_coin_candidate_observations":[short_evidence(x) for x in c["unverified_coin_candidate_observations"][:3]],
+          "unverified_coin_candidate_observations":[short_evidence(x) for x in c["unverified_coin_candidate_observations"][:2]],
           "network_context_NOT_coin_flows":[short_evidence(x) for x in c["network_context_NOT_coin_flows"][:1]],
-          "news_search_origin_leads_UNVERIFIED":[short_lead(x) for x in c["news_search_origin_leads_UNVERIFIED"][:3]],
-          "validation_tasks":[],
-          "attention_budget_note":None})
+          "news_search_origin_leads_UNVERIFIED":[short_lead(x) for x in c["news_search_origin_leads_UNVERIFIED"][:2]]})
     batches=[]
     for start in range(0,100,20):
         path=coin_dir/("batch_%02d.json"%(start//20+1))
@@ -264,13 +263,13 @@ def publish(data,root=ROOT,out=None,full_export=True):
         batches.append({"path":str(path.relative_to(root)) if path.is_relative_to(root) else str(path),
                         "sha256":sha(path),"count":20,"bytes":path.stat().st_size})
     global_summary={**data["global"],
-        "unassigned_structured_samples":data["global"]["unassigned_structured_samples"][:20],
-        "global_news_selection_UNVERIFIED":[short_lead(x) for x in data["global"]["global_news_selection_UNVERIFIED"][:20]],
-        "selection_note":"COMPACT_20_OF_EACH; full source archive fully parsed; deeper evidence in Actions"}
+        "unassigned_structured_samples":data["global"]["unassigned_structured_samples"][:12],
+        "global_news_selection_UNVERIFIED":[short_lead(x) for x in data["global"]["global_news_selection_UNVERIFIED"][:12]],
+        "selection_note":"COMPACT_12_OF_EACH; full source archive fully parsed; deeper evidence in Actions"}
     queue_summary={**data["queue"],
-        "delta_candidates":data["queue"]["delta_candidates"][:35],
-        "event_candidates":data["queue"]["event_candidates"][:35],
-        "selection_note":"COMPACT_35_OF_EACH; full event/delta files remain in docs/evidence_engine"}
+        "delta_candidates":data["queue"]["delta_candidates"][:20],
+        "event_candidates":data["queue"]["event_candidates"][:15],
+        "selection_note":"COMPACT_20_DELTA_15_EVENTS; full event/delta files remain in docs/evidence_engine"}
     write(base/"global_context.json",global_summary)
     write(base/"research_queue.json",queue_summary)
     coverage=[]
@@ -278,27 +277,26 @@ def publish(data,root=ROOT,out=None,full_export=True):
         cs=card["full_source_counts"]
         leads=card["news_search_origin_leads_UNVERIFIED"]
         coverage.append({
-            "cmc_id":card["cmc_id"],"symbol":card["symbol"],
-            "anchored_okx_observations":cs["anchored"],
-            "tentative_token_or_exchange_observations":cs["candidate"],
-            "network_only":cs["network"],
-            "raw_query_origin_leads_NOT_verified":cs["query_origin"],
-            "selected_18_query_leads_with_substantive_context":
+            "id":card["cmc_id"],"symbol":card["symbol"],
+            "anchored":cs["anchored"],
+            "tentative":cs["candidate"],
+            "network":cs["network"],
+            "query_unverified":cs["query_origin"],
+            "substantive_leads_not_verified":
                 sum(bool(x.get("content_substantive")) for x in leads),
-            "verified_new_24h_primary_catalysts_by_builder":0,
-            "verification_required":True})
+            "verified_new_24h_primary_catalysts_by_builder":0})
     write(base/"coverage_matrix.json",{
         "schema_version":"cmc100-v8-research-coverage-v1",
         "assets":coverage,
         "disclaimer":"Quantitative lead coverage, NOT AI independent research or proven catalysts.",
         "counts":{
             "coins":len(coverage),
-            "with_anchored_okx":sum(x["anchored_okx_observations"]>0 for x in coverage),
+            "with_anchored_okx":sum(x["anchored"]>0 for x in coverage),
             "without_anchored_okx":sum(x["anchored_okx_observations"]==0 for x in coverage),
             "with_unverified_cross_source_candidates":
-                sum(x["tentative_token_or_exchange_observations"]>0 for x in coverage),
+                sum(x["tentative"]>0 for x in coverage),
             "with_at_least_one_substantive_discovery_search_lead":
-                sum(x["selected_18_query_leads_with_substantive_context"]>0 for x in coverage)}})
+                sum(x["substantive_leads_not_verified"]>0 for x in coverage)}})
     m=data["manifest"];m["coin_batches"]=batches
     m["coverage_matrix_path"]="docs/research_pack/coverage_matrix.json"
     m["context_handoff"]={
@@ -308,7 +306,7 @@ def publish(data,root=ROOT,out=None,full_export=True):
             (base/"coverage_matrix.json").stat().st_size,
         "front_layer_is_full_raw_evidence":False,
         "deep_dive_full_coin_cards_in_artifact":full_export,
-        "discovery_selected_per_coin":3,
+        "discovery_selected_per_coin":2,
         "remaining_source_records_exported_without_truncation":full_export}
     if full_export:
         export=base/"export";export.mkdir(parents=True,exist_ok=True)
