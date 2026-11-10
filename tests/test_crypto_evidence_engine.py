@@ -7,7 +7,7 @@ import unittest
 
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"src"))
 from crypto_evidence_engine import (capture,save,parse_chains,parse_stablecoins,
-                                    parse_bybit_tickers,parse_bybit_instruments)
+                                    parse_bybit_tickers,parse_bybit_instruments,parse_kraken_tickers)
 NOW=dt.datetime(2026,11,10,16,0,tzinfo=dt.timezone.utc)
 
 def market():
@@ -23,6 +23,18 @@ class EngineTests(unittest.TestCase):
     def test_stablecoin_supply(self):
         x=parse_stablecoins([{"name":"Ethereum","totalCirculating":{"peggedUSD":10000000}}],NOW)
         self.assertEqual(x[0]["metrics"]["circulating_usd"],10000000)
+    def test_stablecoin_updated_api_schema(self):
+        rows=parse_stablecoins([{"name":"Ethereum","totalCirculatingUSD":{"peggedUSD":1337000000}}],NOW)
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["metrics"]["circulating_usd"],1337000000)
+    def test_kraken_derivatives(self):
+        rows=parse_kraken_tickers({"result":"success","tickers":[
+            {"symbol":"pf_ethusd","tag":"perpetual","pair":"ETH:USD",
+             "openInterest":1000.5,"fundingRate":0.0002,"markPrice":3000},
+            {"symbol":"fi_btc_2027","tag":"month","openInterest":300}]},NOW)
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["metrics"]["fundingRate"],0.0002)
+        self.assertEqual(rows[0]["coin_identity_status"],"NOT_VERIFIED")
     def test_bybit_funding_open_interest_without_coin_guess(self):
         x=parse_bybit_tickers({"retCode":0,"result":{"list":[
           {"symbol":"ETHUSDT","lastPrice":"4000","openInterestValue":"12000000",
