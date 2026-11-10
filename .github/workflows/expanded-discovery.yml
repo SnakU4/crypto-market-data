@@ -19,12 +19,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test 100-coin wide discovery and 10k record archiving
+      - name: Test evidence collection, article resolution, quality and archiving
         run: python -m unittest discover -s tests -p 'test_*discovery*.py' -v
       - name: Gather public CMC100 and adjacent-industry evidence
         env:
           DISCOVERY_WORKERS: '5'
-          DISCOVERY_ARTICLE_BUDGET: '80'
+          DISCOVERY_ARTICLE_BUDGET: '320'
+          DISCOVERY_RESOLUTION_BUDGET: '240'
         run: python src/expanded_discovery.py
       - name: Publish compressed full archive and audit
         if: success()
