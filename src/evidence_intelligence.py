@@ -97,12 +97,12 @@ def assign_identity(observations,market):
                 record["candidate_cmc_id"]=matches[0]["cmc_id"]
                 record["coin_identity_status"]="EXCHANGE_BASE_SYMBOL_CANDIDATE"
                 candidates+=1
-        elif source in ("btc_mempool","btc_fee_estimates"):
+        elif source in ("btc_mempool","btc_fee_estimates","btc_recent_transactions"):
             matching=[a for a in assets if a["cmc_id"]==1 and a.get("symbol")=="BTC"]
             if matching:
                 record["network_context_cmc_id"]=1
                 record["coin_identity_status"]="BITCOIN_NETWORK_CONTEXT_NOT_TOKEN_TRANSACTION"
-        elif source=="ethereum_blockscout_stats":
+        elif source in ("ethereum_blockscout_stats","ethereum_recent_transactions"):
             matching=[a for a in assets if a["cmc_id"]==1027 and a.get("symbol")=="ETH"]
             if matching:
                 record["network_context_cmc_id"]=1027
@@ -244,8 +244,8 @@ def integrated_quality(structured,discovery=None,now=None):
         "ONCHAIN_NETWORK":"DIRECT_ONCHAIN_NETWORK" in families,
         "DEX_LIQUIDITY":"DEX_ONCHAIN_MARKET" in families,
         "TOKENOMICS_SUPPLY":bool(families&{"TOKENOMICS_SUPPLY_PROXY","STABLECOIN_SUPPLY"}),
-        "TOKEN_UNLOCKS":False,
-        "WALLET_TRANSFERS":False,
+        "TOKEN_UNLOCKS":"TOKEN_UNLOCK_SCHEDULE_CANDIDATE" in families,
+        "WALLET_TRANSFERS":"DIRECT_WALLET_ACTIVITY_SAMPLE" in families,
     }
     verified=structured.get("identity_mapping",{}).get("anchored_distinct_cmc_ids",0)
     provider_ok=sum(x["status"]=="OK" and x.get("records",0)>0 for x in audit)
@@ -280,4 +280,5 @@ def integrated_quality(structured,discovery=None,now=None):
             "sources_attempted":active,"records_by_family":counts,
             "anchored_cmc100_asset_count":verified,
             "discovery_age_hours":round(age,2) if age is not None else None,
-            "warning":"ENGINEERING_EVIDENCE_COVERAGE_SCORE_NOT_TRADING_ALPHA_OR_CAUSAL_QUALITY"}
+            "warning":"ENGINEERING_EVIDENCE_COVERAGE_SCORE_NOT_TRADING_ALPHA_OR_CAUSAL_QUALITY",
+            "coverage_caveat":"SAMPLED_TRANSACTIONS_AND_THIRD_PARTY_UNLOCK_CALENDAR_DO_NOT_SATISFY_UNIVERSE_WIDE_VERIFICATION"}
