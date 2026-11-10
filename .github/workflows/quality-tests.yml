@@ -6,6 +6,7 @@ on:
       - 'src/structured_evidence.py'
       - 'src/evidence_scorecard.py'
       - 'src/discovery_quality.py'
+      - 'src/crypto_evidence_engine.py'
       - 'tests/**'
       - '.github/workflows/quality-tests.yml'
   workflow_dispatch:
@@ -25,3 +26,4 @@ jobs:
           python -m compileall -q src tests
           python -m unittest discover -s tests -p 'test_*discovery*.py' -v
           python -m unittest discover -s tests -p 'test_structured_evidence.py' -v
+          python -m unittest discover -s tests -p 'test_crypto_evidence_engine.py' -v
