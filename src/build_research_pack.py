@@ -273,11 +273,39 @@ def publish(data,root=ROOT,out=None,full_export=True):
         "selection_note":"COMPACT_35_OF_EACH; full event/delta files remain in docs/evidence_engine"}
     write(base/"global_context.json",global_summary)
     write(base/"research_queue.json",queue_summary)
+    coverage=[]
+    for card in cards:
+        cs=card["full_source_counts"]
+        leads=card["news_search_origin_leads_UNVERIFIED"]
+        coverage.append({
+            "cmc_id":card["cmc_id"],"symbol":card["symbol"],
+            "anchored_okx_observations":cs["anchored"],
+            "tentative_token_or_exchange_observations":cs["candidate"],
+            "network_only":cs["network"],
+            "raw_query_origin_leads_NOT_verified":cs["query_origin"],
+            "selected_18_query_leads_with_substantive_context":
+                sum(bool(x.get("content_substantive")) for x in leads),
+            "verified_new_24h_primary_catalysts_by_builder":0,
+            "verification_required":True})
+    write(base/"coverage_matrix.json",{
+        "schema_version":"cmc100-v8-research-coverage-v1",
+        "assets":coverage,
+        "disclaimer":"Quantitative lead coverage, NOT AI independent research or proven catalysts.",
+        "counts":{
+            "coins":len(coverage),
+            "with_anchored_okx":sum(x["anchored_okx_observations"]>0 for x in coverage),
+            "without_anchored_okx":sum(x["anchored_okx_observations"]==0 for x in coverage),
+            "with_unverified_cross_source_candidates":
+                sum(x["tentative_token_or_exchange_observations"]>0 for x in coverage),
+            "with_at_least_one_substantive_discovery_search_lead":
+                sum(x["selected_18_query_leads_with_substantive_context"]>0 for x in coverage)}})
     m=data["manifest"];m["coin_batches"]=batches
+    m["coverage_matrix_path"]="docs/research_pack/coverage_matrix.json"
     m["context_handoff"]={
         "full_100_cards_in_compact_files":True,
         "front_layer_bytes":sum(b["bytes"] for b in batches)+
-            (base/"global_context.json").stat().st_size+(base/"research_queue.json").stat().st_size,
+            (base/"global_context.json").stat().st_size+(base/"research_queue.json").stat().st_size+
+            (base/"coverage_matrix.json").stat().st_size,
         "front_layer_is_full_raw_evidence":False,
         "deep_dive_full_coin_cards_in_artifact":full_export,
         "discovery_selected_per_coin":3,
