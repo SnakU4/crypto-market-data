@@ -244,16 +244,25 @@ def parse_patternplus_unlocks(raw,now):
         if isinstance(project,dict):project=project.get("slug") or project.get("name") or project.get("symbol")
         project=str(project or entry.get("symbol") or "").strip()
         if not project:continue
-        identifier=project+"|"+day+"|"+str(entry.get("type") or entry.get("kind") or "unlock")
+        allocation=entry.get("categories") or entry.get("types") or entry.get("allocation") or ""
+        if isinstance(allocation,(dict,list)):
+            allocation=repr(allocation)[:100]
+        identifier=project+"|"+day+"|"+str(entry.get("type") or entry.get("kind") or "unlock")+"|"+str(allocation)[:100]
         if len(identifier)>300:continue
         fields={}
         for name in ("tokens","amount","unlockTokens","unlockAmount","tokens_unlocked",
                      "percent_of_circulating","pctCirculating","unlockPercentOfCirculating",
-                     "unlockUsd","value_usd"):
+                     "unlockUsd","value_usd","pct_circulating","pct_total"):
             n=num(entry.get(name))
             if n is not None:fields["reported_"+name]=n
         out.append(row("patternplus_unlocks",identifier,"Published unlock schedule candidate "+project+" "+day,
                        fields,now,{"project_label":project,"scheduled_date_utc":day,
+                                   "source_project_name":str(entry.get("name") or "")[:120],
+                                   "source_symbol":str(entry.get("symbol") or "")[:40],
+                                   "source_basis":str(entry.get("basis") or "")[:100],
+                                   "source_file_reference":str(entry.get("file") or "")[:240],
+                                   "source_categories":str(entry.get("categories") or "")[:180],
+                                   "source_types":str(entry.get("types") or "")[:180],
                                    "schedule_source":"https://pattern.plus/api/v1/unlocks.json",
                                    "provider_attribution":"Data: PatternPlus (pattern.plus); CC BY 4.0",
                                    "verification":"AGGREGATED_THIRD_PARTY_UNCORROBORATED",
