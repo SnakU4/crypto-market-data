@@ -7,6 +7,8 @@ on:
       - 'src/evidence_scorecard.py'
       - 'src/discovery_quality.py'
       - 'src/crypto_evidence_engine.py'
+      - 'src/evidence_extensions.py'
+      - 'src/evidence_intelligence.py'
       - 'tests/**'
       - '.github/workflows/quality-tests.yml'
   workflow_dispatch:
@@ -27,3 +29,5 @@ jobs:
           python -m unittest discover -s tests -p 'test_*discovery*.py' -v
           python -m unittest discover -s tests -p 'test_structured_evidence.py' -v
           python -m unittest discover -s tests -p 'test_crypto_evidence_engine.py' -v
+          python -m unittest discover -s tests -p 'test_evidence_intelligence.py' -v
+          python -m unittest discover -s tests -p 'test_event_sources.py' -v
