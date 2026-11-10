@@ -62,7 +62,7 @@ jobs:
               assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']
               assert sum(1 for _ in p.open())==item['count']
           assert manifest['verified_9_out_of_10'] is False
-          assert manifest['context_handoff']['front_layer_bytes'] < 475000, 'LLM attention budget too large'
+          assert manifest['context_handoff']['front_layer_bytes'] < 350000, 'LLM attention budget too large'
           coverage=json.loads((root/'coverage_matrix.json').read_text())
           assert coverage['counts']['coins']==100
           assert all(x['verified_new_24h_primary_catalysts_by_builder']==0 for x in coverage['assets'])
