@@ -36,6 +36,48 @@ class QualityTests(unittest.TestCase):
         self.assertEqual(s["article_fetch_substantive"],1)
         self.assertEqual(e["context_origin"],"PUBLIC_ARTICLE_EXTRACT")
         self.assertTrue(e["excerpt_adds_information"])
+    def test_google_news_explicit_target_only(self):
+        import urllib.parse
+        link="https://publisher.example/story"
+        wrapped="https://news.google.com/rss/articles/opaque?url="+urllib.parse.quote(link,safe="")
+        self.assertEqual(q.direct_news_target(wrapped),link)
+        self.assertIsNone(q.direct_news_target("https://news.google.com/rss/articles/opaque"))
+        self.assertIsNone(q.direct_news_target("https://news.google.com/rss/articles/opaque?url=https://127.0.0.1/private"))
+
+    def test_google_resolution_and_fetch_are_separate(self):
+        e=lead(1,"Protocol update released")
+        e["url"]="https://news.google.com/rss/articles/opaque"
+        e["previously_seen"]=False
+        paragraph=("The developers released the signed upgrade after six months of testing with validators "
+                   "and independent reviewers. The release documents a new congestion control mechanism "
+                   "and a deployment timeline with explicit rollback conditions for participating operators.")
+        stats=q.enrich([e],max_articles=1,max_resolutions=1,
+                       resolver=lambda _: "https://publisher.example/story",
+                       fetcher=lambda _: paragraph)
+        self.assertEqual(stats["google_news_resolution_succeeded"],1)
+        self.assertEqual(stats["resolved_google_articles_fetched"],1)
+        self.assertEqual(stats["article_fetch_substantive"],1)
+        self.assertEqual(e["url"],"https://news.google.com/rss/articles/opaque")
+        self.assertEqual(e["resolved_article_url"],"https://publisher.example/story")
+
+    def test_unresolved_link_kept_without_fabrication(self):
+        e=lead(1,"Breaking update")
+        e["url"]="https://news.google.com/rss/articles/opaque"
+        stats=q.enrich([e],max_articles=1,max_resolutions=1,resolver=lambda _:None,
+                       fetcher=lambda _:self.fail("Should not attempt article fetch"))
+        self.assertEqual(stats["google_news_resolution_attempted"],1)
+        self.assertEqual(stats["article_fetch_attempted"],0)
+        self.assertEqual(e["resolution_status"],"UNRESOLVED")
+        self.assertEqual(e["information_status"],"LOW_INFORMATION")
+
+    def test_budget_and_host_cap_preserve_all_leads(self):
+        events=[lead(i,f"Report number {i}") for i in range(50)]
+        for e in events:e["previously_seen"]=False
+        stats=q.enrich(events,max_articles=30,max_resolutions=0,fetcher=lambda _:None)
+        self.assertEqual(len(events),50)
+        self.assertEqual(stats["article_fetch_attempted"],q.MAX_PER_HOST)
+        self.assertEqual(sum(e["article_fetch_status"]=="NOT_ATTEMPTED" for e in events),50-q.MAX_PER_HOST)
+
     def test_private_addresses_blocked(self):
         for url in ("http://example.com/x","https://127.0.0.1/x","https://localhost/secret","https://10.0.0.1/x","file:///etc/passwd"):
             self.assertFalse(q.public_html_url(url))
