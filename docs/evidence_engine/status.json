@@ -1,8 +1,8 @@
 {
-  "archive_path": "docs/evidence_engine/archive/20261110/20261110T175912Z_observations.jsonl.gz",
-  "archive_sha256": "8092e11c8f061ad1d11f88f02bdaacbd2f05dc4480d5b3b0396741cbfbaf4a17",
-  "capture_utc": "2026-11-10T17:59:12Z",
-  "configured_sources": 4,
+  "archive_path": "docs/evidence_engine/archive/20261110/20261110T180016Z_observations.jsonl.gz",
+  "archive_sha256": "6fa80b238fc4b01030e79de5599413bcf75bce229f2e969f931b516c8755862d",
+  "capture_utc": "2026-11-10T18:00:16Z",
+  "configured_sources": 5,
   "limitations": [
     "NOT_CMC100_COIN_MATCHED",
     "NO_HISTORICAL_PUBLICATION_TIME_FOR_SNAPSHOTS",
@@ -11,9 +11,11 @@
     "MARKET_DATA_MAY_NOT_BE_ACCESSIBLE_FROM_GITHUB_RUNNER"
   ],
   "official_cmc100_count": 100,
-  "records": 422,
+  "records": 841,
   "records_by_family": {
-    "ONCHAIN_AGGREGATE_PROXY": 422
+    "DERIVATIVES_MARKET": 209,
+    "ONCHAIN_AGGREGATE_PROXY": 422,
+    "STABLECOIN_SUPPLY": 210
   },
   "schema_version": "crypto-evidence-engine-v1",
   "source_audit": [
@@ -28,10 +30,18 @@
     {
       "error": null,
       "family": "STABLECOIN_SUPPLY",
-      "records": 0,
+      "records": 210,
       "source": "defillama_stablecoins",
       "status": "OK",
       "url": "https://stablecoins.llama.fi/stablecoinchains"
+    },
+    {
+      "error": null,
+      "family": "DERIVATIVES_MARKET",
+      "records": 209,
+      "source": "kraken_futures_tickers",
+      "status": "OK",
+      "url": "https://futures.kraken.com/derivatives/api/v3/tickers"
     },
     {
       "error": "HTTPError: HTTP Error 403: Forbidden",
@@ -51,7 +61,7 @@
     }
   ],
   "stage1_9_of_10_verified": false,
-  "successful_sources": 2,
+  "successful_sources": 3,
   "verification_status": "UNCORROBORATED_LIVE_MARKET_OBSERVATIONS",
   "verified_cmc_id_matches": 0
 }
