@@ -20,12 +20,14 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test evidence collection, article resolution, quality and archiving
-        run: python -m unittest discover -s tests -p 'test_*discovery*.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_*discovery*.py' -v
+          python -m unittest discover -s tests -p 'test_structured_evidence.py' -v
       - name: Gather public CMC100 and adjacent-industry evidence
         env:
           DISCOVERY_WORKERS: '5'
           DISCOVERY_ARTICLE_BUDGET: '320'
-          DISCOVERY_RESOLUTION_BUDGET: '240'
+          DISCOVERY_RESOLUTION_BUDGET: '0'
         run: python src/expanded_discovery.py
       - name: Publish compressed full archive and audit
         if: success()
