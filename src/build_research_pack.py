@@ -81,7 +81,7 @@ def led_score(e):
             35*bool(fam&{"PROJECT_PRIMARY","GOVERNANCE_EVENTS","SECURITY_EVENTS"})+
             15*bool(fam&{"PUBLIC_COMMUNITY","TECH_SECURITY_RESEARCH"})+
             8*bool(e.get("candidate_fact_spans"))+
-            8*not bool(e.get("previously_seen"))-
+            8*(not bool(e.get("previously_seen")))-
             25*(e.get("context_origin")=="TITLE_ONLY"))
 
 def direct(x):
