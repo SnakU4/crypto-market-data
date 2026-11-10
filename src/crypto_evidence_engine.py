@@ -29,6 +29,8 @@ SOURCES=(
      "url":"https://api.llama.fi/v2/chains","max_bytes":2_500_000},
     {"key":"defillama_stablecoins","family":"STABLECOIN_SUPPLY",
      "url":"https://stablecoins.llama.fi/stablecoinchains","max_bytes":2_500_000},
+    {"key":"kraken_futures_tickers","family":"DERIVATIVES_MARKET",
+     "url":"https://futures.kraken.com/derivatives/api/v3/tickers","max_bytes":5_000_000},
     {"key":"bybit_linear_tickers","family":"DERIVATIVES_MARKET",
      "url":"https://api.bybit.com/v5/market/tickers?category=linear","max_bytes":5_000_000},
     {"key":"bybit_instruments","family":"DERIVATIVES_INSTRUMENTS",
@@ -79,13 +81,37 @@ def parse_stablecoins(raw,now):
     rows=[]
     for v in raw:
         if not isinstance(v,dict) or not v.get("name"):continue
-        circ=v.get("totalCirculating")
+        circ=v.get("totalCirculatingUSD",v.get("totalCirculating"))
         value=number(circ.get("peggedUSD")) if isinstance(circ,dict) else number(circ)
         if value is None or value<0:continue
         name=str(v["name"])[:120]
         rows.append(observation("defillama_stablecoinchains",name,
                                 "Stablecoin circulation "+name,{"circulating_usd":value},now))
     return rows
+
+def parse_kraken_tickers(raw,now):
+    if not isinstance(raw,dict) or str(raw.get("result")).lower()!="success" or not isinstance(raw.get("tickers"),list):
+        raise ValueError("KRAKEN_TICKERS_INVALID")
+    rows=[]
+    for entry in raw["tickers"]:
+        if not isinstance(entry,dict) or entry.get("tag")!="perpetual":
+            continue
+        symbol=str(entry.get("symbol") or "")
+        if not symbol or len(symbol)>40 or any(c not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_." for c in symbol):
+            continue
+        metrics={}
+        for field in ("openInterest","fundingRate","fundingRatePrediction",
+                      "markPrice","indexPrice","vol24h","volumeQuote","change24h"):
+            value=number(entry.get(field))
+            if value is not None:metrics[field]=value
+        if not metrics:continue
+        rows.append(observation("kraken_futures_tickers",symbol,
+                                "Kraken perpetual derivatives "+symbol,metrics,now,
+                                {"exchange":"Kraken Futures","exchange_symbol":symbol,
+                                 "pair":entry.get("pair"),"tag":entry.get("tag"),
+                                 "suspended":entry.get("suspended")}))
+    return rows
+
 
 def parse_bybit_tickers(raw,now):
     if not isinstance(raw,dict) or raw.get("retCode")!=0 or not isinstance(raw.get("result",{}).get("list"),list):
@@ -125,7 +151,8 @@ def parse_bybit_instruments(raw,now):
                                  "launchTime":v.get("launchTime")}))
     return rows
 
-PARSERS={"defillama_chains":parse_chains,
+PARSERS={"kraken_futures_tickers":parse_kraken_tickers,
+         "defillama_chains":parse_chains,
          "defillama_stablecoins":parse_stablecoins,
          "bybit_linear_tickers":parse_bybit_tickers,
          "bybit_instruments":parse_bybit_instruments}
