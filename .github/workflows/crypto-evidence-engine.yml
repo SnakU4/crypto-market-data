@@ -3,6 +3,10 @@ on:
   push:
     paths:
       - 'src/crypto_evidence_engine.py'
+      - 'src/evidence_extensions.py'
+      - 'src/evidence_intelligence.py'
+      - 'tests/test_evidence_intelligence.py'
+      - 'tests/test_event_sources.py'
       - 'tests/test_crypto_evidence_engine.py'
       - '.github/workflows/crypto-evidence-engine.yml'
   workflow_dispatch:
@@ -24,8 +28,10 @@ jobs:
           python-version: '3.12'
       - name: Offline engine tests
         run: |
-          python -m compileall -q src/crypto_evidence_engine.py tests/test_crypto_evidence_engine.py
+          python -m compileall -q src/crypto_evidence_engine.py src/evidence_extensions.py src/evidence_intelligence.py tests/test_crypto_evidence_engine.py tests/test_evidence_intelligence.py tests/test_event_sources.py
           python -m unittest discover -s tests -p 'test_crypto_evidence_engine.py' -v
+          python -m unittest discover -s tests -p 'test_evidence_intelligence.py' -v
+          python -m unittest discover -s tests -p 'test_event_sources.py' -v
       - name: Fetch public structured evidence
         run: python src/crypto_evidence_engine.py
       - name: Publish independent immutable snapshots
