@@ -1,0 +1,92 @@
+name: CMC100 V8 Research Evidence Pack
+on:
+  push:
+    # One live acceptance run when this workflow is first deployed/updated.
+    paths:
+      - '.github/workflows/research-pack.yml'
+  workflow_run:
+    workflows: ['Crypto Evidence Engine - Structured Sources']
+    types: [completed]
+  workflow_dispatch:
+  schedule:
+    # After both source collections, as a fallback if workflow_run is delayed.
+    - cron: '05 12,0 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cmc100-research-pack
+  cancel-in-progress: false
+jobs:
+  pack:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: V8 pack regression tests
+        run: |
+          python -m compileall -q src/build_research_pack.py tests/test_build_research_pack.py
+          python -m unittest discover -s tests -p 'test_build_research_pack.py' -v
+      - name: Parse both complete immutable archives and build V8 pack
+        run: python src/build_research_pack.py
+      - name: Strict end-to-end acceptance
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          root=pathlib.Path('docs/research_pack')
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert manifest['coin_cards']==100
+          assert len(manifest['coin_batches'])==5
+          assert manifest['sha_verified_archives']['engine']['verified']
+          assert manifest['sha_verified_archives']['discovery']['verified']
+          ids=[]
+          for item in manifest['coin_batches']:
+              p=pathlib.Path(item['path'])
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']
+              coins=json.loads(p.read_text())['coins']
+              assert len(coins)==20
+              ids.extend(int(c['cmc_id']) for c in coins)
+          assert len(ids)==100 and len(set(ids))==100
+          structured=manifest['pit_record_filter']['engine']['asof_eligible']
+          parts=manifest['structured_partition']
+          assert sum(parts.values())==structured
+          for domain in ('structured','discovery'):
+              item=manifest['full_text_export_for_actions_artifact'][domain]
+              p=root/'export'/(domain+'_complete.jsonl')
+              assert p.is_file()
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']
+              assert sum(1 for _ in p.open())==item['count']
+          assert manifest['verified_9_out_of_10'] is False
+          print('V8 ACCEPTED: 100 coins; complete raw archives SHA-verified; '
+                +str(structured)+' structured rows; '
+                +str(manifest['pit_record_filter']['discovery']['asof_eligible'])
+                +' discovery rows; no false verification claims')
+          PY
+      - name: Upload complete plain-text archives for manual research audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: CMC100-V8-Full-Evidence-Pack
+          retention-days: 14
+          compression-level: 6
+          path: |
+            docs/research_pack/manifest.json
+            docs/research_pack/coin_batches/
+            docs/research_pack/global_context.json
+            docs/research_pack/research_queue.json
+            docs/research_pack/export/
+      - name: Publish LLM-readable compact research pack
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research_pack/manifest.json docs/research_pack/coin_batches/ docs/research_pack/global_context.json docs/research_pack/research_queue.json
+          if ! git diff --cached --quiet; then
+            git commit -m "V8 research pack $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
