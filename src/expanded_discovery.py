@@ -25,6 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict, deque
 from email.utils import parsedate_to_datetime
+from discovery_quality import enrich
 
 UTC = dt.timezone.utc
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -79,6 +80,27 @@ COMMUNITY_FEEDS = (
     ('maker','https://forum.sky.money/latest.rss'),
     ('zcash','https://forum.zcashcommunity.com/latest.rss'),
     ('stacks','https://forum.stacks.org/latest.rss'),
+)
+# Direct project and developer primary sources, audited independently.
+PROJECT_PRIMARY_FEEDS = (
+    ('bitcoin_core','https://bitcoincore.org/en/releases.atom'),
+    ('ethereum_foundation','https://blog.ethereum.org/feed.xml'),
+    ('solana','https://solana.com/news/rss.xml'),
+    ('chainlink','https://blog.chain.link/feed/'),
+    ('uniswap','https://blog.uniswap.org/rss.xml'),
+    ('aave','https://aave.com/blog/rss.xml'),
+    ('polkadot','https://polkadot.com/blog/rss.xml'),
+    ('arbitrum','https://blog.arbitrum.io/rss/'),
+    ('optimism','https://www.optimism.io/blog/rss.xml'),
+    ('cosmos','https://blog.cosmos.network/feed/'),
+    ('github_bitcoin','https://github.com/bitcoin/bitcoin/releases.atom'),
+    ('github_goethereum','https://github.com/ethereum/go-ethereum/releases.atom'),
+    ('github_solana','https://github.com/anza-xyz/agave/releases.atom'),
+    ('github_aave','https://github.com/aave/aave-v3-core/releases.atom'),
+    ('github_uniswap','https://github.com/Uniswap/v4-core/releases.atom'),
+    ('github_polkadot','https://github.com/paritytech/polkadot-sdk/releases.atom'),
+    ('github_cosmos','https://github.com/cosmos/gaia/releases.atom'),
+    ('github_optimism','https://github.com/ethereum-optimism/optimism/releases.atom'),
 )
 # Public issuer/standards/security feeds and non-crypto technology sources.
 ADDITIONAL_FEEDS = (
@@ -176,6 +198,8 @@ def plan(market,previous=None):
                          'lens':tag})
     for name,url in COMMUNITY_FEEDS:
         jobs.append({'id':f'community_{name}','family':'PUBLIC_COMMUNITY','kind':'rss','endpoint':'COMMUNITY_RSS','target':url,'lens':'COMMUNITY'})
+    for name,url in PROJECT_PRIMARY_FEEDS:
+        jobs.append({'id':f'primary_{name}','family':'PROJECT_PRIMARY','kind':'rss','endpoint':'PROJECT_DIRECT_RSS','target':url,'lens':'PRIMARY'})
     for name,url in ADDITIONAL_FEEDS:
         jobs.append({'id':f'additional_{name}','family':'TECH_SECURITY_RESEARCH','kind':'rss','endpoint':'PUBLIC_RSS','target':url,'lens':'ADJACENT'})
     # HN time filter is essential; prior version returned posts from 2018!
@@ -238,13 +262,13 @@ def rss_records(body,job,observed,max_items=MAX_RSS_ITEMS):
         for child in item:
             k=child.tag.rsplit('}',1)[-1]
             if k=='link':link=link or child.get('href') or (child.text or '').strip()
-            if k in ('title','pubDate','published','updated','description','summary','subtitle','guid','id'):
+            if k in ('title','pubDate','published','updated','description','summary','subtitle','guid','id','encoded','content'):
                 fields[k]=(child.text or '').strip()
         title=strip_html(fields.get('title'),300)
         url=link or fields.get('guid') or fields.get('id')
         if not title or not canonical_url(url):continue
         publication=parse_time(fields.get('published') or fields.get('pubDate') or fields.get('updated'))
-        summary=strip_html(fields.get('summary') or fields.get('description') or fields.get('subtitle'),800)
+        summary=strip_html(fields.get('content') or fields.get('encoded') or fields.get('summary') or fields.get('description') or fields.get('subtitle'),1600)
         rows.append({'url':url,'title':title,'excerpt':summary,'published_utc':iso(publication) if publication else None,
                      'publication_time_status':'RSS_DATE' if publication else 'UNKNOWN',
                      'source_type':'RSS','observed_utc':observed,'context_origin':'FEED_EXCERPT' if summary else 'TITLE_ONLY'})
@@ -359,6 +383,11 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
     all_events,future,old=merge_records(findings,seen,cutoff,now_utc)
     all_events.sort(key=lambda e:(e['published_utc'] or e['first_observed_utc'],e['event_id']),reverse=True)
     new_events=[e for e in all_events if e['event_id'] not in seen]
+    quality=enrich(all_events, max_articles=max(0,min(200,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','80')))))
+    # Distinguish newly observed URLs from distinct headlines and information.
+    historic_titles={e['story_title_hash'] for e in all_events if e['event_id'] in seen}
+    new_title_clusters={e['story_title_hash'] for e in new_events if e['story_title_hash'] not in historic_titles}
+    novel_substantive=sum(e['excerpt_adds_information'] for e in new_events)
     index=index_select(all_events,INDEX_LIMIT,now_utc)
     merged_first={e['event_id']:e['first_observed_utc'] for e in all_events}
     # Keep only ~14 days of seen URLs; older immutably archived in compressed deltas.
@@ -385,6 +414,13 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         'requests_planned':len(jobs),'requests_executed':len(audit),'requests_ok':sum(r['status']=='OK' for r in audit),
         'requests_blocked':len(blocked),'requests_with_leads':sum(bool(v) for v in by_source.values()),
         'raw_leads':len(findings),'distinct_url_leads':len(all_events), 'new_since_prior':len(new_events),
+        'incremental_new_url_leads':len(new_events),
+        'incremental_new_title_clusters_within_run':len(new_title_clusters),
+        'incremental_new_urls_with_substantive_context':novel_substantive,
+        'incremental_baseline':'ROLLING_14_DAY_URL_REGISTRY_NOT_GLOBAL_ALL_TIME',
+        'first_run_baseline':not bool(seen),
+        'new_urls_by_source_family':dict(Counter(f for e in new_events for f in e['source_families'])),
+        'information_quality':quality,
         'distinct_story_title_hashes':len({x['story_title_hash'] for x in all_events}),
         'target_unique_per_run':TARGET_UNIQUE,'target_met':len(all_events)>=TARGET_UNIQUE,
         'target_shortfall':max(0,TARGET_UNIQUE-len(all_events)),
@@ -403,7 +439,7 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
         'source_error_examples':blocked[:40],
         'access_gaps':ACCESS_GAPS,
         'limits':['GOOGLE_NEWS_RSS_IS_NOT_ALL_NEWS','SEARCH_ENGINE_COVERAGE_VARIABLE',
-                  'NETWORK_RATE_LIMITS_AND_SCHEDULE_DELAYS','NO_FULL_TEXT_EXTRACTION',
+                  'NETWORK_RATE_LIMITS_AND_SCHEDULE_DELAYS','BOUNDED_PUBLIC_ARTICLE_EXCERPTS_ONLY',
                   'QUERY_ORIGIN_NOT_COIN_MATCH','NUMBER_OF_LEADS_NOT_ALPHA_QUALITY']}
     return {'status':stats,'events':all_events,'new_events':new_events,'index':index,
             'first_seen':merged_first,'audit':audit,'jobs':jobs}
@@ -452,7 +488,7 @@ def main():
     data=collect(market,HTTP(),previous,max_workers)
     result=write_bundle(data)
     print(json.dumps({key:result[key] for key in ('requests_planned','requests_ok','distinct_url_leads',
-        'distinct_story_title_hashes','target_met','target_shortfall','new_since_prior','archive_path')} ,indent=2))
+        'distinct_story_title_hashes','target_met','target_shortfall','new_since_prior','information_quality','archive_path')} ,indent=2))
     return 0
 
 if __name__=='__main__':raise SystemExit(main())
