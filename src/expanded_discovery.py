@@ -184,8 +184,13 @@ def canonical_url(u):
     # Dropping them would collapse every proposal or CVE into ONE event.
     host=p.netloc.lower().removeprefix('www.')
     fragment=p.fragment if host=='snapshot.box' and p.fragment.startswith('/') else ''
-    query=urllib.parse.urlencode({'id':urllib.parse.parse_qs(p.query)['id'][0]}) if (
-        host=='cve.org' and 'id' in urllib.parse.parse_qs(p.query)) else ''
+    q=urllib.parse.parse_qs(p.query)
+    if host=='cve.org' and 'id' in q:
+        query=urllib.parse.urlencode({'id':q['id'][0]})
+    elif host=='binance.com' and 'fundingTime' in q:
+        query=urllib.parse.urlencode({'fundingTime':q['fundingTime'][0]})
+    else:
+        query=''
     return urllib.parse.urlunsplit((p.scheme.lower(),host,p.path.rstrip('/'),query,fragment))
 
 
