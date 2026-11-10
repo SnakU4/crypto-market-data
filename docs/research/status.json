@@ -1,7 +1,7 @@
 {
-  "capture_utc": "2026-11-10T00:43:02Z",
+  "capture_utc": "2026-11-10T22:23:33Z",
   "cmc100_verified": 100,
-  "coin_count_with_event_candidate": 14,
+  "coin_count_with_event_candidate": 15,
   "coin_metrics_with_defillama": 47,
   "family_coverage": {
     "CEFI_LIQUIDATIONS": {
@@ -109,7 +109,7 @@
       "successful_sources": 1
     },
     "OI_CHANGE_24H": {
-      "coin_coverage": 77,
+      "coin_coverage": 0,
       "source_count": 1,
       "status": "MEASURED_ONLY_WHEN_HISTORY_AVAILABLE",
       "successful_sources": 1
@@ -135,7 +135,7 @@
       "successful_sources": 0
     },
     "ORDERBOOK_LIQUIDITY": {
-      "coin_coverage": 63,
+      "coin_coverage": 72,
       "gap": "SWAP_ORDERBOOK_SNAPSHOT_ONLY;USD_DEPTH_REQUIRES_VERIFIED_CONTRACT_SIZE",
       "source_count": 78,
       "status": "PARTIAL",
@@ -180,7 +180,7 @@
       "successful_sources": 0
     },
     "SOCIAL_ATTENTION": {
-      "coin_coverage": 12,
+      "coin_coverage": 10,
       "source_count": 1,
       "status": "PARTIAL",
       "successful_sources": 1
@@ -261,14 +261,14 @@
     "SOURCE_PUBLISHED_UTC_CAN_BE_UNKNOWN",
     "MARKET_SNAPSHOT_AND_RESEARCH_CAPTURE_TIMES_DIFFER"
   ],
-  "market_index_last_update": "2026-11-09T02:55:00.000Z",
-  "perp_oi_change_24h_measured": 77,
-  "rss_events_stored": 321,
-  "rss_events_with_cmc_candidate": 104,
+  "market_index_last_update": "2026-11-10T04:45:00.000Z",
+  "perp_oi_change_24h_measured": 0,
+  "rss_events_stored": 319,
+  "rss_events_with_cmc_candidate": 100,
   "source_attempts": [
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -277,40 +277,40 @@
       ],
       "source_id": "alternative_fng",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://api.alternative.me/fng/?limit=2"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "bitcoinmag",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://bitcoinmagazine.com/feed"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "bls_cpi",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "ERROR",
       "url": "https://www.bls.gov/feed/cpi.rss"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "bls_jobs",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "ERROR",
       "url": "https://www.bls.gov/feed/empsit.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:04Z",
+      "observed_utc": "2026-11-10T22:23:36Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -318,13 +318,13 @@
       ],
       "source_id": "cmc_supply_batch_1",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:04Z",
+      "started_utc": "2026-11-10T22:23:36Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=1%2C2%2C52%2C74%2C131%2C328%2C512%2C1027%2C1321%2C1437%2C1659%2C1831%2C1839%2C1958%2C1975%2C2010%2C2011%2C2087%2C2280%2C2634%2C2694%2C3077%2C3155%2C3602%2C3635%2C3773%2C3794%2C3897%2C3957%2C4030%2C4269%2C4642%2C4705%2C4847%2C5176%2C5426%2C5488%2C5690%2C5805%2C5994&convert=USD&skip_invalid=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:04Z",
+      "observed_utc": "2026-11-10T22:23:36Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -332,13 +332,13 @@
       ],
       "source_id": "cmc_supply_batch_2",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:04Z",
+      "started_utc": "2026-11-10T22:23:36Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=6535%2C6538%2C6636%2C7083%2C7186%2C7226%2C7278%2C7950%2C8000%2C8526%2C8916%2C9481%2C10529%2C11092%2C11419%2C11840%2C11841%2C13502%2C16086%2C20396%2C20947%2C21159%2C21794%2C22691%2C22861%2C22974%2C23095%2C23149%2C24478%2C26997%2C27075%2C28081%2C28177%2C28298%2C28321%2C29210%2C29270%2C29420%2C29814%2C30171&convert=USD&skip_invalid=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:36Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -346,31 +346,31 @@
       ],
       "source_id": "cmc_supply_batch_3",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:04Z",
+      "started_utc": "2026-11-10T22:23:36Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=32196%2C33038%2C33251%2C34104%2C34466%2C35336%2C35491%2C35509%2C35697%2C36341%2C36507%2C36645%2C37263%2C38482%2C38590%2C38828%2C38849%2C38892%2C39064%2C39125&convert=USD&skip_invalid=true"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "coinbase_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "ERROR",
       "url": "https://www.coinbase.com/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "source_id": "coindesk",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "categories",
@@ -380,97 +380,97 @@
       ],
       "source_id": "coingecko_trending",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://api.coingecko.com/api/v3/search/trending"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "source_id": "cointelegraph",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://cointelegraph.com/rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "cryptoslate",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://cryptoslate.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "source_id": "decrypt",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://decrypt.co/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "defiant",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://thedefiant.io/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "dlnews",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://www.dlnews.com/arc/outboundfeeds/rss/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "ethereum_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://blog.ethereum.org/feed.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "fed_monetary",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "fed_press",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_records": 422,
+      "observed_utc": "2026-11-10T22:23:33Z",
+      "response_records": 423,
       "response_shape": "array",
       "source_id": "llama_chains",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/v2/chains"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_protocol_records": 1589,
+      "observed_utc": "2026-11-10T22:23:35Z",
+      "response_protocol_records": 1597,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -499,14 +499,14 @@
       ],
       "source_id": "llama_dex",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/dexs?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_protocol_records": 3170,
+      "observed_utc": "2026-11-10T22:23:34Z",
+      "response_protocol_records": 3177,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -535,14 +535,14 @@
       ],
       "source_id": "llama_fees",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyFees"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
-      "response_protocol_records": 1294,
+      "observed_utc": "2026-11-10T22:23:34Z",
+      "response_protocol_records": 1298,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -571,13 +571,13 @@
       ],
       "source_id": "llama_holder_revenue",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyHoldersRevenue"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "response_protocol_records": 40,
       "response_shape": "object",
       "response_top_level_keys": [
@@ -607,13 +607,13 @@
       ],
       "source_id": "llama_options",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "response_protocol_records": 145,
       "response_shape": "object",
       "response_top_level_keys": [
@@ -643,25 +643,25 @@
       ],
       "source_id": "llama_perp_oi",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/open-interest?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_records": 8978,
+      "observed_utc": "2026-11-10T22:23:34Z",
+      "response_records": 8983,
       "response_shape": "array",
       "source_id": "llama_protocols",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/protocols"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_protocol_records": 2812,
+      "observed_utc": "2026-11-10T22:23:34Z",
+      "response_protocol_records": 2819,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -690,35 +690,35 @@
       ],
       "source_id": "llama_revenue",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:33Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyRevenue"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "response_records": 214,
       "response_shape": "array",
       "source_id": "llama_stablecoin_chains",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://stablecoins.llama.fi/stablecoinchains"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
-      "response_records": 3268,
+      "observed_utc": "2026-11-10T22:23:34Z",
+      "response_records": 3269,
       "response_shape": "array",
       "source_id": "llama_stablecoin_supply",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://stablecoins.llama.fi/stablecoincharts/all"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -727,13 +727,13 @@
       ],
       "source_id": "okx_book_1",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BTC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -742,13 +742,13 @@
       ],
       "source_id": "okx_book_1027",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -757,13 +757,13 @@
       ],
       "source_id": "okx_book_11419",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=GRAM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -772,13 +772,13 @@
       ],
       "source_id": "okx_book_11840",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=OP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -786,13 +786,13 @@
       ],
       "source_id": "okx_book_11841",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ARB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -801,13 +801,13 @@
       ],
       "source_id": "okx_book_131",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DASH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -816,13 +816,13 @@
       ],
       "source_id": "okx_book_1321",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -830,13 +830,13 @@
       ],
       "source_id": "okx_book_13502",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=WLD-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -845,13 +845,13 @@
       ],
       "source_id": "okx_book_1437",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ZEC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -860,13 +860,13 @@
       ],
       "source_id": "okx_book_1831",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BCH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -875,13 +875,13 @@
       ],
       "source_id": "okx_book_1839",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BNB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -890,13 +890,13 @@
       ],
       "source_id": "okx_book_1958",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TRX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -905,13 +905,13 @@
       ],
       "source_id": "okx_book_1975",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LINK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -920,13 +920,13 @@
       ],
       "source_id": "okx_book_2",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LTC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -935,13 +935,13 @@
       ],
       "source_id": "okx_book_2010",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ADA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -950,13 +950,13 @@
       ],
       "source_id": "okx_book_2011",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XTZ-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -964,13 +964,13 @@
       ],
       "source_id": "okx_book_20947",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SUI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -978,13 +978,13 @@
       ],
       "source_id": "okx_book_21159",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ONDO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -992,27 +992,28 @@
       ],
       "source_id": "okx_book_21794",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=APT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_22691",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STRK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1021,125 +1022,133 @@
       ],
       "source_id": "okx_book_2280",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=FIL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_22861",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TIA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_22974",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TAO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_23095",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BONK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_23149",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SEI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_24478",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PEPE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_26997",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ZRO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_28081",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SPX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
+        "data",
         "msg"
       ],
       "source_id": "okx_book_28177",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PYTH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1148,13 +1157,13 @@
       ],
       "source_id": "okx_book_28321",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=POL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1163,13 +1172,13 @@
       ],
       "source_id": "okx_book_29210",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=JUP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1178,13 +1187,13 @@
       ],
       "source_id": "okx_book_29270",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AERO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1193,13 +1202,13 @@
       ],
       "source_id": "okx_book_29420",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=VIRTUAL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1208,13 +1217,13 @@
       ],
       "source_id": "okx_book_29814",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETHFI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1223,13 +1232,13 @@
       ],
       "source_id": "okx_book_30171",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ENA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1238,13 +1247,13 @@
       ],
       "source_id": "okx_book_3155",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=QNT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1253,13 +1262,13 @@
       ],
       "source_id": "okx_book_32196",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=HYPE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1268,13 +1277,13 @@
       ],
       "source_id": "okx_book_33038",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SKY-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1283,13 +1292,13 @@
       ],
       "source_id": "okx_book_33251",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=WLFI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1298,13 +1307,13 @@
       ],
       "source_id": "okx_book_34104",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=MORPHO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1313,13 +1322,13 @@
       ],
       "source_id": "okx_book_34466",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PENGU-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1328,13 +1337,13 @@
       ],
       "source_id": "okx_book_35336",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TRUMP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1343,13 +1352,13 @@
       ],
       "source_id": "okx_book_35509",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=VVV-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1358,13 +1367,13 @@
       ],
       "source_id": "okx_book_35697",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1373,13 +1382,13 @@
       ],
       "source_id": "okx_book_36341",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ASTER-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1388,13 +1397,13 @@
       ],
       "source_id": "okx_book_3635",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CRO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1403,13 +1412,13 @@
       ],
       "source_id": "okx_book_36507",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PUMP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1418,13 +1427,13 @@
       ],
       "source_id": "okx_book_36645",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:07Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XPL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1433,13 +1442,13 @@
       ],
       "source_id": "okx_book_37263",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1448,13 +1457,13 @@
       ],
       "source_id": "okx_book_3773",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=FET-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1463,13 +1472,13 @@
       ],
       "source_id": "okx_book_3794",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ATOM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1478,13 +1487,13 @@
       ],
       "source_id": "okx_book_38828",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=KITE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1493,13 +1502,13 @@
       ],
       "source_id": "okx_book_38849",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PIEVERSE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:40Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1508,13 +1517,13 @@
       ],
       "source_id": "okx_book_38892",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STABLE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1523,13 +1532,13 @@
       ],
       "source_id": "okx_book_3897",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=OKB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:41Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1538,13 +1547,13 @@
       ],
       "source_id": "okx_book_39064",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=NIGHT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:08Z",
+      "observed_utc": "2026-11-10T22:23:41Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1553,13 +1562,13 @@
       ],
       "source_id": "okx_book_39125",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:08Z",
+      "started_utc": "2026-11-10T22:23:40Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LIT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1568,13 +1577,13 @@
       ],
       "source_id": "okx_book_4030",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ALGO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1583,13 +1592,13 @@
       ],
       "source_id": "okx_book_4642",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=HBAR-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1598,13 +1607,13 @@
       ],
       "source_id": "okx_book_4847",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1613,13 +1622,13 @@
       ],
       "source_id": "okx_book_512",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XLM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1628,13 +1637,13 @@
       ],
       "source_id": "okx_book_52",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XRP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1643,13 +1652,13 @@
       ],
       "source_id": "okx_book_5426",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SOL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1658,13 +1667,13 @@
       ],
       "source_id": "okx_book_5690",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=RENDER-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1673,13 +1682,13 @@
       ],
       "source_id": "okx_book_5805",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AVAX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1688,13 +1697,13 @@
       ],
       "source_id": "okx_book_5994",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SHIB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1703,13 +1712,13 @@
       ],
       "source_id": "okx_book_6535",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=NEAR-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1718,13 +1727,13 @@
       ],
       "source_id": "okx_book_6538",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CRV-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1733,13 +1742,13 @@
       ],
       "source_id": "okx_book_6636",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DOT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:38Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1748,13 +1757,13 @@
       ],
       "source_id": "okx_book_7083",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=UNI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1763,13 +1772,13 @@
       ],
       "source_id": "okx_book_7226",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=INJ-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1778,13 +1787,13 @@
       ],
       "source_id": "okx_book_7278",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AAVE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1793,13 +1802,13 @@
       ],
       "source_id": "okx_book_74",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DOGE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1808,13 +1817,13 @@
       ],
       "source_id": "okx_book_8000",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LDO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1823,13 +1832,13 @@
       ],
       "source_id": "okx_book_8526",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=RAY-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:06Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1838,13 +1847,13 @@
       ],
       "source_id": "okx_book_8916",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:38Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ICP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:07Z",
+      "observed_utc": "2026-11-10T22:23:39Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1853,13 +1862,13 @@
       ],
       "source_id": "okx_book_9481",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:06Z",
+      "started_utc": "2026-11-10T22:23:39Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PENDLE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:05Z",
+      "observed_utc": "2026-11-10T22:23:37Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -1868,57 +1877,57 @@
       ],
       "source_id": "okx_book_instruments",
       "source_type": "json",
-      "started_utc": "2026-11-10T00:43:05Z",
+      "started_utc": "2026-11-10T22:23:37Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/public/instruments?instType=SWAP"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "protos",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://protos.com/feed"
     },
     {
       "error": "HTTP 500",
-      "observed_utc": "2026-11-10T00:43:04Z",
+      "observed_utc": "2026-11-10T22:23:36Z",
       "source_id": "rekt_security",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "ERROR",
       "url": "https://rekt.news/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:03Z",
+      "observed_utc": "2026-11-10T22:23:35Z",
       "source_id": "sec",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "OK",
       "url": "https://www.sec.gov/news/pressreleases.rss"
     },
     {
       "error": "HTTP 429",
-      "observed_utc": "2026-11-10T00:43:04Z",
+      "observed_utc": "2026-11-10T22:23:36Z",
       "source_id": "solana_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:03Z",
+      "started_utc": "2026-11-10T22:23:35Z",
       "status": "ERROR",
       "url": "https://solana.com/news/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-10T00:43:02Z",
+      "observed_utc": "2026-11-10T22:23:34Z",
       "source_id": "theblock",
       "source_type": "rss",
-      "started_utc": "2026-11-10T00:43:02Z",
+      "started_utc": "2026-11-10T22:23:34Z",
       "status": "OK",
       "url": "https://www.theblock.co/rss.xml"
     }
   ],
-  "source_market_snapshot_utc": "2026-11-09T02:56:52Z",
+  "source_market_snapshot_utc": "2026-11-10T04:46:44Z",
   "sources_configured": 111,
   "sources_failed": 5,
   "sources_ok": 106,
