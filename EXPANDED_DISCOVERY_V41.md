@@ -11,7 +11,7 @@ Implemented 2026-11-10. This is **collection and quality measurement only**, not
 - Resolved publisher pages may be fetched as part of the separate article budget.
 
 ### 2. Bounded publisher text extraction
-- At most 320 article page attempts/run (hard code limit 450) and 240 Google News resolution attempts/run (hard limit 200 previously removed; current cap 200 — see environment cap). Article requests use short timeouts, MIME checks, a 350KB response cap and at most 1,600 characters of publisher excerpt; no full copyrighted articles are stored.
+- At most 320 article page attempts/run (hard code limit 450) and 240 Google News resolution attempts/run (hard configuration cap 300). Article requests use short timeouts, MIME checks, a 350KB response cap and at most 1,600 characters of publisher excerpt; no full copyrighted articles are stored.
 - Public HTTPS URL and DNS checks, explicit HTTPS redirect validation, robots.txt policy checks, denial on inaccessible robots policy, six article workers, and **12 article requests per publisher host**. No access-control workaround.
 - Prioritizes previously unseen leads and primary/community sources. Existing Google News snippets remain attached when article access fails.
 - The 320 budget is an *upper bound*, not a guarantee. The actual number is shown in `article_fetch_attempted`.
