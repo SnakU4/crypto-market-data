@@ -179,8 +179,14 @@ def canonical_url(u):
     if not isinstance(u,str) or not u.startswith(('https://','http://')):return None
     p=urllib.parse.urlsplit(u)
     if not p.netloc:return None
-    # Google News opaque articles retain path. Ignore tracking/query parameters.
-    return urllib.parse.urlunsplit((p.scheme.lower(),p.netloc.lower().removeprefix('www.'),p.path.rstrip('/'),'',''))
+    # Google News opaque articles retain path. Ignore ordinary tracking params.
+    # IMPORTANT: Snapshot routes in the URL fragment and CVERecord IDs in ?id=.
+    # Dropping them would collapse every proposal or CVE into ONE event.
+    host=p.netloc.lower().removeprefix('www.')
+    fragment=p.fragment if host=='snapshot.box' and p.fragment.startswith('/') else ''
+    query=urllib.parse.urlencode({'id':urllib.parse.parse_qs(p.query)['id'][0]}) if (
+        host=='cve.org' and 'id' in urllib.parse.parse_qs(p.query)) else ''
+    return urllib.parse.urlunsplit((p.scheme.lower(),host,p.path.rstrip('/'),query,fragment))
 
 
 def event_id(u):
