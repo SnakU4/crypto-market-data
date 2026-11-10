@@ -229,26 +229,69 @@ def publish(data,root=ROOT,out=None,full_export=True):
     coin_dir=base/"coin_batches";coin_dir.mkdir(parents=True,exist_ok=True)
     for x in coin_dir.glob("batch_*.json"):x.unlink()
     cards=sorted(data["cards"],key=lambda x:x["cmc_id"])
+    # Front layer must fit an LLM context. Full 100-coin details go to the
+    # artifact separately; truncation must NEVER be disguised as full review.
+    def short_evidence(x):
+        return {k:x.get(k) for k in ("evidence_id","source","item","metrics",
+            "identity_status","observed_utc","published_utc")}
+    def short_lead(x):
+        return {**{k:x.get(k) for k in ("evidence_id","title","url",
+            "source_families","published_utc","direct_primary",
+            "content_substantive","claim_status","identity_status")},
+            "excerpt_preview":(x.get("excerpt") or "")[:180]}
+    compact=[]
+    for c in cards:
+        compact.append({**c,
+          "anchored_okx_instrument_observations":[short_evidence(x) for x in c["anchored_okx_instrument_observations"][:2]],
+          "unverified_coin_candidate_observations":[short_evidence(x) for x in c["unverified_coin_candidate_observations"][:4]],
+          "network_context_NOT_coin_flows":[short_evidence(x) for x in c["network_context_NOT_coin_flows"][:2]],
+          "news_search_origin_leads_UNVERIFIED":[short_lead(x) for x in c["news_search_origin_leads_UNVERIFIED"][:4]],
+          "validation_tasks":["Primary-source check both directions; verify relevance and 24h novelty."],
+          "attention_budget_note":"COMPACT_TRIAGE_ONLY; full details in Actions coin_deep_dive_complete.jsonl"})
     batches=[]
     for start in range(0,100,20):
         path=coin_dir/("batch_%02d.json"%(start//20+1))
-        write(path,{"schema_version":"cmc100-coin-batch-v1",
-                    "coins":cards[start:start+20],
-                    "count":len(cards[start:start+20])})
+        write(path,{"schema_version":"cmc100-coin-batch-v2-COMPACT",
+                    "coins":compact[start:start+20],
+                    "count":len(compact[start:start+20])})
         batches.append({"path":str(path.relative_to(root)) if path.is_relative_to(root) else str(path),
-                        "sha256":sha(path),"count":20})
-    write(base/"global_context.json",data["global"])
-    write(base/"research_queue.json",data["queue"])
+                        "sha256":sha(path),"count":20,"bytes":path.stat().st_size})
+    global_summary={**data["global"],
+        "unassigned_structured_samples":data["global"]["unassigned_structured_samples"][:20],
+        "global_news_selection_UNVERIFIED":[short_lead(x) for x in data["global"]["global_news_selection_UNVERIFIED"][:20]],
+        "selection_note":"COMPACT_20_OF_EACH; full source archive fully parsed; deeper evidence in Actions"}
+    queue_summary={**data["queue"],
+        "delta_candidates":data["queue"]["delta_candidates"][:35],
+        "event_candidates":data["queue"]["event_candidates"][:35],
+        "selection_note":"COMPACT_35_OF_EACH; full event/delta files remain in docs/evidence_engine"}
+    write(base/"global_context.json",global_summary)
+    write(base/"research_queue.json",queue_summary)
     m=data["manifest"];m["coin_batches"]=batches
+    m["context_handoff"]={
+        "full_100_cards_in_compact_files":True,
+        "front_layer_bytes":sum(b["bytes"] for b in batches)+
+            (base/"global_context.json").stat().st_size+(base/"research_queue.json").stat().st_size,
+        "front_layer_is_full_raw_evidence":False,
+        "deep_dive_full_coin_cards_in_artifact":full_export,
+        "discovery_selected_per_coin":4,
+        "remaining_source_records_exported_without_truncation":full_export}
     if full_export:
         export=base/"export";export.mkdir(parents=True,exist_ok=True)
         audits={}
         for key in ("structured","discovery"):
             p=export/(key+"_complete.jsonl")
             with p.open("w",encoding="utf8") as f:
-                for row in data[key]:
-                    f.write(json.dumps(row,ensure_ascii=False,separators=(",",":"),allow_nan=False)+"\n")
+                for record in data[key]:
+                    f.write(json.dumps(record,ensure_ascii=False,separators=(",",":"),allow_nan=False)+"\n")
             audits[key]={"count":len(data[key]),"sha256":sha(p),"bytes":p.stat().st_size}
+        deep=export/"coin_deep_dive_complete.jsonl"
+        with deep.open("w",encoding="utf8") as f:
+            for card in cards:
+                f.write(json.dumps(card,ensure_ascii=False,separators=(",",":"),allow_nan=False)+"\n")
+        audits["coin_deep_dive"]={"count":100,"sha256":sha(deep),"bytes":deep.stat().st_size}
+        # Also export untruncated globally unassigned and delta/event samples.
+        write(export/"global_full.json",data["global"])
+        write(export/"research_queue_full.json",data["queue"])
         m["full_text_export_for_actions_artifact"]=audits
     write(base/"manifest.json",m)
     return m
