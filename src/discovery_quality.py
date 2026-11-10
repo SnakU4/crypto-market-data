@@ -161,25 +161,42 @@ def resolve_google_news(url, opener=None):
     return None
 
 
+_robots_cache = {}
+_robots_lock = threading.Lock()
+
 def robots_permit(url, cache=None):
-    """Respect robots.txt. Unavailable robots information means no crawl."""
+    """Bounded public robots.txt check; inaccessible policy fails closed."""
     if not public_dns(url):
         return False
     origin = urllib.parse.urlsplit(url)
     key = origin.scheme + "://" + origin.netloc
-    if cache is not None and key in cache:
-        return cache[key].can_fetch(USER_AGENT, url) if cache[key] else False
-    robots = urllib.robotparser.RobotFileParser()
-    robots.set_url(key + "/robots.txt")
+    with _robots_lock:
+        rules = (cache if cache is not None else _robots_cache)
+        if key in rules:
+            rp = rules[key]
+            return bool(rp and rp.can_fetch(USER_AGENT, url))
+    rp = urllib.robotparser.RobotFileParser()
+    rp.set_url(key + "/robots.txt")
     try:
-        robots.read()
-        allowed = robots.can_fetch(USER_AGENT, url)
-    except (OSError, ValueError):
+        req = urllib.request.Request(key + "/robots.txt", headers={"User-Agent": USER_AGENT})
+        with urllib.request.build_opener(SafeRedirect()).open(req, timeout=4) as response:
+            raw = response.read(80_001)
+            if len(raw) > 80_000:
+                return False
+        rp.parse(raw.decode("utf-8", errors="replace").splitlines())
+        allowed = rp.can_fetch(USER_AGENT, url)
+    except urllib.error.HTTPError as exc:
+        # 404 means no exclusion policy; 401/403 and transient errors fail closed.
+        allowed = (exc.code == 404)
+        if allowed:
+            rp.parse([])
+    except (OSError, ValueError, TimeoutError):
         allowed = False
-    if cache is not None:
-        cache[key] = robots if allowed else None
+    with _robots_lock:
+        rules = (cache if cache is not None else _robots_cache)
+        if len(rules) < 500:
+            rules[key] = rp if allowed else None
     return allowed
-
 
 def extract_article(url, opener=None, robots_check=robots_permit):
     """Bounded HTML extraction; never intentionally bypass robots or paywalls."""
@@ -232,7 +249,8 @@ def enrich(events, max_articles=MAX_ARTICLES, fetcher=extract_article,
                         e.get("event_id","")))
     google = [e for e in ranked if urllib.parse.urlsplit(e["url"]).hostname in
               ("news.google.com","news.google.co.uk")]
-    direct = [e for e in ranked if e not in google]
+    google_ids = {id(e) for e in google}
+    direct = [e for e in ranked if id(e) not in google_ids]
     resolving = google[:max(0,max_resolutions)]
     def resolve_one(e):
         try: return resolver(e["url"])
