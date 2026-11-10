@@ -411,7 +411,7 @@ def collect(market,network,previous_seen=None,max_workers=5,now_utc=None):
     quality=enrich(
         all_events,
         max_articles=(max(0,min(450,int(os.environ.get('DISCOVERY_ARTICLE_BUDGET','320')))) if isinstance(network,HTTP) else 0),
-        max_resolutions=(max(0,min(200,int(os.environ.get('DISCOVERY_RESOLUTION_BUDGET','240')))) if isinstance(network,HTTP) else 0))
+        max_resolutions=(max(0,min(300,int(os.environ.get('DISCOVERY_RESOLUTION_BUDGET','240')))) if isinstance(network,HTTP) else 0))
     # Distinguish newly observed URLs from distinct headlines and information.
     historic_titles={e['story_title_hash'] for e in all_events if e['event_id'] in seen}
     new_title_clusters={e['story_title_hash'] for e in new_events if e['story_title_hash'] not in historic_titles}
