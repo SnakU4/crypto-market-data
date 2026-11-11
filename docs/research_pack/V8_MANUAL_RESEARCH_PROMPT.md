@@ -1,4 +1,4 @@
-# CMC100 V8.1 — Manual research test with paper-compatible 1d attractiveness ranking
+# CMC100 V8.2 — Evidence-calibrated individual assessment and unchanged paper ranking
 
 ## Mission
 
@@ -60,49 +60,87 @@ Construct an evidence ledger. Each material claim requires:
 
 Do not infer coin-specific price direction from chain-wide statistics without a demonstrated token value-accrual or causal link.
 
-## Phase 4 — Paper-compatible 100-coin research scores
 
-For EVERY official CMC100 constituent, investigate downside AND upside using the evidence ledger and open-ended independent inquiry. Keep the original CMC ID, name and token symbol in each output row.
+### Evidence must be weighted by *relevance*, not quantity
 
-**Use the published research framework from Sun, Wang & Zhang, Agentic AI Nowcasting and Cryptocurrency Return Predictability (2026). The exact original private model prompt is not public; replicate the disclosed scoring, ranking and public field structure, not an invented private decision algorithm.**
+Separate (1) **identity certainty**, (2) **fact verification**, (3) **temporal novelty**, (4) **token-price transmission**, and (5) **contradiction / already-priced risk** for each potentially decisive claim. These are distinct tests: a real corporate announcement can have negligible direct token demand, and a precisely reported funding rate can be a noisy market-state observation rather than a fresh catalyst.
 
-### A. Independent attractiveness fields (paper scale)
+Do not interpret generic relative price rises as independently confirmed momentum alpha; OI changes alone do not identify longs versus shorts. Do not double-count syndicated reprints, multiple price feeds or repeated coverage of one event as independent confirmations. Treat unresolved unlock amounts and dates as unresolved **hypotheses**, not completed future supply increases.
 
-Return all six independent horizon-specific attractiveness scores:
+Do not classify a news **search-origin** lead as an independently coin-verified event unless the underlying source, token relevance, date and 24h causal mechanism were checked. Identify counterevidence and potential benefit to shorts and longs separately.
 
+
+## Phase 4 — V8.2: Evidence-calibrated, truly individual 100-coin assessments
+
+Retain the **paper-compatible scoring framework** from V8.1. Change only how the AI **researches and arrives at its original scores**. Investigate BOTH potential 24h upside and downside for ALL 100 official CMC IDs. Do not substitute generic paragraphs or an identical market-regime template for individual analysis.
+
+### A. Research each asset even without a news catalyst
+
+Build a short structured **two-sided fact sheet for each CMC ID**, preferably in a machine-readable working table, **BEFORE** issuing provisional attractiveness values:
+
+- Identity, exact source mapping and timestamps. State clearly which spot/OKX/derivative records are absent, stale or only tentative. Distinguish missing *CMC spot quote* from missing *all independent valid price evidence*.
+- Coin-specific market state and changes: price returns and volume across available horizons, matched-pair derivatives OI and funding (with the exact interval, units, venue and any useful baseline), comparable liquidity, supply/float, DEX/TVL/fees, verified token-linked on-chain flows, and relevant near-term events where actually available. **Not all columns will be available; state 'UNKNOWN' where absent.**
+- Examine *both sides* of the evidence: e.g. strong 24h momentum can signal continuation OR overextension, OI increases can reflect new longs OR shorts, a chain announcement can be operationally significant while economically irrelevant to token holders. Do not infer direction from a single metric.
+- Compare the asset with plausibly relevant CMC100 peers (similar protocol economics, exchange depth, derivatives exposure or sector) under matched timestamps, denominators and data quality. Explain specifically where its position differs. Pure historical return rank is NOT a substitute for this comparison.
+- Assess separately (a) **relative 24h opportunity** and (b) **standalone action conviction**. The first drives attractiveness; the second drives BUY/WAIT/SELL.
+
+**Critical nuance:** "No verified NEW event" does **not** mean the asset must receive attractiveness_1d=0.00. An asset can be relatively more or less attractive on independently verified, informative positioning, liquidity or valuation/usage evidence—even while decision=WAIT. Conversely, weak, symmetric or incomparable state data justify 0.00. Do not invent dispersion, trade signals, price impacts or conclusions to avoid zero scores.
+
+**V8.1 failure to correct:** Around 70/100 coins were scored exactly zero, and the prior 24h return was highly associated with the scores. Investigate whether neutral scores resulted from an unsupported "no catalyst => zero" shortcut, copied explanations or an unconscious momentum heuristic. This is a **diagnostic**, not a target number of nonzero scores.
+
+### B. Rank-free paired comparison to test differentiation — not a second ranking variable
+
+Before scoring, challenge at least all plausible provisional top/bottom candidates, their closest peers, and ambiguous zero-score assets using **direct pairwise questions**:
+
+- Does the evidence genuinely distinguish Coin A from Coin B over the **NEXT 24h**, or are their relative conclusions observationally indistinguishable?
+- Are metrics cross-venue compatible (funding frequency, contract multipliers, OI currency, liquidity units, circulating supply)?
+- Are observed changes economically material and unusual **relative to a defensible baseline**, not just a small-interval difference presented as a shock?
+- Would the relative judgment survive removing the prior 24h return and removing duplicated general market language?
+- What specific fact could falsify this pairwise thesis?
+
+If differences are unsupported, ties and near-neutral scores are legitimate; never force extra score levels, ranks, BUY/SELL quotas or artificial strength. Pairwise work is *evidence checking* that informs the directly judged attractiveness_1d; it is NOT an additional rank score, optimizer, or deterministic formula.
+
+### C. Evidence strength versus score magnitude
+
+For all provisional nontrivial deviations from 0.00 and especially ALL eventual Top/Bottom candidates:
+
+- Document **identity_confidence**, **fact_verification**, **causal_24h_strength**, **data_coverage** and **counterevidence** separately.
+- State whether the key driver is a genuinely new verified development, an independently corroborated structural/derivatives market observation, or an uncertain unverified possibility.
+- Explicitly assess whether and why the size of the attractiveness deviation is warranted. No automatic fixed confidence multiplier, score cap, or score=0 rule; this is a qualitative consistency check.
+- Unverified unlock calendars, unobserved contract-wallet flows, opaque news leads and missing prices must NOT, **by themselves**, justify the strongest conviction scores.
+- Flag decisions that would reverse if a disputed fact proved false. Seek primary documentation when a claim materially drives a ranking extreme.
+- Check the nearest available independent price/volume and venue-specific liquidity reference for extreme candidates with no CMC quote. If unavailable, retain the gap and avoid pretending the assessment is precise.
+
+A highly verified *fact* is not the same as a highly verified *24h price forecast*. Label uncertainty in both separately.
+
+### D. Provisional judgments -> targeted deep-dive -> freeze FINAL judgments
+
+Use this sequence; **do not start with a portfolio selection and reason backward**:
+
+1. Draft **100 provisional six-horizon scores**, plus independent provisional BUY/WAIT/SELL labels from the individual fact sheets. Use no portfolio constraint. Identify tentative upper and lower score extremes, **including any assets near possible 10th-place boundaries**, and record their original evidence.
+2. Conduct **targeted adversarial research** on every provisional extreme/boundary challenger in BOTH directions (not just the two existing BUY/SELL calls). Trace the strongest driver to the primary source, attempt corroboration, check timing and token identity, consider priced-in effects, and seek contradicting evidence. Where possible, check independently sourced pricing and market depth for coins lacking a CMC spot quote. The inquiry can discover new source categories.
+3. Reassess the *individual* provisional judgments after these checks and record a **score_revision_log** with CMC ID, original score, final score, whether direction changed, what newly verified/rejected evidence caused it and exact source/cutoff. Do not change any score merely to enter/exit the Top 10 or avoid a tie.
+4. **Freeze the final 100-row prediction panel**. Only after freezing may Phase 5 deterministically rank it by attractiveness_1d. Never retroactively alter finalized scores because of portfolio rank, tie size, the BUY/WAIT/SELL distribution or the desired research quality rating.
+
+Mark the coverage of the deep-dive accurately: "all provisional extremes checked", "some checked", or "not independently checked". If new evidence is unavailable, preserve the uncertainty instead of manufacturing a confident adjustment. The provisional panel and revision log must not look ahead beyond the chosen forecast cutoff.
+
+### E. Original paper scoring fields — UNCHANGED
+
+Return **six independently judged** horizon-specific attractiveness scores for every official coin:
 - attractiveness_1h
 - attractiveness_6h
-- attractiveness_1d
+- **attractiveness_1d** (the ONLY 1-day portfolio ranking variable)
 - attractiveness_3d
 - attractiveness_1w
 - attractiveness_1m
 
-Use the original bounded **−5.00 to +5.00** scoring convention in **0.05 increments**, where negative values indicate lower attractiveness and positive values higher attractiveness; 0.00 is neutral on this scale. This is an investment-attractiveness judgment, NOT a forecast percentage return, calibrated probability or fixed number of BUY / SELL recommendations.
+All remain on the paper-compatible **−5.00 to +5.00** scale in **0.05 increments**, with 0 neutral. These are directional investment-attractiveness judgments, NOT forecast percent returns or calibrated probabilities. Do not convert the old V8 0–1 scale into the primary rank. If needed, report legacy_v8_normalized=(attractiveness_1d+5)/10 as a display-only comparison.
 
-The PRIMARY ranking variable and ONLY ranking variable for the one-day portfolio is attractiveness_1d.
+The other horizons do not replace, average into, normalize or modify attractiveness_1d. Do not fit the 1d scores to the realized forward returns. Do not use a mechanical 7-day-return rule, fixed trend offsets, momentum-only scoring, cross-sectional min/max normalization, enforced score spread, or fixed long/short quotas.
 
-**Do not continue using the old V8 0.00–1.00 score as the primary ranking.** If necessary for comparison against a legacy result, supply a separate calculated field legacy_v8_normalized=(attractiveness_1d + 5)/10. This conversion must NOT drive decisions or portfolio membership.
+Return a separately judged **decision = BUY / WAIT / SELL** based on action conviction, WITHOUT assigning labels via attractiveness score thresholds. **WAIT can coexist with positive or negative attractiveness**, including scores that fall into the Top 10 or Bottom 10. No attempt to recreate published BUY/WAIT/SELL frequencies; rarity of BUY/SELL is a result, not an objective.
 
-The other horizons are supporting assessments, not inputs to a weighted blend that substitutes for attractiveness_1d. Scores must arise from coin-specific reasoned judgment, not an automatic 7-day momentum rule, cross-sectional rank normalization, forced-score spread, arbitrary long/short quota, or uniform regime offset across 98 coins.
-
-### B. Independent decision — NOT a ranking gate
-
-Produce an additional **decision = BUY / WAIT / SELL** judgment for each asset, independently assessed from underlying evidence strength, downside/upside asymmetry and uncertainty.
-
-- BUY, WAIT and SELL are **not** calculated by applying a threshold to attractiveness_1d.
-- There is NO fixed numerical mapping from decision to attractiveness. A coin can be WAIT yet have negative or positive attractiveness.
-- WAIT is an expression of insufficient standalone action conviction, not a mandatory score of 0.
-- Do not imitate the historical BUY/WAIT/SELL frequencies or artificially manufacture signals to match the published data.
-- No fabricated positive/negative price catalysts to push coins away from neutral.
-
-Supply supporting evidence-quality labels, positive/negative 24h mechanisms, source IDs and uncertainty. Unknown factual coin mappings stay explicitly unverified.
-
-### C. Supporting scores (separate fields, no formula imposed)
-
-Also provide the four separately identified research fields in the authors' public panel:
-market_sentiment, market_divergence, catalyst_score, overall_market_score.
-
-Explain briefly the interpretation and scale actually used for these supporting assessments. Do NOT fabricate a proprietary scoring formula or equate any of them to the attractiveness_1d rank. The 1d attractiveness result is a direct final judgment, not mechanically computed from those four values.
+Continue to return separately described qualitative **market_sentiment, market_divergence, catalyst_score and overall_market_score**. Do not invent a proprietary formula that calculates attractiveness_1d from them. Provide source/evidence IDs, pro/con mechanisms, price-reference availability, evidence grade, uncertainty and individual rationale. If support is weak, say so plainly.
 
 ## Phase 5 — Paper-compatible ranking and portfolio construction
 
@@ -135,6 +173,15 @@ Deliver complete machine-readable CSV and/or JSON with **100 unique CMC IDs** an
 - evidence_quality, research_status, evidence_ids, positive_drivers, negative_drivers, uncertainty, cutoff_utc
 - rank_1d, top10_boundary_tie_status, bottom10_boundary_tie_status, rank_only_side, tie_aware_side
 
+**New V8.2 audit outputs required in addition to the V8.1 outputs:**
+- **coin_fact_sheets_100**: per-coin market-state data availability, cross-sectional peers and timestamp-compatible comparison, bullish evidence, bearish evidence, unknowns, and what is / is not verified. A missing catalyst is not proof of neutral relative attractiveness.
+- **provisional_prediction_panel_100**: initial, pre-deep-dive six-horizon judgments and independent decisions for all coins. Preserve original numbers and timestamps.
+- **score_revision_log**: all final-vs-provisional changes; why each changed, relevant IDs/links, fact verification and a "no change" result for audited extremes that remained stable. Do not generate fake revisions.
+- **extreme_candidate_adversarial_audit**: every provisional top/bottom/boundary challenger tested for source truth, identity, currency/unit matching, counterevidence, price availability, possible already-priced effects and 24h causal mechanism. Include failures and gaps, not just positive findings.
+- **score_differentiation_diagnostics**: number of distinct 1d scores, frequency at 0.00, 24h-return versus score relationship on matched available coins (if enough data), identical rationale counts and *whether removing price momentum materially changes the explanations*. The paper's historical distribution is background for diagnosis, NOT a benchmark quota to reproduce.
+
+Scores may change **only during the pre-freeze deep-dive** with a documented evidence-based reason. The final panel must be frozen **BEFORE** the deterministic ranking in Phase 5. Prevent look-ahead: never incorporate information first known after the forecast cutoff.
+
 Issue three **independent outputs**:
 A. prediction_panel_100: 100 original model judgments, before any portfolio logic.
 B. paper_ranked_100: deterministic descending attractiveness_1d ranking, including all ties and boundary diagnostics.
@@ -156,7 +203,12 @@ Also deliver:
 - ranking is monotonic descending in attractiveness_1d;
 - no BUY/WAIT/SELL filter, uniform trend penalty or arbitrary extra ranking variable;
 - each portfolio side has total weight 1.0 where defined, and ties/overlap are disclosed;
-- rank membership uses the model's ORIGINAL 1d scores without retrofitting.
+- rank membership uses the model's FINAL FROZEN original AI-judged 1d scores, without ANY post-ranking retrofitting;
+- all 100 provisional and final scores are present, with every factual change and reason logged;
+- all provisional extreme/boundary candidates have an adversarial evidence review or explicitly recorded research-access gaps;
+- no mandatory neutral score simply because an asset has no new catalyst, and no forced nonzero score simply to increase dispersion;
+- extreme forecasts driven by disputed unlock calendars, missing prices or coin-identity uncertainty are flagged and subjected to source challenge;
+- signal/rank separation and tie-aware portfolio construction remain exactly as in V8.1.
 
 Quantify how many coins have at least one independently verified, newly relevant 24h catalyst, how many have only market-state information, and how many lack adequate evidence. 100 generic scores are NOT evidence of a comprehensive research investigation.
 
