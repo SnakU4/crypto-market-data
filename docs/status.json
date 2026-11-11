@@ -1,10 +1,10 @@
 {
   "status": "DATA_PARTIAL",
-  "snapshot_completed_utc": "2026-11-10T04:46:44Z",
+  "snapshot_completed_utc": "2026-11-11T02:59:01Z",
   "coverage": {
     "official_cmc100_verified": 100,
-    "cmc_usd_quote_count": 100,
-    "cmc_usd_quotes_fresh_90min": 100,
+    "cmc_usd_quote_count": 80,
+    "cmc_usd_quotes_fresh_90min": 80,
     "binance_usd_m_exact_contract_mapping": 0,
     "binance_hourly_klines": 0,
     "binance_closed_bars_fresh_125min": 0,
@@ -25,20 +25,26 @@
   ],
   "source_errors": [
     {
+      "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=32196%2C33038%2C33251%2C34104%2C34466%2C35336%2C35491%2C35509%2C35697%2C36341%2C36507%2C36645%2C37263%2C38482%2C38590%2C38828%2C38849%2C38892%2C39064%2C39125&convert=USD&skip_invalid=true",
+      "received_at_utc": "2026-11-11T02:58:50Z",
+      "status": "ERROR",
+      "error": "HTTP 429"
+    },
+    {
       "url": "https://fapi.binance.com/fapi/v1/exchangeInfo",
-      "received_at_utc": "2026-11-10T04:46:33Z",
+      "received_at_utc": "2026-11-11T02:58:50Z",
       "status": "ERROR",
       "error": "HTTP 451"
     },
     {
       "url": "https://fapi.binance.com/fapi/v1/premiumIndex",
-      "received_at_utc": "2026-11-10T04:46:33Z",
+      "received_at_utc": "2026-11-11T02:58:50Z",
       "status": "ERROR",
       "error": "HTTP 451"
     },
     {
       "url": "https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000",
-      "received_at_utc": "2026-11-10T04:46:34Z",
+      "received_at_utc": "2026-11-11T02:58:51Z",
       "status": "ERROR",
       "error": "HTTP 403"
     }
