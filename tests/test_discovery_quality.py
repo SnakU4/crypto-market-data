@@ -17,6 +17,16 @@ def lead(i, title, excerpt="", families=None):
 
 
 class QualityTests(unittest.TestCase):
+    def test_main_tag_context_in_html_parser(self):
+        parser=q.ArticleText()
+        html="<html><main><h2>Governance transition</h2><p>" + (
+            "The project provided detailed implementation requirements and a deployment "
+            "calendar with phased network changes and documented validator obligations. " * 4
+        ) + "</p></main></html>"
+        parser.feed(html)
+        self.assertGreater(len(" ".join(parser.main_parts)),250)
+        self.assertEqual(parser.active,0)
+
     def test_title_only_is_not_substantive(self):
         self.assertFalse(q.has_additional_information("Protocol upgrade deployed", "Protocol upgrade deployed"))
     def test_long_new_text_adds_information(self):
