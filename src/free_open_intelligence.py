@@ -109,7 +109,8 @@ def event_doc(kind,e,cutoff):
         themes+= [str(z.get("lens")) for z in e.get("search_origins",[]) if z.get("family")=="CROSS_SECTOR" and z.get("lens")]
     scope="SECTOR" if themes else "ASSET_CANDIDATE" if ids else "GLOBAL_UNRESOLVED"
     return {"id":ref(kind,e),"source_plane":kind,"title":title,"url":url,
-            "excerpt":clip(e.get("excerpt"),380),"published_utc":e.get("published_utc"),
+            "excerpt":clip(e.get("excerpt"),1000),
+            "context_origin":e.get("context_origin") or "UNSPECIFIED","published_utc":e.get("published_utc"),
             "first_observed_utc":e.get("first_observed_utc") or e.get("observed_utc"),
             "scope":scope,"candidate_cmc_ids":sorted(set(ids)),
             "themes":sorted(set(map(str,themes))),"identity_status":"SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED" if ids else "NO_ASSET_LINK_ASSERTED",
