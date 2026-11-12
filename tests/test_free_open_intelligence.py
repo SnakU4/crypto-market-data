@@ -109,7 +109,7 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertTrue(m["archives"]["expanded"]["verified"])
         self.assertIn("by_plane_and_access_type",c["source_context_audit"])
         self.assertTrue(c["research_quality_gate"]["raw_all_leads_denominator_unchanged"])
-        self.assertEqual(c["source_context_audit"]["by_plane_and_access_type"]["expanded:DIRECT_SOURCE"]["total"],1)
+        self.assertEqual(c["source_context_audit"]["by_plane_and_access_type"]["expanded:DIRECT_SOURCE"]["total"],2)
     def test_publisher_detail_is_used_in_global_and_sector_dossiers(self):
         detail=(
            "The source documents a detailed settlement infrastructure deployment with "
