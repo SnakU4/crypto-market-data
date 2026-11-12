@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - 'src/free_open_intelligence.py'
+      - 'src/primary_source_discovery.py'
+      - 'tests/test_primary_source_discovery.py'
       - 'tests/test_free_open_intelligence.py'
       - '.github/workflows/free-open-intelligence.yml'
   schedule:
@@ -32,8 +34,9 @@ jobs:
 
       - name: Free research regression tests – no network
         run: |
-          python -m compileall -q src/free_open_intelligence.py tests/test_free_open_intelligence.py
+          python -m compileall -q src/free_open_intelligence.py src/primary_source_discovery.py tests/test_free_open_intelligence.py tests/test_primary_source_discovery.py
           python -m unittest discover -s tests -p 'test_free_open_intelligence.py' -v
+          python -m unittest discover -s tests -p 'test_primary_source_discovery.py' -v
           python -m unittest discover -s tests -p 'test_discovery_quality.py' -v
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
@@ -105,6 +108,7 @@ jobs:
             docs/intelligence/publisher_excerpts.json
             docs/intelligence/deep_research_queue.json
             docs/intelligence/source_registry_proposals.json
+            docs/intelligence/discovered_public_feeds.json
 
       - name: Publish concise reusable research output to public GitHub
         shell: bash
@@ -117,6 +121,7 @@ jobs:
             docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
             docs/intelligence/deep_research_queue.json \
             docs/intelligence/source_registry_proposals.json \
+            docs/intelligence/discovered_public_feeds.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Update free global, cross-sector and 100-coin intelligence $(date -u +%Y-%m-%dT%H:%MZ)"
