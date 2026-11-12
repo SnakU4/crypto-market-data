@@ -659,7 +659,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     # Observe the true information quality by access type. Do NOT improve
     # the full-corpus rate merely by excluding low-context headlines.
     source_depth=collections.defaultdict(lambda:{"total":0,"substantive":0,
-        "feed_summary_count":0,"article_extract_count":0,"domains":set()})
+        "feed_summary_count":0,"article_extract_count":0,"domains":set(),
+        "published_last_24h":0,"published_last_72h":0,"substantive_published_last_72h":0,
+        "published_date_missing":0})
     by_source_id=collections.defaultdict(lambda:{"total":0,"substantive":0})
     for e in events:
         host=(urllib.parse.urlsplit(e.get("url") or "").hostname or "").lower()
@@ -669,6 +671,15 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         d["total"]+=1
         is_sub=has_additional_information(e["title"],e["excerpt"])
         d["substantive"]+=int(is_sub)
+        when=parse_time(e.get("published_utc"))
+        if when is None:
+            d["published_date_missing"]+=1
+        else:
+            age=(cutoff-when).total_seconds()
+            if 0<=age<=86400:d["published_last_24h"]+=1
+            if 0<=age<=72*3600:
+                d["published_last_72h"]+=1
+                d["substantive_published_last_72h"]+=int(is_sub)
         d["feed_summary_count"]+=int(e.get("context_origin")=="PUBLISHER_FEED_SUMMARY")
         d["article_extract_count"]+=int(e.get("context_origin")=="DIRECT_PUBLISHER_PUBLIC_ARTICLE")
         if host:d["domains"].add(host)
