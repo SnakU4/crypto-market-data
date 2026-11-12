@@ -277,7 +277,7 @@ def enrich_direct(events,budget=64,fetcher=None):
             group=groups[scope]
             while group:
                 e=group.pop(0);host=urllib.parse.urlsplit(e["url"]).hostname
-                if host and host_counts[host]<3 and e["url"] not in used:
+                if host and host_counts[host]<5 and e["url"] not in used:
                     host_counts[host]+=1;used.add(e["url"])
                     selected.append(e);changed=True;break
             if len(selected)>=budget:break
@@ -522,7 +522,13 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     rich_by_scope=collections.defaultdict(list)
     for e in rich:rich_by_scope[e["scope"]].append(e)
     for group in rich_by_scope.values():
-        group.sort(key=lambda e:(-e["priority"],e["published_utc"] or "",e["id"]))
+        def order_key(e):
+            t=parse_time(e["published_utc"] or e["first_observed_utc"])
+            age=(cutoff-t).total_seconds()/3600 if t else 99999
+            # Prioritize new substantive material, not obsolete releases.
+            return (0 if age<=72 else 1 if age<=168 else 2,
+                    -e["priority"],-t.timestamp() if t else 0,e["id"])
+        group.sort(key=order_key)
     selected_context=[];source_counters=collections.Counter()
     while len(selected_context)<300:
         moved=False
