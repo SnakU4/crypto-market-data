@@ -49,6 +49,10 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len(items),1)
         self.assertEqual(audit["domains_attempted"],1)
         self.assertEqual(audit["domains_found_content"],1)
+        more,new_audit=d.discover(proposals,"2026-11-12T07:30:00Z",
+                                  max_sites=1,skip_domains=["publisher.com"])
+        self.assertEqual(more,[])
+        self.assertEqual(new_audit["domains_attempted"],0)
     def test_rejects_unsafe_links(self):
         html='<link rel="alternate" type="application/rss+xml" href="http://localhost/rss">'
         self.assertEqual(d.inspect_feed_links(html,"https://example.com/"),[])
