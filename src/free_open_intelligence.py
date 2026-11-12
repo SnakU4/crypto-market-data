@@ -333,7 +333,7 @@ def adaptive_fetch(tasks,cutoff,max_requests=22,opener=None):
                 found.append({"id":ref("followup",{"url":url}),"source_plane":"adaptive",
                         "title":title,"url":url,"excerpt":clip(item.findtext("description"),320),
                         "published_utc":iso(published) if published else None,
-                        "first_observed_utc":iso(cutoff),"scope":t["scope"],
+                        "first_observed_utc":iso(dt.datetime.now(UTC)),"scope":t["scope"],
                         "candidate_cmc_ids":[],"themes":[],"identity_status":"NOT_ASSESSED",
                         "claim_status":"SEARCH_RESULT_ONLY","source_family":"ADAPTIVE_SEARCH",
                         "source_id":t["task_id"],"priority":0,"origin_task_id":t["task_id"]})
@@ -590,6 +590,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     else:
         adaptive,audit=[],[]
         search_hops=0
+    # New web results from a historical replay are NOT part of information
+    # known by that historical cutoff; retain the query audit only.
+    if not live_collection:
+        adaptive=[e for e in adaptive if is_before(e,cutoff)]
     for e in adaptive:e["provenance_ids"]=[e["id"]]
     evidence=events+adaptive
     sectors=[{"theme":k,"lead_count":len(v),
