@@ -1,65 +1,78 @@
 {
-  "advertised_existing_feed_count": 1,
+  "advertised_existing_feed_count": 2,
   "domain_cooldown_hours": 72,
   "domains_attempted": 14,
-  "domains_found_content": 1,
-  "domains_skipped_due_to_recent_probe": 0,
-  "new_feed_items": 20,
+  "domains_found_content": 2,
+  "domains_skipped_due_to_recent_probe": 14,
+  "new_feed_items": 40,
   "not_verified_facts": true,
   "sources": [
     {
       "article_count": 0,
-      "domain": "theregister.com",
+      "domain": "gov.optimism.io",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "gov.uniswap.org",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "governance.aave.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "coindesk.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "sec.gov",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "ROBOTS_DISALLOW",
       "substantive": 0
     },
     {
-      "advertised_feeds": [
-        "https://blog.ethereum.org/en/feed.xml"
-      ],
-      "article_count": 0,
-      "domain": "blog.ethereum.org",
-      "feed_status": "OVERSIZED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-      "substantive": 0
-    },
-    {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "dlnews.com",
+      "domain": "arstechnica.com",
       "feed_status": "NOT_DISCOVERED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "thedefiant.io",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "decrypt.co",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://huggingface.co/blog/feed.xml"
+        "https://blog.cloudflare.com/rss/"
       ],
       "article_count": 20,
-      "domain": "huggingface.co",
+      "domain": "blog.cloudflare.com",
       "feed_status": "OK",
       "home_status": "OK",
-      "substantive": 0
+      "substantive": 20
+    },
+    {
+      "advertised_feeds": [
+        "https://techcrunch.com/feed/"
+      ],
+      "article_count": 20,
+      "domain": "techcrunch.com",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 9
     },
     {
       "article_count": 0,
-      "domain": "forum.zcashcommunity.com",
+      "domain": "theblock.co",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "HTTPError",
       "substantive": 0
@@ -67,57 +80,53 @@
     {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "federalreserve.gov",
+      "domain": "ecb.europa.eu",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://cointelegraph.com/rss"
+        "https://bitcoinmagazine.com/feed"
       ],
       "article_count": 0,
-      "domain": "cointelegraph.com",
-      "duplicate_feed_url": "https://cointelegraph.com/rss",
+      "domain": "bitcoinmagazine.com",
+      "duplicate_feed_url": "https://bitcoinmagazine.com/feed",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "cncf.io",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://cryptoslate.com/feed/"
+      ],
+      "article_count": 0,
+      "domain": "cryptoslate.com",
+      "duplicate_feed_url": "https://cryptoslate.com/feed/",
       "feed_status": "ALREADY_COLLECTED",
       "home_status": "OK",
       "substantive": 0
     },
     {
+      "advertised_feeds": [
+        "https://protos.com/feed/",
+        "https://protos.com/comments/feed/"
+      ],
       "article_count": 0,
-      "domain": "ethereum-magicians.org",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "forum.arbitrum.foundation",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "forum.cosmos.network",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "forum.polkadot.network",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "forum.skyeco.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "ROBOTS_DISALLOW",
+      "domain": "protos.com",
+      "duplicate_feed_url": "https://protos.com/feed/",
+      "feed_status": "OK",
+      "home_status": "OK",
       "substantive": 0
     }
   ],
-  "substantive_feed_items": 0
+  "substantive_feed_items": 29
 }
