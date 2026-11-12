@@ -456,7 +456,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         if previous_registry.exists():
             try:from primary_source_discovery import discover
             except ImportError:from src.primary_source_discovery import discover
-            dynamic_events,dynamic_audit=discover(read(previous_registry),iso(cutoff),max_sites=10)
+            dynamic_events,dynamic_audit=discover(read(previous_registry),iso(cutoff),
+                max_sites=14,
+                known_feed_urls=[entry["url"] for entry in research.get("source_catalog",[])
+                    if entry.get("kind")=="rss" and entry.get("url")])
     events=deduplicate(all_events+manual+dynamic_events)
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
