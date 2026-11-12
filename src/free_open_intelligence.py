@@ -416,6 +416,21 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         }
         cards.append(card)
     emergent=keyword_pairs(events)
+    # Open provider discovery: candidate publisher domains are harvested from
+    # ALL real URLs, not restricted to a static hand-authored source register.
+    provider_domains=collections.defaultdict(lambda:{"count":0,"examples":[],"scopes":collections.Counter(),"source_planes":set()})
+    for e in events:
+        host=(urllib.parse.urlsplit(e["url"]).hostname or "").lower().removeprefix("www.")
+        if not host or host.endswith("google.com") or host.endswith("google.co.uk"):
+            continue
+        z=provider_domains[host];z["count"]+=1
+        z["scopes"][e["scope"]]+=1;z["source_planes"].add(e["source_plane"])
+        if len(z["examples"])<3:z["examples"].append({"evidence_id":e["id"],"url":e["url"]})
+    source_proposals=[{"domain":host,"lead_count":z["count"],
+                       "source_plane_count":len(z["source_planes"]),
+                       "scopes":dict(z["scopes"]),"examples":z["examples"],
+                       "status":"DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"}
+                      for host,z in sorted(provider_domains.items(),key=lambda x:(-x[1]["count"],x[0]))[:100]]
     tasks=research_tasks(cards,events,market,max_followups)
     if network and max_followups>0:
         first_count=max(1,int(max_followups*0.65))
@@ -499,6 +514,19 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "adjacent":ds.get("access_gaps",[])},
       "adaptive_search_results":audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
+    total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
+    depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
+    coverage["research_quality_gate"]={
+        "technical_source_integration":"PASSED",
+        "independently_primary_verified_claims":0,
+        "independently_primary_claims_verification_status":"NOT_PERFORMED_BY_FREE_PYTHON",
+        "substantive_context_share":round(depth_rate,4),
+        "substantive_context_target_met":depth_rate>=0.20,
+        "publisher_excerpts":len(article),
+        "deep_article_target_met":len(article)>=30,
+        "all_100_contracts_verified":False,
+        "material_research_status":"PARTIAL_RESEARCH" if depth_rate<0.20 or len(article)<30 else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
+        "reason":"Extraction and discovery are not proof of independently verified 24h causal facts."}
     manifest={"schema_version":"cmc100-open-intelligence-free-v1","cutoff_utc":iso(cutoff),
        "no_paid_api_used":True,"llm_calls":0,
        "all_100_verified":True,"source_snapshots":caps,"archives":{"engine":ea,"expanded":xa},
@@ -506,6 +534,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "global_file":"docs/intelligence/global_intelligence.json",
        "sector_file":"docs/intelligence/sector_intelligence.json",
        "task_file":"docs/intelligence/research_tasks.json",
+       "source_proposals_file":"docs/intelligence/source_registry_proposals.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
@@ -521,6 +550,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"open_discovery.json",{"emergent_terms":emergent,
           "unresolved_global_count":len(glob),
           "source_discovery_notes":"Themes and asset associations are leads, never verified causality."})
+    write(out/"source_registry_proposals.json",{"candidate_publishers":source_proposals,
+          "auto_added_to_collector":0,
+          "note":"Source expansion suggestions; access, safety and licensing require review."})
     write(out/"research_tasks.json",{"tasks":tasks,
           "audit":audit,"no_auto_source_installation":True})
     write(out/"coverage_audit.json",coverage)
