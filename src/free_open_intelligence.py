@@ -338,9 +338,23 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     structured=collections.defaultdict(lambda:collections.Counter())
     struct_references=collections.defaultdict(list)
     quarantined_structured=0
+    global_structured_counts=collections.Counter()
+    global_structured_samples=collections.defaultdict(list)
     for e in er:
         cid=e.get("cmc_id") or e.get("candidate_cmc_id")
-        if cid not in valid_ids or not is_before(e,cutoff):continue
+        if not is_before(e,cutoff):continue
+        if cid not in valid_ids:
+            family=str(e.get("source") or "UNSPECIFIED")
+            global_structured_counts[family]+=1
+            if len(global_structured_samples[family])<8:
+                global_structured_samples[family].append({
+                    "evidence_id":e.get("observation_id"),
+                    "source":family,
+                    "observed_utc":e.get("observed_utc"),
+                    "network_context_cmc_id":e.get("network_context_cmc_id"),
+                    "network_context_is_not_verified_token_flow":True,
+                    "metrics":e.get("metrics") or {}})
+            continue
         if cid==QNT_ID and str(e.get("source") or "").startswith("okx_"):
             quarantined_structured+=1
             continue
@@ -423,7 +437,21 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
               "sample":[{x:e[x] for x in ("id","title","url","excerpt","published_utc","claim_status")}
                         for e in sorted(v,key=lambda e:-e["priority"])[:10]]}
              for k,v in sorted(sector.items(),key=lambda z:(-len(z[1]),z[0]))]
+    global_research_families={}
+    for k,rows in fam.items():
+        if isinstance(rows,list):
+            unattached=[z for z in rows if isinstance(z,dict) and z.get("cmc_id") not in valid_ids]
+            if unattached:
+                global_research_families[k]={"observations":len(unattached),
+                                            "sample":unattached[:40],
+                                            "scope":"GLOBAL_OR_NETWORK_STATE_NOT_TOKEN_FLOW"}
+        elif isinstance(rows,dict):
+            global_research_families[k]={"scope":"GLOBAL_STATE","observation":rows}
     g={"cutoff_utc":iso(cutoff),"market_context":market.get("market_context"),
+       "global_research_quantitative_families":global_research_families,
+       "unassigned_structured_counts_by_source":dict(global_structured_counts),
+       "unassigned_structured_samples_by_source":dict(global_structured_samples),
+       "unassigned_observations_remain_available_in_source_archive":True,
        "global_unresolved_leads":len(glob),
        "headline_only_claims_are_NOT_verified":True,
        "global_research_sample":[{x:e[x] for x in ("id","title","url","excerpt","published_utc","claim_status")}
@@ -449,6 +477,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "free_adaptive_followup_leads":len(adaptive),
           "substantive_source_excerpt_leads":sum(has_additional_information(e["title"],e["excerpt"]) for e in events),
           "long_excerpts_by_character_count_not_claim_verification":sum(len(e["excerpt"])>=140 for e in events),
+          "non_asset_structured_market_and_network_observations":sum(global_structured_counts.values()),
+          "global_research_quantitative_data_families":len(global_research_families),
           "direct_publisher_article_excerpts":len(article)},
       "per_coin":{"spot_prices":sum(bool((a.get("cmc_quote") or {}).get("price_usd")) for a in assets),
           "perp_markets_unquarantined":sum(bool((a.get("perpetual") or {}).get("symbol")) and
@@ -467,7 +497,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "expanded":xs.get("access_gaps",{}),
          "research":[x for x in rs.get("source_attempts",[]) if x.get("status")!="OK"][:25],
          "adjacent":ds.get("access_gaps",[])},
-      "adaptive_search_results":audit}
+      "adaptive_search_results":audit,
+      "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     manifest={"schema_version":"cmc100-open-intelligence-free-v1","cutoff_utc":iso(cutoff),
        "no_paid_api_used":True,"llm_calls":0,
        "all_100_verified":True,"source_snapshots":caps,"archives":{"engine":ea,"expanded":xa},
