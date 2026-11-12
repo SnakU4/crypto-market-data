@@ -1,0 +1,797 @@
+{
+  "capture_utc": "2026-11-12T20:03:58Z",
+  "events": [
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d1d11e69b5da2bf0f04e3ba5",
+      "excerpt": "*The North Star of the Platform team is for Ethereum to scale as a cohesive system and enable confident adoption by all users. This post is intended to share our perspective on the L1 \\ L2 relationship, the roles of each layer, and how we (as an ecosystem) are leveraging...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "How L1 and L2s can build the strongest possible Ethereum",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-03-23T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/03/23/l1-l2-ethereum"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "34a28f5df03584fb309fa38d",
+      "excerpt": "Dearest Friends, Today we are publishing the EF Mandate, a document that serves as part constitution, part manifesto, and part guide for the Ethereum Foundation. It is written primarily for the EF itself: to be clear about what we are here to do, the principles by which we...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "The Promise of Ethereum: Introducing the EF Mandate",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-03-13T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/03/13/ef-mandate"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f7283c244fc95a0d91bffa16",
+      "excerpt": "This is a bug fix release and is recommended for all users. It resolves a regression in snap sync, as well as several security issues. Geth The engine API no longer enables plain-text HTTP2, due to some reports of incompatibilities with the teku CL ( #33922 ) The new --metrics.influxdb.interval flag allows changing the metrics reporting interval. ( #33767 ) Geth has a new inspect-trie subcommand that prints information about node counts at all state trie depths ( #28892 ) Core Some Amsterdam fork-related changes: EIP-7834 SLOTNUM opcode ( #33589 ) EIP-8024 is now enabled in Amsterdam mode ( #33928 ) Several fixes for EIP-7928 Block-Level Access Lists ( #33741 , #33743 , #33742 , #33774 ) Payload building had a fix that could prevent the CL from receiving the latest built payloads ( #33908 ) Networking Geth no longer supports p2p protocol version eth/68 ( #33511 ) A rare crash in p2p request tracking is resolved ( #33940 ) The transaction pool, and specifically the blobpool, saw some fixes that reduce relaying transactions that likely won't make it into the chain, or have already been included on chain recently. This should reduce txpool traffic ( #33607 , #33887 , #33923 , #33893 ) In v1.17.0, a regression in snap-sync was introduced that would cause sync to fail when using --his",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "Eezo Shunt (v1.17.1)",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-03-03T15:45:05Z",
+      "source_id": "eth_geth_releases",
+      "source_ids": [
+        "eth_geth_releases"
+      ],
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d8cd7420c5781f3c10f67ed5",
+      "excerpt": "The commons called. It wants a runway. Every so often, in the blockchain world’s usual cycle of funding scares, a team maintaining a widely used open source public good declares mayday. Libp2p is a core infrastructure stack that powers multiple Ethereum clients (among others) and a large part of...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "This Is Fine (Until the Grant Runs Out)",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-27T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/27/project-odin"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY",
+        "INSTITUTIONAL_FLOW"
+      ],
+      "event_id": "f0bf85ce98e4ca6c4cd63ddc",
+      "excerpt": "The Ethereum Foundation has begun staking a portion of its treasury, in line with its Treasury Policy announced last year. Approximately 70,000 ETH is being staked with rewards directed back to the EF treasury....",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Treasury Staking Initiative",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-24T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/24/staking"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "0fdb974b911a5f5a0d8fcae4",
+      "excerpt": "DeFi isn't a speculative bet on the future. It's the inevitable evolution of finance, driven by a fundamental truth: financial autonomy is a right, not a privilege. And it's been a critical driver of Ethereum's growth and adoption. We want to see DeFi thrive, but we're opinionated about what...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "The Ethereum Foundation's Commitment to DeFi",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-23T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/23/commitment-to-defi"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "0eab2a7fb5e7bfb5578440b8",
+      "excerpt": "We introduced Protocol last June which organized our work around three strategic initiatives: Scale L1, Scale Blobs, and Improve UX. A lot has happened since then! In this post, we want to share what we accomplished last year, how our thinking has evolved, and where Protocol is headed in 2026....",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Protocol Priorities Update for 2026",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-18T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/18/protocol-priorities-update-2026"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "eb7c24d699c249737b44032f",
+      "excerpt": "Platform is a new team inside the EF with one goal: Deliver the strongest possible Ethereum platform, where L1 and L2s are best positioned to support users, apps, and all organizations building on Ethereum. This requires improving the L1 \\ L2 relationship, so that we grow as a mutually...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Announcing the Platform Team at EF",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-17T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/17/platform"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a60fe4c684fb422af5d5a462",
+      "excerpt": "tl;dr: Ethereum Protocol Studies returns for 2026 with new content tracks in cryptography, lean consensus and zkEVM, plus a new self-paced learning platform. The program kicks off February 23rd. Visit epf.wiki to get started. Ethereum Protocol Studies (EPS) is back. Since launching as a 10-week study group ahead of...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Ethereum Protocol Studies 2026",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-17T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/17/ethereum-protocol-studies-26"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f25d0badeb8b8810ebe9b42c",
+      "excerpt": "Today, we are announcing a transition in the executive leadership team at the Ethereum Foundation. After extensive contributions to the Foundation’s mission and operations, Tomasz Stańczak has decided to step down from his role as Co-Executive Director. The Foundation’s Board has appointed Bastian Aue to serve as interim Co-Executive Director,...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Executive Leadership Update",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-13T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/13/leadership-update"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "bffb5f9db71027bd5ed81cbd",
+      "excerpt": "tl;dr I am stepping down from my co-ED role at the EF at the end of February 2026. Bastian Aue is taking over the co-ED role alongside Hsiao-Wei. The future is bright for builders, for Ethereum, for the EF, and for me....",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "An update from Tomasz",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-13T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/13/tomasz-update"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "875532250abff9286dca3b19",
+      "excerpt": "The EF's Academic Secretariat team is proud to announce the launch of the inaugural PhD Fellowship Program, a pioneering initiative aimed at empowering and expanding the frontiers of Ethereum-related academic research, by supporting Ethereum-related academic work led by PhD students....",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Introducing the EF Academic Secretariat 2026 PhD Fellowship",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-05T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/05/phd-fellowship"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "303653c34f06b549a63f6e8b",
+      "excerpt": "During Devconnect Buenos Aires, the Ethereum Foundation and Secureum TrustX brought together Ethereum security practitioners for Trillion Dollar Security Day, a focused event exploring what it would take to securely support a trillion-dollar Ethereum economy. The event brought together around eighty participants from across the Ethereum Security Ecosystem—spanning Infrastructure,...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Trillion Dollar Security Day at Devconnect",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-02-03T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/02/03/1ts-day-devconnect-ba"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5efe64096adf61b9d470ef8f",
+      "excerpt": "Q4 2025 closed out the year with exciting growth across the ecosystem! Dive into the projects and community initiatives we supported this quarter and see what our grantees have been building:...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Allocation Update - Q4 2025",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-01-27T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/01/27/allocation-q4-25"
+    },
+    {
+      "cmc_ids": [
+        7083
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "39e14a160c2edbd94a3183e9",
+      "excerpt": "test updates ( #932 ) * fix fork tests * allow fork cheatcodes * pr feedback yee * woohoo --------- Co-authored-by: Alice Henshaw <henshawalice@gmail.com> Co-authored-by: saucepoint <saucepoint@protonmail.com> Co-authored-by: dianakocsis <diana.kocsis@uniswap.org>",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Uniswap Protocol v4",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "7083": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2025-01-23T19:00:03Z",
+      "source_id": "uniswap_v4_releases",
+      "source_ids": [
+        "uniswap_v4_releases"
+      ],
+      "url": "https://github.com/Uniswap/v4-core/releases/tag/v4.0.0"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f3f55eb88b0e3b32cc2b1227",
+      "excerpt": "This is a new minor version release that fixes bugs that were inherited from upstream Bitcoin and Namecoin code. All users, on all platforms, are strongly recommended to upgrade. Please see the release notes for further information.",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.9",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-12-01T16:06:12Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.9"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "45052642105f9e8ea91789f1",
+      "excerpt": "This is a new minor version release including important bugfixes to networking code. All users, on all platforms, are strongly recommended to upgrade. A full description of all changes is available in the release notes Note: availability of a notarized MacOS dmg is delayed due to a hiccup in the interaction with Apple's service, but it is expected to be provided at a later time. The unsigned, fully reproducible built MacOS version is available. Important bugfixes Reduced peer inv object counts Improved transaction request tracking Improved orphan transaction handling Reduced getheaders traffic for inv messages Improved reporting of difficulty adjustment errors Updates to pinned dependencies Updated freetype to version 2.11.0 Updated expat to version 2.6.2",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.8",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T22:02:48Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.8"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "95e499d396e87697c1b71a03",
+      "excerpt": "1.19.4 (2024-06-19) Bug Fixes Fix typos on techpaper ( #950 ) ( 682e86c )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.4",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-06-25T17:57:27Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3641328accc83e27d575a59c",
+      "excerpt": "1.19.3 (2024-03-07) Bug Fixes Bump version of v3 dependencies ( #938 ) ( 64870f0 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.3",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-03-07T08:56:29Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.3"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "50649e2a06bf6a63d652043c",
+      "excerpt": "This is a new minor version release, including enhancements to several RPC methods and important security updates for Dogecoin-Qt. Dogecoin-Qt users on any platform are strongly recommended to upgrade. A full description of all changes is available in the release notes Security Updates Disable BIP-70 payment server by default Reduce the build scope of the Qt dependency Backport patches for all Qt versions until 5.15.12 + community patches to the pinned Qt 5.7.1 Added security guidance to INSTALL.md Updated the rpcuser.py script to improve the password and salt generation methods it uses Enhancements estimatefee and estimatesmartfee are now maintained and tuned to Dogecoin parametrization Added fully verbose transaction decoding to getblock Added a height parameter to -walletnotify Added the getblockstats RPC method RPC Changes verbosity parameter to getblock now accepts both integers and booleans Added a height parameter to importpubkey and importaddress Translation Updates Chinese Dutch French French-Canadian Italian Korean Polish Updates to pinned dependencies and subtrees Updated the depends, CI and build system to Ubuntu Focal Updated expat to version 2.5.0 Updated the secp256k1 subtree to 44c2452 Updated zlib to version 1.3 Updated protobuf to version 3.6.1 Updated fontconfi",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.7",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-02-28T18:14:21Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.7"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5a6e1d33df9fef37a36ecf94",
+      "excerpt": "1.19.2 (2023-10-17) Bug Fixes Fixes solc version of contracts ( #920 ) ( 6d6fa53 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.2",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-10-17T10:29:44Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.2"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2fb958dbd7732e4d85f01327",
+      "excerpt": "1.19.1 (2023-07-04) Bug Fixes Fix prepublish step in CI ( #862 ) ( ec2902a )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.1",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-07-04T14:34:53Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "06b7e9ccd02d0c9cddc2c092",
+      "excerpt": "1.19.0 (2023-07-04) Features add OpenZeppelin SafeERC20 and Address dependencies ( #859 ) ( 493bb4d ) Bug Fixes add natspec docs to flags of reserve configuration map ( #854 ) ( 792c23e ) remove initial config of fee params in pool initialize function ( #846 ) ( 3bb960b ) Soften solidity version of FlashLoanBase contracts ( #861 ) ( 364a779 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.0",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-07-04T11:15:51Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7794c457e9cf829822573c54",
+      "excerpt": "1.18.0 (2023-06-26) Features Add zero IR strategy ( #818 ) ( ade6cf8 ) Bug Fixes communicate correct premium in case of debt-bearing flashloan ( #822 ) ( 7b2a284 ) Fix collateral behavior of zero-ltv assets ( #820 ) ( ea48670 ) Fix event checks in test cases ( #824 ) ( 29ff9b9 ) linting ( #837 ) ( 97cb6ea ) Return final withdraw amount in L2Pool withdraw fn ( #831 ) ( 37b4d1f )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.18.0",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-06-26T20:53:03Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.18.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "54b69db6bd3ce9d397a7e144",
+      "excerpt": "1.17.2 (2023-01-31) Bug Fixes expose error list and types at npm package ( #809 ) ( 0334bf2 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.17.2",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-01-31T14:54:50Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.17.2"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "21836020569f0eef2b3e56de",
+      "excerpt": "1.17.1 (2023-01-10) Bug Fixes Add BUSL to tokenization contracts ( #784 ) ( bf87c52 ) Fix typos ( #781 ) ( 8a39136 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.17.1",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2023-01-11T09:36:07Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.17.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b7680ded29bf18cb308fabf4",
+      "excerpt": "1.17.0 (2022-12-28) Features add additional flashloan scenario ( 8888093 ) add unit test for reserve configuration ( 49d0f4e ) bump to beta version ( 348ce20 ) enable and disable flashloans ( bb62572 ) remove borrow enabled requirement ( 8b9221b ) switch bit used for flashloan enabled ( 748818f ) updated price oracle sentinel interface ( 0457e71 ) updates and tests ( 8d12d79 ) Bug Fixes Add license to L2Pool contract ( #765 ) ( 56fd7ba ) add validation to simpleFlashLoan ( bf652c2 ) Avoid emitting events when balanceIncrease is zero ( #745 ) ( 43f34c9 ) Capitalize license name of contracts ( fba69f0 ) CEI to fix reentrancy risk with reentrant tokens (eg ERC777) ( #704 ) ( 7fbdc6e ) check revert msg and event emission ( 284b492 ) Complete interfaces of IReserveInterestRateStrategy and IPoolDataProvider ( #766 ) ( a00dda8 ) Fix condition of full liquidation of collateral ( #753 ) ( 56bcf5d ) Fix docs param in burnScaled ( 6b504d4 ) Fix param of IAToken function ( 1cb9ba1 ) Fix test of inaccuracy when liquidationProtocolFee is on ( 7d8b7bf ) Fix typo in docs ( #752 ) ( 9ccb1ab ) Install the last package of periphery for the rewards contract update ( 066259a ) make InterestRateStrategy contract inheritable ( d06f8f2 ) make InterestRateStrategy contract inheritable ( 0311475 ) Make tr",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.17.0",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2022-12-28T16:05:42Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.17.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "fb5d18f1705d5f45aa1901b0",
+      "excerpt": "1.16.2 (2022-07-28) Features bump ci node.js to 16 ( 82a11d2 ) set to hardhat 2.10.0 and ethers to 5.6.9 ( 9b50898 ) Bug Fixes dependencies ( f844a45 ) load market test data correctly, fix atoken/debt token names ( 72d1264 ) remove npm ci cache, bump gas reporter to fixed version 1.0.8 set ethers to fixed version 5.6.1 ( bbb2dfd ) upgrade periphery and deploy library to latest version ( 902b48a ) use ethers 5.5.3 to prevent different @ethersproject/bignumber version ( 5411930 ) Miscellaneous Chores release 1.16.2 ( 32901d1 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.16.2",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2022-08-01T08:29:37Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.16.2"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "03d2a5fd7a89fb8ab62e4980",
+      "excerpt": "This is a new minor version release, including important security updates and changes to network efficiency. All Dogecoin Core users - miners, services, relay operators and wallet users - are strongly recommended to upgrade. A full description of all changes is available in the release notes Security-related fixes This release contains multiple security related fixes: The alert system has been removed and processing of alert messages has been disabled The transaction download system has been made more reliable The protocol implementation has been amended to reject buggy or malformed messages Memory management in events of high network traffic or when connected to extremely slow peers has been improved Fee Recommendation This release changes the recommended dust limit for all participants on the Dogecoin network from 1 DOGE to 0.01 DOGE . The full recommendation can be found in the documentation . Breaking changes The behavior of the dumpwallet and backupwallet RPC methods, to exclusively write to the directory specified by -backupdir and no longer overwrite files The maximum number of addnode records that a node will track has been limited to 800 New features A new RPC method, liststucktransactions has been added to help wallet operators identify if any transactions are stuck (ha",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.6",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2022-07-20T23:58:01Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.6"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "03642337c904f00d780d6578",
+      "excerpt": "This is a new minor version release, including important security updates and changes to network policies. All Dogecoin Core users, miners, services, relay operators and wallet users are strongly recommended to upgrade. This release can be installed over an existing 1.14 installation seamlessly, without the need for uninstallation, re-indexation or re-download. Simply shut down your running Dogecoin-QT or dogecoind, perform the installation and restart your node. Important Security Updates This release contains fixes for 2 high severity vulnerabilities that affect most Dogecoin Core users: Remote Code Execution in Dogecoin QT ( CVE-2021-3401 ) Sensitive Information Exposure on Unix platforms ( CVE-2019-15947 ) Dogecoin QT (Graphical User Interface) users on all platforms and wallet users on the Linux platform are urged to please update their installations to this version immediately , to prevent malicious actors from exploiting these vulnerabilities. Fee Reductions This release finalizes a new minimum fee recommendation for all participants on the Dogecoin network, following the reduction of relay and mining defaults in 1.14.4. With this release, the minimum fees when creating transactions are recommended to be as follows: the recommended minimum transaction fee is 0.01 DOGE/kb, ",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.5",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2021-11-08T18:52:11Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.5"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "9bf9fe46999595e3a7988be3",
+      "excerpt": "This is a new minor version release, including various bugfixes and performance improvements. It is a recommended update for all users. This release can be installed over an existing 1.14 installation seamlessly, without the need for uninstallation, re-indexation or re-download. Simply shut down your running Dogecoin-QT or dogecoind, perform the installation and restart your node. Enabling Future Fee Reductions Prepares the network for a reduction of the recommended fees by reducing the default fee requirement 1000x for transaction relay and 100x for mining. At the same time it increases freedom for miner, wallet and node operators to agree on fees regardless of defaults coded into the Dogecoin Core software by solidifying fine-grained controls for operators to deviate from built-in defaults. This realizes the first part of a two-stage update to lower the fee recommendation - a followup release will implement the lower fee recommendation, once the network has adapted to the relay defaults introduced with this version of Dogecoin Core. Synchronization Improvements Removes a bug in the network layer where a 1.14 node would open many parallel requests for headers to its peers, increasing the total data transferred during initial block download up to 50 times the required data, per p",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.4",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2021-08-21T00:30:41Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.4"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "1f4d29cc6d2514777052cd68",
+      "excerpt": "This is a new minor update that includes important performance improvements. It is a strongly recommended update for everyone. This release can be installed over an existing 1.14 installation seamlessly, without the need for uninstallation, re-indexation or re-download. Simply shut down your running Dogecoin-QT or dogecoind, perform the installation and restart your node. Improve synchronization speed Significantly improves the speed at which a node can upload blocks, by removing expensive integrity checks that were performed each time a block is sent to another node. When a block is received and during rescans of the locally stored blockchain, the checks are still performed. Reduce default mempool expiry time Reduces the default time that transactions are cached in the mempool from 336 hours to 24 hours. This default setting can be overridden with the -mempoolexpiry parameter by individual node operators to a value (expressed in hours) that makes the most sense for the use cases the node serves. Other changes and improvements Increase block download timeouts Add size_on_disk, prune_target_size, automatic_pruning to getblockchaininfo Add query options to listunspent RPC call Set BIP65 softfork heights in chainparams.cpp. Update package links for OSX cross compilation. Change IPC ",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.3",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2021-02-28T21:14:19Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.3"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "67d100071dbc6bbe1cb34ea8",
+      "excerpt": "All users are encouraged to upgrade to this version, it includes an important bugfix to 1.14.0, and enables support for OP_CHECKLOCKTIMEVERIFY compared to pre-1.14.0. This is a bugfix release which: Reverts a change of behaviour in the getauxblock command. The target field was renamed to _target in Namecoin and this change should not have appeared in Dogecoin, for compatibility with previous mining pool configurations. This has now been corrected. Fix description of supermajority based forks in getblockchaininfo - the full block version number was used instead of just the last byte, which made it appear forks were triggered early. Change references to \"Bitcoin\" to \"Dogecoin\" - these weren't user visible, but are done for consistency. Corrects the handling of so-called dust outputs in regards to calculating fees. This fixes an issue where a change output smaller than 1 DOGE would create a transaction that was not going to be relayed. Note: We have skipped 1.14.1 as the last bug and its fix were found after 1.14.1 was tagged already.",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.2",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2019-11-08T20:10:34Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.2"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2bf180ee50a7785659f68faa",
+      "excerpt": "Fix RPC description of supermajority based forks",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.14.1: Merge pull request #1601 from langerhans/1.14-supermajority-rpc",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2019-07-14T18:53:40Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.1"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d5f3925572d726a69844baf5",
+      "excerpt": "This is the long awaited Dogecoin Core 1.14! Please make sure, if you upgrade an existing version, to make a (current!) backup of your wallet.dat file! We have successfully upgraded existing wallets in our testing, but you should always keep a backup of that file regardless. This version contains a soft fork to enable BIP-65 (OP_CHECKLOCKTIMEVERIFY). The fork is locked in at 750 of the previous 1000 blocks. At 950 of the previous 1000 blocks with base version 4, the client will start to reject blocks with a base version of <= 3. For pool operates this means that they should update to the final 1.14 version once it is released asap, but at least before the fork is activated to not risk mining invalid blocks after 95% of the mined blocks are on base version 4. While this is not very relevant to end users you should still make sure to update to 1.14 final sooner than later. Updating will also enable us to continue testing with the 1.17 client, so please do so. Please note that getinfo is deprecated and will be removed in the next Dogecoin release. There are now several different commands that contain parts of that data instead. Please see the release notes for detail. Full release notes are available at https://github.com/dogecoin/dogecoin/blob/master/doc/release-notes.md",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2019-06-22T16:26:03Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.0"
+    }
+  ]
+}

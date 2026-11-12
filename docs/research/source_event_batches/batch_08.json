@@ -1,0 +1,1800 @@
+{
+  "capture_utc": "2026-11-12T20:03:58Z",
+  "events": [
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "bf6945162d68dc5a1887a9eb",
+      "excerpt": "The Ethereum Foundation’s Trillion Dollar Security (1TS) initiative is proud to announce a grant allocation to Freedom of the Press Foundation (FPF) to support the continued development of WEBCAT. WEBCAT is an open source tool that lets browsers verify that code served by an enrolled website matches what its developers...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Announcing a Trillion Dollar Security grant for WEBCAT",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-08-05T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/08/05/1ts-grant"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7ba30a7c9fdda04060464cc8",
+      "excerpt": "Phase0 Rename boolean to Boolean ( #5466 ) Rename byte to Byte ( #5468 ) Rename uint* to Uint* ( #5469 ) Remove links that do not resolve on the documentation site ( #5476 ) Fix broken links ( #5475 ) Backport is_parent_strong and is_head_weak changes to Phase0 ( #5401 ) Use better types for constants/configs/presets ( #5488 ) Rename Bitlist / Bitvector to BitList / BitVector ( #5493 ) Return early from on_block when the block is already known ( #5495 ) Altair Rename boolean to Boolean ( #5466 ) Rename uint* to Uint* ( #5469 ) Fix broken links ( #5475 ) Use better types for constants/configs/presets ( #5488 ) Rename Bitlist / Bitvector to BitList / BitVector ( #5493 ) Bellatrix Rename uint* to Uint* ( #5469 ) Elaborate messages for block's payload gossip validation ( #5474 ) Fix broken links ( #5475 ) Use better types for constants/configs/presets ( #5488 ) Rename Bitlist / Bitvector to BitList / BitVector ( #5493 ) Return early from on_block when the block is already known ( #5495 ) Capella Rename boolean to Boolean ( #5466 ) Rename uint* to Uint* ( #5469 ) Elaborate messages for block's payload gossip validation ( #5474 ) Rename Bitlist / Bitvector to BitList / BitVector ( #5493 ) Return early from on_block when the block is already known ( #5495 ) Deneb Add p2p helper function",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "v1.7.0-alpha.13",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-08-01T18:09:55Z",
+      "source_id": "eth_consensus_releases",
+      "source_ids": [
+        "eth_consensus_releases"
+      ],
+      "url": "https://github.com/ethereum/consensus-specs/releases/tag/v1.7.0-alpha.13"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "e290aabba3caad80496847cf",
+      "excerpt": "Federal Reserve issues FOMC statement",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Federal Reserve issues FOMC statement",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-29T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d6be24ba4c1a3beeadbc0ec9",
+      "excerpt": "We are pleased to share that pcaversaccio (pc) has joined the Ethereum Foundation Board. pc is a long time contributor to the Ethereum ecosystem, a co-founder and lead of SEAL 911, and has been a member of the EF's Silviculture Society, which provides informal counsel to EF aimed at...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Ethereum Foundation Board Update",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-29T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/07/29/ef-board-update"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b8088719aa0714a943e6e8d7",
+      "excerpt": "This is a maintenance release with accumulated bug fixes and improvements, and is recommended for all users. It continues the implementation work for the upcoming Amsterdam hardfork. A few things worth highlighting: The default GOGC has changed from 20 to 50, trading a higher memory peak for less GC overhead. Set --gogc=20 to keep the old behavior. Pebble v2 is now supported as a key-value store backend. Pebble v2 is used when Geth is bootstrapped from scratch, and falls back to Pebble v1 for a pre-existing database. Run geth db pebble-upgrade to explicitly upgrade a legacy Pebble v1 database to v2. Fork Implementation Several Amsterdam EIPs have been implemented or updated: EIP-2780: Resource-based intrinsic transaction gas ( #35212 , #35318 ) EIP-8037: State creation gas cost increase ( #35173 , #35318 , #35301 , #35342 , #35279 ) EIP-8038: State-access gas cost update ( #35216 ) EIP-8246: Remove SELFDESTRUCT burn ( #35219 ) EIP-8282: Builder execution requests ( #35175 , #35341 ) EIP-7997: Deterministic factory contract ( #35223 , #35285 ) EIP-7954: Increase maximum contract size ( #35217 ) EIP-7928: Block-level access lists ( #35260 , #35281 , #35261 , #35348 , #35279 ) Improve Amsterdam fork test coverage ( #35364 ) Introduce the --override.amsterdam flag ( #35213 ) Remove n",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "Grav-Torque Pad (v1.17.5)",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-27T08:17:40Z",
+      "source_id": "eth_geth_releases",
+      "source_ids": [
+        "eth_geth_releases"
+      ],
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.5"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "1916b216163234905682b35d",
+      "excerpt": "31.3.0 (2026-07-20) Features airbender: adapt prover server to v31 verifier wire format ( #4880 ) ( 10d3bd2 ) airbender: round-robin prover fetching across multiple chain job servers ( #4905 ) ( b475424 ) Bug Fixes api: Handle to field properly ( #4913 ) ( d32c04d ) api: Use BTreeMap in StateOverride for deterministic iteration ( #4760 ) ( 64f30e5 ) ci: harden flaky integration test workflow ( #4900 ) ( 8030f53 ) cover V29_2 in ecosystem upgrade match and fix StateOverride caller ( 5f77293 ) en: Do not crash node in sync state updater task ( #4247 ) ( 7bc1f12 ) eth-proof-manager: three correctness fixes for validation retries, metrics labels, and verifier panics ( #4723 ) ( d88daa4 ) use hashed_keys for extracting storage logs from db ( #4606 ) ( 5be957e )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "core: v31.3.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-20T13:19:04Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/core-v31.3.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5a26ae43a3fa1c29fad718ea",
+      "excerpt": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-14T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "979c345ac87d8db3096ec05c",
+      "excerpt": "0.1.1 (2026-07-14) Features airbender: download snark_vk.json at build time, pin verifier to v29.8.0 ( #4878 ) ( ea52169 ) airbender: migrate prover server into its own workspace ( #4870 ) ( a07445c ) airbender: report real guest cycles from prover to server ( #4893 ) ( 3958eb5 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "airbender_prover_server: v0.1.1",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-14T12:59:09Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/airbender_prover_server-v0.1.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f3db2e7acb8ecf4fd4b71af7",
+      "excerpt": "31.2.0 (2026-07-14) Features multivm: Cycles Tracer ( #4889 ) ( 6d498bd ) state_keeper: persist predicted vs prover-reported Airbender cycles ( #4891 ) ( 52f2bd8 ) Bug Fixes contract-verifier: normalize standard-json source handling ( #4890 ) ( 6f6222f ) verifier: patch zksolc factory dependency hashes ( #4872 ) ( cb19266 )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "core: v31.2.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-14T12:38:27Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/core-v31.2.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "38c78d5920b799354c32761d",
+      "excerpt": "Devcon 8 tickets are live! 🇮🇳 This November, the Ethereum community will gather in Mumbai for a more focused and intimate Devcon. Devcon gathers minds from across Ethereum and beyond: builders, researchers, maintainers, organizers, and anyone curious about the future of open technology. Across four days, you can...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Devcon 8 Tickets Are Live: Find Your Path to Mumbai",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-14T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/07/14/devcon8-tickets"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8aca6009ba2e27db66060afc",
+      "excerpt": "Bitcoin Core version 29.4 is now available from: https://bitcoincore.org/bin/bitcoin-core-29.4/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-29.4.md Do not use the links provided by GitHub, rather use the above download links, they are guaranteed to be generated deterministically and signed.",
+      "first_observed_utc": "2026-11-12T20:01:55Z",
+      "headline": "Bitcoin Core 29.4",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-10T14:25:37Z",
+      "source_id": "btc_core_releases",
+      "source_ids": [
+        "btc_core_releases"
+      ],
+      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v29.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d871f40c59fea1d6edccc8bb",
+      "excerpt": "fix(contract-verifier): normalize standard-json source handling",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "contract_verifier-v26.8.8",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-10T11:28:27Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/contract_verifier-v26.8.8"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "61a7bae109af084abef4a4d9",
+      "excerpt": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-09T19:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7eefa1131a7ebdd0717a7926",
+      "excerpt": "Notes from the Ethereum Foundation's Protocol Security team on running coordinated AI agents against real protocol code, including how we organize the work, what holds up under scrutiny, and what client teams and security researchers can take from it. This post stands on its own; later posts will go deeper...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "The triage is the product: running AI agents against Ethereum's protocol code",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-09T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/07/09/triage-is-the-product"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "10d78437804234563a598c50",
+      "excerpt": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-08T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "e153213c1d2f0cbbd664a597",
+      "excerpt": "Phase0 Replace get_dependent_root with get_shuffling_dependent_root ( #5374 ) Name the epoch boundary helper correctly ( #5392 ) Fix various nits ( #5395 ) Fix nits in p2p config tables ( #5425 ) Mandate QUIC as primary transport ( #5330 ) Altair Fix various nits ( #5395 ) Bellatrix Fix various nits ( #5395 ) Capella Fix grammar typo in light client sync protocol docs ( #5407 ) Fix various nits ( #5395 ) Deneb Replace py_ecc/milagro with arkworks ( #5394 ) Fix grammar typo in light client sync protocol docs ( #5407 ) Fix req/resp nits ( #5411 ) Fix various nits ( #5395 ) Fix nits in p2p config tables ( #5425 ) Electra Fix grammar typo in light client sync protocol docs ( #5407 ) Fix req/resp nits ( #5411 ) Fix various nits ( #5395 ) Fix nits in p2p config tables ( #5425 ) Forward compatible consensus data structures (EIP-7688) ( #4630 ) Fulu Fix some inconsistencies in fulu partial-columns spec ( #5357 ) Fix various nits ( #5395 ) Fix nits in p2p config tables ( #5425 ) Gloas Fix some inconsistencies in fulu partial-columns spec ( #5357 ) Use MAX_REQUEST_PAYLOADS in EnvelopesByRange ( #5383 ) Replace get_dependent_root with get_shuffling_dependent_root ( #5374 ) Set slot before using it for object construction ( #5386 ) Name the epoch boundary helper correctly ( #5392 ) Only rese",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "v1.7.0-alpha.12",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-08T04:58:22Z",
+      "source_id": "eth_consensus_releases",
+      "source_ids": [
+        "eth_consensus_releases"
+      ],
+      "url": "https://github.com/ethereum/consensus-specs/releases/tag/v1.7.0-alpha.12"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "eee547161e411778c95715b3",
+      "excerpt": "What's Changed fix(verifier): patch zksolc factory dependency hashes by @coffeexcoin in #4872",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Contract-verifier",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-07T15:29:00Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/contract_verifier-v26.8.7"
+    },
+    {
+      "cmc_ids": [
+        11841
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a29d45cb74477baa8649df43",
+      "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.2-3599aca This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines\\ If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.2-3599aca-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.2 - 2026-06-30 Configuration Add --node.dangerous.always-fallback-to-parent-chain-da to support retiring chains off AnyTrust. [commit] Add --execution.transaction-filtering.address-filter.s3.preallocate-memory (default true) to preallocate and commit the hash-list memory at startup, engaging only when s3.max-file-size-mb is set. [commit] Added Added consensus-v61 to dockerfile, remove rc and older consensus. [commit] Changed Default --file-logging.max-backups increased from 20 to 40. [commit] The address filter now decodes the S3 hash list directly into preallocated, reused data structures committed at startup, so reloads perform no large allocation and cannot OOM the",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Arbitrum Nitro v3.11.2",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "11841": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-06T19:47:28Z",
+      "source_id": "arbitrum_releases",
+      "source_ids": [
+        "arbitrum_releases"
+      ],
+      "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.2"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "cf8218de97d2ec5a0928fbe6",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "prover-v25.4.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-03T14:34:23Z",
+      "source_id": "zksync_releases",
+      "source_ids": [
+        "zksync_releases"
+      ],
+      "url": "https://github.com/matter-labs/zksync-era/releases/tag/prover-v25.4.0"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "54f4cb6cbcd363e0da3855ea",
+      "excerpt": "Current global shifts clearly signal a critical need for shared, neutral digital public infrastructure outside the control of any single centralized actor. As a public, programmable network designed to operate without reliance on any single party, Ethereum was built to address precisely these needs. Today, the Ethereum Foundation Global...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Ethereum for Governments and Institutions: Why neutral infrastructure matters now",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-07-01T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/07/01/ethereum-for-institutions"
+    },
+    {
+      "cmc_ids": [
+        11841
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "527a909ebd3628518fdb3652",
+      "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.1-8512b8c This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines\\ If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.1-8512b8c-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.1 - 2026-06-29 Fixed The Stylus warm-start cache is now rolled back when a transaction is dropped after executing. [commit] Use mutex for history reads [commit]",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Arbitrum Nitro v3.11.1",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "11841": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-29T17:45:26Z",
+      "source_id": "arbitrum_releases",
+      "source_ids": [
+        "arbitrum_releases"
+      ],
+      "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b5a6ca201f30ac04fdc0e180",
+      "excerpt": "What's Changed Delete .github/workflows/claude-review.yml by @leighmcculloch in #5314 apply-load: use the operator-configured NETWORK_PASSPHRASE by @tamirms in #5319 Bump min overlay version to v26 by @marta-lokhova in #5320 Split test-lcm data into current/next tiers by @sisuresh in #5313 Cleanup historical ledger query by @SirTyson in #5221 Parallelize InMemoryIndex construction with bucket put loop. by @dmkozh in #5288 Add random memo to apply-load transactions by @Shaptic in #5322 Bucket query asserts and perf fix by @SirTyson in #5323 Initialize Bucket directory after the database by @marta-lokhova in #5325 Add new tests to purge scp slots by @marta-lokhova in #5324 Cleanup herder repeated out of sync flow and add test by @marta-lokhova in #5327 Experimental triggerNextLedger timer Change by @SirTyson in #4865 fix query server assert when catching up by @SirTyson in #5329 Full Changelog : v27.0.0...v27.1.0",
+      "first_observed_utc": "2026-11-12T20:01:58Z",
+      "headline": "v27.1.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-25T19:51:14Z",
+      "source_id": "stellar_releases",
+      "source_ids": [
+        "stellar_releases"
+      ],
+      "url": "https://github.com/stellar/stellar-core/releases/tag/v27.1.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3f5b3fef2fea6b81e93cf258",
+      "excerpt": "Today, the EF is changing shape, concluding a months-long process of reorganization as part of the implementation of the Mandate and the Treasury Management Policy. We come out of this process with the structure, activities, and people necessary for execution on the critical tasks ahead of us, but also...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "The EF’s new structure",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-23T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/06/23/ef-structure"
+    },
+    {
+      "cmc_ids": [
+        11841
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "56ad93873586b1585afceaa1",
+      "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.0-a618155 This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines\\ If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.0-a618155-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.0 - 2026-06-22 Added ArbOS60 supported. Add --execution.legacy-zero-base-fee-until restores the pre-v3.7 behavior of treating headers with ArbOSFormatVersion <= 40 and BaseFee == 0 for affected chains. Add --execution.transaction-filtering.enable replaces --execution.address-filter.enable . Sequencer reports filtered regular transactions to the filtering-report service via FilteringReportRPCClient. Unified replay binary ( cmd/unified-replay/ ) combining MEL message extraction and block production into a single WASM-compilable program. GetEndParentChainBlockHash host I/O opcode for MEL proving. melwavmio package providing WASM imports and native stubs for MEL. Extended",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Arbitrum Nitro v3.11.0",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {
+        "11841": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-22T18:05:40Z",
+      "source_id": "arbitrum_releases",
+      "source_ids": [
+        "arbitrum_releases"
+      ],
+      "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2997711877dedeea12389cee",
+      "excerpt": "This is a maintenance release with accumulated bug fixes and improvements, and is recommended for all users. It also continues the implementation work for the upcoming Amsterdam hardfork. One thing worth highlighting: Clef has been removed. The standalone clef signer has moved to https://github.com/ethereum/clef ( #35097 ). Fork Implementation (Amsterdam) EIP-7928: Block-Level Access Lists: the block access list is now constructed and verified during block execution, with the serving side of the eth/71 BAL messages implemented ( #34652 , #34803 , #34879 , #34957 , #34967 , #34972 , #34977 , #35110 ) EIP-8189: snap/2, a new state-sync protocol based on block-level access lists, has been added ( #34626 , #34807 , #35098 , #35155 , #35158 , #35163 , #35178 , #35180 , #35181 ) EIP-8037: state-creation gas cost increase, has been implemented ( #33601 ) The tracing system provides a new OnGasChangeV2 hook for multi-dimensional gas ( #34946 ) engine_newPayloadWithWitnessV5 has been added and the witness format now uses the canonical spec field ordering ( #35009 ) The evm t8n tooling has been updated for Amsterdam, adding BAL and slot-number support and binary-trie leaf export ( #34843 , #35025 ) For EIP-7843, the slot number is now set for the pending block post-Amsterdam ( #34792 , #35",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "Flexible Polymer Casing (v1.17.4)",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-22T07:47:09Z",
+      "source_id": "eth_geth_releases",
+      "source_ids": [
+        "eth_geth_releases"
+      ],
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7a7e09ce9768625bec762584",
+      "excerpt": "Phase0 Modify get_proposer_head for Gloas ( #5348 ) Altair Deprecate two functions ( #5340 ) Add annotation prefixes to p2p interface spec sections ( #5356 ) Align fork version modifiers ( #5372 ) Bellatrix Add annotation prefixes to p2p interface spec sections ( #5356 ) Align fork version modifiers ( #5372 ) Align note comments to use complete sentences ( #5375 ) Capella Align the Gloas fork-choice structure with Phase0 ( #5344 ) Add annotation prefixes to p2p interface spec sections ( #5356 ) Align fork version modifiers ( #5372 ) Align note comments to use complete sentences ( #5375 ) Deneb Align the Gloas fork-choice structure with Phase0 ( #5344 ) Add annotation prefixes to p2p interface spec sections ( #5356 ) Align note comments to use complete sentences ( #5375 ) Electra Add annotation prefixes to p2p interface spec sections ( #5356 ) Align note comments to use complete sentences ( #5375 ) Fulu Deprecate two functions ( #5340 ) Add annotation prefixes to p2p interface spec sections ( #5356 ) Align note comments to use complete sentences ( #5375 ) Gloas Fix payload_timeliness and payload_data_availability comparisons ( #5331 ) Clarify should_build_on_full semantic ( #5335 ) Clarify should_extend_payload 's note and add a slot assert ( #5336 ) Align the Gloas fork-choice st",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "v1.7.0-alpha.11",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-20T00:55:41Z",
+      "source_id": "eth_consensus_releases",
+      "source_ids": [
+        "eth_consensus_releases"
+      ],
+      "url": "https://github.com/ethereum/consensus-specs/releases/tag/v1.7.0-alpha.11"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "94826fcab8a056185eb93259",
+      "excerpt": "Federal Reserve issues FOMC statement",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Federal Reserve issues FOMC statement",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-17T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO",
+        "UPGRADE"
+      ],
+      "event_id": "6a35ed96da249fba1c6b7d39",
+      "excerpt": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-17T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "6a6c37ad17ba1948b092285d",
+      "excerpt": "log successful and failed report forwards with body",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v3.11.0-rc.4: Merge pull request #365 from OffchainLabs/successful_forward_log",
+      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-10T19:02:54Z",
+      "source_id": "arbitrum_releases",
+      "source_ids": [
+        "arbitrum_releases"
+      ],
+      "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.0-rc.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "1f2634164c4b3779251dc22e",
+      "excerpt": "Heze Simplify InclusionListStore ( #5324 ) EIP-8025 Rebase EIP-8025 from Fulu onto Gloas ( #5290 ) EIP-8148 Add custom sweep threshold for validators (EIP-8148) ( #4901 ) Testing Add custom sweep threshold for validators (EIP-8148) ( #4901 ) Rebase EIP-8025 from Fulu onto Gloas ( #5290 ) Simplify InclusionListStore ( #5324 ) Do not set deposit_requests_start_index in fork helper ( #5329 ) Other Bump version to v1.7.0-alpha.10 ( #5318 ) Add write-specs skill ( #5325 ) Add review skill ( #5326 )",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "v1.7.0-alpha.10",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-09T13:01:35Z",
+      "source_id": "eth_consensus_releases",
+      "source_ids": [
+        "eth_consensus_releases"
+      ],
+      "url": "https://github.com/ethereum/consensus-specs/releases/tag/v1.7.0-alpha.10"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "9d017c01aff797de64e3bc53",
+      "excerpt": "Protocol 27 This release bumps the protocol to version 27, which includes CAP-0071: Authentication delegation and address-bound Soroban credentials. Adapt to CAP-0071 xdr by @sisuresh in #5233 Add Core support for CAP-71. by @dmkozh in #5272 Bump to p27 by @sisuresh in #5305 New features Allow secrets to be provided from a file or environment variable by @sisuresh in #5177 Allow DATABASE config in file by @sisuresh in #5219 Enable downloading of transaction sets in parallel with early SCP stages by @bboston7 in #5209 Module cache rebuild logic by @graydon in #5175 Skip building invariant delta when no invariants are enabled. by @dmkozh in #5289 Relax invariants in recordStorageChanges for optimization. by @dmkozh in #5290 Sort entry pointers in convertToBucketEntry. by @dmkozh in #5291 Add option to generate LCM from tests by @sisuresh in #5178 Make LCM capture deterministic and add shorten file names by @sisuresh in #5203 Enable diagnostics when using --capture-lcm by @sisuresh in #5251 Add DISABLE_TX_META_FOR_TESTING config flag. by @dmkozh in #5285 Allow overriding block time bounds for testing by @marta-lokhova in #5239 Add ledger age histrogram to support \"min block time\" test by @marta-lokhova in #5237 Add a script for converting frozen ledger key settings to hex. by @dmkoz",
+      "first_observed_utc": "2026-11-12T20:01:58Z",
+      "headline": "v27.0.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-05T19:51:25Z",
+      "source_id": "stellar_releases",
+      "source_ids": [
+        "stellar_releases"
+      ],
+      "url": "https://github.com/stellar/stellar-core/releases/tag/v27.0.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3c9a69412b5af9e22cf2234c",
+      "excerpt": "What's Changed Replace block on transactions using ed25519SignedPayload signatures with an overall cap on signature verifications stellar-core will perform per transaction + Fix a crash during validation of malformed legacy transaction sets. by @bboston7 and @dmkozh in 427aa39 Full Changelog : v26.0.1...v26.1.0",
+      "first_observed_utc": "2026-11-12T20:01:58Z",
+      "headline": "v26.1.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-06-01T23:42:51Z",
+      "source_id": "stellar_releases",
+      "source_ids": [
+        "stellar_releases"
+      ],
+      "url": "https://github.com/stellar/stellar-core/releases/tag/v26.1.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5f4f51040948b17bdc95b61e",
+      "excerpt": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-26T18:00:00Z",
+      "source_id": "fed_monetary",
+      "source_ids": [
+        "fed_monetary"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "fbddc555f2a12d38fbe85d99",
+      "excerpt": "An Ethereum Working Group consisting of wallet developers, security firms and the Ethereum Foundation’s Trillion Dollar Security Initiative today launched an open standard designed to end blind signing — a structural flaw that has contributed to billions in user losses, including the Bybit hack. Ethereum Foundation’s Trillion Dollar Security Initiative...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Clear Signing: Making Transaction Approvals Safer on Ethereum",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-12T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/05/12/clear-signing-announcement"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "907243ba6e463f70d099c204",
+      "excerpt": "This is a maintenance release with continued progress on the Amsterdam fork implementation. It also introduces ETH/70, which is now live on the network. Breaking change for tracing APIs (debug_trace*), specifically the structLog (opcode) tracer. The following response fields now follow the newly established client-wide spec ( ethereum/execution-apis#762 ) and reexec has been removed from the tracing config: memory : words are 0x-prefixed and padded to 32 bytes storage : keys and values are 0x-prefixed error : omitted when empty (previously serialized as \"\") Geth Add retry mechanism for checkpoint init in blsync ( #33966 ) Add subcommand for offline binary tree conversion ( #33740 ) Add code exporter for db export ( #34696 ) Core Amsterdam fork updates: Prerequisites of EIP-7928: Block-Level Access Lists ( #34064 , #34644 , #34726 , #34776 , #34799 , #33737 ) Prerequisites of EIP-8037: State Creation Gas Cost Increase ( #34691 , #34712 , #34841 ) EIP-7976: Increase Calldata Floor Cost ( #34748 ) EIP-7981: Increase Access List Cost ( #34755 ) EIP-7610: Reject contract creation when storage is non-empty ( #34718 ) Update state tests ( #34671 ) Implement stack arena ( #33960 ) Implement EIP-7975: eth/70 partial block receipt lists ( #33153 ) Prerequisites of snap/2 protocol ( #34083 ",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "Enzymatic Injector (v1.17.3)",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-11T15:23:41Z",
+      "source_id": "eth_geth_releases",
+      "source_ids": [
+        "eth_geth_releases"
+      ],
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.3"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d36831204140ca96bbd6bbaf",
+      "excerpt": "A semi-regular gathering of Ethereum core devs from various client teams, or interop, recently took place in Svalbard, Norway. Over the week-long event, teams focused on hardening and preparation for the next upgrade, Glamsterdam. Several important milestones came out of the week, including: 200M gas limit floor established:...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Protocol Cluster Updates: May 2026",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-11T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/05/11/protocol-update-may-26"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "cfec6c3936fa82aa1770d43b",
+      "excerpt": "Lord Ranger is a Member of the UK House of Lords and serves as Co-Chair of the All-Party Parliamentary Group (APPG) on Digital Markets and Digital Money. Opinions below are his own. At a pivotal moment for the future of money, last week an evidence session with the Bank of England offered something we do not often get: a clear, candid readout from the heart of the UK’s monetary authority on how it views digital assets, systemic stablecoins, and the digital pound. After 18 months deeply engaged in the digital assets regulatory debate, as co-chair of the APPG on Digital Markets and Digital Money, I came away with two overriding impressions: the Bank is listening, and the Bank is cautious. Both are understandable. Neither, on their own, will be sufficient. Let’s start with the positive. The tone of engagement matters, and it is improving. The Bank’s willingness to absorb and reflect on feedback, particularly on its consultation into systemic stablecoins, is both genuine and welcomed. This is not a regulator operating in isolation; it is one actively trying to understand how innovation is unfolding in real time. That matters because stablecoins are no longer theoretical. Properly structured, they offer the prospect of faster, cheaper, more programmable payments. Improperly handled, t",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Lord Kulveer Ranger on digital assets, digital pound, and stablecoins",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-07T17:04:07Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/opinion/opinion-lord-kulveer-ranger-on-digital-assets/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "SECURITY"
+      ],
+      "event_id": "377b9748043691912a9d5f97",
+      "excerpt": "Developers behind Solana-based derivatives exchange Drift proposed on Tuesday a recovery plan that would funnel protocol revenue to users who lost money in a devastating April hack. The developers also proposed relaunching the protocol before July “a leaner, perps-native exchange with an emphasis on security.” “The Drift team is taking considered measures to ensure that users are made whole, and that Drift restores itself as the leading perpetuals DEX on Solana,” they said in an update posted on the exchange’s website. “The team has made internal hard decisions to restructure and operate as lean as possible, focusing entirely on recovery and relaunch.” But various elements of the recovery plan will have to be approved by Drift tokenholders — and, if all goes according to plan, victims could wait years to break even. On April 1, hackers were able to trick Drift administrators into approving bogus transactions. The hackers made off with crypto worth $295 million, forcing Drift to suspend trading and other activity. Blockchain analysts have since said North Korea was likely behind the hack. Should it pass, Drift’s proposal would lead to a lengthy recovery process for users who want to be fully compensated for their losses. Users would be issued a “recovery token” representing a clai",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Drift to issue ‘recovery tokens’ in wake of $295m hack",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T21:04:09Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/drift-to-issue-recovery-tokens-in-wake-of-295m-hack/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "c44105224f21d5f12a6f2106",
+      "excerpt": "A version of this story appeared in The Decentralised newsletter on May 5. Sign up here. GM, Tim here. Decentralised finance is notorious for being home to some pretty wacky ideas with dubious commercial viability. Yet over the past year, developers have stumbled on one that not only works, but also happens to be quite profitable: letting users buy and sell virtual versions of trading cards. Onchain marketplaces that allow users to speculate on the prices of Pokémon, One Piece, and sports cards have soared over the past year. They generated a combined $11 million in revenue last month, according to data from DefiLlama, generated on its new Pro dashboard . Revenue on DeFi TCG marketplaces is up more than 9X year-over-year, with top marketplaces generating over $11M in April. Chart created with DefiLlama Pro pic.twitter.com/3pUpFnQMhM — DefiLlama.com (@DefiLlama) May 4, 2026 That’s no small sum for an idea that was basically unproven just over a year ago. The success comes as trading cards — particularly Pokémon — continue their popularity. Nostalgia, financial speculation, and a post-pandemic boom in collectibles have caused prices to soar in recent years. Pokémon cards, as measured through the Card Ladder Index, have produced a roughly 4,000% cumulative return since 2004, vastly ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "DeFi rides Pokémon trading card boom as onchain marketplaces bring in $11m",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T16:12:11Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/defi-rides-pokemon-trading-card-boom/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "739e7e323546187639829ce7",
+      "excerpt": "Coinbase just cut 700 jobs. But Wall Street is liking what it sees. Coinbase shares popped as much as 4% early on Tuesday morning after the flagship US crypto exchange announced it was slashing about 14% of its global workforce in a sweeping restructuring that refocuses the company around artificial intelligence. CEO Brian Armstrong broke the news in an email to employees, citing two punishing forces: a reeling market still down about $1.5 trillion from its peak, and AI. \"Over the past year, I've watched engineers use AI to ship in days what used to take a team weeks,\" Armstrong wrote in the email, which he reposted on X. \"Non-technical teams are now shipping production code and many of our workflows are being automated.\" “We’re fundamentally changing how we operate: rebuilding Coinbase as an intelligence, with humans around the edge aligning it,” he added. As of December 31, Coinbase had 4,951 employees, according to its 2025 financial report . Based on that figure, the exchange's 14% job cut impacts 693 employees. The move puts Coinbase in company with Meta, which is cutting roughly 10% of its workforce, and Microsoft, which is trimming headcount through a voluntary retirement programme. Across many high-flying tech companies, the logic has been the same. The exchange expects t",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Coinbase shares pop as CEO Brian Armstrong cuts 700 jobs and blames AI",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T13:41:45Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/coinbase-cuts-jobs-and-blames-artificial-intelligence/"
+    },
+    {
+      "cmc_ids": [
+        7083
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GOVERNANCE"
+      ],
+      "event_id": "a8113ebec2266dc19b9dd62a",
+      "excerpt": "The digital cooperative governing Uniswap, the biggest decentralised exchange, is voting on a proposal to take back some $42 million worth of governance tokens from delegates. Between 2022 and 2023, Uniswap’s decentralised autonomous organisation, or DAO, loaned out 12.5 million UNI to the nonprofit Uniswap Foundation and several top delegates in a bid to boost governance participation. According to Erin Koen, the proposal’s author and governance lead at Uniswap Labs, the protocol’s governance is now much more active, meaning that the loaned tokens have served their purpose. “Today, Uniswap’s governance environment looks very different,” Koen said. “UNI holders have been actively delegating voting power, and since DUNI was established, passed proposals have averaged roughly 75 million votes in turnout, exceeding quorum by approximately 88%.” DUNI, Uniswap’s Decentralized Unincorporated Nonprofit Association, is a legal entity that recognises onchain governance votes as legally binding and shields DAO members from personal liability for collective decisions. Truly decentralised? The proposal to take back the loaned tokens comes as Uniswap Labs and the Uniswap Foundation work to address criticism that the protocol’s governance system isn’t as decentralised as it appears to be. Crit",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Uniswap DAO votes to take back $42m of governance tokens loaned to delegates",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "7083": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T11:23:34Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/uniswap-dao-votes-to-take-back-loaned-uni-tokens/"
+    },
+    {
+      "cmc_ids": [
+        32196
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "50f2bdeb8d40137726b56647",
+      "excerpt": "Hyperliquid is nibbling away at Kalshi and Polymarket. The decentralised finance exchange processing $6 billion in daily derivatives volume launched its first outcome contracts over the weekend — and the early numbers turned heads, according to Hyunsu Jung, CEO of Hyperion DeFi. Its first Bitcoin outcome market did roughly three times the volume of equivalent markets on Polymarket and Kalshi combined, Jung told DL News. “This proves that having a shared liquidity layer is effective in converting users,” he said. \"Binary markets is an obvious next step in building the full financial stack on Hyperliquid, which is meaningfully dominating crypto perpetuals and in the first half of 2026 has demonstrated the possibilities of 24/7 real-world asset trading.” Hyperion DeFi is a US publicly-traded company that accumulates Hyperliquid's HYPE token. The launch puts Hyperliquid in direct competiton with Polymarket and Kalshi — and, according to a note shared with DL News by Bernstein analysts Gautam Chhugani and his colleagues on Monday, the timing could hardly be more significant. Bernstein has just extended its digital assets research coverage to include prediction markets as one of three trends it is tracking alongside tokenisation and stablecoins, a signal of how seriously Wall Street is",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Hyperliquid takes aim at Kalshi, Polymarket targeting $24bn prediction markets",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "32196": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T09:41:36Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/hyperliquid-launches-prediction-markets-for-bitcoin/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "595637f5fdbd73d94d2e1d5c",
+      "excerpt": "Strategy is on a tear. Shares of the world's largest corporate Bitcoin holder have surged more than 50% over the past month, riding the top crypto’s climb past $80,000 as short sellers scramble for the exits and institutional money pours back in. On Monday, MSTR jumped another 4% to nearly $184 per share, adding to a 7% surge on Friday. After-hours trading suggests the stock’s price has inched up at least another 2% ahead of Strategy’s first-quarter earnings call on Tuesday. The rally comes amid renewed institutional demand. Bitcoin exchange-traded funds drew $827 million in the first two trading days of May alone, extending a two-month winning streak, DefiLlama data shows . Over $200 million in short positions were liquidated in a single day as the rally gathered pace. Strategy shares are seen as a leveraged bet on Bitcoin, and the firm's stock price closely tracks the top crypto. Bitcoin's rally above $80,000 is sound, according to Jake Kennis, senior research analyst at Nansen. He told DL News that the funding rate — a key measure of market temperature — sits at a healthy 0.00045% hourly, well below the overheated readings that typically precede a sharp correction. \"With $2.4 billion in open interest and daily perpetual volume of $3.4 billion outpacing spot turnover, derivativ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Strategy shares soar 50% in a month as Bitcoin tops $80,000 ahead of Q1 earnings call",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-05T08:01:35Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-price-and-strategy-shares-soar-ahead-of-earnings/"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7816504eeba0b3a8eb4862d9",
+      "excerpt": "An emergency hearing on Wednesday could determine whether the relatives of a slain minister are entitled to $71 million in crypto that was nearly stolen by North Korean hackers last month. The hearing, scheduled by a federal judge in New York, is part of a fast-moving legal skirmish that has complicated an industry-wide effort to compensate the victims of an April 18 hack allegedly executed by North Korean hackers. That exploit saw hackers make off with nearly $300 million in rsETH stolen from the Kelp DAO protocol. The hackers then used the stolen crypto as collateral to borrow other, more liquid assets on Aave, the largest protocol in decentralised finance. But several organisations were able to freeze some of the stolen crypto before it could be laundered. Arbitrum DAO was the most successful, freezing crypto worth about $71 million. Arbitrum DAO is poised to send that crypto to a recovery fund meant to compensate users affected by the hack. But other people who have been victimised by North Korea are now trying to claim the frozen assets, citing decade-old, multimillion-dollar legal judgments against the pariah nation. On Friday evening, attorneys for those victims served Arbitrum DAO a restraining order forbidding the cooperative from transferring any “property interests of ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Aave secures emergency hearing to void ‘catastrophic’ restraining order",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-04T21:51:05Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/aave-gets-emergency-hearing-to-void-catastrophic-court-order/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "224d7d3aa8ea6ec343227968",
+      "excerpt": "A version of this story appeared in The Guidance newsletter on May 4. Sign up here. Christmas came early for the US crypto industry on Friday evening, when Punchbowl News reported that Senators had struck a deal limiting the payment of interest or yield on stablecoins. Reactions ran the gamut. Crypto investor Nic Carter said , simply, “The banks won.” Attorney Scott Johnsson, general counsel at Van Buren Capital, was more optimistic. “This is fine,” he wrote on X. “It may not feel like it, but it is.” But there was only one that really mattered. “Mark it up,” Coinbase CEO Brian Armstrong wrote , seemingly signalling his support for a markup — a committee vote that could advance the bill. The odds the Clarity Act passes in 2026 quickly jumped from 46% to 64% on Polymarket. Recall that Armstrong single-handedly put the bill on ice back in January, when he pulled his support on the eve of a scheduled markup. Armstrong said he was unhappy with the bill’s treatment of stablecoins, among other things. Senate Banking Committee Chair Tim Scott postponed the markup, and negotiators went back to the table. Notably, other crypto executives appeared unhappy with the decision. Last year’s stablecoin legislation, the GENIUS Act, banned stablecoin issuers from paying yield or interest on custom",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Clarity Act odds surge on stablecoin compromise, Coinbase support",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-04T17:10:48Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/clarity-act-odds-surge-on-stablecoin-compromise/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f57d4e47343912f159589721",
+      "excerpt": "A California-based cannabis vape pen company that says it rewards customers with crypto for using its product is raising alarm among health experts and anti-drug campaigners. Gudtrip advertises itself as building a user-powered network that combines cannabis, Bitcoin, and artificial intelligence. “Every hit earns crypto,” a tagline on the company’s website reads. Customers who buy one of the company’s cannabis vape pens can connect it to an app, which rewards them with Bitcoin, and points for using the pen. “Checking-in” daily creates streaks which increase points earned by up to 200%. Several researchers studying cannabis consumption who spoke to DL News said encouraging daily use is potentially dangerous and habit-forming, raising ethical concerns. “Gamifying cannabis use? It certainly sounds like habit-formation is the goal,” Joshua Gowin, an associate professor who studies the effects of frequent cannabis use at the University of Colorado Anschutz, told DL News . “Linking a reward to a puff/smoking session reinforces the behaviour, increasing the chance of escalating use and even developing an addiction,” Janna Cousijn, head of the Neuroscience of Addiction Lab at the Erasmus University Rotterdam, told DL News . “It is potentially a very dangerous and unethical device that co",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "‘Every hit earns crypto’? App that gives users Bitcoin for getting stoned deemed ‘dangerous’ and ‘unethical’",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-04T11:30:08Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/web3/gudtrip-app-gives-users-bitcoin-and-deemed-unethical/"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b528a8e8417ed66510efeb2d",
+      "excerpt": "Ethereum's core developers have delivered their most significant technical milestone in months, emerging from a week above the Arctic Circle with a credible roadmap to dramatically scale the network's capacity. Last week, just over 100 core contributors gathered in Longyearbyen, on Norway's Svalbard archipelago — some 78 degrees north, where the sun never sets — for the Soldøgn interop, a week of intensive work on the Glamsterdam network upgrade. By Friday, the team had locked in a post-Glamsterdam gas limit floor of 200 million, stabilised external block builder implementations, and finalised gas repricing numbers for EIP-8037. \"At their best, interop weeks can compress a month of asynchronous progress into each day,\" Ethereum Foundation researcher Tim Beiko wrote in a recap shared with developers on Friday. The breakthrough lands as Ether trades at $2,377, still more than 50% below its August peak of $4,946. However, signs of hope are emerging. Ethereum has jumped 14% over the past month, CoinGecko data shows . The 200 million gas limit target is notable because it determines how many transactions Ethereum can process per block. The higher the limit, the more activity the network can handle without congestion — and the stronger the case for Ethereum as the backbone of a global ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Ethereum devs huddled in the Arctic Circle to fix the network. Here’s what to know",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-04T11:28:03Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/ethereum-devs-huddled-in-the-arctic-circle-to-fix-the-network-heres-what-to-know/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "6f5d4c2b97815db7b009fffb",
+      "excerpt": "Bitcoin punched through $80,000 on Monday, up 19% over the past month, as a twin engine of institutional demand and legislative momentum roars back to life. On the first day of May alone, $630 million poured into US spot Bitcoin exchange-traded funds, extending a two-month winning streak that made April the best month since October, DefiLlama data shows . ETF inflows have become the dominant force behind Bitcoin’s ascent, Max Kahn, CEO of investment adviser Digital Wealth Partners, told DL News . They now act as “an increasingly important source of consistent buying pressure,” helping the asset hold higher levels as long as institutional appetite remains intact. The institutional surge comes as Washington closes in on a legislative breakthrough. Senate Banking Committee chair Tim Scott told Fox Business on Friday that the Clarity Act — the landmark digital asset market structure bill — is heading for a bipartisan markup in May and a Senate floor vote soon after. ‘Red zone’ \"We're in the red zone,\" Scott said, signalling the bill is nearing the Senate floor and that each procedural step strips away regulatory fog that has long restrained institutional capital. “I just want to have thirteen of thirteen Republicans on board,” he said. “That makes it easier for us to have a bipartisa",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitcoin tops $80,000 price as Clarity Act nears Senate floor with new Fed chair imminent",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-04T06:24:41Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-tops-80k-price-as-clarity-act-nears-senate-floor-with-new-fed-chair-imminent/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "63abe703d5cb00fffbce6272",
+      "excerpt": "Crypto companies raised just over $600 million from venture investors in April, DefiLlama data shows . That’s despite the epidemic of “disingenuous innovation” that is plaguing the digital assets industry, Diego Martin, CEO of Yellow Capital, told DL News , referring to grand promises widely made by crypto startup teams that are rarely fulfilled. “Institutional investors typically wait for retail demand before taking a punt on innovation,” Martin said. To be sure, fundraising in April fell some 75% from March, which was a blockbuster month that saw massive raises in the prediction market sector amid a shifting focus in the crypto industry. “Trust is the primary barrier — and opportunity — to tap into, due to the nature of the technology we work with,” Martin said. Still, marquee investors including German banking giant Deutsche Börse Group, Andreessen Horowitz, Paradigm and Coinbase, all piled on capital into crypto companies including Kraken, OpenGradient , and Pixie Chess . These are the top three raises in April. Kraken, $200 million Payward, the parent company of crypto exchange Kraken, raised $200 million through a secondary share sale to Deutsche Börse. The deal gives the German banking group a minority stake as it moves deeper into digital assets. The move values Kraken at",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Crypto companies raised $600m in April despite despite market downturn, VCs say",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-02T01:30:00Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/deals/crypto-companies-raised-600m-in-april-despite-fake-innovation-vcs-say/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5724c7a2322c4c9c546b7d31",
+      "excerpt": "This past week, just over 100 Ethereum core contributors gathered above the Arctic Circle — in Longyearbyen, Svalbard — for the Soldøgn Interop: a week of intense work on the Glamsterdam network upgrade. Soldøgn followed last year's Berlinterop, but returned to the format used by Amphora 🏺, [Edelweiss 🏔️](https://blog.ethereum.org/2023/02/07/edelweiss-interop-recap...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Soldøgn Interop Recap ☀️",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-02T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/05/02/soldogn-interop-recap"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "22991d90ad9d3598d9a9b1f6",
+      "excerpt": "April was a bad time for the crypto industry. Over the past month, 29 crypto projects have suffered hacks or exploits, the highest monthly tally in the industry’s history, per DefiLlama data. Among them were two standouts: The hacks of Solana-based exchange Drift, and Ethereum-based restaking app Kelp DAO, which resulted in a combined $579 million loss. The situation has sparked a crisis of confidence among the industry’s most ardent believers and left them questioning whether the tradeoffs inherent in decentralised technology are worth the trouble. In recent years, the number of crypto hacks — and the amounts stolen — have edged higher. The fast-moving and experimental DeFi space, once notorious for exploits, was thought to have matured. But now it’s back in the limelight — and not for the right reasons. “Right now, DeFi seems to be the primary target,” Michael Pearl, vice president of strategy at crypto security firm Cyvers, previously told DL News . “In general, everything has shifted now to hacking humans rather than hacking systems.” Single points of failure The problem, according to Michael Egorov, founder of DeFi protocols Curve Finance and Yield Basis, is centralisation. “We need to reduce the number of single points of failure as much as possible,” Egorov said in a state",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Crypto industry reels as April sees highest number of hacks ever",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-01T13:43:12Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/crypto-industry-reels-after-highest-number-of-hacks-ever/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "4961a3df5e439246525fa097",
+      "excerpt": "Bitcoin just got a war upgrade. On Thursday, US Secretary of War Pete Hegseth told Congress that Bitcoin projects inside the Pentagon are “classified and ongoing,” while stressing that the top crypto is a tool for American power. Hegseth delivered the comments in front of the House Armed Services Committee, responding to questions about whether the US is securing a strategic advantage in technology. “I am a long enthusiast of Bitcoin and crypto potential,” he said. “A lot of the things we are doing, enabling it or defeating it, are classified efforts that are ongoing inside our department, which do provide us a lot of leverage in a lot of different scenarios.” Hegseth’s endorsement elevates Bitcoin into the realm of geopolitical strategy at a time when Russia and China are expanding their roles in mining and using digital assets to bypass US sanctions. As rival powers lean on crypto to settle energy trades and reduce dependence on the dollar amid geopolitical turmoil, Washington’s embrace signals that Bitcoin is now part of the global balance-of-power conversation. Still, Bitcoin’s price has not budged. The top crypto is down some 40% from its October peak of $126,000 even as the S&P 500 and other asset classes blaze record highs amid investor optimism. Hegseth himself has long b",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Hegseth recasts Bitcoin as national security asset amid Russia, China expansion",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-01T08:49:47Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/hegseth-recasts-bitcoin-as-national-security-asset-amid-russia-china-expansion/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "4fee7290a3f66a91f1639835",
+      "excerpt": "Artificial intelligence is a Sword of Damocles dangling over crypto — but Wall Street isn’t quailing, says Coinbase. Anthropic’s new Claude Mythos AI model is able to exploit security vulnerabilities autonomously and therefore threatens crypto markets, according to a second-quarter outlook by Coinbase and Classnode. In theory, it could hammer key weak points across protocols, exchanges, and infrastructure. But that’s not shaking institutional investors’ confidence in Bitcoin, David Duong, Coinbase’s global head of investment research said in a note shared with DL News. He highlighted that three‑quarters of institutions “still see Bitcoin as undervalued” despite the short-term fears clouding the market’s sentiment. Duong’s confidence comes as crypto has struggled to keep up with other asset classes like stocks or gold. Bitcoin is still down nearly 40% from its October peak while the S&P 500 printed a new record in April. It is currently trading at $77,000 after rallying some 13% over the past month. “Our outlook for the next quarter remains neutral, but there are early signs the market may be finding a floor,” Duong said. “Much of the speculative activity has been flushed out.” Exchange-traded fund inflow data backs him up. April has been the best month since October as traders po",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Anthropic’s new Mythos AI will hit crypto. Bitcoin investors don’t care, says Coinbase",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-05-01T07:50:22Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/anthropic-mythos-ai-will-hit-crypto-bitcoin-investors-dont-care-says-coinbase/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b56e38cc0d38f92e4241615e",
+      "excerpt": "The US Senate voted unanimously to ban prediction market trading among Senators and their staffers on Thursday. The Senate joined several other organisations that have banned employees from trading on the platforms to avoid conflicts of interest. Last week, Illinois Governor JB Pritzker banned state employees from using insider information to bet on prediction markets. A day earlier, National Public Radio issued a similar directive to its editorial employees. \"Serving in Congress is an honor, not a side hustle,\" Senator Bernie Moreno, a Republican from Ohio and the bill's sponsor, said in a statement on X. \"Americans deserve to know that their leaders are here for the right reason!\" The resolution approved by senators on Thursday changes the chamber's rules, and violations are policed by its members. It does not have the force of law, and it does not need to be approved by the House of Representatives or signed by the president. The resolution comes as bills to regulate prediction markets flood Congress. Ritchie Torres, a New York Representative, presented the Public Integrity in Financial Prediction Markets Act of 2026 in January to block federal officials from trading on prediction markets. In March, Democratic senators Jeff Merkley and Amy Klobuchar filed a bill to formally pr",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "US Senate bans prediction market trading by Senators, staff",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T23:08:19Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/us-senate-bans-prediction-market-trading-by-senators/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7365af3210e3a9177ee66db2",
+      "excerpt": "A pair of US Senators are demanding answers from Commerce Secretary Howard Lutnick after a recent news report raised questions about his relationship with Tether, the world’s largest stablecoin issuer. A trust benefitting Lutnick’s four children borrowed from Tether in October, just as Lutnick sold them his multibillion-dollar stake in finance giant Cantor Fitzgerald, Bloomberg reported last month. Lutnick’s stake in Cantor Fitzgerald was reportedly sold to multiple trusts that benefit his children. But the trust that borrowed from Tether holds more than half the equity in Cantor, according to Bloomberg. Moreover, the loan was reportedly backed by “all assets” in the trust. “If reports of this loan are accurate, it would raise serious questions about your relationship with Tether and the company’s influence on your policy decisions,” Senators Elizabeth Warren and Ron Wyden wrote in their letter, dated April 29. “We want to ensure that Tether has not sought to bribe or otherwise exert control or influence over you.” Tether and the Department of Commerce did not immediately respond to DL News’ requests for comment. The letter is the latest example of Democrats using crypto as a cudgel against President Donald Trump and his allies, many of whom have ties to the industry. Democrats a",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Democrat Senators question Howard Lutnick over Tether ties",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T22:17:53Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/dem-senators-question-howard-lutnick-over-tether-ties/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f69a62a94f09272ca248da30",
+      "excerpt": "MegaETH’s token is off to a shaky start. On Thursday, the layer 2 blockchain, which lists Ethereum co-founder Vitalik Buterin among its early investors, launched its MEGA token, airdropping some 500 million tokens to those who bought them during the project’s October public token sale. The token began trading at 11 am London time and initially rose to an all-time high of $0.38, according to CoinGecko data. But it quickly began to sell off, dropping some 55% to trade at around $0.17. Despite the volatility, those who bought the token during the public sale are still in profit. MegaETH sold the tokens at a clearing price of $0.0999 each, raising just under $50 million. The project also sold 500 million tokens via a $10 million funding round on Echo, the early stage investing platform, at $0.02 each. MegaETH’s wobbly launch comes as investor appetite for new crypto tokens dwindles. The crypto market has been in the lurch since October, when it experienced a huge, structural crash that triggered over $19 billion in leverage liquidations. Since then, investors' interest has been mostly limited to established cryptocurrencies, such as Bitcoin. Slow start MegaETH is an Ethereum layer 2 network which touts itself as the first “real-time blockchain” capable of over 100,000 transactions pe",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Vitalik-backed MegaETH sees token fall 55% on first day trading",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T15:29:58Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/vitalik-backed-megaeth-sees-token-fall-55percent-on-first-day-trading/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "441e47cd5cf998a03bac8aa7",
+      "excerpt": "XRP has a lot going for it. The cryptocurrency is intimately linked to Ripple, the company whose founders developed it, and the venture’s fortunes. But despite Ripple having notched several big wins over the past year, XRP is still trading 62% below its $3.65 record high from July. “XRP is basically being held back by the same two forces that have capped most large-cap alts in this regime: macro noise and flow quality,” Louis De Backer, crypto trading analyst at financial services platform Marex, told DL News . His comments come as the US’ conflict with Iran weighs on the global market. With talks between Washington and Tehran at a standstill, the flow of oil through the Strait of Hormuz has catapulted the commodity’s price above $114 per barrel. Elevated energy prices make it increasingly unlikely that the Federal Reserve and other central banks will cut interest rates. High interest rates are seen as a headwind for cryptocurrency prices. “With energy at four-year highs and the Fed messaging more divided , risk budgets stay tight and investors default to BTC first, then ETH,” De Backer said. “In that tape, XRP tends to behave like beta, it moves with the complex but struggles to attract fresh standalone demand.” If the macroeconomic environment was to calm down, that would enabl",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "XRP held back by ‘two forces’ analyst says as traders bet on price to plunge",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T15:26:42Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/xrp-held-back-by-two-forces-analyst-says-as-traders-bet-on-price-to-plunge/"
+    },
+    {
+      "cmc_ids": [
+        33251
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "6865fca0bc99cc6cdda6e6bf",
+      "excerpt": "Elizabeth Warren has lashed out against World Liberty Financial over news that the Trump family-run crypto company partnered with a blockchain venture called AB, which has links to a sanctioned criminal syndicate. The Democrat senator’s comments came after The Wall Street Journal reported that two men linked to AB were sanctioned by the Trump administration for their alleged ties to the Prince Group. The Prince Group is accused of running crypto scam compounds and human trafficking operations out of Cambodia. The AB network has not been accused of criminality and has removed the men from the project. There is no suggestion that illicit funds flowed into the resort project the two men were involved with, per Organized Crime and Corruption Reporting Project and Guardian Australia's reporting from earlier in April. The two men have not been charged with any crime. “As the Trump family puts themselves first, Congress needs to ensure that digital asset legislation protects our national security,” Warren said in a Thursday X post. The Massachusetts senator’s comments highlight how US President Donald Trump’s political rivals are increasingly using crypto to attack him and his political allies ahead of the crucial midterm elections in November. It comes as the crypto industry has spent ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Elizabeth Warren slams Trump after expose ties World Liberty Financial to crypto projects linked to human trafficking group",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "33251": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T14:59:39Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/warren-slams-trump-over-world-liberty-financial-expose/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "03e38305735b2f725392c313",
+      "excerpt": "A wallet belonging to Andean Medjedovic, the hacker allegedly behind the Indexed Finance and Kyberswap exploits, is active again after a year-long hiatus. On Wednesday, the wallet sent some $13.5 million worth of Ether tokens to Tornado Cash, a popular tool for laundering stolen crypto, onchain records show. It’s not clear if Medjedovic himself is behind the transactions. The hacker has previously been accused of conspiring with another person to move stolen funds. “It’s concerning to see a threat actor act with such confidence after exploiting multiple victims,” Specter, a pseudonymous blockchain investigator who has tracked Medjedovic’s onchain activity, said . “Hopefully, he is apprehended and held accountable.” Between 2021 and 2023, Medjedovic allegedly stole approximately $65 million by exploiting code bugs in two decentralised finance protocols: Indexed Finance and Kyberswap. In February last year, Medjedovic was charged with wire fraud, computer hacking and attempted extortion by the US Department of Justice in connection with the two hacks. Yet Medjedovic claims he’s innocent. He doesn’t deny his involvement, but argues that his actions were legitimate trades that exploited how the protocols’ code was written. This view is often referred to as “code is law” by industry i",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "A wallet tied to one of crypto’s most notorious hackers is laundering funds again",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T13:38:06Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/people-culture/wallets-tied-to-andean-medjedovic-use-tornado-cash/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "abcbcbeb2d9d7b620a1d1b7f",
+      "excerpt": "Tokenisation will balloon some 5,600% to be a $2 trillion market by 2028, according to Standard Chartered. At the heart of the forecast is continued expansion in decentralised finance lending via stablecoins, which the British bank views as rails enabling real-world assets such as stocks, bonds, commodities, and other funds to migrate onchain. “All assets and infrastructure exist on the same ledger and can therefore interact without barriers,” Geoffrey Kendrick, global head of digital assets research at Standard Chartered, wrote in a note shared with DL News . Kendrick’s bullish call comes amid major turbulence in the DeFi space that has shaken investors’ onchain confidence. DeFi rebound Earlier in April, a nearly $300 million exploit of the Ethereum liquid restaking protocol KelpDAO triggered a bank run on the decentralised lending platform Aave. Aave lost $17 billion in deposits and $5.5 billion in active loans as panic spread, in what Kendrick calls “one of the most severe DeFi shocks in recent memory.” But rather than fracturing, the DeFi community coordinated. A coalition of DeFi protocols and companies raised more than $300 million to stabilise the system and restore backing ratios. While the hack exposed vulnerabilities and dented confidence, Kendrick argues it does not de",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Tokenisation will balloon to $2tn despite DeFi turbulence, Standard Chartered says",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T09:52:11Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/tokenisation-will-balloon-to-2tn-despite-defi-turbulence/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "1d20497950515d94b00064e0",
+      "excerpt": "Bitcoin stumbled after Jerome Powell’s final presser at the helm of the Federal Reserve on Wednesday, sliding 2% to $75,000 as cracks inside the central bank rattled markets. Traders digested an unusually divided Fed decision to hold rates and the prospect of policy conflict under incoming chair Kevin Warsh, Kraken’s chief economist Thomas Perfumo said in a note shared with DL News. “The absence of a clean handoff to Warsh, who is nearing Senate confirmation as chair, suggests the potential for discord over policy at the Fed,” Perfumo said. Bitcoin’s pullback comes as the market weighs internal Fed discord at a time when traders are pricing roughly 90% odds of rates holding steady through year-end. That dynamic — a messy transition rather than a clean handoff — is emerging as a net negative for crypto and other growth assets. “The vote itself was a loud crack in the Powell-era consensus, with four dissents, the most on a single decision since October 1992,” Perfumo said. Three officials dissented over what they viewed as an “easing bias” in the central bank’s policy. Warsh has pledged to cut rates quickly, but Powell emphasised that inflation risks are rising, particularly as Brent crude still trades above $100 per barrel amid stalled US-Iran negotiations. The tension showed up f",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitcoin price slips on ‘discord’ risk at Fed amid messy regime change. ‘No choice but to stay’",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T08:04:38Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-price-slips-on-discord-risk-at-fed-amid-messy-regime-change/"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "181df2ba6aaefb4cf7644001",
+      "excerpt": "TL;DR: 📝 Applications for EPF7 are open until May 13 🔎 Review the program details for EPF7 🎙️ An introductory town hall will be held on May 6 at 1500 UTC We are excited to announce that applications are now open for the seventh cohort of the [Ethereum...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Announcing Cohort 7 of the Ethereum Protocol Fellowship",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-30T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/04/30/epf-7"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "28cca80dcbf78ed59b272982",
+      "excerpt": "In February, Sam Bankman-Fried said he had found new evidence that could prove he never set out to defraud customers of his bankrupt crypto exchange, FTX. On Tuesday, a federal judge said the claim was “baseless,” and denied the former billionaire’s request for a new trial. It was a severe, if unsurprising blow to Bankman-Fried’s long-shot attempts to reverse a 2023 conviction on several counts of fraud and to escape a 25-year prison sentence. In addition to his request for a new trial, Bankman-Fried has appealed his conviction and waged a desperate campaign to secure a presidential pardon. According to news reports, President Donald Trump is not expected to pardon the disgraced crypto entrepreneur. A decision in his appeal, meanwhile, is expected in the coming weeks. Missed deadlines Earlier this month, Bankman-Fried missed two deadlines set by the court. One required a response to prosecutors’ nearly 50-page letter opposing his request for a new trial. Another required his avowal that he was, as he claimed, representing himself, a request the judge had made after prosecutors noted there were signs Bankman-Fried had received outside help. In a letter to Judge Lewis Kaplan filed on April 22 — a week after both deadlines had passed — Bankman-Fried said he was the “ultimate author”",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Judge dismisses SBF ‘facts,’ new trial request in scathing order",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T22:38:14Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/judge-dismisses-sbf-new-trial-request-in-scathing-order/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "77e80baa7de7c6974c900c2c",
+      "excerpt": "US Senators voted on party lines Wednesday to advance the nomination of Kevin Warsh, President Donald Trump’s pick to lead the Federal Reserve. The vote in the Senate Banking Committee puts Warsh on a glide path to confirmation. The entire Senate is expected to vote on Warsh’s nomination in the coming weeks. Warsh was nominated by the president in January, but his confirmation stalled due to opposition from Senator Thom Tillis, a Republican from North Carolina. Tillis, the swing vote on the Banking Committee, refused to support Warsh so long as federal prosecutors were investigating outgoing Fed Chair Jerome Powell. Powell, Tillis, and many Democrats said the investigation was a brazen attempt by the president’s allies to cow a member of the Fed’s board of governors into voting to lower interest rates. “You have extraordinary credentials. They're impeccable,” Tillis told Warsh at a hearing last week. “Let's get rid of this investigation so I can support your confirmation.” US Attorney Jeanine Pirro said on Friday she would drop the investigation, and Tillis promptly said he would support Warsh’s nomination. But Pirro said she “wouldn’t hesitate” to reopen the case, a statement that Senator Elizabeth Warren, the top Democrat on the committee, highlighted on Wednesday. “No one is f",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Senators advance Warsh nomination after DOJ drops Fed chair probe",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T16:26:36Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/regulation/senators-advance-warsh-nomination-after-doj-drops-probe/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "79530ed1e8d2e7ed0abadb38",
+      "excerpt": "Sky is the most profitable it has ever been — and it might have institutions to thank for that. On Wednesday, the Sky Frontier Foundation released the Q1 2026 financial results for the $13 billion lender, revealing it made nearly $124 million in gross revenue, and almost $61 million in net revenue in the first three months of the year. It’s the highest income the protocol has made since it launched as MakerDAO back in 2017. Yet the market doesn’t seem to be impressed by the record figures. Sky’s governance token has registered a decline of around 2.4% since the results were announced publicly. Sky, like many decentralised finance protocols, operates as a type of digital cooperative called a decentralised autonomous organisation, or DAO. Here, those who hold the Sky governance token can suggest and vote on changes to the protocol. The Sky token trades at almost a $2 billion market value, per CoinGecko. Sky’s record earnings come as institutional interest in onchain apps that provide yield on crypto assets continues to grow. DeFi protocols — including Sky — are rushing to make themselves more attractive to traditional finance players by repackaging their products and paying for risk ratings from established firms like S&P Global Ratings and Fitch. Institutional interest In fact, it",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "DeFi lender Sky hits $124m revenue record. Yet token holders aren’t impressed",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T16:20:54Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/defi-lender-sky-hits-protocol-revenue-record/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO",
+        "TOKEN_SUPPLY"
+      ],
+      "event_id": "63a62d4b0c0d7da7c3c70a9f",
+      "excerpt": "Paul Tudor Jones is heaping praise on Bitcoin. In a Wednesday appearance of the Invest Like The Best podcast, the billionaire hedge fund manager, who was one of several traders to capitalise on Bitcoin’s near 900% rise in 2020, lauded the top cryptocurrency for its ability to counter inflation. “Bitcoin is, unequivocally, the best inflation hedge that there is,” he said. “There’s only so much Bitcoin that can be mined.” Jones' commentary provides a candid glimpse into the financial trader’s thoughts on the top cryptocurrency, and more broadly attitudes among institutional investors. He’s by far from the only finance heavyweight to endorse Bitcoin. Blackrock CEO Larry Fink has on multiple occasions advocated for Bitcoin and praised its unique value. He’s previously called it “digital gold” and recommended institutions allocate around 5% to it. Analysts at several other Wall Street firms, including JPMorgan, Morgan Stanley, and Fidelity, have also recognised Bitcoin’s value as an inflation hedge, although some argue its effectiveness in this regard can be context-specific, and not guaranteed in all environments. Better than gold? Jones, now 71, got his start trading commodities in the 1970s. At age 26, he founded the Tudor Investment Corporation, which focused on making large bets ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Billionaire trader Paul Tudor Jones made bank in gold. Now he calls Bitcoin the ‘best inflation hedge’",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T13:09:07Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/people-culture/paul-tudor-jones-sees-bitcoin-as-best-inflation-hedge/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7f363ea47836cf4622f02525",
+      "excerpt": "Robinhood is primed to rebound from a bruising first-quarter where crypto-driven revenue plunged 47%, according to research and brokerage firm Bernstein. On Wednesday, Bernstein reaffirmed its “outperform” rating on Robinhood and kept a $130 share price target, arguing the stock will nearly double after bottoming — even after a messy Q1 call sent HOOD shares tumbling 8%. “The top-line weakness was driven by crypto weakness,” analyst Gautam Chhugani and his three Bernstein colleagues said in a note shared with DL News . Robinhood’s lacklustre performance in crypto comes amid a broader industry downturn that has vapourised $1.5 trillion in value despite the S&P 500 soaring to new highs. Bitcoin is still trading 40% below its peak while many other tokens are down over 75% or more. But Bernstein says investors are looking in the rear-view mirror, despite shares falling about 8% in post-market afterhours trading after the platform missed revenue and earnings targets. “Crypto has stabilised in April and HOOD’s own prediction markets exchange — Rothera — is expected to go live mid 2026,” the analysts stressed. The company has repurchased more than $300 million of stock so far this year, and its board refreshed buyback authorisation to $1.5 billion. Chief executive Vlad Tenev has repeate",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Robinhood primed for rebound after shares tank 8% in Q1 miss, Bernstein says",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T08:50:51Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/robinhood-primed-for-rebound-after-shares-tank-in-q1-miss-bernstein-says/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "MACRO"
+      ],
+      "event_id": "218bd6cf613952419a5cce2d",
+      "excerpt": "Bitcoin is holding firm near $77,000 ahead of Jerome Powell’s final press conference as Federal Reserve chair. Now, traders’ risk appetite is back, Split Research founder Zaheer Ebtikar said in a note shared with DL News. “The sellers who were spooked by macro shifts or quantum fears have already exited,” he said. “Bitcoin has found a stable floor and moved away from headline-driven drama and toward a more mature phase of growth.” Ebtikar’s call comes amid signs of budding optimism in the crypto industry. Bitcoin has rallied nearly 15% over the past month, while the overall cryptocurrency industry has added about $400 billion in value since February, CoinGecko data shows . To be sure, the top crypto is still down nearly 40% from its October peak despite the S&P 500 hitting a new record in April. Other assets like gold and oil are also near their peaks. Still, Bitcoin exchange-traded fund inflows paint a bright picture. US spot Bitcoin exchange-traded funds drew in over $2 billion in net inflows in April, marking it as a second month in a row of positive inflows, DefiLlama data shows . The surge adds to March’s $1.3 billion gain. “Since we’re currently in a quieter trading range, there’s no immediate rush for the exits,” Ebtikar said. Powell’s last FOMC The signs of life unfold ag",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitcoin traders flip bullish on price ahead of Powell’s final FOMC as Fed chair",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T08:13:03Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/traders-bullish-on-bitcoin-price-ahead-of-powell-final-fomc/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "bc435490e21c2fd3b423dd85",
+      "excerpt": "Q1 2026 continued our focus on strengthening Ethereum’s foundations, with sustained investment in core domains like cryptography, zero-knowledge proofs, security, and protocol research. See the list below of the projects and ecosystem efforts we supported this quarter as builders advance critical infrastructure, tools, and research across the network. Explore...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Allocation Update - Q1 2026",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-29T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/04/29/allocation-q1-26"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY",
+        "SECURITY"
+      ],
+      "event_id": "bf7f0cc35c971a30c519f2c5",
+      "excerpt": "A version of this story appeared in The Decentralised newsletter on April 28. Sign up here. There’s been a silver lining to this month’s devastating Kelp DAO/LayerZero hack: DeFi United, an impromptu, crowdsourced recovery fund. The fund, orchestrated by Aave, has tentatively raised more than $302 million to date, much of it from DAOs and crypto businesses within the blast radius of the hack. That’s enough to fully cover the April 18 exploit, in which hackers affiliated with North Korea stole some $293 million in rsETH from Kelp DAO by targeting its faulty implementation of a LayerZero-provided bridge — technology that lets Kelp move assets between different blockchains. The hackers deposited $200 million of the stolen assets as collateral on Aave and borrowed large amounts of Ether. This left Aave with at least $177 million in unrecoverable bad debt. Aave wasn’t hacked, but it may have been the prime victim. Its deposit base fell by nearly 50% as spooked investors withdrew their crypto. Aave Labs CEO Stani Kulechov said he would contribute 5,000 Ether worth about $11 million to the DeFi United fund. Other Aave contributors have also pledged money to the effort. Arbitrum DAO, Mantle, and Consensys have pledged at least 30,000 Ether apiece. Ether.Fi and Lido DAO have pledged 5,000",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Aave-led 'DeFi United' campaign raises $300m to address Kelp DAO breach",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-28T19:31:09Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/300m-pledged-as-defi-responds-to-kelp-dao-breach/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "01074f0db0b82405878e430e",
+      "excerpt": "Artificial intelligence is the real opportunity for Bitcoin miners, analysts say. IREN’s future now rests on transforming into a hyperscale AI cloud operator, rather than mining Bitcoin as it had done in the past, according to wealth management firm Bernstein. Bernstein slashed its price target on IREN to $100 from $125 per share but maintained its “outperform” rating, citing the successful pivot to building its AI cloud business. “IREN remains our top pick among AI focused Bitcoin miners,” analyst Gautam Chhugani and his three colleagues said in a note shared with DL News. Bernstein’s positive rating lands as the cryptocurrency industry is still reeling from a $1.5 trillion drawdown since October despite stocks and other assets soaring to historic highs. The S&P 500 printed a new record in April, while gold and commodities also post strong performance. Bitcoin is trading 40% below its October high of $126,000, meaning that miners’ business model is less lucrative. AI bonanza IREN’s repositioning comes as equity investors rotate aggressively into AI plays, despite widespread chatter of a bubble. Technology companies have driven much of the S&P 500’s gains in recent years. In contrast, crypto-linked equities like Strategy and Bitmine have struggled as digital asset prices retraced",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitcoin mining meltdown? Why IREN’s real future is in AI, according to Bernstein",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-28T09:57:24Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-mining-meltdown-why-irens-real-future-is-in-ai-says-bernstein/"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "cec27d3a752147a949e14882",
+      "excerpt": "Aave and Compound are moving closer to plugging the $246 million hole left by the Kelp DAO hack. On Tuesday, DeFi United, a coalition of several protocols that includes the top decentralised finance lenders, published a technical implementation for restoring the backing for rsETH, the token stolen in the attack. “DeFi United has secured sufficient ETH commitments to restore full backing,” Aave said in the outline, adding that the plan is to restore rsETH backing without socialising losses among the protocol’s users. On April 18, North Korean hackers stole $293 million from Kelp DAO by tricking the protocol into releasing unbacked rsETH tokens. The attackers deposited some of these tokens as collateral on Aave and Compound, then borrowed large amounts of Ether, leaving the pair with a combined $246 million in bad debt. If DeFi United’s plan is successful, Aave and Compound users whose assets were withdrawn by the hackers using the dummy rsETH collateral will get them back in full. The Kelp DAO hack is one of several major crypto thefts in recent months. The spree has sparked a crisis of confidence within the DeFi community, with many industry insiders questioning if the trade-offs inherent in decentralised technology are worth the trouble. Restoring the backing DeFi United will st",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Aave publishes plan to plug $246m hole left by Kelp DAO attackers",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-28T09:30:57Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/aave-posts-plan-to-restore-rseth-backing/"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ea3565ec70ce2929c6bc5f4f",
+      "excerpt": "Bitmine continues to amass the largest Ethereum war chest as US lawmakers debate crypto’s future. On Monday, the crypto treasury firm bought up another $294 million worth of Ether in its largest haul since December. It now holds roughly $12 billion worth of the second-largest cryptoasset, alongside significant equity stakes in ventures including Beast Industries and Eightco. Bitmine Chair Tom Lee said Ethereum is benefiting from “dual tailwinds”: Wall Street tokenising assets and artificial intelligence. Bitmine is one of the few public equities offering exposure to OpenAI via Eightco. Bitmine’s latest haul comes as Senator Cynthia Lummis said at the Bitcoin 2026 conference on Monday that the Senate will mark up the long-awaited Clarity Act in May — a pivotal step toward establishing a federal framework for digital assets. Lummis is one of the most prominent voices on Capitol Hill backing the crypto industry and an early Bitcoin buyer. Ethereum is up 14% over the past month, though still down 54% from its August peak of $4,950. Spot exchange-traded funds tracking the token have drawn $489 million in April, snapping a five month losing streak, DefiLlama data shows . “In our view, there is a lot of meaning to Ethereum being the best 'war-time store of value' and to Ether being the ",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitmine buys $294m more Ethereum ahead of Clarity Act ‘markup in May’",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-28T08:06:15Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/bitmine-buys-294m-more-ethereum-ahead-of-clarity-act-markup-in-may/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "INSTITUTIONAL_FLOW"
+      ],
+      "event_id": "15899793c7dfcca73a12d999",
+      "excerpt": "High-tier conference sponsorships, an award-winning Japanese dance troupe, and most recently an appearance on the imposing Las Vegas Sphere. These are just some of the things that Japanese Bitcoin treasury firm Metaplanet has aimed its cash cannon at as it attempts to prop up its ailing share price. Metaplanet’s stock has fallen some 25% since the start of the year, dragged down by Bitcoin’s 11% drop over the same period. The firm is also trading at a 36% discount to the value of its Bitcoin holdings. In other words, Metaplanet’s share price values the firm at just $2 billion, despite it holding some $3.1 billion worth of Bitcoin. For a crypto treasury whose stated goal is to hold 1% of the world’s Bitcoin supply by 2027, advertising is crucially important. The firm generates revenue by selling options against its existing Bitcoin holdings. The more Bitcoin it holds the more options it can sell, increasing revenues. Metaplanet funds additional Bitcoin purchases by issuing and selling shares. In December, it bought some $451 million Bitcoin funded through a mixture of issuing and selling shares and taking out loans against its existing Bitcoin holdings. If the firm’s share price falls, it can’t buy as much Bitcoin, threatening its growth. Unwinding Bitcoin Metaplanet’s advertising",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Bitcoin treasury Metaplanet bets on splashy advertising to turn around its ailing share price",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-27T16:26:34Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/markets/metaplanet-bets-on-las-vegas-sphere-advertising/"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "841c566287c75a7bbd6b4d7c",
+      "excerpt": "Crypto mogul Justin Sun has announced a $20 million liquidity injection for Aave, and called on the top DeFi lender to expand to Tron, the blockchain he founded in 2017. Sporting some $5.3 billion in deposits, Tron is the fifth biggest blockchain for decentralised finance. It has a cult following thanks to its billionaire founder, and a strong user base across Asia and several developing countries. Yet despite its size, Aave has yet to deploy code there. Sun wants that to change. “TRON and HTX stand together with AAVE jointly supplying $20M USDT to AAVE Core V3 Market in a show of support to bring AAVE to TRON. DeFi United!” Sun said in a Monday X post. HTX, a Seychelles-based crypto exchange, is also owned by Sun. The Tron founder’s pledge of support comes after North Korea stole some $293 million from KelpDAO, an Ethereum DeFi protocol, on April 18. The hackers deposited $200 million of the stolen assets as collateral on Aave and borrowed large amounts of Ether. This left Aave with at least $177 million in unrecoverable bad debt. A coordinated effort among big names in DeFi, coupled with partial recoveries of the stolen funds, have helped Aave plug the hole. So far, the lender has secured $160 million — around 80% — of the needed coverage. Sun previously pleaded with the Kelp D",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Justin Sun announces $20m boost for Aave as he calls on lender to expand to his blockchain",
+      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-27T16:25:07Z",
+      "source_id": "dlnews",
+      "source_ids": [
+        "dlnews"
+      ],
+      "url": "https://www.dlnews.com/articles/defi/tron-founder-justin-sun-announces-boost-for-aave/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3a5c918a1f0861101adff0ef",
+      "excerpt": "Stability Fixes Block transactions using ed25519SignedPayload signatures 9e5838e Full hash-of-hash for Overlay adverts to prevent hash prefix collision b261e19 Fix an edge case bug by which validators containing any LOW quality validators in their quorum set could get stuck in an infinite loop 437988f Full Changelog : v26.0.0...v26.0.1",
+      "first_observed_utc": "2026-11-12T20:01:58Z",
+      "headline": "v26.0.1",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-23T21:16:42Z",
+      "source_id": "stellar_releases",
+      "source_ids": [
+        "stellar_releases"
+      ],
+      "url": "https://github.com/stellar/stellar-core/releases/tag/v26.0.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "cadc4cebd433e5d3c896b580",
+      "excerpt": "In late 2024, the Ethereum Foundation, together with Secureum, The Red Guild, and Security Alliance (SEAL), launched the ETH Rangers Program, an initiative to provide stipends for individuals doing public goods security work in the Ethereum ecosystem. The goal of the program was straightforward: to fund independent efforts that...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "ETH Rangers Program Recap",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-16T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/04/16/eth-rangers-recap"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "84edff943f27583beb321fc5",
+      "excerpt": "Ethereum's All Core Developer calls can be a lot to keep up with, so this \"Checkpoint\" series aims for periodic high-level updates, depending on what's happening in core development. See the previous update here. !image...",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Checkpoint #9: Apr 2026",
+      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-04-10T00:00:00Z",
+      "source_id": "ethereum_blog",
+      "source_ids": [
+        "ethereum_blog"
+      ],
+      "url": "https://blog.ethereum.org/en/2026/04/10/checkpoint-9"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "872f0cda0446075846e699c2",
+      "excerpt": "What's Changed Fix build.yml by @sisuresh in #5139 Fix backtrace test on some linux versions by @SirTyson in #5142 Cleanup DB dead code by @marta-lokhova in #5143 Bump p26 env to fced8a1241038f7b944f5e75bffda7023d55ddbf by @sisuresh in #5145 Add subsystem-summary skills by @graydon in #5132 survey: use Radar instead of Stellarbeat by @Copilot in #5118 Remove deprecated in-memory flags by @SirTyson in #5150 Fix core for CAP-0073 by @sisuresh in #5153 Harden multi-threaded http server by @SirTyson in #5149 Make parallel apply compatible with RUN_STANDALONE by @SirTyson in #5146 Cleanup how restoredKeys are tracked in LedgerTxn by @sisuresh in #5134 Improve binary search for apply-load. by @dmkozh in #5123 Refactored ParallelTxReturnVal by @SirTyson in #5108 Bump p26 env by @sisuresh in #5158 Add RFC 5531 Record Marking Standard references to XDRStream by @leighmcculloch in #5136 Fix MSVC for C++20 by @graydon in #5159 Remove maintenance by @drebelsky in #5157 use secrets.SUBMODULE_TOKEN in build-private.yml by @graydon in #5140 Optimize parallel TxSet building logic by @dmkozh in #5144 Add INFO log messages tracking validator timeouts by @bboston7 in #5155 Copilot improvements by @graydon in #5111 Implement CAP-77 - ability to freeze ledger keys via network configuration by @dmkozh",
+      "first_observed_utc": "2026-11-12T20:01:58Z",
+      "headline": "v26.0.0",
+      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-03-31T23:35:24Z",
+      "source_id": "stellar_releases",
+      "source_ids": [
+        "stellar_releases"
+      ],
+      "url": "https://github.com/stellar/stellar-core/releases/tag/v26.0.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "be04dc9186d766352766b23b",
+      "excerpt": "This is a maintenance release with several important bug fixes. Notably, a critical issue in debug_executionWitness could previously corrupt node data, users relying on this RPC endpoint are strongly advised to upgrade. Geth now also supports syncing with chains where pre-Prague history has been pruned, and allows explicitly removing it via geth prune-history --history.chain postprague . Geth Set default cache size to 4GB across all networks ( #33836 , #33975 ) Added support for pruning chain history prior to the Prague fork ( #33657 , #34036 ) Added fetchpayload command to build execution witnesses for specific blocks ( #33919 ) Optimized Era history import with batched insertion ( #33894 ) Added womir target for keeper ( #34079 ) Added support for iterating a single storage trie in geth snapshot traverse-state and geth snapshot traverse-rawstate ( #34051 ) Core Amsterdam fork updates: EIP-8024: Switch to branchless normalization and extend EXCHANGE ( #33869 ) EIP-7778: Block gas accounting without refunds ( #33593 ) EIP-7954: Increase maximum contract size ( #33832 ) EIP-7708: ETH transfers now emit logs ( #33645 ) Reworked gas measurement order (prerequisite for EIP-7928) ( #33648 ) Improved payload building by prewarming trie nodes for state hash computation ( #33945 ) Variou",
+      "first_observed_utc": "2026-11-12T20:01:56Z",
+      "headline": "EMF Suppressor (v1.17.2)",
+      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-03-30T11:27:24Z",
+      "source_id": "eth_geth_releases",
+      "source_ids": [
+        "eth_geth_releases"
+      ],
+      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.2"
+    }
+  ]
+}
