@@ -204,7 +204,7 @@ def parse_feed(body,source,observed,limit=40):
             if node is None:continue
             value=''.join(node.itertext()).strip()
             if len(value)>len(raw_summary):raw_summary=value
-        summary=re.sub(r'\\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',raw_summary))).strip()[:1300]
+        summary=re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',raw_summary))).strip()[:1300]
         if len(summary)<35:summary=''
         # A feed item with unknown publication time is saved only as unverified.
         item_id=hashlib.sha256((url.split('?')[0].lower()).encode()).hexdigest()[:24]
