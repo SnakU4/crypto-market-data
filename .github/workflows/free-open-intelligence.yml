@@ -41,7 +41,7 @@ jobs:
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
-          python src/free_open_intelligence.py --network --max-followups 20 --max-articles 48
+          python src/free_open_intelligence.py --network --max-followups 20 --max-articles 80
 
       - name: Audit 100 coins, complete inputs and real research coverage
         run: |
