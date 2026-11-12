@@ -93,6 +93,23 @@ funding, OI, net flows, governance and supply still need per-provider,
 point-in-time data enhancements. If the next few runs show only more URLs and
 no substantive facts, this version is **not a successful research solution**.
 
+## Failed source-access experiment — 12 Nov 2026
+
+An actual free test of Google News link resolution was conducted in the
+expanded-discovery GitHub workflow. **80 links were attempted; 0 resolved.**
+The resolution budget was restored to 0 rather than spending repeated
+GitHub runner time on an unproductive path. This does not imply that
+underlying original publisher information is unavailable: it means the
+current direct-link resolver cannot retrieve it reliably. Prioritize
+public primary RSS feeds, release documents, direct publisher pages,
+official APIs, and authorized source-domain research.
+
+Current free integrated quality gate: TECHNICAL PASS, MATERIAL RESEARCH
+PARTIAL. Approximately 5.4% of canonical event leads contain materially
+additional readable context; only 6 direct publisher excerpts were
+extracted in the tested run. A large URL count or technical coverage must
+not be interpreted as evidence completeness or prediction skill.
+
 ## Next evidence-led improvement sequence, only after measuring actual outputs
 
 1. Inspect 20 sampled cross-sector and 20 candidate coin-event leads. Count
