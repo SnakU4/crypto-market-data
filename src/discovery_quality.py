@@ -28,31 +28,32 @@ MAX_PER_HOST = 12
 MIN_ADDITIONAL = 100
 
 class ArticleText(HTMLParser):
+    """Extract legitimate short context from <article>, <main> or metadata."""
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.skip = 0
-        self.active = 0
-        self.parts = []
-        self.meta = []
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-        if tag in ("script", "style", "nav", "footer", "header", "aside", "noscript"):
-            self.skip += 1
-        if tag == "article" and not self.skip:
-            self.active += 1
-        if tag == "meta":
-            if attrs.get("property") in ("og:description", "twitter:description") or attrs.get("name", "").lower() == "description":
-                self.meta.append(attrs.get("content", ""))
-        if tag in ("p", "h2", "h3") and self.active and not self.skip:
-            self.parts.append(" ")
-    def handle_endtag(self, tag):
-        if tag == "article" and self.active:
-            self.active -= 1
-        if tag in ("script", "style", "nav", "footer", "header", "aside", "noscript"):
-            self.skip = max(0, self.skip - 1)
-    def handle_data(self, data):
-        if self.active and not self.skip:
-            self.parts.append(data)
+        self.skip=0;self.active=0;self.main_active=0
+        self.parts=[];self.main_parts=[];self.meta=[]
+    def handle_starttag(self,tag,attrs):
+        attrs=dict(attrs)
+        if tag in ("script","style","nav","footer","header","aside","noscript"):
+            self.skip+=1
+        if tag=="article" and not self.skip:self.active+=1
+        if tag=="main" and not self.skip:self.main_active+=1
+        if tag=="meta":
+            if attrs.get("property") in ("og:description","twitter:description") or attrs.get("name","").lower()=="description":
+                self.meta.append(attrs.get("content",""))
+        if tag in ("p","h2","h3","li") and not self.skip:
+            if self.active:self.parts.append(" ")
+            elif self.main_active:self.main_parts.append(" ")
+    def handle_endtag(self,tag):
+        if tag=="article" and self.active:self.active-=1
+        if tag=="main" and self.main_active:self.main_active-=1
+        if tag in ("script","style","nav","footer","header","aside","noscript"):
+            self.skip=max(0,self.skip-1)
+    def handle_data(self,data):
+        if self.skip:return
+        if self.active:self.parts.append(data)
+        elif self.main_active:self.main_parts.append(data)
 
 def normalized(text):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", str(text or "")))).strip()
@@ -220,8 +221,9 @@ def extract_article(url, opener=None, robots_check=robots_permit):
         parser = ArticleText()
         parser.feed(raw.decode("utf-8", errors="replace"))
         article = normalized(" ".join(parser.parts))
+        main = normalized(" ".join(parser.main_parts))
         meta = normalized(" ".join(parser.meta))
-        candidate = article if len(article) >= 200 else meta
+        candidate = article if len(article) >= 200 else (main if len(main) >= 200 else meta)
         return candidate[:1600] if len(candidate) >= MIN_ADDITIONAL else None
     except (OSError, ValueError, UnicodeError, TimeoutError):
         return None
