@@ -147,6 +147,7 @@
     "rows": 0
   },
   "new_public_source_discovery_audit": {
+    "advertised_existing_feed_count": 0,
     "domains_attempted": 10,
     "domains_found_content": 2,
     "new_feed_items": 40,
@@ -160,17 +161,21 @@
         "substantive": 0
       },
       {
+        "advertised_feeds": [
+          "https://blog.ethereum.org/en/feed.xml"
+        ],
         "article_count": 0,
         "domain": "blog.ethereum.org",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "OVERSIZED",
+        "feed_status": "OVERSIZED",
+        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
         "substantive": 0
       },
       {
+        "advertised_feeds": [],
         "article_count": 0,
         "domain": "dlnews.com",
         "feed_status": "NOT_DISCOVERED",
-        "home_status": "OVERSIZED",
+        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
         "substantive": 0
       },
       {
@@ -181,10 +186,11 @@
         "substantive": 0
       },
       {
+        "advertised_feeds": [],
         "article_count": 0,
         "domain": "decrypt.co",
         "feed_status": "NOT_DISCOVERED",
-        "home_status": "OVERSIZED",
+        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
         "substantive": 0
       },
       {
@@ -314,7 +320,7 @@
         "feed_summary_count": 0,
         "published_date_missing": 0,
         "published_last_24h": 1788,
-        "published_last_72h": 5146,
+        "published_last_72h": 5145,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 8995
