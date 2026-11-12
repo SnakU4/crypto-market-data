@@ -147,7 +147,7 @@ class FreeIntelligenceTests(unittest.TestCase):
              "source_url":"https://source.example.org/future",
              "first_observed_utc":"2026-11-13T01:00:00Z"}
         ]
-        file.write_text("".join(json.dumps(x)+"\\n" for x in records),encoding="utf-8")
+        file.write_text("".join(json.dumps(x)+"\n" for x in records),encoding="utf-8")
         manifest,cov=foi.build(self.root,cutoff=T,network=False)
         self.assertEqual(cov["manual_research_evidence_input"]["eligible"],2)
         self.assertEqual(cov["manual_research_evidence_input"]["post_cutoff"],1)
@@ -162,7 +162,7 @@ class FreeIntelligenceTests(unittest.TestCase):
         file.parent.mkdir(parents=True,exist_ok=True)
         file.write_text(json.dumps({"id":"bad","title":"Invalid mapping","scope":"ASSET",
             "cmc_ids":[99999],"source_url":"https://source.example.org/invalid",
-            "first_observed_utc":OBS})+"\\n",encoding="utf-8")
+            "first_observed_utc":OBS})+"\n",encoding="utf-8")
         with self.assertRaisesRegex(ValueError,"unknown CMC ID"):
             foi.build(self.root,cutoff=T,network=False)
 
