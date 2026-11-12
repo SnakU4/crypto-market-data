@@ -46,59 +46,59 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 0,
+      "results": 3,
       "status": "OK",
-      "task_id": "T:1d82c6ac72b8"
+      "task_id": "T:ba47785201d4"
+    },
+    {
+      "results": 11,
+      "status": "OK",
+      "task_id": "T:6c478f122cb0"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:2e50c23878e4"
+      "task_id": "T:4dee54563cf1"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:8434249519aa"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:2b2c19393628"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:2fbcd45dd767"
+      "task_id": "T:cecfd2f5964d"
     },
     {
-      "results": 0,
+      "results": 10,
       "status": "OK",
-      "task_id": "T:537d333af503"
+      "task_id": "T:f8fd94d8894c"
     },
     {
-      "results": 0,
+      "results": 12,
       "status": "OK",
-      "task_id": "T:43b9f759eed7"
+      "task_id": "T:231514622f3b"
     },
     {
-      "results": 0,
+      "results": 12,
       "status": "OK",
-      "task_id": "T:b73a7ad64dad"
+      "task_id": "T:c118310ee365"
     },
     {
       "results": 1,
       "status": "OK",
-      "task_id": "T:ea4443179a7a"
-    },
-    {
-      "results": 9,
-      "status": "OK",
-      "task_id": "T:b76ef63aca40"
+      "task_id": "T:8c1b9a0b083d"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:1924f997e940"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:c219b913fd8e"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:e6fde213c355"
+      "task_id": "T:df722ff4842b"
     }
   ],
   "no_auto_source_installation": true,
@@ -222,38 +222,38 @@
     },
     {
       "evidence_ids": [],
-      "query": "\"Gnosis\" crypto\" liquidity derivatives security governance when:2d",
-      "results": 0,
+      "query": "\"Gnosis\" crypto when:2d",
+      "results": 3,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
-      "task_id": "T:1d82c6ac72b8",
+      "task_id": "T:ba47785201d4",
       "trigger": "OBSERVED_MARKET_ANOMALY"
     },
     {
       "evidence_ids": [],
-      "query": "\"Pieverse\" crypto\" liquidity derivatives security governance when:2d",
-      "results": 0,
+      "query": "\"Pieverse\" crypto when:2d",
+      "results": 11,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
-      "task_id": "T:2e50c23878e4",
+      "task_id": "T:6c478f122cb0",
       "trigger": "OBSERVED_MARKET_ANOMALY"
     },
     {
       "evidence_ids": [],
-      "query": "\"BitTorrent [New]\" crypto\" liquidity derivatives security governance when:2d",
+      "query": "\"BitTorrent [New]\" crypto when:2d",
       "results": 0,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
-      "task_id": "T:2fbcd45dd767",
+      "task_id": "T:4dee54563cf1",
       "trigger": "OBSERVED_MARKET_ANOMALY"
     },
     {
       "evidence_ids": [],
-      "query": "\"Midnight\" crypto\" liquidity derivatives security governance when:2d",
-      "results": 0,
+      "query": "\"Midnight\" crypto when:2d",
+      "results": 12,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
-      "task_id": "T:537d333af503",
+      "task_id": "T:8434249519aa",
       "trigger": "OBSERVED_MARKET_ANOMALY"
     },
     {
@@ -262,11 +262,11 @@
         "followup:f76fe654cc13481e35",
         "followup:b2c4b0a87dad45c0f9"
       ],
-      "query": "\"nvda stock\" blockchain liquidity regulation when:2d",
-      "results": 0,
+      "query": "\"nvda stock\" crypto blockchain when:2d",
+      "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:43b9f759eed7",
+      "task_id": "T:2b2c19393628",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -275,11 +275,24 @@
         "followup:776113fbf73ca21176",
         "followup:776113fbf73ca21176"
       ],
-      "query": "\"affair yahoo\" blockchain liquidity regulation when:2d",
+      "query": "\"affair yahoo\" crypto blockchain when:2d",
       "results": 0,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:b73a7ad64dad",
+      "task_id": "T:cecfd2f5964d",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:d39166e3bfa01346c7",
+        "followup:679816d1f1891a4da4",
+        "followup:3797a83c902fc0ba08"
+      ],
+      "query": "\"altcoin buzz\" crypto blockchain when:2d",
+      "results": 10,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:f8fd94d8894c",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -288,11 +301,11 @@
         "followup:9a3ab3df1c1132cf7d",
         "followup:776113fbf73ca21176"
       ],
-      "query": "\"nvidia stock\" blockchain liquidity regulation when:2d",
-      "results": 1,
+      "query": "\"nvidia stock\" crypto blockchain when:2d",
+      "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:ea4443179a7a",
+      "task_id": "T:231514622f3b",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -301,11 +314,11 @@
         "followup:904eedbbef8d1599f5",
         "followup:e16571048ac285ae5f"
       ],
-      "query": "\"bank launches\" blockchain liquidity regulation when:2d",
-      "results": 9,
+      "query": "\"bank launches\" crypto blockchain when:2d",
+      "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:b76ef63aca40",
+      "task_id": "T:c118310ee365",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -314,11 +327,11 @@
         "followup:f76fe654cc13481e35",
         "followup:f76fe654cc13481e35"
       ],
-      "query": "\"bettors weigh\" blockchain liquidity regulation when:2d",
-      "results": 0,
+      "query": "\"bettors weigh\" crypto blockchain when:2d",
+      "results": 1,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:1924f997e940",
+      "task_id": "T:8c1b9a0b083d",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -327,24 +340,11 @@
         "followup:f76fe654cc13481e35",
         "followup:f76fe654cc13481e35"
       ],
-      "query": "\"bloodbath november\" blockchain liquidity regulation when:2d",
+      "query": "\"bloodbath november\" crypto blockchain when:2d",
       "results": 0,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:c219b913fd8e",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
-        "followup:f76fe654cc13481e35",
-        "followup:f76fe654cc13481e35",
-        "followup:f76fe654cc13481e35"
-      ],
-      "query": "\"brews yahoo\" blockchain liquidity regulation when:2d",
-      "results": 0,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:e6fde213c355",
+      "task_id": "T:df722ff4842b",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]
