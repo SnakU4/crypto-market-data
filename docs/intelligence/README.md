@@ -62,9 +62,10 @@ failures are retained in the audit, never hidden.
 - MANUAL_CHATGPT_RESEARCH_PROMPT.md: executable manual ChatGPT research
   instructions, open-ended global/sector/coin discovery and independent Web research
 - knowledge_index.json: lead and scope counts; no generated prediction
-- discovered_public_feeds.json: free safe RSS/Atom feed autodiscovery from
-  previously found publisher domains, including failures, duplicate detection,
-  real retrieval timestamps and unverified publisher relevance
+- discovered_public_feeds.json: bounded RSS/Atom autodiscovery from the
+  actually observed publisher-domain registry, including transparent errors
+- source_probe_history.json: 72-hour cooldown per publisher domain; the next
+  free run tests DIFFERENT domains rather than repeating the same failures
 - direct publisher content from dozens of new official project GitHub release
   feeds, public governance forums, central-bank releases, plus independent
   cross-sector technology and infrastructure sources. This is an evolving
@@ -150,6 +151,37 @@ canonical event leads contained materially
 additional readable context; only 6 direct publisher excerpts were
 extracted in the tested run. A large URL count or technical coverage must
 not be interpreted as evidence completeness or prediction skill.
+
+## Source-first acceptance measurements – 12 November 2026
+
+- Baseline raw headline-inclusive corpus: 603/10,838 (5.56%) with
+  additional substantive excerpt content.
+- Source-first intermediate acceptance: 941/10,617 (8.86%) without
+  dropping the low-information Google News titles from the denominator.
+- Direct original research sources: 596/817 (72.95%) with contextual text,
+  BUT only 121 of these direct-source substantive items had a known
+  publication time within the last 72 hours. Rich archival release notes
+  must not be mistaken for fresh, coin-relevant 24h catalysts.
+- Full source collector: 48 new original release/governance/macro feeds
+  were added to the source list; 47 responded successfully in the tested
+  runs. The combined set of data requests also includes many non-news
+  quantitative endpoints. These counts are NOT distinct verified claims.
+- The complete direct-source event stream is available in 13 SHA-verified
+  event batch files (965 rows at the measured capture) rather than an
+  inaccessible oversized latest.json.
+- The source-first expansion remained PARTIAL_RESEARCH: 78 official
+  coins had no substantive individual news lead at the last audit.
+  Global, sector and quantitative findings are preserved nevertheless.
+- Dynamically advertised publisher feeds are checked within small,
+  reproducible limits. The first attempted domains included previously
+  known feeds, repeated access restrictions and weak-context feeds. The
+  cumulative cooldown history now makes future discovery explore
+  untested domains, not inflate findings through duplicates.
+
+These are independently rerunnable source-coverage tests, NOT claims that
+any token's next-day return is predictably explained. **Do not optimize
+the 8.86% solely by removing unresolvable Google headlines**; keep the
+raw coverage and original-source quality metrics distinct.
 
 ## Next evidence-led improvement sequence, only after measuring actual outputs
 
