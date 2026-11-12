@@ -12,8 +12,10 @@ token link. No forecast, portfolio ranking or BUY/WAIT/SELL labels in this layer
 No API key or credit-card requirement, **zero paid LLM/API calls** in this pipeline.
 Standard public-repository Actions usage is free subject to GitHub's terms and
 reasonable execution/storage limits; external services can rate-limit or block.
-The workflow limits itself to 20 adaptive RSS searches and 12 bounded publisher
-article fetches per execution; no paywall bypass or unauthorized social scraping.
+The workflow limits itself to 20 adaptive RSS searches, 80 bounded public
+publisher article attempts and 14 candidate-domain feed-discovery checks per
+execution; no paywall bypass or unauthorized social scraping. External access
+failures are retained in the audit, never hidden.
 
 ## What has been implemented and actually runs
 
@@ -39,7 +41,7 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
    flow BACK into the global/sector/asset dossiers; prior versions exported
    them separately without enriching the dossiers. Extraction now checks
    article/main HTML and RSS/Atom descriptions. The publisher budget is
-   bounded to 48 attempts per normal run, max 5 per host.
+   bounded to 80 attempts per normal run, max 5 per host.
 6. SHA-checked full evidence index and status in a workflow artifact. Compact
    results are published to docs/intelligence/. Source archives stay where they are.
 
@@ -60,6 +62,20 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
 - MANUAL_CHATGPT_RESEARCH_PROMPT.md: executable manual ChatGPT research
   instructions, open-ended global/sector/coin discovery and independent Web research
 - knowledge_index.json: lead and scope counts; no generated prediction
+- discovered_public_feeds.json: free safe RSS/Atom feed autodiscovery from
+  previously found publisher domains, including failures, duplicate detection,
+  real retrieval timestamps and unverified publisher relevance
+- direct publisher content from dozens of new official project GitHub release
+  feeds, public governance forums, central-bank releases, plus independent
+  cross-sector technology and infrastructure sources. This is an evolving
+  starter set, not the limit of allowed information sources
+- docs/research/source_events_manifest.json: all original research events
+  in SHA-verified 80-row batch files. latest.json keeps a readable 200-row
+  index; this prevents GitHub API's 1MB content limit from hiding actual work
+- coverage_audit.json/source_context_audit: separately measure *directly*
+  sourced contextual information versus Google News aggregator headline leads;
+  published-last-24h/72h data stop old rich release notes from being mistaken
+  for fresh 24h evidence. The historical full-corpus denominator stays intact
 - source_registry_proposals.json: publisher domains discovered from actual evidence;
   candidates are not auto-installed or trusted without access/identity review
 - coverage_audit.json/research_quality_gate: explicitly PARTIAL_RESEARCH
@@ -124,8 +140,13 @@ current direct-link resolver cannot retrieve it reliably. Prioritize
 public primary RSS feeds, release documents, direct publisher pages,
 official APIs, and authorized source-domain research.
 
-Current free integrated quality gate: TECHNICAL PASS, MATERIAL RESEARCH
-PARTIAL. Approximately 5.4% of canonical event leads contain materially
+Baseline before the source-first expansion (12 November 2026):
+TECHNICAL PASS, MATERIAL RESEARCH PARTIAL, 5.56% substantive context
+(603 of 10,838 canonical leads). The source-first rollout added 48 direct
+primary/governance/technology sources and audited the achieved result
+against this fixed initial baseline. Do not claim the remaining generic
+Google News titles are substantive facts. Earlier measured ~5.4% of
+canonical event leads contained materially
 additional readable context; only 6 direct publisher excerpts were
 extracted in the tested run. A large URL count or technical coverage must
 not be interpreted as evidence completeness or prediction skill.
