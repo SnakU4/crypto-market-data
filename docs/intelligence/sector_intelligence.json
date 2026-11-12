@@ -174,92 +174,6 @@
       "theme": "PAYMENTS"
     },
     {
-      "lead_count": 74,
-      "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "### November 12, 2026 SECURITY: * core/acl: Harden explicit deny rule evaluation by matching requested paths case-insensitively. CHANGES: * auth/alicloud: Update plugin to [v0.24.1](https://github.com/hashicorp/vault-plugin-auth-alicloud/releases/tag/v0.24.1) * auth/cf: Update plugin to [v0.24.1](https://github.com/hashicorp/vault-plugin-auth-cf/releases/tag/v0.24.1) * auth/jwt: Update plugin to [v0.27.2](https://github.com/hashicorp/vault-plugin-auth-jwt/releases/tag/v0.27.2) * auth/kerberos: Update plugin to [v0.",
-          "id": "adjacent:db05df5dac2a7c2aa1",
-          "published_utc": "2026-11-12T00:08:40Z",
-          "title": "v2.2.2",
-          "url": "https://github.com/hashicorp/vault/releases/tag/v2.2.2"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.11.0 is a hardening and performance release. RPC calls that can do unbounded work are now capped or cancellable (`eth_callMany`, `trace_callMany`, `debug_traceCallMany`, `eth_getProof`, `mev_simBundle`, `eth_simulateV1`), and the release brings a broad set of transaction pool, P2P and storage correctness fixes. EIP-7702 authorization recovery is parallelized, P2P skips decoding responses it never asked for, and",
-          "id": "adjacent:0e97a33b581885b2d9",
-          "published_utc": "2026-11-11T10:47:00Z",
-          "title": "Reth v2.11.0",
-          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.11.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.10.1 is a maintenance release. Follow up to the EVM2 release with further performance and stability fixes. ## Update Priority | User Class | Priority | |---|---| | Payload Builders | Medium | | Non-Payload Builders | Medium ## Binaries [See pre-built binaries documentation.](https://reth.rs/installation/binaries) The binaries are signed with the PGP key: `50FB 7CC5 5B2E 8AFA 59FE 03B7 AA5E D56A 7FBF 253E` | Sys",
-          "id": "adjacent:0dcde00f3265aa06ba",
-          "published_utc": "2026-11-06T18:53:31Z",
-          "title": "Reth v2.10.1",
-          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.10.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431) by @Rocketknight1 **Full Changelog**: https://github.com/huggingface/transformers/compare/v5.22.1...v5.22.2",
-          "id": "adjacent:d21b529a373a701519",
-          "published_utc": "2026-11-06T15:43:27Z",
-          "title": "Patch release v5.22.2",
-          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.10.0 is a hardening release. It fixes an engine panic after a reorg below the persisted tip, bounds `eth_callBundle` work, and stops `reth download` from deleting files outside the datadir. It also brings several RPC correctness fixes and P2P interop fixes. `db repair-trie` now verifies storage in parallel, and `--tracing-otlp` can write spans straight to a local file. SDK users: the commit-condition callback o",
-          "id": "adjacent:c685f27abbbec91dac",
-          "published_utc": "2026-11-05T16:18:11Z",
-          "title": "Reth v2.10.0",
-          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.10.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursive Flint (40B MoE, 2.5B active) (#62938), Muse Spark Open (#61879), Step-5 Preview (#61727, #63147), NVIDIA Alpamayo 2 Super (#62957), Nemotron-Labs Dory1.0-4B (#60149), Nemotron Parse 3.5 (#61651), MiniCPM-OCR 1.0 (#63095), Domyn Edge (#62544) and the ColUltraVBERT visual document",
-          "id": "adjacent:3c8f21887064c8a954",
-          "published_utc": "2026-11-02T10:10:05Z",
-          "title": "v0.33.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
-          "id": "adjacent:1485fc924915a99fff",
-          "published_utc": "2026-10-30T09:36:03Z",
-          "title": "Patch release v5.22.1",
-          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-2.png) Reth v2.9.0 replaces revm with [evm2](https://github.com/alloy-rs/evm2) as reth's EVM ([#25002](https://github.com/paradigmxyz/reth/pull/25002)). This is a breaking change for SDK users who build on reth's EVM, executor or inspector types. Node operators don't need to change any config. The release also fixes engine, RPC, storage and pipeline-unwind bugs, adds snap sync progress metrics and JIT support in reth-bb, and makes builds n",
-          "id": "adjacent:fea51de9bd6689bbfd",
-          "published_utc": "2026-10-29T12:36:47Z",
-          "title": "Reth v2.9.0",
-          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.9.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone!",
-          "id": "adjacent:2adc57da428a00632b",
-          "published_utc": "2026-10-29T08:35:02Z",
-          "title": "Patch release v5.21.1",
-          "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# PyTorch 2.15.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights Rewritten NCCL backend becomes the default , with a flight recorder that dumps on hangs and TORCH_DIST_USE_NCCL2=0 or nccl-legacy as rollback",
-          "id": "adjacent:bd6dc4f32b4a232b25",
-          "published_utc": "2026-10-28T17:09:49Z",
-          "title": "PyTorch 2.15.0 Release",
-          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
-        }
-      ],
-      "theme": "DEVELOPER_NETWORKS"
-    },
-    {
       "lead_count": 70,
       "sample": [
         {
@@ -432,6 +346,92 @@
       "theme": "ENERGY"
     },
     {
+      "lead_count": 50,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "### November 12, 2026 SECURITY: * core/acl: Harden explicit deny rule evaluation by matching requested paths case-insensitively. CHANGES: * auth/alicloud: Update plugin to [v0.24.1](https://github.com/hashicorp/vault-plugin-auth-alicloud/releases/tag/v0.24.1) * auth/cf: Update plugin to [v0.24.1](https://github.com/hashicorp/vault-plugin-auth-cf/releases/tag/v0.24.1) * auth/jwt: Update plugin to [v0.27.2](https://github.com/hashicorp/vault-plugin-auth-jwt/releases/tag/v0.27.2) * auth/kerberos: Update plugin to [v0.",
+          "id": "adjacent:db05df5dac2a7c2aa1",
+          "published_utc": "2026-11-12T00:08:40Z",
+          "title": "v2.2.2",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.2.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431) by @Rocketknight1 **Full Changelog**: https://github.com/huggingface/transformers/compare/v5.22.1...v5.22.2",
+          "id": "adjacent:d21b529a373a701519",
+          "published_utc": "2026-11-06T15:43:27Z",
+          "title": "Patch release v5.22.2",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursive Flint (40B MoE, 2.5B active) (#62938), Muse Spark Open (#61879), Step-5 Preview (#61727, #63147), NVIDIA Alpamayo 2 Super (#62957), Nemotron-Labs Dory1.0-4B (#60149), Nemotron Parse 3.5 (#61651), MiniCPM-OCR 1.0 (#63095), Domyn Edge (#62544) and the ColUltraVBERT visual document",
+          "id": "adjacent:3c8f21887064c8a954",
+          "published_utc": "2026-11-02T10:10:05Z",
+          "title": "v0.33.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
+          "id": "adjacent:1485fc924915a99fff",
+          "published_utc": "2026-10-30T09:36:03Z",
+          "title": "Patch release v5.22.1",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone!",
+          "id": "adjacent:2adc57da428a00632b",
+          "published_utc": "2026-10-29T08:35:02Z",
+          "title": "Patch release v5.21.1",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# PyTorch 2.15.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights Rewritten NCCL backend becomes the default , with a flight recorder that dumps on hangs and TORCH_DIST_USE_NCCL2=0 or nccl-legacy as rollback",
+          "id": "adjacent:bd6dc4f32b4a232b25",
+          "published_utc": "2026-10-28T17:09:49Z",
+          "title": "PyTorch 2.15.0 Release",
+          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Python package version The Python wheels for this release are published as **1.4.0rc2.post1**. Container images and documentation remain at **1.4.0rc2**. Use `1.4.0rc2.post1` when installing the Python package. The wheel-only patch removes a direct Git dependency that prevented PyPI publication (#21128) and updates the Boost download mirror used during builds (#21133). Patched wheel source: [v1.4.0rc2.post1](https://github.com/NVIDIA/TensorRT-LLM/tree/v1.4.0rc2.post1), commit `43f8f70da6415a3b06f91f9ebaa4fb7611a",
+          "id": "adjacent:3428e813cc8275d3c9",
+          "published_utc": "2026-10-28T15:51:34Z",
+          "title": "v1.4.0rc2",
+          "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Release v5.21.0 ## New Model additions ### MiniCPM-OCR MiniCPM-OCR is a document-understanding model from OpenBMB's MiniCPM-V family. It keeps the MiniCPM-V 4.6 architecture, which pairs a SigLIP vision encoder and a window-attention merger with a Qwen3.5 language model. It is specialized for reading text-dense images such as scanned pages, screenshots, receipts and tables. **Links:** [Documentation](https://huggingface.co/docs/transformers/main/en/model_doc/minicpm_ocr) | [Paper](https://huggingface.co/papers/25",
+          "id": "adjacent:d55f9a5e87b8b06002",
+          "published_utc": "2026-10-26T18:17:42Z",
+          "title": "Release: v5.21.0",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.21"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
+          "id": "adjacent:bb2965096370f65799",
+          "published_utc": "2026-10-22T02:53:00Z",
+          "title": "lnd v0.20.6-beta.rc1",
+          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.20.6-beta.rc1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
+          "id": "adjacent:86210adeeb98c4976f",
+          "published_utc": "2026-10-22T02:52:48Z",
+          "title": "lnd v0.21.5-beta.rc1",
+          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.21.5-beta.rc1"
+        }
+      ],
+      "theme": "DEVELOPER_NETWORKS"
+    },
+    {
       "lead_count": 46,
       "sample": [
         {
@@ -500,19 +500,19 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Back to Articles BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model Team Article Published November 11, 2026 Upvote 27 +21 Milan Gritta milangritta Follow qvac Jihye Back happy-jihye Follow qvac JinUk, Cho jucho2725 Follow qvac ohjoon kwon joooon Follow qvac Patrik Lambert patrik-lambert Follow qvac Mathias Buus mafintosh Follow qvac Amril Nurman Nurman Follow qvac Frontier cloud LLMs carry high operational costs that can fluctuate unexpectedly, and relying on such third-party models introduces vulnerabilities, as providers can modify, deny, or deprecate access at any time. Furthermore, proprietary models",
+          "id": "adjacent:719a7afc531ee3b1e6",
+          "published_utc": "2026-11-11T05:01:16Z",
+          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+          "url": "https://huggingface.co/blog/qvac/botpsy"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks GBHackers News",
           "id": "expanded:fd00c9b1f1207e7394",
           "published_utc": "2026-11-11T09:41:10Z",
           "title": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks - GBHackers News",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NNjhsQ0ZkTkY0amlFREl4VTFJLW5YU0hiRGM1WDdHbVJKRXdiZVhRTzd3SExTeEp4Y0pWelBLRndmRXRXMHhseGhRa3NON2NTOURZa2lqbXVaTlh5T2tKS1AzSFdBRlXSAWdBVV95cUxNTTY4bENGZE5GNGppRURJeFUxSS1uWFNIYkRjNVg3R21SSkV3YmVYUU83d0hMU3hKeGNKVnpQS0Z3ZkV0VzB4bHhoUWtzTjdjUzlEWWtpam11Wk5YeU9rSktQM0hXQUZV?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
-          "id": "adjacent:d30d633a34dec0c43f",
-          "published_utc": "2026-11-12T19:11:00Z",
-          "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-          "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/"
         }
       ],
       "theme": "AUTONOMOUS_AGENTS"
@@ -608,92 +608,6 @@
       "sample": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "### October 22, 2026 SECURITY: * containers/alpine: Upgrade ca-certificates-bundle to 20261020-r0 to distrust eMudhra intermediate chains. * containers/UBI: explicitly disallow emSign Root CA and Comodo AAA Services in the CA trust store to distrust eMudhra intermediate chains. * core/policy: Fixed a cache-key collision vulnerability that could cause policy-name aliases to resolve to the immutable root policy. Root-policy aliases are now explicitly rejected at entity, group, token, authentication-response, and agen",
-          "id": "adjacent:2b298a1e5bc67ef055",
-          "published_utc": "2026-10-22T21:59:36Z",
-          "title": "v2.2.1",
-          "url": "https://github.com/hashicorp/vault/releases/tag/v2.2.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## 2.1.1 ### September 16, 2026 SECURITY: * core: Update github.com/apache/thrift to v0.24.0 to fix security vulnerability ghsa-8wv5-x4w7-5gww. * core: Update golang.org/x/crypto to v0.56.0 to fix security vulnerabilities GO-2026-6354 and GO-2026-6355. * core: Update google.golang.org/grpc to v1.83.2 to fix security vulnerability GHSA-2v4p-qf9q-27wj. CHANGES: * auth/jwt: Added Okta provider with group fetching from Admin API when fetch_groups=true and truncation is detected. * auth/jwt: Update plugin to [v0.26.4](h",
-          "id": "adjacent:f246e97aec07c2e9ce",
-          "published_utc": "2026-09-16T21:04:32Z",
-          "title": "v2.1.1",
-          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## 2.1.0 ### September 01, 2026 SECURITY: * core: Update go.etcd.io/etcd/client/pkg/v3 to v3.7.1 to fix security vulnerability GO-2026-6107. * core: Update software.sslmate.com/src/go-pkcs12 to v0.7.2 to fix security vulnerability GO-2026-5052. CHANGES: * License: Add Agentic IAM terms to client licensing model and update terms for Vault Platform licensing model. * core: Bump Go version to 1.26.7. * oauth-resource-server (enterprise): Prevent issuer_id from being mutated after OAuth Resource Server profile creation",
-          "id": "adjacent:65a0f9bb6e2d0ca935",
-          "published_utc": "2026-09-01T14:37:47Z",
-          "title": "v2.1.0",
-          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## 2.0.4 ### August 04, 2026 BREAKING CHANGES: * containers: The following packages have been removed from UBI based container images: gnupg, openssl, procps. SECURITY: * acl: Fix privilege-escalation vulnerability where a `denied_parameters` constraint on the `policies` request field could be bypassed by submitting a mixed-case policy name (e.g. \"Super-Admin\" instead of \"super-admin\"). Vault now normalizes the `policies` parameter to lowercase before evaluating `allowed_parameters`/`denied_parameters` constraints.",
-          "id": "adjacent:4920232f73ceeeaa2b",
-          "published_utc": "2026-08-04T18:34:44Z",
-          "title": "v2.0.4",
-          "url": "https://github.com/hashicorp/vault/releases/tag/v2.0.4"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notable changes =============== Security Fixes -------------- This release addresses CVE-2024-52911, a critical use-after-free vulnerability in `zcashd`'s block validation. Any inbound peer can trigger the bug by sending a crafted invalid block, causing the receiving node to access freed memory during script verification. The most likely impact is a single-node crash; the bug is reachable on every multi-core node running with the default `-par` setting, and bouncing invalid blocks between peers can amplify the impa",
-          "id": "adjacent:8bc322f5e2a363cebc",
-          "published_utc": "2026-05-08T00:36:04Z",
-          "title": "v6.12.3",
-          "url": "https://github.com/zcash/zcash/releases/tag/v6.12.3"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notable changes =============== Fix to Sprout transaction verification logic -------------------------------------------- A vulnerability was identified in zcashd that could have allowed invalid transactions to be accepted under certain conditions, which potentially could have resulted in the draining of user funds from the old, deprecated Sprout pool. The patch fixing this bug, corresponding to https://github.com/zcash/zcash/commit/db969c63f48f0f9fc518112ed0b7ace1af78b9d0, has been deployed by mining pools that co",
-          "id": "adjacent:d700ece92389b853de",
-          "published_utc": "2026-03-31T19:11:49Z",
-          "title": "v6.12.0",
-          "url": "https://github.com/zcash/zcash/releases/tag/v6.12.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components. Aspire Dashboard's unauthenticated NotFound route can permit telemetry deletion in both standalone and AppHost-hosted deployments. In standalone deployments using browser-token authentication, it can also expose the browser token. ## Announcement Announcement for this issue can be found at https://github.com/dotne",
-          "id": "adjacent:117eac70389012f88d",
-          "published_utc": "2026-11-12T17:17:48Z",
-          "title": "Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
-          "url": "https://github.com/advisories/GHSA-4g86-54fm-h9h8"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Crafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-122 ## Affected Platforms - **Plat",
-          "id": "adjacent:355fee0a647f2e330b",
-          "published_utc": "2026-11-11T00:47:20Z",
-          "title": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
-          "url": "https://github.com/advisories/GHSA-x8x8-p968-x646"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjectFile::ApplyFixup`. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-121, CWE-822 ## Affec",
-          "id": "adjacent:f5c3ea79ccdbcf6e61",
-          "published_utc": "2026-11-11T00:46:12Z",
-          "title": "Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
-          "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged `executionComplete.json` from another local user and execute attacker-controlled output handling. ## Announcement Announcement for this issue can be found at https://github.com/dotnet/announcements/issues/517 ## CVSS Details - **Version:** 3.1 - **Severity:** Hi",
-          "id": "adjacent:25ddaf8a0eab22dfc3",
-          "published_utc": "2026-11-11T00:39:12Z",
-          "title": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
-          "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
-        }
-      ],
-      "theme": "CYBER_SECURITY"
-    },
-    {
-      "lead_count": 36,
-      "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Percona adds high-availability PMM to cut monitoring outages SecurityBrief Asia",
           "id": "expanded:ad9f1d9653162780b2",
           "published_utc": "2026-11-12T17:15:00Z",
@@ -774,6 +688,92 @@
         }
       ],
       "theme": "SECURITY"
+    },
+    {
+      "lead_count": 34,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "### October 22, 2026 SECURITY: * containers/alpine: Upgrade ca-certificates-bundle to 20261020-r0 to distrust eMudhra intermediate chains. * containers/UBI: explicitly disallow emSign Root CA and Comodo AAA Services in the CA trust store to distrust eMudhra intermediate chains. * core/policy: Fixed a cache-key collision vulnerability that could cause policy-name aliases to resolve to the immutable root policy. Root-policy aliases are now explicitly rejected at entity, group, token, authentication-response, and agen",
+          "id": "adjacent:2b298a1e5bc67ef055",
+          "published_utc": "2026-10-22T21:59:36Z",
+          "title": "v2.2.1",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.2.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## 2.1.1 ### September 16, 2026 SECURITY: * core: Update github.com/apache/thrift to v0.24.0 to fix security vulnerability ghsa-8wv5-x4w7-5gww. * core: Update golang.org/x/crypto to v0.56.0 to fix security vulnerabilities GO-2026-6354 and GO-2026-6355. * core: Update google.golang.org/grpc to v1.83.2 to fix security vulnerability GHSA-2v4p-qf9q-27wj. CHANGES: * auth/jwt: Added Okta provider with group fetching from Admin API when fetch_groups=true and truncation is detected. * auth/jwt: Update plugin to [v0.26.4](h",
+          "id": "adjacent:f246e97aec07c2e9ce",
+          "published_utc": "2026-09-16T21:04:32Z",
+          "title": "v2.1.1",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## 2.1.0 ### September 01, 2026 SECURITY: * core: Update go.etcd.io/etcd/client/pkg/v3 to v3.7.1 to fix security vulnerability GO-2026-6107. * core: Update software.sslmate.com/src/go-pkcs12 to v0.7.2 to fix security vulnerability GO-2026-5052. CHANGES: * License: Add Agentic IAM terms to client licensing model and update terms for Vault Platform licensing model. * core: Bump Go version to 1.26.7. * oauth-resource-server (enterprise): Prevent issuer_id from being mutated after OAuth Resource Server profile creation",
+          "id": "adjacent:65a0f9bb6e2d0ca935",
+          "published_utc": "2026-09-01T14:37:47Z",
+          "title": "v2.1.0",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## 2.0.4 ### August 04, 2026 BREAKING CHANGES: * containers: The following packages have been removed from UBI based container images: gnupg, openssl, procps. SECURITY: * acl: Fix privilege-escalation vulnerability where a `denied_parameters` constraint on the `policies` request field could be bypassed by submitting a mixed-case policy name (e.g. \"Super-Admin\" instead of \"super-admin\"). Vault now normalizes the `policies` parameter to lowercase before evaluating `allowed_parameters`/`denied_parameters` constraints.",
+          "id": "adjacent:4920232f73ceeeaa2b",
+          "published_utc": "2026-08-04T18:34:44Z",
+          "title": "v2.0.4",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.0.4"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components. Aspire Dashboard's unauthenticated NotFound route can permit telemetry deletion in both standalone and AppHost-hosted deployments. In standalone deployments using browser-token authentication, it can also expose the browser token. ## Announcement Announcement for this issue can be found at https://github.com/dotne",
+          "id": "adjacent:117eac70389012f88d",
+          "published_utc": "2026-11-12T17:17:48Z",
+          "title": "Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
+          "url": "https://github.com/advisories/GHSA-4g86-54fm-h9h8"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Crafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-122 ## Affected Platforms - **Plat",
+          "id": "adjacent:355fee0a647f2e330b",
+          "published_utc": "2026-11-11T00:47:20Z",
+          "title": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-x8x8-p968-x646"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjectFile::ApplyFixup`. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-121, CWE-822 ## Affec",
+          "id": "adjacent:f5c3ea79ccdbcf6e61",
+          "published_utc": "2026-11-11T00:46:12Z",
+          "title": "Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged `executionComplete.json` from another local user and execute attacker-controlled output handling. ## Announcement Announcement for this issue can be found at https://github.com/dotnet/announcements/issues/517 ## CVSS Details - **Version:** 3.1 - **Severity:** Hi",
+          "id": "adjacent:25ddaf8a0eab22dfc3",
+          "published_utc": "2026-11-11T00:39:12Z",
+          "title": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write when processed by DIA. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-502, CWE-121 ## Affected Platforms -",
+          "id": "adjacent:73d25a328c0a100e85",
+          "published_utc": "2026-11-11T00:35:02Z",
+          "title": "Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-fpxj-5c99-g7vj"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score) - **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C` - **Weakness:** CWE-122 ## Affected Platforms - **Platforms:**",
+          "id": "adjacent:ab255b8d1959825f1c",
+          "published_utc": "2026-11-11T00:34:13Z",
+          "title": "Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-r8h3-p8p6-ggp7"
+        }
+      ],
+      "theme": "CYBER_SECURITY"
     },
     {
       "lead_count": 31,
@@ -1062,7 +1062,7 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This repository was archived by the owner on Jan 12, 2024. It is now read-only. Quantum Teleportation Sample Compare Choose a tag to compare Sorry, something went wrong. Filter Loading Sorry, something went wrong. Uh oh! There was an error while loading. Please reload this page . No results found View all tags released this 30 Nov 18:02 · 211 commits to main since this release 241427 2a7297a This commit was created on GitHub.com and signed with GitHub’s verified signature . The key has expired. GPG key ID: 4AEE18F83AFDEB23 Expired Verified Learn about vigilant mode . Update to QDK release 0.14.2011.120240 (#444) * Build 0.14.2011.120240. * re",
+          "excerpt": "",
           "id": "adjacent:38753e2ead01879e74",
           "published_utc": "2020-11-30T18:02:47Z",
           "title": "Quantum Teleportation Sample",
@@ -1378,32 +1378,8 @@
       "theme": "ETF_INSTITUTIONAL"
     },
     {
-      "lead_count": 14,
+      "lead_count": 11,
       "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notable changes =============== Security Fixes -------------- This release addresses several consensus and denial-of-service vulnerabilities in `zcashd`, all reachable by a remote peer or miner. **This is a time-critical upgrade.** It is released in coordination with a soft fork that activates at mainnet block height **3363426** (approximately 02:00 UTC on 2026-06-02). Mining nodes that have not upgraded before activation are likely to produce blocks the upgraded majority rejects, resulting in high orphan rates; ex",
-          "id": "adjacent:f0f83fe5c79d9c664b",
-          "published_utc": "2026-06-02T05:43:55Z",
-          "title": "v6.12.5",
-          "url": "https://github.com/zcash/zcash/releases/tag/v6.12.5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notable changes =============== Security Fixes -------------- This release addresses several security vulnerabilities that could have caused nodes to diverge from consensus with Zebra. These vulnerabilities were reported privately by white-hat security researchers and handled through coordinated disclosure by Shielded Labs, Zcash Open Development Lab (ZODL), and Zcash Foundation engineers, in coordination with mining pools. The following vulnerabilities are addressed by this release: * The v4 (Sapling) transaction",
-          "id": "adjacent:88c880d73f88ac766c",
-          "published_utc": "2026-05-06T19:16:32Z",
-          "title": "v6.12.2",
-          "url": "https://github.com/zcash/zcash/releases/tag/v6.12.2"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notable changes =============== Fix to Sprout transaction verification logic -------------------------------------------- A vulnerability was identified in zcashd that could have allowed invalid transactions to be accepted under certain conditions, which potentially could have resulted in the draining of user funds from the old, deprecated Sprout pool. The patch fixing this bug, corresponding to https://github.com/zcash/zcash/commit/db969c63f48f0f9fc518112ed0b7ace1af78b9d0, has been deployed by mining pools that co",
-          "id": "adjacent:d700ece92389b853de",
-          "published_utc": "2026-03-31T19:11:49Z",
-          "title": "v6.12.0",
-          "url": "https://github.com/zcash/zcash/releases/tag/v6.12.0"
-        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It’s also where…",
@@ -1459,95 +1435,33 @@
           "published_utc": "2026-11-12T11:53:59Z",
           "title": "Global Crypto Mining News in October: Binance Pool to Shut Down, Five Listed Miners' Bitcoin Output Falls About 47% YoY, Bitdeer's Monthly Output Rises About 200% YoY, etc - Substack",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XX1B4QnZ3d2o1NVJRNVVHWmhnQmxyVW1GRW1zaXplQ1pZdkhnTGFQZmxnUW4zWXdLekozYW10ZFJScjhjTzZYVG9kdW4xT1NEbUZVWFJPSm9YeXJUUXVsSk1Iakp4X3dIcG5VeFpqYm9HYnB6SE5yVGdLOA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "How HIVE added more mining power in six months than most miners add in years TheStreet",
+          "id": "adjacent:8f9564f34a980a049f",
+          "published_utc": "2026-11-11T20:59:00Z",
+          "title": "How HIVE added more mining power in six months than most miners add in years - TheStreet",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObTA2dFhsTFptWUJ0NkJDX05rMnFBSkhoSTdmUmdUSDlkMDJ0SkVydEZfeldqaHQxYXhmRk16cWRlTEtXLXk1QU1mc0xlSHgwOS1QNndVcThoSXdtTWhJdlF5eERYbFQ1QVc5a2VZNThYMFdIUVZxZlRBN3BDNE1oYjlCMjNabFpzNjhERXBEWlBFckhqYmNndlBuanRvWVZ6NmMwVmpsd3F5bGc0RG9KZmZNMWtfX0pva0E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Gina Hinojosa’s proposed electricity rate freeze not a realistic solution Dallas News",
+          "id": "adjacent:c00123d94ce9b865ad",
+          "published_utc": "2026-11-11T11:36:04Z",
+          "title": "Gina Hinojosa’s proposed electricity rate freeze not a realistic solution - Dallas News",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN1VncTFpdWx4OEVrTXljY0lhc05nRVZJM0U5SzRuR2NSU25OeUVoZDdQVnJiYTVUTWViT3poWjNSNURzNkVLbGMzNUFoUXh5Xzl6bWFFRjMyN2g2UUs3Y1l5c3RxN1Y2d25oUDBoLTZRQjRzRGx1QVBPbWFTM3dZWUlycy10Z2daU1A2TmlmV1EyZG9jR3VoV1M4R2pHU3JoUF9VM1VYZWZOMS1aMmJjclhXVQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "HIVE Reports $84.9M Revenue as AI GPU Business Grows 71% Amid Mining Pressures TradingView",
+          "id": "adjacent:7769e8d2679d338401",
+          "published_utc": "2026-11-11T09:00:00Z",
+          "title": "HIVE Reports $84.9M Revenue as AI GPU Business Grows 71% Amid Mining Pressures - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTFYyWDRVYU1VWkVEVGpCLUxIQ0JwcDJnZTBUYVItLXFLY3E2MlJTZU92SEN3NFZZSGdFVVFvbkVmTHVxNkktTnNmX3JaTGotOVdEWU16cXFHaXRXZWxVZzZxMldIWHFHSlRQRmFUZGktaVZ3U3ZmXzc4SHJIUnh6eFdiR3dCaC1YNDdscFdTNWlKaGYxMGg0ZkpPTjR4LVdmVjExaTd4VGRERjBpeDhoRi01VERDR2ZmdE1wb3VQWnVBVFpSR2VndkJBLUxIRzQ?oc=5"
         }
       ],
       "theme": "ENERGY_MINING"
-    },
-    {
-      "lead_count": 10,
-      "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-2.png) Reth v2.8.0 schedules the Amsterdam hardfork on Hoodi, adds opt-in snap/2 sync and prewarm result reuse, and hardens peer-to-peer networking and RPC. With the opt-in `--engine.prewarm-reuse`, reth commits prewarmed transaction results instead of re-executing them. This reduced mean latency by **12.35%** and raised Mgas/s by **18.58%** over 500 replayed blocks ([#27894](https://github.com/paradigmxyz/reth/pull/27894)). Per-block proo",
-          "id": "adjacent:13a456b5258120dd8e",
-          "published_utc": "2026-10-20T19:34:03Z",
-          "title": "Reth v2.8.0",
-          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.8.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
-          "id": "adjacent:911f1ae17f046cb00a",
-          "published_utc": "2026-10-23T18:22:59Z",
-          "title": "Origin Range Requests: Serving large files without range-request tuning",
-          "url": "https://blog.cloudflare.com/origin-range-requests/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Deutsche Bank Launched Crypto Custody With Bitcoin and Ethereum but Not XRP or Solana. Why Were They Left Out? 24/7 Wall St.",
-          "id": "expanded:d1a528ebeb74192e51",
-          "published_utc": "2026-11-12T17:24:00Z",
-          "title": "Deutsche Bank Launched Crypto Custody With Bitcoin and Ethereum but Not XRP or Solana. Why Were They Left Out? - 24/7 Wall St.",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPUHkyMHJIRDh5alJNelBpQ2xObURSTkJRaWlsX09ELTZEU013RDVvZWlrTGQzWnpaLVdEd05FaDRTN3dtdE9GcGF6NWFZZ1k2UkFoYjBmbWFqbVRYZXk4VEM2a3RZcWttYUZhdWR4UHhERnJTeXlQUFNGelBuLUpQeV9LOHRtNUxMOTNEaHNDdDFfbkZJSGk0djNFMlM4WnM4eUxpR2piTjJmdDBrSXA3cG5GYUNXM3ZjTWM5eFZIUFp6eXVETzlDZW5qNVNOYm5ZTFpSNEpxckZoVUNqM2NHMW5qX2JGcmp3SmM3OFZwaXZPd2E1X3FIT2RkWQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Optimum Internet Outage Ends in West Virginia After Network Damage JournalArta",
-          "id": "adjacent:7c7df6d7f628ffef0e",
-          "published_utc": "2026-11-12T19:44:04Z",
-          "title": "Optimum Internet Outage Ends in West Virginia After Network Damage - JournalArta",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcjRQdi16TTFNRzgwT0dLczJINWdUa1ZaQlZOckt2c3dSQmtzLTJWYS0yTi00el9BM3hzZmVMd2FYUE43MDNRazBENWowelBqR0xzT2k0Wl9UWlVuSlVyT2RUQms3bllqWDZROGszQW5TNXB2MUhMQ0ZUWjkwV0xUTnA3R2FYb1JnTHc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Microsoft hasn't yet given a cause for the outage, which is affecting Outlook email users.",
-          "id": "adjacent:cadfae753283aaded9",
-          "published_utc": "2026-11-12T19:03:39Z",
-          "title": "Microsoft’s Outlook email hit by new outage",
-          "url": "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "BNY taps Figment to bring staking into its digital asset custody service Crypto Briefing",
-          "id": "adjacent:cec8d5d5d1c9f1203c",
-          "published_utc": "2026-11-12T13:09:21Z",
-          "title": "BNY taps Figment to bring staking into its digital asset custody service - Crypto Briefing",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XOEotaVBDX0I3VzlZajBhOXJTYzh1T2hWaTFNTkpDRl9kMFBYTWZUaVZ4MGMzbWtkakJaNkQtZmY2V25LcmItX0ZSWmp6NjVwVXJ5WXM4bGNqeVBtdkozbXplUDU1TU1QTkNpUjNKWlVWcjRUMTNiQQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "BTCC Exchange Launches Anthropic Pre-IPO Trading Campaign with 0 Fees and an AI Tech Prize Pool BeInCrypto",
-          "id": "adjacent:91f3bacf168cecc096",
-          "published_utc": "2026-11-11T22:00:05Z",
-          "title": "BTCC Exchange Launches Anthropic Pre-IPO Trading Campaign with 0 Fees and an AI Tech Prize Pool - BeInCrypto",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XMlJ0RUwwNVYyUkdpN0dOdDVjNTlfa0dXVjhkVU1US3B3bHprU2dIUDJpb1RzT3RoTDU1d2t5SzJCampSblJyYmF0eVpuemlNbkFfMWhEYTFfWDhJR0I0WVg4WEs2cGRrMU1jWjd1QVU0UQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Sam Altman’s ChatGPT AI Predicts a Post New York Stock Exchange Parabolic Rally for AVAX TradingView",
-          "id": "adjacent:020c5cd01b9c4f1b56",
-          "published_utc": "2026-11-11T20:58:48Z",
-          "title": "Sam Altman’s ChatGPT AI Predicts a Post New York Stock Exchange Parabolic Rally for AVAX - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTXgzc1pVRTBqbkpUVE1DLWJEak1pNFVBLVJJc1BBVEdjOWFSd1JxUGtDVUR2NVNELXlUbThZT243Y3hTWHFGTmY0Y1FYNGFEd0lLa3hBR1NwMkIta2dSTkRBSWRYb29ybmRENWYyZk9hYzUxOEFYb2VYMk55RWNHTzQ5eFkwbVhFRE1la0g1amt5S0VkdG1qSzVzV3pkYWlTZjVWVGNrS21kemtDWkx5TUpqcVlnQWVrck50Ymp2VzRVQXhOMV9TR19hTXJsNHNXTVNmQU1FTk1XekN5ckNpYVI0MA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization CoinMarketCap",
-          "id": "adjacent:75929a37ba8effd9f1",
-          "published_utc": "2026-11-11T11:47:40Z",
-          "title": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization - CoinMarketCap",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY3dCMDY1TmJ0bk0wRFRvOGZQT2M4VjNvU2l5RTZPdkp4SnNEUjg1RDdjVy1IMW9VdkhXV21PakVUN0F4V1o0cVptNU5Ed0xSVW1QZkRaSU5LbGdWR3RMT1RMdFY3aHZCc2JqSWVabUhNdHVWRFFxemp2ZlFUUUQwYmlLSDlrY2tCdlN5am1TaFZFTDBac2tuTUtic0YzQ3VHS25SYkRka0pJcWc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Deutsche Bank launches digital asset custody service for paying clients The Economic Times",
-          "id": "adjacent:b00a139f171a81e450",
-          "published_utc": "2026-11-11T09:01:00Z",
-          "title": "Deutsche Bank launches digital asset custody service for paying clients - The Economic Times",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwRXVQeFZqZ0Z0ZjVtalVHZDRzbDY5YnRwQ2xxVXlDZ05aeEV5eDU3eU5qaGNZM2xPbVhYTENEcjRodWhlUFlYRW5QT3FzM25FUGwxWjlYTkxCX1VPak1oQ2tQZEpPeTI4LWt4dmtYUi1NcS16Qk9BVjE2ZFRabW1ZddIB-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwR"
-        }
-      ],
-      "theme": "EXCHANGE_INFRA"
     },
     {
       "lead_count": 10,
@@ -1634,6 +1548,84 @@
         }
       ],
       "theme": "PRIVACY_ZK"
+    },
+    {
+      "lead_count": 9,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+          "id": "adjacent:911f1ae17f046cb00a",
+          "published_utc": "2026-10-23T18:22:59Z",
+          "title": "Origin Range Requests: Serving large files without range-request tuning",
+          "url": "https://blog.cloudflare.com/origin-range-requests/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank Launched Crypto Custody With Bitcoin and Ethereum but Not XRP or Solana. Why Were They Left Out? 24/7 Wall St.",
+          "id": "expanded:d1a528ebeb74192e51",
+          "published_utc": "2026-11-12T17:24:00Z",
+          "title": "Deutsche Bank Launched Crypto Custody With Bitcoin and Ethereum but Not XRP or Solana. Why Were They Left Out? - 24/7 Wall St.",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPUHkyMHJIRDh5alJNelBpQ2xObURSTkJRaWlsX09ELTZEU013RDVvZWlrTGQzWnpaLVdEd05FaDRTN3dtdE9GcGF6NWFZZ1k2UkFoYjBmbWFqbVRYZXk4VEM2a3RZcWttYUZhdWR4UHhERnJTeXlQUFNGelBuLUpQeV9LOHRtNUxMOTNEaHNDdDFfbkZJSGk0djNFMlM4WnM4eUxpR2piTjJmdDBrSXA3cG5GYUNXM3ZjTWM5eFZIUFp6eXVETzlDZW5qNVNOYm5ZTFpSNEpxckZoVUNqM2NHMW5qX2JGcmp3SmM3OFZwaXZPd2E1X3FIT2RkWQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Optimum Internet Outage Ends in West Virginia After Network Damage JournalArta",
+          "id": "adjacent:7c7df6d7f628ffef0e",
+          "published_utc": "2026-11-12T19:44:04Z",
+          "title": "Optimum Internet Outage Ends in West Virginia After Network Damage - JournalArta",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcjRQdi16TTFNRzgwT0dLczJINWdUa1ZaQlZOckt2c3dSQmtzLTJWYS0yTi00el9BM3hzZmVMd2FYUE43MDNRazBENWowelBqR0xzT2k0Wl9UWlVuSlVyT2RUQms3bllqWDZROGszQW5TNXB2MUhMQ0ZUWjkwV0xUTnA3R2FYb1JnTHc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Microsoft hasn't yet given a cause for the outage, which is affecting Outlook email users.",
+          "id": "adjacent:cadfae753283aaded9",
+          "published_utc": "2026-11-12T19:03:39Z",
+          "title": "Microsoft’s Outlook email hit by new outage",
+          "url": "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "BNY taps Figment to bring staking into its digital asset custody service Crypto Briefing",
+          "id": "adjacent:cec8d5d5d1c9f1203c",
+          "published_utc": "2026-11-12T13:09:21Z",
+          "title": "BNY taps Figment to bring staking into its digital asset custody service - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XOEotaVBDX0I3VzlZajBhOXJTYzh1T2hWaTFNTkpDRl9kMFBYTWZUaVZ4MGMzbWtkakJaNkQtZmY2V25LcmItX0ZSWmp6NjVwVXJ5WXM4bGNqeVBtdkozbXplUDU1TU1QTkNpUjNKWlVWcjRUMTNiQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "BTCC Exchange Launches Anthropic Pre-IPO Trading Campaign with 0 Fees and an AI Tech Prize Pool BeInCrypto",
+          "id": "adjacent:91f3bacf168cecc096",
+          "published_utc": "2026-11-11T22:00:05Z",
+          "title": "BTCC Exchange Launches Anthropic Pre-IPO Trading Campaign with 0 Fees and an AI Tech Prize Pool - BeInCrypto",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XMlJ0RUwwNVYyUkdpN0dOdDVjNTlfa0dXVjhkVU1US3B3bHprU2dIUDJpb1RzT3RoTDU1d2t5SzJCampSblJyYmF0eVpuemlNbkFfMWhEYTFfWDhJR0I0WVg4WEs2cGRrMU1jWjd1QVU0UQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Sam Altman’s ChatGPT AI Predicts a Post New York Stock Exchange Parabolic Rally for AVAX TradingView",
+          "id": "adjacent:020c5cd01b9c4f1b56",
+          "published_utc": "2026-11-11T20:58:48Z",
+          "title": "Sam Altman’s ChatGPT AI Predicts a Post New York Stock Exchange Parabolic Rally for AVAX - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTXgzc1pVRTBqbkpUVE1DLWJEak1pNFVBLVJJc1BBVEdjOWFSd1JxUGtDVUR2NVNELXlUbThZT243Y3hTWHFGTmY0Y1FYNGFEd0lLa3hBR1NwMkIta2dSTkRBSWRYb29ybmRENWYyZk9hYzUxOEFYb2VYMk55RWNHTzQ5eFkwbVhFRE1la0g1amt5S0VkdG1qSzVzV3pkYWlTZjVWVGNrS21kemtDWkx5TUpqcVlnQWVrck50Ymp2VzRVQXhOMV9TR19hTXJsNHNXTVNmQU1FTk1XekN5ckNpYVI0MA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization CoinMarketCap",
+          "id": "adjacent:75929a37ba8effd9f1",
+          "published_utc": "2026-11-11T11:47:40Z",
+          "title": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization - CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY3dCMDY1TmJ0bk0wRFRvOGZQT2M4VjNvU2l5RTZPdkp4SnNEUjg1RDdjVy1IMW9VdkhXV21PakVUN0F4V1o0cVptNU5Ed0xSVW1QZkRaSU5LbGdWR3RMT1RMdFY3aHZCc2JqSWVabUhNdHVWRFFxemp2ZlFUUUQwYmlLSDlrY2tCdlN5am1TaFZFTDBac2tuTUtic0YzQ3VHS25SYkRka0pJcWc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank launches digital asset custody service for paying clients The Economic Times",
+          "id": "adjacent:b00a139f171a81e450",
+          "published_utc": "2026-11-11T09:01:00Z",
+          "title": "Deutsche Bank launches digital asset custody service for paying clients - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwRXVQeFZqZ0Z0ZjVtalVHZDRzbDY5YnRwQ2xxVXlDZ05aeEV5eDU3eU5qaGNZM2xPbVhYTENEcjRodWhlUFlYRW5QT3FzM25FUGwxWjlYTkxCX1VPak1oQ2tQZEpPeTI4LWt4dmtYUi1NcS16Qk9BVjE2ZFRabW1ZddIB-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwR"
+        }
+      ],
+      "theme": "EXCHANGE_INFRA"
     },
     {
       "lead_count": 8,
