@@ -1,0 +1,46 @@
+{
+  "all_100_verified": true,
+  "archives": {
+    "engine": {
+      "path": "docs/evidence_engine/archive/20261112/20261112T041819Z_observations.jsonl.gz",
+      "records": 3221,
+      "sha256": "019a489c7605d8dd94bc1bcc4b5e6d0f61f517b098a2bd1414ca28c34d6459f5",
+      "verified": true
+    },
+    "expanded": {
+      "path": "docs/expanded_discovery/archive/20261112/20261112T034936Z_all.jsonl.gz",
+      "records": 10206,
+      "sha256": "576e5d3581f4d673c35828bd6781963e8c5a2ecaf9f8822c41536b50e15cb191",
+      "verified": true
+    }
+  },
+  "coin_batch_files": [
+    "docs/intelligence/coin_batches/batch_01.json",
+    "docs/intelligence/coin_batches/batch_02.json",
+    "docs/intelligence/coin_batches/batch_03.json",
+    "docs/intelligence/coin_batches/batch_04.json",
+    "docs/intelligence/coin_batches/batch_05.json"
+  ],
+  "coverage_file": "docs/intelligence/coverage_audit.json",
+  "cutoff_utc": "2026-11-12T07:03:11Z",
+  "full_evidence_count": 10473,
+  "full_evidence_export": "docs/intelligence/export/evidence_index.jsonl",
+  "full_evidence_export_is_actions_artifact_only": true,
+  "full_evidence_sha256": "60301a45b02225a922a6172bbd65365cb184dcf56c886fe0b8e39d98cd5c15ac",
+  "global_file": "docs/intelligence/global_intelligence.json",
+  "knowledge_file": "docs/intelligence/knowledge_index.json",
+  "limitation": "Deterministic adaptive follow-up, NOT an autonomous LLM researcher or alpha signal.",
+  "llm_calls": 0,
+  "no_paid_api_used": true,
+  "published_bundle_bytes": 1458503,
+  "schema_version": "cmc100-open-intelligence-free-v1",
+  "sector_file": "docs/intelligence/sector_intelligence.json",
+  "source_snapshots": {
+    "adjacent": "2026-11-11T19:36:30Z",
+    "engine": "2026-11-12T04:18:19Z",
+    "expanded": "2026-11-12T03:49:36Z",
+    "market": "2026-11-12T04:09:38Z",
+    "research": "2026-11-11T23:29:05Z"
+  },
+  "task_file": "docs/intelligence/research_tasks.json"
+}

@@ -1,0 +1,1787 @@
+{
+  "open_ended_scope": true,
+  "sectors": [
+    {
+      "lead_count": 146,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Highlights - Known Issues - DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. - Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. - DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. - Tensor-parallel serving with RPC orchestration may han",
+          "id": "adjacent:18d92f8a93f686e53a",
+          "published_utc": "2026-11-06T21:38:32Z",
+          "title": "v1.4.0rc3",
+          "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.12992v1 Announce Type: new Abstract: Energy-based models (EBMs) assign a scalar energy to every joint value of the observed and predicted variables. In decision models, the prediction is chosen from a finite list of options provided with each input. Inference then reduces to comparing the energies of the options, and training lowers the energy of the correct option r",
+          "id": "adjacent:d8030625e2c409f983",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "ZeroPoint: Lightweight Energy-Based Decision Model",
+          "url": "https://arxiv.org/abs/2611.12992"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2507.08244v3 Announce Type: replace Abstract: This paper examines how labor market outcomes have evolved across occupations as AI capabilities advanced from generative AI chatbots to reasoning models and AI agents. We construct an occupational AI exposure score that measures the share of each occupation's work that AI could perform at each capability stage, and link the c",
+          "id": "adjacent:ef719c1942d2b32ab5",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Advancing AI Capabilities and Evolving Labor Outcomes",
+          "url": "https://arxiv.org/abs/2507.08244"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Using Argo CD and Kargo, Meta is building a GitOps platform to streamline application delivery across 100 Kubernetes clusters supporting AI research and inference Key Highlights SALT LAKE CITY – KubeCon + CloudNativeCon North America 2026...",
+          "id": "adjacent:d9a5d28c30068c84e9",
+          "published_utc": "2026-11-11T16:00:00Z",
+          "title": "Meta Wins CNCF End User Case Study Contest for Accelerating AI Infrastructure Deployments From Hours to Minutes",
+          "url": "https://www.cncf.io/announcements/2026/11/11/meta-wins-cncf-end-user-case-study-contest-for-accelerating-ai-infrastructure-deployments-from-hours-to-minutes/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Six wild ideas for perpetuating your mind As we age, we forget most of what we’ve experienced, yet there’s still undeniable continuity: At 30, or 50, or 70, you will still…",
+          "id": "adjacent:26b113dffd6a8012c5",
+          "published_utc": "2026-11-11T13:10:00Z",
+          "title": "The Download: preserving minds and weighing open AI risks",
+          "url": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
+          "id": "adjacent:3edff57aa6bcdf3b2d",
+          "published_utc": "2026-11-05T17:03:04Z",
+          "title": "Agents aren’t humans (but they kinda are)",
+          "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every...",
+          "id": "adjacent:96b94ca497c788e50a",
+          "published_utc": "2026-11-11T15:50:30Z",
+          "title": "OpenShell on Kubernetes: A guide for platform engineers",
+          "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Nancy Pelosi’s replacement is ready to regulate AI —Grace Huckins As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a…",
+          "id": "adjacent:86c8055bf762325102",
+          "published_utc": "2026-11-10T13:10:00Z",
+          "title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
+          "url": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "New Sandbox projects, including Agent Substrate and OpenShell, expand CNCF’s portfolio to 231 projects as the community adds over 5.5 million cloud native developers in 12 months, welcomes eight Platinum memberships and brings together 82,000 attendees...",
+          "id": "adjacent:4cf8063ffa14c5b989",
+          "published_utc": "2026-11-10T16:00:00Z",
+          "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production",
+          "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Latest research finds 54% of developers with independently managed tooling use hybrid approaches for AI workflows, compared to just 5% at organizations building custom internal platforms Key Highlights: SALT LAKE CITY – KubeCon + CloudNativeCon North...",
+          "id": "adjacent:02a196c941ddd228c6",
+          "published_utc": "2026-11-10T16:00:00Z",
+          "title": "CNCF and SlashData Report Finds Platform Engineering Strategies Are Shaping AI Infrastructure Adoption",
+          "url": "https://www.cncf.io/announcements/2026/11/10/cncf-and-slashdata-report-finds-platform-engineering-strategies-are-shaping-ai-infrastructure-adoption/"
+        }
+      ],
+      "theme": "AI_COMPUTE"
+    },
+    {
+      "lead_count": 70,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.14146v1 Announce Type: new Abstract: Multidimensional Poverty Indices (MPIs) are available for more than 100 countries, but rarely below the national or regional level. Local estimates require knowing how deprivations overlap within households, yet the sources that cover every locality, such as censuses and geospatial data, cannot be linked at the household level. We",
+          "id": "adjacent:d6ed91399cffafd3fd",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Estimating multidimensional poverty under incomplete data in North Macedonia",
+          "url": "https://arxiv.org/abs/2611.14146"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13259v1 Announce Type: cross Abstract: Workers and organizations routinely choose between complex tasks that differ in their success-payment tradeoff. We study how cognitive ability and overconfidence shape this choice of task complexity, both theoretically and experimentally. Consistent with our model, we find that more cognitively able individuals choose more compl",
+          "id": "adjacent:ae25747d8d9b046495",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Choosing Complexity: Cognitive Ability, Overconfidence, and Task Choice",
+          "url": "https://arxiv.org/abs/2611.13259"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13866v1 Announce Type: new Abstract: This paper assesses the economic benefits of cross-border electricity trade in the context of rising energy prices and geopolitical uncertainty. Switzerland provides a particularly compelling case because of its geographical location and limited integration into the EU electricity market. We first use the Nexus-e framework to simu",
+          "id": "adjacent:5ec828359c4be7d6b8",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Economic Benefits of Cross-Border Electricity Trade and Domestic Electricity Production in Switzerland",
+          "url": "https://arxiv.org/abs/2611.13866"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.10731v2 Announce Type: replace Abstract: It is widely held that wind and solar power increase the volatility of electricity prices. This paper argues that the literature conflates two distinct types of price variation: across delivery time and across trading time. Determined simultaneously in the same day-ahead auction, prices for power to be delivered in distinct qu",
+          "id": "adjacent:c7e1e3b309397fbe4a",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Have wind and solar energy increased electricity price volatility? And what is electricity price volatility, anyway?",
+          "url": "https://arxiv.org/abs/2611.10731"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stablecoin Payments: The Orchestration Shift OneSafe",
+          "id": "expanded:e384693f1a00298a26",
+          "published_utc": "2026-11-12T02:26:45Z",
+          "title": "Stablecoin Payments: The Orchestration Shift - OneSafe",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE80cGJidzB3R24wNGFQVWllaXh1LWYtRVFfck9hejlXWWZoSl9RdDhFTi1FT3JVRC1EUUFMYkxxTENaVV93Qkhydlkwdk82cThnNHlORzh4NXRmSW1hbnNiX2ZTamJfYk84NHhlX3c4VF95RmlWT3VPb3hB?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stablecoin Payments: Visa Adds Monad—What It Means OneSafe",
+          "id": "expanded:c9731c5769f1b94445",
+          "published_utc": "2026-11-12T00:27:31Z",
+          "title": "Stablecoin Payments: Visa Adds Monad—What It Means - OneSafe",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfUThLM09DRGxEYUxETGhvcTlDS0NDV2RUMDllRi1aQWVkTnVhMWx1aFFObW53em14eHF5Uk5zaHZ5SXFOdk1NX1BmOEZoSWc3VlJRNW9NTHZLYnc1MkRiYXVfUHJpbEpqeXVUOFNFZERBa1lucEE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stablecoin Orchestration: Building Smarter, Faster, and More Connected Payment Systems StreetInsider",
+          "id": "expanded:c39eab65af3c51c384",
+          "published_utc": "2026-11-11T22:50:05Z",
+          "title": "Stablecoin Orchestration: Building Smarter, Faster, and More Connected Payment Systems - StreetInsider",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPODkxOVJYUUI2SjhnMGlwS1pfRzhnVDRvSXFfRDhlZ0RsWDF1VTFIb2o4WkpDWnd4ZjhMSjQxOVBWalJ6V2h6Y1RjZ2VMclRmRXRiWE1oQjJuOUE5NlM1T3UzOTFoWW9FNEtaNjRaMDNxa1ZkSF8yMDV4U1g4RnpURTlhbzUwN1NERThGLXhaZE1EQmM1cjZkQnkyUUY5aWx6NFVhbWRNVE52cHJSYjN5Vnh2QnA3NGwxcFdjX0NwekczQ3M1NTI2aHFpYlNDcXNhcnJVZkdWcVIwUzNDcTgyZHZWRGE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "How Single-Integration Crypto Payments Could Simplify Web3 Commerce Analytics Insight",
+          "id": "expanded:4503b5e15026341752",
+          "published_utc": "2026-11-11T18:15:00Z",
+          "title": "How Single-Integration Crypto Payments Could Simplify Web3 Commerce - Analytics Insight",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUEpxNmFfOGtfV25aY3VVQ3pWT1pWVDFTbFZhRkhCd3Vfb3dRNDFsaXh0SDJVM0lhRVc1SFlIMmQ3dWVVVTFHczJGdDB4N0l6aXU2R0tibmIyUEk2UnZnMmpTOV84R0pfYjBZcks1cGpsTlBkazFlSTYwYURHSFp5TXBxcEV4bGRlTFRzUUJJRGEzQ2hlSWFpWHg0WDNvVHBYdDRibll0X20tOU5OeG9CZ2l1LTdjanktVkRYbDBKOTZ1ZWNtblpwbGVoekxWZ9IB2wFBVV95cUxPd0VPdDNDNkY2a3RQZlQ2bEM5S2x6dVZuTi12UWE5TFJ5SmtRTG5WNThUZ2xVTy16cEViMVVNbkJ0NVJ1ZENNTDI4UllKZ0FfMVFTZTk5T285MHNONExnMmVZUW1rSWI2ZVNHZS01dEo0eVRtaWhGbkl1d3RfQlcyZEQwaEVNZU5rZ0l0UUlrX25NajZEUEU4NUI1MmhjRDhaQTlaUWEzeG9qT"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stablecoins, banks, and multi-asset interoperability The Paypers",
+          "id": "expanded:9534c4f2a8ba6e2ba9",
+          "published_utc": "2026-11-11T16:05:17Z",
+          "title": "Stablecoins, banks, and multi-asset interoperability - The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbnZPalhxU3VaNHhEem90WGp6LXdEQ0hpTGxUMnFGM0xaUG1IbWgxbHVldFU4TkM4WUhtblQtR1otcXpNMUV5SzR0QTN0S0t2SDRHR0VfRUhzek0wVy1YOHRhVzh6N0lPbU5tNXJBRmF6UU1OdnFyUmFQeXFrb1IwRkdzd21URlBLXzZoV2paeEhKcHNhTWhJQlk3NmdFTHRGcmtEb1BpM1hVV1hVd29PZmtZRHJXejFjc1UwUVpaQXBFRndrR3c?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "How Theparkpay is rewriting Africa’s payment playbook Business News Nigeria",
+          "id": "expanded:9aa0dbcfe0f9b3cf77",
+          "published_utc": "2026-11-11T15:10:50Z",
+          "title": "How Theparkpay is rewriting Africa’s payment playbook - Business News Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRThqc0FaUWxqZEY0bVN2b2RfcmVYc1pKZmtObUFKLTZTblFyaVpLMnU1UmhweENNNEJoblpIZGhrWE9ZYVExU0ZpLUo4ZVV1UlozaldTOGVlLUpaVnVLS0kxLUVRUFNhUUljY0hrd0hJdGhmdmRSa1JGUXRFVUM0Nzhja1AxdUZ0V0JfUGpNQnl1dEpPOGs2eVJ3?oc=5"
+        }
+      ],
+      "theme": "PAYMENTS"
+    },
+    {
+      "lead_count": 56,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Malaysia tightens battery storage safety as renewable energy capacity approaches 14GW The Vibes",
+          "id": "expanded:f6bcdb7b7d49e35546",
+          "published_utc": "2026-11-12T02:38:00Z",
+          "title": "Malaysia tightens battery storage safety as renewable energy capacity approaches 14GW - The Vibes",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPS1U3TTNJVVFIMWJ2V3ZCQXpsVnNBLWJ6NS1pUzNQTFRFd0praGtKa3djNVlvejMxSUd5MHc4ZE9fNm9PeFQ0T0xoMzlYX3h6MzZManpUU1lnVDhDX010alVKQzVvbTVWVmNSbjBzTzFPU1huQ3RUNHhpQTByWnRvVjNRVWVpZVo1SnNKVVhsdXVyaEZqY0hpdjF0anI0T3Roc2RxazdJdVg0bEU3R2hOb1J1LWhMVEVBcUNUdlUyRHJTYU1JYkN2azBhanNCS2pEWTdDZXNlM1o?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Battery storage opens evening electricity markets to solar: Ember Energi.Media",
+          "id": "expanded:ec861eaa5423a91c08",
+          "published_utc": "2026-11-12T01:52:21Z",
+          "title": "Battery storage opens evening electricity markets to solar: Ember - Energi.Media",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5IZ3Q0MzRxSGZEMWZvdXNoMkFHaE1WSmMzV0FES1BRT2JPZ2VydEN0cmctSGZOendTSGtuZzhtNEN0LS1GSVVOUENFMnFTemRZN3ZPSUIwc2ZpeVJoLUIyY0Y0czhCdXFESXM4U2pKdHY1Vl9MOHA0?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "U.S. moves to restrict AI data centres could open door for bitcoin miners 디지털투데이",
+          "id": "expanded:e272d9705194c77664",
+          "published_utc": "2026-11-11T23:48:01Z",
+          "title": "U.S. moves to restrict AI data centres could open door for bitcoin miners - 디지털투데이",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT29jenl3WlpJd1pXaUN4Y3FaTWlvMzJQTUxlQ0M0RGNvWWIzMV9sUGVzdW9WYlVCdTBieFpQaXFla1VQeGloSnppczlBcmxoVEVRbWE5WFNYYV9nblR0MWYwLTZNdjhDSFBIRFp4QU1mbmRTNERETVZCWWJROGtSaG5rVElCYVI1UC1qVjhmY2FabDJESThac2txNnc1LWRxVDBwZDZpLUdOUm1JNHk4Vk9UYm5NS3pK?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "McKinsey & Company on LFP Growth Driving Battery Materials Demand Battery Technology",
+          "id": "expanded:fd3286e870234b7403",
+          "published_utc": "2026-11-11T23:15:00Z",
+          "title": "McKinsey & Company on LFP Growth Driving Battery Materials Demand - Battery Technology",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTVVMRGVxT3hTN0lDSW9SRTg4WjB6TGxuTzJjbXg4azFvdVdYSGZRNVFVSnpuYW1rc0paMk9NMHF4a2MxTWk0TkJuT25vb3pFQldNalNxNFJIZ3hrdnc4SmY1M2NVVnhOcDhNQklkSUpNZ0xkdzlzN1A0UjlCeFY3SXNsVjl2OWo4TFZYM2tNNDlLWTFKaGVLcmRPbGU2REtEMjlJb0Q5Y2Yta0E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Peru's mining exports hit $57.5 billion in eight months, with copper and gold driving a 55% year-over-year surge Latin Times",
+          "id": "expanded:2a998604c037641431",
+          "published_utc": "2026-11-11T22:18:00Z",
+          "title": "Peru's mining exports hit $57.5 billion in eight months, with copper and gold driving a 55% year-over-year surge - Latin Times",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5TT3RSLTJGdXVmMXRxVVUtakdWV2ZlRFpEa3BxREVmS3h6VEpGUm12X3RmZEJ6Nl9KaEtvVXJGLVd2Q3BJXzFZekZodG5ZUlp5NUtkdDhhd3NoLXZVclVDV1VuX0lTYWNOSHpVa1ZVWE9tQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "US Data Center Rules May Shift Bitcoin Mining Advantage Toward AI KuCoin",
+          "id": "expanded:306e3ca766b0abcb30",
+          "published_utc": "2026-11-11T21:44:10Z",
+          "title": "US Data Center Rules May Shift Bitcoin Mining Advantage Toward AI - KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVl92QUdBOEJuT3Z1bkpRRUdCZllBZF9ldGtGMlBDdlh1ZW0tMS1MZElDRTI5RHJDaHBhYkhpYU5xbFlWR0VKYXlITTZyaGg3bURteVhEWm1Ed2o2dk5lLWJzWjFRUUpTUDVLNjRsV2tONFRIb0VJeWYwRUxiQXM4ekVQVEI1Y1lfcW8tTG1fNDROTC1xZGZJRHVmcXFTaS1U?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "US Curbs on New Data Centers May Give Bitcoin Miners With Power Access an Edge in AI bloomingbit",
+          "id": "expanded:a4dd1a9eb0e8f0dd4d",
+          "published_utc": "2026-11-11T21:10:28Z",
+          "title": "US Curbs on New Data Centers May Give Bitcoin Miners With Power Access an Edge in AI - bloomingbit",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WcDRHME45T1p2TEhpSklsajVfNWU2azctSFVIZW5WdC1mLW1yUnN1VV9fLVRMVHBPeklkcXV6TlVKOHM3TkVMdy14dW5lMFc5TFVBeQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "US data center restrictions could give Bitcoin miners an edge in AI, though challenges remain TradingView",
+          "id": "expanded:6aca3080861dded224",
+          "published_utc": "2026-11-11T20:43:19Z",
+          "title": "US data center restrictions could give Bitcoin miners an edge in AI, though challenges remain - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdVQ4LVAxc2Q1TkVPeGxvWWVkVkRpdlRZaHE4bG8wdzJsaHhldDZDb040d3pKQm10QUxCLUNYTkFabUk0SmNrNW0weTlzcVI4WjIyN1pwTm52ekFodGNXNzBiLTJDb0lTZUMzRjdmd3U0ZFd6U013aFJVai1WS05TeVM2Qk8yNDlTVV93SGtwRHl1MHJGbXZWUER2QmpGbVhIUzhSR2V0aFRHZ05LSndKelBsM2tDMHU4a0VXZGMydHFrUnFUZ1hZMHgzZEN5VTJ0NmN2YnEycXBXc3pOaklxYzVvcGk0a1R2c0tobg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "BMW Group localises battery cell supply chains in Europe and the US Automotive Logistics",
+          "id": "expanded:e2e68f52be4823091f",
+          "published_utc": "2026-11-11T16:56:53Z",
+          "title": "BMW Group localises battery cell supply chains in Europe and the US - Automotive Logistics",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbHdkeUVKTHlicV9EYUN6R1Z0eGNyZVV3UWg2bzN4QU1pLXdlU3RXSmxtZFZkdnFaQjdhTHNyQ1p5WXhZSHN5QXpEY2V1T0pKdl9uREdxNW56T2ZNRG1wbFRXSF9nYXFOVUNBZWRlMGp5dFZzaEZFQm9IV1VCYlRvbEFzMS1VRUJJSjRyU2ZBSno1WUpHN05XelI2TWp2YkQtQnd5dk5ac3A1SzIxQjkxdG1fRnV5MHZUaDA2RWtOcWpwa0JibXBB?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Daily headlines: Gas rates test Brazil’s US$12bn auction BNamericas",
+          "id": "expanded:33c26595fd8a0af74e",
+          "published_utc": "2026-11-11T14:43:46Z",
+          "title": "Daily headlines: Gas rates test Brazil’s US$12bn auction - BNamericas",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDI0bkVjakRhRExLZU5XTmF0VG1Tdmk4Y2JhTERwdjdQYWNRb0JkMDk0ZEYxUGMtRGdaYUFNeVhfSEpsdmpDaHBXTHJjNEhvU1UweWlfdFZ0czNMaUJEM2p3Z1hTOWdZRDNaRm4wbE1WeEJlWjVnWFRHQXFoOERvTDE3V0lKNnlla1dFYkc4cUc4UQ?oc=5"
+        }
+      ],
+      "theme": "ENERGY"
+    },
+    {
+      "lead_count": 42,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CBDC explained: what central bank digital currency is CryptoTicker.io",
+          "id": "expanded:40ee4cc4927c1a85dd",
+          "published_utc": "2026-11-12T00:48:01Z",
+          "title": "CBDC explained: what central bank digital currency is - CryptoTicker.io",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE55SF9adml3MVFleTNRaDJib3ZVMzJSUGw1VGdOQVNGRXRfU1JnQTExaFF3WXB6UnA2VUstOXhDQlRIY3VUbkZGVmJONXY4cE4yYjNpQkdvTDRQbmNHZTZmcFFLd2VRX253T3dyaGt4NS1aeUpPMHN4VURtcmw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Mark Zuckerberg’s Meta AI Predicts An Explosive Move for ETH: Is the Bottom In? TradingView",
+          "id": "expanded:5d827abe3f3cc22485",
+          "published_utc": "2026-11-11T18:53:42Z",
+          "title": "Mark Zuckerberg’s Meta AI Predicts An Explosive Move for ETH: Is the Bottom In? - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLTFSUEVkSWJ2REVhS3dmM3BJWXVIaU1UTGFNMllSMnAzR3lCbERTZUI5SG00enNvZldrMHNhQVJtQklJaW40TkNXbi1zTTR5U1VWY3IxNkdKN2pIRml2Y2lNTzJuaC1lMmp1b05sc2s2dGwyeWpob1dGem5BTkxHbHgxcHNaVG1FUDhmampqM3g1amJFVVZuWjRacmRKZ2hDeU1PaDdxUjFzZXduUmpob2lYeWp4RFpLSWlEOGhLako3TnY0Skhpbkl4aG4wZ18yNTFkTA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Russia legalizes Bitcoin trading for individuals starting Nov 22, 2026, with limits and risk tests. Pluang",
+          "id": "expanded:d98b9463d1bad3fe03",
+          "published_utc": "2026-11-11T17:15:48Z",
+          "title": "Russia legalizes Bitcoin trading for individuals starting Nov 22, 2026, with limits and risk tests. - Pluang",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTjBhOTVxbnRkRERQLWY4cV80OUZSdHpReTJEaFFYZC1SZVBFMkVGcTBpaVpDVUg5eFg5ODdIRjgtNVZvRk92RERpX3FfY2dGNHcyTlpmcXlxeVNJZVdDUG9XOG9pQ3RFWDFzNlo4NWJzSzVleUdLUmZrYWF0RGlGSVZJSDVHSkxsRnVoR096X3Z1WEtrdFEtWjFxTU9oanFfQlRTeGpHYjVkbngzRUE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin Trading Starting November 22 in Russia Cointribune",
+          "id": "expanded:c6ec4bfd0750e5eca7",
+          "published_utc": "2026-11-11T17:05:00Z",
+          "title": "Bitcoin Trading Starting November 22 in Russia - Cointribune",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZ1JTQU9QdVFxejFDbWNRblVoaHFLOXpnc2ZrVFdDdkRGZ192dW94T1pxU0ZKc1pWajlJZWtCa0c5NEVtdzVNMGZCMVFSYjNLUUd3MjVQT3J5SmZhYWdmbGR4U3lkekdKYnpiQXZzR2JiRzVrMkNOMlZIVGNldGRNRDVuNFo?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Glassnode: Bitcoin Loses $75.6K as Stablecoin Supply Shrinks Bitbo",
+          "id": "expanded:b09a39cb5addafee9c",
+          "published_utc": "2026-11-11T14:40:00Z",
+          "title": "Glassnode: Bitcoin Loses $75.6K as Stablecoin Supply Shrinks - Bitbo",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBid1FvZV9DS2d4bVAtMlg4cFJUeWRRMF9CNUdpTU55bV9rQ3c3NDEtaUtTa2JTZVdkLVlMXzM3UmFYc0lSVDNOZGFwbW5WWnJDcVdOdzloMEoxNXIwTUs5cjNvSl9hM1pycWFGMkxRZy1oVUYt?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Building an Anti-Corruption Agenda To Restore Faith in American Government Center for American Progress",
+          "id": "expanded:b591c195e6e948a177",
+          "published_utc": "2026-11-11T14:05:14Z",
+          "title": "Building an Anti-Corruption Agenda To Restore Faith in American Government - Center for American Progress",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU091Z2ZQX3hneDlBTkFlUFZFVmZmc3NQa0RySWx6MC12OU1iVHRoR3RQaXpSeGNfNjNxOTFVTHNUTE94YWlJdzYtZ1ZMQjJfLWs2QUJNQjE3Y2tFTFlZRmREMG45Q25ocHVZZWxBeEl6dllLbjlYOGZGVzJfa2NFeGhUTTBvejNMbV9tcm12S01SOVBNUkQ3b3NDUk5JRjU1MmltTkpST1lBTUpFaXUyOVZ3Mi14LVE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Global Central Banks’ Net Gold Purchases Hit 321 Tons in Third Quarter, Fifth-Largest on Record bloomingbit",
+          "id": "expanded:fa098f22d7dd27ecf0",
+          "published_utc": "2026-11-11T13:57:51Z",
+          "title": "Global Central Banks’ Net Gold Purchases Hit 321 Tons in Third Quarter, Fifth-Largest on Record - bloomingbit",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE92alVKZ1NMUVRHcWplVnh4Q0VhcTlLUmRsZHlsTElZNDNXQmxKT2J6N1JCaloyYnp0RldsNEJDY1NXdDltdjFsTHNlVnRJc3lyN2dPRA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Executive Summary: Building an Anti-Corruption Agenda To Restore Faith in American Government Center for American Progress",
+          "id": "expanded:8c5a378a3fee0e7a76",
+          "published_utc": "2026-11-11T13:57:06Z",
+          "title": "Executive Summary: Building an Anti-Corruption Agenda To Restore Faith in American Government - Center for American Progress",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbVNXUTZZQ3dDeVJoeVdEbVJRUDM0aDNfRkZVNE5xOFVUSXhuUGJmWjNuUHAtWUZlMTJTTS1UWGgyeW1FVVBWakdBNjQ5bXpRQ1kwbTR3Q0JGeld5OURCSmZCd2lfS3hLbGZGVzhuRERUWHFjMGZudnNxSXdVUFVTcUpDMUk4OVdLeXNVeVVKSTdLRXNWQi1WS0lKem1hTktibTJ5ZF8zc05PLURfNEREdVBCQ2dlNTVsNXZPUTU2cXZFLV9aRkhKTWRBazl1ZTQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Institutional Crypto Custody: ADI Chain Partners The Vault FinanceX Magazine",
+          "id": "expanded:bbde977d38cdbe7fdf",
+          "published_utc": "2026-11-11T10:39:31Z",
+          "title": "Institutional Crypto Custody: ADI Chain Partners The Vault - FinanceX Magazine",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMmgtUXprbU1EQ0QtZGZRSVVHVkhBcnpycEstanpCM1RvWTQwbmRWeWI0OW42NmJEeFdqaERnT3dyVVdyakl5OFhDTXBZTXN1NDY3VDZNd0xRRXlhZFp2ZElEeUx1UFY1alptb00tSWNkZ19UVXE3UlZlX0dYcEwxT1h2dGd3OHdoOXRuTW9pVWhGUHl5ZWNIVVMxMA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Hong Kong Targets Digital Asset Regulatory Bill By Year-End Crowdfund Insider",
+          "id": "expanded:a466d3cc05baf40f1b",
+          "published_utc": "2026-11-11T07:36:04Z",
+          "title": "Hong Kong Targets Digital Asset Regulatory Bill By Year-End - Crowdfund Insider",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRXNkcExzLTFvSzJfbmluVFZpbEd4bk9XSFRPMU02WlpNbk5aVll4QmdlVlZ2dTZjenpDMVVKRi1hcUxGdG9lcTd6cHlYbEd6ZUdDZnFnQXNMZ01fOFVQRV9jMXFUbHloSDAtN0Zxbklnd1ZTcFdKYWR6VkVWVDl3emZoZDFpZ01RcVp6eklYLTd3WFFGYnZVUzhxUlJ5c0JoVVU5UmVIQkVwLXBw?oc=5"
+        }
+      ],
+      "theme": "REGULATORY"
+    },
+    {
+      "lead_count": 39,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2507.08244v3 Announce Type: replace Abstract: This paper examines how labor market outcomes have evolved across occupations as AI capabilities advanced from generative AI chatbots to reasoning models and AI agents. We construct an occupational AI exposure score that measures the share of each occupation's work that AI could perform at each capability stage, and link the c",
+          "id": "adjacent:ef719c1942d2b32ab5",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Advancing AI Capabilities and Evolving Labor Outcomes",
+          "url": "https://arxiv.org/abs/2507.08244"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.12933v1 Announce Type: new Abstract: Closed-loop autonomous experimentation can accelerate scientific discovery, but implementation effort limits accessibility. Agentic systems may lower this barrier, although sustained operation on physical instruments remains largely unexplored. Here, using coding-agent infrastructure grounded in validated scientific methods, we de",
+          "id": "adjacent:8296065ad102e3cfca",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Auditable Human-Agent Teams for Autonomous X-ray Experimentation",
+          "url": "https://arxiv.org/abs/2611.12933"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
+          "id": "adjacent:3edff57aa6bcdf3b2d",
+          "published_utc": "2026-11-05T17:03:04Z",
+          "title": "Agents aren’t humans (but they kinda are)",
+          "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every...",
+          "id": "adjacent:96b94ca497c788e50a",
+          "published_utc": "2026-11-11T15:50:30Z",
+          "title": "OpenShell on Kubernetes: A guide for platform engineers",
+          "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "With the rise of AI agents like Instinct and Muse, the industry needs to rethink human identity on the internet and rely on biometric signals like voice, which is where Helix comes in.",
+          "id": "adjacent:f6c79f27dea3cee57b",
+          "published_utc": "2026-11-11T15:02:47Z",
+          "title": "Siri co-founder backs Helix for its voice ID tech",
+          "url": "https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "With Databricks at 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
+          "id": "adjacent:0632daad0551c02722",
+          "published_utc": "2026-11-11T15:00:00Z",
+          "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+          "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13176v1 Announce Type: new Abstract: Per-step model routers send each LLM call of an agent to the cost-optimal model dynamically within each session. However, every model switch discards prefix-cache reuse: KV caches are per model, so the new model must prefill the relevant context before it emits a token. Across representative agentic workloads, including a producti",
+          "id": "adjacent:625f99bb9e364c8472",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "SHADOWPREFILL: Keeping Your Next Model Warm for Per-Step Model Routing in Agentic LLM Serving",
+          "url": "https://arxiv.org/abs/2611.13176"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13196v1 Announce Type: new Abstract: LLM-based agents can reason, use tools and collaborate. However, coordinating increasingly complex agentic applications becomes difficult to understand, monitor and improve. Decisions distributed across prompts, tool calls and application logic make workflows implicit. We introduce **Recursive Capability Composition**, enabling ag",
+          "id": "adjacent:12d1fb70d3b9646ba0",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge",
+          "url": "https://arxiv.org/abs/2611.13196"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2604.16682v2 Announce Type: replace Abstract: Power has become a central bottleneck for AI inference. This problem is becoming more urgent as agentic AI emerges as a major workload class, yet prior power-management techniques focus almost entirely on single-turn LLM serving. Our analysis shows that agentic serving behaves fundamentally differently: each request carries lo",
+          "id": "adjacent:8d510e6ca0f3ed2f53",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "KAIROS: Stateful, Context-Aware Power-Efficient Agentic Inference Serving",
+          "url": "https://arxiv.org/abs/2604.16682"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13042v1 Announce Type: new Abstract: Artificial intelligence (AI) systems now produce research results in bulk: in October 2026 a single laboratory released more than 700 AI-generated mathematics manuscripts, only part of them with machine-checked proofs. Such volumes will be checked mostly by AI agents that call specialised software. A passing check certifies only t",
+          "id": "adjacent:98a2647e8283e1a19e",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Trust, but verify, audit and attribute: a human-in-the-loop framework for checking AI-produced research results",
+          "url": "https://arxiv.org/abs/2611.13042"
+        }
+      ],
+      "theme": "AUTONOMOUS_AGENTS"
+    },
+    {
+      "lead_count": 36,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Revival in foreign flows to back Indian rupee, dollar strength offers resistance Business Recorder",
+          "id": "expanded:d9fb3425afe48d8573",
+          "published_utc": "2026-11-12T03:13:35Z",
+          "title": "Revival in foreign flows to back Indian rupee, dollar strength offers resistance - Business Recorder",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaTFuSjhoREptby04NUdwTFc1a0lwMS1ia0NsbWNGazFPNEpXTHlZUEx0RzhHSUVHdHl5RGVsTEVJalpkNGpVU0hNY01KVnhKa3F1ek94T3Z0WWllU045S01QaVAta181TjJQXzlZT1FHeUJSeGl6SEo3dDZLdlV2UnZzeTdRbUVXNDdORXo2Q2FnTGQwa0pQTlZvY1BzRVgwSnZveHFWVTE4ZUNLNmQ0SlJQbHpjQ2o4MmV30gFWQVVfeXFMT2tkUzRJTVlPUkxvTFc5Y09zcUNEaXJTR0loNzR5RXRoMGZmTURMZjZMZHp2NVdQbnc1bF8xZ3F6T2wzMVJuSWdkblRpZTlYWi1zMmYtZ0E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "INDIA RUPEE-Revival in foreign flows to back rupee, dollar strength offers resistance marketscreener.com",
+          "id": "expanded:7716f5d2e7a5ba4067",
+          "published_utc": "2026-11-12T02:44:00Z",
+          "title": "INDIA RUPEE-Revival in foreign flows to back rupee, dollar strength offers resistance - marketscreener.com",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOVYza2d6Slh3UE4wajM3ampoX2tyUmQ3VmZhRUZJLXRPTjYyRU9IVHVxS1FQc29MODJ2THY3MXFxZVdoWV81enJtRVpqcEpEdUZpSm1NY1Q4NDdNSG5kbmw2cUxhR3RSNDk0TXF0N2RfSnRQRlJFaXl2T2poWHFLUDRXZjdRekJ1TWhsaFhBRzJIa2p3b3Q5bEdjSk1HdUZMQW1MR1BoaGJzRFFYb3RfLTB0VHd6bFVjNm9pVTRLRHpuSFhnZzEtbFp3UHJXLUNneDRj?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Dollar Retreats From 19-Month High as PBOC Strengthens Yuan Fixing; Onshore and Offshore RMB Both Reclaim 6.67 Level finance.biggo.com",
+          "id": "expanded:a74028f0f8fb35d3ee",
+          "published_utc": "2026-11-12T02:35:00Z",
+          "title": "Dollar Retreats From 19-Month High as PBOC Strengthens Yuan Fixing; Onshore and Offshore RMB Both Reclaim 6.67 Level - finance.biggo.com",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fMHhsUThOeTFsZFAxd1RCbFhSSFo0Ukt6Q1VabGdvQ01NaVAtblJXTzRmd2o1am5MU05wSm12Z0NhUmx4Q3htUkZOaVZYVTJfTTR4dFI0SndYbDI2Yl9kVXJrX1h0RGRaNEZodzNKdy1weWk1dUE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "China’s property implosion has further to go, and markets are worried SMH.com.au",
+          "id": "expanded:a458bc3edfdc077b3e",
+          "published_utc": "2026-11-12T01:05:14Z",
+          "title": "China’s property implosion has further to go, and markets are worried - SMH.com.au",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQY04zbnVlZmtjN2Q2S1lmZ1MydUNSeTNySU00X211OUZUVnJpbUx3NEktZUgyWjlYX1N3ZVFMTlZJVkxTOEwyQzlNS29mZVdQMGVoSXo1ZWZ5akVienpoNjRMWmVNa1prb0lOV0JvNFRZSlhBdXQ3cXFrc2VxXzVsQ1kxWDNCczBPMVRoZEhWS0kxNm01QVE0NmYxVkZjcEliaVJoZjJWdjRmYjhCMHg3anE5TFlEOWhyWUJialZpd3VEMjFmcGRGbw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "BrightSpire: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+          "id": "expanded:402c7c9c1f9a1bff34",
+          "published_utc": "2026-11-11T22:20:03Z",
+          "title": "BrightSpire: 3 Key Takeaways for Long-Term Investors - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRmlLX3FneGdzTTRjQlBjckdIeFprLWtTMGFpSWJnX091MEtKeTBmOWJGUXNjWlJzbkl5VERPbnhCalJ1dTdfNUkxYmFMYTM4bXJ2SHE3Q3V0VDZ4cTljSlVKMTVlN1ozOTZ2blk0d0tDZUpNaS1DbmhjU3A0ZHNvNDRndnU0VEszRlN1b1dsUkFzYWpRa2ttaGhwR3Bpdw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "US Dollar poised for further gains as Bitcoin faces mounting downside pressure amid monetary uncertainty and crypto market turmoil FXStreet",
+          "id": "expanded:ab05daaa552c00d818",
+          "published_utc": "2026-11-11T21:51:56Z",
+          "title": "US Dollar poised for further gains as Bitcoin faces mounting downside pressure amid monetary uncertainty and crypto market turmoil - FXStreet",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxObE5jbG02eWJrYTFkTGNWV25aOUpjYzkzWUpQc2RUOWN0NklFSm1Mb25NV0haN1ZGVUZFTkFyZk5pNUZ3cnlHOHdoYWJnME41TG05aFAyYU5PRlVBMm5Sclg4UjVXdHNlVkdnUHRBN2NQalF1WjVMdXM2WmszbEhkZGFEX0xQcjZrMDRjMHhyeDZucDBpSmE5VHdyUEg5ZjlwMkJSeDRtMkRyaTAtdDZVN2JITnNuaGdnTzJSQzV1SGZhbUZMQVVONEhRLXJWbWxreF9QZEcycER2M1dNUjlIaUQweE1BNDVzU3U5bjluME9iMGVKMzZROVl5dlRiM1puZ0FHdkZZSC0?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Goldman Sachs Group (GS) Backs Regulated Dollar Stablecoin Project Faro Simply Wall St",
+          "id": "expanded:9607b6c15843eecbcf",
+          "published_utc": "2026-11-11T19:18:10Z",
+          "title": "Goldman Sachs Group (GS) Backs Regulated Dollar Stablecoin Project Faro - Simply Wall St",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQ1EwR0RCNWs2Q0FKTERURnFWZWctVE9MVmNIVTNXVjdSVGI0d09pb3RBVTB4R25GcjNrWGhLQ0JLOGxtUUVNN3JUTU90Nzd2aGdWaHBucFI3eFZselhCYnRraEZmcDZBWEEyOERwLXp2MmZPdll1Wk5talpHNmlGeTVWNVFDLWZRXzhCUnBCMXNEVld0QmctelZLMVdfTVZ6bU1BOTJXc1RPUS0yYVUwdEhqYjBTMDhvdVBtXzVDRnJNaTdlZFl6VFQ3Zkw3cS05RktrTEhyZ3FjYnJzOFczRFd30gHnAUFVX3lxTE8ydl8ydFo3T1dFZWtWVEpXeHg4M1J2UHREOE1IQlVGT3NxOVM4YjZNdkthb2xXbmRwdVlXVmY4TmtOMHliWmlmWnhtYkFtOEhpZElxYnl5bWRwMDZRLWZRR1AwdjNVckRBV3ZNZ0FqdWZ4cnhpMlpmZzZqSjdLdnA2ZGJyc0JGd3pCYXFieFkzY0RhOW5TY"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Plume CEO Chris Yin Bets on Distribution Over Tokenization With $250M in Vaults Cryptonews.net",
+          "id": "expanded:59d506f629f100b94d",
+          "published_utc": "2026-11-11T18:44:37Z",
+          "title": "Plume CEO Chris Yin Bets on Distribution Over Tokenization With $250M in Vaults - Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1QUkdHdzZCV0ZFalBpV3k0OF9aM3JFWnppWk1weG5JaldSejh2RG1qaTMtUFduMmhWR2ZMQkxuX2d5NUxJUF90YTEtYUllNmQ2YTlCQg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Liquidity Squeeze Puts the AI Trade on Notice Connect CRE",
+          "id": "expanded:87c515adda4ae588aa",
+          "published_utc": "2026-11-11T17:03:35Z",
+          "title": "Liquidity Squeeze Puts the AI Trade on Notice - Connect CRE",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdEc3dFBqaEtIYTUzamVvZkpqakRDQ2dhN3dNV0V0SE5UeTdRX2N2dWREZ3RFcHR2VndiSHVUSDN0SVprbTI5ajhEbERjdVo4aE9oeDBaclAzX29xRlpoQndaSkowbDR1em4yclItU005VDNxTWZPYlhhZWoyejg0enFjUXhmOEQ3?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Dollar advances as markets price in December Fed rate hike Yahoo Finance",
+          "id": "expanded:df5f819cb9387aff84",
+          "published_utc": "2026-11-11T16:36:15Z",
+          "title": "Dollar advances as markets price in December Fed rate hike - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUU9SUDRLTXBTTHJnSjNkWExkQjl0ODM0S3hyRkNVVmt2bzdQWEQ1VHp3TC1RYV9EeEQxM2pFcHBlZ2xYbXdqQ05mLWcyUHZudk9FaC1nSXFqeVFKOFJadTd6UHNGTUJ1RWNpU3AtbUpqWE90eldxZjdlWVhJbVdELURTc2xTMXYwM3FOb1NmUFJVSHdNMk0zT0pGUm5qZDVqeVZ1bWx3?oc=5"
+        }
+      ],
+      "theme": "FINANCE"
+    },
+    {
+      "lead_count": 33,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+          "id": "adjacent:17c30834e16d3cb83b",
+          "published_utc": "2026-11-06T14:00:00Z",
+          "title": "The post-quantum future of web privacy",
+          "url": "https://blog.cloudflare.com/vole-mole/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13089v1 Announce Type: new Abstract: Kinematic quantum geometry describes fast degrees of freedom (DOFs) that adiabatically follow states parametrized by both the coordinates and the velocities of slow DOFs. It extends Born-Oppenheimer geometry, which depends on coordinates alone, introduces mixed Berry curvatures, and modifies the effective theory governing the slow",
+          "id": "adjacent:19bdbdf92606a2b4dc",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Kinematic Quantum Geometry",
+          "url": "https://arxiv.org/abs/2611.13089"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13315v1 Announce Type: new Abstract: In this paper, we present a problem that arose from quantum computing, when the quantum state to be transferred completely vanishes before the first occurrence of the perfect state transfer. It was posed as an open problem for 1D quantum chains with $n$ of qubits, where $n>4$ is an odd number. We present the solution for $n=5$. Th",
+          "id": "adjacent:5610d670a5fc11fc9e",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Early State Exclusion for $5\\times5$ Jacobi Matrices",
+          "url": "https://arxiv.org/abs/2611.13315"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13755v1 Announce Type: new Abstract: Quantum hardware can provide feedback for training circuit generators beyond the reach of exact classical simulation. We train generative quantum eigensolver (GQE) policies, transformers conditioned on molecular descriptors, to generate the state-preparation circuits for sample-based quantum diagonalization (SQD). Training runs fi",
+          "id": "adjacent:97aab82b5828813f55",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "A Hardware-Trained Generative Quantum Eigensolver for Sample-Based Quantum Diagonalization of Organotin Hydroxides up to 70 Qubits",
+          "url": "https://arxiv.org/abs/2611.13755"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13671v1 Announce Type: new Abstract: Anomaly-based malware detectors learn what benign files look like and flag deviations. Generative approaches to this problem can make use of a \"latent\" or \"prior\" data representation, which is often chosen to be a Gaussian distribution. We ask whether the choice of prior distribution matters, and whether one produced by quantum ha",
+          "id": "adjacent:efa33acd3104dee2ed",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Quantum-Assisted Generative Anomaly Detection: A Dimension-Controlled Study of Latent Refinement",
+          "url": "https://arxiv.org/abs/2611.13671"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13630v1 Announce Type: new Abstract: Fault-tolerant quantum computation requires decoders that combine accuracy, throughput, low latency, and scalability to large numbers of physical qubits. In photonic fusion-based architectures, erasures from photon loss and probabilistic fusion measurements are a dominant error mechanism, motivating decoders that remain accurate a",
+          "id": "adjacent:2e0851ed7243bcf0fb",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Machine-learning decoders for fusion-based quantum computing in real time",
+          "url": "https://arxiv.org/abs/2611.13630"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13085v1 Announce Type: new Abstract: While the entanglement entropy of a spatial subregion has been extensively studied, a properly defined entanglement entropy of quantum states in a time direction interval remains underexplored. We investigate the scaling behaviors of the recently defined time direction entanglement entropy (TDEE) for free fermion quantum states, w",
+          "id": "adjacent:2b3db8a910c1127803",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Time Direction Entanglement Entropy of Free Fermion Ground States",
+          "url": "https://arxiv.org/abs/2611.13085"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13110v1 Announce Type: new Abstract: Coarse-grained measurements provide a lower bound on entropy production, but how much microscopic irreversibility can they conceal? We construct a driven quantum system in which an imperfect counter registers a finite, strictly positive arrow of time while the microscopic entropy production is infinite. The system is a degenerate ",
+          "id": "adjacent:9d719ac521256c5b8b",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Finite Measured Entropy Production Does Not Imply Finite Microscopic Irreversibility",
+          "url": "https://arxiv.org/abs/2611.13110"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13154v1 Announce Type: new Abstract: We introduce a finite-memory repeat-until-success (RUS) framework for implementing rational spectral filters on a quantum computer, extending spectral filtering beyond the polynomial transformations implemented by quantum signal processing (QSP) and quantum singular value transformation (QSVT). Our approach interleaves queries to ",
+          "id": "adjacent:e77e9a553adaadac8a",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Rational quantum spectral filtering by repeat-until-success protocol",
+          "url": "https://arxiv.org/abs/2611.13154"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13079v1 Announce Type: new Abstract: Simulating a bosonic degree of freedom on qubit hardware requires discretizing its position space, and the qubit encoding of the resulting lattice determines the circuits that realize its real-time dynamics. We compare binary and unary encodings of a position lattice on superconducting (IBM) and trapped-ion (IonQ) processors. Bina",
+          "id": "adjacent:529122d50e46718177",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Quantum simulation of real-time bosonic dynamics with binary and unary position encodings on superconducting and trapped-ion processors",
+          "url": "https://arxiv.org/abs/2611.13079"
+        }
+      ],
+      "theme": "QUANTUM_SECURITY"
+    },
+    {
+      "lead_count": 32,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Nvidia CEO Jensen Huang has until the end of the day Wednesday to answer a call from House Republicans for a closed-door briefing on his affair with alleged Chinese spy.",
+          "id": "adjacent:e8cd024bf9d6800576",
+          "published_utc": "2026-11-11T19:22:22Z",
+          "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Opinion: The climate case for AI has not been made —By Mary Nichols, distinguished counsel at the UCLA School of Law and the former chair of the California Air Resources Board,…",
+          "id": "adjacent:647d2b2256ca377454",
+          "published_utc": "2026-11-09T13:15:00Z",
+          "title": "The Download: empty AI climate claims, and an Nvidia investigation",
+          "url": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Staera Semiconductor Emerges from Stealth with US$4.6 Million to Build Light into the Chip and Break AI's Data Bottleneck Embedded Computing Design",
+          "id": "adjacent:fdd3004a14643f6a15",
+          "published_utc": "2026-11-11T15:04:01Z",
+          "title": "Staera Semiconductor Emerges from Stealth with US$4.6 Million to Build Light into the Chip and Break AI's Data Bottleneck - Embedded Computing Design",
+          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNblBYc254VTVwYlR2NlFxMVZ4eUZjVW14SVBBazZLNXVQeUF3c09XaUZYMFo5RVRLREhrQTZLVXJaODVKMVd5OXhoNmZIbkRRVm9RYm1GUDY3bk0wX3BNcjZUR0lmbm9hN19IZWttRTUzbnFUbTFQMEx4NV9ZcnRxOXF4R2hBQVQyV3RoeWluSjJlY3hscmV2dDF4VWc5aUppaWFGdDZELVJCbmQ5YjhCOVlwUVJNamN3LWFyYzRzMF95Y2gwUk5XclRuYmZsMUZySElNUm1wa1gtUzVPN2RqYzRLX3kzckc2cGI5OUpQTFZ3bFk3MlB3U0o0TTE4OW1uLVA5eF95Z1BfQXZvY3BDYnp0MHJZMkFIVEFWZ0VtZDExemxIbWRSZE44MA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Explainer: Could Huang, Nvidia and company's board be held liable over affair scandal? Reuters",
+          "id": "adjacent:3ad59b6151ea0887b3",
+          "published_utc": "2026-11-11T17:55:31Z",
+          "title": "Explainer: Could Huang, Nvidia and company's board be held liable over affair scandal? - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMjZKSmVVbEFma0huZUVIajB2eVUzdUdEd2owTjNLbTZTbFQ5Z2F5OEs4WVp0QVdhZEpDU2xXQnhnTlJpQjlkMnREdGZEbkRyVW1hLXBsWklELTUxMU52bzVXMXJkeVRrVkx5aXV0YTMwcE1BVmJfTXJ2aTg3WGNkSnZRRTFLUllxTkVVVnZCc2JicjJmWGo0T08zRThvTmNQUHVfZkp2WUJwdXhIZGxNY2xFQ1ZZbVZsajJ0YWdB?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Nvidia hires leading US law firm to investigate Jensen Huang’s relationship The Guardian",
+          "id": "adjacent:558cf7dab1e005a3fe",
+          "published_utc": "2026-11-11T17:53:00Z",
+          "title": "Nvidia hires leading US law firm to investigate Jensen Huang’s relationship - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVE0zY21CWUpFX2xVMEZJRll3dzgxc19BYXFXLWxxWnk1eF9uSmtEZU5KVDVqZ29KOEVxdUJpdWlJU3IzQzNfUDVubHV3bzA2WFJwRC02eTdHcWZSb2FJX19JY2hsdHlzdHhlMmZMd2JGN080UnJ0R2lERXdocVowRkd5UlAzODVvclJ3eGVRbW5lZWVuaVpKT2tlNkFCWjdZbHVOVGd3a2E5VlhtNjJUbDRURDlVT0thaGtNWXYtMGtLdw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Nvidia CEO ‘should have known better’: Former FBI special agent The Hill",
+          "id": "adjacent:0d15d382d881c2389b",
+          "published_utc": "2026-11-11T16:37:00Z",
+          "title": "Nvidia CEO ‘should have known better’: Former FBI special agent - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNGFUWDJTR0k1dUQ3VEtRMzV0QTJuRldDWkJwRHg2dl9PSDZQVlZrbUVGSmNTcFJWeDJSZ2g3djVVblJuQTdVc2FLWDZ4M2RCQXNocWhmVjlKbVFubUhBS2FvVUprSXZvT0lNWjctRkNxeml3ZHNjN3ZPcDB1VDFzM1gtLVNtb25admhaT3N0UGcwYURL0gGaAUFVX3lxTFBoQy1fQXNtdmRQeGN5YXNkWmdydjNxZzF1S2taeHNzdnZhcUQzRWNCaFFIZkhtT1ViVVBXd1psMVN2N2dobWlSdDJzcVdwbTF3a1I2bGkzVEFqNEN5ZWppSjhDbXdKZG5BUTR5VDJidUF6RkhkM1RZQzZLRjNBX1dwUEYzOE04OUhuODk1Y21UQl9QSlR1clh4X3c?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bessent vs. Lutnick: Trump Officials Clash Over Nvidia China Chip Probe BeInCrypto",
+          "id": "adjacent:e9bd9d1da02e40b03e",
+          "published_utc": "2026-11-11T17:22:36Z",
+          "title": "Bessent vs. Lutnick: Trump Officials Clash Over Nvidia China Chip Probe - BeInCrypto",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKdWNpZ1I5TjY4ektUbWNOZEpLZjRkMFAyOURONnVwcWIwNDdaQWNGbHdETE5zTVpnTUJhNzlfQVJobmk5UzJtTlhlRUtDS1JoUW5IZ1dEVnJTdU5XTGZIaFhGdzl0Z2RNRExXYWl0WmxsRFR6eWc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Trump Officials Clashed Over Megaspeed, Firm at Heart of Nvidia Affair The New York Times",
+          "id": "adjacent:55f3c3bcdc074bf349",
+          "published_utc": "2026-11-11T17:11:59Z",
+          "title": "Trump Officials Clashed Over Megaspeed, Firm at Heart of Nvidia Affair - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOX0pEQXlBUVAtM094RWhmb0tUZDlKNW5FSGZ6RUpIQTBVaENVN2VtSEM2QWNRQ2tIYmpTbzB5eHFncmprYnBnb3JhbFlvc2JUeUZxWE1xbWNNTExHZklSVUpMQzJzQTVtc1BoMkJNQU9Ga1N5WnlHU2lQVzBwdzAwZndrTFBsR1lQb1B1Skd2QkdtVW9Y?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
+          "id": "adjacent:d1979994d31c8a756d",
+          "published_utc": "2026-11-11T07:30:51Z",
+          "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+          "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Watch Nvidia Is Playing Out Like a Greek Tragedy, Says Seaport's Goldberg Bloomberg.com",
+          "id": "adjacent:353aea33266f987192",
+          "published_utc": "2026-11-11T16:06:23Z",
+          "title": "Watch Nvidia Is Playing Out Like a Greek Tragedy, Says Seaport's Goldberg - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaGVfdDQ0SGZTOG1TSU4zN3R6NmtSNkI1OGhzTEJxX2FoMmlHUkFFQnpkUHFXbzVILVV3bHMxQ25zeTRSbnZaZlU4ODNCeXh5X2VteE04QmUwSDVOY3dIRnNONVlaaHZUQ2JhRXdyUTMzSFlwWVJhWEkxaGNNaDBMZnF3eGtVMHBYN29uM1pPeU0yTGJhejFIczZ0ZmF1WkZZR2ZXdGdMd01hZw?oc=5"
+        }
+      ],
+      "theme": "SEMICONDUCTORS"
+    },
+    {
+      "lead_count": 30,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "AI Stocks Add $253B; CoreWeave Has Best Day Since June 2025 FourWeekMBA",
+          "id": "expanded:b725895983e8fe76dc",
+          "published_utc": "2026-11-11T21:17:33Z",
+          "title": "AI Stocks Add $253B; CoreWeave Has Best Day Since June 2025 - FourWeekMBA",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNkNYcVgwVmZRTWpRUXY0Q2ROMUVUdTVtci10Sk1tRG9rVE1PdDVCUFFPRFIyNE4wUTUzcnR0OXhLcDUybDk2bHhkME55YWxzWHZmRlBNaEFYTEE2SDR1WkptbzJiU0k0ZTlCUjU5cU12MTZyZ2dYMVJqRlFnOW93NGFaZ2w0LVRnSWc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Nvidia-Backed Nebius Faces Crucial Wall Street Test TradingView",
+          "id": "expanded:3fc7ecc230c6215370",
+          "published_utc": "2026-11-11T19:02:41Z",
+          "title": "Nvidia-Backed Nebius Faces Crucial Wall Street Test - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVS1VMnlkUHdmZ1NTWFQzakNsSVdFVmRaTmkzcHFXdE9CUTZkSkpybG5YQ2QtLWNJczVhNUdqMmEwSFdOc2tWNHhNRWxfemkyMDAtSnQtYmRGbnpIcDNxZUY1MnhMSmtXODZvR1QtUFFVRlY1cGZMczRYTWh0eUxKbzhYOTJwSkY5LW1hdm10SVQ2ZldlYmxYZGVkLW9sbzNrRi02ZEZoOV93b083UTVpNQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "NVIDIA DSX AI Factory Enhances GPU Validation with Runtime AI Inventory Blockchain News",
+          "id": "expanded:dd90e8d467b080c186",
+          "published_utc": "2026-11-11T17:34:00Z",
+          "title": "NVIDIA DSX AI Factory Enhances GPU Validation with Runtime AI Inventory - Blockchain News",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR0xuUDdZLWpJODFOSGZ0Si1aNHFUVWRVRXFfUUlvaTV5d0t3RTkyMk5XcjZQczl5d3B4SDRmamlNcUdwZU5HTjVWdXVxNTZmU0xqOUs1akRDR2pJRlF0bzFrRVdXdFRyZXl0RE9xeGdIR1pnOEg4NjF4U1dPYmJCbkI4eWVQZFhVY0JZ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "NVIDIA Limits Cloud AI GPU Rentals in China eTeknix",
+          "id": "expanded:0f50d0751e5cdf1181",
+          "published_utc": "2026-11-11T11:34:08Z",
+          "title": "NVIDIA Limits Cloud AI GPU Rentals in China - eTeknix",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBQOW1zellQcGRmX09mSkxDUXZ6bFpYTExhbTFEYWJ0NjRIMHF5LUc4SktqaUFtTzgzV3R4bk41Ukdac3czOUxWUEtVQ2F5UXR3dm9LMFdfOGVnZ1VjUXVxdTJ3M2xxN0l6N3dLaHBYaDNoNFJPVXJF?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What to Watch in Nvidia Earnings: Huang’s Future, Data Center Concerns Take Center Stage Morningstar",
+          "id": "expanded:c8cd33b87017a5ba7b",
+          "published_utc": "2026-11-10T23:00:01Z",
+          "title": "What to Watch in Nvidia Earnings: Huang’s Future, Data Center Concerns Take Center Stage - Morningstar",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM1EwT3BDVXVxdlpLd182dV80azR6M2lrMHJFZlg4TElPMlpLeDVLSVFQaGk5WkVGLXZNVkNNMzJXSWtBTzRRVVFDZG84T1lRQ1pvX3d1ZkRERGZibkdaWXc3bHVjNWkxbE1SNDBnWUlEMWNRVFB3VENwQWlIWmV3d0FxSWNsanNwVE5aV0hxQ2xTbnIyblRMc0t1T3lZTzdIWE0zN01EV3BSNThSRkhobnp3?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Microsoft Tops Nvidia at $4.03T Market Cap [2026] shattered.io",
+          "id": "expanded:fcb020ab4d7f5d9c4e",
+          "published_utc": "2026-11-10T21:58:32Z",
+          "title": "Microsoft Tops Nvidia at $4.03T Market Cap [2026] - shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY0VxZ1lad2E4V2JXQzFDZ0dmbjRVUWRzaXBNLWk5MlFlbDZKdkZ1R2RRQ0NLanpLYmhxa2xrZk9CTkhRNXJnbkFMNlpOR3p4UmNHeVpJcWhVbUpneno3UnhGWDBCM0Jaa1puaW8yUWhiMThTUXhUYXVRZ3FWWWw1QzhvRVpPWGk0eXhFTjhjaU5ySnRrekFYbHRlQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Alice Huang’s Nvidia GPU Pitch: 0 Specs Confirmed [2026] shattered.io",
+          "id": "expanded:4a4c29cd3566ade7cd",
+          "published_utc": "2026-11-10T16:14:45Z",
+          "title": "Alice Huang’s Nvidia GPU Pitch: 0 Specs Confirmed [2026] - shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTEg4UXNhNzFmWTlWZmxzaVA5aC11VlRlNVd5Tld6UjU0Rjc3N3lWdmgxSkhmVG5wTmVQcVBVOGh5SjVpMW5haXVOcXlaTnljM1I4REEyVHFsYjRpUlBVUlEzbnFTNFVpT1lCblhEV0ZfeVJMMUN4VTZGNkhKMlZtQmc0cW9YcTJzNlFod0ZLTzE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "HIVE's AI cloud revenue jumps 71% as lower bitcoin prices and writedowns drive a $79 million loss MLQ.ai",
+          "id": "expanded:222fd45f92f1827c62",
+          "published_utc": "2026-11-10T13:54:22Z",
+          "title": "HIVE's AI cloud revenue jumps 71% as lower bitcoin prices and writedowns drive a $79 million loss - MLQ.ai",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVkZ1NktvN3UtR3ZwUU4zWHZjb3R5ek1qcl9uYkRXUWxPNXpsTkEwc0hkZ0Y2SGRfS3NpeXFZUnNaVXIzTlJ0S3hSLXdQcE5rTnVpbUJUTHNNV25vSEZnbVRkLUNFaHBQSTlwVWNoTnZaS0tsUFVEZ1Q3WDhseTZoYzJBeGlaNlJocm5lVWVZcU9HZmNUYnE1aXU5RkdfUENNX2d6c3YzQWk5ek0yTU95clRyRUFpQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Hive posts $84.9 million fiscal Q2 2027 revenue with AI cloud sales up 70% TheStreet",
+          "id": "expanded:eefd2189b940153acb",
+          "published_utc": "2026-11-10T13:21:05Z",
+          "title": "Hive posts $84.9 million fiscal Q2 2027 revenue with AI cloud sales up 70% - TheStreet",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWGowbk45NjNfYUk4dzJjMFJ1b0Y5cW9qSTVEU0tCbnVSVUFqQTNGSmRlckVWb2FONk9IaE5wN2JHRHFwMlVVck1kU21YUW44WHplYV9PT3JWYTIwcmlvT2JiTDE0RUVUbW8xTE5yQzFxZkNJdkdsN0p5cHk0S2hvNkRadFJRS3lmRUNBZXdnQWk5WnhXVTAyeWNTLVl5cWpRVGFrNDNVQkdkT1haZlNuWFhobw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Flatkey Launches Flatkey Compute, a NeoCloud for Dedicated NVIDIA B300 Clusters WENY News",
+          "id": "expanded:1fe4ad6dd6472d41f3",
+          "published_utc": "2026-11-10T12:11:39Z",
+          "title": "Flatkey Launches Flatkey Compute, a NeoCloud for Dedicated NVIDIA B300 Clusters - WENY News",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPcUJzemNPTWhtNVFJMllQNnZtaXd3cHk4UW53U1J4Ql93RU82emhwTlZmbm5Vb2JQUUlySUhndkNWS292SS1jdVRGN1JvQ3BHY3hwOHh3NDdrdlNTd3FMWEdGbkJmSXpXNVAxUUFlUUtQY09FRE41Y1FzNFVweU5CRlNMSnVxYldZNHgyYjZZMHVtV1JaaVFaV0tlQmgyRHlpQ0ExbFRweXdCUGRNakhmRGpwUzZyQk1ybVEwQW82TlZ6LWtWenpHeTB0cVlTRzVvRDY0MjhSVVZ1OGRIVHhsM29Tb0EtMWM2SE9r?oc=5"
+        }
+      ],
+      "theme": "CHIPS"
+    },
+    {
+      "lead_count": 30,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Russian cloud Yandex says drone attacks on its datacenters caused data loss The Register",
+          "id": "expanded:4a5ae8a9414557de2e",
+          "published_utc": "2026-11-12T01:10:24Z",
+          "title": "Russian cloud Yandex says drone attacks on its datacenters caused data loss - The Register",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSHZoeWE5cmRPdVJyNWRYenhJVHJiblJETW9mWjdfT25TR0szdy14U3g2ckwxYXZvRTBTN1VwRWZ3NXF6djRiSkdnZWRHT1QwLUdyR1dpVDNwLWxZejVZaXdWcG1xTC02WU1HbFJkb29GdjIzZ00xUXlZVmFtcmpnVVBqU09Dcmxub0hEU1c2Q3M2eHJ5ZXZwdXEteTk5UHpNa05XQzRBQV9rU1VSZm9PVUY4YldDV01YTXFpeUVLVGpyVFR0eEN2MFN3dw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Meta Loses 17-Year Infrastructure Veteran Amid AI Buildout The Tech Buzz",
+          "id": "expanded:193bcffa91d5bdf051",
+          "published_utc": "2026-11-11T21:06:00Z",
+          "title": "Meta Loses 17-Year Infrastructure Veteran Amid AI Buildout - The Tech Buzz",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPS281WF9VM3lZMTBhNmxoRExxT3F0RnBrNGJpMEZaOEVMUVV0ZkhNN09EQXlEVFBhVmFIaG5vNGg2cTlBOWJjREtzY3BzSGlralBwa0NUcnBCaFhnbFZVSmxfaVJ3cnRVNGx1dEhfZm4tWC1mUy1hTC1QdVpnYTBjX3NMWU1rOEpNd0M3YnV0WVBTbUZWZUE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Canonical web services outage disrupts Ubuntu login and patching ahead of Ubuntu Summit news.lavx.hu",
+          "id": "expanded:c0f38f186e9289564a",
+          "published_utc": "2026-11-11T20:26:42Z",
+          "title": "Canonical web services outage disrupts Ubuntu login and patching ahead of Ubuntu Summit - news.lavx.hu",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMFNDekZQa3dyNWVHOEptckdEUkZxZFAwa0ozcHI0YjE0YWM0NXlnNVA0Q0hmUVlmeFNOZjNHbnFXR2NXa095VDh5dVQ2VWdWTFRPVkNQSHBCekNhR2IzWHAtMUV5WUlsNW1FY0hEMzZZTTloMlZwajdNRGRYeWJCUllheVkzeWExX0tJU2Q1T3FLWDhkZE0yTlFpQmVWSTY0czM1RDAzNGZSSkpLamc3QkpyUzF2VEE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Firefox's built-in VPN outage in Iran — Mozilla blames suspected abuse by third-party apps TechRadar",
+          "id": "expanded:f94bd2ceb2334860c0",
+          "published_utc": "2026-11-11T17:12:50Z",
+          "title": "Firefox's built-in VPN outage in Iran — Mozilla blames suspected abuse by third-party apps - TechRadar",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPal9kZ3Q3UHA3QVF1aEhHaE5WZHU4aHVYbVRhNUlnU3pib2RMeUIzY3NoQ0MzNG9OQXVpRjdFd2JGZkE5UXcxS3dwZW02M1AxVnJzUWwyNVFVanpQS0EzZnZ4RVlQYXh3OHo2V2JTSUFwVFBUOUNfTmZrdURGZlFXa25IUG1SUWhnNVRYZ2dtNzBTMmx2RGNjeDd0bGtkNnVBanVZSW5DZUlFdnJQTnQyX2UzdHQ3Smt0S2dENWRvdGllV2Y3WHBYR213bWFSbVQ5Ti1XZw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "UK Commits £90m to Protect Undersea Cables Techerati",
+          "id": "expanded:077869145c8bad8843",
+          "published_utc": "2026-11-11T16:49:14Z",
+          "title": "UK Commits £90m to Protect Undersea Cables - Techerati",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdUNLMHdyaERiZXpUUExfWGl6T3NhUXFxeE9VUWN0NnRIdTk5clI2eUZvVmZjb3Vnd09ESm9GOWc4YTJlX0hmLVpQVUJBeGNYZzZaQlJlY2ZsYlFyNXpBRW5yUjVwelR2TGNOeHNVTmoxeDZGX0ZRRVlKbjdJVXowbDAxMWxfZw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Plasma One users locked out as authentication provider outage hits during upgrade Crypto Briefing",
+          "id": "expanded:44c4c148910f6d0a34",
+          "published_utc": "2026-11-11T15:22:53Z",
+          "title": "Plasma One users locked out as authentication provider outage hits during upgrade - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kcFJ5WTl2YW44dVVTdF9rQUp0SXFaazF6S0pvdTFUR0lmbElGSGZHUzRHRXd4YWhTQmd1QWI1SS1iendiQUw0Sno5cTFVaWpqUllnSTZCX1FWdDdCR2poTmNZc0JYYXZhQXF0TENOMDVHQ0FfTXFj?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CISA Adds Actively Exploited Cisco BroadWorks Flaw to KEV Must-Patch List Homeland411",
+          "id": "expanded:358e2e7d2bd01c3820",
+          "published_utc": "2026-11-11T12:38:19Z",
+          "title": "CISA Adds Actively Exploited Cisco BroadWorks Flaw to KEV Must-Patch List - Homeland411",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOc0ZlYVBIUHctUDd1VTkzT0NjOG50TXIyNWJ0cDVHWHZxc2k4cU5ULVdaOHEtYzZHRFFZcXJpTUIwYWxYaGFNRFVzdnU1eHRjMENsN1o4dlVKZmJiVVdpa2FVNHpLbnJvZWlsdG1VSmZsRTZLcTZXbE0zYWNOUHdRSkFHODE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The SASE “Trilemma”: How Regulated Enterprises are Navigating Digital Sovereignty, Resilience, and Global Cyber Threat Intelligence Palo Alto Networks",
+          "id": "expanded:3daa3c6dd9a7f8498d",
+          "published_utc": "2026-11-11T12:37:06Z",
+          "title": "The SASE “Trilemma”: How Regulated Enterprises are Navigating Digital Sovereignty, Resilience, and Global Cyber Threat Intelligence - Palo Alto Networks",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQWE5sdEZPOWg4STFlb0FpOFNaajhsUExOOF9sbkJCdTVwTnp0TFhpSncxb0QtSnZaRGdfaTc0ZVhqWG1RV0NsSFdsT3lHUnd5V2RobTlhanh1dXNRSTY5dXhEUG1jY25qV09JWEdzQ2E1ak9yRFIxcUJ3LVBlbFJCYnZZaWdTWFJ4NUxWRk1OZ1czTzNldVUyZkhEQlFLTGlOdVEwWXBRRmktVjYwQ1ZYRlpvb2FJOEVEdnZhUGJJVG96OVdES2gya2o2V3VHSEplT3FhWHNacjBvNTU3NUlGU0d3cXkwcFdGMTVOWWw0NFlwdDJMT2dOWVFINXBEQnVCT1Rn?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Data centres are overlooking their most vulnerable asset: the substation yard Data Centre Solutions",
+          "id": "expanded:e36e2ec7f7da923aa9",
+          "published_utc": "2026-11-11T11:33:29Z",
+          "title": "Data centres are overlooking their most vulnerable asset: the substation yard - Data Centre Solutions",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNjRmUUYwcHRHeU9oMmJhWGNMTHVvel9tWEZTbWZRYnJFbE5xaFFmLTQyY3NLXzUxc05GckpCUnZrMDVOYklnNEpJRldxa21WU0JyNGxnZmFzQkViUWhJRlA4ckozYU0zWl9FdmUwMTY2amZEN2lpSUVBSEJLdmFPNXZNX3BySmdhUkFfWU14Y3pFRTQxaUJlbmFvYUd0ak83ajZFcWpUM0k1YVhYMmhWTWRQQTlreFE5VzMwLQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks GBHackers News",
+          "id": "expanded:fd00c9b1f1207e7394",
+          "published_utc": "2026-11-11T09:41:10Z",
+          "title": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks - GBHackers News",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NNjhsQ0ZkTkY0amlFREl4VTFJLW5YU0hiRGM1WDdHbVJKRXdiZVhRTzd3SExTeEp4Y0pWelBLRndmRXRXMHhseGhRa3NON2NTOURZa2lqbXVaTlh5T2tKS1AzSFdBRlXSAWdBVV95cUxNTTY4bENGZE5GNGppRURJeFUxSS1uWFNIYkRjNVg3R21SSkV3YmVYUU83d0hMU3hKeGNKVnpQS0Z3ZkV0VzB4bHhoUWtzTjdjUzlEWWtpam11Wk5YeU9rSktQM0hXQUZV?oc=5"
+        }
+      ],
+      "theme": "SECURITY"
+    },
+    {
+      "lead_count": 24,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Crafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (b",
+          "id": "adjacent:355fee0a647f2e330b",
+          "published_utc": "2026-11-11T00:47:20Z",
+          "title": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-x8x8-p968-x646"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjectFile::ApplyFixup`. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Sc",
+          "id": "adjacent:f5c3ea79ccdbcf6e61",
+          "published_utc": "2026-11-11T00:46:12Z",
+          "title": "Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged `executionComplete.json` from another local user and execute attacker-controlled output handling. ## Announcement Announce",
+          "id": "adjacent:25ddaf8a0eab22dfc3",
+          "published_utc": "2026-11-11T00:39:12Z",
+          "title": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write when processed by DIA. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base",
+          "id": "adjacent:73d25a328c0a100e85",
+          "published_utc": "2026-11-11T00:35:02Z",
+          "title": "Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-fpxj-5c99-g7vj"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Score:** 8.8 (base score",
+          "id": "adjacent:ab255b8d1959825f1c",
+          "published_utc": "2026-11-11T00:34:13Z",
+          "title": "Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-r8h3-p8p6-ggp7"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. An oversized Portable PDB document name can be truncated during allocation and cause a heap out-of-bounds write. ## CVSS Details - **Version:** 3.1 - **Severity:** High - **Scor",
+          "id": "adjacent:a812b0057c1a97ad36",
+          "published_utc": "2026-11-11T00:32:59Z",
+          "title": "Microsoft Security Advisory CVE-2026-114159 - Visual Studio Remote Code Execution Vulnerability",
+          "url": "https://github.com/advisories/GHSA-3cgx-w6gm-fqrx"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components. Insecure temporary files used by Aspire CLI can allow a local attacker to obtain sensitive configuration information. ## Announcement Announcement for this issue can b",
+          "id": "adjacent:da23008564653c4a65",
+          "published_utc": "2026-11-11T00:31:23Z",
+          "title": "Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+          "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components. An insecure temporary directory used by Aspire CLI-generated builds can allow a local attacker to influence MSBuild response-file discovery and execute code with the p",
+          "id": "adjacent:ab1cf898cc9819ef38",
+          "published_utc": "2026-11-11T00:30:06Z",
+          "title": "Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Malformed chunked HttpSys requests containing conflicting content-length headers can retain request and connection resources. ## Announcement Announcement for this issue",
+          "id": "adjacent:56b194fd0e670b215b",
+          "published_utc": "2026-11-11T00:28:01Z",
+          "title": "Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+          "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components. A Kestrel named-pipe listener configured with `CurrentUserOnly` can lose protected namespace ownership during recovery, allowing another ",
+          "id": "adjacent:d4bdff46a8218a0bd5",
+          "published_utc": "2026-11-11T00:25:04Z",
+          "title": "Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+          "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h"
+        }
+      ],
+      "theme": "CYBER_SECURITY"
+    },
+    {
+      "lead_count": 24,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Google DeepMind uses AI to verify Signal protocol security SC Media",
+          "id": "expanded:09024be607c7e173c0",
+          "published_utc": "2026-11-11T23:40:03Z",
+          "title": "Google DeepMind uses AI to verify Signal protocol security - SC Media",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQkhZTm14MVAyNDhVNm9USTZIMTNoVlNYV3pjZ09Gd1JMeXZWMW42SGRCOUlrN1NEWmxkMEpsN3FtUlRVc2otZDM3WGJiSDdoRDgwemxXWWxBdXBBV01BcElqbEJhVE8tNW9MNmpQZXdoa2ljM0NyZG1qZ3h6YnJhSC1rSVdtU3BrOVVmQ0Izb2pIQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cybersecurity means bottom-line business Putman Media",
+          "id": "expanded:45986f5eeee37862e1",
+          "published_utc": "2026-11-11T19:19:54Z",
+          "title": "Cybersecurity means bottom-line business - Putman Media",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMXU5b05ONVpCQmFkdko1eHJ1RU5HRF9odDVfZXNVYXBmN1BoSloxYlFXNkZZbnhxandvMDU5aFp5TF8zUEtlSHZQa25jNmt0TnhhZDV1V09PUmpaVnNmQV9ydWdPR2k1VzFGUDR2TkszUThaNVJCREJCY1FEOUtfdmt0dkREdmVpeXlCUTVTeTdocUs1YWM5SVpKUTZHcnlzdTF5QUZRRUlyRlZyU0t0M3JZNGljWUMyZ2kw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Flare Network Fast-Tracks Go-Flare v1.15.1 Hard Fork After Exploit Attempt on FLR Nodes Cryptonews.net",
+          "id": "expanded:b01e121787b597447f",
+          "published_utc": "2026-11-11T16:25:45Z",
+          "title": "Flare Network Fast-Tracks Go-Flare v1.15.1 Hard Fork After Exploit Attempt on FLR Nodes - Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9nb2FhRTM0YndhRmVCNDF4Q0tvNGMxdTdld3JhVzJNY2NuS0RLWnhGQ0JpbU5XajBoaGs2X3NaWUxZRGRxR2VOZUhTWUNubEVuT21LUTZXR1lfQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Google DeepMind formally verifies part of Signal protocol — Ars Technica UA.NEWS",
+          "id": "expanded:7bcfd63a3c0c8afeaa",
+          "published_utc": "2026-11-11T15:00:31Z",
+          "title": "Google DeepMind formally verifies part of Signal protocol — Ars Technica - UA.NEWS",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVotS2QyQUFWbFR4dk14bU5SZkJqRXdxWXM4b2VPcEpsTDdBS3gzQ0xpd0lwTi1zWk5ENktWdjN3aHJJeXhDQkpHVXRZNTRLamZRNFVQMWFGSWtkTHFwNDRnbkVSTUtoaVZscTdnVjR6SUtuS1padXBnc3lCMmpHTmZlZXZPdG1wblVjQlotVTJvRHR4eGFIZW1UNktkbmZ6cXBzZ0VkdXRTQ1FUZ1E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Google Says AI Could Help Make Software \"Unhackable\", But Is That Realistic? TechRound",
+          "id": "expanded:9dc0b1e4bb18e7640b",
+          "published_utc": "2026-11-11T13:05:50Z",
+          "title": "Google Says AI Could Help Make Software \"Unhackable\", But Is That Realistic? - TechRound",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWDJYbjItRVdQemhONGg4N083cTk4Q1RGYVhuRko3ZDltQ2M4dWpoVUpWV2R2NExWTVJObVlVRTloYjJtY2pqQmtyeW9YRjFVNV92NS1lWjVJSDk2aThWOEFwR204T3lZR0pFUUtHeTh3VXNlODNjZDFKTEZkSmJHM2ZFT3FGYzkwb0dJUUphc0xraUxfRFQzcmVvTkpKN0YtaU9yODM0U01IT05FSDFmRjhITDhQeVp6alhuRWpn?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The SASE “Trilemma”: How Regulated Enterprises are Navigating Digital Sovereignty, Resilience, and Global Cyber Threat Intelligence Palo Alto Networks",
+          "id": "expanded:3daa3c6dd9a7f8498d",
+          "published_utc": "2026-11-11T12:37:06Z",
+          "title": "The SASE “Trilemma”: How Regulated Enterprises are Navigating Digital Sovereignty, Resilience, and Global Cyber Threat Intelligence - Palo Alto Networks",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQWE5sdEZPOWg4STFlb0FpOFNaajhsUExOOF9sbkJCdTVwTnp0TFhpSncxb0QtSnZaRGdfaTc0ZVhqWG1RV0NsSFdsT3lHUnd5V2RobTlhanh1dXNRSTY5dXhEUG1jY25qV09JWEdzQ2E1ak9yRFIxcUJ3LVBlbFJCYnZZaWdTWFJ4NUxWRk1OZ1czTzNldVUyZkhEQlFLTGlOdVEwWXBRRmktVjYwQ1ZYRlpvb2FJOEVEdnZhUGJJVG96OVdES2gya2o2V3VHSEplT3FhWHNacjBvNTU3NUlGU0d3cXkwcFdGMTVOWWw0NFlwdDJMT2dOWVFINXBEQnVCT1Rn?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Google DeepMind AI Verifies Signal Encryption Behind WhatsApp and Private Chats in Major Security Breakthrough Convergence Now",
+          "id": "expanded:24f0aa847fa1478263",
+          "published_utc": "2026-11-11T10:50:49Z",
+          "title": "Google DeepMind AI Verifies Signal Encryption Behind WhatsApp and Private Chats in Major Security Breakthrough - Convergence Now",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVHdNczItNUIwcS1aTk56Nm44am13SU1Xa01vU2dodS12Wm5BM0tWeFFlckpDZGtCeHVkZk04SlJJU0owb00zMTlxZ2xlcE1kUTM2bktHYUVYUDlkWEpYLWtCdDFYR0g0bGliMVZuQkFTcDlYNUpTTjlReFJhVFZrZ0U1LS11MHJEdHdsbDY1YzMyVWFJYzFKT3BKRXAtdmdWM1NudW9UYl9uRVFHV3lzREhqZVNTTUhGNkZiSGdOTlI5U0N5dXhoYVZwbzNzQTE2eGw0WlNDOG1OQzFoVmhHMVNSWmRUVjBoMnhGX3ExQ1lYR2lCbVZkQ1VkRQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "DeepMind Mathematically Proves Signal Protocol’s Security ForkLog",
+          "id": "expanded:96d81dd54144affc44",
+          "published_utc": "2026-11-11T10:43:13Z",
+          "title": "DeepMind Mathematically Proves Signal Protocol’s Security - ForkLog",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMFhpNk5Fdnl4THdxbXBoZTdaTmoxUE5XUVQ3T2JFZi15dExUSmt0UF9IRXU4NmlWVWFsUmxSQUhQRnd1RjVSR3BEY3Vkb1pYNWRSZmNwbThiOVdxeDU4Vi1FNTJad2pZRDFGc0RRUVhpUWdMMmU3S05JOGtEbjRsME45QUR3T00?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "pakcert alerts on critical teamviewer remote code vulnerability NewzTodays",
+          "id": "expanded:7c3547aee949f1cc19",
+          "published_utc": "2026-11-11T10:38:24Z",
+          "title": "pakcert alerts on critical teamviewer remote code vulnerability - NewzTodays",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOTFsT3ZIT1pQNHFZb1ZYQ18wU1NwSEI0UUlkaWh0MndicVdISklpQWprZ2dKUFV4dVowLXFQc0pvMEFvMEpFeW1WcHN5RnU0eFdoQjVEcElDNDVPTkxYb0toOFh2SF9WTWdDUW03cVVxNkZsTzBYZWdOUDVpblZZNWhQRFZFU0RuTUZyMENJTms?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Google DeepMind just proved Signal's security with six million lines of AI code YourStory.com",
+          "id": "expanded:db9dff0e2a44543f49",
+          "published_utc": "2026-11-11T10:33:40Z",
+          "title": "Google DeepMind just proved Signal's security with six million lines of AI code - YourStory.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UU1dLbS0zOHNoTmhLQ3gtLXhGRGotS1I1WlB1LXM3OWpnZXJDSmU4eUt1clZQa3NZZVpKTDR5NmktR290TzlNOGlsQWpkUnZhSi1zdUJMV0RmZ2tGRjhtYnVFdlVhTC01cXhIZ2NZTjZocEhfblFKcVFZTHdRMWc?oc=5"
+        }
+      ],
+      "theme": "NETWORK"
+    },
+    {
+      "lead_count": 22,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431) by @Rocketknight1 **Full Changelog**: https://github.com/huggingface/transformers/compare/v5.22.1...v5.22.2",
+          "id": "adjacent:d21b529a373a701519",
+          "published_utc": "2026-11-06T15:43:27Z",
+          "title": "Patch release v5.22.2",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.11.0 is a hardening and performance release. RPC calls that can do unbounded work are now capped or cancellable (`eth_callMany`, `trace_callMany`, `debug_traceCallMany`, `eth_getProof`, `mev_simBundle`, `eth_simulateV1`), and the release brings a broad set of transaction po",
+          "id": "adjacent:0e97a33b581885b2d9",
+          "published_utc": "2026-11-11T10:47:00Z",
+          "title": "Reth v2.11.0",
+          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.11.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.10.1 is a maintenance release. Follow up to the EVM2 release with further performance and stability fixes. ## Update Priority | User Class | Priority | |---|---| | Payload Builders | Medium | | Non-Payload Builders | Medium ## Binaries [See pre-built binaries documentation.",
+          "id": "adjacent:0dcde00f3265aa06ba",
+          "published_utc": "2026-11-06T18:53:31Z",
+          "title": "Reth v2.10.1",
+          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.10.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "![image](https://raw.githubusercontent.com/paradigmxyz/reth/main/assets/reth-prod.png) ## Summary Reth v2.10.0 is a hardening release. It fixes an engine panic after a reorg below the persisted tip, bounds `eth_callBundle` work, and stops `reth download` from deleting files outside the datadir. It also brings several RPC correctness fixes and P2P interop fixes. `db repair-trie`",
+          "id": "adjacent:c685f27abbbec91dac",
+          "published_utc": "2026-11-05T16:18:11Z",
+          "title": "Reth v2.10.0",
+          "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.10.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged `executionComplete.json` from another local user and execute attacker-controlled output handling. ## Announcement Announce",
+          "id": "adjacent:25ddaf8a0eab22dfc3",
+          "published_utc": "2026-11-11T00:39:12Z",
+          "title": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components. Insecure temporary files used by Aspire CLI can allow a local attacker to obtain sensitive configuration information. ## Announcement Announcement for this issue can b",
+          "id": "adjacent:da23008564653c4a65",
+          "published_utc": "2026-11-11T00:31:23Z",
+          "title": "Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+          "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components. An insecure temporary directory used by Aspire CLI-generated builds can allow a local attacker to influence MSBuild response-file discovery and execute code with the p",
+          "id": "adjacent:ab1cf898cc9819ef38",
+          "published_utc": "2026-11-11T00:30:06Z",
+          "title": "Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Malformed chunked HttpSys requests containing conflicting content-length headers can retain request and connection resources. ## Announcement Announcement for this issue",
+          "id": "adjacent:56b194fd0e670b215b",
+          "published_utc": "2026-11-11T00:28:01Z",
+          "title": "Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+          "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components. A Kestrel named-pipe listener configured with `CurrentUserOnly` can lose protected namespace ownership during recovery, allowing another ",
+          "id": "adjacent:d4bdff46a8218a0bd5",
+          "published_utc": "2026-11-11T00:25:04Z",
+          "title": "Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+          "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. `PathString.StartsWithSegments` can mishandle percent-encoded backslashes and permit authorization checks to match an unintended path. ## Announcement Announcement for t",
+          "id": "adjacent:1ffe99e1c2d70d9565",
+          "published_utc": "2026-11-11T00:24:05Z",
+          "title": "Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
+          "url": "https://github.com/advisories/GHSA-8w29-6cjc-h6w4"
+        }
+      ],
+      "theme": "DEVELOPER_NETWORKS"
+    },
+    {
+      "lead_count": 21,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "QKD Supplements Encryptor Key Establishment For Select Corridors. Quantum Zeitgeist",
+          "id": "expanded:047a3fa1fe6896dcdb",
+          "published_utc": "2026-11-12T00:41:25Z",
+          "title": "QKD Supplements Encryptor Key Establishment For Select Corridors. - Quantum Zeitgeist",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcVN6Z2RaR1kwbzhiSEFLcVY4Q1BYSkU0cU9wOU1XUW52aEo0bHpvdjBGckFNWlQ3b01mU1Jxajc3R0J3dlAtWTNmQndGS0NkcVEteDFPdnpZdXNtQlhMNU9ZbmtkRV9tWm1BT182OWZSS1NoaFJRamtGdW93UWJOVkdPbGI?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stacks Labs Completes First Post-Quantum sBTC Transfer on Mainnet Crypto Economy",
+          "id": "expanded:40c591c89e895043d2",
+          "published_utc": "2026-11-11T22:36:41Z",
+          "title": "Stacks Labs Completes First Post-Quantum sBTC Transfer on Mainnet - Crypto Economy",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWdULURhQ0hndmxRUW83NUQwTUF5ZElNbHBEcmhVOTVIdlJITlluWGZrSEFqQ1I4alN1Nm4tSHlmTDkxZ2dYZFg4Qk1VcEFpb0FFQkRRTkRrVng3YmdER0FRRW9OSHdRMUJCdWpsNk9iMzFSSkNJQlJhVWcyaVR2LU1wU05IWm9abThwbHVqWms0TzBFY1FXOA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stacks Tests Post-Quantum Signatures With sBTC Transfer Cryptonews.net",
+          "id": "expanded:b9be181c2a94e4918c",
+          "published_utc": "2026-11-11T18:10:56Z",
+          "title": "Stacks Tests Post-Quantum Signatures With sBTC Transfer - Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WTTZZQ0JTUjVPQWNNV0FySGwwaXlrQWliTmR0Q0JWb0FLOUFvY3p4SmVPMnZWMVJacEZRSFlmc1QzanNxZnVIYW9LaHFWT2dLTG9GMlpQYjU?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stacks Labs says it completed first post-quantum sBTC transfer on mainnet Crypto Briefing",
+          "id": "expanded:7df6d6fc450e169494",
+          "published_utc": "2026-11-11T16:06:50Z",
+          "title": "Stacks Labs says it completed first post-quantum sBTC transfer on mainnet - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jREhkRTl6VjlrbFFRNmhScE96VmpNTUxVeW1kNjBxaHBfRmFkWXd2WG0tT1RIMUtES2ZsTHM0UFhCeHR4TkNwN212UUw0dkJGWGpwa05NLUhYZF9NSmZKaTVYb0VVeHRJTE5lWEUtcm0yaUph?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "XRP Ledger Draft Proposes Quantum-Resistant Signatures Without Fee Changes www.tokenpost.com",
+          "id": "expanded:cb3bd0d5665cb2d197",
+          "published_utc": "2026-11-11T10:33:36Z",
+          "title": "XRP Ledger Draft Proposes Quantum-Resistant Signatures Without Fee Changes - www.tokenpost.com",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OUl8yVFV1aGdiQWF3SWFBYmJCNUZ0bmI5Vzd2MG00eHlheDYtOFYwVDhMN01YcGN0WFhnNDBTWWdzSGdjc3FYNUs0ajRZeV9qY2QwSlJQSEViR1E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Guest Post: Quantum-Resistant Wallets Could Support Institutional Blockchain Adoption The Quantum Insider",
+          "id": "expanded:bcb9e34a13545d42ec",
+          "published_utc": "2026-11-11T09:38:55Z",
+          "title": "Guest Post: Quantum-Resistant Wallets Could Support Institutional Blockchain Adoption - The Quantum Insider",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX1BOOUZYYXdWaUpKaFN1Z3ZsVGY3UVdkVm5Eei1fUnB6NlU4bjNQbHN2UHhpMG5uekFYLUFDNURnY09EczZrVEZMNkkyZjdxMTdPVmxpQ25CYzVJemxITzMtb214YTQteE5aVFQwcDFjNHFPbms2MXNlcjc0NGVLbVZkazNZRTdlcTM3LU5Ia3ppc0VlRGZ2RWx3TzQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Zcash Developers Target January for Quantum-Resistant Payments CoinMarketCap",
+          "id": "expanded:a6531e822dae2bb7b8",
+          "published_utc": "2026-11-11T07:50:44Z",
+          "title": "Zcash Developers Target January for Quantum-Resistant Payments - CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSFozT3VTTkhyaDl6R2ZHZ1pTRkFETkdEQ1ZoVElOUTZzMkpwVThJak5MMlM3YUZpakEtbHBZSG9WOFpCSjVlWnFfRE1yU3BqWHBmbHJCT1VIZDg4UFBoZXhuT2pGYmU1R0wwdHJsU2Z2U1JpUjFoRW56N3A1VlltRmw0R21YenZGZlg3ZE1CZTFhdTAwaU41V0FnRER1V0RfX2U0MEZNRQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "XRP Ledger Roadmap Puts Quantum-Resistant Accounts on the Agenda for 2027 TradingView",
+          "id": "expanded:c5ab9b4db282dd1409",
+          "published_utc": "2026-11-11T06:00:00Z",
+          "title": "XRP Ledger Roadmap Puts Quantum-Resistant Accounts on the Agenda for 2027 - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPc2xjZVU4ejROcWVHSVZzdVVyRExvcmxkQVFqcnBSU1pHUEdxbnNoZVB6S3lsZjZaZzBodEpLazZtR3ZxdFpNdTl4ajhZcDFnZk1sbWkyUUdHWmx3S1VKb2RQdTA0alZLdWJqUC1nU19xMnBjNGZEbWYtS1dTZ0JwekVxeW1pYi12MnNFTEctYU1ya0RROXNSc3BGd0o4c1hJYU9lR19VeUVmelREZ3NiQVY3WDJjMVFnSW9NcUVEcWZnUXQ2TElkVmJPTQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Solana Prepares Quantum Defense With Phased Falcon Rollout CoinMarketCap",
+          "id": "expanded:2feb43d90d49e4d09a",
+          "published_utc": "2026-11-11T04:04:55Z",
+          "title": "Solana Prepares Quantum Defense With Phased Falcon Rollout - CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSm01ZzZ3cThmTHVoZnFReWd4VnUzaTVwRWRCR3hIZWJzaGVYcXhwd2xCTS1haHJTMW45R29wbi1teTlkSjJ2Y1dtR25oaU5RWFNWLVdrVW04RWliZWVGTm1LN1JFa3FTeVBZRGVyRXdZNkozX1A3UTVPT1B6UG45OXFDaW1RZzRjWEQ1dFhIaGR1eHZDMEtuQW9kY1Azb3RjNnc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "XRP Ledger Targets Quantum-Resistant Upgrade by 2028—The Risks and Costs Bitcoin News",
+          "id": "expanded:0edbd1a5dc9fd7059d",
+          "published_utc": "2026-11-11T00:20:53Z",
+          "title": "XRP Ledger Targets Quantum-Resistant Upgrade by 2028—The Risks and Costs - Bitcoin News",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYlR6RFptSVF2RGJKN3l3VkJINVpzNDhlcUtWTG5DZXgxOFRvT2VVYktncGFPS0czbFJ5b21ERkx0cGtsOFI5cXBfa1BQWmlhNzZQZHF1TnZnMXRqLUZWU2hsRkd4SkRrMFkzakhhODQ2OGVUbUxvSE9XSXV4M09oRjQ3RjZHaEtabkRfaE1BX01Qa3p5?oc=5"
+        }
+      ],
+      "theme": "QUANTUM"
+    },
+    {
+      "lead_count": 13,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.12992v1 Announce Type: new Abstract: Energy-based models (EBMs) assign a scalar energy to every joint value of the observed and predicted variables. In decision models, the prediction is chosen from a finite list of options provided with each input. Inference then reduces to comparing the energies of the options, and training lowers the energy of the correct option r",
+          "id": "adjacent:d8030625e2c409f983",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "ZeroPoint: Lightweight Energy-Based Decision Model",
+          "url": "https://arxiv.org/abs/2611.12992"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2609.35111v4 Announce Type: replace Abstract: Simulation studies of home batteries under real-time electricity pricing commonly find that synchronized charging creates new load peaks in distribution grids. Yet all home-battery simulation studies reviewed here treat wholesale prices as exogenous, ignoring the effect of battery dispatch on the prices that guide it. Charging",
+          "id": "adjacent:06c9b6d3fd20ee9b3f",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "The overlooked price feedback: Why simulations overstate distribution grid peaks from home batteries under real time pricing",
+          "url": "https://arxiv.org/abs/2609.35111"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It’s also where…",
+          "id": "adjacent:abadaff33b649e2ac4",
+          "published_utc": "2026-11-09T19:35:33Z",
+          "title": "The backlash about data centers might really just be about electricity",
+          "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2609.10053v2 Announce Type: replace Abstract: In many power systems, installed wind and solar now exceed peak electricity demand. In very sunny or windy periods, curtailing renewable generation becomes a precondition for grid stability. While turning off wind turbines and solar panels is technically easy, support schemes often give renewables an economic incentive to keep",
+          "id": "adjacent:bd5b7c1f7bd7fab448",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Do wind and solar curtail at negative electricity prices? Incentives and evidence across two decades of German renewable support schemes",
+          "url": "https://arxiv.org/abs/2609.10053"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13320v1 Announce Type: new Abstract: Axisymmetric solutions of the classical wave equation in three spatial dimensions are shown to be in one-to-one correspondence to functions which annihilate the two-electron kinetic energy operator expressed in coordinates relative to a fixed nucleus.",
+          "id": "adjacent:fd4bfe37da468df34b",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "The wave equation and two-electron atomic wavefunctions",
+          "url": "https://arxiv.org/abs/2611.13320"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13755v1 Announce Type: new Abstract: Quantum hardware can provide feedback for training circuit generators beyond the reach of exact classical simulation. We train generative quantum eigensolver (GQE) policies, transformers conditioned on molecular descriptors, to generate the state-preparation circuits for sample-based quantum diagonalization (SQD). Training runs fi",
+          "id": "adjacent:97aab82b5828813f55",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "A Hardware-Trained Generative Quantum Eigensolver for Sample-Based Quantum Diagonalization of Organotin Hydroxides up to 70 Qubits",
+          "url": "https://arxiv.org/abs/2611.13755"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13802v1 Announce Type: new Abstract: LLM services have become essential infrastructure for applications such as chat assistants and coding agents. Service providers need to attribute resource consumption to individual requests for purposes such as billing. Among these resources, energy is a key metric for assessing the cost of serving each request. However, serving e",
+          "id": "adjacent:445e0a7e103f2528fc",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Scaling Shapley Energy Attribution to Large LLM Batches",
+          "url": "https://arxiv.org/abs/2611.13802"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13866v1 Announce Type: new Abstract: This paper assesses the economic benefits of cross-border electricity trade in the context of rising energy prices and geopolitical uncertainty. Switzerland provides a particularly compelling case because of its geographical location and limited integration into the EU electricity market. We first use the Nexus-e framework to simu",
+          "id": "adjacent:5ec828359c4be7d6b8",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Economic Benefits of Cross-Border Electricity Trade and Domestic Electricity Production in Switzerland",
+          "url": "https://arxiv.org/abs/2611.13866"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.10731v2 Announce Type: replace Abstract: It is widely held that wind and solar power increase the volatility of electricity prices. This paper argues that the literature conflates two distinct types of price variation: across delivery time and across trading time. Determined simultaneously in the same day-ahead auction, prices for power to be delivered in distinct qu",
+          "id": "adjacent:c7e1e3b309397fbe4a",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Have wind and solar energy increased electricity price volatility? And what is electricity price volatility, anyway?",
+          "url": "https://arxiv.org/abs/2611.10731"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13156v1 Announce Type: new Abstract: Electrical solid-state qubits are generally initialized, manipulated and read out through diffusive conductors. We show that the disorder-induced low energy modes of such a conductor --- diffusons --- impose spatially correlated dephasing on any qubits that share it, a mechanism we term diffuson-correlated dephasing. Starting from",
+          "id": "adjacent:b1f52613543dca66c8",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Long-range correlated quantum errors from diffuson-correlated dephasing",
+          "url": "https://arxiv.org/abs/2611.13156"
+        }
+      ],
+      "theme": "ENERGY_MINING"
+    },
+    {
+      "lead_count": 10,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Nancy Pelosi’s replacement is ready to regulate AI —Grace Huckins As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a…",
+          "id": "adjacent:86c8055bf762325102",
+          "published_utc": "2026-11-10T13:10:00Z",
+          "title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
+          "url": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy. I spoke with Wiener on Friday, only a…",
+          "id": "adjacent:0edc42b4a75bc906c3",
+          "published_utc": "2026-11-09T17:05:43Z",
+          "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+          "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13715v1 Announce Type: new Abstract: Aggregate outcomes can conceal network configurations that expose households to uninsurable risk and require different public services. We study a regulator's joint choice of a corrective activity charge and an information institution in a two-population network game. Although aggregate behavior follows an exact stable law, distin",
+          "id": "adjacent:6655224bdd145f4942",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Optimal Regulation and Information Institutions with Hidden Network Equilibria",
+          "url": "https://arxiv.org/abs/2611.13715"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2606.30533v2 Announce Type: replace Abstract: Cloud-based online services face significant sub-second load fluctuations while needing to meet strict Service Level Objectives (SLOs). Cluster operators often over-provision resources to protect SLOs, sacrificing utilization and cost efficiency. Existing reactive and proactive autoscalers, serverless (FaaS) deployments, and V",
+          "id": "adjacent:0c0876458c448ab19e",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Reconciling Strict SLOs with Low Cost under Fine-Grained Load Fluctuations",
+          "url": "https://arxiv.org/abs/2606.30533"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Netcoins Appoints Andrew Leigh as Chief Compliance Officer TradingView",
+          "id": "expanded:43933d476bd10221ae",
+          "published_utc": "2026-11-10T11:00:00Z",
+          "title": "Netcoins Appoints Andrew Leigh as Chief Compliance Officer - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS1pMd0lMR0dWZGhWTGt1M2NxR3loWEFIbW02VUZ6eC1EV0p1Qml0UU9EQW9qMkM1U25HNXlTU2Z0bElLMkdnOHBjMFB6Z2lwWUxlb2VCSlhWY0lMNEZvWk1lSWVnUE0yYmJucDlEZThOV0hsRTFzaUxtYzM5aWhQZXBLeS0xMThWR3JMQ01NRzVSbl9kbGlJemhrekY3dFNERHdlb0lWSzBiUkNpLVZRYmZsOGZkQTdmdmFfMg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "New CBN Rules Raise Compliance Bar for Stablecoin and Crypto Operators https://www.nigeriahousingmarket.com/",
+          "id": "expanded:e64dc7cc6d8e9d0bb2",
+          "published_utc": "2026-11-10T09:55:16Z",
+          "title": "New CBN Rules Raise Compliance Bar for Stablecoin and Crypto Operators - https://www.nigeriahousingmarket.com/",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb3BqNlRzSUJxZXNOQndtQzc2Q1M4U0xOWGRqekhLckE5VVJYSXNVZ29reXcyWUFjUk9WWG1scG03Y0xLODdwbkpJazA1WExCNTNTMHQzQTVxZG92TTJjelpkNXFiNVB1UVY5SlF4X1BWc0RFeEFtcl8zcWxwTkJqZDdSTTlyaHpwbTVyc3pWMVpiTW9YcUN0U1poSHg5dw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Stablecoin Regulation After Trump's Crypto Backlash OneSafe",
+          "id": "adjacent:a1b3ba183a782e14c1",
+          "published_utc": "2026-11-11T02:54:43Z",
+          "title": "Stablecoin Regulation After Trump's Crypto Backlash - OneSafe",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrMXNhNXgxS2V5RUU5bnY0ZlYwTXlfeFg4cTJvbzRTM0JTYnNldkVabXJ5U2FHUGQyOTNDTHpjeDcwajFvMHViMW1nN0M2ZExDaUNiUFhkZ2VWdnRiYzhYWGZjZVVIOFJmWFJZa2J4STZJck5tcnFQU1VvSQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "House Democrats prepare tougher crypto rules with SEC oversight Crypto Briefing",
+          "id": "adjacent:17823e231338af5f9d",
+          "published_utc": "2026-11-11T10:53:38Z",
+          "title": "House Democrats prepare tougher crypto rules with SEC oversight - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3BCNXRtZFRXeWJqQS1iLVVSbGNWNUpId19KVkZzcEdNWGVjT1YxcFFOYlEweEY0MkNfQW8xUkNJTXRDaVZsMVdzbkVsN3U3X0YxZVhlTmFsTU5QaGsxMHFvclBwR0RJQmxIenF4dVgwSmNHTHVFbmdsU3Z5YXlneDNn?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "RWA.xyz partners with StarCompliance to bring tokenized assets under compliance watch Crypto Briefing",
+          "id": "adjacent:0e5018f7d8e7dacb15",
+          "published_utc": "2026-11-10T17:03:58Z",
+          "title": "RWA.xyz partners with StarCompliance to bring tokenized assets under compliance watch - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZTFCZ3dxNGhyYmtPemZ4QzNuY3RIdTdoNC1mUDZwWjNsbDlMYm1QSm5sbm11aHk0NC1DOThSemJrQ202azhSQ1g0VXNUT3ByVVhtTzhJUmJtTFBrLUlkeWZrMnRQWkFBZ0xTcnpEV3BFbzg3Wi1hTjdid3psS0NkelowTQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Alta raises $47.5M Series A to build a compliance-first blockchain for banks Crypto Briefing",
+          "id": "adjacent:c00935d75f605ef6ab",
+          "published_utc": "2026-11-10T14:24:42Z",
+          "title": "Alta raises $47.5M Series A to build a compliance-first blockchain for banks - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RamdvZXVfM1FjbVdIXy1FbC1pbWZxb2NYMDZtNXN0RTlxTUozQlBVeXJxV0J4Q3ZVaEkyTVpPUWtuWWhhek9CLUdVUG1aS0dHcmlNc18zYjJMRnlxN0ZXYjBiQ1RTS0FWOTRWZXFwOEFPazZsSjJaQWd3?oc=5"
+        }
+      ],
+      "theme": "REGULATION"
+    },
+    {
+      "lead_count": 9,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Guest Post: Quantum-Resistant Wallets Could Support Institutional Blockchain Adoption The Quantum Insider",
+          "id": "expanded:bcb9e34a13545d42ec",
+          "published_utc": "2026-11-11T09:38:55Z",
+          "title": "Guest Post: Quantum-Resistant Wallets Could Support Institutional Blockchain Adoption - The Quantum Insider",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX1BOOUZYYXdWaUpKaFN1Z3ZsVGY3UVdkVm5Eei1fUnB6NlU4bjNQbHN2UHhpMG5uekFYLUFDNURnY09EczZrVEZMNkkyZjdxMTdPVmxpQ25CYzVJemxITzMtb214YTQteE5aVFQwcDFjNHFPbms2MXNlcjc0NGVLbVZkazNZRTdlcTM3LU5Ia3ppc0VlRGZ2RWx3TzQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What the Ethereum Foundation’s New Institutional Team Is Meant to Do Burlington Free Press",
+          "id": "adjacent:6b86185fb64c7a1d4f",
+          "published_utc": "2026-11-11T14:00:00Z",
+          "title": "What the Ethereum Foundation’s New Institutional Team Is Meant to Do - Burlington Free Press",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOWFNVWEtPYUtIUnVfOGZWMFB2NjFSN3dwS1R3UFBwakdtNi1LWlNJVGV5WlVTbmtnWmJwTzJUTUY1cTZPZVNqalM1ZVhEZ3ZzVVFpOEdwc1M1T1c5bHlMSTI2QmNOaVVUZlU2YVg2MmRRbTdxdGRBSFV1N1BVeTljWkpMUjdXWjFwMXdUWVNxbVYtY1ZqM0t6UVdieVJwblVlYUUtZHotUEU4MERyOHpwbnplSUNtR2xEUUowOUlfNXFFS2E1UjdRUVY0Zzl2c3FyZ3V1Q2gyemc2Yy1HLWpLaFEtekxVcE9BbjFBV2Zpd2hsU28?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin barely flinches at hot CPI as ETF selling slows CoinDesk",
+          "id": "adjacent:a24c1216b353d737ed",
+          "published_utc": "2026-11-11T12:19:30Z",
+          "title": "Bitcoin barely flinches at hot CPI as ETF selling slows - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT3Y0dHcyWEVqRUhxUFdzUlVuWGlwb1ZyaWVEcTlPYUxBVFk2UUJvcEY5RlJuQ1BSRVVBWGdHeWY3RUk2cmlkZ1RaQTlnekVpRlJJOHVUTnlvX3ZDTFVxbTRMZDZESE9HOUEyZ0JmdEVUeEpXaWdZVkpZQlJPU3VwUHN4RTgxTlN5NEp2RTBzMzJlT2Uza3NOOXpzYXZfSHhSWnhhUg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "BlackRock, Coinbase and Chainlink Executives Outline What AI Agents Need to Make Payments Cryptonews.net",
+          "id": "adjacent:c56d387d96ba8fc8de",
+          "published_utc": "2026-11-11T16:25:51Z",
+          "title": "BlackRock, Coinbase and Chainlink Executives Outline What AI Agents Need to Make Payments - Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5QNHhTNV9WazRULTZCVG82NHZXNXpidnZ5OFFDNHpjUHZDX0lLTVFDb1pKOTFocGMwaklUOHBGZGpRWDVwZG1IZWpjbTQtMzFkOWRNTjVMWG12S3lJ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Alta Secures $47.5 Million Series A to Build Institutional Blockchain for Global Banking https://streamlinefeed.co.ke/",
+          "id": "adjacent:7b602612c247aef05e",
+          "published_utc": "2026-11-11T09:41:26Z",
+          "title": "Alta Secures $47.5 Million Series A to Build Institutional Blockchain for Global Banking - https://streamlinefeed.co.ke/",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQmotWi1KelY4blJmcGlhMC1TMFpVQzVsbS1mS3VNQmlXdTFuTDFidVhtTzdXUU5vUFV0MmNPUlUxQnhxeVFNRV96Sl9vUjhTMVhwWDM4bFRCNHlmaWd2SE41OGlNTU5xeGtTQWtsTE81OFNKZGlzNnlTV1NhYTFtTjU5TUlFY01uMUwteG9ocWgwVlM3RUJKTHlndkFGZU5jaXhOcFZQamdVOVI0UFVZUUFhZzVaQzQtSVFYUUtR?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Crypto Today: Bitcoin, Ethereum and XRP struggle to find footing amid spot ETF outflows FXStreet",
+          "id": "adjacent:bbd7e974e9228ec824",
+          "published_utc": "2026-11-11T10:05:56Z",
+          "title": "Crypto Today: Bitcoin, Ethereum and XRP struggle to find footing amid spot ETF outflows - FXStreet",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZEV6eUFoV3V2ZFdkRE9zZlVlT1Q0RXhUclBDMVV5M0FPUkN1NWlNRHhCRVhoc1p3RktEZXkwZmJkOXUtWUxPUkc3NGlJYmVKamlOM09xWS14YS1LZ3lWajBrRWs3My1nV3pTY0ZBUEgzUXVnbVpzcHVYOFRsWEVlZXY5NWlzTDVyR3I4eTlCQmZoblg4Tmo4TF8teWFVUWpPQUpVcEVWZnRZT1VfM3ZfTnJHcldLMmF1VzVicXBrdGFxTC03b2F1RHZRanV1M0VySWR3LWFBOWJ4eWdpalE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Crypto ETF Outflows: Solana Loses $10.6M, XRP $6.9M FinanceFeeds",
+          "id": "adjacent:e067c99d207815921d",
+          "published_utc": "2026-11-11T09:28:28Z",
+          "title": "Crypto ETF Outflows: Solana Loses $10.6M, XRP $6.9M - FinanceFeeds",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3hqWVhVbHo2ck5MVVpsbjJoYnlrbDZwdnFLZU9sX0U1MUlCMjl0YmUxZkFucFFhdkw5blFueGdYOEFHWjkzcm1TN0I5bGo4NXgzX3BYUEZEcHdHcHFWS3V1THhoTEEyajlVcXYxMFBVa0wxY1A4d3A3ZVVYbTRaSTQ4V2xMRVB0RU5pbHM4UnlSQnB4aUdIRDJBbFhYRnRQbXlxZ1dHNkVvcDM3SHB5LVNRUldIQQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "INSTITUTIONAL | The Largest Spot Bitcoin ETF Sees Record Outflows After Historic Crypto Hack BitKE",
+          "id": "adjacent:be4288088396e7996b",
+          "published_utc": "2026-11-11T08:00:03Z",
+          "title": "INSTITUTIONAL | The Largest Spot Bitcoin ETF Sees Record Outflows After Historic Crypto Hack - BitKE",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wcW0yY3MyWHNmYkUzU1FlM2pVQk92eU5tSWZmSDQweDNfWk1JQ2dJc2NacGJ5UXYxOVI2MXFxNWEwNkdOdERLYTlocUJSM25QTjMwV0tIQ1NIeUJxSjJSUDhTQk1JTUIzU0plUVNpd2pqQ2hjUU5iSnU4azVsZlk?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Ether ETFs Shed $184.6M in a Day as BlackRock Leads Redemptions TradingView",
+          "id": "adjacent:71de0d24fc747fce45",
+          "published_utc": "2026-11-10T20:00:00Z",
+          "title": "Ether ETFs Shed $184.6M in a Day as BlackRock Leads Redemptions - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNakFpUG1RTjNFTGt4UUdacnkwbkJTUlNlNEdzMzE2X3NueWt0LXZfRENuakxhelNXbkc3MkFQbkt1ZGJaM28xTnV6VWJBN1JfcXpmQk96eWp6OHgtaGNCakhXZHphRlhpcGpPeXFHdnVUT1g2ZlYxVks3aXdQV09Zd213RW5CWWgyTko5VThXa3JFY1BUdE92QzlLc1RUdGtLQUY2RUdReF9UenBWTU5UbjJFR2ZtNW9SMUZyNQ?oc=5"
+        }
+      ],
+      "theme": "ETF_INSTITUTIONAL"
+    },
+    {
+      "lead_count": 9,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13030v1 Announce Type: new Abstract: Vision-language-action (VLA) policies have demonstrated strong generalization in robotic manipulation, yet processing dense visual tokens often incurs high inference latency. Visual token pruning offers a practical way to reduce this cost, but identifying a compact set of tokens that preserves reliable action generation remains ch",
+          "id": "adjacent:83e5972329a2a5b1d8",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "APS-VLA: Action-Guided and Future-Aware Token Pruning for Efficient Vision-Language-Action Models",
+          "url": "https://arxiv.org/abs/2611.13030"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13630v1 Announce Type: new Abstract: Fault-tolerant quantum computation requires decoders that combine accuracy, throughput, low latency, and scalability to large numbers of physical qubits. In photonic fusion-based architectures, erasures from photon loss and probabilistic fusion measurements are a dominant error mechanism, motivating decoders that remain accurate a",
+          "id": "adjacent:2e0851ed7243bcf0fb",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Machine-learning decoders for fusion-based quantum computing in real time",
+          "url": "https://arxiv.org/abs/2611.13630"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13079v1 Announce Type: new Abstract: Simulating a bosonic degree of freedom on qubit hardware requires discretizing its position space, and the qubit encoding of the resulting lattice determines the circuits that realize its real-time dynamics. We compare binary and unary encodings of a position lattice on superconducting (IBM) and trapped-ion (IonQ) processors. Bina",
+          "id": "adjacent:529122d50e46718177",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Quantum simulation of real-time bosonic dynamics with binary and unary position encodings on superconducting and trapped-ion processors",
+          "url": "https://arxiv.org/abs/2611.13079"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.10292v2 Announce Type: replace Abstract: Large language models (LLMs) are increasingly explored for resource management across the Cloud-Edge continuum. However, embedding LLMs directly inside latency-sensitive control loops places inference latency, execution jitter, and hallucination risks on the critical path. This study argues for a different use of LLMs: a conti",
+          "id": "adjacent:2a1f479a277f7de2ca",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Continual Instruction Tuning for LLM-ased Management of Continuum Resources",
+          "url": "https://arxiv.org/abs/2611.10292"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.12956v1 Announce Type: new Abstract: DeepSeek Sparse Attention (DSA) reduces the computational cost of attention through token-level selection. However, its indexer still scores the entire causal prefix for each query, making indexing a dominant source of latency in long-context inference. Notably, the indexer alone can account for more than 50% of total prefill GPU ",
+          "id": "adjacent:bc06a8e9c22b14927b",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "ADIndex: Layer-Adaptive Sparse Attention Indexing via Group-Level Distillation",
+          "url": "https://arxiv.org/abs/2611.12956"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank launches digital asset custody service for paying clients The Economic Times",
+          "id": "adjacent:b00a139f171a81e450",
+          "published_utc": "2026-11-11T09:01:00Z",
+          "title": "Deutsche Bank launches digital asset custody service for paying clients - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwRXVQeFZqZ0Z0ZjVtalVHZDRzbDY5YnRwQ2xxVXlDZ05aeEV5eDU3eU5qaGNZM2xPbVhYTENEcjRodWhlUFlYRW5QT3FzM25FUGwxWjlYTkxCX1VPak1oQ2tQZEpPeTI4LWt4dmtYUi1NcS16Qk9BVjE2ZFRabW1ZddIB-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwR"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization CoinMarketCap",
+          "id": "adjacent:75929a37ba8effd9f1",
+          "published_utc": "2026-11-11T11:47:40Z",
+          "title": "Tether Signs MoU With Nairobi Securities Exchange on Tokenization - CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY3dCMDY1TmJ0bk0wRFRvOGZQT2M4VjNvU2l5RTZPdkp4SnNEUjg1RDdjVy1IMW9VdkhXV21PakVUN0F4V1o0cVptNU5Ed0xSVW1QZkRaSU5LbGdWR3RMT1RMdFY3aHZCc2JqSWVabUhNdHVWRFFxemp2ZlFUUUQwYmlLSDlrY2tCdlN5am1TaFZFTDBac2tuTUtic0YzQ3VHS25SYkRka0pJcWc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank Crypto Custody Is Now Live: Will the BTC Price React? Coin Gabbar",
+          "id": "adjacent:df214242ea09cbd200",
+          "published_utc": "2026-11-11T12:30:00Z",
+          "title": "Deutsche Bank Crypto Custody Is Now Live: Will the BTC Price React? - Coin Gabbar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQzVES2h2VF8zdlVPOEhoSHVNUUVjOTZZZXVVbHIxZnNIVnZjQWRWLVU0RDBoQVFCcXFaOEZWdEUwaUxTOWlUWlZWOFgxb21EWHc0dTJCTEhFeW1ScGphSkwwWDhBOTJmLTlEc3NSMHBJMUUxMFpmTFpQYmMxNF9DRVFVMS00ZEV3WG9SUi14LVU?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "DeepSigma Opens Token Offering of Up to $10M on Republic for Its On-Chain RWA Derivatives Exchange The Defiant",
+          "id": "adjacent:2e98b0a56e997215c8",
+          "published_utc": "2026-11-10T23:01:33Z",
+          "title": "DeepSigma Opens Token Offering of Up to $10M on Republic for Its On-Chain RWA Derivatives Exchange - The Defiant",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNzc5cWE0RldnbFJWY1RRRV8zLVMtNmpVQUo0bm1zSzVLaUh2YjVHVlVQeGVIOWF5eXhRU3FsRTNVVjltRlBhcmNLVmdzNW5KUVFxN2lhRGZDS1Rnd053TDZyTUJ1dEllcWNqZWx1OVhwZmJhTXNhSTBXdU0yaUNWNHpMUmp2alpGNWNhbXc3MlZQdF84MnlnRXRzSWhxSzFpa19oRVZnWFNEdGNVRmZWbUs0NlkzdTZCZEtzMXZCT0QxNHlLTXJPYy1VNjZoY0NvOVVvektn?oc=5"
+        }
+      ],
+      "theme": "EXCHANGE_INFRA"
+    },
+    {
+      "lead_count": 7,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "arXiv:2611.13616v1 Announce Type: cross Abstract: On blockchain-based exchanges, faster blocks weaken the priority-fee competition among arbitrageurs and shift rents from the block producer to them. Equilibrium liquidity peaks at an interior block speed; beyond a threshold, an active liquidity provider cream-skims and passive capital shrinks. Evidence from the Base Flashblocks ",
+          "id": "adjacent:c6d928ca1ea08f0823",
+          "published_utc": "2026-11-11T05:00:00Z",
+          "title": "Optimal Trading Speed on Blockchain",
+          "url": "https://arxiv.org/abs/2611.13616"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Clara raises USD 105 million for AI and regional growth The Paypers",
+          "id": "adjacent:0760bbb3c66e68ccef",
+          "published_utc": "2026-11-11T14:42:18Z",
+          "title": "Clara raises USD 105 million for AI and regional growth - The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOU9DSTlGcHp3ZkdqY2JQMDdfMUcyZnpTOHdMN0RQQUkzbmpYOXBMc3lyTVRjYnVuWlNRRGRiS2l2ektGSVBYWjA2RDNYR28zMGd2djBCVkxJOV9iX29vZG5laHNtTmZCZk81WDcwc2xldGhTMm1pYWhBN1BEYnJoRFBGb0FIRWNNcEIzaWczcGtjb1Z3YW9TaFZ4MVpwN1pMQUFyNWNfX3NiUQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Wall Street Open: Nasdaq Slips 0.74% as Dollar Firms; Buy and Sell Setups Across Stocks, Crypto, Gold JournalArta",
+          "id": "adjacent:9440cf386fa5e5d703",
+          "published_utc": "2026-11-11T13:21:36Z",
+          "title": "Wall Street Open: Nasdaq Slips 0.74% as Dollar Firms; Buy and Sell Setups Across Stocks, Crypto, Gold - JournalArta",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOWQ0T3hSLW5Hel9rY2dpWlNRa05uc3U5V0sxNmQtdnNxZG9CMGRnRUhKa3lNb0YtdVZ2bzYyajQxcUF1dTNMN08wMk9pb1gzZHpDUUJiUXJibktReFJSYmxsMWwyQmlKN21YSkFEZHJ5MUxFM3dRTU9HWWFaQkYtc21ITnhnbDdNckx2N2dNNVpMeUV1cXk0T1VnTk5DaldxUlFZSm1WZnVnM2VJS05HWC1NSHpTTTF3clVzVUlsVUxqN2tPZFhpbm54YUNiZk1D?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Crypto Market Plunges as US Inflation Fuels FED Rate Hike Fears – What’s Next for Bitcoin Price Rally? TradingView",
+          "id": "adjacent:483a706f20cf6dee6e",
+          "published_utc": "2026-11-11T09:12:14Z",
+          "title": "Crypto Market Plunges as US Inflation Fuels FED Rate Hike Fears – What’s Next for Bitcoin Price Rally? - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNb2RjU2pEQl94ZnlXNXczYWx5VjctY21hTEN3WE5LckpPYndsdXpacGEzOVMtYWRYMVpPWlZ2NXlEU1NobjFIR0hNMmViU2l0dHc5WGZ0c0tWZE40aTgzRERqV3lmWlMtSll0VThydW1ZdE1kbEVycF9JWDBBVFYza04xQ1FFMGJJQTFqeF9zMXZxZWNIVDN0OENXb0otRUNhYkJvU2hKbGdJYW4xT3FjSlJEQS1lT1psdG9pRWk0d0V5b1c2MjV2ZUtVbmVRWWZFaEZDdzIxR1doYWhGczRXc3pBdjZFMTVfN3NRampSd3k?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "SpaceX Inu (spacexinu.dog) price today, SI to USD live price, marketcap and chart CoinMarketCap",
+          "id": "adjacent:1586041571989e73ba",
+          "published_utc": "2026-11-11T10:34:49Z",
+          "title": "SpaceX Inu (spacexinu.dog) price today, SI to USD live price, marketcap and chart - CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE82ZE9PUmdKX3ZUZXVzWlVKNm5jbF9pRDd4RDRFVzVzMll3ZjI0M2ZaekQ4VUxwNk5hel9RS0RrbWlNeU4yMGtSdjBtY1diaXFEaU5Kb0tBS2FzVWph?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "DE NEO AGENT price today, DNA to USD live price, marketcap and chart CoinDesk",
+          "id": "adjacent:4e471e1f33b4cc7703",
+          "published_utc": "2026-11-10T21:52:31Z",
+          "title": "DE NEO AGENT price today, DNA to USD live price, marketcap and chart - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaTnBTb245RHpUbXBCWXB0SUEtSXJaY3k3OXB6UEpFMDF6d3gtY0FGSnViOFhwVXRCa0JVVmNUN3d4T2JRQmNoS2NZX2p5X3BOS2N3N3F3?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "On the Chain: Bitcoin breaks below US$74,000 as hot US inflation rattles crypto markets Proactive financial news",
+          "id": "adjacent:caebb4d5101a6d319f",
+          "published_utc": "2026-11-11T05:17:00Z",
+          "title": "On the Chain: Bitcoin breaks below US$74,000 as hot US inflation rattles crypto markets - Proactive financial news",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNT0ZDSGFfblI0eGxXaVFOazdKaFZwY25kOFRXbXUweFF3RXZGeGVXM2dxSHh3X3AyOXZ2ZXE0dUt4VTdhb2dQT1VETTdMaVo0Mm12VFNXSXhIeHBONllkLVQ5Ull1WmxnS1dQQUhqWjlPZEZnNGkwUmN1U1QxXzRSYWJWdTg2cGxzbTYwelVxejFUVF9PWmZscmJDTG43OGRoYlJoQ05URmN4QXZiSnZDMGdUMmxPbnI4cnEtTGt4Y1Y0Y2xDY0dFczN6MjVNY0s2SlUycEZTZVZPYUVibW5hYkxrOXlCVG93N0xXX09n?oc=5"
+        }
+      ],
+      "theme": "MACRO_LIQUIDITY"
+    },
+    {
+      "lead_count": 5,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Websites may need to rethink design as AI agents become buyers CoinGeek",
+          "id": "expanded:ef746b45142ed7d746",
+          "published_utc": "2026-11-11T12:00:00Z",
+          "title": "Websites may need to rethink design as AI agents become buyers - CoinGeek",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRW5MZ0s5aXVfMFlnZGxLazhWMU9tSnZiU0RRQVJaclpubHNnMlZSMUlLSGRwZkdDd19qNjF2XzIxS3JzdUF5RXJOVVpyRlNtaUtMTVRvcVJ6c0M3c3FHYnZETFdSbGw2SkFzWkwtSFY3dUlVdmJ5QzVBR2Vvd1dldHlmV1FuaXNic0FWeQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin Lightning could power AI payments and machine authentication, LQWD chief says www.tokenpost.com",
+          "id": "expanded:a3803ba0134b19e977",
+          "published_utc": "2026-11-09T21:20:26Z",
+          "title": "Bitcoin Lightning could power AI payments and machine authentication, LQWD chief says - www.tokenpost.com",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ndGQ0UXByNHR5MlVyUVBTWWlnMDQxcVZmbmlIem5tVlhKelVNME1tSnZuc0p4X0ZFVk5BVlNFVUlSd3NteWFJYkNVamxOQ014bFVZc2VaSjlXRzg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "36 Hours to Build Trust in Machine-Driven Commerce Mastercard",
+          "id": "expanded:9f0747f05964a73544",
+          "published_utc": "2026-11-06T22:59:13Z",
+          "title": "36 Hours to Build Trust in Machine-Driven Commerce - Mastercard",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYnQ3R2FHR2lRSjBOVXNlY2lHRDJPZFFYMW5tMU5xTVA3d3FoZmRoVUVuMU1RUVJ6aHAzUGJlTFNYWG9YZjh0MnNJSDhBRmI0UVV3VDhVU0JGV0hEYk5McktuOUNMbmdwbWRvaExYcHZMdWlxZU9NWXo1bEtwQ2ZsTW5yYk54X0k1QUdoZklHalJzYXdNcXVTRGttTDlHWHZKS1lNR2ZNRTlSSjVoQ2dJNGRFdF9WbGxWWksxNl9B?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Technology - Machine identities and the rise of non-human risk Business Reporter",
+          "id": "expanded:8dedb7296dcea053c7",
+          "published_utc": "2026-11-06T22:50:00Z",
+          "title": "Technology - Machine identities and the rise of non-human risk - Business Reporter",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeVE5aG1nWkRXbzF6VVB3ZGpRRHBhZjcyRXNrUUI0ZTZvNVpHRkRvRS1Qc2xVT3hubWZZWnNwVExBVFprSXB1MHk4YUpWOGYxRTRHNlFia3FHTG5vM1hiMlpfVFNrNUFOeDF0MndseUJHbnZVak1OWEROamJvNlZtZjlQXzU1Z1R4azUxdjNHMTh0QVZHNnJwQVo5OHE?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "If AI manages money, who resolves conflicts? 深潮TechFlow",
+          "id": "expanded:62be6a50eb8d83c3a1",
+          "published_utc": "2026-11-06T05:44:07Z",
+          "title": "If AI manages money, who resolves conflicts? - 深潮TechFlow",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EQkpFNXFOT0xQYUtBcnFvc3BlQURpWV90SUpldTRPbG1ncmFDNGFyWkJSMkhZTThHMTY1cG9HNnVra1ZtTHhGczkxbm5sNmQxTEIzakYzbl9ySmdm?oc=5"
+        }
+      ],
+      "theme": "ROBOTICS"
+    },
+    {
+      "lead_count": 4,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank launches digital asset custody service for paying clients The Economic Times",
+          "id": "adjacent:b00a139f171a81e450",
+          "published_utc": "2026-11-11T09:01:00Z",
+          "title": "Deutsche Bank launches digital asset custody service for paying clients - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwRXVQeFZqZ0Z0ZjVtalVHZDRzbDY5YnRwQ2xxVXlDZ05aeEV5eDU3eU5qaGNZM2xPbVhYTENEcjRodWhlUFlYRW5QT3FzM25FUGwxWjlYTkxCX1VPak1oQ2tQZEpPeTI4LWt4dmtYUi1NcS16Qk9BVjE2ZFRabW1ZddIB-AFBVV95cUxPMVAtdkdfdU11YjRCQjdWWm53NVdQSzMwbHE0b0N2OXFiWjBMTF91MnVJOW1vbFJnTHZKY2J1Y2xoZ09idVh0V3FhMFVKaERZUVBlQXFuaWRCREgyYzd6QjZhTVRqZll2OW9hX05SdzY5YlVUWGtKd1BPUHBzZmEwR"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Deutsche Bank Crypto Custody Is Now Live: Will the BTC Price React? Coin Gabbar",
+          "id": "adjacent:df214242ea09cbd200",
+          "published_utc": "2026-11-11T12:30:00Z",
+          "title": "Deutsche Bank Crypto Custody Is Now Live: Will the BTC Price React? - Coin Gabbar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQzVES2h2VF8zdlVPOEhoSHVNUUVjOTZZZXVVbHIxZnNIVnZjQWRWLVU0RDBoQVFCcXFaOEZWdEUwaUxTOWlUWlZWOFgxb21EWHc0dTJCTEhFeW1ScGphSkwwWDhBOTJmLTlEc3NSMHBJMUUxMFpmTFpQYmMxNF9DRVFVMS00ZEV3WG9SUi14LVU?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "DeepSigma Opens Token Offering of Up to $10M on Republic for Its On-Chain RWA Derivatives Exchange The Defiant",
+          "id": "adjacent:2e98b0a56e997215c8",
+          "published_utc": "2026-11-10T23:01:33Z",
+          "title": "DeepSigma Opens Token Offering of Up to $10M on Republic for Its On-Chain RWA Derivatives Exchange - The Defiant",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNzc5cWE0RldnbFJWY1RRRV8zLVMtNmpVQUo0bm1zSzVLaUh2YjVHVlVQeGVIOWF5eXhRU3FsRTNVVjltRlBhcmNLVmdzNW5KUVFxN2lhRGZDS1Rnd053TDZyTUJ1dEllcWNqZWx1OVhwZmJhTXNhSTBXdU0yaUNWNHpMUmp2alpGNWNhbXc3MlZQdF84MnlnRXRzSWhxSzFpa19oRVZnWFNEdGNVRmZWbUs0NlkzdTZCZEtzMXZCT0QxNHlLTXJPYy1VNjZoY0NvOVVvektn?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "RWA.xyz partners with StarCompliance to bring tokenized assets under compliance watch Crypto Briefing",
+          "id": "adjacent:0e5018f7d8e7dacb15",
+          "published_utc": "2026-11-10T17:03:58Z",
+          "title": "RWA.xyz partners with StarCompliance to bring tokenized assets under compliance watch - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZTFCZ3dxNGhyYmtPemZ4QzNuY3RIdTdoNC1mUDZwWjNsbDlMYm1QSm5sbm11aHk0NC1DOThSemJrQ202azhSQ1g0VXNUT3ByVVhtTzhJUmJtTFBrLUlkeWZrMnRQWkFBZ0xTcnpEV3BFbzg3Wi1hTjdid3psS0NkelowTQ?oc=5"
+        }
+      ],
+      "theme": "TOKENIZATION"
+    },
+    {
+      "lead_count": 3,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+          "id": "adjacent:17c30834e16d3cb83b",
+          "published_utc": "2026-11-06T14:00:00Z",
+          "title": "The post-quantum future of web privacy",
+          "url": "https://blog.cloudflare.com/vole-mole/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What Are Solana Privacy Rings? Inside Helius’ Privacy Protocol for Solana Decrypt",
+          "id": "adjacent:e9a2faf9fb8f0c24e3",
+          "published_utc": "2026-11-11T17:09:18Z",
+          "title": "What Are Solana Privacy Rings? Inside Helius’ Privacy Protocol for Solana - Decrypt",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU1ZCMC1hYWUwVThfQndqUGk4bGJnMjFFOGVPcUV4QkJXZEY4b1VCZU0yVmRsUjcySHN3XzFneEFxTGVzU3ZaQzZCUzhWb2VadVMzTHlwekxaZThJOWdyNC1kUjBRVjM5cmVXOEJSNW1xVmc0UnFLYU1IRTJyc3dLeF9mc2JWc3JFbTJmZFFHTks5b05KcWh1YlJESWZMaFZCc1E?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "As crypto privacy shifts to the network layer, how does Zodl leverage OHTTP to mask the 'who are you?' behind transacti… 深潮TechFlow",
+          "id": "adjacent:4899c7699c47874995",
+          "published_utc": "2026-11-11T11:40:32Z",
+          "title": "As crypto privacy shifts to the network layer, how does Zodl leverage OHTTP to mask the 'who are you?' behind transacti… - 深潮TechFlow",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHeE5KTW83NEt4aHhYdjNQb3ZVdHlXSjc3VlAyeFJ0dDVfWG1vR1pCQWt1dFpreGJmbGNoaG5yUEVXYUtsZ0lsekJyc0s2OGU3TC1kbnhWT2pyY2tn?oc=5"
+        }
+      ],
+      "theme": "PRIVACY_ZK"
+    },
+    {
+      "lead_count": 3,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Blockchain Identity Systems Can Cut Verification Delays and Lower Fraud Risks Bioengineer.org",
+          "id": "expanded:c3f56575f55f75e554",
+          "published_utc": "2026-11-12T01:12:54Z",
+          "title": "Blockchain Identity Systems Can Cut Verification Delays and Lower Fraud Risks - Bioengineer.org",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZUdwbWE4bW15eHVoVnVmbVlyOGxQeGpYNzd3YVFMYVQ2T3pNSURSNGlmejZFcWVSNko2eXl5bUJpWW41bkdmaUZzSkJES1pKTmltdzctUGs5QUxwN2NDWVJHQ25jaUJSTjI1YllhazVQRzRyVWxYcndMbm1pNk5BSGdicERsa3RNWlZTdVlPTlNQRENST1lzTnZiOVlvX0FHWmVYRw?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Choosing QuePaxa, an unusual consensus algorithm Cloudflare Blog",
+          "id": "expanded:94747f91d50642dfa6",
+          "published_utc": "2026-11-11T14:27:48Z",
+          "title": "Choosing QuePaxa, an unusual consensus algorithm - Cloudflare Blog",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xRmZpVlppZldjMjdlWjAtNUtBbjdtNV94TlZVZWJrSXBGQXlVWWJSdmNLUnNva0lZdElJZVdoOTd6Y1JhMERCeFZtMHV5VjJVaFViSVJVeDQyUQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Formal Methods: Model Checking Research Guide CASRAI",
+          "id": "expanded:a7fd2ecc067692c365",
+          "published_utc": "2026-11-09T17:56:48Z",
+          "title": "Formal Methods: Model Checking Research Guide - CASRAI",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBlbGF0MWVMWkhSWVUyRmJiT3hLOUFOb1psQldjTnVXU0dGYnFvZGFZM1F3WXJZTDM3bTJFRUlfZGdMN0hjSlp5aDV0dnh5T2FEWEE?oc=5"
+        }
+      ],
+      "theme": "RESEARCH"
+    },
+    {
+      "lead_count": 2,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "## Executive summary Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. SignalR connections are not consistently bound to the identity negotiated at connection establishment, allowing injected messages to execute Hub invocations as the victi",
+          "id": "adjacent:f43bd4f907bf2c9dde",
+          "published_utc": "2026-11-11T00:21:56Z",
+          "title": "Microsoft Security Advisory CVE-2026-114146 - ASP.NET Core Elevation of Privilege Vulnerability",
+          "url": "https://github.com/advisories/GHSA-67wp-ghc2-fw2g"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "With the rise of AI agents like Instinct and Muse, the industry needs to rethink human identity on the internet and rely on biometric signals like voice, which is where Helix comes in.",
+          "id": "adjacent:f6c79f27dea3cee57b",
+          "published_utc": "2026-11-11T15:02:47Z",
+          "title": "Siri co-founder backs Helix for its voice ID tech",
+          "url": "https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/"
+        }
+      ],
+      "theme": "BIO_IDENTITY"
+    },
+    {
+      "lead_count": 2,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Any amount of AI coding is too much for many Indie Game Festival judges.",
+          "id": "adjacent:83c1fc3b94d13920fa",
+          "published_utc": "2026-11-11T17:37:32Z",
+          "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
+          "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Benchmark tools for generic gaming rigs could be coming soon.",
+          "id": "adjacent:b5f9d84cd36eae589d",
+          "published_utc": "2026-11-10T17:26:44Z",
+          "title": "Steam Deck performance gets a reality check with Valve's new FPS data",
+          "url": "https://arstechnica.com/gaming/2026/11/steam-deck-performance-gets-a-reality-check-with-valves-new-fps-data/"
+        }
+      ],
+      "theme": "GAMING_CONSUMERS"
+    }
+  ]
+}

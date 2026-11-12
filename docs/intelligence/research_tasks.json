@@ -1,0 +1,331 @@
+{
+  "audit": [
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:11d57821e694"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:38e3d43c0dc8"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:77bf5b6ab15a"
+    },
+    {
+      "results": 10,
+      "status": "OK",
+      "task_id": "T:3fe512f7a946"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:89cc52e1fa99"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:863b668f2a3a"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:f08b547b55a4"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:0a08acd11a35"
+    },
+    {
+      "results": 3,
+      "status": "OK",
+      "task_id": "T:b1fa0761b4c1"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:1d82c6ac72b8"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:2e50c23878e4"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:2fbcd45dd767"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:537d333af503"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:6e43005a45aa"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:3fd1a6ebcb60"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:a1e5ec881b0d"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:5e3fe3d9e4b6"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:8de70dd63274"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:2fb7c821e46a"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:f4db37a4effe"
+    }
+  ],
+  "no_auto_source_installation": true,
+  "tasks": [
+    {
+      "evidence_ids": [
+        "research:a9d2f791583740b2b4",
+        "research:81d27367c2d11353c5",
+        "research:97edd408edb88093c1"
+      ],
+      "query": "\"jensen huang\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:11d57821e694",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:f9d14dfe2a7427cd69",
+        "research:bb16c4910b89177044",
+        "research:20f1179ed34bd7cd48"
+      ],
+      "query": "\"deutsche bank\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:38e3d43c0dc8",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:73833d71ed32243853",
+        "research:6a109ce05d194ab37c",
+        "research:b62ff62a7f4d7993d5"
+      ],
+      "query": "\"tokenized stock\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:77bf5b6ab15a",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:0a0eb65a5c619c54df",
+        "research:3f0885cd45ada719c5",
+        "research:e9fd4eb20f49d00fe9"
+      ],
+      "query": "\"banks commit\" crypto financial markets when:2d",
+      "results": 10,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:3fe512f7a946",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:755ccabc0c6900cf6f",
+        "adjacent:945d329349055c306c",
+        "adjacent:6fd17ccff07ac85dee"
+      ],
+      "query": "\"biggo finance\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:89cc52e1fa99",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:025af703ae4363ac67",
+        "research:08911f82cab20bbd49",
+        "research:e457c29eb319ca7575"
+      ],
+      "query": "\"kraken parent\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:863b668f2a3a",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:452d35f83a01eae2a7",
+        "adjacent:40f02b0f3791f5ec15",
+        "adjacent:50af07b8ad04c3e124"
+      ],
+      "query": "\"nvidia jensen\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:f08b547b55a4",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:3f0885cd45ada719c5",
+        "research:e9fd4eb20f49d00fe9",
+        "research:22bd6e3f4246880244"
+      ],
+      "query": "\"commit million\" crypto financial markets when:2d",
+      "results": 0,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:0a08acd11a35",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:14c34c4307af3f6161",
+        "research:5333e36dedb8c4d015",
+        "adjacent:a69e2a937c9e95bce7"
+      ],
+      "query": "\"ether slide\" crypto financial markets when:2d",
+      "results": 3,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:b1fa0761b4c1",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Gnosis\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:1d82c6ac72b8",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Pieverse\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:2e50c23878e4",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"BitTorrent [New]\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:2fbcd45dd767",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Midnight\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:537d333af503",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Pepe\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:6e43005a45aa",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Celestia\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:3fd1a6ebcb60",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [],
+      "query": "\"Venice Token\" crypto\" liquidity derivatives security governance when:2d",
+      "results": 0,
+      "scope": "ASSET_RESEARCH",
+      "status": "QUERIED",
+      "task_id": "T:a1e5ec881b0d",
+      "trigger": "OBSERVED_MARKET_ANOMALY"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:355fee0a647f2e330b"
+      ],
+      "query": "\"Microsoft Security Advisory\" crypto financial impact when:3d",
+      "results": 0,
+      "scope": "UNRESOLVED",
+      "status": "QUERIED",
+      "task_id": "T:5e3fe3d9e4b6",
+      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:d8030625e2c409f983"
+      ],
+      "query": "\"ZeroPoint Lightweight Energy-Based\" crypto financial impact when:3d",
+      "results": 0,
+      "scope": "UNRESOLVED",
+      "status": "QUERIED",
+      "task_id": "T:8de70dd63274",
+      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:086fc4caf6f9cc53d8"
+      ],
+      "query": "\"Choosing QuePaxa unusual\" crypto financial impact when:3d",
+      "results": 0,
+      "scope": "UNRESOLVED",
+      "status": "QUERIED",
+      "task_id": "T:2fb7c821e46a",
+      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:15ca3be22892386e66"
+      ],
+      "query": "\"Introducing Groups Long-lived\" crypto financial impact when:3d",
+      "results": 0,
+      "scope": "UNRESOLVED",
+      "status": "QUERIED",
+      "task_id": "T:f4db37a4effe",
+      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+    }
+  ]
+}
