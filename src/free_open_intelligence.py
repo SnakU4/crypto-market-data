@@ -182,8 +182,7 @@ def research_tasks(coins,events,market,limit=22):
         except (TypeError,ValueError):continue
         if x>0:ranked.append((x,a))
     for _,a in sorted(ranked,key=lambda x:-x[0])[:7]:
-        add('"'+str(a["name"]).replace('"',"")+'" crypto" '
-            'liquidity derivatives security governance when:2d',
+        add('"'+str(a["name"]).replace('"',"")+'" crypto when:2d',
             "ASSET_RESEARCH","OBSERVED_MARKET_ANOMALY")
     # Follow up on important *unresolved* leads, independently of coin attribution.
     for e in sorted(events,key=lambda x:-x["priority"]):
@@ -205,7 +204,7 @@ def second_hop_tasks(first_results,earlier_tasks,limit=8):
         if term in existing or term in known or len(tasks)>=limit:continue
         # Multiple independent result URLs are still *leads*, not independent proof.
         known.add(term)
-        query='"'+term+'" blockchain liquidity regulation when:2d'
+        query='"'+term+'" crypto blockchain when:2d'
         tasks.append({"task_id":"T:"+hashlib.sha256(query.encode()).hexdigest()[:12],
           "query":query,"scope":"GLOBAL_OR_SECTOR",
           "trigger":"SECOND_HOP_FROM_NEW_FINDINGS","evidence_ids":p["examples"],
