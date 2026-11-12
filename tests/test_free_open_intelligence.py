@@ -35,7 +35,11 @@ class FreeIntelligenceTests(unittest.TestCase):
                "snapshot_completed_utc":OBS})
         engine=[{"observation_id":"r1","cmc_id":1,"source":"okx_swap_tickers",
                  "coin_identity_status":"CMC100_SNAPSHOT_OKX_CONTRACT_ANCHORED",
-                 "observed_utc":OBS}]
+                 "observed_utc":OBS},
+                {"observation_id":"global","source":"stablecoin_network",
+                 "observed_utc":OBS,"metrics":{"supply_usd":4200}},
+                {"observation_id":"qntwrong","cmc_id":3155,"source":"okx_swap_tickers",
+                 "observed_utc":OBS,"metrics":{"oi_usd":1}}]
         extr=[{"event_id":"x1","title":"Cross border payment system announced",
                "excerpt":"A brand new event was announced by a payments provider",
                "url":"https://example.com/news1","observed_utc":OBS,
@@ -47,7 +51,7 @@ class FreeIntelligenceTests(unittest.TestCase):
         p2=self.root/"docs/expanded_discovery/archive/d.gz"
         write(self.root/"docs/evidence_engine/status.json",
               {"capture_utc":OBS,"archive_path":"docs/evidence_engine/archive/e.gz",
-               "archive_sha256":archive(p,engine),"records":1})
+               "archive_sha256":archive(p,engine),"records":3})
         write(self.root/"docs/expanded_discovery/status.json",
               {"capture_utc":OBS,"archive_path":"docs/expanded_discovery/archive/d.gz",
                "archive_sha256":archive(p2,extr),"full_archive_count":2})
@@ -75,7 +79,7 @@ class FreeIntelligenceTests(unittest.TestCase):
         m,c=foi.build(self.root,cutoff=T,network=False)
         self.assertEqual(c["official_assets"],100)
         self.assertEqual(len(c["source_planes_integrated"]),5)
-        self.assertEqual(c["evidence_counts"]["engine_rows"],1)
+        self.assertEqual(c["evidence_counts"]["engine_rows"],3)
         self.assertEqual(c["evidence_counts"]["expanded_rows"],2)
         self.assertEqual(c["evidence_counts"]["research_event_rows"],1)
         self.assertEqual(c["evidence_counts"]["adjacent_full_event_rows"],1)
@@ -88,6 +92,8 @@ class FreeIntelligenceTests(unittest.TestCase):
         qnt=next(x for x in cards if x["cmc_id"]==3155)
         self.assertIsNone(qnt["perpetual"])
         self.assertFalse(qnt["quantitative_research_families"])
+        self.assertEqual(c["excluded_ambiguous_okx_structured_records"],1)
+        self.assertFalse(qnt["engine_record_counts_by_source"])
         coin1=next(x for x in cards if x["cmc_id"]==1)
         self.assertEqual(len(coin1["quantitative_research_families"]),1)
         self.assertEqual(coin1["candidate_event_count"],1)
@@ -95,7 +101,8 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertTrue(foi.read(self.root/"docs/intelligence/global_intelligence.json")["global_unresolved_leads"])
         g=foi.read(self.root/"docs/intelligence/global_intelligence.json")
         self.assertEqual(g["global_research_quantitative_families"]["stablecoin_global"]["observation"]["total_supply_usd"],1234567)
-        self.assertTrue(g["unassigned_structured_samples_by_source"] == {} or isinstance(g["unassigned_structured_samples_by_source"],dict))
+        self.assertEqual(g["unassigned_structured_counts_by_source"]["stablecoin_network"],1)
+        self.assertEqual(g["unassigned_structured_samples_by_source"]["stablecoin_network"][0]["metrics"]["supply_usd"],4200)
         self.assertGreater(len(foi.read(self.root/"docs/intelligence/research_tasks.json")["tasks"]),0)
         self.assertEqual(m["llm_calls"],0)
         self.assertTrue(m["archives"]["engine"]["verified"])
