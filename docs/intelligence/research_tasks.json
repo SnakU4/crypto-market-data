@@ -46,7 +46,7 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 4,
+      "results": 3,
       "status": "OK",
       "task_id": "T:ba47785201d4"
     },
@@ -76,14 +76,14 @@
       "task_id": "T:cecfd2f5964d"
     },
     {
-      "results": 10,
-      "status": "OK",
-      "task_id": "T:f8fd94d8894c"
-    },
-    {
       "results": 12,
       "status": "OK",
       "task_id": "T:231514622f3b"
+    },
+    {
+      "results": 10,
+      "status": "OK",
+      "task_id": "T:f8fd94d8894c"
     },
     {
       "results": 12,
@@ -223,7 +223,7 @@
     {
       "evidence_ids": [],
       "query": "\"Gnosis\" crypto when:2d",
-      "results": 4,
+      "results": 3,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
       "task_id": "T:ba47785201d4",
@@ -284,19 +284,6 @@
     },
     {
       "evidence_ids": [
-        "followup:d39166e3bfa01346c7",
-        "followup:679816d1f1891a4da4",
-        "followup:3797a83c902fc0ba08"
-      ],
-      "query": "\"altcoin buzz\" crypto blockchain when:2d",
-      "results": 10,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:f8fd94d8894c",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
         "followup:114175c86d068e6665",
         "followup:9a3ab3df1c1132cf7d",
         "followup:776113fbf73ca21176"
@@ -306,6 +293,19 @@
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:231514622f3b",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:d39166e3bfa01346c7",
+        "followup:679816d1f1891a4da4",
+        "followup:3797a83c902fc0ba08"
+      ],
+      "query": "\"altcoin buzz\" crypto blockchain when:2d",
+      "results": 10,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:f8fd94d8894c",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
