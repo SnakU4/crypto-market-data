@@ -51,6 +51,10 @@ jobs:
           assert len(m["coin_batch_files"])==5
           assert all(v["verified"] for v in m["archives"].values())
           assert len(c["source_planes_integrated"])==5
+          assert c["adjacent_discovery_source"]["mode"]=="FULL_ARCHIVE"
+          assert c["adaptive_search_hops_executed"] in (1,2)
+          assert c["per_coin"]["perp_markets_unquarantined"] <= 77
+          assert "substantive_source_excerpt_leads" in c["evidence_counts"]
           ids=[]
           for name in m["coin_batch_files"]:
               co=json.loads(pathlib.Path(name).read_text())["coins"]
@@ -60,7 +64,7 @@ jobs:
           assert c["evidence_counts"]["engine_rows"]>0
           assert c["evidence_counts"]["expanded_rows"]>0
           assert c["evidence_counts"]["research_event_rows"]>0
-          assert c["evidence_counts"]["adjacent_latest_event_rows"]>0
+          assert c["evidence_counts"]["adjacent_full_event_rows"]>0
           assert c["evidence_counts"]["canonical_research_leads"]>0
           tasks=json.loads((p/"research_tasks.json").read_text())["tasks"]
           assert len(tasks)>0, "No emergent or anomaly follow-up planning"
