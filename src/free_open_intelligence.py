@@ -66,6 +66,47 @@ def archive(root,status,domain):
     if len(rows)!=expected:raise ValueError(domain+": archive count mismatch")
     return rows,{"path":rel,"sha256":digest(p),"records":len(rows),"verified":True}
 
+def load_full_research_events(root,research,status,cutoff):
+    """Load EVERY direct source article from the SHA-checked source batches.
+
+    Fails closed on incomplete/mismatched snapshots. Falls back to the old
+    research read index only for historical repos / unit-test fixtures.
+    """
+    manifest_path=root/"docs/research/source_events_manifest.json"
+    if not manifest_path.exists():
+        return research.get("events") or [],{"mode":"LEGACY_READ_INDEX",
+            "count":len(research.get("events") or [])}
+    manifest=read(manifest_path)
+    if manifest.get("capture_utc")!=status.get("capture_utc"):
+        raise ValueError("research event batch capture does not match status")
+    if parse_time(manifest["capture_utc"])>cutoff:
+        raise ValueError("research batches after PIT cutoff")
+    all_events=[]
+    for entry in manifest.get("batches") or []:
+        rel=entry.get("path")
+        if not isinstance(rel,str) or not rel.startswith("docs/research/source_event_batches/"):
+            raise ValueError("research source batch path unsafe")
+        f=(root/rel).resolve()
+        safe=(root/"docs/research/source_event_batches").resolve()
+        if not f.is_relative_to(safe) or not f.is_file():
+            raise ValueError("research source batch missing: "+str(rel))
+        if digest(f)!=entry.get("sha256"):
+            raise ValueError("research source batch SHA mismatch")
+        batch=read(f)
+        if batch.get("capture_utc")!=manifest["capture_utc"]:
+            raise ValueError("research batch timestamp mismatch")
+        events=batch.get("events") or []
+        if len(events)!=entry.get("count"):
+            raise ValueError("research event batch count mismatch")
+        all_events+=events
+    if len(all_events)!=manifest.get("total_events"):
+        raise ValueError("research source batches total mismatch")
+    if len(all_events)!=status.get("rss_events_stored"):
+        raise ValueError("research status and full source events disagree")
+    return all_events,{"mode":"FULL_SHA_VERIFIED_BATCHES","count":len(all_events),
+        "batch_count":len(manifest["batches"])}
+
+
 def is_before(event,cutoff):
     observed=parse_time(event.get("observed_utc") or event.get("first_observed_utc"))
     published=parse_time(event.get("published_utc"))
@@ -378,6 +419,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     er,ea=archive(root,es,"engine")
     xr,xa=archive(root,xs,"expanded")
     research=usable_json(root,"docs/research/latest.json",rs["capture_utc"],cutoff)
+    direct_events,direct_events_audit=load_full_research_events(root,research,rs,cutoff)
     adjacent=usable_json(root,"docs/discovery/latest.json",ds["capture_completed_utc"],cutoff)
     # The adjacent /discovery/latest.json is only a 500-event read index.
     # Preserve the entire immutable archive (~938 events) when available.
@@ -397,7 +439,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                          "path":raw_adj,"sha256":digest(ap)}
     valid_ids=set(ids)
     all_events=[]
-    for kind,rows in (("expanded",xr),("research",research.get("events") or []),
+    for kind,rows in (("expanded",xr),("research",direct_events),
                       ("adjacent",adjacent.get("events") or [])):
         for e in rows:
             z=event_doc(kind,e,cutoff)
@@ -652,7 +694,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "expanded_discovery","research","adjacent_discovery"],
       "source_capture_utc":caps,
       "evidence_counts":{"engine_rows":len(er),"expanded_rows":len(xr),
-          "research_event_rows":len(research.get("events") or []),
+          "research_event_rows":len(direct_events),
           "manual_verified_source_annotations_loaded":manual_status["eligible"],
           "adjacent_full_event_rows":len(adjacent.get("events") or []),
           "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
@@ -674,6 +716,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "research_mapped_quantitative_families_beyond_supply_and_trending":
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids)},
+      "direct_research_full_source_audit":direct_events_audit,
       "identity_quarantine":quarantined,
       "manual_research_evidence_input":manual_status,
       "excluded_ambiguous_okx_structured_records":quarantined_structured,
@@ -706,7 +749,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "reason":"Extraction and discovery are not proof of independently verified 24h causal facts."}
     manifest={"schema_version":"cmc100-open-intelligence-free-v1","cutoff_utc":iso(cutoff),
        "no_paid_api_used":True,"llm_calls":0,
-       "all_100_verified":True,"source_snapshots":caps,"archives":{"engine":ea,"expanded":xa},
+       "all_100_verified":True,"source_snapshots":caps,"direct_research_event_audit":direct_events_audit,"archives":{"engine":ea,"expanded":xa},
        "coverage_file":"docs/intelligence/coverage_audit.json",
        "global_file":"docs/intelligence/global_intelligence.json",
        "sector_file":"docs/intelligence/sector_intelligence.json",
