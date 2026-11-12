@@ -55,6 +55,9 @@ jobs:
           assert c["adaptive_search_hops_executed"] in (1,2)
           assert c["per_coin"]["perp_markets_unquarantined"] <= 77
           assert "substantive_source_excerpt_leads" in c["evidence_counts"]
+          assert c["research_quality_gate"]["technical_source_integration"]=="PASSED"
+          assert c["research_quality_gate"]["independently_primary_verified_claims"]==0
+          assert c["research_quality_gate"]["material_research_status"] in ("PARTIAL_RESEARCH","REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION")
           ids=[]
           for name in m["coin_batch_files"]:
               co=json.loads(pathlib.Path(name).read_text())["coins"]
@@ -97,6 +100,7 @@ jobs:
             docs/intelligence/research_tasks.json
             docs/intelligence/open_discovery.json
             docs/intelligence/publisher_excerpts.json
+            docs/intelligence/source_registry_proposals.json
 
       - name: Publish concise reusable research output to public GitHub
         shell: bash
@@ -107,6 +111,7 @@ jobs:
             docs/intelligence/global_intelligence.json docs/intelligence/sector_intelligence.json \
             docs/intelligence/coin_batches docs/intelligence/open_discovery.json \
             docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
+            docs/intelligence/source_registry_proposals.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Update free global, cross-sector and 100-coin intelligence $(date -u +%Y-%m-%dT%H:%MZ)"
