@@ -95,7 +95,8 @@ def discover(proposals,cutoff,max_sites=10,opener=None):
                 raw,fs=retrieve(u,opener)
                 out["feed_status"]=fs
                 if raw:
-                    rows=parsed_feed(raw,"DYNAMIC_"+host,cutoff,limit=20)
+                    rows=parsed_feed(raw,"DYNAMIC_"+host,
+                                     dt.datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00","Z"),limit=20)
                     out["article_count"]+=len(rows)
                     out["substantive"]+=sum(has_additional_information(
                         x["title"],x["excerpt"]) for x in rows)
