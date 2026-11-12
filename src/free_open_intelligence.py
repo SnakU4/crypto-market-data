@@ -249,31 +249,56 @@ def adaptive_fetch(tasks,cutoff,max_requests=22,opener=None):
             audit.append({"task_id":t["task_id"],"status":"FAILED","error":t["error"]})
     return found,audit
 
-def enrich_direct(events,budget=16,fetcher=None):
-    if budget<=0:return []
+def enrich_direct(events,budget=64,fetcher=None):
+    """Try multiple publisher URLs per host; attach auditable short excerpts.
+
+    Independent *content* is the goal, not raw URL volume. The full source
+    remains linked, while only a bounded quotation/context is copied.
+    """
+    if budget<=0:return [],{"attempted":0,"succeeded":0,"substantive":0,"by_scope":{}}
     if fetcher is None:
         try:from discovery_quality import extract_article as fetcher
         except ImportError:from src.discovery_quality import extract_article as fetcher
-    selected=[];seen_hosts=set()
-    # Diverse publisher-first sampling, including independent non-coin global/sector research.
-    for scope in ("SECTOR","GLOBAL_UNRESOLVED","ASSET_CANDIDATE"):
-        xs=sorted((e for e in events if e["scope"]==scope and e["url"].startswith("https://")
-                  and "news.google." not in urllib.parse.urlsplit(e["url"]).netloc
-                  and len(e["excerpt"])<150),key=lambda x:-x["priority"])
-        for e in xs:
+    try:from discovery_quality import has_additional_information
+    except ImportError:from src.discovery_quality import has_additional_information
+    from concurrent.futures import ThreadPoolExecutor
+    ordered=sorted((e for e in events if e.get("url","").startswith("https://")
+      and "news.google." not in urllib.parse.urlsplit(e["url"]).netloc
+      and not has_additional_information(e["title"],e["excerpt"])),
+      key=lambda e:(-e["priority"],e.get("published_utc") or "",e["id"]),reverse=False)
+    # Round-robin across scopes, rather than exhausting global sources first.
+    groups=collections.defaultdict(list)
+    for e in ordered:groups[e["scope"]].append(e)
+    selected=[];host_counts=collections.Counter();used=set()
+    scopes=("GLOBAL_UNRESOLVED","SECTOR","ASSET_CANDIDATE")
+    while len(selected)<budget:
+        changed=False
+        for scope in scopes:
+            group=groups[scope]
+            while group:
+                e=group.pop(0);host=urllib.parse.urlsplit(e["url"]).hostname
+                if host and host_counts[host]<3 and e["url"] not in used:
+                    host_counts[host]+=1;used.add(e["url"])
+                    selected.append(e);changed=True;break
             if len(selected)>=budget:break
-            host=urllib.parse.urlsplit(e["url"]).netloc
-            if host in seen_hosts:continue
-            seen_hosts.add(host);selected.append(e)
-    out=[]
-    for e in selected:
-        try:raw=fetcher(e["url"])
-        except Exception:raw=None
-        if raw and len(raw)>=130:
-            out.append({"evidence_id":e["id"],"url":e["url"],
-                        "source_excerpt":clip(raw,350),
-                        "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED"})
-    return out
+        if not changed:break
+    def get(e):
+        try:return fetcher(e["url"])
+        except (OSError,ValueError,TimeoutError):return None
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        retrieved=list(pool.map(get,selected))
+    out=[];by_scope=collections.Counter()
+    for e,raw in zip(selected,retrieved):
+        if not raw or not has_additional_information(e["title"],raw):continue
+        excerpt=clip(raw,650)
+        if not has_additional_information(e["title"],excerpt):continue
+        out.append({"evidence_id":e["id"],"url":e["url"],"scope":e["scope"],
+            "source_excerpt":excerpt,"content_origin":"DIRECT_PUBLISHER_PUBLIC_ARTICLE",
+            "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED"})
+        by_scope[e["scope"]]+=1
+    return out,{"attempted":len(selected),"succeeded":sum(bool(x) for x in retrieved),
+                "substantive":len(out),"by_scope":dict(by_scope)}
+
 
 def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_articles=16,
           fetcher=None,search_opener=None):
@@ -325,6 +350,18 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 z["candidate_cmc_ids"]=[i for i in z["candidate_cmc_ids"] if i in valid_ids]
                 all_events.append(z)
     events=deduplicate(all_events)
+    # Feed-provided descriptions and newly retrieved publisher text are BOTH
+    # first-class research context. Previously the latter was exported but
+    # never fed back into coin/global/sector dossiers or the quality metric.
+    article,article_audit=enrich_direct(events,max_articles if network else 0,fetcher)
+    article_by_id={x["evidence_id"]:x for x in article}
+    for e in events:
+        detail=article_by_id.get(e["id"])
+        if detail:
+            e["excerpt"]=detail["source_excerpt"]
+            e["context_origin"]=detail["content_origin"]
+            e["article_text_attribution"]=detail["url"]
+            e["article_text_verification"]=detail["verification"]
     features={int(x["cmc_id"]):x for x in research.get("coins") or []}
     fam=research.get("families") or {}
     family_by_coin=collections.defaultdict(list)
@@ -445,7 +482,6 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     else:
         adaptive,audit=[],[]
         search_hops=0
-    article=enrich_direct(events,max_articles if network else 0,fetcher)
     for e in adaptive:e["provenance_ids"]=[e["id"]]
     evidence=events+adaptive
     sectors=[{"theme":k,"lead_count":len(v),
@@ -494,7 +530,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "long_excerpts_by_character_count_not_claim_verification":sum(len(e["excerpt"])>=140 for e in events),
           "non_asset_structured_market_and_network_observations":sum(global_structured_counts.values()),
           "global_research_quantitative_data_families":len(global_research_families),
-          "direct_publisher_article_excerpts":len(article)},
+          "direct_publisher_article_excerpts":len(article),
+          "direct_publisher_article_fetch_attempted":article_audit["attempted"]},
       "per_coin":{"spot_prices":sum(bool((a.get("cmc_quote") or {}).get("price_usd")) for a in assets),
           "perp_markets_unquarantined":sum(bool((a.get("perpetual") or {}).get("symbol")) and
                (a.get("perpetual") or {}).get("mapping")=="EXACT_BASE_ASSET_OKX" and
@@ -513,6 +550,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "research":[x for x in rs.get("source_attempts",[]) if x.get("status")!="OK"][:25],
          "adjacent":ds.get("access_gaps",[])},
       "adaptive_search_results":audit,
+      "publisher_article_enrichment_audit":article_audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
     depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
@@ -524,6 +562,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "substantive_context_target_met":depth_rate>=0.20,
         "publisher_excerpts":len(article),
         "deep_article_target_met":len(article)>=30,
+        "publisher_source_attempted":article_audit["attempted"],
         "all_100_contracts_verified":False,
         "material_research_status":"PARTIAL_RESEARCH" if depth_rate<0.20 or len(article)<30 else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
         "reason":"Extraction and discovery are not proof of independently verified 24h causal facts."}
