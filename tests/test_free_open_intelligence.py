@@ -129,6 +129,43 @@ class FreeIntelligenceTests(unittest.TestCase):
                     for sec in sect["sectors"] for x in sec["sample"]))
         self.assertTrue(c["publisher_article_enrichment_audit"]["attempted"]>0)
         self.assertTrue(c["publisher_article_enrichment_audit"]["substantive"]>0)
+    def test_manual_chatgpt_findings_reenter_pit_safe_global_and_asset_dossiers(self):
+        file=self.root/"docs/intelligence/manual_inputs/findings.jsonl"
+        file.parent.mkdir(parents=True,exist_ok=True)
+        records=[
+            {"id":"sourced-global-1","title":"Documented liquidity change",
+             "scope":"GLOBAL","source_url":"https://source.example.org/liquidity",
+             "first_observed_utc":OBS,"published_utc":OBS,
+             "source_excerpt":"Primary source describes changes in liquidity over the period.",
+             "reviewer":"chatgpt_manual"},
+            {"id":"sourced-asset-1","title":"Coin-specific project disclosure",
+             "scope":"ASSET","cmc_ids":[1],"source_url":"https://source.example.org/asset1",
+             "first_observed_utc":OBS,"published_utc":OBS,
+             "source_excerpt":"First party has published an additional technical disclosure.",
+             "reviewer":"chatgpt_manual"},
+            {"id":"future-1","title":"Future story","scope":"GLOBAL",
+             "source_url":"https://source.example.org/future",
+             "first_observed_utc":"2026-11-13T01:00:00Z"}
+        ]
+        file.write_text("".join(json.dumps(x)+"\\n" for x in records),encoding="utf-8")
+        manifest,cov=foi.build(self.root,cutoff=T,network=False)
+        self.assertEqual(cov["manual_research_evidence_input"]["eligible"],2)
+        self.assertEqual(cov["manual_research_evidence_input"]["post_cutoff"],1)
+        g=foi.read(self.root/"docs/intelligence/global_intelligence.json")
+        self.assertTrue(any(x["title"]=="Documented liquidity change" for x in g["global_research_sample"]))
+        cards=sum((foi.read(self.root/f"docs/intelligence/coin_batches/batch_{i:02d}.json")["coins"] for i in range(1,6)),[])
+        c1=next(x for x in cards if x["cmc_id"]==1)
+        self.assertTrue(any(x["title"]=="Coin-specific project disclosure" for x in c1["candidate_events_NOT_VERIFIED"]))
+        self.assertEqual(manifest["manual_append_only_input"],"docs/intelligence/manual_inputs/findings.jsonl")
+    def test_manual_findings_reject_unknown_coin_ids(self):
+        file=self.root/"docs/intelligence/manual_inputs/findings.jsonl"
+        file.parent.mkdir(parents=True,exist_ok=True)
+        file.write_text(json.dumps({"id":"bad","title":"Invalid mapping","scope":"ASSET",
+            "cmc_ids":[99999],"source_url":"https://source.example.org/invalid",
+            "first_observed_utc":OBS})+"\\n",encoding="utf-8")
+        with self.assertRaisesRegex(ValueError,"unknown CMC ID"):
+            foi.build(self.root,cutoff=T,network=False)
+
     def test_archive_integrity_fails_closed(self):
         p=self.root/"docs/evidence_engine/archive/e.gz"
         p.write_bytes(p.read_bytes()+b"tamper")
