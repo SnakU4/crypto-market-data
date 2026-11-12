@@ -47,7 +47,7 @@
       "task_id": "T:22db348d10b4"
     },
     {
-      "results": 3,
+      "results": 4,
       "status": "OK",
       "task_id": "T:ba47785201d4"
     },
@@ -112,18 +112,18 @@
     "adjacent_full_event_rows": 662,
     "adjacent_read_index_event_rows": 500,
     "canonical_research_leads": 10838,
-    "direct_publisher_article_excerpts": 20,
-    "direct_publisher_article_fetch_attempted": 33,
+    "direct_publisher_article_excerpts": 32,
+    "direct_publisher_article_fetch_attempted": 48,
     "engine_rows": 3221,
     "expanded_rows": 10507,
-    "free_adaptive_followup_leads": 154,
+    "free_adaptive_followup_leads": 155,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 11487,
-    "long_excerpts_by_character_count_not_claim_verification": 4112,
+    "long_excerpts_by_character_count_not_claim_verification": 4121,
     "manual_high_context_selection_count": 300,
     "non_asset_structured_market_and_network_observations": 2836,
     "research_event_rows": 318,
-    "substantive_source_excerpt_leads": 591
+    "substantive_source_excerpt_leads": 603
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -143,28 +143,28 @@
     "spot_prices": 100
   },
   "publisher_article_enrichment_audit": {
-    "attempted": 33,
+    "attempted": 48,
     "by_scope": {
-      "ASSET_CANDIDATE": 1,
-      "GLOBAL_UNRESOLVED": 7,
-      "SECTOR": 12
+      "ASSET_CANDIDATE": 2,
+      "GLOBAL_UNRESOLVED": 14,
+      "SECTOR": 16
     },
-    "substantive": 20,
-    "succeeded": 20
+    "substantive": 32,
+    "succeeded": 32
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
     "all_100_contracts_verified": false,
-    "deep_article_target_met": false,
+    "deep_article_target_met": true,
     "independently_primary_claims_verification_status": "NOT_PERFORMED_BY_FREE_PYTHON",
     "independently_primary_verified_claims": 0,
     "manual_high_context_queue_is_not_the_denominator": true,
     "material_research_status": "PARTIAL_RESEARCH",
-    "publisher_excerpts": 20,
-    "publisher_source_attempted": 33,
+    "publisher_excerpts": 32,
+    "publisher_source_attempted": 48,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.0545,
+    "substantive_context_share": 0.0556,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
