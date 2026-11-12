@@ -397,7 +397,7 @@ def enrich_direct(events,budget=64,fetcher=None):
 
 
 def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_articles=16,
-          fetcher=None,search_opener=None):
+          fetcher=None,search_opener=None,live_collection=False):
     root=pathlib.Path(root).resolve();out=pathlib.Path(out or root/OUT)
     cutoff=cutoff or dt.datetime.now(UTC)
     market=read(root/"docs/latest.json")
@@ -447,7 +447,17 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 z["candidate_cmc_ids"]=[i for i in z["candidate_cmc_ids"] if i in valid_ids]
                 all_events.append(z)
     manual,manual_status=load_manual_findings(root,cutoff,valid_ids)
-    events=deduplicate(all_events+manual)
+    dynamic_events=[];dynamic_audit={"domains_attempted":0,"domains_found_content":0,
+                                     "new_feed_items":0,"substantive_feed_items":0,"sources":[]}
+    # Only LIVE runs discover new publisher feeds. Historical research must never
+    # fetch today's web and silently backdate it to a prior forecast cutoff.
+    if network and live_collection:
+        previous_registry=root/"docs/intelligence/source_registry_proposals.json"
+        if previous_registry.exists():
+            try:from primary_source_discovery import discover
+            except ImportError:from src.primary_source_discovery import discover
+            dynamic_events,dynamic_audit=discover(read(previous_registry),iso(cutoff),max_sites=10)
+    events=deduplicate(all_events+manual+dynamic_events)
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
     # never fed back into coin/global/sector dossiers or the quality metric.
@@ -596,6 +606,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                                             "scope":"GLOBAL_OR_NETWORK_STATE_NOT_TOKEN_FLOW"}
         elif isinstance(rows,dict):
             global_research_families[k]={"scope":"GLOBAL_STATE","observation":rows}
+    # Freeze a live snapshot only AFTER source and adaptive network collection.
+    # This avoids claiming evidence first seen during the run was known earlier.
+    if live_collection:cutoff=dt.datetime.now(UTC)
     g={"cutoff_utc":iso(cutoff),"market_context":market.get("market_context"),
        "global_research_quantitative_families":global_research_families,
        "unassigned_structured_counts_by_source":dict(global_structured_counts),
@@ -706,6 +719,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "source_capture_utc":caps,
       "evidence_counts":{"engine_rows":len(er),"expanded_rows":len(xr),
           "research_event_rows":len(direct_events),
+          "new_source_discovery_items":len(dynamic_events),
           "manual_verified_source_annotations_loaded":manual_status["eligible"],
           "adjacent_full_event_rows":len(adjacent.get("events") or []),
           "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
@@ -728,6 +742,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids)},
       "direct_research_full_source_audit":direct_events_audit,
+      "new_public_source_discovery_audit":dynamic_audit,
       "identity_quarantine":quarantined,
       "manual_research_evidence_input":manual_status,
       "excluded_ambiguous_okx_structured_records":quarantined_structured,
@@ -768,6 +783,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "source_proposals_file":"docs/intelligence/source_registry_proposals.json",
        "manual_research_context_file":"docs/intelligence/deep_research_queue.json",
        "manual_append_only_input":"docs/intelligence/manual_inputs/findings.jsonl",
+       "new_public_source_discovery_file":"docs/intelligence/discovered_public_feeds.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
@@ -783,6 +799,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"open_discovery.json",{"emergent_terms":emergent,
           "unresolved_global_count":len(glob),
           "source_discovery_notes":"Themes and asset associations are leads, never verified causality."})
+    write(out/"discovered_public_feeds.json",dynamic_audit)
     write(out/"source_registry_proposals.json",{"candidate_publishers":source_proposals,
           "auto_added_to_collector":0,
           "note":"Source expansion suggestions; access, safety and licensing require review."})
@@ -819,7 +836,8 @@ def main():
     cutoff=parse_time(a.cutoff) if a.cutoff else dt.datetime.now(UTC)
     if not cutoff:p.error("Invalid cutoff")
     if a.max_followups>40 or a.max_articles>80:p.error("Free tier bounded to 40 searches/80 articles")
-    manifest,coverage=build(a.root,a.out,cutoff,a.network,a.max_followups,a.max_articles)
+    manifest,coverage=build(a.root,a.out,cutoff,a.network,a.max_followups,a.max_articles,
+                            live_collection=(a.cutoff is None))
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
        "evidence_counts":coverage["evidence_counts"],
        "coverage":coverage["per_coin"]},ensure_ascii=False))
