@@ -68,6 +68,36 @@ SOURCE_CATALOG=[
     ('ethereum_blog','PROTOCOL_UPGRADE_EVENTS','rss','https://blog.ethereum.org/feed.xml'),
     ('solana_blog','PROTOCOL_UPGRADE_EVENTS','rss','https://solana.com/news/rss.xml'),
     ('coinbase_blog','EXCHANGE_LISTINGS_EVENTS','rss','https://www.coinbase.com/blog/rss.xml'),
+    # PRIMARY-SOURCE FIRST: independently query project release notes, open
+    # governance forums and central-bank communications instead of relying on
+    # thousands of syndicated Google News headlines. Availability is audited:
+    # an inaccessible feed never becomes a fabricated source.
+    ('ecb_press','MACRO_POLICY_EVENTS','rss','https://www.ecb.europa.eu/rss/press.html'),
+    ('btc_core_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/bitcoin/bitcoin/releases.atom'),
+    ('eth_geth_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ethereum/go-ethereum/releases.atom'),
+    ('eth_consensus_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ethereum/consensus-specs/releases.atom'),
+    ('sol_agave_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/anza-xyz/agave/releases.atom'),
+    ('sui_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/MystenLabs/sui/releases.atom'),
+    ('aptos_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/aptos-labs/aptos-core/releases.atom'),
+    ('avax_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ava-labs/avalanchego/releases.atom'),
+    ('near_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/near/nearcore/releases.atom'),
+    ('polkadot_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/paritytech/polkadot-sdk/releases.atom'),
+    ('cosmos_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/cosmos/gaia/releases.atom'),
+    ('arbitrum_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/OffchainLabs/nitro/releases.atom'),
+    ('optimism_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ethereum-optimism/optimism/releases.atom'),
+    ('aave_v3_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/aave/aave-v3-core/releases.atom'),
+    ('uniswap_v4_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/Uniswap/v4-core/releases.atom'),
+    ('chainlink_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/smartcontractkit/chainlink/releases.atom'),
+    ('zksync_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/matter-labs/zksync-era/releases.atom'),
+    ('stellar_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/stellar/stellar-core/releases.atom'),
+    ('xrp_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/XRPLF/rippled/releases.atom'),
+    ('doge_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/dogecoin/dogecoin/releases.atom'),
+    ('lightning_releases','NETWORK_INFRA_RELEASE','rss','https://github.com/lightningnetwork/lnd/releases.atom'),
+    ('aave_governance','PRIMARY_GOVERNANCE','rss','https://governance.aave.com/latest.rss'),
+    ('cosmos_governance','PRIMARY_GOVERNANCE','rss','https://forum.cosmos.network/latest.rss'),
+    ('polkadot_governance','PRIMARY_GOVERNANCE','rss','https://forum.polkadot.network/latest.rss'),
+    ('zcash_governance','PRIMARY_GOVERNANCE','rss','https://forum.zcashcommunity.com/latest.rss'),
+    ('ethereum_governance','PRIMARY_GOVERNANCE','rss','https://ethereum-magicians.org/latest.rss'),
 ]
 
 # Categories are data provenance labels; they do not establish that an event is true.
