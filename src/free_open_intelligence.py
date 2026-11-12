@@ -613,6 +613,40 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             for a in assets if not any(e["candidate_cmc_ids"] and a["cmc_id"] in e["candidate_cmc_ids"]
                     for e in rich)]
     }
+
+    # Observe the true information quality by access type. Do NOT improve
+    # the full-corpus rate merely by excluding low-context headlines.
+    source_depth=collections.defaultdict(lambda:{"total":0,"substantive":0,
+        "feed_summary_count":0,"article_extract_count":0,"domains":set()})
+    by_source_id=collections.defaultdict(lambda:{"total":0,"substantive":0})
+    for e in events:
+        host=(urllib.parse.urlsplit(e.get("url") or "").hostname or "").lower()
+        typ="GOOGLE_NEWS_AGGREGATOR" if host.startswith("news.google.") else "DIRECT_SOURCE"
+        key=e["source_plane"]+":"+typ
+        d=source_depth[key]
+        d["total"]+=1
+        is_sub=has_additional_information(e["title"],e["excerpt"])
+        d["substantive"]+=int(is_sub)
+        d["feed_summary_count"]+=int(e.get("context_origin")=="PUBLISHER_FEED_SUMMARY")
+        d["article_extract_count"]+=int(e.get("context_origin")=="DIRECT_PUBLISHER_PUBLIC_ARTICLE")
+        if host:d["domains"].add(host)
+        z=by_source_id[str(e.get("source_id") or e.get("source_family") or "UNSPECIFIED")]
+        z["total"]+=1
+        z["substantive"]+=int(is_sub)
+    research_base=source_depth["research:DIRECT_SOURCE"]
+    source_context_audit={
+        "by_plane_and_access_type":{
+            k:{**{a:v for a,v in x.items() if a!="domains"},
+               "distinct_source_domains":len(x["domains"])}
+            for k,x in sorted(source_depth.items())},
+        "by_source_id":dict(sorted(by_source_id.items(),
+            key=lambda x:(-x[1]["substantive"],-x[1]["total"],x[0]))),
+        "direct_research_substantive_ratio":round(
+            research_base["substantive"]/research_base["total"],4)
+            if research_base["total"] else None,
+        "direct_research_substantive_count":research_base["substantive"],
+        "direct_research_total":research_base["total"],
+        "disclaimer":"Substantive source text, not verified 24h causal evidence."}
     coverage={
       "official_assets":100,"source_planes_integrated":["market","evidence_engine",
           "expanded_discovery","research","adjacent_discovery"],
@@ -652,6 +686,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "adjacent":ds.get("access_gaps",[])},
       "adaptive_search_results":audit,
       "publisher_article_enrichment_audit":article_audit,
+      "source_context_audit":source_context_audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
     depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
