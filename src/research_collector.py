@@ -598,7 +598,10 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
             else:e['source_ids']=[ident]
             all_events[e['event_id']]=e
     # Keep event history bounded for connector usability. Archive all active events per run.
-    events=sorted(all_events.values(),key=lambda e:(e['published_utc'] or '',e['event_id']),reverse=True)[:420]
+    # Preserve direct source breadth: the old 420-item cap silently discarded
+    # genuine primary release/governance updates after collector expansion.
+    # This is still a bounded *readable index*; no source completeness claimed.
+    events=sorted(all_events.values(),key=lambda e:(e['published_utc'] or '',e['event_id']),reverse=True)[:1800]
     updates,deltas=previous_oi(oi_base or OUT,market)
     coin_row=[];pmap=defaultdict(list)
     books_by_id={str(x['cmc_id']):x for x in books}
