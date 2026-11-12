@@ -160,16 +160,29 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 3.419,
-            "bid": 3.418,
-            "book_source_utc": "2026-11-12T20:05:53Z",
+            "ask": 3.402,
+            "bid": 3.401,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 6535,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "NEAR-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.92526,
-            "top5_ask_usd": 165153.5,
-            "top5_bid_usd": 209690.54
+            "spread_bps": 2.93988,
+            "top5_ask_usd": 84590.46,
+            "top5_bid_usd": 118247.79
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1311549169.0,
+            "cmc_id": 6535,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.197Z",
+            "symbol": "NEAR",
+            "total_supply": 1311549169.0
           }
         },
         {
@@ -179,12 +192,12 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "NEAR Protocol",
-            "rank": 5
+            "rank": 7
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1311549169.0,
         "cmc_id": 6535,
         "coin_name": "NEAR Protocol",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -192,11 +205,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
+          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "NEAR",
-        "total_supply": null
+        "total_supply": 1311549169.0
       },
       "spot_quote": {
         "market_cap_usd": 4660267109.31,
@@ -364,31 +378,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.2397,
-            "bid": 0.2396,
-            "book_source_utc": "2026-11-12T20:05:53Z",
+            "ask": 0.2421,
+            "bid": 0.242,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 6538,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CRV-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 4.17275,
-            "top5_ask_usd": 39437.26,
-            "top5_bid_usd": 38584.3
+            "spread_bps": 4.13138,
+            "top5_ask_usd": 26678.34,
+            "top5_bid_usd": 29124.85
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1584955274.169593,
+            "cmc_id": 6538,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 3030303030.299,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.041Z",
+            "symbol": "CRV",
+            "total_supply": 2433919392.207871
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1584955274.169593,
         "cmc_id": 6538,
         "coin_name": "Curve DAO Token",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 3030303030.299,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "CRV",
-        "total_supply": null
+        "total_supply": 2433919392.207871
       },
       "spot_quote": {
         "market_cap_usd": 379677063.21,
@@ -562,31 +591,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.8272,
-            "bid": 0.8271,
-            "book_source_utc": "2026-11-12T20:05:53Z",
+            "ask": 0.8315,
+            "bid": 0.8314,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 6636,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "DOT-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.20897,
-            "top5_ask_usd": 9248.09,
-            "top5_bid_usd": 12061.9
+            "spread_bps": 1.20272,
+            "top5_ask_usd": 8045.6,
+            "top5_bid_usd": 9633.42
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1711825356.068553,
+            "cmc_id": 6636,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 2100000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.154Z",
+            "symbol": "DOT",
+            "total_supply": 1711825356.068553
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1711825356.068553,
         "cmc_id": 6636,
         "coin_name": "Polkadot",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 2100000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "DOT",
-        "total_supply": null
+        "total_supply": 1711825356.068553
       },
       "spot_quote": {
         "market_cap_usd": 1443780777.84,
@@ -760,31 +804,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 6.029,
-            "bid": 6.028,
-            "book_source_utc": "2026-11-12T20:05:53Z",
+            "ask": 6.02,
+            "bid": 6.019,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 7083,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "UNI-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.65879,
-            "top5_ask_usd": 46760.16,
-            "top5_bid_usd": 126131.42
+            "spread_bps": 1.66127,
+            "top5_ask_usd": 37566.1,
+            "top5_bid_usd": 19112.79
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 623716422.480362,
+            "cmc_id": 7083,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.096Z",
+            "symbol": "UNI",
+            "total_supply": 885964418.786197
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 623716422.480362,
         "cmc_id": 7083,
         "coin_name": "Uniswap",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "UNI",
-        "total_supply": null
+        "total_supply": 885964418.786197
       },
       "spot_quote": {
         "market_cap_usd": 3886898064.89,
@@ -911,26 +970,41 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "PancakeSwap",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 339426362.292817,
+            "cmc_id": 7186,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 400000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.109Z",
+            "symbol": "CAKE",
+            "total_supply": 350957757.844057
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 339426362.292817,
         "cmc_id": 7186,
         "coin_name": "PancakeSwap",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 400000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "CAKE",
-        "total_supply": null
+        "total_supply": 350957757.844057
       },
       "spot_quote": {
         "market_cap_usd": 574242306.51,
@@ -1105,7 +1179,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Injective",
-            "chain_tvl_usd": 20659684.35,
+            "chain_tvl_usd": 20778627.05,
             "cmc_id": 7226,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1114,16 +1188,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 7.466,
-            "bid": 7.464,
-            "book_source_utc": "2026-11-12T20:05:53Z",
+            "ask": 7.454,
+            "bid": 7.453,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 7226,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "INJ-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.67917,
-            "top5_ask_usd": 12805.81,
-            "top5_bid_usd": 9550.99
+            "spread_bps": 1.34165,
+            "top5_ask_usd": 12196.18,
+            "top5_bid_usd": 4256.34
           }
         },
         {
@@ -1140,23 +1214,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 99970954.5,
+            "cmc_id": 7226,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 100000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.022Z",
+            "symbol": "INJ",
+            "total_supply": 100000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 99970954.5,
         "cmc_id": 7226,
         "coin_name": "Injective",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 100000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "INJ",
-        "total_supply": null
+        "total_supply": 100000000.0
       },
       "spot_quote": {
         "market_cap_usd": 758021797.74,
@@ -1330,31 +1418,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 113.39,
-            "bid": 113.38,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 113.83,
+            "bid": 113.82,
+            "book_source_utc": "2026-11-12T22:45:06Z",
             "cmc_id": 7278,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "AAVE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.88195,
-            "top5_ask_usd": 7417.11,
-            "top5_bid_usd": 20676.64
+            "spread_bps": 0.87854,
+            "top5_ask_usd": 4744.3,
+            "top5_bid_usd": 2865.32
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 15440818.238182,
+            "cmc_id": 7278,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "AAVE",
+            "total_supply": 16000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 15440818.238182,
         "cmc_id": 7278,
         "coin_name": "Aave",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "AAVE",
-        "total_supply": null
+        "total_supply": 16000000.0
       },
       "spot_quote": {
         "market_cap_usd": 1834656479.45,
@@ -1486,7 +1589,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Flare",
-            "chain_tvl_usd": 144009722.14,
+            "chain_tvl_usd": 145391311.72,
             "cmc_id": 7950,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1506,10 +1609,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 87782701016.97592,
+            "cmc_id": 7950,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.096Z",
+            "symbol": "FLR",
+            "total_supply": 106940524533.31625
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 87782701016.97592,
         "cmc_id": 7950,
         "coin_name": "Flare",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1518,11 +1634,12 @@
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "FLR",
-        "total_supply": null
+        "total_supply": 106940524533.31625
       },
       "spot_quote": {
         "market_cap_usd": 474175743.47,
@@ -1671,29 +1788,44 @@
           "observation": {
             "ask": 0.3079,
             "bid": 0.3078,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 8000,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "LDO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
             "spread_bps": 3.24834,
-            "top5_ask_usd": 16449.02,
-            "top5_bid_usd": 14508.04
+            "top5_ask_usd": 15835.49,
+            "top5_bid_usd": 9495.76
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 829567764.204301,
+            "cmc_id": 8000,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.197Z",
+            "symbol": "LDO",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 829567764.204301,
         "cmc_id": 8000,
         "coin_name": "Lido DAO",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "LDO",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 259571944.25,
@@ -1908,31 +2040,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.596,
-            "bid": 1.5959,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 1.6031,
+            "bid": 1.603,
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 8526,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "RAY-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.62659,
-            "top5_ask_usd": 183.58,
-            "top5_bid_usd": 987.71
+            "spread_bps": 0.62381,
+            "top5_ask_usd": 383.22,
+            "top5_bid_usd": 610.55
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 269963562.976232,
+            "cmc_id": 8526,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 555000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.109Z",
+            "symbol": "RAY",
+            "total_supply": 554997312.216727
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 269963562.976232,
         "cmc_id": 8526,
         "coin_name": "Raydium",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 555000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "RAY",
-        "total_supply": null
+        "total_supply": 554997312.216727
       },
       "spot_quote": {
         "market_cap_usd": 433773367.4,
@@ -2106,16 +2253,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 2.569,
-            "bid": 2.568,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 2.592,
+            "bid": 2.591,
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 8916,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ICP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.89332,
-            "top5_ask_usd": 30192.12,
-            "top5_bid_usd": 39569.84
+            "spread_bps": 3.85877,
+            "top5_ask_usd": 17070.38,
+            "top5_bid_usd": 32410.84
           }
         },
         {
@@ -2132,10 +2279,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 558367960.172036,
+            "cmc_id": 8916,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.172Z",
+            "symbol": "ICP",
+            "total_supply": 558367960.172036
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 558367960.172036,
         "cmc_id": 8916,
         "coin_name": "Internet Computer",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2143,11 +2303,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "ICP",
-        "total_supply": null
+        "total_supply": 558367960.172036
       },
       "spot_quote": {
         "market_cap_usd": 1433832856.92,
@@ -2321,31 +2482,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.519,
-            "bid": 1.518,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 1.512,
+            "bid": 1.511,
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 9481,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PENDLE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.58545,
-            "top5_ask_usd": 26839.56,
-            "top5_bid_usd": 31859.01
+            "spread_bps": 6.61594,
+            "top5_ask_usd": 32378.87,
+            "top5_bid_usd": 29948.64
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 173944881.210263,
+            "cmc_id": 9481,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.197Z",
+            "symbol": "PENDLE",
+            "total_supply": 281527448.458531
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 173944881.210263,
         "cmc_id": 9481,
         "coin_name": "Pendle",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PENDLE",
-        "total_supply": null
+        "total_supply": 281527448.458531
       },
       "spot_quote": {
         "market_cap_usd": 265153291.04,
@@ -2458,26 +2634,41 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Sun [New]",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 19214949012.205658,
+            "cmc_id": 10529,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 19900730000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.218Z",
+            "symbol": "SUN",
+            "total_supply": 19214949012.205658
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 19214949012.205658,
         "cmc_id": 10529,
         "coin_name": "Sun [New]",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 19900730000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "SUN",
-        "total_supply": null
+        "total_supply": 19214949012.205658
       },
       "spot_quote": {
         "market_cap_usd": 292473839.79,
@@ -2527,26 +2718,41 @@
       },
       "missing_data": [
         "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals",
         "coin_relevant_article_text"
       ],
       "name": "Bitget Token",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 699992029.648104,
+            "cmc_id": 11092,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 919992035.98,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.109Z",
+            "symbol": "BGB",
+            "total_supply": 907875973.648104
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 699992029.648104,
         "cmc_id": 11092,
         "coin_name": "Bitget Token",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 919992035.98,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "BGB",
-        "total_supply": null
+        "total_supply": 907875973.648104
       },
       "spot_quote": {
         "market_cap_usd": 1190660138.64,
@@ -2714,31 +2920,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.127,
-            "bid": 1.126,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 1.132,
+            "bid": 1.13,
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 11419,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "GRAM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 8.87705,
-            "top5_ask_usd": 74899.09,
-            "top5_bid_usd": 109374.41
+            "spread_bps": 17.68347,
+            "top5_ask_usd": 85416.21,
+            "top5_bid_usd": 56622.17
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2855912874.820627,
+            "cmc_id": 11419,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "GRAM",
+            "total_supply": 5282739925.602975
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2855912874.820627,
         "cmc_id": 11419,
         "coin_name": "Gram (prev. Toncoin)",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "GRAM",
-        "total_supply": null
+        "total_supply": 5282739925.602975
       },
       "spot_quote": {
         "market_cap_usd": 3412382028.59,
@@ -2922,33 +3143,47 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.09546,
-            "bid": 0.09545,
-            "book_source_utc": "2026-11-12T20:05:54Z",
+            "ask": 0.09659,
+            "bid": 0.09658,
+            "book_source_utc": "2026-11-12T22:45:07Z",
             "cmc_id": 11840,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "OP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.04761,
-            "top5_ask_usd": 6989.94,
-            "top5_bid_usd": 3833.71
+            "spread_bps": 1.03536,
+            "top5_ask_usd": 4266.61,
+            "top5_bid_usd": 2572.95
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2290771093.0,
+            "cmc_id": 11840,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 4294967296.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.109Z",
+            "symbol": "OP",
+            "total_supply": 4294967296.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2290771093.0,
         "cmc_id": 11840,
         "coin_name": "Optimism",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 4294967296.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "OP",
-        "total_supply": null
+        "total_supply": 4294967296.0
       },
       "spot_quote": {
         "market_cap_usd": 221554135.99,
@@ -3134,27 +3369,52 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Arbitrum",
-            "chain_tvl_usd": 1371833601.74,
+            "chain_tvl_usd": 1372722611.8,
             "cmc_id": 11841,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 6892115031.0,
+            "cmc_id": 11841,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.129Z",
+            "symbol": "ARB",
+            "total_supply": 10000000000.0
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 11841,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "Arbitrum",
+            "rank": 14
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 6892115031.0,
         "cmc_id": 11841,
         "coin_name": "Arbitrum",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply",
+          "trending"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "ARB",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 1033578059.63,
@@ -3339,10 +3599,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 3752500152.753483,
+            "cmc_id": 13502,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "WLD",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 3752500152.753483,
         "cmc_id": 13502,
         "coin_name": "Worldcoin",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3350,11 +3623,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "WLD",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 1145452995.38,
@@ -3395,26 +3669,41 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "BitTorrent [New]",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 965416274329945.1,
+            "cmc_id": 16086,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 990000000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.129Z",
+            "symbol": "BTT",
+            "total_supply": 965416274329945.1
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 965416274329945.1,
         "cmc_id": 16086,
         "coin_name": "BitTorrent [New]",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 990000000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "BTT",
-        "total_supply": null
+        "total_supply": 965416274329945.1
       },
       "spot_quote": {
         "market_cap_usd": 332350840.36,
@@ -3541,26 +3830,41 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Kaspa",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 27806939759.026943,
+            "cmc_id": 20396,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 28704026601.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.154Z",
+            "symbol": "KAS",
+            "total_supply": 27806939759.026943
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 27806939759.026943,
         "cmc_id": 20396,
         "coin_name": "Kaspa",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 28704026601.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "KAS",
-        "total_supply": null
+        "total_supply": 27806939759.026943
       },
       "spot_quote": {
         "market_cap_usd": 815275333.71,

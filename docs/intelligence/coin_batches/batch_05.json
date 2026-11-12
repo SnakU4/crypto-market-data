@@ -1,7 +1,7 @@
 {
   "coins": [
     {
-      "candidate_event_count": 166,
+      "candidate_event_count": 165,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -160,43 +160,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 71.621,
-            "bid": 71.62,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 71.846,
+            "bid": 71.845,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 32196,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "HYPE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.13962,
-            "top5_ask_usd": 14123.68,
-            "top5_bid_usd": 3043.7
+            "spread_bps": 0.13919,
+            "top5_ask_usd": 7378.85,
+            "top5_bid_usd": 2133.79
           }
         },
         {
-          "family": "trending",
+          "family": "token_supply",
           "observation": {
+            "circulating_supply": 252872010.528706,
             "cmc_id": 32196,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "Hyperliquid",
-            "rank": 7
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 949889050.719074,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.197Z",
+            "symbol": "HYPE",
+            "total_supply": 949889050.719074
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 252872010.528706,
         "cmc_id": 32196,
         "coin_name": "Hyperliquid",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 949889050.719074,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "trending"
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "HYPE",
-        "total_supply": null
+        "total_supply": 949889050.719074
       },
       "spot_quote": {
         "market_cap_usd": 18273817074.63,
@@ -364,31 +367,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.05808,
-            "bid": 0.05805,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.05801,
+            "bid": 0.058,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 33038,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SKY-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 5.16662,
-            "top5_ask_usd": 1348.09,
-            "top5_bid_usd": 1131.5
+            "spread_bps": 1.72399,
+            "top5_ask_usd": 1602.05,
+            "top5_bid_usd": 614.39
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 23417813122.272858,
+            "cmc_id": 33038,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 23462665147.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.041Z",
+            "symbol": "SKY",
+            "total_supply": 23452431915.605965
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 23417813122.272858,
         "cmc_id": 33038,
         "coin_name": "Sky",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 23462665147.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "SKY",
-        "total_supply": null
+        "total_supply": 23452431915.605965
       },
       "spot_quote": {
         "market_cap_usd": 1367029336.49,
@@ -562,16 +580,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04727,
-            "bid": 0.04726,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.0473,
+            "bid": 0.04729,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 33251,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "WLFI-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.11573,
-            "top5_ask_usd": 20023.64,
-            "top5_bid_usd": 6712.8
+            "spread_bps": 2.11439,
+            "top5_ask_usd": 13464.1,
+            "top5_bid_usd": 9415.64
           }
         },
         {
@@ -588,22 +606,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 31780412022.0,
+            "cmc_id": 33251,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 100000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.129Z",
+            "symbol": "WLFI",
+            "total_supply": 100000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 31780412022.0,
         "cmc_id": 33251,
         "coin_name": "World Liberty Financial",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 100000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "WLFI",
-        "total_supply": null
+        "total_supply": 100000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 1509633150.66,
@@ -777,31 +809,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 2.0024,
-            "bid": 2.0019,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 2.0149,
+            "bid": 2.0146,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 34104,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "MORPHO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.49732,
-            "top5_ask_usd": 258.34,
-            "top5_bid_usd": 720.61
+            "spread_bps": 1.48902,
+            "top5_ask_usd": 467.52,
+            "top5_bid_usd": 763.21
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 565543927.521757,
+            "cmc_id": 34104,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "MORPHO",
+            "total_supply": 999999999.801033
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 565543927.521757,
         "cmc_id": 34104,
         "coin_name": "Morpho",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "MORPHO",
-        "total_supply": null
+        "total_supply": 999999999.801033
       },
       "spot_quote": {
         "market_cap_usd": 1132111534.76,
@@ -975,16 +1022,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.006133,
-            "bid": 0.006132,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.006206,
+            "bid": 0.006205,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 34466,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PENGU-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.63066,
-            "top5_ask_usd": 9903.92,
-            "top5_bid_usd": 9790.45
+            "spread_bps": 1.61147,
+            "top5_ask_usd": 6837.97,
+            "top5_bid_usd": 5712.34
           }
         },
         {
@@ -1003,31 +1050,45 @@
           }
         },
         {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 62860396090.04,
+            "cmc_id": 34466,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 88888888888.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.096Z",
+            "symbol": "PENGU",
+            "total_supply": 76724221264.3
+          }
+        },
+        {
           "family": "trending",
           "observation": {
             "cmc_id": 34466,
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Pudgy Penguins",
-            "rank": 10
+            "rank": 5
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 62860396090.04,
         "cmc_id": 34466,
         "coin_name": "Pudgy Penguins",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 88888888888.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "protocol_tvl",
+          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PENGU",
-        "total_supply": null
+        "total_supply": 76724221264.3
       },
       "spot_quote": {
         "market_cap_usd": 389652620.81,
@@ -1201,16 +1262,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.112,
-            "bid": 1.111,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 1.11,
+            "bid": 1.109,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 35336,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "TRUMP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 8.99685,
-            "top5_ask_usd": 597426.11,
-            "top5_bid_usd": 455246.64
+            "spread_bps": 9.01307,
+            "top5_ask_usd": 561452.43,
+            "top5_bid_usd": 596411.69
           }
         },
         {
@@ -1227,22 +1288,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 281866726.336291,
+            "cmc_id": 35336,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 999998790.664789,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "TRUMP",
+            "total_supply": 999998790.664789
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 281866726.336291,
         "cmc_id": 35336,
         "coin_name": "OFFICIAL TRUMP",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 999998790.664789,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "TRUMP",
-        "total_supply": null
+        "total_supply": 999998790.664789
       },
       "spot_quote": {
         "market_cap_usd": 315828872.59,
@@ -1415,22 +1490,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2297076839.881206,
+            "cmc_id": 35491,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.064Z",
+            "symbol": "M",
+            "total_supply": 5436066585.388431
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2297076839.881206,
         "cmc_id": 35491,
         "coin_name": "MemeCore",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "M",
-        "total_supply": null
+        "total_supply": 5436066585.388431
       },
       "spot_quote": {
         "market_cap_usd": 1806764951.05,
@@ -1629,31 +1718,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 19.149,
-            "bid": 19.145,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 18.908,
+            "bid": 18.906,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 35509,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "VVV-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.0891,
-            "top5_ask_usd": 1022.68,
-            "top5_bid_usd": 1112.02
+            "spread_bps": 1.05781,
+            "top5_ask_usd": 1917.48,
+            "top5_bid_usd": 338.31
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 49225183.413144,
+            "cmc_id": 35509,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.129Z",
+            "symbol": "VVV",
+            "total_supply": 81238464.812454
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 49225183.413144,
         "cmc_id": 35509,
         "coin_name": "Venice Token",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "VVV",
-        "total_supply": null
+        "total_supply": 81238464.812454
       },
       "spot_quote": {
         "market_cap_usd": 972656503.26,
@@ -1815,31 +1919,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.0691,
-            "bid": 0.06908,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.06915,
+            "bid": 0.06914,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 35697,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PI-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.89477,
-            "top5_ask_usd": 3911.38,
-            "top5_bid_usd": 347.4
+            "spread_bps": 1.44624,
+            "top5_ask_usd": 2291.43,
+            "top5_bid_usd": 1428.83
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 11378804660.846054,
+            "cmc_id": 35697,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 100000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.172Z",
+            "symbol": "PI",
+            "total_supply": 100000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 11378804660.846054,
         "cmc_id": 35697,
         "coin_name": "Pi",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 100000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PI",
-        "total_supply": null
+        "total_supply": 100000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 799094395.66,
@@ -2013,31 +2132,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.6629,
-            "bid": 0.6628,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.666,
+            "bid": 0.6659,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 36341,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ASTER-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.50864,
-            "top5_ask_usd": 11239.22,
-            "top5_bid_usd": 15337.23
+            "spread_bps": 1.50161,
+            "top5_ask_usd": 14060.27,
+            "top5_bid_usd": 5548.22
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2770158486.443179,
+            "cmc_id": 36341,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 8000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.189Z",
+            "symbol": "ASTER",
+            "total_supply": 7787306410.54332
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2770158486.443179,
         "cmc_id": 36341,
         "coin_name": "Aster",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 8000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "ASTER",
-        "total_supply": null
+        "total_supply": 7787306410.54332
       },
       "spot_quote": {
         "market_cap_usd": 1812757598.78,
@@ -2252,16 +2386,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.003402,
-            "bid": 0.003401,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.003433,
+            "bid": 0.003432,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 36507,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PUMP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.93988,
-            "top5_ask_usd": 47152.82,
-            "top5_bid_usd": 105835.18
+            "spread_bps": 2.91333,
+            "top5_ask_usd": 45161.55,
+            "top5_bid_usd": 43131.87
           }
         },
         {
@@ -2278,22 +2412,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 458217334404.5458,
+            "cmc_id": 36507,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.096Z",
+            "symbol": "PUMP",
+            "total_supply": 823104156933.5166
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 458217334404.5458,
         "cmc_id": 36507,
         "coin_name": "Pump.fun",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PUMP",
-        "total_supply": null
+        "total_supply": 823104156933.5166
       },
       "spot_quote": {
         "market_cap_usd": 1590828818.03,
@@ -2468,7 +2616,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Plasma",
-            "chain_tvl_usd": 417385551.34,
+            "chain_tvl_usd": 423837483.75,
             "cmc_id": 36645,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2477,16 +2625,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04913,
-            "bid": 0.04912,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.05004,
+            "bid": 0.05003,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 36645,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "XPL-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.03562,
-            "top5_ask_usd": 6794.49,
-            "top5_bid_usd": 9219.98
+            "spread_bps": 1.9986,
+            "top5_ask_usd": 7325.98,
+            "top5_bid_usd": 3778.02
           }
         },
         {
@@ -2503,10 +2651,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 4761111111.1111,
+            "cmc_id": 36645,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.096Z",
+            "symbol": "XPL",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 4761111111.1111,
         "cmc_id": 36645,
         "coin_name": "Plasma",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2515,11 +2676,12 @@
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "XPL",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 243074241.85,
@@ -2688,7 +2850,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Canton",
-            "chain_tvl_usd": 12184235.87,
+            "chain_tvl_usd": 12191858.76,
             "cmc_id": 37263,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2697,16 +2859,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.0889,
-            "bid": 0.08887,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.08901,
+            "bid": 0.08897,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 37263,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CC-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.37515,
-            "top5_ask_usd": 2463.32,
-            "top5_bid_usd": 2647.5
+            "spread_bps": 4.49489,
+            "top5_ask_usd": 1438.03,
+            "top5_bid_usd": 1319.95
           }
         },
         {
@@ -2723,10 +2885,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 40045308897.523224,
+            "cmc_id": 37263,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.064Z",
+            "symbol": "CC",
+            "total_supply": 40045308897.523224
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 40045308897.523224,
         "cmc_id": 37263,
         "coin_name": "Canton",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2735,11 +2910,12 @@
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "CC",
-        "total_supply": null
+        "total_supply": 40045308897.523224
       },
       "spot_quote": {
         "market_cap_usd": 3637340783.94,
@@ -2829,26 +3005,40 @@
             "protocol_id": "6790",
             "protocol_name": "Falcon Finance",
             "protocol_slug": "falcon-finance",
-            "protocol_tvl_change_1d_pct": 0.057237,
-            "protocol_tvl_change_7d_pct": 0.108096,
-            "protocol_tvl_usd": 1660824029.67
+            "protocol_tvl_change_1d_pct": 0.052762,
+            "protocol_tvl_change_7d_pct": 0.098521,
+            "protocol_tvl_usd": 1660569254.87
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 3546111110.0,
+            "cmc_id": 38482,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.064Z",
+            "symbol": "FF",
+            "total_supply": 10000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 3546111110.0,
         "cmc_id": 38482,
         "coin_name": "Falcon Finance",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "FF",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 300768342.46,
@@ -2961,26 +3151,41 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "币安人生",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1000000000.0,
+            "cmc_id": 38590,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.172Z",
+            "symbol": "币安人生",
+            "total_supply": 1000000000.0
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1000000000.0,
         "cmc_id": 38590,
         "coin_name": "币安人生",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "币安人生",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 493888556.0,
@@ -3148,31 +3353,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.1268,
-            "bid": 0.12676,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 0.12683,
+            "bid": 0.1267,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 38828,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "KITE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.15507,
-            "top5_ask_usd": 562.03,
-            "top5_bid_usd": 73.49
+            "spread_bps": 10.2552,
+            "top5_ask_usd": 1596.19,
+            "top5_bid_usd": 582.58
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2877076408.0,
+            "cmc_id": 38828,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.022Z",
+            "symbol": "KITE",
+            "total_supply": 10000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2877076408.0,
         "cmc_id": 38828,
         "coin_name": "Kite",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "KITE",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 357780584.76,
@@ -3340,31 +3560,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.6232,
-            "bid": 1.623,
-            "book_source_utc": "2026-11-12T20:05:55Z",
+            "ask": 1.6659,
+            "bid": 1.6653,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 38849,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PIEVERSE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.23221,
-            "top5_ask_usd": 2451.56,
-            "top5_bid_usd": 1443.97
+            "spread_bps": 3.60231,
+            "top5_ask_usd": 933.3,
+            "top5_bid_usd": 815.8
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 300352220.0,
+            "cmc_id": 38849,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.218Z",
+            "symbol": "PIEVERSE",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 300352220.0,
         "cmc_id": 38849,
         "coin_name": "Pieverse",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PIEVERSE",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 488183547.44,
@@ -3527,7 +3762,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Stable",
-            "chain_tvl_usd": 68069185.72,
+            "chain_tvl_usd": 68239733.85,
             "cmc_id": 38892,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3536,21 +3771,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.02634,
-            "bid": 0.0263,
-            "book_source_utc": "2026-11-12T20:05:56Z",
+            "ask": 0.02649,
+            "bid": 0.02646,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 38892,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "STABLE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 15.19757,
-            "top5_ask_usd": 1180.89,
-            "top5_bid_usd": 1660.89
+            "spread_bps": 11.33144,
+            "top5_ask_usd": 1419.06,
+            "top5_bid_usd": 1747.66
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 18000000000.0,
+            "cmc_id": 38892,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.218Z",
+            "symbol": "STABLE",
+            "total_supply": 100000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 18000000000.0,
         "cmc_id": 38892,
         "coin_name": "Stable",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3558,11 +3806,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "STABLE",
-        "total_supply": null
+        "total_supply": 100000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 484705855.04,
@@ -3736,31 +3985,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04473,
-            "bid": 0.044722,
-            "book_source_utc": "2026-11-12T20:05:56Z",
+            "ask": 0.045665,
+            "bid": 0.045641,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 39064,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "NIGHT-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.78867,
-            "top5_ask_usd": 635.28,
-            "top5_bid_usd": 286.15
+            "spread_bps": 5.25705,
+            "top5_ask_usd": 653.12,
+            "top5_bid_usd": 324.01
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 16607399401.0,
+            "cmc_id": 39064,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 24000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.041Z",
+            "symbol": "NIGHT",
+            "total_supply": 24000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 16607399401.0,
         "cmc_id": 39064,
         "coin_name": "Midnight",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 24000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "NIGHT",
-        "total_supply": null
+        "total_supply": 24000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 762678427.18,
@@ -3928,31 +4192,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 3.1769,
-            "bid": 3.1766,
-            "book_source_utc": "2026-11-12T20:05:56Z",
+            "ask": 3.2043,
+            "bid": 3.2042,
+            "book_source_utc": "2026-11-12T22:45:08Z",
             "cmc_id": 39125,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "LIT-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.94436,
-            "top5_ask_usd": 584.64,
-            "top5_bid_usd": 1521.33
+            "spread_bps": 0.31209,
+            "top5_ask_usd": 1365.54,
+            "top5_bid_usd": 3206.63
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 250000000.0,
+            "cmc_id": 39125,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-12T22:44:48.041Z",
+            "symbol": "LIT",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 250000000.0,
         "cmc_id": 39125,
         "coin_name": "Lighter",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "LIT",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "spot_quote": {
         "market_cap_usd": 822756500.44,

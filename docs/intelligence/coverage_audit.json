@@ -22,7 +22,7 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 9,
+      "results": 11,
       "status": "OK",
       "task_id": "T:07f31ec24d3d"
     },
@@ -42,12 +42,12 @@
       "task_id": "T:89cc52e1fa99"
     },
     {
-      "results": 12,
+      "results": 0,
       "status": "OK",
-      "task_id": "T:410f297961a4"
+      "task_id": "T:180ef6c02f19"
     },
     {
-      "results": 4,
+      "results": 5,
       "status": "OK",
       "task_id": "T:ba47785201d4"
     },
@@ -67,14 +67,9 @@
       "task_id": "T:8434249519aa"
     },
     {
-      "results": 12,
+      "results": 0,
       "status": "OK",
-      "task_id": "T:aba7cbe84ed1"
-    },
-    {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
+      "task_id": "T:4144598f2b85"
     },
     {
       "results": 10,
@@ -84,22 +79,27 @@
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:590b383b34bd"
+      "task_id": "T:aba7cbe84ed1"
+    },
+    {
+      "results": 8,
+      "status": "OK",
+      "task_id": "T:a7ec3ce54236"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:86d9c8633c51"
+      "task_id": "T:7ab6253c47b7"
     },
     {
-      "results": 12,
+      "results": 5,
       "status": "OK",
-      "task_id": "T:156e306daba2"
+      "task_id": "T:76adecce937d"
     },
     {
-      "results": 12,
+      "results": 9,
       "status": "OK",
-      "task_id": "T:9f3963951e39"
+      "task_id": "T:5c2f832a4bbe"
     }
   ],
   "adjacent_discovery_source": {
@@ -116,21 +116,21 @@
   "evidence_counts": {
     "adjacent_full_event_rows": 687,
     "adjacent_read_index_event_rows": 500,
-    "canonical_research_leads": 10617,
+    "canonical_research_leads": 10648,
     "direct_publisher_article_excerpts": 37,
     "direct_publisher_article_fetch_attempted": 55,
     "engine_rows": 3229,
     "expanded_rows": 9778,
-    "free_adaptive_followup_leads": 196,
+    "free_adaptive_followup_leads": 161,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 11430,
-    "long_excerpts_by_character_count_not_claim_verification": 4397,
+    "long_excerpts_by_character_count_not_claim_verification": 4430,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "new_source_discovery_items": 40,
+    "new_source_discovery_items": 35,
     "non_asset_structured_market_and_network_observations": 2844,
     "research_event_rows": 965,
-    "substantive_source_excerpt_leads": 942
+    "substantive_source_excerpt_leads": 974
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -147,80 +147,94 @@
     "rows": 0
   },
   "new_public_source_discovery_audit": {
-    "advertised_existing_feed_count": 2,
+    "advertised_existing_feed_count": 0,
     "domain_cooldown_hours": 72,
-    "domains_attempted": 14,
-    "domains_found_content": 2,
-    "domains_skipped_due_to_recent_probe": 14,
-    "new_feed_items": 40,
+    "domains_attempted": 11,
+    "domains_found_content": 3,
+    "domains_skipped_due_to_recent_probe": 28,
+    "new_feed_items": 35,
     "not_verified_facts": true,
     "sources": [
       {
         "article_count": 0,
-        "domain": "gov.optimism.io",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "gov.uniswap.org",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "governance.aave.com",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "coindesk.com",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "sec.gov",
+        "domain": "technologyreview.com",
         "feed_status": "NOT_DISCOVERED",
         "home_status": "ROBOTS_DISALLOW",
         "substantive": 0
       },
       {
+        "article_count": 0,
+        "domain": "ethresear.ch",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://github.blog/feed/",
+          "https://github.blog/comments/feed/"
+        ],
+        "article_count": 10,
+        "domain": "github.blog",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 10
+      },
+      {
         "advertised_feeds": [],
         "article_count": 0,
-        "domain": "arstechnica.com",
+        "domain": "linuxfoundation.org",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forum.stacks.org",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://krebsonsecurity.com/feed/",
+          "https://krebsonsecurity.com/comments/feed/"
+        ],
+        "article_count": 10,
+        "domain": "krebsonsecurity.com",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 10
+      },
+      {
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "aave.com",
         "feed_status": "NOT_DISCOVERED",
         "home_status": "OK",
         "substantive": 0
       },
       {
         "advertised_feeds": [
-          "https://blog.cloudflare.com/rss/"
+          "https://blog.arbitrum.io/rss/"
         ],
-        "article_count": 20,
-        "domain": "blog.cloudflare.com",
+        "article_count": 15,
+        "domain": "blog.arbitrum.io",
         "feed_status": "OK",
         "home_status": "OK",
-        "substantive": 20
+        "substantive": 15
       },
       {
-        "advertised_feeds": [
-          "https://techcrunch.com/feed/"
-        ],
-        "article_count": 20,
-        "domain": "techcrunch.com",
-        "feed_status": "OK",
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "cve.org",
+        "feed_status": "NOT_DISCOVERED",
         "home_status": "OK",
-        "substantive": 9
+        "substantive": 0
       },
       {
         "article_count": 0,
-        "domain": "theblock.co",
+        "domain": "research.lido.fi",
         "feed_status": "NOT_DISCOVERED",
         "home_status": "HTTPError",
         "substantive": 0
@@ -228,59 +242,17 @@
       {
         "advertised_feeds": [],
         "article_count": 0,
-        "domain": "ecb.europa.eu",
+        "domain": "snapshot.box",
         "feed_status": "NOT_DISCOVERED",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [
-          "https://bitcoinmagazine.com/feed"
-        ],
-        "article_count": 0,
-        "domain": "bitcoinmagazine.com",
-        "duplicate_feed_url": "https://bitcoinmagazine.com/feed",
-        "feed_status": "ALREADY_COLLECTED",
-        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [],
-        "article_count": 0,
-        "domain": "cncf.io",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [
-          "https://cryptoslate.com/feed/"
-        ],
-        "article_count": 0,
-        "domain": "cryptoslate.com",
-        "duplicate_feed_url": "https://cryptoslate.com/feed/",
-        "feed_status": "ALREADY_COLLECTED",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [
-          "https://protos.com/feed/",
-          "https://protos.com/comments/feed/"
-        ],
-        "article_count": 0,
-        "domain": "protos.com",
-        "duplicate_feed_url": "https://protos.com/feed/",
-        "feed_status": "OK",
         "home_status": "OK",
         "substantive": 0
       }
     ],
-    "substantive_feed_items": 29
+    "substantive_feed_items": 35
   },
   "official_assets": 100,
   "per_coin": {
-    "any_mapped_research_family_including_reported_supply": 87,
+    "any_mapped_research_family_including_reported_supply": 100,
     "candidate_news_links": 100,
     "perp_markets_unquarantined": 76,
     "research_mapped_quantitative_families_beyond_supply_and_trending": 47,
@@ -289,9 +261,9 @@
   "publisher_article_enrichment_audit": {
     "attempted": 55,
     "by_scope": {
-      "ASSET_CANDIDATE": 6,
-      "GLOBAL_UNRESOLVED": 16,
-      "SECTOR": 15
+      "ASSET_CANDIDATE": 4,
+      "GLOBAL_UNRESOLVED": 17,
+      "SECTOR": 16
     },
     "substantive": 37,
     "succeeded": 40
@@ -308,7 +280,7 @@
     "publisher_source_attempted": 55,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.0887,
+    "substantive_context_share": 0.0915,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
@@ -317,18 +289,18 @@
     "engine": "2026-11-12T19:08:55Z",
     "expanded": "2026-11-12T18:56:45Z",
     "market": "2026-11-12T04:09:38Z",
-    "research": "2026-11-12T20:05:39Z"
+    "research": "2026-11-12T22:44:57Z"
   },
   "source_context_audit": {
     "by_plane_and_access_type": {
       "adjacent:DIRECT_SOURCE": {
-        "article_extract_count": 17,
+        "article_extract_count": 18,
         "distinct_source_domains": 7,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 46,
+        "published_last_24h": 44,
         "published_last_72h": 79,
-        "substantive": 125,
+        "substantive": 126,
         "substantive_published_last_72h": 53,
         "total": 184
       },
@@ -337,7 +309,7 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 216,
+        "published_last_24h": 196,
         "published_last_72h": 387,
         "substantive": 0,
         "substantive_published_last_72h": 0,
@@ -348,10 +320,10 @@
         "distinct_source_domains": 22,
         "feed_summary_count": 0,
         "published_date_missing": 1,
-        "published_last_24h": 67,
-        "published_last_72h": 177,
+        "published_last_24h": 62,
+        "published_last_72h": 176,
         "substantive": 221,
-        "substantive_published_last_72h": 164,
+        "substantive_published_last_72h": 163,
         "total": 234
       },
       "expanded:GOOGLE_NEWS_AGGREGATOR": {
@@ -359,22 +331,33 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 1785,
-        "published_last_72h": 5144,
+        "published_last_24h": 1570,
+        "published_last_72h": 4974,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 8995
       },
+      "new_primary_source:DIRECT_SOURCE": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 3,
+        "feed_summary_count": 29,
+        "published_date_missing": 0,
+        "published_last_24h": 0,
+        "published_last_72h": 0,
+        "substantive": 29,
+        "substantive_published_last_72h": 0,
+        "total": 29
+      },
       "research:DIRECT_SOURCE": {
-        "article_extract_count": 20,
+        "article_extract_count": 19,
         "distinct_source_domains": 23,
-        "feed_summary_count": 707,
+        "feed_summary_count": 710,
         "published_date_missing": 0,
         "published_last_24h": 134,
-        "published_last_72h": 201,
-        "substantive": 596,
-        "substantive_published_last_72h": 121,
-        "total": 817
+        "published_last_72h": 202,
+        "substantive": 598,
+        "substantive_published_last_72h": 124,
+        "total": 819
       }
     },
     "by_source_id": {
@@ -390,13 +373,17 @@
         "substantive": 0,
         "total": 1
       },
-      "DYNAMIC_blog.cloudflare.com": {
-        "substantive": 1,
-        "total": 1
-      },
-      "DYNAMIC_techcrunch.com": {
-        "substantive": 8,
+      "DYNAMIC_blog.arbitrum.io": {
+        "substantive": 14,
         "total": 14
+      },
+      "DYNAMIC_github.blog": {
+        "substantive": 7,
+        "total": 7
+      },
+      "DYNAMIC_krebsonsecurity.com": {
+        "substantive": 8,
+        "total": 8
       },
       "GOVERNANCE_EVENTS": {
         "substantive": 1,
@@ -455,7 +442,7 @@
         "total": 10
       },
       "btc_core_releases": {
-        "substantive": 2,
+        "substantive": 1,
         "total": 5
       },
       "chainlink_releases": {
@@ -463,8 +450,8 @@
         "total": 7
       },
       "cloudflare_blog": {
-        "substantive": 19,
-        "total": 19
+        "substantive": 20,
+        "total": 20
       },
       "cncf_blog": {
         "substantive": 10,
@@ -475,7 +462,7 @@
         "total": 25
       },
       "cointelegraph": {
-        "substantive": 19,
+        "substantive": 20,
         "total": 30
       },
       "cosmos_governance": {
@@ -491,7 +478,7 @@
         "total": 10
       },
       "decrypt": {
-        "substantive": 22,
+        "substantive": 21,
         "total": 38
       },
       "defiant": {
@@ -567,7 +554,7 @@
         "total": 8
       },
       "github_releases_microsoft__quantum": {
-        "substantive": 0,
+        "substantive": 1,
         "total": 8
       },
       "github_releases_paradigmxyz__reth": {
@@ -787,11 +774,11 @@
         "total": 10
       },
       "techcrunch": {
-        "substantive": 6,
-        "total": 6
+        "substantive": 14,
+        "total": 20
       },
       "theblock": {
-        "substantive": 1,
+        "substantive": 2,
         "total": 20
       },
       "ton_releases": {
@@ -815,8 +802,8 @@
         "total": 10
       },
       "zcash_governance": {
-        "substantive": 3,
-        "total": 3
+        "substantive": 5,
+        "total": 5
       },
       "zcash_releases": {
         "substantive": 1,
@@ -827,9 +814,9 @@
         "total": 10
       }
     },
-    "direct_research_substantive_count": 596,
-    "direct_research_substantive_ratio": 0.7295,
-    "direct_research_total": 817,
+    "direct_research_substantive_count": 598,
+    "direct_research_substantive_ratio": 0.7302,
+    "direct_research_total": 819,
     "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },
   "source_failures": {
@@ -872,82 +859,55 @@
     "research": [
       {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T20:05:41Z",
+        "observed_utc": "2026-11-12T22:44:58Z",
         "source_id": "bls_cpi",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:41Z",
+        "started_utc": "2026-11-12T22:44:58Z",
         "status": "ERROR",
         "url": "https://www.bls.gov/feed/cpi.rss"
       },
       {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T20:05:41Z",
+        "observed_utc": "2026-11-12T22:44:58Z",
         "source_id": "bls_jobs",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:41Z",
+        "started_utc": "2026-11-12T22:44:58Z",
         "status": "ERROR",
         "url": "https://www.bls.gov/feed/empsit.rss"
       },
       {
-        "error": "HTTP 429",
-        "observed_utc": "2026-11-12T20:05:50Z",
-        "source_id": "cmc_supply_batch_1",
-        "source_type": "json",
-        "started_utc": "2026-11-12T20:05:49Z",
-        "status": "ERROR",
-        "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=1%2C2%2C52%2C74%2C131%2C328%2C512%2C1027%2C1321%2C1437%2C1659%2C1831%2C1839%2C1958%2C1975%2C2010%2C2011%2C2087%2C2280%2C2634%2C2694%2C3077%2C3155%2C3602%2C3635%2C3773%2C3794%2C3897%2C3957%2C4030%2C4269%2C4642%2C4705%2C4847%2C5176%2C5426%2C5488%2C5690%2C5805%2C5994&convert=USD&skip_invalid=true"
-      },
-      {
-        "error": "HTTP 429",
-        "observed_utc": "2026-11-12T20:05:51Z",
-        "source_id": "cmc_supply_batch_2",
-        "source_type": "json",
-        "started_utc": "2026-11-12T20:05:50Z",
-        "status": "ERROR",
-        "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=6535%2C6538%2C6636%2C7083%2C7186%2C7226%2C7278%2C7950%2C8000%2C8526%2C8916%2C9481%2C10529%2C11092%2C11419%2C11840%2C11841%2C13502%2C16086%2C20396%2C20947%2C21159%2C21794%2C22691%2C22861%2C22974%2C23095%2C23149%2C24478%2C26997%2C27075%2C28081%2C28177%2C28298%2C28321%2C29210%2C29270%2C29420%2C29814%2C30171&convert=USD&skip_invalid=true"
-      },
-      {
-        "error": "HTTP 429",
-        "observed_utc": "2026-11-12T20:05:51Z",
-        "source_id": "cmc_supply_batch_3",
-        "source_type": "json",
-        "started_utc": "2026-11-12T20:05:51Z",
-        "status": "ERROR",
-        "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=32196%2C33038%2C33251%2C34104%2C34466%2C35336%2C35491%2C35509%2C35697%2C36341%2C36507%2C36645%2C37263%2C38482%2C38590%2C38828%2C38849%2C38892%2C39064%2C39125&convert=USD&skip_invalid=true"
-      },
-      {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T20:05:41Z",
+        "observed_utc": "2026-11-12T22:44:58Z",
         "source_id": "coinbase_blog",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:41Z",
+        "started_utc": "2026-11-12T22:44:58Z",
         "status": "ERROR",
         "url": "https://www.coinbase.com/blog/rss.xml"
       },
       {
         "error": "HTTP 404",
-        "observed_utc": "2026-11-12T20:05:45Z",
+        "observed_utc": "2026-11-12T22:45:01Z",
         "source_id": "injective_releases",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:45Z",
+        "started_utc": "2026-11-12T22:45:01Z",
         "status": "ERROR",
         "url": "https://github.com/InjectiveLabs/injective-core/releases.atom"
       },
       {
         "error": "HTTP 500",
-        "observed_utc": "2026-11-12T20:05:42Z",
+        "observed_utc": "2026-11-12T22:44:59Z",
         "source_id": "rekt_security",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:41Z",
+        "started_utc": "2026-11-12T22:44:58Z",
         "status": "ERROR",
         "url": "https://rekt.news/rss.xml"
       },
       {
         "error": "HTTP 429",
-        "observed_utc": "2026-11-12T20:05:42Z",
+        "observed_utc": "2026-11-12T22:44:58Z",
         "source_id": "solana_blog",
         "source_type": "rss",
-        "started_utc": "2026-11-12T20:05:41Z",
+        "started_utc": "2026-11-12T22:44:58Z",
         "status": "ERROR",
         "url": "https://solana.com/news/rss.xml"
       }

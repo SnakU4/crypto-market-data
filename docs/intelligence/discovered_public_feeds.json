@@ -1,78 +1,92 @@
 {
-  "advertised_existing_feed_count": 2,
+  "advertised_existing_feed_count": 0,
   "domain_cooldown_hours": 72,
-  "domains_attempted": 14,
-  "domains_found_content": 2,
-  "domains_skipped_due_to_recent_probe": 14,
-  "new_feed_items": 40,
+  "domains_attempted": 11,
+  "domains_found_content": 3,
+  "domains_skipped_due_to_recent_probe": 28,
+  "new_feed_items": 35,
   "not_verified_facts": true,
   "sources": [
     {
       "article_count": 0,
-      "domain": "gov.optimism.io",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "gov.uniswap.org",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "governance.aave.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "coindesk.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "sec.gov",
+      "domain": "technologyreview.com",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "ROBOTS_DISALLOW",
       "substantive": 0
     },
     {
+      "article_count": 0,
+      "domain": "ethresear.ch",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://github.blog/feed/",
+        "https://github.blog/comments/feed/"
+      ],
+      "article_count": 10,
+      "domain": "github.blog",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 10
+    },
+    {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "arstechnica.com",
+      "domain": "linuxfoundation.org",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forum.stacks.org",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://krebsonsecurity.com/feed/",
+        "https://krebsonsecurity.com/comments/feed/"
+      ],
+      "article_count": 10,
+      "domain": "krebsonsecurity.com",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 10
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "aave.com",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://blog.cloudflare.com/rss/"
+        "https://blog.arbitrum.io/rss/"
       ],
-      "article_count": 20,
-      "domain": "blog.cloudflare.com",
+      "article_count": 15,
+      "domain": "blog.arbitrum.io",
       "feed_status": "OK",
       "home_status": "OK",
-      "substantive": 20
+      "substantive": 15
     },
     {
-      "advertised_feeds": [
-        "https://techcrunch.com/feed/"
-      ],
-      "article_count": 20,
-      "domain": "techcrunch.com",
-      "feed_status": "OK",
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "cve.org",
+      "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
-      "substantive": 9
+      "substantive": 0
     },
     {
       "article_count": 0,
-      "domain": "theblock.co",
+      "domain": "research.lido.fi",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "HTTPError",
       "substantive": 0
@@ -80,53 +94,11 @@
     {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "ecb.europa.eu",
+      "domain": "snapshot.box",
       "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://bitcoinmagazine.com/feed"
-      ],
-      "article_count": 0,
-      "domain": "bitcoinmagazine.com",
-      "duplicate_feed_url": "https://bitcoinmagazine.com/feed",
-      "feed_status": "ALREADY_COLLECTED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "cncf.io",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://cryptoslate.com/feed/"
-      ],
-      "article_count": 0,
-      "domain": "cryptoslate.com",
-      "duplicate_feed_url": "https://cryptoslate.com/feed/",
-      "feed_status": "ALREADY_COLLECTED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://protos.com/feed/",
-        "https://protos.com/comments/feed/"
-      ],
-      "article_count": 0,
-      "domain": "protos.com",
-      "duplicate_feed_url": "https://protos.com/feed/",
-      "feed_status": "OK",
       "home_status": "OK",
       "substantive": 0
     }
   ],
-  "substantive_feed_items": 29
+  "substantive_feed_items": 35
 }
