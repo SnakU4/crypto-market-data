@@ -59,7 +59,8 @@ class FreeIntelligenceTests(unittest.TestCase):
               "events":[{"event_id":"research-1","headline":"Company announces new payment platform",
                          "published_utc":OBS,"first_observed_utc":OBS,
                          "url":"https://example.org/payment","cmc_ids":[]}],
-              "families":{"protocol_tvl":[{"cmc_id":1,"protocol_name":"TEST","tvl_usd":500.0}],
+              "families":{"stablecoin_global":{"total_supply_usd":1234567},
+                          "protocol_tvl":[{"cmc_id":1,"protocol_name":"TEST","tvl_usd":500.0}],
                           "okx_orderbooks":[{"cmc_id":3155,"instrument_id":"QNT-USDT-SWAP",
                                              "spread_bps":20}]}})
         write(self.root/"docs/discovery/latest.json",
@@ -92,6 +93,9 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertEqual(coin1["candidate_event_count"],1)
         self.assertTrue(foi.read(self.root/"docs/intelligence/sector_intelligence.json")["sectors"])
         self.assertTrue(foi.read(self.root/"docs/intelligence/global_intelligence.json")["global_unresolved_leads"])
+        g=foi.read(self.root/"docs/intelligence/global_intelligence.json")
+        self.assertEqual(g["global_research_quantitative_families"]["stablecoin_global"]["observation"]["total_supply_usd"],1234567)
+        self.assertTrue(g["unassigned_structured_samples_by_source"] == {} or isinstance(g["unassigned_structured_samples_by_source"],dict))
         self.assertGreater(len(foi.read(self.root/"docs/intelligence/research_tasks.json")["tasks"]),0)
         self.assertEqual(m["llm_calls"],0)
         self.assertTrue(m["archives"]["engine"]["verified"])
