@@ -9,12 +9,22 @@
     {
       "results": 12,
       "status": "OK",
+      "task_id": "T:7c1cfb9d0340"
+    },
+    {
+      "results": 12,
+      "status": "OK",
       "task_id": "T:e0a77ad085f0"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:38e3d43c0dc8"
+      "task_id": "T:f08b547b55a4"
+    },
+    {
+      "results": 10,
+      "status": "OK",
+      "task_id": "T:07f31ec24d3d"
     },
     {
       "results": 12,
@@ -22,29 +32,19 @@
       "task_id": "T:77bf5b6ab15a"
     },
     {
-      "results": 10,
+      "results": 7,
       "status": "OK",
-      "task_id": "T:3fe512f7a946"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:0a08acd11a35"
+      "task_id": "T:200d08633937"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:715e3ff45588"
-    },
-    {
-      "results": 1,
-      "status": "OK",
-      "task_id": "T:5f82e97c4201"
+      "task_id": "T:89cc52e1fa99"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:22db348d10b4"
+      "task_id": "T:f586619670bc"
     },
     {
       "results": 4,
@@ -52,7 +52,7 @@
       "task_id": "T:ba47785201d4"
     },
     {
-      "results": 11,
+      "results": 10,
       "status": "OK",
       "task_id": "T:6c478f122cb0"
     },
@@ -74,57 +74,57 @@
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:20778d569adc"
-    },
-    {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
+      "task_id": "T:590b383b34bd"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:cecfd2f5964d"
+      "task_id": "T:86d9c8633c51"
     },
     {
-      "results": 10,
+      "results": 9,
       "status": "OK",
-      "task_id": "T:dfcc8f6766e0"
+      "task_id": "T:a7ec3ce54236"
     },
     {
-      "results": 1,
+      "results": 2,
       "status": "OK",
-      "task_id": "T:8c1b9a0b083d"
+      "task_id": "T:254a43c8b577"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:018fc976fb7a"
+      "task_id": "T:aba7cbe84ed1"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:156e306daba2"
     }
   ],
   "adjacent_discovery_source": {
     "mode": "FULL_ARCHIVE",
-    "path": "docs/discovery/archive/20261112/20261112T071035Z_discovery.json",
-    "records": 662,
-    "sha256": "aeb523f3c371d7b5663d77f6e788414b44490cb5c6aa9620d472c6aecada6606"
+    "path": "docs/discovery/archive/20261112/20261112T195414Z_discovery.json",
+    "records": 687,
+    "sha256": "9133a861c571817ed4f18c82fa3fe6c87a089d40138bc3d7b895e22ec207cdf3"
   },
   "evidence_counts": {
-    "adjacent_full_event_rows": 662,
+    "adjacent_full_event_rows": 687,
     "adjacent_read_index_event_rows": 500,
-    "canonical_research_leads": 10838,
-    "direct_publisher_article_excerpts": 32,
+    "canonical_research_leads": 10366,
+    "direct_publisher_article_excerpts": 34,
     "direct_publisher_article_fetch_attempted": 48,
-    "engine_rows": 3221,
-    "expanded_rows": 10507,
-    "free_adaptive_followup_leads": 155,
+    "engine_rows": 3229,
+    "expanded_rows": 9778,
+    "free_adaptive_followup_leads": 172,
     "global_research_quantitative_data_families": 3,
-    "integrated_event_rows_before_dedup": 11487,
-    "long_excerpts_by_character_count_not_claim_verification": 4121,
+    "integrated_event_rows_before_dedup": 11140,
+    "long_excerpts_by_character_count_not_claim_verification": 4208,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "non_asset_structured_market_and_network_observations": 2836,
-    "research_event_rows": 318,
-    "substantive_source_excerpt_leads": 603
+    "non_asset_structured_market_and_network_observations": 2844,
+    "research_event_rows": 675,
+    "substantive_source_excerpt_leads": 752
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -143,7 +143,7 @@
   "official_assets": 100,
   "per_coin": {
     "any_mapped_research_family_including_reported_supply": 100,
-    "candidate_news_links": 99,
+    "candidate_news_links": 100,
     "perp_markets_unquarantined": 76,
     "research_mapped_quantitative_families_beyond_supply_and_trending": 47,
     "spot_prices": 100
@@ -151,12 +151,12 @@
   "publisher_article_enrichment_audit": {
     "attempted": 48,
     "by_scope": {
-      "ASSET_CANDIDATE": 2,
+      "ASSET_CANDIDATE": 4,
       "GLOBAL_UNRESOLVED": 14,
       "SECTOR": 16
     },
-    "substantive": 32,
-    "succeeded": 32
+    "substantive": 34,
+    "succeeded": 35
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
@@ -166,20 +166,421 @@
     "independently_primary_verified_claims": 0,
     "manual_high_context_queue_is_not_the_denominator": true,
     "material_research_status": "PARTIAL_RESEARCH",
-    "publisher_excerpts": 32,
+    "publisher_excerpts": 34,
     "publisher_source_attempted": 48,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.0556,
+    "substantive_context_share": 0.0725,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
   "source_capture_utc": {
-    "adjacent": "2026-11-12T07:11:07Z",
-    "engine": "2026-11-12T04:18:19Z",
-    "expanded": "2026-11-12T07:08:51Z",
+    "adjacent": "2026-11-12T19:54:38Z",
+    "engine": "2026-11-12T19:08:55Z",
+    "expanded": "2026-11-12T18:56:45Z",
     "market": "2026-11-12T04:09:38Z",
-    "research": "2026-11-12T07:19:55Z"
+    "research": "2026-11-12T20:01:52Z"
+  },
+  "source_context_audit": {
+    "by_plane_and_access_type": {
+      "adjacent:DIRECT_SOURCE": {
+        "article_extract_count": 18,
+        "distinct_source_domains": 7,
+        "feed_summary_count": 0,
+        "substantive": 150,
+        "total": 208
+      },
+      "adjacent:GOOGLE_NEWS_AGGREGATOR": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 1,
+        "feed_summary_count": 0,
+        "substantive": 0,
+        "total": 387
+      },
+      "expanded:DIRECT_SOURCE": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 22,
+        "feed_summary_count": 0,
+        "substantive": 221,
+        "total": 234
+      },
+      "expanded:GOOGLE_NEWS_AGGREGATOR": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 1,
+        "feed_summary_count": 0,
+        "substantive": 0,
+        "total": 8995
+      },
+      "research:DIRECT_SOURCE": {
+        "article_extract_count": 16,
+        "distinct_source_domains": 19,
+        "feed_summary_count": 471,
+        "substantive": 381,
+        "total": 542
+      }
+    },
+    "by_source_id": {
+      "COIN_RESEARCH": {
+        "substantive": 0,
+        "total": 8674
+      },
+      "CROSS_SECTOR": {
+        "substantive": 0,
+        "total": 321
+      },
+      "DEVELOPER_COMMUNITY": {
+        "substantive": 0,
+        "total": 1
+      },
+      "GOVERNANCE_EVENTS": {
+        "substantive": 1,
+        "total": 1
+      },
+      "PROJECT_PRIMARY": {
+        "substantive": 34,
+        "total": 46
+      },
+      "PUBLIC_COMMUNITY": {
+        "substantive": 127,
+        "total": 127
+      },
+      "SECURITY_EVENTS": {
+        "substantive": 1,
+        "total": 1
+      },
+      "TECH_SECURITY_RESEARCH": {
+        "substantive": 58,
+        "total": 58
+      },
+      "aave_governance": {
+        "substantive": 8,
+        "total": 8
+      },
+      "aave_v3_releases": {
+        "substantive": 6,
+        "total": 10
+      },
+      "aptos_releases": {
+        "substantive": 7,
+        "total": 8
+      },
+      "arbitrum_releases": {
+        "substantive": 9,
+        "total": 10
+      },
+      "ars_technica": {
+        "substantive": 5,
+        "total": 20
+      },
+      "avax_releases": {
+        "substantive": 1,
+        "total": 9
+      },
+      "bitcoinmag": {
+        "substantive": 10,
+        "total": 10
+      },
+      "btc_core_releases": {
+        "substantive": 1,
+        "total": 5
+      },
+      "chainlink_releases": {
+        "substantive": 1,
+        "total": 7
+      },
+      "cloudflare_blog": {
+        "substantive": 20,
+        "total": 20
+      },
+      "cncf_blog": {
+        "substantive": 10,
+        "total": 10
+      },
+      "coindesk": {
+        "substantive": 0,
+        "total": 25
+      },
+      "cointelegraph": {
+        "substantive": 17,
+        "total": 30
+      },
+      "cosmos_governance": {
+        "substantive": 18,
+        "total": 18
+      },
+      "cosmos_releases": {
+        "substantive": 9,
+        "total": 9
+      },
+      "cryptoslate": {
+        "substantive": 10,
+        "total": 10
+      },
+      "decrypt": {
+        "substantive": 22,
+        "total": 38
+      },
+      "defiant": {
+        "substantive": 40,
+        "total": 40
+      },
+      "dlnews": {
+        "substantive": 40,
+        "total": 40
+      },
+      "doge_releases": {
+        "substantive": 9,
+        "total": 10
+      },
+      "ecb_press": {
+        "substantive": 5,
+        "total": 15
+      },
+      "eth_consensus_releases": {
+        "substantive": 10,
+        "total": 10
+      },
+      "eth_geth_releases": {
+        "substantive": 2,
+        "total": 2
+      },
+      "ethereum_blog": {
+        "substantive": 39,
+        "total": 39
+      },
+      "ethereum_governance": {
+        "substantive": 7,
+        "total": 7
+      },
+      "fed_monetary": {
+        "substantive": 4,
+        "total": 15
+      },
+      "fed_press": {
+        "substantive": 0,
+        "total": 16
+      },
+      "github_advisories": {
+        "substantive": 16,
+        "total": 16
+      },
+      "github_releases_NVIDIA__TensorRT-LLM": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_bitcoin__bitcoin": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_ethereum__go-ethereum": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_hashicorp__vault": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_huggingface__transformers": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_libp2p__go-libp2p": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_lightningnetwork__lnd": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_microsoft__quantum": {
+        "substantive": 1,
+        "total": 8
+      },
+      "github_releases_paradigmxyz__reth": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_pytorch__pytorch": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_vllm-project__vllm": {
+        "substantive": 8,
+        "total": 8
+      },
+      "github_releases_zcash__zcash": {
+        "substantive": 8,
+        "total": 8
+      },
+      "google_coin_16086": {
+        "substantive": 0,
+        "total": 1
+      },
+      "google_coin_1659": {
+        "substantive": 0,
+        "total": 4
+      },
+      "google_coin_24478": {
+        "substantive": 0,
+        "total": 18
+      },
+      "google_coin_2634": {
+        "substantive": 0,
+        "total": 6
+      },
+      "google_coin_35509": {
+        "substantive": 0,
+        "total": 4
+      },
+      "google_coin_38849": {
+        "substantive": 0,
+        "total": 3
+      },
+      "google_coin_39064": {
+        "substantive": 0,
+        "total": 18
+      },
+      "google_emergent_0": {
+        "substantive": 0,
+        "total": 33
+      },
+      "google_emergent_1": {
+        "substantive": 0,
+        "total": 29
+      },
+      "google_emergent_2": {
+        "substantive": 0,
+        "total": 25
+      },
+      "google_emergent_3": {
+        "substantive": 0,
+        "total": 35
+      },
+      "google_emergent_4": {
+        "substantive": 0,
+        "total": 28
+      },
+      "google_emergent_5": {
+        "substantive": 0,
+        "total": 23
+      },
+      "google_theme_CYBER_SECURITY": {
+        "substantive": 0,
+        "total": 24
+      },
+      "google_theme_DEVELOPER_NETWORKS": {
+        "substantive": 0,
+        "total": 3
+      },
+      "google_theme_ENERGY_MINING": {
+        "substantive": 0,
+        "total": 19
+      },
+      "google_theme_ETF_INSTITUTIONAL": {
+        "substantive": 0,
+        "total": 19
+      },
+      "google_theme_EXCHANGE_INFRA": {
+        "substantive": 0,
+        "total": 3
+      },
+      "google_theme_MACRO_LIQUIDITY": {
+        "substantive": 0,
+        "total": 4
+      },
+      "google_theme_PAYMENTS": {
+        "substantive": 0,
+        "total": 18
+      },
+      "google_theme_PRIVACY_ZK": {
+        "substantive": 0,
+        "total": 19
+      },
+      "google_theme_QUANTUM_SECURITY": {
+        "substantive": 0,
+        "total": 15
+      },
+      "google_theme_REGULATION": {
+        "substantive": 0,
+        "total": 1
+      },
+      "google_theme_SEMICONDUCTORS": {
+        "substantive": 0,
+        "total": 21
+      },
+      "google_theme_TOKENIZATION": {
+        "substantive": 0,
+        "total": 14
+      },
+      "huggingface_blog": {
+        "substantive": 5,
+        "total": 35
+      },
+      "lightning_releases": {
+        "substantive": 0,
+        "total": 4
+      },
+      "mit_tech_review": {
+        "substantive": 10,
+        "total": 10
+      },
+      "near_releases": {
+        "substantive": 4,
+        "total": 8
+      },
+      "polkadot_governance": {
+        "substantive": 17,
+        "total": 17
+      },
+      "polkadot_releases": {
+        "substantive": 2,
+        "total": 6
+      },
+      "protos": {
+        "substantive": 10,
+        "total": 10
+      },
+      "sec": {
+        "substantive": 25,
+        "total": 25
+      },
+      "sol_agave_releases": {
+        "substantive": 6,
+        "total": 8
+      },
+      "stellar_releases": {
+        "substantive": 10,
+        "total": 10
+      },
+      "techcrunch": {
+        "substantive": 14,
+        "total": 20
+      },
+      "theblock": {
+        "substantive": 1,
+        "total": 20
+      },
+      "uniswap_v4_releases": {
+        "substantive": 1,
+        "total": 1
+      },
+      "xrp_releases": {
+        "substantive": 4,
+        "total": 10
+      },
+      "zcash_governance": {
+        "substantive": 3,
+        "total": 3
+      },
+      "zksync_releases": {
+        "substantive": 4,
+        "total": 10
+      }
+    },
+    "direct_research_substantive_count": 381,
+    "direct_research_substantive_ratio": 0.703,
+    "direct_research_total": 542,
+    "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },
   "source_failures": {
     "adjacent": [
@@ -221,46 +622,46 @@
     "research": [
       {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T07:19:57Z",
+        "observed_utc": "2026-11-12T20:01:54Z",
         "source_id": "bls_cpi",
         "source_type": "rss",
-        "started_utc": "2026-11-12T07:19:57Z",
+        "started_utc": "2026-11-12T20:01:54Z",
         "status": "ERROR",
         "url": "https://www.bls.gov/feed/cpi.rss"
       },
       {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T07:19:57Z",
+        "observed_utc": "2026-11-12T20:01:54Z",
         "source_id": "bls_jobs",
         "source_type": "rss",
-        "started_utc": "2026-11-12T07:19:57Z",
+        "started_utc": "2026-11-12T20:01:54Z",
         "status": "ERROR",
         "url": "https://www.bls.gov/feed/empsit.rss"
       },
       {
         "error": "HTTP 403",
-        "observed_utc": "2026-11-12T07:19:57Z",
+        "observed_utc": "2026-11-12T20:01:54Z",
         "source_id": "coinbase_blog",
         "source_type": "rss",
-        "started_utc": "2026-11-12T07:19:57Z",
+        "started_utc": "2026-11-12T20:01:54Z",
         "status": "ERROR",
         "url": "https://www.coinbase.com/blog/rss.xml"
       },
       {
         "error": "HTTP 500",
-        "observed_utc": "2026-11-12T07:19:58Z",
+        "observed_utc": "2026-11-12T20:01:55Z",
         "source_id": "rekt_security",
         "source_type": "rss",
-        "started_utc": "2026-11-12T07:19:57Z",
+        "started_utc": "2026-11-12T20:01:54Z",
         "status": "ERROR",
         "url": "https://rekt.news/rss.xml"
       },
       {
         "error": "HTTP 429",
-        "observed_utc": "2026-11-12T07:19:58Z",
+        "observed_utc": "2026-11-12T20:01:55Z",
         "source_id": "solana_blog",
         "source_type": "rss",
-        "started_utc": "2026-11-12T07:19:57Z",
+        "started_utc": "2026-11-12T20:01:54Z",
         "status": "ERROR",
         "url": "https://solana.com/news/rss.xml"
       }

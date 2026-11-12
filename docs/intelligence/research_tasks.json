@@ -8,12 +8,22 @@
     {
       "results": 12,
       "status": "OK",
+      "task_id": "T:7c1cfb9d0340"
+    },
+    {
+      "results": 12,
+      "status": "OK",
       "task_id": "T:e0a77ad085f0"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:38e3d43c0dc8"
+      "task_id": "T:f08b547b55a4"
+    },
+    {
+      "results": 10,
+      "status": "OK",
+      "task_id": "T:07f31ec24d3d"
     },
     {
       "results": 12,
@@ -21,29 +31,19 @@
       "task_id": "T:77bf5b6ab15a"
     },
     {
-      "results": 10,
+      "results": 7,
       "status": "OK",
-      "task_id": "T:3fe512f7a946"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:0a08acd11a35"
+      "task_id": "T:200d08633937"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:715e3ff45588"
-    },
-    {
-      "results": 1,
-      "status": "OK",
-      "task_id": "T:5f82e97c4201"
+      "task_id": "T:89cc52e1fa99"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:22db348d10b4"
+      "task_id": "T:f586619670bc"
     },
     {
       "results": 4,
@@ -51,7 +51,7 @@
       "task_id": "T:ba47785201d4"
     },
     {
-      "results": 11,
+      "results": 10,
       "status": "OK",
       "task_id": "T:6c478f122cb0"
     },
@@ -73,41 +73,41 @@
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:20778d569adc"
-    },
-    {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
+      "task_id": "T:590b383b34bd"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:cecfd2f5964d"
+      "task_id": "T:86d9c8633c51"
     },
     {
-      "results": 10,
+      "results": 9,
       "status": "OK",
-      "task_id": "T:dfcc8f6766e0"
+      "task_id": "T:a7ec3ce54236"
     },
     {
-      "results": 1,
+      "results": 2,
       "status": "OK",
-      "task_id": "T:8c1b9a0b083d"
+      "task_id": "T:254a43c8b577"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:018fc976fb7a"
+      "task_id": "T:aba7cbe84ed1"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:156e306daba2"
     }
   ],
   "no_auto_source_installation": true,
   "tasks": [
     {
       "evidence_ids": [
-        "research:ffab487828cbf86c63",
-        "research:68dea54cf87e0307b8",
-        "research:a9d2f791583740b2b4"
+        "research:3a852c184f05c6549b",
+        "research:8c8ea075862d7eeda1",
+        "research:122cb0ca35f793939b"
       ],
       "query": "\"jensen huang\" crypto financial markets when:2d",
       "results": 12,
@@ -118,9 +118,22 @@
     },
     {
       "evidence_ids": [
-        "adjacent:4f395735746e0ae5c2",
-        "adjacent:47431c8f0bf64cff0a",
-        "adjacent:56a9adaabfdaf5d2b1"
+        "research:69cd5887d06a3049e8",
+        "research:07b75a4ceac35793da",
+        "research:6961f05b5045d36570"
+      ],
+      "query": "\"huang resigns\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:7c1cfb9d0340",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:4fb2a9f356c0557bd8",
+        "adjacent:db13f9c085ef42e2b8",
+        "adjacent:e237f1921b5e986cc2"
       ],
       "query": "\"yahoo finance\" crypto financial markets when:2d",
       "results": 12,
@@ -131,21 +144,34 @@
     },
     {
       "evidence_ids": [
-        "research:f9d14dfe2a7427cd69",
-        "research:bb16c4910b89177044",
-        "research:20f1179ed34bd7cd48"
+        "research:59f7e524f2d1fa6456",
+        "research:d6774a2ae02222dab5",
+        "adjacent:6670c13b5a5c23159c"
       ],
-      "query": "\"deutsche bank\" crypto financial markets when:2d",
+      "query": "\"nvidia jensen\" crypto financial markets when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:38e3d43c0dc8",
+      "task_id": "T:f08b547b55a4",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
       "evidence_ids": [
+        "research:69cd5887d06a3049e8",
+        "research:07b75a4ceac35793da",
+        "research:6961f05b5045d36570"
+      ],
+      "query": "\"resigns nvidia\" crypto financial markets when:2d",
+      "results": 10,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:07f31ec24d3d",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "research:3a628d8f8e43fd142a",
         "research:73833d71ed32243853",
-        "research:6a109ce05d194ab37c",
         "research:b62ff62a7f4d7993d5"
       ],
       "query": "\"tokenized stock\" crypto financial markets when:2d",
@@ -157,67 +183,41 @@
     },
     {
       "evidence_ids": [
-        "research:3f0885cd45ada719c5",
-        "research:e9fd4eb20f49d00fe9",
-        "research:22bd6e3f4246880244"
+        "adjacent:c0aa0cc70f3a26132a",
+        "adjacent:0d9f6bf5584ecc0826",
+        "adjacent:2cfbc6d35e28a64544"
       ],
-      "query": "\"banks commit\" crypto financial markets when:2d",
-      "results": 10,
+      "query": "\"traders union\" crypto financial markets when:2d",
+      "results": 7,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:3fe512f7a946",
+      "task_id": "T:200d08633937",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
       "evidence_ids": [
-        "research:3f0885cd45ada719c5",
-        "research:e9fd4eb20f49d00fe9",
-        "research:22bd6e3f4246880244"
+        "adjacent:8e263723d9ba2c56f6",
+        "adjacent:4a321e6fad01b04a3b",
+        "adjacent:87c261cb03d0283a19"
       ],
-      "query": "\"commit million\" crypto financial markets when:2d",
-      "results": 0,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:0a08acd11a35",
-      "trigger": "NEW_CROSS_SOURCE_TOPIC"
-    },
-    {
-      "evidence_ids": [
-        "research:6eb7217481386ff170",
-        "research:8ccd2354c9ac933419",
-        "adjacent:6b86185fb64c7a1d4f"
-      ],
-      "query": "\"ethereum foundation\" crypto financial markets when:2d",
+      "query": "\"biggo finance\" crypto financial markets when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:715e3ff45588",
+      "task_id": "T:89cc52e1fa99",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
       "evidence_ids": [
-        "research:739dee37437905af7b",
-        "research:a7e72b292ed7a47a8e",
-        "adjacent:abc8000e734da862d4"
+        "research:6ce3870b2433621945",
+        "adjacent:8c7f475f304081f63b",
+        "adjacent:d5a94deaa0eebb99b9"
       ],
-      "query": "\"exchanges loss\" crypto financial markets when:2d",
-      "results": 1,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:5f82e97c4201",
-      "trigger": "NEW_CROSS_SOURCE_TOPIC"
-    },
-    {
-      "evidence_ids": [
-        "adjacent:f9b56c6ea8e3517543",
-        "adjacent:1a6e9ba3633e99f290",
-        "adjacent:2ff3129fc9c0f9e828"
-      ],
-      "query": "\"globe mail\" crypto financial markets when:2d",
+      "query": "\"raises million\" crypto financial markets when:2d",
       "results": 0,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:22db348d10b4",
+      "task_id": "T:f586619670bc",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
@@ -232,7 +232,7 @@
     {
       "evidence_ids": [],
       "query": "\"Pieverse\" crypto when:2d",
-      "results": 11,
+      "results": 10,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
       "task_id": "T:6c478f122cb0",
@@ -258,9 +258,9 @@
     },
     {
       "evidence_ids": [
-        "followup:d39166e3bfa01346c7",
-        "followup:679816d1f1891a4da4",
-        "followup:3797a83c902fc0ba08"
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b"
       ],
       "query": "\"altcoin buzz\" crypto blockchain when:2d",
       "results": 10,
@@ -271,76 +271,80 @@
     },
     {
       "evidence_ids": [
-        "followup:9a3ab3df1c1132cf7d",
-        "followup:776113fbf73ca21176",
-        "followup:197e406a9d74487b80"
+        "followup:a008640549aeead0f6",
+        "followup:906e280e59d78068ae",
+        "followup:a008640549aeead0f6"
       ],
-      "query": "\"huang affair\" crypto blockchain when:2d",
+      "query": "\"colette kress\" crypto blockchain when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:20778d569adc",
+      "task_id": "T:590b383b34bd",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "followup:114175c86d068e6665",
-        "followup:9a3ab3df1c1132cf7d",
-        "followup:776113fbf73ca21176"
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b"
       ],
-      "query": "\"nvidia stock\" crypto blockchain when:2d",
-      "results": 12,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:231514622f3b",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
-        "followup:776113fbf73ca21176",
-        "followup:776113fbf73ca21176"
-      ],
-      "query": "\"affair yahoo\" crypto blockchain when:2d",
+      "query": "\"hits altcoin\" crypto blockchain when:2d",
       "results": 0,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:cecfd2f5964d",
+      "task_id": "T:86d9c8633c51",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "followup:242e90b5f34b9a51d5",
-        "followup:55e24451b4a6673b34"
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b"
       ],
-      "query": "\"banking finance\" crypto blockchain when:2d",
-      "results": 10,
+      "query": "\"nvidia shock\" crypto blockchain when:2d",
+      "results": 9,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:dfcc8f6766e0",
+      "task_id": "T:a7ec3ce54236",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "followup:f76fe654cc13481e35",
-        "followup:f76fe654cc13481e35"
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b",
+        "followup:f0ddb6fbc5f4e8cd5b"
       ],
-      "query": "\"bettors weigh\" crypto blockchain when:2d",
-      "results": 1,
+      "query": "\"shock hits\" crypto blockchain when:2d",
+      "results": 2,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:8c1b9a0b083d",
+      "task_id": "T:254a43c8b577",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "followup:d014f65c41be7f4830",
-        "followup:559952d30c41888d2d"
+        "followup:a008640549aeead0f6",
+        "followup:80907df917f57bead7",
+        "followup:a008640549aeead0f6"
       ],
-      "query": "\"biggo finance\" crypto blockchain when:2d",
+      "query": "\"falls below\" crypto blockchain when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:018fc976fb7a",
+      "task_id": "T:aba7cbe84ed1",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:a008640549aeead0f6",
+        "followup:a008640549aeead0f6",
+        "followup:abe827fecf8229bf38"
+      ],
+      "query": "\"kress named\" crypto blockchain when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:156e306daba2",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]
