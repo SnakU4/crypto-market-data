@@ -107,6 +107,28 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertEqual(m["llm_calls"],0)
         self.assertTrue(m["archives"]["engine"]["verified"])
         self.assertTrue(m["archives"]["expanded"]["verified"])
+    def test_publisher_detail_is_used_in_global_and_sector_dossiers(self):
+        detail=(
+           "The source documents a detailed settlement infrastructure deployment with "
+           "specific operational phases, transaction processing requirements, rollout "
+           "controls, and independent technical review before production launch. "
+        ) * 4
+        def fetch(url):return detail
+        class Response:
+            def __enter__(self):return self
+            def __exit__(self,*a):pass
+            def read(self,n):return b'<rss><channel></channel></rss>'
+        m,c=foi.build(self.root,cutoff=T,network=True,max_followups=1,
+                      max_articles=3,fetcher=fetch,search_opener=lambda req,timeout:Response())
+        self.assertGreater(c["evidence_counts"]["direct_publisher_article_excerpts"],0)
+        g=foi.read(self.root/"docs/intelligence/global_intelligence.json")
+        sect=foi.read(self.root/"docs/intelligence/sector_intelligence.json")
+        self.assertTrue(any("settlement infrastructure deployment" in x.get("excerpt","")
+                    for x in g["global_research_sample"]))
+        self.assertTrue(any("settlement infrastructure deployment" in x.get("excerpt","")
+                    for sec in sect["sectors"] for x in sec["sample"]))
+        self.assertTrue(c["publisher_article_enrichment_audit"]["attempted"]>0)
+        self.assertTrue(c["publisher_article_enrichment_audit"]["substantive"]>0)
     def test_archive_integrity_fails_closed(self):
         p=self.root/"docs/evidence_engine/archive/e.gz"
         p.write_bytes(p.read_bytes()+b"tamper")
