@@ -51,6 +51,10 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
 - research_tasks.json: actual queries, evidence triggers, completed/failed statuses and result counts
 - publisher_excerpts.json: short public page excerpts with source URLs
 - knowledge_index.json: lead and scope counts; no generated prediction
+- source_registry_proposals.json: publisher domains discovered from actual evidence;
+  candidates are not auto-installed or trusted without access/identity review
+- coverage_audit.json/research_quality_gate: explicitly PARTIAL_RESEARCH
+  if substantive context or deep article coverage is too low
 - Actions artifact: export/evidence_index.jsonl — full deduplicated source index,
   includes origin/provenance IDs and late adaptive searches
 
