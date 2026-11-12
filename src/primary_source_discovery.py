@@ -49,7 +49,14 @@ def retrieve(url, opener=None):
             final_url=resp.geturl()
             if not is_valid_source_url(final_url):return None,"REDIRECT_BLOCKED"
             data=resp.read(MAX_BYTES+1)
-            if len(data)>MAX_BYTES:return None,"OVERSIZED"
+            if len(data)>MAX_BYTES:
+                # Modern homepages can be multi-megabyte HTML. Feed <link>
+                # declarations are normally in the head. Parse only a bounded
+                # first chunk, and label it as PARTIAL; never treat as article.
+                typ=getattr(resp,"headers",{}).get("Content-Type","").lower()
+                if url.endswith("/") and ("html" in typ or not typ):
+                    return data[:MAX_BYTES],"TRUNCATED_PUBLIC_HOMEPAGE"
+                return None,"OVERSIZED"
             return data,"OK"
     except (OSError,ValueError,TimeoutError) as err:
         return None,type(err).__name__
@@ -75,8 +82,9 @@ def parsed_feed(payload,source,observed_utc,limit=20):
        "provenance_ids":["D:"+hashlib.sha256(x["url"].encode()).hexdigest()[:18]]}
        for x in rows]
 
-def discover(proposals,cutoff,max_sites=10,opener=None):
+def discover(proposals,cutoff,max_sites=10,opener=None,known_feed_urls=()):
     audit=[];items=[]
+    known=set(str(x).rstrip("/") for x in known_feed_urls)
     candidates=(proposals.get("candidate_publishers") or [])[:90]
     for record in candidates:
         if len(audit)>=max_sites:break
@@ -91,7 +99,11 @@ def discover(proposals,cutoff,max_sites=10,opener=None):
         if payload:
             urls=inspect_feed_links(payload.decode("utf-8","replace"),homepage)
             out["advertised_feeds"]=urls
-            for u in urls[:2]:
+            for u in urls[:3]:
+                if u.rstrip("/") in known:
+                    out["feed_status"]="ALREADY_COLLECTED"
+                    out["duplicate_feed_url"]=u
+                    continue
                 raw,fs=retrieve(u,opener)
                 out["feed_status"]=fs
                 if raw:
@@ -103,7 +115,9 @@ def discover(proposals,cutoff,max_sites=10,opener=None):
                     items+=rows
                     if rows:break
         audit.append(out)
-    return items,{"domains_attempted":len(audit),"domains_found_content":
+    return items,{"domains_attempted":len(audit),
+                  "advertised_existing_feed_count":sum(x.get("feed_status")=="ALREADY_COLLECTED" for x in audit),
+                  "domains_found_content":
                   sum(x["article_count"]>0 for x in audit),"new_feed_items":len(items),
                   "substantive_feed_items":sum(has_additional_information(
                       x["title"],x["excerpt"]) for x in items),
