@@ -106,6 +106,27 @@ flachen Titel-Suchtreffer kosmetisch verbessert werden:
 Berichte Rohkorpus-Quote und Qualität der aktiv vertieft
 recherchierten Teilmenge getrennt.
 
+## Phase 4b – Die neuen Erkenntnisse dauerhaft nach GitHub zurückführen
+
+Sobald die unabhängige Webrecherche abgeschlossen ist, exportiere die
+NEU und substantiell recherchierten Informationen zusätzlich in die
+bestehende GitHub-Datei
+docs/intelligence/manual_inputs/findings.jsonl (append-only).
+Das Format steht unter docs/intelligence/manual_inputs/README.md.
+Jeder Eintrag enthält eine genaue HTTPS-Quelle, tatsächlichen
+Recherche-/Erstbeobachtungszeitpunkt, optional das belegte
+Publikationsdatum, globale/sektorale/Coin-Reichweite, einen kurzen
+quellenbezogenen Auszug, konkrete Verifikationsschritte und verbleibende
+Unsicherheit. Keine Rückdatierung, keine erfundenen Coin-Zuordnungen,
+keine nachträglichen historischen Prognoseinformationen.
+Wenn die GitHub-Verbindung keinen schreibenden Zugriff erlaubt,
+erzeuge stattdessen die vollständige append-only JSONL-Datei als
+Ergebnis zum expliziten Commit durch den Nutzer.
+
+Der nächste kostenlose GitHub-Actions-Lauf liest diese neuen
+Informationen automatisch wieder ein. GitHub selbst bestätigt damit
+noch nicht unabhängig, dass jede manuelle Behauptung wahr ist.
+
 ## Phase 5 – Erst jetzt die paper-kompatiblen KI-Prognosen
 
 Für alle 100 offiziellen CMC-IDs direkt beurteilte
