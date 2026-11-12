@@ -13,6 +13,16 @@
     {
       "results": 12,
       "status": "OK",
+      "task_id": "T:e0a77ad085f0"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:89cc52e1fa99"
+    },
+    {
+      "results": 12,
+      "status": "OK",
       "task_id": "T:77bf5b6ab15a"
     },
     {
@@ -23,7 +33,7 @@
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:89cc52e1fa99"
+      "task_id": "T:f0e1d346b705"
     },
     {
       "results": 12,
@@ -34,16 +44,6 @@
       "results": 12,
       "status": "OK",
       "task_id": "T:f08b547b55a4"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:0a08acd11a35"
-    },
-    {
-      "results": 3,
-      "status": "OK",
-      "task_id": "T:b1fa0761b4c1"
     },
     {
       "results": 0,
@@ -68,37 +68,37 @@
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:6e43005a45aa"
+      "task_id": "T:43b9f759eed7"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:3fd1a6ebcb60"
+      "task_id": "T:b73a7ad64dad"
+    },
+    {
+      "results": 1,
+      "status": "OK",
+      "task_id": "T:ea4443179a7a"
+    },
+    {
+      "results": 9,
+      "status": "OK",
+      "task_id": "T:b76ef63aca40"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:a1e5ec881b0d"
+      "task_id": "T:1924f997e940"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:5e3fe3d9e4b6"
+      "task_id": "T:c219b913fd8e"
     },
     {
       "results": 0,
       "status": "OK",
-      "task_id": "T:8de70dd63274"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:2fb7c821e46a"
-    },
-    {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:f4db37a4effe"
+      "task_id": "T:e6fde213c355"
     }
   ],
   "no_auto_source_installation": true,
@@ -131,6 +131,32 @@
     },
     {
       "evidence_ids": [
+        "adjacent:7ae9a0c281884d1bf3",
+        "adjacent:56a9adaabfdaf5d2b1",
+        "adjacent:63774cf1760a97ef06"
+      ],
+      "query": "\"yahoo finance\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:e0a77ad085f0",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:755ccabc0c6900cf6f",
+        "adjacent:21636a674ff341c8a6",
+        "adjacent:945d329349055c306c"
+      ],
+      "query": "\"biggo finance\" crypto financial markets when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:89cc52e1fa99",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
         "research:73833d71ed32243853",
         "research:6a109ce05d194ab37c",
         "research:b62ff62a7f4d7993d5"
@@ -157,15 +183,15 @@
     },
     {
       "evidence_ids": [
-        "adjacent:755ccabc0c6900cf6f",
-        "adjacent:945d329349055c306c",
-        "adjacent:6fd17ccff07ac85dee"
+        "research:2265c171a98672b198",
+        "research:0a1911b445d4f7be15",
+        "adjacent:50af07b8ad04c3e124"
       ],
-      "query": "\"biggo finance\" crypto financial markets when:2d",
+      "query": "\"huang affair\" crypto financial markets when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:89cc52e1fa99",
+      "task_id": "T:f0e1d346b705",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
@@ -184,40 +210,14 @@
     {
       "evidence_ids": [
         "research:452d35f83a01eae2a7",
-        "adjacent:40f02b0f3791f5ec15",
-        "adjacent:50af07b8ad04c3e124"
+        "adjacent:f03a3f1893a03131c1",
+        "adjacent:98456d3152e5b641fc"
       ],
       "query": "\"nvidia jensen\" crypto financial markets when:2d",
       "results": 12,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:f08b547b55a4",
-      "trigger": "NEW_CROSS_SOURCE_TOPIC"
-    },
-    {
-      "evidence_ids": [
-        "research:3f0885cd45ada719c5",
-        "research:e9fd4eb20f49d00fe9",
-        "research:22bd6e3f4246880244"
-      ],
-      "query": "\"commit million\" crypto financial markets when:2d",
-      "results": 0,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:0a08acd11a35",
-      "trigger": "NEW_CROSS_SOURCE_TOPIC"
-    },
-    {
-      "evidence_ids": [
-        "research:14c34c4307af3f6161",
-        "research:5333e36dedb8c4d015",
-        "adjacent:a69e2a937c9e95bce7"
-      ],
-      "query": "\"ether slide\" crypto financial markets when:2d",
-      "results": 3,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:b1fa0761b4c1",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
@@ -257,75 +257,95 @@
       "trigger": "OBSERVED_MARKET_ANOMALY"
     },
     {
-      "evidence_ids": [],
-      "query": "\"Pepe\" crypto\" liquidity derivatives security governance when:2d",
+      "evidence_ids": [
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35",
+        "followup:b2c4b0a87dad45c0f9"
+      ],
+      "query": "\"nvda stock\" blockchain liquidity regulation when:2d",
       "results": 0,
-      "scope": "ASSET_RESEARCH",
+      "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:6e43005a45aa",
-      "trigger": "OBSERVED_MARKET_ANOMALY"
-    },
-    {
-      "evidence_ids": [],
-      "query": "\"Celestia\" crypto\" liquidity derivatives security governance when:2d",
-      "results": 0,
-      "scope": "ASSET_RESEARCH",
-      "status": "QUERIED",
-      "task_id": "T:3fd1a6ebcb60",
-      "trigger": "OBSERVED_MARKET_ANOMALY"
-    },
-    {
-      "evidence_ids": [],
-      "query": "\"Venice Token\" crypto\" liquidity derivatives security governance when:2d",
-      "results": 0,
-      "scope": "ASSET_RESEARCH",
-      "status": "QUERIED",
-      "task_id": "T:a1e5ec881b0d",
-      "trigger": "OBSERVED_MARKET_ANOMALY"
+      "task_id": "T:43b9f759eed7",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "adjacent:355fee0a647f2e330b"
+        "followup:776113fbf73ca21176",
+        "followup:776113fbf73ca21176",
+        "followup:776113fbf73ca21176"
       ],
-      "query": "\"Microsoft Security Advisory\" crypto financial impact when:3d",
+      "query": "\"affair yahoo\" blockchain liquidity regulation when:2d",
       "results": 0,
-      "scope": "UNRESOLVED",
+      "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:5e3fe3d9e4b6",
-      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+      "task_id": "T:b73a7ad64dad",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "adjacent:d8030625e2c409f983"
+        "followup:114175c86d068e6665",
+        "followup:9a3ab3df1c1132cf7d",
+        "followup:776113fbf73ca21176"
       ],
-      "query": "\"ZeroPoint Lightweight Energy-Based\" crypto financial impact when:3d",
-      "results": 0,
-      "scope": "UNRESOLVED",
+      "query": "\"nvidia stock\" blockchain liquidity regulation when:2d",
+      "results": 1,
+      "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:8de70dd63274",
-      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+      "task_id": "T:ea4443179a7a",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "adjacent:086fc4caf6f9cc53d8"
+        "followup:c0de6c7629a3cd2172",
+        "followup:904eedbbef8d1599f5",
+        "followup:e16571048ac285ae5f"
       ],
-      "query": "\"Choosing QuePaxa unusual\" crypto financial impact when:3d",
-      "results": 0,
-      "scope": "UNRESOLVED",
+      "query": "\"bank launches\" blockchain liquidity regulation when:2d",
+      "results": 9,
+      "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:2fb7c821e46a",
-      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+      "task_id": "T:b76ef63aca40",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
-        "adjacent:15ca3be22892386e66"
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35"
       ],
-      "query": "\"Introducing Groups Long-lived\" crypto financial impact when:3d",
+      "query": "\"bettors weigh\" blockchain liquidity regulation when:2d",
       "results": 0,
-      "scope": "UNRESOLVED",
+      "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:f4db37a4effe",
-      "trigger": "SUBSTANTIVE_UNLINKED_LEAD"
+      "task_id": "T:1924f997e940",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35"
+      ],
+      "query": "\"bloodbath november\" blockchain liquidity regulation when:2d",
+      "results": 0,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:c219b913fd8e",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35",
+        "followup:f76fe654cc13481e35"
+      ],
+      "query": "\"brews yahoo\" blockchain liquidity regulation when:2d",
+      "results": 0,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:e6fde213c355",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]
 }

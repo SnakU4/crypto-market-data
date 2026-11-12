@@ -1280,16 +1280,13 @@
         "coingecko_supply": 1,
         "kraken_futures_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "Monero",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -2316,16 +2313,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "Gnosis",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -3849,16 +3843,13 @@
       "engine_record_counts_by_source": {
         "patternplus_unlocks": 2
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "KuCoin Token",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -4247,16 +4238,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "XDC Network",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",

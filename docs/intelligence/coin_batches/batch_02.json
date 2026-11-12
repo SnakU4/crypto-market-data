@@ -106,16 +106,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "Nexo",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -280,16 +277,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "VeChain",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -446,16 +440,6 @@
           "source": "kraken_futures_tickers"
         },
         {
-          "identity_status": "CMC100_SNAPSHOT_OKX_CONTRACT_ANCHORED",
-          "ref": "ef6c1b21ac6dc35b9f2131d0",
-          "source": "okx_swap_tickers"
-        },
-        {
-          "identity_status": "CMC100_SNAPSHOT_OKX_CONTRACT_ANCHORED",
-          "ref": "e5b408f5d225236ca84ad01c",
-          "source": "okx_swap_open_interest"
-        },
-        {
           "identity_status": "CROSS_PROVIDER_NAME_SYMBOL_CANDIDATE",
           "ref": "74c5ba554cc8947e4f0be43a",
           "source": "coingecko_supply"
@@ -463,12 +447,10 @@
       ],
       "engine_record_counts_by_source": {
         "coingecko_supply": 1,
-        "kraken_futures_tickers": 1,
-        "okx_swap_open_interest": 1,
-        "okx_swap_tickers": 1
+        "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "verified_perp_contract"
+        "mapped_perp_research_proxy"
       ],
       "name": "Quant",
       "perp_identity_status": "QUARANTINED",
@@ -495,8 +477,6 @@
         "coin_name": "Quant",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": 14881364.0,
-        "perp_exchange": "OKX",
-        "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "token_supply"
         ],
@@ -622,16 +602,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "Bitcoin SV",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -1600,16 +1577,13 @@
       "cmc_id": 3957,
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "UNUS SED LEO",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -1893,16 +1867,13 @@
       "cmc_id": 4269,
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "GateToken",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -2297,16 +2268,13 @@
         "coingecko_supply": 1,
         "kraken_futures_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "PAX Gold",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
@@ -2685,16 +2653,13 @@
         "coingecko_supply": 1,
         "kraken_futures_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "Tether Gold",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -3110,16 +3075,13 @@
       "engine_record_counts_by_source": {
         "coingecko_supply": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_perp_research_proxy"
+      ],
       "name": "JUST",
-      "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
+      "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
-      "perpetual": {
-        "mapping": "NOT_MATCHED_OR_REQUIRES_MANUAL_REVIEW",
-        "review_candidates": [],
-        "symbol": null,
-        "trading_status": "UNKNOWN"
-      },
+      "perpetual": null,
       "quantitative_research_families": [
         {
           "family": "token_supply",
