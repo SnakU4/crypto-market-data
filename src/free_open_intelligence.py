@@ -515,6 +515,42 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         from discovery_quality import has_additional_information
     except ImportError:
         from src.discovery_quality import has_additional_information
+    # Manual research bridge: a genuinely richer, broad-context queue.
+    # Its 200-300 items are a SELECTION, never substituted for the full-corpus
+    # denominator or represented as independently validated facts.
+    rich=[e for e in events if has_additional_information(e["title"],e["excerpt"])]
+    rich_by_scope=collections.defaultdict(list)
+    for e in rich:rich_by_scope[e["scope"]].append(e)
+    for group in rich_by_scope.values():
+        group.sort(key=lambda e:(-e["priority"],e["published_utc"] or "",e["id"]))
+    selected_context=[];source_counters=collections.Counter()
+    while len(selected_context)<300:
+        moved=False
+        for scope in ("GLOBAL_UNRESOLVED","SECTOR","ASSET_CANDIDATE"):
+            group=rich_by_scope[scope]
+            for i,e in enumerate(group):
+                src=e["source_id"] or e["source_plane"]
+                if source_counters[str(src)]>=18:continue
+                group.pop(i)
+                selected_context.append(e);source_counters[str(src)]+=1
+                moved=True
+                break
+            if len(selected_context)>=300:break
+        if not moved:break
+    manual_context={
+      "selection_size":len(selected_context),
+      "selection_is_not_full_corpus":True,
+      "global_sector_coins_all_preserved_in_full_archive":True,
+      "notes":"Short original-source passages for guided research, NOT verified factual claims.",
+      "items":[{k:e.get(k) for k in ("id","source_plane","source_id","title",
+               "url","excerpt","scope","candidate_cmc_ids","themes",
+               "published_utc","first_observed_utc","claim_status","identity_status",
+               "provenance_ids","context_origin")} for e in selected_context],
+      "undercovered_coins":[{"cmc_id":a["cmc_id"],"symbol":a["symbol"],
+            "reason":"No substantively contextual asset-specific source in current collection"}
+            for a in assets if not any(e["candidate_cmc_ids"] and a["cmc_id"] in e["candidate_cmc_ids"]
+                    for e in rich)]
+    }
     coverage={
       "official_assets":100,"source_planes_integrated":["market","evidence_engine",
           "expanded_discovery","research","adjacent_discovery"],
@@ -531,7 +567,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "non_asset_structured_market_and_network_observations":sum(global_structured_counts.values()),
           "global_research_quantitative_data_families":len(global_research_families),
           "direct_publisher_article_excerpts":len(article),
-          "direct_publisher_article_fetch_attempted":article_audit["attempted"]},
+          "direct_publisher_article_fetch_attempted":article_audit["attempted"],
+          "manual_high_context_selection_count":len(selected_context)},
       "per_coin":{"spot_prices":sum(bool((a.get("cmc_quote") or {}).get("price_usd")) for a in assets),
           "perp_markets_unquarantined":sum(bool((a.get("perpetual") or {}).get("symbol")) and
                (a.get("perpetual") or {}).get("mapping")=="EXACT_BASE_ASSET_OKX" and
@@ -559,6 +596,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "independently_primary_verified_claims":0,
         "independently_primary_claims_verification_status":"NOT_PERFORMED_BY_FREE_PYTHON",
         "substantive_context_share":round(depth_rate,4),
+        "raw_all_leads_denominator_unchanged":True,
+        "manual_high_context_queue_is_not_the_denominator":True,
         "substantive_context_target_met":depth_rate>=0.20,
         "publisher_excerpts":len(article),
         "deep_article_target_met":len(article)>=30,
@@ -574,6 +613,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "sector_file":"docs/intelligence/sector_intelligence.json",
        "task_file":"docs/intelligence/research_tasks.json",
        "source_proposals_file":"docs/intelligence/source_registry_proposals.json",
+       "manual_research_context_file":"docs/intelligence/deep_research_queue.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
@@ -592,6 +632,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"source_registry_proposals.json",{"candidate_publishers":source_proposals,
           "auto_added_to_collector":0,
           "note":"Source expansion suggestions; access, safety and licensing require review."})
+    write(out/"deep_research_queue.json",manual_context)
     write(out/"research_tasks.json",{"tasks":tasks,
           "audit":audit,"no_auto_source_installation":True})
     write(out/"coverage_audit.json",coverage)
