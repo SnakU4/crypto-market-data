@@ -166,6 +166,32 @@ class FreeIntelligenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"unknown CMC ID"):
             foi.build(self.root,cutoff=T,network=False)
 
+    def test_full_source_event_batches_not_short_index(self):
+        original=foi.read(self.root/"docs/research/latest.json")
+        new_rows=[]
+        for i in range(3):
+            new_rows.append({"event_id":"direct"+str(i),
+                "headline":"Primary source detailed economic report "+str(i),
+                "url":"https://sources.example.com/report"+str(i),
+                "published_utc":OBS,"first_observed_utc":OBS,
+                "cmc_ids":[],"source_id":"central_bank","excerpt":"New substantive information."})
+        original["events"]=[new_rows[0]]
+        write(self.root/"docs/research/latest.json",original)
+        batch_path=self.root/"docs/research/source_event_batches/batch_01.json"
+        write(batch_path,{"capture_utc":OBS,"events":new_rows})
+        manifest={"capture_utc":OBS,"total_events":3,"read_index_count":1,
+            "batches":[{"path":"docs/research/source_event_batches/batch_01.json",
+                        "sha256":foi.digest(batch_path),"count":3}]}
+        write(self.root/"docs/research/source_events_manifest.json",manifest)
+        status=foi.read(self.root/"docs/research/status.json")
+        status["rss_events_stored"]=3
+        write(self.root/"docs/research/status.json",status)
+        _,c=foi.build(self.root,cutoff=T)
+        self.assertEqual(c["evidence_counts"]["research_event_rows"],3)
+        self.assertEqual(c["direct_research_full_source_audit"]["mode"],"FULL_SHA_VERIFIED_BATCHES")
+        batch_path.write_text(batch_path.read_text()+"TAMPER",encoding="utf-8")
+        with self.assertRaisesRegex(ValueError,"SHA mismatch"):
+            foi.build(self.root,cutoff=T)
     def test_archive_integrity_fails_closed(self):
         p=self.root/"docs/evidence_engine/archive/e.gz"
         p.write_bytes(p.read_bytes()+b"tamper")
