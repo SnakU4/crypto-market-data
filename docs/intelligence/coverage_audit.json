@@ -97,7 +97,7 @@
       "task_id": "T:a7ec3ce54236"
     },
     {
-      "results": 6,
+      "results": 5,
       "status": "OK",
       "task_id": "T:2c3975afed37"
     }
@@ -121,7 +121,7 @@
     "direct_publisher_article_fetch_attempted": 55,
     "engine_rows": 3229,
     "expanded_rows": 9778,
-    "free_adaptive_followup_leads": 175,
+    "free_adaptive_followup_leads": 174,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 11430,
     "long_excerpts_by_character_count_not_claim_verification": 4396,
@@ -148,8 +148,10 @@
   },
   "new_public_source_discovery_audit": {
     "advertised_existing_feed_count": 1,
+    "domain_cooldown_hours": 72,
     "domains_attempted": 14,
     "domains_found_content": 1,
+    "domains_skipped_due_to_recent_probe": 0,
     "new_feed_items": 20,
     "not_verified_facts": true,
     "sources": [
@@ -348,7 +350,7 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 1787,
+        "published_last_24h": 1785,
         "published_last_72h": 5144,
         "substantive": 0,
         "substantive_published_last_72h": 0,
