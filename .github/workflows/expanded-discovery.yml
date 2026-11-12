@@ -1,6 +1,9 @@
 name: CMC100 Expanded Evidence Discovery
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/expanded-discovery.yml'
   schedule:
     # 2 broad 100-coin runs/day; the evening pass precedes the 00:00 UTC forecast.
     # Schedules are best-effort, not an exact time guarantee.
@@ -27,7 +30,7 @@ jobs:
         env:
           DISCOVERY_WORKERS: '5'
           DISCOVERY_ARTICLE_BUDGET: '320'
-          DISCOVERY_RESOLUTION_BUDGET: '0'
+          DISCOVERY_RESOLUTION_BUDGET: '80'
         run: python src/expanded_discovery.py
       - name: Publish compressed full archive and audit
         if: success()
