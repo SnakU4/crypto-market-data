@@ -98,6 +98,30 @@ SOURCE_CATALOG=[
     ('polkadot_governance','PRIMARY_GOVERNANCE','rss','https://forum.polkadot.network/latest.rss'),
     ('zcash_governance','PRIMARY_GOVERNANCE','rss','https://forum.zcashcommunity.com/latest.rss'),
     ('ethereum_governance','PRIMARY_GOVERNANCE','rss','https://ethereum-magicians.org/latest.rss'),
+    # Diverse protocol implementation, infrastructure and governance sources.
+    # GitHub releases are primary author publications, not proof of token-price impact.
+    ('zcash_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/zcash/zcash/releases.atom'),
+    ('icp_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/dfinity/ic/releases.atom'),
+    ('algorand_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/algorand/go-algorand/releases.atom'),
+    ('ton_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ton-blockchain/ton/releases.atom'),
+    ('monero_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/monero-project/monero/releases.atom'),
+    ('injective_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/InjectiveLabs/injective-core/releases.atom'),
+    ('polygon_bor_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/maticnetwork/bor/releases.atom'),
+    ('polygon_heimdall_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/maticnetwork/heimdall/releases.atom'),
+    ('starknet_cairo_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/starkware-libs/cairo/releases.atom'),
+    ('starknet_papyrus_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/starkware-libs/papyrus/releases.atom'),
+    ('lido_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/lidofinance/core/releases.atom'),
+    ('hyperledger_besu_releases','INDEPENDENT_ENTERPRISE_INFRA','rss','https://github.com/hyperledger/besu/releases.atom'),
+    ('hyperledger_fabric_releases','INDEPENDENT_ENTERPRISE_INFRA','rss','https://github.com/hyperledger/fabric/releases.atom'),
+    ('reth_releases','INDEPENDENT_EXECUTION_CLIENT','rss','https://github.com/paradigmxyz/reth/releases.atom'),
+    ('libp2p_releases','INDEPENDENT_NETWORK_INFRA','rss','https://github.com/libp2p/go-libp2p/releases.atom'),
+    ('op_stack_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/ethereum-optimism/op-geth/releases.atom'),
+    ('uniswap_v3_releases','PRIMARY_PROTOCOL_RELEASE','rss','https://github.com/Uniswap/v3-core/releases.atom'),
+    ('solana_firedancer_releases','INDEPENDENT_EXECUTION_CLIENT','rss','https://github.com/firedancer-io/firedancer/releases.atom'),
+    ('optimism_governance','PRIMARY_GOVERNANCE','rss','https://gov.optimism.io/latest.rss'),
+    ('arbitrum_governance','PRIMARY_GOVERNANCE','rss','https://forum.arbitrum.foundation/latest.rss'),
+    ('uniswap_governance','PRIMARY_GOVERNANCE','rss','https://gov.uniswap.org/latest.rss'),
+    ('maker_governance','PRIMARY_GOVERNANCE','rss','https://forum.makerdao.com/latest.rss'),
 ]
 
 # Categories are data provenance labels; they do not establish that an event is true.
