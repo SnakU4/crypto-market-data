@@ -117,20 +117,20 @@
     "adjacent_full_event_rows": 687,
     "adjacent_read_index_event_rows": 500,
     "canonical_research_leads": 10617,
-    "direct_publisher_article_excerpts": 32,
-    "direct_publisher_article_fetch_attempted": 48,
+    "direct_publisher_article_excerpts": 36,
+    "direct_publisher_article_fetch_attempted": 55,
     "engine_rows": 3229,
     "expanded_rows": 9778,
     "free_adaptive_followup_leads": 171,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 11430,
-    "long_excerpts_by_character_count_not_claim_verification": 4392,
+    "long_excerpts_by_character_count_not_claim_verification": 4396,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "new_source_discovery_items": 40,
+    "new_source_discovery_items": 20,
     "non_asset_structured_market_and_network_observations": 2844,
     "research_event_rows": 965,
-    "substantive_source_excerpt_leads": 937
+    "substantive_source_excerpt_leads": 941
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -147,10 +147,10 @@
     "rows": 0
   },
   "new_public_source_discovery_audit": {
-    "advertised_existing_feed_count": 0,
-    "domains_attempted": 10,
-    "domains_found_content": 2,
-    "new_feed_items": 40,
+    "advertised_existing_feed_count": 1,
+    "domains_attempted": 14,
+    "domains_found_content": 1,
+    "new_feed_items": 20,
     "not_verified_facts": true,
     "sources": [
       {
@@ -222,11 +222,12 @@
         "advertised_feeds": [
           "https://cointelegraph.com/rss"
         ],
-        "article_count": 20,
+        "article_count": 0,
         "domain": "cointelegraph.com",
-        "feed_status": "OK",
+        "duplicate_feed_url": "https://cointelegraph.com/rss",
+        "feed_status": "ALREADY_COLLECTED",
         "home_status": "OK",
-        "substantive": 9
+        "substantive": 0
       },
       {
         "article_count": 0,
@@ -234,9 +235,37 @@
         "feed_status": "NOT_DISCOVERED",
         "home_status": "HTTPError",
         "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forum.arbitrum.foundation",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forum.cosmos.network",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forum.polkadot.network",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forum.skyeco.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "ROBOTS_DISALLOW",
+        "substantive": 0
       }
     ],
-    "substantive_feed_items": 9
+    "substantive_feed_items": 0
   },
   "official_assets": 100,
   "per_coin": {
@@ -247,14 +276,14 @@
     "spot_prices": 100
   },
   "publisher_article_enrichment_audit": {
-    "attempted": 48,
+    "attempted": 55,
     "by_scope": {
-      "ASSET_CANDIDATE": 5,
-      "GLOBAL_UNRESOLVED": 12,
+      "ASSET_CANDIDATE": 6,
+      "GLOBAL_UNRESOLVED": 15,
       "SECTOR": 15
     },
-    "substantive": 32,
-    "succeeded": 35
+    "substantive": 36,
+    "succeeded": 39
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
@@ -264,11 +293,11 @@
     "independently_primary_verified_claims": 0,
     "manual_high_context_queue_is_not_the_denominator": true,
     "material_research_status": "PARTIAL_RESEARCH",
-    "publisher_excerpts": 32,
-    "publisher_source_attempted": 48,
+    "publisher_excerpts": 36,
+    "publisher_source_attempted": 55,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.0883,
+    "substantive_context_share": 0.0886,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
@@ -319,20 +348,20 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 1788,
+        "published_last_24h": 1787,
         "published_last_72h": 5145,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 8995
       },
       "research:DIRECT_SOURCE": {
-        "article_extract_count": 16,
+        "article_extract_count": 20,
         "distinct_source_domains": 23,
         "feed_summary_count": 707,
         "published_date_missing": 0,
         "published_last_24h": 134,
         "published_last_72h": 201,
-        "substantive": 592,
+        "substantive": 596,
         "substantive_published_last_72h": 121,
         "total": 817
       }
@@ -349,10 +378,6 @@
       "DEVELOPER_COMMUNITY": {
         "substantive": 0,
         "total": 1
-      },
-      "DYNAMIC_cointelegraph.com": {
-        "substantive": 4,
-        "total": 12
       },
       "DYNAMIC_huggingface.co": {
         "substantive": 2,
@@ -435,8 +460,8 @@
         "total": 25
       },
       "cointelegraph": {
-        "substantive": 15,
-        "total": 18
+        "substantive": 19,
+        "total": 30
       },
       "cosmos_governance": {
         "substantive": 18,
@@ -467,7 +492,7 @@
         "total": 10
       },
       "ecb_press": {
-        "substantive": 1,
+        "substantive": 5,
         "total": 15
       },
       "eth_consensus_releases": {
@@ -787,8 +812,8 @@
         "total": 10
       }
     },
-    "direct_research_substantive_count": 592,
-    "direct_research_substantive_ratio": 0.7246,
+    "direct_research_substantive_count": 596,
+    "direct_research_substantive_ratio": 0.7295,
     "direct_research_total": 817,
     "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },

@@ -1,8 +1,8 @@
 {
-  "advertised_existing_feed_count": 0,
-  "domains_attempted": 10,
-  "domains_found_content": 2,
-  "new_feed_items": 40,
+  "advertised_existing_feed_count": 1,
+  "domains_attempted": 14,
+  "domains_found_content": 1,
+  "new_feed_items": 20,
   "not_verified_facts": true,
   "sources": [
     {
@@ -74,11 +74,12 @@
       "advertised_feeds": [
         "https://cointelegraph.com/rss"
       ],
-      "article_count": 20,
+      "article_count": 0,
       "domain": "cointelegraph.com",
-      "feed_status": "OK",
+      "duplicate_feed_url": "https://cointelegraph.com/rss",
+      "feed_status": "ALREADY_COLLECTED",
       "home_status": "OK",
-      "substantive": 9
+      "substantive": 0
     },
     {
       "article_count": 0,
@@ -86,7 +87,35 @@
       "feed_status": "NOT_DISCOVERED",
       "home_status": "HTTPError",
       "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forum.arbitrum.foundation",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forum.cosmos.network",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forum.polkadot.network",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forum.skyeco.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "ROBOTS_DISALLOW",
+      "substantive": 0
     }
   ],
-  "substantive_feed_items": 9
+  "substantive_feed_items": 0
 }
