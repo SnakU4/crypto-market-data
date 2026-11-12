@@ -664,7 +664,7 @@ def main():
     a=p.parse_args()
     cutoff=parse_time(a.cutoff) if a.cutoff else dt.datetime.now(UTC)
     if not cutoff:p.error("Invalid cutoff")
-    if a.max_followups>40 or a.max_articles>30:p.error("Free tier bounded to 40 searches/30 articles")
+    if a.max_followups>40 or a.max_articles>80:p.error("Free tier bounded to 40 searches/80 articles")
     manifest,coverage=build(a.root,a.out,cutoff,a.network,a.max_followups,a.max_articles)
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
        "evidence_counts":coverage["evidence_counts"],
