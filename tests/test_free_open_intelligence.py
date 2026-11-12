@@ -77,7 +77,7 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertEqual(c["evidence_counts"]["engine_rows"],1)
         self.assertEqual(c["evidence_counts"]["expanded_rows"],2)
         self.assertEqual(c["evidence_counts"]["research_event_rows"],1)
-        self.assertEqual(c["evidence_counts"]["adjacent_latest_event_rows"],1)
+        self.assertEqual(c["evidence_counts"]["adjacent_full_event_rows"],1)
         self.assertEqual(c["evidence_counts"]["canonical_research_leads"],4)
         self.assertEqual(c["identity_quarantine"][0]["cmc_id"],3155)
         cards=[]
@@ -100,6 +100,31 @@ class FreeIntelligenceTests(unittest.TestCase):
         p=self.root/"docs/evidence_engine/archive/e.gz"
         p.write_bytes(p.read_bytes()+b"tamper")
         with self.assertRaisesRegex(ValueError,"SHA mismatch"):foi.build(self.root,cutoff=T)
+    def test_full_adjacent_archive_not_just_limited_read_index(self):
+        archive_path=self.root/"docs/discovery/archive/20261112/events.json"
+        full=foi.read(self.root/"docs/discovery/latest.json")
+        original=full["events"][0]
+        full["events"]= [original,{**original,"event_id":"another","title":"Unexpected global signal",
+                          "url":"https://another.example/news"}]
+        write(archive_path,full)
+        st=foi.read(self.root/"docs/discovery/status.json")
+        st["full_archive_path"]="docs/discovery/archive/20261112/events.json"
+        st["full_archive_leads"]=2
+        st["read_index_leads"]=1
+        write(self.root/"docs/discovery/status.json",st)
+        _,cov=foi.build(self.root,cutoff=T)
+        self.assertEqual(cov["adjacent_discovery_source"]["mode"],"FULL_ARCHIVE")
+        self.assertEqual(cov["evidence_counts"]["adjacent_full_event_rows"],2)
+        self.assertEqual(cov["evidence_counts"]["adjacent_read_index_event_rows"],1)
+    def test_second_hop_uses_newly_returned_sources(self):
+        earlier=[{"query":"original liquidity infrastructure","task_id":"first"}]
+        hits=[{"id":"eventA","source_plane":"adaptive","source_id":"taskA",
+               "title":"Emerging settlement architecture adoption","themes":[]},
+              {"id":"eventB","source_plane":"adaptive","source_id":"taskB",
+               "title":"Emerging settlement architecture acceleration","themes":[]}]
+        next_tasks=foi.second_hop_tasks(hits,earlier,limit=2)
+        self.assertTrue(any(t["trigger"]=="SECOND_HOP_FROM_NEW_FINDINGS" for t in next_tasks))
+        self.assertIn("emerging settlement",next_tasks[0]["query"])
     def test_future_data_not_leaked(self):
         extr=self.root/"docs/expanded_discovery/archive/d.gz"
         with gzip.open(extr,"wt",encoding="utf-8") as f:
