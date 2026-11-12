@@ -82,14 +82,15 @@ def parsed_feed(payload,source,observed_utc,limit=20):
        "provenance_ids":["D:"+hashlib.sha256(x["url"].encode()).hexdigest()[:18]]}
        for x in rows]
 
-def discover(proposals,cutoff,max_sites=10,opener=None,known_feed_urls=()):
+def discover(proposals,cutoff,max_sites=10,opener=None,known_feed_urls=(),skip_domains=()):
     audit=[];items=[]
     known=set(str(x).rstrip("/") for x in known_feed_urls)
+    skip=set(str(x).lower() for x in skip_domains)
     candidates=(proposals.get("candidate_publishers") or [])[:90]
     for record in candidates:
         if len(audit)>=max_sites:break
         host=str(record.get("domain") or "").lower()
-        if not host or host in SOURCE_EXCLUDE or host.endswith(".google.com"):continue
+        if not host or host in SOURCE_EXCLUDE or host.endswith(".google.com") or host in skip:continue
         # Same source selection for the result and the resulting source audit;
         # do not auto-install domain/feed into a trusted collector.
         homepage="https://"+host+"/"
