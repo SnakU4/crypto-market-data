@@ -34,7 +34,12 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
 4. Independently preserved global / sector / coin / unresolved content,
    with timestamps, source URLs, origin labels and explicit identity uncertainty.
 5. Short attributable snippets for accessible public publisher articles, respecting
-   robots.txt; it does NOT archive full copyrighted articles.
+   robots.txt; it does NOT archive full copyrighted articles. Publisher feed
+   summaries are retained instead of dropped. Direct source extracts
+   flow BACK into the global/sector/asset dossiers; prior versions exported
+   them separately without enriching the dossiers. Extraction now checks
+   article/main HTML and RSS/Atom descriptions. The publisher budget is
+   bounded to 48 attempts per normal run, max 5 per host.
 6. SHA-checked full evidence index and status in a workflow artifact. Compact
    results are published to docs/intelligence/. Source archives stay where they are.
 
@@ -50,6 +55,10 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
 - open_discovery.json: cross-source emerging concepts, original evidence references
 - research_tasks.json: actual queries, evidence triggers, completed/failed statuses and result counts
 - publisher_excerpts.json: short public page excerpts with source URLs
+- deep_research_queue.json: diversified contextual research leads (up to 300),
+  with sources and undercovered coins; separate from the COMPLETE raw archives
+- MANUAL_CHATGPT_RESEARCH_PROMPT.md: executable manual ChatGPT research
+  instructions, open-ended global/sector/coin discovery and independent Web research
 - knowledge_index.json: lead and scope counts; no generated prediction
 - source_registry_proposals.json: publisher domains discovered from actual evidence;
   candidates are not auto-installed or trusted without access/identity review
@@ -61,7 +70,18 @@ article fetches per execution; no paywall bypass or unauthorized social scraping
 **Run it:** GitHub → Actions → "CMC100 Free Open Intelligence – Broad Discovery" →
 "Run workflow", or let the bounded twice-daily schedule execute. No secrets.
 
-**Manual ChatGPT research at no extra model API cost:** In a normal chat ask the
+**Manual ChatGPT research at no extra model API cost:** Open
+docs/intelligence/MANUAL_CHATGPT_RESEARCH_PROMPT.md and paste its full
+instructions into a new ChatGPT conversation with GitHub and Web available.
+This is the primary next-step qualitative research process; the GitHub
+Python workflow does NOT attempt autonomous semantic analysis.
+
+The manual prompt reads raw coverage plus the more substantive 300-item
+source-diverse queue, then independently explores new global/sector/coin
+questions, verifies primary claims and preserves unlinked global
+information. The low full-corpus coverage share must remain in the audit.
+
+In a normal chat ask the
 assistant to inspect manifest, global_intelligence, sector_intelligence, all five
 coin batches, research_tasks, publisher_excerpts and the Actions artifact.
 Allow additional open web exploration, especially of unverified primary-source
