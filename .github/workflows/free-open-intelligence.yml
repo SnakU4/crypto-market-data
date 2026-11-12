@@ -34,10 +34,11 @@ jobs:
         run: |
           python -m compileall -q src/free_open_intelligence.py tests/test_free_open_intelligence.py
           python -m unittest discover -s tests -p 'test_free_open_intelligence.py' -v
+          python -m unittest discover -s tests -p 'test_discovery_quality.py' -v
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
-          python src/free_open_intelligence.py --network --max-followups 20 --max-articles 12
+          python src/free_open_intelligence.py --network --max-followups 20 --max-articles 48
 
       - name: Audit 100 coins, complete inputs and real research coverage
         run: |
@@ -55,6 +56,8 @@ jobs:
           assert c["adaptive_search_hops_executed"] in (1,2)
           assert c["per_coin"]["perp_markets_unquarantined"] <= 77
           assert "substantive_source_excerpt_leads" in c["evidence_counts"]
+          assert c["evidence_counts"]["manual_high_context_selection_count"] > 0
+          assert c["research_quality_gate"]["raw_all_leads_denominator_unchanged"]
           assert c["research_quality_gate"]["technical_source_integration"]=="PASSED"
           assert c["research_quality_gate"]["independently_primary_verified_claims"]==0
           assert c["research_quality_gate"]["material_research_status"] in ("PARTIAL_RESEARCH","REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION")
@@ -100,6 +103,7 @@ jobs:
             docs/intelligence/research_tasks.json
             docs/intelligence/open_discovery.json
             docs/intelligence/publisher_excerpts.json
+            docs/intelligence/deep_research_queue.json
             docs/intelligence/source_registry_proposals.json
 
       - name: Publish concise reusable research output to public GitHub
@@ -111,6 +115,7 @@ jobs:
             docs/intelligence/global_intelligence.json docs/intelligence/sector_intelligence.json \
             docs/intelligence/coin_batches docs/intelligence/open_discovery.json \
             docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
+            docs/intelligence/deep_research_queue.json \
             docs/intelligence/source_registry_proposals.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
