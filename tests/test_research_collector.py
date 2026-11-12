@@ -58,6 +58,19 @@ class ResearchCollectorTests(unittest.TestCase):
         self.assertEqual(event['cmc_ids'],[1])
         self.assertFalse(event['coin_tags_are_verified_catalysts'])
 
+    def test_publisher_feed_body_retained_for_research(self):
+        rss=b'''<rss><channel><item><title>Example protocol security update</title>
+        <link>https://source.example.org/update</link>
+        <description><![CDATA[<p>Maintainers published a protocol migration timeline and
+        changed validator requirements with explicit dates, deployment checks, and
+        documented mitigation steps for operators.</p>]]></description>
+        <pubDate>Fri, 06 Nov 2026 19:00:00 GMT</pubDate></item></channel></rss>'''
+        rows=r.parse_feed(rss,'direct_source',T0)
+        self.assertEqual(len(rows),1)
+        self.assertIn('changed validator requirements',rows[0]['excerpt'])
+        self.assertNotIn('<p>',rows[0]['excerpt'])
+        self.assertEqual(rows[0]['context_origin'],'PUBLISHER_FEED_SUMMARY')
+
     def test_short_tickers_suppressed_and_explicit_dollar_match(self):
         coins=[{'cmc_id':1,'name':'Stable','symbol':'STABLE'},
                {'cmc_id':2,'name':'Near Protocol','symbol':'NEAR'}]
