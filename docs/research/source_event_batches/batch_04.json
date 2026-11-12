@@ -1,6 +1,99 @@
 {
-  "capture_utc": "2026-11-12T20:03:58Z",
+  "capture_utc": "2026-11-12T20:05:39Z",
   "events": [
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "INSTITUTIONAL_FLOW",
+        "REGULATION"
+      ],
+      "event_id": "b4b01bf3a8c1235de8e7f6d4",
+      "excerpt": "Barclays reported a $187 million stake as of Sept. 30, while Citigroup disclosed a new $119 million position in Fidelity’s Bitcoin ETF.",
+      "first_observed_utc": "2026-11-11T23:29:06Z",
+      "headline": "Barclays boosts BlackRock Bitcoin ETF stake 48% as banks expand holdings",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T11:56:23Z",
+      "source_id": "cointelegraph",
+      "source_ids": [
+        "cointelegraph"
+      ],
+      "url": "https://cointelegraph.com/news/barclays-blackrock-ibit-boost-key-q3-filings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ad567820502709b19ad1b2c7",
+      "excerpt": "The worse_query escape could expose wallet data stored in plaintext, SlowMist warned. Trust Wallet and Zerion said their iOS users are not affected.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-11T23:29:06Z",
+      "headline": "iOS 27.2.1 Leaves Sandbox Flaw Open, Researcher Says",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T11:27:15Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/news/security/ios-27-2-1-leaves-sandbox-flaw-open-researcher-says"
+    },
+    {
+      "cmc_ids": [
+        3794
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d28d019638f6ec8056ca6c2c",
+      "excerpt": "Hi all, If you work with more than one Cosmos chain, you’ve probably hit this: chain binaries don’t update themselves. After a network upgrade, the gaiad or osmosisd on your machine quietly goes stale, and you find out when a transaction fails or a query returns something odd. Cosmovisor solves this for running nodes, but nothing did for developers, CLI users and CI. I built cosmup to fill that gap. It’s a small Go CLI that reads the Cosmos chain registry, downloads the right binary for your platform, verifies its SHA256, and keeps versions side by side. $ cosmup check osmosis Local: v30.0.0 (/usr/local/bin/osmosisd) Network: v31.0.0 (via https://lcd.osmosis.zone) Status: does not match the network; run: cosmup install osmosis@v31.0.0 $ cosmup install osmosis Verified sha256 d435408b... Active: osmosis v31.0.0 What it does: install / use / list: install any version listed in the chain registry, switch between installed versions instantly check: compares your local binary with the version the live network runs, and shows scheduled upgrades (exits 1 on mismatch, so it works in CI) update: moves every installed chain to its recommended version cosmovisor: for validators, puts a verified upgrade binary into cosmovisor’s upgrades folder ahead of the upgrade height remove / prune: clea",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "Cosmup: install, switch and check Cosmos chain binaries (like nvm, for gaiad/osmosisd/...)",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
+      "match_methods": {
+        "3794": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T11:13:24Z",
+      "source_id": "cosmos_governance",
+      "source_ids": [
+        "cosmos_governance"
+      ],
+      "url": "https://forum.cosmos.network/t/cosmup-install-switch-and-check-cosmos-chain-binaries-like-nvm-for-gaiad-osmosisd/17575"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d0d5853546993e1bd2b7d8f0",
+      "excerpt": "Application Owners ( @octocat , @octocat1 ) @dogemos Organization or Individual Name GitHub - @chainapsis / Org - Vizor Additional Team Members - Name: Josh Lee Role: Product Owner / Primary coordinator Background: CEO / Co-founder at Keplr Wallet and Osmosis Responsibilities: Product, UX, community, release QA, application owner - Name: Tony Yun Role: Chief Technical Owner / Software Engineer Background: Chief Technical Officer and co-founder Responsibilities: Rust architecture, sync, Keystone and Ledger signing, voting client, security, migration scheduling, releases - Name: Rowan (@piatoss3612) Role: Software Engineer Background: Software engineer on the Vizor team, contributing from late April 2026 Responsibilities: Wallet features, Pay, sync, migration UX, Ledger transports and signing, Gift Cards, payment requests, Tor, releases - Name: Nik Role: Design, UI/UX, and Visualization Background: Designs on the Vizor team Responsibilities: All product design, including migration, Ledger, Gift Card, and voting UX - Name: Kamal Role: Quality assurance, testing, and product management Background: Solutions architect and primary QA testing Responsibilities: Desktop, mobile, Keystone, Ledger, and migration QA How did you learn about the Lockbox: Coinholder Retroactive Grants Program? ",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "Retroactive Grant Application - Vizor",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T11:12:58Z",
+      "source_id": "zcash_governance",
+      "source_ids": [
+        "zcash_governance"
+      ],
+      "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-vizor/59201"
+    },
     {
       "cmc_ids": [
         5805
@@ -14,7 +107,7 @@
       "excerpt": "The New York Stock Exchange will use Avalanche infrastructure, but experts say that won't necessarily boost AVAX's price.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Avalanche Won Over the NYSE. Now It Has to ‘Capture Value’ for AVAX",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {
         "5805": "FULL_NAME"
       },
@@ -33,11 +126,32 @@
       "event_classes": [
         "GENERAL_NEWS"
       ],
+      "event_id": "80d735af4612fd3ec535dfdd",
+      "excerpt": "Summary Reth v2.11.0 is a hardening and performance release. RPC calls that can do unbounded work are now capped or cancellable ( eth_callMany , trace_callMany , debug_traceCallMany , eth_getProof , mev_simBundle , eth_simulateV1 ), and the release brings a broad set of transaction pool, P2P and storage correctness fixes. EIP-7702 authorization recovery is parallelized, P2P skips decoding responses it never asked for, and overlay provider setup is cheaper. SDK users: Ethereum block execution now runs on evm2::block , and reth's executor types are thin adapters over it (see Breaking Changes). Action Required Removed no-op CLI flags. The node now refuses to start if you still pass --engine.legacy-state-root , --engine.caching-and-prewarming , --engine.parallel-sparse-trie , --engine.disable-parallel-sparse-trie , --engine.precompile-cache or --rpc-cache.max-headers (alias --rpc-cache.max-envs ). Drop them from your config ( #28369 ) With --instance N and no explicit --auth-ipc.path , the Engine API IPC socket is now /tmp/reth_engine_api.ipc-N . Set --auth-ipc.path if your consensus client expects the old path ( #28257 ) Explicit IPC socket permissions are now validated at startup, and an invalid mode is a startup error. On platforms that can't set the mode before binding (including",
+      "first_observed_utc": "2026-11-12T20:05:47Z",
+      "headline": "Reth v2.11.0",
+      "last_observed_utc": "2026-11-12T20:05:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T10:47:00Z",
+      "source_id": "reth_releases",
+      "source_ids": [
+        "reth_releases"
+      ],
+      "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.11.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
       "event_id": "7a41f28a77fd2b9b5cb2598e",
       "excerpt": "The Nov. 10 share-price range implied a valuation of about $1.4 trillion. Bloomberg subsequently reported, citing the Financial Times, that bankers were weighing $1.5 trillion or more.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Anthropic’s $1.4 Trillion IPO Target May Rise: Report",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T10:38:36Z",
@@ -60,7 +174,7 @@
       "excerpt": "Greetings On 2026-11-08 at 18:10:35 UTC two Aave-related token positions held by our wallet 0x64cacba2bca8785961c450b928dc60b03742b3cc were transferred out without our authorization . We did not sign these transactions, and we were not at the device at the time. The destination 0x413e4f4de7e5ff010913488f781e679e76f706da looks like a large automated sweeper, not an exchange and not a wallet of ours. We are posting to (1) warn other users, (2) ask whether anyone recognises this pattern, and (3) request any guidance the Aave community or service providers can offer on evidence collection for a criminal complaint. Affected positions Token Contract Amount Value at time of theft AUSDT (Aave Ethereum USDT, aToken) 0x23878914efe38d27c4d67ab83ed1b93a74d4086a 10,028.528651 ≈ $10,015.77 stkwaEthUSDC.v1 (Umbrella Stake Wrapped Aave Ethereum USDC v1) 0x6bf183243fdd1e306ad2c4450bc7dcf6f0bf8aa6 8,398.570816 ≈ $9,238.43 Total: ≈ $19,254 USD. Both positions had been held in this wallet since 2026-06-26 and were stable until the transfer. Transactions (Ethereum mainnet) # Tx hash Token Amount Destination Time (UTC) 1 0x5223f78b9300ec6fa2c6cb2ead79b3527857be2ccc1374f5d88c647c24d8fd44 stkwaEthUSDC.v1 8,398.570816 0x413e4f4de7e5ff010913488f781e679e76f706da 2026-11-08 18:10:35 2 0x254c93130dd20f21db96",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Unauthorized sweep of staked Aave positions: drainer address 0x413e4f4d…706da, 8 Nov 2026",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -85,7 +199,7 @@
       "excerpt": "Hello Zcash Community! 81 Provinces. 81 Volunteers. 30,000 Kilometers. 12 Months. One mission: Bringing Zcash closer to people across Türkiye. For those unfamiliar with Türkiye, our country is divided into 81 provinces. Each province has its own cities, towns, and local communities. Our goal is to travel across all 81 provinces, introduce people to Zcash, and help create local connections that can continue after we leave. My name is Hayri, and I am known in the cryptocurrency industry as Crypto Epoch. For several years, I have worked as a cryptocurrency content creator, community contributor, KOL. I have participated in industry events, delivered presentations, engaged with cryptocurrency communities, and built relationships with professionals across the blockchain ecosystem. Now I want to take that experience on the road. Together with my teammate Berrin, I am proposing a 12-month journey across all 81 provinces of Türkiye to introduce people to Zcash, financial privacy, and self-custody through direct educational conversations, practical demonstrations, and community building. Our project is called Zcash on the Road. Our dedicated Turkish-language YouTube and X channels will operate under the name Zcash Yollarda. The photograph above shows me delivering a presentation at a Coin",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Zcash on the Road | 81 Provinces, 81 Volunteers, 30,000 KM, 12 Months Across Türkiye",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -108,7 +222,7 @@
       "excerpt": "Robert Barr planned to have accomplices force a crypto investor to install remote-access software so he could drain the wallet from prison.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Prisoner Jailed for 8 Years Over $2.7M Crypto Theft Plot Run From His Cell",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T10:20:53Z",
@@ -131,7 +245,7 @@
       "excerpt": "Technical & Protocol Development JAM roadmap updates highlighted progress toward PolkaJAM Gray Paper 0.8.1, CoreVM video codec gas-cost reductions of up to 80%, AHM v2 migration work, and new JAM tooling/resources (via CryptoCappex ). Polkadot SDK repo activity included XCM fee rollback on failed delivery, tighter executor atomicity, on-chain handling of Coretime on-demand revenue, AHMv2 HRMP async provider work, and a default collator-protocol revamp (via JMiaozi ). Polkadot recorded a 6-second average block time on Sunday, its shortest monthly average according to Chainspect tracking (via chainspect_app ). Ecosystem & Community SoneVibe said its DEX is live across five chains, including Polkadot Hub, alongside Soneium, BNB Chain, Astar, and Arbitrum One, with a uniform 0.25% swap fee model (via Real_Dennis_S_F ). PROCESSING LOG Report Generated: 2026-11-11 10:04:25 Total X posts curated: 2024 Posts Filtered and Analysed: 1993 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on posts from X and may contain inaccuracies. We do not guarantee its completeness or correctness. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-11",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -154,7 +268,7 @@
       "excerpt": "Zecboat.com - Zec Wallet - Annoucement Zec Non Fungible Thing: (znft) A znft is a Zec Non Fungible Thing: one shielded Zcash note that carries one named unit, held with your own key, moving whole from one zecboat wallet to the next. Zecboat collections are now decentralised in the plain sense. The Zecboat Registry is a single Zcash account whose viewing key is public; an issuer lists a collection with one transaction to it, and your wallet reads the list straight from the chain through your own node or your provider, with nothing fetched from zecboat.com . Press Check and the wallet audits a collection against the chain from the collection’s published viewing key, 17 checks, and it works if our site is down. Every znft is held under the ape licence, rebuilt for a chain that keeps your name out of it: you own the art in the unit you hold, you may use it personally, and you have an unlimited, worldwide licence to make derivative works and sell them, with no revenue cap. The rebuild closes the gap the original left open: the licence travels with the unit when it moves. Two collections to show it. Frankfurt Merry Christmas post cards, ten znft from a snowy Frankfurt, Römerberg to the market stalls, each wishing Merry Christmas in a different language, from German to Japanese. The Cro",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Zecboat.com - Zec Non Fungible Thing",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T07:53:10Z",
@@ -175,7 +289,7 @@
       "excerpt": "Hi all, I’ve submitted a ZCG grant application and I’m posting it here for community input, as required: Grant Application - PrivateSync: Privacy-Preserving Light Client Sync Infrastructure for Zcash · Issue #549 · ZcashCommunityGrants/zcashcommunitygrants · GitHub The problem: Zashi/Ywallet sync through lightwalletd servers, and that sync leaks the user’s IP address and which compact blocks the wallet downloads — a metadata trail that can deanonymize otherwise shielded activity. lightwalletd’s own wallet-app threat model documents these limitations, and ZCG’s open RFP for lightwalletd infrastructure asks for a multi-operator solution. The proposal: a three-tier privacy stack for light client sync, aligned with upstream work already in flight (librustzcash #2665 , SDK #1741 ): Tier 1 — Tor onion sync for lightwalletd (ships first) Tier 2 — Tor + multi-server PIR, where no single sync node learns which block you requested (information-theoretic, per-server privacy) Deployment: 3–5 independently operated testnet nodes + a runbook so more operators can join — the multi-team model the RFP calls for Ask: $27,000 over 8 months, paid per milestone, no upfront. Evidence base (everything is public): Application repo (proposal, whitepaper, budget, verified research): GitHub - sarinsk629-bl",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "ZCG Application — PrivateSync: Privacy-Preserving Light Client Sync Infrastructure (feedback wanted)",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T06:07:13Z",
@@ -196,7 +310,7 @@
       "excerpt": "When a module limits what governance can do with it, a cap on what a treasury pays out per week or a list of addresses a reserve is allowed to pay, the easy place for that limit is the module’s params. The authority for MsgUpdateParams is then the same gov account the limit is meant to hold back. That came up in the Luggom thread here in October, and the fix was in their repo the same day. I think it’s general enough for its own topic, because it’s easy to miss when you read the module on its own. What x/gov does when a proposal passes In SDK v0.53.8, the version Gaia v29 runs, the gov EndBlocker tallies the vote and, if it passed, opens one cached context and runs the proposal’s messages in the order they were submitted ( abci.go L166-L217 ). Every message sees what the ones before it wrote. If one fails, nothing is written and the proposal is marked failed. So a proposal with a MsgUpdateParams that adds a payee or raises the cap, followed by the spend, passes the module’s check in the same block. Nothing runs before the vote either. At submission SubmitProposal runs each message’s ValidateBasic , checks that its only signer is the gov account and that the router knows the type ( proposal.go L46-L69 ), and that’s it. Voters do see both messages, if they open the proposal and rea",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "One proposal can lift a module's limit and use it in the same block",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T05:59:28Z",
@@ -205,6 +319,27 @@
         "cosmos_governance"
       ],
       "url": "https://forum.cosmos.network/t/one-proposal-can-lift-a-modules-limit-and-use-it-in-the-same-block/17574"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "84b124f66eec462bfa1de3f4",
+      "excerpt": "an independent exploration of mathematical verification, smart_contract_reviewing, and the evolving boundaries of formal assurance leveraging agentic intel Disclosure: Independent, Non-Commissioned Research this thread documents an independently initiated, self_directed_attempt to provide additional formal assurance of smart contracts and systems within the Sky Ecosystem using LLMs. the research is NOT commissioned by Sky, is NOT conducted on behalf of Sky, and does NOT claim to constitute a Sky_recognized_security_audit. the research is independent of the recognized audit process established under the sky atlas, including A.1.10.1.3 — Standards For Audits Not Commissioned By Sky the findings presented here are independent supplementary research. they do not replace audits by recognized security firms, satisfy sky’s formal_audit_coverage_requirements, or constitute_official_governance_approval of any contract or configuration this is also being performed to explore & push the boundaries of human critical thinking, while_at_the_same_time, hopefully helping the sky ecosystem stay safe. after all, formal methods are not a single leap to the summit The Quest for End-to-End Formal Verification (bloody difficult task) for quite a while, I have been thinking about leveraging open/closed",
+      "first_observed_utc": "2026-11-12T20:05:49Z",
+      "headline": "Leveraging Agentic Intelligence: The Never-Ending Quest for Formal Assurance of Sky Smart Contracts",
+      "last_observed_utc": "2026-11-12T20:05:49Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T03:44:15Z",
+      "source_id": "maker_governance",
+      "source_ids": [
+        "maker_governance"
+      ],
+      "url": "https://forum.skyeco.com/t/leveraging-agentic-intelligence-the-never-ending-quest-for-formal-assurance-of-sky-smart-contracts/28397"
     },
     {
       "cmc_ids": [
@@ -219,7 +354,7 @@
       "excerpt": "GitHub application: Retroactive Grant Application - Ledger Zcash App Vulnerability Disclosure: Memo Crash and Device Wipe (GHSA-376f-cc2v-g94c) · Issue #106 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub Hi all, I’m Rowan (piatoss3612 on GitHub). I’m asking coinholders for $37,500 for a completed vulnerability disclosure in Ledger’s official Zcash app. Summary In September I found that the Zcash app on Ledger devices (version 3.9.3) crashed whenever a shielded transaction carried a memo with any character outside plain ASCII: an emoji, Korean text, an accented letter, even a line break. The crash happened before the review screen, so there was nothing for the user to reject. On my own Ledger Stax it did more than crash. The device rebooted into factory setup and had to be restored from the recovery phrase. I traced the root cause, verified a fix and reported it privately to Ledger on Sep 21. About 13 hours later Ledger shipped the fix in 3.9.4 for all five device models and published the advisory, GHSA-376f-cc2v-g94c , at Critical severity, crediting me as the reporter. That was two days before Ledger announced native shielded Zcash support, so users arriving with the launch installed the fixed app. Why it mattered Ordinary input triggered it. Anyone writing",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - Ledger Zcash App Vulnerability Disclosure: Memo Crash and Device Wipe (GHSA-376f-cc2v-g94c)",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -244,7 +379,7 @@
       "excerpt": "In the recent discussion What Are The People at W3F Actually Doing? , numerous user comments have reportedly been hidden, with some accounts showing the message: “User silenced automatically by Discourse AI.” I suggest three improvements: Visibility: Allow users to view AI-hidden posts and judge whether the moderation was justified. Appeals: Provide a clear process to challenge AI decisions and reverse false positives. Transparency: Publish statistics on AI silencing decisions and overturned cases. AI not decide who can participate in governance discussions. Decentralized governance requires open debate and accountable moderation. 8 posts - 4 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Should AI Be Allowed to Automatically Silence Users on Polkadot Forum?",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -267,7 +402,7 @@
       "excerpt": "review-author: protocol-config changes are Tier 3 only when they chan…",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "sui_v1.85.0_1794369040_ci",
-      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T00:48:30Z",
@@ -288,7 +423,7 @@
       "excerpt": "Add two flags for tuning the proofs-history engine's persistence, both defaulting to current behavior: --proofs-history.persistence-threshold (default 5, 1 to 10000): blocks buffered before each persistence batch. Backpressure stays at twice the value. --proofs-history.prune-slack (default 0): blocks the window may grow past --proofs-history.window before pruning runs. Add metrics that split persistence cost by phase and table: optimism_trie.storage.phase_duration_seconds{operation,phase,table} : prune changeset deletes vs history bitmap edits, and the batch write's history flush. optimism_trie.storage.write_state_duration_seconds : the batch write's current-state and changeset writes. optimism_trie.storage.history_unique_keys{operation,table} : unique keys per batch, the unit of history bitmap cost. optimism_trie.engine.backpressure_duration_seconds : one sample per backpressure episode. optimism_trie.engine.persistence.blocks_per_batch . Per-batch \"Prune phase breakdown\" and \"Write phase breakdown\" logs are at debug on target trie::db .",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "op-reth/bench-proofs-persistence.1: op-reth: add proofs-history persistence flags and phase metrics",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T23:32:10Z",
@@ -311,7 +446,7 @@
       "excerpt": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the project.",
       "first_observed_utc": "2026-11-11T02:50:00Z",
       "headline": "Bitcoin Miner HIVE Eyes $45 Million in Annual Revenue From AI Deal",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -334,7 +469,7 @@
       "excerpt": "GitHub grant application: ShieldedScan grant application · Website: https://shieldedscan.xyz · Repository: ShieldedScan · Open data: Hugging Face dataset Gm everyone! For those who don’t know it yet, Shieldedscan is a fully open-source Zcash block explorer and analytics platform, with no trackers, that I started in July this year. In just two quarters of solo development, Shieldedscan has become a complete platform, tracking the transparent pool, the shielded pools, network activity, miners, cross-chain flows, the ecosystem, ZIPs and much more. The explorer has in total 49 pages, all with a cypherpunk-style UI. I also worked early on connecting AI to Zcash data while respecting privacy. At the end of August I launched what I believe was the first Zcash AI agent, Zeno: it runs on a TEE model from NEAR AI connected to Shieldedscan’s data, so anyone can query the network in plain language while their prompts stay private. Since then, Zeno can also draw charts and tables, and export data as CSV or JSON. In October I released what, as far as I know, is the first Zcash MCP server, so anyone can use Shieldedscan’s data from any AI assistant. Shieldedscan is completely free and open: the front-end and the whole backend are open source, the data is published daily as an open dataset, and ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - ShieldedScan",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T21:59:21Z",
@@ -357,7 +492,7 @@
       "excerpt": "Truth Social’s parent booked $409.7 million in quarterly income largely from crypto investments, even as its stock remained more than 94% below its March 2024 peak.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Trump Media Posts $410 Million Profit. Bitcoin Gains Did the Heavy Lifting",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -380,7 +515,7 @@
       "excerpt": "Description Gas charges do not change: no test or snapshot changes in this commit. Remove SuiGasStatus from latest executor. Clean up and refactor of the charging logic. We have 3 phases for charging: pre-execution, execution and storage. Main structures (GasCharger, GasMeter, etc.) are better encapsulated in the functions that use them. Reference to the files changed: protocol config change to introduce publish/upgrade charges, though still disabled crates/sui-protocol-config/src/lib.rs reasonably \"simple\" changes - GasCharger -> GasMeter rename, SuiGasStatus -> GasUsageReport changes and visibility corrections. Made the charger pub(crate) which generated some churn sui-execution/latest/sui-adapter/src/lib.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/execution/context.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/execution/interpreter.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/loading/ast.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/loading/translate.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/metering/translation_meter.rs sui-execution/latest/sui-adapter/src/static_programmable_transactions/mod.rs sui-execution/latest/sui-adapter/src/stat",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "sui_v1.85.0_1794358439_ci: Charge gas in phases through a per-transaction gas state (#28583)",
-      "last_observed_utc": "2026-11-12T20:04:01Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T21:35:14Z",
@@ -389,6 +524,31 @@
         "sui_releases"
       ],
       "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794358439_ci"
+    },
+    {
+      "cmc_ids": [
+        7083
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3af1db0caae804ab5683da2f",
+      "excerpt": "Uniswap Foundation financial reports, plus the governance votes that created and funded the Foundation. 1 post - 1 participant Read full topic",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "About the Uniswap Foundation category",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {
+        "7083": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-10T21:11:06Z",
+      "source_id": "uniswap_governance",
+      "source_ids": [
+        "uniswap_governance"
+      ],
+      "url": "https://gov.uniswap.org/t/about-the-uniswap-foundation-category/26345"
     },
     {
       "cmc_ids": [],
@@ -401,7 +561,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.73.0-rc.0",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:44Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T21:09:14Z",
@@ -422,7 +582,7 @@
       "excerpt": "The chipmaker has erased its 2026 gains as a suspected Chinese espionage case brings fresh scrutiny of CEO Jensen Huang.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T20:45:50Z",
@@ -443,7 +603,7 @@
       "excerpt": "This proposal specifies the JSON document that tokenURI returns in ERC-721 and ERC-6909 and that uri returns in ERC-1155 . Most deployed tokens already use this format, but only part of it was ever specified. ERC-721 and ERC-1155 define name , description and image . Everything else wallets and marketplaces show ( animation_url , attributes and its display_type values, external_url , background_color ) comes from a page OpenSea published in 2018. Clients fill the gaps differently, so the same token renders differently from one app to the next. Draft: erc-8495.md ( ethereum/ERCs#2163 ) The draft covers: Every field and its type, every display_type value in use, and what clients do with values that don’t match, such as booleans, quoted numbers and dates in milliseconds. The URI schemes clients must resolve ( https , ipfs , ar , data ), the ones they may resolve ( ipns , and web3 from ERC-4804 ), and the ones they must never resolve. Fetching rules: ipfs:// URIs instead of gateway URLs, sandboxing HTML in animation_url , and keeping server-side fetches away from private addresses. How later proposals add fields without breaking older clients. The Rationale cites an October 2026 survey of 708 Ethereum and Base contracts. 113 of the 204 IPFS gateway URLs in it failed when fetched as w",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "ERC-8495: Token Metadata JSON Schema",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T20:23:01Z",
@@ -464,7 +624,7 @@
       "excerpt": "An SGLang flaw let an attacker reach internal systems and potentially view confidential AI requests, exposing the limits of hardware-backed privacy protections.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T20:16:03Z",
@@ -477,6 +637,27 @@
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "553b1baf4d234130e45b5c06",
+      "excerpt": "Proposals and discussion about Uniswap protocol fees: activation, expansion to new chains, and fee policy. 1 post - 1 participant Read full topic",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "About the Protocol Fees category",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-10T19:51:38Z",
+      "source_id": "uniswap_governance",
+      "source_ids": [
+        "uniswap_governance"
+      ],
+      "url": "https://gov.uniswap.org/t/about-the-protocol-fees-category/26344"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
       "context_origin": "TITLE_ONLY",
       "event_classes": [
         "GENERAL_NEWS"
@@ -485,7 +666,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.73.0-beta.0",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:44Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T19:46:22Z",
@@ -506,7 +687,7 @@
       "excerpt": "Elon Musk says the incoming Grok 4.8 will trail Anthropic’s Claude Opus 5.5, praising his rival’s model while predicting Grok 5 could surpass it in two or three months.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Elon Musk Calls Claude Opus 5.5 a 'Masterpiece', Admits Grok 4.8 Won't Match It",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T19:46:02Z",
@@ -529,7 +710,7 @@
       "excerpt": "Hi all — EnsRationis from Robonomics. Sensors.social is an open environmental data network I designed, and it is now growing across the EU. Everything is open source: the Altruist sensors that feed it, the software that collects the readings, and the map. Web3 does one job here, the one it is good at: it settles the data as a common good anyone can check, not a vendor’s database. How it works on Robonomics Owners who choose to share their Altruist’s data join the network; each sensor has its own key and signs every measurement it sends. A connectivity node checks the signature and that the sensor has an active subscription on Robonomics, a parachain on Polkadot, then passes the reading to the live map. The node collects readings into batches, stores each batch on IPFS and writes its hash to Robonomics. Anyone can fetch a batch and check it against the chain. The network is federated: a city or a lab can run its own connectivity node, and its sensors still show up on the common map. Next, with Robonomics 5.0: the reading the sensor signed goes on chain itself, so there is no need to trust the node at all. Try the map: https://sensors.social Happy to hear from anyone who wants to run a sensor in their city or build on the data. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Sensors.social: an open air-quality network on Polkadot is growing across the EU",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -554,7 +735,7 @@
       "excerpt": "Summary LlamaRisk proposes to reposition Aave V3 Core as an instance for liquid, bluechip collateral, while the broader range of asset classes is served by Aave V4, where the Risk Premium parameter granularly prices the additional risk each collateral asset carries and more flexible isolation levers exist. The proposal is the next step of the deprecation work, which wound down low-adoption reserves and instances and deprecated the price feeds of long-tail assets . The proposal covers rsETH, osETH, LBTC, tBTC and rETH on Core, together with a group of lower-exposure reserves. As of 9 November 2026 these assets held $1.33B of collateral backing $1.03B of debt. The initial measure is to freeze each reserve in scope, which stops new supply and sets the LTV to zero while leaving existing positions untouched and unaffected. Reserves that are frozen, or frozen by this ARFC, are borrowable, and still carry more than $20k of debt also have their reserve factor raised to 99%. We will then work with each asset issuer and with the largest borrowers on an orderly migration, and allow positions to unwind naturally before taking any further action. The proposal also approves a defined range of follow-up controls, including stepwise liquidation threshold reductions and, as the final step of the ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "[ARFC] Repositioning Aave V3 Core Around Established & Liquid Collateral",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -579,7 +760,7 @@
       "excerpt": "Grayscale plans to direct $1 million from its Zcash ETF fees to ecosystem nonprofits and launched a national ad campaign, as ZEC fell more than 11%.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Grayscale Bets $1 Million on Zcash as Privacy Coin Tumbles",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -602,7 +783,7 @@
       "excerpt": "The funding, backing a U.S.-incorporated issuer codenamed “Project Faro,” covers five years of operations as traditional lenders move to challenge crypto-native giants Tether and Circle.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Goldman, Citi and Global Banks Commit $270 Million to Challenge Crypto’s Stablecoin Giants",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T18:33:37Z",
@@ -623,7 +804,7 @@
       "excerpt": "Crypto exchange Uphold delayed many withdrawal requests this month, spooking customers and inciting social media criticism against the Ripple – linked company. Uphold’s status page shows withdrawal problems beginning around November 4 and mostly resolving today. Not everyone is convinced that the problem is over, however. The company blamed a “service disruption at our third-party transaction monitoring partner,” declining to name that partner. Uphold said the issue was also affecting “Topper and other companies across the industry.” Uphold told Protos: “Uphold customers were able to trade and withdraw their funds via bank accounts or debit cards throughout the recent disruption. Only onchain transfers were temporarily affected following a technical incident at a third-party crypto screening service. All customer assets remained secure. “There have been a number of cyber attacks on crypto-related firms recently. Keeping our customers’ money safe is our top priority. “As a regulated financial platform, we’re required to screen onchain deposits and withdrawals to protect our customers. “When our primary screening provider became unavailable, there was a delay before we could activate redundancies. All services are now fully operational.” Third-party monitors currently show Uphold w",
       "first_observed_utc": "2026-11-10T22:23:35Z",
       "headline": "Ripple-linked Uphold faces withdrawal delays amid ‘bank run’ claims",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T18:28:54Z",
@@ -644,7 +825,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T16:45:00Z",
@@ -665,7 +846,7 @@
       "excerpt": "Agenda Open PRs against the EIP-8184 spec shutter-network/EIPs#1 : feat: add key publisher priority list ( @jannikluhn , draft). ethereum/consensus-specs#5403 : Add encrypted mempool (EIP-8184) (draft). Status check and next steps for the CL spec. Meeting Time: Wednesday, November 11, 2026 at 15:00 UTC (60 minutes) GitHub Issue 3 posts - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "Encrypt The Mempool #12, November 11, 2026",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T16:29:00Z",
@@ -689,7 +870,7 @@
       "excerpt": "Bitcoin fell below $74,000 after October inflation beat forecasts, increasing pressure on the Federal Reserve to raise rates again at its December meeting.",
       "first_observed_utc": "2026-11-10T22:23:34Z",
       "headline": "Bitcoin Falls as Hot US Inflation Fuels Fears of Bigger Fed Rate Hike",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:40Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -706,13 +887,34 @@
       "coin_tags_are_verified_catalysts": false,
       "context_origin": "PUBLISHER_FEED_SUMMARY",
       "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "2db731014c3784514393cf35",
+      "excerpt": "This is a mainnet ready release. Adding support for loaderv3_programdata_size_floor feature",
+      "first_observed_utc": "2026-11-12T20:05:47Z",
+      "headline": "Firedancer Mainnet Release v26.10.6",
+      "last_observed_utc": "2026-11-12T20:05:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-10T16:19:09Z",
+      "source_id": "solana_firedancer_releases",
+      "source_ids": [
+        "solana_firedancer_releases"
+      ],
+      "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.6"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
         "REGULATION"
       ],
       "event_id": "a54130eed5696f1b6ec9b663",
       "excerpt": "The Securities and Exchange Commission today provided its enforcement results for the past fiscal year which ended September 30. Throughout the fiscal year, the SEC’s Division of Enforcement remained focused on its fundamental responsibility: protecting…",
       "first_observed_utc": "2026-11-10T22:23:35Z",
       "headline": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T16:15:35Z",
@@ -735,7 +937,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Arbitrum: Increase supply cap for WBTC from 3,500 to 3,630. Reduce supply cap for ARB from 52,000,000 to 30,800,000. Aave V3 Avalanche: Reduce supply cap for USDC from 150,000,000 to 90,000,000. Reduce supply cap for USDt from 100,000,000 to 50,000,000. Reduce supply cap for BTC.b from 1,700 to 1,500. Reduce borrow cap for WETH.e from 7,000 to 4,500. Aave V3 Prime: Reduce supply cap for WETH from 60,000 to 25,000. Aave V3 Mantle: Reduce supply cap for USDe from 80,000,000 to 50,000,000. Reduce supply cap for sUSDe from 100,000,000 to 80,000,000. Aave V3 Core: Reduce supply cap for USDS from 25,000,000 to 10,000,000. Reduce borrow cap for USDS from 20,000,000 to 9,000,000. Aave V3 MegaETH: Reduce supply cap for stcUSD from 15,000,000 to 10,000,000. Aave V3 Base: Reduce borrow cap for cbBTC from 380 to 150. Aave V3 Polygon: Reduce borrow cap for WETH from 11,000 to 6,000. WBTC (Aave V3 Arbitrum) WBTC is currently at 89.2% supply cap utilization on the Aave V3 Arbitrum instance. Supply Distribution Source: LlamaRisk, November 10, 2026 The top 20 WBTC suppliers hold 21.8% of supply, with the largest at ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.10",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -758,7 +960,7 @@
       "excerpt": "github.com/ethereum/EIPs Add EIP: Versioned Opcodes for Gas Repricing (#12638) master ← lglisic60:eip-forward-compatible-gas-repricing opened 07:40PM - 08 Nov 26 UTC lglisic60 +111 -0 Adds a draft EIP proposing forward-compatible gas repricing via a V2 opcode set. … - New contracts must use V2 opcodes that carry the EIP-8037/8038 gas schedule. - Existing contracts keep the legacy schedule. - DELEGATECALL_V2 requires the target to also be V2. - Gas introspection opcodes (GAS, GASLIMIT) are omitted from V2. Discussion: https://x.com/Leo_Glisic/status/2118884109393215604 (Magicians thread inaccessible.) 3 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "EIP-8488: Versioned Opcodes for Gas Repricing",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T16:04:13Z",
@@ -775,11 +977,32 @@
       "event_classes": [
         "GENERAL_NEWS"
       ],
+      "event_id": "a6da92ff30ce30d4b626faff",
+      "excerpt": "On-chain Proposals 1. Adopting USDG as a Core Strategic Initiative for the ArbitrumDAO With Arbitrum joining the Global Dollar Network (resulting in the USDG being live on Arbitrum), Entropy proposes a coordinated effort across the Arbitrum Aligned Entities to grow USDG adoption, so that the DAO becomes the steward of USDG’s growth on Arbitrum and the recipient of the associated economic value. Accordingly, this proposal seeks approval to: Bolster the DRIP budget with an additional 100M ARB from the DAO treasury, adjust the season structure, broaden the program’s permitted activities, and extend its timeline Enable the ATMC to deploy assets in support of USDG growth, under the existing OAT oversight and AF custody Route AEP fees, net of the 20% allocated to the Arbitrum Developer Guild, to the TM Portfolio, and authorize the ATMC to convert them into USDG Confirm the USDG initiative as a Special Project under Entropy’s existing Year 2-3 scope of work Voting ends on November 12. 2. Transfer 1,800 ETH from the Treasury to the Arbitrum Developer Guild & ATMC’s ETH Treasury Strategies Entropy proposes to transfer ~1,714 ETH accrued from Sequencer revenue to the TM Portfolio, helping reinitiate its covered call strategy; and ~86 ETH accrued from Timeboost and PGA revenue to the Arbitr",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "11 November, 2026 - Roundup of Active/Upcoming Votes",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-10T15:52:20Z",
+      "source_id": "arbitrum_governance",
+      "source_ids": [
+        "arbitrum_governance"
+      ],
+      "url": "https://forum.arbitrum.foundation/t/11-november-2026-roundup-of-active-upcoming-votes/31691"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
       "event_id": "767688ebe77d371fd23d6841",
       "excerpt": "Agenda Agenda eth: reject transaction fields whose fork is not active at the target block by MysticRyuujin · Pull Request #938 · ethereum/execution-apis · GitHub eth: ignore type in calls and reject maxFeePerBlobGas without blob hashes by MysticRyuujin · Pull Request #939 · ethereum/execution-apis · GitHub eth: return the accessed list from eth_createAccessList by MysticRyuujin · Pull Request #950 · ethereum/execution-apis · GitHub tests: add eth_simulateV1 fixtures for replaced code overrides and a later call to a missing authority by MysticRyuujin · Pull Request #914 · ethereum/execution-apis · GitHub debug: define opcode tracer step state timing and empty-field presence by MysticRyuujin · Pull Request #947 · ethereum/execution-apis · GitHub tests: add gas fixtures at fork boundaries by MysticRyuujin · Pull Request #952 · ethereum/execution-apis · GitHub eth: specify eth_getProof keys, entries, absent accounts and unavailable state by MysticRyuujin · Pull Request #954 · ethereum/execution-apis · GitHub Meeting Time: Monday, November 16, 2026 at 15:00 UTC (60 minutes) GitHub Issue 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "RPC Standards # 38, November 16, 2026",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T15:43:08Z",
@@ -800,7 +1023,7 @@
       "excerpt": "Hi all — I’ve submitted a ZCG grant application and wanted to open it up for community discussion here, as required. GitHub issue: Grant Application - zecpy & pyzcash Platform and Multi-Account Hardening · Issue #547 · ZcashCommunityGrants/zcashcommunitygrants · GitHub **Summary:** The most capable existing Python bindings for Zcash — zecpy and pyzcash — already cover transparent/shielded transactions, PCZT, and address/ZIP-321 utilities. Their real gaps are platform coverage (no Windows wheel, no Linux ARM64 wheel) and wallet flexibility (zecpy is single-account-per-wallet only), not missing functionality. This grant funds closing those specific, maintainer-documented gaps — contributed upstream to zecpy/pyzcash if their maintainers accept it, or maintained as an openly-forked package if not. Milestone 1 is dedicated entirely to that maintainer outreach before any platform/feature work is funded. Requested: $35,000 across 3 milestones (~12 weeks). Happy to answer questions here or on the GitHub issue. 3 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Grant Application - zecpy & pyzcash Platform and Multi-Account Hardening",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T15:17:54Z",
@@ -825,7 +1048,7 @@
       "excerpt": "This thread is the home for all risk and technical assessments of cirBTC on Aave Ethereum. It collects, in one place: The pre-listing asset risk assessment, under the Aave Risk Framework. The pre-listing technical asset assessment, under the Technical Asset Listing Framework. All post-listing monitoring reports, periodic refresh assessments, and any re-evaluations triggered by material changes. New assessments and updates will be posted as replies below as they are produced, so the full history stays in a single thread. 2 posts - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Circle Wrapped Bitcoin (cirBTC) on Aave Ethereum Assessments",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "1": "FULL_NAME",
         "1027": "FULL_NAME",
@@ -850,7 +1073,7 @@
       "excerpt": "Hello Cosmos community, I would like to ask for clarification regarding a recent public statement made by an account associated with InterLink Chain ( @kv_interlink on X). In a November 10, 2026 post, the account stated: “The decision by Interlinkchain and @cosmos to contribute IBC, a protocol that has processed over $50 billion in transaction volume since 2021, to an initiative under the @linuxfoundation …” The post then discussed potential opportunities for InterLink Chain through IBC, including cross-chain interoperability for ITLG and ITL, high-performance infrastructure, quantum-resistant security, and enterprise adoption. However, after reviewing the official Cosmos announcement published on November 9, 2026, I noticed something that I would like to clarify. The official announcement identifies Cosmos and the Interchain Foundation as the organizations contributing the Inter-Blockchain Communication (IBC) protocol to Linux Foundation Decentralized Trust. It also identifies Cosmos Labs, Datachain, and OpenZeppelin as the protocol’s code maintainers. I could not find InterLink Labs or InterLink Foundation identified as an official co-contributor in the announcement. This raises several questions: 1. Official Participation Did InterLink Labs or InterLink Foundation actually par",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Clarification Request: InterLink Chain's Claimed Involvement in the IBC Contribution to Linux Foundation",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T15:01:45Z",
@@ -871,7 +1094,7 @@
       "excerpt": "Update Log 2026-11-10: initial draft External Reviews None as of 2026-11-10. Outstanding Issues None as of 2026-11-10. Abstract This EIP extends LUCID with a validator-managed priority list of key publishers. Transactions using publishers on this list execute before other sealed transactions, mitigating the impact of key publishers’ optionality over key release. Publishers are included on the list when supported by more than half of active validator effective balance. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "EIP-8491: LUCID Key Publisher Priority Lists",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T14:40:12Z",
@@ -894,7 +1117,7 @@
       "excerpt": "Front and Back pages of today’s Wall Street Journal: OP: mert on X: \"zcash on the wall street journal today\" / X 7 posts - 4 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Zcash on Front Page WSJ",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -917,7 +1140,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
-      "last_observed_utc": "2026-11-12T20:04:00Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T14:00:00Z",
@@ -938,7 +1161,7 @@
       "excerpt": "We propose an institution-managed user payment ledger for recording account debits and credits, enforcing spending capacity, and sealing account periods independently of funds settlement. Specification Draft PR #2159 Problem and scope A payment institution needs to distinguish a customer’s business entries from changes to the spending capacity it grants. It also needs to connect individual entries, current-period totals, and sealed periods when reconciling customer funds. An institution-level aggregate does not provide those per-account records. This proposal defines a common contract interface for those records and controls. It can serve an institution’s own business independently or compose with an on-chain payment protocol. It does not issue or transfer assets, establish customer identity, or prove that funds have been frozen or settled. Account model and interface Each account is scoped by (account, institution) . An institution can serve payer accounts, merchant accounts, or both; the same address at two institutions does not share records or capacity. Holding the account’s private key does not grant permission to write entries. Current state contains a limit baseline, cumulative outflows and inflows, and a user-period identifier: available = limit + credit - debit The three",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "ERC-8494: Institution-Managed User Payment Ledger",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T13:48:11Z",
@@ -961,7 +1184,7 @@
       "excerpt": "General Updates Polkadot’s treasury model remained a topic of education and community discussion, with explainers highlighting how ecosystem funding is structured through OpenGov (via BSCNews , DGHUBCrypto ). Ecosystem & Product Updates Polkadot Hub mainnet now supports two production-ready Solidity paths: EVM via REVM for existing contracts, and PVM via resolc for PolkaVM, both using the same Ethereum RPC and accounts (via PolkadotDevs , TTT_News_ ). Bifrost highlighted vDOT’s use on Hydration, where DOT can continue earning staking yield while being used as collateral, enabling strategies such as borrowing DOT against vDOT and minting additional vDOT (via Bifrost ). Aventus reaffirmed its commitment to building on Polkadot, citing the ecosystem as its chosen foundation after years of blockchain infrastructure experience (via AventusNetwork , AventusNetwork ). PROCESSING LOG Report Generated: 2026-11-10 10:02:13 Total X posts curated: 495 Posts Filtered and Analysed: 452 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on posts from X and may contain inaccuracies. We do not guarantee its completeness or correctness. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-10",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -984,7 +1207,7 @@
       "excerpt": "Voting Information The Gaia v29.1.0 software upgrade proposal for the Cosmos Hub mainnet is now open for on-chain voting. Proposal: #1061 Voting period: 7 days Voting deadline: November 17, 2026, at 12:00 UTC Validators and ATOM delegators are encouraged to review the proposal and cast their votes before the deadline. Upgrade Schedule If approved, the Cosmos Hub mainnet will execute the on-chain v29.1.0 upgrade at the following block height: Upgrade height: 33,935,300 Estimated upgrade time: November 18, 2026, at 12:40 UTC The estimated time may vary depending on block production. For complete technical details and upgrade procedures, please refer to the official documentation: Release notes: Gaia v29.1.0 Changelog: Here Upgrade instructions: Here Binary verification: Here Governance Votes The following summarizes the voting options and their meaning for this proposal: YES : You support upgrading the Cosmos Hub to Gaia v29.1.0. NO : You oppose upgrading the Cosmos Hub to Gaia v29.1.0. NO WITH VETO : You consider the proposal spam or irrelevant to the Cosmos Hub, disproportionately harmful to minority interests, or contrary to the rules established by Cosmos Hub governance. If the applicable veto threshold is exceeded, the proposal is rejected, and deposits are subject to the chai",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Gaia v29.1.0 Software Upgrade",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T12:16:42Z",
@@ -1005,7 +1228,7 @@
       "excerpt": "Hi everyone, I’ve submitted a retroactive grant application for Can I Shield?, a live, open-source board that answers “can I send shielded ZEC to this service, and will a shielded deposit be credited?” for 40 exchanges, wallets, hardware wallets and swaps. Every answer is labelled by the strength of its evidence, from on-chain verified tests down to unverified listings. Full application: Retroactive Grant Application - Can I Shield? · Issue #104 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub Work completed (30 Sep to 7 Nov 2026): The board and evidence model: 40 mainnet services, Ironwood readiness verdicts, a page per service and an open JSON feed (CC BY 4.0) NU7 readiness page and the NU7 Stopwatch, which measured block gaps from the chain: 75.4 s average before NU7, 25.7 s since Shielded deposit checks, which Squirrel asked for on ZecHub’s 28 Oct community call. They opened on mainnet on 7 Nov The first verified result: a shielded deposit from Zodl to Binance’s TEX address, verified on-chain and credited about 8 minutes after it landed Thanks to orb for the wallet and exchange research credited on the board. Requested: $4,817 (about 160 hours of work, plus $17 for hosting and test payments). The code is MIT and the site is at https://canishield.vercel.app",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - Can I Shield?",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T12:00:10Z",
@@ -1028,7 +1251,7 @@
       "excerpt": "For the ones that live on the terminal, introducing Zorg ! A nifty terminal-UI Zcash wallet for you and your agent. It’s the wallet I use religiously while I’m coding, so my regtest/testnet sends straight from the terminal. Your seed phrase stays in the macOS Keychain, and your coding agent can run the same commands as the TUI with flags (Like zorg send 0.1 --memo “28”) brew install craftsoldier/zorg/zorg Try it and tell me what breaks . zorg is open source under MIT or Apache-2.0 GitHub / release notes 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Wait!? Another Zcash Wallet!?",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -1051,7 +1274,7 @@
       "excerpt": "The prdoc for the XCMv3 removal ( pr_13629.prdoc ) has a line the announcement here doesn’t have: “Assets trapped under a v3 hash become unclaimable.” I wanted to know how much that is on Polkadot, so I pulled every AssetsTrapped event for the relay and Asset Hub from Statescan and checked each hash against AssetTraps storage today. On the relay, 299 trap entries from the v3 period are still unclaimed, with 673.7 DOT in them. On Asset Hub there are 177, with 263.2 DOT and a bit of USDT and USDC. On both chains the v3 period runs from June 2023 to April 2024, when the runtimes moved to v4. Most of it belongs to ordinary accounts, not parachains. That’s 636.9 DOT across 224 accounts on the relay and 262.6 DOT across 116 accounts on Asset Hub. How it got there All but one of those account traps came from limitedTeleportAssets between the relay and Asset Hub. On the relay, most of the ones I opened show KilledAccount , then AssetsTrapped , then Attempted failing with FailedToTransactAsset . The account sent its whole balance, got reaped in the same transaction, and what the program had withdrawn went into the trap. On Asset Hub they fail with the same error, but the accounts weren’t reaped and most still hold DOT. A wallet team asked about these here in May 2024, and the answer then ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "About 937 DOT in XCM v3 asset traps becomes unclaimable when chains drop v3",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T10:15:20Z",
@@ -1072,7 +1295,7 @@
       "excerpt": "Hi all, we are PulseHawk, the account that posted the NU7 testnet and mainnet counts in the NU7 timeline thread. We applied for a retroactive grant of 4,500 USD for that work. It covers the testnet count, the interval CSV, four dated activation forecasts that we scored in public against block 3,543,405, and the upgrade report with all raw data and scripts. Application Retroactive Grant Application - Independent NU7 block timing measurement, testnet and mainnet activation · Issue #103 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub Every number can be recounted from github.com/pulsehawk/methods . Questions and criticism are welcome, also on the gap in our upgrade watch on 6 Nov, which we describe in the application. 2 posts - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - Independent NU7 block timing measurement (PulseHawk)",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T09:40:56Z",
@@ -1093,7 +1316,7 @@
       "excerpt": "Agenda Discussions Glamsterdam EIP-8037/Gas Repricing Status of Ongoing Audits (completion expected 16th-19th Nov). App Team contract findings. Open Q&A on audit findings, the results in the Glamsterdam gas invariants repo . Meeting Time: Monday, November 16, 2026 at 14:00 UTC (90 minutes) GitHub Issue 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "All Core Devs - Testing (ACDT) #103, November 16, 2026",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T09:19:58Z",
@@ -1116,7 +1339,7 @@
       "excerpt": "What's Changed Replay-verify: increase Mainnet PFN snapshot size by @sionescu in #20410 [block-stm] Add SingleTransactionExecutor abstraction by @georgemitenkov in #20276 [lean model] Add generics and shared XIR import by @wrwg in #20393 [mono-move] Guard copy coalescing and propagation on bitwise-copy types by @vineethk in #20390 [prover] Verify inline higher-order functions by @wrwg in #20360 [docs] Document prophecy reference model by @wrwg in #20387 [consensus] Match commit votes against the full LedgerInfo by @danielxiangzl in #20335 [vm] Add mainnet framework function usage coverage by @wrwg in #20406 [execution] Drain state sync before teardown by @wqfish in #20409 [mono-move] Do not zero-initialize heap by @georgemitenkov in #20413 [mono-move] Enable stdlib on mono move by @georgemitenkov in #20420 [mono-move] User context natives by @georgemitenkov in #20403 retry crane copy on transient registry failures by @rustielin in #20425 [mono-move] Derived aggregator natives by @georgemitenkov in #20422 [mono-move] Refactor group tracking by @georgemitenkov in #20414 [mono-move] Initial implementation of pre-execution checks by @vgao1996 in #20411 [mono-move] Ability computation and assignability for interned types, with correct closure ability derivation by @vineethk in #20408 ",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "[Testnet] Aptos Node Release v1.50.1-rc",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {
         "21794": "FULL_NAME"
       },
@@ -1139,7 +1362,7 @@
       "excerpt": "Hi everyone, AI agents now take on paid work on-chain. The client locks the pay in an escrow, and the escrow pays the agent when the work is accepted. As this grows, each payment also has to cover others: a tax that funds public services, a fee to whoever referred the job, or the repayment of a loan the agent took to do the job. This is a draft ERC for Settlement Deductions . It lets an escrow withhold these amounts from each payout. The escrow does not need to know the rules behind them. None of them can stall the payout. It works for any task escrow, not only those used by agents. Example: a payout of 100, with a 1% tax, a 2% referral fee and a repayment of 30. The treasury gets 1, the referrer 2, the lender 30. The payee gets 67. Repository (draft text, reference policy, example escrow, tests): GitHub - unicore-gpu/settlement-deductions: Draft ERC: settlement deductions for task escrows (tax, referral fees, repayments withheld at payout, never stalling settlement) · GitHub The ERC text is ERC-draft.md in the repository. I will open the PR to ethereum/ERCs next, with this thread as its discussion link. The slot this fills Escrows for agent work end in one transfer to the payee. The token-bound task tender draft (ERC-8414) pays the fulfiller on acceptance, verification or timeou",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "ERC-8492: Settlement Deductions for Task Escrows",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-10T04:18:12Z",
@@ -1148,6 +1371,27 @@
         "ethereum_governance"
       ],
       "url": "https://ethereum-magicians.org/t/erc-8492-settlement-deductions-for-task-escrows/30323"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8fa48bd912c4779de41052bb",
+      "excerpt": "Immunefi was elected onto the Security Council in the September 2025 Cohort and appointed Alejandro Munoz-McDonald as their representative. Alejandro left his position at Immunefi and notified the Security Council on 7th September 2026. Throughout the proceeding two months, he continued to serve in his personal capacity while waiting for a new appointee to be installed in the Security Council. On 1st November 2026, 9 out of 12 members of the Security Council voted in accordance with the ArbitrumDAO Constitution to authorise Alejandro Munoz-McDonald to continue serving on the Security Council in his own personal capacity for the remaining duration of his term. This seat in the Security Council will be up for re-election in the March 2027 elections. No key rotation was necessary, but Alejandro reserves the right to do so at any time prior to the election. This announcement thread will be updated if a key rotation is initiated by him. Transactions No on-chain transaction performed. 1 post - 1 participant Read full topic",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "Security Council Membership Rotation - November 2026",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-10T02:34:34Z",
+      "source_id": "arbitrum_governance",
+      "source_ids": [
+        "arbitrum_governance"
+      ],
+      "url": "https://forum.arbitrum.foundation/t/security-council-membership-rotation-november-2026/31682"
     },
     {
       "cmc_ids": [
@@ -1162,7 +1406,7 @@
       "excerpt": "[aptos-release-v1.50] Bump version to 1.50.1",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "aptos-node-v1.50.1",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {
         "21794": "FULL_NAME"
       },
@@ -1187,7 +1431,7 @@
       "excerpt": "Hi, I’m Phillip. I’m building Blue Collar Crypto, a social platform for validators, NFT creators and their communities. Every Cosmos validator already has a page on the site, built from on-chain data. Claim yours by signing with Keplr, and then you can: Post announcements and updates Message your community Run your own social feed Build a community that’s open to anyone, or only to your delegators and set the min delegation to join. Build your trust score so users know they are talking to a member of the team. Build followers even before you claim the page. NFT creators can claim their collections and run holder-only groups. We’re still in testing, so we need honest feedback: Is the info on your page right? What’s confusing? What would actually make this useful to you? No token. No airdrop. No sale. Check it out: Blue Collar Crypto Thanks, and I’ll reply to everyone 2 posts - 3 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Cosmos validators and NFT creators: claim your page and tell us what’s broken",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "3794": "FULL_NAME"
       },
@@ -1210,7 +1454,7 @@
       "excerpt": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
       "first_observed_utc": "2026-11-10T00:43:03Z",
       "headline": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-      "last_observed_utc": "2026-11-12T20:03:59Z",
+      "last_observed_utc": "2026-11-12T20:05:41Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T21:00:00Z",
@@ -1231,7 +1475,7 @@
       "excerpt": "Meeting Time: Wednesday, November 11, 2026 at 14:00 UTC (60 minutes) GitHub Issue 3 posts - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "Post Quantum transaction signature (PQTS) Breakout #18",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T19:55:59Z",
@@ -1246,13 +1490,35 @@
       "coin_tags_are_verified_catalysts": false,
       "context_origin": "PUBLISHER_FEED_SUMMARY",
       "event_classes": [
+        "GOVERNANCE",
+        "UPGRADE"
+      ],
+      "event_id": "17eddaedc4c9fc4e271109b9",
+      "excerpt": "Proposal Type Maintenance Upgrade Voting Cycle Type Off-cycle. Per the OPerating Manual , Maintenance Upgrade Proposals proceed directly to on-chain voting under optimistic approval, with a one-week veto period and a 20% veto threshold. Executive Summary Soneium Mainnet is migrating its sequencer operations from Sony to the Optimism Foundation as chain servicer via OP Enterprise , with cutover targeted for 2026-11-19. Most of the migration does not require governance action: Soneium’s L1 ProxyAdmin owner is already the standard Optimism governance 2-of-2 (Foundation Upgrade Safe + Security Council). The SystemConfig ownership moves from Sony’s SystemConfig owner Safe to the Foundation Upgrade Safe, executed by Sony from its own Safe, and the batcher (updated to 0x1C7566fE8FAe38a93BDCb1fBF7D746FD08C11545 ) and unsafe block signer (updated to 0x3cDacd9da979ab023a9f2D16C42AFA062CCF33F5 ) are then rotated by the SystemConfig owner. These use the SystemConfig owner role, not the ProxyAdmin owner role. Two items do exercise the ProxyAdmin owner role, and are therefore submitted here for approval: Proposer rotation. Rotate the proposer of Soneium’s SUPER_PERMISSIONED dispute game (game type 5) from the outgoing Sony key 0x400c164C4a8cA84385B70EEd6eB03ea847c8E1b8 to the OP Enterprise pro",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "Maintenance Upgrade Proposal: Soneium Mainnet Proposer Rotation and Fee Vault Config Update",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-09T18:37:19Z",
+      "source_id": "optimism_governance",
+      "source_ids": [
+        "optimism_governance"
+      ],
+      "url": "https://gov.optimism.io/t/maintenance-upgrade-proposal-soneium-mainnet-proposer-rotation-and-fee-vault-config-update/10978"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
         "GENERAL_NEWS"
       ],
       "event_id": "9cb2f1dfd58b1a1e6ff14eb0",
       "excerpt": "Minor Changes #24095 b420458 - Minor bump to start next version Patch Changes #24144 56c57fb - Give the confidential relay request latency and confidential workflows enclave execution histograms explicit buckets up to 90s and 300s. The SDK default buckets stopped at 10s, which pinned their P99 at 10,000ms. #bugfix #24136 3a0dcc2 - Fix flaky TestDispatcher_DropsWhenReceiverBufferFull. #internal #23946 7d31f23 - Bump libocr to the October 30, 2026 release (199a6f17c59863999480e990c7c0b6ba7796ec92), replacing the alpha pin. The vault oracle now uses the released OCR3_1OracleArgs3 (previously OCR3_1OracleArgs109Alpha ). #updated #24134 f25542b - Log user-origin vault errors in the confidential relay (e.g. a missing secret) at info instead of error, and the metering mode switch at debug. #internal #24115 062e15e - Classify the per-execution secrets call limit as a user LimitExceeded error, so the confidential relay answers it with invalid params instead of an internal error. #bugfix Container Images Core Image DockerHub: docker pull docker.io/smartcontract/chainlink:2.72.0 ECR: docker pull public.ecr.aws/chainlink/chainlink:2.72.0 Digest: sha256:7d8302f8133866302c1dbe08739bd6fb86780d34018cc43a76c3d01b2ea1da3b Verification Verify the image signatures using cosign: Core Image: DockerHub",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.72.0",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:44Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T17:25:57Z",
@@ -1261,6 +1527,31 @@
         "chainlink_releases"
       ],
       "url": "https://github.com/smartcontractkit/chainlink/releases/tag/v2.72.0"
+    },
+    {
+      "cmc_ids": [
+        11841
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "e324f8a665a40b166cbbec39",
+      "excerpt": "This report covers the fourth and final operational quarter of the DAO-approved Arbitrum Audit Program (AAP), from 1 May to 31 July 2026, and the overall results of the program, whose application period ran from 1 August 2025 to 31 July 2026. The first part presents Q4 results, followed by a review of the program across the full season. Introduction The program aimed to make professional security audits more accessible to teams building on Arbitrum. With its first year of applications now concluded, this report reviews the principal results and lessons emerging from its delivery. Over the year, the program progressed from establishing its evaluation and auditor-matching processes in the first quarter to managing a sustained pipeline of applications thereafter. Following an initial period of operational validation, the second quarter saw improvements in applicant readiness and referral-driven participation. Application volumes increased in the second half of the program, with Q4 recording the highest quarterly intake. Across the Arbitrum Audit Program, 367 applications were submitted in total . Of these, 40 (10.9%) were initially accepted. 22 distinct applicants completed 25 audits (3 additional due to audit extensions), and 17 were subsequently cancelled. The principal constraint",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "Arbitrum Audit Program: Q4 & Final Transparency Report",
+      "last_observed_utc": "2026-11-12T20:05:48Z",
+      "match_methods": {
+        "11841": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-09T17:24:40Z",
+      "source_id": "arbitrum_governance",
+      "source_ids": [
+        "arbitrum_governance"
+      ],
+      "url": "https://forum.arbitrum.foundation/t/arbitrum-audit-program-q4-final-transparency-report/31681"
     },
     {
       "cmc_ids": [],
@@ -1273,7 +1564,7 @@
       "excerpt": "Today, the Interchain Foundation and Cosmos announced that the Inter-Blockchain Communication protocol (IBC) is being contributed to LF Decentralized Trust , the Linux Foundation’s home for ledger and decentralized technology. The press release ( Cosmos Contributes IBC to Linux Foundation Decentralized Trust to Advance Blockchain Interoperability ) The announcement blog ( https://cosmos.network/blog/ibc-joining-lf-decentralized-trust ) has the full story and the FAQ, and the LFDT technical article ( Advancing Open Interoperability Through IBC's Contribution to LF Decentralized Trust ) covers the protocol and governance. The main X announcement I shared my thoughts on X , but I wanted to add a summary- plus a few more words from the ecosystem team on the forum to commemorate! We spend our days with the chains, builders, relayers, and validators that work on IBC, so I wanted to break down this change and what it means for us, builders, and IBC! There’s also an FAQ in the blog above An exciting time for interoperability standards. As of today, the Inter-Blockchain Communication protocol (IBC) is a project of LF Decentralized Trust, the Linux Foundation’s home for ledger and decentralized technology. IBC went live in 2021, connecting a handful of Cosmos chains. Since then, it has pro",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "IBC joins the Linux Foundation Decentralized Trust: what it means for chains, builders and the Hub!",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T16:20:00Z",
@@ -1296,7 +1587,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Plasma: Reduce supply cap for USDT0 from 950,000,000 to 820,000,000. Aave V3 Arbitrum: Increase borrow cap for USD₮0 from 45,000,000 to 52,400,000. Reduce supply cap for USD₮0 from 120,000,000 to 58,300,000. Aave V3 Core: Reduce supply cap for LBTC from 2,690 to 2,400. Reduce supply cap for USDG from 30,000,000 to 10,000,000. Reduce borrow cap for USDG from 24,000,000 to 9,000,000. Reduce supply cap for RLUSD from 30,000,000 to 10,000,000. Reduce borrow cap for RLUSD from 24,000,000 to 9,000,000. Reduce supply cap for USDtb from 30,000,000 to 15,000,000. Reduce borrow cap for USDtb from 24,000,000 to 13,500,000. Reduce supply cap for PYUSD from 21,000,000 to 10,000,000. Reduce borrow cap for PYUSD from 18,000,000 to 9,000,000. Reduce supply cap for cbETH from 9,000 to 4,960. Aave V3 Prime: Reduce supply cap for USDC from 25,000,000 to 10,000,000. Reduce borrow cap for USDC from 22,500,000 to 9,000,000. Aave V3 Monad: Reduce supply cap for syrupUSDC from 150,000,000 to 90,400,000. Reduce supply cap for cbBTC from 400 to 150. Reduce supply cap for WETH from 10,000 to 4,730. Reduce borrow cap for WETH ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.09",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1319,7 +1610,7 @@
       "excerpt": "This is the discussion thread for EIP-8487 (PR: Add EIP: Separate execution credits and billing credits by Giulio2002 · Pull Request #12637 · ethereum/EIPs · GitHub ). The proposal introduces two counters, both initialized from tx.gasLimit : Credits follow the legacy gas schedule and are the only gas the EVM sees (GAS opcode, call forwarding, creation). Billing follows the new schedule and determines the transaction fee. If billing runs out, the whole transaction aborts (uncatchable), even if credits remain. The goal is to let opcodes be repriced without changing execution behavior for contracts that inspect or forward gas. Open questions: the exact schedules, charge points, rebate rules, receipt fields and block accounting. Feedback welcome. 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "EIP-8487: Separate execution credits and billing credits",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T15:07:10Z",
@@ -1340,7 +1631,7 @@
       "excerpt": "Agenda Editor - @samwilsn Live analytics: EIP Editing Office Hours · EIPsInsight Zoom: Link Note for Authors - Please Review (click for more details) 1. Author Questions (Live Q&A) (PRs where authors are joining with a specific question) 2. ACD related Add EIP: Versioned Opcodes for Gas Repricing by lglisic60 · Pull Request #12638 · ethereum/EIPs · GitHub 3. Quick Actions (Administrative updates, or other straightforward PRs that can be resolved quickly) Add EIP Coordinator to EIP-1 for Call for Input: Add @poojaranjan as EIP Coordinator · Issue #414 · ethcatherders/EIPIP · GitHub EIPs Website https://github.com/ethereum/ERCs/pull/1952 Ref: Comment CI: Pin Jekyll build runner to ubuntu-24.04 by nxt3d · Pull Request #12640 · ethereum/EIPs · GitHub Website: comprehensive CSS with design tokens, dark/light m… by codetibo · Pull Request #11995 · ethereum/EIPs · GitHub Close? https://github.com/ethereum/EIPs/pull/12645 Typo 4. Review Queue (PRs taken from the EIPsInsight board in order, as time permits) Status changes Update ERC-8325: Move to Final by david-hay · Pull Request #2086 · ethereum/ERCs · GitHub Update ERC-8326: Move to Final by david-hay · Pull Request #2087 · ethereum/ERCs · GitHub Update ERC-8327: Move to Final by david-hay · Pull Request #2088 · ethereum/ERCs · GitHub U",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "EIP Editing Office Hour (EIP + ERC ) Meeting #119, November 10, 2026",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T14:56:42Z",
@@ -1363,7 +1654,7 @@
       "excerpt": "Technical & Governance Polkadot’s infrastructure transition is moving through governance: Referendum 1966 is cited as the first step in reducing the active validator set from 600 (to 500 initially, with a longer-term target of 320), alongside expanded validator responsibilities via “metanodes” and a review of validator rewards for long-term sustainability (via leeky_k_crypt , kleaweb3 , TTT_News_ ). Staked DOT reportedly reached a new record of 922,257,918 DOT on November 2, representing more than half of circulating supply, with over 40.7M DOT added since August 13 (via MSBIntel , KoreanCryptoKOR ). Polkadot account privacy was highlighted through documentation showing that separate Polkadot products create separate, unlinkable accounts by default, helping limit cross-app tracking unless users opt to link them (via VRCI_Global ). Developer & Technical Updates Hydration released cl0wdit 1.0 , an AI auditor for Rust/Substrate code adapted for FRAME, XCM, ORML and Hydration, with 17 audit lenses and repeated evidence-backed review passes (via hydration_net ). Polkadot Devs highlighted product-sdk adapters for on-chain app data storage via Bulletin and pub/sub messaging via Statement Store, aimed at reducing reliance on hosted services for dapps (via PolkadotDevs ). Ecosystem & Comm",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-09",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1386,7 +1677,7 @@
       "excerpt": "The verified badge on an explorer shows that some source compiles to the code at an address. It doesn’t say which commit that source came from, and on a proxy it says nothing about the logic behind it. So when someone asks whether an upgradeable contract still runs the commit its audit covered, the honest answer is often a guess, and a few upgrades after launch the guess can be wrong. I’ve been writing down what a real check needs. Most of it is small. Rebuilding the commit To tie the address to the report you rebuild the audited commit with the same settings (solc version, optimizer runs, viaIR, evmVersion) and compare runtime bytecode. If the contract has immutables, it won’t match byte for byte. The constructor writes their values into the runtime code, so a fresh build has zeros where the deployed code has an oracle address or a fee. solc gives you the positions in evm.deployedBytecode.immutableReferences in the standard JSON output. Zero those ranges on the deployed side, compare, and then check the immutable values on their own. What this basically means is that a clean build with the wrong oracle baked in still passes the bytecode comparison. The end of the bytecode is the other place it breaks. solc appends the IPFS hash of the metadata file, and the metadata holds a hash",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "Checking that a deployed contract still runs the audited commit",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T08:43:10Z",
@@ -1395,6 +1686,27 @@
         "ethereum_governance"
       ],
       "url": "https://ethereum-magicians.org/t/checking-that-a-deployed-contract-still-runs-the-audited-commit/30318"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "6605d541263edc679ff58b06",
+      "excerpt": "SAEP-25: Update the Allocation System Primitive section to record wound-down instances, rate limit IDs and current controllers Summary This proposal is submitted by Phoenix Labs in its role as a nested contributor, as defined in section A.6.1.1.1.2.2.2.2.1.2.1.1.1 of the Spark Artifact. The proposal recommends that Spark governance update the Allocation System Primitive section of the Spark Artifact ( A.6.1.1.1.2.6.1 ) to do six things: Record as Completed the ten Instances that have been wound down (Aave and Fluid on Ethereum Mainnet, Fluid and Aave on Base and Arbitrum, Aave on Avalanche), moving them and their directory entries from Active to Completed, and record three B2C2 transfer Instances and a Superstate USCC Instance on Ethereum Mainnet, all with Completed status. Record the RateLimitIDs of the Instances whose Rate Limit IDs documents this proposal replaces, in place of the statement that they will be specified in a future iteration, correct the stated rate limit values to those configured onchain, rename the transfer rate limit documents to match the operation, and fill the addresses still marked TBD in those Instances. Record the current ALM Controller contracts on Ethereum Mainnet, Base and Avalanche. Add directory entries for the Arbitrum Spark Savings v2 USDT Insta",
+      "first_observed_utc": "2026-11-12T20:05:49Z",
+      "headline": "SAEP-25: Update the Allocation System Primitive",
+      "last_observed_utc": "2026-11-12T20:05:49Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-09T04:14:32Z",
+      "source_id": "maker_governance",
+      "source_ids": [
+        "maker_governance"
+      ],
+      "url": "https://forum.skyeco.com/t/saep-25-update-the-allocation-system-primitive/28391"
     },
     {
       "cmc_ids": [
@@ -1410,7 +1722,7 @@
       "excerpt": "I read the upgrade control of 7 tokenized treasury and gold fund tokens on Ethereum straight from the chain. Snapshot: 9 Nov 2026. Read-only; nothing was tested on live contracts. Result (7 tokens I looked at, not a market ranking): 3: the upgrade owner is one externally owned address (no contract code), no on-chain delay 2: Safe multisig, 4-of-7, no delay found 1: older multisig, 3-of-6, no delay found 1: timelock, 24h minimum delay What this does NOT say: that any key is stored badly (it may sit behind HSM/MPC or issuer processes that are invisible from outside), that assets are at risk, or that other controls (pauses, legal, off-chain) are missing. It only shows who can change token code on-chain. How to reproduce with any public RPC. Three patterns cover all 7: A) EIP-1967 proxy: read the admin slot, then ask the admin for its owner. cast storage <token> 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103 cast call <admin> \"owner()(address)\" B) Owner stored on the token/proxy itself: cast call <token> \"owner()(address)\" C) Older proxy admin slot: cast storage <token> 0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b Then check what the owner is: cast code <owner> # empty = externally owned getThreshold() # Safe getMinDelay() # timelock I am not",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "Who can upgrade 7 tokenized treasury/gold tokens on Ethereum? A read-only look at upgrade control",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:46Z",
       "match_methods": {
         "1027": "FULL_NAME"
       },
@@ -1429,11 +1741,32 @@
       "event_classes": [
         "GENERAL_NEWS"
       ],
+      "event_id": "a937cf982362806e930af4ec",
+      "excerpt": "[November 19, 2026] Proposed Changes to Spark for Upcoming Spell (Part 1 of 2) Introduction Goal of this update This update proposes seven changes across Ethereum, OP Mainnet, Unichain, Avalanche and X-Layer: [Ethereum] Spark Liquidity Layer - Upgrade the Ethereum ALM controller to MainnetController v1.11.0, which sends USDC over CCTP V2 instead of CCTP V1 on every route. [OP Mainnet] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on OP Mainnet: return its remaining USDS and sUSDS to Ethereum, and set every rate limit on OP Mainnet and on the Ethereum route to OP Mainnet to zero. [Unichain] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on Unichain: return its remaining USDS and sUSDS to Ethereum, and set every rate limit on Unichain and on the Ethereum route to Unichain to zero. [Avalanche] Spark Savings and Spark Liquidity Layer - Deprecate Avalanche: set the Spark Savings USDC deposit cap to zero and its maximum rate to 0%, and close the CCTP route to and from Ethereum. [Ethereum] SparkLend - Claim accrued SparkLend reserves and route them to the Spark Liquidity Layer and the Spark Operations Multisig (recurring). [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC vault on X-Layer to the spUSDC PAU through the ERC4626 facet. [Ethereum] Sp",
+      "first_observed_utc": "2026-11-12T20:05:49Z",
+      "headline": "[November 19, 2026] Proposed Changes to Spark for Upcoming Spell",
+      "last_observed_utc": "2026-11-12T20:05:49Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-09T03:10:09Z",
+      "source_id": "maker_governance",
+      "source_ids": [
+        "maker_governance"
+      ],
+      "url": "https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
       "event_id": "2faaa22367a6d00cc6a4fd19",
       "excerpt": "Gaia v29.1.0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v29.0.1 to v29.1.0 . 🚀 Highlights This is a state-breaking release that restores decoding of historical ParameterChangeProposal content, fixing governance proposal list, status-filtered, single-proposal and tally queries and state export ( #4199 ) This release bumps the following dependencies: Bump github.com/CosmWasm/wasmd from 0.60.9 to 0.60.10 ( #4201 ) Bump github.com/CosmWasm/wasmvm/v2 from 2.3.5 to 2.3.6 ( #4201 ) After confirming that the upgraded node runs normally, you can remove the old cache directories: <node home>/wasm/cache/modules/3858fb5318-wasmer24 <node home>/data/08-light-client/cache/modules/3858fb5318-wasmer24 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v29.1.0 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "v29.1.0",
-      "last_observed_utc": "2026-11-12T20:04:02Z",
+      "last_observed_utc": "2026-11-12T20:05:43Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T01:44:12Z",
@@ -1454,7 +1787,7 @@
       "excerpt": "Posting a factual decode of recent ACLManager role activity on Aave V3 Ethereum, in the dated-report style already used in this category. Three RISK_ADMIN_ROLE grants since 2 September 2026: 2 Sep 2026, block 25891729 — granted to 0xbe28…7744 and 0x529e…F6c5 (two grants, same transaction) 30 Sep 2026, block 26089561 — granted to 0x6f48d9cdb8ee6e17c96b2d8aec128af426a295c1 The 30 Sep recipient is a verified contract named RiskSteward, 20,061 bytes of deployed code. All three grants were sent by 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A, which is the governance Executor. So these passed governance rather than originating from a standalone admin key — worth stating explicitly, since a RISK_ADMIN grant from an EOA would read very differently. Practical scope: RISK_ADMIN can change supply and borrow caps, LTVs, liquidation thresholds and reserve configuration without a full governance vote. Routing it through a RiskSteward contract constrains what the holder may change, which is the safer pattern, but each grant still widens the set of actors who can move risk parameters between votes. Context: the ARFC “Activate Aave Risk Stewards on Aave V4” thread is now closed with AIP #523 executed, so I’m posting this separately rather than reverting that thread. Method note: this is decoded fro",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "ACLManager: RISK_ADMIN_ROLE grants, Sep 2026 — decoded",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
+      "last_observed_utc": "2026-11-12T20:05:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-09T00:45:03Z",
@@ -1463,351 +1796,6 @@
         "aave_governance"
       ],
       "url": "https://governance.aave.com/t/aclmanager-risk-admin-role-grants-sep-2026-decoded/26139"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "INSTITUTIONAL_FLOW"
-      ],
-      "event_id": "7f4610953ef3b2cf5a0a438e",
-      "excerpt": "Hi @TokenLogic , thanks for the funding updates and for the treasury data on Aave Insights. We track the Aave DAO treasury from on-chain data for an independent treasury analysis service. We’d like to reconcile our reads with the Treasury panel on insights.aave.com ($260.65M at Q3 2026 close; AAVE $144.5M, ETH/BTC $52.4M, stablecoins $49.4M, other $14.4M). Reading the Collectors on every v3 network, the Ecosystem Reserve and the AFC Safes listed in the address book ( MiscEthereum : AFC, Ahab, AFC CEX Earn, Merit/Ahab, Incentive Budget), our ETH/BTC total matches yours. Stablecoins (about $18M) and AAVE (about $13M) still differ. Could you share: The list of addresses (and networks) included in the Aave Insights treasury total. Whether the total is net of GHO borrowed by the AFC and Ahab Safes (we book those borrows as DAO debt). Whether any v2 market positions, Umbrella or Safety Module balances, or off-chain/CEX balances (e.g. the CEX Earn programme) are included. A published wallet list would let anyone reproduce the figure on chain. We’d cite Aave Insights and TokenLogic as the source. Thanks! 2 posts - 1 participant Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Request: wallet list behind the Aave Insights treasury figure",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:44:15Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/request-wallet-list-behind-the-aave-insights-treasury-figure/26135"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "098e0ba26d03ada174d7e488",
-      "excerpt": "Hi, I’ve just accidentally sent USDC directly to the Aave V3 contract address instead of depositing it via the dApp interface. Is there still any chance of recovering these tokens, or are they lost? 4 posts - 3 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "USDC was mistakenly deposited to the Aave V3 contract address",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:44:00Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/usdc-was-mistakenly-deposited-to-the-aave-v3-contract-address/26133"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "fb54d8952d75fbe62c535455",
-      "excerpt": "Aave V3 computes liquidation risk per asset. Each collateral asset has its own maximum LTV and liquidation threshold, set independently. The health factor is a weighted average. There is no term for correlation between assets. I tested whether this independence assumption holds, using Aave’s own published parameters and public daily price data from Yahoo Finance. Nine major collateral assets, 2,123 trading days (September 2020 to October 2026). Method: For each asset, mark the days where a position at maximum LTV would cross the liquidation threshold. Then apply a column-shuffle permutation test (B = 2,000): shuffle each asset’s column independently to destroy cross-asset dependence while preserving each asset’s marginal rate. Compare the real count of simultaneous liquidation triggers to the shuffled distribution. Results: 4 assets hit same day: 57 real days vs 0.19 expected. 301× underpriced. 5 assets: 31 real days vs 0.004 expected. 6,889× underpriced. 6+ assets: 21 real days vs 0 in 2,000 shuffles. The independent model never produces this. All 36 pairwise asset combinations are significant at p < 0.001. Not one pair behaves independently under Aave’s own thresholds. The worst days are the ones you’d expect: 2021-05-19 (all 9 assets), 2022-05-11 (Terra/Luna), 2022-11-08 (FTX)",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Per-Asset Liquidation Thresholds Underpredict Co-Liquidation by 301×",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:56Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/per-asset-liquidation-thresholds-underpredict-co-liquidation-by-301x/26131"
-    },
-    {
-      "cmc_ids": [
-        1027,
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "86c8f47f68237485f1acc307",
-      "excerpt": "Dear Aave Governance Community, I am requesting assistance with the possible recovery of 2 AAVE tokens accidentally transferred from my Revolut account directly to the official AAVE token contract on Ethereum. Transaction details Token: AAVE Amount transferred: 2 AAVE Network: Ethereum Mainnet Date: 28 October 2026 Sending platform: Revolut Sending address: 0xF13bCF5eA0398f4623dd540A5Ce02C63015bC586 Receiving contract: 0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9 Transaction hash: 0xcbb2c93733d899dda7438fdec6169d92a2d2849ee4db0e6720b92ea0b0ae26b4 Transaction link: Ethereum (ETH) Blockchain Explorer Ethereum Transaction Hash: 0xcbb2c93733... | Etherscan Revolut 1 Call 0x4c9591ef Method on Revolut 5 | Success | Oct-28-2026 04:25:11 PM (UTC) Revolut confirms that the withdrawal was completed. The amount transferred was 2 AAVE, excluding the withdrawal fee. I contacted Aave Support and was advised to monitor the governance forum for future recovery initiatives. I understand that the Aave DAO previously supported recovery initiatives, including BGD Rescue Mission Phase 1 , which addressed certain accidental transfers to Aave smart contracts, including the AAVE token contract. I would be grateful if the community could clarify: Whether my transaction could be eligible for a future recove",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Recovery Request – 2 AAVE Accidentally Sent to AAVE Token Contract (Ethereum)",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "1027": "FULL_NAME",
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:49Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/recovery-request-2-aave-accidentally-sent-to-aave-token-contract-ethereum/26128"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "ee5a4fb83bffbc43685846c3",
-      "excerpt": "AAVE SECURITY SHIELD Propuesta comunitaria para reforzar la prevención de riesgos externos y la protección de los depositantes Tipo: Iniciativa comunitaria para discusión y evaluación preliminar Área: Seguridad, gestión de riesgos y resiliencia financiera Estado: Borrador conceptual previo a una posible ARFC Autoría: Iniciativa comunitaria independiente Solicitud inicial: Evaluar el interés de la comunidad en financiar o realizar un estudio de viabilidad, sin aprobar todavía modificaciones del protocolo. PARTE I. PRESENTACIÓN DE LA INICIATIVA 1. Resumen ejecutivo La pregunta que queremos plantear a la comunidad de Aave es: ¿Cómo puede Aave limitar la generación de nueva exposición crediticia durante un incidente de seguridad externo, sin perjudicar innecesariamente a sus usuarios? AAVE SECURITY SHIELD es una iniciativa comunitaria que propone estudiar una capa adicional de prevención, complementaria a los mecanismos de seguridad, gestión de riesgos y respuesta a emergencias existentes en el protocolo. El objetivo es investigar si determinados controles pueden proporcionar a Aave más tiempo para verificar una amenaza y contener su impacto antes de que se acumule una exposición significativa. La iniciativa propone evaluar mecanismos que permitan: Identificar amenazas externas media",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "[TEMP CHECK] AAVE SECURITY SHIELD – Exploring Preventive Risk Controls for External Security Incidents",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:34Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/temp-check-aave-security-shield-exploring-preventive-risk-controls-for-external-security-incidents/26124"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c0fda53aaaaa24c95b87a15d",
-      "excerpt": "Title: [EMERGENCY] Proposal to JAIL Validator with $500 Hidden Rule - 44k Keplr Victims Chain: Cosmos Hub Proposal Type: Social Slashing / Community Alert SUMMARY On Nov 7 2026, Web3Auth breach compromised 44,041 Keplr wallets (Google Login). My wallet cosmos1a5dykrp8fdnvayhmne0uq4dwacyzzzkdqm3ctnn was drained: Tx: 65cdf7ac0dcc9dbfaecb53a8dbdddc5f8a1d2e51fe5d1b6b06e2d06e76b576a Stolen: 29 ATOM + 3.52 OSMO + 1.09 TIA Separately, the validator I delegated to has a deceptive rule: “Wallets under $500 get 0% rewards” - NOT shown in Keplr UI. This targets users leaving small balances for airdrops. VIOLATION Hidden commission = Fraud Keplr promoted validator as trusted without disclosure DEMANDS A) JAIL validator for 21 days, then TOMBSTONE if confirmed. B) Slash 5% to compensate <$500 victims. C) Keplr must delist validator and add warning: “0% under $500” and refund. VOTE YES = Protect small holders, Jail deceptive validator NO = Allow $500 trap to continue 1 post - 3 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Creat voting to jail the hacker validator",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T23:41:11Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/creat-voting-to-jail-the-hacker-validator/17556"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "822f98c2f207e912a044a435",
-      "excerpt": "Status: filed as ethereum/ERCs pull request #2155 ; number ERC-8490 assigned on 2026-11-09. Reference repository: GitHub - garyyang-finchip/agent-meditation-mechanism: Agent Meditation Mechanism · GitHub . Sepolia evidence: recorded in the repository and summarized in a reply below. This draft proposes a minimal registry through which an AI agent records its own self-maintenance: what it checked, cleaned, repaired, updated and reconsidered about itself, as a versioned and attributable history. The name follows the human analogy of maintenance that happens in a quiet phase (sleep, meditation); the mechanism itself is deliberately dry. Why a registry at all. An agent keeps its identity while its code, dependencies, memories, skills, plans and ways of judging keep changing. Agent runtimes already do this maintenance in the background (self-checks, dependency walks, memory consolidation, re-planning, reflection), and the results stay local. Nothing connects the successive states of one agent into a history another party can recognize, and nothing lets a counterparty ask: which state is registered now, which layers were checked recently and which of them changed, under which rules in effect at the time, and did the cycle adopt an update, confirm that nothing needed to change, or fail?",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-8490: Agent Meditation Mechanism",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T18:19:20Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-8490-agent-meditation-mechanism/30304"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1ca79646327f3695820133a2",
-      "excerpt": "Summary. AIFP is a framework ERC for the information layer between agents. It defines a flow paradigm as a content-addressed, versioned description of an interaction context - which carriers (addressed delivery, shared object) and structural operators (fan-out, fan-in, feedback, n-party, select, forward, derive, merge) it uses, and how thirteen separately declared rule dimensions are set (discovery, observation, contribution, management, redistribution, history, time, disclosure timing, contributor visibility, admission basis, representation, object relations, ordering). A channel adopts exactly one paradigm version at any timepoint. Participation is recorded as separately addressable role bindings with a scope, a basis, a validity interval and the rule version they were granted under. Role acquisition is checked by composable predicates that answer one of four outcomes: satisfied, not satisfied, undeterminable, verifier error. Status. Draft. Filed as ethereum/ERCs PR #2152 ; the editors assigned the number ERC-8489 on 2026-11-09 ( ERCS/erc-8489.md , assets under assets/erc-8489/ ). Reference repository with the Foundry suite, the canonical validator and the vectors: garyyang-finchip/aif-paradigm . The reference stack is deployed on Sepolia and the boundary-case evidence run is r",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-8489: Agent Information Flow Paradigm",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T11:26:13Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-8489-agent-information-flow-paradigm/30300"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "TOKEN_SUPPLY"
-      ],
-      "event_id": "c14fc83f4a1efc7c7d547e25",
-      "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase borrow cap for USDC from 2,600,000,000 to 2,750,000,000. Increase supply cap for USDe from 550,000,000 to 750,000,000. USDC (Aave V3 Core) USDC has reached 99.0% borrow cap utilization (2.57B / 2.6B) on the Aave V3 Core instance. Borrow Distribution Source: LlamaRisk, November 8, 2026 The top 20 USDC borrowers run health factors between 1.02 and 3.07 with a median of 1.76, and the largest borrower accounts for about 14% of outstanding debt. Collateral behind these positions is mainly ETH and BTC assets, with 5 of the 20 posting WETH, 5 weETH, 4 wstETH, 4 cbBTC, and 3 WBTC, alongside 3 posting USDe and 3 sUSDe, so HF in the cohort tracks the ETH and BTC prices and, on the USDe and sUSDe positions, the exchange rate of those assets against the stablecoin debt. Recommendation We recommend raising the borrow cap from 2.6B to 2.75B on Aave V3 Core, which places the reserve at approximately 93.6% post-change borrow cap utilization. The proposed borrow cap corresponds to 96.6% reserve utilization at current supply, above the 94% optimal point. USDe (Aave V3 Core) USDe has reached 100.0% supp",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Risk Stewards: Supply and Borrow Cap Increases on Aave V3 / 2026.11.08",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T10:12:08Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-increases-on-aave-v3-2026-11-08/26107"
-    },
-    {
-      "cmc_ids": [
-        3794
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b5933264b22584fc8bd5e09a",
-      "excerpt": "Transaction: D2283D7E35CC2B844BB29D2C5B904CBE598DE8B92549EE6A106E4AD735311599 Height 33,766,882, Nov 7 2026, 10:18:55 UTC. Memo: “lsm recovery batch”. 27 messages: Send, Modify Withdraw Address and Tokenize Shares, repeated across several delegators. Attacker address (new owner of the tokenized shares and new withdraw address): cosmos1atuap9kfnt6y8ykvn3437e7j3z8qffh3qtnmwu Batch sender (self-send of 0.000001 ATOM in message #1 ): cosmos1pa0n22gcyyjnv6vqe9qgphrfhyhhf52t6kqud0 My address (victim): cosmos1tpkpt8l2aup6m2exjpw84mj9ww302q3dltfvls Messages #9 and #10: withdraw address changed, then 356.009956 ATOM tokenized (validator: Cryptostake_com). I never signed this transaction and never granted authz permissions to anyone. The authz grants query for my address currently returns an empty list. It is unclear how a single transaction could include actions for several unrelated delegators, so this looks like a mass key compromise or a compromised signing service. Addresses were copied from Mintscan, so please verify them against the transaction hash. Requests: 1. Flag the attacker address and track any Redeem, Undelegate or outgoing transfers. 2. Alert validators, exchanges and bridges so they can freeze or refuse the funds. 3. Help investigate how the transaction was signed for mul",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "URGENT SECURITY REPORT: theft of staked ATOM via LSM Tokenize Shares, Cosmos Hub",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
-      "match_methods": {
-        "3794": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T00:27:03Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/urgent-security-report-theft-of-staked-atom-via-lsm-tokenize-shares-cosmos-hub/17550"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d757308042b6b35e345bff5b",
-      "excerpt": "Are there any official reports, procedures, or verification regarding a compromise of Keplr? I really wouldn’t want my ATOMs drained. That would truly hurt… Is there any emergency procedure I should follow? I have liquid staking disabled. I use Atomic Wallet, and I use Keplr in both Firefox and Chrome. According to AI, it’s fine. Is it possible to convert an existing wallet into a multisig wallet? And require, for example, 2 out of 3 signatures for transactions? Thanks. 6 posts - 6 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Wallet vacuum 11/2026",
-      "last_observed_utc": "2026-11-12T20:04:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T14:49:53Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/wallet-vacuum-11-2026/17549"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b9dcd2ec498515901e2c0c18",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:27Z",
-      "headline": "Christine Lagarde: Interview with Yomiuri Shimbun",
-      "last_observed_utc": "2026-11-12T20:04:00Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T14:00:00Z",
-      "source_id": "ecb_press",
-      "source_ids": [
-        "ecb_press"
-      ],
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html"
-    },
-    {
-      "cmc_ids": [
-        6636
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7b2ac804f511064ce55a1cdd",
-      "excerpt": "Hi all, Open USD (OUSD) went live on 30 September. It’s backed by Visa, Mastercard, Stripe and Coinbase, issued by Bridge, and nearly all reserve income goes back to partners. It runs on Ethereum, Solana, Base and Tempo, but not on Polkadot. Is anyone working on bringing it to Polkadot Hub, natively or via Snowbridge? Thanks, Paul Schmidt, Heitaria Swiss AG 1 post - 1 participant Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Plans to bring Open USD (OUSD) to Polkadot Hub?",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {
-        "6636": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T12:19:03Z",
-      "source_id": "polkadot_governance",
-      "source_ids": [
-        "polkadot_governance"
-      ],
-      "url": "https://forum.polkadot.network/t/plans-to-bring-open-usd-ousd-to-polkadot-hub/19289"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "28005e431498cd6dad5ee44f",
-      "excerpt": "TL;DR: An opt-in, public, per-account “protected” flag for ERC-20s. Small sends stay instant; anything bigger is scheduled and can be cancelled by a pre-registered backup wallet; a “stress” action sweeps everything to the backup and locks it, which also helps against wrench attacks. Turning protection on is instant; weakening it (off, higher limit, shorter waits, new backup) takes a delay the holder picks. Why: Today a stolen key or a coerced holder means an instant, final drain. Existing approaches are per-transfer (SLOW), need recipient cooperation (ERC-8236), need judges (ERC-20R), protect protocols rather than users (ERC-7265), or only work in one smart wallet. This puts the protection in the token, so it works for any holder and any wallet, including plain EOAs. How it works: protect(backup, dailyLimit, holdWindow, offDelay, lockDuration, fastLane) : instant. Over-limit transferFrom reverts (never returns true without moving tokens, so routers, vaults and lenders can’t be fooled). Over-limit transfer from an EOA may be auto-scheduled, so wallet “Send” buttons just work. queueTransfer → hold window → anyone can executeTransfer ; the owner or backup can cancelTransfer ; with the opt-in fast lane, the backup can approveTransfer to skip the wait. stress(account) : cancels everyt",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-XXXX: Protected Accounts for Fungible Tokens--*",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T07:28:16Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-xxxx-protected-accounts-for-fungible-tokens/30297"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7af60327b3a2b853b419c3d0",
-      "excerpt": "What exactly is Web3 Foundation doing these days? Looking at its recent YouTube videos, most of the content seems to focus on Bill Laboon talking about privacy, smart TVs, and data collection, with little connection to Polkadot or its actual development. Is Web3 Foundation still focused on supporting the Polkadot ecosystem, or has it become a PR platform for its executives? How much money is being spent on these campaigns, and what measurable results have they delivered? Polkadot needs real adoption, developers, and working products, not endless discussions about problems with the internet. Who is holding Web3 Foundation accountable for its spending and priorities? 5 posts - 4 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "What Are The People at W3F Actually Doing?",
-      "last_observed_utc": "2026-11-12T20:04:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T02:59:39Z",
-      "source_id": "polkadot_governance",
-      "source_ids": [
-        "polkadot_governance"
-      ],
-      "url": "https://forum.polkadot.network/t/what-are-the-people-at-w3f-actually-doing/19288"
     }
   ]
 }
