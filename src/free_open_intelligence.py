@@ -118,6 +118,60 @@ def event_doc(kind,e,cutoff):
             "source_id":e.get("source_id") or (e.get("source_ids") or [None])[0],
             "priority":priority(e)}
 
+def load_manual_findings(root,cutoff,known_cmc_ids):
+    """Optional, append-only human/ChatGPT-verified leads re-enter the next pack.
+
+    Source verification *claims* are retained as user annotations, not
+    accepted as independent machine validation. Historical PIT inclusion
+    is governed by the FIRST time evidence became available to research.
+    """
+    path=root/"docs/intelligence/manual_inputs/findings.jsonl"
+    if not path.exists():return [],{"rows":0,"eligible":0,"post_cutoff":0}
+    rows=[];total=0;post=0;ids=set()
+    valid_scopes={"GLOBAL","SECTOR","ASSET","MULTI_ASSET","UNRESOLVED"}
+    with path.open(encoding="utf-8") as f:
+        for n,line in enumerate(f,1):
+            if not line.strip():continue
+            total+=1
+            if total>10000:raise ValueError("manual findings unbounded")
+            item=json.loads(line)
+            if not isinstance(item,dict):raise ValueError("manual nonobject line "+str(n))
+            rid=str(item.get("id") or "")
+            url=str(item.get("source_url") or "")
+            title=clip(item.get("title"),230)
+            excerpt=clip(item.get("source_excerpt"),650)
+            scope=item.get("scope")
+            first=parse_time(item.get("first_observed_utc"))
+            published=parse_time(item.get("published_utc")) if item.get("published_utc") else None
+            if not rid or not title or not url.startswith("https://") or scope not in valid_scopes or not first:
+                raise ValueError("manual finding missing required provenance, line "+str(n))
+            if rid in ids:raise ValueError("manual finding id duplicated: "+rid)
+            ids.add(rid)
+            if first>cutoff or (published and published>cutoff):
+                post+=1;continue
+            cmc_ids=[]
+            for x in item.get("cmc_ids") or []:
+                if not str(x).isdigit() or int(x) not in known_cmc_ids:
+                    raise ValueError("manual unknown CMC ID in "+rid)
+                cmc_ids.append(int(x))
+            if scope in ("ASSET","MULTI_ASSET") and not cmc_ids:
+                raise ValueError("manual ASSET scope missing CMC ID: "+rid)
+            if scope=="MULTI_ASSET" and len(set(cmc_ids))<2:
+                raise ValueError("MULTI_ASSET requires at least two CMC IDs: "+rid)
+            rows.append({"id":"M:"+rid,"source_plane":"manual",
+               "title":title,"url":url,"excerpt":excerpt,
+               "published_utc":item.get("published_utc"),"first_observed_utc":item["first_observed_utc"],
+               "scope":("ASSET_CANDIDATE" if scope in ("ASSET","MULTI_ASSET") else
+                        "SECTOR" if scope=="SECTOR" else "GLOBAL_UNRESOLVED"),
+               "manual_scope":scope,"candidate_cmc_ids":sorted(set(cmc_ids)),
+               "themes":[clip(x,60) for x in (item.get("themes") or [])],
+               "identity_status":"MANUAL_MAPPING_ASSERTED_NOT_AUTOMATICALLY_VERIFIED" if cmc_ids else "NO_ASSET_LINK_ASSERTED",
+               "claim_status":"MANUAL_RESEARCH_SOURCE_ANNOTATION_RECHECK_REQUIRED",
+               "source_family":"MANUAL_RESEARCH","source_id":str(item.get("reviewer") or "chatgpt_manual"),
+               "priority":70,"provenance_ids":["M:"+rid],
+               "source_note":clip(item.get("verification_note"),500)})
+    return rows,{"rows":total,"eligible":len(rows),"post_cutoff":post}
+
 def deduplicate(events):
     """Deduplicate syndicated URLs within each stream, retain multiple provenance IDs."""
     by_key={}
@@ -349,7 +403,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             if z:
                 z["candidate_cmc_ids"]=[i for i in z["candidate_cmc_ids"] if i in valid_ids]
                 all_events.append(z)
-    events=deduplicate(all_events)
+    manual,manual_status=load_manual_findings(root,cutoff,valid_ids)
+    events=deduplicate(all_events+manual)
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
     # never fed back into coin/global/sector dossiers or the quality metric.
@@ -563,6 +618,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "source_capture_utc":caps,
       "evidence_counts":{"engine_rows":len(er),"expanded_rows":len(xr),
           "research_event_rows":len(research.get("events") or []),
+          "manual_verified_source_annotations_loaded":manual_status["eligible"],
           "adjacent_full_event_rows":len(adjacent.get("events") or []),
           "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
           "integrated_event_rows_before_dedup":len(all_events),
@@ -584,6 +640,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids)},
       "identity_quarantine":quarantined,
+      "manual_research_evidence_input":manual_status,
       "excluded_ambiguous_okx_structured_records":quarantined_structured,
       "adjacent_discovery_source":adjacent_source,
       "adaptive_search_hops_executed":search_hops,
@@ -620,6 +677,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "task_file":"docs/intelligence/research_tasks.json",
        "source_proposals_file":"docs/intelligence/source_registry_proposals.json",
        "manual_research_context_file":"docs/intelligence/deep_research_queue.json",
+       "manual_append_only_input":"docs/intelligence/manual_inputs/findings.jsonl",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
