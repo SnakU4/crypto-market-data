@@ -135,11 +135,11 @@ def deduplicate(events):
                 old.update({k:e[k] for k in ("excerpt","source_family","source_id","priority")})
     return list(by_key.values())
 
-def keyword_pairs(events):
+def keyword_pairs(events,planes=("adjacent","research")):
     """Source-derived discoveries only. No hardwired sector taxonomy or predicted alpha."""
     scores=collections.defaultdict(lambda:{"sources":set(),"examples":[],"theme":set()})
     for e in events:
-        if e["source_plane"] not in ("adjacent","research"):continue
+        if e["source_plane"] not in planes:continue
         tokens=[w.lower() for w in re.findall(r"[A-Za-z][A-Za-z-]{3,22}",e["title"])
                 if w.lower() not in STOP]
         tokens=tokens[:20]
@@ -194,6 +194,22 @@ def research_tasks(coins,events,market,limit=22):
         if len(tokens)<3:continue
         add('"'+ " ".join(tokens[:3])+'" crypto financial impact when:3d',
             "UNRESOLVED","SUBSTANTIVE_UNLINKED_LEAD",[e["id"]])
+    return tasks
+
+def second_hop_tasks(first_results,earlier_tasks,limit=8):
+    """A second search direction is mined from returned stories, not hardcoded."""
+    existing=" ".join(t["query"].lower() for t in earlier_tasks)
+    tasks=[];known=set()
+    for p in keyword_pairs(first_results,planes=("adaptive",)):
+        term=p["term"]
+        if term in existing or term in known or len(tasks)>=limit:continue
+        # Multiple independent result URLs are still *leads*, not independent proof.
+        known.add(term)
+        query='"'+term+'" blockchain liquidity regulation when:2d'
+        tasks.append({"task_id":"T:"+hashlib.sha256(query.encode()).hexdigest()[:12],
+          "query":query,"scope":"GLOBAL_OR_SECTOR",
+          "trigger":"SECOND_HOP_FROM_NEW_FINDINGS","evidence_ids":p["examples"],
+          "status":"PLANNED","results":0})
     return tasks
 
 def adaptive_fetch(tasks,cutoff,max_requests=22,opener=None):
@@ -284,6 +300,22 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     xr,xa=archive(root,xs,"expanded")
     research=usable_json(root,"docs/research/latest.json",rs["capture_utc"],cutoff)
     adjacent=usable_json(root,"docs/discovery/latest.json",ds["capture_completed_utc"],cutoff)
+    # The adjacent /discovery/latest.json is only a 500-event read index.
+    # Preserve the entire immutable archive (~938 events) when available.
+    adjacent_source={"mode":"READ_INDEX_ONLY","records":len(adjacent.get("events") or [])}
+    raw_adj=ds.get("full_archive_path")
+    if raw_adj:
+        ap=(root/raw_adj).resolve()
+        safe=(root/"docs/discovery/archive").resolve()
+        if not ap.is_relative_to(safe) or not ap.is_file():
+            raise ValueError("adjacent immutable archive missing or path escaped")
+        adjacent_full=read(ap)
+        full_count=len(adjacent_full.get("events") or [])
+        if full_count!=int(ds.get("full_archive_leads",full_count)):
+            raise ValueError("adjacent archive count mismatch")
+        adjacent=adjacent_full
+        adjacent_source={"mode":"FULL_ARCHIVE","records":full_count,
+                         "path":raw_adj,"sha256":digest(ap)}
     valid_ids=set(ids)
     all_events=[]
     for kind,rows in (("expanded",xr),("research",research.get("events") or []),
@@ -306,9 +338,13 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 family_by_coin[cid].append({"family":name,"observation":row})
     structured=collections.defaultdict(lambda:collections.Counter())
     struct_references=collections.defaultdict(list)
+    quarantined_structured=0
     for e in er:
         cid=e.get("cmc_id") or e.get("candidate_cmc_id")
         if cid not in valid_ids or not is_before(e,cutoff):continue
+        if cid==QNT_ID and str(e.get("source") or "").startswith("okx_"):
+            quarantined_structured+=1
+            continue
         structured[cid][str(e.get("source") or "UNSPECIFIED")]+=1
         if len(struct_references[cid])<12:
             struct_references[cid].append({"ref":e.get("observation_id"),
@@ -326,6 +362,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         cid=int(a["cmc_id"]);q=a.get("cmc_quote") or {};perp=a.get("perpetual") or {}
         instr=str(perp.get("symbol") or "")
         denied=DENY_EXCHANGE.get((cid,instr))
+        valid_perp=bool(perp.get("symbol") and perp.get("mapping")=="EXACT_BASE_ASSET_OKX" and not denied)
         if denied:quarantined.append({"cmc_id":cid,"instrument":instr,"reason":denied})
         original=features.get(cid) or {}
         ff=[]
@@ -339,14 +376,18 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         card={
             "cmc_id":cid,"name":a["name"],"symbol":a["symbol"],
             "cmc100_weight":a.get("cmc100_weight"),"spot_quote":q,
-            "perpetual":None if denied else perp,
-            "perp_market":None if denied else a.get("perp_market"),
+            "perpetual":perp if valid_perp else None,
+            "perp_market":a.get("perp_market") if valid_perp else None,
             "perp_identity_status":"QUARANTINED" if denied else
-               "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION" if perp else "NOT_AVAILABLE",
+               "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION" if valid_perp else "NOT_MATCHED_OR_UNVERIFIED",
             "research_coin_features":{k:v for k,v in original.items()
-                if k not in ("research_event_candidate_ids","perp_oi_usd",
+                if k not in (("research_event_candidate_ids","perp_oi_usd",
                              "perp_funding_estimate","okx_orderbook_spread_bps",
-                             "okx_orderbook_top5_ask_usd","okx_orderbook_top5_bid_usd")},
+                             "okx_orderbook_top5_ask_usd","okx_orderbook_top5_bid_usd",
+                             "perp_exchange","perp_oi_change_24h_pct") if denied else
+                            ("research_event_candidate_ids","perp_oi_usd",
+                             "perp_funding_estimate","okx_orderbook_spread_bps",
+                             "okx_orderbook_top5_ask_usd","okx_orderbook_top5_bid_usd"))},
             "quantitative_research_families":ff,
             "engine_record_counts_by_source":dict(structured[cid]),
             "engine_provenance_sample":struct_references[cid],
@@ -355,7 +396,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 ("id","title","url","excerpt","published_utc","claim_status","identity_status")}
                 for e in select],
             "missing_data":[key for key,ok in (("cmc_spot",bool(q.get("price_usd"))),
-                            ("verified_perp_contract",bool(perp and not denied)),
+                            ("mapped_perp_research_proxy",valid_perp),
                             ("mapped_protocol_fundamentals",bool(ff)),
                             ("coin_relevant_article_text",any(len(e["excerpt"])>=150 for e in by_asset[cid])))
                              if not ok]
@@ -363,7 +404,19 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         cards.append(card)
     emergent=keyword_pairs(events)
     tasks=research_tasks(cards,events,market,max_followups)
-    adaptive,audit=adaptive_fetch(tasks,cutoff,max_followups,opener=search_opener) if network else ([],[])
+    if network and max_followups>0:
+        first_count=max(1,int(max_followups*0.65))
+        first=tasks[:first_count]
+        a1,r1=adaptive_fetch(first,cutoff,len(first),opener=search_opener)
+        fresh=second_hop_tasks(a1,first,max_followups-first_count)
+        leftovers=tasks[first_count:first_count+max(0,max_followups-first_count-len(fresh))]
+        a2,r2=adaptive_fetch(fresh+leftovers,cutoff,max_followups-first_count,opener=search_opener)
+        tasks=first+fresh+leftovers
+        adaptive,audit=a1+a2,r1+r2
+        search_hops=2 if fresh else 1
+    else:
+        adaptive,audit=[],[]
+        search_hops=0
     article=enrich_direct(events,max_articles if network else 0,fetcher)
     for e in adaptive:e["provenance_ids"]=[e["id"]]
     evidence=events+adaptive
@@ -380,24 +433,36 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                              for t in tasks],
        "adaptive_discovery_findings":[{k:e[k] for k in ("id","title","url","published_utc","scope")}
                                       for e in adaptive[:100]]}
+    try:
+        from discovery_quality import has_additional_information
+    except ImportError:
+        from src.discovery_quality import has_additional_information
     coverage={
       "official_assets":100,"source_planes_integrated":["market","evidence_engine",
           "expanded_discovery","research","adjacent_discovery"],
       "source_capture_utc":caps,
       "evidence_counts":{"engine_rows":len(er),"expanded_rows":len(xr),
           "research_event_rows":len(research.get("events") or []),
-          "adjacent_latest_event_rows":len(adjacent.get("events") or []),
+          "adjacent_full_event_rows":len(adjacent.get("events") or []),
+          "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
           "integrated_event_rows_before_dedup":len(all_events),
           "canonical_research_leads":len(events),
           "free_adaptive_followup_leads":len(adaptive),
-          "substantive_source_excerpt_leads":sum(len(e["excerpt"])>=140 for e in events),
+          "substantive_source_excerpt_leads":sum(has_additional_information(e["title"],e["excerpt"]) for e in events),
+          "long_excerpts_by_character_count_not_claim_verification":sum(len(e["excerpt"])>=140 for e in events),
           "direct_publisher_article_excerpts":len(article)},
       "per_coin":{"spot_prices":sum(bool((a.get("cmc_quote") or {}).get("price_usd")) for a in assets),
-          "perp_markets_unquarantined":sum(bool(a.get("perpetual")) and
+          "perp_markets_unquarantined":sum(bool((a.get("perpetual") or {}).get("symbol")) and
+               (a.get("perpetual") or {}).get("mapping")=="EXACT_BASE_ASSET_OKX" and
                (int(a["cmc_id"]),str((a.get("perpetual") or {}).get("symbol") or "")) not in DENY_EXCHANGE for a in assets),
-          "research_mapped_quantitative_families":sum(bool(family_by_coin[i]) for i in ids),
+          "any_mapped_research_family_including_reported_supply":sum(bool(family_by_coin[i]) for i in ids),
+          "research_mapped_quantitative_families_beyond_supply_and_trending":
+              sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids)},
       "identity_quarantine":quarantined,
+      "excluded_ambiguous_okx_structured_records":quarantined_structured,
+      "adjacent_discovery_source":adjacent_source,
+      "adaptive_search_hops_executed":search_hops,
       "quality_caveat":"Search origin and provider metrics are NOT independently verified causal asset claims.",
       "source_failures":{"engine":es.get("limitations",[]),
          "expanded":xs.get("access_gaps",{}),
@@ -415,6 +480,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
        "full_evidence_export_is_actions_artifact_only":True,
+       "adjacent_full_archive":adjacent_source,
+       "adaptive_search_hops_executed":search_hops,
        "limitation":"Deterministic adaptive follow-up, NOT an autonomous LLM researcher or alpha signal."}
     for i in range(5):
         write(out/f"coin_batches/batch_{i+1:02d}.json",
