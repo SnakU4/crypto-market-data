@@ -693,10 +693,29 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
 
 def write_bundle(bundle,out=OUT):
     out.mkdir(parents=True,exist_ok=True)
-    # Write data without internal transient bookkeeping.
-    status=bundle['status'];doc={k:v for k,v in bundle.items() if k!='oi_new_records'}
+    # A 1MB+ latest.json becomes unreadable through GitHub Contents API.
+    # Publish a compact index AND every source event in SHA-verified <=80-row
+    # batches. The full events remain PIT-available, never silently discarded.
+    status=bundle['status'];events=bundle['events']
+    doc={k:v for k,v in bundle.items() if k!='oi_new_records'}
+    doc['events']=events[:200]
+    doc['events_read_index_count']=len(doc['events'])
+    doc['full_source_events_manifest']='docs/research/source_events_manifest.json'
+    event_dir=out/'source_event_batches'
+    event_dir.mkdir(parents=True,exist_ok=True)
+    parts=[]
+    for pos in range(0,len(events),80):
+        batch=events[pos:pos+80]
+        fp=event_dir/('batch_%02d.json'%(pos//80+1))
+        output_json(fp,{'capture_utc':status['capture_utc'],'events':batch})
+        h=hashlib.sha256(fp.read_bytes()).hexdigest()
+        parts.append({'path':'docs/research/source_event_batches/'+fp.name,
+                      'sha256':h,'count':len(batch)})
+    output_json(out/'source_events_manifest.json',{
+         'capture_utc':status['capture_utc'],'total_events':len(events),
+         'read_index_count':len(doc['events']),'batches':parts,
+         'all_source_events_preserved':True})
     output_json(out/'latest.json',doc);output_json(out/'status.json',status)
-    events=bundle['events']
     compact_csv(out/'events.csv',[{'event_id':e['event_id'],'source_id':e['source_id'],
         'published_utc':e['published_utc'],'first_observed_utc':e['first_observed_utc'],
         'headline':e['headline'],'url':e['url'],'event_classes':';'.join(e['event_classes']),
