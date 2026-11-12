@@ -26,11 +26,6 @@
       "task_id": "T:3fe512f7a946"
     },
     {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:863b668f2a3a"
-    },
-    {
       "results": 0,
       "status": "OK",
       "task_id": "T:0a08acd11a35"
@@ -44,6 +39,11 @@
       "results": 1,
       "status": "OK",
       "task_id": "T:5f82e97c4201"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:22db348d10b4"
     },
     {
       "results": 3,
@@ -86,11 +86,6 @@
       "task_id": "T:cecfd2f5964d"
     },
     {
-      "results": 0,
-      "status": "OK",
-      "task_id": "T:c173f9011421"
-    },
-    {
       "results": 10,
       "status": "OK",
       "task_id": "T:dfcc8f6766e0"
@@ -99,15 +94,20 @@
       "results": 1,
       "status": "OK",
       "task_id": "T:8c1b9a0b083d"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:018fc976fb7a"
     }
   ],
   "no_auto_source_installation": true,
   "tasks": [
     {
       "evidence_ids": [
-        "research:a9d2f791583740b2b4",
-        "research:81d27367c2d11353c5",
-        "research:97edd408edb88093c1"
+        "research:ffab487828cbf86c63",
+        "research:68dea54cf87e0307b8",
+        "research:a9d2f791583740b2b4"
       ],
       "query": "\"jensen huang\" crypto financial markets when:2d",
       "results": 12,
@@ -157,28 +157,15 @@
     },
     {
       "evidence_ids": [
-        "research:0a0eb65a5c619c54df",
         "research:3f0885cd45ada719c5",
-        "research:e9fd4eb20f49d00fe9"
+        "research:e9fd4eb20f49d00fe9",
+        "research:22bd6e3f4246880244"
       ],
       "query": "\"banks commit\" crypto financial markets when:2d",
       "results": 10,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:3fe512f7a946",
-      "trigger": "NEW_CROSS_SOURCE_TOPIC"
-    },
-    {
-      "evidence_ids": [
-        "research:025af703ae4363ac67",
-        "research:08911f82cab20bbd49",
-        "research:e457c29eb319ca7575"
-      ],
-      "query": "\"kraken parent\" crypto financial markets when:2d",
-      "results": 12,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:863b668f2a3a",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
@@ -218,6 +205,19 @@
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:5f82e97c4201",
+      "trigger": "NEW_CROSS_SOURCE_TOPIC"
+    },
+    {
+      "evidence_ids": [
+        "adjacent:f9b56c6ea8e3517543",
+        "adjacent:1a6e9ba3633e99f290",
+        "adjacent:2ff3129fc9c0f9e828"
+      ],
+      "query": "\"globe mail\" crypto financial markets when:2d",
+      "results": 0,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:22db348d10b4",
       "trigger": "NEW_CROSS_SOURCE_TOPIC"
     },
     {
@@ -309,18 +309,6 @@
     },
     {
       "evidence_ids": [
-        "followup:782c1f047b4432687c",
-        "followup:b395f0c1a98270d78a"
-      ],
-      "query": "\"assets billion\" crypto blockchain when:2d",
-      "results": 0,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:c173f9011421",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
         "followup:242e90b5f34b9a51d5",
         "followup:55e24451b4a6673b34"
       ],
@@ -341,6 +329,18 @@
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:8c1b9a0b083d",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:d014f65c41be7f4830",
+        "followup:559952d30c41888d2d"
+      ],
+      "query": "\"biggo finance\" crypto blockchain when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:018fc976fb7a",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]

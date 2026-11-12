@@ -124,9 +124,9 @@
             "protocol_id": "2435",
             "protocol_name": "Nexo",
             "protocol_slug": "nexo",
-            "protocol_tvl_change_1d_pct": 4.770389,
-            "protocol_tvl_change_7d_pct": -32.715352,
-            "protocol_tvl_usd": 11324740.58
+            "protocol_tvl_change_1d_pct": 6.077946,
+            "protocol_tvl_change_7d_pct": -31.946901,
+            "protocol_tvl_usd": 11245058.94
           }
         },
         {
@@ -137,7 +137,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.062Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.048Z",
             "symbol": "NEXO",
             "total_supply": 1000000000.0
           }
@@ -155,7 +155,7 @@
           "protocol_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "NEXO",
         "total_supply": 1000000000.0
       },
@@ -289,7 +289,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "VeChain",
-            "chain_tvl_usd": 245082.28,
+            "chain_tvl_usd": 243346.2,
             "cmc_id": 3077,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -303,7 +303,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 86712634466.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.062Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.048Z",
             "symbol": "VET",
             "total_supply": 85985041177.0
           }
@@ -321,7 +321,7 @@
           "chain_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "VET",
         "total_supply": 85985041177.0
       },
@@ -465,9 +465,19 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 14881364.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.208Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.880Z",
             "symbol": "QNT",
             "total_supply": 14881364.0
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 3155,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "Quant",
+            "rank": 13
           }
         }
       ],
@@ -478,9 +488,10 @@
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": 14881364.0,
         "research_metric_families": [
-          "token_supply"
+          "token_supply",
+          "trending"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "QNT",
         "total_supply": 14881364.0
       },
@@ -613,19 +624,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 20109728.125,
+            "circulating_supply": 20109850.0,
             "cmc_id": 3602,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.208Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.880Z",
             "symbol": "BSV",
-            "total_supply": 20109728.125
+            "total_supply": 20109850.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 20109728.125,
+        "circulating_supply": 20109850.0,
         "cmc_id": 3602,
         "coin_name": "Bitcoin SV",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -635,9 +646,9 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "BSV",
-        "total_supply": 20109728.125
+        "total_supply": 20109850.0
       },
       "spot_quote": {
         "market_cap_usd": 318997689.24,
@@ -843,7 +854,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Cronos",
-            "chain_tvl_usd": 94367845.99,
+            "chain_tvl_usd": 94753082.91,
             "cmc_id": 3635,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -852,34 +863,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04775,
-            "bid": 0.04772,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 0.04827,
+            "bid": 0.04825,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 3635,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CRO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.2847,
-            "top5_ask_usd": 1324.37,
-            "top5_bid_usd": 1493.22
+            "spread_bps": 4.14422,
+            "top5_ask_usd": 1002.26,
+            "top5_bid_usd": 1175.31
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 50771256601.374054,
+            "circulating_supply": 50771855306.13716,
             "cmc_id": 3635,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 100000000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.037Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.029Z",
             "symbol": "CRO",
-            "total_supply": 99032595056.60269
+            "total_supply": 99033193761.36578
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 50771256601.374054,
+        "circulating_supply": 50771855306.13716,
         "cmc_id": 3635,
         "coin_name": "Cronos",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -890,9 +901,9 @@
           "chain_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "CRO",
-        "total_supply": 99032595056.60269
+        "total_supply": 99033193761.36578
       },
       "spot_quote": {
         "market_cap_usd": 2502112526.15,
@@ -1066,16 +1077,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.1469,
-            "bid": 0.1468,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 0.1484,
+            "bid": 0.1483,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 3773,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "FET-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.80967,
-            "top5_ask_usd": 34386.38,
-            "top5_bid_usd": 32815.5
+            "spread_bps": 6.74082,
+            "top5_ask_usd": 31260.71,
+            "top5_bid_usd": 32985.53
           }
         },
         {
@@ -1086,7 +1097,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 2719493897.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:33.096Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.090Z",
             "symbol": "FET",
             "total_supply": 2714384546.672
           }
@@ -1103,7 +1114,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "FET",
         "total_supply": 2714384546.672
       },
@@ -1273,16 +1284,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.385,
-            "bid": 1.384,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 1.394,
+            "bid": 1.393,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 3794,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ATOM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 7.22282,
-            "top5_ask_usd": 72971.11,
-            "top5_bid_usd": 62586.98
+            "spread_bps": 7.17618,
+            "top5_ask_usd": 106307.43,
+            "top5_bid_usd": 80846.84
           }
         },
         {
@@ -1293,7 +1304,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.167Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:33.095Z",
             "symbol": "ATOM",
             "total_supply": 540425557.232905
           }
@@ -1310,7 +1321,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "ATOM",
         "total_supply": 540425557.232905
       },
@@ -1480,16 +1491,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 96.78,
-            "bid": 96.77,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 98.32,
+            "bid": 98.31,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 3897,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "OKB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.03332,
-            "top5_ask_usd": 6074.76,
-            "top5_bid_usd": 1573.14
+            "spread_bps": 1.01714,
+            "top5_ask_usd": 4082.4,
+            "top5_bid_usd": 3403.58
           }
         },
         {
@@ -1500,7 +1511,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.222Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.911Z",
             "symbol": "OKB",
             "total_supply": 21000000.0
           }
@@ -1517,7 +1528,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "OKB",
         "total_supply": 21000000.0
       },
@@ -1602,7 +1613,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.222Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.911Z",
             "symbol": "LEO",
             "total_supply": 985239504.0
           }
@@ -1619,7 +1630,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "LEO",
         "total_supply": 985239504.0
       },
@@ -1796,7 +1807,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Algorand",
-            "chain_tvl_usd": 28170745.24,
+            "chain_tvl_usd": 28073482.12,
             "cmc_id": 4030,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1805,34 +1816,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.08876,
-            "bid": 0.08875,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 0.089,
+            "bid": 0.08899,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 4030,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ALGO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.1267,
-            "top5_ask_usd": 1069.91,
-            "top5_bid_usd": 1713.09
+            "spread_bps": 1.12366,
+            "top5_ask_usd": 2375.4,
+            "top5_bid_usd": 1421.63
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 9079296674.030788,
+            "circulating_supply": 9079365067.595848,
             "cmc_id": 4030,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:33.211Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.911Z",
             "symbol": "ALGO",
             "total_supply": 10000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 9079296674.030788,
+        "circulating_supply": 9079365067.595848,
         "cmc_id": 4030,
         "coin_name": "Algorand",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1843,7 +1854,7 @@
           "chain_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "ALGO",
         "total_supply": 10000000000.0
       },
@@ -1887,19 +1898,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 104707266.68,
+            "circulating_supply": 104707656.08,
             "cmc_id": 4269,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 142622843.67,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.222Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.911Z",
             "symbol": "GT",
             "total_supply": 138065459.04
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 104707266.68,
+        "circulating_supply": 104707656.08,
         "cmc_id": 4269,
         "coin_name": "GateToken",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1909,7 +1920,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "GT",
         "total_supply": 138065459.04
       },
@@ -2086,7 +2097,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Hedera",
-            "chain_tvl_usd": 23043729.19,
+            "chain_tvl_usd": 22756060.61,
             "cmc_id": 4642,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2095,16 +2106,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.06503,
-            "bid": 0.06502,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 0.06575,
+            "bid": 0.06574,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 4642,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "HBAR-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.53787,
-            "top5_ask_usd": 17240.62,
-            "top5_bid_usd": 21941.3
+            "spread_bps": 1.52103,
+            "top5_ask_usd": 25202.71,
+            "top5_bid_usd": 28451.86
           }
         },
         {
@@ -2125,19 +2136,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 44327143914.54398,
+            "circulating_supply": 44327142868.47794,
             "cmc_id": 4642,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 50000000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.037Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.029Z",
             "symbol": "HBAR",
             "total_supply": 50000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 44327143914.54398,
+        "circulating_supply": 44327142868.47794,
         "cmc_id": 4642,
         "coin_name": "Hedera",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2149,7 +2160,7 @@
           "protocol_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "HBAR",
         "total_supply": 50000000000.0
       },
@@ -2288,19 +2299,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 447712.361182,
+            "circulating_supply": 447709.161182,
             "cmc_id": 4705,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:29:03.188Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.880Z",
             "symbol": "PAXG",
-            "total_supply": 447712.361182
+            "total_supply": 447709.161182
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 447712.361182,
+        "circulating_supply": 447709.161182,
         "cmc_id": 4705,
         "coin_name": "PAX Gold",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2310,9 +2321,9 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "PAXG",
-        "total_supply": 447712.361182
+        "total_supply": 447709.161182
       },
       "spot_quote": {
         "market_cap_usd": 1778534827.16,
@@ -2329,6 +2340,15 @@
     {
       "candidate_event_count": 89,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "A mainnet vault withdrawal used a Lamport one-time signature. The test does not upgrade ordinary sBTC wallets or the Bitcoin backing the token.... Read the full story at The Defiant",
+          "id": "research:31b6fcdc512c0266c6",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-11T16:10:10Z",
+          "title": "Stacks Tests Post-Quantum Signatures With sBTC Transfer",
+          "url": "https://thedefiant.io/news/blockchains/stacks-tests-post-quantum-signatures-with-sbtc-transfer"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "If Bitcoin is going to reach billions of people, it has to earn. @muneeb explains 👇 X",
@@ -2409,15 +2429,6 @@
           "published_utc": "2026-11-06T21:15:36Z",
           "title": "Stacks $STX is the only way to save Bitcoin. - X",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qc29jc2YzNExCcUlTWlZBdjQ1ZmVrR193bkQ3SzZ0UExRR3NLR3I2TGpJSWhkN1IzeWlyYWdKb2hlbm5vSUc1UkVHNThWZHVQYXFTTFBCOGdPcnVqWGs4aE13?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "I’m done with Bitcoin. Zcash $ZEC and Stacks $STX are the only way to make it. X",
-          "id": "expanded:12a9296958e8c3b29f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T22:03:43Z",
-          "title": "I’m done with Bitcoin. Zcash $ZEC and Stacks $STX are the only way to make it. - X",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aOGtXX1pselB6cUdMTDYtTVZoUDlfLUR0b1JHYVd4eEs2ZDdmZUhWUlRidjVtVmJwVWVQT1d3V2pKdEpQZ2VDaWFmdTByY29ESk5SQkxld3QzWmtVbTh1OHJVd1JiZnpYSDJoXw?oc=5"
         }
       ],
       "cmc100_weight": 0.03,
@@ -2487,7 +2498,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Stacks",
-            "chain_tvl_usd": 57266272.62,
+            "chain_tvl_usd": 52428615.1,
             "cmc_id": 4847,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2496,34 +2507,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.3043,
-            "bid": 0.3042,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 0.3042,
+            "bid": 0.3041,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 4847,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "STX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.28677,
-            "top5_ask_usd": 4392.23,
-            "top5_bid_usd": 4011.35
+            "spread_bps": 3.28785,
+            "top5_ask_usd": 10672.82,
+            "top5_bid_usd": 5480.46
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 1881896275.682069,
+            "circulating_supply": 1881979611.682069,
             "cmc_id": 4847,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.208Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.880Z",
             "symbol": "STX",
-            "total_supply": 1881896275.682069
+            "total_supply": 1881979611.682069
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 1881896275.682069,
+        "circulating_supply": 1881979611.682069,
         "cmc_id": 4847,
         "coin_name": "Stacks",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2534,9 +2545,9 @@
           "chain_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "STX",
-        "total_supply": 1881896275.682069
+        "total_supply": 1881979611.682069
       },
       "spot_quote": {
         "market_cap_usd": 573151415.18,
@@ -2693,7 +2704,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.121Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.114Z",
             "symbol": "XAUt",
             "total_supply": 827417.63
           }
@@ -2711,7 +2722,7 @@
           "protocol_tvl",
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "XAUt",
         "total_supply": 827417.63
       },
@@ -2728,8 +2739,17 @@
       "symbol": "XAUt"
     },
     {
-      "candidate_event_count": 205,
+      "candidate_event_count": 206,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Shares in Securitize have fallen sharply in the two weeks since the tokenisation firm began offering blockchain versions of Apple, Nvidia and Tesla stock. SECZ was trading at $7.81 at 1:13pm ET on Thursday, down 15% on the day, according to Yahoo Finance data . That is 38% below its $12.66 close on 8 October, the day Securitize announced Securitize Stocks, and 43% below its $13",
+          "id": "research:9f9f3c46cb9d52710b",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-10-22T18:18:21Z",
+          "title": "Securitize shares slide 38% since it put Apple and Nvidia stock on Solana",
+          "url": "https://www.dlnews.com/articles/markets/securitize-shares-fall-38percent-since-solana-stock-token-launch-or-dl-news/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Polygon Partners with CoinGecko to Integrate USDC Payments Coinfomania",
@@ -2810,15 +2830,6 @@
           "published_utc": "2026-11-08T19:54:00Z",
           "title": "A very busy week indeed for the Solana ecosystem. One of the biggest winners this week was the @Solana ecosystem, which saw major progress in its RWA ecosystem, was chosen by @Bullish as an initial chain for it equity tokenisation",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jTHZfVDd1aE1xMktVN2psT09MNVpiQmZCSjdRLVZQM2ktckI0NkpBUk9ZSTFfaExwNGwzaHpDVjJ2S2Z2bl9ZTGhjbnZpY1lSSGR6aVhfdmxZQjFK?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Liquidity: Another 250m new dollars issued on @solana X",
-          "id": "expanded:0ca273cafe8b41a27b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T13:44:30Z",
-          "title": "Liquidity: Another 250m new dollars issued on @solana - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5oQThiLV9WaklJUk15Y2JGQnhEb2lqTmtJWnZPUVJIYmFLR2FDVUtsQzZxMm1oVWk5U1BHR1I5cHNrWHY1VkttSkM4U0hxUVZ2RTJtMjhSYlFRb3N2djJEVEhneGdQY00?oc=5"
         }
       ],
       "cmc100_weight": 2.28,
@@ -2888,7 +2899,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Solana",
-            "chain_tvl_usd": 5112344922.12,
+            "chain_tvl_usd": 5042576841.08,
             "cmc_id": 5426,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2897,16 +2908,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 82.94,
-            "bid": 82.93,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 82.9,
+            "bid": 82.89,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 5426,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SOL-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.20576,
-            "top5_ask_usd": 510631.52,
-            "top5_bid_usd": 580413.76
+            "spread_bps": 1.20635,
+            "top5_ask_usd": 921525.93,
+            "top5_bid_usd": 887131.45
           }
         },
         {
@@ -2927,14 +2938,14 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 591457264.225258,
+            "circulating_supply": 591457017.026962,
             "cmc_id": 5426,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-11T23:28:33.157Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.131Z",
             "symbol": "SOL",
-            "total_supply": 637432982.843356
+            "total_supply": 637432855.986128
           }
         },
         {
@@ -2944,12 +2955,12 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Solana",
-            "rank": 4
+            "rank": 6
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 591457264.225258,
+        "circulating_supply": 591457017.026962,
         "cmc_id": 5426,
         "coin_name": "Solana",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2962,9 +2973,9 @@
           "token_supply",
           "trending"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "SOL",
-        "total_supply": 637432982.843356
+        "total_supply": 637432855.986128
       },
       "spot_quote": {
         "market_cap_usd": 49220025273.34,
@@ -3100,7 +3111,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 9900000000.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.097Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.090Z",
             "symbol": "JST",
             "total_supply": 8018019892.341737
           }
@@ -3117,7 +3128,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "JST",
         "total_supply": 8018019892.341737
       },
@@ -3293,16 +3304,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.544,
-            "bid": 1.543,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 1.542,
+            "bid": 1.541,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 5690,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "RENDER-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.47878,
-            "top5_ask_usd": 16647.14,
-            "top5_bid_usd": 21516.57
+            "spread_bps": 6.48719,
+            "top5_ask_usd": 29676.96,
+            "top5_bid_usd": 29482.07
           }
         },
         {
@@ -3313,7 +3324,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 644168762.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:33.124Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.114Z",
             "symbol": "RENDER",
             "total_supply": 533536414.562692
           }
@@ -3330,7 +3341,7 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "RENDER",
         "total_supply": 533536414.562692
       },
@@ -3507,7 +3518,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Avalanche",
-            "chain_tvl_usd": 613330293.56,
+            "chain_tvl_usd": 612178072.46,
             "cmc_id": 5805,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3516,16 +3527,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 8.46,
-            "bid": 8.459,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 8.641,
+            "bid": 8.64,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 5805,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "AVAX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.1821,
-            "top5_ask_usd": 12154.0,
-            "top5_bid_usd": 10033.8
+            "spread_bps": 1.15734,
+            "top5_ask_usd": 12557.22,
+            "top5_bid_usd": 11982.64
           }
         },
         {
@@ -3546,29 +3557,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 445853424.196465,
+            "circulating_supply": 445864577.157411,
             "cmc_id": 5805,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 715748719.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:48.121Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.114Z",
             "symbol": "AVAX",
-            "total_supply": 470855424.196465
-          }
-        },
-        {
-          "family": "trending",
-          "observation": {
-            "cmc_id": 5805,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "Avalanche",
-            "rank": 5
+            "total_supply": 470866577.157411
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 445853424.196465,
+        "circulating_supply": 445864577.157411,
         "cmc_id": 5805,
         "coin_name": "Avalanche",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3578,12 +3579,11 @@
         "research_metric_families": [
           "chain_tvl",
           "protocol_tvl",
-          "token_supply",
-          "trending"
+          "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "AVAX",
-        "total_supply": 470855424.196465
+        "total_supply": 470866577.157411
       },
       "spot_quote": {
         "market_cap_usd": 3827676827.37,
@@ -3757,34 +3757,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 4.35e-06,
-            "bid": 4.349e-06,
-            "book_source_utc": "2026-11-11T23:29:09Z",
+            "ask": 4.338e-06,
+            "bid": 4.337e-06,
+            "book_source_utc": "2026-11-12T07:20:00Z",
             "cmc_id": 5994,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SHIB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.29911,
-            "top5_ask_usd": 52113.83,
-            "top5_bid_usd": 36092.77
+            "spread_bps": 2.30548,
+            "top5_ask_usd": 53652.64,
+            "top5_bid_usd": 28787.02
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 589238116615326.5,
+            "circulating_supply": 589238115908578.9,
             "cmc_id": 5994,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 589552695333683.0,
-            "supply_last_updated_utc": "2026-11-11T23:28:33.096Z",
+            "supply_last_updated_utc": "2026-11-12T07:19:48.090Z",
             "symbol": "SHIB",
-            "total_supply": 589495709745243.0
+            "total_supply": 589495709038495.2
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 589238116615326.5,
+        "circulating_supply": 589238115908578.9,
         "cmc_id": 5994,
         "coin_name": "Shiba Inu",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3794,9 +3794,9 @@
         "research_metric_families": [
           "token_supply"
         ],
-        "spot_quote_updated_utc": "2026-11-11T02:57:03.000Z",
+        "spot_quote_updated_utc": "2026-11-12T04:08:04.000Z",
         "symbol": "SHIB",
-        "total_supply": 589495709745243.0
+        "total_supply": 589495709038495.2
       },
       "spot_quote": {
         "market_cap_usd": 2563535170.29,
