@@ -449,6 +449,14 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     manual,manual_status=load_manual_findings(root,cutoff,valid_ids)
     dynamic_events=[];dynamic_audit={"domains_attempted":0,"domains_found_content":0,
                                      "new_feed_items":0,"substantive_feed_items":0,"sources":[]}
+    history_file=root/"docs/intelligence/source_probe_history.json"
+    probe_history=read(history_file) if history_file.exists() else {}
+    if not isinstance(probe_history,dict):raise ValueError("malformed source probe history")
+    cooldown_domains=[]
+    for domain,entry in probe_history.items():
+        when=parse_time(entry.get("last_probed_utc")) if isinstance(entry,dict) else None
+        if when and dt.timedelta(0)<=cutoff-when<=dt.timedelta(hours=72):
+            cooldown_domains.append(domain)
     # Only LIVE runs discover new publisher feeds. Historical research must never
     # fetch today's web and silently backdate it to a prior forecast cutoff.
     if network and live_collection:
@@ -457,9 +465,18 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             try:from primary_source_discovery import discover
             except ImportError:from src.primary_source_discovery import discover
             dynamic_events,dynamic_audit=discover(read(previous_registry),iso(cutoff),
-                max_sites=14,
+                max_sites=14,skip_domains=cooldown_domains,
                 known_feed_urls=[entry["url"] for entry in research.get("source_catalog",[])
                     if entry.get("kind")=="rss" and entry.get("url")])
+            observed_at=iso(dt.datetime.now(UTC))
+            for entry in dynamic_audit.get("sources",[]):
+                probe_history[entry["domain"]]={
+                    "last_probed_utc":observed_at,"home_status":entry.get("home_status"),
+                    "feed_status":entry.get("feed_status"),
+                    "substantive":entry.get("substantive",0),
+                    "article_count":entry.get("article_count",0)}
+    dynamic_audit["domain_cooldown_hours"]=72
+    dynamic_audit["domains_skipped_due_to_recent_probe"]=len(cooldown_domains)
     events=deduplicate(all_events+manual+dynamic_events)
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
@@ -791,6 +808,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "manual_research_context_file":"docs/intelligence/deep_research_queue.json",
        "manual_append_only_input":"docs/intelligence/manual_inputs/findings.jsonl",
        "new_public_source_discovery_file":"docs/intelligence/discovered_public_feeds.json",
+       "source_probe_history_file":"docs/intelligence/source_probe_history.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
@@ -806,6 +824,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"open_discovery.json",{"emergent_terms":emergent,
           "unresolved_global_count":len(glob),
           "source_discovery_notes":"Themes and asset associations are leads, never verified causality."})
+    write(out/"source_probe_history.json",probe_history)
     write(out/"discovered_public_feeds.json",dynamic_audit)
     write(out/"source_registry_proposals.json",{"candidate_publishers":source_proposals,
           "auto_added_to_collector":0,
