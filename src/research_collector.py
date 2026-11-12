@@ -195,9 +195,21 @@ def parse_feed(body,source,observed,limit=40):
                 if published:break
         obs=parse_utc(observed)
         if published and obs and published>obs+dt.timedelta(minutes=3):continue
+        # Preserve provider-published summaries instead of discarding them.
+        # RSS content:encoded, Atom content/summary and HTML descriptions
+        # are treated as source snippets, NOT independently verified claims.
+        raw_summary=''
+        for label in ('encoded','content','summary','description','subtitle'):
+            node=children.get(label)
+            if node is None:continue
+            value=''.join(node.itertext()).strip()
+            if len(value)>len(raw_summary):raw_summary=value
+        summary=re.sub(r'\\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',raw_summary))).strip()[:1300]
+        if len(summary)<35:summary=''
         # A feed item with unknown publication time is saved only as unverified.
         item_id=hashlib.sha256((url.split('?')[0].lower()).encode()).hexdigest()[:24]
         out.append({'event_id':item_id,'source_id':source,'headline':title,'url':url,
+                    'excerpt':summary,'context_origin':'PUBLISHER_FEED_SUMMARY' if summary else 'TITLE_ONLY',
                     'published_utc':iso(published),'published_time_status':'VERIFIED_FEED_DATE' if published else 'UNKNOWN',
                     'observed_utc':observed})
     return out
