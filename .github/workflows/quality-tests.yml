@@ -20,3 +20,5 @@ jobs:
           python -m unittest discover -s tests -p 'test_crypto_evidence_engine.py' -v
           python -m unittest discover -s tests -p 'test_evidence_intelligence.py' -v
           python -m unittest discover -s tests -p 'test_event_sources.py' -v
+          python -m unittest discover -s tests -p 'test_research_collector.py' -v
+          python -m unittest discover -s tests -p 'test_free_open_intelligence.py' -v
