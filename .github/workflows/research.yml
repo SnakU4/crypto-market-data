@@ -1,11 +1,6 @@
 name: CMC100 Wide Research Capture
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'src/research_collector.py'
-      - 'tests/test_research_collector.py'
-      - '.github/workflows/research.yml'
   schedule:
     # Broad public sources collected 3x before the midnight UTC forecast;
     # actual capture timestamps govern any point-in-time usage.
