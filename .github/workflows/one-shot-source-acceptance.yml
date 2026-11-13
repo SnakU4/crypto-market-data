@@ -1,8 +1,5 @@
 name: CMC100 Source-First Acceptance (single controlled run)
 on:
-  push:
-    paths:
-      - '.github/workflows/one-shot-source-acceptance.yml'
   workflow_dispatch:
 
 permissions:
