@@ -1,0 +1,95 @@
+name: CMC100 Source-First Acceptance (single controlled run)
+on:
+  push:
+    paths:
+      - '.github/workflows/one-shot-source-acceptance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cmc100-one-shot-source-acceptance
+  cancel-in-progress: false
+
+jobs:
+  source-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate source-collector and integrated-research syntax only
+        run: |
+          python -m py_compile src/research_collector.py src/free_open_intelligence.py src/primary_source_discovery.py
+
+      - name: Capture all cost-free original-source, macro, sector and coin data
+        run: python src/research_collector.py --max-workers 7
+
+      - name: Build complete free intelligence including full direct-source batches
+        run: |
+          python src/free_open_intelligence.py --network --max-followups 20 --max-articles 80
+
+      - name: Compare genuine contextual research quality with existing baseline
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('docs/intelligence')
+          c=json.loads((p/'coverage_audit.json').read_text())
+          m=json.loads((p/'manifest.json').read_text())
+          rs=json.loads(pathlib.Path('docs/research/status.json').read_text())
+          numerator=c['evidence_counts']['substantive_source_excerpt_leads']
+          denominator=c['evidence_counts']['canonical_research_leads']
+          direct=c['source_context_audit']
+          results={
+            'baseline_substantive_ratio':0.0887,
+            'new_substantive_ratio':round(numerator/denominator,6),
+            'new_substantive_count':numerator,
+            'canonical_including_unresolved_google_headlines':denominator,
+            'absolute_percentage_point_change_vs_baseline':round(
+              100*(numerator/denominator-0.0887),3),
+            'direct_source_context_ratio':direct['direct_research_substantive_ratio'],
+            'direct_source_context_rows':direct['direct_research_substantive_count'],
+            'direct_source_total_rows':direct['direct_research_total'],
+            'new_source_catalog_requests_attempted':rs['sources_configured'],
+            'new_source_catalog_requests_ok':rs['sources_ok'],
+            'source_event_full_index':c['direct_research_full_source_audit'],
+            'raw_source_events_before_cap':rs.get('rss_events_seen_before_cap'),
+            'discarded_source_events_due_to_cap':rs.get('rss_events_discarded_due_to_cap'),
+            'new_source_type_quality':{k:v for k,v in
+               direct['by_plane_and_access_type'].items()
+               if 'DIRECT_SOURCE' in k},
+            'verified_independent_primary_claims':
+               c['research_quality_gate']['independently_primary_verified_claims'],
+            'research_status':c['research_quality_gate']['material_research_status'],
+            'no_paid_api':m['no_paid_api_used']}
+          out=p/'source_first_acceptance.json'
+          out.write_text(json.dumps(results,indent=2,sort_keys=True)+'\n')
+          print(json.dumps(results,indent=2))
+          assert m['all_100_verified'] and m['no_paid_api_used']
+          assert c['direct_research_full_source_audit']['mode']=='FULL_SHA_VERIFIED_BATCHES'
+          assert denominator>=numerator>0
+          PY
+
+      - name: Publish research source and intelligence status
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research/ docs/intelligence/manifest.json docs/intelligence/coverage_audit.json \
+            docs/intelligence/global_intelligence.json docs/intelligence/sector_intelligence.json \
+            docs/intelligence/coin_batches/ docs/intelligence/open_discovery.json \
+            docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
+            docs/intelligence/source_registry_proposals.json docs/intelligence/discovered_public_feeds.json \
+            docs/intelligence/source_probe_history.json docs/intelligence/knowledge_index.json \
+            docs/intelligence/deep_research_queue.json docs/intelligence/source_first_acceptance.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Source-first evidence acceptance: complete original-source collection"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
