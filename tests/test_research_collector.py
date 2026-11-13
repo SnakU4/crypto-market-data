@@ -159,7 +159,7 @@ class ResearchCollectorTests(unittest.TestCase):
             r.write_bundle(out,pathlib.Path(d)/'another')
             self.assertEqual(len((pathlib.Path(d)/'coin_features.csv').read_text().splitlines()),101)
             self.assertTrue((pathlib.Path(d)/'status.json').exists())
-            self.assertEqual(len(list((pathlib.Path(d)/'archive').rglob('*.json'))),1)
+            self.assertEqual(len(list((pathlib.Path(d)/'archive').rglob('*.json.gz'))),1)
 
     def test_incomplete_index_fails_closed(self):
         with self.assertRaisesRegex(ValueError,'100 officially verified'):
