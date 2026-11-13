@@ -1,0 +1,246 @@
+#!/usr/bin/env python3
+"""Keyless public per-coin descriptive context; a baseline, NOT 24h catalysts.
+
+Uses CoinPaprika descriptive profiles, CoinGecko public profiles as a strictly
+identity-matched fallback, and persists an auditable cache in docs/intelligence.
+Never invents descriptions or substitutes market price rows for actual context.
+"""
+from __future__ import annotations
+
+import concurrent.futures
+import datetime as dt
+import html
+import json
+import pathlib
+import re
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+
+UTC = dt.timezone.utc
+USER_AGENT = "CMC100-Coin-Context/1.0 (public research; github.com/SnakU4/crypto-market-data)"
+PAPRIKA = "https://api.coinpaprika.com/v1"
+GECKO = "https://api.coingecko.com/api/v3"
+CACHE_PATH = "docs/intelligence/coin_profiles.json"
+PROFILES_MAX_AGE_HOURS = 72
+
+
+def stamp(t):
+    return t.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def parsed(value):
+    try:
+        v = dt.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        return v.astimezone(UTC) if v.tzinfo else None
+    except (ValueError, TypeError, OverflowError):
+        return None
+
+
+def canonical(value):
+    """Compare complete names AND symbols, not symbol-only collisions."""
+    return re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
+
+
+def clean(text, limit=850):
+    v = html.unescape(re.sub(r"<[^>]*>", " ", str(text or "")))
+    v = re.sub(r"\s+", " ", v).strip()
+    v = re.sub(r"\s*Source:\s*CoinPaprika\.com\s*$", "", v, flags=re.I)
+    return v[:limit].strip()
+
+
+def fetch_json(url, opener=None):
+    """Only documented public provider hosts; never follows user-supplied URLs."""
+    host = urllib.parse.urlsplit(url).hostname
+    if host not in ("api.coinpaprika.com", "api.coingecko.com"):
+        raise ValueError("Source endpoint not allowlisted")
+    req = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT, "Accept": "application/json"})
+    op = opener or urllib.request.urlopen
+    with op(req, timeout=12) as response:
+        raw = response.read(8_000_001)
+        if len(raw) > 8_000_000:
+            raise ValueError("Provider response exceeds 8 MB")
+    return json.loads(raw)
+
+
+def exact_match(assets, listing):
+    """Reject ambiguous listings; require both exact normalized asset name and ticker."""
+    found = {}
+    index = {}
+    for item in listing:
+        if not isinstance(item, dict) or not item.get("id"):
+            continue
+        if item.get("is_active") is False:
+            continue
+        key = (canonical(item.get("name")), canonical(item.get("symbol")))
+        index.setdefault(key, []).append(item)
+    for asset in assets:
+        key = (canonical(asset["name"]), canonical(asset["symbol"]))
+        rows = index.get(key, [])
+        # Multiple active assets with same name and ticker are NOT safely identifiable.
+        if len(rows) == 1:
+            found[str(asset["cmc_id"])] = rows[0]["id"]
+    return found
+
+
+def valid_profile(asset, raw, provider, received):
+    if not isinstance(raw, dict):
+        return None
+    if canonical(raw.get("name")) != canonical(asset["name"]) or canonical(raw.get("symbol")) != canonical(asset["symbol"]):
+        return None
+    if provider == "coinpaprika":
+        description = clean(raw.get("description"))
+        tags = [clean(t.get("name"), 70) for t in raw.get("tags", []) if isinstance(t, dict)]
+        attrs = {k: raw.get(k) for k in ("type", "started_at", "proof_type",
+            "hash_algorithm", "open_source", "development_status", "org_structure")
+            if raw.get(k) is not None}
+        src_id = str(raw["id"])
+        src_url = "https://coinpaprika.com/coin/" + urllib.parse.quote(src_id, safe="") + "/"
+        links = raw.get("links") or {}
+        url_types = ("website", "source_code", "explorer")
+        citations = {k: [v for v in links.get(k, []) if isinstance(v, str) and v.startswith("https://")][:2]
+                     for k in url_types if isinstance(links.get(k), list)}
+        wp = raw.get("whitepaper") or {}
+        if isinstance(wp, dict) and str(wp.get("link", "")).startswith("https://"):
+            citations["whitepaper"] = [wp["link"]]
+    else:
+        lang = raw.get("description") or {}
+        description = clean((lang.get("en") or lang.get("de") or "") if isinstance(lang, dict) else "", 850)
+        tags = [clean(t, 70) for t in raw.get("categories", []) if isinstance(t, str)]
+        attrs = {"genesis_date": raw.get("genesis_date"),
+                 "asset_platform_id": raw.get("asset_platform_id"),
+                 "block_time_in_minutes": raw.get("block_time_in_minutes")}
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+        src_id = str(raw["id"])
+        src_url = "https://www.coingecko.com/en/coins/" + urllib.parse.quote(src_id, safe="")
+        links = raw.get("links") or {}
+        citations = {}
+        for key in ("homepage", "blockchain_site", "official_forum_url"):
+            val = links.get(key) or []
+            if isinstance(val, list):
+                citations[key] = [v for v in val if isinstance(v, str) and v.startswith("https://")][:2]
+        code = links.get("repos_url") or {}
+        if isinstance(code, dict):
+            citations["source_code"] = [v for v in (code.get("github") or []) if isinstance(v, str) and v.startswith("https://")][:2]
+
+    tags = list(dict.fromkeys(x for x in tags if x))[:12]
+    # Context requires an actual descriptive account AND at least one independent
+    # identity-specific detail. Bare name, ticker, price, or tag list never suffices.
+    meaningful = (len(description) >= 105 and len(description.split()) >= 16
+                  and (len(tags) >= 1 or len(attrs) >= 2 or bool(citations)))
+    return {"cmc_id": int(asset["cmc_id"]), "name": asset["name"], "symbol": asset["symbol"],
+       "provider": provider, "provider_id": src_id, "source_url": src_url,
+       "observed_utc": received, "description_excerpt": description,
+       "categories": tags, "technology_and_project_attributes": attrs,
+       "primary_links_unverified": citations,
+       "has_substantive_descriptive_context": bool(meaningful),
+       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+       "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH"}
+
+
+def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko=15):
+    root = pathlib.Path(root)
+    path = root / CACHE_PATH
+    past = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    prior = past.get("profiles") or {}
+    if not isinstance(prior, dict):
+        prior = {}
+    cutoff = cutoff.astimezone(UTC)
+    profiles = {}
+    for asset in assets:
+        key = str(asset["cmc_id"])
+        item = prior.get(key)
+        if (isinstance(item, dict) and int(item.get("cmc_id", -1)) == int(asset["cmc_id"])
+                and canonical(item.get("name")) == canonical(asset["name"])
+                and canonical(item.get("symbol")) == canonical(asset["symbol"])
+                and (parsed(item.get("observed_utc")) or cutoff + dt.timedelta(days=1)) <= cutoff):
+            profiles[key] = item
+    audit = {"configured_sources": ["coinpaprika_keyless_coin_profiles", "coingecko_public_coin_profiles"],
+             "calls": 0, "success": 0, "errors": [], "source_status": {},
+             "strict_name_and_symbol_matching": True, "historical_network_disabled": not network}
+    if network:
+        received = stamp(dt.datetime.now(UTC))
+        try:
+            pap_list = fetch_json(PAPRIKA + "/coins", opener)
+            pap_ids = exact_match(assets, pap_list)
+            audit["source_status"]["coinpaprika_coin_list"] = "OK"
+            audit["calls"] += 1
+        except (ValueError, KeyError, TypeError, OSError, urllib.error.URLError) as exc:
+            pap_ids = {}
+            audit["errors"].append("coinpaprika_list:" + type(exc).__name__)
+            audit["source_status"]["coinpaprika_coin_list"] = "FAILED"
+        work = []
+        for asset in assets:
+            key = str(asset["cmc_id"])
+            previous = profiles.get(key, {})
+            first = parsed(previous.get("observed_utc"))
+            age = (cutoff - first).total_seconds() / 3600 if first else 99999
+            if key in pap_ids and (age > PROFILES_MAX_AGE_HOURS or not previous.get("has_substantive_descriptive_context")):
+                work.append((asset, PAPRIKA + "/coins/" + urllib.parse.quote(pap_ids[key], safe="")))
+        def pap_call(pair):
+            asset, url = pair
+            try:
+                raw = fetch_json(url, opener)
+                return asset, valid_profile(asset, raw, "coinpaprika", received), None
+            except (ValueError, TypeError, KeyError, OSError, urllib.error.URLError) as exc:
+                return asset, None, type(exc).__name__
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            for asset, item, err in pool.map(pap_call, work):
+                audit["calls"] += 1
+                if item:
+                    audit["success"] += 1
+                    key = str(asset["cmc_id"])
+                    if item["has_substantive_descriptive_context"] or not profiles.get(key, {}).get("has_substantive_descriptive_context"):
+                        profiles[key] = item
+                else:
+                    audit["errors"].append("coinpaprika:" + asset["symbol"] + ":" + (err or "IDENTITY_MISMATCH"))
+        missing = [a for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
+        if missing and max_gecko > 0:
+            try:
+                glist = fetch_json(GECKO + "/coins/list", opener)
+                gids = exact_match(missing, glist)
+                audit["calls"] += 1
+                audit["source_status"]["coingecko_coin_list"] = "OK"
+            except (ValueError, KeyError, TypeError, OSError, urllib.error.URLError) as exc:
+                gids = {}
+                audit["errors"].append("coingecko_list:" + type(exc).__name__)
+                audit["source_status"]["coingecko_coin_list"] = "FAILED"
+            # Cap unauthenticated CoinGecko calls to respect the public 5-15/min limit.
+            for asset in missing:
+                key = str(asset["cmc_id"])
+                if max_gecko <= 0:
+                    break
+                if key not in gids:
+                    continue
+                max_gecko -= 1
+                params = "?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false"
+                url = GECKO + "/coins/" + urllib.parse.quote(gids[key], safe="") + params
+                try:
+                    raw = fetch_json(url, opener)
+                    item = valid_profile(asset, raw, "coingecko", stamp(dt.datetime.now(UTC)))
+                    audit["calls"] += 1
+                    if item:
+                        audit["success"] += 1
+                        if item["has_substantive_descriptive_context"] or not profiles.get(key, {}).get("has_substantive_descriptive_context"):
+                            profiles[key] = item
+                    else:
+                        audit["errors"].append("coingecko:" + asset["symbol"] + ":IDENTITY_MISMATCH")
+                except (ValueError, TypeError, KeyError, OSError, urllib.error.URLError) as exc:
+                    audit["calls"] += 1
+                    audit["errors"].append("coingecko:" + asset["symbol"] + ":" + type(exc).__name__)
+                time.sleep(7.1)
+    substantive = [a for a in assets if profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
+    gap = [{"cmc_id": a["cmc_id"], "symbol": a["symbol"], "name": a["name"],
+            "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION"}
+           for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
+    audit.update({"assets": len(assets), "profile_present": len(profiles),
+        "substantive_project_profiles": len(substantive), "profile_gaps": gap,
+        "all_100_substantive_background": len(gap) == 0,
+        "recent_24h_catalyst_coverage_NOT_INFERRED": True,
+        "disclaimer": "Third-party descriptive context is not independently verified, current news, or token-price causality."})
+    return {"schema_version": "cmc100-third-party-coin-profiles-v1",
+        "source_licensing": "CoinPaprika free/keyless for personal use; cite Powered by CoinPaprika. Check redistribution and commercial licensing.",
+        "profiles": profiles, "audit": audit}, audit
