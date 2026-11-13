@@ -32,7 +32,7 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 6,
+      "results": 10,
       "status": "OK",
       "task_id": "T:200d08633937"
     },
@@ -47,12 +47,12 @@
       "task_id": "T:e0a77ad085f0"
     },
     {
-      "results": 4,
+      "results": 3,
       "status": "OK",
       "task_id": "T:fc35c83f416c"
     },
     {
-      "results": 7,
+      "results": 6,
       "status": "OK",
       "task_id": "T:be5169ccbd6d"
     },
@@ -72,19 +72,14 @@
       "task_id": "T:f8fd94d8894c"
     },
     {
-      "results": 7,
+      "results": 12,
       "status": "OK",
-      "task_id": "T:dfcc8f6766e0"
-    },
-    {
-      "results": 9,
-      "status": "OK",
-      "task_id": "T:4c936c7a4f7d"
+      "task_id": "T:590b383b34bd"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:ceb6af5cb5af"
+      "task_id": "T:231514622f3b"
     },
     {
       "results": 0,
@@ -94,12 +89,17 @@
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:590b383b34bd"
+      "task_id": "T:aba7cbe84ed1"
     },
     {
-      "results": 12,
+      "results": 9,
       "status": "OK",
-      "task_id": "T:aba7cbe84ed1"
+      "task_id": "T:a7ec3ce54236"
+    },
+    {
+      "results": 0,
+      "status": "OK",
+      "task_id": "T:7ab6253c47b7"
     }
   ],
   "adjacent_discovery_source": {
@@ -121,7 +121,7 @@
     "direct_publisher_article_fetch_attempted": 80,
     "engine_rows": 3229,
     "expanded_rows": 10339,
-    "free_adaptive_followup_leads": 199,
+    "free_adaptive_followup_leads": 194,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 13941,
     "long_excerpts_by_character_count_not_claim_verification": 5586,
@@ -147,14 +147,138 @@
     "rows": 0
   },
   "new_public_source_discovery_audit": {
-    "advertised_existing_feed_count": 0,
+    "advertised_existing_feed_count": 4,
     "domain_cooldown_hours": 72,
-    "domains_attempted": 0,
+    "domains_attempted": 14,
     "domains_found_content": 0,
     "domains_skipped_due_to_recent_probe": 39,
     "new_feed_items": 0,
     "not_verified_facts": true,
-    "sources": [],
+    "sources": [
+      {
+        "advertised_feeds": [
+          "https://www.banklesstimes.com/feed/",
+          "https://www.banklesstimes.com/comments/feed/"
+        ],
+        "article_count": 0,
+        "domain": "banklesstimes.com",
+        "duplicate_feed_url": "https://www.banklesstimes.com/feed/",
+        "feed_status": "HTTPError",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "economist.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "nature.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "u.today",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "bankofengland.co.uk",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "ROBOTS_DISALLOW",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "blockworks-co.imgix.net",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "darkreading.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://www.wired.com/feed/rss"
+        ],
+        "article_count": 0,
+        "domain": "wired.com",
+        "duplicate_feed_url": "https://www.wired.com/feed/rss",
+        "feed_status": "ALREADY_COLLECTED",
+        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "finextra.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "ROBOTS_DISALLOW",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://cryptopotato.com/feed/"
+        ],
+        "article_count": 0,
+        "domain": "cryptopotato.com",
+        "duplicate_feed_url": "https://cryptopotato.com/feed/",
+        "feed_status": "ALREADY_COLLECTED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "cnbc.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://cryptobriefing.com/feed/"
+        ],
+        "article_count": 0,
+        "domain": "cryptobriefing.com",
+        "duplicate_feed_url": "https://cryptobriefing.com/feed/",
+        "feed_status": "ALREADY_COLLECTED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "forums.sui.io",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "HTTPError",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://www.techspot.com/backend.xml"
+        ],
+        "article_count": 0,
+        "domain": "techspot.com",
+        "duplicate_feed_url": "https://www.techspot.com/backend.xml",
+        "feed_status": "ALREADY_COLLECTED",
+        "home_status": "OK",
+        "substantive": 0
+      }
+    ],
     "substantive_feed_items": 0
   },
   "official_assets": 100,
@@ -219,7 +343,7 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 239,
+        "published_last_24h": 186,
         "published_last_72h": 411,
         "substantive": 0,
         "substantive_published_last_72h": 0,
@@ -230,10 +354,10 @@
         "distinct_source_domains": 20,
         "feed_summary_count": 0,
         "published_date_missing": 1,
-        "published_last_24h": 73,
-        "published_last_72h": 178,
+        "published_last_24h": 53,
+        "published_last_72h": 173,
         "substantive": 224,
-        "substantive_published_last_72h": 167,
+        "substantive_published_last_72h": 162,
         "total": 236
       },
       "expanded:GOOGLE_NEWS_AGGREGATOR": {
@@ -241,8 +365,8 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 1991,
-        "published_last_72h": 5485,
+        "published_last_24h": 1402,
+        "published_last_72h": 5148,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 9524
@@ -252,10 +376,10 @@
         "distinct_source_domains": 81,
         "feed_summary_count": 2373,
         "published_date_missing": 18,
-        "published_last_24h": 578,
-        "published_last_72h": 961,
+        "published_last_24h": 457,
+        "published_last_72h": 936,
         "substantive": 1854,
-        "substantive_published_last_72h": 704,
+        "substantive_published_last_72h": 692,
         "total": 2663
       }
     },

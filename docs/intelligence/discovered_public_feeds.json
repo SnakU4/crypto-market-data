@@ -1,11 +1,135 @@
 {
-  "advertised_existing_feed_count": 0,
+  "advertised_existing_feed_count": 4,
   "domain_cooldown_hours": 72,
-  "domains_attempted": 0,
+  "domains_attempted": 14,
   "domains_found_content": 0,
   "domains_skipped_due_to_recent_probe": 39,
   "new_feed_items": 0,
   "not_verified_facts": true,
-  "sources": [],
+  "sources": [
+    {
+      "advertised_feeds": [
+        "https://www.banklesstimes.com/feed/",
+        "https://www.banklesstimes.com/comments/feed/"
+      ],
+      "article_count": 0,
+      "domain": "banklesstimes.com",
+      "duplicate_feed_url": "https://www.banklesstimes.com/feed/",
+      "feed_status": "HTTPError",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "economist.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "nature.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "u.today",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "bankofengland.co.uk",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "ROBOTS_DISALLOW",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "blockworks-co.imgix.net",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "darkreading.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://www.wired.com/feed/rss"
+      ],
+      "article_count": 0,
+      "domain": "wired.com",
+      "duplicate_feed_url": "https://www.wired.com/feed/rss",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "finextra.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "ROBOTS_DISALLOW",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://cryptopotato.com/feed/"
+      ],
+      "article_count": 0,
+      "domain": "cryptopotato.com",
+      "duplicate_feed_url": "https://cryptopotato.com/feed/",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "cnbc.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://cryptobriefing.com/feed/"
+      ],
+      "article_count": 0,
+      "domain": "cryptobriefing.com",
+      "duplicate_feed_url": "https://cryptobriefing.com/feed/",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "forums.sui.io",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "HTTPError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://www.techspot.com/backend.xml"
+      ],
+      "article_count": 0,
+      "domain": "techspot.com",
+      "duplicate_feed_url": "https://www.techspot.com/backend.xml",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "OK",
+      "substantive": 0
+    }
+  ],
   "substantive_feed_items": 0
 }
