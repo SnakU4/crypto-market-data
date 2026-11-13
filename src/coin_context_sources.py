@@ -41,14 +41,14 @@ def parsed(value):
 
 def canonical(value):
     """Compare full project identity strings, never ticker alone."""
-    return re.sub(r"[^\\w]", "", str(value or "").casefold(), flags=re.UNICODE)
+    return re.sub(r"[^\w]", "", str(value or "").casefold(), flags=re.UNICODE)
 
 
 def project_name(value):
     """Remove only explicit CoinMarketCap display annotations, not identity."""
     name=str(value or "")
-    name=re.sub(r"\\s*\\[(?:New|Old)\\]\\s*$", "", name, flags=re.I)
-    name=re.sub(r"\\s*\\((?:prev\\.|previously|ex[-.]?)\\s+[^)]*\\)\\s*$",
+    name=re.sub(r"\s*\[(?:New|Old)\]\s*$", "", name, flags=re.I)
+    name=re.sub(r"\s*\((?:prev\.|previously|ex[-.]?)\s+[^)]*\)\s*$",
                 "", name, flags=re.I)
     return canonical(name)
 
@@ -163,7 +163,7 @@ def extra_context(kind, raw, observed, cutoff):
             title = clean(r.get("name") or r.get("title"), 150)
             description = clean(r.get("description"), 310)
             date = str(r.get("date") or r.get("start_date") or r.get("date_from") or "")
-            if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", date):
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
                 date += "T00:00:00Z"
             url = r.get("link") or r.get("url")
             if not title or not date or not parsed(date):
