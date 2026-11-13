@@ -40,8 +40,17 @@ def parsed(value):
 
 
 def canonical(value):
-    """Compare complete names AND symbols, not symbol-only collisions."""
-    return re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
+    """Compare full project identity strings, never ticker alone."""
+    return re.sub(r"[^\\w]", "", str(value or "").casefold(), flags=re.UNICODE)
+
+
+def project_name(value):
+    """Remove only explicit CoinMarketCap display annotations, not identity."""
+    name=str(value or "")
+    name=re.sub(r"\\s*\\[(?:New|Old)\\]\\s*$", "", name, flags=re.I)
+    name=re.sub(r"\\s*\\((?:prev\\.|previously|ex[-.]?)\\s+[^)]*\\)\\s*$",
+                "", name, flags=re.I)
+    return canonical(name)
 
 
 def clean(text, limit=450):
@@ -75,10 +84,10 @@ def exact_match(assets, listing):
             continue
         if item.get("is_active") is False:
             continue
-        key = (canonical(item.get("name")), canonical(item.get("symbol")))
+        key = (project_name(item.get("name")), canonical(item.get("symbol")))
         index.setdefault(key, []).append(item)
     for asset in assets:
-        key = (canonical(asset["name"]), canonical(asset["symbol"]))
+        key = (project_name(asset["name"]), canonical(asset["symbol"]))
         rows = index.get(key, [])
         # Multiple active assets with same name and ticker are NOT safely identifiable.
         if len(rows) == 1:
@@ -89,7 +98,7 @@ def exact_match(assets, listing):
 def valid_profile(asset, raw, provider, received):
     if not isinstance(raw, dict):
         return None
-    if canonical(raw.get("name")) != canonical(asset["name"]) or canonical(raw.get("symbol")) != canonical(asset["symbol"]):
+    if project_name(raw.get("name")) != project_name(asset["name"]) or canonical(raw.get("symbol")) != canonical(asset["symbol"]):
         return None
     if provider == "coinpaprika":
         description = clean(raw.get("description"))
@@ -154,6 +163,8 @@ def extra_context(kind, raw, observed, cutoff):
             title = clean(r.get("name") or r.get("title"), 150)
             description = clean(r.get("description"), 310)
             date = str(r.get("date") or r.get("start_date") or r.get("date_from") or "")
+            if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", date):
+                date += "T00:00:00Z"
             url = r.get("link") or r.get("url")
             if not title or not date or not parsed(date):
                 continue
@@ -205,11 +216,11 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
         key = str(asset["cmc_id"])
         item = prior.get(key)
         if (isinstance(item, dict) and int(item.get("cmc_id", -1)) == int(asset["cmc_id"])
-                and canonical(item.get("name")) == canonical(asset["name"])
+                and project_name(item.get("name")) == project_name(asset["name"])
                 and canonical(item.get("symbol")) == canonical(asset["symbol"])
                 and (parsed(item.get("observed_utc")) or cutoff + dt.timedelta(days=1)) <= cutoff):
             profiles[key] = item
-    audit = {"configured_sources": ["coinpaprika_keyless_coin_profiles", "coingecko_public_coin_profiles"],
+    audit = {"configured_sources": ["coinpaprika_keyless_coin_profiles", "coinpaprika_coin_events", "coinpaprika_coin_markets", "coingecko_public_coin_profiles"],
              "calls": 0, "success": 0, "errors": [], "source_status": {},
              "strict_name_and_symbol_matching": True, "historical_network_disabled": not network}
     if network:
