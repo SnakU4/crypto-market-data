@@ -11,6 +11,7 @@ import concurrent.futures
 import datetime as dt
 import html
 import json
+import math
 import pathlib
 import re
 import time
@@ -141,7 +142,57 @@ def valid_profile(asset, raw, provider, received):
        "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH"}
 
 
-def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko=15):
+def extra_context(kind, raw, observed, cutoff):
+    """Bounded structured provider data; event date is NOT its publication date."""
+    if not isinstance(raw, list):
+        return [] if kind == "events" else {}
+    if kind == "events":
+        out = []
+        for r in raw:
+            if not isinstance(r, dict):
+                continue
+            title = clean(r.get("name") or r.get("title"), 150)
+            description = clean(r.get("description"), 310)
+            date = str(r.get("date") or r.get("start_date") or r.get("date_from") or "")
+            url = r.get("link") or r.get("url")
+            if not title or not date or not parsed(date):
+                continue
+            when = parsed(date)
+            # An announced event may be in the future; retain that distinction.
+            if not (cutoff - dt.timedelta(days=45) <= when <= cutoff + dt.timedelta(days=120)):
+                continue
+            out.append({"title": title, "description_excerpt": description,
+                "event_date_utc": stamp(when),
+                "source_url": url if isinstance(url, str) and url.startswith("https://") else None,
+                "first_observed_utc": observed,
+                "relation_status": "THIRD_PARTY_COIN_EVENT_DATE_NOT_PUBLICATION_DATE",
+                "has_substantive_event_details": len(description) >= 110 and len(description.split()) >= 16})
+        out.sort(key=lambda x:x["event_date_utc"])
+        return out[:8]
+    results = []
+    for r in raw:
+        if not isinstance(r, dict):
+            continue
+        exchange = r.get("exchange") or {}
+        exchange_name = exchange.get("name") if isinstance(exchange, dict) else str(exchange)
+        pair = str(r.get("pair") or "")
+        quotes = r.get("quotes") or {}
+        usd = quotes.get("USD") or {} if isinstance(quotes, dict) else {}
+        volume = usd.get("volume_24h") if isinstance(usd, dict) else None
+        if isinstance(volume, (int, float)) and math.isfinite(volume) and volume >= 0:
+            results.append({"exchange": clean(exchange_name, 75),
+                "pair": clean(pair, 55), "volume_24h_usd": round(volume, 2)})
+    results.sort(key=lambda x:-x["volume_24h_usd"])
+    return {"reported_pair_count_with_usd_volume": len(results),
+        "top_markets_by_reported_24h_volume": results[:6],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME":
+            round(sum(x["volume_24h_usd"] for x in results), 2),
+        "observed_utc": observed,
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity."}
+
+
+def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko=15, max_extra_per_type=100):
     root = pathlib.Path(root)
     path = root / CACHE_PATH
     past = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -197,6 +248,45 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
                         profiles[key] = item
                 else:
                     audit["errors"].append("coinpaprika:" + asset["symbol"] + ":" + (err or "IDENTITY_MISMATCH"))
+        # Free project-specific dated events and market/venue distribution.
+        # Cache these independently for 24h so keyless monthly quotas remain bounded.
+        # This does not imply every coin has events, or that a listed event is a catalyst.
+        extra_work = []
+        for kind in ("events", "markets"):
+            chosen = 0
+            for asset in assets:
+                key = str(asset["cmc_id"])
+                if key not in pap_ids or key not in profiles or chosen >= max_extra_per_type:
+                    continue
+                field = kind + "_observed_utc"
+                last = parsed(profiles[key].get(field))
+                if last and (cutoff - last).total_seconds() < 24 * 3600:
+                    continue
+                extra_work.append((asset, kind, PAPRIKA + "/coins/" +
+                    urllib.parse.quote(pap_ids[key], safe="") + "/" + kind))
+                chosen += 1
+        def extra_call(task):
+            asset, kind, url = task
+            try:
+                data = fetch_json(url, opener)
+                return asset, kind, extra_context(kind, data, stamp(dt.datetime.now(UTC)), cutoff), None
+            except (ValueError, TypeError, KeyError, OSError, urllib.error.URLError) as exc:
+                return asset, kind, None, type(exc).__name__
+        audit["extra_calls"] = 0
+        audit["extra_ok"] = {"events":0, "markets":0}
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            for asset, kind, data, err in pool.map(extra_call, extra_work):
+                audit["calls"] += 1
+                audit["extra_calls"] += 1
+                if data is not None:
+                    audit["success"] += 1
+                    audit["extra_ok"][kind] += 1
+                    profile = profiles[str(asset["cmc_id"])]
+                    profile["coin_" + kind] = data
+                    profile[kind + "_observed_utc"] = stamp(dt.datetime.now(UTC))
+                else:
+                    audit["errors"].append("coinpaprika_" + kind + ":" +
+                        asset["symbol"] + ":" + (err or "UNKNOWN_ERROR"))
         missing = [a for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
         if missing and max_gecko > 0:
             try:
@@ -237,6 +327,10 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
             "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION"}
            for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
     audit.update({"assets": len(assets), "profile_present": len(profiles),
+        "coins_with_dated_third_party_events":sum(bool(p.get("coin_events")) for p in profiles.values()),
+        "coins_with_cross_exchange_market_observations":sum(bool(
+            (p.get("coin_markets") or {}).get("reported_pair_count_with_usd_volume"))
+            for p in profiles.values()),
         "substantive_project_profiles": len(substantive), "profile_gaps": gap,
         "all_100_substantive_background": len(gap) == 0,
         "recent_24h_catalyst_coverage_NOT_INFERRED": True,
