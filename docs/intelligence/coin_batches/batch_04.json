@@ -187,6 +187,9 @@
         "symbol": "SUI-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -197,51 +200,22 @@
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
-        },
-        {
-          "family": "okx_orderbooks",
-          "observation": {
-            "ask": 0.7958,
-            "bid": 0.7957,
-            "book_source_utc": "2026-11-13T07:07:12Z",
-            "cmc_id": 20947,
-            "depth_status": "VALIDATED_CONTRACT_VALUE",
-            "instrument_id": "SUI-USDT-SWAP",
-            "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.25668,
-            "top5_ask_usd": 76516.99,
-            "top5_bid_usd": 136906.81
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 4139043544.130376,
-            "cmc_id": 20947,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.102Z",
-            "symbol": "SUI",
-            "total_supply": 10000000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 4139043544.130376,
+        "circulating_supply": null,
         "cmc_id": 20947,
         "coin_name": "Sui",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 10000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SUI",
-        "total_supply": 10000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 3234152571.18,
@@ -411,20 +385,10 @@
         "symbol": "ONDO-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 4869330647.0,
-            "cmc_id": 21159,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.018Z",
-            "symbol": "ONDO",
-            "total_supply": 10000000000.0
-          }
-        },
         {
           "family": "trending",
           "observation": {
@@ -432,25 +396,24 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Ondo",
-            "rank": 9
+            "rank": 8
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 4869330647.0,
+        "circulating_supply": null,
         "cmc_id": 21159,
         "coin_name": "Ondo",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 10000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ONDO",
-        "total_supply": 10000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1646121293.53,
@@ -651,6 +614,9 @@
         "symbol": "APT-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -676,37 +642,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 888926611.581601,
-            "cmc_id": 21794,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 2100000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.034Z",
-            "symbol": "APT",
-            "total_supply": 1211513549.458428
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 888926611.581601,
+        "circulating_supply": null,
         "cmc_id": 21794,
         "coin_name": "Aptos",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 2100000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "APT",
-        "total_supply": 1211513549.458428
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 477969082.92,
@@ -887,6 +839,9 @@
         "symbol": "STRK-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -897,23 +852,10 @@
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 7664828795.064646,
-            "cmc_id": 22691,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "STRK",
-            "total_supply": 10184600000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 7664828795.064646,
+        "circulating_supply": null,
         "cmc_id": 22691,
         "coin_name": "Starknet",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -921,12 +863,11 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "STRK",
-        "total_supply": 10184600000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 279958058.71,
@@ -941,8 +882,26 @@
       "symbol": "STRK"
     },
     {
-      "candidate_event_count": 36,
+      "candidate_event_count": 38,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cryptocurrency prices have entered a fresh bull market as the crypto fear and greed index moves from Monday’s fear zone to over 56. Bitcoin has helped this rebound, rallying over 10% in the last 24 hours. Sui token helped to lead the recovery, rising to $0.8360, much higher than this week’s low of $0.4615. This […] The post Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound appeared first on BanklessTimes .",
+          "id": "research:b4e9d32c293466a95d",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-09T02:01:17Z",
+          "title": "Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound",
+          "url": "https://www.banklesstimes.com/news/2024/08/09/crypto-bull-run-sui-sei-celestia-injective-tokens-lead-rebound/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin (BTC), Ethena (ENA), and Celestia (TIA) prices have held steady this week as attention shifts to the upcoming US Consumer Price Index (CPI) data. BTC was trading at $59,455 on Tuesday morning, higher than this month’s low of 49,000. Ethena, the creator of the USDe stablecoin, was trading at $0.3223, 45% higher than last […] The post US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices? appeared first on BanklessTimes .",
+          "id": "research:c6228eeba27f1917fe",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-13T03:09:06Z",
+          "title": "US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices?",
+          "url": "https://www.banklesstimes.com/news/2024/08/13/us-cpi-data-how-will-it-impact-bitcoin-ethena-and-celestia-prices/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Celestia trends lower as sellers dominate and price slips below the 200-day average Traders Union",
@@ -1014,24 +973,6 @@
           "published_utc": "2026-11-10T22:56:17Z",
           "title": "Why does twilight have wings? - Reddit",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcHhwWjlzQWtYVk42NFh2a3NKSXFRLVdCaVAzbDZSVUJBczRyVllaMzBBNmc4UkwwT0J5NnV0bDZnOHNIU1g4c0dmUHFKM2d2cndIclJmWXZZOUZPUnFQM2ZqSzZiTW5EQ2xKcUhZbkZaZkJHQmlhTnM4MXRnTmFDc0lrQVRoazZZNVljQg?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Is Spike a victim of child trafficking? Reddit",
-          "id": "expanded:383e5edac2ca0d14ac",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T20:54:27Z",
-          "title": "Is Spike a victim of child trafficking? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcHFaN2E1cEFrYldIQ2wxYjdQRzY0MXNfQjNPTEZlT21LVl9MaEhtcElIdmJOX1dCSXNDMDBEWHF5Y3MzMXJ4OTlFbC15LXIxMngtQ2NwYjZyQmJaLXVCLTU4dTZlNGludXZRMk5iNURWdy15ZXVmREpxUFN3SVE1dG9OSDZicXBJN2x4QnAtcF8wTVVqbzN6M2JR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "🏆 Top 5 Crypto winners from the past 24 hours 🏆 1. Quant $QNT🚀4.17% 2. Dash $DASH 🚀+2.85% 3. Celestia #TIA🚀+2.75% 4. 币安人生 #币安人生🚀+2.66% 5. Stacks $STX🚀+2.09% 🚨Remember: Be cautious of meme coin hype and potential rug pulls. DYOR X",
-          "id": "expanded:42861ef68f24fddb3e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T11:35:24Z",
-          "title": "🏆 Top 5 Crypto winners from the past 24 hours 🏆 1. Quant $QNT🚀4.17% 2. Dash $DASH 🚀+2.85% 3. Celestia #TIA🚀+2.75% 4. 币安人生 #币安人生🚀+2.66% 5. Stacks $STX🚀+2.09% 🚨Remember: Be cautious of meme coin hype and potential rug pulls. DYOR - ",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81RnBpVVcyOUlUUEhqZnpTcDQtVUZTNXhsWFNLX2RVcDItcFJ4amdLb3UzZzBtdGVfZXhZYkVhS0JYT1J0RzlRbmk5RWR4SDNfMFhPSm84N0xjWDZ3aWJVTU42bjlfNFZ5RzdLN193?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -1096,6 +1037,110 @@
         "symbol": "TIA-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "This release removes Bitswap in favour of shrex, adds JWT token revocation, and ships a set of security and stability fixes. It is compatible with celestia-app v10 and with v0.34.x nodes on the network, so no coordinated upgrade is needed. It is recommended to upgrade. Action Recommended: run config-update This release removes the unused Share.UseShareExchange , Share.UseBitswap and Share.BlockStoreCacheSize keys from the config. Nodes start without this step and ignore the old keys. To remove them from your config.toml , stop the node, upgrade the binary and, before starting the node , run: celestia bridge config-update celestia light config-update Your custom values for the other fields are kept. Review your config.toml afterwards to confirm. Breaking changes & upgrade notes Bitswap removed: shrex is now the only share exchange protocol",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-12T10:57:49Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.35.0",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.35.0"
+        },
+        {
+          "excerpt": "This release removes Bitswap in favour of shrex, adds JWT token revocation, and ships a set of security and stability fixes. It is compatible with celestia-app v10 and with v0.34.x nodes on the network, so no coordinated upgrade is needed. It is recommended to upgrade. Action Recommended: run config-update This release removes the unused Share.UseShareExchange , Share.UseBitswap and Share.BlockStoreCacheSize keys from the config. Nodes start without this step and ignore the old keys. To remove them from your config.toml , stop the node, upgrade the binary and, before starting the node , run: celestia bridge config-update --p2p.network mocha celestia light config-update --p2p.network mocha Your custom values for the other fields are kept. Review your config.toml afterwards to confirm. Breaking changes & upgrade notes Bitswap removed: shrex",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T12:54:23Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.35.0-mocha",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.35.0-mocha"
+        },
+        {
+          "excerpt": "This release removes Bitswap in favour of shrex, adds JWT token revocation, and ships a set of security and stability fixes. It is compatible with celestia-app v10 and with v0.34.x nodes on the network, so no coordinated upgrade is needed. It is recommended to upgrade. Action Recommended: run config-update This release removes the unused Share.UseShareExchange , Share.UseBitswap and Share.BlockStoreCacheSize keys from the config. Nodes start without this step and ignore the old keys. To remove them from your config.toml , stop the node, upgrade the binary and, before starting the node , run: celestia bridge config-update --p2p.network corto celestia light config-update --p2p.network corto Your custom values for the other fields are kept. Review your config.toml afterwards to confirm. Breaking changes & upgrade notes Bitswap removed: shrex",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-09T11:55:30Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.35.0-corto",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.35.0-corto"
+        },
+        {
+          "excerpt": "Highlights DAS: resume interrupted sampling after restart. If the node was stopped while a recent sampling job was still in progress, that height was dropped from the checkpoint and never sampled. In-flight recent jobs at or below the catchup head are now persisted and resumed on restart. State: validate gas price before building the fee. Negative, NaN, Inf or int64-overflowing gas price values now return an error instead of panicking in SubmitPayForBlob / SubmitMessage . P2P: removed the Binary Builders bootstrapper from the mainnet bootstrap list. What's Changed Resume interrupted recent DAS jobs after restart in #5266 Validate gas price before building transaction fees in #5274 Remove the Binary Builders bootstrapper in #5331 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parit",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-27T13:58:39Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.4",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4"
+        },
+        {
+          "excerpt": "What's Changed Bump celestia-app to v10.4.0 mainnet in #5321 Reset RangeNamespaceData on ReadFrom in #5255 Bound proof node counts in wire decoders in #5270 Wait for consensus height before fetching blocks in API tests in #5318 Validate gas price before building transaction fees in #5274 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parity script in #5327 Remove the Binary Builders bootstrapper in #5331 Resume interrupted recent DAS jobs after restart in #5266 Full Changelog: v0.34.3-mocha...v0.34.4-mocha",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-26T15:32:32Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.4-mocha",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4-mocha"
+        },
+        {
+          "excerpt": "What's Changed Bump celestia-app to v10.4.0-mocha and celestia-core to v0.42.3 in #5316 Bump celestia-app to v10.4.0 mainnet in #5321 Reset RangeNamespaceData on ReadFrom in #5255 Bound proof node counts in wire decoders in #5270 Wait for consensus height before fetching blocks in API tests in #5318 Validate gas price before building transaction fees in #5274 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parity script in #5327 Remove the Binary Builders bootstrapper in #5331 Resume interrupted recent DAS jobs after restart in #5266 Full Changelog: v0.34.3-corto...release/v0.34.x",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-14T10:15:36Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.4-corto",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4-corto"
+        },
+        {
+          "excerpt": "This release adds initial support for Fibre. Highlights Fibre client support: celestia-node now ships a built-in Fibre client, exposed under the new fibre JSON-RPC namespace on Light and Bridge nodes. Blobs are uploaded to Fibre Storage Providers and settled on-chain via an escrow-funded payment model — all driven locally by the node rather than routed through a bridge. The fibre namespace exposes: Submit — upload a blob and settle its MsgPayForFibre payment on-chain in one call. Upload — upload off-chain and settle the payment in the background. Download — retrieve a blob by its BlobID. Deposit / Withdraw — fund and unwind the escrow account that pays for storage. QueryEscrowAccount / PendingWithdrawals — inspect escrow balance and pending exits. Verified-header state client: DA nodes resolve validator sets and Fibre host addresses from ",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-07T13:11:57Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.3",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3"
+        },
+        {
+          "excerpt": "Small reliability fixes and dependency updates. What's Changed ci: disable Mergify merge queue comments by @rootulp in #5240 chore(deps): bump celestia-app to v10.1.0-mocha by @ninabarbakadze in #5239 state: Fix flaky TestSubmitFromCustomAccount balance assertions by @rootulp in #5243 ci: authenticate Codecov uploads with OIDC by @rootulp in #5242 chore(deps): bump linear/linear-release-action from 0.17.2 to 0.18.0 by @dependabot [bot] in #5245 chore(deps): bump go-libp2p to v0.50.0 by @rach-id in #5247 chore(deps): bump codecov/codecov-action from 7.0.0 to 7.1.1 by @dependabot [bot] in #5244 chore(deps): enforce 7-day dependency cooldown by @rootulp in #5249 fix(shrex): reserve what the server holds by @vgonkivs in #5251 chore: remove celestia-app v9 dependency by @vgonkivs in #5252 fix(ci): tolerate small project coverage fluctuations b",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-06T10:20:41Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.3-corto",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3-corto"
+        },
+        {
+          "excerpt": "Small reliability fixes and dependency updates. What's Changed chore(deps): bump linear/linear-release-action from 0.17.2 to 0.18.0 by @dependabot [bot] in #5245 chore(deps): bump go-libp2p to v0.50.0 by @rach-id in #5247 chore(deps): bump codecov/codecov-action from 7.0.0 to 7.1.1 by @dependabot [bot] in #5244 chore(deps): enforce 7-day dependency cooldown by @rootulp in #5249 fix(shrex): reserve what the server holds by @vgonkivs in #5251 chore: remove celestia-app v9 dependency by @vgonkivs in #5252 fix(ci): tolerate small project coverage fluctuations by @rootulp in #5290 fix(shrex): synchronize peer pool cleanup by @rootulp in #5293 fix(fibre/stateclient): bound the host query in GetHost by @kriss39 in #5297 fix(ci): pin reusable Docker workflows to commit SHA by @rootulp in #5289 fix(shrex/peers): don't keep pools in managers withou",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-06T10:19:25Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.34.3-mocha",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3-mocha"
+        },
+        {
+          "excerpt": "This release contains security fixes and improvements. What's Changed Fix a lock-order deadlock in SHREX peer cooldown handling ( #5179 ). Limit the number of namespace-data rows read from a stream ( #5229 ). Support IPv6 literal endpoints ( #5168 ). Upgrade go-libp2p to v0.50.0, QUIC to v0.62.0, and WebTransport to v0.13.0 ( #5248 ). Upgrade NMT to v0.24.5 ( #5226 , #5230 ). Upgrade go-header to v0.8.7 and update other Go dependencies ( #5226 , #5234 ). Remove Corto from the bootstrapper health test ( #5227 ). Sync GitHub releases to the Linear release pipeline ( #5232 ). Update automatic PR reviewer assignments ( #5236 ). Full Changelog : v0.33.0...v0.33.2",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-23T11:19:18Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "celestia_releases",
+          "title": "v0.33.2",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.2"
+        }
+      ],
+      "project_protocol_context_substantive_count": 10,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -1111,23 +1156,10 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 991134428.55662,
-            "cmc_id": 22861,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.387Z",
-            "symbol": "TIA",
-            "total_supply": 1181493923.461415
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 991134428.55662,
+        "circulating_supply": null,
         "cmc_id": 22861,
         "coin_name": "Celestia",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1135,12 +1167,11 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "TIA",
-        "total_supply": 1181493923.461415
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 416952691.83,
@@ -1310,6 +1341,9 @@
         "symbol": "TAO-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -1325,36 +1359,22 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 11721980.28991,
-            "cmc_id": 22974,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.050Z",
-            "symbol": "TAO",
-            "total_supply": 21000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 11721980.28991,
+        "circulating_supply": null,
         "cmc_id": 22974,
         "coin_name": "Bittensor",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 21000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "TAO",
-        "total_supply": 21000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 2395324717.13,
@@ -1492,7 +1512,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "Bonk",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -1524,35 +1546,22 @@
         "symbol": "BONK-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 87994296060102.81,
-            "cmc_id": 23095,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 88872433754423.19,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.034Z",
-            "symbol": "BONK",
-            "total_supply": 87994296060102.81
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 87994296060102.81,
+        "circulating_supply": null,
         "cmc_id": 23095,
         "coin_name": "Bonk",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 88872433754423.19,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BONK",
-        "total_supply": 87994296060102.81
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 232869675.75,
@@ -1722,6 +1731,110 @@
         "symbol": "SEI-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "We recommend that all pacific-1 validators and node operators update to v6.7.4 . The update is required for RPC nodes. There is no governance proposal and no coordinated chain halt. v6.7.4 is a patch release on top of v6.7.3 . It makes debug_trace* load a past block's full validator set, so traces on networks with more than 30 validators match the chain ( #4810 ). How to Update Build v6.7.4 with git fetch --tags && git checkout v6.7.4 && make install . Stop the node. Replace the seid binary with v6.7.4 . If you use Cosmovisor, replace the binary in upgrades/v6.7/bin/ . Start the node. Make sure that seid version shows v6.7.4 and that the node syncs new blocks. What's Changed Backport release/v6.7 : Load the full validator set by @seidroid [bot] in #4810 Backport release/v6.7 : Update v6.7 changelog from release/v6.7 by @seidroid [bot] in ",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T20:33:33Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.4",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.4"
+        },
+        {
+          "excerpt": "We recommend that all atlantic-2 validators and node operators update to v6.8.0-rc3 . The update is required for RPC nodes. There is no governance proposal and no coordinated chain halt. v6.8.0-rc3 is a release candidate on top of v6.8.0-rc2 . It makes wide eth_getLogs queries cheaper for RPC nodes and stops them early when the client cancels ( #4744 , #4790 , #4791 , #4799 , #4802 ). It also includes the v6.7.4 trace fix, so debug_trace* loads a past block's full validator set ( #4811 ). Wide log queries (over 100 blocks) share a node-wide limit of 30 queries per second. You can now change it with large_log_query_rps under [evm] in app.toml . Set it to 0 to turn the limit off. If the key is missing, the limit stays at 30 ( #4800 ). How to Update Build v6.8.0-rc3 with git fetch --tags && git checkout v6.8.0-rc3 && make install . Stop the ",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T20:00:27Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.8.0-rc3",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.8.0-rc3"
+        },
+        {
+          "excerpt": "🚨 Mandatory Testnet (atlantic-2) Upgrade - v6.8 ⚠️ This is a MANDATORY upgrade for all atlantic-2 testnet node operators and validators. Nodes that do not upgrade will halt at the upgrade height and fall out of consensus. 📋 Upgrade Summary 🏷️ Upgrade Name (on-chain plan) v6.8 📦 Version (git tag / binary) v6.8.0-rc2 🌐 Network atlantic-2 (testnet) 🔑 Commit 35f6bf17497f4fc71f1b4e5ad0992bf0d3b3a25c 🗳️ Governance Proposal #261 ⏰ Target Upgrade Time 2026-11-10T16:30:00 UTC (approx.) 📏 Upgrade Height 282577035 ⏱️ Expected Downtime A few minutes Note: The on-chain Upgrade Name ( v6.8 ) is intentionally different from the git tag ( v6.8.0-rc2 ). Cosmovisor matches on the Upgrade Name , so the directory must be named v6.8 — see below. ⚠️ Check Before Upgrading v6.8 removes several modules and servers and changes some RPC defaults. If any of these a",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-06T23:30:11Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.8.0-rc2",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.8.0-rc2"
+        },
+        {
+          "excerpt": "v6.8.0-rc1 is the first release candidate of the v6.8 line, cut from release/v6.8 . See the v6.8 section of the CHANGELOG for the full list of changes. What's Changed Remove legacy sei_rpc_* dual-emit after evmrpc dashboard migration (PLT-326) by @amir-deris in #4023 [ConfigManager] Register Node Sections 1/4 by @bdchatham in #3992 Snapshot Engine + flatKV integration: phase 1 by @cody-littley in #3902 Rename SnapshotEngine to ViewManager by @cody-littley in #4025 fix(sei-tendermint): restore proposal tx-key decode bounds (CON-334) by @shemnon in #4011 Disable provider caching for instant-mined receipts by @masih in #4020 fix(sei-tendermint): bound P2P and consensus Prometheus label cardinality (PLT-1070, PLT-1071) by @amir-deris in #4029 Bound block reference parsing depth by @masih in #4030 Add semi-automated e2e major version upgrade t",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-03T20:36:18Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.8.0-rc1",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.8.0-rc1"
+        },
+        {
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we recommend that all pacific-1 and atlantic-2 validators and node operators update to v6.7.3 . There is no governance proposal and no coordinated chain halt for this update. v6.7.3 is a patch release on top of v6.7.2 . It moves the state sync trust period from config.toml into seid , so every node on a network uses the same value. The trust period must stay shorter than the unbonding time. With the value built into the binary, the network can shorten its unbonding time without every operator editing config.toml . ⚠️ Check Before You Update seid now ignores trust-period in the [statesync] section of config.toml . State sync uses a trust period of 112 hours on pacific-1 , atlantic-2 and arctic-1 . If config.toml sets trust-period to another value, seid start logs a warning that begins with statesync.",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-03T18:20:55Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.3",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.3"
+        },
+        {
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we ask all atlantic-2 and pacific-1 validators and node operators to update at their convenience. There is no governance proposal and no coordinated chain halt for this update. v6.7.2 is a patch release on top of v6.7.0 . Most fixes are improving reliability and some smaller bug fixes for RPC nodes. ✅ How to Update Build v6.7.2 with git fetch --tags && git checkout v6.7.2 && make install . Stop the node. Replace the seid binary with v6.7.2 . If you use Cosmovisor, replace the binary in upgrades/v6.7/bin/ . Start the node. Make sure that seid version shows v6.7.2 . Make sure that the node syncs new blocks. What's Changed Backport release/v6.7 : Export known peer address count as a Prometheus gauge by @seidroid [bot] in #4520 Backport release/v6.7 : Count only connected peers in /net_info n_peers by @",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-16T16:47:03Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.2",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.2"
+        },
+        {
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we ask all pacific-1 validators and node operators to update to v6.7.1 before the FlatKV migration starts (~17:00 UTC on 9 October 2026, when the migration proposal passes). atlantic-2 has already migrated, so operators there can update at their convenience. There is no governance proposal and no coordinated chain halt for this update. v6.7.1 is a patch release on top of v6.7.0 . It has eight fixes and one removal. Most fixes are for the EVM migration, which moves EVM state from memIAVL to FlatKV. Other fixes make state sync and seid rollback safer. v6.7.1 also removes the deprecated seid export command. 🎯 Who Should Update 🛡️ Validators Requested before the migration on pacific-1 . v6.7.1 fixes data races and rollback problems in the state commit store. 🖥️ RPC, full and archive nodes Requested befo",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-08T11:26:42Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.1",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.1"
+        },
+        {
+          "excerpt": "ℹ️ This is NOT a mandatory upgrade for validators. There is no coordinated halt or governance proposal. Nodes can upgrade whenever they like with a normal binary swap and restart. ⚙️ v6.6.4 is a small patch release on top of v6.6.3 🚀, aimed at operators running nodes in freeze mode 🧊 ( #3978 ). A frozen node halts one block below its freeze height and never processes another block. On v6.6.3 the EVM HTTP and WS servers only start after a block is processed, so a frozen node that restarted came back with its data and Tendermint RPC fine but its EVM RPC stuck offline 🔌. This release fixes that ( #4448 ). On startup a frozen node now initializes the app from its last block header, which starts the EVM servers just as processing a block would ✅. 🎯 Who Should Upgrade 🧊 Frozen historical RPC operators Strongly recommended : EVM RPC comes back a",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-06T10:29:03Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.6.4",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.6.4"
+        },
+        {
+          "excerpt": "🚨 Mandatory Mainnet (pacific-1) Upgrade - v6.7 ⚠️ This is a MANDATORY upgrade for all pacific-1 node operators and validators. Nodes that do not upgrade will halt at the upgrade height and fall out of consensus. 📋 Upgrade Summary 🏷️ Upgrade Name (on-chain plan) v6.7 📦 Version (git tag / binary) v6.7.0 🌐 Network pacific-1 (mainnet) 🔑 Commit 60dfac14112e1ff045337a76f1eef2157400141d 🗳️ Governance Proposal #125 (voting ends 2026-10-08T10:31 UTC ) ⏰ Target Upgrade Time 2026-10-08T16:30:00 UTC (approx.) 📏 Upgrade Height 236450000 ⏱️ Expected Downtime A few minutes Note: The on-chain Upgrade Name ( v6.7 ) is intentionally different from the git tag ( v6.7.0 ). Cosmovisor matches on the Upgrade Name , so the directory must be named v6.7 — see below. ⚠️ Check Before Upgrading v6.7 removes and tightens several APIs. If any of these affect your node",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-05T11:58:38Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.0",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.0"
+        },
+        {
+          "excerpt": "🚨 FlatKV Migration ⚠️ This release will be used for the FlatKV migration on atlantic-2 , triggered by governance proposal #256 . All nodes are recommended to upgrade to this release. ⬆️ What's Changed Bump version to v6.7.0-rc3 in prep for release by @alexander-sei in #4339 Backport release/v6.7 : fix(seidb): keep writes in the old DB until the migration boundary first moves by @seidroid [bot] in #4371 Backport release/v6.7: Raise goreleaser timeout to 2h ( #4375 ) by @masih in #4378 Backport release/v6.7 : Fix FlatKV state sync bad-hash scenario. by @seidroid [bot] in #4377 Backport release/v6.7 : fix(evmrpc): release eth_getLogs DB-read slots when a block read panics by @seidroid [bot] in #4397 Backport release/v6.7 : feat: add migration pause handler by @seidroid [bot] in #4409 Backport release/v6.7 : Log a pinned node's skipped migrat",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-01T19:10:01Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sei_releases",
+          "title": "v6.7.0-rc4",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.0-rc4"
+        }
+      ],
+      "project_protocol_context_substantive_count": 10,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -1747,37 +1860,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 7699722222.0,
-            "cmc_id": 23149,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.175Z",
-            "symbol": "SEI",
-            "total_supply": 10000000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 7699722222.0,
+        "circulating_supply": null,
         "cmc_id": 23149,
         "coin_name": "Sei",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 10000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SEI",
-        "total_supply": 10000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 322628746.44,
@@ -1792,8 +1891,44 @@
       "symbol": "SEI"
     },
     {
-      "candidate_event_count": 225,
+      "candidate_event_count": 229,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin’s rebound attempt fell short at $75,000 yesterday, and the asset has lost over $1,500 since then, currently fighting to stay above $73,000 once again. Most altcoins have mimicked BTC’s performance over the past day, with ETH sliding by more than 0.5%, while BNB is down by 1.2%. ZEC continues to be on the wrong side of the $1,000 barrier. BTC Fails Again The primary cryptocurrency went on a violent rollercoaster a week ago after the conclusion of the US midterm elections. It dipped to $75,600 after the results came in, then skyrocketed to $81,000 12 hours later, reaching a local peak. The volatile trading sessions continued a day later, on Thursday, but in the opposite direction. The bears took complete control of the market and initiated a massive leg down to BTC’s starting point of under $76,000. On Friday, they took it up a notch and pushed the cryptocurrency to $74,800. The weekend was less volatile, with bitcoin trading close to $76,000. However, Monday began with another l",
+          "id": "research:a06b00943da4824055",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T10:47:03Z",
+          "title": "PEPE Tanks Double Digits as Bitcoin Gets Rejected at $75K: Market Watch",
+          "url": "https://cryptopotato.com/pepe-tanks-double-digits-as-bitcoin-gets-rejected-at-75k-market-watch/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "DOGE vs PEPE: Which Meme Coin Will Deliver Bigger Gains in 2027? As 2026 winds down, Dogecoin (DOGE) and Pepe (PEPE) remain two of the most closely watched meme coins, and Meta AI predicts which will come out on top in 2027. Both have suffered significant drawdowns from prior cycle highs, yet they continue to attract attention for different reasons. With a potential broader market recovery possible in 2027, the question is which one is better positioned for larger percentage gains over the year. SOURCE: Meta AI Predicts DOGE Vs. PEPE Current DOGE Price Technical Analysis: Dogecoin (DOGE) Dogecoin is trading around $0.066–$0.067 in mid-November 2026, well below its previous highs and down roughly 20% over the past month. Price has been grinding lower in a corrective structure, testing support near the $0.065–$0.066 zone. Immediate resistance sits around $0.070–$0.072, with a more meaningful barrier near $0.08. Momentum indicators have cooled, and volume has remained moderate during the ",
+          "id": "research:a6a2ed3986abeb6cb2",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T23:15:00Z",
+          "title": "Meta AI Predicts DOGE Vs. PEPE: Which Goes Higher in 2027?",
+          "url": "https://cryptonews.com/news/meta-ai-predicts-doge-pepe-which-goes-higher/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "PEPE recorded the steepest daily loss among the 100 largest cryptocurrencies. The sell-off hit the one major meme coin that had kept rising into November. Bitcoin ETF outflows and shrinking stablecoin supply are draining demand for speculative tokens. Buyers now face a test in the same zone where they absorbed a large exploit-wallet sale in October. PEPE fell 11.22% over the past 24 hours to around $0.0000044 on Thursday. That made it the worst performer among the 100 largest cryptocurrencies on CoinMarketCap and cut its market value to $1.82 billion. PEPE had been the only major meme coin still holding a rally into November, and its reversal leaves the sector without a clear leader while Bitcoin slips back below $73,000. Two Red Days Erase PEPE’s Edge In the month to Nov 9, PEPE gained about 33%, while Dogecoin and Shiba Inu each lost roughly 18%. Late on Wednesday, CoinMarketCap still showed it up around 70% over 90 days. Then a double-digit loss on Wednesday and more selling on Thur",
+          "id": "research:e612ef4e7bfd2d63bf",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T13:40:32Z",
+          "title": "PEPE Price Tops Daily Losers as Meme Coins Bleed 25%",
+          "url": "https://www.crypto-news-flash.com/pepe-price-tops-daily-losers-as-meme-coins-bleed-25/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "On Monday morning, the crypto industry was a sea of red as Bitcoin and other cryptocurrencies slumped. Bitcoin dropped from last week’s high of $62,000 to $58,000, triggering a deep dive among other altcoins and meme coins. Meme coins become worst performers Meme coins were among the worst performers due to their high volatility. Dogwifhat […] The post Meme Coin Price Crash: WIF, Pepe, Brett Cryptos Fall as BTC Hits $58k appeared first on BanklessTimes .",
+          "id": "research:ee4a8320135d5e3c34",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-12T06:05:00Z",
+          "title": "Meme Coin Price Crash: WIF, Pepe, Brett Cryptos Fall as BTC Hits $58k",
+          "url": "https://www.banklesstimes.com/news/2024/08/12/meme-coin-price-crash-wif-pepe-brett-cryptos-fall-as-btc-hits-58k/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Chad Johnson (@ochocinco) X",
@@ -1847,42 +1982,6 @@
           "published_utc": "2026-11-12T04:48:17Z",
           "title": "Best Crypto to Invest: Pepe Roars Back as Apeing's $750 Entry Targets a Theoretical $8,333 Listing Value - openPR.com",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOHdkOWlCejJpbWtnSDM3dDRiNFAxb3g2RUVsRHdmQ05HaFVTNWVjYVN1VVlwOTVOTlN6a0F2OGxnNlkyLVlsd3NVbW0wSmhjMU5ZVG5WMzZSb0tVTkF6bGlJN3JHcVBObjdZSC1UUVBiV1Q4WmVSRTdfZFVBdUNZd0FwVkJCRFhpU2pWWHhFOGJUeXZjTzQ1YzV4MA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NOW STREAMING an ALL NEW episode w/ legendary artist Pepe Moreno, who worked on ThunderCats, SilverHawks, TigerSharks, Batman: Digital Justice & More!! Reddit",
-          "id": "expanded:0999d5fa959507bc80",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T16:16:35Z",
-          "title": "NOW STREAMING an ALL NEW episode w/ legendary artist Pepe Moreno, who worked on ThunderCats, SilverHawks, TigerSharks, Batman: Digital Justice & More!! - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT2FJRFFDT2xnWnUtZ0RGYmlTTElSeEJKVjFBWThmb241Wl9uTVdWTHR1QVd6YzNjNTdXd1Z4cHJ2ekFOT2lBc1B0Zm8xOXJTTVB5aUIxcTRGTVZNcDdrTGtXUk1vVlFGOTNoUG1Ga1BlakFFblBrd0ZLOExUaHpmc3VPeVk3VFdNeDlhQWFPa1hITVpUNmxlaVY5Q3hLSzZN?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Is this in any way accurate? Reddit",
-          "id": "expanded:099e8ee2629758d01c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T20:41:10Z",
-          "title": "Is this in any way accurate? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaWxNZGpwR0l2dlotcTBKeFpJNkRFYW1CbkprdnVhb19RTDJwQXBvQkJwNzhMSHBwMHVqRUhjRUlQZDduZGJLRmdDTml1YWx3eXZNaEJJZ0dRSWVnUklGdDBDcWlKREkwZExaSUlOdkNwQ2t5eDhhMF91QVdIOUxNM093cWhaUQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "After 9 months of inactivity, whale 0x5479 withdrew 10,000 $ETH ($20.89M) from #Binance just 1 hour ago. https://t.co/X1Rf3btpVt X",
-          "id": "expanded:0a40d393e38fc48780",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T13:11:28Z",
-          "title": "After 9 months of inactivity, whale 0x5479 withdrew 10,000 $ETH ($20.89M) from #Binance just 1 hour ago. https://t.co/X1Rf3btpVt - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QRmxCV3VPYnRVcTJIdW5CbUxEeElHRHNBSG9JbENOQ1B1UTk5NmhhVEppMWdjUUhicGpFTUlpX1VMcDluNTZzeTlUTFc3Mk5MN0ZCWHRrQ2cxRnAxVFVaQkhn?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Just like that , everyone is gone 💔😭 X",
-          "id": "expanded:0b74e208f6666c007e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T10:28:17Z",
-          "title": "Just like that , everyone is gone 💔😭 - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBGMWttRldCaUpBNFJrcjkxVE9SbjNYSzVsaFBBeDhnaTZaRFdpTDd5NjhYZTRDU1ZDcXhfOC1ybHpQNDUzWHp0TXo3bFNOSTBPbTZGN1liTzFXQVZpWVdpVzlINA?oc=5"
         }
       ],
       "cmc100_weight": 0.09,
@@ -1915,7 +2014,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "Pepe",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -1947,35 +2048,22 @@
         "symbol": "PEPE-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 413772350095630.44,
-            "cmc_id": 24478,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 413772350095630.44,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.143Z",
-            "symbol": "PEPE",
-            "total_supply": 413772350095630.44
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 413772350095630.44,
+        "circulating_supply": null,
         "cmc_id": 24478,
         "coin_name": "Pepe",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 413772350095630.44,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PEPE",
-        "total_supply": 413772350095630.44
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1888479525.25,
@@ -2145,20 +2233,10 @@
         "symbol": "ZRO-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 405512036.59445,
-            "cmc_id": 26997,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "ZRO",
-            "total_supply": 1000000000.0
-          }
-        },
         {
           "family": "trending",
           "observation": {
@@ -2166,25 +2244,24 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "LayerZero",
-            "rank": 10
+            "rank": 9
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 405512036.59445,
+        "circulating_supply": null,
         "cmc_id": 26997,
         "coin_name": "LayerZero",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 1000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ZRO",
-        "total_supply": 1000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 624592724.51,
@@ -2199,8 +2276,17 @@
       "symbol": "ZRO"
     },
     {
-      "candidate_event_count": 132,
+      "candidate_event_count": 133,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Nature, Published online: 11 November 2026; doi:10.1038/s41586-026-11280-2 Analysis of a 3.95-Gyr-old trondhjemitic gneiss from eastern Hebei, China, reveals a composition suggesting a low-temperature altered basaltic source, that originated from a mantle depleted in the Hadean, was most likely transported to mantle depths through a transient subduction event and partially melted to produce the trondhjemite.",
+          "id": "research:4f347345af22789289",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-11T00:00:00Z",
+          "title": "Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks",
+          "url": "https://www.nature.com/articles/s41586-026-11280-2"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Best MantelMount for 77-inch OLED? Reddit",
@@ -2281,15 +2367,6 @@
           "published_utc": "2026-11-11T14:24:27Z",
           "title": "Explore creator-made multiplayer worlds in Mantle — our first trailer - Reddit",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQLUtKazU3RnBzeEFkc2diU2RmUkVlQS16LWhobUxaWUUxWWpIaTBwbUFQcDVhWkFDRU5wUEhjd0xrWUZEbmZ4QVdONUVNalg0YW5qa3EtNlhBWWNuWVlvcDVETmticUJ4LUo4R2p4ZjVZN3ZSeHZUOV9taFFYd1V3OEwyVk5TVFIzcGRWaUJnWnAzTC1NRl9BdUlkN2lnY25kbVJR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "TV Mount Install Reddit",
-          "id": "expanded:1c4691e4749cc19af0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T22:55:32Z",
-          "title": "TV Mount Install - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZZGgzSDRERWtPMmRRbDBfUURodVlBOEt3WWVWVXVTbFlQaWVSUDhIdzFTVW5DUnNJWlNId2hwTjVfMUpXODFvUjJ5dWRVbHNPbUtuUzZCYVVaZ2lmZWJ4MVFfVmtKVHpITDE0T0Z4ekxhZw?oc=5"
         }
       ],
       "cmc100_weight": 0.07,
@@ -2317,6 +2394,9 @@
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -2327,36 +2407,22 @@
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 3312003382.53684,
-            "cmc_id": 27075,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 6219316795.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.306Z",
-            "symbol": "MNT",
-            "total_supply": 6219316794.889999
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 3312003382.53684,
+        "circulating_supply": null,
         "cmc_id": 27075,
         "coin_name": "Mantle",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 6219316795.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "MNT",
-        "total_supply": 6219316794.889999
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1343794296.83,
@@ -2494,7 +2560,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "SPX6900",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -2526,35 +2594,22 @@
         "symbol": "SPX-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 930993090.07,
-            "cmc_id": 28081,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.050Z",
-            "symbol": "SPX",
-            "total_supply": 930993090.07
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 930993090.07,
+        "circulating_supply": null,
         "cmc_id": 28081,
         "coin_name": "SPX6900",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 1000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SPX",
-        "total_supply": 930993090.07
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 312052030.05,
@@ -2724,6 +2779,110 @@
         "symbol": "PYTH-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "What's Changed feat(hip-3-pusher): remove Pyth Core (Hermes) as a price source by @jayantk in #3961 fix(xc_admin_frontend): render WithdrawFee governance instructions by @aditya520 in #3958 add(developer-hub): customer changelog entries for Aug 3–10, 2026 Pyth Pro window by @KemarTiti in #3964 feat(contract_manager): register stellar_mainnet and add a Stellar Lazer deployment audit by @jayantk in #3963 docs(developer-hub): list the Stellar mainnet Pyth Pro verifier by @jayantk in #3967 fix(developer-hub): menu-surface Subscribe popover + per-type changelog feeds by @aditya520 in #3965 docs: sync Sui pro push-feed status by @KemarTiti in #3969 deploy(pro-compatible) Etherlink Core contracts by @aditya520 in #3972 feat(evm): allow SetWormholeAddress without dual-verify by @keyvankhademi in #3973 docs(developer-hub): surface the OIS rewards ",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-26T15:20:52Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "pyth-js-v161",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-js-v161"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-10-26T14:27:36Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "pyth-price-pusher-v13.2.0",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-price-pusher-v13.2.0"
+        },
+        {
+          "excerpt": "feat(price_pusher): add v1 transactions to the Solana pusher behind -…",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-10-23T20:05:08Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "pyth-price-pusher-v13.1.0",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-price-pusher-v13.1.0"
+        },
+        {
+          "excerpt": "Node.js 24.22.1 fixes the October 2026 security releases, including CVE-2026-111497 (Brotli decoder OOB write) and the TLS hostname bypasses CVE-2026-105483 and CVE-2026-106069 . Dockerfile.node: move both base stages to 24.22.1 with pinned digests .tool-versions and .nvmrc: pin nodejs 24.22.1 apps/mcp: bump version to 0.3.2 so the patched image can be tagged Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-23T17:53:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "mcp-server-v0.3.2: chore(node): bump Node.js to 24.22.1 and mcp-server to 0.3.2 (#4069)",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.2"
+        },
+        {
+          "excerpt": "apps/mcp is a read-only service: it fetches prices with each caller's own Pyth Pro key, never holds one itself, and is off the price path. Like the other consumer apps, its changes can be self-authorized. Co-Authored-By: Claude Opus 5.5 noreply@anthropic.com",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-09T17:23:33Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "mcp-server-v0.3.1: chore(greenlight): auto-approve the MCP server app",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.1"
+        },
+        {
+          "excerpt": "get_historical_price: a fully empty response now lists every requested feed in missing_feed_ids, as partial responses already did. Catalog: a row whose metadata drifts from the schema keeps its symbol and pyth_lazer_id, so the feed still resolves instead of \"Feed not found\"; only rows without both are dropped. Retry: a body cut off mid-stream (Node fetch TypeError \"terminated\", cause UND_ERR_*) is retried, for Router and History alike. Key check: the Router probe has its own 2 s timeout, and Router outages are remembered for a minute like rejected keys, so a hanging Router no longer stalls History-only tools for the full request timeout. Funding-rate skill: discovery requests limit 200 and pages if a feed is missing, instead of relying on the first page. Dropped comments that only restated the code. Co-Authored-By: Claude Opus 5.5 noreply",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-06T19:55:58Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "mcp-server-v0.3.0: fix(mcp): address Devin review findings",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.0"
+        },
+        {
+          "excerpt": "feat(okx-recorder): client-initiated ping keepalive with pong-timeout…",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-08-13T20:08:01Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "okx-recorder-v0.1.0",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/okx-recorder-v0.1.0"
+        },
+        {
+          "excerpt": "Pyth Core is being deprecated, so no Pyth product may publish prices derived from it. The pusher ran a HermesListener against wss://hermes.pyth.network/ws and used it as the last failover tier in the BTC and PYTH oracle waterfalls, so Core prices could reach Hyperliquid whenever the higher tiers went stale. Removes the listener, the [hermes] config block and HermesConfig model, the \"hermes\" source registration in PriceState, the waterfall entries naming it, the validate_config probe, and the docs. Co-authored-by: Jayant Krishnamurthy 541339+jayantk@users.noreply.github.com Co-authored-by: Claude Opus 5 noreply@anthropic.com",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-08-10T17:44:06Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "hip-3-pusher-v0.4.0: feat(hip-3-pusher): remove Pyth Core (Hermes) as a price source (#3961)",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/hip-3-pusher-v0.4.0"
+        },
+        {
+          "excerpt": "What's Changed developer-hub: add IOTA usage docs, small fixes by @matej-douro in #3933 chore(greenlight): auto-approve contract_manager store record JSONs by @aditya520 in #3936 deploy(lazer): Flow EVM mainnet by @aditya520 in #3935 developer-hub: sunset Express Relay docs (OP-PIP-124) by @aditya520 in #3943 lazer/cardano/cli: update to latest Evolution SDK, small fixes by @matej-douro in #3942 developer-hub/docs: add Cardano testnet addresses by @matej-douro in #3944 docs(developer-hub): point Lazer SDK links at pyth-lazer-public by @jayantk in #3940 docs(developer-hub): repoint three 404ing GitHub links by @jayantk in #3941 docs(developer-hub): present-tense pro auth docs, document price range endpoint by @tejasbadadare in #3948 docs(developer-hub): remove GET /{channel}/streaming from history API docs by @tejasbadadare in #3949 fix(de",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-08-07T17:50:10Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "pyth-evm-contract-v1.4.6",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-evm-contract-v1.4.6"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-08-06T12:58:30Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "pyth_releases",
+          "title": "bulk-trade-pusher-v0.0.4",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/bulk-trade-pusher-v0.0.4"
+        }
+      ],
+      "project_protocol_context_substantive_count": 6,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -2739,36 +2898,22 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": 0.0
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 7874958730.772825,
-            "cmc_id": 28177,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "PYTH",
-            "total_supply": 9999981857.422035
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 7874958730.772825,
+        "circulating_supply": null,
         "cmc_id": 28177,
         "coin_name": "Pyth Network",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 10000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PYTH",
-        "total_supply": 9999981857.422035
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 514805058.3,
@@ -2895,6 +3040,9 @@
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -2920,37 +3068,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 50315935307.0,
-            "cmc_id": 28298,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 58470184687.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.102Z",
-            "symbol": "BEAM",
-            "total_supply": 58470184687.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 50315935307.0,
+        "circulating_supply": null,
         "cmc_id": 28298,
         "coin_name": "Beam",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 58470184687.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BEAM",
-        "total_supply": 58470184687.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 213541239.83,
@@ -3011,6 +3145,7 @@
         "okx_swap_tickers": 1
       },
       "missing_data": [
+        "mapped_protocol_fundamentals",
         "coin_relevant_article_text"
       ],
       "name": "Polygon (prev. MATIC)",
@@ -3044,35 +3179,143 @@
         "symbol": "POL-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 10649037507.489653,
-            "cmc_id": 28321,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.306Z",
-            "symbol": "POL",
-            "total_supply": 10649037517.489653
-          }
+          "excerpt": "v2.11.0 is a hardfork, security and stability release on top of v2.10.3 . It's the public release of v2.11.0-priv , which validators and major RPC providers already run. Uburu hardfork Already active on both networks: Network Fork block Amoy 51978200 Mainnet 96787900 Uburu updates the StateReceiver genesis contract ( 0x…1001 ) at the fork block. It changes how state syncs are executed and recorded. Operators on v2.11.0-priv : same code, switch to v2.11.0 at your next maintenance window. Nodes still on v2.10.3 or older stopped following the chain at the fork block. Upgrade immediately. Highlights Consensus and state sync : state-sync records are fetched from Heimdall one page at a time, as the per-block budget admits them. A failed fetch now fails the block, where before it committed it without state syncs. Span lookups by block number fol",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-05T14:54:53Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.11.0",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.11.0"
+        },
+        {
+          "excerpt": "v2.10.3 is a security and stability release on top of v2.10.2 . It's the public release of v2.10.3-priv , which most validators and major RPC providers already run. No hardfork, no database schema change, no resync required. Nodes can be upgraded one at a time, in any order. Highlights Execution : parallel (BlockSTM V2) balance reads are resolved correctly across a self-destruct boundary ( #2403 ). Shared block caches are size-capped and per-tx code hashes memoized, which lowers importer memory under heavy keccak / ecrecover load. Log counting while tracing no longer copies logs ( #2460 ). Txpool : pending chains stranded behind a head that can't be mined are evicted after txpool.strandedlifetime . Filtered addresses also apply to SetCode (type 4) authorizations. The pool signer is no longer swapped when allow-unprotected-txs is set ( #24",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-15T06:37:27Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.3",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.3"
+        },
+        {
+          "excerpt": "v2.10.2 brings WIT2 (BP-signed witness announcements with transitive relay), pipelined state root computation for block import (disabled by default), the sequence store / preconfirmation pipeline (disabled by default), and a set of p2p, sync and RPC hardening fixes. It also carries every fix shipped in v2.10.1-hotfix and v2.10.1-hotfix2 . No hardfork, no database schema change, no resync required. Highlights WIT2 witness propagation ( #2208 , #2416 , #2417 ): block producers sign each witness announcement; peers verify and relay it without executing the block, and serve witnesses pre-import. Cuts multi-hop milestone-vote latency for stateless validators. Mixed WIT1/WIT2 meshes are supported. Pipelined state root computation on import ( #2180 , #2371 ): overlaps SRC of block N with execution of block N+1. Off by default, enable with [pipel",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-30T10:08:43Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2"
+        },
+        {
+          "excerpt": "What's Changed eth/sequencer: don't hold a build behind our own acked parent seal by @cffls in #2458 Full Changelog : v2.10.2-beta4...v2.10.2-beta5",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-28T21:01:37Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2-beta5",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta5"
+        },
+        {
+          "excerpt": "What's Changed eth, eth/sequencer: skip receipt copy on pending state reads by @kamuikatsurgi in #2444 core, eth: don't switch to snap sync in the middle of SetHead by @kamuikatsurgi in #2456 Full Changelog : v2.10.2-beta3...v2.10.2-beta4",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-28T17:02:20Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2-beta4",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta4"
+        },
+        {
+          "excerpt": "What's Changed core, eth/sequencer, internal/ethapi: preserve preconf receipts across canonical import by @kamuikatsurgi in #2439 Full Changelog : v2.10.2-beta2...v2.10.2-beta3",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-23T19:28:53Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2-beta3",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta3"
+        },
+        {
+          "excerpt": "This is just for testing. Please do not upgrade unless explicitly asked to do so. Full Changelog : v2.10.1-hotfix...v2.10.1-hotfix2",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-23T11:11:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.1-hotfix2",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.1-hotfix2"
+        },
+        {
+          "excerpt": "This release contains new features and bug fixes on top of v2.10.1. What's Changed v2.10.1 candidate by @cffls in #2374 build(deps): bump github.com/rabbitmq/amqp091-go from 1.10.0 to 1.13.0 by @dependabot [bot] in #2384 build(deps): bump google.golang.org/grpc from 1.79.3 to 1.83.1 by @dependabot [bot] in #2381 eth: avoid race in relay-fetch test setup by @pratikspatil024 in #2387 v2.10.1 to master by @pratikspatil024 in #2390 rpc: fix rpc_ep_workers_http being stopped on first request by @ChanHongMing in #2364 eth/downloader: classify unfillable skeletons as invalid by @rukimedo in #2389 build(deps): bump google.golang.org/grpc from 1.83.1 to 1.83.2 by @dependabot [bot] in #2395 eth: retry sync after peer-set replacements by @rukimedo in #2391 eth/downloader/whitelist: bound fork-check slice preallocation by @kriss39 in #2398 eth/downlo",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-22T23:17:41Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2-beta2",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta2"
+        },
+        {
+          "excerpt": "This is just for testing. Please do not upgrade unless explicitly asked to do so. What's Changed eth/downloader: restrict sync penalty exemptions to trusted peers by @vbhattaccmu in #2429 eth/downloader/whitelist: accept re-import of canonical blocks below the whitelisted entry by @lucca30 in #2432 Full Changelog : v2.10.1...v2.10.1-hotfix",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-22T15:26:43Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.1-hotfix",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.1-hotfix"
+        },
+        {
+          "excerpt": "What's Changed eth/sequencer: cap coalesced published records at the store message limit by @cffls in #2400 Full Changelog : v2.10.2-preconf...v2.10.2-preconf2",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-10T17:39:19Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.10.2-preconf2 (Testing Only)",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-preconf2"
+        },
+        {
+          "excerpt": "Hotfix Release: Bhilai Hard Fork on Mainnet NOTE: THIS RELEASE IS ONLY FOR MAINNET We are releasing a hotfix for the Bhilai Hard Fork on Mainnet , which upgrades the bor client to version v2.1.1 . Please note that this release is same as v1.2.4, there was an issue with docker image generation for v1.2.4, so we released v1.2.5. Action Required: All mainnet operators are strongly recommended to upgrade their heimdall nodes to heimdall v1.2.5 to ensure continued compatibility and stability post-HF. This release addresses network compatibility issues and is essential for seamless participation in mainnet consensus following the Bhilai upgrade. What's Changed Increased the bor version to support bhilai HF by @pratikspatil024 in #1289 Full Changelog : v1.2.3...v1.2.5",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2025-07-15T08:14:24Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_heimdall_releases",
+          "title": "v1.2.5",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.2.5"
+        },
+        {
+          "excerpt": "🚨 ⚠️ ONLY USE ON MAINNET NETWORK ⚠️ 🚨 This release is a FALLBACK VERSION and should not be installed on any node unless explicitly required. It is intended for use only if the upcoming Heimdall v1 to v2 migration fails on the mainnet network. The migration is scheduled for Thursday, July 10th, 2025 , between 2.00 PM and 5.00 PM UTC . The mainnet chain will halt at height 24404500 to initiate the migration. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Full Changelog : v1.2.3...v1.5.0",
+          "first_observed_utc": "2026-11-12T20:05:46Z",
+          "has_substantive_context": true,
+          "published_utc": "2025-07-03T07:13:15Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_heimdall_releases",
+          "title": "v1.5.0",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.5.0"
         }
       ],
+      "project_protocol_context_substantive_count": 17,
+      "project_protocol_context_total": 20,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 10649037507.489653,
+        "circulating_supply": null,
         "cmc_id": 28321,
         "coin_name": "Polygon (prev. MATIC)",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "POL",
-        "total_supply": 10649037517.489653
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 921689367.42,
@@ -3210,7 +3453,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "Jupiter",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -3242,35 +3487,123 @@
         "symbol": "JUP-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 3319369204.37,
-            "cmc_id": 29210,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 6862435229.582892,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.387Z",
-            "symbol": "JUP",
-            "total_supply": 6862435229.582892
-          }
+          "excerpt": "Changelog New AMM Integration & Updates The Fantastical Finance Factory integration (formerly Dr Fraudsworth): ZIG/ZAG faction pools and the ZIG/ZAG <-> MOTION vault Sanctum Infinity Reserve V2 QuantumV2 with Token-2022 support BisonFi SDK 0.4.0 (batch-clock mode 2 quoting), and market-backed pools now pass the market tick account, which BisonFi will require on every swap Kipseli: stop quoting prices older than the pool's max_slot_gap , SDK synced with the deployed program Jupiter Lend: jlX tokens can route through any eligible pool, not only the Jupiter Lend pool Whitelist ZeroFi and Scorch PropAMMs for API users, exclude Obsidian Remove Metric (program closed) Alpenglow support: richat 14.1.1, yellowstone-grpc-proto 14.0.1 / client 15.0.0, account updates tracked per (slot, bank_id) . Servers that send no bank_id still work Agave 4.3.2 ",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T16:08:38Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.5",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.5"
+        },
+        {
+          "excerpt": "Changelog New AMM Integration & Updates Meme Fun tapered curve (curve_shape) quoting ZeroFi quotes with the signed flag and routes through ZeroFiSwapV3 HumidiFi SDK bumped for 80-slot replay TTL Pump: route non-cashback coins through pump v3 and pump-amm v2, quote synthetic migration, ensure buyback ATA exists before using v3, lower no-ALT account cap for v2/v3 swaps Updated Denali quoting BisonFi tick quoting DAMM V1 0.5.7 and DBC 0.2.2 New set_close_authority_on_init transaction config Performances Remove remaining Bellman-Ford hot-loop overhead Reduce memory usage by not loading RG0 markets eagerly Pump Swap: stop re-updating every WSOL pool on each buyback-ATA write Bug Fixes Manifest: quote transfer-fee mints correctly and keep partial-fill AMMs off shared accounts Hadron: skip shared accounts when Hadron sits on a bypass leg Meteora",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-19T08:35:29Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.4",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.4"
+        },
+        {
+          "excerpt": "Changelog New AMM Integration & Updates Transaction version 1 support (tx construction, quotes and dynamic swaps) Meme Fun integration Hylo rebuilt on upstream SDK 2.3.10, routed through Hylo's router Gatorswap v3 pools Whirlpool pools with non-zero transfer fee mints HumidiFi settles through the rent-free shared-replay router swap Jupiter Lend AMM: accept Token-2022 mints with extensions, stop write-locking the swap signer, SDK slot time 250ms Archer and Kipseli SDK bumps Whitelist PropAMMs for API users Performances Cut routing-layer overhead in rbp/Bellman-Ford Bug Fixes Fix Denali check condition when paused Clamp Raydium Launchlab buy quote to remaining curve capacity Skip dead-end mints in dynamic intermediate token selection Crawler fetches each AMM's accounts in the same chunk, drop BinaryFi clock-behind guard Do not enforce pump ",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-19T08:35:25Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.3",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.3"
+        },
+        {
+          "excerpt": "Changelog New AMM Integration & Updates Quay amm integration Humidifi router swap Quote hadron pools with token2022 transfer fees Resolve pump fees by quote mint and honour configurable creator fees Binary router for HumidiFi in distributed builds Pumpfun partial fill Performances Always order pool ALT before program ALT Pick the 2 fee accounts for pump curve/swap based on the pool key Bug Fixes Dedupe dynamic intermediate Check pump quote reserves cover output + fees Refresh is_cashback_coin in Pump during updates Rank dynamic intermediate candidates by USD value",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-18T14:51:17Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.2: [codex] fix docker publish image (#129)",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.2"
+        },
+        {
+          "excerpt": "Change Log New AMM Integration & Updates Stableswap (Moon.pay Ghosty) Deriverse Updates BinaryFi Updates Perena Star V2 Junior/Senior Tranche Tessera V Updates Jupiter Lend Dex Updates Performances Default dynamic intermediate to true when there is a price source Reduce transaction size Bug Fixes Raydium Launchlab token-2022 mints quoting",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-03T14:35:12Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.1",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.1"
+        },
+        {
+          "excerpt": "Change Log New AMM Integration Metric Amm Trench Amm Sanctum PAmm Sanctum Sols Jup Lend Dex Gatorswap Denali Perena Star V2 Archer Performances Speed up routing using pruning and interpolation Bug Fixes Pump mayhem sell failures Made routing to fit Raydium CLMM SOL/USDC hop & Pumpswap hop Dynamic slippage errors",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-08-22T02:02:23Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.1.0",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.0"
+        },
+        {
+          "excerpt": "feat: Batch Read Of Richat Payload Stream chore: Remove a redundant and duplicated geyser_update_channel_depth logging Benchmark Raydium CLMM limit order quote chore: Bump YELLOWSTONE_GRPC_STREAM_BATCH_SIZE To 10000 chore: Track Richat Stream Message Pressure chore: Track Origin Of GMA Call chore: update kipeseli quoting fix: whalestreet quote chore: Sync values used in new clusters meaure how long quotes take and how many amm quote called chore: Track how many times a market failed to be added optional resource pruning on splits gated by resourcePruning param fix: Stop Retry Adding Of Market If It's Unsuccessful Consecutively chore: Introduce Europa Metrics Using Prometheus feat: replace price tracker fix: retry markets on batch rpc failure feat: deriverse integration feat: hadronfi integration fix: whirlpool dyntickarray overread fix: u",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-07-08T03:27:20Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.0.17",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.17"
+        },
+        {
+          "excerpt": "What's Changed feat: update byreal sdk chore: Reduce CPU Time On Whirlpool AMM Update update bisonfi predict sdk chore: Partition AMM Keys By Their Shard ID For Updates chore: Add pod_name to Pyroscope chore: Saber compute amp factor on quote chore: Reduce Work By Avoiding Tracking AMM Update Context Slot chore: Rework Unready To Get Triggered For Delay Between Processed & Applied chore: Add an error log when pod goes unhealthy chore: Skip PriceTracker Run If Router Isn't Ready chore: New Metrics For Update Account chore: update sdk and snapshot latest market for bisonfi-predict chore: Remove flush threshold based on mailbox length feat: Extract disable-rfq-v2 build feature fix Extract Raydium CLMM limit-order fix fix: update riptide sdk bump: raydium-amm-v3 fork to 7af865f and refresh fixtures chore: update kipseli v2 chore: ungate byrea",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-06-18T06:28:02Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.0.16",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.16"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-06-15T18:34:11Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.0.16-rc.9",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.16-rc.9"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-06-15T09:31:04Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "jupiter_releases",
+          "title": "v7.0.16-rc.10",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.16-rc.10"
         }
       ],
+      "project_protocol_context_substantive_count": 8,
+      "project_protocol_context_total": 10,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 3319369204.37,
+        "circulating_supply": null,
         "cmc_id": 29210,
         "coin_name": "Jupiter",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 6862435229.582892,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "JUP",
-        "total_supply": 6862435229.582892
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 850732008.98,
@@ -3402,7 +3735,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "Aero",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -3434,35 +3769,22 @@
         "symbol": "AERO-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 1071413832.135813,
-            "cmc_id": 29270,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "AERO",
-            "total_supply": 2140201337.742428
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 1071413832.135813,
+        "circulating_supply": null,
         "cmc_id": 29270,
         "coin_name": "Aero",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "AERO",
-        "total_supply": 2140201337.742428
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 540803446.2,
@@ -3477,8 +3799,17 @@
       "symbol": "AERO"
     },
     {
-      "candidate_event_count": 13,
+      "candidate_event_count": 15,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "New York State Department of Financial Services (DFS) Acting Superintendent Kaitlin Asrow today issued guidance outlining expectations DFS-regulated virtual currency entities to maintain and implement comprehensive policies and procedures on advertising and marketing materials for virtual currency products, services, and activities.",
+          "id": "research:2bcd6fbd98911081cb",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T15:17:00Z",
+          "title": "NYDFS issues virtual currency advertising guidance",
+          "url": "https://www.finextra.com/pressarticle/111660/nydfs-issues-virtual-currency-advertising-guidance?utm_medium=rssfinextra&utm_source=finextrafeed"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The Securities and Exchange Commission’s Compliance Outreach Program announced today that it will host a virtual national seminar for investment companies and investment advisers on November 19, 2026. The purpose of the event is to help chief compliance…",
@@ -3487,6 +3818,15 @@
           "published_utc": "2026-10-06T14:37:55Z",
           "title": "SEC to Host Virtual National Compliance Outreach Seminar for Investment Companies and Investment Advisers",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Video game controllers have come a long way from the days when a vibration motor was enough to make the action in the game feel real. Modern controllers can simulate everything from the recoil of a gun to the resistance of pulling a bowstring — but there's still something missing. They can't reproduce the finer details of touching and handling objects in a virtual world. Researchers from Hunan University and the Chinese Academy of Sciences are looking to change that with ElectroPad , a modified PlayStation 5 controller that makes virtual objects feel more realistic. ElectroPad uses a technique called electrotactile stimulation. By sending carefully controlled electrical pulses through electrodes in contact with the skin, it can create localized sensations that mimic textures, edges, and shapes. The idea is to let players feel the surface of a virtual object as their character interacts with it, rather than simply experiencing a generic vibration. To make this possible, the researchers ",
+          "id": "research:869e0aa60b007646d4",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T14:43:21Z",
+          "title": "ElectroPad Makes Virtual Worlds Feel More Real",
+          "url": "https://hackster.imgix.net/uploads/attachments/2019614/_1FqrcsTzEr.blob?auto=compress%2Cformat&w=400&h=300&fit=min"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3550,24 +3890,6 @@
           "published_utc": "2026-11-09T14:01:05Z",
           "title": "Still believe in Situational Awareness? Ask Butler. - X",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5wc0VSbzZEdm5XUWp6Q2NxRWk3ZkVBMjhQR1BGa1FNc3F4R1ExQnZFU0VfaWNxVGZ5YnJMazdkTC1FeUJ1RWNsMWxjZ29OSnZzeEloYmp1UU1JMUZLNTNNMTVR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Virtuals Weekly: Butler Comes to the Web Virtuals App is now on the web: Butler reads signal, weighs the risk, and preps the trade so it’s one swipe away. Across the ecosystem: staking for AI evaluators, trade memory for agents, token-gated holder chats, and X",
-          "id": "expanded:95ee5960eec18c70eb",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T15:32:33Z",
-          "title": "Virtuals Weekly: Butler Comes to the Web Virtuals App is now on the web: Butler reads signal, weighs the risk, and preps the trade so it’s one swipe away. Across the ecosystem: staking for AI evaluators, trade memory for agents, t",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IaWQ3amZrX0V0T3Y3WVhRT2VLZ0ZGWXRLWExXcTBTRHJlOWhkbWdqZWRySVFvUzhETzBQdzg1YUtyZVc5TWhWa0lESkxKNzRKMVZaczI2S0pXcDJTdWYwVUxn?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Jensen had an affair with a Chinese spy; Jeff didn't. X",
-          "id": "expanded:ae99ea23115e69279b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T18:40:19Z",
-          "title": "Jensen had an affair with a Chinese spy; Jeff didn't. - X",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VZXRpcUdDc1dabXBHX3g2T1lGYnAtdHBqSzhlQXZZXy1HS1pIbWNRMXVZWlpibDIxWGYtdGJWRmthMW1ELTJwWVlQX3hORDRSWHNKZWNJT2lJN05BTzdJ?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -3658,6 +3980,9 @@
         "symbol": "VIRTUAL-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -3673,36 +3998,22 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": 0.0
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 659051770.388132,
-            "cmc_id": 29420,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "VIRTUAL",
-            "total_supply": 1000000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 659051770.388132,
+        "circulating_supply": null,
         "cmc_id": 29420,
         "coin_name": "Virtuals Protocol",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 1000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "VIRTUAL",
-        "total_supply": 1000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 338010731.31,
@@ -3840,7 +4151,9 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "ether.fi",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -3872,35 +4185,22 @@
         "symbol": "ETHFI-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 965350000.0,
-            "cmc_id": 29814,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.034Z",
-            "symbol": "ETHFI",
-            "total_supply": 1000000000.0
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 965350000.0,
+        "circulating_supply": null,
         "cmc_id": 29814,
         "coin_name": "ether.fi",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 1000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ETHFI",
-        "total_supply": 1000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 589081573.62,
@@ -3915,7 +4215,7 @@
       "symbol": "ETHFI"
     },
     {
-      "candidate_event_count": 65,
+      "candidate_event_count": 70,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3928,12 +4228,48 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Eligible holders of BlackRock’s BUIDL can now swap BUIDL for USDC and other stablecoins after banking hours and on weekends. The facility was created by Securitize and Ethena and was launched on Thursday. The pool started with $50 million of funding against a $100 million cap. Securitize runs the facility and Ethena backs it Approved investors can trade BUIDL for supported stablecoins like USDC or convert those stablecoins back into BUIDL, according to the Securitize announcement . Securitize operates the facility, and Ethena is the backer. The facility grants investors access to liquidity on Saturday or Sunday without having to wait for markets to open on Monday. “Tokenization is about more than putting assets onchain. It’s about making those assets more useful,” said Carlos Domingo, co-founder and CEO of Securitize. “Digital assets operate around the clock, and institutional liquidity needs to keep pace,” said Guy Young, founder of Ethena Labs. The launch gives eligible people access",
+          "id": "research:641f4371fae53a784e",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T02:03:49Z",
+          "title": "BlackRock's BUIDL fund gets a weekend USDC exit through Securitize and Ethena",
+          "url": "https://www.cryptopolitan.com/blackrock-buidl-holders-swap-usdc-weekends/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Ethena’s USDe has been launched on Solana through LayerZero Labs, the team responsible for the omni-chain interoperability protocol LayerZero. This development has implications for ENA, Ethena Labs’ native token. According to a post by Ethena Labs, OFT—SOL is now a backing asset for USDe, pending a community vote. August 7th marks Ethena's Solana integration: – […] The post Ethena Price Prediction as Stablecoin USDe Goes Live on Solana appeared first on BanklessTimes .",
+          "id": "research:7b41866be04c7dfbac",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-08T08:10:00Z",
+          "title": "Ethena Price Prediction as Stablecoin USDe Goes Live on Solana",
+          "url": "https://www.banklesstimes.com/news/2024/08/08/ethena-price-prediction-as-stablecoin-usde-goes-live-on-solana/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin (BTC), Ethena (ENA), and Celestia (TIA) prices have held steady this week as attention shifts to the upcoming US Consumer Price Index (CPI) data. BTC was trading at $59,455 on Tuesday morning, higher than this month’s low of 49,000. Ethena, the creator of the USDe stablecoin, was trading at $0.3223, 45% higher than last […] The post US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices? appeared first on BanklessTimes .",
+          "id": "research:c6228eeba27f1917fe",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-13T03:09:06Z",
+          "title": "US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices?",
+          "url": "https://www.banklesstimes.com/news/2024/08/13/us-cpi-data-how-will-it-impact-bitcoin-ethena-and-celestia-prices/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The facility starts with $25 million each in USDC and BUIDL. Additional funding is conditional, rather than a continuously available $100 million cash pool.... Read the full story at The Defiant",
           "id": "research:e919a9c32daa49597e",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-12T14:39:06Z",
           "title": "Securitize, Ethena Open BUIDL Facility With $100M Capacity",
           "url": "https://thedefiant.io/converge/defi/securitize-ethena-open-buidl-facility-with-100m-capacity"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Key Takeaways: Ethena price prediction shows selling pressure toward $0.14 Our ENA price prediction expects a maximum of $0.82 in 2026. In 2032, we expect the ENA price to achieve $7.38. Ethena is a stablecoin project built on Ethereum that offers USDe, a fully decentralized coin pegged to the US dollar. Unlike stablecoins such as USDC or USDT, USDe doesn’t depend on banks or centralized companies for reserves. Instead, it uses a cash-and-carry trading strategy to keep its value equal to the dollar. For investors who prioritize decentralization, USDe could be an appealing choice — especially since it currently offers staking rewards above 9%. However, critics caution that since the project is still new, it’s uncertain whether USDe’s high yields and dollar peg can remain stable during a market downturn. Based on these developments, we’ve compiled our Ethena price prediction from 2026-2032. In this article, we’ll find out “Will ENA reach $10?” and explore the factors behind ENA price pre",
+          "id": "research:eb1c5db950cc86533c",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T17:13:23Z",
+          "title": "Ethena Price Prediction 2026-2032: Will ENA Price Crash or Surge Toward $10?",
+          "url": "https://www.cryptopolitan.com/ethena-price-prediction/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3970,42 +4306,6 @@
           "published_utc": "2026-11-12T04:00:35Z",
           "title": "📉 $ENA (Ethena) is sliding today: $0.1436 (-6.80% 24h) 24h range: $0.1429 – $0.1562 | Fear & Greed: 28 (Fear) Bias: 📉 Bearish pressure — sellers in control, price hovering near support. 🟢 Support: $0.14 🔴 Resistance: $0.16 #Ethena",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1dXBwUzZLVUZRWGpxbld2LXU2eHJ4SFpWdkJwaTBUNXpQS200ZlRXTDZJak44X3RpNjJfeTlGVzVoeXl6dDE5eHVma1pHQUxwN09Ha015d1VlN0lBa29KcQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "kHYPE pairs are live on BOXA. Launch your coin paired with kHYPE, @Kinetiq_xyz's staked HYPE. X",
-          "id": "expanded:100cc1479cc96691dc",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T15:35:17Z",
-          "title": "kHYPE pairs are live on BOXA. Launch your coin paired with kHYPE, @Kinetiq_xyz's staked HYPE. - X",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NeEE1ZDFqQ0ItY01YamlIMWVlWHEzaGlfX1p3NThFc19QV2Qxb2JpLWhWNC1KdEpOWlJhdUZzeUNja3BWMzlTdlE1eGFGYUQzQy1CZFJqbm9YYVlnN2NHVjdlbTdWUjhlUE1TT2hXbWdqVzY4?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Securitize and Ethena Open 24/7 BlackRock BUIDL Liquidity Facility With $50 Million Funded Yahoo Finance",
-          "id": "expanded:1465eb2c2e0e809488",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T15:22:22Z",
-          "title": "Securitize and Ethena Open 24/7 BlackRock BUIDL Liquidity Facility With $50 Million Funded - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZThDSm8wOXoyUUZqelBKNDVkMkRoRC04a3ktTF84clBReFBWWl84cThjU1BjMDdIV3lJeml3dEFUVF9neUN3ekZuR0MtQ25PcXNuSmxEX0Z6ZDRtMVp0TlRYSFpheGJIYUlwT2JGblNZVDA3YmpTWjJER040dms4cmJJbzNmNGJxLTVyZTdpN1Y5cEtrWmxz?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$USDE $ENA: The team keeps executing. USDe circulation is going to surpass last year's high of $15B X",
-          "id": "expanded:16c126f31696f93f6d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T15:08:07Z",
-          "title": "$USDE $ENA: The team keeps executing. USDe circulation is going to surpass last year's high of $15B - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pVV9qSUtVUVQtLVFFeWdLOU12VmZfT3hHdUhObXZaMUt0dnFYTWZzN2V6aGl0bVZFYnZaNnI1bUc0WWQ4V0JzcV9MZkhqckxGWUl5STNWYTFCaFVTZDQ2MWR5dw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "How does Ethena (@ethena) reward $sUSDe holders and $ENA stakers? Here's how both reward systems work and what ENA holders are still waiting for 👇 https://t.co/ZkEdHWZ3Tw X",
-          "id": "expanded:194cc50e03dc877d23",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T10:22:29Z",
-          "title": "How does Ethena (@ethena) reward $sUSDe holders and $ENA stakers? Here's how both reward systems work and what ENA holders are still waiting for 👇 https://t.co/ZkEdHWZ3Tw - X",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zUUN6NFQ1b3RCQ0R3MXgzOWJlejZydmZ5MWVmQUJ4ZFZndFlRRHF0TTNrOS0yd0xwYjc2VHA2Nlk5dlFaV2t5SElrNHA2UW91YjhUQm9ULW96bHVi?oc=5"
         }
       ],
       "cmc100_weight": 0.09,
@@ -4049,7 +4349,9 @@
         "okx_swap_tickers": 1,
         "patternplus_unlocks": 2
       },
-      "missing_data": [],
+      "missing_data": [
+        "mapped_protocol_fundamentals"
+      ],
       "name": "Ethena",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -4081,35 +4383,22 @@
         "symbol": "ENA-USDT-SWAP",
         "trading_status": "live"
       },
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 13500000000.0,
-            "cmc_id": 30171,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 15000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.387Z",
-            "symbol": "ENA",
-            "total_supply": 15000000000.0
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 13500000000.0,
+        "circulating_supply": null,
         "cmc_id": 30171,
         "coin_name": "Ethena",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 15000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ENA",
-        "total_supply": 15000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1839359181.71,

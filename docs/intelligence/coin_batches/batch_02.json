@@ -113,6 +113,9 @@
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -128,36 +131,22 @@
             "protocol_tvl_change_7d_pct": -49.023618,
             "protocol_tvl_usd": 7940926.66
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 646145839.574685,
-            "cmc_id": 2694,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.018Z",
-            "symbol": "NEXO",
-            "total_supply": 1000000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 646145839.574685,
+        "circulating_supply": null,
         "cmc_id": 2694,
         "coin_name": "Nexo",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 1000000000.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "NEXO",
-        "total_supply": 1000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 458484900.15,
@@ -284,6 +273,110 @@
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-05T12:27:38Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.5.1-rc.2",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.1-rc.2"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-05T12:27:24Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.5.1-rc.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.1-rc.1"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-05T12:26:53Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.5.0-rc.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.0-rc.1"
+        },
+        {
+          "excerpt": "Important Optional but highly recommended upgrade. v2.5.1 is a hardening & maintenance release. No protocol fork is activated, and operators can upgrade in-place. v2.5.1 carries robustness improvements across the P2P layer, block processing, the transaction pool and the public/admin APIs, together with a handful of API and SDK fixes. Most changes are internal; the user-visible ones are listed below. What's Changed Hardening & Robustness These changes tighten resource bounds and failure handling throughout the node. They do not change consensus rules: every bound is sized above what a valid block can hold under the current 40M block gas limit. Networking : new blocks received from a peer are handed off through a per-peer mailbox instead of being processed on the peer's read loop. Transaction broadcast now uses a single bounded queue and wr",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-05T09:11:55Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.5.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.1"
+        },
+        {
+          "excerpt": "Important Mandatory upgrade. This release activates a hardfork . All node operators must upgrade to v2.5.0 before the following block heights: Interstellar Hardfork Testnet Hardfork : Block 25,891,380 ~ Wed, 9 Sep 2026 11:14:40 UTC Mainnet Hardfork : Block 25,902,540 ~ Wed, 16 Sep 2026 11:15:10 UTC What's Changed Interstellar brings the VeChainThor EVM up to date with Ethereum's Cancun, Prague and Osaka releases in a single upgrade, as specified in VIP-255 . It closes the gap that has grown since Galactica (Shanghai), so that current Solidity and Vyper output, and libraries that rely on transient storage, MCOPY , BLS12-381 or secp256r1, run on VeChainThor unchanged. No configuration changes are required; operators can upgrade in-place. Ethereum transaction equivalence is not part of this upgrade and will be specified in its own VIP. EVM U",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-03T13:50:40Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.5.0 Interstellar",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.0"
+        },
+        {
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.4 is a hardening & maintenance release focused on runtime operability, mempool/consensus correctness, and observability. v2.4.4 focuses on runtime operability, mempool/consensus correctness, and observability, alongside routine build, CI, and dependency maintenance. The build environment is updated to Go v1.26.5. What's Changed Paolo/txpool metrics by @paologalligit in #1619 Runtime feature toggles via admin server by @libotony in #1620 Add inverted range early return + tests by @otherview in #1628 bft: use post-housekeep state for PoS threshold by @libotony in #1630 txpool: improve tx pricing logic and simplify re-pricing logic by @libotony in #1631 feat: add offset limit to logs pagination and db metrics by @moglu2017 in #1632 refactor code and clean up by @paologalligit in #1633 B",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-07-16T03:45:56Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.4.4",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.4"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-07-15T15:01:53Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.4.4-rc.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.4-rc.1"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-03-27T06:07:09Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.4.3-rc.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.3-rc.1"
+        },
+        {
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.3 is a hardening & maintenance release focused on networking robustness, mempool/accounting correctness, and API safeguards. v2.4.3 introduces targeted improvements to P2P message handling, deferred transaction accounting, and API response safety , alongside routine dependency, CI, and tooling updates. Notably updated build environment to Go v1.26.1 . What's Changed Tweak external CI targets by @otherview in #1579 fix: remove legacy bootnode by @ShaunKav in #1582 Update to go v1.26.1 by @otherview in #1591 Two step decoding for received messages by @paologalligit in #1599 Sync crypto package with v1.17.1 by @moglu2017 in #1596 Enhance deferred tx accounting by @otherview in #1598 api: limit accounts star max data size can return by @libotony in #1600 Contributors Thanks to everyone w",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-03-26T11:34:06Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.4.3",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.3"
+        },
+        {
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.2 is a hardening release. No protocol fork is activated, and operators can upgrade in-place. What's Changed chore: remove hayabusa ascii art by @darrenvechain in #1556 feat: upgrade cli version by @darrenvechain in #1561 Update dockerfile by @otherview in #1566 Add docs by @vanja-vechain in #1560 move bandwidth metric to node by @libotony in #1557 chore: add INFO to start logs by @ShaunKav in #1563 Sanitize url on thorclient by @vanja-vechain in #1562 feat: use latest abi fucntionality by @darrenvechain in #1558 Adding Solo Mocked BFT Engine by @otherview in #1564 add r/w bytes and r/w syscalls to the promethus metrics by @libotony in #1567 Darren/chore/add metrics by @darrenvechain in #1559 minor: remove unsude return values in PrepareNext by @libotony in #1573 Vanja/feat/1016 add a",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-02-13T11:22:44Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "vechain_releases",
+          "title": "v2.4.2",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.2"
+        }
+      ],
+      "project_protocol_context_substantive_count": 5,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -294,36 +387,22 @@
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 85985041177.0,
-            "cmc_id": 3077,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 86712634466.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.018Z",
-            "symbol": "VET",
-            "total_supply": 85985041177.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 85985041177.0,
+        "circulating_supply": null,
         "cmc_id": 3077,
         "coin_name": "VeChain",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 86712634466.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "VET",
-        "total_supply": 85985041177.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 436020101.85,
@@ -450,39 +529,27 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "Quant",
       "perp_identity_status": "QUARANTINED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 12072738.0,
-            "cmc_id": 3155,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 14881364.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.143Z",
-            "symbol": "QNT",
-            "total_supply": 14881364.0
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 12072738.0,
+        "circulating_supply": null,
         "cmc_id": 3155,
         "coin_name": "Quant",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 14881364.0,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "max_supply": null,
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "QNT",
-        "total_supply": 14881364.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1968029540.41,
@@ -603,41 +670,29 @@
         "coingecko_supply": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "Bitcoin SV",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 20110325.0,
-            "cmc_id": 3602,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.231Z",
-            "symbol": "BSV",
-            "total_supply": 20110325.0
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 20110325.0,
+        "circulating_supply": null,
         "cmc_id": 3602,
         "coin_name": "Bitcoin SV",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 21000000.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BSV",
-        "total_supply": 20110325.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 311893973.57,
@@ -652,8 +707,17 @@
       "symbol": "BSV"
     },
     {
-      "candidate_event_count": 63,
+      "candidate_event_count": 64,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cronos price has gone parabolic, making it one of the best performing cryptocurrencies in the industry. The CRO token soared to a high of $0.1771, its highest swing since March 5. It has jumped by 40% on Monday and by 156% from its lowest level in August, giving it a market cap of over $4.6 […] The post Cronos Price Prediction as CRO Gets Severely Overbought appeared first on BanklessTimes .",
+          "id": "research:c5dabc5109c0d9e1e3",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-11-11T20:35:21Z",
+          "title": "Cronos Price Prediction as CRO Gets Severely Overbought",
+          "url": "https://www.banklesstimes.com/news/2024/11/11/cronos-price-prediction-as-cro-gets-severely-overbought/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "📉 $CRO (Cronos) is pulling back: $0.047557 (-2.54% 24h) 24h range: $0.046987 – $0.049011 | Fear & Greed: 29 (Fear) Bias: 📉 Mildly bearish — drifting lower below resistance; support matters. 🟢 Support: ~$0.045 🔴 Resistance: ~$0.050 #Cronos #CRO #Cry X",
@@ -734,15 +798,6 @@
           "published_utc": "2026-11-10T14:55:43Z",
           "title": "👑 SEASON 4 CLOSED. SEASON 5 UNLOCKED! 🦁🔥 Honored to receive the 🌟 Rising Star CROwn! Season 4 was about showing up, supporting the community, learning, and pushing myself to contribute more to the Cronos ecosystem. Congratulations",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5ODNSVDhsTnlXSXlWbGxwYUpsMldNQmliWWRuR3VZN1Z4QnR3MFMyNU5iTDdRRWFzb0xxS1dwLVhZc0MyRjVEUXVsaUNlRDMzSHM4MzJBT3pKRE9qeFJ4LQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "🦅 APEX DEX is LIVE on #Cronos Swap $CRO $APEX $WCRO $VVS $USDC and the top Cronos tokens in one place 👇 💎 NEW: $APEX cashtag card Live price, 24h change, market cap + chart, right on the site 📈 $APEX +19.6% today | MC $18.9K 🔗 One tap t X",
-          "id": "expanded:1bb5896134cce5a0e4",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T14:55:21Z",
-          "title": "🦅 APEX DEX is LIVE on #Cronos Swap $CRO $APEX $WCRO $VVS $USDC and the top Cronos tokens in one place 👇 💎 NEW: $APEX cashtag card Live price, 24h change, market cap + chart, right on the site 📈 $APEX +19.6% today | MC $18.9K 🔗 One",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QenJWakZ5X0xDemVfekZUVGxjVFhxeFlXV1hOOENiZ0lNdTBJck14a2NfM0U4YlpzQTl0dTNtQ2pHYXNpdjdjaUtVSGk2eEY2b2VkNWszZHgwUUJQQXlMRUlIWDJUdw?oc=5"
         }
       ],
       "cmc100_weight": 0.12,
@@ -838,6 +893,110 @@
         "symbol": "CRO-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "Content This release reduces memory use and makes tx event searches cancellable. It addresses out-of-memory crashes on nodes serving GET /cosmos/tx/v1beta1/txs (and CometBFT RPC tx_search) for queries that match a very large number of transactions. This is a non-consensus release . The state machine is unchanged, so nodes can upgrade at any time with a rolling restart. No upgrade height or governance proposal is needed. Bug fixes Tx search loads only the requested page. Previously the kv indexer loaded every matching transaction into memory before taking out the requested page, even for limit=100. It now sorts and pages matches using the index keys and loads only the transactions on the requested page. In benchmarks with 100k matches, peak memory fell from 459 MB to 45 MB and latency from 474 ms to 95 ms. ( crypto-org-chain/cometbft#69 ) ",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-08T08:56:13Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v8.0.1",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v8.0.1"
+        },
+        {
+          "excerpt": "This binary is for upgrade plan v8 Content This release adds a module account converter to the upgrade handler to support migration during the chain upgrade ( #1304 ). On the tiered rewards module, two fixes harden position handling: vesting accounts are now blocked from creating tier positions ( #1305 ), and position delegator address derivation is protected against pre-creation squatting ( #1308 ). An NFT genesis fix validates the denom Id (IBC-aware) instead of Name, so denoms with free-form names now round-trip correctly through export/import ( #1312 ). Rounding out the release, ICS-721 is disabled ( #1298 ), and CI/tooling is improved by upgrading nixPkgs to the latest 25.11 patch ( #1311 ) and building upgrade-test binaries from source via flakes ( #1310 ).",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-07-14T08:45:21Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v8.0.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v8.0.0"
+        },
+        {
+          "excerpt": "Content 🚀 v7.3.0 Update: This version resolves a couple of bugs found in v7.2.0.",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-06-02T02:31:05Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v7.3.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v7.3.0"
+        },
+        {
+          "excerpt": "Content This release rewrites the economics of the chain. v7 is built around a new tokenomics stack: x/inflation shapes how the network mints over time, and x/tieredrewards gives stakers a richer, tier-based reward system with a rewards pool that can backstop base yield when block fees alone fall short. The plan name is v7 for mainnet and v7.1.0-testnet for testnet. x/inflation Time-based inflation decay : after a configured decay epoch start height, the rate applied in minting is reduced using a monthly decay model (governed decay_rate), on top of the normal Cosmos x/mint calculation. Supply and burns : module params support max supply (enforced in BeginBlocker) and burned addresses whose balances are treated as out of circulation for that check. Details in ADR-007 x/tieredrewards Tiers define rules such as minimum lock, exit delay, bonu",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-05-25T06:43:57Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v7.2.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v7.2.0"
+        },
+        {
+          "excerpt": "WARNING: DO NOT USE BINARY, USE v7.2.0 instead",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-05-20T09:02:52Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v7.1.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v7.1.0"
+        },
+        {
+          "excerpt": "WARNING: DO NOT USE BINARY, USE v7.2.0 instead",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-05-20T09:02:34Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v7.0.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v7.0.0"
+        },
+        {
+          "excerpt": "Security patch: Patch comet bft to include security advisory GHSA-c32p-wcqj-j677",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-01-26T05:50:07Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v6.0.4",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v6.0.4"
+        },
+        {
+          "excerpt": "Security patch: Patch comet bft to include security advisory GHSA-hrhf-2vcr-ghch",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2025-10-14T17:06:59Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v6.0.3",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v6.0.3"
+        },
+        {
+          "excerpt": "Bug fixes: Fix for apphash missmatch during v6 upgrade",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2025-09-18T09:00:28Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v6.0.2",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v6.0.2"
+        },
+        {
+          "excerpt": "Bug fixes: Fixed error when deleting legacy versions. Resolved versiondb interface mismatch.",
+          "first_observed_utc": "2026-11-13T07:07:07Z",
+          "has_substantive_context": false,
+          "published_utc": "2025-09-18T08:59:48Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cronos_releases",
+          "title": "v6.0.1",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v6.0.1"
+        }
+      ],
+      "project_protocol_context_substantive_count": 3,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -852,47 +1011,33 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04716,
-            "bid": 0.04714,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 0.04718,
+            "bid": 0.04716,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 3635,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CRO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 4.24178,
-            "top5_ask_usd": 924.37,
-            "top5_bid_usd": 1629.16
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 50773644511.86694,
-            "cmc_id": 3635,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 100000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.387Z",
-            "symbol": "CRO",
-            "total_supply": 99034982967.09557
+            "spread_bps": 4.23998,
+            "top5_ask_usd": 1076.95,
+            "top5_bid_usd": 1561.17
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 50773644511.86694,
+        "circulating_supply": null,
         "cmc_id": 3635,
         "coin_name": "Cronos",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 100000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "CRO",
-        "total_supply": 99034982967.09557
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 2364510592.32,
@@ -1062,50 +1207,38 @@
         "symbol": "FET-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.1464,
-            "bid": 0.1463,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 0.1468,
+            "bid": 0.1467,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 3773,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "FET-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.83293,
-            "top5_ask_usd": 27687.56,
-            "top5_bid_usd": 27442.46
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 2429129001.75903,
-            "cmc_id": 3773,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 2719493897.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.050Z",
-            "symbol": "FET",
-            "total_supply": 2714384546.672
+            "spread_bps": 6.81431,
+            "top5_ask_usd": 34029.54,
+            "top5_bid_usd": 23176.31
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 2429129001.75903,
+        "circulating_supply": null,
         "cmc_id": 3773,
         "coin_name": "Artificial Superintelligence Alliance",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 2719493897.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "FET",
-        "total_supply": 2714384546.672
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 345634605.28,
@@ -1120,7 +1253,7 @@
       "symbol": "FET"
     },
     {
-      "candidate_event_count": 127,
+      "candidate_event_count": 128,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1139,6 +1272,15 @@
           "published_utc": "2026-10-29T17:26:19Z",
           "title": "Cosmos Quarterly #2 Q3-26 - Hardening, Interop, and the Hub & Tokenomics Roadmap",
           "url": "https://forum.cosmos.network/t/cosmos-quarterly-2-q3-26-hardening-interop-and-the-hub-tokenomics-roadmap/17517"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Cosmos token is on track for its fourth week in the red as its demand dries up and as the crypto industry faces challenges. ATOM dropped to $4.8 on Friday, its lowest point since 2021 and almost 90% below its highest point on record. Cosmos has lost market share Cosmos, which used to be one […] The post Cosmos Loses Key Support as ATOM Staking Yield Hits 18% appeared first on BanklessTimes .",
+          "id": "research:6977995030a936c470",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-16T06:33:00Z",
+          "title": "Cosmos Loses Key Support as ATOM Staking Yield Hits 18%",
+          "url": "https://www.banklesstimes.com/news/2024/08/16/cosmos-loses-key-support-as-atom-staking-yield-hits-18/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1202,15 +1344,6 @@
           "published_utc": "2026-11-11T10:00:02Z",
           "title": "Wells Fargo CEO Charlie Scharf on the bank's latest earnings call: \"Last month, we launched tokenized deposits on our proprietary blockchain platform.\" The ~$2.3T bank is building its tokenized deposit engine on Cosmos. @cosmos - ",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mdk5aNzFjSzBjRkpKaFdzWWk2LVZsYXNKLUpmODlOSWNzU2xWTl95R3R3X2ZZOHJyTWZvWm45R3BRMnFZZWlXUzJqLWhHVXNVTm1DcTBzOWxBcG5qY2c?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Long before Newton and Leibniz, 14th-century mathematician Madhava of Sangamagrama and the Kerala School of mathematics discovered infinite series for sine, cosine, and pi. In Hindu tradition, astronomy and math fall under Jyotisha, one of the six Vedan X",
-          "id": "expanded:15dca7bd4fcf685628",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T16:24:09Z",
-          "title": "Long before Newton and Leibniz, 14th-century mathematician Madhava of Sangamagrama and the Kerala School of mathematics discovered infinite series for sine, cosine, and pi. In Hindu tradition, astronomy and math fall under Jyotish",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QWXFmZGstMkplaVBmc2dyaUdRd3hBam1UQnZvdzVTTWFpQ1FFRGJLVkVXY3RHN2hlNVUzTGYxdkJiOUplTFRYU0ltTl9yT3JGVGRfSWdEcGg4WVJKVHc?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
@@ -1269,50 +1402,159 @@
         "symbol": "ATOM-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "This is the twenty-fourth Hub Weekly Thursday recap, straight from the Hub Unit team, per the cadence we committed to in the From Chaos to Stability to Growth post. Every Thursday, we will call out significant Cosmos Hub updates on the forum, with a short companion thread on X, recapping announcements, live events like validator or community calls, and ecosystem updates! For more info, see the linked posts, and contact me or @RoboMcGobo on Telegram to submit news for the weekly. This week Robo is out, so I am covering. This week: IBC joins LF Decentralized Trust, the November validator call, the latest on USDC, Proposal 1061, and Node101’s Validatier dashboard. IBC is now an LF Decentralized Trust project : what changes, what does not, and what it means for the Hub and ATOM Yesterday’s validator call : Prop 1060 closed out, Cosmos KMS and",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-12T16:55:33Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Hub Weekly Update #24: November 12, 2026",
+          "url": "https://forum.cosmos.network/t/hub-weekly-update-24-november-12-2026/17581"
+        },
+        {
+          "excerpt": "Props 1060 and 1061, IBC joining LF Decentralized Trust, ATOM on Paxos, remote signers, and a delegation program update The following is a recap of the November 11, 2026 Cosmos Hub validator call. These calls occur once per month, and recaps like this one are posted on the Cosmos Hub forums following each call. The call covered the result of Prop 1060 and the open vote on Prop 1061, IBC joining LF Decentralized Trust, ATOM on Paxos and the Blockworks TTF filing, remote signers and Cosmos KMS, and a change to how commission is checked in the delegation program. Last month’s recap is on the forum, and the slides from this call are available to view. Prop 1060: the community pool’s USDC.n is now USDC.inj Prop 1060 passed on November 3, and the funds were back in the community pool as USDC.inj on November 4. The community pool did not have a ",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T15:06:37Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Cosmos Hub Validator Call: Recap - Nov 11, 2026",
+          "url": "https://forum.cosmos.network/t/cosmos-hub-validator-call-recap-nov-11-2026/17577"
+        },
+        {
+          "excerpt": "URGENT: Unauthorized Tokenize Shares Transaction – 1,200 ATOM Missing from My Keplr Wallet – Request for Technical Investigation and Recovery Hello Cosmos Hub Community, I am seeking urgent technical assistance regarding the unauthorized movement of my staked ATOM during the November 2026 Keplr/Web3Auth security incident. My Keplr wallet was created using Google social login. My original Cosmos Hub address: cosmos10w6lv5fpy0a58z55736fqytxkftgg44qgyu5gn Before the incident, I had approximately: 1,200.473313 ATOM staked with validator SG-1. Approximately 16 ATOM in accumulated staking rewards. On November 10, 2026, an operation was executed without my knowledge or authorization. Transaction hash: 81DBA70F3F2B81600B9FF93B5E5DCF1EB0BB89CFF85595630A3B81E37EBD14F1 My entire staking position was tokenized into 1,200.713431 IATOM. These IATOM wer",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T14:10:37Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Stolen tokens: what actions are being taken",
+          "url": "https://forum.cosmos.network/t/stolen-tokens-what-actions-are-being-taken/17576"
+        },
+        {
+          "excerpt": "Hi all, If you work with more than one Cosmos chain, you’ve probably hit this: chain binaries don’t update themselves. After a network upgrade, the gaiad or osmosisd on your machine quietly goes stale, and you find out when a transaction fails or a query returns something odd. Cosmovisor solves this for running nodes, but nothing did for developers, CLI users and CI. I built cosmup to fill that gap. It’s a small Go CLI that reads the Cosmos chain registry, downloads the right binary for your platform, verifies its SHA256, and keeps versions side by side. $ cosmup check osmosis Local: v30.0.0 (/usr/local/bin/osmosisd) Network: v31.0.0 (via https://lcd.osmosis.zone) Status: does not match the network; run: cosmup install osmosis@v31.0.0 $ cosmup install osmosis Verified sha256 d435408b... Active: osmosis v31.0.0 What it does: install / use ",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T11:13:24Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Cosmup: install, switch and check Cosmos chain binaries (like nvm, for gaiad/osmosisd/...)",
+          "url": "https://forum.cosmos.network/t/cosmup-install-switch-and-check-cosmos-chain-binaries-like-nvm-for-gaiad-osmosisd/17575"
+        },
+        {
+          "excerpt": "When a module limits what governance can do with it, a cap on what a treasury pays out per week or a list of addresses a reserve is allowed to pay, the easy place for that limit is the module’s params. The authority for MsgUpdateParams is then the same gov account the limit is meant to hold back. That came up in the Luggom thread here in October, and the fix was in their repo the same day. I think it’s general enough for its own topic, because it’s easy to miss when you read the module on its own. What x/gov does when a proposal passes In SDK v0.53.8, the version Gaia v29 runs, the gov EndBlocker tallies the vote and, if it passed, opens one cached context and runs the proposal’s messages in the order they were submitted ( abci.go L166-L217 ). Every message sees what the ones before it wrote. If one fails, nothing is written and the propo",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T05:59:28Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "One proposal can lift a module's limit and use it in the same block",
+          "url": "https://forum.cosmos.network/t/one-proposal-can-lift-a-modules-limit-and-use-it-in-the-same-block/17574"
+        },
+        {
+          "excerpt": "Hello Cosmos community, I would like to ask for clarification regarding a recent public statement made by an account associated with InterLink Chain ( @kv_interlink on X). In a November 10, 2026 post, the account stated: “The decision by Interlinkchain and @cosmos to contribute IBC, a protocol that has processed over $50 billion in transaction volume since 2021, to an initiative under the @linuxfoundation …” The post then discussed potential opportunities for InterLink Chain through IBC, including cross-chain interoperability for ITLG and ITL, high-performance infrastructure, quantum-resistant security, and enterprise adoption. However, after reviewing the official Cosmos announcement published on November 9, 2026, I noticed something that I would like to clarify. The official announcement identifies Cosmos and the Interchain Foundation a",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T15:01:45Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Clarification Request: InterLink Chain's Claimed Involvement in the IBC Contribution to Linux Foundation",
+          "url": "https://forum.cosmos.network/t/clarification-request-interlink-chains-claimed-involvement-in-the-ibc-contribution-to-linux-foundation/17570"
+        },
+        {
+          "excerpt": "Voting Information The Gaia v29.1.0 software upgrade proposal for the Cosmos Hub mainnet is now open for on-chain voting. Proposal: #1061 Voting period: 7 days Voting deadline: November 17, 2026, at 12:00 UTC Validators and ATOM delegators are encouraged to review the proposal and cast their votes before the deadline. Upgrade Schedule If approved, the Cosmos Hub mainnet will execute the on-chain v29.1.0 upgrade at the following block height: Upgrade height: 33,935,300 Estimated upgrade time: November 18, 2026, at 12:40 UTC The estimated time may vary depending on block production. For complete technical details and upgrade procedures, please refer to the official documentation: Release notes: Gaia v29.1.0 Changelog: Here Upgrade instructions: Here Binary verification: Here Governance Votes The following summarizes the voting options and t",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T12:16:42Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Gaia v29.1.0 Software Upgrade",
+          "url": "https://forum.cosmos.network/t/gaia-v29-1-0-software-upgrade/17569"
+        },
+        {
+          "excerpt": "Hi, I’m Phillip. I’m building Blue Collar Crypto, a social platform for validators, NFT creators and their communities. Every Cosmos validator already has a page on the site, built from on-chain data. Claim yours by signing with Keplr, and then you can: Post announcements and updates Message your community Run your own social feed Build a community that’s open to anyone, or only to your delegators and set the min delegation to join. Build your trust score so users know they are talking to a member of the team. Build followers even before you claim the page. NFT creators can claim their collections and run holder-only groups. We’re still in testing, so we need honest feedback: Is the info on your page right? What’s confusing? What would actually make this useful to you? No token. No airdrop. No sale. Check it out: Blue Collar Crypto Thanks",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-09T22:55:21Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Cosmos validators and NFT creators: claim your page and tell us what’s broken",
+          "url": "https://forum.cosmos.network/t/cosmos-validators-and-nft-creators-claim-your-page-and-tell-us-what-s-broken/17564"
+        },
+        {
+          "excerpt": "Today, the Interchain Foundation and Cosmos announced that the Inter-Blockchain Communication protocol (IBC) is being contributed to LF Decentralized Trust , the Linux Foundation’s home for ledger and decentralized technology. The press release ( Cosmos Contributes IBC to Linux Foundation Decentralized Trust to Advance Blockchain Interoperability ) The announcement blog ( https://cosmos.network/blog/ibc-joining-lf-decentralized-trust ) has the full story and the FAQ, and the LFDT technical article ( Advancing Open Interoperability Through IBC's Contribution to LF Decentralized Trust ) covers the protocol and governance. The main X announcement I shared my thoughts on X , but I wanted to add a summary- plus a few more words from the ecosystem team on the forum to commemorate! We spend our days with the chains, builders, relayers, and valid",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-09T16:20:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "IBC joins the Linux Foundation Decentralized Trust: what it means for chains, builders and the Hub!",
+          "url": "https://forum.cosmos.network/t/ibc-joins-the-linux-foundation-decentralized-trust-what-it-means-for-chains-builders-and-the-hub/17562"
+        },
+        {
+          "excerpt": "Gaia v29.1.0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v29.0.1 to v29.1.0 . 🚀 Highlights This is a state-breaking release that restores decoding of historical ParameterChangeProposal content, fixing governance proposal list, status-filtered, single-proposal and tally queries and state export ( #4199 ) This release bumps the following dependencies: Bump github.com/CosmWasm/wasmd from 0.60.9 to 0.60.10 ( #4201 ) Bump github.com/CosmWasm/wasmvm/v2 from 2.3.5 to 2.3.6 ( #4201 ) After confirming that the upgraded node runs normally, you can remove the old cache directories: <node home>/wasm/cache/modules/3858fb5318-wasmer24 <node home>/data/08-light-client/cache/modules/3858fb5318-wasmer24 🔨 Build from source git cl",
+          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-09T01:44:12Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_releases",
+          "title": "v29.1.0",
+          "url": "https://github.com/cosmos/gaia/releases/tag/v29.1.0"
+        },
+        {
+          "excerpt": "Title: [EMERGENCY] Proposal to JAIL Validator with $500 Hidden Rule - 44k Keplr Victims Chain: Cosmos Hub Proposal Type: Social Slashing / Community Alert SUMMARY On Nov 7 2026, Web3Auth breach compromised 44,041 Keplr wallets (Google Login). My wallet cosmos1a5dykrp8fdnvayhmne0uq4dwacyzzzkdqm3ctnn was drained: Tx: 65cdf7ac0dcc9dbfaecb53a8dbdddc5f8a1d2e51fe5d1b6b06e2d06e76b576a Stolen: 29 ATOM + 3.52 OSMO + 1.09 TIA Separately, the validator I delegated to has a deceptive rule: “Wallets under $500 get 0% rewards” - NOT shown in Keplr UI. This targets users leaving small balances for airdrops. VIOLATION Hidden commission = Fraud Keplr promoted validator as trusted without disclosure DEMANDS A) JAIL validator for 21 days, then TOMBSTONE if confirmed. B) Slash 5% to compensate <$500 victims. C) Keplr must delist validator and add warning: “0",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-08T23:41:11Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "Creat voting to jail the hacker validator",
+          "url": "https://forum.cosmos.network/t/creat-voting-to-jail-the-hacker-validator/17556"
+        },
+        {
+          "excerpt": "Transaction: D2283D7E35CC2B844BB29D2C5B904CBE598DE8B92549EE6A106E4AD735311599 Height 33,766,882, Nov 7 2026, 10:18:55 UTC. Memo: “lsm recovery batch”. 27 messages: Send, Modify Withdraw Address and Tokenize Shares, repeated across several delegators. Attacker address (new owner of the tokenized shares and new withdraw address): cosmos1atuap9kfnt6y8ykvn3437e7j3z8qffh3qtnmwu Batch sender (self-send of 0.000001 ATOM in message #1 ): cosmos1pa0n22gcyyjnv6vqe9qgphrfhyhhf52t6kqud0 My address (victim): cosmos1tpkpt8l2aup6m2exjpw84mj9ww302q3dltfvls Messages #9 and #10: withdraw address changed, then 356.009956 ATOM tokenized (validator: Cryptostake_com). I never signed this transaction and never granted authz permissions to anyone. The authz grants query for my address currently returns an empty list. It is unclear how a single transaction could ",
+          "first_observed_utc": "2026-11-12T20:01:30Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-08T00:27:03Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "cosmos_governance",
+          "title": "URGENT SECURITY REPORT: theft of staked ATOM via LSM Tokenize Shares, Cosmos Hub",
+          "url": "https://forum.cosmos.network/t/urgent-security-report-theft-of-staked-atom-via-lsm-tokenize-shares-cosmos-hub/17550"
+        }
+      ],
+      "project_protocol_context_substantive_count": 40,
+      "project_protocol_context_total": 40,
       "quantitative_research_families": [
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.399,
-            "bid": 1.398,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 1.404,
+            "bid": 1.402,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 3794,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ATOM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 7.15052,
-            "top5_ask_usd": 52847.66,
-            "top5_bid_usd": 76455.33
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 540425557.232905,
-            "cmc_id": 3794,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.173Z",
-            "symbol": "ATOM",
-            "total_supply": 540425557.232905
+            "spread_bps": 14.25517,
+            "top5_ask_usd": 85477.3,
+            "top5_bid_usd": 81653.44
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 540425557.232905,
+        "circulating_supply": null,
         "cmc_id": 3794,
         "coin_name": "Cosmos",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ATOM",
-        "total_supply": 540425557.232905
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 750700354.04,
@@ -1476,50 +1718,38 @@
         "symbol": "OKB-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 94.59,
-            "bid": 94.58,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 94.87,
+            "bid": 94.86,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 3897,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "OKB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.05725,
-            "top5_ask_usd": 2706.01,
-            "top5_bid_usd": 5149.96
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 21000000.0,
-            "cmc_id": 3897,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.175Z",
-            "symbol": "OKB",
-            "total_supply": 21000000.0
+            "spread_bps": 1.05413,
+            "top5_ask_usd": 4020.43,
+            "top5_bid_usd": 5077.17
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 21000000.0,
+        "circulating_supply": null,
         "cmc_id": 3897,
         "coin_name": "OKB",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 21000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "OKB",
-        "total_supply": 21000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1977941828.65,
@@ -1632,41 +1862,29 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "UNUS SED LEO",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 919857851.9,
-            "cmc_id": 3957,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.175Z",
-            "symbol": "LEO",
-            "total_supply": 985239504.0
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 919857851.9,
+        "circulating_supply": null,
         "cmc_id": 3957,
         "coin_name": "UNUS SED LEO",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "LEO",
-        "total_supply": 985239504.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 8439513644.12,
@@ -1836,6 +2054,110 @@
         "symbol": "ALGO-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "Overview This release improves node efficiency, expands the foundation for post-quantum accounts, and strengthens security and reliability. It also brings AVM arithmetic enhancements and API optimizations. What's New Performance : significantly reduced RAM and disk IO by algod running on default config. Post-quantum accounts : infrastructure for new signing schemes, including Falcon-512 and hybrid accounts. AVM : improved wide-integer arithmetic, including modular exponentiation, and stricter LogicSig argument validation. Security and stability : hardened DNSSEC validation, improved networking and ledger catchpoint processing. Changelog Enhancements API: compute block hash from header only in GetBlockHash ( #6818 ) API: Update oapi-codegen to v2.8.1 and drop unused embedded specs ( #6814 ) API: Stream JSON responses with encoding/json/v2 ",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-06T16:03:10Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.1.0",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.1.0-beta"
+        },
+        {
+          "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-28T14:04:26Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand 5.0.5",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.5-stable"
+        },
+        {
+          "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-28T14:04:10Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.0.5",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.5-beta"
+        },
+        {
+          "excerpt": "Overview This release addresses minimum balance handling inconsistencies. A consensus upgrade is included in this release, to address this change. What's New Improvements to eval and hardening consensus requirements around minimum balance. Zstd support was added to agreement crash recovery snapshots. Changelog Bug Fixes eval: refuse to assemble a close-out that still requires a minimum balance Consensus: Add consensus version v43 with CloseRequiresBaseMinBalance agreement: restore zstd-compressed crash recovery snapshots Protocol Upgrade This release contains a protocol upgrade. Additional Resources Developer Portal Discord",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-20T15:55:29Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand 5.0.4",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.4-stable"
+        },
+        {
+          "excerpt": "Overview This release addresses minimum balance handling inconsistencies. A consensus upgrade is included in this release, to address this change. What's New Improvements to eval and hardening consensus requirements around minimum balance. Zstd support was added to agreement crash recovery snapshots. Changelog Bug Fixes eval: refuse to assemble a close-out that still requires a minimum balance Consensus: Add consensus version v43 with CloseRequiresBaseMinBalance agreement: restore zstd-compressed crash recovery snapshots Protocol Upgrade This release contains a protocol upgrade. Additional Resources Developer Portal Discord",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-20T15:55:11Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.0.4",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.4-beta"
+        },
+        {
+          "excerpt": "Overview A root key update broke DNSSEC lookups due to anchor updates. What's New Update anchor file to include new root. Changelog Bug Fixes dnssec: add root KSK-2024 trust anchor ( #6764 ) Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-12T02:20:44Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.0.3",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.3-beta"
+        },
+        {
+          "excerpt": "Important Note Attention all node runners: please upgrade your nodes to v5.0.3 as soon as possible. This patch fixes an issue with DNSSEC validation that prevents nodes from bootstrapping into the network when started or restarted. The issue affects all types of nodes. Nodes that are currently connected to the network are functioning properly, but a new start or restart with versions less than 5.0.3 will not be able to validate DNSSEC signatures, which are required by default. This would result in the node being unable to connect to the network. If you have any questions about upgrading your nodes, please reach out to us in the node-runners channel of the Algorand Discord server. Node operators can ensure their nodes remain able to connect to the network by one of two approaches: Primary Approach: Upgrade Node Software Common Node Upgrade",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-12T01:25:55Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand 5.0.3",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.3-stable"
+        },
+        {
+          "excerpt": "Overview This release improves safety and durability of node operation. What's New Strengthen handling around agreement verifications to improve stability. Changelog Enhancements agreement: discard stale cert bundles per spec bundle relay rule agreement: add bound check on step agreement: isolate bundle verification from untrusted periods Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-15T14:54:59Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand 5.0.2",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.2-stable"
+        },
+        {
+          "excerpt": "Overview This release improves safety and durability of node operation. What's New Strengthen handling around agreement verifications to improve stability. Changelog Enhancements agreement: discard stale cert bundles per spec bundle relay rule agreement: add bound check on step agreement: isolate bundle verification from untrusted periods Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-15T14:54:42Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.0.2",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.2-beta"
+        },
+        {
+          "excerpt": "Overview This release improves safety and performance of nodes. (This is a backport of v5.0.1-stable.) What's New Improved verification and performance of stateproofs. Changelog Enhancements stateproof: reject mismatched hash type Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
+          "first_observed_utc": "2026-11-12T20:05:45Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-09-01T14:53:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "algorand_releases",
+          "title": "Algorand BetaNet 5.0.1",
+          "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.1-beta"
+        }
+      ],
+      "project_protocol_context_substantive_count": 10,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -1850,47 +2172,33 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.08713,
-            "bid": 0.0871,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 0.0874,
+            "bid": 0.08738,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 4030,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ALGO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.44372,
-            "top5_ask_usd": 2751.67,
-            "top5_bid_usd": 3745.9
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 9079569700.419437,
-            "cmc_id": 4030,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 10000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.175Z",
-            "symbol": "ALGO",
-            "total_supply": 10000000000.0
+            "spread_bps": 2.28859,
+            "top5_ask_usd": 858.59,
+            "top5_bid_usd": 1132.95
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 9079569700.419437,
+        "circulating_supply": null,
         "cmc_id": 4030,
         "coin_name": "Algorand",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 10000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ALGO",
-        "total_supply": 10000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 780342259.38,
@@ -1931,41 +2239,29 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "GateToken",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 104708751.8,
-            "cmc_id": 4269,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 142622843.67,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.175Z",
-            "symbol": "GT",
-            "total_supply": 138065459.04
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 104708751.8,
+        "circulating_supply": null,
         "cmc_id": 4269,
         "coin_name": "GateToken",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 142622843.67,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "GT",
-        "total_supply": 138065459.04
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 936536902.39,
@@ -1980,8 +2276,17 @@
       "symbol": "GT"
     },
     {
-      "candidate_event_count": 101,
+      "candidate_event_count": 102,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "TL;DR: Apex Group has joined Hedera Council. The appointment brings a fund-services specialist into network governance, while its commercial use of Hedera remains an area for exploration. Apex Group is adding a governance role to its digital-asset work. Hedera's November 11 announcement says the financial-services provider, which services more than $3.5 trillion in assets, has joined the council overseeing the public network. Apex plans to explore Hedera within its tokenization initiatives, including the infrastructure needed to manage assets and coordinate settlement. The assets-serviced figure describes the scale of Apex's broader business; it is not a measure of assets committed to this network. Fund administration brings a practical perspective The appointment puts a firm familiar with running financial products inside the network's decision-making structure. That experience can matter because a tokenized fund needs much more than a token-creation tool. Someone must maintain invest",
+          "id": "research:1c4ae83284daad1a58",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T04:00:00Z",
+          "title": "Apex Joins Hedera Council as Fund Servicing Moves Deeper Into Tokenization",
+          "url": "https://www.newsbtc.com/altcoin/apex-joins-hedera-council-fund-servicing-tokenization/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "What Exactly Can Ordinary People Do in the AI Era? Reddit",
@@ -2062,15 +2367,6 @@
           "published_utc": "2026-11-11T08:10:00Z",
           "title": "⚡ $HBAR IS DOWN 28% WHILE HEDERA CLOCKS 20 MILLION TRANSACTIONS. Hedera processed more than 20 million transactions over the past month, with its busiest days topping 800,000. Canary’s spot HBAR ETF drew $2.73 million in inflows o",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wZ1pkUWdhWUt6UTVzT0F0cFJyZkYzdmRfYTA3d0pvVFU4dUhqWlM1R3BPbThjTlJpeE9oZHFTMVIxdVQtcWxQTngtZGJVVktFSlk4TFRyWFJDU2JFVm9GSkpEblEtb05GQ2NxMw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "ETF FLOWS: US SPOT CRYPTO ETFs FLOWS DATA UPDATE (05-11-2026) YESTERDAY 🟥 Bitcoin ETFs: -5,659 $BTC (-$430.20M) 🟥 Ethereum ETFs: -44,506 $ETH (-$99.97M) 🟥 SOLANA ETFs: -13.09K $SOL (-$1.18M) 🟥 ZEC ETFs: -8.78K $ZEC (-$10.99 X",
-          "id": "expanded:15a0f59401b1d9bc91",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T10:29:00Z",
-          "title": "ETF FLOWS: US SPOT CRYPTO ETFs FLOWS DATA UPDATE (05-11-2026) YESTERDAY 🟥 Bitcoin ETFs: -5,659 $BTC (-$430.20M) 🟥 Ethereum ETFs: -44,506 $ETH (-$99.97M) 🟥 SOLANA ETFs: -13.09K $SOL (-$1.18M) 🟥 ZEC ETFs: -8.78K $ZEC (-$10.99 - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxQjF5TndnZEVaSU1ORXo2VE9wYmZ5NUpaTTVJOVBGQnFRWVBjMHdsTTZjcVJNZzE2b2ZtMmxMUTJEck5mWkpNSmFhNW0wLVk0bkJyZGlIV09KWW9WdS1PR2ZR?oc=5"
         }
       ],
       "cmc100_weight": 0.13,
@@ -2135,6 +2431,110 @@
         "symbol": "HBAR-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "chore: tagging commit for XTS promotion",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T04:35:11Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "xts-candidate",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/xts-candidate"
+        },
+        {
+          "excerpt": "chore: tagging commit for build promotion",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T01:05:57Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "build-00426",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/build-00426"
+        },
+        {
+          "excerpt": "Single Day Performance Test passed for build-00425",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-12T20:53:18Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdpt-pass-00425",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdpt-pass-00425"
+        },
+        {
+          "excerpt": "Single Day Longevity Test passed for build-00425",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-12T19:26:44Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdlt-pass-00425",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdlt-pass-00425"
+        },
+        {
+          "excerpt": "chore: tagging commit for build promotion",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-12T01:05:52Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "build-00425",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/build-00425"
+        },
+        {
+          "excerpt": "Single Day Longevity Test passed for build-00424",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-11T19:34:19Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdlt-pass-00424",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdlt-pass-00424"
+        },
+        {
+          "excerpt": "chore: tagging commit for build promotion",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-11T01:06:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "build-00424",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/build-00424"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-10T22:27:19Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "v0.80.0-alpha.5",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/v0.80.0-alpha.5"
+        },
+        {
+          "excerpt": "Single Day Performance Test passed for build-00423",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-10T21:21:21Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdpt-pass-00423",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdpt-pass-00423"
+        },
+        {
+          "excerpt": "Single Day Longevity Test passed for build-00423",
+          "first_observed_utc": "2026-11-13T07:07:06Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-10T19:44:54Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdlt-pass-00423",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdlt-pass-00423"
+        }
+      ],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -2149,16 +2549,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.06221,
-            "bid": 0.0622,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 0.06235,
+            "bid": 0.06234,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 4642,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "HBAR-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.60759,
-            "top5_ask_usd": 30287.02,
-            "top5_bid_usd": 30348.05
+            "spread_bps": 1.60398,
+            "top5_ask_usd": 23535.92,
+            "top5_bid_usd": 39326.84
           }
         },
         {
@@ -2175,37 +2575,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 44327141799.74726,
-            "cmc_id": 4642,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 50000000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.387Z",
-            "symbol": "HBAR",
-            "total_supply": 50000000000.0
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 44327141799.74726,
+        "circulating_supply": null,
         "cmc_id": 4642,
         "coin_name": "Hedera",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 50000000000.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "HBAR",
-        "total_supply": 50000000000.0
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 2745700112.55,
@@ -2332,41 +2718,29 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "PAX Gold",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 447684.210541,
-            "cmc_id": 4705,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.231Z",
-            "symbol": "PAXG",
-            "total_supply": 447684.210541
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 447684.210541,
+        "circulating_supply": null,
         "cmc_id": 4705,
         "coin_name": "PAX Gold",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PAXG",
-        "total_supply": 447684.210541
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1748907138.21,
@@ -2381,7 +2755,7 @@
       "symbol": "PAXG"
     },
     {
-      "candidate_event_count": 93,
+      "candidate_event_count": 95,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -2439,6 +2813,15 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin price went parabolic on Monday as the path to $100,000 became clearer. BTC surged to $88,000 for the first time on record, and the Fear of Missing Out (FOMO) could push it much higher in the coming days. Stacks (STX), a key layer-2 network for the Bitcoin ecosystem could be the next big thing. […] The post Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next appeared first on BanklessTimes .",
+          "id": "research:955b24779489d79dad",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-11-12T02:44:01Z",
+          "title": "Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next",
+          "url": "https://www.banklesstimes.com/news/2024/11/12/missed-the-bitcoin-price-surge-stacks-stx-could-be-next/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Privacy has always been an interesting problem on public blockchains because transparency is one of the things that makes them useful in the first place. On Stacks, transaction history, balances, and addresses are publicly observable. That is valuable for verification, but there are applications where exposing the complete financial relationship between addresses is not desirable. That question is what led to Stacks Shield . Stacks Shield is an open-source privacy protocol for Stacks that uses zkSNARKs to allow users to move STX and SIP-10 assets through shielded notes while keeping the underlying note ownership and amounts private. What started as an exploration of private STX transactions has now grown into a multi-asset privacy system supporting STX, sBTC, and USDCx on Stacks Testnet , with a published developer SDK. This post introduces what we built, why we built it, how the system works, and where we want to take it next. From private STX to a multi-asset privacy layer The first ",
           "id": "research:a570bb92f8c933d993",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -2463,15 +2846,6 @@
           "published_utc": "2026-09-25T15:28:15Z",
           "title": "Design note: deriving a Stacks wallet from a passkey (WebAuthn PRF → HKDF → BIP-39)",
           "url": "https://forum.stacks.org/t/design-note-deriving-a-stacks-wallet-from-a-passkey-webauthn-prf-hkdf-bip-39/19024"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Privara is a privacy-aware payment protocol for SIP-010 assets on Stacks. The present goal is intentionally narrow: allow someone to receive a payment without exposing their normal Stacks wallet as the onchain settlement destination. A sender can still pay using the recipient’s normal Stacks address. Privara resolves that recipient’s registered privacy keys and derives a fresh one-time address for the actual payment. The deployed system is live on Stacks mainnet and currently supports sBTC. Why Privara? Suppose Alice regularly pays Bob in sBTC. Without Privara: Alice → Bob's known wallet Alice → Bob's known wallet Alice → Bob's known wallet Anyone inspecting the chain can trivially associate those payments with the same recipient. With Privara: Alice → fresh address S1 Alice → fresh address S2 Alice → fresh address S3 Bob controls all three addresses, but his normal wallet is never used as the settlement destination. The sender still knows they are paying Bob. The blockchain still expo",
-          "id": "research:d88619646f5565fe9f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-14T15:32:23Z",
-          "title": "Privara: Private SIP-010 Payments with Stealth Addresses on Stacks",
-          "url": "https://forum.stacks.org/t/privara-private-sip-010-payments-with-stealth-addresses-on-stacks/19001"
         }
       ],
       "cmc100_weight": 0.03,
@@ -2536,6 +2910,130 @@
         "symbol": "STX-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "This release contains bugfixes and improvements to the stacks-node and stacks-signer binaries, ensuring more consistent block production. This release is compatible with chainstate directories from 4.0.x. This release is recommended for all Stacks node and signer operators. This release includes the following changes: https://github.com/stacks-network/stacks-core/blob/4.0.7/CHANGELOG.md Fixed Fixed nodes being unable to download a large Nakamoto tenure. A /v3/tenures response could hold up to 16 MiB of blocks, but the receiving node counts the response's chunk framing against the same limit and dropped the connection before the end, so a node that missed blocks in a tenure larger than about 16 MiB could never fetch them. /v3/tenures now leaves room for chunk framing so that nodes can read its responses. Docker images have been published t",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-12T20:26:59Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_core_releases",
+          "title": "Release 4.0.7",
+          "url": "https://github.com/stacks-network/stacks-core/releases/tag/4.0.7"
+        },
+        {
+          "excerpt": "Hi all, The SIP for Stacks 4.1 and Clarity 7 is up for review, and we’d love your eyes on it. The proposal makes Clarity 7 the standard for new contracts, with stricter checks that catch mistakes before they reach the chain. It also improves how sBTC deposits are secured and fixes how transactions are processed and costed. SIP Draft PR on Github Full text + CAB vote progress on the SIP Tracker Overview post on the Foundation blog The CABs are reviewing /voting on it this week, and the community vote is planned to open around November 17–18. If approved, Stacks 4.1 is expected to activate at Bitcoin block 979,500 (about December 9, 2026). Questions, concerns, and suggestions are all welcome. Please share them in this thread or comment directly on the SIP. Your review helps get this right. Thank you! 2 posts - 2 participants Read full topic",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-12T20:14:44Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Stacks 4.1 / Clarity 7 SIP: open for community review",
+          "url": "https://forum.stacks.org/t/stacks-4-1-clarity-7-sip-open-for-community-review/19246"
+        },
+        {
+          "excerpt": "This release contains bugfixes and improvements to the stacks-node and stacks-signer binaries, ensuring more consistent block production. This release is compatible with chainstate directories from 4.0.x. This release is recommended for all Stacks node and signer operators. This release includes the following changes: https://github.com/stacks-network/stacks-core/blob/4.0.6/CHANGELOG.md ⚠️ Breaking Changes Unused speculative tries from mining and block-proposal validation are no longer persisted. MARF databases automatically migrate to schema 4 on writable open, removing the legacy mined_blocks table and its stored tries. Older binaries cannot open upgraded databases, including in read-only mode; upgrade chainstate inspection and snapshot tooling alongside the node. Signers in this release rely on the node's new GET /v3/blocks/:block_id/v",
+          "first_observed_utc": "2026-11-13T07:07:05Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-12T16:23:41Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_core_releases",
+          "title": "Release 4.0.6",
+          "url": "https://github.com/stacks-network/stacks-core/releases/tag/4.0.6"
+        },
+        {
+          "excerpt": "Hello everyone, I am an engineer on the sBTC team at Stacks Labs. We are making some changes to the sBTC protocol that may be relevant to you. Changes like this are made on a regular basis to bring you ongoing improvement of the protocol’s security. 1. A new deposit format is live The sBTC signers and Emily support a new deposit format that you can start testing on mainnet today. The new deposit format, v2, improves the security of the sBTC protocol. Specifically, new deposits are locked with a standard Bitcoin multisig, which Bitcoin enforces directly. The old deposit format, v1, depended on an aggregate key from a custom threshold-signature protocol. Moving to the new format allows us to remove that complex cryptography from what secures deposits. However, this new format will increase the weight on Bitcoin by about 4x compared to the o",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T18:52:05Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Builders: Note These sBTC Security Enhancements Ahead",
+          "url": "https://forum.stacks.org/t/builders-note-these-sbtc-security-enhancements-ahead/19241"
+        },
+        {
+          "excerpt": "saw muneeb say the only way to fight AI hacks is to get better at AI defense. agreed, so heres what that has looked like for us so far, in case its useful to anyone else building small on stacks. were a small anon team making genesis run 2, a free arcade shooter where maps and loot come from real bitcoin blocks. if a game says its fair, people should be able to check it, so we ran our own code past AI reviewers before anything touched real money. what the AI reviews caught (before launch) a way to fake a huge score by editing what the browser sent the server an XSS hole in a backup-code screen a contract path where the owner could disqualify every winner and then take the refund. we couldnt fully remove that one on testnet, so its disclosed on our fair page instead of hidden an off-chain helper that approved payouts by run id only, so a h",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-10T17:31:54Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "What AI caught in our bitcoin game, and what it missed",
+          "url": "https://forum.stacks.org/t/what-ai-caught-in-our-bitcoin-game-and-what-it-missed/19238"
+        },
+        {
+          "excerpt": "hi stacks forum. we’re blip labs, a small team making free games on stacks where a bitcoin block picks each day’s map, so nobody could pick it, us included. what’s live: genesis run, a free browser game: playgenesis.run/play the bot cup, a separate league where bots play the same game through an open API: playgenesis.run/agents the 5-step fair check and open kits (MIT) are on the site and on github under blip-labs/blip along the way we sent two small fixes upstream: stacks explorer #2870 and leather mobile #2916 . nov 2-8 the bot cup runs a 50 STX contest for bot builders. rules are on the agents page. no token, nothing to buy. honest feedback on the game is the most useful thing you could give us. 7 posts - 2 participants Read full topic",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-02T15:40:00Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Genesis Run: a provably fair Bitcoin-block game on Stacks, plus a league for bots (feedback welcome)",
+          "url": "https://forum.stacks.org/t/genesis-run-a-provably-fair-bitcoin-block-game-on-stacks-plus-a-league-for-bots-feedback-welcome/19208"
+        },
+        {
+          "excerpt": "Happy 18th birthday to the whitepaper. We’re marking it by keeping the Genesis Run testnet open all weekend: a free, provably fair, skill-based arcade shooter on Stacks where a Bitcoin block picks every map. No token, test coins only. We’re looking for a small crew of testers to break it and tell us what’s wrong. Reply here or DM us and we’ll send it over. 1 post - 1 participant Read full topic",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-02T15:36:57Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Happy 18th to the Bitcoin whitepaper: Genesis Run testnet is open this weekend",
+          "url": "https://forum.stacks.org/t/happy-18th-to-the-bitcoin-whitepaper-genesis-run-testnet-is-open-this-weekend/19207"
+        },
+        {
+          "excerpt": "Hi everyone, I’m Samuel, building Privara, a privacy-focused payment protocol on Stacks. We’ve completed our initial grant milestones and deployed a working mainnet payment flow. I’m now exploring how to extend its privacy model, particularly around selective disclosure. What’s implemented Privara currently uses secp256k1-based stealth-address derivation to generate one-time recipient addresses, reducing the ability to link payments through a persistent recipient address. The implementation also includes SIP-018-based payment authorization, sponsored transaction flows, and payment discovery mechanisms. These provide recipient-address privacy, not full transaction confidentiality. Amounts, transaction activity, and other on-chain metadata remain observable. What I’m exploring The next step is payment-scoped selective disclosure: allowing a",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-27T03:05:56Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Privara: Exploring payment-scoped selective disclosure for privacy on Stacks",
+          "url": "https://forum.stacks.org/t/privara-exploring-payment-scoped-selective-disclosure-for-privacy-on-stacks/19112"
+        },
+        {
+          "excerpt": "https://tokengems.ai/ is a new project on Solana. It’s pretty simple. you can claim a token’s homepage if you control the wallet that minted it homepage lists all the token details people can post about the token on each feed Can someone build this for Stacks? What would be great is if the functionally of (now defunct) Vector.Fun could be included. That is to post any message about a token you need to pair that post with a trade (buy or sell) of the token. Removes a bunch of the spam2earn crowd immediately and encourages social trading. Even if we just had more data about tokens Stacks Explorer by Hiro that would be a good start. Hats off to ALEX Lab which is the only place I can find token data but it has been winding down over the past 12 months so it’s unclear how much longer it will be around 3 posts - 2 participants Read full topic",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-24T22:13:31Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Can someone build TokenGems meets Vector.Fun for Stacks?",
+          "url": "https://forum.stacks.org/t/can-someone-build-tokengems-meets-vector-fun-for-stacks/19084"
+        },
+        {
+          "excerpt": "I recently was bridging a collection of tokens from Cosmos ecosystem with the intent of bringing that liquidity to Stacks. Whilst bridging from many Cosmos chains is very easy, bridging to Stacks is really hard. The “best” route for me was sending everything back into USDC on Arbitrim and Base, sending that to my CEX, swapping to STX, then sending that STX to Stacks. A lot of steps and way too much lost in fees. The USDC from ETH to USDCx on Stacks on AllBridge cost me 0.32 USD of ETH for 2.36 USDC bridged (test tx) and took just over 20 mins. So I didn’t go that route. I’d love to see STX and USDCx get added to a few of the large bridging protocols and make sure they offer good rates. I’m thinking: Across Squid deBridge Also can we get AllBridge to add USDCx swaps to lower fee EVM chains like Base and Arbitrim? Mainnet Ethereum is still ",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-24T10:24:45Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Stacks added to popular bridges",
+          "url": "https://forum.stacks.org/t/stacks-added-to-popular-bridges/19081"
+        },
+        {
+          "excerpt": "Jim’s (jim.btc) inscription layer for Stacks, as the first piece in our ecosystem Builder Spotlight series. It covers what Xtrata is, why on-chain media that plays matters, the Xtrata Arcade (21 cabinets, one Stacks leaderboard contract, replay-checked scores), and a step-by-step “try it.” DeOrganized Builder Spotlight — Xtrata: the memory layer Jim built for Stacks Jim (jim.btc) built Xtrata to bring inscriptions to Stacks — songs, games and apps that actually run from the chain, plus a neon arcade where every high score lands on an on-chain leaderboard. Here's… Feedback welcome, especially from builders using the Xtrata SDK. 1 post - 1 participant Read full topic",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-15T18:13:15Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "Builder Spotlight: Xtrata, inscriptions on Stacks that run apps",
+          "url": "https://forum.stacks.org/t/builder-spotlight-xtrata-inscriptions-on-stacks-that-run-apps/19049"
+        },
+        {
+          "excerpt": "A retrospective for the ecosystem, posted the same day as the public numbers. Numbers 11 streams (unchanged) and 0 to 1 organisations registered, all checkable at stackstream.xyz/api/stats. The 11 streams were opened by us and early testers around launch, not by organisations. Conversations Opened across teams, grant programmes, contributors and ecosystem partners. The strongest response came from DAOs paying contributors, the weakest from small product teams. Shipped this month Streams in any token, including a team’s own, opened from one link A warning on look-alike tokens Correct amounts for every token Prepared setup links an organisation can review and sign Linking streams to a workspace A public directory of registered organisations Live network totals on the site An open read API with an integration guide Next A sponsored creator t",
+          "first_observed_utc": "2026-11-13T07:07:02Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-14T12:44:20Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "stacks_governance",
+          "title": "StackStream, 30 days in the open",
+          "url": "https://forum.stacks.org/t/stackstream-30-days-in-the-open/19048"
+        }
+      ],
+      "project_protocol_context_substantive_count": 38,
+      "project_protocol_context_total": 40,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -2550,34 +3048,21 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.285,
-            "bid": 0.2849,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 0.2858,
+            "bid": 0.2857,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 4847,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "STX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.50939,
-            "top5_ask_usd": 3772.55,
-            "top5_bid_usd": 11506.39
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 1882169254.591359,
-            "cmc_id": 4847,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.231Z",
-            "symbol": "STX",
-            "total_supply": 1882175534.591359
+            "spread_bps": 3.49956,
+            "top5_ask_usd": 5016.81,
+            "top5_bid_usd": 11503.54
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 1882169254.591359,
+        "circulating_supply": null,
         "cmc_id": 4847,
         "coin_name": "Stacks",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2585,12 +3070,11 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl",
-          "token_supply"
+          "chain_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "STX",
-        "total_supply": 1882175534.591359
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 524011796.8,
@@ -2723,6 +3207,9 @@
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "protocol_tvl",
@@ -2738,23 +3225,10 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 749423.564532,
-            "cmc_id": 5176,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "XAUt",
-            "total_supply": 827417.63
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 749423.564532,
+        "circulating_supply": null,
         "cmc_id": 5176,
         "coin_name": "Tether Gold",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2762,12 +3236,11 @@
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "XAUt",
-        "total_supply": 827417.63
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 2926046382.59,
@@ -2782,8 +3255,26 @@
       "symbol": "XAUt"
     },
     {
-      "candidate_event_count": 204,
+      "candidate_event_count": 226,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Solana trades below both of its key monthly moving averages. DTCC plans to connect its tokenization service to Solana in the second half of 2027. Solana is the second public blockchain on DTCC’s roadmap after Stellar. The November monthly close will show whether SOL’s last major Fibonacci support holds. Solana (SOL) traded near $81 on Thursday. That puts it almost 15% lower since November opened, down about 11% over the past seven days, and roughly $11 above the support level that has held its price up through 2026. The drop came on the same day the Depository Trust & Clearing Corporation (DTCC), the company behind the settlement and custody of most U.S. securities, said it plans to connect its tokenization service to Solana in the second half of 2027. The announcement did nothing to slow a sell-off that has now erased most of the rebound SOL made over the summer. BREAKING: @The_DTCC to tokenize custodied assets on Solana. announced plans to connect the DTCC Tokenization Service to Sol",
+          "id": "research:0890235aa12f455078",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T16:25:05Z",
+          "title": "Solana Slides Toward $70 Despite DTCC’s 2027 Plan",
+          "url": "https://www.crypto-news-flash.com/solana-price-slides-toward-70-despite-dtccs-2027-plan/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Solana’s native token has been in steep decline over the past month, down approximately 25% and currently trading around $81 (according to CoinGecko). Some analysts remain unfazed by the plunge, describing the ongoing levels as a great buying opportunity, while others think the worst may still be to come. ‘Free Money?’ ZAYRO ₿ recently claimed that SOL is nearing the end of its “manipulation” phase and is about to enter the distribution zone, where a substantial rally is expected. The analyst believes “everybody will be crying about not buying” at current levels, adding that Solana at these prices is “practically free money.” “I’m accumulating spot aggressively. SOL will have a massive parabolic run. This is the supercycle that will make people regret ignoring sub-$100 Solana,” they added. X users Ted and Curb also presented bullish predictions. The former argued that SOL’s downside liquidity has been swept, outlining two major liquidity zones around $90 and $100. “Just like ETH, Solan",
+          "id": "research:1155168fecb0471ffc",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T15:01:24Z",
+          "title": "Solana (SOL) at a Pivotal Moment: Buy the Dip or Brace for Another Crash?",
+          "url": "https://cryptopotato.com/solana-sol-at-a-pivotal-moment-buy-the-dip-or-brace-for-another-crash/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The default Privacy Rings prover protects secret inputs inside an AWS enclave, while wallets approve the code and policies behind that protection. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
@@ -2804,6 +3295,42 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Key takeaways Our Monero price prediction suggests a bullish trend, with XMR anticipated to reach $349.53 by the end of 2026. XMR could reach a maximum price of $608.19 by the end of 2029. By 2032, Monero’s price may surge to $1,171.83. Despite occasional challenges for the Solana network ecosystem, including network congestion and competition from other blockchain platforms, the current sentiment shows that Solana demonstrates resilience and adaptability, despite the current price fluctuations, positioning itself as a leading player in the decentralized finance (DeFi) and Web3 landscape. Overall, the prevailing sentiment regarding the current Solana price within the Solana community reflects the current sentiment of confidence and excitement among investors, driven by the growing interest in Solana with stakeholders eagerly anticipating the platform’s continued evolution and impact on the broader crypto ecosystem. While uncertainties persist, Solana’s innovative approach, along with i",
+          "id": "research:3bb7a54ab6eedfb70b",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T16:53:42Z",
+          "title": "Solana price prediction 2026-2032: Trends and insights for investors",
+          "url": "https://www.cryptopolitan.com/solana-price-prediction/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "TL;DR: Helius launched Solana Privacy Rings on mainnet on November 10. The default ring hides assets and amounts within private transfers, while sender and recipient addresses remain visible. Solana applications have a new way to offer confidential balances. Helius's launch announcement introduces Privacy Rings as programmable pools that execute on Solana, giving developers tools for private payments and financial applications on the same network. The feature addresses a practical obstacle for public-ledger payments. A business may want the settlement benefits of a blockchain without publishing every payment amount to competitors or employees. Individual users can have similar concerns about exposing the size and history of their financial activity. Confidentiality has a specific boundary The technical documentation separates confidentiality from anonymity. In the default confidential ring, assets, amounts and optional memos are encrypted during private transfers, while the participati",
+          "id": "research:5478bda8fe553988d7",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T07:00:00Z",
+          "title": "Helius Launches Solana Privacy Rings With Confidential Balances and Transfers",
+          "url": "https://www.newsbtc.com/news/solana/helius-solana-privacy-rings-confidential-balances-transfers/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin and other cryptocurrencies dropped sharply on Monday as last week’s recovery faded. After staying above $60,000 during the weekend, Bitcoin retreated to $58,000 on Monday morning. Jasmy, Solana, and Mantra slipped Other cryptocurrencies, such as JasmyCoin (JASMY), Solana (SOL), and Mantra (OM), dropped by a larger margin. Jasmy fell to $0.02, down over 15% from last week’s […] The post Why are Jasmy, Solana, and Mantra Token Prices Falling? appeared first on BanklessTimes .",
+          "id": "research:5bdfce5ff20e151ab1",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-12T09:30:00Z",
+          "title": "Why are Jasmy, Solana, and Mantra Token Prices Falling?",
+          "url": "https://www.banklesstimes.com/news/2024/08/12/why-are-jasmy-solana-and-mantra-token-prices-falling/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Solana’s price recovered dramatically just a day after the various economic markets experienced a bloodbath in terms of losses. According to CoinMarketCap data, the token emerged as one of the top gainers for the day. At press time, the coin was trading at $153.56, up 10.09% from the same time last day. Solana price recovery in tandem with […] The post Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know appeared first on BanklessTimes .",
+          "id": "research:5e2e31250cfa25ac9f",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-07T04:33:57Z",
+          "title": "Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know",
+          "url": "https://www.banklesstimes.com/news/2024/08/07/solana-sees-steady-recovery-after-market-sell-off-here-is-what-we-know/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Forward’s November 9 snapshot shows a 16.8% discount on its in-the-money share count, while the broadest count includes conditional warrants. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
           "id": "research:64423d93c23194701d",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -2813,66 +3340,12 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Shares in Securitize have fallen sharply in the two weeks since the tokenisation firm began offering blockchain versions of Apple, Nvidia and Tesla stock. SECZ was trading at $7.81 at 1:13pm ET on Thursday, down 15% on the day, according to Yahoo Finance data . That is 38% below its $12.66 close on 8 October, the day Securitize announced Securitize Stocks, and 43% below its $13.82 close the next day. The stock jumped 11% on launch day and a further 9% the next session. It then gave up those gains, including drops of 14% on 12 October and 13% on 16 October. Citi downgraded the stock to neutral from buy on 13 October, citing questions over how much revenue Securitize can earn from tokenisation and the risk of lock-up expiries adding shares to the market, CoinDesk reported . The launch put 12 US stocks onchain, among them Apple, Microsoft, Nvidia, Alphabet, Tesla, Meta, Amazon, Netflix, Circle, Strategy and Palantir. \"Eligible investors can hold tokenized positions backed 1:1 by actual sh",
-          "id": "research:9f9f3c46cb9d52710b",
+          "excerpt": "Ethena’s USDe has been launched on Solana through LayerZero Labs, the team responsible for the omni-chain interoperability protocol LayerZero. This development has implications for ENA, Ethena Labs’ native token. According to a post by Ethena Labs, OFT—SOL is now a backing asset for USDe, pending a community vote. August 7th marks Ethena's Solana integration: – […] The post Ethena Price Prediction as Stablecoin USDe Goes Live on Solana appeared first on BanklessTimes .",
+          "id": "research:7b41866be04c7dfbac",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-22T18:18:21Z",
-          "title": "Securitize shares slide 38% since it put Apple and Nvidia stock on Solana",
-          "url": "https://www.dlnews.com/articles/markets/securitize-shares-fall-38percent-since-solana-stock-token-launch-or-dl-news/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The second-half integration would add another network to a service already live on Canton and DTCC's private Besu blockchain.... Read the full story at The Defiant",
-          "id": "research:ced4fd160dd100162a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T13:38:32Z",
-          "title": "DTCC Plans Solana Support for Tokenized Assets in 2027",
-          "url": "https://thedefiant.io/converge/tradfi-and-fintech/dtcc-plans-solana-support-for-tokenized-assets-in-2027"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "When Stylus launched on Arbitrum, the value for Solana teams was easy to understand. They could keep working in Rust while gaining access to Ethereum liquidity, infrastructure, and the wider EVM ecosystem. What looked straightforward in theory, though, was more complicated in practice. Even when both environments use Rust, migration still means adapting to a different execution model, different storage patterns, and different approaches to permissions and contract interaction. That is the problem Oak Security set out to solve with StylusPort. Instead of treating migration as a one-off engineering effort, Oak built a structured workflow for translating Solana programs into Stylus contracts. That makes Arbitrum the only EVM path where teams can bring Rust-based smart contract logic onchain without first converting the project into a Solidity codebase. The result is a more practical path to shipping on Arbitrum for teams that want to bring existing Rust-based applications onchain without ",
-          "id": "research:f2113008172e7da068",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-05-06T18:40:23Z",
-          "title": "Oak Security’s Faster Path from Solana to Arbitrum",
-          "url": "https://blog.arbitrum.io/migrating-from-solana-to-arbitrum/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This is actually the easiest way to make money in Solana trenches Reddit",
-          "id": "expanded:01602a99bb8da5c10f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T09:00:14Z",
-          "title": "This is actually the easiest way to make money in Solana trenches - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNejBhQmdROXR4ZGhVREljeFpuRWptV1lXbjh3cmwyREZyV284eWNPWHRVdFp0Yms1bGtZWm5iNU83VzhaenNyWWdhTXNiWU9jbUY1X08xdVNNUmZobEl3ZGlGX1UtYnh1RnhnWkU0VGpyelpBVVM1YUlKQUxnVlNsaWFPdjlQTmp1eWFCenE5MkhjZXZQVjVEMnYwWVZELURtZ1Nibw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Breakpoint 2026 lands in London in 5 days 🇬🇧 Plan your time before you go 👇 X",
-          "id": "expanded:01d24bf5d7fc49dfbe",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T17:30:16Z",
-          "title": "Breakpoint 2026 lands in London in 5 days 🇬🇧 Plan your time before you go 👇 - X",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zQVhGdUhaSkN2cFNuNnJjUjRuMzZWZ0RUbDlvZGh1NkNDcTRhdldHNklkaXFCMVNFdkhadGxVcHQxSkg0X1BjNW5wQk5JcGFDVkZzbzAwaHFpZ3c?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Solana (SOL) Price Prediction: Oversold, but flows and momentum still lean against a clean bounce blockchain.news",
-          "id": "expanded:027eace409aae82b12",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T07:32:10Z",
-          "title": "Solana (SOL) Price Prediction: Oversold, but flows and momentum still lean against a clean bounce - blockchain.news",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU0J0UUY4dzNjMEMwUFg0Q2haRU9ad3hXVEJhR0doSS1NRlYzaFFvUkJYUkQ3NXk2Tl93LVRTUGszUl9Fb2U4dlpYem5yNHkwaWJ6UkpxZzhIb09XOFdibGNJSGtFRXZFRFBWbklTR3BxYk1qcFVINXdJRlJOczhSMjNwQ0VLcGhvV0Z5MWNBNmpFM2NqWnNLVVhvYVY?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$SOL - Update I am looking for those bigger dips, very weak bounces and a lot of gaps below to fill. X",
-          "id": "expanded:02c90a244ec269512f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T09:58:00Z",
-          "title": "$SOL - Update I am looking for those bigger dips, very weak bounces and a lot of gaps below to fill. - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1reXNqc2lTbVBBZTNuVWVLMm9haXNDd3NuaHluM19GUFZtR1FlRzc4OHBkNVVFNXBwREVseU93Q0NaTkVvaFRaYmpZcTlwR1E5dmhlZmszLVp1VF9RZ2FVOGRXRQ?oc=5"
+          "published_utc": "2024-08-08T08:10:00Z",
+          "title": "Ethena Price Prediction as Stablecoin USDe Goes Live on Solana",
+          "url": "https://www.banklesstimes.com/news/2024/08/08/ethena-price-prediction-as-stablecoin-usde-goes-live-on-solana/"
         }
       ],
       "cmc100_weight": 2.3,
@@ -2937,6 +3410,130 @@
         "symbol": "SOL-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "This is a mainnet ready release. Improved incremental snapshot load performance at start of epoch by increasing size of in-memory stake delegations cache Improved telemetry for the stake delegations cache Improved transaction replay performance by removing redundant serial execution Fixed rare address translation bug for account data during CPI",
+          "first_observed_utc": "2026-11-12T20:05:47Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T13:33:30Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "solana_firedancer_releases",
+          "title": "Firedancer Mainnet Release v26.10.8",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.8"
+        },
+        {
+          "excerpt": "This is a Testnet release. It is not suggested for Mainnet use. Alpenglow is now the only available consensus mode. The following configuration keys are no longer supported: [consensus] alpenglow , [tiles.tower] write_vote_history_file , and [tiles.txsend] txsend_src_port Added a new failover mechanism between two Firedancer validators, designed to be easy to use, fast, and secure. Refer to the failover guide for details Support for all Solana 4.4 features Support for geo_aware_leader_schedule ( SIMD-0675 ), validator_location_registration ( SIMD-0674 ), and stricter_shred_validation ( SIMD-0504 ) features Reduced mainnet memory usage from 159 to 142 GiB The transaction cache and cost tracker gained fallback disk paths, which will not be written during routine or healthy operations. Configurable at [paths] txncache and [paths] cost_tracke",
+          "first_observed_utc": "2026-11-12T20:05:47Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-11T13:23:40Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "solana_firedancer_releases",
+          "title": "Firedancer Testnet Release v26.11.0",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.11.0"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-12T20:05:47Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-11T12:48:54Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "solana_firedancer_releases",
+          "title": "v26.10.7",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.7"
+        },
+        {
+          "excerpt": "This is a mainnet ready release. Adding support for loaderv3_programdata_size_floor feature",
+          "first_observed_utc": "2026-11-12T20:05:47Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-10T16:19:09Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "solana_firedancer_releases",
+          "title": "Firedancer Mainnet Release v26.10.6",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.6"
+        },
+        {
+          "excerpt": "This is a testnet release. https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md What's Changed refactor(cli): use versioned messages and transactions throughout by @apfitzge in #15524 SIMD504: Shred wire format upstream by @alexpyattaev in #15522 keygen, cli: generate mnemonic entropy without bip39's rand feature by @kskalski in #16240 cost-model: decode system instructions with wincode by @kskalski in #16329 SIMD-565: Add secp256r1 syscalls by @samkim-crypto in #13918 chore(deps): bump arc-swap from 1.9.2 to 1.9.3 by @dependabot [bot] in #16383 chore: Clarify comment in multinode-demo script by @steviez in #16002 [solana-syscalls] clean up abort_on_invalid_curve (SIMD-0137) by @samkim-crypto in #16420 runtime: do not inherit rent epoch by @2501babe in #16387 bpf_loader: encode / decode instructions with wincode by @kskalski in #16415",
+          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-06T13:58:53Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "Release v4.5.0-beta.0",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-beta.0"
+        },
+        {
+          "excerpt": "This is stable release recommended for general adoption. It is also recommended for Testnet and Devnet. What's Changed v4.4: ignore RUSTSEC-2026-0418 (libz-sys) by @cfkelly18 in #16540 v4.4: ci: don't use sccache in docker run (backport of #16493 ) by @mergify [bot] in #16561 v4.4: ci: refine pipeline trigger condition (backport of #16674 ) by @mergify [bot] in #16678 v4.4: Normalize CI env variables also in the command environment (backport of #16214 ) by @mergify [bot] in #16684 v4.4: ignore RUSTSEC-2026-0433 (pulldown-cmark) by @nbelenkov in #16782 v4.4: fix(svm): apply ProgramData size floor during account loading (backport of #16769 ) by @mergify [bot] in #16775 Bump version to 4.4.1 by @agave-version-bumper[bot] in #16785 Full Changelog : v4.4.0...v4.4.1",
+          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-05T19:38:43Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "Release v4.4.1",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.1"
+        },
+        {
+          "excerpt": "This is stable release recommended for general adoption. It is also recommended for Testnet and Devnet. https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md What's Changed v4.4: vote_reward: build vote accounts from a padded vote state encoding (backport of #16381 ) by @mergify [bot] in #16386 v4.4: pin cargo-build-sbf and spl-token-cli to the latest release by @levsha in #16434 v4.4: ci: stop shipping windows prebuilt (backport of #15471 ) by @mergify [bot] in #16469 v4.4: ignore RUSTSEC-2026-0414 (pulldown-cmark, build-time only) by @cfkelly18 in #16501 v4.4: chore(feature-set): rekey feature for SIMD-550 (backport of #16499 ) by @mergify [bot] in #16503 Bump version to 4.4.0 by @agave-version-bumper[bot] in #16502 Full Changelog : v4.4.0-rc.1...v4.4.0",
+          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-30T15:32:32Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "Release v4.4.0",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0"
+        },
+        {
+          "excerpt": "This is a mainnet ready release. Improved snapshot download peer selection during validator boot GUI now shows vote count on the slot carrying the cert instead of the slot being voted on Improved block packing performance by eagerly dropping expired transactions Fix a rare issue that can cause the validator to crash at the epoch boundary Improved connection reliability for voting validators Increase default [layout] shred_tile_count to 2",
+          "first_observed_utc": "2026-11-12T20:05:47Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-27T22:57:30Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "solana_firedancer_releases",
+          "title": "Firedancer Mainnet Release v26.10.5",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.5"
+        },
+        {
+          "excerpt": "This is Mainnet-beta Upgrade Candidate release recommended for 10% adoption. It is also recommended for Testnet and Devnet. https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md What's Changed v4.4: Refactor - Move ComputeMeter from InvokeContext to TransactionContext (backport of #15818 ) by @mergify [bot] in #15919 v4.4: remote-wallet: Fix Ledgers that return longer app configurations (backport of #15543 ) by @mergify [bot] in #15853 v4.4: streamer: allow 3000 unstaked connections, throttle unstaked to 100 TPS under global saturation (backport of #15610 ) by @mergify [bot] in #15912 v4.4: ignore rustls RUSTSECs that do not impact Agave by @akhi3030 in #16057 v4.4: VoteStateHandler: uses wincode for serialization (backport of #15972 ) by @mergify [bot] in #16045 v4.4: streamer: raise max unstaked TPS from 200 to 400 (backport of #1561",
+          "first_observed_utc": "2026-11-12T20:01:56Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-27T16:58:47Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "Release v4.4.0-rc.1",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-rc.1"
+        },
+        {
+          "excerpt": "This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host. https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel What's Changed ledger-tool persist reward epoch delegated stakes account by @davidkleymann in #15871 Removes snapshot hardlinks mentions by @brooksprumo in #15896 accounts-db: Refactors fields inside SplitFile by @brooksprumo in #15815 cli: Increments solana feature status padding by one by @brooksprumo in #15875 Separates the code paths for startup storage rebuilding from snapshot archives vs local state by @brooksprumo in #15892 chore(deps): bump solana-vote-interface from 7.1.0 to 7.2.0 in /dev-bins by @dependabot [bot] in #15878 ci: conformance: disable shred harness by @buffalojoec in #15900 chore(deps): bump solana-secp256k1-program from 3.0.1 to 3.1.0 in /dev-bins",
+          "first_observed_utc": "2026-11-12T20:01:56Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-10-26T22:32:23Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "Release v4.5.0-alpha.4",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.4"
+        },
+        {
+          "excerpt": "Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+          "first_observed_utc": "2026-11-12T20:01:56Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-10-26T15:58:03Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "v4.5.0-alpha.3: Bump version to 4.5.0-alpha.3 (#16402)",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.3"
+        },
+        {
+          "excerpt": "Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+          "first_observed_utc": "2026-11-12T20:01:56Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-10-24T07:25:41Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "sol_agave_releases",
+          "title": "v4.4.0-rc.0: Bump version to 4.4.0-rc.0 (#16364)",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-rc.0"
+        }
+      ],
+      "project_protocol_context_substantive_count": 15,
+      "project_protocol_context_total": 20,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -2951,16 +3548,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 80.34,
-            "bid": 80.33,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 80.56,
+            "bid": 80.55,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 5426,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SOL-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.24479,
-            "top5_ask_usd": 1383647.01,
-            "top5_bid_usd": 1186068.73
+            "spread_bps": 1.24139,
+            "top5_ask_usd": 1444016.26,
+            "top5_bid_usd": 1176958.37
           }
         },
         {
@@ -2979,31 +3576,18 @@
           }
         },
         {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 591511102.738863,
-            "cmc_id": 5426,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.084Z",
-            "symbol": "SOL",
-            "total_supply": 637493824.303771
-          }
-        },
-        {
           "family": "trending",
           "observation": {
             "cmc_id": 5426,
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Solana",
-            "rank": 14
+            "rank": 11
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 591511102.738863,
+        "circulating_supply": null,
         "cmc_id": 5426,
         "coin_name": "Solana",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3013,12 +3597,11 @@
         "research_metric_families": [
           "chain_tvl",
           "protocol_tvl",
-          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SOL",
-        "total_supply": 637493824.303771
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 46782314607.89,
@@ -3139,41 +3722,29 @@
         "coingecko_supply": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy"
+        "mapped_perp_research_proxy",
+        "mapped_protocol_fundamentals"
       ],
       "name": "JUST",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
       "perp_market": null,
       "perpetual": null,
-      "quantitative_research_families": [
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 8018019892.341737,
-            "cmc_id": 5488,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 9900000000.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.050Z",
-            "symbol": "JST",
-            "total_supply": 8018019892.341737
-          }
-        }
-      ],
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
+      "quantitative_research_families": [],
       "research_coin_features": {
-        "circulating_supply": 8018019892.341737,
+        "circulating_supply": null,
         "cmc_id": 5488,
         "coin_name": "JUST",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 9900000000.0,
+        "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "JST",
-        "total_supply": 8018019892.341737
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 1167676898.34,
@@ -3343,50 +3914,38 @@
         "symbol": "RENDER-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.516,
-            "bid": 1.515,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 1.527,
+            "bid": 1.526,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 5690,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "RENDER-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.59848,
-            "top5_ask_usd": 22649.21,
-            "top5_bid_usd": 31520.03
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 556476070.228832,
-            "cmc_id": 5690,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 644168762.0,
-            "supply_last_updated_utc": "2026-11-13T07:07:03.074Z",
-            "symbol": "RENDER",
-            "total_supply": 562583711.92667
+            "spread_bps": 6.55093,
+            "top5_ask_usd": 19083.53,
+            "top5_bid_usd": 22675.52
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 556476070.228832,
+        "circulating_supply": null,
         "cmc_id": 5690,
         "coin_name": "Render",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 644168762.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "RENDER",
-        "total_supply": 562583711.92667
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 822347316.98,
@@ -3401,7 +3960,7 @@
       "symbol": "RENDER"
     },
     {
-      "candidate_event_count": 152,
+      "candidate_event_count": 157,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3414,12 +3973,48 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Charles Schwab has expanded its crypto trading platform by adding Solana, Avalanche and Chainlink, but XRP remains conspicuously absent despite the brokerage giant's aggressive push into digital assets.",
+          "id": "research:2d04ec0a97f2b3f80a",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-09T18:37:51Z",
+          "title": "Charles Schwab Expands Crypto Trading to SOL, AVAX and LINK, XRP Not Included",
+          "url": "https://u.today/charles-schwab-expands-crypto-trading-to-sol-avax-and-link-xrp-not-included"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "One Venue, One Chain Over this past week, three U.S. tokenized stock venues picked three different blockchains to launch on. The WSJ reported Monday that NYSE chose Avalanche as the sole settlement chain for its planned 24/7 platform. On November 4, $CNTN became the first U.S. equity to trade under the SEC’s Innovation Exemption. Five […]",
           "id": "research:4d93aa8d1521ef33fb",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-12T20:02:00Z",
           "title": "Avalanche Owns Five Percent of Tokenized Stocks",
           "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-12-avalanche-owns-five-percent-tokenized-stocks-437310"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Schwab Crypto clients can now trade Solana, Avalanche and Chainlink directly. The launch completes a plan Schwab first announced in August. Every trade carries a 0.75% fee and the platform offers no staking. Residents of New York and Louisiana still cannot open Schwab Crypto accounts. Charles Schwab, the US brokerage that oversees $13.33 trillion in client assets, switched on direct trading for Solana (SOL), Avalanche (AVAX) and Chainlink (LINK) on November 9, raising the number of cryptocurrencies in its Schwab Crypto accounts from two to five. Eligible clients can now buy and sell the three tokens on Schwab.com, the Schwab Mobile app and thinkorswim, next to their stocks and funds. That gives a large pool of traditional investors a way to own altcoins outright without opening an account at a crypto exchange. The August Pledge Became a Live Product On August 27, Schwab said the three tokens would join Bitcoin and Ethereum “in the coming months” and gave no date. Traders bought the new",
+          "id": "research:69b6a67274dc62be72",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-09T15:56:06Z",
+          "title": "Schwab Opens SOL, AVAX and LINK Trading, but Skips Staking",
+          "url": "https://www.crypto-news-flash.com/schwab-opens-sol-avax-and-link-trading/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The Sui Blockchain is doing well, and developer and user interest continues to rise. The SUI token rose to a high of $1.1175 on Monday, its highest point since June 9, and 140% above its lowest point this month, making it one of the best-performing tokens in the market. Data by DeFi Llama shows that […] The post Sui Blockchain Flips Avalanche on a Key DEX Metric appeared first on BanklessTimes .",
+          "id": "research:9f005bb3de560a4642",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-14T06:30:00Z",
+          "title": "Sui Blockchain Flips Avalanche on a Key DEX Metric",
+          "url": "https://www.banklesstimes.com/news/2024/08/14/sui-blockchain-flips-avalanche-on-a-key-dex-metric/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Avalanche (AVAX) is trading near $8.40 after a sharp reaction to major institutional news, yet the upside potential could still be extraordinary. While the recent AVAX crypto bounce has captured attention, Bill Gates Microsoft Copilot AI predicts a hypothetical but transformative catalyst could propel AVAX into a completely different valuation regime. Copilot AI asks us to picture this scenario: The NYSE’s planned 24/7 tokenized-securities platform not only receives full regulatory approval but also launches successfully on Avalanche. This model is quickly adopted by other major global exchanges and clearinghouses. ( SOURCE: Copilot AI Predicts a Huge AVAX Crypto Move ) Within a few months, Avalanche becomes the preferred settlement and clearing layer for a significant portion of tokenized equities, ETFs, and eventually bonds across North America, Europe, and parts of Asia. Institutions start holding and staking substantial amounts of AVAX for network security, fee payments, and prefer",
+          "id": "research:d6c87f5479a9b041d3",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-10T16:20:25Z",
+          "title": "Bill Gates Microsoft Copilot AI Predicts a Crazy AVAX Crypto Move",
+          "url": "https://www.coinspeaker.com/bill-gates-microsoft-copilot-ai-predicts-crazy-avax-move/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3456,42 +4051,6 @@
           "published_utc": "2026-11-11T15:01:25Z",
           "title": "Visiting Team1 Thailand for halloween 2027 🇹🇭 - X",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWLUFienJRR1RzTW9fUndGVVU4Y1M5Ull0Z2o3QnN6dk10YVFpOVhMTVJEd19uZ1FsV2RsQ2pGeFdHYW8xMzB4ell2WGk0OU1WYnZ6YThxMFRjWW8xMTdr?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Avalanche Originals. Episode 2. Reddit",
-          "id": "expanded:0737fd65bc4dd52db7",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T18:26:49Z",
-          "title": "Avalanche Originals. Episode 2. - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZ1lSenpSWmZmMFpBc1c4NXZFcm9majNFLV9HRnhmb3lQNmZpN0t0RGVRTmhQNk9HcWh6M05oYmpxU1JqT2NFd0VRSldGM1k3VUE2Nk05c1NvUDk3UVd2QlQzX2VtU0JEdnQ0MW12TDdQbWdFWkJYSkQ3X3dHX0FPV21OSQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$13T @CharlesSchwab Adds AVAX To Schwab Crypto Reddit",
-          "id": "expanded:07bde371f0028adf79",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T20:19:31Z",
-          "title": "$13T @CharlesSchwab Adds AVAX To Schwab Crypto - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR083N2h0TGlDS2l4bjlSWkdsbVk2OXUtd2JpdWRFdW44M2trRkpXRFBnLWY2Yng5OU5oQld6dWRyeDdDamVLSkNsYm9OUnJNdl9HWEpFVG1LUUc4RUVkOExOT2RvWV91ZWRyQ3ZJRDNJaWpaeDgtNjJtUF9nVnFpMEpGWDZjRUFOa2l5Z1p0YWZER1VuSjJF?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Avalanche Foundation Funds Six Research Teams on Blockchain Economics Blockchain News",
-          "id": "expanded:0c27f3e14c78d54771",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T16:18:00Z",
-          "title": "Avalanche Foundation Funds Six Research Teams on Blockchain Economics - Blockchain News",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1EY2FER2Rxb011SC1fYjhlTlo2Q2EtR1Q1cm9UNjVkMHZfSENkOHF4cll2bDJBOVREei0yeVpvRUl1ZzhRMDJMT2hFZjNDMkFrai1SWE1LMnhyTmFYSGpfWTg2UjgzNTZ5REFiNVV2RmdBcVE?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Avalanche Leads Tokenized Stock Market Growth As AVAX Price Eyes Reversal TronWeekly",
-          "id": "expanded:0c748196f7b4993dcf",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T23:00:00Z",
-          "title": "Avalanche Leads Tokenized Stock Market Growth As AVAX Price Eyes Reversal - TronWeekly",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UcEhja3FGa3lwOFlzRUZmYVZIVXBpZjc3X19JNklsbnhzazZYa1JTMzJhek92U0ExNzRtRnZJM1E4dDFzX09SbC1GNjMzMzJnejNhZXkxTDRsVjZvMXZWQS1ydTBSYlN3SWk3UkE4MUVROS1ZeVA3REJHYmlwUQ?oc=5"
         }
       ],
       "cmc100_weight": 0.18,
@@ -3556,6 +4115,9 @@
         "symbol": "AVAX-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "chain_tvl",
@@ -3570,16 +4132,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 8.303,
-            "bid": 8.302,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 8.335,
+            "bid": 8.334,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 5805,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "AVAX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.20446,
-            "top5_ask_usd": 18758.96,
-            "top5_bid_usd": 44178.65
+            "spread_bps": 1.19983,
+            "top5_ask_usd": 13904.89,
+            "top5_bid_usd": 14266.64
           }
         },
         {
@@ -3596,37 +4158,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 446391684.22762,
-            "cmc_id": 5805,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 715748719.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.063Z",
-            "symbol": "AVAX",
-            "total_supply": 471393684.22762
-          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 446391684.22762,
+        "circulating_supply": null,
         "cmc_id": 5805,
         "coin_name": "Avalanche",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 715748719.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl",
-          "token_supply"
+          "protocol_tvl"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "AVAX",
-        "total_supply": 471393684.22762
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 3638101636.33,
@@ -3641,8 +4189,44 @@
       "symbol": "AVAX"
     },
     {
-      "candidate_event_count": 91,
+      "candidate_event_count": 101,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bitcoin, XRP, Ethereum and Shiba Inu are facing mounting selling pressure as Nvidia CEO Jensen Huang's abrupt resignation rattles financial markets, triggering a massive stock sell-off and adding to the ongoing crypto market bloodbath.",
+          "id": "research:05be03aebbcb283f17",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T15:56:43Z",
+          "title": "XRP, SHIB, BTC and Other Tokens Hit Hard by Abrupt Resignation of Nvidia CEO",
+          "url": "https://u.today/xrp-shib-btc-and-other-tokens-hit-hard-by-abrupt-resignation-of-nvidia-ceo"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Shiba Inu exchange may no longer be at risk of adding another zero, as exchange activity shows that buyers are taking over following a netflow of -122 billion SHIB.",
+          "id": "research:17bf9b1bb54aa3830b",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-10T15:47:30Z",
+          "title": "Shiba Inu Heads for Recovery as Netflow Turns Red With Over 114 Billion SHIB",
+          "url": "https://u.today/shiba-inu-heads-for-recovery-as-netflow-turns-red-with-over-114-billion-shib"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "With Shiba Inu’s recent launch of a fiat on-ramp service, users can buy BONE and USDC with MasterCard or Visa. The service eliminates the challenges of bridging tokens and navigating difficult exchanges, making BONE and USDC more accessible to users. Hopefully, this will enhance the tokens’ utility and value. Making BONE purchases more efficient The […] The post BONE Price Under Pressure: Will Shiba Inu’s Fiat On-ramp Reverse the Trend? appeared first on BanklessTimes .",
+          "id": "research:69db53019c56a5abd6",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2024-08-14T08:43:44Z",
+          "title": "BONE Price Under Pressure: Will Shiba Inu’s Fiat On-ramp Reverse the Trend?",
+          "url": "https://www.banklesstimes.com/news/2024/08/14/bone-price-under-pressure-will-shiba-inus-fiat-on-ramp-reverse-the-trend/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "South Korea’s largest cryptocurrency exchange, Upbit, has become Shiba Inu’s largest holding entity with over $284 million of SHIB held by the exchange.",
+          "id": "research:84e27620d713240dfb",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-11T13:47:24Z",
+          "title": "$284 Million of Shiba Inu (SHIB) Held by Top Korean Exchange",
+          "url": "https://u.today/284-million-of-shiba-inu-shib-held-by-top-korean-exchange"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "XRP, SHIB, BTC and Other Tokens Hit Hard by Abrupt Resignation of Nvidia CEO U.Today",
@@ -3696,42 +4280,6 @@
           "published_utc": "2026-11-10T02:53:11Z",
           "title": "⚔️ GOLDEN INU × SHANGHAI INU: DYNASTIC WAR MYTH, SCROLLS 2,000–3,000 - Reddit",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWFhTeUp5RXJlLWNuRmxoc1VoX2tMOGU3TTJ2Ykk0M2ptZUEzZF9hZXRPV2ZNLVZrLUxEMXg4WVJhNkN3TTltMjc5dlhGaURzS3FkRUhUcTd1LUFFTk5BcU1iWXJRVUMyRFVFanZsM3AzTmlRLTNucW5nY0ROMGpaLWZnd2lpdlZvQlhyZExVX0s0Zm9tNkRESHN6SWlXTk9DaDBZRkxHWWhBSlRP?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "I am just going to keep doing that. Mamesuke is the most viral shiba inu, he is cute, he has scarf, he has his own TV show. DOGE and SHIB cabal both interacting with this coin. Ansem keep asking for active communities. I see $MAMESUKE fomo people doing X",
-          "id": "expanded:0f4ce5ce34a9389de3",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T08:51:27Z",
-          "title": "I am just going to keep doing that. Mamesuke is the most viral shiba inu, he is cute, he has scarf, he has his own TV show. DOGE and SHIB cabal both interacting with this coin. Ansem keep asking for active communities. I see $MAME",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UVS1hcy12bWZIMU5kVzNaaXA4eHlCRUtBX3ZjRjVJSkJpQlpaMDZzd0hpZVZsRUVBc3pheHNaS1JaRGVKVHNSQVkzUHdIazBhRnZkNFlIRUJ3Y3h0aGtv?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$SHIB deployer impersonation exposed as scammers fake Shiba Inu founder #Ryoshi https://t.co/LIrkB09AG9 X",
-          "id": "expanded:0fe2ddfc163319c278",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T12:42:09Z",
-          "title": "$SHIB deployer impersonation exposed as scammers fake Shiba Inu founder #Ryoshi https://t.co/LIrkB09AG9 - X",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAxWDNmeVdvUFhXRGYzUXNodTRCajVfSFhyZWlBX1lXODEtUjg0VGc0TG1vQXlDWXpoT0NZcXl5WERHdGN6NkRsbHpiTmtqNzRkUzZPMHJBNWljanRmRGlr?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Nvidia CEO Jensen Huang resigns: Shiba Inu price slides to $0.0000043 CryptoTicker.io",
-          "id": "expanded:11b74ced436b3f19f0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T17:36:06Z",
-          "title": "Nvidia CEO Jensen Huang resigns: Shiba Inu price slides to $0.0000043 - CryptoTicker.io",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTERKeXBMRXk1TkhoNER2ZmhGZVRjM0c0MU9RSEtjVlNVajhqVGlKQ01zNnN3RDdfSjBQdGlidnVWeFNVOHhBTUtVblB6TzYyYnV1MHdlT0h2dnNkeFZDTWZTTHpjNUpOSkpDUk9RNTlnTjFBclJqQ3M3dFhYNkw1SXlFc1Z0TGNicF9adW5R?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "I love how CT keeps talking how shit everything is and how there is no $1B runners $MAMESUKE is the most viral shiba inu, she has scarf, followed by shib. fuck you candle and most hated rally soon, i am genuinly tired of these pump kols. send it X",
-          "id": "expanded:12ad001263e4995a4c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T11:20:06Z",
-          "title": "I love how CT keeps talking how shit everything is and how there is no $1B runners $MAMESUKE is the most viral shiba inu, she has scarf, followed by shib. fuck you candle and most hated rally soon, i am genuinly tired of these pum",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8tQ0FiMHhNX2JCN2xxQ3E4UG5OcVlGUDhiTlBQZENnMzdVSnZCMnQxUEd6ZC15UHVnTnVZQkx1d2tCTTllNkdYZzNXLVRQOG5oNDR1dHg1Z1B6Z3ZNMXBB?oc=5"
         }
       ],
       "cmc100_weight": 0.12,
@@ -3796,50 +4344,38 @@
         "symbol": "SHIB-USDT-SWAP",
         "trading_status": "live"
       },
+      "project_protocol_context_NOT_TOKEN_SIGNAL": [],
+      "project_protocol_context_substantive_count": 0,
+      "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 4.271e-06,
-            "bid": 4.27e-06,
-            "book_source_utc": "2026-11-13T07:07:11Z",
+            "ask": 4.282e-06,
+            "bid": 4.281e-06,
+            "book_source_utc": "2026-11-13T07:10:54Z",
             "cmc_id": 5994,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SHIB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.34165,
-            "top5_ask_usd": 40537.78,
-            "top5_bid_usd": 56254.6
-          }
-        },
-        {
-          "family": "token_supply",
-          "observation": {
-            "circulating_supply": 589238112868248.2,
-            "cmc_id": 5994,
-            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
-            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 589552695333683.0,
-            "supply_last_updated_utc": "2026-11-13T07:06:48.050Z",
-            "symbol": "SHIB",
-            "total_supply": 589495705998164.6
+            "spread_bps": 2.33563,
+            "top5_ask_usd": 39621.73,
+            "top5_bid_usd": 59423.03
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 589238112868248.2,
+        "circulating_supply": null,
         "cmc_id": 5994,
         "coin_name": "Shiba Inu",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 589552695333683.0,
+        "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [
-          "token_supply"
-        ],
+        "research_metric_families": [],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SHIB",
-        "total_supply": 589495705998164.6
+        "total_supply": null
       },
       "spot_quote": {
         "market_cap_usd": 2497165046.53,
