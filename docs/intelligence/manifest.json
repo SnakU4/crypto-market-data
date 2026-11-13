@@ -21,6 +21,7 @@
       "verified": true
     }
   },
+  "article_attempt_history_file": "docs/intelligence/article_attempt_history.json",
   "coin_batch_files": [
     "docs/intelligence/coin_batches/batch_01.json",
     "docs/intelligence/coin_batches/batch_02.json",
@@ -29,16 +30,16 @@
     "docs/intelligence/coin_batches/batch_05.json"
   ],
   "coverage_file": "docs/intelligence/coverage_audit.json",
-  "cutoff_utc": "2026-11-13T13:25:28Z",
+  "cutoff_utc": "2026-11-13T16:24:42Z",
   "direct_research_event_audit": {
     "batch_count": 37,
     "count": 2893,
     "mode": "FULL_SHA_VERIFIED_BATCHES"
   },
-  "full_evidence_count": 13071,
+  "full_evidence_count": 13095,
   "full_evidence_export": "docs/intelligence/export/evidence_index.jsonl",
   "full_evidence_export_is_actions_artifact_only": true,
-  "full_evidence_sha256": "b1f81adf46cde3c438e5764ecd54557e82cbc4edaa888422b2182542b3342c1b",
+  "full_evidence_sha256": "7ba7501441d1fc36848056eda02a6f026055dd5c56a400f4a468cbfef2b746db",
   "global_file": "docs/intelligence/global_intelligence.json",
   "knowledge_file": "docs/intelligence/knowledge_index.json",
   "limitation": "Deterministic adaptive follow-up, NOT an autonomous LLM researcher or alpha signal.",
@@ -47,9 +48,10 @@
   "manual_research_context_file": "docs/intelligence/deep_research_queue.json",
   "new_public_source_discovery_file": "docs/intelligence/discovered_public_feeds.json",
   "no_paid_api_used": true,
-  "published_bundle_bytes": 2540099,
+  "published_bundle_bytes": 2965955,
   "schema_version": "cmc100-open-intelligence-free-v1",
   "sector_file": "docs/intelligence/sector_intelligence.json",
+  "source_backed_project_profile_file": "docs/intelligence/coin_profiles.json",
   "source_probe_history_file": "docs/intelligence/source_probe_history.json",
   "source_proposals_file": "docs/intelligence/source_registry_proposals.json",
   "source_snapshots": {

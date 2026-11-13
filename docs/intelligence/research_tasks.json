@@ -31,7 +31,7 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 10,
+      "results": 6,
       "status": "OK",
       "task_id": "T:200d08633937"
     },
@@ -46,12 +46,12 @@
       "task_id": "T:e0a77ad085f0"
     },
     {
-      "results": 3,
+      "results": 4,
       "status": "OK",
       "task_id": "T:fc35c83f416c"
     },
     {
-      "results": 6,
+      "results": 5,
       "status": "OK",
       "task_id": "T:be5169ccbd6d"
     },
@@ -76,24 +76,24 @@
       "task_id": "T:590b383b34bd"
     },
     {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
-    },
-    {
       "results": 0,
       "status": "OK",
       "task_id": "T:4144598f2b85"
     },
     {
-      "results": 12,
+      "results": 8,
       "status": "OK",
-      "task_id": "T:aba7cbe84ed1"
+      "task_id": "T:98f8c88f4575"
     },
     {
       "results": 9,
       "status": "OK",
       "task_id": "T:a7ec3ce54236"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:231514622f3b"
     },
     {
       "results": 0,
@@ -188,7 +188,7 @@
         "adjacent:23a971864f7b77d790"
       ],
       "query": "\"traders union\" crypto financial markets when:2d",
-      "results": 10,
+      "results": 6,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:200d08633937",
@@ -223,7 +223,7 @@
     {
       "evidence_ids": [],
       "query": "\"Bitget Token\" crypto when:2d",
-      "results": 3,
+      "results": 4,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
       "task_id": "T:fc35c83f416c",
@@ -232,7 +232,7 @@
     {
       "evidence_ids": [],
       "query": "\"Celestia\" crypto when:2d",
-      "results": 6,
+      "results": 5,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
       "task_id": "T:be5169ccbd6d",
@@ -284,19 +284,6 @@
     },
     {
       "evidence_ids": [
-        "followup:114175c86d068e6665",
-        "followup:29988b0169ee81c20a",
-        "followup:2ee71fa31be48c9255"
-      ],
-      "query": "\"nvidia stock\" crypto blockchain when:2d",
-      "results": 12,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:231514622f3b",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
         "followup:f0ddb6fbc5f4e8cd5b",
         "followup:f0ddb6fbc5f4e8cd5b",
         "followup:f0ddb6fbc5f4e8cd5b"
@@ -310,28 +297,41 @@
     },
     {
       "evidence_ids": [
-        "followup:a008640549aeead0f6",
-        "followup:80907df917f57bead7",
-        "followup:f0a49984d062bd8da8"
+        "followup:f1aa639070823f647e",
+        "followup:1d556565ee945c627a",
+        "followup:a739ac7769492c3428"
       ],
-      "query": "\"falls below\" crypto blockchain when:2d",
-      "results": 12,
+      "query": "\"live chart\" crypto blockchain when:2d",
+      "results": 8,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:aba7cbe84ed1",
+      "task_id": "T:98f8c88f4575",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
       "evidence_ids": [
         "followup:f0ddb6fbc5f4e8cd5b",
         "followup:f0ddb6fbc5f4e8cd5b",
-        "followup:f0ddb6fbc5f4e8cd5b"
+        "followup:0d31632d3fbbd03224"
       ],
       "query": "\"nvidia shock\" crypto blockchain when:2d",
       "results": 9,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:a7ec3ce54236",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:cb7b1b714d512ac90f",
+        "followup:29988b0169ee81c20a",
+        "followup:23433dbab07863c842"
+      ],
+      "query": "\"nvidia stock\" crypto blockchain when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:231514622f3b",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {

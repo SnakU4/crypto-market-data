@@ -1,4 +1,91 @@
 {
+  "background_context_is_not_fresh_news": true,
+  "background_profile_gaps": [
+    {
+      "cmc_id": 3957,
+      "name": "UNUS SED LEO",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "LEO"
+    },
+    {
+      "cmc_id": 28321,
+      "name": "Polygon (prev. MATIC)",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "POL"
+    },
+    {
+      "cmc_id": 33251,
+      "name": "World Liberty Financial",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "WLFI"
+    },
+    {
+      "cmc_id": 35697,
+      "name": "Pi",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "PI"
+    },
+    {
+      "cmc_id": 36507,
+      "name": "Pump.fun",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "PUMP"
+    },
+    {
+      "cmc_id": 36645,
+      "name": "Plasma",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "XPL"
+    },
+    {
+      "cmc_id": 37263,
+      "name": "Canton",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "CC"
+    },
+    {
+      "cmc_id": 38482,
+      "name": "Falcon Finance",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "FF"
+    },
+    {
+      "cmc_id": 38590,
+      "name": "币安人生",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "币安人生"
+    },
+    {
+      "cmc_id": 38828,
+      "name": "Kite",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "KITE"
+    },
+    {
+      "cmc_id": 38849,
+      "name": "Pieverse",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "PIEVERSE"
+    },
+    {
+      "cmc_id": 38892,
+      "name": "Stable",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "STABLE"
+    },
+    {
+      "cmc_id": 39064,
+      "name": "Midnight",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "NIGHT"
+    },
+    {
+      "cmc_id": 39125,
+      "name": "Lighter",
+      "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+      "symbol": "LIT"
+    }
+  ],
   "global_sector_coins_all_preserved_in_full_archive": true,
   "items": [
     {
@@ -1027,23 +1114,23 @@
     {
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "context_origin": "DIRECT_PUBLISHER_PUBLIC_ARTICLE",
-      "excerpt": "v0.27.1 Compare Choose a tag to compare Sorry, something went wrong. Filter Loading Sorry, something went wrong. Uh oh! There was an error while loading. Please reload this page . No results found View all tags khluu released this 11 Aug 10:47 · 5864 commits to main since this release v0.27.1 6e448d0 This is a patch release on top of v0.27.0. Support quantized DSpark Markov heads ( #50424 ) Assets 10 Loading Uh oh! There was an error while loading. Please reload this page . 👍 17 gaby, keeratita, little-sparkleeesss, netanel-haber, raqeebsyed0-notacoder, oguzhankir, emrekuruu, mhdimo, shelezyaka, ivanbaldo, and 7 more reacted with thumbs up em",
+      "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
+      "excerpt": "# vLLM v0.27.0 Release Notes ## Highlights This release features 561 commits from 242 contributors (64 new)! * **Kimi K3 support** with a full stack landing in one release: core model files and kernels (#50089, #50000), Python (#50093) and Rust (#50104) frontends, AttnRes kernels (#50090), DeepGEMM support (#50458), compressed-tensors quantized checkpoints (#50500), DSpark AR fusion (#50242), and an option to shard the shared expert instead of replicating it (#50656). * **More new models**: Qwen3.5 text-only dense",
       "first_observed_utc": "2026-11-09T06:47:52Z",
-      "id": "adjacent:f5a4f2e65db9c0650f",
+      "id": "adjacent:fc3c0b36c130b01e84",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:f5a4f2e65db9c0650f"
+        "adjacent:fc3c0b36c130b01e84"
       ],
-      "published_utc": "2026-08-11T10:47:49Z",
+      "published_utc": "2026-08-10T21:18:11Z",
       "scope": "SECTOR",
       "source_id": "github_releases_vllm-project__vllm",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "v0.27.1",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.1"
+      "title": "v0.27.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1090,22 +1177,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "# vLLM v0.27.0 Release Notes ## Highlights This release features 561 commits from 242 contributors (64 new)! * **Kimi K3 support** with a full stack landing in one release: core model files and kernels (#50089, #50000), Python (#50093) and Rust (#50104) frontends, AttnRes kernels (#50090), DeepGEMM support (#50458), compressed-tensors quantized checkpoints (#50500), DSpark AR fusion (#50242), and an option to shard the shared expert instead of replicating it (#50656). * **More new models**: Qwen3.5 text-only dense",
-      "first_observed_utc": "2026-11-09T06:47:52Z",
-      "id": "adjacent:fc3c0b36c130b01e84",
+      "excerpt": "Bitcoin Core version 30.3 is now available from: https://bitcoincore.org/bin/bitcoin-core-30.3/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-30.3.md Do not use the links provided by GitHub, rather use the above download links, they are guaranteed to be generated deterministically and signed.",
+      "first_observed_utc": "2026-11-09T06:47:50Z",
+      "id": "adjacent:b4d3cb519af34d2ceb",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:fc3c0b36c130b01e84"
+        "adjacent:b4d3cb519af34d2ceb"
       ],
-      "published_utc": "2026-08-10T21:18:11Z",
+      "published_utc": "2026-07-10T09:34:59Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_vllm-project__vllm",
+      "source_id": "github_releases_bitcoin__bitcoin",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "v0.27.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0"
+      "title": "Bitcoin Core 30.3",
+      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v30.3"
     },
     {
       "candidate_cmc_ids": [
@@ -1152,22 +1239,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "Bitcoin Core version 30.3 is now available from: https://bitcoincore.org/bin/bitcoin-core-30.3/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-30.3.md Do not use the links provided by GitHub, rather use the above download links, they are guaranteed to be generated deterministically and signed.",
-      "first_observed_utc": "2026-11-09T06:47:50Z",
-      "id": "adjacent:b4d3cb519af34d2ceb",
+      "excerpt": "# PyTorch 2.13.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) # Highlights FlexAttention lands on Apple Silicon (MPS), with up to ~12x speedup over SDPA on sparse patterns, and gains a deterministic backward path on CUDA for reproducible gra",
+      "first_observed_utc": "2026-11-09T06:47:51Z",
+      "id": "adjacent:d3de5901190fbc003f",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:b4d3cb519af34d2ceb"
+        "adjacent:d3de5901190fbc003f"
       ],
-      "published_utc": "2026-07-10T09:34:59Z",
+      "published_utc": "2026-07-08T17:39:58Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_bitcoin__bitcoin",
+      "source_id": "github_releases_pytorch__pytorch",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "Bitcoin Core 30.3",
-      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v30.3"
+      "title": "PyTorch 2.13.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.13.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1216,22 +1303,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "# PyTorch 2.13.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) # Highlights FlexAttention lands on Apple Silicon (MPS), with up to ~12x speedup over SDPA on sparse patterns, and gains a deterministic backward path on CUDA for reproducible gra",
-      "first_observed_utc": "2026-11-09T06:47:51Z",
-      "id": "adjacent:d3de5901190fbc003f",
+      "excerpt": "Bitcoin Core version 31.1 is now available from: https://bitcoincore.org/bin/bitcoin-core-31.1/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-31.1.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
+      "first_observed_utc": "2026-11-09T06:47:50Z",
+      "id": "adjacent:d146cac5ec860123d0",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:d3de5901190fbc003f"
+        "adjacent:d146cac5ec860123d0"
       ],
-      "published_utc": "2026-07-08T17:39:58Z",
+      "published_utc": "2026-07-08T09:14:15Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_pytorch__pytorch",
+      "source_id": "github_releases_bitcoin__bitcoin",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "PyTorch 2.13.0 Release",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.13.0"
+      "title": "Bitcoin Core 31.1",
+      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v31.1"
     },
     {
       "candidate_cmc_ids": [
@@ -1280,22 +1367,23 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "Bitcoin Core version 31.1 is now available from: https://bitcoincore.org/bin/bitcoin-core-31.1/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-31.1.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
-      "first_observed_utc": "2026-11-09T06:47:50Z",
-      "id": "adjacent:d146cac5ec860123d0",
+      "excerpt": "This release is meant to fix the following regressions and silent correctness issues: ## Regression fixes - Fix nondeterministic outputs in test_batch_invariance with FLASH_ATTN on NVIDIA B200 GPUs ([#181248](https://github.com/pytorch/pytorch/issues/181248)), fixed by updating Triton to 3.7.1 ([#186814](https://github.com/pytorch/pytorch/pull/186814)) - Fix illegal memory access in the Triton convolution2d_bwd_weight kernel on B100/B200 (sm100) GPUs ([#187081](https://github.com/pytorch/pytorch/issues/187081)), fi",
+      "first_observed_utc": "2026-11-09T06:47:51Z",
+      "id": "adjacent:cdd88275eb331fb331",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:d146cac5ec860123d0"
+        "adjacent:cdd88275eb331fb331"
       ],
-      "published_utc": "2026-07-08T09:14:15Z",
+      "published_utc": "2026-06-18T00:41:17Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_bitcoin__bitcoin",
+      "source_id": "github_releases_pytorch__pytorch",
       "source_plane": "adjacent",
       "themes": [
-        "DEVELOPER_NETWORKS"
+        "DEVELOPER_NETWORKS",
+        "SEMICONDUCTORS"
       ],
-      "title": "Bitcoin Core 31.1",
-      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v31.1"
+      "title": "PyTorch 2.12.1 Release, bug fix release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.12.1"
     },
     {
       "candidate_cmc_ids": [
@@ -1344,23 +1432,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "This release is meant to fix the following regressions and silent correctness issues: ## Regression fixes - Fix nondeterministic outputs in test_batch_invariance with FLASH_ATTN on NVIDIA B200 GPUs ([#181248](https://github.com/pytorch/pytorch/issues/181248)), fixed by updating Triton to 3.7.1 ([#186814](https://github.com/pytorch/pytorch/pull/186814)) - Fix illegal memory access in the Triton convolution2d_bwd_weight kernel on B100/B200 (sm100) GPUs ([#187081](https://github.com/pytorch/pytorch/issues/187081)), fi",
+      "excerpt": "# PyTorch 2.12.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Batched linalg.eigh on CUDA is up to 100x faster due to updated cuSolver backend selection. New torch.accelerator.Graph API unifies graph capt",
       "first_observed_utc": "2026-11-09T06:47:51Z",
-      "id": "adjacent:cdd88275eb331fb331",
+      "id": "adjacent:25637f79284f13f5fa",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:cdd88275eb331fb331"
+        "adjacent:25637f79284f13f5fa"
       ],
-      "published_utc": "2026-06-18T00:41:17Z",
+      "published_utc": "2026-05-13T17:38:06Z",
       "scope": "SECTOR",
       "source_id": "github_releases_pytorch__pytorch",
       "source_plane": "adjacent",
       "themes": [
-        "DEVELOPER_NETWORKS",
-        "SEMICONDUCTORS"
+        "DEVELOPER_NETWORKS"
       ],
-      "title": "PyTorch 2.12.1 Release, bug fix release",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.12.1"
+      "title": "PyTorch 2.12.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.12.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1406,22 +1493,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "# PyTorch 2.12.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Batched linalg.eigh on CUDA is up to 100x faster due to updated cuSolver backend selection. New torch.accelerator.Graph API unifies graph capt",
-      "first_observed_utc": "2026-11-09T06:47:51Z",
-      "id": "adjacent:25637f79284f13f5fa",
+      "excerpt": "Bitcoin Core version 31.0 is now available from: https://bitcoincore.org/bin/bitcoin-core-31.0/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-31.0.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
+      "first_observed_utc": "2026-11-09T06:47:50Z",
+      "id": "adjacent:23097d4d5f28d14076",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:25637f79284f13f5fa"
+        "adjacent:23097d4d5f28d14076"
       ],
-      "published_utc": "2026-05-13T17:38:06Z",
+      "published_utc": "2026-04-20T13:21:17Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_pytorch__pytorch",
+      "source_id": "github_releases_bitcoin__bitcoin",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "PyTorch 2.12.0 Release",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.12.0"
+      "title": "Bitcoin Core 31.0",
+      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v31.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1467,22 +1554,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "Bitcoin Core version 31.0 is now available from: https://bitcoincore.org/bin/bitcoin-core-31.0/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-31.0.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
-      "first_observed_utc": "2026-11-09T06:47:50Z",
-      "id": "adjacent:23097d4d5f28d14076",
+      "excerpt": "# PyTorch 2.11.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Added Support for Differentiable Collectives for Distributed Training FlexAttention now has a FlashAttention-4 backend on Hopper and Blackwell",
+      "first_observed_utc": "2026-11-09T06:47:51Z",
+      "id": "adjacent:4794e755e51739720d",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:23097d4d5f28d14076"
+        "adjacent:4794e755e51739720d"
       ],
-      "published_utc": "2026-04-20T13:21:17Z",
+      "published_utc": "2026-03-23T18:38:28Z",
       "scope": "SECTOR",
-      "source_id": "github_releases_bitcoin__bitcoin",
+      "source_id": "github_releases_pytorch__pytorch",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "Bitcoin Core 31.0",
-      "url": "https://github.com/bitcoin/bitcoin/releases/tag/v31.0"
+      "title": "PyTorch 2.11.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.11.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1529,22 +1616,22 @@
       "candidate_cmc_ids": [],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
       "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "# PyTorch 2.11.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Added Support for Differentiable Collectives for Distributed Training FlexAttention now has a FlashAttention-4 backend on Hopper and Blackwell",
+      "excerpt": "# PyTorch 2.10.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Python 3.14 support for torch.compile() . Python 3.14t (freethreaded build) is experimentally supported as well. Reduced kernel launch overhea",
       "first_observed_utc": "2026-11-09T06:47:51Z",
-      "id": "adjacent:4794e755e51739720d",
+      "id": "adjacent:6ed883743892299f9d",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "adjacent:4794e755e51739720d"
+        "adjacent:6ed883743892299f9d"
       ],
-      "published_utc": "2026-03-23T18:38:28Z",
+      "published_utc": "2026-01-21T17:05:16Z",
       "scope": "SECTOR",
       "source_id": "github_releases_pytorch__pytorch",
       "source_plane": "adjacent",
       "themes": [
         "DEVELOPER_NETWORKS"
       ],
-      "title": "PyTorch 2.11.0 Release",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.11.0"
+      "title": "PyTorch 2.10.0 Release",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.10.0"
     },
     {
       "candidate_cmc_ids": [
@@ -1587,27 +1674,6 @@
       "url": "https://github.com/advisories/GHSA-x6mj-8jx9-qhqv"
     },
     {
-      "candidate_cmc_ids": [],
-      "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "context_origin": "GITHUB_AUTHOR_SUPPLIED_RELEASE_OR_ADVISORY",
-      "excerpt": "# PyTorch 2.10.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Developers](#developers) - [Security](#security) # Highlights Python 3.14 support for torch.compile() . Python 3.14t (freethreaded build) is experimentally supported as well. Reduced kernel launch overhea",
-      "first_observed_utc": "2026-11-09T06:47:51Z",
-      "id": "adjacent:6ed883743892299f9d",
-      "identity_status": "NO_ASSET_LINK_ASSERTED",
-      "provenance_ids": [
-        "adjacent:6ed883743892299f9d"
-      ],
-      "published_utc": "2026-01-21T17:05:16Z",
-      "scope": "SECTOR",
-      "source_id": "github_releases_pytorch__pytorch",
-      "source_plane": "adjacent",
-      "themes": [
-        "DEVELOPER_NETWORKS"
-      ],
-      "title": "PyTorch 2.10.0 Release",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.10.0"
-    },
-    {
       "candidate_cmc_ids": [
         7278
       ],
@@ -1646,27 +1712,6 @@
       "themes": [],
       "title": "Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control",
       "url": "https://github.com/advisories/GHSA-3w93-6hmw-whh4"
-    },
-    {
-      "candidate_cmc_ids": [],
-      "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "context_origin": "DIRECT_PUBLISHER_PUBLIC_ARTICLE",
-      "excerpt": "This repository was archived by the owner on Jan 12, 2024. It is now read-only. Quantum Teleportation Sample Compare Choose a tag to compare Sorry, something went wrong. Filter Loading Sorry, something went wrong. Uh oh! There was an error while loading. Please reload this page . No results found View all tags released this 30 Nov 18:02 · 211 commits to main since this release 241427 2a7297a This commit was created on GitHub.com and signed with GitHub’s verified signature . The key has expired. GPG key ID: 4AEE18F83AFDEB23 Expired Verified Learn about vigilant mode . Update to QDK release 0.14.2011.120240 (#444) * Build 0.14.2011.120240. * re",
-      "first_observed_utc": "2026-11-09T06:47:52Z",
-      "id": "adjacent:38753e2ead01879e74",
-      "identity_status": "NO_ASSET_LINK_ASSERTED",
-      "provenance_ids": [
-        "adjacent:38753e2ead01879e74"
-      ],
-      "published_utc": "2020-11-30T18:02:47Z",
-      "scope": "SECTOR",
-      "source_id": "github_releases_microsoft__quantum",
-      "source_plane": "adjacent",
-      "themes": [
-        "QUANTUM_SECURITY"
-      ],
-      "title": "Quantum Teleportation Sample",
-      "url": "https://github.com/microsoft/Quantum/releases/tag/241427"
     },
     {
       "candidate_cmc_ids": [
@@ -1800,7 +1845,8 @@
       "id": "research:a6a2ed3986abeb6cb2",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:a6a2ed3986abeb6cb2"
+        "research:a6a2ed3986abeb6cb2",
+        "D:038df3fa897a8fa644"
       ],
       "published_utc": "2026-11-12T23:15:00Z",
       "scope": "ASSET_CANDIDATE",
@@ -2161,7 +2207,8 @@
       "id": "research:1439342a4c61c6d349",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:1439342a4c61c6d349"
+        "research:1439342a4c61c6d349",
+        "D:ab0c136d5b079a9525"
       ],
       "published_utc": "2026-11-12T20:05:00Z",
       "scope": "ASSET_CANDIDATE",
@@ -3283,7 +3330,8 @@
       "id": "research:7c46d8ff3c45630894",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:7c46d8ff3c45630894"
+        "research:7c46d8ff3c45630894",
+        "D:2c8101d4620e283900"
       ],
       "published_utc": "2026-11-12T14:28:02Z",
       "scope": "ASSET_CANDIDATE",
@@ -3643,7 +3691,8 @@
       "id": "research:fbeb3c69ba01777a19",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:fbeb3c69ba01777a19"
+        "research:fbeb3c69ba01777a19",
+        "D:ad510ff8d34ee2f155"
       ],
       "published_utc": "2026-11-12T12:57:43Z",
       "scope": "ASSET_CANDIDATE",
@@ -3763,7 +3812,8 @@
       "id": "research:9ad475c8efd400ec3a",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:9ad475c8efd400ec3a"
+        "research:9ad475c8efd400ec3a",
+        "D:10221b728719ae5e6c"
       ],
       "published_utc": "2026-11-12T12:03:27Z",
       "scope": "ASSET_CANDIDATE",
@@ -4004,7 +4054,8 @@
       "id": "research:12a8eb438d238b1613",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:12a8eb438d238b1613"
+        "research:12a8eb438d238b1613",
+        "D:e4a76ddfb655f34142"
       ],
       "published_utc": "2026-11-12T10:40:44Z",
       "scope": "ASSET_CANDIDATE",
@@ -4124,7 +4175,8 @@
       "id": "research:8b9438b3c649f84b02",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:8b9438b3c649f84b02"
+        "research:8b9438b3c649f84b02",
+        "D:8788e2606063c4d570"
       ],
       "published_utc": "2026-11-12T09:53:19Z",
       "scope": "ASSET_CANDIDATE",
@@ -4244,7 +4296,8 @@
       "id": "research:3d11f6524df687745e",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:3d11f6524df687745e"
+        "research:3d11f6524df687745e",
+        "D:89ebdcbcbb7b6beead"
       ],
       "published_utc": "2026-11-12T08:48:31Z",
       "scope": "ASSET_CANDIDATE",
@@ -4444,7 +4497,8 @@
       "id": "research:c6fcf07487a61b33ca",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:c6fcf07487a61b33ca"
+        "research:c6fcf07487a61b33ca",
+        "D:ca008b02453c0384dc"
       ],
       "published_utc": "2026-11-12T06:45:03Z",
       "scope": "ASSET_CANDIDATE",
@@ -4604,7 +4658,8 @@
       "id": "research:07deee057158ed612b",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:07deee057158ed612b"
+        "research:07deee057158ed612b",
+        "D:6bbb56438576328991"
       ],
       "published_utc": "2026-11-11T22:23:00Z",
       "scope": "ASSET_CANDIDATE",
@@ -4644,7 +4699,8 @@
       "id": "research:1ed42cc94885e8a670",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:1ed42cc94885e8a670"
+        "research:1ed42cc94885e8a670",
+        "D:f278097b5f6f934c64"
       ],
       "published_utc": "2026-11-11T21:19:00Z",
       "scope": "ASSET_CANDIDATE",
@@ -4765,7 +4821,8 @@
       "id": "research:fc6cb4c27d5a3aa492",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:fc6cb4c27d5a3aa492"
+        "research:fc6cb4c27d5a3aa492",
+        "D:357055b8491f190328"
       ],
       "published_utc": "2026-11-11T20:22:00Z",
       "scope": "ASSET_CANDIDATE",
@@ -5128,7 +5185,8 @@
       "id": "research:2d94f2c822cf6fa889",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:2d94f2c822cf6fa889"
+        "research:2d94f2c822cf6fa889",
+        "D:797cd970706cd0fc82"
       ],
       "published_utc": "2026-11-11T16:00:04Z",
       "scope": "ASSET_CANDIDATE",
@@ -5576,7 +5634,8 @@
       "id": "research:7f32333ed4be018c2f",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:7f32333ed4be018c2f"
+        "research:7f32333ed4be018c2f",
+        "D:7a24452256138ce32b"
       ],
       "published_utc": "2026-11-11T09:48:24Z",
       "scope": "ASSET_CANDIDATE",
@@ -5958,7 +6017,8 @@
       "id": "research:93b4c4d8d789bcb843",
       "identity_status": "NO_ASSET_LINK_ASSERTED",
       "provenance_ids": [
-        "research:93b4c4d8d789bcb843"
+        "research:93b4c4d8d789bcb843",
+        "D:7d9348ee76e5c1be79"
       ],
       "published_utc": "2026-11-12T21:05:00Z",
       "scope": "GLOBAL_UNRESOLVED",
@@ -6010,24 +6070,24 @@
     },
     {
       "candidate_cmc_ids": [
-        5805
+        1
       ],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "excerpt": "Avalanche (AVAX) is trading near $8.40 after a sharp reaction to major institutional news, yet the upside potential could still be extraordinary. While the recent AVAX crypto bounce has captured attention, Bill Gates Microsoft Copilot AI predicts a hypothetical but transformative catalyst could propel AVAX into a completely different valuation regime. Copilot AI asks us to picture this scenario: The NYSE’s planned 24/7 tokenized-securities platform not only receives full regulatory approval but also launches successfully on Avalanche. This model is quickly adopted by other major global exchanges and clearinghouses. ( SOURCE: Copilot AI Predicts a Huge AVAX Crypto Move ) Within a few months, Avalanche becomes the preferred settlement and clearing layer for a significant portion of tokenized equities, ETFs, and eventually bonds across North America, Europe, and parts of Asia. Institutions start holding and staking substantial amounts of AVAX for network security, fee payments, and prefer",
+      "context_origin": "DIRECT_PUBLISHER_PUBLIC_ARTICLE",
+      "excerpt": "Altcoins have been waiting for their moment all year. Bitcoin [BTC] keeps taking it from them. However, it would seem now that the latter’s market share could decide who wins the next few weeks. The ‘undeafeated’ Bitcoin Coinglass’s Altcoin Season Index had a reading of 42 at press time. Anything above 75 ordinarily counts as altcoin season. This means that the press time reading still leaned towards Bitcoin. AD Source: Coinglass There’s numbers to back this up too. According to CryptoRank, for instance, Bitcoin was up 16.6% over the last 90 days. Only 31 coins on its list did better! Bitway [BTW] has risen by about 220%, Quant [QNT] went up ",
       "first_observed_utc": "2026-11-13T07:10:48Z",
-      "id": "research:d6c87f5479a9b041d3",
+      "id": "research:61126cc073913b855e",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:d6c87f5479a9b041d3"
+        "research:61126cc073913b855e"
       ],
-      "published_utc": "2026-11-10T16:20:25Z",
+      "published_utc": "2026-11-13T07:00:47Z",
       "scope": "ASSET_CANDIDATE",
-      "source_id": "coinspeaker_news",
+      "source_id": "ambcrypto_news",
       "source_plane": "research",
       "themes": [],
-      "title": "Bill Gates Microsoft Copilot AI Predicts a Crazy AVAX Crypto Move",
-      "url": "https://www.coinspeaker.com/bill-gates-microsoft-copilot-ai-predicts-crazy-avax-move/"
+      "title": "Bitcoin dominance hits 61%, but THIS will decide when is altcoin season!",
+      "url": "https://ambcrypto.com/bitcoin-dominance-hits-61-but-this-will-decide-when-is-altcoin-season/"
     },
     {
       "candidate_cmc_ids": [],
@@ -6050,24 +6110,24 @@
     },
     {
       "candidate_cmc_ids": [
-        5994
+        1027
       ],
       "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "excerpt": "Shiba Inu exchange may no longer be at risk of adding another zero, as exchange activity shows that buyers are taking over following a netflow of -122 billion SHIB.",
+      "context_origin": "DIRECT_PUBLISHER_PUBLIC_ARTICLE",
+      "excerpt": "Ethereum’s [ETH] staking ratio has reportedly reached an all-time high (ATH) of 36.3%, accounting for more than one-third of ETH’s total circulating supply. Well, the rising staking ratio suggests that an increasing number of ETH holders are choosing to lock up their tokens rather than sell or actively trade them. Source: Token Terminal This comes as Ethereum’s validator queues show that at press time, 911,938 ETH was waiting to be staked with a 16-day, 7-hour wait. Meanwhile, 264,211 ETH was queued to exit with a 5-day, 16-hour wait, plus a 7-day sweep delay. Source: Validator Queue Both queues are limited by the same churn rate of 256 per e",
       "first_observed_utc": "2026-11-13T07:10:48Z",
-      "id": "research:17bf9b1bb54aa3830b",
+      "id": "research:34e16ba308762978e2",
       "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
       "provenance_ids": [
-        "research:17bf9b1bb54aa3830b"
+        "research:34e16ba308762978e2"
       ],
-      "published_utc": "2026-11-10T15:47:30Z",
+      "published_utc": "2026-11-13T02:00:53Z",
       "scope": "ASSET_CANDIDATE",
-      "source_id": "utoday_news",
+      "source_id": "ambcrypto_news",
       "source_plane": "research",
       "themes": [],
-      "title": "Shiba Inu Heads for Recovery as Netflow Turns Red With Over 114 Billion SHIB",
-      "url": "https://u.today/shiba-inu-heads-for-recovery-as-netflow-turns-red-with-over-114-billion-shib"
+      "title": "How Ethereum staking hit a record 36.3% despite ETH’s price drop",
+      "url": "https://ambcrypto.com/how-ethereum-staking-hit-a-record-36-3-despite-eths-price-drop/"
     },
     {
       "candidate_cmc_ids": [],
@@ -6087,6 +6147,49 @@
       "themes": [],
       "title": "Here are the 25 original Xbox games you can now play on PC",
       "url": "https://www.theverge.com/games/1032321/microsoft-xbox-original-games-pc-backwards-compatibility"
+    },
+    {
+      "candidate_cmc_ids": [
+        512,
+        1975,
+        2010,
+        6535
+      ],
+      "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "context_origin": "DIRECT_PUBLISHER_PUBLIC_ARTICLE",
+      "excerpt": "Original U.Today article Near Protocol (NEAR), Stellar (XLM) ChainLink (LINK) and Cardano (ADA) Price Analysis For November 13: The Market Approaches Overselling Price Analysis By Arman Shirinyan Nov 13, 2026 The crypto market keeps sliding toward oversold territory, and NEAR, XLM, LINK and ADA are all under pressure. Advertisement Cover image via U.Today Disclaimer: The opinions expressed by our writers are their own and do not represent the views of U.Today. The financial and market information provided on U.Today is intended for informational purposes only. U.Today is not liable for any financial losses incurred while trading cryptocurrenc",
+      "first_observed_utc": "2026-11-13T07:10:48Z",
+      "id": "research:6e2c1948c63cca4f53",
+      "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+      "provenance_ids": [
+        "research:6e2c1948c63cca4f53"
+      ],
+      "published_utc": "2026-11-13T00:01:00Z",
+      "scope": "ASSET_CANDIDATE",
+      "source_id": "utoday_news",
+      "source_plane": "research",
+      "themes": [],
+      "title": "Near Protocol (NEAR), Stellar (XLM) ChainLink (LINK) and Cardano (ADA) Price Analysis For November 13: The Market Approaches Overselling",
+      "url": "https://u.today/price-analysis/near-protocol-near-stellar-xlm-chainlink-link-and-cardano-ada-price-analysis-for-november-13-the"
+    },
+    {
+      "candidate_cmc_ids": [],
+      "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "excerpt": "Industry groups argued in court filings that Illinois’ crypto tax, which applies even when a transaction yields no profit, could raise compliance costs and violate federal law.",
+      "first_observed_utc": "2026-11-12T22:44:58Z",
+      "id": "research:bb2a5788af4e47e686",
+      "identity_status": "NO_ASSET_LINK_ASSERTED",
+      "provenance_ids": [
+        "research:bb2a5788af4e47e686"
+      ],
+      "published_utc": "2026-11-12T20:58:06Z",
+      "scope": "GLOBAL_UNRESOLVED",
+      "source_id": "cointelegraph",
+      "source_plane": "research",
+      "themes": [],
+      "title": "US Justice Department, business groups and DeFi firms challenge Illinois crypto tax",
+      "url": "https://cointelegraph.com/news/us-justice-department-business-groups-defi-illinois-crypto-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     }
   ],
   "notes": "Short original-source passages for guided research, NOT verified factual claims.",
@@ -6207,11 +6310,6 @@
       "cmc_id": 5690,
       "reason": "No substantively contextual asset-specific source in current collection",
       "symbol": "RENDER"
-    },
-    {
-      "cmc_id": 6535,
-      "reason": "No substantively contextual asset-specific source in current collection",
-      "symbol": "NEAR"
     },
     {
       "cmc_id": 6538,

@@ -32,7 +32,7 @@
       "task_id": "T:f08b547b55a4"
     },
     {
-      "results": 10,
+      "results": 6,
       "status": "OK",
       "task_id": "T:200d08633937"
     },
@@ -47,12 +47,12 @@
       "task_id": "T:e0a77ad085f0"
     },
     {
-      "results": 3,
+      "results": 4,
       "status": "OK",
       "task_id": "T:fc35c83f416c"
     },
     {
-      "results": 6,
+      "results": 5,
       "status": "OK",
       "task_id": "T:be5169ccbd6d"
     },
@@ -77,24 +77,24 @@
       "task_id": "T:590b383b34bd"
     },
     {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
-    },
-    {
       "results": 0,
       "status": "OK",
       "task_id": "T:4144598f2b85"
     },
     {
-      "results": 12,
+      "results": 8,
       "status": "OK",
-      "task_id": "T:aba7cbe84ed1"
+      "task_id": "T:98f8c88f4575"
     },
     {
       "results": 9,
       "status": "OK",
       "task_id": "T:a7ec3ce54236"
+    },
+    {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:231514622f3b"
     },
     {
       "results": 0,
@@ -108,6 +108,301 @@
     "records": 709,
     "sha256": "f00270729b30768a6ec8584c1853fb806dae19df539e7ac168682d32f0ec4af3"
   },
+  "coin_descriptive_sources_audit": {
+    "all_100_substantive_background": false,
+    "assets": 100,
+    "calls": 268,
+    "coins_with_cross_exchange_market_observations": 1,
+    "coins_with_dated_third_party_events": 0,
+    "coins_with_substantive_dated_event_details": 0,
+    "configured_sources": [
+      "coinpaprika_keyless_coin_profiles",
+      "coinpaprika_coin_events",
+      "coinpaprika_coin_markets",
+      "coingecko_public_coin_profiles"
+    ],
+    "disclaimer": "Third-party descriptive context is not independently verified, current news, or token-price causality.",
+    "errors": [
+      "coinpaprika:FLR:TypeError",
+      "coinpaprika:PUMP:HTTPError",
+      "coinpaprika:XPL:HTTPError",
+      "coinpaprika:FF:HTTPError",
+      "coinpaprika:KITE:HTTPError",
+      "coinpaprika:PIEVERSE:HTTPError",
+      "coinpaprika:STABLE:HTTPError",
+      "coinpaprika:NIGHT:HTTPError",
+      "coinpaprika_events:BTC:HTTPError",
+      "coinpaprika_events:LTC:HTTPError",
+      "coinpaprika_events:XRP:HTTPError",
+      "coinpaprika_events:DOGE:HTTPError",
+      "coinpaprika_events:DASH:HTTPError",
+      "coinpaprika_events:XMR:HTTPError",
+      "coinpaprika_events:XLM:HTTPError",
+      "coinpaprika_events:ETH:HTTPError",
+      "coinpaprika_events:ETC:HTTPError",
+      "coinpaprika_events:ZEC:HTTPError",
+      "coinpaprika_events:GNO:HTTPError",
+      "coinpaprika_events:BCH:HTTPError",
+      "coinpaprika_events:BNB:HTTPError",
+      "coinpaprika_events:TRX:HTTPError",
+      "coinpaprika_events:LINK:HTTPError",
+      "coinpaprika_events:ADA:HTTPError",
+      "coinpaprika_events:XTZ:HTTPError",
+      "coinpaprika_events:KCS:HTTPError",
+      "coinpaprika_events:FIL:HTTPError",
+      "coinpaprika_events:XDC:HTTPError",
+      "coinpaprika_events:NEXO:HTTPError",
+      "coinpaprika_events:VET:HTTPError",
+      "coinpaprika_events:QNT:HTTPError",
+      "coinpaprika_events:BSV:HTTPError",
+      "coinpaprika_events:CRO:HTTPError",
+      "coinpaprika_events:FET:HTTPError",
+      "coinpaprika_events:ATOM:HTTPError",
+      "coinpaprika_events:OKB:HTTPError",
+      "coinpaprika_events:ALGO:HTTPError",
+      "coinpaprika_events:GT:HTTPError",
+      "coinpaprika_events:PAXG:HTTPError",
+      "coinpaprika_events:STX:HTTPError",
+      "coinpaprika_events:XAUt:HTTPError",
+      "coinpaprika_events:SOL:HTTPError",
+      "coinpaprika_events:JST:HTTPError",
+      "coinpaprika_events:RENDER:HTTPError",
+      "coinpaprika_events:AVAX:HTTPError",
+      "coinpaprika_events:SHIB:HTTPError",
+      "coinpaprika_events:NEAR:HTTPError",
+      "coinpaprika_events:CRV:HTTPError",
+      "coinpaprika_events:DOT:HTTPError",
+      "coinpaprika_events:UNI:HTTPError",
+      "coinpaprika_events:CAKE:HTTPError",
+      "coinpaprika_events:AAVE:HTTPError",
+      "coinpaprika_events:LDO:HTTPError",
+      "coinpaprika_events:RAY:HTTPError",
+      "coinpaprika_events:ICP:HTTPError",
+      "coinpaprika_events:PENDLE:HTTPError",
+      "coinpaprika_events:SUN:HTTPError",
+      "coinpaprika_events:BGB:HTTPError",
+      "coinpaprika_events:GRAM:HTTPError",
+      "coinpaprika_events:OP:HTTPError",
+      "coinpaprika_events:ARB:HTTPError",
+      "coinpaprika_events:WLD:HTTPError",
+      "coinpaprika_events:BTT:HTTPError",
+      "coinpaprika_events:KAS:HTTPError",
+      "coinpaprika_events:SUI:HTTPError",
+      "coinpaprika_events:ONDO:HTTPError",
+      "coinpaprika_events:APT:HTTPError",
+      "coinpaprika_events:STRK:HTTPError",
+      "coinpaprika_events:TIA:HTTPError",
+      "coinpaprika_events:TAO:HTTPError",
+      "coinpaprika_events:BONK:HTTPError",
+      "coinpaprika_events:SEI:HTTPError",
+      "coinpaprika_events:ZRO:HTTPError",
+      "coinpaprika_events:MNT:HTTPError",
+      "coinpaprika_events:SPX:HTTPError",
+      "coinpaprika_events:PYTH:HTTPError",
+      "coinpaprika_events:BEAM:HTTPError",
+      "coinpaprika_events:JUP:HTTPError",
+      "coinpaprika_events:VIRTUAL:HTTPError",
+      "coinpaprika_events:ETHFI:HTTPError",
+      "coinpaprika_events:ENA:HTTPError",
+      "coinpaprika_events:HYPE:HTTPError",
+      "coinpaprika_events:SKY:HTTPError",
+      "coinpaprika_events:MORPHO:HTTPError",
+      "coinpaprika_events:PENGU:HTTPError",
+      "coinpaprika_events:TRUMP:HTTPError",
+      "coinpaprika_events:M:HTTPError",
+      "coinpaprika_events:VVV:HTTPError",
+      "coinpaprika_events:ASTER:HTTPError",
+      "coinpaprika_events:LIT:HTTPError",
+      "coinpaprika_markets:BTC:HTTPError",
+      "coinpaprika_markets:LTC:HTTPError",
+      "coinpaprika_markets:XRP:HTTPError",
+      "coinpaprika_markets:DOGE:HTTPError",
+      "coinpaprika_markets:DASH:HTTPError",
+      "coinpaprika_markets:XMR:HTTPError",
+      "coinpaprika_markets:XLM:HTTPError",
+      "coinpaprika_markets:ETH:HTTPError",
+      "coinpaprika_markets:ETC:HTTPError",
+      "coinpaprika_markets:ZEC:HTTPError",
+      "coinpaprika_markets:GNO:HTTPError",
+      "coinpaprika_markets:BCH:HTTPError",
+      "coinpaprika_markets:BNB:HTTPError",
+      "coinpaprika_markets:TRX:HTTPError",
+      "coinpaprika_markets:LINK:HTTPError",
+      "coinpaprika_markets:ADA:HTTPError",
+      "coinpaprika_markets:XTZ:HTTPError",
+      "coinpaprika_markets:KCS:HTTPError",
+      "coinpaprika_markets:FIL:HTTPError",
+      "coinpaprika_markets:XDC:HTTPError",
+      "coinpaprika_markets:NEXO:HTTPError",
+      "coinpaprika_markets:VET:HTTPError",
+      "coinpaprika_markets:QNT:HTTPError",
+      "coinpaprika_markets:BSV:HTTPError",
+      "coinpaprika_markets:CRO:HTTPError",
+      "coinpaprika_markets:FET:HTTPError",
+      "coinpaprika_markets:ATOM:HTTPError",
+      "coinpaprika_markets:OKB:HTTPError",
+      "coinpaprika_markets:ALGO:HTTPError",
+      "coinpaprika_markets:GT:HTTPError",
+      "coinpaprika_markets:PAXG:HTTPError",
+      "coinpaprika_markets:STX:HTTPError",
+      "coinpaprika_markets:XAUt:HTTPError",
+      "coinpaprika_markets:SOL:HTTPError",
+      "coinpaprika_markets:JST:HTTPError",
+      "coinpaprika_markets:RENDER:HTTPError",
+      "coinpaprika_markets:AVAX:HTTPError",
+      "coinpaprika_markets:SHIB:HTTPError",
+      "coinpaprika_markets:NEAR:HTTPError",
+      "coinpaprika_markets:CRV:HTTPError",
+      "coinpaprika_markets:DOT:HTTPError",
+      "coinpaprika_markets:CAKE:HTTPError",
+      "coinpaprika_markets:AAVE:HTTPError",
+      "coinpaprika_markets:LDO:HTTPError",
+      "coinpaprika_markets:RAY:HTTPError",
+      "coinpaprika_markets:ICP:HTTPError",
+      "coinpaprika_markets:PENDLE:HTTPError",
+      "coinpaprika_markets:SUN:HTTPError",
+      "coinpaprika_markets:BGB:HTTPError",
+      "coinpaprika_markets:GRAM:HTTPError",
+      "coinpaprika_markets:OP:HTTPError",
+      "coinpaprika_markets:ARB:HTTPError",
+      "coinpaprika_markets:WLD:HTTPError",
+      "coinpaprika_markets:BTT:HTTPError",
+      "coinpaprika_markets:KAS:HTTPError",
+      "coinpaprika_markets:SUI:HTTPError",
+      "coinpaprika_markets:ONDO:HTTPError",
+      "coinpaprika_markets:APT:HTTPError",
+      "coinpaprika_markets:STRK:HTTPError",
+      "coinpaprika_markets:TIA:HTTPError",
+      "coinpaprika_markets:TAO:HTTPError",
+      "coinpaprika_markets:BONK:HTTPError",
+      "coinpaprika_markets:SEI:HTTPError",
+      "coinpaprika_markets:ZRO:HTTPError",
+      "coinpaprika_markets:MNT:HTTPError",
+      "coinpaprika_markets:SPX:HTTPError",
+      "coinpaprika_markets:PYTH:HTTPError",
+      "coinpaprika_markets:BEAM:HTTPError",
+      "coinpaprika_markets:JUP:HTTPError",
+      "coinpaprika_markets:VIRTUAL:HTTPError",
+      "coinpaprika_markets:ETHFI:HTTPError",
+      "coinpaprika_markets:ENA:HTTPError",
+      "coinpaprika_markets:HYPE:HTTPError",
+      "coinpaprika_markets:SKY:HTTPError",
+      "coinpaprika_markets:MORPHO:HTTPError",
+      "coinpaprika_markets:PENGU:HTTPError",
+      "coinpaprika_markets:TRUMP:HTTPError",
+      "coinpaprika_markets:M:HTTPError",
+      "coinpaprika_markets:VVV:HTTPError",
+      "coinpaprika_markets:ASTER:HTTPError",
+      "coinpaprika_markets:LIT:HTTPError",
+      "coingecko:PUMP:HTTPError",
+      "coingecko:XPL:HTTPError",
+      "coingecko:CC:HTTPError",
+      "coingecko:FF:HTTPError",
+      "coingecko:PIEVERSE:HTTPError",
+      "coingecko:LIT:HTTPError"
+    ],
+    "extra_calls": 164,
+    "extra_ok": {
+      "events": 0,
+      "markets": 1
+    },
+    "historical_network_disabled": false,
+    "profile_gaps": [
+      {
+        "cmc_id": 3957,
+        "name": "UNUS SED LEO",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "LEO"
+      },
+      {
+        "cmc_id": 28321,
+        "name": "Polygon (prev. MATIC)",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "POL"
+      },
+      {
+        "cmc_id": 33251,
+        "name": "World Liberty Financial",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "WLFI"
+      },
+      {
+        "cmc_id": 35697,
+        "name": "Pi",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PI"
+      },
+      {
+        "cmc_id": 36507,
+        "name": "Pump.fun",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PUMP"
+      },
+      {
+        "cmc_id": 36645,
+        "name": "Plasma",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "XPL"
+      },
+      {
+        "cmc_id": 37263,
+        "name": "Canton",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "CC"
+      },
+      {
+        "cmc_id": 38482,
+        "name": "Falcon Finance",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "FF"
+      },
+      {
+        "cmc_id": 38590,
+        "name": "币安人生",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "币安人生"
+      },
+      {
+        "cmc_id": 38828,
+        "name": "Kite",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "KITE"
+      },
+      {
+        "cmc_id": 38849,
+        "name": "Pieverse",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PIEVERSE"
+      },
+      {
+        "cmc_id": 38892,
+        "name": "Stable",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "STABLE"
+      },
+      {
+        "cmc_id": 39064,
+        "name": "Midnight",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "NIGHT"
+      },
+      {
+        "cmc_id": 39125,
+        "name": "Lighter",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "LIT"
+      }
+    ],
+    "profile_present": 88,
+    "recent_24h_catalyst_coverage_NOT_INFERRED": true,
+    "source_status": {
+      "coingecko_coin_list": "OK",
+      "coinpaprika_coin_list": "OK"
+    },
+    "strict_name_and_symbol_matching": true,
+    "substantive_project_profiles": 86,
+    "success": 89
+  },
   "direct_research_full_source_audit": {
     "batch_count": 37,
     "count": 2893,
@@ -116,21 +411,21 @@
   "evidence_counts": {
     "adjacent_full_event_rows": 709,
     "adjacent_read_index_event_rows": 500,
-    "canonical_research_leads": 12877,
-    "direct_publisher_article_excerpts": 46,
+    "canonical_research_leads": 12909,
+    "direct_publisher_article_excerpts": 74,
     "direct_publisher_article_fetch_attempted": 80,
     "engine_rows": 3229,
     "expanded_rows": 10339,
-    "free_adaptive_followup_leads": 194,
+    "free_adaptive_followup_leads": 186,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 13941,
-    "long_excerpts_by_character_count_not_claim_verification": 5586,
+    "long_excerpts_by_character_count_not_claim_verification": 5621,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "new_source_discovery_items": 0,
+    "new_source_discovery_items": 69,
     "non_asset_structured_market_and_network_observations": 2844,
     "research_event_rows": 2893,
-    "substantive_source_excerpt_leads": 2114
+    "substantive_source_excerpt_leads": 2153
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -147,96 +442,109 @@
     "rows": 0
   },
   "new_public_source_discovery_audit": {
-    "advertised_existing_feed_count": 4,
+    "advertised_existing_feed_count": 3,
     "domain_cooldown_hours": 72,
     "domains_attempted": 14,
-    "domains_found_content": 0,
-    "domains_skipped_due_to_recent_probe": 39,
-    "new_feed_items": 0,
+    "domains_found_content": 5,
+    "domains_skipped_due_to_recent_probe": 53,
+    "new_feed_items": 69,
     "not_verified_facts": true,
     "sources": [
       {
         "advertised_feeds": [
-          "https://www.banklesstimes.com/feed/",
-          "https://www.banklesstimes.com/comments/feed/"
+          "https://www.btc-echo.de/feed/",
+          "https://btc-echo-invest.podigee.io/feed/mp3"
         ],
         "article_count": 0,
-        "domain": "banklesstimes.com",
-        "duplicate_feed_url": "https://www.banklesstimes.com/feed/",
-        "feed_status": "HTTPError",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "economist.com",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [],
-        "article_count": 0,
-        "domain": "nature.com",
-        "feed_status": "NOT_DISCOVERED",
+        "domain": "btc-echo.de",
+        "duplicate_feed_url": "https://www.btc-echo.de/feed/",
+        "feed_status": "OVERSIZED",
         "home_status": "OK",
         "substantive": 0
       },
       {
         "advertised_feeds": [],
         "article_count": 0,
-        "domain": "u.today",
+        "domain": "hackster.imgix.net",
         "feed_status": "NOT_DISCOVERED",
         "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "bankofengland.co.uk",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "ROBOTS_DISALLOW",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [],
-        "article_count": 0,
-        "domain": "blockworks-co.imgix.net",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "darkreading.com",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
         "substantive": 0
       },
       {
         "advertised_feeds": [
-          "https://www.wired.com/feed/rss"
+          "https://www.cryptopolitan.com/feed/"
         ],
         "article_count": 0,
-        "domain": "wired.com",
-        "duplicate_feed_url": "https://www.wired.com/feed/rss",
+        "domain": "cryptopolitan.com",
+        "duplicate_feed_url": "https://www.cryptopolitan.com/feed/",
         "feed_status": "ALREADY_COLLECTED",
         "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
         "substantive": 0
       },
       {
+        "advertised_feeds": [
+          "https://www.crypto-news-flash.com/feed/",
+          "https://www.crypto-news-flash.com/comments/feed/"
+        ],
         "article_count": 0,
-        "domain": "finextra.com",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "ROBOTS_DISALLOW",
+        "domain": "crypto-news-flash.com",
+        "duplicate_feed_url": "https://www.crypto-news-flash.com/feed/",
+        "feed_status": "OK",
+        "home_status": "OK",
         "substantive": 0
       },
       {
         "advertised_feeds": [
-          "https://cryptopotato.com/feed/"
+          "https://cryptonews.com/feed/"
+        ],
+        "article_count": 20,
+        "domain": "cryptonews.com",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 20
+      },
+      {
+        "advertised_feeds": [
+          "https://datacenterdynamics.com/en/rss/",
+          "https://datacenterdynamics.com/en/atom/"
+        ],
+        "article_count": 20,
+        "domain": "datacenterdynamics.com",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://blogs.nvidia.com/feed/",
+          "https://blogs.nvidia.com/comments/feed/"
+        ],
+        "article_count": 18,
+        "domain": "blogs.nvidia.com",
+        "duplicate_feed_url": "https://blogs.nvidia.com/feed/",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 6
+      },
+      {
+        "advertised_feeds": [
+          "https://ambcrypto.com/feed/",
+          "https://ambcrypto.com/comments/feed/"
         ],
         "article_count": 0,
-        "domain": "cryptopotato.com",
-        "duplicate_feed_url": "https://cryptopotato.com/feed/",
+        "domain": "ambcrypto.com",
+        "duplicate_feed_url": "https://ambcrypto.com/feed/",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://www.bleepingcomputer.com/feed/"
+        ],
+        "article_count": 0,
+        "domain": "bleepingcomputer.com",
+        "duplicate_feed_url": "https://www.bleepingcomputer.com/feed/",
         "feed_status": "ALREADY_COLLECTED",
         "home_status": "OK",
         "substantive": 0
@@ -244,77 +552,106 @@
       {
         "advertised_feeds": [],
         "article_count": 0,
-        "domain": "cnbc.com",
+        "domain": "infoq.com",
         "feed_status": "NOT_DISCOVERED",
+        "home_status": "OK",
+        "substantive": 0
+      },
+      {
+        "article_count": 0,
+        "domain": "beincrypto.com",
+        "feed_status": "NOT_DISCOVERED",
+        "home_status": "ROBOTS_DISALLOW",
+        "substantive": 0
+      },
+      {
+        "advertised_feeds": [
+          "https://coincentral.com/feed/",
+          "https://coincentral.com/comments/feed/"
+        ],
+        "article_count": 1,
+        "domain": "coincentral.com",
+        "duplicate_feed_url": "https://coincentral.com/feed/",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 1
+      },
+      {
+        "advertised_feeds": [
+          "https://www.coinspeaker.com/news/feed/"
+        ],
+        "article_count": 10,
+        "domain": "coinspeaker.com",
+        "feed_status": "OK",
+        "home_status": "OK",
+        "substantive": 10
+      },
+      {
+        "advertised_feeds": [
+          "https://www.cointribune.com/feed/"
+        ],
+        "article_count": 0,
+        "domain": "cointribune.com",
+        "duplicate_feed_url": "https://www.cointribune.com/feed/",
+        "feed_status": "ALREADY_COLLECTED",
         "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [
-          "https://cryptobriefing.com/feed/"
-        ],
-        "article_count": 0,
-        "domain": "cryptobriefing.com",
-        "duplicate_feed_url": "https://cryptobriefing.com/feed/",
-        "feed_status": "ALREADY_COLLECTED",
-        "home_status": "OK",
-        "substantive": 0
-      },
-      {
-        "article_count": 0,
-        "domain": "forums.sui.io",
-        "feed_status": "NOT_DISCOVERED",
-        "home_status": "HTTPError",
-        "substantive": 0
-      },
-      {
-        "advertised_feeds": [
-          "https://www.techspot.com/backend.xml"
-        ],
-        "article_count": 0,
-        "domain": "techspot.com",
-        "duplicate_feed_url": "https://www.techspot.com/backend.xml",
-        "feed_status": "ALREADY_COLLECTED",
-        "home_status": "OK",
         "substantive": 0
       }
     ],
-    "substantive_feed_items": 0
+    "substantive_feed_items": 37
   },
   "official_assets": 100,
   "per_coin": {
     "any_mapped_research_family_including_reported_supply": 73,
     "candidate_news_links": 100,
+    "coins_missing_substantive_coin_specific_context": 13,
     "coins_with_curated_project_source_context": 36,
+    "coins_with_public_cross_exchange_market_data": 1,
+    "coins_with_substantive_coin_specific_context": 87,
+    "coins_with_substantive_coinspecific_article_context": 41,
+    "coins_with_substantive_dated_third_party_events": 0,
     "coins_with_substantive_project_source_context": 33,
+    "coins_without_substantive_coinspecific_article_context": 59,
+    "coins_without_substantive_project_background": 14,
     "perp_markets_unquarantined": 76,
     "project_source_hint_caveat": "Project affiliation is contextual, NOT independent verification of token-price impact.",
     "research_mapped_quantitative_families_beyond_supply_and_trending": 47,
-    "spot_prices": 100
+    "source_backed_substantive_project_background": 86,
+    "spot_prices": 100,
+    "third_party_coin_profiles_available": 88
   },
   "publisher_article_enrichment_audit": {
     "attempted": 80,
     "by_scope": {
-      "ASSET_CANDIDATE": 16,
-      "GLOBAL_UNRESOLVED": 28,
-      "SECTOR": 2
+      "ASSET_CANDIDATE": 13,
+      "GLOBAL_UNRESOLVED": 20
     },
-    "substantive": 46,
-    "succeeded": 49
+    "cached_substantive_reused": 41,
+    "candidate_coins_targeted": 24,
+    "candidate_coins_with_substantive_publisher_excerpt": 16,
+    "cumulative_substantive_current_corpus": 74,
+    "selection_policy": "PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL",
+    "substantive": 33,
+    "succeeded": 40
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
+    "all_100_coins_have_substantive_source_linked_context": false,
     "all_100_contracts_verified": false,
+    "all_100_substantive_project_background": false,
+    "coin_specific_event_text_status": "INCOMPLETE",
     "deep_article_target_met": true,
     "independently_primary_claims_verification_status": "NOT_PERFORMED_BY_FREE_PYTHON",
     "independently_primary_verified_claims": 0,
     "manual_high_context_queue_is_not_the_denominator": true,
     "material_research_status": "PARTIAL_RESEARCH",
-    "publisher_excerpts": 46,
+    "project_background_context_status": "INCOMPLETE",
+    "project_background_not_fresh_catalyst": true,
+    "publisher_excerpts": 74,
     "publisher_source_attempted": 80,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.1642,
+    "substantive_context_share": 0.1668,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
@@ -328,13 +665,13 @@
   "source_context_audit": {
     "by_plane_and_access_type": {
       "adjacent:DIRECT_SOURCE": {
-        "article_extract_count": 2,
+        "article_extract_count": 0,
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
         "published_last_24h": 16,
         "published_last_72h": 16,
-        "substantive": 36,
+        "substantive": 34,
         "substantive_published_last_72h": 16,
         "total": 43
       },
@@ -343,7 +680,7 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 186,
+        "published_last_24h": 144,
         "published_last_72h": 411,
         "substantive": 0,
         "substantive_published_last_72h": 0,
@@ -354,10 +691,10 @@
         "distinct_source_domains": 20,
         "feed_summary_count": 0,
         "published_date_missing": 1,
-        "published_last_24h": 53,
-        "published_last_72h": 173,
+        "published_last_24h": 34,
+        "published_last_72h": 164,
         "substantive": 224,
-        "substantive_published_last_72h": 162,
+        "substantive_published_last_72h": 153,
         "total": 236
       },
       "expanded:GOOGLE_NEWS_AGGREGATOR": {
@@ -365,21 +702,32 @@
         "distinct_source_domains": 1,
         "feed_summary_count": 0,
         "published_date_missing": 0,
-        "published_last_24h": 1402,
-        "published_last_72h": 5148,
+        "published_last_24h": 971,
+        "published_last_72h": 4863,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 9524
       },
+      "new_primary_source:DIRECT_SOURCE": {
+        "article_extract_count": 6,
+        "distinct_source_domains": 6,
+        "feed_summary_count": 24,
+        "published_date_missing": 0,
+        "published_last_24h": 26,
+        "published_last_72h": 27,
+        "substantive": 17,
+        "substantive_published_last_72h": 12,
+        "total": 32
+      },
       "research:DIRECT_SOURCE": {
-        "article_extract_count": 44,
+        "article_extract_count": 68,
         "distinct_source_domains": 81,
-        "feed_summary_count": 2373,
+        "feed_summary_count": 2350,
         "published_date_missing": 18,
-        "published_last_24h": 457,
-        "published_last_72h": 936,
-        "substantive": 1854,
-        "substantive_published_last_72h": 692,
+        "published_last_24h": 340,
+        "published_last_72h": 909,
+        "substantive": 1878,
+        "substantive_published_last_72h": 691,
         "total": 2663
       }
     },
@@ -395,6 +743,26 @@
       "DEVELOPER_COMMUNITY": {
         "substantive": 0,
         "total": 1
+      },
+      "DYNAMIC_blogs.nvidia.com": {
+        "substantive": 4,
+        "total": 4
+      },
+      "DYNAMIC_coincentral.com": {
+        "substantive": 1,
+        "total": 1
+      },
+      "DYNAMIC_coinspeaker.com": {
+        "substantive": 1,
+        "total": 1
+      },
+      "DYNAMIC_cryptonews.com": {
+        "substantive": 6,
+        "total": 6
+      },
+      "DYNAMIC_datacenterdynamics.com": {
+        "substantive": 5,
+        "total": 20
       },
       "GOVERNANCE_EVENTS": {
         "substantive": 1,
@@ -417,7 +785,7 @@
         "total": 59
       },
       "aave_blog": {
-        "substantive": 20,
+        "substantive": 25,
         "total": 61
       },
       "aave_governance": {
@@ -425,7 +793,7 @@
         "total": 8
       },
       "aave_v3_releases": {
-        "substantive": 6,
+        "substantive": 4,
         "total": 10
       },
       "algorand_releases": {
@@ -433,7 +801,7 @@
         "total": 10
       },
       "ambcrypto_news": {
-        "substantive": 5,
+        "substantive": 10,
         "total": 16
       },
       "aptos_releases": {
@@ -485,7 +853,7 @@
         "total": 10
       },
       "bleepingcomputer_news": {
-        "substantive": 14,
+        "substantive": 15,
         "total": 15
       },
       "blockworks_news": {
@@ -557,7 +925,7 @@
         "total": 10
       },
       "cointelegraph": {
-        "substantive": 17,
+        "substantive": 20,
         "total": 30
       },
       "cointribune_news": {
@@ -653,7 +1021,7 @@
         "total": 10
       },
       "ens_releases": {
-        "substantive": 6,
+        "substantive": 5,
         "total": 10
       },
       "esma_press": {
@@ -685,7 +1053,7 @@
         "total": 15
       },
       "fed_press": {
-        "substantive": 0,
+        "substantive": 1,
         "total": 16
       },
       "filecoin_releases": {
@@ -745,7 +1113,7 @@
         "total": 8
       },
       "github_releases_microsoft__quantum": {
-        "substantive": 1,
+        "substantive": 0,
         "total": 8
       },
       "github_releases_paradigmxyz__reth": {
@@ -757,7 +1125,7 @@
         "total": 8
       },
       "github_releases_vllm-project__vllm": {
-        "substantive": 8,
+        "substantive": 7,
         "total": 8
       },
       "github_releases_zcash__zcash": {
@@ -893,7 +1261,7 @@
         "total": 10
       },
       "huggingface_blog": {
-        "substantive": 5,
+        "substantive": 6,
         "total": 70
       },
       "huggingface_transformers_releases": {
@@ -1129,11 +1497,11 @@
         "total": 1
       },
       "techcrunch": {
-        "substantive": 10,
+        "substantive": 15,
         "total": 20
       },
       "techspot_news": {
-        "substantive": 28,
+        "substantive": 29,
         "total": 30
       },
       "tezos_releases": {
@@ -1173,7 +1541,7 @@
         "total": 1
       },
       "utoday_news": {
-        "substantive": 33,
+        "substantive": 38,
         "total": 70
       },
       "vechain_releases": {
@@ -1205,8 +1573,8 @@
         "total": 10
       }
     },
-    "direct_research_substantive_count": 1854,
-    "direct_research_substantive_ratio": 0.6962,
+    "direct_research_substantive_count": 1878,
+    "direct_research_substantive_ratio": 0.7052,
     "direct_research_total": 2663,
     "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },
