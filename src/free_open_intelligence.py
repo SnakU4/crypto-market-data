@@ -445,26 +445,55 @@ def enrich_direct(events,budget=64,fetcher=None):
     try:from discovery_quality import has_additional_information
     except ImportError:from src.discovery_quality import has_additional_information
     from concurrent.futures import ThreadPoolExecutor
+    def article_priority(e):
+        published=parse_time(e.get("published_utc") or e.get("first_observed_utc"))
+        return (-e["priority"], -(published.timestamp() if published else 0), e["id"])
     ordered=sorted((e for e in events if e.get("url","").startswith("https://")
       and "news.google." not in urllib.parse.urlsplit(e["url"]).netloc
       and not has_additional_information(e["title"],e["excerpt"])),
-      key=lambda e:(-e["priority"],e.get("published_utc") or "",e["id"]),reverse=False)
-    # Round-robin across scopes, rather than exhausting global sources first.
+      key=article_priority)
+    # Select publisher links from UNCOVERED individual coins first. The old
+    # scope-round-robin gave only ~1/3 of the 80 attempts to assets, although
+    # a >50-coin context gap remained. Selection is not a semantic verification.
+    already_rich={cid for e in events
+        if has_additional_information(e["title"],e["excerpt"])
+        for cid in e.get("candidate_cmc_ids") or []}
+    by_coin=collections.defaultdict(list)
     groups=collections.defaultdict(list)
-    for e in ordered:groups[e["scope"]].append(e)
+    for e in ordered:
+        groups[e["scope"]].append(e)
+        if e["scope"]=="ASSET_CANDIDATE":
+            for cid in e.get("candidate_cmc_ids") or []:
+                by_coin[cid].append(e)
     selected=[];host_counts=collections.Counter();used=set()
-    scopes=("GLOBAL_UNRESOLVED","SECTOR","ASSET_CANDIDATE")
-    while len(selected)<budget:
-        changed=False
-        for scope in scopes:
-            group=groups[scope]
-            while group:
-                e=group.pop(0);host=urllib.parse.urlsplit(e["url"]).hostname
-                if host and host_counts[host]<5 and e["url"] not in used:
-                    host_counts[host]+=1;used.add(e["url"])
-                    selected.append(e);changed=True;break
+    selected_coin_ids=set()
+    def take(e):
+        host=urllib.parse.urlsplit(e["url"]).hostname
+        if not host or host_counts[host]>=5 or e["url"] in used:
+            return False
+        host_counts[host]+=1;used.add(e["url"]);selected.append(e)
+        selected_coin_ids.update(e.get("candidate_cmc_ids") or [])
+        return True
+    coin_order=sorted(by_coin, key=lambda cid:(cid in already_rich,len(by_coin[cid]),cid))
+    asset_target=max(1,int(budget*.80))
+    # Two passes: reach as many undercovered assets as possible, then deepen.
+    for pass_id in (0,1):
+        if len(selected)>=asset_target:break
+        for cid in coin_order:
+            if len(selected)>=asset_target:break
+            if pass_id==0 and cid in selected_coin_ids:continue
+            for e in by_coin[cid]:
+                if take(e):break
+    # Preserve cross-sector and global evidence, then use any spare capacity
+    # for further coin-relevant publisher articles.
+    for scope in ("SECTOR","GLOBAL_UNRESOLVED"):
+        for e in groups[scope]:
             if len(selected)>=budget:break
-        if not changed:break
+            if len([x for x in selected if x["scope"]==scope])>=max(1,int(budget*.1)):break
+            take(e)
+    for e in ordered:
+        if len(selected)>=budget:break
+        take(e)
     def get(e):
         try:return fetcher(e["url"])
         except (OSError,ValueError,TimeoutError):return None
@@ -479,8 +508,13 @@ def enrich_direct(events,budget=64,fetcher=None):
             "source_excerpt":excerpt,"content_origin":"DIRECT_PUBLISHER_PUBLIC_ARTICLE",
             "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED"})
         by_scope[e["scope"]]+=1
+    mapped_substantive={cid for e in selected for cid in (e.get("candidate_cmc_ids") or [])
+        if e["id"] in {x["evidence_id"] for x in out}}
     return out,{"attempted":len(selected),"succeeded":sum(bool(x) for x in retrieved),
-                "substantive":len(out),"by_scope":dict(by_scope)}
+                "substantive":len(out),"by_scope":dict(by_scope),
+                "candidate_coins_targeted":len(selected_coin_ids),
+                "candidate_coins_with_substantive_publisher_excerpt":len(mapped_substantive),
+                "selection_policy":"PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL"}
 
 
 def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_articles=16,
