@@ -432,13 +432,25 @@ def adaptive_fetch(tasks,cutoff,max_requests=22,opener=None):
             audit.append({"task_id":t["task_id"],"status":"FAILED","error":t["error"]})
     return found,audit
 
-def enrich_direct(events,budget=64,fetcher=None):
+def publisher_excerpt_useful(title,text):
+    """Reject obvious generic web-UI noise masquerading as article substance."""
+    try:from discovery_quality import has_additional_information
+    except ImportError:from src.discovery_quality import has_additional_information
+    value=str(text or "").casefold()
+    noise=("sorry, something went wrong","filter loading","loading uh oh",
+           "sign in to view","enable javascript to continue")
+    if sum(value.count(x) for x in noise)>=2:return False
+    return has_additional_information(title,text)
+
+
+def enrich_direct(events,budget=64,fetcher=None,skip_urls=()):
     """Try multiple publisher URLs per host; attach auditable short excerpts.
 
     Independent *content* is the goal, not raw URL volume. The full source
     remains linked, while only a bounded quotation/context is copied.
     """
-    if budget<=0:return [],{"attempted":0,"succeeded":0,"substantive":0,"by_scope":{}}
+    if budget<=0:return [],{"attempted":0,"succeeded":0,"substantive":0,"by_scope":{},
+                          "selected_urls":[]}
     if fetcher is None:
         try:from discovery_quality import extract_article as fetcher
         except ImportError:from src.discovery_quality import extract_article as fetcher
@@ -450,7 +462,8 @@ def enrich_direct(events,budget=64,fetcher=None):
         return (-e["priority"], -(published.timestamp() if published else 0), e["id"])
     ordered=sorted((e for e in events if e.get("url","").startswith("https://")
       and "news.google." not in urllib.parse.urlsplit(e["url"]).netloc
-      and not has_additional_information(e["title"],e["excerpt"])),
+      and e["url"] not in skip_urls
+      and not publisher_excerpt_useful(e["title"],e["excerpt"])),
       key=article_priority)
     # Select publisher links from UNCOVERED individual coins first. The old
     # scope-round-robin gave only ~1/3 of the 80 attempts to assets, although
@@ -501,12 +514,13 @@ def enrich_direct(events,budget=64,fetcher=None):
         retrieved=list(pool.map(get,selected))
     out=[];by_scope=collections.Counter()
     for e,raw in zip(selected,retrieved):
-        if not raw or not has_additional_information(e["title"],raw):continue
+        if not raw or not publisher_excerpt_useful(e["title"],raw):continue
         excerpt=clip(raw,650)
-        if not has_additional_information(e["title"],excerpt):continue
+        if not publisher_excerpt_useful(e["title"],excerpt):continue
         out.append({"evidence_id":e["id"],"url":e["url"],"scope":e["scope"],
             "source_excerpt":excerpt,"content_origin":"DIRECT_PUBLISHER_PUBLIC_ARTICLE",
-            "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED"})
+            "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED",
+            "fetched_utc":iso(dt.datetime.now(UTC))})
         by_scope[e["scope"]]+=1
     mapped_substantive={cid for e in selected for cid in (e.get("candidate_cmc_ids") or [])
         if e["id"] in {x["evidence_id"] for x in out}}
@@ -514,7 +528,8 @@ def enrich_direct(events,budget=64,fetcher=None):
                 "substantive":len(out),"by_scope":dict(by_scope),
                 "candidate_coins_targeted":len(selected_coin_ids),
                 "candidate_coins_with_substantive_publisher_excerpt":len(mapped_substantive),
-                "selection_policy":"PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL"}
+                "selection_policy":"PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL",
+                "selected_urls":[e["url"] for e in selected]}
 
 
 def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_articles=16,
@@ -608,8 +623,46 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
     # never fed back into coin/global/sector dossiers or the quality metric.
-    article,article_audit=enrich_direct(events,max_articles if network else 0,fetcher)
-    article_by_id={x["evidence_id"]:x for x in article}
+    # Persistent, timestamped publisher context accumulates across runs.
+    # Avoid re-fetching the same 80 headlines on every scheduled execution.
+    pub_path=root/"docs/intelligence/publisher_excerpts.json"
+    earlier_pub=read(pub_path).get("items",[]) if pub_path.is_file() else []
+    event_index={e["id"]:e for e in events}
+    earlier_good=[]
+    for item in earlier_pub:
+        if not isinstance(item,dict):continue
+        original=event_index.get(item.get("evidence_id"))
+        fetched=parse_time(item.get("fetched_utc"))
+        # Old cache records without a fetch timestamp can be used on live
+        # runs, never when replaying a historical point-in-time cutoff.
+        if not original or item.get("url")!=original.get("url"):continue
+        if not (fetched and fetched<=cutoff or live_collection and (fetched is None or fetched<=dt.datetime.now(UTC))):
+            continue
+        if not publisher_excerpt_useful(original["title"],item.get("source_excerpt")):
+            continue
+        earlier_good.append(item)
+        original["excerpt"]=item["source_excerpt"]
+        original["context_origin"]="CACHED_DIRECT_PUBLISHER_PUBLIC_ARTICLE"
+    attempts_path=root/"docs/intelligence/article_attempt_history.json"
+    past_attempts=read(attempts_path).get("attempts",{}) if attempts_path.is_file() else {}
+    if not isinstance(past_attempts,dict):past_attempts={}
+    skip_urls=set()
+    if live_collection:
+        for url,when in past_attempts.items():
+            t=parse_time(when)
+            if t and dt.timedelta(0)<=cutoff-t<=dt.timedelta(hours=72):
+                skip_urls.add(url)
+    new_article,article_audit=enrich_direct(events,max_articles if network else 0,
+        fetcher,skip_urls=skip_urls)
+    observed=iso(dt.datetime.now(UTC))
+    for url in article_audit.pop("selected_urls",[]):
+        past_attempts[url]=observed
+    past_attempts={url:when for url,when in past_attempts.items()
+        if parse_time(when) and dt.timedelta(0)<=cutoff-parse_time(when)<=dt.timedelta(days=35)}
+    article_by_id={x["evidence_id"]:x for x in earlier_good+new_article}
+    article=list(article_by_id.values())
+    article_audit["cached_substantive_reused"]=len(earlier_good)
+    article_audit["cumulative_substantive_current_corpus"]=len(article)
     for e in events:
         detail=article_by_id.get(e["id"])
         if detail:
@@ -990,6 +1043,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "manual_append_only_input":"docs/intelligence/manual_inputs/findings.jsonl",
        "new_public_source_discovery_file":"docs/intelligence/discovered_public_feeds.json",
        "source_probe_history_file":"docs/intelligence/source_probe_history.json",
+       "article_attempt_history_file":"docs/intelligence/article_attempt_history.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
@@ -1021,8 +1075,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "scope_counts":dict(collections.Counter(e["scope"] for e in evidence)),
           "primary_claims_verified_by_system":0,
           "note":"All original archives are referenced in manifest; data not omitted from source files."})
-    write(out/"publisher_excerpts.json",{"items":article,
-          "policy":"Short attributed text only; robots respected; NOT verified claims."})
+    write(out/"publisher_excerpts.json",{"items":article[-2000:],
+          "policy":"Short attributed text only; timestamped accumulated cache; robots respected; NOT verified claims."})
+    write(out/"article_attempt_history.json",{"attempts":past_attempts,
+          "cooldown_hours":72,"never_conflate_url_with_verified_event":True})
     export=out/"export";export.mkdir(parents=True,exist_ok=True)
     p=export/"evidence_index.jsonl"
     with p.open("w",encoding="utf-8") as f:
