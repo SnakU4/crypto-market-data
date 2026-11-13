@@ -1,5 +1,5 @@
 {
-  "capture_utc": "2026-11-12T22:44:57Z",
+  "capture_utc": "2026-11-13T03:26:17Z",
   "events": [
     {
       "cmc_ids": [],
@@ -12,7 +12,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "v1.0.0-beta.5",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:25Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2021-03-01T14:50:04Z",
@@ -35,7 +35,7 @@
       "excerpt": "This is a new minor update that includes important performance improvements. It is a strongly recommended update for everyone. This release can be installed over an existing 1.14 installation seamlessly, without the need for uninstallation, re-indexation or re-download. Simply shut down your running Dogecoin-QT or dogecoind, perform the installation and restart your node. Improve synchronization speed Significantly improves the speed at which a node can upload blocks, by removing expensive integrity checks that were performed each time a block is sent to another node. When a block is received and during rescans of the locally stored blockchain, the checks are still performed. Reduce default mempool expiry time Reduces the default time that transactions are cached in the mempool from 336 hours to 24 hours. This default setting can be overridden with the -mempoolexpiry parameter by individual node operators to a value (expressed in hours) that makes the most sense for the use cases the node serves. Other changes and improvements Increase block download timeouts Add size_on_disk, prune_target_size, automatic_pruning to getblockchaininfo Add query options to listunspent RPC call Set BIP65 softfork heights in chainparams.cpp. Update package links for OSX cross compilation. Change IPC ",
       "first_observed_utc": "2026-11-12T20:01:57Z",
       "headline": "Dogecoin Core 1.14.3",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "74": "FULL_NAME"
       },
@@ -60,7 +60,7 @@
       "excerpt": "All users are encouraged to upgrade to this version, it includes an important bugfix to 1.14.0, and enables support for OP_CHECKLOCKTIMEVERIFY compared to pre-1.14.0. This is a bugfix release which: Reverts a change of behaviour in the getauxblock command. The target field was renamed to _target in Namecoin and this change should not have appeared in Dogecoin, for compatibility with previous mining pool configurations. This has now been corrected. Fix description of supermajority based forks in getblockchaininfo - the full block version number was used instead of just the last byte, which made it appear forks were triggered early. Change references to \"Bitcoin\" to \"Dogecoin\" - these weren't user visible, but are done for consistency. Corrects the handling of so-called dust outputs in regards to calculating fees. This fixes an issue where a change output smaller than 1 DOGE would create a transaction that was not going to be relayed. Note: We have skipped 1.14.1 as the last bug and its fix were found after 1.14.1 was tagged already.",
       "first_observed_utc": "2026-11-12T20:01:57Z",
       "headline": "Dogecoin Core 1.14.2",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "74": "FULL_NAME"
       },
@@ -83,7 +83,7 @@
       "excerpt": "Fix RPC description of supermajority based forks",
       "first_observed_utc": "2026-11-12T20:01:57Z",
       "headline": "v1.14.1: Merge pull request #1601 from langerhans/1.14-supermajority-rpc",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2019-07-14T18:53:40Z",
@@ -106,7 +106,7 @@
       "excerpt": "This is the long awaited Dogecoin Core 1.14! Please make sure, if you upgrade an existing version, to make a (current!) backup of your wallet.dat file! We have successfully upgraded existing wallets in our testing, but you should always keep a backup of that file regardless. This version contains a soft fork to enable BIP-65 (OP_CHECKLOCKTIMEVERIFY). The fork is locked in at 750 of the previous 1000 blocks. At 950 of the previous 1000 blocks with base version 4, the client will start to reject blocks with a base version of <= 3. For pool operates this means that they should update to the final 1.14 version once it is released asap, but at least before the fork is activated to not risk mining invalid blocks after 95% of the mined blocks are on base version 4. While this is not very relevant to end users you should still make sure to update to 1.14 final sooner than later. Updating will also enable us to continue testing with the 1.17 client, so please do so. Please note that getinfo is deprecated and will be removed in the next Dogecoin release. There are now several different commands that contain parts of that data instead. Please see the release notes for detail. Full release notes are available at https://github.com/dogecoin/dogecoin/blob/master/doc/release-notes.md",
       "first_observed_utc": "2026-11-12T20:01:57Z",
       "headline": "Dogecoin Core 1.14",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "74": "FULL_NAME"
       },

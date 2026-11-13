@@ -1,6 +1,48 @@
 {
-  "capture_utc": "2026-11-12T22:44:57Z",
+  "capture_utc": "2026-11-13T03:26:17Z",
   "events": [
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "502e43a039b665bde74fdc3d",
+      "excerpt": "Hello, This topic is intended to be complementary to the Kusama set reduction discussion in Proposal discussion: Adapting Kusama to demand and its JAM future - #10 by Lederstrumpf . My intent is that the discussion there remains focused on strategy, and this one on methodology. But since flaws in / potential improvements to methodology inform strategy, I welcome critical feedback on the findings of the following two reports: The decentralization report: hambro.ch/kusama/set-reductions/decentralization/ The coretime report: hambro.ch/kusama/set-reductions/coretime/ I suggest reading the strategy post on the reduction thread first to grok the intent, before delving into the reports - they’re already fairly verbose just from data explainers, so I’ve not stitched them into a flowing bedtime essay. Decentralization report The goal of the decentralization report is to identify how decentralization metrics changed with the last/first reduction ( section A ), to gauge how further reductions would impact decentralization ( section B ). Two key decisions this begs for: How do we define decentralization? How do we reliably identify validator clusters - a lot of these stashes lacking onchain identity - that share the same operator massaging them? For the decentralization question, I broadly ",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "Decentralization and coretime metrics for set reductions",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-04T03:05:10Z",
+      "source_id": "polkadot_governance",
+      "source_ids": [
+        "polkadot_governance"
+      ],
+      "url": "https://forum.polkadot.network/t/decentralization-and-coretime-metrics-for-set-reductions/19223"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "SECURITY"
+      ],
+      "event_id": "ec3d5ed2c49f71dcf6ec6978",
+      "excerpt": "actor: hold overflowMu while Drain pops the overflow",
+      "first_observed_utc": "2026-11-12T20:01:29Z",
+      "headline": "actor/v0.0.8: Merge pull request #11465 from Roasbeef/actor-drain-overflow-race",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-04T02:36:49Z",
+      "source_id": "lightning_releases",
+      "source_ids": [
+        "lightning_releases"
+      ],
+      "url": "https://github.com/lightningnetwork/lnd/releases/tag/actor%2Fv0.0.8"
+    },
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
@@ -12,7 +54,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-04T00:00:00Z",
@@ -33,7 +75,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.72.0-rc.0",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T21:12:57Z",
@@ -54,7 +96,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.72.0-beta.0",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T20:30:39Z",
@@ -75,7 +117,7 @@
       "excerpt": "Discussion topic for EIP-8477: Recent Block Bound Delegation Authorizations . Motivated by the recent EIP-7702 sweeps that happened on Binance 16 this proposal in essence prevents long term storage of EIP-7702 signatures for later playback. This proposal limits the delayed use of unused EIP-7702 authorizations. Each authorization signs a recent execution block number and its block header hash, in addition to the existing chain ID, delegation address, and nonce. For inclusion in execution block N , the signed block must be one of its preceding 256 ancestors and its hash must match that ancestor. An anchor exactly 256 blocks behind remains eligible; one 257 blocks behind is ineligible. The current block and future blocks are excluded. Freshness is checked during native authorization processing, before signature recovery or authority-specific state access. An expired or mismatched anchor skips that authorization using EIP-7702’s existing skip-on-failure behavior. It does not consume the authority’s nonce through that entry or clear an existing delegation. Structurally malformed authorizations invalidate the transaction. The draft applies the same freshness requirement to installation, replacement, and zero-address revocation. Installed delegations remain in effect after their author",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "EIP-8477: Recent Block Bound Delegation Authorizations",
-      "last_observed_utc": "2026-11-12T22:45:02Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T17:39:43Z",
@@ -96,7 +138,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "v1.101702.4-rc.2",
-      "last_observed_utc": "2026-11-12T22:45:02Z",
+      "last_observed_utc": "2026-11-13T03:26:25Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T17:01:44Z",
@@ -117,7 +159,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.71.1-rc.0",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T15:07:49Z",
@@ -140,7 +182,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the draw cap for USDC on the Core Hub Main Spoke from 36M to 40M. Increase slope1 for USDC on the Core Hub from 5.00% to 5.50%. Decrease slope1 for USDC on the Prime Hub from 5.00% to 4.50%. Increase the draw cap for USDT on the Core Hub Main Spoke from 15.6M to 20M. Increase the draw cap for WETH on the Core Hub EtherFi Spoke from 41.1K to 45K. Increase the add cap for weETH on the Core Hub Main Spoke from 22K to 25K. Aave V4 Avalanche: Increase the add cap for USDt on the Core Hub Main Spoke from 60M to 110M. Increase the draw cap for USDt on the Core Hub Ethena Ecosystem Spoke from 50M to 100M. Increase the add cap for USDe on the Core Hub Ethena Ecosystem Spoke from 60M to 120M. Increase the add cap for WAVAX on the Core Hub Main Spoke from 2M to 4M. Cap Utilization The chart shows add cap utilization (left) and draw cap utilization (right) for Aave V4 reserves at or above 50% of either cap, split by hub. The draw cap panel excludes cross-hub credit lines, which are draw-only legs through which a spoke borrows from a hub against collateral supplied on another hub. Source: Llam",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Cap and IRM Changes on Aave V4 / 2026.11.03",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -165,7 +207,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 X Layer: Increase borrow cap for USD₮0 from 35,000,000 to 70,000,000. Aave V3 Avalanche: Reduce supply cap for WAVAX from 14,000,000 to 12,000,000. USD₮0 (Aave V3 X Layer) USD₮0 sits at 72.5% borrow cap utilization (25,380,870 / 35,000,000) on the Aave V3 X Layer instance as of November 3, 2026. The proposed cap exceeds the supplied balance, so available liquidity becomes the limit on new borrowing, and withdrawals beyond that amount may depend on repayment or new supply. USD₮0 Borrow Distribution Source: LlamaRisk, November 3, 2026 The top twenty borrowers hold approximately 83% of debt at HF between 1.03 and 1.10 with a median of 1.05. The largest borrower holds approximately 31% of debt against USDe collateral and the top three approximately 47%, while eighteen of the twenty post PT-USDG-25FEB2027 as collateral, so HF for most of the cohort depends on the PT price. Recommendation We recommend raising the borrow cap from 35,000,000 to 70,000,000 on Aave V3 X Layer, landing at approximately 36.3% post-change cap utilization. Cap Reductions WAVAX on Aave V3 Avalanche sits at 115.9% supply cap utiliz",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.03",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -188,7 +230,7 @@
       "excerpt": "Hi Sky community, I’m part of a team building Local Money, a non-custodial P2P fiat on/off-ramp that lets users buy and sell crypto directly using local payment methods, without depositing their assets on a centralized exchange. We’re currently developing our integration with Zcash and believe the Sky ecosystem would also be a great fit, particularly given the potential to make USDS and DAI more accessible through local fiat payment methods and peer-to-peer trading. Who would be the right person or team to speak with about a potential integration or ecosystem collaboration? Happy to share more details, our technical approach, and a demo. 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Decentralized P2P On/Off-Ramp for Sky Ecosystem — Who's the Right Contact?",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T13:11:42Z",
@@ -209,7 +251,7 @@
       "excerpt": "[Final Report] zkArb SDK — Dev Tooling on One and Stylus (D.A.O. Season 3) Hi everyone, this is the final report for zkArb SDK , funded through the Arbitrum D.A.O. Grant Program Season 3, Dev Tooling on One and Stylus domain. All seven milestones have been delivered. Summary zkArb SDK is a zero-setup toolkit that turns the full zero-knowledge proof lifecycle on Arbitrum into a few CLI commands and one JavaScript function. A developer goes from a Circom circuit to a deployed on-chain verifier and a working proof check, with no manual snarkjs, ABI or calldata work. The goal was to let frontend and full-stack developers, not only cryptography specialists, ship privacy-preserving features on Arbitrum. Grantee HackTour India Project lead Jatin Sahijwani Grant $13,000 across 7 milestones Approved 24 Sep 2025 Proposal Questbook Repository github.com/jatinsahijwani/zkArb-sdk (MIT) Docs jatinsahijwani.github.io/zkArb-sdk Playground zkarb.dev Full report Google Doc At a glance 7 / 7 milestones delivered 57 GitHub stars, 3 forks, 46 commits 2 npm packages: zkarb-sdk and create-zkarb-app 3 real ecosystem integrations: Savique, TempWallets, rekt_ceo 10+ external developer contributions across the integrations 120+ members in the Telegram support community 3 published pilot-developer case stud",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "[Final Report] zkArb SDK — Dev Tooling on One and Stylus (D.A.O. Season 3)",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T11:47:02Z",
@@ -232,7 +274,7 @@
       "excerpt": "Governance Polkadot Referendum 1962, covering USDC funding for the Public RPC Multi-Asset Bounty, gained support as an alternative path for RPC provision in Polkadot (via saxemberg ). Coverage recapped Polkadot’s March 2026 OpenGov token-model reset, including a 2.1B DOT hard cap and 53.6% emissions reduction (via BSCNdecoded ). Technical Polkadot/Kusama binary release polkadot-v1.25.1 is now available (via ApertureMining ). Polkadot SDK repo activity included AHMv2 HRMP async deposit provider work, FRAME balance updates, node-side extrinsics-root verification, statement-store DHT work, and stable2609-1 tagging (via JMiaozi ). Legacy XCMv3 has a deprecation timeline: Polkadot SDK stable2612 , expected December 2026, will drop XCMv3, requiring parachains and apps to migrate to XCM v4 or v5 (via popmemecoin ). Ecosystem SoFi now supports buying, selling, and holding DOT in-app; the US national bank reports 17.1M members and added 1.2M members in Q3 (via MSBIntel ). Hydration added Wormhole USDT and USDC to its money market with 80% LTV, 2M supply caps, and 1M borrow caps (via VRCI_Global ). Polkadot Products are being tested for industrial workflows, including sensor data via Celerity, verified chain-state actuators, access control, and protection of industrial know-how without a t",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-03",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -257,7 +299,7 @@
       "excerpt": "Governance OpenGov referendum 1960 executed, with Polkadot runtime 2.5.1 preparing Asset Hub and Bridge Hub for upcoming AHMv2 and Individuality upgrades (via VRCI_Global ). Referendum 1958 passed with 99.83% approval, enabling the Polkadot App to onboard up to 1 million users with .dot usernames, with activation expected around Nov. 2 (via kaidloscopes , iseungh89354068 ). A Polkadot forum discussion highlighted MADAR, a Substrate chain testing “one operator, one vote” governance as an alternative to stake-weighted voting (via VRCI_Global ). Ecosystem Polkadot Assemble — Genesis Mumbai expanded community partnerships, with Web3 Aligarh and Hyderabad DAO joining a full-day builder event featuring talks, technical deep dives, and hands-on sessions (via Web3Aligarh , hyderabaddao , dotAssemble ). PROCESSING LOG Report Generated: 2026-11-02 10:04:15 Total X posts curated: 1960 Posts Filtered and Analysed: 1932 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on posts from X and may contain inaccuracies. We do not guarantee its completeness or correctness. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-02",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -282,7 +324,7 @@
       "excerpt": "Hello everyone, I’m researching Polkadot’s transaction graph and investigating an unusual pattern of successful self-transfers involving astronomically large requested amounts. I would appreciate some clarification from people familiar with the historical Balances pallet implementation and Polkadot runtime upgrades. 1. What I observed I identified successful Balances.transfer extrinsics where the sender and recipient were the same account, but the requested transfer amount was far beyond any possible account balance. Two examples from my dataset: Example 1 — May 2, 2021 Block: 4880515 Extrinsic: 4880515-2 Runtime spec_version : 30 Transaction version: 7 Requested amount: approximately 12.65 trillion DOT Sender and recipient: identical Extrinsic result: System.ExtrinsicSuccess No Balances.Transfer event was emitted. Example 2 — July 5, 2022 Block: 11026623 Runtime spec_version : 9230 Transaction version: 12 Requested amount: approximately 16.395 trillion DOT Sender and recipient: identical Extrinsic result: successful. These are not isolated observations. My dataset contains 140 suspicious self-loop edges, including multiple astronomically large requested amounts. 2. What I found in the historical source code In the older Balances implementation, the transfer function contained th",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Historical Polkadot Self-Transfers: When Did Balance Validation Move Before the Self-Transfer No-Op?",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -305,7 +347,7 @@
       "excerpt": "Hello, a year ago I got a bunch of sUSDS I’m the app, I haven’t been back since them, now when I try to use the app now I get “wallet blocked” and there’s no explanation of why. How do I solve this so I can get my money back ? I tried opening a ticket on discord and I got banned for a day when I entered the problem description. Where can I find more information about this ? Is there a way to get my money back without using this app ? Google says there could be region blocks, but I’m not in a blocked country and I don’t use VPN. Thanks 3 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Wallet blocked with no explanation",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T06:13:35Z",
@@ -326,7 +368,7 @@
       "excerpt": "The regression test the Fellowship added for the dotUSD incident fits on one screen. Alice holds 1,000 dotUSD and no DOT. She sends one WithdrawAsset for her dotUSD plus 1 DOT. dotUSD sorts first and gets withdrawn, the DOT withdrawal fails, the instruction errors. Before the fix, her balance came back and the supply didn’t. Parity’s incident review went up yesterday ( review ) and explains it at a high level. I wanted to see both halves in code, the supply that drifted and the pool that priced it, so I read the fix in polkadot-sdk and that test ( tests.rs at 7b27d43 ). All of it is fixed and public, and I’m only looking at the code here, not at the disclosure timeline. The credit that dropped too late Since polkadot-sdk PR #10384 (merged 16 February 2026) the XCM executor keeps real imbalances in holding instead of plain numbers. That PR was actually written to keep total issuance correct during XCM programs. WithdrawAsset takes each asset from the origin as a Credit and collects them in a local called withdrawn . withdrawn was declared before TransactionalProcessor::process(|| ...) and only moved into holding in an .and_then after it. So when a later asset in the same instruction failed, the closure returned an error, the storage layer undid the earlier debits, and then withdra",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "How a dropped XCM credit lowered dotUSD supply, and why the pool priced it",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-03T04:46:35Z",
@@ -349,7 +391,7 @@
       "excerpt": "Public services increasingly rely on digital systems that enable institutions to collaborate across organizational and national boundaries. Such cooperation may involve government agencies verifying documents issued by other authorities, or humanitarian organizations coordinating assistance while safeguarding sensitive personal information. Yet technical interoperability alone does not resolve a more fundamental question:...",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Designing for sovereignty: Ethereum for digital public infrastructure",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1027": "FULL_NAME"
       },
@@ -372,7 +414,7 @@
       "excerpt": "Between 24 and 26 October 2026, a bug in the XCM executor on Polkadot Asset Hub was used to reduce the recorded issuance of dotUSD without changing underlying account balances. The recorded issuance is expected to equal the sum of all account balances. By reducing the recorded issuance without changing any account’s balance, the attacker broke this assumption within the protocol. This discrepancy affected pricing in the Hub’s DOT/dotUSD pool on the decentralised exchange and enabled trades at an artificial exchange rate. The estimated loss was approximately $1.381 million in DOT value. At the time of the attack, the Polkadot Treasury was the only liquidity provider in the pool. No users lost any funds. The available on-chain evidence has not established that the attacker who exploited the XCM vulnerability also profited from the subsequent arbitrage. Furthermore, the bug did not remove dotUSD from account balances, but the understated recorded issuance restricted redemption capacity pending a correction. What happened XCM programs are meant to be transactional. That is, when a program fails, none of the state changes from that program are applied. There was a bug present that did not follow this behavior in certain circumstances. The issue was first reported to Parity through its",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "XCM Incident Review: What happened and what we learned",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T22:05:01Z",
@@ -395,7 +437,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 X Layer: Increase supply cap for USDe from 25,000,000 to 50,000,000. Aave V3 Monad: Increase borrow cap for USDT0 from 57,900,000 to 63,000,000. Aave V3 Optimism: Increase borrow cap for WETH from 6,280 to 7,750. USDe (Aave V3 X Layer) USDe sits at 45.8% supply cap utilization on the Aave V3 X Layer instance as of November 2, 2026, with supply up from approximately 2.8M on October 29, 2026. The reserve carries no outstanding debt against its 10M borrow cap and acts as collateral only inside the USDe Stablecoins E-Mode (LTV 91.00%, LT 93.00%). USDe Supply Distribution Source: LlamaRisk, November 2, 2026 Supply is concentrated, with the largest supplier holding approximately 76% and the top three approximately 98%. Four of the top five suppliers carry debt at HF between 1.02 and 1.03, borrowing USD₮0, USDC, and USDG against USDe, and since USDe is priced via the USDT/USD feed, the liquidation risk of these positions is low. Recommendation We recommend raising the supply cap from 25,000,000 to 50,000,000 on Aave V3 X Layer, landing at approximately 22.9% post-change cap utilization. USDT0 (Aave V3 Mona",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Supply and Borrow Cap Increases on Aave V3 / 2026.11.02",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -418,7 +460,7 @@
       "excerpt": "Introduction Sidestream has prepared PSM-GUSD-A and PSM-PAX-A housekeeping items based on the checklist . Goal of this update Fully offboard the two legacy PSM ilks ( PSM-GUSD-A and PSM-PAX-A ) by removing them from ILK_REGISTRY and LINE_MOM , revoking all permissions held on MCD_VAT and MCD_DOG , and removing those contracts from the chainlog, as required by the PSM Offboarding Checklist . Required context The housekeeping was initiated since both ilks have been inactive for a long time, and there is no plans to re-enable them: PSM-GUSD-A : debt ceiling set to 0 and removed from AutoLine in the 2023-11-29 spell . PSM-PAX-A : debt ceiling set to 0 and removed from AutoLine in the 2024-01-24 spell . The global debt ceiling ( Line ) was reduced each time an ilk’s debt ceiling was set to 0 . Both Clippers are stopped ( stopped = 3 ) and have never run an auction ( kicks = 0 ). JAR contracts don’t hold ERC20 tokens of value (checked on 2026-10-29) MCD_PSM_GUSD_A_JAR MCD_PSM_GUSD_A_INPUT_CONDUIT_JAR MCD_PSM_PAX_A_JAR MCD_PSM_PAX_A_INPUT_CONDUIT_JAR JOIN contracts still hold dust amounts of Gem tokens (checked on 2026-10-29) MCD_JOIN_PSM_PAX_A holds ~0.38 USDP backing the same amount of Dai debt MCD_JOIN_PSM_GUSD_A holds 0.57 GUSD backing the same amount of Dai debt This is not withdra",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "PSM-GUSD-A and PSM-PAX-A housekeeping",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T17:12:36Z",
@@ -439,7 +481,7 @@
       "excerpt": "Minor Changes #24025 a660e1e - Minor bump to start next version #24014 a170ee9 - #added Offchain capability configs support localOnly ( local_only ) to disable Don2Don client/server shims while retaining local capability execution. The flag follows whole-capability source selection and participates in divergence telemetry. #24064 fb2745b - Add Capabilities.WorkflowRegistry.FetchMode ( gateway default, or direct ), and FetchAllowedHosts so nodes can download workflow artifacts directly instead of through the Gateway. #added Patch Changes #23858 7052b8d - Emit a cre:workflow:compute usage MeterRecord per workflow execution when [Metering].MeterRecordsEnabled is on. The compute duration is reported by the module that ran the workflow (the guest run for WASM, the enclave-measured run for confidential workflows). #internal #24067 103c5cc - #bugfix Remote trigger fixes: the publisher forwards ACKs to the underlying trigger once per event, and the subscriber no longer panics or blocks when a trigger is unregistered while an event is being delivered. Container Images Core Image DockerHub: docker pull docker.io/smartcontract/chainlink:2.71.0 ECR: docker pull public.ecr.aws/chainlink/chainlink:2.71.0 Digest: sha256:d556470d4c81d248ff7f670ba8a0e92bc00437355e28b517d1945d0f5cc1a006 Verificati",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "v2.71.0",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T16:40:46Z",
@@ -460,7 +502,7 @@
       "excerpt": "TL;DR: XCMv3 will be removed in polkadot-sdk stable2612 (release 2026-12-17, ingestion by fellowship runtimes only after that). Once system chains upgrade, they will no longer send or accept v3 messages. If your chain or your app still uses v3, you need to move to v4 or v5 before then. Check your chain on the dashboard: XCM Versions . XCMv5 was merged in November 2024: XCM v5 by franciscoaguirre · Pull Request #4826 · paritytech/polkadot-sdk · GitHub . A PR removing v3 ( Remove XCMv3 by franciscoaguirre · Pull Request #13629 · paritytech/polkadot-sdk · GitHub ) will ship in stable2612 , scheduled for 2026-12-17 . After that, system parachains and any other runtime can adopt it. Allowing for runtime releases and governance, expect the first chains to drop v3 in early 2027. Once a chain drops v3, it can’t decode v3 messages sent to it and can’t downgrade outgoing messages to v3. XCM between that chain and any other chain still on v3 will fail. To help, I built a dashboard ( XCM Versions ) showing each chains’ XCM version. Click a chain to see suggested action items. The main ones are: Code: move XCM programs and types to v4+. This is mostly renames (e.g. dropping the Multi prefix). Raw v3 types in storage don’t need migrating because the encoding is the same, but stored Versioned* ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "XCMv3 to be removed in stable2612",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T15:45:00Z",
@@ -481,7 +523,7 @@
       "excerpt": "October 2026 counted 4 proposals. 28 of 32 enrolled delegates qualified for rewards, and $12,000 was distributed. Aggregate participation was 86.72%, against 78.13% in September. The lower total is mechanics, not behaviour: all four October votes were Snapshot temperature checks ahead of on-chain votes, so each carried the $3,000 temperature-check budget and the envelope was $12,000 against September’s $15,000. Participation itself was up on both prior months (81.25% in August, 78.13% in September): 27 delegates voted on every proposal and only one qualifying delegate missed a vote. With 4 proposals counted the participation threshold stays at 50%, so voting on any two was enough. What changed since September Rule September October Proposals counted 2 4 Participation threshold 50% 50% Rationale penalty 10% 10% Budget envelope $15,000 $12,000 Participants The enrolled cohort is unchanged from September (32 delegates). $12,000 distributed across 28 delegates. Delegate Proposals voted Rewards DZack23.eth 4/4 $1,000.00 yoav.eth 4/4 $990.85 Camelot 4/4 $900.00 L2BEAT 4/4 $883.97 Reverie 4/4 $827.40 MUX Protocol 4/4 $744.76 GFX Labs 4/4 $676.23 Gauntlet 3/4 $675.00 Griff Green 4/4 $662.79 GMX 4/4 $662.15 SEED Gov 4/4 $597.85 olimpio 4/4 $473.20 Areta 4/4 $415.25 Arana Digital 4/4 $374.",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "Rewarding Active Delegates - October 2026 Results",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T15:34:45Z",
@@ -502,7 +544,7 @@
       "excerpt": "Logistics The link to join today’s governance call to discuss the proposal pipeline and notable discussions is also on the governance calendar. Date: November 3rd, 2026 Time: 16:00 - 17:00 UTC Video call link: Google Meet meeting Approach The first half of the call (up to 45 minutes) will be used to cover the agenda below. The rest of the time will be used as Office Hours for OpCo and Entropy. If a delegate or a contributor has any questions or something to discuss with either of the entities, that time will be available for it. Agenda 1. On-Chain AIPs Adopting USDG as a Core Strategic Initiative for the ArbitrumDAO Transfer 1,800 ETH from the Treasury to the Arbitrum Developer Guild & ATMC’s ETH Treasury Strategies [CONSTITUTIONAL] AIP: Update Arbitrum One and Nova L1-Pricing Parameters for Ethereum Glamsterdam 2. Successful Off-Chain AIPS N/A 3. Off-Chain AIPs [Constitutional] AIP: Stylus Activation Contract 4. Notable Proposal Discussions N/A 5. Quick updates Security Council Emergency Action – 30/10/2026 ATMC Ad-hoc update - no exposure to Binance incident Additional Notes We prioritIse all proposals and notable discussions that have more engagement. The logic of the two weeks is that given the proposal lifecycle (one week on the forum, one week temp-check, and then two weeks",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "November 3, 2026 - Open Discussion of Proposals Governance Call",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T14:44:35Z",
@@ -523,7 +565,7 @@
       "excerpt": "On-chain Proposals 1. Adopting USDG as a Core Strategic Initiative for the ArbitrumDAO With Arbitrum joining the Global Dollar Network (resulting in the USDG being live on Arbitrum), Entropy proposes a coordinated effort across the Arbitrum Aligned Entities to grow USDG adoption, so that the DAO becomes the steward of USDG’s growth on Arbitrum and the recipient of the associated economic value. Accordingly, this proposal seeks approval to: Bolster the DRIP budget with an additional 100M ARB from the DAO treasury, adjust the season structure, broaden the program’s permitted activities, and extend its timeline Enable the ATMC to deploy assets in support of USDG growth, under the existing OAT oversight and AF custody Route AEP fees, net of the 20% allocated to the Arbitrum Developer Guild, to the TM Portfolio, and authorize the ATMC to convert them into USDG Confirm the USDG initiative as a Special Project under Entropy’s existing Year 2-3 scope of work Voting ends on November 13. 2. Transfer 1,800 ETH from the Treasury to the Arbitrum Developer Guild & ATMC’s ETH Treasury Strategies Entropy proposes to transfer ~1,714 ETH accrued from Sequencer revenue to the TM Portfolio, helping reinitiate its covered call strategy; and ~86 ETH accrued from Timeboost and PGA revenue to the Arbitr",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "2 November, 2026 - Roundup of Active/Upcoming Votes",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T13:46:03Z",
@@ -544,7 +586,7 @@
       "excerpt": "This post summarises the tasks, work, and activities of BA Labs for the month of October 2026. Sky Ecosystem Stability Scope SP-BEAM In October, @BA-Labs proposed one Stability Scope parameter change: a 0.2 percentage point SSR increase following SOFR dynamics, and a 1 percentage point stability fee increase for all Core Vaults under A.3.8.1.1.2.3 - Stability Fee , estimated to reduce annual USDS profits by about 6.01M USDS. SP-BEAM Configuration Update #33 (07/10/2026) stUSDS With the stUSDS keeper launch, stUSDS rates move from manual to automated updates. BA Labs recommended temporarily lowering stepStrBps and stepDutyBps from 1,500 bps to 500 bps for the October 8 spell as a precaution for the transition period; a 5% step would have capped only 1 of the 23 updates since 21/06/2026. BA Labs also opened a thread for the keeper’s meta-parameters and posted the initial onchain ValueRegistry configuration, matching the values used in the stUSDS Lite Dashboard . stUSDS-BEAM Risk Parameters Configuration stUSDS Keeper Meta-Parameters Configuration stUSDS-BEAM Configuration Update: stUSDS Keeper Meta-Parameters: Initial ValueRegistry Configuration stUSDS keeper launch Treasury Management Function For the October 8 spell, using MSC #13 ’s September net revenue of 14,635,947 USDS and A",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Risk Month in Review: October 2026",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T13:22:41Z",
@@ -565,7 +607,7 @@
       "excerpt": "Greetings, Aave community! Aave Labs has continued to make steady progress across multiple protocol initiatives in line with its service provider scope. During October, Aave V4 surpassed $1.5B in deposits and welcomed its first externally curated markets, while work advanced across Aave V3, integrations, technical assessments, governance, and product development. The update below reflects Aave Labs’ transparent and collaborative approach to building in public. October update: Aave reached $1.1T in all-time borrow volume. Published the ARFC to establish the Aave Foundation, Phase 1. Aave V4 surpassed $1.5B in deposits, reaching a new all-time high. Led the integration of Sentora, the first external curator on Aave V4. Onboarded syrupUSDC to Aave V4 on Arc, the first reserve to experience the Risk Premium, and USDe to Aave V4 on Avalanche. Supported the Babylon integration to bring native BTC as collateral to Aave V4. Published the Aave V3.8 ARFC. Implemented the oracle deprecation, the Liquidation Protocol Fee increase, and the ETH and BTC collateral efficiency revision. Aave Protocol Aave reached $1.1T in all-time borrow volume. We also published the ARFC to establish the Aave Foundation, a memberless entity intended to hold the Aave trademark and related intellectual property fo",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "AL Development Update | October 2026",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T12:14:09Z",
@@ -586,7 +628,7 @@
       "excerpt": "Breaking Changes eth_getProof now follows the execution-apis rules, regarding leading zeros and error codes. #11668 engine_getPayload no longer waits for the in-progress block build when only the empty block has been built, as execution-apis#958 requires. The default of --Xpos-block-finalization-timeout-ms changes from 800 to 0 and the option now accepts 0; set it to a positive value to restore the previous wait. #11774 eth_simulateV1 now rejects unknown account overrides #11695 Bug fixes Block propagation now retries a block that peers do not serve with a delay that grows from 250 ms to 30 s and stops after 10 retries, releasing the block number for a later announcement. Previously it rescheduled the retrieval immediately and without a limit for as long as the number stayed in the propagation range. Block propagation stops once a finalized forkchoice is received, so this only affects networks that do not send one (Clique/PoA) and tests, not mainnet. #11674 eth_call , eth_estimateGas , eth_createAccessList and debug_traceCall now reject an invalid state override with the error declared for it instead of Internal error ( -32603 ). An account override that sets both state and stateDiff returns Invalid call params ( -32602 ) and is no longer logged at ERROR , and movePrecompileToAdd",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "26.11.0",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:25Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T10:46:13Z",
@@ -607,7 +649,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T09:30:00Z",
@@ -628,7 +670,7 @@
       "excerpt": "Gaia v29.1.0-rc0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v29.0.1 to v29.1.0 . 🚀 Highlights This is a state-breaking release that restores decoding of historical ParameterChangeProposal content, fixing governance proposal list, status-filtered, single-proposal and tally queries and state export ( #4199 ) This release bumps the following dependencies: Bump github.com/CosmWasm/wasmd from 0.60.9 to 0.60.10 ( #4201 ) Bump github.com/CosmWasm/wasmvm/v2 from 2.3.5 to 2.3.6 ( #4201 ) After confirming that the upgraded node runs normally, you can remove the old cache directories: <node home>/wasm/cache/modules/3858fb5318-wasmer24 <node home>/data/08-light-client/cache/modules/3858fb5318-wasmer24 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v29.1.0-rc0 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "v29.1.0-rc0",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-02T05:41:12Z",
@@ -651,7 +693,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the add cap for weETH on the Core Hub Main Spoke from 20K to 22K. Aave V4 Base: Increase the add cap for GOOGLc on the Equities Hub MAG7 Spoke from 15K to 22K. weETH (Core Hub) On the Aave V4 Ethereum Core Hub Main Spoke, 19,533 weETH is added against an add cap of 20K (97.7%). Supply on the spoke rose from approximately 14,300 weETH to the 20K cap on October 28, 2026, and has stayed close to the cap since the spoke was unfrozen on October 30. weETH is not borrowable on the Core Hub. Spoke Added Add Cap Add Cap Utilization Main 19,533 20,000 97.7% Source: LlamaRisk, November 1, 2026 weETH Supply Distribution Source: LlamaRisk, November 1, 2026 weETH supply on the Main Spoke is concentrated, with the largest position holding approximately 24% of the reserve, the top three approximately 60%, and the top twenty approximately 99%. Nineteen of the top twenty borrow stablecoins, mainly USDG and to a lesser extent USDC and frxUSD, against weETH, in some cases alongside wstETH and WETH collateral, at health factors between 1.32 and 29.17 with a median of 1.80, so HF in the cohort tracks t",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Add Cap Increases on Aave V4 / 2026.11.01",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -676,7 +718,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of the Aave V3 borrow caps reduced on October 30, 2026. Aave V3 Core: Increase borrow cap for WETH from 1,790,000 to 1,810,000. Increase borrow cap for EURC from 26,600,000 to 30,000,000. Aave V3 Prime: Increase borrow cap for WETH from 16,100 to 17,000. Aave V3 Polygon: Increase borrow cap for USDT0 from 22,200,000 to 23,000,000. Aave V3 X Layer: Increase borrow cap for USD₮0 from 30,300,000 to 35,000,000. Borrow Cap Utilization The borrow caps reduced on October 30, 2026 have been in force since the reserves were unfrozen later that day. On the reserves below, borrowing has grown since the reduction, and debt now uses between 98.3% and 100% of each borrow cap. Source: LlamaRisk, November 1, 2026 Instance Asset Debt at Reduction Debt Now Change Current Borrow Cap Cap Use Recommended Borrow Cap Post-Change Cap Use Aave V3 Core WETH 1,749,715 1,778,949 +1.7% 1,790,000 99.4% 1,810,000 98.3% Aave V3 Prime WETH 15,729 16,099 +2.4% 16,100 100.0% 17,000 94.7% Aave V3 Core EURC 25,976,680 26,159,629 +0.7% 26,600,000 98.3% 30,000,000 87.2% Aave V3 Polygon USDT0 21,624,080 21,820,811 +0.9% 22,200,000 98.3% 23,000,000 94.9% Aave V3 X Lay",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Borrow Cap Increases on Aave V3 / 2026.11.01",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -699,7 +741,7 @@
       "excerpt": "⚠️ Security: CVE-2026-98432 (Linux kernel) CVE-2026-98432 is a use-after-free in the Linux kernel's IPv4 TCP stack. It is not specific to MPTCP, but the demonstrated remote exploit requires an MPTCP listener, which Go 1.24+ enables by default. This release disables MPTCP listeners in lnd by default , which closes the demonstrated exploit path through lnd. It is a mitigation, not a fix: the kernel patch is the only fix. Linux operators should: Upgrade to this release. Disable MPTCP on the host ( sudo sysctl -w net.mptcp.enabled=0 ), since other services on the machine are not covered by this release. Install a patched kernel as soon as your distribution ships one. If you cannot upgrade yet, start your existing binary with the environment variable GODEBUG=multipathtcp=0 , which turns off Go's default MPTCP listeners. Do not set GODEBUG=multipathtcp=1 to re-enable MPTCP until your kernel is patched. The Go team's discussion of the issue is at golang/go#82717 . See the release notes for the full instructions, including Docker and firewall guidance. Windows and macOS are not affected. Database Migrations There are no migrations in this release. Verifying the Release In order to verify the release, you'll need to have gpg or gpg2 installed on your system. Once you've obtained a copy (a",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "lnd v0.21.6-beta",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-31T06:39:10Z",
@@ -720,7 +762,7 @@
       "excerpt": "⚠️ Security: CVE-2026-98432 (Linux kernel) CVE-2026-98432 is a use-after-free in the Linux kernel's IPv4 TCP stack. It is not specific to MPTCP, but the demonstrated remote exploit requires an MPTCP listener, which Go 1.24+ enables by default. This release disables MPTCP listeners in lnd by default , which closes the demonstrated exploit path through lnd. It is a mitigation, not a fix: the kernel patch is the only fix. Linux operators should: Upgrade to this release. Disable MPTCP on the host ( sudo sysctl -w net.mptcp.enabled=0 ), since other services on the machine are not covered by this release. Install a patched kernel as soon as your distribution ships one. If you cannot upgrade yet, start your existing binary with the environment variable GODEBUG=multipathtcp=0 , which turns off Go's default MPTCP listeners. Do not set GODEBUG=multipathtcp=1 to re-enable MPTCP until your kernel is patched. The Go team's discussion of the issue is at golang/go#82717 . See the release notes for the full instructions, including Docker and firewall guidance. Windows and macOS are not affected. Database Migrations There are no migrations in this release. Verifying the Release In order to verify the release, you'll need to have gpg or gpg2 installed on your system. Once you've obtained a copy (a",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "lnd v0.20.7-beta",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T23:09:30Z",
@@ -741,7 +783,7 @@
       "excerpt": "On behalf of Core GovOps, we are submitting the Atlas Edit Weekly Cycle proposal below. This proposal includes the following edits: Add Temporary Capital Ratio Requirements — Applies temporary Instance Total CRRs approved by the Core Council to listed Instances from November 1, 2026, without replacing a higher Prime Agent Artifact CRR or a 100% CRR. Clarify Morpho Vault Deployment Verification Responsibility And Timing — Makes Prime Agents responsible for verifying every Morpho vault they deploy or enable to receive capital, and requires Prime Spell reviewers to review the resulting Morpho Verification Report before signing off the Prime Spell for deployment. Update The Osero Gauntlet Instance Parameters — Increases the Maximum Exposure for Osero’s Gauntlet USDC Prime Morpho Vault V2 Instance from 10,000,000 to 25,000,000 USDC, lowers its Capital Ratio Requirement from 25% to 10%, and raises its deposit rate limit to 15,000,000 USDC with a slope of 10,000,000 USDC per day. Remove The Planning And Review Documents From The Distribution Reward And Integration Boost Invocation Protocols — Has the Prime Agent submit its request directly to Operational GovOps for a feasibility review, instead of through Initial Planning and Operational GovOps Review documents. Record The September 24,",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Atlas Edit Weekly Cycle Proposal - Week Of 2026-11-02",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T21:22:33Z",
@@ -763,7 +805,7 @@
       "excerpt": "The Securities and Exchange Commission took another step forward today to assist broker-dealers and other market participants on the path to central clearing of U.S. Treasury securities by issuing exemptive relief related to inter-affiliate repo…",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T19:30:00Z",
@@ -784,7 +826,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "main-rel-v26.11.0",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:25Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T16:32:25Z",
@@ -807,7 +849,7 @@
       "excerpt": "Paseo is the project that maintains the Polkadot Testnet . As of today the testnet hosts: the Polkadot Products Devnet ; Parity’s staging environment ; community parachains . In Q3 Paseo restarted the Testnet’s relay chain from block 0 on a smaller footprint, as planned in the Q3/Q4 2026 funding proposal (referendum #1919 ). Asset Hub and People kept their state, Bulletin joined as a system chain. This post summarises the quarter: what runs on the Testnet today, and who runs it; how the Testnet did against the SLOs agreed in the proposal; how validators performed; how runtimes are now released; what the Polkadot Testnet dashboard monitors; how the quarter was paid for. At a glance 1 July (legacy relay) 30 September (new relay) Validators in the active set 152 58 Cores 56 19, all assigned System chains 5 3: Asset Hub, People, Bulletin Infrastructure providers paid by the bounty 27 22 Nodes run by providers 172 76 (58 validators, 6 collators, 12 RPC nodes) Quarterly operating budget 196,250 USDC 100,400 USDC (−48.8%) The reset The legacy relay was shrunk in steps while the new one was brought up, and teams moved across at a single announced cutover on 6 July. Collectives, Coretime and Bridge Hub were retired. Cores are now assigned directly on the relay with coretime.assign_core , ",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Testnet Q3 2026: the Polkadot Testnet on a new relay chain at half the footprint",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -830,7 +872,7 @@
       "excerpt": "A Kusama Wish for Change needs a 666.67 KSM decision deposit before it can go to a vote. Governance takes that deposit from one account. A proposal can have support and still time out because nobody can carry the whole amount. We have built a contract that lets people and groups share it. The first pool is live for our Wish for Change #676 . We are asking for code review and people to try the Paseo rehearsal. This is experimental and has not had an independent review. We deployed before that review to leave time before #676 times out. A killed referendum loses the deposit, and a contract bug could also put contributions at risk. Kusama pool : real KSM. Paseo rehearsal : free test PAS. Source, tests and logs . Verified Kusama contract . How it works Each pool is fixed to one referendum and its exact deposit. It has no owner, admin key or upgrade path. People contribute from their own accounts. The payment that fills the pool tries to place the deposit in the same transaction. If placement fails, the contribution stays in the pool and anyone can retry. Contributors can withdraw while the pool remains open, before placement. After the referendum ends, anyone can reclaim the deposit and send payouts to the contributing accounts. These are separate contract calls. No watcher is runnin",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Collaborative decision deposits: live on Kusama, open for review",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T16:11:37Z",
@@ -851,7 +893,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Philip R. Lane: AI adoption in Europe",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T16:10:00Z",
@@ -872,7 +914,7 @@
       "excerpt": "This is stable release recommended for general adoption. It is also recommended for Testnet and Devnet. https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md What's Changed v4.4: vote_reward: build vote accounts from a padded vote state encoding (backport of #16381 ) by @mergify [bot] in #16386 v4.4: pin cargo-build-sbf and spl-token-cli to the latest release by @levsha in #16434 v4.4: ci: stop shipping windows prebuilt (backport of #15471 ) by @mergify [bot] in #16469 v4.4: ignore RUSTSEC-2026-0414 (pulldown-cmark, build-time only) by @cfkelly18 in #16501 v4.4: chore(feature-set): rekey feature for SIMD-550 (backport of #16499 ) by @mergify [bot] in #16503 Bump version to 4.4.0 by @agave-version-bumper[bot] in #16502 Full Changelog : v4.4.0-rc.1...v4.4.0",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "Release v4.4.0",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T15:32:32Z",
@@ -893,7 +935,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "release-2026-10-30_12-16-base",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T14:17:20Z",
@@ -914,7 +956,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T14:00:00Z",
@@ -937,7 +979,7 @@
       "excerpt": "Disclaimer: This is an independent proposal from an ordinary Cosmos community member. I am not affiliated with Cosmos Labs, the Interchain Foundation, or the Cosmos Hub development team. This is not an official initiative or a finalized technical specification. My intention is to share an idea and gather community feedback. TL;DR I would like to propose exploring ATOM Shield , a limited emergency freezing mechanism for native ATOM on the Cosmos Hub. The goal is to prevent stolen ATOM from being moved further during major security incidents, without halting the entire network, while leaving final decisions to decentralized governance. The proposed mechanism would work as follows: 1 Security Council member: Initiates an immediate freeze lasting up to 1 hour. Additional Council approval: Extends the freeze for up to 24 hours from the initial action. At least 2/3 of all active Council members within 24 hours: Confirms the freeze until governance reaches a decision. Cosmos Hub governance: Decides whether to unfreeze, maintain the freeze, or authorize recovery of the assets. Failure to meet approval thresholds: Results in automatic unfreezing. The total number of Security Council members and the initial confirmation threshold would be determined through community discussion. The Securi",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "[IDEA] ATOM Shield: Emergency Freezing and Governance-Based Asset Recovery for Cosmos Hub",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "3794": "FULL_NAME"
       },
@@ -960,7 +1002,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T09:00:00Z",
@@ -983,7 +1025,7 @@
       "excerpt": "Technical & Product Polkadex Runtime 392 is live, upgrading the chain to polkadot-sdk stable2512 , freeing PDEX stuck in old locks, and preparing the next roadmap step: cross-chain PDEX (via polkadex ). Polkadot’s JAM ecosystem has 45 clients in development across five language sets, backed by Web3 Foundation incentives totaling 10M DOT and 100K KSM for milestone delivery (via MSBIntel , leeky_k_crypt ). Kusama JAM Prime discussions outlined four possible 40-coretime-year allocation models: 8 cores for 5 years, 6 cores for 6 years 8 months, 4 cores for 10 years, or 2 cores for 20 years (via VRCI_Global ). Ecosystem & Community Polkadot Assemble momentum is focused on Mumbai, where FAIR announced a side event with talks, workshops, quizzes, and product-focused builder sessions (via dotAssemble , PolkadotDevs , fair_communityy ). WUD announced its Aura Awards competition starting November 1, with top-50 Mystery Box rewards and Aura scoring influenced by WUD and WUD Universe ownership (via s0m3thingelse85 ). PROCESSING LOG Report Generated: 2026-10-30 10:03:50 Total X posts curated: 1507 Posts Filtered and Analysed: 1479 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on po",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-10-30",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1006,7 +1048,7 @@
       "excerpt": "At 8:08am HKT, 30th October 2026, the Security Council executed an emergency action to freeze 8,425 ETH and 74,559,805.2 ARB held on Arbitrum One by an address identified with today’s Binance exploit. The funds are now held at 0x0000000000000000000000000000000000000DA0 . The funds can only be moved by an ArbitrumDAO Governance vote, which will be coordinated with relevant parties. Key point: Funds associated with the Binance exploit are frozen on Arbitrum One. No other user’s funds or applications were affected. Security Council Actions The technical approach taken by the Security Council was to implement an atomic action to upgrade the inbox contract on Ethereum, freeze the funds, and return the contract back to its original implementation. The Inbox Contract was upgraded to add a new function, sendUnsignedTransactionOverride , which imitates the structure of a standard cross-chain transaction with the ability to impersonate the transaction sender. Two cross-chain transactions were created to impersonate the address associated with the Binance exploit, and these transactions transferred the stolen funds to 0x0000000000000000000000000000000000000DA0 . Finally, the inbox implementation was upgraded to return it back to the original implementation. Arbitrum contributors prepared th",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "Security Council Emergency Action – 30/10/2026",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-30T01:22:18Z",
@@ -1027,7 +1069,7 @@
       "excerpt": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T20:30:00Z",
@@ -1050,7 +1092,7 @@
       "excerpt": "Hotfix Release This is a private hotfix. The source code is not available yet. Please use the attached binaries or upgrade using the docker image. Who should upgrade Validators : YES Fullnodes : Recommended Deposits & withdrawals : No impact Hotfix commit: 771cd050d4071723c40d6783afd3c68fa320aff2",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "[Mainnet] Aptos Node Release v1.49.8-hotfix",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {
         "21794": "FULL_NAME"
       },
@@ -1075,7 +1117,7 @@
       "excerpt": "Hotfix Release This is a private hotfix. The source code is not available yet. Please use the attached binaries or upgrade using the docker image. Who should upgrade Validators : YES Fullnodes : Recommended Deposits & withdrawals : No impact",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "[Mainnet] Aptos Node Release v1.49.6-hotfix",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {
         "21794": "FULL_NAME"
       },
@@ -1100,7 +1142,7 @@
       "excerpt": "Hey folks! This is the second Cosmos Quarterly , and the first one in the format every edition will use from now on: the quarter’s news, pillar by pillar, and what each team is working on next. If you want the story of how Cosmos Labs is structured and why, that lives in Quarterly #1 and we won’t retell it here. The Thursday Hub Weekly continues as it is. The short version of the quarter: The tokenomics phase 2 is finished, the Hub roadmap passed validation, and both are preparing for a review process in governance, ATOM went live on Paxos, an institutional staking API is coming through InfStones, the USDC migration is past halfway, post-quantum keys shipped, the IBC release for EVM and Besu networks is weeks away, and the enterprise team took the tokenization suite to banks and to SWIFT’s ledger. It was also a security-hardening quarter . Two vulnerabilities in shared code and one governance attack on an ecosystem chain hit between August and September. The Hub responded to all three quickly and lost no funds. Since then, the team has published new security policies and expanded the security operations team, so the ecosystem is better covered for the long term. At a glance, this quarter Ecosystem. The tokenomics research is complete, and the Hub roadmap is validated enough to pr",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Cosmos Quarterly #2 Q3-26 - Hardening, Interop, and the Hub & Tokenomics Roadmap",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "3794": "FULL_NAME"
       },
@@ -1123,7 +1165,7 @@
       "excerpt": "The Securities and Exchange Commission today charged two foreign-operated, Colorado-incorporated entities, BG Wealth Sharing Ltd and DSJ Exchange Pty Ltd, for orchestrating a fraud scheme that used false SEC filings to boost confidence in their…",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Two Entities Charged in $130 Million Fraud Scheme That Used False SEC Filings to Boost Investor Confidence",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T16:42:37Z",
@@ -1144,7 +1186,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T15:50:00Z",
@@ -1166,7 +1208,7 @@
       "excerpt": "Proposal Type : Rights protection Executive Summary The Optimism Foundation requests approval to offer select partners a rebate on the sequencer fees generated by activity they bring to OP Mainnet. Rebates may be used only for activity critical market development partners bring, never to general network activity. Because a rebate is a share of fees that would not exist without the partner, it adds a performance-based incentive to the partnership toolkit without spending OP. Motivation Growing OP Mainnet is one of the Collective’s core objectives, and partnerships are one of the most effective ways to do it. Apps and institutions that move real activity onto OP Mainnet bring users, liquidity, and fee revenue. They also make OP Mainnet more valuable for everyone already building on it. We have seen this work. Since partnering with Optimism, Ether.fi has grown their OP Mainnet TVL to $347M and passed 100,000 cardholders. Optimism now carries roughly 29% of crypto card settlement volume, the largest share of any chain tracked. Competition for critical market-development partners like these is intense, and shared economic alignment is often part of what closes a deal. The Foundation has been deliberate about how it uses OP for this purpose. As reported in the Year 4 budget update , ne",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "Proposal for Sequencer Fee Rebates on OP Mainnet",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
+      "last_observed_utc": "2026-11-13T03:26:26Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T14:44:31Z",
@@ -1187,7 +1229,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T14:00:00Z",
@@ -1208,7 +1250,7 @@
       "excerpt": "Sky Frontier Foundation has published its Sky Ecosystem Q3 2026 Quarterly Report. Q3 2026 Highlights: Net Revenue: $37.19 million (+11.8% QoQ) Gross Protocol Revenue: $99.29 million (+14.2% YoY) Galaxy: $100 million in sUSDS added to its balance sheet Grove-Galaxy Facility: $375 million in loans financed First SKY Burn: 2.86 million SKY permanently burned Credit Ratings: First stablecoin protocol rated by both Moody’s and S&P Global The report provides a comprehensive overview of Q3 financial and operational developments. → Read the full report on insights.skyeco.com 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Sky Ecosystem Q3 2026 Quarterly Report",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T13:21:12Z",
@@ -1229,7 +1271,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "Monetary policy decisions",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T13:15:00Z",
@@ -1250,7 +1292,7 @@
       "excerpt": "Reth v2.9.0 replaces revm with evm2 as reth's EVM ( #25002 ). This is a breaking change for SDK users who build on reth's EVM, executor or inspector types. Node operators don't need to change any config. The release also fixes engine, RPC, storage and pipeline-unwind bugs, adds snap sync progress metrics and JIT support in reth-bb, and makes builds noticeably lighter by cutting monomorphization and unused dependencies. evm2 makes block execution about 10% faster than revm. On 500 mainnet blocks, execution throughput rose +10.0% and median block execution time fell 10.5%. On 300M-gas big blocks, throughput rose 9.3%, and 6.6% with BALs. Action Required SDK users: revm types are replaced by evm2 ( evm2 , evm2-inspectors , evm2-jit ). Custom EVMs, precompiles, inspectors and executors need porting to evm2's APIs. Backwards Compatibility Important You can downgrade to v2.8.1. Update Priority User Class Priority Payload Builders Medium Non-Payload Builders Medium Breaking Changes SDK Replaced revm with evm2 across execution, RPC and inspectors ( #25002 , #28127 , #28169 ) RPC crates no longer depend on reth-node-api ( #28145 ) Features Sync Snap sync now reports progress metrics ( #28059 ) SDK reth-bb supports the evm2 JIT ( #28140 ) Performance Faster builds and smaller binaries: les",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "Reth v2.9.0",
-      "last_observed_utc": "2026-11-12T22:45:02Z",
+      "last_observed_utc": "2026-11-13T03:26:25Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T12:36:47Z",
@@ -1271,7 +1313,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "ECB President Lagarde to step down on 7 February 2027",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T10:00:00Z",
@@ -1292,7 +1334,7 @@
       "excerpt": "Introduction This forum thread is for communicating activity for the Osero Configurator Bounded External Access Module (cBEAM), maintained as required by A.2.2.10.1.1.1.2.4.1.4.2 — Public Communication . A cBEAM is a whitelisted Operator of a Diamond Parallelized Allocation Unit (Diamond PAU). It can, for example, use the Configurator to adjust that unit’s rate limits within the ceilings set by BeamState, without requiring a Spell or waiting for the GSM Pause Delay, as specified in A.1.10.3.2.10.5 — cBEAM Exception and A.2.2.10.1.1.1.2.4.1.4.1 — Operator Execution . The Operator for the Osero Diamond PAU is specified in A.2.2.10.1.1.1.2.4.1.4.3.2 — Operator For The Osero Diamond PAU . Sky Governance maintains full control over cBEAM actions through Executive Votes or Core Council actions . The Core Council Multisig can immediately unpair a cBEAM from a RateLimits contract or Controller, or remove its registration, as specified in A.2.2.10.1.1.1.2.4.1.3.4 — Immediate Function Calls . Configurator operations can also be halted through A.2.2.10.1.1.1.2.4.1.3.6 — PASMom . Parameter Configurations Sky Governance configures the cBEAM’s permissions and bounds in BeamState, including its pairings, rate-limit controls, per-key default rate-limit values, and permitted Controller actions. T",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Osero cBEAM Configuration",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T09:11:22Z",
@@ -1315,7 +1357,7 @@
       "excerpt": "Governance Polkadex Referendum #36 is nearing close, proposing Runtime 392 to align Polkadex with polkadot-sdk stable2512 and release PDEX stuck in old locks; voting closes Oct. 29 at 17:00 UTC (via polkadex ). Kusama governance proposals #671 – #674 outline a potential shift: making Kusama a service on Polkadot JAM and allocating up to 5M DOT from Kusama Vision (via cryptoptify ). Nova Wallet advised KSM direct stakers to update validator selections as it takes its Kusama validators offline (via NovaWalletApp ). OpenGov #1961 is in Deciding to fix Asset Hub’s dotUSD recorded-supply discrepancy and unblock Snowbridge by restoring Bridge Hub weights; the proposal states balances are not changed (via JMiaozi ). Ecosystem dotUSD is live on Polkadot as a network-governed stablecoin with no corporate issuer, governed through the DOT DAO via OpenGov (via TTT_News_ ). PRDCTR_IO was profiled as building a dedicated prediction-markets AppChain on Aventus, secured through Polkadot (via GhostROnchain ). PROCESSING LOG Report Generated: 2026-10-29 10:04:17 Total X posts curated: 2024 Posts Filtered and Analysed: 1999 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on posts from X an",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-10-29",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1338,7 +1380,7 @@
       "excerpt": "actor: add non-blocking TryTell/TryAsk, in-turn overflow sends, AskThen, and a shutdown join",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "actor/v0.0.7: Merge pull request #11431 from Roasbeef/actor-try-send",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-29T01:28:51Z",
@@ -1361,7 +1403,7 @@
       "excerpt": "Hotfix Release This is a private hotfix. The source code is not available yet. Please use the attached binaries or upgrade using the docker image. Who should upgrade Validators : YES Fullnodes : Recommended Hotfix commit: 771cd050d4071723c40d6783afd3c68fa320aff2",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "[Testnet] Aptos Node Release v1.49.8-hotfix-rc",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {
         "21794": "FULL_NAME"
       },
@@ -1384,7 +1426,7 @@
       "excerpt": "Strategy investors face a November 11 decision on whether the Bitcoin treasury company will remain in MSCI’s global equity indexes. Any resulting removals would take effect after the November 30 close. MSCI adopted its new eligibility rules on October 15. Strategy’s removal has not been confirmed; the issue for shareholders is how exclusion could affect demand for its shares and future financing. Separately, Strategy said on October 28 that shareholders had approved amendments permitting daily dividends on four preferred-stock series, based on preliminary voting results. Subject to the amended terms being filed and becoming effective, the new schedule would begin November 1 for STRC and January 1, 2027, for STRF, STRK and STRD. The vote changes preferred-dividend arrangements; it does not settle the MSCI index decision. $MSTR shareholders have approved the Daily Dividends amendment. Preliminary results show 99.3% of votes cast were in favor. The amendment enables $STRF , $STRC , $STRK and $STRD to accrue dividends every calendar day. Thank you to all who voted. https://t.co/vRSC6hwlro — Strategy (@Strategy) October 28, 2026 How the new MSCI rules work MSCI first assesses whether a company has substantial operating assets . Companies that fail this screen face five financial-ratio",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Strategy’s MSCI risk: What to watch before November 11",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T22:30:00Z",
@@ -1405,7 +1447,7 @@
       "excerpt": "Currently the breakdown is as below: Step 1 Allocation Step 1 Capital = 14,635,947 USDS Core Council (10% of Step 1 Capital - rounded spell value): 1,463,595 USDS Fortification Conserver (10% of Step 1 Capital - rounded spell value): 1,463,595 USDS Step 2 Allocation Step 2 Capital = 11,708,757.60 USDS Retained for Aggregate Backstop Capital (50% of Step 2 Capital): 5,854,378.80 USDS Step 3 & 4 Allocation Step 3 Capital = 5,854,378.80 USDS USDS Staking Rewards (45% of Step 3 Capital): 2,634,470.46 USDS . Buyback distributed to SKY stakers (45% of Step 3 Capital): 2,634,470.46 USDS . Buyback and burn (10% of Step 3 Capital): 585,437.88 USDS . Buyback distributed to SKY stakers and buyback and burn are both buyback operations, which means that total buyback allocation will be set to 3,219,908.34 USDS , equaling 55% of Step 3 Capital. This results in us filling the ABC in around a year. I’m proposing to extend that deadline to 2 years and in return boost Step 3 by 50%. This will boost staking and burn by 50%. This will also boost Sky Core funding as I believe they still have a large chunk of Sky staked they use to obtain USDS to pay bills. Staking thus goes up from ~5.5% to 7.75%. I believe directing ~$2.9M of our $14.6M profit to contingency (20%) each month is more appropriate than",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Reduce ABC Step 2 to 25%, increase Staking emissions 50%",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T21:53:01Z",
@@ -1426,7 +1468,7 @@
       "excerpt": "Aviva’s £50 million investment in tokenized fund shares illustrates what changes when a conventional investment adds blockchain-based ownership records. Announced on October 26 , the new share class gives eligible investors access to Aviva Investors’ Sterling Liquidity Fund through digital tokens on the XRP Ledger. The £22 billion figure describes the entire underlying fund; Aviva invested £50 million in the new share class. Big news as Aviva Investors announces the launch of a tokenized share class of the Aviva Investors Sterling (GBP) Liquidity Fund on the XRP Ledger. The Sterling (GBP) Liquidity Fund is Aviva Investors’ largest fund at around £22 billion in assets under management, and this move… — Ripple (@Ripple) October 26, 2026 The launch sits alongside a broader expansion of institutional blockchain services. On October 27, BNY — which holds the Aviva fund’s underlying assets — and Ripple announced that BNY’s digital asset custody platform supports XRP and RLUSD. BNY also outlined plans to expand support for tokenized investment products on the XRP Ledger, subject to final BNY and regulatory approvals. The announcement did not identify any new functionality for Aviva’s fund. What changes for investors The migration does not affect the fund's investment objective, as the f",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Aviva’s £50m tokenized fund: What changes for investors",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T20:48:13Z",
@@ -1447,7 +1489,7 @@
       "excerpt": "You can’t expect ATOM’s price to rise significantly while inflation continues to dilute holders and new tokens keep entering the market. Lower inflation. Fewer new tokens. A well-designed burn mechanism. Stronger real demand. These are the changes Cosmos needs to restore confidence in ATOM. Technical upgrades are important, but if they don’t translate into real demand for ATOM, what is the point? Holding ATOM must become genuinely attractive. The token needs stronger utility, and the growth of the Cosmos ecosystem must finally translate into value for ATOM holders. Cosmos has the potential, but potential alone is not enough. We need concrete decisions and measurable results. Without meaningful tokenomics reform and sustainable demand, ATOM risks continuing to underperform, even if the ecosystem keeps growing. It’s time to stop making promises and start delivering results. ATOM deserves better. 5 posts - 4 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "ATOM needs a tokenomics overhaul, and it needs it now",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T19:02:51Z",
@@ -1468,7 +1510,7 @@
       "excerpt": "Another ATOM pair being delisted by Binance while ICF and Cosmos Labs do nothing. Since the ICF legally cannot hire any market makers (not sure if actually true because most projects do hire MMs perfectly fine), should the community do something using the community pool before ATOM gets completely delisted and goes to 0? 19 posts - 4 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "What can the community do to improve the liquidity of ATOM on exchanges?",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T18:07:47Z",
@@ -1489,7 +1531,7 @@
       "excerpt": "Federal Reserve issues FOMC statement",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Federal Reserve issues FOMC statement",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T18:00:00Z",
@@ -1513,7 +1555,7 @@
       "excerpt": "Bitcoin Core version 29.5 is now available from: https://bitcoincore.org/bin/bitcoin-core-29.5/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-29.5.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Bitcoin Core 29.5",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1538,7 +1580,7 @@
       "excerpt": "Bitcoin Core version 30.4 is now available from: https://bitcoincore.org/bin/bitcoin-core-30.4/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-30.4.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Bitcoin Core 30.4",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1563,7 +1605,7 @@
       "excerpt": "Bitcoin Core version 31.2 is now available from: https://bitcoincore.org/bin/bitcoin-core-31.2/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-31.2.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Bitcoin Core 31.2",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1588,7 +1630,7 @@
       "excerpt": "Bitcoin Core version 32.1 is now available from: https://bitcoincore.org/bin/bitcoin-core-32.1/ For the release notes please see the git repository: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-32.1.md Do not use the links provided by GitHub. Use the above download links instead, as they are guaranteed to be generated deterministically and signed.",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Bitcoin Core 32.1",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1613,7 +1655,7 @@
       "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "Algorand 5.0.5",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "4030": "FULL_NAME"
       },
@@ -1638,7 +1680,7 @@
       "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "Algorand BetaNet 5.0.5",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "4030": "FULL_NAME"
       },
@@ -1663,7 +1705,7 @@
       "excerpt": "Governance Kusama Vision is relaunching as the Cypherpunk Vision Fund , focused on privacy, digital freedom, sovereignty, art and experimentation, with applications open until 29 October (via VRCI_Global ). Referendum 1910 updated staking parameters: nominators reportedly can no longer be slashed, with slashing applying to validators, while unbonding time has dropped from ~28 days to ~2 days (via TheWeb3Cloud ). Ecosystem Walletscan added Polkadot support across its read-only wallet discovery tool for forgotten funds, stuck bridge balances and unclaimed rewards (via aaronjmars ). DOT appeared in a regulatory classification update: DOT was listed among 16 crypto assets described as “digital commodities” in a joint SEC/CFTC release (via MSBIntel ). PROCESSING LOG Report Generated: 2026-10-28 10:04:36 Total X posts curated: 1818 Posts Filtered and Analysed: 1788 Data Source: X (Twitter) This report is auto-generated and provided for informational purposes only by OpenShore, a Pala Labs initiative. The content is based on posts from X and may contain inaccuracies. We do not guarantee its completeness or correctness. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:59Z",
       "headline": "Polkadot Socials Daily Digest: 2026-10-28",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1686,7 +1728,7 @@
       "excerpt": "On behalf of Skybase, we request a transfer of 900,000 USDS from Skybase’s SubProxy to the Skybase Foundation Operational Multisig 0x58B945c8Ce34BD8cEA3Fc0437626F9F87d58A621 , to be included in the November 5, 2026 Executive Vote. The funds cover Skybase operational costs and partner payouts through the end of 2026. The transfer will be executed from Skybase’s SubProxy 0x08978E3700859E476201c1D7438B3427e3C81140 on Ethereum mainnet, via the SubProxyMethods contract ( A.4.6.2.1 - SubProxyMethods ), as part of the Sky Core Spell. The authorizing Atlas document, A.2.8.2.7.2.2.3.2 - Skybase Foundation Grant Authorization: November 2026, is included in the Atlas Edit Weekly Cycle Proposal - Week Of 2026-10-26 and will be approved by Sky Governance through the Governance Poll closing October 29, 2026. 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "[November 5, 2026] - Skybase Foundation Grant: 900,000 USDS SubProxy Transfer",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T09:06:25Z",
@@ -1707,7 +1749,7 @@
       "excerpt": "Introduction For the upcoming launch of Spark’s DPAU on Base, we’re also launching PAS/Configurator there to be able to adjust DPAU rate limits and remove facets in an emergency, same as on Arbitrum . The Beacon was deployed by Spark themselves; we’re just ensuring its state is correct. Goal of this update Allow trusted operator groups (coreCouncil and cBEAM) to make changes to Spark’s Diamond PAU module on Base without requiring a spell. Initially, the module will be launched with Timelock paused (same as on Ethereum Mainnet and Arbitrum One ), still requiring core L2 spells to perform the most security-critical operations. Required context Spark is planning to launch their second instance of DPAU in “parallel configuration”, meaning that the new Diamond PAU controller, rate limits, and facets will be sharing the existing ALMProxy with the legacy Controller already holding funds. As an additional precaution, we recommend attaching the PAS/Configurator module to the DPAU to be able to slowly ramp up its rate limits and also remove the onboarded facet in case of emergency. Initially, the PAS module is launched with a paused Timelock, limiting the actions coreCouncil can perform to IMMEDIATE actions , such as stopping the configurator, removing rate limits or the controller, removi",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Technical scope of the Beacon and Configurator launch on Base",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-10-28T08:55:47Z",
@@ -1730,7 +1772,7 @@
       "excerpt": "Two threads here this month made me look at the same problem from both ends. In one , a holder has ATOM on UX Chain, which halted in July, and RoboMcGobo explained why the Hub can’t just release it: the escrow only opens when the other chain burns the voucher, and that chain makes no blocks. In the other, Akash’s proposal 346 (voting until 2 November) starts a migration that ends with akashnet-2 halting 90 days after a later cutover. So I went through ibc-go (v10.7.0, the version Gaia v29.0.1 runs; akashnet-2 runs v10.5.0, and the transfer code I cite is the same there) to list what has to happen before the last block, because after it nobody can fix anything from the other side. This is not about whether any chain should leave. It’s only about the tokens. Why tokens get stuck When a token leaves its home chain, it goes into that chain’s escrow for the channel and the other side mints a voucher. The escrow releases it only when a packet shows the voucher was burned, and that packet has to come from a live chain. Transfer channels can’t be closed. The transfer module rejects ChanCloseInit , so there is no close-and-settle step. Every packet, ack and timeout is checked through the counterparty’s light client, and the client has to be Active. A Tendermint client expires one trusting",
       "first_observed_utc": "2026-11-12T20:01:58Z",
       "headline": "What has to happen to IBC tokens before a Cosmos chain halts for good",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {
         "3794": "FULL_NAME"
       },
@@ -1741,52 +1783,6 @@
         "cosmos_governance"
       ],
       "url": "https://forum.cosmos.network/t/what-has-to-happen-to-ibc-tokens-before-a-cosmos-chain-halts-for-good/17510"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "839d627204e1f5d78266054f",
-      "excerpt": "This is a mainnet ready release. Improved snapshot download peer selection during validator boot GUI now shows vote count on the slot carrying the cert instead of the slot being voted on Improved block packing performance by eagerly dropping expired transactions Fix a rare issue that can cause the validator to crash at the epoch boundary Improved connection reliability for voting validators Increase default [layout] shred_tile_count to 2",
-      "first_observed_utc": "2026-11-12T20:05:47Z",
-      "headline": "Firedancer Mainnet Release v26.10.5",
-      "last_observed_utc": "2026-11-12T22:45:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-10-27T22:57:30Z",
-      "source_id": "solana_firedancer_releases",
-      "source_ids": [
-        "solana_firedancer_releases"
-      ],
-      "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.5"
-    },
-    {
-      "cmc_ids": [
-        21794
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "4e8301466f4de8d4dad70f57",
-      "excerpt": "Hotfix Release This is a private hotfix. The source code is not available yet. Please use the attached binaries or upgrade using the docker image. Who should upgrade Validators : YES Fullnodes : Recommended Hotfix commit: 86d46b530e4e75b0c9474f0c0b6e6b0009fcbd12",
-      "first_observed_utc": "2026-11-12T20:01:56Z",
-      "headline": "[Testnet] Aptos Node Release v1.49.7-hotfix-rc",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
-      "match_methods": {
-        "21794": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-10-27T22:51:15Z",
-      "source_id": "aptos_releases",
-      "source_ids": [
-        "aptos_releases"
-      ],
-      "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.49.7-hotfix-rc"
     }
   ]
 }

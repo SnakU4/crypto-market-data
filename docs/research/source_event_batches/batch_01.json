@@ -1,6 +1,391 @@
 {
-  "capture_utc": "2026-11-12T22:44:57Z",
+  "capture_utc": "2026-11-13T03:26:17Z",
   "events": [
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5fa723a5f52f111ab2b2a350",
+      "excerpt": "Hi, everyone GitHub application: Full application I am requesting $15,000 for completed Zebra fuzzing maintenance and upstream CI integration. I developed the fuzzing targets and worked on their upstream and Google OSS-Fuzz integration. That infrastructure produced a concrete result: Zebra’s High-severity advisory credits the p2p_message_parse target in Google OSS-Fuzz with originally reporting a remote node-crash vulnerability. Other researchers independently rediscovered it. What I completed As Zebra changed, its fuzz targets needed maintenance to keep building. I fixed a removed API call and dependency incompatibilities, then integrated the fuzz package into Zebra’s root workspace so existing per-crate checks can catch compatibility problems earlier. Five follow-up PRs were merged between September 29 and November 4: #11538 and #11609 : repaired API and dependency compatibility. #12111 : integrated the fuzz package into the root workspace and existing CI checks, including Docker and MSRV build adaptations. Google #16371 : kept OSS-Fuzz packaging compatible with the workspace change. #12219 : improved assertions and made serialization failures and incomplete seed generation fail visibly. Why this matters Security testing needs to keep working as the code it tests evolves. These",
+      "first_observed_utc": "2026-11-13T03:26:23Z",
+      "headline": "Retroactive Grant Application - Zebra Fuzzing Maintenance and Upstream CI Integration",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T02:30:57Z",
+      "source_id": "zcash_governance",
+      "source_ids": [
+        "zcash_governance"
+      ],
+      "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-zebra-fuzzing-maintenance-and-upstream-ci-integration/59268"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "REGULATION"
+      ],
+      "event_id": "63205709644ff41e3538779b",
+      "excerpt": "The White House also named a former CFTC commissioner and two CLARITY Act veterans as nominees to fill vacancies at the SEC and CFTC.",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "Trump nominates Hester Peirce successor among SEC, CFTC picks",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T02:29:27Z",
+      "source_id": "cointelegraph",
+      "source_ids": [
+        "cointelegraph"
+      ],
+      "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [
+        21794
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "db9a3fa18d423b8a6e44b133",
+      "excerpt": "Who should upgrade Validators: YES Fullnodes: YES What's Changed Replay-verify: increase Mainnet PFN snapshot size by @sionescu in #20410 [block-stm] Add SingleTransactionExecutor abstraction by @georgemitenkov in #20276 [lean model] Add generics and shared XIR import by @wrwg in #20393 [mono-move] Guard copy coalescing and propagation on bitwise-copy types by @vineethk in #20390 [prover] Verify inline higher-order functions by @wrwg in #20360 [docs] Document prophecy reference model by @wrwg in #20387 [consensus] Match commit votes against the full LedgerInfo by @danielxiangzl in #20335 [vm] Add mainnet framework function usage coverage by @wrwg in #20406 [execution] Drain state sync before teardown by @wqfish in #20409 [mono-move] Do not zero-initialize heap by @georgemitenkov in #20413 [mono-move] Enable stdlib on mono move by @georgemitenkov in #20420 [mono-move] User context natives by @georgemitenkov in #20403 retry crane copy on transient registry failures by @rustielin in #20425 [mono-move] Derived aggregator natives by @georgemitenkov in #20422 [mono-move] Refactor group tracking by @georgemitenkov in #20414 [mono-move] Initial implementation of pre-execution checks by @vgao1996 in #20411 [mono-move] Ability computation and assignability for interned types, with correct ",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "[Mainnet] Aptos Node Release v1.50.1",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
+      "match_methods": {
+        "21794": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T01:55:25Z",
+      "source_id": "aptos_releases",
+      "source_ids": [
+        "aptos_releases"
+      ],
+      "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.50.1"
+    },
+    {
+      "cmc_ids": [
+        6636
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2720b71f28c0823c8f58cf6f",
+      "excerpt": "Ref #1952 Approved: $4,993.72 USD Event: October 29–31, 2026 Report date: November 9, 2026 Hello everyone, We are sharing the event report for the in-person phase of our approved Phase 1 pilot, held at the Facultad de Contaduría Pública y Administración (FACPYA) of the Universidad Autónoma de Nuevo León (UANL) in San Nicolás de los Garza, Nuevo León, and co-hosted with the student group Blockchain UANL. Full report, with one verification link per figure: ( FULL FIRST REPORT ) This is the first of two reports. The final report follows the Week 4 checkpoint (November 28) and will cover retention, the continuity bonuses and the Phase 2 recommendation. Summary In three days, students with no prior crypto experience went from installing the Polkadot App to publishing working apps on their own .dot domains. Five of the six event-day KPIs were met, and every number in the report comes from on-chain records generated during the event, not from forms or self-reported counts. Each figure links to the transaction or block that proves it, so anyone can verify it without trusting us. The funnel so far: 38 registered → 27 usernames claimed → 25 verified on-chain check-ins → 22 builders in 6 teams → 5 published, openable apps → Week 2 and Week 4 pending. What happened During the Day 1 onboardin",
+      "first_observed_utc": "2026-11-13T03:26:23Z",
+      "headline": "Polkadot Mexico Phase 1 Event Report: Bootcamp & Hackathon at UANL",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
+      "match_methods": {
+        "6636": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T01:47:50Z",
+      "source_id": "polkadot_governance",
+      "source_ids": [
+        "polkadot_governance"
+      ],
+      "url": "https://forum.polkadot.network/t/polkadot-mexico-phase-1-event-report-bootcamp-hackathon-at-uanl/19454"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ce88784f70d6347442dc44a1",
+      "excerpt": "Reuters reported that Jensen Huang had a relationship with another Nvidia employee, hours after he resigned as CEO.",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "Former Nvidia CEO Huang had third alleged affair: Reuters",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T01:26:27Z",
+      "source_id": "cointelegraph",
+      "source_ids": [
+        "cointelegraph"
+      ],
+      "url": "https://cointelegraph.com/news/former-nvidia-ceo-huang-had-third-alleged-affair-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f28aea1e5191a57dc5fbabe5",
+      "excerpt": "Coinbase recorded a fresh 28-day low Thursday evening, while ether continued to underperform bitcoin over matched one- and four-week windows.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Bitcoin Sinks to $70,600 as Four-Week Losses Deepen",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T00:57:09Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/news/markets/bitcoin-sinks-to-70-600-as-four-week-losses-deepen"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "54e7cff5bfa7145a07eaf6fe",
+      "excerpt": "Gemini’s third-quarter trading rebound masked a deepening retail slump.",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "Gemini’s quarterly retail trading volume sinks to 3-year low",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T00:52:42Z",
+      "source_id": "cointelegraph",
+      "source_ids": [
+        "cointelegraph"
+      ],
+      "url": "https://cointelegraph.com/markets/geminis-quarterly-retail-trading-volume-sinks-to-3-year-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "156bb4d2d9213fa89008a34b",
+      "excerpt": "Bitquery's November 12 update estimates $401,900 across nine wallets, including about $305,000 from one Aave deposit token. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Aave user loses $305,000 after Across Protocol website hijack",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T00:30:17Z",
+      "source_id": "cryptoslate",
+      "source_ids": [
+        "cryptoslate"
+      ],
+      "url": "https://cryptoslate.com/across-protocol-website-attack-reached-an-aave-deposit-new-402000-loss-trace-shows/"
+    },
+    {
+      "cmc_ids": [
+        1437
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "4a390a48fa36c02a6dba07dc",
+      "excerpt": "This is like, multiple weeks of our work, but now we are proud to finally announce… SHIELDED SUBSCRIPTiONS, IN ZCASH! Well, to be clear, it is not active right now on mainnet, it requires ratification of this supported governance proposal , and this mostly serves as a way to justify it. The ZIPs are not new; they have been proposed for several years already, and one isn’t even a ZIP, just a misclarified feature. Further, ratifying does not add any new scripting or attack surface to (shielded) Zcash at all; the only change that does affect the shielded pool is respecting locktimes. This paradigm is built on ELSA (Efficient Layer-2 Schnorr Apparition), an apparition protocol that uses FROST derivatives (we announced the underlying primitive, Violet’s Constrained Locks, here). “Apparition” is a term we use to describe subscriptions that are indistinguishable from standard transfers on the Zcash chain, and do not involve any published scripts. How does it work? It is very complicated, but essentially, via preFROST (a modified version of FROST), it is possible to form a “covenant” such that a merchant and you can agree on terms of a subscription that are mutually enforced on-chain. It is not possible to steal funds from a subscription. But what does it look like in practice? Aha, for ",
+      "first_observed_utc": "2026-11-13T03:26:23Z",
+      "headline": "Trustless, self-custodial shielded subscriptions, built natively into Zcash!",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
+      "match_methods": {
+        "1437": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T00:24:05Z",
+      "source_id": "zcash_governance",
+      "source_ids": [
+        "zcash_governance"
+      ],
+      "url": "https://forum.zcashcommunity.com/t/trustless-self-custodial-shielded-subscriptions-built-natively-into-zcash/59263"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "REGULATION"
+      ],
+      "event_id": "3333992db7919c380ca8c2f1",
+      "excerpt": "Bitcoin Magazine DOJ Wins Court Authority to Seize $1.2 Billion of North Korea’s Stolen Binance Crypto as Freezes Top $2.7 Billion The DOJ said Thursday it has court authority to seize or restrain more than $1.2 billion in cryptocurrency stolen from Binance, part of a freeze of more than $2.7 billion that officials said halted about half of North Korea’s October exchange heist. In a Thursday announcement, the department said that on or about Oct. 29, members of the North Korean military, referred to by the FBI as TraderTraitor, stole more than $6 billion worth of virtual assets from Binance. That is below the $6.34 billion figure Binance has covered since the attack. Binance said it had completed coverage of the assets hit in the breach, replacing the tokens from company funds rather than by recovering the stolen coins. Those are separate tracks: the DOJ is trying to interdict what was taken, while the exchange has said users were made whole from its Secure Asset Fund for Users, a portion of its futures insurance fund and its treasury. Assistant Attorney General A. Tysen Duva of the DOJ’s Criminal Division said the department and its partners were able to “immediately halt about half of this historic breach” by freezing stolen assets “before they got beyond law enforcement reach.",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "DOJ Wins Court Authority to Seize $1.2 Billion of North Korea’s Stolen Binance Crypto as Freezes Top $2.7 Billion",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-13T00:15:00Z",
+      "source_id": "bitcoinmag",
+      "source_ids": [
+        "bitcoinmag"
+      ],
+      "url": "https://bitcoinmagazine.com/news/doj-north-korea-binance-1-2-billion-seize"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8b04ca664c1bd2fdfcbe2204",
+      "excerpt": "Bitcoin Magazine Bitcoin Price Trades Near $71,200 After a Fresh Session Low as the 10-Year Yield Holds Above 5% Bitcoin price traded near $71,200 on Thursday evening, after slipping to a fresh session low near $71,000, according to Bitcoin Magazine Pro data. U.S. stocks closed modestly lower and the 10-year Treasury yield held above 5% after Nvidia said CEO Jensen Huang had resigned. The decline started in the morning. Bitcoin price fell below $72,000 before the opening bell and dropped to about $71,150 shortly after 10 a.m. Eastern. A bounce later faded, and the bitcoin price printed a new session low near $71,000 around 6:23 p.m., its weakest level since Aug. 20. It now stands roughly $30,400 below where it closed one year ago. Stocks close lower as yields keep pressure on the bitcoin price The Nasdaq Composite slipped 0.39% to 25,366.09, the S&P 500 lost 0.35% to 7,592.40 and the Dow Jones Industrial Average fell 0.36% to 52,297.09, Reuters reported. Nvidia shares finished 4.3% lower at $166.19, off the day’s lows, after the company said Huang had resigned as president, chief executive and a board member, effective immediately, and named Chief Financial Officer Colette Kress interim CEO. Bitcoin-linked stocks had a harder session. Strategy (MSTR), which MSCI is removing from ",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Bitcoin Price Trades Near $71,200 After a Fresh Session Low as the 10-Year Yield Holds Above 5%",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T23:52:59Z",
+      "source_id": "bitcoinmag",
+      "source_ids": [
+        "bitcoinmag"
+      ],
+      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-71200-yields"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "530883f0a06cb1b2b8ad7eff",
+      "excerpt": "Bitcoin Magazine Jane Street Lifts Its Strategy (MSTR) Stake 54% to 4.1 Million Shares Jane Street Group raised its Strategy (MSTR) stake 53.8% in the third quarter, to 4,119,097 shares, a Form 13F filed Thursday shows, a position dated to Sept. 30 that does not capture any trades the firm may have made since then. Those caveats matter as much as the increase. Jane Street is a trading firm, and one of the largest market makers in stocks, ETFs, and options, and the same filing lists call options covering 13,573,000 Strategy shares and put options covering 13,991,800 shares, each more than three times the size of the common stake. Some of that stock is likely a hedge for the options and market-making book rather than a straight bet on the company. The 13F does not say how much. The shares were valued at $630.6 million in the filing, using the Sept. 30 price of $153.09. Strategy has fallen about 25% since then. At Thursday’s close of $114.41, the same 4,119,097 shares were worth about $471 million. The Class A position is up 1,441,475 shares from the 2,677,622 Jane Street reported at June 30, when the same holding was valued at $232.8 million. The firm filed about four days ahead of the Nov. 16 deadline; the SEC accepted the report at 4:04 p.m. Eastern on Thursday. Call and put posi",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Jane Street Lifts Its Strategy (MSTR) Stake 54% to 4.1 Million Shares",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T23:30:47Z",
+      "source_id": "bitcoinmag",
+      "source_ids": [
+        "bitcoinmag"
+      ],
+      "url": "https://bitcoinmagazine.com/news/jane-street-lifts-strategy-mstr-stake"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "721f5667aa1a63827e0ccccb",
+      "excerpt": "Maple Finance co-founder Joe Flanagan and COO Ryan O’Shea are leaving over disagreements about the firm’s direction as SYRUP falls despite revenue growth.",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "Maple Finance’s strategy rift sends co-founder, COO to the exits",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T23:12:55Z",
+      "source_id": "cointelegraph",
+      "source_ids": [
+        "cointelegraph"
+      ],
+      "url": "https://cointelegraph.com/news/maple-finance-strategy-rift-co-founder-coo-exit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ac74162b5e305ceca29ded94",
+      "excerpt": "Wyden and Neal ask Commerce Secretary Howard Lutnick to preserve export and tariff records, opening a separate inquiry into the administration’s decisions.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Democrats Probe Trump’s Nvidia China Chip Export Deal",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:59:53Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/frontier/ai/democrats-probe-trump-s-nvidia-china-chip-export-deal"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "SECURITY"
+      ],
+      "event_id": "14fe4a93c76f70b15c68b92d",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:55:52Z",
+      "source_id": "coindesk",
+      "source_ids": [
+        "coindesk"
+      ],
+      "url": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto"
+    },
+    {
+      "cmc_ids": [
+        5426
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "INSTITUTIONAL_FLOW"
+      ],
+      "event_id": "6c3c0820232ea60dbfbfd751",
+      "excerpt": "Forward’s November 9 snapshot shows a 16.8% discount on its in-the-money share count, while the broadest count includes conditional warrants. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Solana treasury Forward Industries flashes a 30% SOL discount, with a catch",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {
+        "5426": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:50:29Z",
+      "source_id": "cryptoslate",
+      "source_ids": [
+        "cryptoslate"
+      ],
+      "url": "https://cryptoslate.com/solana-treasury-forward-industries-flashes-a-30-sol-discount-with-a-catch/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "REGULATION"
+      ],
+      "event_id": "3ea631f1b8d97a1a2c039d95",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T03:26:18Z",
+      "headline": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:47:41Z",
+      "source_id": "coindesk",
+      "source_ids": [
+        "coindesk"
+      ],
+      "url": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year"
+    },
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
@@ -12,7 +397,7 @@
       "excerpt": "DOJ got court approval to seize $1.2B stolen from Binance by North Korea's TraderTraitor & took down the FaceStealer deepfake scam.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "DOJ moves to seize $1.2 billion from Binance hack, disrupts North Korean deepfake scheme",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:40:22Z",
@@ -33,7 +418,7 @@
       "excerpt": "Senator Josh Hawley wants a nationwide construction pause until households are protected from rising power bills, even as Congress advances legislation designed to accelerate America's already massive AI infrastructure buildout.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Republican Senator Wants to Freeze AI Data Center Boom as Congress Pushes to Expand It",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:36:02Z",
@@ -54,7 +439,7 @@
       "excerpt": "Bitcoin Magazine DOJ’s Operation TorNado Arrests 354 and Seizes $234 Million in Cash and Crypto The Justice Department and Europol said Thursday that Operation TorNado has produced 354 arrests and the seizure of more than $234 million in cash and virtual currencies, in what the FBI called the largest takedown yet of dark web drug vendors and buyers. The announcement came from the department’s Joint Criminal Opioid and Darknet Enforcement team, or JCODE, an FBI-led group created in 2018. Officials said Operation TorNado is the sixth, and most extensive, internationally coordinated action since then, and that it builds on last year’s Operation RapTor. The sweep ran from May 2025 to October 2026. Europol, which coordinated work with agencies in 14 countries, published a parallel statement the same day. The operation targeted vendors and buyers who had been active on five dark web markets already seized by law enforcement: Archetyp, Bohemia, Nemesis, Kingdom and Tor2Door. Officials also identified accounts on DrugHub and on forums, single-vendor shops and encrypted messaging services. The seizures included about 5.7 metric tons of illicit drugs worldwide, among them fentanyl and other opioids, methamphetamine, heroin, cocaine, ecstasy and MDMA, plus 38 pill presses and 209 firearms. ",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "DOJ’s Operation TorNado Arrests 354 and Seizes $234 Million in Cash and Crypto",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:35:22Z",
@@ -63,6 +448,31 @@
         "bitcoinmag"
       ],
       "url": "https://bitcoinmagazine.com/news/doj-europol-operation-tornado-234-million"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3cac4f78429180d975fb40e8",
+      "excerpt": "▶ Bitcoin Magazine Bitcoin Faces Two Red Years For the First Time Ever Bitcoin has never posted back-to-back losing years, but 2026 could change that. BMTV’s Chart of the Day looks at Bitcoin’s yearly candles: 2025 closed down about 6%, the first red year directly after a halving, and 2026 is down about 16% with seven weeks to go. To finish green, Bitcoin has to get back above $87,500, about an 18% rally from here. Sean Hagan says the timeline is full of panic hands treating two red candles as proof Bitcoin is struggling, and he wanted to look at the actual data. The numbers, he argues, may tell a different story. Partnership Enquiries: Let’s find your fit! BMTV offers customized sponsorships tailored to your brand’s goals and target audience. Partner with us: https://bitcoinmagazine.com/bmtv Chapters: 00:00 Bitcoin Has Never Posted Back-to-Back Losing Years 00:25 Two Red Candles on the Yearly Chart 01:04 2025 Was the First Red Year After a Halving 01:28 Bitcoin Needs $87,500 to Finish Green 02:23 The ETFs Pulled the Whole Rally Forward 02:50 2021 Had the Cushion, 2025 Did Not 03:23 Year Two Isn’t the Difference, Year One Is 03:48 This Bear Market Has Been Shorter and Shallower 04:40 Even a Red 2026 Would Be the Mildest Post-Top Year 05:01 An 18% Rally Comes Roughly One in Eight ",
+      "first_observed_utc": "2026-11-13T03:26:19Z",
+      "headline": "Bitcoin Faces Two Red Years For the First Time Ever",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:30:06Z",
+      "source_id": "bitcoinmag",
+      "source_ids": [
+        "bitcoinmag"
+      ],
+      "url": "https://bitcoinmagazine.com/videos/bitcoin-faces-two-red-years-for-the-first-time-ever"
     },
     {
       "cmc_ids": [],
@@ -75,7 +485,7 @@
       "excerpt": "North Korean hackers launch memecoins to launder funds stolen in the Binance hack, while xStocks plans to add hundreds of Hong Kong-listed equities in the coming weeks.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "NK hackers join memecoin trenches, xStocks adds Hong Kong equities: Asia Express",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:29:58Z",
@@ -96,7 +506,7 @@
       "excerpt": "Officials attribute more than $400 million in losses over 18 months to FaceStealer, which uses recordings and deepfakes to impersonate trusted contacts.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "DOJ Disrupts North Korean Fake-Call Crypto Theft Scheme",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:18:50Z",
@@ -117,7 +527,7 @@
       "excerpt": "Gemini shares rose more than 6% after hours, though the stock remains down around 75% since the year began.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Gemini trading volume drops 73% as Q3 revenue falls to $41 million",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:18:10Z",
@@ -138,7 +548,7 @@
       "excerpt": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "Here’s what happened in crypto today",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:11:41Z",
@@ -147,6 +557,31 @@
         "cointelegraph"
       ],
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [
+        29420
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "73b0850078b6e9530c846cae",
+      "excerpt": "Description Reduce cached execution metadata by interning virtual table keys per package arena. Runtime types keep owned keys. Object Before After ArenaType 48 bytes 16 bytes Bytecode 48 bytes 24 bytes Function 224 bytes 192 bytes Field handle 48 bytes 16 bytes Pre-rebase release microbenchmarks against 979a0d82a8 showed approximately 50% lower arena reservation for the larger synthetic call-heavy packages. Four existing fixtures stayed within the same arena chunk sizes. Translation was approximately 2–7% slower; execution throughput has not been measured. Test plan New tests cover canonical key sharing across compiled calls, fields and type nodes, structural equality/hashing across arenas, allocation-limit failure, and owned runtime keys surviving package destruction. The ignored translation benchmark can be repeated from external-crates/move/crates/move-vm-runtime : cargo test --release --features testing measure_vtable_key_translation -- --ignored --nocapture Release notes Protocol: Nodes (Validators and Full nodes): gRPC: JSON-RPC: GraphQL: CLI: Rust SDK: Indexing Framework:",
+      "first_observed_utc": "2026-11-13T03:26:20Z",
+      "headline": "sui_v1.85.0_1794530988_ci: [move][move-vm] Intern virtual table keys in the package arena (#28635)",
+      "last_observed_utc": "2026-11-13T03:26:20Z",
+      "match_methods": {
+        "29420": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:06:32Z",
+      "source_id": "sui_releases",
+      "source_ids": [
+        "sui_releases"
+      ],
+      "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794530988_ci"
     },
     {
       "cmc_ids": [],
@@ -159,7 +594,7 @@
       "excerpt": "The FBI says the “FaceStealer” scheme uses prerecorded footage and AI deepfakes of trusted contacts to trick crypto workers into installing malware on video calls—as the DOJ also moves to seize $1.2 billion from the Binance hack.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "North Korea Stole $400 Million in Crypto Using Deepfake Video Calls, DOJ Says",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:06:03Z",
@@ -180,7 +615,7 @@
       "excerpt": "The prediction market operator said the decision was mutual and followed 1789 Capital’s investment in rival Polymarket, denying political considerations.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Kalshi ends Donald Trump Jr. advisory role over Polymarket investment: Reuters",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T22:05:01Z",
@@ -189,6 +624,31 @@
         "cointelegraph"
       ],
       "url": "https://cointelegraph.com/news/kalshi-ends-donald-trump-jr-advisory-role-polymarket-investment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "cmc_ids": [
+        21794
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "aa1b363fc18b6b2c5a8da8ca",
+      "excerpt": "Fill in the framework release config for the 1.50 testnet rollout. Testnet has run gas feature version 54 since the October reset, so its gas schedule differs from the published v1.49.0 one. The old schedule must match it, or gas_schedule::set_for_next_epoch_check_hash aborts the proposal. testnet-reset-2026-10-06.json is a snapshot of testnet's on-chain schedule added in aptos-labs/aptos-networks#223 . Its name isn't a release version, so it's referenced by full URL. Co-Authored-By: Claude Opus 5.5 noreply@anthropic.com",
+      "first_observed_utc": "2026-11-13T03:26:21Z",
+      "headline": "aptos-framework-v1.50.0-rc: [release] Prepare framework release v1.50.0-rc",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
+      "match_methods": {
+        "21794": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T22:02:20Z",
+      "source_id": "aptos_releases",
+      "source_ids": [
+        "aptos_releases"
+      ],
+      "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-framework-v1.50.0-rc"
     },
     {
       "cmc_ids": [
@@ -203,7 +663,7 @@
       "excerpt": "Strategy shares declined Thursday following MSCI’s decision to remove the company from its indexes, as Bitcoin also fell amid a broader crypto market decline.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Strategy stock sheds 5% amid MSCI index removal, Bitcoin sell-off",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -226,7 +686,7 @@
       "excerpt": "Louisiana is the latest state to take on prediction market platforms, joining a legal battle between states and the federal government.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Louisiana sues Kalshi, Robinhood and other prediction markets in escalating regulatory fight",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:44:30Z",
@@ -247,7 +707,7 @@
       "excerpt": "Fable 5.2 leads Scale’s Remote Labor Index, which judges complete deliverables against professional reference work. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Anthropic’s new AI leads freelance benchmarks, yet fails 58% of the tasks",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:40:20Z",
@@ -268,7 +728,7 @@
       "excerpt": "Michael Saylor’s Bitcoin giant is being excluded from major investment benchmarks, raising questions about what qualifies as a business—and whether the decision could slow its Bitcoin buying.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Strategy Made $19.5 Billion in Profit. So Why Is MSCI Removing It From Stock Indexes?",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:26:03Z",
@@ -289,7 +749,7 @@
       "excerpt": "Hi everyone, I’m Khal, founder of LeoDex ( leodex.io ), a no-account swap app. Since May 2025 we’ve been building Zcash support: ZEC swaps from 12 other chains with delivery to shielded addresses, NU6.3 and NU7 support shipped before each activation, and a browser shielded wallet whose signer is now open source. Our application is below and on GitHub. Happy to answer any questions here. Application on GitHub: Retroactive Grant Application - LeoDex · Issue #113 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub Organization or Individual Name LeoDex Additional Team Members The LeoDex team, led by founder Khal ( x.com/khalkaz ). How did you learn about the Lockbox: Coinholder Retroactive Grants Program? The Zcash Community Forum: the Q4 2026 call for proposals. Requested Grant Amount (USD) 40000 Category Non-Wallet Applications Project Summary LeoDex ( leodex.io ) is a no-account crosschain swap app. Since May 2025 we’ve worked on one thing for Zcash: making it easy to get ZEC from other chains, delivered to a shielded address where the route allows it, without connecting a wallet or creating an account. In the last 90 days, ZEC was over 70% of our volume: about $18M. Along the way we shipped NU6.3 and NU7 support before each activation, our own v5 / ZIP-244 signe",
       "first_observed_utc": "2026-11-12T22:45:01Z",
       "headline": "Retroactive Grant Application - LeoDex",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:13:51Z",
@@ -310,7 +770,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Kalshi ends Donald Trump Jr.’s advisory contract over 1789 Capital’s Polymarket investment",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:07:49Z",
@@ -331,7 +791,7 @@
       "excerpt": "▶ Bitcoin Magazine Jensen Huang Steps Down: Are the Cracks Beginning to Show in Circular AI Financing NVIDIA CEO Jensen Huang has resigned after the company’s board met to discuss possible removal, and BMTV hosts Grace Remington and Sean Hagan walk through what that means for the AI buildout. The New York Times reported a second affair, this time with a senior executive reporting directly to him, after an earlier report of a relationship with an alleged Chinese spy. NVIDIA has lost roughly $1 trillion in market value since the first report, according to Axios, and House Republicans are threatening a subpoena over national security concerns. Sean argues the bigger issue is not key-man risk — he says plenty of people inside the company know how the sauce is made — but systematic circular financing, backstopped by chips that are devaluing over time. Partnership Enquiries: Let’s find your fit! BMTV offers customized sponsorships tailored to your brand’s goals and target audience. Partner with us: https://bitcoinmagazine.com/bmtv Chapters: 00:00 Jensen Huang Resigns as NVIDIA CEO 01:01 NVIDIA Is Backstopping $108.5 Billion 01:30 Circular Financing Risk, Not Key Man Risk 03:13 Growing Faster Than Their Balance Sheets 04:36 The OpenAI Ohio Deal and SoftBank 05:48 Investors Rioted at $25",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Jensen Huang Steps Down: Are the Cracks Beginning to Show in Circular AI Financing",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T21:00:13Z",
@@ -352,7 +812,7 @@
       "excerpt": "Industry groups argued in court filings that Illinois’ crypto tax, which applies even when a transaction yields no profit, could raise compliance costs and violate federal law.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "US Justice Department, business groups and DeFi firms challenge Illinois crypto tax",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T20:58:06Z",
@@ -373,7 +833,7 @@
       "excerpt": "Hi all, Happy to launch private.zecblock.com , a version of ZecBlock where the server doesn’t learn what you look up. ZecBlock Private uses PIR (Private Information Retrieval) . How it works Your browser encrypts the search before sending it. The transaction ID, block or address never leaves your device in readable form. The server works through the whole dataset to answer, without knowing which record you asked for. It sends back one encrypted answer, and only your browser can decrypt it. A search for something that exists looks the same as a search for something that doesn’t. As far as we know, it’s the first full block explorer (transactions, blocks and addresses) built on PIR. Previous PIR explorer demos covered narrower lookups, such as address balances. Check it yourself Open your browser’s developer tools (Inspect → Network) and search for something. Every request of the same kind is the same size, and none of them contains what you typed. After each search, the site also shows a short summary of exactly what your browser sent. Details Data stays close to the chain tip: new blocks are published every few seconds, typically within about 20 seconds of the regular explorer. Each data publication is signed, and your browser checks every result against it. Searches are heavier ",
       "first_observed_utc": "2026-11-12T22:45:01Z",
       "headline": "ZecBlock Private: look up transactions, blocks and addresses with PIR",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T20:51:08Z",
@@ -394,7 +854,7 @@
       "excerpt": "The lawmaker's account contrasts with a semiconductor trade group's warning about mandatory safeguards on advanced AI chips.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Foster Says Nvidia Privately Deemed Chip Tracking Feasible",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T20:38:31Z",
@@ -417,7 +877,7 @@
       "excerpt": "Trezor CTO Tomáš Sušánka explains the trade-offs of Bitcoin’s leading post-quantum signature scheme.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Why the Path to Quantum Resistance Runs Uphill for Bitcoin Wallet Makers",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -442,7 +902,7 @@
       "excerpt": "▶ Bitcoin Magazine Peter Schiff on the Bitcoin Crash: “Get the Hell Out” Challenged on why two or three down years would matter for Bitcoin when gold and the Nasdaq have had similar streaks before recoveries, Peter Schiff says the difference is the backdrop. When a market can’t go up on the best news it has ever had, he argues, that normally indicates that it’s going to go down. He calls Bitcoin “all hype,” with no intrinsic value, income, or dividends, and says much of the supply now sits with ETF investors and Bitcoin treasury companies rather than people who want to use it as money. All of that hot money, he warns, is going to exit, the market will go down faster than it went up, and he expects a massive washout. Even long-term bulls, he says, will have cheaper opportunities after leveraged speculators are cleared out, and he adds that this is not the time to be hodling. Square: Get up to $200 off Square hardware when you sign up at http://square.com/go/bmtv ! Offer expires December 31, 2026 at 11:59 pm PST. Offer for $40 off the cost of one Square Stand, $75 off the cost of one Square Terminal, $100 off the cost of one Square Handheld, or $200 off the cost of one Square Register, excluding applicable taxes. Limited to one discount per product type per seller account. Each cod",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Peter Schiff on the Bitcoin Crash: “Get the Hell Out”",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -467,7 +927,7 @@
       "excerpt": "The default Privacy Rings prover protects secret inputs inside an AWS enclave, while wallets approve the code and policies behind that protection. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Helius encrypts Solana transfers without removing operator trust",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -492,7 +952,7 @@
       "excerpt": "The US securities clearinghouse plans to bring tokenized stocks to Solana in 2027, but analysts say restrictions could limit adoption.",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "DTCC Plans Solana Expansion as Wallet Rules Limit Access",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -517,7 +977,7 @@
       "excerpt": "One Venue, One Chain Over this past week, three U.S. tokenized stock venues picked three different blockchains to launch on. The WSJ reported Monday that NYSE chose Avalanche as the sole settlement chain for its planned 24/7 platform. On November 4, $CNTN became the first U.S. equity to trade under the SEC’s Innovation Exemption. Five […]",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Avalanche Owns Five Percent of Tokenized Stocks",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {
         "5805": "FULL_NAME"
       },
@@ -542,7 +1002,7 @@
       "excerpt": "Grant Application: Paeyme - Bringing Private Payments Closer to Everyday Use in Africa What would it take to make private digital payments part of everyday life across Africa? Hello Zcash Community! I’m Emmanuel, founder of Paeyme , a fintech platform being developed to simplify how individuals and businesses manage payments. Across Africa, making payments can still mean navigating different platforms, payment restrictions, and fragmented financial systems, particularly when transactions involve more than one country. At Paeyme, we’re exploring how privacy-preserving technology can help create a more connected payment experience. That’s why we’re proposing to bring Zcash into the Paeyme ecosystem , making shielded ZEC payments accessible to both consumers and merchants. Imagine being able to: Send and receive ZEC privately through a consumer application. Pay a merchant using Zcash while protecting sensitive transaction information. Allow businesses to manage payment requests, track confirmations, and reconcile transactions without unnecessarily exposing their financial activity. Beyond Paeyme, we also plan to develop open-source integration components that other developers can build upon. Our bigger vision is to make financial privacy practical, accessible, and useful in everyday",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Grant Application: Paeyme - Privacy-Preserving Zcash Payments for Consumers and Merchants Across Africa",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -562,10 +1022,10 @@
         "GOVERNANCE"
       ],
       "event_id": "73347b041488095e44373fb1",
-      "excerpt": "A Zcash governance trilogy, part 3 of 3. Or navigating the dark forest without turning on all the lights TL;DR: In a private system we cannot know who holds voting power, how many people sit behind it, or whom they are connected to. The answer is not to abolish the privacy. It is to bound what any vote can decide, so that capturing one voting mechanism cannot confer control over the whole system. Part 1: An Ode to Rough Consensus . Part 2: When We Disagree: Making Rough Consensus Work . Zcash is building a parallel financial system, outside of but adjacent to the existing one. Its governance, however, remains entirely inside human institutions. That private financial system starts from a different assumption from the one we have become accustomed to elsewhere: privacy is normal. In such a system, private by default should be the ordinary situation, not a special mode for people with something to hide. Traditional finance already runs part of its markets this way. Dark pools let large investors trade without displaying their orders, so that others cannot trade against them. Dark does not mean lawless. The orders are hidden, but the venue’s rules are published, trades are reported afterwards, and regulators publish how much trading goes dark. But a dark pool’s participants are hidd",
+      "excerpt": "A Zcash governance trilogy, part 3 of 3. Or navigating the dark forest without turning on all the lights TL;DR: In a private system we cannot know who holds voting power, how many people sit behind it, or whom they are connected to. The answer is not to abolish the privacy. It is to bound what any vote can decide, so that capturing one voting mechanism cannot confer control over the whole system. Part 1 : An Ode to Rough Consensus . Part 2 : When We Disagree: Making Rough Consensus Work . Part 3 : Governance in a Shielded World. Zcash is building a parallel financial system, outside of but adjacent to the existing one. Its governance, however, remains entirely inside human institutions. That private financial system starts from a different assumption from the one we have become accustomed to elsewhere: privacy is normal. In such a system, private by default should be the ordinary situation, not a special mode for people with something to hide. Traditional finance already runs part of its markets this way. Dark pools let large investors trade without displaying their orders, so that others cannot trade against them. Dark does not mean lawless. The orders are hidden, but the venue’s rules are published, trades are reported afterwards, and regulators publish how much trading goes da",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Governance in a Shielded World",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T19:31:18Z",
@@ -586,7 +1046,7 @@
       "excerpt": "GitHub application: Retroactive Grant Application - ZTrace · Issue #115 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub ## Application Owners @ELLA0VICTOR ## Organization or Individual Name Ella Victor ## Additional Team Members None. I developed ZTrace with AI coding assistance, directed the implementation, tested the developer workflow, and published the project and documentation. ## How did you learn about the program? The Q4 2026 call for proposals on the Zcash Community Forum. ## Requested Grant Amount (USD) $2,000 ## Category Infrastructure ## Project Summary ZTrace helps developers find supported paths where private Zcash wallet information reaches application logs, analytics, and network requests. The completed open-source MVP includes a local JavaScript/TypeScript scanner, controlled browser disclosure tests, supported Zcash artifact inspectors, reusable APIs, and public documentation. ## Project Description ZTrace is an open-source privacy analysis toolkit for developers building applications on Zcash. It helps them find places where their application code could expose private wallet information through logs, analytics, error reports, or network requests. It is designed for JavaScript and TypeScript projects, including payment interfaces, merchant a",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - ZTrace",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T19:30:51Z",
@@ -610,7 +1070,7 @@
       "excerpt": "Bitcoin and Ethereum fell to three-month lows Thursday, deepening a cryptocurrency selloff that has erased $550 billion in market value since October. Bitcoin slumped to $71,317, its lowest level since August, while Ethereum briefly fell below $2,000 to touch $1,983. The declines have pushed the broader crypto market's valuation from approximately $2.94 trillion in early… Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Bitcoin and Ethereum sink to 3-month lows, but a bigger crypto selloff may be ahead",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME",
         "1027": "FULL_NAME"
@@ -636,7 +1096,7 @@
       "excerpt": "▶ Bitcoin Magazine Simon Dixon: What It Would Take for Me to Sell My Bitcoin for Gold Simon Dixon, CEO and co-founder of BnkToTheFuture, tells BMTV there are only three things that would make him sell all of his Bitcoin and buy gold. Since 2011, he says Bitcoin has done three things incredibly well: you can earn and hold it in self-custody, spend it peer-to-peer without a government in the middle, and rely on a fixed supply of 21 million as a hedge against long-term debasement. If any of those three is ever called into question, he would sell immediately. The real battle, in his view, is not whether Bitcoin gets adopted — he says institutional adoption is on a trajectory we have never seen — but whether custodians, Wall Street-owned miners, and treasury companies end up centralizing the network. SALT Lending: Don’t sell your Bitcoin. Borrow against it. BMTV viewers borrow from 6.99% APR, a half point below SALT’s standard 7.49%. No credit check, no origination fees, no prepayment fees. The original Bitcoin-backed lender, lending against BTC since 2016. GET YOUR BMTV OFFER: https://saltlending.com/bmtv/?utm_source=bmtv&utm_medium=youtube&utm_campaign=bmtv_offer SALT is the official Liquidity Sponsor of BMTV. SALT loans are originated by SALT Lending LLC (f/k/a SALT Master Fund II,",
       "first_observed_utc": "2026-11-12T22:44:58Z",
       "headline": "Simon Dixon: What It Would Take for Me to Sell My Bitcoin for Gold",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -659,7 +1119,7 @@
       "excerpt": "Bitcoin Magazine Binance Says It Has Fully Covered the $6.34 Billion Hack With Company Funds Binance said Thursday it has completed coverage of the $6.34 billion Oct. 29 hack from company funds, two weeks after the largest crypto theft on record, even as withdrawals continue to reopen in phases. In a Thursday announcement, the exchange wrote that it “has completed coverage of assets impacted in the security incident” and published a new proof-of-reserves snapshot. It repeated the same message on X. That wording matters. Coverage means Binance has replaced the affected tokens from its own books, not that it has recovered the stolen coins from the attackers. The exchange said it committed more than $6.34 billion in company funds and bought the affected tokens through market and over-the-counter channels, drawing on a partial deployment of its Secure Asset Fund for Users (SAFU), a portion of its futures insurance fund above the level required under its risk-management framework, and its corporate treasury. Binance has also committed to replenishing SAFU to about $1 billion after that partial draw, a step it said would keep the fund fully resourced as an emergency user-protection reserve. A very small number of tokens the exchange no longer lists were also affected. Binance said thos",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Binance Says It Has Fully Covered the $6.34 Billion Hack With Company Funds",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T19:12:14Z",
@@ -680,7 +1140,7 @@
       "excerpt": "Nvidia’s longtime finance chief inherits its first leadership transition in 33 years, bringing decades of technology experience and Wall Street credibility to a company facing a very public leadership test.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Who Is Colette Kress, Jensen Huang’s Successor as Nvidia CEO?",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:55:03Z",
@@ -701,7 +1161,7 @@
       "excerpt": "Closed-ended vaults would exchange immediate access for borrower-funded income, while optional loss cover and share-sale conditions shape the risk. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "XRP proposed lending vaults lock deposits and expose holders to risk",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:50:20Z",
@@ -722,7 +1182,7 @@
       "excerpt": "The exchange says it has closed the remaining gap in customer backing, but users must wait for the new snapshot's cryptographic proof to verify it.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Binance Says Hack Assets Covered, Reserve Proof Pending",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:41:56Z",
@@ -743,7 +1203,7 @@
       "excerpt": "Crypto wallet firm Trezor has cut its reseller network by 80% following the discovery of more spy implants in devices sold by Malaysian vendor CryptoBilis. Trezor’s latest update on the spyware incident revealed it has implemented stricter rules for vendors in order to protect its supply chain. However, only 20% of vendors were able to abide by the new rules that focus on “how devices are sourced, stored and who has access to them.” Trezor stressed, however, that the dropped resellers “were trustworthy and posed no immediate threat.” Trezor says its new update renders spy implants useless Trezor also claims to have released an update on November 11 that stops the implants recording data and renders them “useless.” A spokesperson for the company told Protos, “The implant listens to the communication between the MCU and the display and triggers the capture when it sees a specific sequence.” In order to stop the sequence trigger, which is a wallet’s seed phrase, Trezor claims it “changed the order of the commands sent to the display” and that it can do this “without any effect on the displayed screen.” Trezor shared the interior of one of the tampered CryptoBilis-sourced wallets. Read more: Trezor reveals Malaysian reseller sold wallet with spyware Despite this, Trezor warned Crypto",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Trezor cuts reseller network by 80% after finding more spy implants",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:32:00Z",
@@ -764,7 +1224,7 @@
       "excerpt": "BA Labs reports 771 open vaults and 376.33 million USDS in debt. Borrowers could still repay and manage collateral, but not mint more.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Sky Advisor Proposes Halting New Core Vault Borrowing",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:30:26Z",
@@ -785,7 +1245,7 @@
       "excerpt": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:30:00Z",
@@ -806,7 +1266,7 @@
       "excerpt": "Acting as Core Council Risk Advisor, BA Labs recommends the following values for the Core Vault parameters: Recommended parameters ETH-A DC-IAM line (max DC): Decrease for 15B from 15B to 0 ETH-B DC-IAM line (max DC): Decrease for 250M from 250M to 0 ETH-C DC-IAM line (max DC): Decrease for 2B from 2B to 0 WSTETH-A DC-IAM line (max DC): Decrease for 750M from 750M to 0 WSTETH-B DC-IAM line (max DC): Decrease for 1B from 1B to 0 Scope ETH-A, ETH-B, ETH-C, WSTETH-A and WSTETH-B. The WBTC-A, WBTC-B, and WBTC-C vault types already have a line of 0 and are not part of this change. Rationale Over the last 365 days, debt across the five vault types fell by 126.68M USDS (-25.18%) to 376.33M USDS, and the open vault count fell by 177 to 771, with positions closing faster than new ones opening. Over the last 90 days debt fell a further 58.97M USDS. In order to reduce potential attack vectors, BA Labs proposes setting debt ceilings to 0, stopping all new minting of debt through Core vaults. It is important to note that existing vaults are not affected : they can still repay, add collateral and withdraw, and remain subject to liquidation as before. Analysis Aggregate debt Aggregate debt over the last year peaked at 537.51M USDS around 2026-06-14 and has fallen 161.18M (-29.99%) since then, t",
       "first_observed_utc": "2026-11-12T20:05:49Z",
       "headline": "Core Vaults parameter changes - Set DC-IAM line to 0 on ETH-A, ETH-B, ETH-C, WSTETH-A, and WSTETH-B",
-      "last_observed_utc": "2026-11-12T22:45:05Z",
+      "last_observed_utc": "2026-11-13T03:26:27Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:19:07Z",
@@ -827,7 +1287,7 @@
       "excerpt": "BitLicense holders and crypto trust companies must prepare annually approved marketing policies covering risk disclosures, paid promoters and misleading claims.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "NYDFS Sets May 2027 Deadline for Crypto Ad Policies",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:09:17Z",
@@ -848,7 +1308,7 @@
       "excerpt": "Nvidia shares tumbled after Jensen Huang’s exit, while AMD and Broadcom climbed and Nvidia-backed CoreWeave sank. Here's how the AI trade is shaping up.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Nvidia, AMD, Broadcom: The AI Stock Winners and Losers After Jensen Huang’s Ousting",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:06:03Z",
@@ -869,7 +1329,7 @@
       "excerpt": "NYDFS issued guidance outlining expectations for crypto firms to establish policies and procedures governing advertising and marketing.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "NYDFS sets fresh advertising standards for crypto firms",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T18:03:57Z",
@@ -890,7 +1350,7 @@
       "excerpt": "The DOJ, the U.S. Chamber of Commerce, SIFMA and a crypto coalition led by a16z, Paradigm and Uniswap filed briefs backing a lawsuit to strike down the state’s 0.2% levy on digital asset transactions.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Illinois Crypto Tax Draws Unlikely Alliance of DOJ, Banks and DeFi",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:46:02Z",
@@ -913,7 +1373,7 @@
       "excerpt": "Zcash fell below $1,000 as leveraged traders abandoned bullish positions and selling pressure intensified. Data from CoinMarketCap showed ZEC at approximately $965 on Nov. 12, after a 24-hour low near $953. The decline has exposed vulnerabilities in ZEC's market structure, with research showing heavy selling across derivatives exchanges and fresh deposits from previously inactive wallets.… Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Zcash loses $1,000 as dormant wallets send ZEC coins to exchanges",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -936,7 +1396,7 @@
       "excerpt": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:45:00Z",
@@ -960,7 +1420,7 @@
       "excerpt": "Bitcoin fell as low as $71,200 as Jensen Huang quit Nvidia and MSCI confirmed Strategy's removal, with $750M in crypto positions liquidated.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Bitcoin falls to 12-week low as Jensen Huang’s exit from Nvidia rattles markets",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -983,7 +1443,7 @@
       "excerpt": "Intro Hi everyone, firstly, thank you for your continued support. I really appreciate it. If anyone has any feedback or would like to jump on a call to discuss my ongoing work, please reach out. If you’re not following yet, please do - Connaugh 🛡️🎥 (@zkMarketer) / X My full grant request can be found - Open issue Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram Retroactive Grant Application - 9 zkMarketer Videos opened 05:20PM - 12 Nov 26 UTC ZKConnaugh ### Terms and Conditions - [x] I agree to the [Grant Agreement](https://9ba4718 … c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_6ff6db4095fd4c4ba21babec361e927e.pdf) terms if funded - [x] I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD - [x] I agree to disclose conflicts of interest - [x] I understand that this grant program is only eligible for completed work, as it is a retroactive grant program. Applications for planned or partially completed work will not be considered. All completed work will be verified and accepted by its intended users or their representatives, who will confirm that the outputs meet the required quality, functionality, and usability before the work is listed as an opt",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - zkMarketer 9 Videos",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:32:31Z",
@@ -1006,7 +1466,7 @@
       "excerpt": "GitHub application: Retroactive Grant Application - zec-agent-wallet: shielded Zcash payments for AI agents · Issue #112 · Financial-Privacy-Foundation/ZcashCoinholderGrantsProgram · GitHub Answers to the FPF review questions (ZECATHON overlap, completion status, the mainnet txid and the hours breakdown with commit links) are in the comments on the GitHub issue. Organization or Individual Name Sofiia (GitHub @Sofiia7 ), individual Additional Team Members - Name: N/A Role: Solo project Background: One developer. Code was written with AI coding assistance (Claude Code); design decisions, testing on testnet and mainnet, releases and documentation are mine. Responsibilities: N/A How did you learn about the program The Q4 2026 call for proposals on the Zcash Community Forum. Requested Grant Amount (USD) $4,800 Category Wallets Project Summary zec-agent-wallet (zaw) is a local shielded Zcash light wallet with an MCP server that lets an AI agent pay bills its owner approved, in shielded ZEC, without the model ever seeing keys, addresses, transaction ids or the memos counterparties write. It is released as v0.1.2 (Rust, MIT) with Windows and Linux binaries and was tested end to end on testnet and with a mainnet payment made by a Claude agent. Project Description AI agents are starting to",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Retroactive Grant Application - zec-agent-wallet: shielded Zcash payments for AI agents",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -1029,7 +1489,7 @@
       "excerpt": "Description A few small nit cleanups on the synchronizer component in consensus. Behavior change: fetch_blocks_from_peers now returns as soon as no request is in flight, instead of idling until the 4s FETCH_FROM_PEERS_TIMEOUT. This affects two cases: no request was sent because every selected block was already locked, or the last outstanding request failed with no peer left to retry on. In both cases no further network request is sent, and a failed request still waits the full 2s request timeout, so periodic runs cannot repeat faster than every ~2s on failures. The only new cost is local: while all selected blocks are locked, the scheduler polls get_missing_blocks at its default 200ms cadence instead of every 4s, which is the same cadence it already uses during fast successful sync. Added a test covering both cases. Test plan CI/PT Release notes Check each box that your changes affect. If none of the boxes relate to your changes, release notes aren't required. For each box you select, include information after the relevant heading that describes the impact of your changes that a user might notice and any actions they must take to implement updates. Protocol: Nodes (Validators and Full nodes): gRPC: JSON-RPC: GraphQL: CLI: Rust SDK: Indexing Framework: Co-authored-by: Claude Fable",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "sui_v1.85.0_1794509787_ci: [Consensus] small synchronizer cleanups (#28232)",
-      "last_observed_utc": "2026-11-12T22:44:59Z",
+      "last_observed_utc": "2026-11-13T03:26:20Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:17:35Z",
@@ -1050,7 +1510,7 @@
       "excerpt": "Nvidia has announced that Jensen Huang will be resigning as CEO after engaging in affairs with a Chinese spy and one of his direct reports. Huang will be replaced by Nvidia’s current CFO Colette Kress, who will take the role on an interim basis. The outgoing CEO’s first reported affair was with Alice Huang, also known as Huang Le, who served as an executive at Megaspeed. She’s also reportedly an intelligence agent for China. How Alice Huang helped Nvidia with Chinese export restrictions Read more: Can Nvidia fire CEO Jensen Huang over his affair? Jensen’s second affair was reportedly with Kimberly Powell. Powell is Nvidia’s vice president of healthcare and is one of Jensen’s direct reports at Nvidia. Chart of NVDA during this scandal. Reportedly , the Commerce Department, led by Commerce Secretary Howard Lutnick, had previously halted an investigation into Megaspeed, referring it to the Department of Justice, and Lutnick had reportedly been warned about the relationship between Jensen and Alice. The Commerce Department is also reportedly close to finalizing a rule that it hopes will limit China’s remote access to GPU clusters. Donald Trump, meanwhile, has suggested that “there is only one man to take his place — TIM COOK of Apple.” Got a tip? Send us an email securely via Protos ",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "LIVE: Jensen Huang resigns from Nvidia after affairs with spy, employee",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:16:08Z",
@@ -1071,7 +1531,7 @@
       "excerpt": "Nvidia’s founder is out, and tech and crypto leaders are fuming. Some fear for open-source AI, others question the board, while Elon Musk says he’d be honored to hire Huang.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "'A Massive Mistake': Tech, AI and Crypto Founders React to Jensen Huang’s Nvidia Exit",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T17:14:42Z",
@@ -1092,7 +1552,7 @@
       "excerpt": "Payments generated $10.9 million in Q3, while Exodus cut staff and restarted U.S. payment card issuance.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Exodus’ ‘cost reset is real’ as payments offset crypto wallet slowdown, StoneX says",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:55:52Z",
@@ -1113,7 +1573,7 @@
       "excerpt": "This is the twenty-fourth Hub Weekly Thursday recap, straight from the Hub Unit team, per the cadence we committed to in the From Chaos to Stability to Growth post. Every Thursday, we will call out significant Cosmos Hub updates on the forum, with a short companion thread on X, recapping announcements, live events like validator or community calls, and ecosystem updates! For more info, see the linked posts, and contact me or @RoboMcGobo on Telegram to submit news for the weekly. This week Robo is out, so I am covering. This week: IBC joins LF Decentralized Trust, the November validator call, the latest on USDC, Proposal 1061, and Node101’s Validatier dashboard. IBC is now an LF Decentralized Trust project : what changes, what does not, and what it means for the Hub and ATOM Yesterday’s validator call : Prop 1060 closed out, Cosmos KMS and the remote signer survey, and commission now checked at every block for the delegation program USDC migration : 84.56M USDC is still on Noble as of Wednesday, with dYdX holding most of it Proposal 1061 : the Gaia v29.1.0 upgrade is on chain, voting ends November 17 Validatier : Node101’s dashboard of validator reward and commission flows on the Hub The team continues to work on the Tokenomics update for the last week of November , as promised, t",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Hub Weekly Update #24: November 12, 2026",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:22Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:55:33Z",
@@ -1134,7 +1594,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:45:52Z",
@@ -1155,7 +1615,7 @@
       "excerpt": "Recently came across this thread that says $4.17B of $4.6B (91% of total supply) is custodied at one entity, Alpaca Securities LLC. Aave V4 Base Equities hub lends USDC against 8 Coinbase stocks, all of which are again custodied by the same US broker dealer, Alpaca. Every limit on the hub is set per reserve. Nothing in the deployment ARFC, or Coinbase assessment or Risk framework says what happens to the 8 reserves together if the custodian has a major stress condition. Considering the extreme centralization at custodian level, does the DAO think a custodian level limit makes sense? If not, why is the per-reserve sizing sufficient? Thanks. 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Should Equities Hub carry a custodian-level exposure limit? Every reserve on it is custodied at Alpaca",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:45:47Z",
@@ -1176,7 +1636,7 @@
       "excerpt": "AlphaGenome 2 tailors predictions to cell types and states, with DeepMind reporting benchmark gains and reproduction of established disease biology. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Google’s new AI reveals hidden genetic clues in new immune-cell test",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:45:25Z",
@@ -1199,7 +1659,7 @@
       "excerpt": "Bitcoin Magazine Israel Discount Bank to Let Customers Trade Bitcoin in App Starting Nov. 26 Israel Discount Bank said Wednesday that from Nov. 26 it will let eligible customers buy, hold and sell bitcoin and ether in the bank’s mobile app, a launch that would beat larger rival Bank Leumi if it stays on schedule. The Tel Aviv-listed lender described the service as a first for Israel’s banking system in a Nov. 11 statement. Customers will be able to trade the two assets alongside stocks and bonds, without opening an account at an outside exchange or managing a separate digital wallet. The offer is limited to private, not corporate, customers who are Israeli residents, 18 or older, and whose accounts are already set up for securities trading, subject to the bank’s terms. “For the first time in the banking system, Discount Bank will allow trading in digital currencies directly from the bank account in a simple and secure manner, without the need for complex dedicated digital wallets,” Avi Levi, CEO of Discount Group, said in the statement. “This is a first step toward establishing advanced technological infrastructure in the digital currency space and developing the bank’s capabilities in this area.” The rollout was led by Elad Fisher, head of the bank’s financial markets division. ",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Israel Discount Bank to Let Customers Trade Bitcoin in App Starting Nov. 26",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1222,7 +1682,7 @@
       "excerpt": "The Digital Crime Task Force aims to proactively trace illicit USDT on Tron and freeze funds before they move—just weeks after the trio’s near-identical T3 unit, built with rival firm TRM Labs, quietly collapsed.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Tron, Tether and Chainalysis Form a New Crypto-Crime Task Force—Replacing One That Just Collapsed",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:36:02Z",
@@ -1231,31 +1691,6 @@
         "decrypt"
       ],
       "url": "https://decrypt.co/383139/tron-tether-chainalysis-new-crypto-crime-task-force-replacing-trm"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d1f51dde3b5bb5baeb511ecc",
-      "excerpt": "Bitcoin Magazine JPMorgan Lifts Its Strategy (MSTR) Stake 36% and Holds $540 Million in Bitcoin ETFs JPMorgan Chase raised its Strategy (MSTR) stake 36% in the third quarter, a Form 13F filed Thursday shows, lifting the position to 848,932 shares worth $131.3 million at Sept. 30, weeks before an MSCI index exit. That is up 224,545 shares from the 624,387 JPMorgan reported at June 30, when the same holding was valued at $57.87 million. Part of the dollar jump is the stock. Strategy’s implied price on the two filings rose from $92.68 at June 30 to $154.67 at Sept. 30, so the disclosed stake more than doubled in value even though the share count rose 36%. The same filing shows a much larger bitcoin ETF line. JPMorgan held 11,408,930 shares of BlackRock’s iShares Bitcoin Trust (IBIT) worth $539.98 million at Sept. 30, up 1,001,295 shares, or 9.6%, from 10,407,635 shares worth $355.73 million three months earlier. Rounded to the nearest million, that IBIT line is the $540 million bitcoin ETF stake. Smaller positions in other spot funds added a little more. The bank also held 155,785 shares of Grayscale’s Bitcoin Mini Trust worth $5.76 million and 66,264 shares of the Bitwise Bitcoin ETF worth $3.00 million, plus much smaller lines in Fidelity’s Wise Origin Bitcoin Fund, Grayscale’s Bi",
-      "first_observed_utc": "2026-11-12T20:01:26Z",
-      "headline": "JPMorgan Lifts Its Strategy (MSTR) Stake 36% and Holds $540 Million in Bitcoin ETFs",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T16:19:17Z",
-      "source_id": "bitcoinmag",
-      "source_ids": [
-        "bitcoinmag"
-      ],
-      "url": "https://bitcoinmagazine.com/markets/jpmorgan-lifts-strategy-mstr-stake-36"
     },
     {
       "cmc_ids": [],
@@ -1268,7 +1703,7 @@
       "excerpt": "requesting tokenlogic API key request have messaged martin@tokenlogic.xyz multiple times. wasn’t sure where else to go sincerely 1 post - 1 participant Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Tokenlogic API key request",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
+      "last_observed_utc": "2026-11-13T03:26:23Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:18:43Z",
@@ -1289,7 +1724,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "op-interop-filter/v0.3.0-rc.4",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
+      "last_observed_utc": "2026-11-13T03:26:21Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:09:30Z",
@@ -1306,32 +1741,11 @@
       "event_classes": [
         "GENERAL_NEWS"
       ],
-      "event_id": "dc6b50efa669729d0be9bf87",
-      "excerpt": "Bitcoin Magazine Crypto Exchange Gemini Sells U.K. and EU Units to KAST for Under $10 Million Gemini Space Station has sold its already shuttered U.K. and European operations to Singapore stablecoin payments firm KAST for less than $10 million, according to CoinDesk reporting , as the exchange prepares to report third-quarter results after Thursday’s close. Gemini declined to comment. A spokesperson for KAST would not discuss the transaction, but said the company is actively looking at acquisitions as its revenue and footprint grow. Neither firm has issued a public confirmation of a sale, and no regulator has announced a change-of-control approval. The disposal, if confirmed, would close a retreat Gemini laid out in February. On Feb. 4, the Nasdaq-listed company, known as Gemini (GEMI), approved a plan to exit and wind down its operations in the United Kingdom, the European Union and other European jurisdictions, and Australia, as part of a broader effort to cut expenses and support a path to profitability. It said it would keep operating in the United States and Singapore. The plan included a reduction in force of up to 200 employees in Europe, the United States and Singapore, or about 25% of Gemini’s global workforce as of that date. The company estimated about $11 million in p",
-      "first_observed_utc": "2026-11-12T20:01:26Z",
-      "headline": "Crypto Exchange Gemini Sells U.K. and EU Units to KAST for Under $10 Million",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T16:07:57Z",
-      "source_id": "bitcoinmag",
-      "source_ids": [
-        "bitcoinmag"
-      ],
-      "url": "https://bitcoinmagazine.com/news/gemini-said-to-sell-uk-eu-units-kast"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
       "event_id": "ad09c8bfb8dc7eb12f1e1c88",
       "excerpt": "Visa and eligible companies can now use Western Union’s USDPT—issued and custodied by the federally chartered Anchorage Digital Bank—to settle VisaNet obligations.",
       "first_observed_utc": "2026-11-12T20:01:25Z",
       "headline": "Anchorage Digital’s Stablecoins Can Now Settle Payments on Visa’s Network",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:18Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:01:03Z",
@@ -1352,7 +1766,7 @@
       "excerpt": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
       "first_observed_utc": "2026-11-12T20:01:26Z",
       "headline": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
+      "last_observed_utc": "2026-11-13T03:26:19Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-12T16:00:00Z",
@@ -1361,422 +1775,6 @@
         "fed_press"
       ],
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "LEGAL_CORPORATE"
-      ],
-      "event_id": "6ae6b38895167b4420adaeea",
-      "excerpt": "Anchorage Digital and Visa will support select Anchorage-issued stablecoins as settlement assets on VisaNet, starting with USDPT.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Visa adds Western Union’s USDPT stablecoin to its settlement network in Anchorage tie-up",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T16:00:00Z",
-      "source_id": "theblock",
-      "source_ids": [
-        "theblock"
-      ],
-      "url": "https://www.theblock.co/news/business/2026-11-12-visa-adds-western-unions-usdpt-stablecoin-to-its-settlement-network-in-anchorage-tie-up-438520"
-    },
-    {
-      "cmc_ids": [
-        5176
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2ca143aa9cf643dd6c1d4e24",
-      "excerpt": "KPMG counted every gold bar behind XAUT, making it Tether's second stablecoin to complete a full audit by a Big Four accounting firm.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Tether Gold Gets Clean KPMG Audit Confirming $2.2B in Physical Gold Backing",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "5176": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:55:38Z",
-      "source_id": "decrypt",
-      "source_ids": [
-        "decrypt"
-      ],
-      "url": "https://decrypt.co/383137/tether-gold-gets-clean-kpmg-audit-confirming-2-2b-in-physical-gold-backing"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "17b53347ac41d563066cf93c",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:28Z",
-      "headline": "op-conductor/v0.9.8-rc.1",
-      "last_observed_utc": "2026-11-12T22:45:00Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:52:45Z",
-      "source_id": "optimism_releases",
-      "source_ids": [
-        "optimism_releases"
-      ],
-      "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-conductor%2Fv0.9.8-rc.1"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8f2b2151b3449e080d9f0f89",
-      "excerpt": "Bitcoin fell to its lowest leve since Aug. 20 as tech stocks slid following the resignation of Nvidia CEO Jensen Huang.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Bitcoin slides toward $71K as Nvidia stock tumbles after Huang steps down",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:46:06Z",
-      "source_id": "cointelegraph",
-      "source_ids": [
-        "cointelegraph"
-      ],
-      "url": "https://cointelegraph.com/markets/bitcoin-price-drops-71k-stocks-nvidia-huang-resignation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "cmc_ids": [
-        5426
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "5d2bf713adf91d0089d0d4dc",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "DTCC adds Solana to Wall Street tokenization plans, targeting 2027 rollout",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "5426": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:45:48Z",
-      "source_id": "coindesk",
-      "source_ids": [
-        "coindesk"
-      ],
-      "url": "https://www.coindesk.com/business/2026/11/12/dtcc-adds-solana-to-wall-street-tokenization-plans-targeting-2027-rollout"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "DERIVATIVES"
-      ],
-      "event_id": "3fe4113208265173ea0dc47e",
-      "excerpt": "Both demand components remain negative, leaving Bitcoin’s tentative stabilization dependent on persistent spot improvement and easing futures weakness. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Bitcoin’s spot-demand signal is improving. A bigger futures slump is drowning it out",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:45:21Z",
-      "source_id": "cryptoslate",
-      "source_ids": [
-        "cryptoslate"
-      ],
-      "url": "https://cryptoslate.com/bitcoin-spot-demand-futures-slump/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1761db410bb1d89d6762571e",
-      "excerpt": "Summary This proposal introduces post-quantum signature aggregation with leanVM in shadow mode . BLS remains the only authority for aggregates: consensus validity depends on BLS alone, exactly as today. leanVM aggregates and proofs are produced and verified alongside BLS, but their results have no effect on consensus. They are only measured, compared, and reported. When PQ/AI day arrives, an emergency hard fork simply retires BLS and enables leanVM in full. By “PQ/AI day” we mean the point at which quantum computers, or AI-assisted cryptanalysis, make BLS unsafe to rely on. Motivation Ethereum has to be ready for post-quantum signatures well before BLS is actually broken. Waiting until the last moment would mean deploying new, complex code to mainnet in a hurry. Giving leanVM authority early has its own risk: leanVM is new code that hasn’t been tested in production. However carefully it is built and audited, we can’t rule out a soundness bug that accepts an invalid proof, or a liveness bug that rejects a valid one. The main benefit of shadow mode is that Ethereum isn’t put at risk from a leanVM bug before PQ/AI day arrives. Because leanVM has no authority, a leanVM bug can’t break Ethereum’s security or halt the chain. At the same time, leanVM runs on mainnet under real load, so ",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "EIP Draft: Run leanVM aggregation in shadow mode alongside BLS until PQ/AI day",
-      "last_observed_utc": "2026-11-12T22:45:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:38:44Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/eip-draft-run-leanvm-aggregation-in-shadow-mode-alongside-bls-until-pq-ai-day/30367"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7e693ff3ceb831e292f01d6e",
-      "excerpt": "Indian crypto exchange Unocoin flagged outgoing BitGo ether transactions as a multi-day login suspension continues.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Unocoin ‘login suspension’ continues as exchange flags outgoing BitGo ETH transactions",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:36:17Z",
-      "source_id": "theblock",
-      "source_ids": [
-        "theblock"
-      ],
-      "url": "https://www.theblock.co/news/ecosystems/2026-11-12-unocoin-login-suspension-continues-as-exchange-flags-outgoing-bitgo-eth-transactions-438654"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "38f2af83c1b7d29a6b953f1d",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Crypto for Advisors: The blockchain built to run financial markets",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:34:29Z",
-      "source_id": "coindesk",
-      "source_ids": [
-        "coindesk"
-      ],
-      "url": "https://www.coindesk.com/coindesk-indices/2026/11/12/crypto-for-advisors-the-blockchain-built-to-run-financial-markets"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "MACRO"
-      ],
-      "event_id": "1d0dd8582c78d2e78e336fd6",
-      "excerpt": "▶ Bitcoin Magazine Geopolitical Strategist: Bitcoin Is the “Third Way” Between the Dollar and Yuan Velina Tchakarova, geopolitical strategist and founder of FACE (For A Conscious Experience), argues that we’re in a new Cold War and that the US and China are building two rival financial architectures. On one side, the US is defending dollar supremacy with stablecoins. On the other, China and Russia are rolling out state-controlled digital currencies like the digital yuan and digital ruble. She explains why Bitcoin is a decentralized “third way” that serves as a bridge between these two worlds, and why it may come under growing pressure from state actors as the global system splits. Bitkey: Download Bitkey today and use our promo code BMTV to get 10% off the second-generation Bitkey at https://bitkey.world/BMTV . This episode is sponsored by Bitkey. Partnership Enquiries: Let’s find your fit! BMTV offers customized sponsorships tailored to your brand’s goals and target audience. Partner with us: https://bitcoinmagazine.com/bmtv Chapters: 00:00 The Global System Rupture and Uncharted Waters 01:35 Two Wars, Hormuz, and a Compound Systemic Risk 03:30 Oil Markets, Rate Hikes, and an Inflationary Turn 04:55 The Trump-Xi-Putin Triangle of Happiness 07:30 A Trilateral Meeting Would Be a P",
-      "first_observed_utc": "2026-11-12T20:01:26Z",
-      "headline": "Geopolitical Strategist: Bitcoin Is the “Third Way” Between the Dollar and Yuan",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:30:05Z",
-      "source_id": "bitcoinmag",
-      "source_ids": [
-        "bitcoinmag"
-      ],
-      "url": "https://bitcoinmagazine.com/videos/geopolitical-strategist-bitcoin-is-the-third-way-between-the-dollar-and-yuan"
-    },
-    {
-      "cmc_ids": [
-        5176
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "277833f26c1266fd0c2dbcbf",
-      "excerpt": "KPMG U.S. gave Tether Gold issuer TG Commodities an unqualified, or \"clean,\" opinion on its 2025 financial accounts.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Tether Gold issuer follows USDT to complete Big Four audit",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "5176": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:23:26Z",
-      "source_id": "theblock",
-      "source_ids": [
-        "theblock"
-      ],
-      "url": "https://www.theblock.co/news/business/2026-11-12-tether-gold-issuer-follows-usdt-to-complete-big-four-audit-438849"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a3876b0d44659244efbb8ced",
-      "excerpt": "Bitcoin Magazine BNY Mellon Raises Its Strive (ASST) Stake 28% to $7 Million as Monday’s 13F Deadline Nears Bank of New York Mellon (BNY) raised its stake in Strive (ASST) by 28% in the third quarter, a Form 13F filed Nov. 5 shows, lifting the position to 237,100 shares worth $6.97 million at Sept. 30 prices. That is up 51,544 shares from the 185,556 BNY reported at June 30, when the same holding was valued at about $2.02 million. Most of the dollar jump is the stock. ASST’s implied price on the two filings rose from $10.91 at June 30 to $29.41 at Sept. 30, so the disclosed stake more than tripled in value even though the share count rose 28%. A 13F is a snapshot, not a trading diary. BNY filed a combination report that folds in holdings across its group, so the Strive line can include client, fund and discretionary positions rather than a single proprietary bet, and the firm may have changed the holding since Sept. 30. The bank oversees $63.4 trillion in assets under custody and/or administration and $2.2 trillion in assets under management, both as of Sept. 30. The Strive position is still modest next to other bitcoin-linked lines on the same report. BNY held 1,056,230 shares of Strategy (MSTR) worth $161.7 million and 162,072 shares of BlackRock’s iShares Bitcoin Trust (IBIT) ",
-      "first_observed_utc": "2026-11-12T20:01:26Z",
-      "headline": "BNY Mellon Raises Its Strive (ASST) Stake 28% to $7 Million as Monday’s 13F Deadline Nears",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:17:00Z",
-      "source_id": "bitcoinmag",
-      "source_ids": [
-        "bitcoinmag"
-      ],
-      "url": "https://bitcoinmagazine.com/news/bny-mellon-raises-strive-asst-stake-28"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b9a603490f6181ffa43c1f1f",
-      "excerpt": "Nvidia co-founder Jensen Huang resigned Thursday, sending the chipmaker's shares tumbling and intensifying a selloff across cryptocurrency markets. On Nov. 12, the company announced that Huang had stepped down as chief executive, president, and board member, effective immediately, ending his 33-year leadership of the artificial intelligence giant. Chief Financial Officer Colette Kress was appointed interim… Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Bitcoin plunges to $71k as Jensen Huang abruptly resigns sending Nvidia into $2 trillion wipeout",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:04:58Z",
-      "source_id": "cryptoslate",
-      "source_ids": [
-        "cryptoslate"
-      ],
-      "url": "https://cryptoslate.com/bitcoin-plunges-to-71k-as-jensen-huang-abruptly-resigns-sending-nvidia-into-2-trillion-wipeout/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7dc1e61ae6c2a127100d119a",
-      "excerpt": "Terms and Conditions I agree to the Grant Agreement terms if funded I agree to Provide KYC information if funded above $50,000 USD I agree to disclose conflicts of interest I agree to adhere to the Code of Conduct and Communication Guidelines I understand all milestone deliverables will be validated and accepted by their intended users or their representatives, who will confirm that the deliverables meet the required quality, functionality, and usability for each user story. I agree that for any new open-source software, I will create a CONTRIBUTING.md file that reflects the high standards of Zcash development, using the librustzcash style guides as a primary reference. I understand when contributing to existing Zcash code, I am required to adhere to the project specific contribution guidelines, paying close attention to any merge , branch , pull request , and commit guidelines as exemplified in the librustzcash repository. I agree to post request details on the Community Forum I understand it is my responsibility to post a link to this issue on the Zcash Community Forums after this application has been submitted so the community can give input. I understand this is required in order for ZCG to discuss and vote on this grant application. Application Owners ( @Octocat , @Octocat1 ",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Grant Application - Zecpy: Making Private Payments Accessible to the Python Ecosystem",
-      "last_observed_utc": "2026-11-12T22:45:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:04:48Z",
-      "source_id": "zcash_governance",
-      "source_ids": [
-        "zcash_governance"
-      ],
-      "url": "https://forum.zcashcommunity.com/t/grant-application-zecpy-making-private-payments-accessible-to-the-python-ecosystem/59238"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "DEFI_ACTIVITY"
-      ],
-      "event_id": "dc2b9720ca15b235357f060a",
-      "excerpt": "Crypto industry heavyweights are banding together to challenge Illinois over its controversial crypto tax.",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Andreessen Horowitz, DeFi Education Fund push back against Illinois crypto tax",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T15:01:02Z",
-      "source_id": "theblock",
-      "source_ids": [
-        "theblock"
-      ],
-      "url": "https://www.theblock.co/news/regulation/2026-11-12-andreessen-horowitz-defi-education-fund-push-back-against-illinois-crypto-tax-438573"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "9174926bf55f28746564fe56",
-      "excerpt": "Coinbase recorded a $71,500 low, while Coinalyze's tracked derivatives markets showed $368 million in 24-hour liquidations, mostly bullish bets.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-12T20:01:26Z",
-      "headline": "Bitcoin Breaks Below $72,000 as Multiweek Slide Deepens",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T14:53:36Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/news/markets/bitcoin-breaks-below-72-000-as-multiweek-slide-deepens"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c17d49cbbd04afcc449836c5",
-      "excerpt": "His Sauron warning targets control over AI releases, a power already proposed in a September bill and El-Sayed’s campaign platform. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "‘Do not let Sauron have the ring’: Voorhees warns against a government veto on AI",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T14:45:29Z",
-      "source_id": "cryptoslate",
-      "source_ids": [
-        "cryptoslate"
-      ],
-      "url": "https://cryptoslate.com/voorhees-sauron-government-ai-veto/"
-    },
-    {
-      "cmc_ids": [
-        5426,
-        29210
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8161b377f8ab891a0b9f7ffe",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:25Z",
-      "headline": "Jupiter adds Anchorage-backed USDGO to its $1 billion Solana lending platform",
-      "last_observed_utc": "2026-11-12T22:44:58Z",
-      "match_methods": {
-        "29210": "FULL_NAME",
-        "5426": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-12T14:45:00Z",
-      "source_id": "coindesk",
-      "source_ids": [
-        "coindesk"
-      ],
-      "url": "https://www.coindesk.com/business/2026/11/12/jupiter-adds-anchorage-backed-usdgo-to-its-usd1-billion-solana-lending-platform"
     }
   ]
 }
