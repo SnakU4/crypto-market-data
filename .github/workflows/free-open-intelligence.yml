@@ -54,6 +54,10 @@ jobs:
           assert len(profiles["audit"]["profile_gaps"]) + profiles["audit"]["substantive_project_profiles"] == 100
           assert c["per_coin"]["source_backed_substantive_project_background"] == profiles["audit"]["substantive_project_profiles"]
           assert c["research_quality_gate"]["project_background_not_fresh_catalyst"] is True
+          assert (c["per_coin"]["coins_with_substantive_coin_specific_context"] +
+                  c["per_coin"]["coins_missing_substantive_coin_specific_context"]) == 100
+          assert c["research_quality_gate"]["all_100_coins_have_substantive_source_linked_context"] == (
+                  c["per_coin"]["coins_missing_substantive_coin_specific_context"] == 0)
           assert c["evidence_counts"]["manual_high_context_selection_count"] > 0
           assert c["research_quality_gate"]["raw_all_leads_denominator_unchanged"]
           assert m["source_probe_history_file"]=="docs/intelligence/source_probe_history.json"
