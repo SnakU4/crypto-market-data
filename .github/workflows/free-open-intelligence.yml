@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Verify production code syntax; optional offline tests run manually
-        run: python -m py_compile src/free_open_intelligence.py src/primary_source_discovery.py
+        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/primary_source_discovery.py
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
@@ -48,6 +48,12 @@ jobs:
           assert c["adaptive_search_hops_executed"] in (1,2)
           assert c["per_coin"]["perp_markets_unquarantined"] <= 77
           assert "substantive_source_excerpt_leads" in c["evidence_counts"]
+          assert m["source_backed_project_profile_file"]=="docs/intelligence/coin_profiles.json"
+          profiles=json.loads((p/"coin_profiles.json").read_text())
+          assert profiles["audit"]["assets"] == 100
+          assert len(profiles["audit"]["profile_gaps"]) + profiles["audit"]["substantive_project_profiles"] == 100
+          assert c["per_coin"]["source_backed_substantive_project_background"] == profiles["audit"]["substantive_project_profiles"]
+          assert c["research_quality_gate"]["project_background_not_fresh_catalyst"] is True
           assert c["evidence_counts"]["manual_high_context_selection_count"] > 0
           assert c["research_quality_gate"]["raw_all_leads_denominator_unchanged"]
           assert m["source_probe_history_file"]=="docs/intelligence/source_probe_history.json"
@@ -90,6 +96,7 @@ jobs:
             docs/intelligence/export/
             docs/intelligence/manifest.json
             docs/intelligence/coverage_audit.json
+            docs/intelligence/coin_profiles.json
             docs/intelligence/global_intelligence.json
             docs/intelligence/sector_intelligence.json
             docs/intelligence/coin_batches/
@@ -107,6 +114,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/intelligence/manifest.json docs/intelligence/coverage_audit.json \
+            docs/intelligence/coin_profiles.json \
             docs/intelligence/global_intelligence.json docs/intelligence/sector_intelligence.json \
             docs/intelligence/coin_batches docs/intelligence/open_discovery.json \
             docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
