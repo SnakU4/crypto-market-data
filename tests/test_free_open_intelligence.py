@@ -110,6 +110,30 @@ class FreeIntelligenceTests(unittest.TestCase):
         self.assertIn("by_plane_and_access_type",c["source_context_audit"])
         self.assertTrue(c["research_quality_gate"]["raw_all_leads_denominator_unchanged"])
         self.assertEqual(c["source_context_audit"]["by_plane_and_access_type"]["expanded:DIRECT_SOURCE"]["total"],2)
+    def test_publisher_cache_survives_and_respects_historical_cutoff(self):
+        excerpt=("This original publisher document describes a specific operating "
+                 "change, technical scope, staged rollout, stakeholder review, "
+                 "network integration requirements and published implementation "
+                 "criteria for the corresponding project.")
+        id=foi.ref("expanded",{"event_id":"x2"})
+        saved=self.root/"docs/intelligence/publisher_excerpts.json"
+        write(saved,{"items":[{"evidence_id":id,"scope":"ASSET_CANDIDATE",
+            "source_excerpt":excerpt,"url":"https://example.com/news2",
+            "fetched_utc":OBS,
+            "verification":"TEXT_EXTRACTED_NOT_FACT_VERIFIED"}]})
+        m,c=foi.build(self.root,cutoff=T,network=False)
+        self.assertEqual(c["publisher_article_enrichment_audit"]["cached_substantive_reused"],1)
+        cards=sum((foi.read(self.root/f"docs/intelligence/coin_batches/batch_{i:02d}.json")["coins"] for i in range(1,6)),[])
+        coin1=next(x for x in cards if x["cmc_id"]==1)
+        self.assertIn("specific operating change",coin1["candidate_events_NOT_VERIFIED"][0]["excerpt"])
+        # A historical replay before the first article fetch may not use it.
+        future=self.root/"docs/intelligence/publisher_excerpts.json"
+        d=foi.read(future)
+        d["items"][0]["fetched_utc"]="2026-11-13T00:00:00Z"
+        write(future,d)
+        _,cov=foi.build(self.root,cutoff=T,network=False)
+        self.assertEqual(cov["publisher_article_enrichment_audit"]["cached_substantive_reused"],0)
+
     def test_publisher_detail_is_used_in_global_and_sector_dossiers(self):
         detail=(
            "The source documents a detailed settlement infrastructure deployment with "
