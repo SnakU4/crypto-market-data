@@ -11,6 +11,7 @@ import concurrent.futures as cf
 import csv
 import datetime as dt
 import email.utils
+import gzip
 import hashlib
 import html
 import io
@@ -300,7 +301,7 @@ class Network:
         return result
 
 
-def parse_feed(body,source,observed,limit=40):
+def parse_feed(body,source,observed,limit=70):
     try:root=ET.fromstring(body)
     except (ET.ParseError,TypeError):return []
     # RSS and Atom; namespace-neutral selectors.
@@ -682,9 +683,19 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
     findings['market_sentiment']=sentiment(source_data.get('alternative_fng'))
     # Bounded incremental evidence ledger. Persist first_seen across scheduled runs.
     old=previous_events or {};all_events={}
+    rss_source_quality={}
     for ident,cat,kind,url in SOURCE_CATALOG:
         if kind!='rss' or not isinstance(source_data.get(ident),bytes):continue
-        for e in parse_feed(source_data[ident],ident,calls[ident]['observed_utc']):
+        feed_items=parse_feed(source_data[ident],ident,calls[ident]['observed_utc'])
+        observed_at=parse_utc(calls[ident]['observed_utc'])
+        rss_source_quality[ident]={
+            'items_parsed':len(feed_items),
+            'nonempty_publisher_excerpt':sum(len(e.get('excerpt') or '')>=120 for e in feed_items),
+            'published_last_72h':sum(bool(parse_utc(e.get('published_utc')) and observed_at
+                and dt.timedelta(0)<=observed_at-parse_utc(e['published_utc'])<=dt.timedelta(hours=72))
+                for e in feed_items),
+            'source_family':cat}
+        for e in feed_items:
             e=label_event(e,coins)
             old_e=old.get(e['event_id'])
             e['first_observed_utc']=(old_e or {}).get('first_observed_utc') or e['observed_utc']
@@ -699,7 +710,8 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
     # Preserve direct source breadth: the old 420-item cap silently discarded
     # genuine primary release/governance updates after collector expansion.
     # This is still a bounded *readable index*; no source completeness claimed.
-    events=sorted(all_events.values(),key=lambda e:(e['published_utc'] or '',e['event_id']),reverse=True)[:2800]
+    raw_event_count=len(all_events)
+    events=sorted(all_events.values(),key=lambda e:(e['published_utc'] or '',e['event_id']),reverse=True)[:4000]
     updates,deltas=previous_oi(oi_base or OUT,market)
     coin_row=[];pmap=defaultdict(list)
     books_by_id={str(x['cmc_id']):x for x in books}
@@ -770,7 +782,9 @@ def collect(network,market,previous_events=None,oi_base=None,workers=5):
             'capture_utc':captured,'source_market_snapshot_utc':market['snapshot_completed_utc'],
             'market_index_last_update':market['index']['last_update'],'cmc100_verified':100,
             'sources_configured':len(network.calls),'sources_ok':sum(r['status']=='OK' for r in network.calls),
-            'sources_failed':sum(r['status']!='OK' for r in network.calls),'rss_events_stored':len(events),
+            'sources_failed':sum(r['status']!='OK' for r in network.calls),'rss_events_stored':len(events),'rss_events_seen_before_cap':raw_event_count,
+            'rss_events_discarded_due_to_cap':max(0,raw_event_count-len(events)),
+            'rss_source_quality':rss_source_quality,
             'rss_events_with_cmc_candidate':sum(bool(e['cmc_ids']) for e in events),
             # Exclude CMC supply and CoinGecko trending: neither is DefiLlama.
             'coin_metrics_with_defillama':sum(bool(set(x['research_metric_families']) & {
@@ -830,9 +844,13 @@ def write_bundle(bundle,out=OUT):
     # Immutable by unique capture timestamp+digest; never overwrite an existing archive.
     serialized=json.dumps(doc,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()
     digest=hashlib.sha256(serialized).hexdigest()[:10]
-    archive=out/'archive'/status['capture_utc'][:10].replace('-','')/(stamp+'_'+digest+'.json')
+    archive=out/'archive'/status['capture_utc'][:10].replace('-','')/(stamp+'_'+digest+'.json.gz')
     archive.parent.mkdir(parents=True,exist_ok=True)
-    with archive.open('x',encoding='utf8') as f:json.dump(doc,f,ensure_ascii=False,sort_keys=True)
+    # The complete bounded snapshot remains immutable, but gzip prevents a
+    # 4x/day full-text collector from inflating the free public git repository.
+    with archive.open('xb') as f:
+        with gzip.GzipFile(fileobj=f,mode='wb',compresslevel=8,mtime=0) as z:
+            z.write(serialized)
     # Keep first-observed evidence index, without swallowing earlier event metadata.
     old_index={}
     index_path=out/'event_first_seen.json'
