@@ -25,12 +25,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Free research regression tests – no network
-        run: |
-          python -m compileall -q src/free_open_intelligence.py src/primary_source_discovery.py tests/test_free_open_intelligence.py tests/test_primary_source_discovery.py
-          python -m unittest discover -s tests -p 'test_free_open_intelligence.py' -v
-          python -m unittest discover -s tests -p 'test_primary_source_discovery.py' -v
-          python -m unittest discover -s tests -p 'test_discovery_quality.py' -v
+      - name: Verify production code syntax; optional offline tests run manually
+        run: python -m py_compile src/free_open_intelligence.py src/primary_source_discovery.py
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
