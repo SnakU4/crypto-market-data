@@ -657,8 +657,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     observed=iso(dt.datetime.now(UTC))
     for url in article_audit.pop("selected_urls",[]):
         past_attempts[url]=observed
+    retention_now=dt.datetime.now(UTC)
     past_attempts={url:when for url,when in past_attempts.items()
-        if parse_time(when) and dt.timedelta(0)<=cutoff-parse_time(when)<=dt.timedelta(days=35)}
+        if parse_time(when) and dt.timedelta(0)<=retention_now-parse_time(when)<=dt.timedelta(days=35)}
     article_by_id={x["evidence_id"]:x for x in earlier_good+new_article}
     article=list(article_by_id.values())
     article_audit["cached_substantive_reused"]=len(earlier_good)
