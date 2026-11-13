@@ -28,6 +28,93 @@ QNT_ID=3155
 # It is deliberately *not* interpreted as evidence for any other product mapping.
 DENY_EXCHANGE={(QNT_ID,"QNT-USDT-SWAP"):"QNT instrument identity disputed: Quant vs Quantinuum; no crypto instrument metrics until independently verified"}
 
+# Curated PROJECT-context hints, never proof of token economics or price impact.
+# Source ID belongs to a known project repository or governance forum; verify
+# each relationship before treating it as a direct token catalyst.
+SOURCE_PROJECT_CONTEXT={
+    "aave_blog":"AAVE",
+    "aave_governance":"AAVE",
+    "aave_v3_releases":"AAVE",
+    "algorand_releases":"ALGO",
+    "arbitrum_blog":"ARB",
+    "arbitrum_governance":"ARB",
+    "arbitrum_releases":"ARB",
+    "arweave_releases":"AR",
+    "axelar_releases":"AXL",
+    "bnb_chain_releases":"BNB",
+    "btc_core_notices":"BTC",
+    "btc_core_releases":"BTC",
+    "cardano_node_releases":"ADA",
+    "celestia_releases":"TIA",
+    "celo_releases":"CELO",
+    "compound_releases":"COMP",
+    "cosmos_blog":"ATOM",
+    "cosmos_governance":"ATOM",
+    "cosmos_releases":"ATOM",
+    "cronos_releases":"CRO",
+    "doge_releases":"DOGE",
+    "eigenlayer_releases":"EIGEN",
+    "ens_releases":"ENS",
+    "eth_consensus_releases":"ETH",
+    "eth_geth_releases":"ETH",
+    "ethereum_blog":"ETH",
+    "ethereum_governance":"ETH",
+    "filecoin_releases":"FIL",
+    "flare_releases":"FLR",
+    "frax_releases":"FRAX",
+    "graph_releases":"GRT",
+    "hedera_releases":"HBAR",
+    "helium_releases":"HNT",
+    "icp_releases":"ICP",
+    "injective_releases":"INJ",
+    "iota_releases":"IOTA",
+    "jupiter_releases":"JUP",
+    "kaspa_releases":"KAS",
+    "lido_governance":"LDO",
+    "lido_releases":"LDO",
+    "litecoin_releases":"LTC",
+    "maker_governance":"SKY",
+    "monero_releases":"XMR",
+    "near_releases":"NEAR",
+    "ondo_releases":"ONDO",
+    "op_stack_releases":"OP",
+    "optimism_blog":"OP",
+    "optimism_governance":"OP",
+    "optimism_releases":"OP",
+    "osmosis_releases":"OSMO",
+    "pancake_releases":"CAKE",
+    "polkadot_blog":"DOT",
+    "polkadot_governance":"DOT",
+    "polkadot_releases":"DOT",
+    "polygon_bor_releases":"POL",
+    "polygon_core_releases":"POL",
+    "polygon_heimdall_releases":"POL",
+    "pyth_releases":"PYTH",
+    "radix_releases":"XRD",
+    "sei_releases":"SEI",
+    "sky_governance":"SKY",
+    "sol_agave_releases":"SOL",
+    "solana_blog":"SOL",
+    "solana_firedancer_releases":"SOL",
+    "stacks_core_releases":"STX",
+    "stacks_governance":"STX",
+    "stellar_releases":"XLM",
+    "synthetix_releases":"SNX",
+    "tezos_releases":"XTZ",
+    "ton_releases":"TON",
+    "tron_releases":"TRX",
+    "uniswap_blog":"UNI",
+    "uniswap_governance":"UNI",
+    "uniswap_v3_releases":"UNI",
+    "uniswap_v4_releases":"UNI",
+    "vechain_releases":"VET",
+    "xrp_releases":"XRP",
+    "zcash_governance":"ZEC",
+    "zcash_releases":"ZEC",
+    "zilliqa_releases":"ZIL",
+    "zksync_releases":"ZK",
+}
+
 def iso(t):
     return t.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00","Z")
 
@@ -527,6 +614,31 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         if len(struct_references[cid])<12:
             struct_references[cid].append({"ref":e.get("observation_id"),
                "source":e.get("source"),"identity_status":e.get("coin_identity_status")})
+    # Expose directly collected protocol publications to corresponding
+    # project dossiers WITHOUT converting project activity into token alpha.
+    symbol_to_id={str(a["symbol"]):int(a["cmc_id"]) for a in assets}
+    project_context=collections.defaultdict(list)
+    seen_project_urls=collections.defaultdict(set)
+    try:from discovery_quality import has_additional_information
+    except ImportError:from src.discovery_quality import has_additional_information
+    for row in direct_events:
+        symbol=SOURCE_PROJECT_CONTEXT.get(row.get("source_id"))
+        cid=symbol_to_id.get(symbol)
+        if cid is None or not is_before(row,cutoff):continue
+        url=str(row.get("url") or "")
+        if not url or url in seen_project_urls[cid]:continue
+        seen_project_urls[cid].add(url)
+        project_context[cid].append({
+            "title":clip(row.get("headline"),230),"url":url,
+            "source_id":row.get("source_id"),
+            "published_utc":row.get("published_utc"),
+            "first_observed_utc":row.get("first_observed_utc"),
+            "excerpt":clip(row.get("excerpt"),850),
+            "has_substantive_context":has_additional_information(
+                row.get("headline"),row.get("excerpt")),
+            "relation_status":"CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT"})
+    for rows in project_context.values():
+        rows.sort(key=lambda x:x.get("published_utc") or "",reverse=True)
     by_asset=collections.defaultdict(list);glob=[];sector=collections.defaultdict(list)
     for e in events:
         if e["scope"]=="SECTOR":
@@ -569,6 +681,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             "quantitative_research_families":ff,
             "engine_record_counts_by_source":dict(structured[cid]),
             "engine_provenance_sample":struct_references[cid],
+            "project_protocol_context_total":len(project_context[cid]),
+            "project_protocol_context_substantive_count":sum(
+                bool(x["has_substantive_context"]) for x in project_context[cid]),
+            "project_protocol_context_NOT_TOKEN_SIGNAL":project_context[cid][:12],
             "candidate_event_count":len(by_asset[cid]),
             "candidate_events_NOT_VERIFIED":[{k:e[k] for k in
                 ("id","title","url","excerpt","published_utc","claim_status","identity_status")}
@@ -764,7 +880,11 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "any_mapped_research_family_including_reported_supply":sum(bool(family_by_coin[i]) for i in ids),
           "research_mapped_quantitative_families_beyond_supply_and_trending":
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
-          "candidate_news_links":sum(bool(by_asset[i]) for i in ids)},
+          "candidate_news_links":sum(bool(by_asset[i]) for i in ids),
+          "coins_with_curated_project_source_context":sum(bool(project_context[i]) for i in ids),
+          "coins_with_substantive_project_source_context":sum(
+              any(x["has_substantive_context"] for x in project_context[i]) for i in ids),
+          "project_source_hint_caveat":"Project affiliation is contextual, NOT independent verification of token-price impact."},
       "direct_research_full_source_audit":direct_events_audit,
       "new_public_source_discovery_audit":dynamic_audit,
       "identity_quarantine":quarantined,
