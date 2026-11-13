@@ -106,6 +106,10 @@ def valid_profile(asset, raw, provider, received):
         attrs = {k: raw.get(k) for k in ("type", "started_at", "proof_type",
             "hash_algorithm", "open_source", "development_status", "org_structure")
             if raw.get(k) is not None}
+        team = [{"name": clean(member.get("name"), 70),
+                 "role": clean(member.get("position"), 85)}
+                 for member in raw.get("team", [])
+                 if isinstance(member, dict) and member.get("name")][:8]
         src_id = str(raw["id"])
         src_url = "https://coinpaprika.com/coin/" + urllib.parse.quote(src_id, safe="") + "/"
         links = raw.get("links") or {}
@@ -123,6 +127,7 @@ def valid_profile(asset, raw, provider, received):
                  "asset_platform_id": raw.get("asset_platform_id"),
                  "block_time_in_minutes": raw.get("block_time_in_minutes")}
         attrs = {k: v for k, v in attrs.items() if v is not None}
+        team = []
         src_id = str(raw["id"])
         src_url = "https://www.coingecko.com/en/coins/" + urllib.parse.quote(src_id, safe="")
         links = raw.get("links") or {}
@@ -143,7 +148,8 @@ def valid_profile(asset, raw, provider, received):
     return {"cmc_id": int(asset["cmc_id"]), "name": asset["name"], "symbol": asset["symbol"],
        "provider": provider, "provider_id": src_id, "source_url": src_url,
        "observed_utc": received, "description_excerpt": description,
-       "categories": tags, "technology_and_project_attributes": attrs,
+       "categories": tags, "project_team_unverified": team,
+       "technology_and_project_attributes": attrs,
        "primary_links_unverified": citations,
        "has_substantive_descriptive_context": bool(meaningful),
        "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
