@@ -264,16 +264,29 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 3.524,
-            "bid": 3.523,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 3.432,
+            "bid": 3.431,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 6535,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "NEAR-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.83809,
-            "top5_ask_usd": 106412.45,
-            "top5_bid_usd": 157255.16
+            "spread_bps": 2.91418,
+            "top5_ask_usd": 188298.35,
+            "top5_bid_usd": 150341.6
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1311625192.0,
+            "cmc_id": 6535,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "symbol": "NEAR",
+            "total_supply": 1311625192.0
           }
         },
         {
@@ -283,12 +296,12 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "NEAR Protocol",
-            "rank": 13
+            "rank": 5
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1311625192.0,
         "cmc_id": 6535,
         "coin_name": "NEAR Protocol",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -296,11 +309,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
+          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "NEAR",
-        "total_supply": null
+        "total_supply": 1311625192.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -323,7 +337,7 @@
         "description_excerpt": "Near Protocol (NEAR) is a scalable, developer-friendly blockchain platform designed to provide high-performance decentralized applications and smart contracts. It utilizes a unique sharding technology to optimize throughput and user experience.",
         "has_substantive_descriptive_context": true,
         "name": "NEAR Protocol",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.nearprotocol.com/",
@@ -525,31 +539,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.2362,
-            "bid": 0.2361,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.2293,
+            "bid": 0.2292,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 6538,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CRV-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 4.2346,
-            "top5_ask_usd": 31999.73,
-            "top5_bid_usd": 45954.2
+            "spread_bps": 4.36205,
+            "top5_ask_usd": 25631.9,
+            "top5_bid_usd": 29170.63
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1585015882.423202,
+            "cmc_id": 6538,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 3030303030.299,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "CRV",
+            "total_supply": 2434049230.651106
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1585015882.423202,
         "cmc_id": 6538,
         "coin_name": "Curve DAO Token",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 3030303030.299,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "CRV",
-        "total_supply": null
+        "total_supply": 2434049230.651106
       },
       "source_backed_project_profile": {
         "categories": [
@@ -571,7 +600,7 @@
         "description_excerpt": "Curve DAO Token (CRV) is the native governance token of the Curve Finance platform, which is designed for efficient stablecoin trading and liquidity provision. It enables users to participate in decision-making processes and earn rewards within the Curve ecosystem.",
         "has_substantive_descriptive_context": true,
         "name": "Curve DAO Token",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://arbiscan.io/token/0x11cdb42b0eb46d95f990bedd4695a6e3fa034978",
@@ -664,6 +693,15 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "People often say that one day data will live on chain. Here is a case where it already does, and where the main result of using a blockchain is not financial. Since April 2026, home air sensors in Cyprus, on Koh Phangan in Thailand, on Réunion, across Europe and in 20+ countries have been sending their readings through Robonomics. Since 28 September, when Robonomics moved to Polkadot, the record lives on Polkadot. What has piled up (counted on 13 November, from 1 April, when the current index starts): 19M+ readings, 100M+ individual values: fine and coarse dust, temperature, humidity, pressure, street noise, CO₂ indoors 100+ sensors in 20+ countries almost half a million entries on chain Earlier readings are on chain too and will be re-indexed, so these numbers are floors. What the data has already shown Koh Phangan: very clean background air, with about 1,200 short, sharp pollution episodes inside it, mostly in the evening and right next to a single sensor. That is daily household tra",
+          "id": "research:70f594bd38144bf607",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T18:45:12Z",
+          "title": "Polkadot already holds an open dataset of the planet's air: 19M+ readings from citizen sensors",
+          "url": "https://forum.polkadot.network/t/polkadot-already-holds-an-open-dataset-of-the-planets-air-19m-readings-from-citizen-sensors/19488"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Technical & Developer Updates X25519 encrypted messaging is live on Polkadot Hub, with the same pattern available on Kusama and Westend; the XMTP gateway is designed so it cannot read message contents (via VRCI_Global ). Polkadot SDK repo updates included staking-era points for Asset Hub/People blocks, Revive receipt-log bounds and exact deposit refunds, PSM account simplification, and tracing/dev executor fixes (via JMiaozi ). A design post outlined how Polkadot JAM could support trading without a centralized master key (via danicuki ). General Updates Polkadot and Kusama appeared in a monthly code-commit ranking alongside other major chains, highlighting continued developer activity visibility (via pnxgrp ). SubWallet summarized recent Polkadot shipping milestones, including Asset Hub-based balances, staking and governance activity, live dotUSD, the capped DOT supply model, and JAM progress (via subwalletapp ). PROCESSING LOG Report Generated: 2026-11-04 10:04:37 Total X posts curate",
           "id": "research:8bb18d5cf6c0e9cb93",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -697,15 +735,6 @@
           "published_utc": "2024-08-08T06:05:00Z",
           "title": "Popcat, WIF, Polkadot Crypto Prices Rise as Traders Buy the Dip",
           "url": "https://www.banklesstimes.com/news/2024/08/08/popcat-wif-polkadot-crypto-prices-rise-as-traders-buy-the-dip/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This release contains the changes from polkadot-stable2606-3 to polkadot-stable2606-4 . ℹ️ Please note: ⚠️ this is a patch release for the stable version stable2606 and contains only patches and fixes to the crates (list below). No binary or docker images will be provided for this release. Once published, polkadot-stable2606-4 will also be tagged as polkadot-v1.24.4 . The following crates were updated to the corresponding versions: Changed crates: pallet-revive-uapi@0.15.5 pallet-revive-fixtures@0.15.2 frame-support@48.1.1 snowbridge-beacon-primitives@0.21.2 pallet-asset-conversion@31.0.1 pallet-assets@53.0.1 pallet-balances@50.0.1 pallet-on-demand-para@0.2.1 pallet-oracle@28.1.0 pallet-psm@0.7.0 staging-xcm-executor@28.1.1 snowbridge-runtime-common@0.23.1 cumulus-primitives-utility@0.34.1 pallet-revive@0.21.0 pallet-asset-conversion-precompiles@0.8.0 pallet-assets-precompiles@0.13.0 pallet-vesting-precompiles@0.7.0 pallet-staking-async@0.15.1 pallet-xcm-precompiles@0.12.0 polkadot-run",
-          "id": "research:e6deda67157045314d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-04T17:09:08Z",
-          "title": "Polkadot stable2606-4",
-          "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-stable2606-4"
         }
       ],
       "cmc100_weight": 0.07,
@@ -771,6 +800,16 @@
         "trading_status": "live"
       },
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "People often say that one day data will live on chain. Here is a case where it already does, and where the main result of using a blockchain is not financial. Since April 2026, home air sensors in Cyprus, on Koh Phangan in Thailand, on Réunion, across Europe and in 20+ countries have been sending their readings through Robonomics. Since 28 September, when Robonomics moved to Polkadot, the record lives on Polkadot. What has piled up (counted on 13 November, from 1 April, when the current index starts): 19M+ readings, 100M+ individual values: fine and coarse dust, temperature, humidity, pressure, street noise, CO₂ indoors 100+ sensors in 20+ countries almost half a million entries on chain Earlier readings are on chain too and will be re-indexed, so these numbers are floors. What the data has already shown Koh Phangan: very clean background",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T18:45:12Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polkadot_governance",
+          "title": "Polkadot already holds an open dataset of the planet's air: 19M+ readings from citizen sensors",
+          "url": "https://forum.polkadot.network/t/polkadot-already-holds-an-open-dataset-of-the-planets-air-19m-readings-from-citizen-sensors/19488"
+        },
         {
           "excerpt": "Ecosystem Luno now offers Shariah-certified DOT staking in Malaysia, where it serves 1M+ customers; its staking wallets are reportedly certified (via MSBIntel , leeky_k_crypt ). Bifrost reduced DOT/vDOT Stable Swap fees from 0.30% to 0.05%, aiming to lower entry and exit costs for vDOT users; the pool was cited at $1.74M in liquidity (via Bifrost ). Manta users were reminded to migrate from Manta Atlantic before Nov. 16 as part of the network transition process (via AirdropAlertAAD ). Technical Updates SubWallet explained Polkadot’s coretime model, where chains rent blockspace on Polkadot cores through recurring sales roughly every four weeks, with an active sale underway (via subwalletapp ). Developers highlighted Polkadot Hub’s Ethereum RPC support, enabling familiar EVM tooling workflows with Hardhat, Foundry and Remix without special ",
           "first_observed_utc": "2026-11-13T07:07:00Z",
@@ -880,16 +919,6 @@
           "source_id": "polkadot_governance",
           "title": "Sensors.social: an open air-quality network on Polkadot is growing across the EU",
           "url": "https://forum.polkadot.network/t/sensors-social-an-open-air-quality-network-on-polkadot-is-growing-across-the-eu/19344"
-        },
-        {
-          "excerpt": "General Updates Polkadot’s treasury model remained a topic of education and community discussion, with explainers highlighting how ecosystem funding is structured through OpenGov (via BSCNews , DGHUBCrypto ). Ecosystem & Product Updates Polkadot Hub mainnet now supports two production-ready Solidity paths: EVM via REVM for existing contracts, and PVM via resolc for PolkaVM, both using the same Ethereum RPC and accounts (via PolkadotDevs , TTT_News_ ). Bifrost highlighted vDOT’s use on Hydration, where DOT can continue earning staking yield while being used as collateral, enabling strategies such as borrowing DOT against vDOT and minting additional vDOT (via Bifrost ). Aventus reaffirmed its commitment to building on Polkadot, citing the ecosystem as its chosen foundation after years of blockchain infrastructure experience (via AventusNetw",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-10T13:07:19Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "polkadot_governance",
-          "title": "Polkadot Socials Daily Digest: 2026-11-10",
-          "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-10/19330"
         }
       ],
       "project_protocol_context_substantive_count": 33,
@@ -898,31 +927,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.8262,
-            "bid": 0.8261,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.815,
+            "bid": 0.8149,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 6636,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "DOT-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.21043,
-            "top5_ask_usd": 8259.12,
-            "top5_bid_usd": 6299.5
+            "spread_bps": 1.22707,
+            "top5_ask_usd": 6334.31,
+            "top5_bid_usd": 8598.46
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1711978535.948083,
+            "cmc_id": 6636,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 2100000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "DOT",
+            "total_supply": 1711978535.948083
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1711978535.948083,
         "cmc_id": 6636,
         "coin_name": "Polkadot",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 2100000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "DOT",
-        "total_supply": null
+        "total_supply": 1711978535.948083
       },
       "source_backed_project_profile": {
         "categories": [
@@ -941,7 +985,7 @@
         "description_excerpt": "Polkadot (DOT) is a next-generation blockchain protocol that enables interconnectivity between multiple blockchains, allowing them to share information and transactions in a secure and scalable manner. This ecosystem promotes seamless communication and innovation across various blockchain networks.",
         "has_substantive_descriptive_context": true,
         "name": "Polkadot",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://polkascan.io"
@@ -986,7 +1030,7 @@
       "symbol": "DOT"
     },
     {
-      "candidate_event_count": 96,
+      "candidate_event_count": 94,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1017,24 +1061,6 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "A coalition of DeFi builders led by Uniswap, Andreessen Horowitz (a16z) and Paradigm have filed a court brief supporting the crypto industry’s lawsuit against Illinois’s 0.2% digital asset tax. The coalition is warning that the state’s draft rules would turn fee-charging decentralized exchanges and their frontends into tax-collecting brokers. It is like a repeat of a fight that many thought was already won in Washington, but this time around it is at the state level. In April 2025, Congress and President Donald Trump scrapped a federal IRS rule that would have forced DeFi platforms to report user transactions as if they were brokers. Who signed on, and who else is in the fight? The brief was filed in the Circuit Court of Sangamon County and backs a challenge brought by the Crypto Council for Innovation (CCI) and the Blockchain Association. The other signatories to the brief alongside the DeFi Education Fund, a16z, Paradigm and Uniswap, are Aave Labs, Aptos Labs, Aztec Labs, Chainlink L",
-          "id": "research:94de67b30433d358ea",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T21:00:04Z",
-          "title": "Uniswap, a16z and Paradigm back challenge to Illinois DeFi tax",
-          "url": "https://www.cryptopolitan.com/uniswap-a16z-to-stop-illinois-taxing-defi/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "TL;DR DUNI owns the three Gauntlet-curated Morpho Vaults V2 behind Uniswap Earn: uniUSDC, uniUSDT and uniETH, all on Ethereum mainnet. Gauntlet has upgraded its signing infrastructure and needs to swap out some wallets configured in the Sentinel role on vault deployment. setIsSentinel , the function used to adjust addresses granted the Sentinel role, is owner-gated and the Owner is Uniswap governance’s mainnet Timelock. Background Uniswap Labs launched Uniswap Earn in July 2026. Consistent with past Uniswap Labs-originated protocol launches, the ownership roles on the smart contracts that power Uniswap Earn were assigned to Uniswap Governance. In Earn, a user deposits USDC, USDT or ETH in the Uniswap app, the deposit flows into a Morpho Vaults V2 instance, and Gauntlet curates the allocation. In the run up to launch, Gauntlet deployed the three vaults and transferred ownership to DUNI’s Timelock address. Morpho Vaults V2 splits control across four roles. Role Capabilities Appointed by ",
-          "id": "research:9d602061442d7cb9a7",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-10T17:01:43Z",
-          "title": "[Temp Check] Rotate Sentinel Addresses on the DUNI-Owned Uniswap Earn Vaults",
-          "url": "https://gov.uniswap.org/t/temp-check-rotate-sentinel-addresses-on-the-duni-owned-uniswap-earn-vaults/26281"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The digital cooperative governing Uniswap, the biggest decentralised exchange, is voting on a proposal to take back some $42 million worth of governance tokens from delegates. Between 2022 and 2023, Uniswap’s decentralised autonomous organisation, or DAO, loaned out 12.5 million UNI to the nonprofit Uniswap Foundation and several top delegates in a bid to boost governance participation. According to Erin Koen, the proposal’s author and governance lead at Uniswap Labs, the protocol’s governance is now much more active, meaning that the loaned tokens have served their purpose. “Today, Uniswap’s governance environment looks very different,” Koen said. “UNI holders have been actively delegating voting power, and since DUNI was established, passed proposals have averaged roughly 75 million votes in turnout, exceeding quorum by approximately 88%.” DUNI, Uniswap’s Decentralized Unincorporated Nonprofit Association, is a legal entity that recognises onchain governance votes as legally binding ",
           "id": "research:9de6ed48c7ea17be70",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -1053,6 +1079,15 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #101 on Oct 5, 2026. Snapshot vote: link . TL;DR DUNI owns the three Gauntlet-curated Morpho Vaults V2 behind Uniswap Earn: uniUSDC, uniUSDT and uniETH, all on Ethereum mainnet. Gauntlet has upgraded its signing infrastructure and needs to swap out some wallets configured in the Sentinel role on vault deployment. setIsSentinel , the function used to adjust addresses granted the Sentinel role, is owner-gated and the Owner is Uniswap governance’s mainnet Timelock. Background Uniswap Labs launched Uniswap Earn in July 2026. Consistent with past Uniswap Labs-originated protocol launches, the ownership roles on the smart contracts that power Uniswap Earn were assigned to Uniswap Governance. In Earn, a user deposits USDC, USDT or ETH in the Uniswap app, the deposit flows into a Morpho Vaults V2 instance, and Gauntlet curates the allocation. In the run up to launch, Gauntlet deployed the three vaults and transferred ownership",
+          "id": "research:bbda61a4dbe43d544d",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-09-10T17:01:43Z",
+          "title": "[Executed] [Temp Check] Rotate Sentinel Addresses on the DUNI-Owned Uniswap Earn Vaults",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-rotate-sentinel-addresses-on-the-duni-owned-uniswap-earn-vaults/26281"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Authors: SilentSwap Core Development Team Category: Protocol Integration / Privacy Infrastructure Status: Request for Comment - Phase 1 of the Uniswap governance process TL;DR We propose integrating an optional “Swap Privately” execution path directly into the Uniswap interface - the official web app and wallet - powered by SilentSwap’s non-custodial privacy infrastructure and implemented through Uniswap v4 Hooks and/or UniswapX . The goal is native UX integration: privacy-enhanced execution presented as a first-class option alongside the standard swap, not an external tool users have to find and trust separately. The integration can be fully white-labeled, so the experience remains entirely Uniswap’s. What this RFC asks for: Community and delegate feedback on (1) whether native execution privacy belongs in the Uniswap interface as an opt-in “Swap Privately” option, and (2) which integration architecture - v4 Hooks or UniswapX - should anchor a proof of concept. We recognize interface ",
           "id": "research:ce9460a81b9f5cd536",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -1062,21 +1097,30 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This category is home to all Uniswap Request for Comment (URC) commentary and discussion. Please click here to access the Github repo. Contact urc@uniswap.org with any questions. 1 post - 1 participant Read full topic",
-          "id": "research:f86e5375890de8b1f1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-04-02T16:15:17Z",
-          "title": "About the Uniswap Request for Comment (URC) category",
-          "url": "https://gov.uniswap.org/t/about-the-uniswap-request-for-comment-urc-category/26072"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "NEW: @Uniswap processed over $15B in stablecoin-to-stablecoin trading volume across EVM chains in the past 30 days. • Uniswap: 53.7% market share • All other DEXs combined: 46.3% Uniswap now handles more stable-to-stable volume than every other X",
           "id": "expanded:0186cf429e46bb7ad0",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-10T06:45:00Z",
           "title": "NEW: @Uniswap processed over $15B in stablecoin-to-stablecoin trading volume across EVM chains in the past 30 days. • Uniswap: 53.7% market share • All other DEXs combined: 46.3% Uniswap now handles more stable-to-stable volume th",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ET3ZNdHNna0Rza0Q0bmhXcTMxYTFoWDJFMjlaQ3VxMGp2emdfZzlJeS0zVXlQbVFvSzZhMllTdkxtVmhvTUJlUGljalFCZllZcFBVaUZKY2c3bFhpa2k0?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "@KyleReidhead We called $UNI, $HOOD, $SKY, and $AERO before their big run-ups. Don't miss the next one, come join us for just $1: https://t.co/irjKYAIoor X",
+          "id": "expanded:0346563f0ae83d6635",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T14:32:00Z",
+          "title": "@KyleReidhead We called $UNI, $HOOD, $SKY, and $AERO before their big run-ups. Don't miss the next one, come join us for just $1: https://t.co/irjKYAIoor - X",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFZHhuV2d5Zm1vTENEOEVJeGI1R1ktaUtHdVVocVA2YWswQzlkNTFETklzYWZvd25BbGM0SGFHcUhCSER2VGpHcUdTbUZBSFozNXgzRnZ1eGtjUlZVMmRhTXJPcUo?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "OKXICE brings tokenised securities trading to US investors grafa.com",
+          "id": "expanded:0cf8725629ea292786",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T03:11:42Z",
+          "title": "OKXICE brings tokenised securities trading to US investors - grafa.com",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVVYxVDMtd2FMc1hKNEhGYXFTa1FKdjNQRjV5OVhIYnhodGFOajNRblF4dTNfUmE3RGgzMEZjTmJ0SU54OS1TRWlHVmEwdERXRTFvR2puakVEUU94N1RJTmxzaW5BQ1ZaX0FzcUdlWlhwbl9hNmw4bHc0VlNFOUt1cWNsUGpxc3I0UWtOWVphUE9oOElBVG51YWp5b045WmxWVzJjbTk2VUY5X1JQbmRoYUJSUUtDWTJFdzNycUF1cw?oc=5"
         }
       ],
       "cmc100_weight": 0.18,
@@ -1143,6 +1187,16 @@
       },
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
+          "excerpt": "Older threads kept for the record: early support questions, airdrop threads and off-topic posts. Read-only. 1 post - 1 participant Read full topic",
+          "first_observed_utc": "2026-11-13T22:40:56Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T19:53:24Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "uniswap_governance",
+          "title": "About the Archive category",
+          "url": "https://gov.uniswap.org/t/about-the-archive-category/26347"
+        },
+        {
           "excerpt": "Uniswap Foundation financial reports, plus the governance votes that created and funded the Foundation. 1 post - 1 participant Read full topic",
           "first_observed_utc": "2026-11-12T20:05:48Z",
           "has_substantive_context": false,
@@ -1193,24 +1247,24 @@
           "url": "https://gov.uniswap.org/t/discussion-should-v4-hooks-on-robinhood-chain-standardize-session-aware-pricing/26297"
         },
         {
-          "excerpt": "This proposal is part of the protocol fee rollout, following proposals #93 , #94 , #95 , #96 , #99 , and #100 . It uses the expedited governance process approved in UNIfication, where fee parameter update proposals can bypass the RFC stage and go directly to a five-day Snapshot followed by an onchain vote. Since protocol fees went live on Ethereum mainnet in late December last year, the rollout has extended to eleven additional chains: Arbitrum, Base, OP Mainnet, Worldchain, X Layer, Soneium, Zora, Celo, BNB Chain, Polygon, and Robinhood Chain. The burn system is working as designed, with fees accumulating in TokenJars across chains. From there, searchers claim them in exchange for burning UNI by bridging it back to mainnet and sending it to the burn address. Arc is a Layer 1 built by Circle for the world’s financial markets, real-time mo",
-          "first_observed_utc": "2026-11-12T20:05:48Z",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #102 on Oct 5, 2026. Snapshot vote: link . This proposal is part of the protocol fee rollout, following proposals #93 , #94 , #95 , #96 , #99 , and #100 . It uses the expedited governance process approved in UNIfication, where fee parameter update proposals can bypass the RFC stage and go directly to a five-day Snapshot followed by an onchain vote. Since protocol fees went live on Ethereum mainnet in late December last year, the rollout has extended to eleven additional chains: Arbitrum, Base, OP Mainnet, Worldchain, X Layer, Soneium, Zora, Celo, BNB Chain, Polygon, and Robinhood Chain. The burn system is working as designed, with fees accumulating in TokenJars across chains. From there, searchers claim them in exchange for burning UNI by bridging it back to mainnet and s",
+          "first_observed_utc": "2026-11-13T22:40:56Z",
           "has_substantive_context": true,
           "published_utc": "2026-09-18T14:39:50Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "uniswap_governance",
-          "title": "[Temp Check] Protocol Fee Expansion: Arc",
-          "url": "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-arc/26287"
+          "title": "[Executed] [Temp Check] Protocol Fee Expansion: Arc",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-protocol-fee-expansion-arc/26287"
         },
         {
-          "excerpt": "TL;DR DUNI owns the three Gauntlet-curated Morpho Vaults V2 behind Uniswap Earn: uniUSDC, uniUSDT and uniETH, all on Ethereum mainnet. Gauntlet has upgraded its signing infrastructure and needs to swap out some wallets configured in the Sentinel role on vault deployment. setIsSentinel , the function used to adjust addresses granted the Sentinel role, is owner-gated and the Owner is Uniswap governance’s mainnet Timelock. Background Uniswap Labs launched Uniswap Earn in July 2026. Consistent with past Uniswap Labs-originated protocol launches, the ownership roles on the smart contracts that power Uniswap Earn were assigned to Uniswap Governance. In Earn, a user deposits USDC, USDT or ETH in the Uniswap app, the deposit flows into a Morpho Vaults V2 instance, and Gauntlet curates the allocation. In the run up to launch, Gauntlet deployed the",
-          "first_observed_utc": "2026-11-12T20:05:48Z",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #101 on Oct 5, 2026. Snapshot vote: link . TL;DR DUNI owns the three Gauntlet-curated Morpho Vaults V2 behind Uniswap Earn: uniUSDC, uniUSDT and uniETH, all on Ethereum mainnet. Gauntlet has upgraded its signing infrastructure and needs to swap out some wallets configured in the Sentinel role on vault deployment. setIsSentinel , the function used to adjust addresses granted the Sentinel role, is owner-gated and the Owner is Uniswap governance’s mainnet Timelock. Background Uniswap Labs launched Uniswap Earn in July 2026. Consistent with past Uniswap Labs-originated protocol launches, the ownership roles on the smart contracts that power Uniswap Earn were assigned to Uniswap Governance. In Earn, a user deposits USDC, USDT or ETH in the Uniswap app, the deposit flows into a",
+          "first_observed_utc": "2026-11-13T22:40:56Z",
           "has_substantive_context": true,
           "published_utc": "2026-09-10T17:01:43Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "uniswap_governance",
-          "title": "[Temp Check] Rotate Sentinel Addresses on the DUNI-Owned Uniswap Earn Vaults",
-          "url": "https://gov.uniswap.org/t/temp-check-rotate-sentinel-addresses-on-the-duni-owned-uniswap-earn-vaults/26281"
+          "title": "[Executed] [Temp Check] Rotate Sentinel Addresses on the DUNI-Owned Uniswap Earn Vaults",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-rotate-sentinel-addresses-on-the-duni-owned-uniswap-earn-vaults/26281"
         },
         {
           "excerpt": "Author: Jeffy B / Joseph Cipolla Date: 08/03/2026 Verified Contract Address (Deployed on Unichain): 0xE0A6BF5478ff603aEe15Bdf4a31D6590497Bbe49 Executive Summary I am introducing The Web4lution , a whitepaper and technical framework that leverages Unichain , ERC-6551 (Token-Bound Accounts) , and customized Sovereign ERC-721 protocols to transform static NFTs into dynamic, execution-capable smart wallets powered by the UNI ecosystem. Demonstrated via Seeds & Bones —a high-stakes survival MOBA—this model replaces traditional, passive staking and administrative DAO governance with real-time, on-chain state execution. By utilizing ERC-6551, individual NFTs own and manage their own UNI treasuries, workforce assets, and sub-tokens directly on Unichain. If you havent read the last post, please take a look here: https://gov.uniswap.org/t/rfc-intro",
@@ -1233,34 +1287,24 @@
           "url": "https://gov.uniswap.org/t/rfc-native-execution-privacy-in-the-uniswap-interface-via-v4-hooks-and-uniswapx/26208"
         },
         {
-          "excerpt": "This proposal is part of the protocol fee rollout, following proposals #93 , #94 , #95 , and #96 . It uses the expedited governance process approved in UNIfication, where fee parameter update proposals can bypass the RFC stage and go directly to a five-day Snapshot followed by an onchain vote. Since protocol fees went live on Ethereum mainnet in late December last year, the rollout has extended to ten additional chains: Arbitrum, Base, OP Mainnet, Worldchain, X Layer, Soneium, Zora, Celo, BNB Chain, and Polygon. The burn system is working as designed, with fees accumulating in TokenJars across chains. From there, searchers claim them in exchange for burning UNI by bridging it back to mainnet and sending it to the burn address. Uniswap launched on Robinhood Chain at the chain’s July 1, 2026 mainnet debut, with v2, v3, and v4 all live. As o",
-          "first_observed_utc": "2026-11-12T20:05:48Z",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #99 on Jul 27, 2026. Snapshot vote: link . This proposal is part of the protocol fee rollout, following proposals #93 , #94 , #95 , and #96 . It uses the expedited governance process approved in UNIfication, where fee parameter update proposals can bypass the RFC stage and go directly to a five-day Snapshot followed by an onchain vote. Since protocol fees went live on Ethereum mainnet in late December last year, the rollout has extended to ten additional chains: Arbitrum, Base, OP Mainnet, Worldchain, X Layer, Soneium, Zora, Celo, BNB Chain, and Polygon. The burn system is working as designed, with fees accumulating in TokenJars across chains. From there, searchers claim them in exchange for burning UNI by bridging it back to mainnet and sending it to the burn address. Un",
+          "first_observed_utc": "2026-11-13T22:40:56Z",
           "has_substantive_context": true,
           "published_utc": "2026-07-11T11:38:11Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "uniswap_governance",
-          "title": "[Temp Check] Protocol Fee Expansion: Robinhood Chain",
-          "url": "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-robinhood-chain/26168"
+          "title": "[Executed] [Temp Check] Protocol Fee Expansion: Robinhood Chain",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-protocol-fee-expansion-robinhood-chain/26168"
         },
         {
-          "excerpt": "Summary This proposal continues the protocol fee rollout approved in UNIfication, following proposals #93 , #94 , #95 , and #96 . It uses the expedited governance process where fee parameter update proposals go directly to a five-day Snapshot followed by an onchain vote. Protocol fees are now live across all v2 and v3 pools on 11 chains - Ethereum, Arbitrum, Base, Celo, OP Mainnet, Soneium, X Layer, Worldchain, Zora, BNB Chain, and Polygon. Last month, the protocol set a record burning 186,000 UNI in one day . Below we introduce a system for v4 protocol fees and propose to activate it on a subset of v4 pools on these same chains. Implementation Details v4’s hook architecture requires a different approach to fee activation than v2 or v3. v2 pools have a single LP fee tier and are charged a static fee. v3 has several LP fee tiers, each char",
-          "first_observed_utc": "2026-11-12T20:05:48Z",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #100 (Part 1 of 2) on Jul 27, 2026. Snapshot vote: link . Summary This proposal continues the protocol fee rollout approved in UNIfication, following proposals #93 , #94 , #95 , and #96 . It uses the expedited governance process where fee parameter update proposals go directly to a five-day Snapshot followed by an onchain vote. Protocol fees are now live across all v2 and v3 pools on 11 chains - Ethereum, Arbitrum, Base, Celo, OP Mainnet, Soneium, X Layer, Worldchain, Zora, BNB Chain, and Polygon. Last month, the protocol set a record burning 186,000 UNI in one day . Below we introduce a system for v4 protocol fees and propose to activate it on a subset of v4 pools on these same chains. Implementation Details v4’s hook architecture requires a different approach to fee act",
+          "first_observed_utc": "2026-11-13T22:40:56Z",
           "has_substantive_context": true,
           "published_utc": "2026-07-07T13:46:50Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "uniswap_governance",
-          "title": "[Temp Check] Activate v4 Protocol Fees",
-          "url": "https://gov.uniswap.org/t/temp-check-activate-v4-protocol-fees/26162"
-        },
-        {
-          "excerpt": "This is a procedural inspection request to the Uniswap Foundation, in its capacity as the funder-of-record of the $15.5M Uniswap Labs bug bounty program operated by Cantina (docs.cantina.xyz). I am a security researcher Voltgzer0 . I submitted a Critical-severity finding to the Uniswap Labs bounty on 2026-06-05 (finding #784 , ContinuousClearingAuction). The finding was rejected the same day by the client representative acting in the Cantina interface. I filed a dispute the same day. That dispute has been sitting in the Cantina platform for 29 days without any Step-4 triage activity, without any assigned reviewer, and without any response. I am not asking the Foundation to adjudicate technical merits. I am asking the Foundation, on the record, to inspect a specific structural question: Does Cantina’s published mediation process, as it is ",
-          "first_observed_utc": "2026-11-12T20:05:48Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-07-04T21:38:30Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "uniswap_governance",
-          "title": "Foundation inspection request — Cantina bounty mediation policy enforcement (finding #784, 29-day stalled dispute)",
-          "url": "https://gov.uniswap.org/t/foundation-inspection-request-cantina-bounty-mediation-policy-enforcement-finding-784-29-day-stalled-dispute/26160"
+          "title": "[Executed] [Temp Check] Activate v4 Protocol Fees",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-activate-v4-protocol-fees/26162"
         }
       ],
       "project_protocol_context_substantive_count": 26,
@@ -1269,31 +1313,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 5.869,
-            "bid": 5.868,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 5.731,
+            "bid": 5.73,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 7083,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "UNI-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.70401,
-            "top5_ask_usd": 55434.1,
-            "top5_bid_usd": 56910.36
+            "spread_bps": 1.74505,
+            "top5_ask_usd": 17853.37,
+            "top5_bid_usd": 23546.62
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 623684422.480362,
+            "cmc_id": 7083,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.119Z",
+            "symbol": "UNI",
+            "total_supply": 885932418.786197
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 623684422.480362,
         "cmc_id": 7083,
         "coin_name": "Uniswap",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "UNI",
-        "total_supply": null
+        "total_supply": 885932418.786197
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1312,51 +1371,11 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 7083,
-        "coin_markets": {
-          "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
-          "observed_utc": "2026-11-13T16:22:50Z",
-          "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
-          "reported_pair_count_with_usd_volume": 333,
-          "top_markets_by_reported_24h_volume": [
-            {
-              "exchange": "",
-              "pair": "UNI/USDT",
-              "volume_24h_usd": 571816242.51
-            },
-            {
-              "exchange": "",
-              "pair": "UNI/USDT",
-              "volume_24h_usd": 204703356.59
-            },
-            {
-              "exchange": "",
-              "pair": "UNI/USDT",
-              "volume_24h_usd": 58683445.83
-            },
-            {
-              "exchange": "",
-              "pair": "UNI/USDT",
-              "volume_24h_usd": 51462732.87
-            },
-            {
-              "exchange": "",
-              "pair": "UNI/USDC",
-              "volume_24h_usd": 23509923.63
-            },
-            {
-              "exchange": "",
-              "pair": "UNI/USDT",
-              "volume_24h_usd": 20440514.63
-            }
-          ],
-          "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 1175463569.4
-        },
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Uniswap (UNI) is a decentralized exchange protocol enabling users to swap various cryptocurrencies without the need for a centralized intermediary. It operates on the Ethereum blockchain and uses an automated liquidity protocol.",
         "has_substantive_descriptive_context": true,
-        "markets_observed_utc": "2026-11-13T16:22:50Z",
         "name": "Uniswap",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://uniswap.org/"
@@ -1509,8 +1528,7 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "PancakeSwap",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -1519,19 +1537,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 344248906.833296,
+            "cmc_id": 7186,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 400000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "symbol": "CAKE",
+            "total_supply": 355778617.844057
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 344248906.833296,
         "cmc_id": 7186,
         "coin_name": "PancakeSwap",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 400000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "CAKE",
-        "total_supply": null
+        "total_supply": 355778617.844057
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1551,7 +1585,7 @@
         "description_excerpt": "PancakeSwap (CAKE) is a decentralized exchange built on the Binance Smart Chain, allowing users to swap BEP-20 tokens, provide liquidity, and earn rewards through yield farming and staking. It features an automated market maker (AMM) model, making trading accessible without a central authority.",
         "has_substantive_descriptive_context": true,
         "name": "PancakeSwap",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://bscscan.com/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
@@ -1602,8 +1636,17 @@
       "symbol": "CAKE"
     },
     {
-      "candidate_event_count": 97,
+      "candidate_event_count": 99,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The pre-IPO market for Anthropic highlights growing investor confidence in AI, potentially influencing future tech IPOs and market dynamics. The post Injective launches pre-IPO market for Anthropic ahead of Nasdaq debut appeared first on Crypto Briefing .",
+          "id": "research:0a4b4ff689284649cb",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T19:43:38Z",
+          "title": "Injective launches pre-IPO market for Anthropic ahead of Nasdaq debut",
+          "url": "https://cryptobriefing.com/injective-launches-pre-ipo-market-for-anthropic-ahead-of-nasdaq-debut/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Key Takeaways Injective (INJ) trades around $7.42 on Thursday, extending losses after a 5.7% decline in the previous session. The futures taker buy-to-sell ratio stands at 0.96, with sell orders accounting for 51.1% of taker activity, suggesting that sellers retain a slight advantage. A breakdown below the $7.19 trendline support could expose INJ to further losses toward $6.71 and $6.27, while a breakout above $8.35 could open the door to $9.41. Injective (INJ) remains under pressure on Thursday, trading below $7.50 as declining derivatives activity and renewed selling weigh on its near-term recovery prospects. The cryptocurrency is trading around $7.42 after losing approximately 6% during Wednesday’s session, with traders showing little conviction in a sustained rebound. CoinGlass data reveals a steady reduction in futures Open Interest since mid-October, while market sell orders continue to outweigh aggressive buying activity. Injective futures OI falls as traders reduce Exposure Inv",
@@ -1630,6 +1673,15 @@
           "published_utc": "2024-08-09T02:01:17Z",
           "title": "Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound",
           "url": "https://www.banklesstimes.com/news/2024/08/09/crypto-bull-run-sui-sei-celestia-injective-tokens-lead-rebound/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "INJ bounced off a key Fibonacci support and reclaimed its 50-day moving average. The golden cross between the 50-day and 200-day averages is still in place. Injective’s Veyra upgrade vote has broad support but has not yet reached quorum. Veyra adds institutional trading tools without changing INJ’s supply or staking rewards. INJ price climbed about 3.2% to $7.70 on Binance on November 13, with Injective’s native token recovering its 50-day exponential moving average after buyers stepped in near $7.33 during the session. The rebound comes as Injective’s community votes on IIP-717, the Veyra network upgrade that adds request-for-quote trading, expanded atomic swaps and new cross-chain functions aimed at institutional users. Voting closes on November 16, and turnout is still marginally below the 33.4% quorum the proposal needs before a planned mainnet activation on November 24. Dip Buyers Return at $7.33 The INJ price fell to $7.14 intraday, slipping below the 0.382 Fibonacci retracement ",
+          "id": "research:ebe5df24d3fd361a43",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T13:16:12Z",
+          "title": "INJ Price Bounces Ahead of Injective’s Wall Street Makeover",
+          "url": "https://www.crypto-news-flash.com/inj-price-bounces-ahead-of-injectives-wall-street-makeover/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1675,24 +1727,6 @@
           "published_utc": "2026-11-12T12:46:49Z",
           "title": "$INJ is testing a make-or-break level. - Reddit",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQb1FSdG1MSTI0OGt5N3VtdzlWRzcwYWp1ZUVfclN0SUx2YXVTSlNPOExnV1E3ZV9mcVNaMnB6TUc3S3RWMC1MMWRtZzlsSUVhV2Y2NkVTUG1hMFhNd3IzcnlYNlB4a2NadHdfamxGVVRmVzJVZGNUNVBka0R3d2diYWJIYkRVb0EtZWVUX29RVQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Injective could dip further as futures Open Interest drops CoinJournal",
-          "id": "expanded:19914ff35541ddaaef",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T10:05:47Z",
-          "title": "Injective could dip further as futures Open Interest drops - CoinJournal",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSzF2aXFiSEEzbkJRcDVuSnVRR0ZzYmVhS2FiNnFCcVNkYjVMdVhudG43NGVpSVVxR1RRQU5tR0ZZMTZXd0E5Sy1ndEQ3N3VCdWljTjYtdkFTY2wxRU02ODh1R0w5d0FhdjRoaGpNbmNVYk5VVEp2UWM2Q2tQclU1TXVVQkc0Z0ZmcWpYZFNMRDZkQQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "is jualin.cloud legit or scam? Reddit",
-          "id": "expanded:1cedf92321a4226a38",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T05:01:25Z",
-          "title": "is jualin.cloud legit or scam? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR2Yzd2xtaEwyLWgtRkp3RHNTTnhoQlVEd0s3STNiYlNubE9BRU5kN3ZoRmlpSG9LMHF5SFdBRTJwcjlpWmFMUkFJMmgxaTVZTDE4eGpTSHF6VlFwOVhGeWFESm5ILVJ0ckRsc0VGYVY1LUFqTzZTNWZ3anNIcjdZZElhOXA4SDlCVDZr?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
@@ -1765,7 +1799,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Injective",
-            "chain_tvl_usd": 20238824.93,
+            "chain_tvl_usd": 21985644.85,
             "cmc_id": 7226,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1774,16 +1808,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 7.526,
-            "bid": 7.525,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 7.981,
+            "bid": 7.98,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 7226,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "INJ-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.32882,
-            "top5_ask_usd": 19120.25,
-            "top5_bid_usd": 7177.49
+            "spread_bps": 1.25305,
+            "top5_ask_usd": 1920.23,
+            "top5_bid_usd": 16844.5
           }
         },
         {
@@ -1800,23 +1834,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 99970954.5,
+            "cmc_id": 7226,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 100000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "INJ",
+            "total_supply": 100000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 99970954.5,
         "cmc_id": 7226,
         "coin_name": "Injective",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 100000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "INJ",
-        "total_supply": null
+        "total_supply": 100000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1839,7 +1887,7 @@
         "description_excerpt": "Injective is an interoperable Layer 1 blockchain designed for DeFi applications. It provides developers with on-chain financial infrastructure modules to build dApps such as decentralized exchanges, prediction markets, and lending protocols. Its decentralized cross-chain bridging infrastructure offers compatibility with most blockchains, including EVM chains like Ethereum and non-EVM chains like Solana.",
         "has_substantive_descriptive_context": true,
         "name": "Injective",
-        "observed_utc": "2026-11-13T16:22:58Z",
+        "observed_utc": "2026-11-13T22:51:33Z",
         "primary_links_unverified": {
           "blockchain_site": [
             "https://explorer.injective.network/",
@@ -1897,7 +1945,16 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "A limited group of Aave App users are receiving Ghost Passes, invites that grant a friend immediate access by skipping the waitlist entirely.",
+          "excerpt": "title: [Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3 author: @TokenLogic created: 2026-11-13 Summary This publication proposes a common set of reference e-modes for Ethena collateral on Aave V3 Core, Plasma, Mantle, Monad and Avalanche. The proposed parameters are 91% LTV and 93% LT for USDe against stablecoins, and 90% LTV and 92% LT for sUSDe against stablecoins. Legacy collateral on Core and Plasma would be retired through per-asset LTV-zero flags while keeping existing LTs, except Plasma #21 , whose LT returns from 93.1% to 93%, and Plasma #23 , which is aligned to the sUSDe reference parameters. The proposal also retires the matured PTs on Monad and in X Layer #7 and #8 , and removes USDe borrowing from Avalanche #4 . Motivation Overview Several legacy Ethena PT e-modes continue to accept USDe or sUSDe after their PTs have matured. Their parameters and borrowable assets differ from the reference e-modes, so users with similar collateral can face different parameters and a",
+          "id": "research:05a1d012b693301f7f",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T12:19:38Z",
+          "title": "[Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3",
+          "url": "https://governance.aave.com/t/direct-to-aip-ethena-e-mode-consolidation-on-aave-v3/26304"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Early access to the Aave mobile app starts today, August 26. A limited group of users are receiving Ghost Passes, which are invites that grant a friend immediate access to Aave App by skipping the waitlist entirely. Early Access on iOS How Ghost Passes Work Open Aave App and check the activity section to see how many Ghost Passes you have. If you've received one, you'll also be notified by email or push notification. If you've received a Ghost Pass, follow the instructions in the app, pick a friend to send it to, and let them know they now have access. Who Gets Them We're sending Ghost Passes out in several batches. The first batch went to us",
           "id": "research:0cfe79e3abb00ff30f",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-08-26T00:00:00Z",
@@ -1912,6 +1969,15 @@
           "published_utc": "2026-11-06T00:00:00Z",
           "title": "Aave Labs Acquires Avon",
           "url": "https://aave.com/blog/avon-acquisition"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Summary This post requests the release of a bounty payment for one valid submission received through the Aave bug bounty process, together with the corresponding Immunefi platform fee. Motivation A valid submission was received through the Aave Bug Bounty process. It has been validated and is ready for payout. Specification We recommend processing these payments as part of the next funding update. The requested transfers are: $1,000 to 0x0DDE46b923eB74F1860727914f179e82b9eE47B9 $100 to 0x7119f398b6C06095c6E8964C1f58e7C1BAa79E18 (immunefi.eth). This is the fee corresponding to 10% of the $1,000 bounty. The total requested amount is $1,100. This follows the same payout path used in prior bug bounty payout requests, most recently in October 2026 . Next Steps We will coordinate with TokenLogic on the inclusion of these payouts. Disclaimer Aave Labs is sharing this request as a service provider to the Aave DAO, as part of its approved scope of work in support of DAO operations. 1 post - 1 p",
+          "id": "research:190496510d1f7f3cef",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T15:16:18Z",
+          "title": "Aave Labs. Request for Bounty Payout - November 2026",
+          "url": "https://governance.aave.com/t/aave-labs-request-for-bounty-payout-november-2026/26313"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1933,12 +1999,12 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the add cap for weETH on the Core Hub Main Spoke from 20K to 22K. Aave V4 Base: Increase the add cap for GOOGLc on the Equities Hub MAG7 Spoke from 15K to 22K. weETH (Core Hub) On the Aave V4 Ethereum Core Hub Main Spoke, 19,533 weETH is added against an add cap of 20K (97.7%). Supply on the spoke rose from approximately 14,300 weETH to the 20K cap on October 28, 2026, and has stayed close to the cap since the spoke was unfrozen on October 30. weETH is not borrowable on the Core Hub. Spoke Added Add Cap Add Cap Utilization Main 19,533 20,000 97.7% Source: LlamaRisk, November 1, 2026 weETH Supply Distribution Source: LlamaRisk, November 1, 2026 weETH supply on the Main Spoke is concentrated, with the largest position holding approximately 24% of the reserve, the top three approximately 6",
-          "id": "research:37f871d12885646ae0",
+          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase supply cap for cbBTC from 20,000 to 22,500. Reduce supply cap for weETH from 1,500,000 to 1,420,000. Reduce supply cap for WBTC from 38,200 to 35,500. Reduce supply cap for BTC.b from 225 to 40. Reduce supply cap for eBTC from 134 to 100. Aave V3 Mantle: Reduce supply cap for USDT0 from 312,500,000 to 150,000,000. Reduce borrow cap for USDT0 from 152,000,000 to 125,000,000. Reduce supply cap for sUSDe from 100,000,000 to 65,000,000. Reduce supply cap for USDe from 80,000,000 to 50,000,000. cbBTC (Aave V3 Core) cbBTC has reached 97.2% supply cap utilization on the Aave V3 Core instance. Supply Distribution Source: LlamaRisk, November 13, 2026 All of the top 20 cbBTC suppliers carry debt, with health factors between 1.11 and 3.07 and a median of 1.60, and supply is concentrated, with the larg",
+          "id": "research:33e65505a631ec569b",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-01T17:19:21Z",
-          "title": "Risk Stewards: Add Cap Increases on Aave V4 / 2026.11.01",
-          "url": "https://governance.aave.com/t/risk-stewards-add-cap-increases-on-aave-v4-2026-11-01/25975"
+          "published_utc": "2026-11-13T15:42:33Z",
+          "title": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.13",
+          "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-changes-on-aave-v3-2026-11-13/26317"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -1951,30 +2017,12 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Aave Labs subsidiary Push Virtual Assets Ireland Limited has secured MiCAR authorisation from the Central Bank of Ireland, enabling regulated, zero-fee stablecoin on and off-ramping for GHO and other stablecoins across the EEA.",
-          "id": "research:3e73ed46dde480598f",
+          "excerpt": "TokenLogic’s proposed interest split would hit some stablecoin lenders harder, while a major Plasma revenue component remains conditional. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
+          "id": "research:3d257e7b032bc6a477",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2025-11-13T00:00:00Z",
-          "title": "Push by Aave Labs Gains MiCAR Approval to Enable Zero Fee Stablecoin Onramping",
-          "url": "https://aave.com/blog/aave-micar-approval"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase borrow cap for cbBTC from 149 to 250. Increase borrow cap for WBTC from 749 to 900. Reduce supply cap for RLUSD from 100,000,000 to 30,000,000. Reduce borrow cap for RLUSD from 27,900,000 to 24,000,000. Reduce supply cap for USDtb from 100,000,000 to 30,000,000. Reduce borrow cap for USDtb from 50,000,000 to 24,000,000. Reduce supply cap for USDG from 120,000,000 to 30,000,000. Reduce borrow cap for USDG from 100,000,000 to 24,000,000. Aave V3 Arbitrum: Increase borrow cap for USDC from 172,000,000 to 200,000,000. Increase Slope1 for USDC from 4.20% to 4.30%. Increase borrow cap for USD₮0 from 39,400,000 to 45,000,000. Increase borrow cap for WETH from 56,500 to 65,000. Increase borrow cap for WBTC from 149 to 250. Aave V3 Base: Increase supply cap for cbETH from 60,000 to 70,000. Increase ",
-          "id": "research:420739514dee321350",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-04T18:34:18Z",
-          "title": "Risk Stewards: Cap and IRM Changes on Aave V3 / 2026.11.04",
-          "url": "https://governance.aave.com/t/risk-stewards-cap-and-irm-changes-on-aave-v3-2026-11-04/26010"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Ethena Pay has launched Earn+, a feature that gives its users higher rewards on their dollars within the app. Earn+ utilizes Aave V4 on Avalanche, where a vault managed by Upshift and Steakhouse puts deposits to work in an onchain strategy built on Aave’s lending markets.",
-          "id": "research:43cd309345328687af",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-28T00:00:00Z",
-          "title": "Ethena Pay Launches Earn+, Powered by Aave",
-          "url": "https://aave.com/blog/ethena-pay"
+          "published_utc": "2026-11-13T18:30:35Z",
+          "title": "Aave plan could cut some lenders’ share of interest by 60%",
+          "url": "https://cryptoslate.com/aave-lenders-interest-share-cut-proposal/"
         }
       ],
       "cmc100_weight": 0.08,
@@ -2041,6 +2089,66 @@
       },
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
+          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase supply cap for cbBTC from 20,000 to 22,500. Reduce supply cap for weETH from 1,500,000 to 1,420,000. Reduce supply cap for WBTC from 38,200 to 35,500. Reduce supply cap for BTC.b from 225 to 40. Reduce supply cap for eBTC from 134 to 100. Aave V3 Mantle: Reduce supply cap for USDT0 from 312,500,000 to 150,000,000. Reduce borrow cap for USDT0 from 152,000,000 to 125,000,000. Reduce supply cap for sUSDe from 100,000,000 to 65,000,000. Reduce supply cap for USDe from 80,000,000 to 50,000,000. cbBTC (Aave V3 Core) cbBTC has reached 97.2% supply cap utilization on the Aave V3 Core instance. Supply Distribution Source: LlamaRisk, November 13, 2026 A",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T15:42:33Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.13",
+          "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-changes-on-aave-v3-2026-11-13/26317"
+        },
+        {
+          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the add cap for wstETH on the Core Hub Main Spoke from 30K to 40K. Increase the add cap for weETH on the Core Hub Main Spoke from 25K to 35K. Increase the add cap for USDC on the Core Hub Main Spoke from 75M to 85M. Increase the draw cap for USDC on the Core Hub Main Spoke from 50M to 60M. Increase the draw cap for EURC on the Core Hub Bluechip Spoke from 300K to 600K. Aave V4 Avalanche: Increase the add cap for USDt on the Core Hub Main Spoke from 110M to 150M. Increase the draw cap for USDt on the Core Hub Ethena Ecosystem Spoke from 100M to 140M. Increase the add cap for USDe on the Core Hub Ethena Ecosystem Spoke from 120M to 150M. Cap",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T15:41:06Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "Risk Stewards: Cap Increases on Aave V4 / 2026.11.13",
+          "url": "https://governance.aave.com/t/risk-stewards-cap-increases-on-aave-v4-2026-11-13/26316"
+        },
+        {
+          "excerpt": "Summary This post requests the release of a bounty payment for one valid submission received through the Aave bug bounty process, together with the corresponding Immunefi platform fee. Motivation A valid submission was received through the Aave Bug Bounty process. It has been validated and is ready for payout. Specification We recommend processing these payments as part of the next funding update. The requested transfers are: $1,000 to 0x0DDE46b923eB74F1860727914f179e82b9eE47B9 $100 to 0x7119f398b6C06095c6E8964C1f58e7C1BAa79E18 (immunefi.eth). This is the fee corresponding to 10% of the $1,000 bounty. The total requested amount is $1,100. This follows the same payout path used in prior bug bounty payout requests, most recently in October 2026 . Next Steps We will coordinate with TokenLogic on the inclusion of these payouts. Disclaimer Aav",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T15:16:18Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "Aave Labs. Request for Bounty Payout - November 2026",
+          "url": "https://governance.aave.com/t/aave-labs-request-for-bounty-payout-november-2026/26313"
+        },
+        {
+          "excerpt": "title: [Direct-to-AIP] November 2026 - Funding Update author: @TokenLogic created: 2026-11-13 Summary This publication presents the November Funding Update, consisting of the following key activities: Acquire GHO to support the runway; Consolidate assets held on other networks onto Ethereum; Expand the MainnetSwapSteward; Deposit the ETH held by the Collector into Aave; Recover Merkl rewards held by the GSMs on Plasma and Monad; Bug bounty payment; and, Create and update Allowances to support Operations. Motivation This publication addresses near-term operational requirements, consolidates asset holdings across networks, and expands the MainnetSwapSteward to support the runway. The MainnetSwapSteward and Aave Finance Committee (AFC) will continue executing a rolling GHO acquisition strategy to maintain adequate runway and preserve suffici",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T14:05:46Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "[Direct-to-AIP] November 2026 - Funding Update",
+          "url": "https://governance.aave.com/t/direct-to-aip-november-2026-funding-update/26312"
+        },
+        {
+          "excerpt": "title: [Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3 author: @TokenLogic created: 2026-11-13 Summary This publication proposes a common set of reference e-modes for Ethena collateral on Aave V3 Core, Plasma, Mantle, Monad and Avalanche. The proposed parameters are 91% LTV and 93% LT for USDe against stablecoins, and 90% LTV and 92% LT for sUSDe against stablecoins. Legacy collateral on Core and Plasma would be retired through per-asset LTV-zero flags while keeping existing LTs, except Plasma #21 , whose LT returns from 93.1% to 93%, and Plasma #23 , which is aligned to the sUSDe reference parameters. The proposal also retires the matured PTs on Monad and in X Layer #7 and #8 , and removes USDe borrowing from Avalanche #4 . Motivation Overview Several legacy Ethena PT e-modes continue to accept USDe or sUSDe after their PTs have m",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T12:19:38Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "[Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3",
+          "url": "https://governance.aave.com/t/direct-to-aip-ethena-e-mode-consolidation-on-aave-v3/26304"
+        },
+        {
+          "excerpt": "Summary This thread will be used for technical maintenance updates across Aave deployments, to keep maintenance activity visible, structured, and easy for the DAO to track. It covers maintenance updates from November 2026 onward and is open to any DAO Service Provider responsible for a maintenance item. Context The Aave ecosystem spans multiple products, versions, and networks. Maintenance tasks are periodically required to keep this infrastructure consistent, secure, and aligned with the approved architecture. Maintenance updates prior to November 2026 are recorded in the previous maintenance thread , which established a clear and transparent format for this type of change. That thread remains the reference for historical updates. From November 2026 onward, maintenance updates will be posted here, so the DAO has a single place to review ",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T10:58:38Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "aave_governance",
+          "title": "Technical Maintenance Proposals",
+          "url": "https://governance.aave.com/t/technical-maintenance-proposals/26300"
+        },
+        {
           "excerpt": "Recently came across this thread that says $4.17B of $4.6B (91% of total supply) is custodied at one entity, Alpaca Securities LLC. Aave V4 Base Equities hub lends USDC against 8 Coinbase stocks, all of which are again custodied by the same US broker dealer, Alpaca. Every limit on the hub is set per reserve. Nothing in the deployment ARFC, or Coinbase assessment or Risk framework says what happens to the 8 reserves together if the custodian has a major stress condition. Considering the extreme centralization at custodian level, does the DAO think a custodian level limit makes sense? If not, why is the per-reserve sizing sufficient? Thanks. 2 posts - 2 participants Read full topic",
           "first_observed_utc": "2026-11-12T20:01:30Z",
           "has_substantive_context": true,
@@ -2099,66 +2207,6 @@
           "source_id": "aave_governance",
           "title": "Risk Stewards: Borrow Cap Increases on Aave V3 / 2026.11.12",
           "url": "https://governance.aave.com/t/risk-stewards-borrow-cap-increases-on-aave-v3-2026-11-12/26233"
-        },
-        {
-          "excerpt": "Summary LlamaRisk is building Aave’s Risk Layer: automated risk solutions that make expert risk judgment verifiable, with every parameter, bound and action checkable onchain. The Aave Risk Framework set this direction in June by making continuous risk oracles part of the protocol’s standing infrastructure. Governance and manual review can trail a fast-moving event by hours, and the evolution of AI capabilities keeps shortening the time between finding a weakness and exploiting it, so protection has to run continuously and at machine speed. LlamaGuard PT went live in September as the first of these solutions. We continue the rollout with LlamaGuard Caps as the next addition. Aave’s greatest strength is its liquidity, deep enough to move capital instantly and at scale. Defending access to that liquidity programmatically protects Aave’s user",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-11T17:00:38Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "[ARFC] Dynamic Caps Oracle: Rate Limiter",
-          "url": "https://governance.aave.com/t/arfc-dynamic-caps-oracle-rate-limiter/26219"
-        },
-        {
-          "excerpt": "Greetings On 2026-11-08 at 18:10:35 UTC two Aave-related token positions held by our wallet 0x64cacba2bca8785961c450b928dc60b03742b3cc were transferred out without our authorization . We did not sign these transactions, and we were not at the device at the time. The destination 0x413e4f4de7e5ff010913488f781e679e76f706da looks like a large automated sweeper, not an exchange and not a wallet of ours. We are posting to (1) warn other users, (2) ask whether anyone recognises this pattern, and (3) request any guidance the Aave community or service providers can offer on evidence collection for a criminal complaint. Affected positions Token Contract Amount Value at time of theft AUSDT (Aave Ethereum USDT, aToken) 0x23878914efe38d27c4d67ab83ed1b93a74d4086a 10,028.528651 ≈ $10,015.77 stkwaEthUSDC.v1 (Umbrella Stake Wrapped Aave Ethereum USDC v1) ",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-11T10:24:47Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "Unauthorized sweep of staked Aave positions: drainer address 0x413e4f4d…706da, 8 Nov 2026",
-          "url": "https://governance.aave.com/t/unauthorized-sweep-of-staked-aave-positions-drainer-address-0x413e4f4d-706da-8-nov-2026/26207"
-        },
-        {
-          "excerpt": "Summary LlamaRisk proposes to reposition Aave V3 Core as an instance for liquid, bluechip collateral, while the broader range of asset classes is served by Aave V4, where the Risk Premium parameter granularly prices the additional risk each collateral asset carries and more flexible isolation levers exist. The proposal is the next step of the deprecation work, which wound down low-adoption reserves and instances and deprecated the price feeds of long-tail assets . The proposal covers rsETH, osETH, LBTC, tBTC and rETH on Core, together with a group of lower-exposure reserves. As of 9 November 2026 these assets held $1.33B of collateral backing $1.03B of debt. The initial measure is to freeze each reserve in scope, which stops new supply and sets the LTV to zero while leaving existing positions untouched and unaffected. Reserves that are fr",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-10T19:33:53Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "[ARFC] Repositioning Aave V3 Core Around Established & Liquid Collateral",
-          "url": "https://governance.aave.com/t/arfc-repositioning-aave-v3-core-around-established-liquid-collateral/26191"
-        },
-        {
-          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Arbitrum: Increase supply cap for WBTC from 3,500 to 3,630. Reduce supply cap for ARB from 52,000,000 to 30,800,000. Aave V3 Avalanche: Reduce supply cap for USDC from 150,000,000 to 90,000,000. Reduce supply cap for USDt from 100,000,000 to 50,000,000. Reduce supply cap for BTC.b from 1,700 to 1,500. Reduce borrow cap for WETH.e from 7,000 to 4,500. Aave V3 Prime: Reduce supply cap for WETH from 60,000 to 25,000. Aave V3 Mantle: Reduce supply cap for USDe from 80,000,000 to 50,000,000. Reduce supply cap for sUSDe from 100,000,000 to 80,000,000. Aave V3 Core: Reduce supply cap for USDS from 25,000,000 to 10,000,000. Reduce borrow cap for USDS from 20,000,000",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-10T16:10:57Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.10",
-          "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-changes-on-aave-v3-2026-11-10/26181"
-        },
-        {
-          "excerpt": "This thread is the home for all risk and technical assessments of cirBTC on Aave Ethereum. It collects, in one place: The pre-listing asset risk assessment, under the Aave Risk Framework. The pre-listing technical asset assessment, under the Technical Asset Listing Framework. All post-listing monitoring reports, periodic refresh assessments, and any re-evaluations triggered by material changes. New assessments and updates will be posted as replies below as they are produced, so the full history stays in a single thread. 2 posts - 1 participant Read full topic",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-10T15:08:56Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "Circle Wrapped Bitcoin (cirBTC) on Aave Ethereum Assessments",
-          "url": "https://governance.aave.com/t/circle-wrapped-bitcoin-cirbtc-on-aave-ethereum-assessments/26179"
-        },
-        {
-          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Plasma: Reduce supply cap for USDT0 from 950,000,000 to 820,000,000. Aave V3 Arbitrum: Increase borrow cap for USD₮0 from 45,000,000 to 52,400,000. Reduce supply cap for USD₮0 from 120,000,000 to 58,300,000. Aave V3 Core: Reduce supply cap for LBTC from 2,690 to 2,400. Reduce supply cap for USDG from 30,000,000 to 10,000,000. Reduce borrow cap for USDG from 24,000,000 to 9,000,000. Reduce supply cap for RLUSD from 30,000,000 to 10,000,000. Reduce borrow cap for RLUSD from 24,000,000 to 9,000,000. Reduce supply cap for USDtb from 30,000,000 to 15,000,000. Reduce borrow cap for USDtb from 24,000,000 to 13,500,000. Reduce supply cap for PYUSD from 21,000,000 to",
-          "first_observed_utc": "2026-11-12T20:01:30Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-09T16:09:23Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "aave_governance",
-          "title": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.09",
-          "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-changes-on-aave-v3-2026-11-09/26145"
         }
       ],
       "project_protocol_context_substantive_count": 49,
@@ -2167,31 +2215,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 112.36,
-            "bid": 112.35,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 111.55,
+            "bid": 111.54,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 7278,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "AAVE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.89004,
-            "top5_ask_usd": 5145.34,
-            "top5_bid_usd": 11855.7
+            "spread_bps": 0.8965,
+            "top5_ask_usd": 3456.78,
+            "top5_bid_usd": 5471.13
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 15440831.776774,
+            "cmc_id": 7278,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.221Z",
+            "symbol": "AAVE",
+            "total_supply": 16000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 15440831.776774,
         "cmc_id": 7278,
         "coin_name": "Aave",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "AAVE",
-        "total_supply": null
+        "total_supply": 16000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2211,7 +2274,7 @@
         "description_excerpt": "Aave (AAVE) is a decentralized finance (DeFi) protocol that allows users to lend and borrow cryptocurrencies without intermediaries, utilizing smart contracts on the Ethereum blockchain. Its native token, AAVE, is used for governance and incentivizing the platform's ecosystem.",
         "has_substantive_descriptive_context": true,
         "name": "Aave",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/aave"
@@ -2512,7 +2575,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Flare",
-            "chain_tvl_usd": 142076316.53,
+            "chain_tvl_usd": 143759879.04,
             "cmc_id": 7950,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2532,10 +2595,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 87792992212.763,
+            "cmc_id": 7950,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.119Z",
+            "symbol": "FLR",
+            "total_supply": 106947218744.22983
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 87792992212.763,
         "cmc_id": 7950,
         "coin_name": "Flare",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2544,11 +2620,12 @@
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "FLR",
-        "total_supply": null
+        "total_supply": 106947218744.22983
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2562,7 +2639,7 @@
         "description_excerpt": "Flare is a blockchain for building applications that are interoperable with other blockchains and the internet. ## What is Flare (FLR)? Flare is an EVM-based Layer 1 blockchain designed to allow developers to build applications that are interoperable with blockchains and the internet. By providing decentralized access to high-integrity data, Flare enables new use cases and monetisation models. ## What makes Flare unique? Flare's native interopera",
         "has_substantive_descriptive_context": true,
         "name": "Flare",
-        "observed_utc": "2026-11-13T16:23:05Z",
+        "observed_utc": "2026-11-13T22:51:40Z",
         "primary_links_unverified": {
           "blockchain_site": [
             "https://flarescan.com/",
@@ -2863,31 +2940,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.3035,
-            "bid": 0.3033,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.3008,
+            "bid": 0.3007,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 8000,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "LDO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.59196,
-            "top5_ask_usd": 15780.73,
-            "top5_bid_usd": 12805.7
+            "spread_bps": 3.32502,
+            "top5_ask_usd": 6247.52,
+            "top5_bid_usd": 10289.18
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 829567764.204301,
+            "cmc_id": 8000,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "symbol": "LDO",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 829567764.204301,
         "cmc_id": 8000,
         "coin_name": "Lido DAO",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "LDO",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2904,7 +2996,7 @@
         "description_excerpt": "Lido DAO (LDO) is a decentralized autonomous organization that governs the Lido protocol, enabling users to stake their assets on Ethereum and other PoS networks with liquidity. It allows participants to earn staking rewards while maintaining the flexibility to trade their staked assets.",
         "has_substantive_descriptive_context": true,
         "name": "Lido DAO",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x5a98fcbea516cf06857215779fd812ca3bef1b32",
@@ -3150,31 +3242,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.5664,
-            "bid": 1.5663,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 1.4915,
+            "bid": 1.4914,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 8526,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "RAY-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.63843,
-            "top5_ask_usd": 512.28,
-            "top5_bid_usd": 2051.75
+            "spread_bps": 0.67049,
+            "top5_ask_usd": 158.12,
+            "top5_bid_usd": 567.93
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 269963562.976232,
+            "cmc_id": 8526,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 555000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "symbol": "RAY",
+            "total_supply": 554997310.166301
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 269963562.976232,
         "cmc_id": 8526,
         "coin_name": "Raydium",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 555000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "RAY",
-        "total_supply": null
+        "total_supply": 554997310.166301
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3192,7 +3299,7 @@
         "description_excerpt": "Raydium (RAY) is a decentralized finance (DeFi) protocol built on the Solana blockchain, facilitating high-speed trading and liquidity provision for various cryptocurrencies. It combines an automated market maker (AMM) with an order book model, enabling efficient and cost-effective transactions.",
         "has_substantive_descriptive_context": true,
         "name": "Raydium",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.solana.com/address/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
@@ -3387,6 +3494,36 @@
       },
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
+          "excerpt": "IC release-2026-11-13_03-18-raised-heap-limits",
+          "first_observed_utc": "2026-11-13T22:40:54Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T13:16:24Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "icp_releases",
+          "title": "release-2026-11-13_03-18-raised-heap-limits",
+          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-11-13_03-18-raised-heap-limits"
+        },
+        {
+          "excerpt": "IC release-2026-11-13_03-18-enable-heap-limits",
+          "first_observed_utc": "2026-11-13T22:40:54Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T13:16:21Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "icp_releases",
+          "title": "release-2026-11-13_03-18-enable-heap-limits",
+          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-11-13_03-18-enable-heap-limits"
+        },
+        {
+          "excerpt": "",
+          "first_observed_utc": "2026-11-13T22:40:54Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T13:16:15Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "icp_releases",
+          "title": "release-2026-11-13_03-18-base",
+          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-11-13_03-18-base"
+        },
+        {
           "excerpt": "IC release-2026-11-06_03-19-raised-heap-limits",
           "first_observed_utc": "2026-11-12T20:05:45Z",
           "has_substantive_context": false,
@@ -3455,36 +3592,6 @@
           "source_id": "icp_releases",
           "title": "release-2026-10-08_03-33--all-in-one",
           "url": "https://github.com/dfinity/ic/releases/tag/release-2026-10-08_03-33--all-in-one"
-        },
-        {
-          "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:05:45Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-10-08T09:11:06Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "icp_releases",
-          "title": "release-2026-10-08_03-33-base",
-          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-10-08_03-33-base"
-        },
-        {
-          "excerpt": "IC release-2026-10-02_03-31--all-in-one",
-          "first_observed_utc": "2026-11-12T20:05:45Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-10-02T16:30:04Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "icp_releases",
-          "title": "release-2026-10-02_03-31--all-in-one",
-          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-10-02_03-31--all-in-one"
-        },
-        {
-          "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:05:45Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-10-02T14:13:58Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "icp_releases",
-          "title": "release-2026-10-02_03-31-base",
-          "url": "https://github.com/dfinity/ic/releases/tag/release-2026-10-02_03-31-base"
         }
       ],
       "project_protocol_context_substantive_count": 0,
@@ -3493,16 +3600,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 2.612,
-            "bid": 2.611,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 2.472,
+            "bid": 2.471,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 8916,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ICP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.82922,
-            "top5_ask_usd": 41183.81,
-            "top5_bid_usd": 40816.49
+            "spread_bps": 4.04613,
+            "top5_ask_usd": 21599.19,
+            "top5_bid_usd": 12830.41
           }
         },
         {
@@ -3519,10 +3626,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 558955608.973928,
+            "cmc_id": 8916,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "ICP",
+            "total_supply": 558955608.973928
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 558955608.973928,
         "cmc_id": 8916,
         "coin_name": "Internet Computer",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3530,11 +3650,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ICP",
-        "total_supply": null
+        "total_supply": 558955608.973928
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3554,7 +3675,7 @@
         "description_excerpt": "Internet Computer (ICP) is a blockchain-based platform that enables developers to build and deploy decentralized applications and services on the internet, aiming to extend the functionality of the web. It provides a scalable and efficient environment for running smart contracts and hosting software.",
         "has_substantive_descriptive_context": true,
         "name": "Internet Computer",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://dashboard.internetcomputer.org/"
@@ -3781,31 +3902,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.504,
-            "bid": 1.503,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 1.524,
+            "bid": 1.523,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 9481,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "PENDLE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.65115,
-            "top5_ask_usd": 26076.89,
-            "top5_bid_usd": 22269.41
+            "spread_bps": 6.56383,
+            "top5_ask_usd": 14893.54,
+            "top5_bid_usd": 15449.71
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 174146046.235358,
+            "cmc_id": 9481,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "symbol": "PENDLE",
+            "total_supply": 281527448.458531
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 174146046.235358,
         "cmc_id": 9481,
         "coin_name": "Pendle",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PENDLE",
-        "total_supply": null
+        "total_supply": 281527448.458531
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3825,7 +3961,7 @@
         "description_excerpt": "Pendle is a decentralized finance protocol that enables users to tokenize, trade, and manage yield-generating assets. It allows for the separation of asset ownership and yield generation, creating new opportunities for liquidity and investment.",
         "has_substantive_descriptive_context": true,
         "name": "Pendle",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x808507121b80c02388fad14726482e061b8da827",
@@ -3965,8 +4101,7 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Sun [New]",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -3975,19 +4110,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 19214949011.205658,
+            "cmc_id": 10529,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 19900730000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.245Z",
+            "symbol": "SUN",
+            "total_supply": 19214949011.205658
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 19214949011.205658,
         "cmc_id": 10529,
         "coin_name": "Sun [New]",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 19900730000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SUN",
-        "total_supply": null
+        "total_supply": 19214949011.205658
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3999,7 +4150,7 @@
         "description_excerpt": "SUN is a cryptocurrency that serves as the native token for the TRON blockchain ecosystem, primarily aimed at incentivizing content creators and enhancing the decentralized finance (DeFi) space. It allows users to engage in various activities such as staking, participating in governance, and accessing DeFi services.",
         "has_substantive_descriptive_context": true,
         "name": "Sun [New]",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://tronscan.org/#/token20/TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9"
@@ -4079,7 +4230,6 @@
       },
       "missing_data": [
         "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals",
         "coin_relevant_article_text"
       ],
       "name": "Bitget Token",
@@ -4089,19 +4239,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 699992029.648104,
+            "cmc_id": 11092,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 919992035.98,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "symbol": "BGB",
+            "total_supply": 907875973.648104
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 699992029.648104,
         "cmc_id": 11092,
         "coin_name": "Bitget Token",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 919992035.98,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BGB",
-        "total_supply": null
+        "total_supply": 907875973.648104
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4115,7 +4281,7 @@
         "description_excerpt": "Bitget Token (BGB) is the native utility token of the Bitget exchange, used for fee discounts, trading rewards, and participating in token sales. It aims to enhance user experience and engagement on the platform.",
         "has_substantive_descriptive_context": true,
         "name": "Bitget Token",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x19de6b897ed14a376dda0fe53a5420d2ac828a28"
@@ -4158,7 +4324,7 @@
       "symbol": "BGB"
     },
     {
-      "candidate_event_count": 82,
+      "candidate_event_count": 81,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4168,15 +4334,6 @@
           "published_utc": "2026-11-11T13:51:22Z",
           "title": "GRAM Price Surges 10% as a Million Telegram Wallets Go Live",
           "url": "https://www.crypto-news-flash.com/gram-price-surges-10-million-telegram-wallets-go-live/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Telegram CEO Pavel Durov has said that The Open Network’s native GRAM token is undervalued and predicted that it will eventually rank among CoinMarketCap’s three largest cryptocurrencies. This was after GRAM gained about 8% on November 11, while pretty much every other asset above it, including Bitcoin and the top 10 altcoins by market cap, traded lower. Durov Says GRAM Is the Only Coin Rising in a Red Market “Crypto’s a sea of red. Only GRAM is up +8%,” Durov wrote in a post on X. This was accompanied by a market snapshot showing coins like LTC, AVAX, SUI, and HBAR, all losing between 1.70% and 3.57% while GRAM was trading at approximately $1.12, with an 8.65% gain and a market cap of $3.21 billion. At the time of writing, figures from CoinGecko had the former Toncoin changing hands near $1.14, with a market capitalization of approximately $3.26 billion and a 50% jump in trading volume in the last 24 hours to reach $113 million. Durov attributed the performance to the token’s connecti",
-          "id": "research:8a05ed3fbf3a8eaa0a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T08:30:54Z",
-          "title": "Pavel Durov Calls GRAM ‘Ridiculously Undervalued’ After 8% Surge",
-          "url": "https://cryptopotato.com/pavel-durov-calls-gram-ridiculously-undervalued-after-8-surge/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4249,6 +4406,15 @@
           "published_utc": "2026-11-11T04:30:52Z",
           "title": "My Telegram is 5 years old. Older than 69% of all accounts. My Age pays solana:5s5GwwaLh8Xq6s3SQYPDyhLH8eL6AN6zkiLQx8zepump and the-open-network:native for old accounts. Check yours: https://t.co/gBb2XnizDR - X",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84Z1Ytak9GZGhhY0xRaU5QU1hGbWRCeXE2RFpJYWJlNWE1ZzNfWDNGNXltdVM0V3cwT19jNlA1d2JwamtwbGxTUElmM0p5OFdKc2tkY3V3blk3NXZ1LTZmeg?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Shibinhood Price (WOOF/USD) Today | Live Price, Market Cap & Chart Binance",
+          "id": "expanded:22886a6bfd6f61870f",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-11T11:29:00Z",
+          "title": "Shibinhood Price (WOOF/USD) Today | Live Price, Market Cap & Chart - Binance",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIU2ZhLVROSTJ2WkQxTkthSThBNkw5d0dUU0NyTUtTQWVpT1V6R1RBbDhXT2N2STBEb215YkRlN1Y4bFVJZ2dZc3p4Z0hucW9UY045SVNUeGJYUQ?oc=5"
         }
       ],
       "cmc100_weight": 0.16,
@@ -4314,31 +4480,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.161,
-            "bid": 1.159,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 1.095,
+            "bid": 1.094,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 11419,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "GRAM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 17.24138,
-            "top5_ask_usd": 59514.91,
-            "top5_bid_usd": 55966.16
+            "spread_bps": 9.13659,
+            "top5_ask_usd": 58108.07,
+            "top5_bid_usd": 62365.58
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2856481126.933753,
+            "cmc_id": 11419,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.221Z",
+            "symbol": "GRAM",
+            "total_supply": 5283311605.746933
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2856481126.933753,
         "cmc_id": 11419,
         "coin_name": "Gram (prev. Toncoin)",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "GRAM",
-        "total_supply": null
+        "total_supply": 5283311605.746933
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4354,7 +4535,7 @@
         "description_excerpt": "Toncoin (TON) is the native cryptocurrency of the Telegram Open Network, designed to facilitate fast and secure transactions within the Telegram ecosystem. It aims to support a broad range of decentralized applications and services.",
         "has_substantive_descriptive_context": true,
         "name": "Gram (prev. Toncoin)",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x582d872a1b094fc48f5de31d3b73f2d9be47def1",
@@ -4555,53 +4736,83 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
         {
           "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T16:09:30Z",
+          "published_utc": "2026-11-13T19:39:11Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
-          "title": "op-interop-filter/v0.3.0-rc.4",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-interop-filter%2Fv0.3.0-rc.4"
+          "title": "op-supernode/v1.1.2",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-supernode%2Fv1.1.2"
         },
         {
           "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T15:52:45Z",
+          "published_utc": "2026-11-13T19:39:05Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
-          "title": "op-conductor/v0.9.8-rc.1",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-conductor%2Fv0.9.8-rc.1"
+          "title": "v1.20.2",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/v1.20.2"
         },
         {
           "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T14:37:24Z",
+          "published_utc": "2026-11-13T19:39:02Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
-          "title": "op-challenger/v1.12.0-rc.2",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-challenger%2Fv1.12.0-rc.2"
+          "title": "op-node/v1.20.2",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-node%2Fv1.20.2"
         },
         {
           "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T14:37:05Z",
+          "published_utc": "2026-11-13T19:38:57Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
-          "title": "op-dispute-mon/v1.6.6-rc.1",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-dispute-mon%2Fv1.6.6-rc.1"
+          "title": "kona-node/v1.11.0",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/kona-node%2Fv1.11.0"
         },
         {
           "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T14:36:44Z",
+          "published_utc": "2026-11-13T19:38:51Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
-          "title": "op-proposer/v1.17.1-rc.1",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-proposer%2Fv1.17.1-rc.1"
+          "title": "op-reth/v2.9.0",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-reth%2Fv2.9.0"
+        },
+        {
+          "excerpt": "Overview Important This is a recommended release for all op-challenger operators. It updates dependencies, the Go toolchain and the image's base packages to fix vulnerabilities that image scanners can report against v1.11.0, including CVE-2026-116591 , CVE-2026-84243 and GHSA-53rm-773f-4q8c . None of the vulnerable code is reachable in op-challenger, cannon or kona-host, and there are no other operator-visible changes. Other changes Security github.com/klauspost/compress is updated from v1.18.7 to v1.20.2, fixing CVE-2026-116591 ( GHSA-fpmh-frq8-7rj8 ), a panic in its zstd decoder on two-block frames. op-challenger uses that decoder only to read the superchain registry built into the binary, so no external input reaches it ( #23965 ) The image's glibc-2.44 and libcrypt1-2.44 packages move from 2.44-r9 to 2.44-r18 , which fixes CVE-2026-84",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T18:31:15Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "optimism_releases",
+          "title": "op-challenger v1.12.0",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-challenger%2Fv1.12.0"
+        },
+        {
+          "excerpt": "Overview Important This is a recommended release for all operators. It updates a dependency, the Go toolchain and the image's base packages to fix vulnerabilities that image scanners can report against v1.6.5, including CVE-2026-116591 and CVE-2026-84243 . None of the vulnerable code is reachable in op-dispute-mon, and there are no other operator-visible changes. Other changes Security github.com/klauspost/compress is updated to v1.20.2, fixing CVE-2026-116591 ( GHSA-fpmh-frq8-7rj8 ), a panic in the zstd decoder on two-block frames. op-dispute-mon uses this decoder only to unpack its compiled-in superchain registry, so no external input reaches it ( #23965 ) The image ships Wolfi's glibc-2.44 and libcrypt1-2.44 2.44-r18 , which fix CVE-2026-84243 in libcrypt1 (fixed in 2.44-r16 ) op-dispute-mon is built with Go 1.26.11, whose security fix",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T18:30:52Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "optimism_releases",
+          "title": "op-dispute-mon v1.6.6",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-dispute-mon%2Fv1.6.6"
+        },
+        {
+          "excerpt": "Overview Important This is a recommended release for all operators. It updates dependencies, the Go toolchain and the image's base packages to fix vulnerabilities that image scanners can report against v1.17.0, including CVE-2026-116591 and CVE-2026-84243 . None of the vulnerable code is reachable in op-proposer, and there are no other operator-visible changes. Other changes Security github.com/klauspost/compress is updated to v1.20.2, fixing CVE-2026-116591 ( GHSA-fpmh-frq8-7rj8 ), a panic in the zstd decoder on two-block frames. op-proposer uses this decoder only to unpack go-ethereum's compiled-in superchain configs, so no external input reaches it ( #23965 ) The image ships Wolfi's glibc-2.44 and libcrypt1-2.44 2.44-r18 , which fix CVE-2026-84243 in libcrypt1 (fixed in 2.44-r16 ) op-proposer is built with Go 1.26.11, whose security fi",
+          "first_observed_utc": "2026-11-13T22:40:53Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T18:30:27Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "optimism_releases",
+          "title": "op-proposer v1.17.1",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-proposer%2Fv1.17.1"
         },
         {
           "excerpt": "",
@@ -4617,41 +4828,11 @@
           "excerpt": "",
           "first_observed_utc": "2026-11-12T20:01:28Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-12T00:54:22Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "optimism_releases",
-          "title": "op-node/v1.20.2-rc.1",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-node%2Fv1.20.2-rc.1"
-        },
-        {
-          "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-11-12T00:54:11Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "optimism_releases",
-          "title": "kona-node/v1.11.0-rc.1",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/kona-node%2Fv1.11.0-rc.1"
-        },
-        {
-          "excerpt": "",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
-          "has_substantive_context": false,
           "published_utc": "2026-11-12T00:53:59Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "optimism_releases",
           "title": "op-reth/v2.9.0-rc.1",
           "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-reth%2Fv2.9.0-rc.1"
-        },
-        {
-          "excerpt": "Add two flags for tuning the proofs-history engine's persistence, both defaulting to current behavior: --proofs-history.persistence-threshold (default 5, 1 to 10000): blocks buffered before each persistence batch. Backpressure stays at twice the value. --proofs-history.prune-slack (default 0): blocks the window may grow past --proofs-history.window before pruning runs. Add metrics that split persistence cost by phase and table: optimism_trie.storage.phase_duration_seconds{operation,phase,table} : prune changeset deletes vs history bitmap edits, and the batch write's history flush. optimism_trie.storage.write_state_duration_seconds : the batch write's current-state and changeset writes. optimism_trie.storage.history_unique_keys{operation,table} : unique keys per batch, the unit of history bitmap cost. optimism_trie.engine.backpressure_dura",
-          "first_observed_utc": "2026-11-12T20:01:28Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-11-10T23:32:10Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "optimism_releases",
-          "title": "op-reth/bench-proofs-persistence.1: op-reth: add proofs-history persistence flags and phase metrics",
-          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-reth%2Fbench-proofs-persistence.1"
         },
         {
           "excerpt": "Proposal Type Maintenance Upgrade Voting Cycle Type Off-cycle. Per the OPerating Manual , Maintenance Upgrade Proposals proceed directly to on-chain voting under optimistic approval, with a one-week veto period and a 20% veto threshold. Executive Summary Soneium Mainnet is migrating its sequencer operations from Sony to the Optimism Foundation as chain servicer via OP Enterprise , with cutover targeted for 2026-11-19. Most of the migration does not require governance action: Soneium’s L1 ProxyAdmin owner is already the standard Optimism governance 2-of-2 (Foundation Upgrade Safe + Security Council). The SystemConfig ownership moves from Sony’s SystemConfig owner Safe to the Foundation Upgrade Safe, executed by Sony from its own Safe, and the batcher (updated to 0x1C7566fE8FAe38a93BDCb1fBF7D746FD08C11545 ) and unsafe block signer (updated ",
@@ -4674,7 +4855,7 @@
           "url": "https://gov.optimism.io/t/grant-proposal-trustless-zk-bitcoin-verification-infrastructure-for-opromism/10966"
         }
       ],
-      "project_protocol_context_substantive_count": 34,
+      "project_protocol_context_substantive_count": 36,
       "project_protocol_context_total": 50,
       "quantitative_research_families": [
         {
@@ -4690,33 +4871,47 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.09457,
-            "bid": 0.09455,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.09186,
+            "bid": 0.09185,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 11840,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "OP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.11506,
-            "top5_ask_usd": 10396.07,
-            "top5_bid_usd": 8709.44
+            "spread_bps": 1.08867,
+            "top5_ask_usd": 1211.36,
+            "top5_bid_usd": 12857.74
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2290771093.0,
+            "cmc_id": 11840,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 4294967296.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "symbol": "OP",
+            "total_supply": 4294967296.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2290771093.0,
         "cmc_id": 11840,
         "coin_name": "Optimism",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 4294967296.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "OP",
-        "total_supply": null
+        "total_supply": 4294967296.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4730,7 +4925,7 @@
         "description_excerpt": "Optimism (OP) is a Layer 2 scaling solution for Ethereum that enhances transaction speed and reduces costs by utilizing Optimistic Rollups. It aims to provide a seamless experience for decentralized applications while maintaining Ethereum's security.",
         "has_substantive_descriptive_context": true,
         "name": "Optimism",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042"
@@ -5068,27 +5263,41 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Arbitrum",
-            "chain_tvl_usd": 1340067353.26,
+            "chain_tvl_usd": 1346194845.61,
             "cmc_id": 11841,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 6892115031.0,
+            "cmc_id": 11841,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.158Z",
+            "symbol": "ARB",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 6892115031.0,
         "cmc_id": 11841,
         "coin_name": "Arbitrum",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ARB",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5103,7 +5312,7 @@
         "description_excerpt": "Arbitrum (ARB) is a layer-2 scaling solution for Ethereum that enhances transaction speed and reduces costs by utilizing optimistic rollups. It enables decentralized applications to operate more efficiently on the Ethereum network.",
         "has_substantive_descriptive_context": true,
         "name": "Arbitrum",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://arbitrum.io/",
@@ -5315,10 +5524,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 3783909492.539811,
+            "cmc_id": 13502,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.221Z",
+            "symbol": "WLD",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 3783909492.539811,
         "cmc_id": 13502,
         "coin_name": "Worldcoin",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -5326,11 +5548,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "WLD",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5346,7 +5569,7 @@
         "description_excerpt": "Worldcoin (WLD) is a cryptocurrency designed to create a globally inclusive financial network by distributing digital currency to individuals through a unique biometric identification system. It aims to promote economic equity and secure identities in the digital economy.",
         "has_substantive_descriptive_context": true,
         "name": "Worldcoin",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://worldcoin.org"
@@ -5410,8 +5633,7 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "BitTorrent [New]",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -5420,19 +5642,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 965416274329945.1,
+            "cmc_id": 16086,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 990000000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.158Z",
+            "symbol": "BTT",
+            "total_supply": 965416274329945.1
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 965416274329945.1,
         "cmc_id": 16086,
         "coin_name": "BitTorrent [New]",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 990000000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BTT",
-        "total_supply": null
+        "total_supply": 965416274329945.1
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5450,7 +5688,7 @@
         "description_excerpt": "BitTorrent (BTT) is a cryptocurrency used to enhance the BitTorrent protocol by enabling faster and more efficient peer-to-peer file sharing through blockchain technology. It incentivizes file sharing and distribution, rewarding users for their contributions to the network.",
         "has_substantive_descriptive_context": true,
         "name": "BitTorrent [New]",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://bttcscan.com/token/0x0000000000000000000000000000000000001010",
@@ -5604,8 +5842,7 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Kaspa",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -5715,19 +5952,35 @@
       ],
       "project_protocol_context_substantive_count": 6,
       "project_protocol_context_total": 10,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 27808621581.35059,
+            "cmc_id": 20396,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 28704026601.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.158Z",
+            "symbol": "KAS",
+            "total_supply": 27808621581.35059
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 27808621581.35059,
         "cmc_id": 20396,
         "coin_name": "Kaspa",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 28704026601.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "KAS",
-        "total_supply": null
+        "total_supply": 27808621581.35059
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5741,7 +5994,7 @@
         "description_excerpt": "Kaspa (KAS) is a high-performance blockchain that utilizes a blockDAG architecture, enabling fast and secure transactions with a unique consensus mechanism. Its design aims to provide scalability and efficiency for decentralized applications.",
         "has_substantive_descriptive_context": true,
         "name": "Kaspa",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.kaspa.org/",

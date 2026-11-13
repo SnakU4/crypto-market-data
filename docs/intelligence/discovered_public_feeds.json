@@ -2,158 +2,142 @@
   "advertised_existing_feed_count": 3,
   "domain_cooldown_hours": 72,
   "domains_attempted": 14,
-  "domains_found_content": 5,
-  "domains_skipped_due_to_recent_probe": 53,
-  "new_feed_items": 69,
+  "domains_found_content": 4,
+  "domains_skipped_due_to_recent_probe": 67,
+  "new_feed_items": 37,
   "not_verified_facts": true,
   "sources": [
     {
-      "advertised_feeds": [
-        "https://www.btc-echo.de/feed/",
-        "https://btc-echo-invest.podigee.io/feed/mp3"
-      ],
-      "article_count": 0,
-      "domain": "btc-echo.de",
-      "duplicate_feed_url": "https://www.btc-echo.de/feed/",
-      "feed_status": "OVERSIZED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "hackster.imgix.net",
+      "domain": "crowdstrike.com",
       "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://www.cryptopolitan.com/feed/"
-      ],
-      "article_count": 0,
-      "domain": "cryptopolitan.com",
-      "duplicate_feed_url": "https://www.cryptopolitan.com/feed/",
-      "feed_status": "ALREADY_COLLECTED",
       "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
       "substantive": 0
     },
     {
-      "advertised_feeds": [
-        "https://www.crypto-news-flash.com/feed/",
-        "https://www.crypto-news-flash.com/comments/feed/"
-      ],
+      "advertised_feeds": [],
       "article_count": 0,
-      "domain": "crypto-news-flash.com",
-      "duplicate_feed_url": "https://www.crypto-news-flash.com/feed/",
-      "feed_status": "OK",
+      "domain": "eba.europa.eu",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "article_count": 0,
+      "domain": "eetimes.com",
+      "feed_status": "NOT_DISCOVERED",
+      "home_status": "TimeoutError",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [],
+      "article_count": 0,
+      "domain": "esma.europa.eu",
+      "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://cryptonews.com/feed/"
+        "https://forkast.news/feed/",
+        "https://forkast.news/comments/feed/"
       ],
-      "article_count": 20,
-      "domain": "cryptonews.com",
+      "article_count": 7,
+      "domain": "forkast.news",
+      "duplicate_feed_url": "https://forkast.news/feed/",
       "feed_status": "OK",
       "home_status": "OK",
-      "substantive": 20
+      "substantive": 4
     },
     {
-      "advertised_feeds": [
-        "https://datacenterdynamics.com/en/rss/",
-        "https://datacenterdynamics.com/en/atom/"
-      ],
-      "article_count": 20,
-      "domain": "datacenterdynamics.com",
-      "feed_status": "OK",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://blogs.nvidia.com/feed/",
-        "https://blogs.nvidia.com/comments/feed/"
-      ],
-      "article_count": 18,
-      "domain": "blogs.nvidia.com",
-      "duplicate_feed_url": "https://blogs.nvidia.com/feed/",
-      "feed_status": "OK",
-      "home_status": "OK",
-      "substantive": 6
-    },
-    {
-      "advertised_feeds": [
-        "https://ambcrypto.com/feed/",
-        "https://ambcrypto.com/comments/feed/"
-      ],
+      "advertised_feeds": [],
       "article_count": 0,
-      "domain": "ambcrypto.com",
-      "duplicate_feed_url": "https://ambcrypto.com/feed/",
-      "feed_status": "OK",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://www.bleepingcomputer.com/feed/"
-      ],
-      "article_count": 0,
-      "domain": "bleepingcomputer.com",
-      "duplicate_feed_url": "https://www.bleepingcomputer.com/feed/",
-      "feed_status": "ALREADY_COLLECTED",
+      "domain": "fsb.org",
+      "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [],
       "article_count": 0,
-      "domain": "infoq.com",
+      "domain": "microsoft.com",
       "feed_status": "NOT_DISCOVERED",
       "home_status": "OK",
       "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://www.newsbtc.com/feed/"
+      ],
+      "article_count": 0,
+      "domain": "newsbtc.com",
+      "duplicate_feed_url": "https://www.newsbtc.com/feed/",
+      "feed_status": "ALREADY_COLLECTED",
+      "home_status": "OK",
+      "substantive": 0
+    },
+    {
+      "advertised_feeds": [
+        "https://www.schneier.com/feed/",
+        "https://www.schneier.com/comments/feed/"
+      ],
+      "article_count": 10,
+      "domain": "schneier.com",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 10
     },
     {
       "article_count": 0,
-      "domain": "beincrypto.com",
+      "domain": "science.org",
       "feed_status": "NOT_DISCOVERED",
-      "home_status": "ROBOTS_DISALLOW",
+      "home_status": "HTTPError",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://coincentral.com/feed/",
-        "https://coincentral.com/comments/feed/"
+        "https://www.securityweek.com/feed/"
       ],
-      "article_count": 1,
-      "domain": "coincentral.com",
-      "duplicate_feed_url": "https://coincentral.com/feed/",
-      "feed_status": "OK",
+      "article_count": 0,
+      "domain": "securityweek.com",
+      "duplicate_feed_url": "https://www.securityweek.com/feed/",
+      "feed_status": "ALREADY_COLLECTED",
       "home_status": "OK",
-      "substantive": 1
+      "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://www.coinspeaker.com/news/feed/"
+        "https://semianalysis.com/feed/",
+        "https://semianalysis.com/comments/feed/"
       ],
       "article_count": 10,
-      "domain": "coinspeaker.com",
+      "domain": "semianalysis.com",
       "feed_status": "OK",
       "home_status": "OK",
       "substantive": 10
     },
     {
       "advertised_feeds": [
-        "https://www.cointribune.com/feed/"
+        "https://theverge.com/rss/index.xml"
+      ],
+      "article_count": 10,
+      "domain": "theverge.com",
+      "feed_status": "OK",
+      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "substantive": 10
+    },
+    {
+      "advertised_feeds": [
+        "https://coinjournal.net/feed/"
       ],
       "article_count": 0,
-      "domain": "cointribune.com",
-      "duplicate_feed_url": "https://www.cointribune.com/feed/",
+      "domain": "coinjournal.net",
+      "duplicate_feed_url": "https://coinjournal.net/feed/",
       "feed_status": "ALREADY_COLLECTED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
+      "home_status": "OK",
       "substantive": 0
     }
   ],
-  "substantive_feed_items": 37
+  "substantive_feed_items": 34
 }

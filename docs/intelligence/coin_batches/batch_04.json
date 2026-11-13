@@ -195,27 +195,41 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Sui",
-            "chain_tvl_usd": 394079157.68,
+            "chain_tvl_usd": 400166094.4,
             "cmc_id": 20947,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 4139043544.130376,
+            "cmc_id": 20947,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.119Z",
+            "symbol": "SUI",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 4139043544.130376,
         "cmc_id": 20947,
         "coin_name": "Sui",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SUI",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -233,7 +247,7 @@
         "description_excerpt": "Sui (SUI) is a scalable Layer 1 blockchain designed for secure and fast transactions, facilitating new decentralized applications and opportunities in the Web3 ecosystem. Its innovative architecture aims to optimize both performance and user experience.",
         "has_substantive_descriptive_context": true,
         "name": "Sui",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://suiscan.xyz/mainnet/home"
@@ -437,30 +451,33 @@
       "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
-          "family": "trending",
+          "family": "token_supply",
           "observation": {
+            "circulating_supply": 4869330647.0,
             "cmc_id": 21159,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "Ondo",
-            "rank": 8
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.245Z",
+            "symbol": "ONDO",
+            "total_supply": 10000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 4869330647.0,
         "cmc_id": 21159,
         "coin_name": "Ondo",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "trending"
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ONDO",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -474,7 +491,7 @@
         "description_excerpt": "Ondo (ONDO) is a decentralized finance protocol designed to optimize yield generation through innovative staking and liquidity solutions. It aims to empower users with greater control and flexibility over their assets.",
         "has_substantive_descriptive_context": true,
         "name": "Ondo",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/ondoprotocol"
@@ -709,7 +726,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Aptos",
-            "chain_tvl_usd": 39552401.37,
+            "chain_tvl_usd": 39299843.18,
             "cmc_id": 21794,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -729,23 +746,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 888958794.360397,
+            "cmc_id": 21794,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 2100000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "APT",
+            "total_supply": 1211545732.265002
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 888958794.360397,
         "cmc_id": 21794,
         "coin_name": "Aptos",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 2100000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "APT",
-        "total_supply": null
+        "total_supply": 1211545732.265002
       },
       "source_backed_project_profile": {
         "categories": [
@@ -763,7 +794,7 @@
         "description_excerpt": "Aptos (APT) is a Layer 1 blockchain designed for high scalability and safety, utilizing a novel programming language and parallel execution to enhance transaction speed and efficiency. It aims to deliver a user-friendly environment for developers and end-users alike.",
         "has_substantive_descriptive_context": true,
         "name": "Aptos",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.devnet.aptos.dev/"
@@ -978,15 +1009,28 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Starknet",
-            "chain_tvl_usd": 31523866.34,
+            "chain_tvl_usd": 30901476.4,
             "cmc_id": 22691,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 7664828795.064646,
+            "cmc_id": 22691,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "symbol": "STRK",
+            "total_supply": 10184600000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 7664828795.064646,
         "cmc_id": 22691,
         "coin_name": "Starknet",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -994,11 +1038,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "STRK",
-        "total_supply": null
+        "total_supply": 10184600000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1011,7 +1056,7 @@
         "description_excerpt": "Starknet (STRK) is a decentralized, scalable Layer 2 solution for Ethereum that utilizes zero-knowledge rollups to enhance transaction speed and reduce costs. It aims to provide a secure and efficient environment for building decentralized applications.",
         "has_substantive_descriptive_context": true,
         "name": "Starknet",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/starkware-libs"
@@ -1323,10 +1368,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 991134428.55662,
+            "cmc_id": 22861,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "symbol": "TIA",
+            "total_supply": 1181493923.461415
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 991134428.55662,
         "cmc_id": 22861,
         "coin_name": "Celestia",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1334,11 +1392,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "TIA",
-        "total_supply": null
+        "total_supply": 1181493923.461415
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1352,7 +1411,7 @@
         "description_excerpt": "Celestia (TIA) is a modular blockchain network designed to separate the consensus and data availability layers, enabling developers to create customized blockchains without the complexities of building their own infrastructure. It aims to improve scalability and flexibility for decentralized applications.",
         "has_substantive_descriptive_context": true,
         "name": "Celestia",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/celestiaorg"
@@ -1394,8 +1453,17 @@
       "symbol": "TIA"
     },
     {
-      "candidate_event_count": 99,
+      "candidate_event_count": 100,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Key takeaways : Bittensor price predictions anticipate a high of $465 by the end of 2026. In 2028, TAO will range between $651 and $737, with an average price of $694. In 2032, TAO will range between $1,376 and $1,559, with an average price of $1,494. Bittensor is one of the most renowned AI-facilitated decentralized networks that promotes blockchain and artificial intelligence infusion. By leveraging Proof of Learning (POL) technology, Bittensor supports user privacy while minimizing errors. The AI models within the network are reliable, flexible, and up-to-date with modern technological advancements. The AI-based Bittensor network prioritizes cross-chain integration and native token expansions to promote collaboration among various decentralized AI networks. TAO uses reliable authentication methods to ensure a successful transfer of nodes through its AI knowledge to correct models. The process is made possible through the PoL consensus method, which secures this process. Moreover, th",
+          "id": "research:d6bf6f65752acf85d0",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T07:56:22Z",
+          "title": "Bittensor price prediction 2026–2032: Is TAO a good investment?",
+          "url": "https://www.cryptopolitan.com/bittensor-price-prediction/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Bitcoin showed the world that money doesn’t need a company behind it. And I believe $TAO Bittensor is going after something just as big with intelligence. Think about it. Today, most people access AI by renting it from a handful of companies. They control the X",
@@ -1476,15 +1544,6 @@
           "published_utc": "2026-11-10T08:34:52Z",
           "title": "Source: @WeAreSubConnect - X",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfS2VMVFJNbU9nalVvMWhxZGhueE9HcEZ5S1lNem01TXEwRXR1RGRDV1F1VlVpYkpQQ0FWcklxa3UzU1pqRzlmclhMb0xXc2VrLUM4XzBhWjNJSFU?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NVIDIA Sell-Off & AI Legislation: Which AI Crypto Projects Will Survive? Reddit",
-          "id": "expanded:2a60bd4babb9163747",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T22:02:29Z",
-          "title": "NVIDIA Sell-Off & AI Legislation: Which AI Crypto Projects Will Survive? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa2ZkOVJqMHZFMFlHOF9GNDAwTG5iejVvZm9VY09YWWFVb29Od1NRd0NyeFhfZnotN1FSQWtiaEd6WVQxM25WNjRVc0puRDdrclJsbzNDem1yRElIOHBCQVVPcHNSaXNBbDZHTUlvY1RWaGMxaDZ4S0xxMS1YQ0djYmNVNjlXUG5GZG9PSjJraW9LYWFmN1dycUxXOWpEV051bE1R?oc=5"
         }
       ],
       "cmc100_weight": 0.12,
@@ -1567,22 +1626,47 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 11724032.120575,
+            "cmc_id": 22974,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 21000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "TAO",
+            "total_supply": 21000000.0
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 22974,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "Bittensor",
+            "rank": 9
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 11724032.120575,
         "cmc_id": 22974,
         "coin_name": "Bittensor",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 21000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply",
+          "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "TAO",
-        "total_supply": null
+        "total_supply": 21000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1599,7 +1683,7 @@
         "description_excerpt": "BitTensor (TAO) is a decentralized ecosystem that enables artificial intelligence training by allowing users to contribute computing power and be rewarded in TAO tokens. It aims to create a collaborative network for machine learning with enhanced scalability and efficiency.",
         "has_substantive_descriptive_context": true,
         "name": "Bittensor",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://bittensor.com/scan"
@@ -1764,9 +1848,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "Bonk",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -1801,19 +1883,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 87994295861725.39,
+            "cmc_id": 23095,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 88872433754423.19,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "BONK",
+            "total_supply": 87994295861725.39
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 87994295861725.39,
         "cmc_id": 23095,
         "coin_name": "Bonk",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 88872433754423.19,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BONK",
-        "total_supply": null
+        "total_supply": 87994295861725.39
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1832,7 +1930,7 @@
         "description_excerpt": "Bonk (BONK) is a community-driven meme cryptocurrency designed for fun and engagement within the Solana ecosystem. It aims to introduce users to the world of crypto through its playful branding and initiatives.",
         "has_substantive_descriptive_context": true,
         "name": "Bonk",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://solscan.io/token/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
@@ -2134,7 +2232,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Sei",
-            "chain_tvl_usd": 20157086.03,
+            "chain_tvl_usd": 20801380.91,
             "cmc_id": 23149,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2154,23 +2252,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 7699722222.0,
+            "cmc_id": 23149,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "SEI",
+            "total_supply": 10000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 7699722222.0,
         "cmc_id": 23149,
         "coin_name": "Sei",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SEI",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2184,7 +2296,7 @@
         "description_excerpt": "Sei (SEI) is a specialized layer-1 blockchain designed for trading applications, prioritizing performance, security, and user experience. It aims to provide a fast and scalable environment for decentralized exchanges and financial applications.",
         "has_substantive_descriptive_context": true,
         "name": "Sei",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://sei.explorers.guru/",
@@ -2354,9 +2466,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "Pepe",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -2391,19 +2501,50 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 4.3874e-06,
+            "bid": 4.3873e-06,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 24478,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "PEPE-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 0.22793,
+            "top5_ask_usd": 4874.81,
+            "top5_bid_usd": 3970.38
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 413772350095630.44,
+            "cmc_id": 24478,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 413772350095630.44,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.158Z",
+            "symbol": "PEPE",
+            "total_supply": 413772350095630.44
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 413772350095630.44,
         "cmc_id": 24478,
         "coin_name": "Pepe",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 413772350095630.44,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PEPE",
-        "total_supply": null
+        "total_supply": 413772350095630.44
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2424,7 +2565,7 @@
         "description_excerpt": "What is the project about? Pepe is a community based meme token surround the iconic meme Pepe the frog. Pepe aims to leverage the power of such an iconic meme to become the most memeable memecoin in existence. What makes your project unique? Pepe is here to make memecoins great again. Ushering in a new paradigm for memecoins, Pepe represents the memecoin in it's purest simplicity. With zero taxes, liquidity locked forever, and contract immutable,",
         "has_substantive_descriptive_context": true,
         "name": "Pepe",
-        "observed_utc": "2026-11-13T16:23:12Z",
+        "observed_utc": "2026-11-13T22:51:48Z",
         "primary_links_unverified": {
           "blockchain_site": [
             "https://etherscan.io/token/0x6982508145454ce325ddbe47a25d4ec3d2311933",
@@ -2625,30 +2766,48 @@
       "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
-          "family": "trending",
+          "family": "okx_orderbooks",
           "observation": {
+            "ask": 1.5695,
+            "bid": 1.5691,
+            "book_source_utc": "2026-11-13T22:41:07Z",
             "cmc_id": 26997,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "LayerZero",
-            "rank": 9
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "ZRO-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 2.54891,
+            "top5_ask_usd": 390.86,
+            "top5_bid_usd": 462.79
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 405585036.59445,
+            "cmc_id": 26997,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "ZRO",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 405585036.59445,
         "cmc_id": 26997,
         "coin_name": "LayerZero",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "trending"
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ZRO",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2669,7 +2828,7 @@
         "description_excerpt": "LayerZero (ZRO) is an omnichain interoperability protocol that enables seamless communication between different blockchain networks, allowing dApps to operate across diverse ecosystems. It aims to enhance the user experience by facilitating cross-chain interactions without sacrificing security or performance.",
         "has_substantive_descriptive_context": true,
         "name": "LayerZero",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://layerzeroscan.com/address/0x6985884c4392d348587b19cb9eaaf157f13271cd"
@@ -2836,27 +2995,41 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Mantle",
-            "chain_tvl_usd": 100576520.49,
+            "chain_tvl_usd": 96876440.35,
             "cmc_id": 27075,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 3312003382.53684,
+            "cmc_id": 27075,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 6219316795.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "MNT",
+            "total_supply": 6219316794.889999
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 3312003382.53684,
         "cmc_id": 27075,
         "coin_name": "Mantle",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 6219316795.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "MNT",
-        "total_supply": null
+        "total_supply": 6219316794.889999
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2869,7 +3042,7 @@
         "description_excerpt": "Mantle (MNT) is a decentralized layer-2 scaling solution built on Ethereum, designed to enhance transaction speeds and reduce gas fees for users and developers. It aims to provide a seamless experience for decentralized applications and blockchain interactions.",
         "has_substantive_descriptive_context": true,
         "name": "Mantle",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/mantlenetworkio/mantle"
@@ -3030,9 +3203,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "SPX6900",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -3067,19 +3238,50 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.3337,
+            "bid": 0.3336,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 28081,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "SPX-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 2.99715,
+            "top5_ask_usd": 2983.8,
+            "top5_bid_usd": 1724.78
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 930993090.07,
+            "cmc_id": 28081,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "SPX",
+            "total_supply": 930993090.07
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 930993090.07,
         "cmc_id": 28081,
         "coin_name": "SPX6900",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SPX",
-        "total_supply": null
+        "total_supply": 930993090.07
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3094,7 +3296,7 @@
         "description_excerpt": "SPX6900 (SPX) is a decentralized blockchain platform designed for secure and scalable applications, focusing on interoperability and user-centric features. It aims to enhance the overall user experience within the cryptocurrency ecosystem.",
         "has_substantive_descriptive_context": true,
         "name": "SPX6900",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": []
         },
@@ -3389,6 +3591,21 @@
       "project_protocol_context_total": 10,
       "quantitative_research_families": [
         {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.06384,
+            "bid": 0.0638,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 28177,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "PYTH-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 6.26763,
+            "top5_ask_usd": 1562.06,
+            "top5_bid_usd": 1865.98
+          }
+        },
+        {
           "family": "protocol_tvl",
           "observation": {
             "chain_count": 1,
@@ -3402,22 +3619,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": 0.0
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 7874958730.446233,
+            "cmc_id": 28177,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "PYTH",
+            "total_supply": 9999981857.422035
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 7874958730.446233,
         "cmc_id": 28177,
         "coin_name": "Pyth Network",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PYTH",
-        "total_supply": null
+        "total_supply": 9999981857.422035
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3429,7 +3660,7 @@
         "description_excerpt": "Pyth Network is a decentralized oracle solution that provides real-time data feeds for cryptocurrencies and other financial assets, empowering developers to build reliable DeFi applications.",
         "has_substantive_descriptive_context": true,
         "name": "Pyth Network",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.solana.com/address/HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
@@ -3595,7 +3826,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Beam",
-            "chain_tvl_usd": 1517611.73,
+            "chain_tvl_usd": 1529817.37,
             "cmc_id": 28298,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3615,23 +3846,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 50315935307.0,
+            "cmc_id": 28298,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 58470184687.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.104Z",
+            "symbol": "BEAM",
+            "total_supply": 58470184687.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 50315935307.0,
         "cmc_id": 28298,
         "coin_name": "Beam",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 58470184687.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BEAM",
-        "total_supply": null
+        "total_supply": 58470184687.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3646,7 +3891,7 @@
         "description_excerpt": "Beam (BEAM) is a privacy-focused cryptocurrency utilizing the Mimblewimble protocol to enable confidential transactions and enhance user anonymity. It aims to provide scalability and simplicity while maintaining a high level of security.",
         "has_substantive_descriptive_context": true,
         "name": "Beam",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.beam.mw/",
@@ -3750,7 +3995,6 @@
         "okx_swap_tickers": 1
       },
       "missing_data": [
-        "mapped_protocol_fundamentals",
         "coin_relevant_article_text",
         "source_backed_coin_description"
       ],
@@ -3786,6 +4030,16 @@
         "trading_status": "live"
       },
       "project_protocol_context_NOT_TOKEN_SIGNAL": [
+        {
+          "excerpt": "v2.11.1 is a security and stability release on top of v2.11.0 . It's the public release of v2.11.1-priv , which most validators already run. No hardfork, no config change, no database schema change, no resync required. Nodes can be upgraded one at a time, in any order. Highlights Stateless import : each block's header, and its body against the header, are checked before the block is executed. This applies to both the sequential and the parallel import path. Parallel import waits for a batch's header checks before it executes the batch. Execution and RPC : on a chain with no blob schedule, transaction pre-checks return ErrNoBlobBaseFee ( blob base fee unavailable ) for blob transactions. Operator notes Operators on v2.11.1-priv : same code, switch to v2.11.1 at your next maintenance window. Operators on v2.11.0 : upgrade. All operators sho",
+          "first_observed_utc": "2026-11-13T22:40:58Z",
+          "has_substantive_context": true,
+          "published_utc": "2026-11-13T21:29:23Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "polygon_core_releases",
+          "title": "v2.11.1",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.11.1"
+        },
         {
           "excerpt": "v2.11.0 is a hardfork, security and stability release on top of v2.10.3 . It's the public release of v2.11.0-priv , which validators and major RPC providers already run. Uburu hardfork Already active on both networks: Network Fork block Amoy 51978200 Mainnet 96787900 Uburu updates the StateReceiver genesis contract ( 0x…1001 ) at the fork block. It changes how state syncs are executed and recorded. Operators on v2.11.0-priv : same code, switch to v2.11.0 at your next maintenance window. Nodes still on v2.10.3 or older stopped following the chain at the fork block. Upgrade immediately. Highlights Consensus and state sync : state-sync records are fetched from Heimdall one page at a time, as the per-block budget admits them. A failed fetch now fails the block, where before it committed it without state syncs. Span lookups by block number fol",
           "first_observed_utc": "2026-11-12T20:05:46Z",
@@ -3877,16 +4131,6 @@
           "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.1-hotfix"
         },
         {
-          "excerpt": "What's Changed eth/sequencer: cap coalesced published records at the store message limit by @cffls in #2400 Full Changelog : v2.10.2-preconf...v2.10.2-preconf2",
-          "first_observed_utc": "2026-11-12T20:05:46Z",
-          "has_substantive_context": true,
-          "published_utc": "2026-09-10T17:39:19Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "polygon_core_releases",
-          "title": "v2.10.2-preconf2 (Testing Only)",
-          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-preconf2"
-        },
-        {
           "excerpt": "Hotfix Release: Bhilai Hard Fork on Mainnet NOTE: THIS RELEASE IS ONLY FOR MAINNET We are releasing a hotfix for the Bhilai Hard Fork on Mainnet , which upgrades the bor client to version v2.1.1 . Please note that this release is same as v1.2.4, there was an issue with docker image generation for v1.2.4, so we released v1.2.5. Action Required: All mainnet operators are strongly recommended to upgrade their heimdall nodes to heimdall v1.2.5 to ensure continued compatibility and stability post-HF. This release addresses network compatibility issues and is essential for seamless participation in mainnet consensus following the Bhilai upgrade. What's Changed Increased the bor version to support bhilai HF by @pratikspatil024 in #1289 Full Changelog : v1.2.3...v1.2.5",
           "first_observed_utc": "2026-11-12T20:05:46Z",
           "has_substantive_context": true,
@@ -3909,19 +4153,50 @@
       ],
       "project_protocol_context_substantive_count": 17,
       "project_protocol_context_total": 20,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.08438,
+            "bid": 0.08437,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 28321,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "POL-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 1.18519,
+            "top5_ask_usd": 1249.29,
+            "top5_bid_usd": 1037.52
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 10649037507.489653,
+            "cmc_id": 28321,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "POL",
+            "total_supply": 10649037517.489653
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 10649037507.489653,
         "cmc_id": 28321,
         "coin_name": "Polygon (prev. MATIC)",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "POL",
-        "total_supply": null
+        "total_supply": 10649037517.489653
       },
       "source_backed_project_profile": null,
       "source_backed_project_profile_substantive": false,
@@ -3942,8 +4217,17 @@
       "symbol": "POL"
     },
     {
-      "candidate_event_count": 107,
+      "candidate_event_count": 108,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Jupiter ( JUP ) is refusing to follow the crypto market lower. While Bitcoin and major altcoins are experiencing a bloodbath, the Solana-based trading ecosystem is attracting attention for a different reason: its expanding business. JUP’s relative strength comes as Jupiter rolls out four new products, expands its revenue-generating ecosystem, and continues accumulating tokens through its buyback program. Investors appear increasingly interested in what the protocol is building rather than simply following Bitcoin’s direction. So what’s happening to the Jupiter crypto ecosystem? Jupiter (JUP) 24h 7d 30d 1y All time Jupiter Builds Its Own Crypto Fundamentals and Momentum Jupiter’s latest expansion, announced 2 days ago, introduces four products under its Aggregate Everything strategy: Baskets, Vaults, Pulse and Portfolio V3. Before this, Jupiter has already routed more than $2 trillion in cumulative crypto trading volume, but it now wants users to discover, own, earn from, and manage dig",
+          "id": "research:a68806406c3f2b657f",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T08:27:57Z",
+          "title": "Jupiter Crypto Trading on Its Own Fundamentals: JUP USD Breaks Away From Market Sell-Off",
+          "url": "https://cryptonews.com/news/jupiter-crypto-jup-usd-market-sell-off/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Why sell when you can borrow to pay? With Borrow to Pay, keep your position, keep your upside and still spend on what you need. The smartest way to spend without letting go of what you’re holding onto ⤵️ X",
@@ -4024,15 +4308,6 @@
           "published_utc": "2026-11-11T07:33:41Z",
           "title": "Tell me some combinations in female chart showing she is unlucky in love despite having a pure heart - Reddit",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTWN1bS1DekQ3OHdQb0NZU3hQLUN6a25DSWhTaWhwQ0xuSzBmTUQ3T3ZkWnoxcUpTa01nZHQxaDlZMjNGWUVoNXY5Vmo3ZndEYTJRR0E1U0xiakV1Q200enFNc0RUb1M4ZW8xOUw5ZlNrck9qZURieHZ2V2pRQUxhN21FSzZvUENyQl95VGFkc3ZXMmp2NTdyaEFfTGx4bEt6YXRXaFlR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "JHS Girls Weightlifting heads to Dwyer while JUP girls soccer teams and boys basketball heads to Martin County for game action. Good luck to all our Warrior teams as they battle the Panthers and Tigers today. #onetribe #warriorpride X",
-          "id": "expanded:12a7d6715dcba667ec",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T14:00:05Z",
-          "title": "JHS Girls Weightlifting heads to Dwyer while JUP girls soccer teams and boys basketball heads to Martin County for game action. Good luck to all our Warrior teams as they battle the Panthers and Tigers today. #onetribe #warriorpri",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tZzBzUjltS2d2T3JTMDZFM1lldE13cXBLeHRndE1EemY0SGVWZXdhMUR0QVpYcTI2X0JlbFgzZDRLU1F6SGlWU3JLalZuUFNjSDQyeHBNRmFvb191VGhvYUVrSXVITkk?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
@@ -4065,9 +4340,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "Jupiter",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -4203,19 +4476,50 @@
       ],
       "project_protocol_context_substantive_count": 8,
       "project_protocol_context_total": 10,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.2626,
+            "bid": 0.2625,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 29210,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "JUP-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 3.8088,
+            "top5_ask_usd": 6103.52,
+            "top5_bid_usd": 10544.0
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 3319369204.37,
+            "cmc_id": 29210,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 6862435229.582892,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.221Z",
+            "symbol": "JUP",
+            "total_supply": 6862435229.582892
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 3319369204.37,
         "cmc_id": 29210,
         "coin_name": "Jupiter",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 6862435229.582892,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "JUP",
-        "total_supply": null
+        "total_supply": 6862435229.582892
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4227,7 +4531,7 @@
         "description_excerpt": "Jupiter (JUP) is a cryptocurrency designed for the decentralized creation and management of user-focused applications, emphasizing interoperability and user-friendliness. It aims to connect various blockchain ecosystems while providing tools for developers and users alike.",
         "has_substantive_descriptive_context": true,
         "name": "Jupiter",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://www.jup.io/"
@@ -4385,7 +4689,7 @@
         "okx_swap_tickers": 1
       },
       "missing_data": [
-        "mapped_protocol_fundamentals"
+        "source_backed_coin_description"
       ],
       "name": "Aero",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
@@ -4421,61 +4725,64 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.4665,
+            "bid": 0.4663,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 29270,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "AERO-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 4.28816,
+            "top5_ask_usd": 10399.58,
+            "top5_bid_usd": 13650.18
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1064721309.93731,
+            "cmc_id": 29270,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "AERO",
+            "total_supply": 2140773204.192442
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 29270,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "Aero",
+            "rank": 11
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1064721309.93731,
         "cmc_id": 29270,
         "coin_name": "Aero",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply",
+          "trending"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "AERO",
-        "total_supply": null
+        "total_supply": 2140773204.192442
       },
-      "source_backed_project_profile": {
-        "categories": [
-          "Decentralized Exchange (DEX)",
-          "Decentralized Finance (DeFi)",
-          "Base Ecosystem"
-        ],
-        "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
-        "cmc_id": 29270,
-        "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
-        "description_excerpt": "Aero is the unified liquidity layer for all of Ethereum: a cross-network digital asset exchange delivering institutional-grade execution, efficiency, and automation. Its combination of leading technology and economic innovation makes Aero the onchain venue for users, agents, and protocols to trade, earn, and launch digital assets onchain.",
-        "has_substantive_descriptive_context": true,
-        "name": "Aero",
-        "observed_utc": "2026-11-13T16:23:19Z",
-        "primary_links_unverified": {
-          "blockchain_site": [
-            "https://basescan.org/token/0x3f5bF3EdAc59d650D8fDf9657a71F2f904A3a4Ee",
-            "https://intel.arkm.com/explorer/token/"
-          ],
-          "homepage": [
-            "https://app.aero.xyz/",
-            "https://aero.xyz/"
-          ],
-          "official_forum_url": [
-            "https://aero.xyz/articles/"
-          ],
-          "source_code": [
-            "https://github.com/dromos-labs"
-          ]
-        },
-        "project_team_unverified": [],
-        "provider": "coingecko",
-        "provider_id": "aero",
-        "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
-        "source_url": "https://www.coingecko.com/en/coins/aero",
-        "symbol": "AERO",
-        "technology_and_project_attributes": {
-          "asset_platform_id": "base",
-          "block_time_in_minutes": 0
-        }
-      },
-      "source_backed_project_profile_substantive": true,
+      "source_backed_project_profile": null,
+      "source_backed_project_profile_substantive": false,
       "spot_quote": {
         "market_cap_usd": 540803446.2,
         "price_usd": 0.5047328,
@@ -4486,10 +4793,8 @@
         "volume_24h_usd": 44310719.06,
         "volume_change_24h_pct": -9.2809773
       },
-      "substantive_coin_specific_context_origins": [
-        "EXACT_MATCH_PUBLIC_COIN_PROFILE"
-      ],
-      "substantive_coin_specific_context_present": true,
+      "substantive_coin_specific_context_origins": [],
+      "substantive_coin_specific_context_present": false,
       "symbol": "AERO"
     },
     {
@@ -4679,6 +4984,21 @@
       "project_protocol_context_total": 0,
       "quantitative_research_families": [
         {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.5114,
+            "bid": 0.5113,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 29420,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "VIRTUAL-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 1.95561,
+            "top5_ask_usd": 3616.25,
+            "top5_bid_usd": 3829.23
+          }
+        },
+        {
           "family": "protocol_tvl",
           "observation": {
             "chain_count": 1,
@@ -4692,22 +5012,36 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": 0.0
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 659051770.388132,
+            "cmc_id": 29420,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "symbol": "VIRTUAL",
+            "total_supply": 1000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 659051770.388132,
         "cmc_id": 29420,
         "coin_name": "Virtuals Protocol",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "VIRTUAL",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4723,7 +5057,7 @@
         "description_excerpt": "Virtuals Protocol (VIRTUAL) is a decentralized platform that enables the creation, trading, and management of virtual assets within a blockchain ecosystem. It aims to streamline the process of asset tokenization and ensure secure, efficient transactions.",
         "has_substantive_descriptive_context": true,
         "name": "Virtuals Protocol",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://www.virtuals.io/"
@@ -4881,9 +5215,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "ether.fi",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -4918,19 +5250,50 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.5714,
+            "bid": 0.5713,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 29814,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "ETHFI-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 1.75024,
+            "top5_ask_usd": 1336.58,
+            "top5_bid_usd": 1745.32
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 965350000.0,
+            "cmc_id": 29814,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "symbol": "ETHFI",
+            "total_supply": 1000000000.0
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 965350000.0,
         "cmc_id": 29814,
         "coin_name": "ether.fi",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ETHFI",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4946,7 +5309,7 @@
         "description_excerpt": "Ether.fi (ETHFI) is a decentralized staking platform that allows users to earn rewards by staking their Ether (ETH) while maintaining control of their assets. It aims to provide a secure and transparent staking experience within the Ethereum ecosystem.",
         "has_substantive_descriptive_context": true,
         "name": "ether.fi",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://www.ether.fi/"
@@ -4984,8 +5347,17 @@
       "symbol": "ETHFI"
     },
     {
-      "candidate_event_count": 70,
+      "candidate_event_count": 67,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "title: [Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3 author: @TokenLogic created: 2026-11-13 Summary This publication proposes a common set of reference e-modes for Ethena collateral on Aave V3 Core, Plasma, Mantle, Monad and Avalanche. The proposed parameters are 91% LTV and 93% LT for USDe against stablecoins, and 90% LTV and 92% LT for sUSDe against stablecoins. Legacy collateral on Core and Plasma would be retired through per-asset LTV-zero flags while keeping existing LTs, except Plasma #21 , whose LT returns from 93.1% to 93%, and Plasma #23 , which is aligned to the sUSDe reference parameters. The proposal also retires the matured PTs on Monad and in X Layer #7 and #8 , and removes USDe borrowing from Avalanche #4 . Motivation Overview Several legacy Ethena PT e-modes continue to accept USDe or sUSDe after their PTs have matured. Their parameters and borrowable assets differ from the reference e-modes, so users with similar collateral can face different parameters and a",
+          "id": "research:05a1d012b693301f7f",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T12:19:38Z",
+          "title": "[Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3",
+          "url": "https://governance.aave.com/t/direct-to-aip-ethena-e-mode-consolidation-on-aave-v3/26304"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Ethena Pay has launched Earn+, a feature that gives its users higher rewards on their dollars within the app. Earn+ utilizes Aave V4 on Avalanche, where a vault managed by Upshift and Steakhouse puts deposits to work in an onchain strategy built on Aave’s lending markets.",
@@ -4994,15 +5366,6 @@
           "published_utc": "2026-10-28T00:00:00Z",
           "title": "Ethena Pay Launches Earn+, Powered by Aave",
           "url": "https://aave.com/blog/ethena-pay"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Eligible holders of BlackRock’s BUIDL can now swap BUIDL for USDC and other stablecoins after banking hours and on weekends. The facility was created by Securitize and Ethena and was launched on Thursday. The pool started with $50 million of funding against a $100 million cap. Securitize runs the facility and Ethena backs it Approved investors can trade BUIDL for supported stablecoins like USDC or convert those stablecoins back into BUIDL, according to the Securitize announcement . Securitize operates the facility, and Ethena is the backer. The facility grants investors access to liquidity on Saturday or Sunday without having to wait for markets to open on Monday. “Tokenization is about more than putting assets onchain. It’s about making those assets more useful,” said Carlos Domingo, co-founder and CEO of Securitize. “Digital assets operate around the clock, and institutional liquidity needs to keep pace,” said Guy Young, founder of Ethena Labs. The launch gives eligible people access",
-          "id": "research:641f4371fae53a784e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-13T02:03:49Z",
-          "title": "BlackRock's BUIDL fund gets a weekend USDC exit through Securitize and Ethena",
-          "url": "https://www.cryptopolitan.com/blackrock-buidl-holders-swap-usdc-weekends/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -5030,15 +5393,6 @@
           "published_utc": "2026-11-12T14:39:06Z",
           "title": "Securitize, Ethena Open BUIDL Facility With $100M Capacity",
           "url": "https://thedefiant.io/converge/defi/securitize-ethena-open-buidl-facility-with-100m-capacity"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Key Takeaways: Ethena price prediction shows selling pressure toward $0.14 Our ENA price prediction expects a maximum of $0.82 in 2026. In 2032, we expect the ENA price to achieve $7.38. Ethena is a stablecoin project built on Ethereum that offers USDe, a fully decentralized coin pegged to the US dollar. Unlike stablecoins such as USDC or USDT, USDe doesn’t depend on banks or centralized companies for reserves. Instead, it uses a cash-and-carry trading strategy to keep its value equal to the dollar. For investors who prioritize decentralization, USDe could be an appealing choice — especially since it currently offers staking rewards above 9%. However, critics caution that since the project is still new, it’s uncertain whether USDe’s high yields and dollar peg can remain stable during a market downturn. Based on these developments, we’ve compiled our Ethena price prediction from 2026-2032. In this article, we’ll find out “Will ENA reach $10?” and explore the factors behind ENA price pre",
-          "id": "research:eb1c5db950cc86533c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T17:13:23Z",
-          "title": "Ethena Price Prediction 2026-2032: Will ENA Price Crash or Surge Toward $10?",
-          "url": "https://www.cryptopolitan.com/ethena-price-prediction/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -5075,6 +5429,15 @@
           "published_utc": "2026-11-12T04:00:35Z",
           "title": "📉 $ENA (Ethena) is sliding today: $0.1436 (-6.80% 24h) 24h range: $0.1429 – $0.1562 | Fear & Greed: 28 (Fear) Bias: 📉 Bearish pressure — sellers in control, price hovering near support. 🟢 Support: $0.14 🔴 Resistance: $0.16 #Ethena",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1dXBwUzZLVUZRWGpxbld2LXU2eHJ4SFpWdkJwaTBUNXpQS200ZlRXTDZJak44X3RpNjJfeTlGVzVoeXl6dDE5eHVma1pHQUxwN09Ha015d1VlN0lBa29KcQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "kHYPE pairs are live on BOXA. Launch your coin paired with kHYPE, @Kinetiq_xyz's staked HYPE. X",
+          "id": "expanded:100cc1479cc96691dc",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-11T15:35:17Z",
+          "title": "kHYPE pairs are live on BOXA. Launch your coin paired with kHYPE, @Kinetiq_xyz's staked HYPE. - X",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NeEE1ZDFqQ0ItY01YamlIMWVlWHEzaGlfX1p3NThFc19QV2Qxb2JpLWhWNC1KdEpOWlJhdUZzeUNja3BWMzlTdlE1eGFGYUQzQy1CZFJqbm9YYVlnN2NHVjdlbTdWUjhlUE1TT2hXbWdqVzY4?oc=5"
         }
       ],
       "cmc100_weight": 0.09,
@@ -5118,9 +5481,7 @@
         "okx_swap_tickers": 1,
         "patternplus_unlocks": 2
       },
-      "missing_data": [
-        "mapped_protocol_fundamentals"
-      ],
+      "missing_data": [],
       "name": "Ethena",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -5155,19 +5516,50 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "okx_orderbooks",
+          "observation": {
+            "ask": 0.13328,
+            "bid": 0.13327,
+            "book_source_utc": "2026-11-13T22:41:07Z",
+            "cmc_id": 30171,
+            "depth_status": "VALIDATED_CONTRACT_VALUE",
+            "instrument_id": "ENA-USDT-SWAP",
+            "source": "OKX_ORDERBOOK_LEVEL5",
+            "spread_bps": 0.75033,
+            "top5_ask_usd": 1613.06,
+            "top5_bid_usd": 1740.24
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 13500000000.0,
+            "cmc_id": 30171,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 15000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "ENA",
+            "total_supply": 15000000000.0
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 13500000000.0,
         "cmc_id": 30171,
         "coin_name": "Ethena",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 15000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ENA",
-        "total_supply": null
+        "total_supply": 15000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5181,7 +5573,7 @@
         "description_excerpt": "Ethena (ENA) is a blockchain-based platform that aims to provide decentralized and secure financial services through smart contracts. It focuses on enabling efficient transactions and fostering a collaborative ecosystem for users.",
         "has_substantive_descriptive_context": true,
         "name": "Ethena",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "source_code": [
             "https://github.com/ethena-labs"

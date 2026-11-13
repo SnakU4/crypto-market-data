@@ -127,26 +127,40 @@
             "protocol_id": "2435",
             "protocol_name": "Nexo",
             "protocol_slug": "nexo",
-            "protocol_tvl_change_1d_pct": -29.38297,
-            "protocol_tvl_change_7d_pct": -49.023618,
-            "protocol_tvl_usd": 7940926.66
+            "protocol_tvl_change_1d_pct": 10.612883,
+            "protocol_tvl_change_7d_pct": -37.036042,
+            "protocol_tvl_usd": 10119196.43
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 646145839.574685,
+            "cmc_id": 2694,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 1000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "NEXO",
+            "total_supply": 1000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 646145839.574685,
         "cmc_id": 2694,
         "coin_name": "Nexo",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 1000000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "NEXO",
-        "total_supply": null
+        "total_supply": 1000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -164,7 +178,7 @@
         "description_excerpt": "Nexo (NEXO) is a cryptocurrency platform that provides instant crypto credit lines and earn interest on digital assets, allowing users to leverage their crypto holdings. It combines traditional finance with blockchain technology to offer services like borrowing and interest-earning accounts.",
         "has_substantive_descriptive_context": true,
         "name": "Nexo",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206",
@@ -467,27 +481,41 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "VeChain",
-            "chain_tvl_usd": 236191.55,
+            "chain_tvl_usd": 240935.11,
             "cmc_id": 3077,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 85985041177.0,
+            "cmc_id": 3077,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 86712634466.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "symbol": "VET",
+            "total_supply": 85985041177.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 85985041177.0,
         "cmc_id": 3077,
         "coin_name": "VeChain",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 86712634466.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "VET",
-        "total_supply": null
+        "total_supply": 85985041177.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -504,7 +532,7 @@
         "description_excerpt": "VeChain (VET) is a blockchain platform designed to enhance supply chain and business processes by providing secure data sharing and tracking through its decentralized applications. It aims to improve transparency and efficiency in various industries using smart contracts and IoT technology.",
         "has_substantive_descriptive_context": true,
         "name": "VeChain",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.vtho.net/",
@@ -698,8 +726,7 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Quant",
       "perp_identity_status": "QUARANTINED",
@@ -708,17 +735,33 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 12072738.0,
+            "cmc_id": 3155,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 14881364.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "QNT",
+            "total_supply": 14881364.0
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 12072738.0,
         "cmc_id": 3155,
         "coin_name": "Quant",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
-        "research_metric_families": [],
+        "max_supply": 14881364.0,
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "QNT",
-        "total_supply": null
+        "total_supply": 14881364.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -732,7 +775,7 @@
         "description_excerpt": "Quant (QNT) is a blockchain platform designed to enable interoperability between various blockchains and networks, facilitating the seamless transfer of data and assets. It aims to connect different systems and improve their functionality through its Overledger technology.",
         "has_substantive_descriptive_context": true,
         "name": "Quant",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.energi.network/token/0x462b35452e552a66b519ecf70aedb1835d434965",
@@ -896,8 +939,7 @@
         "coingecko_supply": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "Bitcoin SV",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -906,19 +948,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 20110565.625,
+            "cmc_id": 3602,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 21000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "BSV",
+            "total_supply": 20110565.625
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 20110565.625,
         "cmc_id": 3602,
         "coin_name": "Bitcoin SV",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 21000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BSV",
-        "total_supply": null
+        "total_supply": 20110565.625
       },
       "source_backed_project_profile": {
         "categories": [
@@ -933,7 +991,7 @@
         "description_excerpt": "Bitcoin SV (BSV) is a cryptocurrency that emerged from a hard fork of Bitcoin Cash (BCH) aimed at restoring the original Bitcoin protocol and increasing its scaling capabilities. It emphasizes larger block sizes and aims to fulfill Bitcoin's original vision as a peer-to-peer electronic cash system.",
         "has_substantive_descriptive_context": true,
         "name": "Bitcoin SV",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://blockchair.com/bitcoin-sv/?from=coinpaprika",
@@ -1283,7 +1341,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Cronos",
-            "chain_tvl_usd": 90788576.73,
+            "chain_tvl_usd": 91326757.62,
             "cmc_id": 3635,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1292,33 +1350,47 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.04718,
-            "bid": 0.04716,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.04641,
+            "bid": 0.04638,
+            "book_source_utc": "2026-11-13T22:41:05Z",
             "cmc_id": 3635,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "CRO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 4.23998,
-            "top5_ask_usd": 1076.95,
-            "top5_bid_usd": 1561.17
+            "spread_bps": 6.46621,
+            "top5_ask_usd": 886.56,
+            "top5_bid_usd": 2163.09
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 50774758524.39764,
+            "cmc_id": 3635,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 100000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.245Z",
+            "symbol": "CRO",
+            "total_supply": 99036096979.62627
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 50774758524.39764,
         "cmc_id": 3635,
         "coin_name": "Cronos",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 100000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "CRO",
-        "total_supply": null
+        "total_supply": 99036096979.62627
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1335,7 +1407,7 @@
         "description_excerpt": "Cronos (CRO) is the native cryptocurrency of the Cronos blockchain, designed to facilitate fast and efficient transactions in the Crypto.com ecosystem. It aims to provide a seamless experience for users engaging in decentralized finance and payments.",
         "has_substantive_descriptive_context": true,
         "name": "Cronos",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://ethplorer.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
@@ -1542,31 +1614,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.1468,
-            "bid": 0.1467,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.1465,
+            "bid": 0.1464,
+            "book_source_utc": "2026-11-13T22:41:05Z",
             "cmc_id": 3773,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "FET-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.81431,
-            "top5_ask_usd": 34029.54,
-            "top5_bid_usd": 23176.31
+            "spread_bps": 6.82827,
+            "top5_ask_usd": 33242.8,
+            "top5_bid_usd": 38960.51
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 2429145831.75903,
+            "cmc_id": 3773,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 2719493897.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "symbol": "FET",
+            "total_supply": 2714384546.672
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 2429145831.75903,
         "cmc_id": 3773,
         "coin_name": "Artificial Superintelligence Alliance",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 2719493897.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "FET",
-        "total_supply": null
+        "total_supply": 2714384546.672
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1584,7 +1671,7 @@
         "description_excerpt": "Artificial Superintelligence Alliance (FET) aims to advance research and development in artificial superintelligence, promoting collaboration among experts to ensure its safe and beneficial implementation.",
         "has_substantive_descriptive_context": true,
         "name": "Artificial Superintelligence Alliance",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://atomscan.com/fetchai",
@@ -1911,31 +1998,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.404,
-            "bid": 1.402,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 1.367,
+            "bid": 1.366,
+            "book_source_utc": "2026-11-13T22:41:05Z",
             "cmc_id": 3794,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ATOM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 14.25517,
-            "top5_ask_usd": 85477.3,
-            "top5_bid_usd": 81653.44
+            "spread_bps": 7.31797,
+            "top5_ask_usd": 62111.03,
+            "top5_bid_usd": 81538.61
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 540425557.232905,
+            "cmc_id": 3794,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "symbol": "ATOM",
+            "total_supply": 540425557.232905
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 540425557.232905,
         "cmc_id": 3794,
         "coin_name": "Cosmos",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ATOM",
-        "total_supply": null
+        "total_supply": 540425557.232905
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1956,7 +2058,7 @@
         "description_excerpt": "Cosmos (ATOM) is a decentralized network enabling multiple blockchains to interoperate and communicate through a shared protocol. It aims to create an \"Internet of Blockchains\" for scalable, secure, and efficient blockchain ecosystems.",
         "has_substantive_descriptive_context": true,
         "name": "Cosmos",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://www.mintscan.io",
@@ -2167,31 +2269,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 94.87,
-            "bid": 94.86,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 93.75,
+            "bid": 93.74,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 3897,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "OKB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.05413,
-            "top5_ask_usd": 4020.43,
-            "top5_bid_usd": 5077.17
+            "spread_bps": 1.06672,
+            "top5_ask_usd": 5856.07,
+            "top5_bid_usd": 2415.82
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 21000000.0,
+            "cmc_id": 3897,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 21000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "OKB",
+            "total_supply": 21000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 21000000.0,
         "cmc_id": 3897,
         "coin_name": "OKB",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 21000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "OKB",
-        "total_supply": null
+        "total_supply": 21000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2205,7 +2322,7 @@
         "description_excerpt": "OKB is a utility token issued by the OK Blockchain Foundation, primarily used within the OKEx exchange ecosystem for trading fee discounts, participation in token sales, and other services. It aims to enhance user engagement and provide a variety of benefits for its holders.",
         "has_substantive_descriptive_context": true,
         "name": "OKB",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x75231f58b43240c9718dd58b4967c5114342a86c",
@@ -2348,7 +2465,6 @@
       "engine_record_counts_by_source": {},
       "missing_data": [
         "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals",
         "source_backed_coin_description"
       ],
       "name": "UNUS SED LEO",
@@ -2358,19 +2474,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 919857851.9,
+            "cmc_id": 3957,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "LEO",
+            "total_supply": 985239504.0
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 919857851.9,
         "cmc_id": 3957,
         "coin_name": "UNUS SED LEO",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "LEO",
-        "total_supply": null
+        "total_supply": 985239504.0
       },
       "source_backed_project_profile": null,
       "source_backed_project_profile_substantive": false,
@@ -2653,7 +2785,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Algorand",
-            "chain_tvl_usd": 27180604.9,
+            "chain_tvl_usd": 27200529.12,
             "cmc_id": 4030,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2662,33 +2794,47 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.0874,
-            "bid": 0.08738,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.08488,
+            "bid": 0.08487,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 4030,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ALGO-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.28859,
-            "top5_ask_usd": 858.59,
-            "top5_bid_usd": 1132.95
+            "spread_bps": 1.1782,
+            "top5_ask_usd": 891.68,
+            "top5_bid_usd": 1990.65
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 9079701790.949734,
+            "cmc_id": 4030,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 10000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "ALGO",
+            "total_supply": 10000000000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 9079701790.949734,
         "cmc_id": 4030,
         "coin_name": "Algorand",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 10000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ALGO",
-        "total_supply": null
+        "total_supply": 10000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2708,7 +2854,7 @@
         "description_excerpt": "Algorand (ALGO) is a decentralized blockchain platform designed for speed and efficiency, enabling the creation of secure and scalable applications. It uses a unique consensus mechanism called Pure Proof-of-Stake to facilitate fast transactions and maintain network security.",
         "has_substantive_descriptive_context": true,
         "name": "Algorand",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://algoexplorer.io",
@@ -2785,8 +2931,7 @@
       "engine_provenance_sample": [],
       "engine_record_counts_by_source": {},
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "GateToken",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -2795,19 +2940,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 104709515.4,
+            "cmc_id": 4269,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 142622843.67,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "symbol": "GT",
+            "total_supply": 138065459.04
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 104709515.4,
         "cmc_id": 4269,
         "coin_name": "GateToken",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 142622843.67,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "GT",
-        "total_supply": null
+        "total_supply": 138065459.04
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2821,7 +2982,7 @@
         "description_excerpt": "GateToken (GT) is the native utility token of the Gate.io exchange, designed to be used for trading fee discounts, participation in token sales, and other platform perks. It aims to enhance user experience and promote engagement within the Gate.io ecosystem.",
         "has_substantive_descriptive_context": true,
         "name": "GateToken",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0xe66747a101bff2dba3697199dcce5b743b454759",
@@ -3023,11 +3184,41 @@
           "excerpt": "chore: tagging commit for XTS promotion",
           "first_observed_utc": "2026-11-13T07:07:06Z",
           "has_substantive_context": false,
-          "published_utc": "2026-11-13T04:35:11Z",
+          "published_utc": "2026-11-13T22:12:29Z",
           "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
           "source_id": "hedera_releases",
           "title": "xts-candidate",
           "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/xts-candidate"
+        },
+        {
+          "excerpt": "Single Day Performance Test passed for build-00426",
+          "first_observed_utc": "2026-11-13T22:40:58Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T20:54:01Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdpt-pass-00426",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdpt-pass-00426"
+        },
+        {
+          "excerpt": "Single Day Longevity Test passed for build-00426",
+          "first_observed_utc": "2026-11-13T22:40:58Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T19:24:31Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdlt-pass-00426",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdlt-pass-00426"
+        },
+        {
+          "excerpt": "Single Day Performance Test passed for build-00424",
+          "first_observed_utc": "2026-11-13T22:40:58Z",
+          "has_substantive_context": false,
+          "published_utc": "2026-11-13T12:14:13Z",
+          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
+          "source_id": "hedera_releases",
+          "title": "sdpt-pass-00424",
+          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdpt-pass-00424"
         },
         {
           "excerpt": "chore: tagging commit for build promotion",
@@ -3088,36 +3279,6 @@
           "source_id": "hedera_releases",
           "title": "build-00424",
           "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/build-00424"
-        },
-        {
-          "excerpt": "",
-          "first_observed_utc": "2026-11-13T07:07:06Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-11-10T22:27:19Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "hedera_releases",
-          "title": "v0.80.0-alpha.5",
-          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/v0.80.0-alpha.5"
-        },
-        {
-          "excerpt": "Single Day Performance Test passed for build-00423",
-          "first_observed_utc": "2026-11-13T07:07:06Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-11-10T21:21:21Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "hedera_releases",
-          "title": "sdpt-pass-00423",
-          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdpt-pass-00423"
-        },
-        {
-          "excerpt": "Single Day Longevity Test passed for build-00423",
-          "first_observed_utc": "2026-11-13T07:07:06Z",
-          "has_substantive_context": false,
-          "published_utc": "2026-11-10T19:44:54Z",
-          "relation_status": "CURATED_PROJECT_CONTEXT_NOT_VERIFIED_TOKEN_EFFECT",
-          "source_id": "hedera_releases",
-          "title": "sdlt-pass-00423",
-          "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/sdlt-pass-00423"
         }
       ],
       "project_protocol_context_substantive_count": 0,
@@ -3127,7 +3288,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Hedera",
-            "chain_tvl_usd": 21648688.67,
+            "chain_tvl_usd": 21961761.57,
             "cmc_id": 4642,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3136,16 +3297,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.06235,
-            "bid": 0.06234,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.06116,
+            "bid": 0.06115,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 4642,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "HBAR-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.60398,
-            "top5_ask_usd": 23535.92,
-            "top5_bid_usd": 39326.84
+            "spread_bps": 1.63519,
+            "top5_ask_usd": 15906.88,
+            "top5_bid_usd": 26643.76
           }
         },
         {
@@ -3162,23 +3323,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 44327141800.6738,
+            "cmc_id": 4642,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 50000000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.245Z",
+            "symbol": "HBAR",
+            "total_supply": 50000000000.0
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 44327141800.6738,
         "cmc_id": 4642,
         "coin_name": "Hedera",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 50000000000.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "HBAR",
-        "total_supply": null
+        "total_supply": 50000000000.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3198,7 +3373,7 @@
         "description_excerpt": "Hedera is a decentralized public network where developers can build secure, fair applications with near real-time consensus. The platform is owned and governed by a council of global innovators including Avery Dennison, Boeing, Deutsche Telekom, DLA Piper, FIS (WorldPay), Google, IBM, LG Electronics, Magalu, Nomura, Swirlds, Tata Communications, University College London (UCL), Wipro, and Zain Group. The Hedera Consensus Service (HCS) acts as a t",
         "has_substantive_descriptive_context": true,
         "name": "Hedera",
-        "observed_utc": "2026-11-13T16:22:51Z",
+        "observed_utc": "2026-11-13T22:51:26Z",
         "primary_links_unverified": {
           "blockchain_site": [
             "https://hashscan.io/",
@@ -3354,8 +3529,7 @@
         "kraken_futures_tickers": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "PAX Gold",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -3364,19 +3538,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 447677.838225,
+            "cmc_id": 4705,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "PAXG",
+            "total_supply": 447677.838225
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 447677.838225,
         "cmc_id": 4705,
         "coin_name": "PAX Gold",
         "evidence_is_price_catalyst": "UNDETERMINED",
         "max_supply": null,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "PAXG",
-        "total_supply": null
+        "total_supply": 447677.838225
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3394,7 +3584,7 @@
         "description_excerpt": "PAX Gold (PAXG) is a digital asset backed by physical gold, designed to combine the stability of gold with the flexibility of blockchain technology. Each PAXG token is equivalent to one troy ounce of gold stored in professional vaults.",
         "has_substantive_descriptive_context": true,
         "name": "PAX Gold",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://etherscan.io/token/0x45804880de22913dafe09f4980848ece6ecbaf78",
@@ -3723,7 +3913,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Stacks",
-            "chain_tvl_usd": 56234210.23,
+            "chain_tvl_usd": 55914647.54,
             "cmc_id": 4847,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3732,21 +3922,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.2858,
-            "bid": 0.2857,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 0.2861,
+            "bid": 0.286,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 4847,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "STX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 3.49956,
-            "top5_ask_usd": 5016.81,
-            "top5_bid_usd": 11503.54
+            "spread_bps": 3.49589,
+            "top5_ask_usd": 5764.12,
+            "top5_bid_usd": 4317.4
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 1882314657.591759,
+            "cmc_id": 4847,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "symbol": "STX",
+            "total_supply": 1882325217.591759
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 1882314657.591759,
         "cmc_id": 4847,
         "coin_name": "Stacks",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3754,11 +3957,12 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "chain_tvl"
+          "chain_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "STX",
-        "total_supply": null
+        "total_supply": 1882325217.591759
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3772,7 +3976,7 @@
         "description_excerpt": "Stacks (STX) is a blockchain network that aims to bring smart contracts and decentralized applications to Bitcoin, allowing developers to create applications while leveraging Bitcoin's security. It utilizes a unique consensus mechanism called Proof of Transfer (PoX) to enable this functionality.",
         "has_substantive_descriptive_context": true,
         "name": "Stacks",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.stacks.co/",
@@ -3819,7 +4023,7 @@
       "symbol": "STX"
     },
     {
-      "candidate_event_count": 69,
+      "candidate_event_count": 68,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3955,10 +4159,23 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 749423.564532,
+            "cmc_id": 5176,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.104Z",
+            "symbol": "XAUt",
+            "total_supply": 827417.63
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 749423.564532,
         "cmc_id": 5176,
         "coin_name": "Tether Gold",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3966,11 +4183,12 @@
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "XAUt",
-        "total_supply": null
+        "total_supply": 827417.63
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3983,7 +4201,7 @@
         "description_excerpt": "Tether Gold (XAUT) is a digital asset backed by physical gold, allowing users to trade and hold a representation of gold in a blockchain-based form. It combines the stability of gold with the efficiency of blockchain technology.",
         "has_substantive_descriptive_context": true,
         "name": "Tether Gold",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://gold.tether.to/"
@@ -4026,7 +4244,7 @@
       "symbol": "XAUt"
     },
     {
-      "candidate_event_count": 226,
+      "candidate_event_count": 220,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4048,15 +4266,6 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The default Privacy Rings prover protects secret inputs inside an AWS enclave, while wallets approve the code and policies behind that protection. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-          "id": "research:15b953505c972c9565",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T20:10:03Z",
-          "title": "Helius encrypts Solana transfers without removing operator trust",
-          "url": "https://cryptoslate.com/helius-encrypts-solana-transfers-without-removing-operator-trust/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Akash Network’s core team wants to leave its Cosmos based blockchain and rebuild its computing marketplace on Solana Proposal 346 has 98.15% support, with turnout at 42.84% of bonded stake, according to Mintscan. The team says operating its own chain ties up AKT in security and consumes engineering resources. If the later marketplace cutover passes, the old chain would halt 90 days afterward. This reveals weakens within the IBC & Cosmos Labs should address this accordingly. If other teams/organizations follow, crossover will continue & becoming more common in the future. 3 posts - 3 participants Read full topic",
           "id": "research:3748937b64badebfba",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -4066,12 +4275,12 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Key takeaways Our Monero price prediction suggests a bullish trend, with XMR anticipated to reach $349.53 by the end of 2026. XMR could reach a maximum price of $608.19 by the end of 2029. By 2032, Monero’s price may surge to $1,171.83. Despite occasional challenges for the Solana network ecosystem, including network congestion and competition from other blockchain platforms, the current sentiment shows that Solana demonstrates resilience and adaptability, despite the current price fluctuations, positioning itself as a leading player in the decentralized finance (DeFi) and Web3 landscape. Overall, the prevailing sentiment regarding the current Solana price within the Solana community reflects the current sentiment of confidence and excitement among investors, driven by the growing interest in Solana with stakeholders eagerly anticipating the platform’s continued evolution and impact on the broader crypto ecosystem. While uncertainties persist, Solana’s innovative approach, along with i",
-          "id": "research:3bb7a54ab6eedfb70b",
+          "excerpt": "Solana staking will follow Ethereum onto BNY’s custody platform, with Figment running the validators. No launch date, fees or reward split have been disclosed. BNY still has its earlier staking deal with Galaxy, and nobody has said how the two partners will divide the work. Staking inside regulated products is already paying measurable income to investors. Institutions that hold Ethereum at BNY will soon be able to stake it without moving it out of the bank. On November 12, Figment said it will run validator infrastructure for BNY’s Digital Asset Custody platform. The service starts with ETH and adds SOL later, and it is open to asset managers, ETF issuers, corporations and wealth managers. Until now, staking meant opening a second custody relationship with a staking firm, and that extra step has kept much of the ETH held by traditional custodians from earning any rewards. Figment Runs the Nodes, BNY Keeps the Coins BNY handles custody and client servicing, and Figment supplies the val",
+          "id": "research:375aa49805f5e6fc6f",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T16:53:42Z",
-          "title": "Solana price prediction 2026-2032: Trends and insights for investors",
-          "url": "https://www.cryptopolitan.com/solana-price-prediction/"
+          "published_utc": "2026-11-13T15:36:05Z",
+          "title": "Ethereum and Solana Staking Comes to BNY Through Figment",
+          "url": "https://www.crypto-news-flash.com/ethereum-solana-staking-comes-to-bny-through-figment/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4081,6 +4290,15 @@
           "published_utc": "2026-11-13T07:00:00Z",
           "title": "Helius Launches Solana Privacy Rings With Confidential Balances and Transfers",
           "url": "https://www.newsbtc.com/news/solana/helius-solana-privacy-rings-confidential-balances-transfers/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Pi Network’s native token experienced heightened volatility over the past several days, driven by excitement about an upcoming ecosystem event and broader market dynamics. Solana’s SOL plunged 10% on a weekly basis and risks further declines, while Zcash (ZEC) lost its prestigious spot among the ten largest cryptocurrencies. PI’s Roller Coaster The token has been in a steep downfall over the last few months, and its condition worsened at the start of November, when it tumbled to a new all-time low of around $0.063. Earlier this week, the higher-than-expected inflation in the US poured another cold shower on the cryptocurrency market, but instead of following the red wave, PI surprisingly headed north and exceeded $0.07. X account BSCN said the ascent appeared technical as the token emerged from an oversold situation, along with a small increase in open interest for derivatives contracts. The team also focused on the upcoming Ecosystem Summit, which may have sparked enthusiasm across th",
+          "id": "research:590cd8e2d2781a0b0d",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T11:29:28Z",
+          "title": "Pi Network (PI) Hit by Volatility, Solana (SOL) Braces for Additional Sell-off: Bits Recap Nov 13",
+          "url": "https://cryptopotato.com/pi-network-pi-hit-by-volatility-solana-sol-braces-for-additional-sell-off-bits-recap-nov-13/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4102,21 +4320,21 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Forward’s November 9 snapshot shows a 16.8% discount on its in-the-money share count, while the broadest count includes conditional warrants. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-          "id": "research:64423d93c23194701d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T22:50:29Z",
-          "title": "Solana treasury Forward Industries flashes a 30% SOL discount, with a catch",
-          "url": "https://cryptoslate.com/solana-treasury-forward-industries-flashes-a-30-sol-discount-with-a-catch/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Ethena’s USDe has been launched on Solana through LayerZero Labs, the team responsible for the omni-chain interoperability protocol LayerZero. This development has implications for ENA, Ethena Labs’ native token. According to a post by Ethena Labs, OFT—SOL is now a backing asset for USDe, pending a community vote. August 7th marks Ethena's Solana integration: – […] The post Ethena Price Prediction as Stablecoin USDe Goes Live on Solana appeared first on BanklessTimes .",
           "id": "research:7b41866be04c7dfbac",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2024-08-08T08:10:00Z",
           "title": "Ethena Price Prediction as Stablecoin USDe Goes Live on Solana",
           "url": "https://www.banklesstimes.com/news/2024/08/08/ethena-price-prediction-as-stablecoin-usde-goes-live-on-solana/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Shares in Securitize have fallen sharply in the two weeks since the tokenisation firm began offering blockchain versions of Apple, Nvidia and Tesla stock. SECZ was trading at $7.81 at 1:13pm ET on Thursday, down 15% on the day, according to Yahoo Finance data . That is 38% below its $12.66 close on 8 October, the day Securitize announced Securitize Stocks, and 43% below its $13.82 close the next day. The stock jumped 11% on launch day and a further 9% the next session. It then gave up those gains, including drops of 14% on 12 October and 13% on 16 October. Citi downgraded the stock to neutral from buy on 13 October, citing questions over how much revenue Securitize can earn from tokenisation and the risk of lock-up expiries adding shares to the market, CoinDesk reported . The launch put 12 US stocks onchain, among them Apple, Microsoft, Nvidia, Alphabet, Tesla, Meta, Amazon, Netflix, Circle, Strategy and Palantir. \"Eligible investors can hold tokenized positions backed 1:1 by actual sh",
+          "id": "research:9f9f3c46cb9d52710b",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-10-22T18:18:21Z",
+          "title": "Securitize shares slide 38% since it put Apple and Nvidia stock on Solana",
+          "url": "https://www.dlnews.com/articles/markets/securitize-shares-fall-38percent-since-solana-stock-token-launch-or-dl-news/"
         }
       ],
       "cmc100_weight": 2.3,
@@ -4310,7 +4528,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Solana",
-            "chain_tvl_usd": 4932026566.37,
+            "chain_tvl_usd": 4958650114.82,
             "cmc_id": 5426,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -4319,16 +4537,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 80.56,
-            "bid": 80.55,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 78.25,
+            "bid": 78.24,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 5426,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SOL-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.24139,
-            "top5_ask_usd": 1444016.26,
-            "top5_bid_usd": 1176958.37
+            "spread_bps": 1.27804,
+            "top5_ask_usd": 871547.55,
+            "top5_bid_usd": 618815.17
           }
         },
         {
@@ -4347,18 +4565,31 @@
           }
         },
         {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 591512478.292438,
+            "cmc_id": 5426,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": null,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.119Z",
+            "symbol": "SOL",
+            "total_supply": 637493551.885648
+          }
+        },
+        {
           "family": "trending",
           "observation": {
             "cmc_id": 5426,
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Solana",
-            "rank": 11
+            "rank": 14
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 591512478.292438,
         "cmc_id": 5426,
         "coin_name": "Solana",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -4368,11 +4599,12 @@
         "research_metric_families": [
           "chain_tvl",
           "protocol_tvl",
+          "token_supply",
           "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SOL",
-        "total_supply": null
+        "total_supply": 637493551.885648
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4392,7 +4624,7 @@
         "description_excerpt": "Solana (SOL) is a high-performance blockchain platform designed for decentralized applications and crypto projects, featuring fast transaction speeds and low costs. It aims to provide scalable solutions for developers while maintaining high security and decentralization.",
         "has_substantive_descriptive_context": true,
         "name": "Solana",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://explorer.solana.com",
@@ -4549,8 +4781,7 @@
         "coingecko_supply": 1
       },
       "missing_data": [
-        "mapped_perp_research_proxy",
-        "mapped_protocol_fundamentals"
+        "mapped_perp_research_proxy"
       ],
       "name": "JUST",
       "perp_identity_status": "NOT_MATCHED_OR_UNVERIFIED",
@@ -4559,19 +4790,35 @@
       "project_protocol_context_NOT_TOKEN_SIGNAL": [],
       "project_protocol_context_substantive_count": 0,
       "project_protocol_context_total": 0,
-      "quantitative_research_families": [],
+      "quantitative_research_families": [
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 8018019892.341737,
+            "cmc_id": 5488,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 9900000000.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "symbol": "JST",
+            "total_supply": 8018019892.341737
+          }
+        }
+      ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 8018019892.341737,
         "cmc_id": 5488,
         "coin_name": "JUST",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 9900000000.0,
         "perp_exchange": null,
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "JST",
-        "total_supply": null
+        "total_supply": 8018019892.341737
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4583,7 +4830,7 @@
         "description_excerpt": "JUST (JST) is a blockchain-based platform that aims to provide a decentralized stablecoin ecosystem, enabling users to create and manage collateralized tokens. It focuses on empowering various decentralized financial services within the TRON network.",
         "has_substantive_descriptive_context": true,
         "name": "JUST",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://just.network"
@@ -4785,31 +5032,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.527,
-            "bid": 1.526,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 1.519,
+            "bid": 1.518,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 5690,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "RENDER-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 6.55093,
-            "top5_ask_usd": 19083.53,
-            "top5_bid_usd": 22675.52
+            "spread_bps": 6.58545,
+            "top5_ask_usd": 17247.7,
+            "top5_bid_usd": 22625.08
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 556473422.348876,
+            "cmc_id": 5690,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 644168762.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.104Z",
+            "symbol": "RENDER",
+            "total_supply": 562579134.64667
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 556473422.348876,
         "cmc_id": 5690,
         "coin_name": "Render",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 644168762.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "RENDER",
-        "total_supply": null
+        "total_supply": 562579134.64667
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4830,7 +5092,7 @@
         "description_excerpt": "Render (RENDER) is a decentralized rendering network that connects users who require rendering services with miners who provide computing power for rendering graphics and visual content. It aims to facilitate efficient and cost-effective rendering solutions in the digital space.",
         "has_substantive_descriptive_context": true,
         "name": "Render",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://rendernetwork.com/"
@@ -4873,16 +5135,16 @@
       "symbol": "RENDER"
     },
     {
-      "candidate_event_count": 157,
+      "candidate_event_count": 154,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Summary Secure crosschain messaging is an integral part of Uniswap’s governance model. Governance votes like protocol fee adjustments are executed by UNI holders on Ethereum Mainnet and must subsequently be relayed to destination chains. This proposal updates Uniswap’s crosschain governance system to accommodate the latest best practices. Specifically, we propose to: Transition ownership of the Uniswap v2 and v4 contracts on Soneium and X Layer to CrossChainAccount contracts, which we consider to be the current best practice for executing messages from Ethereum Mainnet on the OP Stack Migrate the entire messaging system for the Avalanche and MegaETH deployments from LayerZero v1 (part of which is being deprecated ) to Wormhole Note that because Uniswap v3 on both Soneium and X Layer is owned by the v3OpenFeeAdapter , which is owned by the CrossChainAccount, we do not need to change the parameter on v3 on these chains. Specification Current Configuration - Avalanche and MegaETH Both cha",
-          "id": "research:1c508b349a744584cb",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #98 on Jul 15, 2026. Snapshot vote: link . Summary Secure crosschain messaging is an integral part of Uniswap’s governance model. Governance votes like protocol fee adjustments are executed by UNI holders on Ethereum Mainnet and must subsequently be relayed to destination chains. This proposal updates Uniswap’s crosschain governance system to accommodate the latest best practices. Specifically, we propose to: Transition ownership of the Uniswap v2 and v4 contracts on Soneium and X Layer to CrossChainAccount contracts, which we consider to be the current best practice for executing messages from Ethereum Mainnet on the OP Stack Migrate the entire messaging system for the Avalanche and MegaETH deployments from LayerZero v1 (part of which is being deprecated ) to Wormhole Note that because Uniswap v3 on both Soneium and X Layer is owned by the v3OpenFeeAdapter , which is owned by the CrossChainAccount, we do not need to c",
+          "id": "research:1d41d17c0dac91734a",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-06-19T17:04:30Z",
-          "title": "[Temp Check] - Update Crosschain Governance Parameters for Avalanche, MegaETH, Soneium, and X Layer",
-          "url": "https://gov.uniswap.org/t/temp-check-update-crosschain-governance-parameters-for-avalanche-megaeth-soneium-and-x-layer/26127"
+          "title": "[Executed] [Temp Check] - Update Crosschain Governance Parameters for Avalanche, MegaETH, Soneium, and X Layer",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-update-crosschain-governance-parameters-for-avalanche-megaeth-soneium-and-x-layer/26127"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4892,24 +5154,6 @@
           "published_utc": "2026-11-09T18:37:51Z",
           "title": "Charles Schwab Expands Crypto Trading to SOL, AVAX and LINK, XRP Not Included",
           "url": "https://u.today/charles-schwab-expands-crypto-trading-to-sol-avax-and-link-xrp-not-included"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "One Venue, One Chain Over this past week, three U.S. tokenized stock venues picked three different blockchains to launch on. The WSJ reported Monday that NYSE chose Avalanche as the sole settlement chain for its planned 24/7 platform. On November 4, $CNTN became the first U.S. equity to trade under the SEC’s Innovation Exemption. Five […]",
-          "id": "research:4d93aa8d1521ef33fb",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T20:02:00Z",
-          "title": "Avalanche Owns Five Percent of Tokenized Stocks",
-          "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-12-avalanche-owns-five-percent-tokenized-stocks-437310"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Schwab Crypto clients can now trade Solana, Avalanche and Chainlink directly. The launch completes a plan Schwab first announced in August. Every trade carries a 0.75% fee and the platform offers no staking. Residents of New York and Louisiana still cannot open Schwab Crypto accounts. Charles Schwab, the US brokerage that oversees $13.33 trillion in client assets, switched on direct trading for Solana (SOL), Avalanche (AVAX) and Chainlink (LINK) on November 9, raising the number of cryptocurrencies in its Schwab Crypto accounts from two to five. Eligible clients can now buy and sell the three tokens on Schwab.com, the Schwab Mobile app and thinkorswim, next to their stocks and funds. That gives a large pool of traditional investors a way to own altcoins outright without opening an account at a crypto exchange. The August Pledge Became a Live Product On August 27, Schwab said the three tokens would join Bitcoin and Ethereum “in the coming months” and gave no date. Traders bought the new",
-          "id": "research:69b6a67274dc62be72",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T15:56:06Z",
-          "title": "Schwab Opens SOL, AVAX and LINK Trading, but Skips Staking",
-          "url": "https://www.crypto-news-flash.com/schwab-opens-sol-avax-and-link-trading/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4964,6 +5208,24 @@
           "published_utc": "2026-11-11T15:01:25Z",
           "title": "Visiting Team1 Thailand for halloween 2027 🇹🇭 - X",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWLUFienJRR1RzTW9fUndGVVU4Y1M5Ull0Z2o3QnN6dk10YVFpOVhMTVJEd19uZ1FsV2RsQ2pGeFdHYW8xMzB4ell2WGk0OU1WYnZ6YThxMFRjWW8xMTdr?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Avalanche Originals. Episode 2. Reddit",
+          "id": "expanded:0737fd65bc4dd52db7",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T18:26:49Z",
+          "title": "Avalanche Originals. Episode 2. - Reddit",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZ1lSenpSWmZmMFpBc1c4NXZFcm9majNFLV9HRnhmb3lQNmZpN0t0RGVRTmhQNk9HcWh6M05oYmpxU1JqT2NFd0VRSldGM1k3VUE2Nk05c1NvUDk3UVd2QlQzX2VtU0JEdnQ0MW12TDdQbWdFWkJYSkQ3X3dHX0FPV21OSQ?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "$13T @CharlesSchwab Adds AVAX To Schwab Crypto Reddit",
+          "id": "expanded:07bde371f0028adf79",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-09T20:19:31Z",
+          "title": "$13T @CharlesSchwab Adds AVAX To Schwab Crypto - Reddit",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR083N2h0TGlDS2l4bjlSWkdsbVk2OXUtd2JpdWRFdW44M2trRkpXRFBnLWY2Yng5OU5oQld6dWRyeDdDamVLSkNsYm9OUnJNdl9HWEpFVG1LUUc4RUVkOExOT2RvWV91ZWRyQ3ZJRDNJaWpaeDgtNjJtUF9nVnFpMEpGWDZjRUFOa2l5Z1p0YWZER1VuSjJF?oc=5"
         }
       ],
       "cmc100_weight": 0.18,
@@ -5036,7 +5298,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Avalanche",
-            "chain_tvl_usd": 585000628.75,
+            "chain_tvl_usd": 594455089.52,
             "cmc_id": 5805,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -5045,16 +5307,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 8.335,
-            "bid": 8.334,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 8.207,
+            "bid": 8.206,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 5805,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "AVAX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.19983,
-            "top5_ask_usd": 13904.89,
-            "top5_bid_usd": 14266.64
+            "spread_bps": 1.21855,
+            "top5_ask_usd": 9300.32,
+            "top5_bid_usd": 23288.63
           }
         },
         {
@@ -5071,23 +5333,37 @@
             "protocol_tvl_change_7d_pct": null,
             "protocol_tvl_usd": null
           }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 446410558.651721,
+            "cmc_id": 5805,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 715748719.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.104Z",
+            "symbol": "AVAX",
+            "total_supply": 471412558.651721
+          }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 446410558.651721,
         "cmc_id": 5805,
         "coin_name": "Avalanche",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 715748719.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "chain_tvl",
-          "protocol_tvl"
+          "protocol_tvl",
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "AVAX",
-        "total_supply": null
+        "total_supply": 471412558.651721
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5104,7 +5380,7 @@
         "description_excerpt": "Avalanche (AVAX) is a decentralized platform designed for launching applications and custom blockchain networks, integrating high throughput with sub-second finality. It aims to provide a scalable and efficient solution for DeFi, enterprise applications, and more.",
         "has_substantive_descriptive_context": true,
         "name": "Avalanche",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "explorer": [
             "https://avascan.info",
@@ -5317,31 +5593,46 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 4.282e-06,
-            "bid": 4.281e-06,
-            "book_source_utc": "2026-11-13T07:10:54Z",
+            "ask": 4.234e-06,
+            "bid": 4.233e-06,
+            "book_source_utc": "2026-11-13T22:41:06Z",
             "cmc_id": 5994,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "SHIB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.33563,
-            "top5_ask_usd": 39621.73,
-            "top5_bid_usd": 59423.03
+            "spread_bps": 2.36211,
+            "top5_ask_usd": 29113.15,
+            "top5_bid_usd": 22748.15
+          }
+        },
+        {
+          "family": "token_supply",
+          "observation": {
+            "circulating_supply": 589238111425239.4,
+            "cmc_id": 5994,
+            "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
+            "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
+            "max_supply": 589552695333683.0,
+            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "symbol": "SHIB",
+            "total_supply": 589495704555155.8
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": null,
+        "circulating_supply": 589238111425239.4,
         "cmc_id": 5994,
         "coin_name": "Shiba Inu",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": null,
+        "max_supply": 589552695333683.0,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
-        "research_metric_families": [],
+        "research_metric_families": [
+          "token_supply"
+        ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "SHIB",
-        "total_supply": null
+        "total_supply": 589495704555155.8
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5356,7 +5647,7 @@
         "description_excerpt": "Shiba Inu (SHIB) is a meme-based cryptocurrency that aims to be an experiment in decentralized community building, inspired by the Shiba Inu dog breed. It operates on the Ethereum network and aims to create a fun and engaging ecosystem for its users.",
         "has_substantive_descriptive_context": true,
         "name": "Shiba Inu",
-        "observed_utc": "2026-11-13T16:22:36Z",
+        "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
           "website": [
             "https://shibatoken.com/"

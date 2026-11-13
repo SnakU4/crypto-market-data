@@ -1,0 +1,4508 @@
+{
+  "audit": {
+    "all_100_substantive_background": false,
+    "assets": 100,
+    "calls": 265,
+    "coins_with_cross_exchange_market_observations": 0,
+    "coins_with_dated_third_party_events": 0,
+    "coins_with_substantive_dated_event_details": 0,
+    "configured_sources": [
+      "coinpaprika_keyless_coin_profiles",
+      "coinpaprika_coin_events",
+      "coinpaprika_coin_markets",
+      "coingecko_public_coin_profiles"
+    ],
+    "disclaimer": "Third-party descriptive context is not independently verified, current news, or token-price causality.",
+    "errors": [
+      "coinpaprika:FLR:TypeError",
+      "coinpaprika:ASTER:HTTPError",
+      "coinpaprika:PUMP:HTTPError",
+      "coinpaprika:XPL:HTTPError",
+      "coinpaprika:FF:HTTPError",
+      "coinpaprika:KITE:HTTPError",
+      "coinpaprika:PIEVERSE:HTTPError",
+      "coinpaprika:STABLE:HTTPError",
+      "coinpaprika:NIGHT:HTTPError",
+      "coinpaprika:LIT:HTTPError",
+      "coinpaprika_events:BTC:HTTPError",
+      "coinpaprika_events:LTC:HTTPError",
+      "coinpaprika_events:XRP:HTTPError",
+      "coinpaprika_events:DOGE:HTTPError",
+      "coinpaprika_events:DASH:HTTPError",
+      "coinpaprika_events:XMR:HTTPError",
+      "coinpaprika_events:XLM:HTTPError",
+      "coinpaprika_events:ETH:HTTPError",
+      "coinpaprika_events:ETC:HTTPError",
+      "coinpaprika_events:ZEC:HTTPError",
+      "coinpaprika_events:GNO:HTTPError",
+      "coinpaprika_events:BCH:HTTPError",
+      "coinpaprika_events:BNB:HTTPError",
+      "coinpaprika_events:TRX:HTTPError",
+      "coinpaprika_events:LINK:HTTPError",
+      "coinpaprika_events:ADA:HTTPError",
+      "coinpaprika_events:XTZ:HTTPError",
+      "coinpaprika_events:KCS:HTTPError",
+      "coinpaprika_events:FIL:HTTPError",
+      "coinpaprika_events:XDC:HTTPError",
+      "coinpaprika_events:NEXO:HTTPError",
+      "coinpaprika_events:VET:HTTPError",
+      "coinpaprika_events:QNT:HTTPError",
+      "coinpaprika_events:BSV:HTTPError",
+      "coinpaprika_events:CRO:HTTPError",
+      "coinpaprika_events:FET:HTTPError",
+      "coinpaprika_events:ATOM:HTTPError",
+      "coinpaprika_events:OKB:HTTPError",
+      "coinpaprika_events:ALGO:HTTPError",
+      "coinpaprika_events:GT:HTTPError",
+      "coinpaprika_events:PAXG:HTTPError",
+      "coinpaprika_events:STX:HTTPError",
+      "coinpaprika_events:XAUt:HTTPError",
+      "coinpaprika_events:SOL:HTTPError",
+      "coinpaprika_events:JST:HTTPError",
+      "coinpaprika_events:RENDER:HTTPError",
+      "coinpaprika_events:AVAX:HTTPError",
+      "coinpaprika_events:SHIB:HTTPError",
+      "coinpaprika_events:NEAR:HTTPError",
+      "coinpaprika_events:CRV:HTTPError",
+      "coinpaprika_events:DOT:HTTPError",
+      "coinpaprika_events:UNI:HTTPError",
+      "coinpaprika_events:CAKE:HTTPError",
+      "coinpaprika_events:AAVE:HTTPError",
+      "coinpaprika_events:LDO:HTTPError",
+      "coinpaprika_events:RAY:HTTPError",
+      "coinpaprika_events:ICP:HTTPError",
+      "coinpaprika_events:PENDLE:HTTPError",
+      "coinpaprika_events:SUN:HTTPError",
+      "coinpaprika_events:BGB:HTTPError",
+      "coinpaprika_events:GRAM:HTTPError",
+      "coinpaprika_events:OP:HTTPError",
+      "coinpaprika_events:ARB:HTTPError",
+      "coinpaprika_events:WLD:HTTPError",
+      "coinpaprika_events:BTT:HTTPError",
+      "coinpaprika_events:KAS:HTTPError",
+      "coinpaprika_events:SUI:HTTPError",
+      "coinpaprika_events:ONDO:HTTPError",
+      "coinpaprika_events:APT:HTTPError",
+      "coinpaprika_events:STRK:HTTPError",
+      "coinpaprika_events:TIA:HTTPError",
+      "coinpaprika_events:TAO:HTTPError",
+      "coinpaprika_events:BONK:HTTPError",
+      "coinpaprika_events:SEI:HTTPError",
+      "coinpaprika_events:ZRO:HTTPError",
+      "coinpaprika_events:MNT:HTTPError",
+      "coinpaprika_events:SPX:HTTPError",
+      "coinpaprika_events:PYTH:HTTPError",
+      "coinpaprika_events:BEAM:HTTPError",
+      "coinpaprika_events:JUP:HTTPError",
+      "coinpaprika_events:VIRTUAL:HTTPError",
+      "coinpaprika_events:ETHFI:HTTPError",
+      "coinpaprika_events:ENA:HTTPError",
+      "coinpaprika_events:HYPE:HTTPError",
+      "coinpaprika_events:SKY:HTTPError",
+      "coinpaprika_events:MORPHO:HTTPError",
+      "coinpaprika_events:PENGU:HTTPError",
+      "coinpaprika_events:TRUMP:HTTPError",
+      "coinpaprika_events:M:HTTPError",
+      "coinpaprika_events:VVV:HTTPError",
+      "coinpaprika_markets:BTC:HTTPError",
+      "coinpaprika_markets:LTC:HTTPError",
+      "coinpaprika_markets:XRP:HTTPError",
+      "coinpaprika_markets:DOGE:HTTPError",
+      "coinpaprika_markets:DASH:HTTPError",
+      "coinpaprika_markets:XMR:HTTPError",
+      "coinpaprika_markets:XLM:HTTPError",
+      "coinpaprika_markets:ETH:HTTPError",
+      "coinpaprika_markets:ETC:HTTPError",
+      "coinpaprika_markets:ZEC:HTTPError",
+      "coinpaprika_markets:GNO:HTTPError",
+      "coinpaprika_markets:BCH:HTTPError",
+      "coinpaprika_markets:BNB:HTTPError",
+      "coinpaprika_markets:TRX:HTTPError",
+      "coinpaprika_markets:LINK:HTTPError",
+      "coinpaprika_markets:ADA:HTTPError",
+      "coinpaprika_markets:XTZ:HTTPError",
+      "coinpaprika_markets:KCS:HTTPError",
+      "coinpaprika_markets:FIL:HTTPError",
+      "coinpaprika_markets:XDC:HTTPError",
+      "coinpaprika_markets:NEXO:HTTPError",
+      "coinpaprika_markets:VET:HTTPError",
+      "coinpaprika_markets:QNT:HTTPError",
+      "coinpaprika_markets:BSV:HTTPError",
+      "coinpaprika_markets:CRO:HTTPError",
+      "coinpaprika_markets:FET:HTTPError",
+      "coinpaprika_markets:ATOM:HTTPError",
+      "coinpaprika_markets:OKB:HTTPError",
+      "coinpaprika_markets:ALGO:HTTPError",
+      "coinpaprika_markets:GT:HTTPError",
+      "coinpaprika_markets:PAXG:HTTPError",
+      "coinpaprika_markets:STX:HTTPError",
+      "coinpaprika_markets:XAUt:HTTPError",
+      "coinpaprika_markets:SOL:HTTPError",
+      "coinpaprika_markets:JST:HTTPError",
+      "coinpaprika_markets:RENDER:HTTPError",
+      "coinpaprika_markets:AVAX:HTTPError",
+      "coinpaprika_markets:SHIB:HTTPError",
+      "coinpaprika_markets:NEAR:HTTPError",
+      "coinpaprika_markets:CRV:HTTPError",
+      "coinpaprika_markets:DOT:HTTPError",
+      "coinpaprika_markets:UNI:HTTPError",
+      "coinpaprika_markets:CAKE:HTTPError",
+      "coinpaprika_markets:AAVE:HTTPError",
+      "coinpaprika_markets:LDO:HTTPError",
+      "coinpaprika_markets:RAY:HTTPError",
+      "coinpaprika_markets:ICP:HTTPError",
+      "coinpaprika_markets:PENDLE:HTTPError",
+      "coinpaprika_markets:SUN:HTTPError",
+      "coinpaprika_markets:BGB:HTTPError",
+      "coinpaprika_markets:GRAM:HTTPError",
+      "coinpaprika_markets:OP:HTTPError",
+      "coinpaprika_markets:ARB:HTTPError",
+      "coinpaprika_markets:WLD:HTTPError",
+      "coinpaprika_markets:BTT:HTTPError",
+      "coinpaprika_markets:KAS:HTTPError",
+      "coinpaprika_markets:SUI:HTTPError",
+      "coinpaprika_markets:ONDO:HTTPError",
+      "coinpaprika_markets:APT:HTTPError",
+      "coinpaprika_markets:STRK:HTTPError",
+      "coinpaprika_markets:TIA:HTTPError",
+      "coinpaprika_markets:TAO:HTTPError",
+      "coinpaprika_markets:BONK:HTTPError",
+      "coinpaprika_markets:SEI:HTTPError",
+      "coinpaprika_markets:ZRO:HTTPError",
+      "coinpaprika_markets:MNT:HTTPError",
+      "coinpaprika_markets:SPX:HTTPError",
+      "coinpaprika_markets:PYTH:HTTPError",
+      "coinpaprika_markets:BEAM:HTTPError",
+      "coinpaprika_markets:JUP:HTTPError",
+      "coinpaprika_markets:VIRTUAL:HTTPError",
+      "coinpaprika_markets:ETHFI:HTTPError",
+      "coinpaprika_markets:ENA:HTTPError",
+      "coinpaprika_markets:HYPE:HTTPError",
+      "coinpaprika_markets:SKY:HTTPError",
+      "coinpaprika_markets:MORPHO:HTTPError",
+      "coinpaprika_markets:PENGU:HTTPError",
+      "coinpaprika_markets:TRUMP:HTTPError",
+      "coinpaprika_markets:M:HTTPError",
+      "coinpaprika_markets:VVV:HTTPError",
+      "coingecko:AERO:HTTPError",
+      "coingecko:WLFI:HTTPError",
+      "coingecko:ASTER:HTTPError",
+      "coingecko:PUMP:HTTPError",
+      "coingecko:XPL:HTTPError",
+      "coingecko:CC:HTTPError",
+      "coingecko:FF:HTTPError",
+      "coingecko:PIEVERSE:HTTPError",
+      "coingecko:LIT:HTTPError"
+    ],
+    "extra_calls": 160,
+    "extra_ok": {
+      "events": 0,
+      "markets": 0
+    },
+    "historical_network_disabled": false,
+    "profile_gaps": [
+      {
+        "cmc_id": 3957,
+        "name": "UNUS SED LEO",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "LEO"
+      },
+      {
+        "cmc_id": 28321,
+        "name": "Polygon (prev. MATIC)",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "POL"
+      },
+      {
+        "cmc_id": 29270,
+        "name": "Aero",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "AERO"
+      },
+      {
+        "cmc_id": 33251,
+        "name": "World Liberty Financial",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "WLFI"
+      },
+      {
+        "cmc_id": 35697,
+        "name": "Pi",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PI"
+      },
+      {
+        "cmc_id": 36341,
+        "name": "Aster",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "ASTER"
+      },
+      {
+        "cmc_id": 36507,
+        "name": "Pump.fun",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PUMP"
+      },
+      {
+        "cmc_id": 36645,
+        "name": "Plasma",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "XPL"
+      },
+      {
+        "cmc_id": 37263,
+        "name": "Canton",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "CC"
+      },
+      {
+        "cmc_id": 38482,
+        "name": "Falcon Finance",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "FF"
+      },
+      {
+        "cmc_id": 38590,
+        "name": "币安人生",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "币安人生"
+      },
+      {
+        "cmc_id": 38828,
+        "name": "Kite",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "KITE"
+      },
+      {
+        "cmc_id": 38849,
+        "name": "Pieverse",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "PIEVERSE"
+      },
+      {
+        "cmc_id": 38892,
+        "name": "Stable",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "STABLE"
+      },
+      {
+        "cmc_id": 39064,
+        "name": "Midnight",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "NIGHT"
+      },
+      {
+        "cmc_id": 39125,
+        "name": "Lighter",
+        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
+        "symbol": "LIT"
+      }
+    ],
+    "profile_present": 84,
+    "recent_24h_catalyst_coverage_NOT_INFERRED": true,
+    "source_status": {
+      "coingecko_coin_list": "OK",
+      "coinpaprika_coin_list": "OK"
+    },
+    "strict_name_and_symbol_matching": true,
+    "substantive_project_profiles": 84,
+    "success": 84
+  },
+  "profiles": {
+    "1": {
+      "categories": [
+        "Segwit",
+        "Cryptocurrency",
+        "Proof Of Work",
+        "Payments",
+        "Sha256",
+        "Mining",
+        "Lightning Network",
+        "Layer 1 (L1)",
+        "FTX Holdings"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Bitcoin (BTC) is a decentralized digital currency that enables peer-to-peer transactions without intermediaries, using blockchain technology to ensure security and transparency. It was created in 2009 by an anonymous entity known as Satoshi Nakamoto.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bitcoin",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://blockchair.com/bitcoin/?from=coinpaprika",
+          "https://blockchain.com/explorer"
+        ],
+        "source_code": [
+          "https://github.com/bitcoin/bitcoin"
+        ],
+        "website": [
+          "https://bitcoin.org/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/btc-bitcoin/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Satoshi Nakamoto",
+          "role": "Founder"
+        },
+        {
+          "name": "Wladimir J. van der Laan",
+          "role": "Blockchain Developer"
+        },
+        {
+          "name": "Jonas Schnelli",
+          "role": "Blockchain Developer"
+        },
+        {
+          "name": "Marco Falke",
+          "role": "Blockchain Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "btc-bitcoin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/btc-bitcoin/",
+      "symbol": "BTC",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "SHA256",
+        "open_source": true,
+        "org_structure": "Decentralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2009-01-03T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "1027": {
+      "categories": [
+        "Token Issuance",
+        "Decentralized Applications",
+        "Smart Contracts",
+        "Cryptocurrency",
+        "Premine",
+        "Ethash",
+        "Proof Of Stake",
+        "Layer 1 (L1)",
+        "FTX Holdings"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1027,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Ethereum (ETH) is a decentralized platform that enables developers to build and deploy smart contracts and decentralized applications (dApps) using blockchain technology. It facilitates peer-to-peer transactions and applications without a central authority.",
+      "has_substantive_descriptive_context": true,
+      "name": "Ethereum",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/",
+          "https://ethplorer.io/"
+        ],
+        "source_code": [
+          "https://github.com/ethereum/go-ethereum"
+        ],
+        "website": [
+          "https://www.ethereum.org/"
+        ],
+        "whitepaper": [
+          "https://ethereum.org/en/whitepaper/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Vitalik Buterin",
+          "role": "Author"
+        },
+        {
+          "name": "Jeffrey Wylcke",
+          "role": "Go-Ethereum Lead"
+        },
+        {
+          "name": "Virgil Griffith",
+          "role": "Researcher"
+        },
+        {
+          "name": "Alexandre Van de Sande",
+          "role": "UX Design"
+        },
+        {
+          "name": "Alex Leverington",
+          "role": "Core Developer"
+        },
+        {
+          "name": "Aya Miyaguchi",
+          "role": "Executive Director"
+        },
+        {
+          "name": "Vlad Zamfir",
+          "role": "Researcher"
+        },
+        {
+          "name": "Zach Lebeau",
+          "role": "Conceptualist"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "eth-ethereum",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/eth-ethereum/",
+      "symbol": "ETH",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Ethash",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Stake",
+        "started_at": "2015-07-30T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "10529": {
+      "categories": [
+        "TRON (TRX) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 10529,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "SUN is a cryptocurrency that serves as the native token for the TRON blockchain ecosystem, primarily aimed at incentivizing content creators and enhancing the decentralized finance (DeFi) space. It allows users to engage in various activities such as staking, participating in governance, and accessing DeFi services.",
+      "has_substantive_descriptive_context": true,
+      "name": "Sun [New]",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://tronscan.org/#/token20/TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9"
+        ],
+        "website": [
+          "https://sun.io/#/home"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/sun-sun/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "sun-sun",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/sun-sun/",
+      "symbol": "SUN",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "started_at": "2020-09-11T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "11092": {
+      "categories": [
+        "Exchange",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Centralized Exchange (CEX)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 11092,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Bitget Token (BGB) is the native utility token of the Bitget exchange, used for fee discounts, trading rewards, and participating in token sales. It aims to enhance user experience and engagement on the platform.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bitget Token",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x19de6b897ed14a376dda0fe53a5420d2ac828a28"
+        ],
+        "website": [
+          "https://www.bitget.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "bgb-bitget-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bgb-bitget-token/",
+      "symbol": "BGB",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2021-09-04T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "11419": {
+      "categories": [
+        "Alleged SEC Securities",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Layer 1 (L1)",
+        "Proof Of Stake"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 11419,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Toncoin (TON) is the native cryptocurrency of the Telegram Open Network, designed to facilitate fast and secure transactions within the Telegram ecosystem. It aims to support a broad range of decentralized applications and services.",
+      "has_substantive_descriptive_context": true,
+      "name": "Gram (prev. Toncoin)",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x582d872a1b094fc48f5de31d3b73f2d9be47def1",
+          "https://ethplorer.io/address/0x582d872a1b094fc48f5de31d3b73f2d9be47def1"
+        ],
+        "source_code": [
+          "https://github.com/newton-blockchain"
+        ],
+        "website": [
+          "https://ton.org",
+          "https://ton.org/coin"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "toncoin-the-open-network",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/toncoin-the-open-network/",
+      "symbol": "GRAM",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "coin"
+      }
+    },
+    "11840": {
+      "categories": [
+        "Optimism Ecosystem",
+        "Layer 2 (L2)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 11840,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Optimism (OP) is a Layer 2 scaling solution for Ethereum that enhances transaction speed and reduces costs by utilizing Optimistic Rollups. It aims to provide a seamless experience for decentralized applications while maintaining Ethereum's security.",
+      "has_substantive_descriptive_context": true,
+      "name": "Optimism",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042"
+        ],
+        "website": [
+          "https://www.optimism.io/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "op-optimism",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/op-optimism/",
+      "symbol": "OP",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "started_at": "2022-05-31T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "11841": {
+      "categories": [
+        "Arbitrum Ecosystem",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Layer 2 (L2)",
+        "High Transaction Speed (TPS)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 11841,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Arbitrum (ARB) is a layer-2 scaling solution for Ethereum that enhances transaction speed and reduces costs by utilizing optimistic rollups. It enables decentralized applications to operate more efficiently on the Ethereum network.",
+      "has_substantive_descriptive_context": true,
+      "name": "Arbitrum",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://arbitrum.io/",
+          "https://offchainlabs.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "arb-arbitrum",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/arb-arbitrum/",
+      "symbol": "ARB",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "131": {
+      "categories": [
+        "Cryptocurrency",
+        "Payments",
+        "Masternode",
+        "Proof Of Work",
+        "X11",
+        "Privacy & Security",
+        "Mining",
+        "Premine",
+        "Governance",
+        "Alleged SEC Securities",
+        "Proof Of Stake",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 131,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Dash (DASH) is a digital currency that enables fast, low-cost transactions and enhanced privacy features through its unique two-tier network. It aims to provide a user-friendly experience for everyday transactions.",
+      "has_substantive_descriptive_context": true,
+      "name": "Dash",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.dash.org",
+          "https://insight.dash.org/insight/"
+        ],
+        "source_code": [
+          "https://github.com/dashpay"
+        ],
+        "website": [
+          "https://www.dash.org/"
+        ],
+        "whitepaper": [
+          "https://github.com/dashpay/dash/wiki/Whitepaper"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Ryan Taylor",
+          "role": "CEO"
+        },
+        {
+          "name": "Andy Freer",
+          "role": "CTO"
+        },
+        {
+          "name": "udjinm6",
+          "role": "Lead Developer"
+        },
+        {
+          "name": "Holger Schinzel",
+          "role": "Lead Quality Assurance Engineer"
+        },
+        {
+          "name": "Philipp Engelhorn",
+          "role": "PR / Press"
+        },
+        {
+          "name": "Fernando Gutierrez",
+          "role": "Chief Marketing Officer"
+        },
+        {
+          "name": "Robert Wiecko",
+          "role": "Project Manager"
+        },
+        {
+          "name": "Evan Duffield",
+          "role": "Strategy Advisor"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "dash-dash",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/dash-dash/",
+      "symbol": "DASH",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "X11",
+        "open_source": true,
+        "proof_type": "Proof of Work",
+        "started_at": "2014-01-18T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "1321": {
+      "categories": [
+        "Platform",
+        "Token Issuance",
+        "Decentralized Applications",
+        "Proof Of Work",
+        "Internet",
+        "Ethash",
+        "Software",
+        "Cryptocurrency",
+        "Mining"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1321,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Ethereum Classic (ETC) is a decentralized blockchain platform that enables smart contracts and decentralized applications, originating from a split of the original Ethereum network in 2016. It maintains the original Ethereum blockchain's principles, promoting immutability and resistance to censorship.",
+      "has_substantive_descriptive_context": true,
+      "name": "Ethereum Classic",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://blockscout.com/etc/mainnet/",
+          "https://etc.tokenview.io"
+        ],
+        "source_code": [
+          "https://github.com/ethereumproject/go-ethereum"
+        ],
+        "website": [
+          "https://ethereumclassic.org/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/etc-ethereum-classic/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "ETCDEV",
+          "role": "Core Team"
+        },
+        {
+          "name": "IOHK (Grothendieck)",
+          "role": "R&D Team"
+        },
+        {
+          "name": "ETC COOPERATIVE",
+          "role": "Finance Support Team"
+        },
+        {
+          "name": "ETC LABS",
+          "role": "Funding Team"
+        },
+        {
+          "name": "Ethereum Commonwealth",
+          "role": "Support Team"
+        },
+        {
+          "name": "Igor Artamonov",
+          "role": "Founder & CTO (ETCDEV)"
+        },
+        {
+          "name": "Shane Jonas",
+          "role": "Javascript Developer"
+        },
+        {
+          "name": "Yury",
+          "role": "Javascript Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "etc-ethereum-classic",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/etc-ethereum-classic/",
+      "symbol": "ETC",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Ethash",
+        "open_source": true,
+        "org_structure": "Decentralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2016-07-20T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "13502": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Optimism Ecosystem",
+        "Privacy & Security",
+        "Governance",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 13502,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Worldcoin (WLD) is a cryptocurrency designed to create a globally inclusive financial network by distributing digital currency to individuals through a unique biometric identification system. It aims to promote economic equity and secure identities in the digital economy.",
+      "has_substantive_descriptive_context": true,
+      "name": "Worldcoin",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://worldcoin.org"
+        ],
+        "whitepaper": [
+          "https://whitepaper.worldcoin.org/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "wld-worldcoin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/wld-worldcoin/",
+      "symbol": "WLD",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "1437": {
+      "categories": [
+        "Cryptocurrency",
+        "Proof Of Work",
+        "Equihash",
+        "Privacy & Security",
+        "Mining",
+        "Zero Knowledge (ZK)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1437,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Zcash (ZEC) is a cryptocurrency that offers enhanced privacy features through zero-knowledge proofs, allowing users to make transactions without revealing their identities. It aims to provide secure and anonymous digital transactions while maintaining the transparency of the blockchain.",
+      "has_substantive_descriptive_context": true,
+      "name": "Zcash",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://zcash.tokenview.io",
+          "https://blockchair.com/zcash"
+        ],
+        "source_code": [
+          "https://github.com/zcash/zcash"
+        ],
+        "website": [
+          "https://z.cash/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/zec-zcash/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Zooko Wilcox",
+          "role": "Founder and CEO"
+        },
+        {
+          "name": "Nathan Wilcox",
+          "role": "CTO"
+        },
+        {
+          "name": "Jack Gavigan",
+          "role": "COO"
+        },
+        {
+          "name": "Eli Ben-Sasson",
+          "role": "Scientist"
+        },
+        {
+          "name": "Christina Garman",
+          "role": "Scientist"
+        },
+        {
+          "name": "Alessandro Chiesa",
+          "role": "Scientist"
+        },
+        {
+          "name": "Matthew Green",
+          "role": "Scientist"
+        },
+        {
+          "name": "Ian Miers",
+          "role": "Scientist"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "zec-zcash",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/zec-zcash/",
+      "symbol": "ZEC",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Equihash",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2016-10-28T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "16086": {
+      "categories": [
+        "Alleged SEC Securities",
+        "Big Data & Data Storage",
+        "Binance Launchpad",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "DePIN",
+        "Ethereum (ETH) Token (ERC-20)",
+        "TRON (TRX) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 16086,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "BitTorrent (BTT) is a cryptocurrency used to enhance the BitTorrent protocol by enabling faster and more efficient peer-to-peer file sharing through blockchain technology. It incentivizes file sharing and distribution, rewarding users for their contributions to the network.",
+      "has_substantive_descriptive_context": true,
+      "name": "BitTorrent [New]",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://bttcscan.com/token/0x0000000000000000000000000000000000001010",
+          "https://explorer.energi.network/token/0xf1bdcf2d4163adf9554111439dabdd6f18ff9ba7"
+        ],
+        "source_code": [
+          "https://github.com/bittorrent"
+        ],
+        "website": [
+          "https://bt.io/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "bttc-bittorrent-chain",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bttc-bittorrent-chain/",
+      "symbol": "BTT",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "1659": {
+      "categories": [
+        "Cryptocurrency",
+        "Smart Contracts",
+        "Payments",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Trading & Investing",
+        "Assets Management",
+        "Big Data & Data Storage",
+        "Arbitrum Ecosystem",
+        "DeFi",
+        "Layer 1 (L1)",
+        "Decentralized Exchange (DEX)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1659,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Gnosis (GNO) is a decentralized platform that enables users to create and manage prediction markets and decentralized applications, utilizing blockchain technology for secure and transparent transactions. Its native token, GNO, is used for governance and incentivizing participation in the Gnosis ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "Gnosis",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://blockscout.com/xdai/mainnet/tokens/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb/token-transfers",
+          "https://explorer.energi.network/token/0xF452bff8e958C6F335F06fC3aAc427Ee195366fE"
+        ],
+        "source_code": [
+          "https://github.com/gnosis/gnosisdb"
+        ],
+        "website": [
+          "https://www.gnosis.io/"
+        ],
+        "whitepaper": [
+          "https://gnosis.pm/resources/default/pdf/gnosis_whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Martin Köppelmann",
+          "role": "CEO & Co-Founder"
+        },
+        {
+          "name": "Stefan George",
+          "role": "CTO"
+        },
+        {
+          "name": "Friederike Ernst",
+          "role": "Director of Operations"
+        },
+        {
+          "name": "Adolfo Panizo",
+          "role": "Frontend Developer"
+        },
+        {
+          "name": "Alan Lu",
+          "role": "Researcher"
+        },
+        {
+          "name": "Alessandro Gasch",
+          "role": "Business Developer"
+        },
+        {
+          "name": "Andre Meyer",
+          "role": "Frontend Developer"
+        },
+        {
+          "name": "Angel Rodriguez",
+          "role": "Full Stack Engineer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "gno-gnosis",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/gno-gnosis/",
+      "symbol": "GNO",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2015-08-01T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "1831": {
+      "categories": [
+        "Proof Of Work",
+        "Sha256",
+        "Payments",
+        "Cryptocurrency",
+        "Mining",
+        "Layer 1 (L1)",
+        "Smart Contracts",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1831,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Bitcoin Cash (BCH) is a cryptocurrency that was created as a fork of Bitcoin in 2017, aiming to enable faster and cheaper transactions by increasing block size limits. It seeks to provide a more practical digital cash solution for everyday transactions.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bitcoin Cash",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://www.blockchain.com/explorer?view=bch",
+          "https://explorer.bitcoin.com/"
+        ],
+        "source_code": [
+          "https://github.com/Bitcoin-ABC/bitcoin-abc"
+        ],
+        "website": [
+          "https://bch.info/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/bch-bitcoin-cash/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Bitcoin ABC",
+          "role": "R&D Team"
+        },
+        {
+          "name": "Bitcoin Unlimited",
+          "role": "R&D Team"
+        },
+        {
+          "name": "Bitprim",
+          "role": "R&D Team"
+        },
+        {
+          "name": "Bitcoin XT",
+          "role": "R&D Team"
+        },
+        {
+          "name": "BTC1",
+          "role": "R&D Team"
+        },
+        {
+          "name": "Bitcrust",
+          "role": "R&D Team"
+        },
+        {
+          "name": "Parity",
+          "role": "R&D Team"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "bch-bitcoin-cash",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bch-bitcoin-cash/",
+      "symbol": "BCH",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "SHA256",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2017-08-01T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "1839": {
+      "categories": [
+        "Smart Contracts",
+        "Exchange",
+        "Monetization",
+        "Trading & Investing",
+        "Delegated Proof Of Stake",
+        "Cryptocurrency",
+        "Layer 1 (L1)",
+        "FTX Holdings",
+        "Centralized Exchange (CEX)",
+        "High Transaction Speed (TPS)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1839,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "BNB is the native cryptocurrency of the Binance exchange, used for trading fee discounts and various decentralized applications within the Binance ecosystem. Additionally, it plays a key role in the Binance Smart Chain, supporting smart contracts and decentralized finance (DeFi) applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "BNB",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://bscscan.com/",
+          "https://explorer.binance.org/"
+        ],
+        "source_code": [
+          "https://github.com/binance-chain/"
+        ],
+        "website": [
+          "https://www.binance.com/"
+        ],
+        "whitepaper": [
+          "https://github.com/bnb-chain/whitepaper/blob/master/WHITEPAPER.md"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Changpeng Zhao",
+          "role": "CEO"
+        },
+        {
+          "name": "Roger Wang",
+          "role": "CTO"
+        },
+        {
+          "name": "James Hofbauer",
+          "role": "Chief Architect"
+        },
+        {
+          "name": "Ted Lin",
+          "role": "Chief Growth Officer"
+        },
+        {
+          "name": "Allan Yan",
+          "role": "Director of Product"
+        },
+        {
+          "name": "Leah Li",
+          "role": "Global PR Manager"
+        },
+        {
+          "name": "Sunny Li",
+          "role": "Operations Director"
+        },
+        {
+          "name": "Ella Zhang",
+          "role": "Head of Binance Labs"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "bnb-binance-coin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bnb-binance-coin/",
+      "symbol": "BNB",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Tendermint (BFT)",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Byzantine Fault Tolerance",
+        "started_at": "2017-07-15T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "1958": {
+      "categories": [
+        "Big Data & Data Storage",
+        "Events & Entertainment",
+        "Smart Contracts",
+        "Cryptocurrency",
+        "Delegated Proof Of Stake",
+        "Scalable",
+        "Layer 1 (L1)",
+        "High Transaction Speed (TPS)",
+        "Alleged SEC Securities"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1958,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "TRON (TRX) is a decentralized platform designed to build and deploy decentralized applications (dApps) and smart contracts on its blockchain. It aims to revolutionize the digital content ecosystem by enabling direct sharing and distribution without intermediaries.",
+      "has_substantive_descriptive_context": true,
+      "name": "TRON",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://tronscan.org/",
+          "https://trx.tokenview.io"
+        ],
+        "source_code": [
+          "https://github.com/tronprotocol/java-tron"
+        ],
+        "website": [
+          "https://tron.network/"
+        ],
+        "whitepaper": [
+          "https://tron.network/resources?lng=en&name=1"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Justin Sun",
+          "role": "CEO & Founder"
+        },
+        {
+          "name": "Lucien Chen",
+          "role": "CTO"
+        },
+        {
+          "name": "Chang Min",
+          "role": "HRVP"
+        },
+        {
+          "name": "Zhao Hong",
+          "role": "Technical Director"
+        },
+        {
+          "name": "Yi Wen",
+          "role": "Product Director"
+        },
+        {
+          "name": "Zhao Haoqi",
+          "role": "Director of Technical Operations"
+        },
+        {
+          "name": "Zhang Sicong",
+          "role": "Technical Manager"
+        },
+        {
+          "name": "Deuce Yu",
+          "role": "Product Manager"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "trx-tron",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/trx-tron/",
+      "symbol": "TRX",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "DPoS",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Delegated Proof of Stake",
+        "started_at": "2017-08-30T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "1975": {
+      "categories": [
+        "Smart Contracts",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Off-chain",
+        "Assets Management",
+        "Blockchain Service",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Solana (SOL) Token",
+        "Huobi ECO Chain (HECO) Token",
+        "Fantom (FTM) Token",
+        "Polygon (MATIC) Token",
+        "Avalanche (AVAX) Token",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 1975,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Chainlink (LINK) is a decentralized oracle network that enables smart contracts to securely interact with real-world data and off-chain resources. It aims to bridge the gap between blockchain technology and external data sources for enhanced functionality.",
+      "has_substantive_descriptive_context": true,
+      "name": "Chainlink",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://arbiscan.io/token/0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+          "https://blockscout.com/poa/xdai/tokens/0xE2e73A1c69ecF83F464EFCE6A5be353a37cA09b2/token-transfers"
+        ],
+        "source_code": [
+          "https://github.com/smartcontractkit/chainlink"
+        ],
+        "website": [
+          "https://chain.link/",
+          "https://smartcontract.com/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/link-chainlink/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Sergey Nazarov",
+          "role": "CEO"
+        },
+        {
+          "name": "Steve Ellis",
+          "role": "CTO"
+        },
+        {
+          "name": "Ari Juels",
+          "role": "Technical Advisor"
+        },
+        {
+          "name": "Andrew Miller",
+          "role": "Technical Advisor"
+        },
+        {
+          "name": "Evan Cheng",
+          "role": "Technical Advisor"
+        },
+        {
+          "name": "Hudson Jameson",
+          "role": "Technical Advisor"
+        },
+        {
+          "name": "Jake Brukhman",
+          "role": "Advisor"
+        },
+        {
+          "name": "Brian Lio",
+          "role": "Advisor"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "link-chainlink",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/link-chainlink/",
+      "symbol": "LINK",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2017-09-21T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "2": {
+      "categories": [
+        "Cryptocurrency",
+        "Layer 1 (L1)",
+        "Lightning Network",
+        "Made in USA",
+        "Privacy & Security",
+        "Proof Of Work",
+        "Scrypt",
+        "Segwit"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Litecoin (LTC) is a peer-to-peer cryptocurrency designed for fast and low-cost transactions, often referred to as the \"silver to Bitcoin's gold.\" It was created in 2011 by Charlie Lee to improve upon Bitcoin's technology with faster block generation times.",
+      "has_substantive_descriptive_context": true,
+      "name": "Litecoin",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://ltc.tokenview.io",
+          "https://blockchair.com/litecoin"
+        ],
+        "source_code": [
+          "https://github.com/litecoin-project/litecoin"
+        ],
+        "website": [
+          "https://litecoin.org/",
+          "https://litecoin.com"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Charlie Lee",
+          "role": "Founder & Managing Director"
+        },
+        {
+          "name": "Xinxi Wang",
+          "role": "Director"
+        },
+        {
+          "name": "Franklyn Richards",
+          "role": "Director"
+        },
+        {
+          "name": "Zing Yang",
+          "role": "Director"
+        },
+        {
+          "name": "Adrian Gallagher",
+          "role": "Developer"
+        },
+        {
+          "name": "Loshan T",
+          "role": "Developer"
+        },
+        {
+          "name": "Keith Yong",
+          "role": "Operation"
+        },
+        {
+          "name": "Warren Togami",
+          "role": "Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "ltc-litecoin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ltc-litecoin/",
+      "symbol": "LTC",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Scrypt",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2011-10-07T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "2010": {
+      "categories": [
+        "Decentralized Applications",
+        "Smart Contracts",
+        "Token Issuance",
+        "Proof Of Stake",
+        "Platform",
+        "Layer 1 (L1)",
+        "Alleged SEC Securities",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2010,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Cardano (ADA) is a decentralized platform that enables the development and execution of smart contracts and decentralized applications with a focus on scalability, sustainability, and interoperability. It utilizes a unique proof-of-stake consensus mechanism called Ouroboros to enhance energy efficiency.",
+      "has_substantive_descriptive_context": true,
+      "name": "Cardano",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://cexplorer.io/",
+          "https://cardanoexplorer.com/"
+        ],
+        "source_code": [
+          "https://github.com/input-output-hk/ouroboros-network"
+        ],
+        "website": [
+          "https://www.cardano.org"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/ada-cardano/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Charles Hoskinson",
+          "role": "Founder & CEO IOHK"
+        },
+        {
+          "name": "PhD Duncan Coutts",
+          "role": "Director, full stack engineer"
+        },
+        {
+          "name": "PhD Lars Brünjes",
+          "role": "Director of Education"
+        },
+        {
+          "name": "PhD Philipp Kant",
+          "role": "Director of formal methods"
+        },
+        {
+          "name": "Peter Thompson",
+          "role": "Developer"
+        },
+        {
+          "name": "Darryl McAdams",
+          "role": "Developer"
+        },
+        {
+          "name": "Ante Kegalj",
+          "role": "Developer"
+        },
+        {
+          "name": "Jens Krause",
+          "role": "Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "ada-cardano",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ada-cardano/",
+      "symbol": "ADA",
+      "technology_and_project_attributes": {
+        "development_status": "Beta version",
+        "hash_algorithm": "Ouroboros",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Stake",
+        "started_at": "2017-09-29T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "2011": {
+      "categories": [
+        "Platform",
+        "Smart Contracts",
+        "Proof Of Stake",
+        "Privacy & Security",
+        "Layer 1 (L1)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2011,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Tezos (XTZ) is a decentralized blockchain platform that enables smart contracts and decentralized applications while allowing users to participate in its governance through a formal voting process. Its self-amending protocol facilitates upgrades without the need for hard forks.",
+      "has_substantive_descriptive_context": true,
+      "name": "Tezos",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://tezos.id/",
+          "https://tzstats.com"
+        ],
+        "source_code": [
+          "https://gitlab.com/tezos/tezos",
+          "https://github.com/tezos/tezos"
+        ],
+        "website": [
+          "https://www.tezos.com/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/xtz-tezos/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Arthur Breitman",
+          "role": "CEO & Co-Founder"
+        },
+        {
+          "name": "Kathleen Breitman",
+          "role": "CEO & Co-Founder"
+        },
+        {
+          "name": "Vincent Bernardoff",
+          "role": "Team Member"
+        },
+        {
+          "name": "Bozman Çağdaş",
+          "role": "Team Member"
+        },
+        {
+          "name": "Benjamin Canou",
+          "role": "Developer"
+        },
+        {
+          "name": "Pierre Chambart",
+          "role": "Senior R&D Engineer"
+        },
+        {
+          "name": "Grégoire Henry",
+          "role": "Senior R&D Engineer"
+        },
+        {
+          "name": "Mohamed Iguernlala",
+          "role": "Senior R&D Engineer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "xtz-tezos",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xtz-tezos/",
+      "symbol": "XTZ",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "LPOS",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Liquid Proof of Stake",
+        "started_at": "2017-07-01T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "20396": {
+      "categories": [
+        "Cryptocurrency",
+        "Proof Of Work",
+        "Layer 1 (L1)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 20396,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Kaspa (KAS) is a high-performance blockchain that utilizes a blockDAG architecture, enabling fast and secure transactions with a unique consensus mechanism. Its design aims to provide scalability and efficiency for decentralized applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "Kaspa",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.kaspa.org/",
+          "https://kas.fyi/"
+        ],
+        "source_code": [
+          "https://github.com/kaspanet/kaspad"
+        ],
+        "website": [
+          "https://kaspa.org/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "kas-kaspa",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/kas-kaspa/",
+      "symbol": "KAS",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "HeavyHash",
+        "open_source": true,
+        "proof_type": "Proof of Work",
+        "started_at": "2021-11-14T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "2087": {
+      "categories": [
+        "Smart Contracts",
+        "Exchange",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Monetization",
+        "Centralized Exchange (CEX)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2087,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "KuCoin Token (KCS) is the native cryptocurrency of the KuCoin exchange, enabling users to receive trading fee discounts, participate in token sales, and earn rewards. Holding KCS also allows users to benefit from the exchange's profit-sharing model.",
+      "has_substantive_descriptive_context": true,
+      "name": "KuCoin Token",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://www.kucoin.com/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/kcs-kucoin-token/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Michael Gan",
+          "role": "CEO"
+        },
+        {
+          "name": "Eric Don",
+          "role": "COO"
+        },
+        {
+          "name": "Top Lan",
+          "role": "CTO"
+        },
+        {
+          "name": "Kent Li",
+          "role": "Operations Manager"
+        },
+        {
+          "name": "John Lee",
+          "role": "President of the Business"
+        },
+        {
+          "name": "Jack Zhu",
+          "role": "Marketing Director"
+        },
+        {
+          "name": "Linda Lin",
+          "role": "Chief Legal Advisor"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "kcs-kucoin-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/kcs-kucoin-token/",
+      "symbol": "KCS",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2017-09-15T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "20947": {
+      "categories": [
+        "Cryptocurrency",
+        "Platform",
+        "Smart Contracts",
+        "Proof Of Stake",
+        "Layer 1 (L1)",
+        "Binance Launchpool",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 20947,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Sui (SUI) is a scalable Layer 1 blockchain designed for secure and fast transactions, facilitating new decentralized applications and opportunities in the Web3 ecosystem. Its innovative architecture aims to optimize both performance and user experience.",
+      "has_substantive_descriptive_context": true,
+      "name": "Sui",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://suiscan.xyz/mainnet/home"
+        ],
+        "source_code": [
+          "https://github.com/MystenLabs"
+        ],
+        "website": [
+          "https://sui.io/"
+        ],
+        "whitepaper": [
+          "https://github.com/MystenLabs/sui/blob/main/doc/paper/sui.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "sui-sui",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/sui-sui/",
+      "symbol": "SUI",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "21159": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Real World Assets (RWA)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 21159,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Ondo (ONDO) is a decentralized finance protocol designed to optimize yield generation through innovative staking and liquidity solutions. It aims to empower users with greater control and flexibility over their assets.",
+      "has_substantive_descriptive_context": true,
+      "name": "Ondo",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/ondoprotocol"
+        ],
+        "website": [
+          "https://ondo.foundation"
+        ],
+        "whitepaper": [
+          "https://docs.ondo.finance"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "ondo-ondo",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ondo-ondo/",
+      "symbol": "ONDO",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "21794": {
+      "categories": [
+        "Cryptocurrency",
+        "Made in USA",
+        "Aptos Ecosystem",
+        "Layer 1 (L1)",
+        "PoS",
+        "Smart Contracts",
+        "Staking"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 21794,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Aptos (APT) is a Layer 1 blockchain designed for high scalability and safety, utilizing a novel programming language and parallel execution to enhance transaction speed and efficiency. It aims to deliver a user-friendly environment for developers and end-users alike.",
+      "has_substantive_descriptive_context": true,
+      "name": "Aptos",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.devnet.aptos.dev/"
+        ],
+        "source_code": [
+          "https://github.com/aptos-labs"
+        ],
+        "website": [
+          "https://aptoslabs.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "apt-aptos",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/apt-aptos/",
+      "symbol": "APT",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "coin"
+      }
+    },
+    "22691": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Layer 2 (L2)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 22691,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Starknet (STRK) is a decentralized, scalable Layer 2 solution for Ethereum that utilizes zero-knowledge rollups to enhance transaction speed and reduce costs. It aims to provide a secure and efficient environment for building decentralized applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "Starknet",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/starkware-libs"
+        ],
+        "website": [
+          "https://starknet.io/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "strk-starknet",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/strk-starknet/",
+      "symbol": "STRK",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "2280": {
+      "categories": [
+        "Platform",
+        "Smart Contracts",
+        "Big Data & Data Storage",
+        "Privacy & Security",
+        "Computing & Cloud Infrastructure",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Huobi ECO Chain (HECO) Token",
+        "Layer 1 (L1)",
+        "DePIN",
+        "Infrastructure",
+        "Alleged SEC Securities",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2280,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Filecoin (FIL) is a decentralized storage network that enables users to rent out their unused hard drive space in exchange for Filecoin tokens. It incentivizes file storage and retrieval on the blockchain, ensuring data can be stored reliably and efficiently.",
+      "has_substantive_descriptive_context": true,
+      "name": "Filecoin",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://filfox.io/en?utm_source=cmc"
+        ],
+        "source_code": [
+          "https://github.com/filecoin-project/go-ipld-cbor"
+        ],
+        "website": [
+          "https://filecoin.io/",
+          "https://protocol.ai"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/fil-filecoin/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "fil-filecoin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/fil-filecoin/",
+      "symbol": "FIL",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "coin"
+      }
+    },
+    "22861": {
+      "categories": [
+        "Osmosis Ecosystem",
+        "Cosmos",
+        "Platform"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 22861,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Celestia (TIA) is a modular blockchain network designed to separate the consensus and data availability layers, enabling developers to create customized blockchains without the complexities of building their own infrastructure. It aims to improve scalability and flexibility for decentralized applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "Celestia",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/celestiaorg"
+        ],
+        "website": [
+          "https://celestia.org/"
+        ],
+        "whitepaper": [
+          "https://docs.celestia.org/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "tia-celestia",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/tia-celestia/",
+      "symbol": "TIA",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "22974": {
+      "categories": [
+        "Cryptocurrency",
+        "AI (Artificial Intelligence)",
+        "Big Data & Data Storage",
+        "DAO",
+        "Distributed Computing",
+        "Oracles"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 22974,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "BitTensor (TAO) is a decentralized ecosystem that enables artificial intelligence training by allowing users to contribute computing power and be rewarded in TAO tokens. It aims to create a collaborative network for machine learning with enhanced scalability and efficiency.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bittensor",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://bittensor.com/scan"
+        ],
+        "source_code": [
+          "https://github.com/opentensor/BitTensor"
+        ],
+        "website": [
+          "https://bittensor.com",
+          "https://docs.bittensor.com"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "tao-bittensor",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/tao-bittensor/",
+      "symbol": "TAO",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "23095": {
+      "categories": [
+        "Solana (SOL) Token",
+        "Polygon (MATIC) Token",
+        "Arbitrum Ecosystem",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Meme Coin",
+        "Dog Meme Coin",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 23095,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Bonk (BONK) is a community-driven meme cryptocurrency designed for fun and engagement within the Solana ecosystem. It aims to introduce users to the world of crypto through its playful branding and initiatives.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bonk",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://solscan.io/token/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+        ],
+        "website": [
+          "https://www.bonkcoin.com"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "bonk-bonk",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bonk-bonk/",
+      "symbol": "BONK",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "23149": {
+      "categories": [
+        "Layer 1 (L1)",
+        "Made in USA",
+        "Real World Assets (RWA)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 23149,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Sei (SEI) is a specialized layer-1 blockchain designed for trading applications, prioritizing performance, security, and user experience. It aims to provide a fast and scalable environment for decentralized exchanges and financial applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "Sei",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://sei.explorers.guru/",
+          "https://www.seiscan.app/pacific-1"
+        ],
+        "source_code": [
+          "https://github.com/sei-protocol"
+        ],
+        "website": [
+          "https://www.sei.io/",
+          "https://blog.sei.io/"
+        ],
+        "whitepaper": [
+          "https://github.com/sei-protocol/sei-chain/blob/3c9576fee3494ce039df684624f918dd8066ba3f/whitepaper/Sei_Whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "sei-sei",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/sei-sei/",
+      "symbol": "SEI",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "24478": {
+      "categories": [
+        "BNB Chain Ecosystem",
+        "Avalanche Ecosystem",
+        "Meme",
+        "Arbitrum Ecosystem",
+        "Ethereum Ecosystem",
+        "Frog-Themed",
+        "GMCI Meme Index",
+        "GMCI Index",
+        "The Boy’s Club",
+        "4chan-Themed"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 24478,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "What is the project about? Pepe is a community based meme token surround the iconic meme Pepe the frog. Pepe aims to leverage the power of such an iconic meme to become the most memeable memecoin in existence. What makes your project unique? Pepe is here to make memecoins great again. Ushering in a new paradigm for memecoins, Pepe represents the memecoin in it's purest simplicity. With zero taxes, liquidity locked forever, and contract immutable,",
+      "has_substantive_descriptive_context": true,
+      "name": "Pepe",
+      "observed_utc": "2026-11-13T22:51:48Z",
+      "primary_links_unverified": {
+        "blockchain_site": [
+          "https://etherscan.io/token/0x6982508145454ce325ddbe47a25d4ec3d2311933",
+          "https://intel.arkm.com/explorer/token/pepe "
+        ],
+        "homepage": [
+          "https://www.pepe.vip/"
+        ],
+        "official_forum_url": [],
+        "source_code": []
+      },
+      "project_team_unverified": [],
+      "provider": "coingecko",
+      "provider_id": "pepe",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://www.coingecko.com/en/coins/pepe",
+      "symbol": "PEPE",
+      "technology_and_project_attributes": {
+        "asset_platform_id": "ethereum",
+        "block_time_in_minutes": 0
+      }
+    },
+    "2634": {
+      "categories": [
+        "Smart Contracts",
+        "Real World Assets (RWA)",
+        "Finance & Banking"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2634,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "XDC Network (XDC) is a hybrid blockchain platform designed for enterprise use, enabling fast and low-cost transactions while providing smart contract functionalities. It aims to improve cross-border trade and streamline processes in various industries.",
+      "has_substantive_descriptive_context": true,
+      "name": "XDC Network",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.xinfin.network/",
+          "https://xinfin.info/"
+        ],
+        "source_code": [
+          "https://github.com/XinFinOrg"
+        ],
+        "website": [
+          "https://www.xinfin.org/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Rushabh Parmar",
+          "role": "Blockchain Engineer"
+        },
+        {
+          "name": "Anil Chinchawale",
+          "role": "Search Results Web results Blockchain Architect"
+        },
+        {
+          "name": "Omkar Mesty",
+          "role": "Blockchain Engineer"
+        },
+        {
+          "name": "Nadar Suresh",
+          "role": "SEO and Community Manager"
+        },
+        {
+          "name": "André Casterman",
+          "role": "Advisory and Market Engagement"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "xdc-xdc-network",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xdc-xdc-network/",
+      "symbol": "XDC",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "QuorumChain",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "QuorumChain",
+        "started_at": "2017-11-01T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "2694": {
+      "categories": [
+        "Platform",
+        "Smart Contracts",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Loans",
+        "Finance & Banking",
+        "Trading & Investing",
+        "Alleged SEC Securities"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 2694,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Nexo (NEXO) is a cryptocurrency platform that provides instant crypto credit lines and earn interest on digital assets, allowing users to leverage their crypto holdings. It combines traditional finance with blockchain technology to offer services like borrowing and interest-earning accounts.",
+      "has_substantive_descriptive_context": true,
+      "name": "Nexo",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206",
+          "https://ethplorer.io/address/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206"
+        ],
+        "source_code": [
+          "https://github.com/nexofinance/NEXO-Token/"
+        ],
+        "website": [
+          "https://nexo.io"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/nexo-nexo/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Kosta Kantchev",
+          "role": "Co-Founder"
+        },
+        {
+          "name": "Georgi Shulev",
+          "role": "Co-Founder"
+        },
+        {
+          "name": "Antoni Trenchev",
+          "role": "Co-Founder"
+        },
+        {
+          "name": "Vasil Petrov",
+          "role": "CTO"
+        },
+        {
+          "name": "Kalin Metodiev",
+          "role": "Corporate Finance"
+        },
+        {
+          "name": "Kamen Trendafilov",
+          "role": "Finance Director"
+        },
+        {
+          "name": "Savina Cherneva",
+          "role": "Compliance"
+        },
+        {
+          "name": "Bilyana Christova",
+          "role": "Marketing"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "nexo-nexo",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/nexo-nexo/",
+      "symbol": "NEXO",
+      "technology_and_project_attributes": {
+        "development_status": "Only token",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "26997": {
+      "categories": [
+        "Cross-chain",
+        "Multicoin Capital Portfolio",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Arbitrum Ecosystem",
+        "Base Ecosystem",
+        "Polygon (MATIC) Token",
+        "Avalanche (AVAX) Token",
+        "Optimism Ecosystem",
+        "Layer 0 (L0)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 26997,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "LayerZero (ZRO) is an omnichain interoperability protocol that enables seamless communication between different blockchain networks, allowing dApps to operate across diverse ecosystems. It aims to enhance the user experience by facilitating cross-chain interactions without sacrificing security or performance.",
+      "has_substantive_descriptive_context": true,
+      "name": "LayerZero",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://layerzeroscan.com/address/0x6985884c4392d348587b19cb9eaaf157f13271cd"
+        ],
+        "source_code": [
+          "https://github.com/LayerZero-Labs/LayerZero"
+        ],
+        "website": [
+          "https://layerzero.network"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "zro-layerzero",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/zro-layerzero/",
+      "symbol": "ZRO",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "token"
+      }
+    },
+    "27075": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Layer 2 (L2)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 27075,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Mantle (MNT) is a decentralized layer-2 scaling solution built on Ethereum, designed to enhance transaction speeds and reduce gas fees for users and developers. It aims to provide a seamless experience for decentralized applications and blockchain interactions.",
+      "has_substantive_descriptive_context": true,
+      "name": "Mantle",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/mantlenetworkio/mantle"
+        ],
+        "website": [
+          "https://www.mantle.xyz/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "mnt-mantle",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/mnt-mantle/",
+      "symbol": "MNT",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "token"
+      }
+    },
+    "28081": {
+      "categories": [
+        "Base Ecosystem",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Meme Coin",
+        "Solana (SOL) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 28081,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "SPX6900 (SPX) is a decentralized blockchain platform designed for secure and scalable applications, focusing on interoperability and user-centric features. It aims to enhance the overall user experience within the cryptocurrency ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "SPX6900",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": []
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "spx-spx6900",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/spx-spx6900/",
+      "symbol": "SPX",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "started_at": "2023-08-16T04:45:00Z",
+        "type": "token"
+      }
+    },
+    "28177": {
+      "categories": [
+        "Solana (SOL) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 28177,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Pyth Network is a decentralized oracle solution that provides real-time data feeds for cryptocurrencies and other financial assets, empowering developers to build reliable DeFi applications.",
+      "has_substantive_descriptive_context": true,
+      "name": "Pyth Network",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.solana.com/address/HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+          "https://solscan.io/token/HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3"
+        ],
+        "source_code": [
+          "https://github.com/pyth-network"
+        ],
+        "website": [
+          "https://pyth.network"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/pyth-pyth-network/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "pyth-pyth-network",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/pyth-pyth-network/",
+      "symbol": "PYTH",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "token"
+      }
+    },
+    "28298": {
+      "categories": [
+        "Proof Of Work",
+        "Cryptocurrency",
+        "Privacy & Security",
+        "Mining"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 28298,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Beam (BEAM) is a privacy-focused cryptocurrency utilizing the Mimblewimble protocol to enable confidential transactions and enhance user anonymity. It aims to provide scalability and simplicity while maintaining a high level of security.",
+      "has_substantive_descriptive_context": true,
+      "name": "Beam",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.beam.mw/",
+          "https://beam.tokenview.com"
+        ],
+        "source_code": [
+          "https://github.com/BeamMW/beam"
+        ],
+        "website": [
+          "https://www.beam.mw/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/beam-beam/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Alex Romanov",
+          "role": "CTO"
+        },
+        {
+          "name": "Maxnflaxl",
+          "role": "CM"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "beam-beam",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/beam-beam/",
+      "symbol": "BEAM",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "Equihash",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Proof of Work",
+        "type": "coin"
+      }
+    },
+    "29210": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 29210,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Jupiter (JUP) is a cryptocurrency designed for the decentralized creation and management of user-focused applications, emphasizing interoperability and user-friendliness. It aims to connect various blockchain ecosystems while providing tools for developers and users alike.",
+      "has_substantive_descriptive_context": true,
+      "name": "Jupiter",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://www.jup.io/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "jup-jupiter",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/jup-jupiter/",
+      "symbol": "JUP",
+      "technology_and_project_attributes": {
+        "development_status": "Defunct",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "started_at": "2016-12-28T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "29420": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Base Ecosystem",
+        "AI (Artificial Intelligence)",
+        "Metaverse",
+        "Solana (SOL) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 29420,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Virtuals Protocol (VIRTUAL) is a decentralized platform that enables the creation, trading, and management of virtual assets within a blockchain ecosystem. It aims to streamline the process of asset tokenization and ensure secure, efficient transactions.",
+      "has_substantive_descriptive_context": true,
+      "name": "Virtuals Protocol",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://www.virtuals.io/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "virtual-virtual-protocol",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/virtual-virtual-protocol/",
+      "symbol": "VIRTUAL",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "29814": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "DeFi",
+        "Staking",
+        "Binance Launchpool",
+        "Arbitrum Ecosystem"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 29814,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Ether.fi (ETHFI) is a decentralized staking platform that allows users to earn rewards by staking their Ether (ETH) while maintaining control of their assets. It aims to provide a secure and transparent staking experience within the Ethereum ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "ether.fi",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://www.ether.fi/"
+        ],
+        "whitepaper": [
+          "https://etherfi.gitbook.io/etherfi/ether.fi-whitepaper"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "ethfi-etherfi",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ethfi-etherfi/",
+      "symbol": "ETHFI",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "30171": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "DeFi",
+        "Binance Launchpool"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 30171,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Ethena (ENA) is a blockchain-based platform that aims to provide decentralized and secure financial services through smart contracts. It focuses on enabling efficient transactions and fostering a collaborative ecosystem for users.",
+      "has_substantive_descriptive_context": true,
+      "name": "Ethena",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/ethena-labs"
+        ],
+        "website": [
+          "https://www.ethena.fi/"
+        ],
+        "whitepaper": [
+          "https://ethena-labs.gitbook.io/ethena-labs/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "ena-ethena",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ena-ethena/",
+      "symbol": "ENA",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "3077": {
+      "categories": [
+        "Platform",
+        "Smart Contracts",
+        "Proof Of Authority",
+        "Supply & Logistics",
+        "Privacy & Security",
+        "Scalable"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3077,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "VeChain (VET) is a blockchain platform designed to enhance supply chain and business processes by providing secure data sharing and tracking through its decentralized applications. It aims to improve transparency and efficiency in various industries using smart contracts and IoT technology.",
+      "has_substantive_descriptive_context": true,
+      "name": "VeChain",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.vtho.net/",
+          "https://www.vescan.io/"
+        ],
+        "source_code": [
+          "https://github.com/vechain/thor"
+        ],
+        "website": [
+          "https://www.vechain.org/",
+          "https://www.vechain.com/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Chun Yin (CY) Cheung",
+          "role": "Head of Regulation Committee"
+        },
+        {
+          "name": "George Kang",
+          "role": "Head of Public Relation Committee"
+        },
+        {
+          "name": "Jay Zhang",
+          "role": "CFO & Co-founder"
+        },
+        {
+          "name": "Marget Rui Zhu",
+          "role": "Head of Compensation & Nomination Committee"
+        },
+        {
+          "name": "Peter Zhou",
+          "role": "Chief Scientist (nChain)"
+        },
+        {
+          "name": "Renato Grottola",
+          "role": "Business Development"
+        },
+        {
+          "name": "Sunny Lu",
+          "role": "CEO & Co-Founder"
+        },
+        {
+          "name": "Jim Breyer",
+          "role": "Advisor"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "vet-vechain",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/vet-vechain/",
+      "symbol": "VET",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "PoA",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Authority",
+        "started_at": "2017-08-31T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "3155": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Cross-chain",
+        "Real World Assets (RWA)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3155,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Quant (QNT) is a blockchain platform designed to enable interoperability between various blockchains and networks, facilitating the seamless transfer of data and assets. It aims to connect different systems and improve their functionality through its Overledger technology.",
+      "has_substantive_descriptive_context": true,
+      "name": "Quant",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.energi.network/token/0x462b35452e552a66b519ecf70aedb1835d434965",
+          "https://etherscan.io/token/0x4a220e6096b25eadb88358cb44068a3248254675"
+        ],
+        "source_code": [
+          "https://github.com/quantnetwork/eth-contract-metadata"
+        ],
+        "website": [
+          "https://quant.network/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/qnt-quant/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Gilbert Verdian",
+          "role": "CEO and Founder"
+        },
+        {
+          "name": "Colin Paterson",
+          "role": "CTO"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "qnt-quant",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/qnt-quant/",
+      "symbol": "QNT",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "32196": {
+      "categories": [
+        "DeFi",
+        "Layer 1 (L1)",
+        "Decentralized Exchange (DEX)",
+        "Derivative"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 32196,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Hyperliquid (HYPE) is a decentralized perpetual exchange designed for trading cryptocurrency derivatives with high efficiency and low latency. It aims to provide users with a seamless trading experience while ensuring liquidity and security.",
+      "has_substantive_descriptive_context": true,
+      "name": "Hyperliquid",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://hyperfoundation.org/"
+        ],
+        "whitepaper": [
+          "https://hyperliquid.gitbook.io/hyperliquid-docs"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "hype-hyperliquid",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/hype-hyperliquid/",
+      "symbol": "HYPE",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "coin"
+      }
+    },
+    "328": {
+      "categories": [
+        "Cryptocurrency",
+        "Cryptonight",
+        "Proof Of Work",
+        "Privacy & Security",
+        "Mining"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 328,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Monero (XMR) is a privacy-focused cryptocurrency that utilizes advanced cryptographic techniques to ensure secure and anonymous transactions. It aims to provide users with complete control over their financial privacy.",
+      "has_substantive_descriptive_context": true,
+      "name": "Monero",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://xmr.tokenview.com",
+          "https://moneroblocks.info/"
+        ],
+        "source_code": [
+          "https://github.com/monero-project/monero"
+        ],
+        "website": [
+          "https://getmonero.org/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/xmr-monero/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Riccardo Spagni",
+          "role": "Core Developer"
+        },
+        {
+          "name": "Francisco Cabañas",
+          "role": "Core Developer"
+        },
+        {
+          "name": "smooth",
+          "role": "Core Developer"
+        },
+        {
+          "name": "tacotime",
+          "role": "Core Developer"
+        },
+        {
+          "name": "luigi1111",
+          "role": "Core Developer"
+        },
+        {
+          "name": "NoodleDoodle",
+          "role": "Core Developer"
+        },
+        {
+          "name": "BinaryFate",
+          "role": "Core Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "xmr-monero",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xmr-monero/",
+      "symbol": "XMR",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "RandomX",
+        "open_source": true,
+        "org_structure": "Decentralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2014-04-18T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "33038": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 33038,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Sky (SKY) is a decentralized blockchain platform that aims to facilitate the development of decentralized applications and smart contracts, leveraging a unique consensus mechanism for enhanced security. Its ecosystem is designed to provide scalability and efficiency for developers and users alike.",
+      "has_substantive_descriptive_context": true,
+      "name": "Sky",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://sky.money/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "sky-sky",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/sky-sky/",
+      "symbol": "SKY",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "34104": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Base Ecosystem"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 34104,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Morpho (MORPHO) is a decentralized platform designed to enhance user privacy and security in digital transactions and communications. It utilizes innovative cryptographic techniques to empower individuals while maintaining transparency and decentralization.",
+      "has_substantive_descriptive_context": true,
+      "name": "Morpho",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/morpho-org"
+        ],
+        "website": [
+          "https://morpho.org/",
+          "https://app.morpho.xyz"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/morpho-morpho/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "morpho-morpho",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/morpho-morpho/",
+      "symbol": "MORPHO",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "34466": {
+      "categories": [
+        "Solana (SOL) Token",
+        "NFT Token",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 34466,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Pudgy Penguins (PENGU) is a collection of unique, hand-drawn NFT penguins designed for digital ownership and community engagement. The project aims to create a fun and lively ecosystem around its characters, offering various interactive experiences for holders.",
+      "has_substantive_descriptive_context": true,
+      "name": "Pudgy Penguins",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://pudgypenguins.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "pengu-pudgy-penguins",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/pengu-pudgy-penguins/",
+      "symbol": "PENGU",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "35336": {
+      "categories": [
+        "Solana (SOL) Token",
+        "President Meme Coin",
+        "Meme Coin",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 35336,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "OFFICIAL TRUMP (TRUMP) is a cryptocurrency designed to support and promote the legacy of Donald Trump, aiming to engage his supporters within the blockchain ecosystem. It utilizes fan-driven initiatives to enhance community involvement and value.",
+      "has_substantive_descriptive_context": true,
+      "name": "OFFICIAL TRUMP",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://gettrumpmemes.com"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "trump-official-trump",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/trump-official-trump/",
+      "symbol": "TRUMP",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "35491": {
+      "categories": [
+        "Binance Coin (BNB) Token (BEP-20)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 35491,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "MemeCore (M) is a cryptocurrency that aims to blend humor and digital culture, allowing users to engage with meme-based content while participating in a unique blockchain ecosystem. It brings a playful approach to the crypto space, celebrating internet meme culture.",
+      "has_substantive_descriptive_context": true,
+      "name": "MemeCore",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/memecore-foundation/Go-MemeCore"
+        ],
+        "website": [
+          "https://memecore.com"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "m-memecore",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/m-memecore/",
+      "symbol": "M",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "35509": {
+      "categories": [
+        "Base Ecosystem"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 35509,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Venice Token (VVV) is a cryptocurrency designed to facilitate transactions and interactions within the Venice ecosystem, promoting community engagement and collaboration. It aims to provide users with a secure and innovative platform for various digital activities.",
+      "has_substantive_descriptive_context": true,
+      "name": "Venice Token",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://venice.ai"
+        ],
+        "whitepaper": [
+          "https://docs.venice.ai"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "vvv-venice-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/vvv-venice-token/",
+      "symbol": "VVV",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "3602": {
+      "categories": [
+        "Cryptocurrency",
+        "Sha256",
+        "Proof Of Work",
+        "Mining"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3602,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Bitcoin SV (BSV) is a cryptocurrency that emerged from a hard fork of Bitcoin Cash (BCH) aimed at restoring the original Bitcoin protocol and increasing its scaling capabilities. It emphasizes larger block sizes and aims to fulfill Bitcoin's original vision as a peer-to-peer electronic cash system.",
+      "has_substantive_descriptive_context": true,
+      "name": "Bitcoin SV",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://blockchair.com/bitcoin-sv/?from=coinpaprika",
+          "https://bsvexplorer.io/"
+        ],
+        "source_code": [
+          "https://github.com/bitcoin-sv/bitcoin-sv"
+        ],
+        "website": [
+          "https://bitcoinsv.io/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "nChain",
+          "role": "Company"
+        },
+        {
+          "name": "Dr Craig S Wright",
+          "role": "Chief Scientist (nChain)"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "bsv-bitcoin-sv",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/bsv-bitcoin-sv/",
+      "symbol": "BSV",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "SHA256",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Proof of Work",
+        "type": "coin"
+      }
+    },
+    "3635": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Mobile",
+        "Payments",
+        "Layer 1 (L1)",
+        "Centralized Exchange (CEX)",
+        "High Transaction Speed (TPS)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3635,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Cronos (CRO) is the native cryptocurrency of the Cronos blockchain, designed to facilitate fast and efficient transactions in the Crypto.com ecosystem. It aims to provide a seamless experience for users engaging in decentralized finance and payments.",
+      "has_substantive_descriptive_context": true,
+      "name": "Cronos",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://ethplorer.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
+          "https://cdoscan.com/"
+        ],
+        "website": [
+          "https://www.crypto.com/en/chain"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/cro-cryptocom-chain/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "cro-cryptocom-chain",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/cro-cryptocom-chain/",
+      "symbol": "CRO",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "type": "coin"
+      }
+    },
+    "3773": {
+      "categories": [
+        "AI (Artificial Intelligence)",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "NFT Token",
+        "Web3",
+        "Binance Launchpad",
+        "AI Agents"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3773,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Artificial Superintelligence Alliance (FET) aims to advance research and development in artificial superintelligence, promoting collaboration among experts to ensure its safe and beneficial implementation.",
+      "has_substantive_descriptive_context": true,
+      "name": "Artificial Superintelligence Alliance",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://atomscan.com/fetchai",
+          "https://www.mintscan.io/fetchai/"
+        ],
+        "source_code": [
+          "https://github.com/fetchai"
+        ],
+        "website": [
+          "https://www.superintelligence.io/",
+          "https://fetch.ai/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/fetch-ai/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "fetch-ai",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/fetch-ai/",
+      "symbol": "FET",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "3794": {
+      "categories": [
+        "Cryptocurrency",
+        "Byzantine Fault Tolerance",
+        "Scalable",
+        "Cross-chain",
+        "Blockchain Service",
+        "Layer 1 (L1)",
+        "Proof Of Stake",
+        "High Transaction Speed (TPS)",
+        "Alleged SEC Securities",
+        "Layer 0 (L0)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3794,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Cosmos (ATOM) is a decentralized network enabling multiple blockchains to interoperate and communicate through a shared protocol. It aims to create an \"Internet of Blockchains\" for scalable, secure, and efficient blockchain ecosystems.",
+      "has_substantive_descriptive_context": true,
+      "name": "Cosmos",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://www.mintscan.io",
+          "https://cosmos.bigdipper.live"
+        ],
+        "source_code": [
+          "https://github.com/cosmos"
+        ],
+        "website": [
+          "https://cosmos.network"
+        ],
+        "whitepaper": [
+          "https://cosmos.network/resources/whitepaper"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Ethan Buchman",
+          "role": "Co-Founder"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "atom-cosmos",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/atom-cosmos/",
+      "symbol": "ATOM",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Tendermint (BFT)",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Byzantine Fault Tolerance",
+        "type": "coin"
+      }
+    },
+    "3897": {
+      "categories": [
+        "Exchange",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Centralized Exchange (CEX)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 3897,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "OKB is a utility token issued by the OK Blockchain Foundation, primarily used within the OKEx exchange ecosystem for trading fee discounts, participation in token sales, and other services. It aims to enhance user engagement and provide a variety of benefits for its holders.",
+      "has_substantive_descriptive_context": true,
+      "name": "OKB",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x75231f58b43240c9718dd58b4967c5114342a86c",
+          "https://ethplorer.io/address/0x75231f58b43240c9718dd58b4967c5114342a86c"
+        ],
+        "website": [
+          "https://www.okex.com/",
+          "https://www.okex.com/activity/okbBoss"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "okb-okb",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/okb-okb/",
+      "symbol": "OKB",
+      "technology_and_project_attributes": {
+        "development_status": "Only token",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "4030": {
+      "categories": [
+        "Cryptocurrency",
+        "Proof Of Stake",
+        "Layer 1 (L1)",
+        "Smart Contracts",
+        "Multicoin Capital Portfolio",
+        "High Transaction Speed (TPS)",
+        "Alleged SEC Securities",
+        "Made in USA",
+        "Real World Assets (RWA)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 4030,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Algorand (ALGO) is a decentralized blockchain platform designed for speed and efficiency, enabling the creation of secure and scalable applications. It uses a unique consensus mechanism called Pure Proof-of-Stake to facilitate fast transactions and maintain network security.",
+      "has_substantive_descriptive_context": true,
+      "name": "Algorand",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://algoexplorer.io",
+          "https://goalseeker.purestake.io/algorand/mainnet"
+        ],
+        "source_code": [
+          "https://github.com/algorand"
+        ],
+        "website": [
+          "https://algorand.foundation",
+          "https://www.algorand.com"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/algo-algorand/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "algo-algorand",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/algo-algorand/",
+      "symbol": "ALGO",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "PoS",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Pure Proof of Stake",
+        "started_at": "2019-06-19T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "4269": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Centralized Exchange (CEX)",
+        "Exchange"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 4269,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "GateToken (GT) is the native utility token of the Gate.io exchange, designed to be used for trading fee discounts, participation in token sales, and other platform perks. It aims to enhance user experience and promote engagement within the Gate.io ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "GateToken",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0xe66747a101bff2dba3697199dcce5b743b454759",
+          "https://ethplorer.io/address/0xe66747a101bff2dba3697199dcce5b743b454759"
+        ],
+        "source_code": [
+          "https://github.com/gatechain"
+        ],
+        "website": [
+          "https://gatechain.io"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "gt-gatechain-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/gt-gatechain-token/",
+      "symbol": "GT",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "4642": {
+      "categories": [
+        "Smart Contract Platform",
+        "Layer 1 (L1)",
+        "Hedera Ecosystem",
+        "GMCI Layer 1 Index",
+        "GMCI 30 Index",
+        "GMCI Index",
+        "Outlier Ventures Portfolio",
+        "Made in USA",
+        "Directed Acyclic Graph (DAG)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 4642,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Hedera is a decentralized public network where developers can build secure, fair applications with near real-time consensus. The platform is owned and governed by a council of global innovators including Avery Dennison, Boeing, Deutsche Telekom, DLA Piper, FIS (WorldPay), Google, IBM, LG Electronics, Magalu, Nomura, Swirlds, Tata Communications, University College London (UCL), Wipro, and Zain Group. The Hedera Consensus Service (HCS) acts as a t",
+      "has_substantive_descriptive_context": true,
+      "name": "Hedera",
+      "observed_utc": "2026-11-13T22:51:26Z",
+      "primary_links_unverified": {
+        "blockchain_site": [
+          "https://hashscan.io/",
+          "https://explorer.arkhia.io/mainnet/dashboard"
+        ],
+        "homepage": [
+          "https://www.hedera.com/",
+          "https://hedera.com/news"
+        ],
+        "official_forum_url": [],
+        "source_code": [
+          "https://github.com/hashgraph",
+          "https://github.com/hashgraph/hashgraph.github.io"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coingecko",
+      "provider_id": "hedera-hashgraph",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://www.coingecko.com/en/coins/hedera-hashgraph",
+      "symbol": "HBAR",
+      "technology_and_project_attributes": {
+        "block_time_in_minutes": 0
+      }
+    },
+    "4705": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Solana (SOL) Token",
+        "Harmony (ONE) Token",
+        "Tokenized Assets",
+        "Polygon (MATIC) Token",
+        "Real World Assets (RWA)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 4705,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "PAX Gold (PAXG) is a digital asset backed by physical gold, designed to combine the stability of gold with the flexibility of blockchain technology. Each PAXG token is equivalent to one troy ounce of gold stored in professional vaults.",
+      "has_substantive_descriptive_context": true,
+      "name": "PAX Gold",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x45804880de22913dafe09f4980848ece6ecbaf78",
+          "https://ethplorer.io/address/0x45804880de22913dafe09f4980848ece6ecbaf78"
+        ],
+        "source_code": [
+          "https://github.com/paxosglobal/paxos-gold-contract"
+        ],
+        "website": [
+          "https://www.paxos.com/paxgold"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/paxg-pax-gold/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "paxg-pax-gold",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/paxg-pax-gold/",
+      "symbol": "PAXG",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "4847": {
+      "categories": [
+        "Platform",
+        "Cryptocurrency",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 4847,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Stacks (STX) is a blockchain network that aims to bring smart contracts and decentralized applications to Bitcoin, allowing developers to create applications while leveraging Bitcoin's security. It utilizes a unique consensus mechanism called Proof of Transfer (PoX) to enable this functionality.",
+      "has_substantive_descriptive_context": true,
+      "name": "Stacks",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.stacks.co/",
+          "https://stacking.club/"
+        ],
+        "source_code": [
+          "https://github.com/blockstack"
+        ],
+        "website": [
+          "https://blockstack.org/token",
+          "https://stacks.co/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/stx-stacks/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "stx-stacks",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/stx-stacks/",
+      "symbol": "STX",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "coin"
+      }
+    },
+    "512": {
+      "categories": [
+        "Wallet",
+        "Finance & Banking",
+        "Cryptocurrency",
+        "Premine",
+        "Scalable",
+        "High Transaction Speed (TPS)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 512,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Stellar (XLM) is a decentralized blockchain platform designed to facilitate cross-border transactions and provide financial services to the unbanked. It uses its native cryptocurrency, Lumens (XLM), to enable fast and low-cost transfers.",
+      "has_substantive_descriptive_context": true,
+      "name": "Stellar",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://steexp.com/",
+          "https://stellar.expert/explorer/public/"
+        ],
+        "source_code": [
+          "https://github.com/stellar/stellar-core"
+        ],
+        "website": [
+          "https://www.stellar.org"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/xlm-stellar/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Jed McCaleb",
+          "role": "Co-Founder & CTO"
+        },
+        {
+          "name": "Nicolas Barry",
+          "role": "CTO"
+        },
+        {
+          "name": "David Mazières",
+          "role": "Chief Scientist (nChain)"
+        },
+        {
+          "name": "Bartek Nowotarski",
+          "role": "Developer"
+        },
+        {
+          "name": "Rafał Malinowski",
+          "role": "Developer"
+        },
+        {
+          "name": "Scott Fleckenstein",
+          "role": "Developer"
+        },
+        {
+          "name": "Boris Reznikov",
+          "role": "Director of partnership"
+        },
+        {
+          "name": "Keith Rabois",
+          "role": "Board Member"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "xlm-stellar",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xlm-stellar/",
+      "symbol": "XLM",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Stellar Consensus Protocol",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Stellar Consensus Protocol ",
+        "started_at": "2013-07-19T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "5176": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Real World Assets (RWA)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5176,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Tether Gold (XAUT) is a digital asset backed by physical gold, allowing users to trade and hold a representation of gold in a blockchain-based form. It combines the stability of gold with the efficiency of blockchain technology.",
+      "has_substantive_descriptive_context": true,
+      "name": "Tether Gold",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://gold.tether.to/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/xaut-tether-gold/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "xaut-tether-gold",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xaut-tether-gold/",
+      "symbol": "XAUt",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Decentralized",
+        "proof_type": "Ethereum consensus (currently proof of work, will be proof of stake later on)",
+        "started_at": "2020-01-08T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "52": {
+      "categories": [
+        "Cryptocurrency",
+        "Payments",
+        "Scalable",
+        "Finance & Banking",
+        "High Transaction Speed (TPS)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 52,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "XRP is a digital currency designed for fast and low-cost international money transfers, primarily used by the Ripple payment network. It aims to facilitate secure cross-border transactions and improve the efficiency of global banking systems.",
+      "has_substantive_descriptive_context": true,
+      "name": "XRP",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://xrpcharts.ripple.com/",
+          "https://bithomp.com/explorer/"
+        ],
+        "source_code": [
+          "https://github.com/ripple/rippled"
+        ],
+        "website": [
+          "https://xrpl.org/",
+          "https://ripple.com/xrp"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/xrp-xrp/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Brad Garlinghouse",
+          "role": "CEO"
+        },
+        {
+          "name": "David Schwartz",
+          "role": "CTO"
+        },
+        {
+          "name": "Ron Will",
+          "role": "Chief Financial officer"
+        },
+        {
+          "name": "Ethan Beard",
+          "role": "VP of Product"
+        },
+        {
+          "name": "Asheesh Birla",
+          "role": "VP of Product"
+        },
+        {
+          "name": "Chris Kanaan",
+          "role": "VP of Engineering"
+        },
+        {
+          "name": "Cory Johnson",
+          "role": "Chief Market Strategist"
+        },
+        {
+          "name": "Sandi Kochhar",
+          "role": "VP of People"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "xrp-xrp",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/xrp-xrp/",
+      "symbol": "XRP",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Ripple Protocol Consensus Algorithm",
+        "open_source": true,
+        "proof_type": "Ripple Protocol Consensus Algorithm",
+        "started_at": "2013-04-01T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "5426": {
+      "categories": [
+        "Cryptocurrency",
+        "Byzantine Fault Tolerance",
+        "Layer 1 (L1)",
+        "Smart Contracts",
+        "Proof Of Stake",
+        "FTX Holdings",
+        "High Transaction Speed (TPS)",
+        "Alleged SEC Securities",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5426,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Solana (SOL) is a high-performance blockchain platform designed for decentralized applications and crypto projects, featuring fast transaction speeds and low costs. It aims to provide scalable solutions for developers while maintaining high security and decentralization.",
+      "has_substantive_descriptive_context": true,
+      "name": "Solana",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.solana.com",
+          "https://solanabeach.io"
+        ],
+        "source_code": [
+          "https://github.com/solana-labs/"
+        ],
+        "website": [
+          "https://solana.com"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/sol-solana/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "sol-solana",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/sol-solana/",
+      "symbol": "SOL",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Tower BFT",
+        "open_source": true,
+        "org_structure": "Centralized > Hierarchical",
+        "proof_type": "Delegated Proof of Stake",
+        "started_at": "2020-04-10T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "5488": {
+      "categories": [
+        "TRON (TRX) Token"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5488,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "JUST (JST) is a blockchain-based platform that aims to provide a decentralized stablecoin ecosystem, enabling users to create and manage collateralized tokens. It focuses on empowering various decentralized financial services within the TRON network.",
+      "has_substantive_descriptive_context": true,
+      "name": "JUST",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://just.network"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "jst-just",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/jst-just/",
+      "symbol": "JST",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2020-05-07T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "5690": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Polygon (MATIC) Token",
+        "Solana (SOL) Token",
+        "AI (Artificial Intelligence)",
+        "NFT Token",
+        "Metaverse",
+        "Web3",
+        "Multicoin Capital Portfolio",
+        "DePIN",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5690,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Render (RENDER) is a decentralized rendering network that connects users who require rendering services with miners who provide computing power for rendering graphics and visual content. It aims to facilitate efficient and cost-effective rendering solutions in the digital space.",
+      "has_substantive_descriptive_context": true,
+      "name": "Render",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://rendernetwork.com/"
+        ],
+        "whitepaper": [
+          "https://know.rendernetwork.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "rndr-render-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/rndr-render-token/",
+      "symbol": "RENDER",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2018-07-01T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "5805": {
+      "categories": [
+        "Cryptocurrency",
+        "Platform",
+        "Layer 1 (L1)",
+        "Proof Of Stake",
+        "High Transaction Speed (TPS)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5805,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Avalanche (AVAX) is a decentralized platform designed for launching applications and custom blockchain networks, integrating high throughput with sub-second finality. It aims to provide a scalable and efficient solution for DeFi, enterprise applications, and more.",
+      "has_substantive_descriptive_context": true,
+      "name": "Avalanche",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://avascan.info",
+          "https://explorer.avax.network"
+        ],
+        "source_code": [
+          "https://github.com/ava-labs"
+        ],
+        "website": [
+          "https://avalabs.org",
+          "https://www.avax.network/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/avax-avalanche/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "avax-avalanche",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/avax-avalanche/",
+      "symbol": "AVAX",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Avalanche",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Proof of Stake",
+        "started_at": "2020-07-22T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "5994": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Meme Coin",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Dog Meme Coin"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 5994,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Shiba Inu (SHIB) is a meme-based cryptocurrency that aims to be an experiment in decentralized community building, inspired by the Shiba Inu dog breed. It operates on the Ethereum network and aims to create a fun and engaging ecosystem for its users.",
+      "has_substantive_descriptive_context": true,
+      "name": "Shiba Inu",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://shibatoken.com/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "shib-shiba-inu",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/shib-shiba-inu/",
+      "symbol": "SHIB",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "6535": {
+      "categories": [
+        "Smart Contracts",
+        "Platform",
+        "Cryptocurrency",
+        "AI (Artificial Intelligence)",
+        "Layer 1 (L1)",
+        "Staking",
+        "Cross-chain",
+        "Zero Knowledge (ZK)",
+        "FTX Holdings",
+        "Proof Of Stake",
+        "Alleged SEC Securities",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 6535,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Near Protocol (NEAR) is a scalable, developer-friendly blockchain platform designed to provide high-performance decentralized applications and smart contracts. It utilizes a unique sharding technology to optimize throughput and user experience.",
+      "has_substantive_descriptive_context": true,
+      "name": "NEAR Protocol",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.nearprotocol.com/",
+          "https://hubble.figment.io/near/chains/mainnet"
+        ],
+        "source_code": [
+          "https://github.com/nearprotocol"
+        ],
+        "website": [
+          "https://nearprotocol.com"
+        ],
+        "whitepaper": [
+          "https://nearprotocol.com/papers/the-official-near-white-paper"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "near-near-protocol",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/near-near-protocol/",
+      "symbol": "NEAR",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "6538": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "DeFi",
+        "Polygon (MATIC) Token",
+        "Fantom (FTM) Token",
+        "Arbitrum Ecosystem",
+        "Optimism Ecosystem",
+        "Decentralized Exchange (DEX)",
+        "Exchange",
+        "Automated Market Makers (AMM)",
+        "Governance",
+        "Yield Farming"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 6538,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Curve DAO Token (CRV) is the native governance token of the Curve Finance platform, which is designed for efficient stablecoin trading and liquidity provision. It enables users to participate in decision-making processes and earn rewards within the Curve ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "Curve DAO Token",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://arbiscan.io/token/0x11cdb42b0eb46d95f990bedd4695a6e3fa034978",
+          "https://explorer.energi.network/token/0xd3319eaf3c4743ac75aace77befcfa445ed6e69e"
+        ],
+        "source_code": [
+          "https://github.com/curvefi"
+        ],
+        "website": [
+          "https://www.curve.fi/"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "crv-curve-dao-token",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/crv-curve-dao-token/",
+      "symbol": "CRV",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "None",
+        "open_source": true,
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "6636": {
+      "categories": [
+        "Cross-chain",
+        "High Transaction Speed (TPS)",
+        "Identity & Verification",
+        "Internet Of Things",
+        "Layer 0 (L0)",
+        "Made in USA",
+        "Payments",
+        "Smart Contracts"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 6636,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Polkadot (DOT) is a next-generation blockchain protocol that enables interconnectivity between multiple blockchains, allowing them to share information and transactions in a secure and scalable manner. This ecosystem promotes seamless communication and innovation across various blockchain networks.",
+      "has_substantive_descriptive_context": true,
+      "name": "Polkadot",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://polkascan.io"
+        ],
+        "source_code": [
+          "https://github.com/w3f"
+        ],
+        "website": [
+          "https://polkadot.network"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/dot-polkadot/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "dot-polkadot",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/dot-polkadot/",
+      "symbol": "DOT",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "7083": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "DeFi",
+        "Exchange",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Huobi ECO Chain (HECO) Token",
+        "Optimism Ecosystem",
+        "Arbitrum Ecosystem",
+        "Polygon (MATIC) Token",
+        "Harmony (ONE) Token",
+        "Avalanche (AVAX) Token",
+        "Decentralized Exchange (DEX)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 7083,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Uniswap (UNI) is a decentralized exchange protocol enabling users to swap various cryptocurrencies without the need for a centralized intermediary. It operates on the Ethereum blockchain and uses an automated liquidity protocol.",
+      "has_substantive_descriptive_context": true,
+      "name": "Uniswap",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "website": [
+          "https://uniswap.org/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/uni-uniswap/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "uni-uniswap",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/uni-uniswap/",
+      "symbol": "UNI",
+      "technology_and_project_attributes": {
+        "hash_algorithm": "None",
+        "open_source": false,
+        "proof_type": "Not mineable",
+        "type": "token"
+      }
+    },
+    "7186": {
+      "categories": [
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Exchange",
+        "Decentralized Exchange (DEX)",
+        "DeFi",
+        "Governance",
+        "Yield Farming",
+        "Automated Market Makers (AMM)",
+        "Zksync Ecosystem"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 7186,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "PancakeSwap (CAKE) is a decentralized exchange built on the Binance Smart Chain, allowing users to swap BEP-20 tokens, provide liquidity, and earn rewards through yield farming and staking. It features an automated market maker (AMM) model, making trading accessible without a central authority.",
+      "has_substantive_descriptive_context": true,
+      "name": "PancakeSwap",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://bscscan.com/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+        ],
+        "source_code": [
+          "https://github.com/pancakeswap"
+        ],
+        "website": [
+          "https://pancakeswap.finance/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Filippo Amadio",
+          "role": "CEO"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "cake-pancakeswap",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/cake-pancakeswap/",
+      "symbol": "CAKE",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Semi-centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2021-01-30T00:00:00Z",
+        "type": "token"
+      }
+    },
+    "7226": {
+      "categories": [
+        "Smart Contract Platform",
+        "Decentralized Finance (DeFi)",
+        "BNB Chain Ecosystem",
+        "Cosmos Ecosystem",
+        "Solana Ecosystem",
+        "Layer 1 (L1)",
+        "Ethereum Ecosystem",
+        "Real World Assets (RWA)",
+        "Binance Launchpad",
+        "Injective Ecosystem",
+        "Osmosis Ecosystem",
+        "Proof of Stake (PoS)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 7226,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Injective is an interoperable Layer 1 blockchain designed for DeFi applications. It provides developers with on-chain financial infrastructure modules to build dApps such as decentralized exchanges, prediction markets, and lending protocols. Its decentralized cross-chain bridging infrastructure offers compatibility with most blockchains, including EVM chains like Ethereum and non-EVM chains like Solana.",
+      "has_substantive_descriptive_context": true,
+      "name": "Injective",
+      "observed_utc": "2026-11-13T22:51:33Z",
+      "primary_links_unverified": {
+        "blockchain_site": [
+          "https://explorer.injective.network/",
+          "https://ethplorer.io/address/0xe28b3b32b6c345a34ff64674606124dd5aceca30"
+        ],
+        "homepage": [
+          "https://injective.com",
+          "https://hub.injective.network/"
+        ],
+        "official_forum_url": [],
+        "source_code": [
+          "https://github.com/InjectiveLabs/injective-helix-demo",
+          "https://github.com/InjectiveLabs"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coingecko",
+      "provider_id": "injective-protocol",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://www.coingecko.com/en/coins/injective-protocol",
+      "symbol": "INJ",
+      "technology_and_project_attributes": {
+        "asset_platform_id": "ethereum",
+        "block_time_in_minutes": 0
+      }
+    },
+    "7278": {
+      "categories": [
+        "Platform",
+        "Smart Contracts",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Marketplace",
+        "Loans",
+        "Finance & Banking",
+        "DeFi",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 7278,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Aave (AAVE) is a decentralized finance (DeFi) protocol that allows users to lend and borrow cryptocurrencies without intermediaries, utilizing smart contracts on the Ethereum blockchain. Its native token, AAVE, is used for governance and incentivizing the platform's ecosystem.",
+      "has_substantive_descriptive_context": true,
+      "name": "Aave",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "source_code": [
+          "https://github.com/aave"
+        ],
+        "website": [
+          "https://aave.com/"
+        ],
+        "whitepaper": [
+          "https://github.com/ETHLend/Documentation/blob/master/ETHLendWhitePaper.md"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Ville Valkonen",
+          "role": "Head of Technical Support"
+        },
+        {
+          "name": "Tomoaki Sato",
+          "role": "Advisor"
+        },
+        {
+          "name": "Jon Matonis",
+          "role": "Advisor"
+        },
+        {
+          "name": "Rob Viglione",
+          "role": "Advisor"
+        },
+        {
+          "name": "Adnan Javed",
+          "role": "Legal Strategy"
+        },
+        {
+          "name": "Stani Kulechov",
+          "role": "CEO"
+        },
+        {
+          "name": "Jordan Lazaro Gustave",
+          "role": "COO"
+        },
+        {
+          "name": "Martin Wichmann",
+          "role": "Growth Hacker"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "aave-new",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/aave-new/",
+      "symbol": "AAVE",
+      "technology_and_project_attributes": {
+        "development_status": "On-going development",
+        "hash_algorithm": "None",
+        "open_source": true,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "started_at": "2020-10-13T11:45:09Z",
+        "type": "token"
+      }
+    },
+    "74": {
+      "categories": [
+        "Cryptocurrency",
+        "Payments",
+        "Scrypt",
+        "Proof Of Work",
+        "Charity & Donations",
+        "Auxiliary Proof Of Work",
+        "Mining",
+        "Meme Coin",
+        "Dog Meme Coin",
+        "Made in USA"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 74,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Dogecoin (DOGE) is a cryptocurrency that started as a joke featuring the Shiba Inu dog from the popular meme, but it has grown into a widely used digital currency for tipping, charity, and online transactions. Initially created for fun, Dogecoin has gained a large community and significant market presence.",
+      "has_substantive_descriptive_context": true,
+      "name": "Dogecoin",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://blockchair.com/dogecoin/?from=coinpaprika",
+          "https://doge.tokenview.io"
+        ],
+        "source_code": [
+          "https://github.com/dogecoin/dogecoin"
+        ],
+        "website": [
+          "https://dogecoin.com/"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Jackson Palmer",
+          "role": "Co-Founder"
+        },
+        {
+          "name": "Billy Markus",
+          "role": "Co-Founder"
+        },
+        {
+          "name": "Max K.",
+          "role": "Core Developer"
+        },
+        {
+          "name": "Patrick Lodder",
+          "role": "Core Developer"
+        },
+        {
+          "name": "Ross Nicoll",
+          "role": "Core Developer"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "doge-dogecoin",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/doge-dogecoin/",
+      "symbol": "DOGE",
+      "technology_and_project_attributes": {
+        "development_status": "Working product",
+        "hash_algorithm": "Scrypt",
+        "open_source": true,
+        "org_structure": "Decentralized",
+        "proof_type": "Proof of Work",
+        "started_at": "2013-12-06T00:00:00Z",
+        "type": "coin"
+      }
+    },
+    "7950": {
+      "categories": [
+        "Smart Contract Platform",
+        "Layer 1 (L1)",
+        "DWF Labs Portfolio"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 7950,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Flare is a blockchain for building applications that are interoperable with other blockchains and the internet. ## What is Flare (FLR)? Flare is an EVM-based Layer 1 blockchain designed to allow developers to build applications that are interoperable with blockchains and the internet. By providing decentralized access to high-integrity data, Flare enables new use cases and monetisation models. ## What makes Flare unique? Flare's native interopera",
+      "has_substantive_descriptive_context": true,
+      "name": "Flare",
+      "observed_utc": "2026-11-13T22:51:40Z",
+      "primary_links_unverified": {
+        "blockchain_site": [
+          "https://flarescan.com/",
+          "https://platform.arkhamintelligence.com/explorer/token/flare-networks"
+        ],
+        "homepage": [
+          "https://flare.network/",
+          "https://docs.flare.network/"
+        ],
+        "official_forum_url": [
+          "https://t.me/Flare_China",
+          "https://t.me/FlareNetworks_Korea"
+        ],
+        "source_code": []
+      },
+      "project_team_unverified": [],
+      "provider": "coingecko",
+      "provider_id": "flare-networks",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://www.coingecko.com/en/coins/flare-networks",
+      "symbol": "FLR",
+      "technology_and_project_attributes": {
+        "block_time_in_minutes": 0
+      }
+    },
+    "8000": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Solana (SOL) Token",
+        "Polygon (MATIC) Token",
+        "Optimism Ecosystem",
+        "Arbitrum Ecosystem"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 8000,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Lido DAO (LDO) is a decentralized autonomous organization that governs the Lido protocol, enabling users to stake their assets on Ethereum and other PoS networks with liquidity. It allows participants to earn staking rewards while maintaining the flexibility to trade their staked assets.",
+      "has_substantive_descriptive_context": true,
+      "name": "Lido DAO",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+          "https://ethplorer.io/address/0x5a98fcbea516cf06857215779fd812ca3bef1b32"
+        ],
+        "source_code": [
+          "https://github.com/lidofinance/lido-dao"
+        ],
+        "website": [
+          "https://stake.lido.fi"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "ldo-lido-dao",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ldo-lido-dao/",
+      "symbol": "LDO",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "8526": {
+      "categories": [
+        "Solana (SOL) Token",
+        "Exchange",
+        "Decentralized Exchange (DEX)",
+        "DeFi",
+        "Yield Farming",
+        "Automated Market Makers (AMM)",
+        "Launchpad"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 8526,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Raydium (RAY) is a decentralized finance (DeFi) protocol built on the Solana blockchain, facilitating high-speed trading and liquidity provision for various cryptocurrencies. It combines an automated market maker (AMM) with an order book model, enabling efficient and cost-effective transactions.",
+      "has_substantive_descriptive_context": true,
+      "name": "Raydium",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://explorer.solana.com/address/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+        ],
+        "website": [
+          "https://raydium.io"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "ray-raydium",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/ray-raydium/",
+      "symbol": "RAY",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    },
+    "8916": {
+      "categories": [
+        "Cryptocurrency",
+        "Smart Contracts",
+        "Platform",
+        "Governance",
+        "NFT Token",
+        "Multicoin Capital Portfolio",
+        "Big Data & Data Storage",
+        "Alleged SEC Securities",
+        "Layer 0 (L0)"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 8916,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Internet Computer (ICP) is a blockchain-based platform that enables developers to build and deploy decentralized applications and services on the internet, aiming to extend the functionality of the web. It provides a scalable and efficient environment for running smart contracts and hosting software.",
+      "has_substantive_descriptive_context": true,
+      "name": "Internet Computer",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://dashboard.internetcomputer.org/"
+        ],
+        "source_code": [
+          "https://github.com/dfinity/ic"
+        ],
+        "website": [
+          "https://internetcomputer.org/"
+        ],
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/icp-internet-computer/whitepaper.pdf"
+        ]
+      },
+      "project_team_unverified": [
+        {
+          "name": "Dominic Williams",
+          "role": "Founder & Chief Scientist"
+        },
+        {
+          "name": "Josh Drake",
+          "role": "COO @ DFINITY"
+        },
+        {
+          "name": "Jan Camenisch",
+          "role": "CTO @ DFINITY"
+        },
+        {
+          "name": "Eva Oberholzer",
+          "role": "CGO @ DFINITY"
+        },
+        {
+          "name": "Riccardo Coli",
+          "role": "CoS @ DFINITY"
+        }
+      ],
+      "provider": "coinpaprika",
+      "provider_id": "icp-internet-computer",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/icp-internet-computer/",
+      "symbol": "ICP",
+      "technology_and_project_attributes": {
+        "open_source": true,
+        "type": "coin"
+      }
+    },
+    "9481": {
+      "categories": [
+        "Ethereum (ETH) Token (ERC-20)",
+        "Binance Coin (BNB) Token (BEP-20)",
+        "Avalanche (AVAX) Token",
+        "Arbitrum Ecosystem",
+        "Optimism Ecosystem",
+        "DeFi",
+        "Automated Market Makers (AMM)",
+        "Real World Assets (RWA)",
+        "Derivative"
+      ],
+      "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
+      "cmc_id": 9481,
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "Pendle is a decentralized finance protocol that enables users to tokenize, trade, and manage yield-generating assets. It allows for the separation of asset ownership and yield generation, creating new opportunities for liquidity and investment.",
+      "has_substantive_descriptive_context": true,
+      "name": "Pendle",
+      "observed_utc": "2026-11-13T22:51:08Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x808507121b80c02388fad14726482e061b8da827",
+          "https://ethplorer.io/address/0x808507121b80c02388fad14726482e061b8da827"
+        ],
+        "source_code": [
+          "https://github.com/pendle-finance"
+        ],
+        "website": [
+          "https://pendle.finance"
+        ]
+      },
+      "project_team_unverified": [],
+      "provider": "coinpaprika",
+      "provider_id": "pendle-pendle",
+      "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH",
+      "source_url": "https://coinpaprika.com/coin/pendle-pendle/",
+      "symbol": "PENDLE",
+      "technology_and_project_attributes": {
+        "open_source": false,
+        "type": "token"
+      }
+    }
+  },
+  "schema_version": "cmc100-third-party-coin-profiles-v1",
+  "source_licensing": "CoinPaprika free/keyless for personal use; cite Powered by CoinPaprika. Check redistribution and commercial licensing."
+}
