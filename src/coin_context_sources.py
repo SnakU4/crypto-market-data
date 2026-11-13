@@ -43,7 +43,7 @@ def canonical(value):
     return re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
 
 
-def clean(text, limit=850):
+def clean(text, limit=450):
     v = html.unescape(re.sub(r"<[^>]*>", " ", str(text or "")))
     v = re.sub(r"\s+", " ", v).strip()
     v = re.sub(r"\s*Source:\s*CoinPaprika\.com\s*$", "", v, flags=re.I)
@@ -59,9 +59,9 @@ def fetch_json(url, opener=None):
         "User-Agent": USER_AGENT, "Accept": "application/json"})
     op = opener or urllib.request.urlopen
     with op(req, timeout=12) as response:
-        raw = response.read(8_000_001)
-        if len(raw) > 8_000_000:
-            raise ValueError("Provider response exceeds 8 MB")
+        raw = response.read(24_000_001)
+        if len(raw) > 24_000_000:
+            raise ValueError("Provider response exceeds 24 MB")
     return json.loads(raw)
 
 
@@ -107,7 +107,7 @@ def valid_profile(asset, raw, provider, received):
             citations["whitepaper"] = [wp["link"]]
     else:
         lang = raw.get("description") or {}
-        description = clean((lang.get("en") or lang.get("de") or "") if isinstance(lang, dict) else "", 850)
+        description = clean((lang.get("en") or lang.get("de") or "") if isinstance(lang, dict) else "", 450)
         tags = [clean(t, 70) for t in raw.get("categories", []) if isinstance(t, str)]
         attrs = {"genesis_date": raw.get("genesis_date"),
                  "asset_platform_id": raw.get("asset_platform_id"),
