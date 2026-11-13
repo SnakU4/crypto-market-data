@@ -183,6 +183,51 @@ any token's next-day return is predictably explained. **Do not optimize
 the 8.86% solely by removing unresolvable Google headlines**; keep the
 raw coverage and original-source quality metrics distinct.
 
+## Verified free source-first improvement – 13 November 2026
+
+Two controlled integrations were completed successfully, without paid APIs
+or model calls. The subsequent workflow files are **not triggered by each
+code commit**; unit tests now run only on explicit manual dispatch.
+
+| Audited measure | Before | After |
+| --- | ---: | ---: |
+| Substantive context among ALL canonical leads | 8.87% | **16.42%** |
+| Numerator | 941 | **2,114** |
+| Denominator, including unresolved Google News titles | 10,617 | **12,877** |
+| Direct original-source research context | 72.95% | **69.62%** |
+| Full original-source events retained in SHA batches | 965 | **2,893** |
+| Successful source acquisition attempts | 150 | **261** |
+| Contextualized DIRECT source items published within previous 72h | N/A | **887** |
+| Coins with curated project-source context | N/A | **36** |
+| Coins with substantive project-source context | N/A | **33** |
+| Coin identities in official universe | 100 | **100** |
+
+All sources retained unverified causal and price-effect annotations. **No
+independently verified 24h price-causality claims** were produced by Python.
+The *raw full-corpus denominator is still 12,877*, so 16.42% is not
+achieved by dropping poor Google News titles. The original 5.56% baseline
+predates the first source-first wave. Publication freshness and protocol
+context are separate fields; do not conflate stale releases with new events.
+
+Verified acceptance file: docs/intelligence/source_first_acceptance.json
+GitHub Actions run: https://github.com/SnakU4/crypto-market-data/actions/runs/43383831804
+
+Source status remains PARTIAL_RESEARCH, not a guarantee of useful alpha.
+60 coins still have no substantive **individual news item**, while 33
+have substantive curated project/developer/governance context that is
+**not a verified token catalyst**. The manual ChatGPT investigation remains
+separate and has not been started as part of this source expansion.
+
+### Email-noise reduction
+
+The separate regression tests are now manual-only in
+.github/workflows/quality-tests.yml. Scheduled production collection
+validates syntax and data-integrity, not the full unit test suite on
+every change. The one-shot acceptance workflow's push trigger is removed
+after the successful run. GitHub notification preferences belong to
+the user's account (Settings → Notifications → System → Actions).
+Disabling workflow emails there does NOT disable the Actions run history.
+
 ## Next evidence-led improvement sequence, only after measuring actual outputs
 
 1. Inspect 20 sampled cross-sector and 20 candidate coin-event leads. Count
