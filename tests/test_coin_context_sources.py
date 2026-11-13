@@ -31,6 +31,16 @@ class CoinContextTests(unittest.TestCase):
         rows.append({"id": "abc-duplicate", "name": "Alpha", "symbol": "ABC"})
         self.assertEqual(cc.exact_match(assets, rows), {})
 
+    def test_display_annotation_normalization_and_unicode(self):
+        assets=[{"cmc_id":10,"name":"Sun [New]","symbol":"SUN"},
+                {"cmc_id":11,"name":"Polygon (prev. MATIC)","symbol":"POL"},
+                {"cmc_id":12,"name":"币安人生","symbol":"币安人生"}]
+        listed=[{"id":"sun","name":"Sun","symbol":"SUN"},
+                {"id":"polygon","name":"Polygon","symbol":"POL"},
+                {"id":"chinese","name":"币安人生","symbol":"币安人生"}]
+        self.assertEqual(cc.exact_match(assets,listed),{"10":"sun","11":"polygon","12":"chinese"})
+        self.assertEqual(cc.project_name("Polygon (prev. MATIC)"),cc.project_name("Polygon"))
+
     def test_short_generic_profiles_do_not_count_as_substantive(self):
         asset = {"cmc_id": 1, "name": "Alpha", "symbol": "ABC"}
         row = {"id": "abc-alpha", "name": "Alpha", "symbol": "ABC",
