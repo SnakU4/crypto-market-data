@@ -57,6 +57,8 @@ jobs:
           assert c["evidence_counts"]["manual_high_context_selection_count"] > 0
           assert c["research_quality_gate"]["raw_all_leads_denominator_unchanged"]
           assert m["source_probe_history_file"]=="docs/intelligence/source_probe_history.json"
+          assert m["article_attempt_history_file"]=="docs/intelligence/article_attempt_history.json"
+          assert (p/"article_attempt_history.json").is_file()
           assert c["research_quality_gate"]["technical_source_integration"]=="PASSED"
           assert c["research_quality_gate"]["independently_primary_verified_claims"]==0
           assert c["research_quality_gate"]["material_research_status"] in ("PARTIAL_RESEARCH","REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION")
@@ -107,6 +109,7 @@ jobs:
             docs/intelligence/source_registry_proposals.json
             docs/intelligence/discovered_public_feeds.json
             docs/intelligence/source_probe_history.json
+            docs/intelligence/article_attempt_history.json
 
       - name: Publish concise reusable research output to public GitHub
         shell: bash
@@ -122,6 +125,7 @@ jobs:
             docs/intelligence/source_registry_proposals.json \
             docs/intelligence/discovered_public_feeds.json \
             docs/intelligence/source_probe_history.json \
+            docs/intelligence/article_attempt_history.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Update free global, cross-sector and 100-coin intelligence $(date -u +%Y-%m-%dT%H:%MZ)"
