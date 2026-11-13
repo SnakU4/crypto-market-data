@@ -525,6 +525,12 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         adjacent_source={"mode":"FULL_ARCHIVE","records":full_count,
                          "path":raw_adj,"sha256":digest(ap)}
     valid_ids=set(ids)
+    # Independently collected source-backed PROJECT BACKGROUND. No fabricated
+    # catalysts or title-only leads: retain missing data and provenance.
+    try:from coin_context_sources import collect_profiles
+    except ImportError:from src.coin_context_sources import collect_profiles
+    profile_doc,profile_audit=collect_profiles(root,assets,cutoff,
+        network=bool(network and live_collection))
     all_events=[]
     for kind,rows in (("expanded",xr),("research",direct_events),
                       ("adjacent",adjacent.get("events") or [])):
@@ -663,7 +669,11 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 continue
             ff.append(entry)
         select=sorted(by_asset[cid],key=lambda x:(-x["priority"],x["id"]))[:10]
+        background=profile_doc["profiles"].get(str(cid))
         card={
+            "source_backed_project_profile":background,
+            "source_backed_project_profile_substantive":bool(
+                background and background.get("has_substantive_descriptive_context")),
             "cmc_id":cid,"name":a["name"],"symbol":a["symbol"],
             "cmc100_weight":a.get("cmc100_weight"),"spot_quote":q,
             "perpetual":perp if valid_perp else None,
@@ -692,7 +702,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             "missing_data":[key for key,ok in (("cmc_spot",bool(q.get("price_usd"))),
                             ("mapped_perp_research_proxy",valid_perp),
                             ("mapped_protocol_fundamentals",bool(ff)),
-                            ("coin_relevant_article_text",any(len(e["excerpt"])>=150 for e in by_asset[cid])))
+                            ("coin_relevant_article_text",any(len(e["excerpt"])>=150 for e in by_asset[cid])),
+                            ("source_backed_coin_description",bool(
+                                background and background.get("has_substantive_descriptive_context"))))
                              if not ok]
         }
         cards.append(card)
@@ -803,6 +815,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                "url","excerpt","scope","candidate_cmc_ids","themes",
                "published_utc","first_observed_utc","claim_status","identity_status",
                "provenance_ids","context_origin")} for e in selected_context],
+      "background_profile_gaps":profile_audit["profile_gaps"],
+      "background_context_is_not_fresh_news":True,
       "undercovered_coins":[{"cmc_id":a["cmc_id"],"symbol":a["symbol"],
             "reason":"No substantively contextual asset-specific source in current collection"}
             for a in assets if not any(e["candidate_cmc_ids"] and a["cmc_id"] in e["candidate_cmc_ids"]
@@ -881,6 +895,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "research_mapped_quantitative_families_beyond_supply_and_trending":
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids),
+          "third_party_coin_profiles_available":profile_audit["profile_present"],
+          "source_backed_substantive_project_background":profile_audit["substantive_project_profiles"],
+          "coins_without_substantive_project_background":len(profile_audit["profile_gaps"]),
           "coins_with_curated_project_source_context":sum(bool(project_context[i]) for i in ids),
           "coins_with_substantive_project_source_context":sum(
               any(x["has_substantive_context"] for x in project_context[i]) for i in ids),
@@ -899,11 +916,15 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "adjacent":ds.get("access_gaps",[])},
       "adaptive_search_results":audit,
       "publisher_article_enrichment_audit":article_audit,
+      "coin_descriptive_sources_audit":profile_audit,
       "source_context_audit":source_context_audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
     depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
     coverage["research_quality_gate"]={
+        "all_100_substantive_project_background":profile_audit["all_100_substantive_background"],
+        "project_background_context_status":"COMPLETE" if profile_audit["all_100_substantive_background"] else "INCOMPLETE",
+        "project_background_not_fresh_catalyst":True,
         "technical_source_integration":"PASSED",
         "independently_primary_verified_claims":0,
         "independently_primary_claims_verification_status":"NOT_PERFORMED_BY_FREE_PYTHON",
@@ -930,6 +951,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "new_public_source_discovery_file":"docs/intelligence/discovered_public_feeds.json",
        "source_probe_history_file":"docs/intelligence/source_probe_history.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
+       "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
        "full_evidence_export_is_actions_artifact_only":True,
@@ -952,6 +974,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"deep_research_queue.json",manual_context)
     write(out/"research_tasks.json",{"tasks":tasks,
           "audit":audit,"no_auto_source_installation":True})
+    write(out/"coin_profiles.json",profile_doc)
     write(out/"coverage_audit.json",coverage)
     write(out/"knowledge_index.json",{"evidence_count":len(evidence),
           "by_plane":dict(collections.Counter(e["source_plane"] for e in evidence)),
