@@ -328,6 +328,9 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
            for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
     audit.update({"assets": len(assets), "profile_present": len(profiles),
         "coins_with_dated_third_party_events":sum(bool(p.get("coin_events")) for p in profiles.values()),
+        "coins_with_substantive_dated_event_details":sum(
+            any(e.get("has_substantive_event_details") for e in p.get("coin_events", []))
+            for p in profiles.values()),
         "coins_with_cross_exchange_market_observations":sum(bool(
             (p.get("coin_markets") or {}).get("reported_pair_count_with_usd_volume"))
             for p in profiles.values()),
