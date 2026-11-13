@@ -932,6 +932,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "third_party_coin_profiles_available":profile_audit["profile_present"],
           "source_backed_substantive_project_background":profile_audit["substantive_project_profiles"],
           "coins_without_substantive_project_background":len(profile_audit["profile_gaps"]),
+          "coins_with_substantive_coinspecific_article_context":100-len(manual_context["undercovered_coins"]),
+          "coins_without_substantive_coinspecific_article_context":len(manual_context["undercovered_coins"]),
           "coins_with_curated_project_source_context":sum(bool(project_context[i]) for i in ids),
           "coins_with_substantive_project_source_context":sum(
               any(x["has_substantive_context"] for x in project_context[i]) for i in ids),
@@ -958,6 +960,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     coverage["research_quality_gate"]={
         "all_100_substantive_project_background":profile_audit["all_100_substantive_background"],
         "project_background_context_status":"COMPLETE" if profile_audit["all_100_substantive_background"] else "INCOMPLETE",
+        "coin_specific_event_text_status":"COMPLETE" if not manual_context["undercovered_coins"] else "INCOMPLETE",
         "project_background_not_fresh_catalyst":True,
         "technical_source_integration":"PASSED",
         "independently_primary_verified_claims":0,
@@ -970,7 +973,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "deep_article_target_met":len(article)>=30,
         "publisher_source_attempted":article_audit["attempted"],
         "all_100_contracts_verified":False,
-        "material_research_status":"PARTIAL_RESEARCH" if depth_rate<0.20 or len(article)<30 else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
+        "material_research_status":"PARTIAL_RESEARCH" if (
+            depth_rate<0.20 or len(article)<30 or profile_audit["profile_gaps"]
+            or manual_context["undercovered_coins"]
+        ) else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
         "reason":"Extraction and discovery are not proof of independently verified 24h causal facts."}
     manifest={"schema_version":"cmc100-open-intelligence-free-v1","cutoff_utc":iso(cutoff),
        "no_paid_api_used":True,"llm_calls":0,
