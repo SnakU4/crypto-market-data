@@ -758,8 +758,18 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             ff.append(entry)
         select=sorted(by_asset[cid],key=lambda x:(-x["priority"],x["id"]))[:10]
         background=profile_doc["profiles"].get(str(cid))
+        context_origins=[]
+        if background and background.get("has_substantive_descriptive_context"):
+            context_origins.append("EXACT_MATCH_PUBLIC_COIN_PROFILE")
+        if background and any(e.get("has_substantive_event_details")
+                              for e in background.get("coin_events",[])):
+            context_origins.append("EXACT_MATCH_THIRD_PARTY_DATED_EVENT_DESCRIPTION")
+        if any(row.get("has_substantive_context") for row in project_context[cid]):
+            context_origins.append("CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED")
         card={
             "source_backed_project_profile":background,
+            "substantive_coin_specific_context_present":bool(context_origins),
+            "substantive_coin_specific_context_origins":context_origins,
             "source_backed_project_profile_substantive":bool(
                 background and background.get("has_substantive_descriptive_context")),
             "cmc_id":cid,"name":a["name"],"symbol":a["symbol"],
@@ -984,6 +994,14 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids),
           "third_party_coin_profiles_available":profile_audit["profile_present"],
+          "coins_with_substantive_coin_specific_context":sum(
+              x["substantive_coin_specific_context_present"] for x in cards),
+          "coins_missing_substantive_coin_specific_context":sum(
+              not x["substantive_coin_specific_context_present"] for x in cards),
+          "coins_with_substantive_dated_third_party_events":
+              profile_audit["coins_with_substantive_dated_event_details"],
+          "coins_with_public_cross_exchange_market_data":
+              profile_audit["coins_with_cross_exchange_market_observations"],
           "source_backed_substantive_project_background":profile_audit["substantive_project_profiles"],
           "coins_without_substantive_project_background":len(profile_audit["profile_gaps"]),
           "coins_with_substantive_coinspecific_article_context":100-len(manual_context["undercovered_coins"]),
@@ -1012,6 +1030,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
     depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
     coverage["research_quality_gate"]={
+        "all_100_coins_have_substantive_source_linked_context":
+            coverage["per_coin"]["coins_with_substantive_coin_specific_context"]==100,
         "all_100_substantive_project_background":profile_audit["all_100_substantive_background"],
         "project_background_context_status":"COMPLETE" if profile_audit["all_100_substantive_background"] else "INCOMPLETE",
         "coin_specific_event_text_status":"COMPLETE" if not manual_context["undercovered_coins"] else "INCOMPLETE",
@@ -1030,6 +1050,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "material_research_status":"PARTIAL_RESEARCH" if (
             depth_rate<0.20 or len(article)<30 or profile_audit["profile_gaps"]
             or manual_context["undercovered_coins"]
+            or coverage["per_coin"]["coins_missing_substantive_coin_specific_context"]
         ) else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
         "reason":"Extraction and discovery are not proof of independently verified 24h causal facts."}
     manifest={"schema_version":"cmc100-open-intelligence-free-v1","cutoff_utc":iso(cutoff),
