@@ -66,7 +66,7 @@ class CoinContextTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             cutoff = dt.datetime.now(UTC)
             doc, audit = cc.collect_profiles(d, assets, cutoff, network=True,
-                                             opener=fake, max_gecko=0)
+                                             opener=fake, max_gecko=0, max_extra_per_type=0)
             self.assertEqual(audit["calls"], 3)
             self.assertEqual(audit["substantive_project_profiles"], 1)
             self.assertEqual([x["cmc_id"] for x in audit["profile_gaps"]], [2])
@@ -74,6 +74,28 @@ class CoinContextTests(unittest.TestCase):
             self.assertTrue(doc["profiles"]["1"]["has_substantive_descriptive_context"])
             self.assertFalse(doc["profiles"]["2"]["has_substantive_descriptive_context"])
             self.assertFalse(audit["recent_24h_catalyst_coverage_NOT_INFERRED"] is False)
+
+    def test_events_are_dated_but_not_claimed_to_be_publication_or_price_catalysts(self):
+        asof = dt.datetime(2026, 11, 13, 11, tzinfo=UTC)
+        rows = [{"title": "Protocol upgrade vote", "date": "2026-11-18T10:00:00Z",
+                 "description": ("The community plans a staged upgrade following an "
+                                 "operator vote and published test deployment procedures "
+                                 "that precede any prospective mainnet migration.")},
+                {"title": "Outdated conference", "date": "2025-01-01T00:00:00Z"}]
+        events = cc.extra_context("events", rows, "2026-11-13T11:00:00Z", asof)
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["event_date_utc"], "2026-11-18T10:00:00Z")
+        self.assertEqual(events[0]["relation_status"], "THIRD_PARTY_COIN_EVENT_DATE_NOT_PUBLICATION_DATE")
+
+    def test_markets_are_labelled_as_non_unique_trade_volume(self):
+        markets = cc.extra_context("markets", [{
+            "exchange": {"name":"VenueA"}, "pair":"ABC/USD",
+            "quotes":{"USD":{"volume_24h":1200}}},
+            {"exchange":{"name":"VenueB"}, "pair":"ABC/USDT",
+             "quotes":{"USD":{"volume_24h":500}}}], "2026-11-13T11:00:00Z",
+             dt.datetime(2026, 11, 13, 11, tzinfo=UTC))
+        self.assertEqual(markets["reported_pair_count_with_usd_volume"], 2)
+        self.assertEqual(markets["total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME"], 1700)
 
     def test_historical_replay_does_not_fetch_future_cached_profiles(self):
         assets = [{"cmc_id": 1, "name": "Alpha", "symbol": "ABC"}]
