@@ -64,6 +64,13 @@ jobs:
             'new_source_type_quality':{k:v for k,v in
                direct['by_plane_and_access_type'].items()
                if 'DIRECT_SOURCE' in k},
+            'coins_with_curated_protocol_source_context':
+               c['per_coin'].get('coins_with_curated_project_source_context'),
+            'coins_with_substantive_protocol_source_context':
+               c['per_coin'].get('coins_with_substantive_project_source_context'),
+            'current_fresh_source_content_72h':sum(
+               x.get('substantive_published_last_72h',0) for k,x in
+               direct['by_plane_and_access_type'].items() if 'DIRECT_SOURCE' in k),
             'verified_independent_primary_claims':
                c['research_quality_gate']['independently_primary_verified_claims'],
             'research_status':c['research_quality_gate']['material_research_status'],
