@@ -2,22 +2,22 @@
   "adaptive_search_hops_executed": 2,
   "adjacent_full_archive": {
     "mode": "FULL_ARCHIVE",
-    "path": "docs/discovery/archive/20261112/20261112T195414Z_discovery.json",
-    "records": 687,
-    "sha256": "9133a861c571817ed4f18c82fa3fe6c87a089d40138bc3d7b895e22ec207cdf3"
+    "path": "docs/discovery/archive/20261113/20261113T064532Z_discovery.json",
+    "records": 709,
+    "sha256": "f00270729b30768a6ec8584c1853fb806dae19df539e7ac168682d32f0ec4af3"
   },
   "all_100_verified": true,
   "archives": {
     "engine": {
-      "path": "docs/evidence_engine/archive/20261112/20261112T190855Z_observations.jsonl.gz",
+      "path": "docs/evidence_engine/archive/20261113/20261113T033651Z_observations.jsonl.gz",
       "records": 3229,
-      "sha256": "60ae2c089e65c361eaaed0b6a5f712c4f99db32ef6d138aef4d65ae05e63f772",
+      "sha256": "a9773d0e8ed1dacd3af96d8d70550a4bc85fbf7386cef1133292055158b97b52",
       "verified": true
     },
     "expanded": {
-      "path": "docs/expanded_discovery/archive/20261112/20261112T185645Z_all.jsonl.gz",
-      "records": 9778,
-      "sha256": "982118f7bc20821c909296c198110ce7ad7018092ce51222df3f3ec4ef8d6434",
+      "path": "docs/expanded_discovery/archive/20261113/20261113T032555Z_all.jsonl.gz",
+      "records": 10339,
+      "sha256": "5e937f0a9dea89106d3beb46d987479dd39b39fbd424762bf8c65e4f7dcc9658",
       "verified": true
     }
   },
@@ -29,16 +29,16 @@
     "docs/intelligence/coin_batches/batch_05.json"
   ],
   "coverage_file": "docs/intelligence/coverage_audit.json",
-  "cutoff_utc": "2026-11-12T22:51:39Z",
+  "cutoff_utc": "2026-11-13T07:07:27Z",
   "direct_research_event_audit": {
-    "batch_count": 13,
-    "count": 965,
+    "batch_count": 23,
+    "count": 1823,
     "mode": "FULL_SHA_VERIFIED_BATCHES"
   },
-  "full_evidence_count": 10809,
+  "full_evidence_count": 11994,
   "full_evidence_export": "docs/intelligence/export/evidence_index.jsonl",
   "full_evidence_export_is_actions_artifact_only": true,
-  "full_evidence_sha256": "ea6bd821988c8ceae54833220710a5dfbef498b9869f0d5a24ce9c91e80ce4e5",
+  "full_evidence_sha256": "68b4a90361e949559a1b217d079c6340c34d4d0d4f15781d839542d06561ff86",
   "global_file": "docs/intelligence/global_intelligence.json",
   "knowledge_file": "docs/intelligence/knowledge_index.json",
   "limitation": "Deterministic adaptive follow-up, NOT an autonomous LLM researcher or alpha signal.",
@@ -47,17 +47,17 @@
   "manual_research_context_file": "docs/intelligence/deep_research_queue.json",
   "new_public_source_discovery_file": "docs/intelligence/discovered_public_feeds.json",
   "no_paid_api_used": true,
-  "published_bundle_bytes": 2084541,
+  "published_bundle_bytes": 2098366,
   "schema_version": "cmc100-open-intelligence-free-v1",
   "sector_file": "docs/intelligence/sector_intelligence.json",
   "source_probe_history_file": "docs/intelligence/source_probe_history.json",
   "source_proposals_file": "docs/intelligence/source_registry_proposals.json",
   "source_snapshots": {
-    "adjacent": "2026-11-12T19:54:38Z",
-    "engine": "2026-11-12T19:08:55Z",
-    "expanded": "2026-11-12T18:56:45Z",
-    "market": "2026-11-12T04:09:38Z",
-    "research": "2026-11-12T22:44:57Z"
+    "adjacent": "2026-11-13T06:45:57Z",
+    "engine": "2026-11-13T03:36:51Z",
+    "expanded": "2026-11-13T03:25:55Z",
+    "market": "2026-11-13T03:34:21Z",
+    "research": "2026-11-13T07:06:54Z"
   },
   "task_file": "docs/intelligence/research_tasks.json"
 }

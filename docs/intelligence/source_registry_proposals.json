@@ -5,55 +5,32 @@
       "domain": "github.com",
       "examples": [
         {
-          "evidence_id": "expanded:d044ec1ca0209fd525",
-          "url": "https://github.com/IntersectMBO/cardano-node/releases/tag/11.2.1"
+          "evidence_id": "expanded:e07e8255e7f1dfd6b8",
+          "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.50.1"
         },
         {
-          "evidence_id": "expanded:4e84130b8136c7766b",
-          "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794509787_ci"
+          "evidence_id": "expanded:7343b3596d07746ac3",
+          "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794530988_ci"
         },
         {
-          "evidence_id": "expanded:f21018f97d06e2e06b",
-          "url": "https://github.com/stacks-network/stacks-core/releases/tag/4.0.6"
+          "evidence_id": "expanded:63e3bff128c874449d",
+          "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-framework-v1.50.0-rc"
         }
       ],
-      "lead_count": 439,
+      "lead_count": 808,
       "scopes": {
-        "ASSET_CANDIDATE": 54,
-        "GLOBAL_UNRESOLVED": 327,
-        "SECTOR": 58
+        "ASSET_CANDIDATE": 64,
+        "GLOBAL_UNRESOLVED": 716,
+        "SECTOR": 28
       },
       "source_plane_count": 3,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "theregister.com",
-      "examples": [
-        {
-          "evidence_id": "expanded:458b631a8085a824d2",
-          "url": "https://www.theregister.com/os-platforms/2026/11/12/microsoft-has-an-image-problem-with-novembers-windows-security-update/5309435"
-        },
-        {
-          "evidence_id": "expanded:e04c216fd95e849898",
-          "url": "https://www.theregister.com/ai-and-ml/2026/11/12/united-airlines-wants-you-to-check-in-not-your-chatbot/5309373"
-        },
-        {
-          "evidence_id": "expanded:27da6b7587c2101dd3",
-          "url": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401"
-        }
-      ],
-      "lead_count": 50,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 50
-      },
-      "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
       "domain": "blog.ethereum.org",
       "examples": [
         {
-          "evidence_id": "expanded:5aa72fc70eb9aef734",
+          "evidence_id": "research:5aa72fc70eb9aef734",
           "url": "https://blog.ethereum.org/en/2026/11/06/glamsterdam-8037-8038"
         },
         {
@@ -65,10 +42,104 @@
           "url": "https://blog.ethereum.org/en/2026/10/22/glamsterdam-hoodi-delay"
         }
       ],
-      "lead_count": 40,
+      "lead_count": 70,
       "scopes": {
-        "ASSET_CANDIDATE": 10,
-        "GLOBAL_UNRESOLVED": 30
+        "ASSET_CANDIDATE": 15,
+        "GLOBAL_UNRESOLVED": 55
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "huggingface.co",
+      "examples": [
+        {
+          "evidence_id": "research:002b672be7240eb2f1",
+          "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+        },
+        {
+          "evidence_id": "research:57df52b5136e4e1c75",
+          "url": "https://huggingface.co/blog/3d-lora-finetuning"
+        },
+        {
+          "evidence_id": "research:719a7afc531ee3b1e6",
+          "url": "https://huggingface.co/blog/qvac/botpsy"
+        }
+      ],
+      "lead_count": 70,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 70
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "thedefiant.io",
+      "examples": [
+        {
+          "evidence_id": "research:aadf7bfa9c346a6035",
+          "url": "https://thedefiant.io/news/markets/nakamoto-delays-kraken-debt-as-bitcoin-collateral-falls"
+        },
+        {
+          "evidence_id": "research:03a25ccd01c05260f7",
+          "url": "https://thedefiant.io/news/infrastructure/osmosis-restarts-after-halt-upbit-pauses-transfers"
+        },
+        {
+          "evidence_id": "research:9175018545c6a948e5",
+          "url": "https://thedefiant.io/news/blockchains/injective-opens-veyra-vote-for-cross-chain-trading"
+        }
+      ],
+      "lead_count": 70,
+      "scopes": {
+        "ASSET_CANDIDATE": 19,
+        "GLOBAL_UNRESOLVED": 51
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "aave.com",
+      "examples": [
+        {
+          "evidence_id": "research:12a0f5469b683e6d86",
+          "url": "https://aave.com/blog/avon-acquisition"
+        },
+        {
+          "evidence_id": "research:64a285164d5080cd71",
+          "url": "https://aave.com/blog/aave-payward"
+        },
+        {
+          "evidence_id": "research:43cd309345328687af",
+          "url": "https://aave.com/blog/ethena-pay"
+        }
+      ],
+      "lead_count": 61,
+      "scopes": {
+        "ASSET_CANDIDATE": 48,
+        "GLOBAL_UNRESOLVED": 13
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "theregister.com",
+      "examples": [
+        {
+          "evidence_id": "expanded:501a971e3ec8995a7c",
+          "url": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555"
+        },
+        {
+          "evidence_id": "expanded:ade6dd4d233f35a7ed",
+          "url": "https://www.theregister.com/cyber-crime/2026/11/12/doj-takes-aim-at-12b-in-binance-loot-as-fbi-disrupts-north-korean-scam/5309523"
+        },
+        {
+          "evidence_id": "expanded:0c494317b4da9c9e9f",
+          "url": "https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531"
+        }
+      ],
+      "lead_count": 52,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 52
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -98,30 +169,6 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "thedefiant.io",
-      "examples": [
-        {
-          "evidence_id": "research:fae68d929794b3c7eb",
-          "url": "https://thedefiant.io/news/security/doj-disrupts-north-korean-fake-call-crypto-theft-scheme"
-        },
-        {
-          "evidence_id": "research:7dbbf3074a78cca8f9",
-          "url": "https://thedefiant.io/frontier/ai/foster-says-nvidia-privately-deemed-chip-tracking-feasible"
-        },
-        {
-          "evidence_id": "research:05f74b22e75d5f0246",
-          "url": "https://thedefiant.io/news/hacks/binance-says-hack-assets-covered-reserve-proof-pending"
-        }
-      ],
-      "lead_count": 40,
-      "scopes": {
-        "ASSET_CANDIDATE": 10,
-        "GLOBAL_UNRESOLVED": 30
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
       "domain": "decrypt.co",
       "examples": [
         {
@@ -141,54 +188,6 @@
       "scopes": {
         "ASSET_CANDIDATE": 13,
         "GLOBAL_UNRESOLVED": 25
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "forum.zcashcommunity.com",
-      "examples": [
-        {
-          "evidence_id": "expanded:e579a0163b4a4eadb2",
-          "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-zkmarketer-9-videos/59250"
-        },
-        {
-          "evidence_id": "expanded:cf0602e8e7cc2c1dba",
-          "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-zec-agent-wallet-shielded-zcash-payments-for-ai-agents/59248"
-        },
-        {
-          "evidence_id": "expanded:b5ba199a71327afc21",
-          "url": "https://forum.zcashcommunity.com/t/grant-application-zecpy-making-private-payments-accessible-to-the-python-ecosystem/59238"
-        }
-      ],
-      "lead_count": 35,
-      "scopes": {
-        "ASSET_CANDIDATE": 1,
-        "GLOBAL_UNRESOLVED": 34
-      },
-      "source_plane_count": 2,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "huggingface.co",
-      "examples": [
-        {
-          "evidence_id": "adjacent:002b672be7240eb2f1",
-          "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
-        },
-        {
-          "evidence_id": "adjacent:57df52b5136e4e1c75",
-          "url": "https://huggingface.co/blog/3d-lora-finetuning"
-        },
-        {
-          "evidence_id": "adjacent:719a7afc531ee3b1e6",
-          "url": "https://huggingface.co/blog/qvac/botpsy"
-        }
-      ],
-      "lead_count": 35,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 31,
-        "SECTOR": 4
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -220,22 +219,22 @@
       "domain": "cointelegraph.com",
       "examples": [
         {
-          "evidence_id": "research:6027495aec4b31187c",
-          "url": "https://cointelegraph.com/magazine/nk-hackers-join-memecoin-trenches-xstocks-adds-hong-kong-equities-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-        },
-        {
           "evidence_id": "research:213433e17f065330a1",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         },
         {
-          "evidence_id": "research:355e2780b3c81ebc34",
-          "url": "https://cointelegraph.com/news/kalshi-ends-donald-trump-jr-advisory-role-polymarket-investment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+          "evidence_id": "research:3723acead025254116",
+          "url": "https://cointelegraph.com/markets/bitcoin-falls-below-70k-crypto-extreme-fear?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "evidence_id": "research:eb285b125b80fc8a1c",
+          "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "lead_count": 30,
       "scopes": {
-        "ASSET_CANDIDATE": 7,
-        "GLOBAL_UNRESOLVED": 23
+        "ASSET_CANDIDATE": 6,
+        "GLOBAL_UNRESOLVED": 24
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -260,6 +259,30 @@
       "scopes": {
         "ASSET_CANDIDATE": 1,
         "GLOBAL_UNRESOLVED": 29
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "ethresear.ch",
+      "examples": [
+        {
+          "evidence_id": "expanded:05b811708c29ca7074",
+          "url": "https://ethresear.ch/t/rfc-warcoin-deterministic-1-1-usd-stablecoin-via-serialized-7-day-color-ring-buffers-and-burn-on-egress-invariants/26246"
+        },
+        {
+          "evidence_id": "expanded:d111f8b965c413ff81",
+          "url": "https://ethresear.ch/t/more-meters-or-more-prices-one-vs-multi-dimensional-fee-mechanisms-on-ethereum/26244"
+        },
+        {
+          "evidence_id": "expanded:fdebcbf1074f905355",
+          "url": "https://ethresear.ch/t/multi-dimensional-decentralization-metrics-and-an-open-question-on-first-broadcast-double-spend-rules/26242"
+        }
+      ],
+      "lead_count": 30,
+      "scopes": {
+        "ASSET_CANDIDATE": 3,
+        "GLOBAL_UNRESOLVED": 27
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -316,22 +339,22 @@
       "domain": "forum.polkadot.network",
       "examples": [
         {
+          "evidence_id": "expanded:2f561e310fa08893c7",
+          "url": "https://forum.polkadot.network/t/polkadot-mexico-phase-1-event-report-bootcamp-hackathon-at-uanl/19454"
+        },
+        {
           "evidence_id": "expanded:8c226f9af27cb0389f",
           "url": "https://forum.polkadot.network/t/vote-on-values-bet-on-methods-evidence-based-democracy/19438"
         },
         {
           "evidence_id": "expanded:5a2281da147f69ef3b",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-12/19437"
-        },
-        {
-          "evidence_id": "expanded:f911cc1399b3cf39a6",
-          "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-11/19385"
         }
       ],
       "lead_count": 30,
       "scopes": {
-        "ASSET_CANDIDATE": 11,
-        "GLOBAL_UNRESOLVED": 19
+        "ASSET_CANDIDATE": 10,
+        "GLOBAL_UNRESOLVED": 20
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -358,6 +381,53 @@
         "GLOBAL_UNRESOLVED": 28
       },
       "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "forum.stacks.org",
+      "examples": [
+        {
+          "evidence_id": "expanded:24fe8eb653853986b7",
+          "url": "https://forum.stacks.org/t/stacks-4-1-clarity-7-sip-open-for-community-review/19246"
+        },
+        {
+          "evidence_id": "expanded:865a999655868915b2",
+          "url": "https://forum.stacks.org/t/builders-note-these-sbtc-security-enhancements-ahead/19241"
+        },
+        {
+          "evidence_id": "expanded:ac9c57c18c9c8efd7b",
+          "url": "https://forum.stacks.org/t/what-ai-caught-in-our-bitcoin-game-and-what-it-missed/19238"
+        }
+      ],
+      "lead_count": 30,
+      "scopes": {
+        "ASSET_CANDIDATE": 16,
+        "GLOBAL_UNRESOLVED": 14
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "forum.zcashcommunity.com",
+      "examples": [
+        {
+          "evidence_id": "expanded:250d9dc91fc8a196f1",
+          "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-zebra-fuzzing-maintenance-and-upstream-ci-integration/59268"
+        },
+        {
+          "evidence_id": "expanded:8d2d8bedd247907707",
+          "url": "https://forum.zcashcommunity.com/t/trustless-self-custodial-shielded-subscriptions-built-natively-into-zcash/59263"
+        },
+        {
+          "evidence_id": "expanded:2d1218e15505e26688",
+          "url": "https://forum.zcashcommunity.com/t/retroactive-grant-application-leodex/59261"
+        }
+      ],
+      "lead_count": 30,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 30
+      },
+      "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
@@ -433,25 +503,48 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
+      "domain": "research.lido.fi",
+      "examples": [
+        {
+          "evidence_id": "expanded:22865fb5c109bed16a",
+          "url": "https://research.lido.fi/t/node-operator-admission-galaxy-digital-as-stvault-professional-operator/12190"
+        },
+        {
+          "evidence_id": "research:1752599bbfb447e65c",
+          "url": "https://research.lido.fi/t/proposal-updated-mev-policy-for-lido/12183"
+        },
+        {
+          "evidence_id": "research:bdb9e5b29cfde1bdbb",
+          "url": "https://research.lido.fi/t/lego-grant-proposal-preventing-theft-in-mainstream-wallets-with-vaults/12163"
+        }
+      ],
+      "lead_count": 30,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 30
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
       "domain": "coindesk.com",
       "examples": [
         {
-          "evidence_id": "research:58d434a404e3432717",
-          "url": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment"
+          "evidence_id": "research:b7ae059300d44952b2",
+          "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value"
         },
         {
-          "evidence_id": "research:8ae2b7f6888fa8babc",
-          "url": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court"
+          "evidence_id": "research:dd2efcb8caaeead4c3",
+          "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-etfs-are-now-down-over-usd1-5-billion-in-net-outflows-for-the-year"
         },
         {
-          "evidence_id": "research:3c1594e862e193bc7a",
-          "url": "https://www.coindesk.com/business/2026/11/12/dtcc-adds-solana-to-wall-street-tokenization-plans-targeting-2027-rollout"
+          "evidence_id": "research:2993a3653ab0ca5426",
+          "url": "https://www.coindesk.com/markets/2026/11/13/spacex-tesla-merger-talks-put-30-000-bitcoin-back-in-focus"
         }
       ],
       "lead_count": 25,
       "scopes": {
-        "ASSET_CANDIDATE": 10,
-        "GLOBAL_UNRESOLVED": 15
+        "ASSET_CANDIDATE": 13,
+        "GLOBAL_UNRESOLVED": 12
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -484,22 +577,21 @@
       "domain": "arstechnica.com",
       "examples": [
         {
-          "evidence_id": "adjacent:3afecf67a4d608e952",
-          "url": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/"
+          "evidence_id": "research:901f6938ff56385698",
+          "url": "https://arstechnica.com/health/2026/11/in-reversal-american-cancer-society-urges-prostate-cancer-tests-for-all-men/"
         },
         {
-          "evidence_id": "adjacent:67d2fe4c2f1492603a",
-          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
+          "evidence_id": "research:c8b902114fe3a7f63d",
+          "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
         },
         {
-          "evidence_id": "adjacent:9469c53b214bd9a297",
-          "url": "https://arstechnica.com/tech-policy/2026/11/ukraine-says-spacex-starshield-is-restricted-again-spacex-claims-it-isnt/"
+          "evidence_id": "research:22ca75dc1df656a13b",
+          "url": "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/"
         }
       ],
       "lead_count": 20,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 11,
-        "SECTOR": 9
+        "GLOBAL_UNRESOLVED": 20
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -508,22 +600,21 @@
       "domain": "blog.cloudflare.com",
       "examples": [
         {
-          "evidence_id": "adjacent:086fc4caf6f9cc53d8",
+          "evidence_id": "research:4dfd407a0b254f36cb",
           "url": "https://blog.cloudflare.com/choosing-quepaxa/"
         },
         {
-          "evidence_id": "adjacent:0619326bdef13ea2a3",
+          "evidence_id": "research:9a72beea65a4767c7f",
           "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/"
         },
         {
-          "evidence_id": "adjacent:17c30834e16d3cb83b",
+          "evidence_id": "research:059f3bd0a851ffc105",
           "url": "https://blog.cloudflare.com/vole-mole/"
         }
       ],
       "lead_count": 20,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 9,
-        "SECTOR": 11
+        "GLOBAL_UNRESOLVED": 20
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -532,22 +623,21 @@
       "domain": "techcrunch.com",
       "examples": [
         {
-          "evidence_id": "adjacent:7d940b81a5d2e1c0a8",
-          "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+          "evidence_id": "research:635de763380a40f210",
+          "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/"
         },
         {
-          "evidence_id": "adjacent:d30d633a34dec0c43f",
-          "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/"
+          "evidence_id": "research:ecc1e546b2285816d8",
+          "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/"
         },
         {
-          "evidence_id": "adjacent:cadfae753283aaded9",
-          "url": "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/"
+          "evidence_id": "research:159e725613e9c75a11",
+          "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
         }
       ],
       "lead_count": 20,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 2,
-        "SECTOR": 18
+        "GLOBAL_UNRESOLVED": 20
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -556,22 +646,22 @@
       "domain": "theblock.co",
       "examples": [
         {
-          "evidence_id": "research:061f602d4e8a828c14",
-          "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065"
+          "evidence_id": "research:06a797ff7834928272",
+          "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
         },
         {
-          "evidence_id": "research:a16ebf4750830d9940",
-          "url": "https://www.theblock.co/news/markets/2026-11-12-gemini-trading-volume-drops-q3-revenue-falls-to-41-million-439050"
+          "evidence_id": "research:712af2309c189e9e88",
+          "url": "https://www.theblock.co/news/defi/2026-11-13-trm-labs-beacon-concierge-439609"
         },
         {
-          "evidence_id": "research:b67eaaba7199ed1ff9",
-          "url": "https://www.theblock.co/news/regulation/2026-11-12-louisiana-sues-kalshi-robinhood-other-prediction-markets-escalating-regulatory-fight-439052"
+          "evidence_id": "research:6b0fc2008621ae35f0",
+          "url": "https://www.theblock.co/news/regulation/2026-11-12-white-house-crypto-picks-sec-cftc-439175"
         }
       ],
       "lead_count": 20,
       "scopes": {
-        "ASSET_CANDIDATE": 6,
-        "GLOBAL_UNRESOLVED": 14
+        "ASSET_CANDIDATE": 7,
+        "GLOBAL_UNRESOLVED": 13
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -584,17 +674,18 @@
           "url": "https://blog.arbitrum.io/elysium-joins-the-programmable-economy/"
         },
         {
-          "evidence_id": "D:548562363819c5edcd",
+          "evidence_id": "research:a382994ce95cc071d6",
           "url": "https://blog.arbitrum.io/stablecoin-growth-program/"
         },
         {
-          "evidence_id": "D:5add891c729cac68b3",
+          "evidence_id": "research:79f5227fc5e1e590cf",
           "url": "https://blog.arbitrum.io/usdg-is-live-on-arbitrum/"
         }
       ],
       "lead_count": 15,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 15
+        "ASSET_CANDIDATE": 12,
+        "GLOBAL_UNRESOLVED": 3
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -626,16 +717,16 @@
       "domain": "bitcoinmagazine.com",
       "examples": [
         {
-          "evidence_id": "research:6bc28a29de52e18d40",
-          "url": "https://bitcoinmagazine.com/news/doj-europol-operation-tornado-234-million"
+          "evidence_id": "research:ef3f4e050d426114e3",
+          "url": "https://bitcoinmagazine.com/news/doj-north-korea-binance-1-2-billion-seize"
         },
         {
-          "evidence_id": "research:dd3f83ce282da525d0",
-          "url": "https://bitcoinmagazine.com/videos/jensen-huang-steps-down-are-the-cracks-beginning-to-show-in-circular-ai-financing"
+          "evidence_id": "research:00455abbfefdda16ab",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-71200-yields"
         },
         {
-          "evidence_id": "research:1ddfdb488295e8bd04",
-          "url": "https://bitcoinmagazine.com/videos/peter-schiff-on-the-bitcoin-crash-get-the-hell-out"
+          "evidence_id": "research:13be3a5600272606b9",
+          "url": "https://bitcoinmagazine.com/news/jane-street-lifts-strategy-mstr-stake"
         }
       ],
       "lead_count": 10,
@@ -650,22 +741,21 @@
       "domain": "cncf.io",
       "examples": [
         {
-          "evidence_id": "adjacent:3db531ade84caba885",
+          "evidence_id": "research:82aab8e7e4c671b97e",
           "url": "https://www.cncf.io/announcements/2026/11/12/cncf-recognizes-cloud-native-champions-in-2026-community-awards/"
         },
         {
-          "evidence_id": "adjacent:aceaaa83ae8858203e",
+          "evidence_id": "research:8756b01d8ee1a418f9",
           "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/"
         },
         {
-          "evidence_id": "adjacent:15ca3be22892386e66",
+          "evidence_id": "research:c910130b6e23976edb",
           "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/"
         }
       ],
       "lead_count": 10,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 2,
-        "SECTOR": 8
+        "GLOBAL_UNRESOLVED": 10
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -674,22 +764,22 @@
       "domain": "cryptoslate.com",
       "examples": [
         {
-          "evidence_id": "research:51aa6488435692e07e",
-          "url": "https://cryptoslate.com/anthropics-new-ai-leads-freelance-benchmarks-yet-fails-58-of-the-tasks/"
+          "evidence_id": "research:501a8da39e0066195b",
+          "url": "https://cryptoslate.com/ethereum-unveils-quantum-safe-accounts-with-a-costly-catch/"
         },
         {
-          "evidence_id": "research:15b953505c972c9565",
-          "url": "https://cryptoslate.com/helius-encrypts-solana-transfers-without-removing-operator-trust/"
+          "evidence_id": "research:153b4697c9316baaad",
+          "url": "https://cryptoslate.com/circle-hands-usdc-reserves-to-eu-regulators-risking-higher-fees/"
         },
         {
-          "evidence_id": "research:746a1e316a97ef7331",
-          "url": "https://cryptoslate.com/bitcoin-and-ethereum-sink-to-3-month-lows-but-a-bigger-crypto-selloff-may-be-ahead/"
+          "evidence_id": "research:eed9ccf7e121d91a65",
+          "url": "https://cryptoslate.com/across-protocol-website-attack-reached-an-aave-deposit-new-402000-loss-trace-shows/"
         }
       ],
       "lead_count": 10,
       "scopes": {
-        "ASSET_CANDIDATE": 5,
-        "GLOBAL_UNRESOLVED": 5
+        "ASSET_CANDIDATE": 6,
+        "GLOBAL_UNRESOLVED": 4
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -698,16 +788,16 @@
       "domain": "github.blog",
       "examples": [
         {
+          "evidence_id": "expanded:7d737533542117f50e",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
+        },
+        {
+          "evidence_id": "expanded:ef1d8a6c8efbdf3d40",
+          "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
+        },
+        {
           "evidence_id": "expanded:d9ee56826b05419cd7",
           "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
-        },
-        {
-          "evidence_id": "expanded:869d6c67ce30618bee",
-          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
-        },
-        {
-          "evidence_id": "expanded:548eae2ff19b49fbfb",
-          "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
         }
       ],
       "lead_count": 10,
@@ -729,8 +819,31 @@
           "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
         },
         {
-          "evidence_id": "D:9d162c4059291eca39",
+          "evidence_id": "research:dcd998d70c1de22716",
           "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/"
+        }
+      ],
+      "lead_count": 10,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 10
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "linuxfoundation.org",
+      "examples": [
+        {
+          "evidence_id": "expanded:089081cd37c9a81a52",
+          "url": "https://www.linuxfoundation.org/blog/the-evolution-of-commercial-open-source-software"
+        },
+        {
+          "evidence_id": "expanded:0812486f14592ed49f",
+          "url": "https://www.linuxfoundation.org/blog/lf-research-launches-2027-series-of-studies-and-opens-call-for-sponsors"
+        },
+        {
+          "evidence_id": "expanded:b2e73e5a12dd8f18d1",
+          "url": "https://www.linuxfoundation.org/blog/the-ai-security-gap-hiding-in-routine-maintenance"
         }
       ],
       "lead_count": 10,
@@ -767,102 +880,21 @@
       "domain": "technologyreview.com",
       "examples": [
         {
-          "evidence_id": "adjacent:5304d20f34c098fb13",
+          "evidence_id": "research:9f4081d038a6456790",
+          "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+        },
+        {
+          "evidence_id": "research:35b642c8c59b7db487",
           "url": "https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/"
         },
         {
-          "evidence_id": "adjacent:38cf5b323cdfec1512",
+          "evidence_id": "research:f57afd46257ae473f7",
           "url": "https://www.technologyreview.com/2026/11/11/1148308/un-climate-talks/"
-        },
-        {
-          "evidence_id": "adjacent:26b113dffd6a8012c5",
-          "url": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/"
         }
       ],
       "lead_count": 10,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 3,
-        "SECTOR": 7
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "ethresear.ch",
-      "examples": [
-        {
-          "evidence_id": "expanded:d111f8b965c413ff81",
-          "url": "https://ethresear.ch/t/more-meters-or-more-prices-one-vs-multi-dimensional-fee-mechanisms-on-ethereum/26244"
-        },
-        {
-          "evidence_id": "expanded:fdebcbf1074f905355",
-          "url": "https://ethresear.ch/t/multi-dimensional-decentralization-metrics-and-an-open-question-on-first-broadcast-double-spend-rules/26242"
-        },
-        {
-          "evidence_id": "expanded:53adfd30a45a69ec75",
-          "url": "https://ethresear.ch/t/seam-verifying-zcash-headers-on-base-with-eip-152-and-proving-shielded-payments-without-linking-the-chains/26239"
-        }
-      ],
-      "lead_count": 9,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 9
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "linuxfoundation.org",
-      "examples": [
-        {
-          "evidence_id": "expanded:089081cd37c9a81a52",
-          "url": "https://www.linuxfoundation.org/blog/the-evolution-of-commercial-open-source-software"
-        },
-        {
-          "evidence_id": "expanded:0812486f14592ed49f",
-          "url": "https://www.linuxfoundation.org/blog/lf-research-launches-2027-series-of-studies-and-opens-call-for-sponsors"
-        },
-        {
-          "evidence_id": "expanded:b2e73e5a12dd8f18d1",
-          "url": "https://www.linuxfoundation.org/blog/the-ai-security-gap-hiding-in-routine-maintenance"
-        }
-      ],
-      "lead_count": 3,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 3
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "forum.stacks.org",
-      "examples": [
-        {
-          "evidence_id": "expanded:865a999655868915b2",
-          "url": "https://forum.stacks.org/t/builders-note-these-sbtc-security-enhancements-ahead/19241"
-        },
-        {
-          "evidence_id": "expanded:ac9c57c18c9c8efd7b",
-          "url": "https://forum.stacks.org/t/what-ai-caught-in-our-bitcoin-game-and-what-it-missed/19238"
-        }
-      ],
-      "lead_count": 2,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 2
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "aave.com",
-      "examples": [
-        {
-          "evidence_id": "expanded:12a0f5469b683e6d86",
-          "url": "https://aave.com/blog/avon-acquisition"
-        }
-      ],
-      "lead_count": 1,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 1
+        "GLOBAL_UNRESOLVED": 10
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -873,21 +905,6 @@
         {
           "evidence_id": "expanded:551508e18a6b3762b5",
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-124194"
-        }
-      ],
-      "lead_count": 1,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 1
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "research.lido.fi",
-      "examples": [
-        {
-          "evidence_id": "expanded:22865fb5c109bed16a",
-          "url": "https://research.lido.fi/t/node-operator-admission-galaxy-digital-as-stvault-professional-operator/12190"
         }
       ],
       "lead_count": 1,
