@@ -2,13 +2,6 @@ name: CMC100 Free Open Intelligence – Broad Discovery
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'src/free_open_intelligence.py'
-      - 'src/primary_source_discovery.py'
-      - 'tests/test_primary_source_discovery.py'
-      - 'tests/test_free_open_intelligence.py'
-      - '.github/workflows/free-open-intelligence.yml'
   schedule:
     # Free public GitHub-hosted runner; source availability and runtime monitored.
     - cron: '45 05,17 * * *'
