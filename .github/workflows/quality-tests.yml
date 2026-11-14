@@ -26,3 +26,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_targeted_primary_context.py' -v
           python -m unittest discover -s tests -p 'test_coin_news_resolution.py' -v
           python -m unittest discover -s tests -p 'test_coin_primary_feed_research.py' -v
+          python -m unittest discover -s tests -p 'test_coin_repository_releases.py' -v
