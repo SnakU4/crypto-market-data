@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Verify production code syntax; optional offline tests run manually
-        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/targeted_primary_context.py src/primary_source_discovery.py src/coin_news_resolution.py src/coin_primary_feed_research.py
+        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/targeted_primary_context.py src/primary_source_discovery.py src/coin_news_resolution.py src/coin_primary_feed_research.py src/coin_repository_releases.py
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
@@ -75,6 +75,14 @@ jobs:
           assert m["coin_project_feed_probe_history_file"]=="docs/intelligence/coin_feed_probe_history.json"
           assert (p/"coin_feed_probe_history.json").is_file()
           assert c["direct_coin_project_feed_discovery_audit"]["not_independent_primary_claims"]
+          assert m["coin_repository_release_history_file"]=="docs/intelligence/coin_repository_releases.json"
+          assert m["news_event_coverage_file"]=="docs/intelligence/news_event_coverage.json"
+          release_cache=json.loads((p/"coin_repository_releases.json").read_text())
+          assert release_cache["schema_version"]=="cmc100-linked-release-events-v1"
+          assert c["coin_linked_repository_release_audit"]["no_verified_token_catalysts_claimed"]
+          news=json.loads((p/"news_event_coverage.json").read_text())
+          assert len(news["coins"])==100
+          assert news["measurement_semantics"].startswith("PROJECT_RELEASE_IS_NOT_TOKEN_PRICE_CATALYST")
           assert c["research_quality_gate"]["technical_source_integration"]=="PASSED"
           assert c["research_quality_gate"]["independently_primary_verified_claims"]==0
           assert c["research_quality_gate"]["material_research_status"] in ("PARTIAL_RESEARCH","REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION")
@@ -129,6 +137,8 @@ jobs:
             docs/intelligence/article_attempt_history.json
             docs/intelligence/google_news_resolution_history.json
             docs/intelligence/coin_feed_probe_history.json
+            docs/intelligence/coin_repository_releases.json
+            docs/intelligence/news_event_coverage.json
 
       - name: Publish concise reusable research output to public GitHub
         shell: bash
@@ -148,6 +158,8 @@ jobs:
             docs/intelligence/article_attempt_history.json \
             docs/intelligence/google_news_resolution_history.json \
             docs/intelligence/coin_feed_probe_history.json \
+            docs/intelligence/coin_repository_releases.json \
+            docs/intelligence/news_event_coverage.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Update free global, cross-sector and 100-coin intelligence $(date -u +%Y-%m-%dT%H:%MZ)"
