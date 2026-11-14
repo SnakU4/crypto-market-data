@@ -642,6 +642,16 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     dynamic_audit["domain_cooldown_hours"]=72
     dynamic_audit["domains_skipped_due_to_recent_probe"]=len(cooldown_domains)
     events=deduplicate(all_events+manual+dynamic_events)
+    # Capture rich, dated release notes from exact CMC-ID/name/symbol provider
+    # links to a specific GitHub repository. This is project code activity,
+    # never automatic evidence about the traded token.
+    try:from coin_repository_releases import collect as collect_linked_releases
+    except ImportError:from src.coin_repository_releases import collect as collect_linked_releases
+    repo_events,repo_history,repo_audit=collect_linked_releases(
+        root,assets,profile_doc["profiles"],events,cutoff,
+        network=bool(network and live_collection),max_repos=15)
+    if repo_events:
+        events=deduplicate(events+repo_events)
     # Expand coverage from directly published site feeds rather than opaque
     # Google News links, only for coins lacking substantive articles.
     try:from coin_primary_feed_research import collect as collect_coin_project_feeds
@@ -1056,6 +1066,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "research_event_rows":len(direct_events),
           "new_source_discovery_items":len(dynamic_events),
           "new_coin_project_feed_events":len(feed_events),
+          "cumulative_linked_repository_release_events":len(repo_events),
           "manual_verified_source_annotations_loaded":manual_status["eligible"],
           "adjacent_full_event_rows":len(adjacent.get("events") or []),
           "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
@@ -1117,6 +1128,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "publisher_article_enrichment_audit":article_audit,
       "safe_google_news_to_publisher_audit":google_audit,
       "direct_coin_project_feed_discovery_audit":feed_audit,
+      "coin_linked_repository_release_audit":repo_audit,
       "coin_descriptive_sources_audit":profile_audit,
       "curated_original_project_sources_audit":primary_audit,
       "combined_project_background_gaps":effective_project_gaps,
@@ -1165,6 +1177,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "article_attempt_history_file":"docs/intelligence/article_attempt_history.json",
        "google_news_resolution_history_file":"docs/intelligence/google_news_resolution_history.json",
        "coin_project_feed_probe_history_file":"docs/intelligence/coin_feed_probe_history.json",
+       "coin_repository_release_history_file":"docs/intelligence/coin_repository_releases.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
        "original_issuer_project_context_file":"docs/intelligence/primary_coin_context.json",
@@ -1204,6 +1217,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "cooldown_hours":72,"never_conflate_url_with_verified_event":True})
     write(out/"google_news_resolution_history.json",google_history)
     write(out/"coin_feed_probe_history.json",feed_history)
+    write(out/"coin_repository_releases.json",repo_history)
     export=out/"export";export.mkdir(parents=True,exist_ok=True)
     p=export/"evidence_index.jsonl"
     with p.open("w",encoding="utf-8") as f:
@@ -1239,7 +1253,8 @@ def main():
         subprocess.run(["git","add","--",
            "docs/intelligence/primary_coin_context.json",
            "docs/intelligence/google_news_resolution_history.json",
-           "docs/intelligence/coin_feed_probe_history.json"],
+           "docs/intelligence/coin_feed_probe_history.json",
+           "docs/intelligence/coin_repository_releases.json"],
            cwd=ROOT,check=True,timeout=15)
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
        "evidence_counts":coverage["evidence_counts"],
