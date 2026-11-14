@@ -940,6 +940,34 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             profile_doc["profiles"].get(str(x["cmc_id"]),{}).get("has_substantive_descriptive_context")
             or primary_doc["profiles"].get(str(x["cmc_id"]),{}).get("source_kind")=="ISSUER_DOCUMENTATION"
             and primary_doc["profiles"].get(str(x["cmc_id"]),{}).get("substantive"))]
+    # All 100 narrative accounts must be individually distinct and substantive.
+    # A copied generic template must never satisfy the coverage target.
+    context_hash_to_symbols=collections.defaultdict(list)
+    context_weak=[]
+    for x in cards:
+        profile=x.get("source_backed_project_profile") or {}
+        primary=x.get("targeted_project_primary_context") or {}
+        if profile.get("has_substantive_descriptive_context"):
+            narrative=profile.get("description_excerpt") or ""
+        elif x.get("substantive_original_issuer_context"):
+            narrative=primary.get("description_excerpt") or ""
+        else:
+            narrative=""
+        normalized=re.sub(r"\\s+"," ",narrative).casefold().strip()
+        if len(normalized)<120:
+            context_weak.append({"cmc_id":x["cmc_id"],"symbol":x["symbol"],
+                                  "description_characters":len(normalized)})
+        if normalized:
+            context_hash_to_symbols[hashlib.sha256(normalized.encode("utf-8")).hexdigest()].append(x["symbol"])
+    repeated_contexts=[symbols for symbols in context_hash_to_symbols.values()
+                       if len(symbols)>1]
+    context_fingerprint_audit={"individual_coins":len(cards),
+       "distinct_substantive_context_texts":len(context_hash_to_symbols),
+       "duplicate_narrative_groups":repeated_contexts,
+       "blank_or_weak_context":context_weak,
+       "no_fabricated_text_counted":True,
+       "all_100_unique_nontrivial_context":len(context_hash_to_symbols)==100
+           and not repeated_contexts and not context_weak}
     # Observe the true information quality by access type. Do NOT improve
     # the full-corpus rate merely by excluding low-context headlines.
     source_depth=collections.defaultdict(lambda:{"total":0,"substantive":0,
@@ -1050,13 +1078,15 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "coin_descriptive_sources_audit":profile_audit,
       "curated_original_project_sources_audit":primary_audit,
       "combined_project_background_gaps":effective_project_gaps,
+      "coin_context_fingerprint_audit":context_fingerprint_audit,
       "source_context_audit":source_context_audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
     depth_rate=coverage["evidence_counts"]["substantive_source_excerpt_leads"]/total_leads
     coverage["research_quality_gate"]={
         "all_100_coins_have_substantive_source_linked_context":
-            coverage["per_coin"]["coins_with_substantive_coin_specific_context"]==100,
+            coverage["per_coin"]["coins_with_substantive_coin_specific_context"]==100
+            and context_fingerprint_audit["all_100_unique_nontrivial_context"],
         "all_100_substantive_project_background":not effective_project_gaps,
         "project_background_context_status":"COMPLETE" if not effective_project_gaps else "INCOMPLETE",
         "coin_specific_event_text_status":"COMPLETE" if not manual_context["undercovered_coins"] else "INCOMPLETE",
