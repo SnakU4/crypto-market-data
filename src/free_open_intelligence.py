@@ -940,6 +940,59 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     # Its 200-300 items are a SELECTION, never substituted for the full-corpus
     # denominator or represented as independently validated facts.
     rich=[e for e in events if has_additional_information(e["title"],e["excerpt"])]
+    # Track genuine, source-linked coin event context separately from static
+    # project descriptions. No event observed != proof that none happened.
+    per_coin_news={}
+    for asset in assets:
+        cid=int(asset["cmc_id"])
+        source_items=[e for e in rich if e["scope"]=="ASSET_CANDIDATE"
+                      and cid in e.get("candidate_cmc_ids",[])]
+        dated=[]
+        for e in source_items:
+            published=parse_time(e.get("published_utc"))
+            if published and published<=cutoff:
+                dated.append((published,e))
+        dated.sort(key=lambda x:x[0],reverse=True)
+        counter={}
+        for hours in (24,72,168,720):
+            counter[str(hours)+"h"]=sum(dt.timedelta(0)<=cutoff-date<=dt.timedelta(hours=hours)
+                for date,_ in dated)
+        source_types=collections.Counter()
+        for e in source_items:
+            if e.get("source_project_mapping") or e.get("source_plane")=="linked_project_repository":
+                source_types["PROJECT_SOFTWARE_OR_GOVERNANCE_ACTIVITY"]+=1
+            elif e.get("source_plane")=="direct_project_feed":
+                source_types["PROJECT_WEBSITE_PUBLICATION"]+=1
+            else:
+                source_types["THIRD_PARTY_OR_UNVERIFIED_NEWS"]+=1
+        per_coin_news[str(cid)]={
+            "cmc_id":cid,"symbol":asset["symbol"],"name":asset["name"],
+            "substantive_mapped_source_items":len(source_items),
+            "substantive_with_known_published_time":len(dated),
+            "newest_published_utc":iso(dated[0][0]) if dated else None,
+            "substantive_dated_items_by_window":counter,
+            "source_classes_not_verified_price_catalysts":dict(source_types),
+            "recent_items":[{"title":e["title"],"url":e["url"],"published_utc":iso(date),
+                  "claim_status":e["claim_status"],"source_plane":e["source_plane"]}
+                  for date,e in dated[:5]],
+            "no_fresh_7d_evidence_observed":counter["168h"]==0,
+            "data_sufficiency":"SUBSTANTIVE_COIN_SOURCE_OBSERVED" if source_items
+                else "NO_SUBSTANTIVE_COIN_EVENT_TEXT_FOUND_NOT_PROOF_OF_NO_EVENTS"
+        }
+    news_coverage={
+        "coins":per_coin_news,
+        "coins_with_any_substantive_source_item":sum(bool(x["substantive_mapped_source_items"])
+            for x in per_coin_news.values()),
+        "coins_with_substantive_published_item_24h":sum(x["substantive_dated_items_by_window"]["24h"]>0
+            for x in per_coin_news.values()),
+        "coins_with_substantive_published_item_72h":sum(x["substantive_dated_items_by_window"]["72h"]>0
+            for x in per_coin_news.values()),
+        "coins_with_substantive_published_item_7d":sum(x["substantive_dated_items_by_window"]["168h"]>0
+            for x in per_coin_news.values()),
+        "coins_without_substantive_article_or_event_text":[{"cmc_id":a["cmc_id"],"symbol":a["symbol"]}
+            for a in assets if not per_coin_news[str(a["cmc_id"])]["substantive_mapped_source_items"]],
+        "measurement_semantics":"PROJECT_RELEASE_IS_NOT_TOKEN_PRICE_CATALYST; SOURCE_ITEM_IS_NOT_FACT_CHECKED; ABSENCE_IS_NOT_PROOF",
+        "news_time_basis":"PUBLISHED_UTC_ONLY_IF_PRESENT; NEVER_FIRST_OBSERVED_AS_PUBLICATION_TIME"}
     rich_by_scope=collections.defaultdict(list)
     for e in rich:rich_by_scope[e["scope"]].append(e)
     for group in rich_by_scope.values():
@@ -1129,6 +1182,11 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "safe_google_news_to_publisher_audit":google_audit,
       "direct_coin_project_feed_discovery_audit":feed_audit,
       "coin_linked_repository_release_audit":repo_audit,
+      "coin_substantive_news_freshness_summary":{
+         "coins_with_substantive_published_item_24h":news_coverage["coins_with_substantive_published_item_24h"],
+         "coins_with_substantive_published_item_72h":news_coverage["coins_with_substantive_published_item_72h"],
+         "coins_with_substantive_published_item_7d":news_coverage["coins_with_substantive_published_item_7d"],
+         "coins_with_any_substantive_source_item":news_coverage["coins_with_any_substantive_source_item"]},
       "coin_descriptive_sources_audit":profile_audit,
       "curated_original_project_sources_audit":primary_audit,
       "combined_project_background_gaps":effective_project_gaps,
@@ -1178,6 +1236,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "google_news_resolution_history_file":"docs/intelligence/google_news_resolution_history.json",
        "coin_project_feed_probe_history_file":"docs/intelligence/coin_feed_probe_history.json",
        "coin_repository_release_history_file":"docs/intelligence/coin_repository_releases.json",
+       "news_event_coverage_file":"docs/intelligence/news_event_coverage.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
        "original_issuer_project_context_file":"docs/intelligence/primary_coin_context.json",
@@ -1218,6 +1277,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"google_news_resolution_history.json",google_history)
     write(out/"coin_feed_probe_history.json",feed_history)
     write(out/"coin_repository_releases.json",repo_history)
+    write(out/"news_event_coverage.json",news_coverage)
     export=out/"export";export.mkdir(parents=True,exist_ok=True)
     p=export/"evidence_index.jsonl"
     with p.open("w",encoding="utf-8") as f:
@@ -1254,7 +1314,8 @@ def main():
            "docs/intelligence/primary_coin_context.json",
            "docs/intelligence/google_news_resolution_history.json",
            "docs/intelligence/coin_feed_probe_history.json",
-           "docs/intelligence/coin_repository_releases.json"],
+           "docs/intelligence/coin_repository_releases.json",
+           "docs/intelligence/news_event_coverage.json"],
            cwd=ROOT,check=True,timeout=15)
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
        "evidence_counts":coverage["evidence_counts"],
