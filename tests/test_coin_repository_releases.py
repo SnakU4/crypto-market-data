@@ -52,6 +52,31 @@ class ReleaseEvidenceTests(unittest.TestCase):
                 network=False)
             self.assertEqual(older,[])
 
+
+    def test_official_rest_api_keyless_validation(self):
+        published=PUB
+        class Response:
+            def __init__(self,url,records):
+                self.url=url
+                self.buf=json.dumps(records).encode("utf8")
+            def __enter__(self):return self
+            def __exit__(self,*args):return False
+            def geturl(self):return self.url
+            def read(self,n):return self.buf[:n]
+        def fake_opener(req,timeout):
+            self.assertEqual(req.get_header("Accept"),"application/vnd.github+json")
+            self.assertFalse(req.has_header("Authorization"))
+            self.assertIn("api.github.com/repos/example-org/example-project/releases",req.full_url)
+            return Response(req.full_url,[{
+              "name":"v1.2.7","body":DETAIL,"draft":False,
+              "published_at":published,
+              "html_url":"https://github.com/example-org/example-project/releases/tag/v1.2.7"
+            }])
+        records,status=mod.api_releases("example-org/example-project",opener=fake_opener)
+        self.assertEqual(status,"OK")
+        self.assertEqual(len(records),1)
+        self.assertEqual(records[0]["body"],DETAIL)
+
     def test_prevent_unrelated_beam_ticker_collision(self):
         coin={"cmc_id":28298,"name":"Beam","symbol":"BEAM"}
         prof={"28298":{"has_substantive_descriptive_context":True,
