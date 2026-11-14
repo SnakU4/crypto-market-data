@@ -82,7 +82,7 @@ def collect(root,assets,events,existing=(),cutoff=None,network=False,
                 url=e["url"]
                 if url in selected_urls:continue
                 prior=parse((history.get(url) or {}).get("attempted_utc")) if isinstance(history.get(url),dict) else None
-                if prior and dt.timedelta(0)<=cutoff-prior<=dt.timedelta(days=7):
+                if prior and dt.timedelta(0)<=dt.datetime.now(UTC)-prior<=dt.timedelta(days=7):
                     continue
                 chosen.append((cid,e));selected_urls.add(url);chosen_ids.add(cid);break
         if len(chosen)>=max_resolutions:break
