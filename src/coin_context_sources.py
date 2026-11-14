@@ -32,6 +32,7 @@ PROFILES_MAX_AGE_HOURS = 72
 # NIGHT supply and CoinPaprika night-midnight2 (not unrelated night-midnight),
 # CoinPaprika's community meme listing for 币安人生.
 VERIFIED_PROVIDER_ALIASES = {
+    ("coinpaprika",3957): ("leo-leo-token","LEO Token"),
     ("coingecko",3957): ("leo-token","LEO Token"),
     ("coingecko",35697): ("pi-network","Pi Network"),
     ("coinpaprika",35697): ("pi2-pi-network","Pi Network"),
