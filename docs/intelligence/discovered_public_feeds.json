@@ -1,11 +1,22 @@
 {
   "advertised_existing_feed_count": 0,
   "domain_cooldown_hours": 72,
-  "domains_attempted": 0,
-  "domains_found_content": 0,
+  "domains_attempted": 1,
+  "domains_found_content": 1,
   "domains_skipped_due_to_recent_probe": 85,
-  "new_feed_items": 0,
+  "new_feed_items": 1,
   "not_verified_facts": true,
-  "sources": [],
-  "substantive_feed_items": 0
+  "sources": [
+    {
+      "advertised_feeds": [
+        "https://lighter.xyz/blog/rss.xml"
+      ],
+      "article_count": 1,
+      "domain": "lighter.xyz",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 1
+    }
+  ],
+  "substantive_feed_items": 1
 }

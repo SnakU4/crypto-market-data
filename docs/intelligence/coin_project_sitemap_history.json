@@ -1,0 +1,180 @@
+{
+  "cooldown_hours": 72,
+  "domains": {
+    "bitfinex.com": {
+      "observed_utc": "2026-11-14T13:36:05Z",
+      "status": [
+        "root:OK",
+        "parse:URLSET"
+      ],
+      "substantive": 0
+    },
+    "ethereumclassic.org": {
+      "observed_utc": "2026-11-14T13:36:02Z",
+      "status": [
+        "root:OK",
+        "parse:SITEMAPINDEX",
+        "nested:OK"
+      ],
+      "substantive": 2
+    },
+    "gatechain.io": {
+      "observed_utc": "2026-11-14T13:36:05Z",
+      "status": [
+        "root:OK",
+        "parse:SITEMAPINDEX",
+        "nested:OK",
+        "nested:OK"
+      ],
+      "substantive": 0
+    },
+    "gnosis.io": {
+      "observed_utc": "2026-11-14T13:36:02Z",
+      "status": [
+        "root:OK",
+        "parse:URLSET"
+      ],
+      "substantive": 0
+    },
+    "kucoin.com": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:HTTPError"
+      ],
+      "substantive": 0
+    },
+    "nexo.io": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:OVERSIZED"
+      ],
+      "substantive": 0
+    },
+    "okex.com": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:UNSAFE_OR_NOT_PUBLIC"
+      ],
+      "substantive": 0
+    },
+    "paxos.com": {
+      "observed_utc": "2026-11-14T13:36:05Z",
+      "status": [
+        "root:OK",
+        "parse:URLSET"
+      ],
+      "substantive": 0
+    },
+    "quant.network": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:OK",
+        "parse:SITEMAPINDEX",
+        "nested:OK",
+        "nested:OK"
+      ],
+      "substantive": 1
+    },
+    "superintelligence.io": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:OK",
+        "parse:SITEMAPINDEX",
+        "nested:OK",
+        "nested:OK"
+      ],
+      "substantive": 0
+    },
+    "tezos.com": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:HTTPError"
+      ],
+      "substantive": 0
+    },
+    "xinfin.org": {
+      "observed_utc": "2026-11-14T13:36:03Z",
+      "status": [
+        "root:HTTPError"
+      ],
+      "substantive": 0
+    }
+  },
+  "events": [
+    {
+      "candidate_cmc_ids": [
+        1321
+      ],
+      "claim_status": "PUBLIC_PROJECT_ARTICLE_NO_VERIFIED_PRICE_IMPACT",
+      "context_origin": "PROJECT_WEBSITE_SITEMAP_EXTRACTED_ARTICLE",
+      "excerpt": "Your first Ethereum Classic node, part 2: run core-geth with Docker In Part 1 , I showed you how to set up core-geth by building it from the source we got from GitHub. This time, we're going to use Docker. Docker is a containerization tool. In layman's terms, it lets you spin up little self-contained boxes called containers on your machine and run them separately, for as long as you need them. Each container comes with everything its software needs to run. So instead of building core-geth yourself, you just download a ready-made image of it and run it. For this guide, we'll use the image for v1.12.23 \"Argos\", the latest stable release of core",
+      "first_observed_utc": "2026-11-14T13:36:01Z",
+      "id": "SM:f4795e1c856ae8f965a7",
+      "identity_status": "THIRD_PARTY_PROFILE_PROJECT_WEBSITE_ASSOCIATION",
+      "priority": 44,
+      "provenance_ids": [
+        "SM:f4795e1c856ae8f965a7"
+      ],
+      "published_utc": null,
+      "scope": "ASSET_CANDIDATE",
+      "sitemap_lastmod_utc": "2026-10-28T00:00:00Z",
+      "source_date_caveat": "SITEMAP_LASTMOD_IS_NOT_ARTICLE_PUBLICATION_TIME",
+      "source_family": "PROJECT_SITE_ARTICLE_UNDATED",
+      "source_id": "COIN_SITE_SITEMAP_1321",
+      "source_plane": "direct_project_sitemap",
+      "themes": [],
+      "title": "2026 10 28 run your own etc node part 2 run core geth with docker",
+      "url": "https://ethereumclassic.org/blog/2026-10-28-run-your-own-etc-node-part-2-run-core-geth-with-docker"
+    },
+    {
+      "candidate_cmc_ids": [
+        1321
+      ],
+      "claim_status": "PUBLIC_PROJECT_ARTICLE_NO_VERIFIED_PRICE_IMPACT",
+      "context_origin": "PROJECT_WEBSITE_SITEMAP_EXTRACTED_ARTICLE",
+      "excerpt": "Run your own Ethereum Classic node, part 1: build core-geth from source Running a node is one of the most significant ways anyone can contribute to Ethereum Classic. Every node keeps its own copy of the blockchain, a record of every block, transaction and smart contract. More nodes make ETC more decentralized and the network more resilient, plus it lets you interact with the network without relying on a trusted third party. It's also easier to set up than you might think, and this guide will show you how, step-by-step. By the end of this guide, you'll be running your very own node: a copy of the ETC blockchain on your own hardware that you ca",
+      "first_observed_utc": "2026-11-14T13:36:02Z",
+      "id": "SM:76fcb4443d25a2728db3",
+      "identity_status": "THIRD_PARTY_PROFILE_PROJECT_WEBSITE_ASSOCIATION",
+      "priority": 44,
+      "provenance_ids": [
+        "SM:76fcb4443d25a2728db3"
+      ],
+      "published_utc": null,
+      "scope": "ASSET_CANDIDATE",
+      "sitemap_lastmod_utc": "2026-10-15T00:00:00Z",
+      "source_date_caveat": "SITEMAP_LASTMOD_IS_NOT_ARTICLE_PUBLICATION_TIME",
+      "source_family": "PROJECT_SITE_ARTICLE_UNDATED",
+      "source_id": "COIN_SITE_SITEMAP_1321",
+      "source_plane": "direct_project_sitemap",
+      "themes": [],
+      "title": "2026 10 15 run your own etc node part 1 build core geth from source",
+      "url": "https://ethereumclassic.org/blog/2026-10-15-run-your-own-etc-node-part-1-build-core-geth-from-source"
+    },
+    {
+      "candidate_cmc_ids": [
+        3155
+      ],
+      "claim_status": "PUBLIC_PROJECT_ARTICLE_NO_VERIFIED_PRICE_IMPACT",
+      "context_origin": "PROJECT_WEBSITE_SITEMAP_EXTRACTED_ARTICLE",
+      "excerpt": "News 24 September 2026 Quant powers The Clearing House’s On-Chain Money Initiative in the US By Gilbert Verdian Banks On-Chain Money Initiative The Clearing House Back to News Share: Copy to clipboard Money is entering a new era, driven by two converging forces: blockchain and programmability. Quant is at the centre of this shift globally. Now, we’re proud to partner with The Clearing House in the US to set a new standard for tokenised deposits everywhere. The backdrop Financial institutions want payments and liquidity that are efficient, secure and always-on. Increasingly, consumers expect money to move the way everything else in their lives",
+      "first_observed_utc": "2026-11-14T13:36:03Z",
+      "id": "SM:2e344904c354b3778eff",
+      "identity_status": "THIRD_PARTY_PROFILE_PROJECT_WEBSITE_ASSOCIATION",
+      "priority": 44,
+      "provenance_ids": [
+        "SM:2e344904c354b3778eff"
+      ],
+      "published_utc": null,
+      "scope": "ASSET_CANDIDATE",
+      "sitemap_lastmod_utc": "2026-09-24T13:33:12Z",
+      "source_date_caveat": "SITEMAP_LASTMOD_IS_NOT_ARTICLE_PUBLICATION_TIME",
+      "source_family": "PROJECT_SITE_ARTICLE_UNDATED",
+      "source_id": "COIN_SITE_SITEMAP_3155",
+      "source_plane": "direct_project_sitemap",
+      "themes": [],
+      "title": "",
+      "url": "https://quant.network/news/quant-powers-the-clearing-houses-on-chain-money-initiative-in-the-us/"
+    }
+  ]
+}

@@ -334,19 +334,21 @@
     },
     "1321": {
       "cmc_id": 1321,
-      "data_sufficiency": "NO_SUBSTANTIVE_COIN_EVENT_TEXT_FOUND_NOT_PROOF_OF_NO_EVENTS",
+      "data_sufficiency": "SUBSTANTIVE_COIN_SOURCE_OBSERVED",
       "name": "Ethereum Classic",
       "newest_published_utc": null,
       "no_fresh_7d_evidence_observed": true,
       "recent_items": [],
-      "source_classes_not_verified_price_catalysts": {},
+      "source_classes_not_verified_price_catalysts": {
+        "THIRD_PARTY_OR_UNVERIFIED_NEWS": 2
+      },
       "substantive_dated_items_by_window": {
         "168h": 0,
         "24h": 0,
         "720h": 0,
         "72h": 0
       },
-      "substantive_mapped_source_items": 0,
+      "substantive_mapped_source_items": 2,
       "substantive_with_known_published_time": 0,
       "symbol": "ETC"
     },
@@ -1716,19 +1718,21 @@
     },
     "3155": {
       "cmc_id": 3155,
-      "data_sufficiency": "NO_SUBSTANTIVE_COIN_EVENT_TEXT_FOUND_NOT_PROOF_OF_NO_EVENTS",
+      "data_sufficiency": "SUBSTANTIVE_COIN_SOURCE_OBSERVED",
       "name": "Quant",
       "newest_published_utc": null,
       "no_fresh_7d_evidence_observed": true,
       "recent_items": [],
-      "source_classes_not_verified_price_catalysts": {},
+      "source_classes_not_verified_price_catalysts": {
+        "THIRD_PARTY_OR_UNVERIFIED_NEWS": 1
+      },
       "substantive_dated_items_by_window": {
         "168h": 0,
         "24h": 0,
         "720h": 0,
         "72h": 0
       },
-      "substantive_mapped_source_items": 0,
+      "substantive_mapped_source_items": 1,
       "substantive_with_known_published_time": 0,
       "symbol": "QNT"
     },
@@ -2419,30 +2423,20 @@
     },
     "39125": {
       "cmc_id": 39125,
-      "data_sufficiency": "SUBSTANTIVE_COIN_SOURCE_OBSERVED",
+      "data_sufficiency": "NO_SUBSTANTIVE_COIN_EVENT_TEXT_FOUND_NOT_PROOF_OF_NO_EVENTS",
       "name": "Lighter",
-      "newest_published_utc": "2026-08-19T00:00:00Z",
+      "newest_published_utc": null,
       "no_fresh_7d_evidence_observed": true,
-      "recent_items": [
-        {
-          "claim_status": "PUBLISHER_TEXT_NOT_FACT_VERIFIED",
-          "published_utc": "2026-08-19T00:00:00Z",
-          "source_plane": "direct_project_feed",
-          "title": "Advanced Charting on Lighter, Powered by TradingView",
-          "url": "https://lighter.xyz/blog/advanced-charting-on-lighter-powered-by-tradingview"
-        }
-      ],
-      "source_classes_not_verified_price_catalysts": {
-        "PROJECT_WEBSITE_PUBLICATION": 1
-      },
+      "recent_items": [],
+      "source_classes_not_verified_price_catalysts": {},
       "substantive_dated_items_by_window": {
         "168h": 0,
         "24h": 0,
         "720h": 0,
         "72h": 0
       },
-      "substantive_mapped_source_items": 1,
-      "substantive_with_known_published_time": 1,
+      "substantive_mapped_source_items": 0,
+      "substantive_with_known_published_time": 0,
       "symbol": "LIT"
     },
     "3957": {
@@ -2825,7 +2819,7 @@
         "168h": 16,
         "24h": 2,
         "720h": 25,
-        "72h": 14
+        "72h": 13
       },
       "substantive_mapped_source_items": 37,
       "substantive_with_known_published_time": 37,
@@ -3528,15 +3522,11 @@
       "symbol": "PENDLE"
     }
   },
-  "coins_with_any_substantive_source_item": 55,
+  "coins_with_any_substantive_source_item": 56,
   "coins_with_substantive_published_item_24h": 17,
   "coins_with_substantive_published_item_72h": 33,
   "coins_with_substantive_published_item_7d": 34,
   "coins_without_substantive_article_or_event_text": [
-    {
-      "cmc_id": 1321,
-      "symbol": "ETC"
-    },
     {
       "cmc_id": 1659,
       "symbol": "GNO"
@@ -3556,10 +3546,6 @@
     {
       "cmc_id": 2694,
       "symbol": "NEXO"
-    },
-    {
-      "cmc_id": 3155,
-      "symbol": "QNT"
     },
     {
       "cmc_id": 3773,
@@ -3712,6 +3698,10 @@
     {
       "cmc_id": 38892,
       "symbol": "STABLE"
+    },
+    {
+      "cmc_id": 39125,
+      "symbol": "LIT"
     }
   ],
   "measurement_semantics": "PROJECT_RELEASE_IS_NOT_TOKEN_PRICE_CATALYST; SOURCE_ITEM_IS_NOT_FACT_CHECKED; ABSENCE_IS_NOT_PROOF",
