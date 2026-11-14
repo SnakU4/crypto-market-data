@@ -661,6 +661,15 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         network=bool(network and live_collection),max_coins=12)
     if feed_events:
         events=deduplicate(events+feed_events)
+    # Find actual article text on dated blog/news URLs in project sitemaps,
+    # not just provider summaries or static product landing pages.
+    try:from coin_project_sitemap_news import collect as collect_coin_sitemap_news
+    except ImportError:from src.coin_project_sitemap_news import collect as collect_coin_sitemap_news
+    sitemap_events,sitemap_history,sitemap_audit=collect_coin_sitemap_news(
+        root,assets,profile_doc["profiles"],events,cutoff,
+        network=bool(network and live_collection),max_domains=12)
+    if sitemap_events:
+        events=deduplicate(events+sitemap_events)
     # Feed-provided descriptions and newly retrieved publisher text are BOTH
     # first-class research context. Previously the latter was exported but
     # never fed back into coin/global/sector dossiers or the quality metric.
@@ -1120,6 +1129,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "new_source_discovery_items":len(dynamic_events),
           "new_coin_project_feed_events":len(feed_events),
           "cumulative_linked_repository_release_events":len(repo_events),
+          "project_sitemap_substantive_article_items":len(sitemap_events),
           "manual_verified_source_annotations_loaded":manual_status["eligible"],
           "adjacent_full_event_rows":len(adjacent.get("events") or []),
           "adjacent_read_index_event_rows":int(ds.get("read_index_leads") or adjacent_source["records"]),
@@ -1182,6 +1192,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "safe_google_news_to_publisher_audit":google_audit,
       "direct_coin_project_feed_discovery_audit":feed_audit,
       "coin_linked_repository_release_audit":repo_audit,
+      "coin_project_sitemap_article_audit":sitemap_audit,
       "coin_substantive_news_freshness_summary":{
          "coins_with_substantive_published_item_24h":news_coverage["coins_with_substantive_published_item_24h"],
          "coins_with_substantive_published_item_72h":news_coverage["coins_with_substantive_published_item_72h"],
@@ -1236,6 +1247,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "google_news_resolution_history_file":"docs/intelligence/google_news_resolution_history.json",
        "coin_project_feed_probe_history_file":"docs/intelligence/coin_feed_probe_history.json",
        "coin_repository_release_history_file":"docs/intelligence/coin_repository_releases.json",
+       "coin_project_sitemap_history_file":"docs/intelligence/coin_project_sitemap_history.json",
        "news_event_coverage_file":"docs/intelligence/news_event_coverage.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
@@ -1277,6 +1289,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"google_news_resolution_history.json",google_history)
     write(out/"coin_feed_probe_history.json",feed_history)
     write(out/"coin_repository_releases.json",repo_history)
+    write(out/"coin_project_sitemap_history.json",sitemap_history)
     write(out/"news_event_coverage.json",news_coverage)
     export=out/"export";export.mkdir(parents=True,exist_ok=True)
     p=export/"evidence_index.jsonl"
@@ -1315,6 +1328,7 @@ def main():
            "docs/intelligence/google_news_resolution_history.json",
            "docs/intelligence/coin_feed_probe_history.json",
            "docs/intelligence/coin_repository_releases.json",
+           "docs/intelligence/coin_project_sitemap_history.json",
            "docs/intelligence/news_event_coverage.json"],
            cwd=ROOT,check=True,timeout=15)
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
