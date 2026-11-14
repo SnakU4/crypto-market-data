@@ -2,8 +2,8 @@
   "audit": {
     "all_100_substantive_background": false,
     "assets": 100,
-    "calls": 118,
-    "coins_with_cross_exchange_market_observations": 59,
+    "calls": 39,
+    "coins_with_cross_exchange_market_observations": 93,
     "coins_with_dated_third_party_events": 0,
     "coins_with_substantive_dated_event_details": 0,
     "configured_sources": [
@@ -13,58 +13,18 @@
       "coingecko_public_coin_profiles"
     ],
     "disclaimer": "Third-party descriptive context is not independently verified, current news, or token-price causality.",
-    "errors": [
-      "coinpaprika_markets:APT:HTTP_402",
-      "coinpaprika_markets:STRK:HTTP_402",
-      "coinpaprika_markets:TIA:HTTP_402",
-      "coinpaprika_markets:TAO:HTTP_402",
-      "coinpaprika_markets:BONK:HTTP_402",
-      "coinpaprika_markets:SEI:HTTP_402",
-      "coinpaprika_markets:ZRO:HTTP_402",
-      "coinpaprika_markets:MNT:HTTP_402",
-      "coinpaprika_markets:SPX:HTTP_402",
-      "coinpaprika_markets:PYTH:HTTP_402",
-      "coinpaprika_markets:BEAM:HTTP_402",
-      "coinpaprika_markets:JUP:HTTP_402",
-      "coinpaprika_markets:VIRTUAL:HTTP_402",
-      "coinpaprika_markets:ETHFI:HTTP_402",
-      "coinpaprika_markets:ENA:HTTP_402",
-      "coinpaprika_markets:HYPE:HTTP_402",
-      "coinpaprika_markets:SKY:HTTP_402",
-      "coinpaprika_markets:MORPHO:HTTP_402",
-      "coinpaprika_markets:PENGU:HTTP_402",
-      "coinpaprika_markets:TRUMP:HTTP_402",
-      "coinpaprika_markets:M:HTTP_402",
-      "coinpaprika_markets:VVV:HTTP_402",
-      "coinpaprika_markets:PI:HTTP_402",
-      "coinpaprika_markets:ASTER:HTTP_402",
-      "coinpaprika_markets:PUMP:HTTP_402",
-      "coinpaprika_markets:XPL:HTTP_402",
-      "coinpaprika_markets:FF:HTTP_402",
-      "coinpaprika_markets:币安人生:HTTP_402",
-      "coinpaprika_markets:KITE:HTTP_402",
-      "coinpaprika_markets:PIEVERSE:HTTP_402",
-      "coinpaprika_markets:STABLE:HTTP_402",
-      "coinpaprika_markets:NIGHT:HTTP_402",
-      "coinpaprika_markets:LIT:HTTP_402"
-    ],
-    "extra_calls": 111,
+    "errors": [],
+    "extra_calls": 35,
     "extra_endpoint_state": {
       "events": "PROBES_ACCEPTED_CONTINUE",
       "markets": "PROBES_ACCEPTED_CONTINUE"
     },
     "extra_ok": {
-      "events": 19,
-      "markets": 59
+      "events": 1,
+      "markets": 34
     },
     "historical_network_disabled": false,
     "profile_gaps": [
-      {
-        "cmc_id": 3957,
-        "name": "UNUS SED LEO",
-        "reason": "NO_SOURCE_BACKED_SUBSTANTIVE_DESCRIPTION",
-        "symbol": "LEO"
-      },
       {
         "cmc_id": 28321,
         "name": "Polygon (prev. MATIC)",
@@ -85,8 +45,8 @@
       "coinpaprika_coin_list": "OK"
     },
     "strict_name_and_symbol_matching": true,
-    "substantive_project_profiles": 97,
-    "success": 83
+    "substantive_project_profiles": 98,
+    "success": 37
   },
   "profiles": {
     "1": {
@@ -2609,10 +2569,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 21794,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 110,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 26438537.86
+          },
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 7850767.94
+          },
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 4691546.65
+          },
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 2905061.69
+          },
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 1427007.75
+          },
+          {
+            "exchange": "",
+            "pair": "APT/USDT",
+            "volume_24h_usd": 1302129.21
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 56267718.25
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Aptos (APT) is a Layer 1 blockchain designed for high scalability and safety, utilizing a novel programming language and parallel execution to enhance transaction speed and efficiency. It aims to deliver a user-friendly environment for developers and end-users alike.",
       "events_observed_utc": "2026-11-14T12:06:52Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:20Z",
       "name": "Aptos",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -2645,10 +2645,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 22691,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 60,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "STRK/USDT",
+            "volume_24h_usd": 19471672.95
+          },
+          {
+            "exchange": "",
+            "pair": "STRK/USD",
+            "volume_24h_usd": 16476948
+          },
+          {
+            "exchange": "",
+            "pair": "STRK/USDC",
+            "volume_24h_usd": 4659616.72
+          },
+          {
+            "exchange": "",
+            "pair": "STRK/USDT",
+            "volume_24h_usd": 4008231.94
+          },
+          {
+            "exchange": "",
+            "pair": "STRK/USDT",
+            "volume_24h_usd": 3485491.26
+          },
+          {
+            "exchange": "",
+            "pair": "STRK/USDT",
+            "volume_24h_usd": 3448823.43
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 67214962.8
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Starknet (STRK) is a decentralized, scalable Layer 2 solution for Ethereum that utilizes zero-knowledge rollups to enhance transaction speed and reduce costs. It aims to provide a secure and efficient environment for building decentralized applications.",
       "events_observed_utc": "2026-11-14T12:06:52Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:20Z",
       "name": "Starknet",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -2773,10 +2813,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 22861,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 87,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 51332357.1
+          },
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 50490581.87
+          },
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 14715843.43
+          },
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 8974618.7
+          },
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 7653047.09
+          },
+          {
+            "exchange": "",
+            "pair": "TIA/USDT",
+            "volume_24h_usd": 7457010.07
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 177227419.12
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Celestia (TIA) is a modular blockchain network designed to separate the consensus and data availability layers, enabling developers to create customized blockchains without the complexities of building their own infrastructure. It aims to improve scalability and flexibility for decentralized applications.",
       "events_observed_utc": "2026-11-14T12:06:52Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:20Z",
       "name": "Celestia",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -2813,10 +2893,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 22974,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 53,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "TAO/USDT",
+            "volume_24h_usd": 113485560.87
+          },
+          {
+            "exchange": "",
+            "pair": "TAO/USDT",
+            "volume_24h_usd": 24103242.01
+          },
+          {
+            "exchange": "",
+            "pair": "TAO/USDT",
+            "volume_24h_usd": 20610351.58
+          },
+          {
+            "exchange": "",
+            "pair": "TAO/USDT",
+            "volume_24h_usd": 15524228.73
+          },
+          {
+            "exchange": "",
+            "pair": "TAO/USDC",
+            "volume_24h_usd": 8551459.86
+          },
+          {
+            "exchange": "",
+            "pair": "TAO/USD",
+            "volume_24h_usd": 8547876.71
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 248054207.55
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "BitTensor (TAO) is a decentralized ecosystem that enables artificial intelligence training by allowing users to contribute computing power and be rewarded in TAO tokens. It aims to create a collaborative network for machine learning with enhanced scalability and efficiency.",
       "events_observed_utc": "2026-11-14T12:06:52Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:20Z",
       "name": "Bittensor",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -2856,10 +2976,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 23095,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 165,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "BONK/USD",
+            "volume_24h_usd": 107984885000
+          },
+          {
+            "exchange": "",
+            "pair": "BONK/USDT",
+            "volume_24h_usd": 2539346.92
+          },
+          {
+            "exchange": "",
+            "pair": "BONK/USDT",
+            "volume_24h_usd": 1585309.16
+          },
+          {
+            "exchange": "",
+            "pair": "BONK/USDT",
+            "volume_24h_usd": 1269516.78
+          },
+          {
+            "exchange": "",
+            "pair": "BONK/USDT",
+            "volume_24h_usd": 1150840.73
+          },
+          {
+            "exchange": "",
+            "pair": "BONK/TRY",
+            "volume_24h_usd": 804449.2
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 108000131076.26
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Bonk (BONK) is a community-driven meme cryptocurrency designed for fun and engagement within the Solana ecosystem. It aims to introduce users to the world of crypto through its playful branding and initiatives.",
       "events_observed_utc": "2026-11-14T12:06:53Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Bonk",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -2890,10 +3050,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 23149,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 53,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "SEI/USDT",
+            "volume_24h_usd": 12704064.69
+          },
+          {
+            "exchange": "",
+            "pair": "SEI/USDT",
+            "volume_24h_usd": 10456167.83
+          },
+          {
+            "exchange": "",
+            "pair": "SEI/USD",
+            "volume_24h_usd": 7396169
+          },
+          {
+            "exchange": "",
+            "pair": "SEI/USDT",
+            "volume_24h_usd": 4474273.62
+          },
+          {
+            "exchange": "",
+            "pair": "SEI/USDT",
+            "volume_24h_usd": 1806358.8
+          },
+          {
+            "exchange": "",
+            "pair": "SEI/USDT",
+            "volume_24h_usd": 1107855.71
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 46216788.51
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Sei (SEI) is a specialized layer-1 blockchain designed for trading applications, prioritizing performance, security, and user experience. It aims to provide a fast and scalable environment for decentralized exchanges and financial applications.",
       "events_observed_utc": "2026-11-14T12:06:53Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Sei",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3207,10 +3407,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 26997,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 116,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "ZRO/USDT",
+            "volume_24h_usd": 32942475.83
+          },
+          {
+            "exchange": "",
+            "pair": "ZRO/USDT",
+            "volume_24h_usd": 6328900.02
+          },
+          {
+            "exchange": "",
+            "pair": "ZRO/USDT",
+            "volume_24h_usd": 4439624.2
+          },
+          {
+            "exchange": "",
+            "pair": "ZRO/USDT",
+            "volume_24h_usd": 3618613.44
+          },
+          {
+            "exchange": "",
+            "pair": "ZRO/USDT",
+            "volume_24h_usd": 3594002.95
+          },
+          {
+            "exchange": "",
+            "pair": "ZRO/USDC",
+            "volume_24h_usd": 3134846.49
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 88047007.55
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "LayerZero (ZRO) is an omnichain interoperability protocol that enables seamless communication between different blockchain networks, allowing dApps to operate across diverse ecosystems. It aims to enhance the user experience by facilitating cross-chain interactions without sacrificing security or performance.",
       "events_observed_utc": "2026-11-14T12:06:53Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "LayerZero",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3243,10 +3483,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 27075,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 34,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "MNT/USDT",
+            "volume_24h_usd": 8357730.17
+          },
+          {
+            "exchange": "",
+            "pair": "MNT/USDC",
+            "volume_24h_usd": 840876.85
+          },
+          {
+            "exchange": "",
+            "pair": "MNT/USDT",
+            "volume_24h_usd": 662746.28
+          },
+          {
+            "exchange": "",
+            "pair": "MNT/USDC",
+            "volume_24h_usd": 514393.38
+          },
+          {
+            "exchange": "",
+            "pair": "MNT/USDT",
+            "volume_24h_usd": 455461.1
+          },
+          {
+            "exchange": "",
+            "pair": "MNT/USDC",
+            "volume_24h_usd": 346348.57
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 13062657.11
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Mantle (MNT) is a decentralized layer-2 scaling solution built on Ethereum, designed to enhance transaction speeds and reduce gas fees for users and developers. It aims to provide a seamless experience for decentralized applications and blockchain interactions.",
       "events_observed_utc": "2026-11-14T12:06:53Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Mantle",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3278,10 +3558,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 28081,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 128,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "SPX/USDT",
+            "volume_24h_usd": 7541362.87
+          },
+          {
+            "exchange": "",
+            "pair": "SPX/USDT",
+            "volume_24h_usd": 4447452.11
+          },
+          {
+            "exchange": "",
+            "pair": "SPX/USDT",
+            "volume_24h_usd": 2678124.37
+          },
+          {
+            "exchange": "",
+            "pair": "SPX/USDT",
+            "volume_24h_usd": 1185270.04
+          },
+          {
+            "exchange": "",
+            "pair": "SPX/USDT",
+            "volume_24h_usd": 1023494.06
+          },
+          {
+            "exchange": "",
+            "pair": "SPX/USD",
+            "volume_24h_usd": 596626.8
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 21315835.48
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "SPX6900 (SPX) is a decentralized blockchain platform designed for secure and scalable applications, focusing on interoperability and user-centric features. It aims to enhance the overall user experience within the cryptocurrency ecosystem.",
       "events_observed_utc": "2026-11-14T12:06:53Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "SPX6900",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3306,10 +3626,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 28177,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 90,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 11141252.91
+          },
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 3866289.36
+          },
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 2119620.53
+          },
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 1360300.45
+          },
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 963268.91
+          },
+          {
+            "exchange": "",
+            "pair": "PYTH/USDT",
+            "volume_24h_usd": 933997.58
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 27413529.9
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Pyth Network is a decentralized oracle solution that provides real-time data feeds for cryptocurrencies and other financial assets, empowering developers to build reliable DeFi applications.",
       "events_observed_utc": "2026-11-14T12:06:54Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Pyth Network",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3348,10 +3708,35 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 28298,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 3,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "BEAM/USDT",
+            "volume_24h_usd": 108170.24
+          },
+          {
+            "exchange": "",
+            "pair": "BEAM/USDT",
+            "volume_24h_usd": 57306.6
+          },
+          {
+            "exchange": "",
+            "pair": "BEAM/USD",
+            "volume_24h_usd": 8046.62
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 173523.46
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Beam (BEAM) is a privacy-focused cryptocurrency utilizing the Mimblewimble protocol to enable confidential transactions and enhance user anonymity. It aims to provide scalability and simplicity while maintaining a high level of security.",
       "events_observed_utc": "2026-11-14T12:06:54Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Beam",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3400,10 +3785,35 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 29210,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 3,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "JUP/USDT",
+            "volume_24h_usd": 137099.52
+          },
+          {
+            "exchange": "",
+            "pair": "JUP/ETH",
+            "volume_24h_usd": 21418.71
+          },
+          {
+            "exchange": "",
+            "pair": "JUP/WETH",
+            "volume_24h_usd": 3.57
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 158521.8
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Jupiter (JUP) is a cryptocurrency designed for the decentralized creation and management of user-focused applications, emphasizing interoperability and user-friendliness. It aims to connect various blockchain ecosystems while providing tools for developers and users alike.",
       "events_observed_utc": "2026-11-14T12:06:54Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:21Z",
       "name": "Jupiter",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3477,10 +3887,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 29420,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 287,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/USDT",
+            "volume_24h_usd": 12328656.21
+          },
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/XAUT0",
+            "volume_24h_usd": 3961365.86
+          },
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/USDT",
+            "volume_24h_usd": 1878338.5
+          },
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/USDT",
+            "volume_24h_usd": 1707534.69
+          },
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/USDT",
+            "volume_24h_usd": 1207118.49
+          },
+          {
+            "exchange": "",
+            "pair": "VIRTUAL/KRW",
+            "volume_24h_usd": 1185573.37
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 32130784.79
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Virtuals Protocol (VIRTUAL) is a decentralized platform that enables the creation, trading, and management of virtual assets within a blockchain ecosystem. It aims to streamline the process of asset tokenization and ensure secure, efficient transactions.",
       "events_observed_utc": "2026-11-14T12:06:54Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Virtuals Protocol",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3510,10 +3960,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 29814,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 61,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 25393604.64
+          },
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 10808398.22
+          },
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 4411702.85
+          },
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 3371232.25
+          },
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 2772552.64
+          },
+          {
+            "exchange": "",
+            "pair": "ETHFI/USDT",
+            "volume_24h_usd": 2537812.63
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 62054885.49
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Ether.fi (ETHFI) is a decentralized staking platform that allows users to earn rewards by staking their Ether (ETH) while maintaining control of their assets. It aims to provide a secure and transparent staking experience within the Ethereum ecosystem.",
       "events_observed_utc": "2026-11-14T12:06:54Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "ether.fi",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3544,10 +4034,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 30171,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:21Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 83,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 176306307.47
+          },
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 30148835.68
+          },
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 24226104.62
+          },
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 23613519.55
+          },
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 20252675.9
+          },
+          {
+            "exchange": "",
+            "pair": "ENA/USDT",
+            "volume_24h_usd": 17414784.14
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 434400552.52
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Ethena (ENA) is a blockchain-based platform that aims to provide decentralized and secure financial services through smart contracts. It focuses on enabling efficient transactions and fostering a collaborative ecosystem for users.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Ethena",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3796,10 +4326,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 32196,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 38,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "HYPE/USDT",
+            "volume_24h_usd": 713331760.4
+          },
+          {
+            "exchange": "",
+            "pair": "HYPE/USD",
+            "volume_24h_usd": 92571482.19
+          },
+          {
+            "exchange": "",
+            "pair": "HYPE/USDC",
+            "volume_24h_usd": 74748066.38
+          },
+          {
+            "exchange": "",
+            "pair": "HYPE/USDT",
+            "volume_24h_usd": 48787817.43
+          },
+          {
+            "exchange": "",
+            "pair": "HYPE/USDC",
+            "volume_24h_usd": 44428774.76
+          },
+          {
+            "exchange": "",
+            "pair": "HYPE/USD",
+            "volume_24h_usd": 44409845.63
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 1174325777.02
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Hyperliquid (HYPE) is a decentralized perpetual exchange designed for trading cryptocurrency derivatives with high efficiency and low latency. It aims to provide users with a seamless trading experience while ensuring liquidity and security.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Hyperliquid",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3945,10 +4515,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 33038,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 38,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "SKY/USDT",
+            "volume_24h_usd": 3601476.37
+          },
+          {
+            "exchange": "",
+            "pair": "SKY/USDT",
+            "volume_24h_usd": 1689092.55
+          },
+          {
+            "exchange": "",
+            "pair": "SKY/USDT",
+            "volume_24h_usd": 588093.5
+          },
+          {
+            "exchange": "",
+            "pair": "SKY/USDS",
+            "volume_24h_usd": 509968.28
+          },
+          {
+            "exchange": "",
+            "pair": "SKY/USDT",
+            "volume_24h_usd": 446121.2
+          },
+          {
+            "exchange": "",
+            "pair": "SKY/USD",
+            "volume_24h_usd": 207007.18
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 8237812.93
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Sky (SKY) is a decentralized blockchain platform that aims to facilitate the development of decentralized applications and smart contracts, leveraging a unique consensus mechanism for enhanced security. Its ecosystem is designed to provide scalability and efficiency for developers and users alike.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Sky",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -3982,7 +4592,7 @@
       "description_excerpt": "",
       "has_substantive_descriptive_context": false,
       "name": "World Liberty Financial",
-      "observed_utc": "2026-11-14T12:09:50Z",
+      "observed_utc": "2026-11-14T12:11:24Z",
       "primary_links_unverified": {
         "blockchain_site": [
           "https://etherscan.io/token/0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6",
@@ -4015,10 +4625,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 34104,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 81,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 6172455.38
+          },
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 4802880.09
+          },
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 4219713.93
+          },
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 1944003.75
+          },
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 1305828.98
+          },
+          {
+            "exchange": "",
+            "pair": "MORPHO/USDT",
+            "volume_24h_usd": 1157311.11
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 27523575.75
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Morpho (MORPHO) is a decentralized platform designed to enhance user privacy and security in digital transactions and communications. It utilizes innovative cryptographic techniques to empower individuals while maintaining transparency and decentralization.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Morpho",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -4053,10 +4703,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 34466,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 89,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "PENGU/USDT",
+            "volume_24h_usd": 29213360.41
+          },
+          {
+            "exchange": "",
+            "pair": "PENGU/USDT",
+            "volume_24h_usd": 3972368.06
+          },
+          {
+            "exchange": "",
+            "pair": "PENGU/USDC",
+            "volume_24h_usd": 2623925.61
+          },
+          {
+            "exchange": "",
+            "pair": "PENGU/USDT",
+            "volume_24h_usd": 1721983.71
+          },
+          {
+            "exchange": "",
+            "pair": "PENGU/USDT",
+            "volume_24h_usd": 1679524.87
+          },
+          {
+            "exchange": "",
+            "pair": "PENGU/KRW",
+            "volume_24h_usd": 1539288.26
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 50241108.99
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Pudgy Penguins (PENGU) is a collection of unique, hand-drawn NFT penguins designed for digital ownership and community engagement. The project aims to create a fun and lively ecosystem around its characters, offering various interactive experiences for holders.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Pudgy Penguins",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -4085,10 +4775,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 35336,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 108,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDT",
+            "volume_24h_usd": 50374962.79
+          },
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDT",
+            "volume_24h_usd": 5405861.86
+          },
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDT",
+            "volume_24h_usd": 4491799.32
+          },
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDC",
+            "volume_24h_usd": 4245462.1
+          },
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDC",
+            "volume_24h_usd": 3607408.95
+          },
+          {
+            "exchange": "",
+            "pair": "TRUMP/USDT",
+            "volume_24h_usd": 3322752.05
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 94151331.11
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "OFFICIAL TRUMP (TRUMP) is a cryptocurrency designed to support and promote the legacy of Donald Trump, aiming to engage his supporters within the blockchain ecosystem. It utilizes fan-driven initiatives to enhance community involvement and value.",
       "events_observed_utc": "2026-11-14T12:09:35Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "OFFICIAL TRUMP",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -4114,10 +4844,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 35491,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 11,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 1675198.96
+          },
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 1353195.37
+          },
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 753875.57
+          },
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 127436.44
+          },
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 94020.19
+          },
+          {
+            "exchange": "",
+            "pair": "M/USDT",
+            "volume_24h_usd": 76831.36
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 4228215.02
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "MemeCore (M) is a cryptocurrency that aims to blend humor and digital culture, allowing users to engage with meme-based content while participating in a unique blockchain ecosystem. It brings a playful approach to the crypto space, celebrating internet meme culture.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "MemeCore",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -4146,10 +4916,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 35509,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 80,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "VVV/USDT",
+            "volume_24h_usd": 25266764.08
+          },
+          {
+            "exchange": "",
+            "pair": "VVV/USDT",
+            "volume_24h_usd": 14187344.8
+          },
+          {
+            "exchange": "",
+            "pair": "VVV/USDC",
+            "volume_24h_usd": 7501964.1
+          },
+          {
+            "exchange": "",
+            "pair": "VVV/USD",
+            "volume_24h_usd": 7498767.85
+          },
+          {
+            "exchange": "",
+            "pair": "VVV/USDT",
+            "volume_24h_usd": 6755252.0
+          },
+          {
+            "exchange": "",
+            "pair": "VVV/USDT",
+            "volume_24h_usd": 3990084.13
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 78341679.94
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Venice Token (VVV) is a cryptocurrency designed to facilitate transactions and interactions within the Venice ecosystem, promoting community engagement and collaboration. It aims to provide users with a secure and innovative platform for various digital activities.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Venice Token",
       "observed_utc": "2026-11-13T22:51:08Z",
       "primary_links_unverified": {
@@ -4179,10 +4989,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 35697,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 15,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 1574786.99
+          },
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 431022.09
+          },
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 291109.32
+          },
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 279137.59
+          },
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 163042.3
+          },
+          {
+            "exchange": "",
+            "pair": "PI/USDT",
+            "volume_24h_usd": 134758.74
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 3141994.59
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Pi Network is a digital currency that aims to provide users with an accessible way to mine cryptocurrency on their mobile devices without consuming significant resources. It leverages a unique consensus algorithm to secure the network while enabling users to earn Pi coins through participation.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Pi",
       "observed_utc": "2026-11-14T12:09:33Z",
       "primary_links_unverified": {
@@ -4309,10 +5159,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 36341,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 71,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 46107888.16
+          },
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 10592053.36
+          },
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 6913857.49
+          },
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 6756817.56
+          },
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 2930537.24
+          },
+          {
+            "exchange": "",
+            "pair": "ASTER/USDT",
+            "volume_24h_usd": 1722408.79
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 85651696.63
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Aster (ASTER) is a decentralized platform designed to enable the easy development and deployment of decentralized applications (dApps) and smart contracts. It aims to enhance scalability and interoperability within the blockchain ecosystem.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Aster",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4427,10 +5317,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 36507,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 76,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "PUMP/USDT",
+            "volume_24h_usd": 9226072.91
+          },
+          {
+            "exchange": "",
+            "pair": "PUMP/USDT",
+            "volume_24h_usd": 5164106.51
+          },
+          {
+            "exchange": "",
+            "pair": "PUMP/USDC",
+            "volume_24h_usd": 4668927.52
+          },
+          {
+            "exchange": "",
+            "pair": "PUMP/USD",
+            "volume_24h_usd": 4666971.19
+          },
+          {
+            "exchange": "",
+            "pair": "SOL/PUMP",
+            "volume_24h_usd": 4415476.52
+          },
+          {
+            "exchange": "",
+            "pair": "PUMP/USDT",
+            "volume_24h_usd": 4172959.46
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 53617448.41
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Pump.fun (PUMP) is a platform designed for fostering community engagement through incentivized participation in various activities, often centered around gaming and cryptocurrency. It aims to bring together users in a fun and rewarding environment.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Pump.fun",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4457,10 +5387,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 36645,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 46,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 16712836.53
+          },
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 4925573.24
+          },
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 2605279.85
+          },
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 1190619.4
+          },
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 869441.33
+          },
+          {
+            "exchange": "",
+            "pair": "XPL/USDT",
+            "volume_24h_usd": 644807.85
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 30010473.6
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Plasma (XPL) is a cryptocurrency designed to facilitate fast and secure transactions while providing a decentralized platform for developers to build applications. It aims to enhance scalability and privacy within the blockchain ecosystem.",
       "events_observed_utc": "2026-11-14T12:09:36Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Plasma",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4713,10 +5683,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 38482,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:22Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 24,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "FF/USDT",
+            "volume_24h_usd": 1967802.76
+          },
+          {
+            "exchange": "",
+            "pair": "FF/USDT",
+            "volume_24h_usd": 688934.93
+          },
+          {
+            "exchange": "",
+            "pair": "FF/USDT",
+            "volume_24h_usd": 566496.74
+          },
+          {
+            "exchange": "",
+            "pair": "FF/TRY",
+            "volume_24h_usd": 164704.0
+          },
+          {
+            "exchange": "",
+            "pair": "FF/KRW",
+            "volume_24h_usd": 163212.43
+          },
+          {
+            "exchange": "",
+            "pair": "FF/USDT",
+            "volume_24h_usd": 117695.76
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 4179521.35
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Falcon Finance (FF) is a decentralized finance platform that aims to provide users with a suite of financial services, including yield farming and staking. It focuses on enhancing liquidity and utility within the cryptocurrency ecosystem.",
       "events_observed_utc": "2026-11-14T12:09:37Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:22Z",
       "name": "Falcon Finance",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4743,10 +5753,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 38590,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 17,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "币安人生/USDT",
+            "volume_24h_usd": 4734350.65
+          },
+          {
+            "exchange": "",
+            "pair": "币安人生/USDT",
+            "volume_24h_usd": 1548777.18
+          },
+          {
+            "exchange": "",
+            "pair": "币安人生/WBNB",
+            "volume_24h_usd": 1006871.46
+          },
+          {
+            "exchange": "",
+            "pair": "币安人生/USDT",
+            "volume_24h_usd": 745334.89
+          },
+          {
+            "exchange": "",
+            "pair": "币安人生/USDT",
+            "volume_24h_usd": 323796.64
+          },
+          {
+            "exchange": "",
+            "pair": "币安人生/USDC",
+            "volume_24h_usd": 57552.86
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 8518453.11
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "币安人生 is a digital currency associated with the Binance platform, designed to enhance user experience and engagement within the Binance ecosystem.",
       "events_observed_utc": "2026-11-14T12:09:37Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "币安人生",
       "observed_utc": "2026-11-14T12:09:33Z",
       "primary_links_unverified": {},
@@ -4772,10 +5822,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 38828,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 25,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "KITE/USDT",
+            "volume_24h_usd": 4746380.48
+          },
+          {
+            "exchange": "",
+            "pair": "KITE/USDT",
+            "volume_24h_usd": 1562356.52
+          },
+          {
+            "exchange": "",
+            "pair": "KITE/USDT",
+            "volume_24h_usd": 1548291.44
+          },
+          {
+            "exchange": "",
+            "pair": "KITE/USDT",
+            "volume_24h_usd": 863647.68
+          },
+          {
+            "exchange": "",
+            "pair": "KITE/USDT",
+            "volume_24h_usd": 750743.58
+          },
+          {
+            "exchange": "",
+            "pair": "KITE/USDC",
+            "volume_24h_usd": 202993.67
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 10677548.24
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Kite (KITE) is a cryptocurrency designed to facilitate secure and efficient peer-to-peer transactions within its ecosystem. It aims to enhance user experience through innovative features and strong community engagement.",
       "events_observed_utc": "2026-11-14T12:09:37Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "Kite",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4802,10 +5892,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 38849,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 21,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/USDT",
+            "volume_24h_usd": 34432387.35
+          },
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/USDT",
+            "volume_24h_usd": 14637930.35
+          },
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/USDT",
+            "volume_24h_usd": 2378215.59
+          },
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/USDT",
+            "volume_24h_usd": 2207546.74
+          },
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/KRW",
+            "volume_24h_usd": 1453360.79
+          },
+          {
+            "exchange": "",
+            "pair": "PIEVERSE/USDT",
+            "volume_24h_usd": 1132391.69
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 57857482.97
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Pieverse (PIEVERSE) is a blockchain-based platform designed to provide a decentralized ecosystem for digital assets and gaming, enabling users to create, share, and monetize their content. Its goal is to empower creators and gamers through innovative technology and community-driven initiatives.",
       "events_observed_utc": "2026-11-14T12:09:38Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "Pieverse",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4839,10 +5969,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 38892,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 24,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 1925086.45
+          },
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 1753947.58
+          },
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 1172636.45
+          },
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 753390.26
+          },
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 718213.02
+          },
+          {
+            "exchange": "",
+            "pair": "STABLE/USDT",
+            "volume_24h_usd": 308760.12
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 7174388.2
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "What is Stable? Stable (STABLE) is a cryptocurrency project designed to provide stability in the digital asset market. Launched on the Ethereum blockchain, Stable aims to address the volatility commonly associated with cryptocurrencies. It achieves this by pegging its value to a stable asset or basket of assets, ensuring minimal price fluctuations. The native token, STABLE, serves as a medium for transactions within the network and is primarily u",
       "events_observed_utc": "2026-11-14T12:09:38Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "Stable",
       "observed_utc": "2026-11-14T12:06:40Z",
       "primary_links_unverified": {
@@ -4950,10 +6120,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 39064,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 32,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "NIGHT/USDT",
+            "volume_24h_usd": 16999897.03
+          },
+          {
+            "exchange": "",
+            "pair": "NIGHT/USDT",
+            "volume_24h_usd": 4446972.86
+          },
+          {
+            "exchange": "",
+            "pair": "NIGHT/USDT",
+            "volume_24h_usd": 4119625.27
+          },
+          {
+            "exchange": "",
+            "pair": "NIGHT/USD",
+            "volume_24h_usd": 2743327.6
+          },
+          {
+            "exchange": "",
+            "pair": "NIGHT/USDT",
+            "volume_24h_usd": 1865476.18
+          },
+          {
+            "exchange": "",
+            "pair": "NIGHT/USDT",
+            "volume_24h_usd": 1579468.95
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 36620580.53
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "What is Midnight? Midnight (NIGHT) is a privacy-focused blockchain project designed to enhance data protection and confidentiality for its users. The project is built on a Layer 1 blockchain, emphasizing secure and private transactions. Midnight aims to address the growing demand for privacy in the digital age by offering a platform where sensitive information can be securely managed and transferred. The native token, NIGHT, plays a crucial role",
       "events_observed_utc": "2026-11-14T12:09:38Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "Midnight",
       "observed_utc": "2026-11-14T12:09:33Z",
       "primary_links_unverified": {
@@ -4985,10 +6195,50 @@
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 39125,
       "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:23Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 52,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 58700495.85
+          },
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 14196234.5
+          },
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 11948452.19
+          },
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 10372270.81
+          },
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 8544707.75
+          },
+          {
+            "exchange": "",
+            "pair": "LIT/USDT",
+            "volume_24h_usd": 7380896.56
+          }
+        ],
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 157791589.75
+      },
       "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
       "description_excerpt": "Lighter is a decentralized trading platform built for unmatched security and scale. It’s the first exchange to offer verifiable order matching and liquidations while delivering best-in-class performance on par with traditional exchanges.",
       "events_observed_utc": "2026-11-14T12:09:38Z",
       "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:23Z",
       "name": "Lighter",
       "observed_utc": "2026-11-14T12:07:17Z",
       "primary_links_unverified": {
@@ -5017,39 +6267,84 @@
     },
     "3957": {
       "categories": [
-        "Exchange-based Tokens",
-        "Centralized Exchange (CEX) Token",
-        "Ethereum Ecosystem",
-        "Sora Ecosystem"
+        "Exchange",
+        "Ethereum (ETH) Token (ERC-20)",
+        "Centralized Exchange (CEX)"
       ],
       "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
       "cmc_id": 3957,
-      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
-      "description_excerpt": "",
-      "has_substantive_descriptive_context": false,
-      "name": "UNUS SED LEO",
-      "observed_utc": "2026-11-14T12:09:43Z",
-      "primary_links_unverified": {
-        "blockchain_site": [
-          "https://eosflare.io/account/bitfinexleo1",
-          "https://intel.arkm.com/explorer/token/leo-token"
+      "coin_events": [],
+      "coin_markets": {
+        "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+        "observed_utc": "2026-11-14T12:11:20Z",
+        "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+        "reported_pair_count_with_usd_volume": 13,
+        "top_markets_by_reported_24h_volume": [
+          {
+            "exchange": "",
+            "pair": "LEO/USD",
+            "volume_24h_usd": 109448.25
+          },
+          {
+            "exchange": "",
+            "pair": "LEO/USDT",
+            "volume_24h_usd": 10610.46
+          },
+          {
+            "exchange": "",
+            "pair": "LEO/WETH",
+            "volume_24h_usd": 1740.74
+          },
+          {
+            "exchange": "",
+            "pair": "LEO/USDT",
+            "volume_24h_usd": 1727.74
+          },
+          {
+            "exchange": "",
+            "pair": "LEO/USDT",
+            "volume_24h_usd": 917.66
+          },
+          {
+            "exchange": "",
+            "pair": "LEO/USDC",
+            "volume_24h_usd": 90.61
+          }
         ],
-        "homepage": [
+        "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 124592.55
+      },
+      "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
+      "description_excerpt": "LEO Token is a utility token used on the Bitfinex exchange to reduce trading fees and access various services within the platform. It aims to enhance liquidity and support the overall ecosystem of Bitfinex and its users.",
+      "events_observed_utc": "2026-11-14T12:11:20Z",
+      "has_substantive_descriptive_context": true,
+      "markets_observed_utc": "2026-11-14T12:11:20Z",
+      "name": "UNUS SED LEO",
+      "observed_utc": "2026-11-14T12:11:18Z",
+      "primary_links_unverified": {
+        "explorer": [
+          "https://etherscan.io/token/0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3",
+          "https://ethplorer.io/address/0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3"
+        ],
+        "website": [
           "https://www.bitfinex.com/"
         ],
-        "official_forum_url": [],
-        "source_code": []
+        "whitepaper": [
+          "https://static.coinpaprika.com/whitepapers/leo-leo-token/whitepaper.pdf"
+        ]
       },
       "project_team_unverified": [],
-      "provider": "coingecko",
-      "provider_id": "leo-token",
+      "provider": "coinpaprika",
+      "provider_id": "leo-leo-token",
       "provider_identity_validation": "PINNED_PROVIDER_ID_NAME_AND_SYMBOL",
-      "source_url": "https://www.coingecko.com/en/coins/leo-token",
+      "source_url": "https://coinpaprika.com/coin/leo-leo-token/",
       "symbol": "LEO",
       "technology_and_project_attributes": {
-        "asset_platform_id": "ethereum",
-        "block_time_in_minutes": 0,
-        "genesis_date": "2019-05-20"
+        "development_status": "Working product",
+        "hash_algorithm": "None",
+        "open_source": false,
+        "org_structure": "Centralized",
+        "proof_type": "Not mineable",
+        "type": "token"
       }
     },
     "4030": {
