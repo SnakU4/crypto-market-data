@@ -1194,6 +1194,18 @@ def main():
     if a.max_followups>40 or a.max_articles>80:p.error("Free tier bounded to 40 searches/80 articles")
     manifest,coverage=build(a.root,a.out,cutoff,a.network,a.max_followups,a.max_articles,
                             live_collection=(a.cutoff is None))
+    # Compatibility with historical workflow-run retries: GitHub reruns the
+    # OLD workflow YAML even when checkout ref is current main. Old YAML does
+    # not git-add these newly introduced output files, leaving tracked data
+    # dirty and making its final git pull --rebase fail. Stage ONLY generated
+    # data paths; the workflow still owns commits, publishing and permissions.
+    import os
+    if os.environ.get("GITHUB_ACTIONS")=="true" and a.out is None:
+        import subprocess
+        subprocess.run(["git","add","--",
+           "docs/intelligence/primary_coin_context.json",
+           "docs/intelligence/google_news_resolution_history.json"],
+           cwd=ROOT,check=True,timeout=15)
     print(json.dumps({"status":"SUCCESS","manifest":manifest,
        "evidence_counts":coverage["evidence_counts"],
        "coverage":coverage["per_coin"]},ensure_ascii=False))
