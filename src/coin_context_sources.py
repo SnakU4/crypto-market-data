@@ -36,7 +36,9 @@ VERIFIED_PROVIDER_ALIASES = {
     ("coingecko",35697): ("pi-network","Pi Network"),
     ("coinpaprika",35697): ("pi2-pi-network","Pi Network"),
     ("coinpaprika",39064): ("night-midnight2","Midnight"),
-    ("coinpaprika",38590): ("bianrensheng-bianrensheng","币安人生 (BinanceLife)")
+    ("coinpaprika",38590): ("bianrensheng-bianrensheng","币安人生 (BinanceLife)"),
+    ("coingecko",38590): ("bianrensheng","币安人生 (BinanceLife)"),
+    ("coingecko",39064): ("midnight-3","Midnight")
 }
 
 
