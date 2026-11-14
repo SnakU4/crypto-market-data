@@ -16,6 +16,8 @@ import json
 import pathlib
 import re
 import urllib.parse
+import urllib.request
+import urllib.error
 
 UTC=dt.timezone.utc
 HISTORY="docs/intelligence/coin_repository_releases.json"
@@ -50,7 +52,6 @@ def valid_repo(url):
     return "/".join(parts)
 
 def release_event(asset,repo,row,cutoff,observed,information):
-    from research_collector import parse_utc
     try:
         from discovery_quality import has_additional_information
     except ImportError:
@@ -90,6 +91,34 @@ def release_event(asset,repo,row,cutoff,observed,information):
         "time_classification":"PUBLISHER_DATE" if pub else "PUBLICATION_DATE_UNKNOWN",
         "source_identity_caveat":"Third-party profile links repository; do not assume all repo work changes the tradeable token."
     }
+
+def api_releases(repo,opener=None):
+    """Official keyless REST API, capped and without third-party scraping.
+    Return no false data on 403/429 rate limits or inaccessible repositories.
+    """
+    owner,name=repo.split("/",1)
+    url=("https://api.github.com/repos/"+urllib.parse.quote(owner,safe="")
+         +"/"+urllib.parse.quote(name,safe="")+"/releases?per_page=7")
+    req=urllib.request.Request(url,headers={
+        "Accept":"application/vnd.github+json",
+        "X-GitHub-Api-Version":"2022-11-28",
+        "User-Agent":"CMC100-Public-Project-Release-Research/1.0"})
+    try:
+        open_fn=opener or urllib.request.urlopen
+        with open_fn(req,timeout=8) as response:
+            final=urllib.parse.urlsplit(response.geturl())
+            if (final.scheme!="https" or final.hostname!="api.github.com"
+                or final.path!=urllib.parse.urlsplit(url).path):
+                return [],"INVALID_REDIRECT"
+            raw=response.read(700_001)
+            if len(raw)>700_000:return [],"OVERSIZED"
+        obj=json.loads(raw)
+        if not isinstance(obj,list):return [],"INVALID_RESPONSE"
+        return [x for x in obj if isinstance(x,dict) and not x.get("draft")][:7],"OK"
+    except urllib.error.HTTPError as ex:
+        return [],"HTTP_"+str(ex.code)
+    except (OSError,ValueError,TypeError,TimeoutError):
+        return [],"ACCESS_OR_JSON_ERROR"
 
 def collect(root,assets,profiles,events,cutoff,network=False,
             max_repos=15,download=None):
@@ -135,42 +164,63 @@ def collect(root,assets,profiles,events,cutoff,network=False,
                 continue
             key=str(cid)+":"+repo.lower()
             t=parse((previous.get(key) or {}).get("checked_utc"))
-            if t and dt.timedelta(0)<=dt.datetime.now(UTC)-t<dt.timedelta(hours=72):
-                break
+            if t:
+                status=str((previous.get(key) or {}).get("status") or "")
+                cooldown=24 if status in ("HTTP_403","HTTP_429","ACCESS_OR_JSON_ERROR") else 12
+                if dt.timedelta(0)<=dt.datetime.now(UTC)-t<dt.timedelta(hours=cooldown):
+                    break
             choices.append((asset,repo,key))
             ids_selected.add(cid)
             break
         if len(choices)>=max_repos:break
-    if download is None:
-        try:from primary_source_discovery import retrieve as download
-        except ImportError:from src.primary_source_discovery import retrieve as download
-    try:from research_collector import parse_feed
-    except ImportError:from src.research_collector import parse_feed
     def task(job):
         asset,repo,key=job
-        url="https://github.com/"+repo+"/releases.atom"
         try:
-            raw,status=download(url)
-            entries=parse_feed(raw,"DIRECT_LINKED_"+str(asset["cmc_id"]),
-                stamp(dt.datetime.now(UTC)),limit=30) if raw else []
+            if download is not None:
+                # Offline test injection for Atom-compatible source examples.
+                try:from research_collector import parse_feed
+                except ImportError:from src.research_collector import parse_feed
+                raw,status=download("https://github.com/"+repo+"/releases.atom")
+                entries=parse_feed(raw,"DIRECT_LINKED_"+str(asset["cmc_id"]),
+                    stamp(dt.datetime.now(UTC)),limit=30) if raw else []
+            else:
+                # Production uses the keyless public GitHub REST API. The
+                # generic website/feed discoverer intentionally excludes
+                # GitHub, so never call it for an authoritative releases feed.
+                releases,status=api_releases(repo)
+                entries=[{"headline":row.get("name") or row.get("tag_name"),
+                          "excerpt":row.get("body") or "",
+                          "url":row.get("html_url"),
+                          "published_utc":row.get("published_at")}
+                         for row in releases]
             found=[]
             for row in entries:
                 event=release_event(asset,repo,row,cutoff,stamp(dt.datetime.now(UTC)),{})
-                if event: found.append(event)
+                if event:found.append(event)
             return key,repo,found,status,len(entries)
         except (OSError,UnicodeError,TypeError,ValueError,TimeoutError) as exc:
             return key,repo,[],type(exc).__name__,0
     new=[];probe_log=[]
     if network:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-            for key,repo,items,status,count in pool.map(task,choices):
-                now=stamp(dt.datetime.now(UTC))
-                previous[key]={"checked_utc":now,"repo":repo,
-                               "status":str(status),"feed_entries":count,
-                               "substantive_events":len(items)}
-                probe_log.append({"repo":repo,"status":str(status),
-                                  "feed_entries":count,"substantive_events":len(items)})
-                new.extend(items[:6])
+        # A small initial probe prevents 12 simultaneous GitHub 403/429s
+        # on runners sharing the unauthenticated 60-request/hour quota.
+        first=choices[:2]
+        rest=choices[2:]
+        results=[task(x) for x in first]
+        blocked=bool(first and all(x[3] in ("HTTP_403","HTTP_429") for x in results))
+        if not blocked:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+                results.extend(pool.map(task,rest))
+        for key,repo,items,status,count in results:
+            now=stamp(dt.datetime.now(UTC))
+            previous[key]={"checked_utc":now,"repo":repo,
+                           "status":str(status),"feed_entries":count,
+                           "substantive_events":len(items)}
+            probe_log.append({"repo":repo,"status":str(status),
+                              "feed_entries":count,"substantive_events":len(items)})
+            new.extend(items[:6])
+        if blocked:probe_log.append({"status":"RATE_LIMIT_CIRCUIT_OPEN_AFTER_2_FAILURES",
+                                    "not_attempted":len(rest)})
     combined={e["id"]:e for e in cached+new}
     combined_items=list(combined.values())
     recent={24:0,72:0,168:0}
@@ -179,7 +229,9 @@ def collect(root,assets,profiles,events,cutoff,network=False,
                 dt.timedelta(0)<=cutoff-parse(e["published_utc"])<=dt.timedelta(hours=h))
                 for e in combined_items)
     audit={
-        "repositories_probed":len(probe_log),
+        "repositories_probed":sum("repo" in x for x in probe_log),
+        "api":"GITHUB_PUBLIC_REST_RELEASES_KEYLESS",
+        "no_credential_or_paid_api":True,
         "coin_ids_targeted":len(ids_selected) if network else 0,
         "new_substantive_release_events":len(new),
         "newly_supported_coins":len({e["candidate_cmc_ids"][0] for e in new
