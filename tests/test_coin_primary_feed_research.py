@@ -57,6 +57,25 @@ class SourceTests(unittest.TestCase):
             self.assertEqual(a["coins_with_new_source_excerpts"],0)
             self.assertEqual(out,[])
 
+
+    def test_project_specific_feed_allows_generic_release_title_but_not_exchange(self):
+        generic=RSS.replace(b"XRP Ledger validator network migration plan",
+                            b"Validator network migration plan")
+        with tempfile.TemporaryDirectory() as temp:
+            items,_,audit=m.collect(temp,ASSETS,PROFILES,[],NOW,network=True,
+                get=lambda url:(generic,"OK") if url.endswith(".xml") else fetch(url))
+            self.assertEqual(audit["coins_with_new_source_excerpts"],1)
+            self.assertEqual(len(items),1)
+        exchange={"52":{"primary_links_unverified":{"website":["https://binance.com/"]}}}
+        def exchange_feed(url):
+            if url=="https://binance.com/":
+                return HTML,"OK"
+            return generic,"OK"
+        with tempfile.TemporaryDirectory() as temp:
+            items,_,audit=m.collect(temp,ASSETS,exchange,[],NOW,network=True,get=exchange_feed)
+            self.assertEqual(audit["coins_with_new_source_excerpts"],0)
+            self.assertEqual(items,[])
+
     def test_historical_replay_never_queries_the_network(self):
         with tempfile.TemporaryDirectory() as temp:
             rows,_,audit=m.collect(temp,ASSETS,PROFILES,[],NOW,network=False,
