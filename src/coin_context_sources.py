@@ -25,6 +25,19 @@ PAPRIKA = "https://api.coinpaprika.com/v1"
 GECKO = "https://api.coingecko.com/api/v3"
 CACHE_PATH = "docs/intelligence/coin_profiles.json"
 PROFILES_MAX_AGE_HOURS = 72
+# Narrow, manually corroborated ticker/name aliases. Every mapping still requires
+# the published provider ID, expected name, and exact ticker to match. These
+# are not heuristic aliases and MUST NEVER be inferred for arbitrary tickers.
+# Public corroboration: Bitfinex LEO issuer, minepi.com PI, midnight.network
+# NIGHT supply and CoinPaprika night-midnight2 (not unrelated night-midnight),
+# CoinPaprika's community meme listing for 币安人生.
+VERIFIED_PROVIDER_ALIASES = {
+    ("coingecko",3957): ("leo-token","LEO Token"),
+    ("coingecko",35697): ("pi-network","Pi Network"),
+    ("coinpaprika",35697): ("pi2-pi-network","Pi Network"),
+    ("coinpaprika",39064): ("night-midnight2","Midnight"),
+    ("coinpaprika",38590): ("bianrensheng-bianrensheng","币安人生 (BinanceLife)")
+}
 
 
 def stamp(t):
@@ -75,7 +88,7 @@ def fetch_json(url, opener=None):
     return json.loads(raw)
 
 
-def exact_match(assets, listing):
+def exact_match(assets, listing, provider=None):
     """Reject ambiguous listings; require both exact normalized asset name and ticker."""
     found = {}
     index = {}
@@ -92,13 +105,27 @@ def exact_match(assets, listing):
         # Multiple active assets with same name and ticker are NOT safely identifiable.
         if len(rows) == 1:
             found[str(asset["cmc_id"])] = rows[0]["id"]
+            continue
+        pinned=VERIFIED_PROVIDER_ALIASES.get((provider,int(asset["cmc_id"])))
+        if pinned:
+            matches=[x for x in listing if isinstance(x,dict)
+                and x.get("id")==pinned[0]
+                and project_name(x.get("name"))==project_name(pinned[1])
+                and canonical(x.get("symbol"))==canonical(asset["symbol"])
+                and x.get("is_active") is not False]
+            if len(matches)==1:
+                found[str(asset["cmc_id"])]=pinned[0]
     return found
 
 
 def valid_profile(asset, raw, provider, received):
     if not isinstance(raw, dict):
         return None
-    if project_name(raw.get("name")) != project_name(asset["name"]) or canonical(raw.get("symbol")) != canonical(asset["symbol"]):
+    strict=project_name(raw.get("name")) == project_name(asset["name"])
+    alias=VERIFIED_PROVIDER_ALIASES.get((provider,int(asset["cmc_id"])))
+    pinned_ok=bool(alias and str(raw.get("id"))==alias[0]
+        and project_name(raw.get("name"))==project_name(alias[1]))
+    if canonical(raw.get("symbol"))!=canonical(asset["symbol"]) or not (strict or pinned_ok):
         return None
     if provider == "coinpaprika":
         description = clean(raw.get("description"))
@@ -157,7 +184,8 @@ def valid_profile(asset, raw, provider, received):
        "has_substantive_descriptive_context": bool(meaningful),
        "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
        "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
-       "provider_identity_validation": "EXACT_NAME_AND_SYMBOL_MATCH"}
+       "provider_identity_validation": ("PINNED_PROVIDER_ID_NAME_AND_SYMBOL" if
+            pinned_ok and not strict else "EXACT_NAME_AND_SYMBOL_MATCH")}
 
 
 def extra_context(kind, raw, observed, cutoff):
@@ -236,7 +264,7 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
         received = stamp(dt.datetime.now(UTC))
         try:
             pap_list = fetch_json(PAPRIKA + "/coins", opener)
-            pap_ids = exact_match(assets, pap_list)
+            pap_ids = exact_match(assets, pap_list, provider="coinpaprika")
             audit["source_status"]["coinpaprika_coin_list"] = "OK"
             audit["calls"] += 1
         except (ValueError, KeyError, TypeError, OSError, urllib.error.URLError) as exc:
@@ -333,7 +361,7 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
         if missing and max_gecko > 0:
             try:
                 glist = fetch_json(GECKO + "/coins/list", opener)
-                gids = exact_match(missing, glist)
+                gids = exact_match(missing, glist, provider="coingecko")
                 audit["calls"] += 1
                 audit["source_status"]["coingecko_coin_list"] = "OK"
             except (ValueError, KeyError, TypeError, OSError, urllib.error.URLError) as exc:
