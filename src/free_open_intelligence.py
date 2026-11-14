@@ -639,7 +639,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         fetched=parse_time(item.get("fetched_utc"))
         # Old cache records without a fetch timestamp can be used on live
         # runs, never when replaying a historical point-in-time cutoff.
-        if not original or item.get("url")!=original.get("url"):continue
+        if not original or (item.get("lead_url") or item.get("url"))!=original.get("url"):continue
         if not (fetched and fetched<=cutoff or live_collection and (fetched is None or fetched<=dt.datetime.now(UTC))):
             continue
         if not publisher_excerpt_useful(original["title"],item.get("source_excerpt")):
@@ -658,13 +658,22 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                 skip_urls.add(url)
     new_article,article_audit=enrich_direct(events,max_articles if network else 0,
         fetcher,skip_urls=skip_urls)
+    # Resolve a bounded number of opaque Google News links for still-uncovered
+    # assets ONLY via legitimate HTTP redirects/canonical publisher URLs, then
+    # extract publisher text subject to robots/paywall checks and asset matching.
+    try:from coin_news_resolution import collect as resolve_uncovered_google_news
+    except ImportError:from src.coin_news_resolution import collect as resolve_uncovered_google_news
+    google_article,google_history,google_audit=resolve_uncovered_google_news(
+        root,assets,events,existing=earlier_good+new_article,cutoff=cutoff,
+        network=bool(network and live_collection),fetcher=fetcher,
+        max_resolutions=32)
     observed=iso(dt.datetime.now(UTC))
     for url in article_audit.pop("selected_urls",[]):
         past_attempts[url]=observed
     retention_now=dt.datetime.now(UTC)
     past_attempts={url:when for url,when in past_attempts.items()
         if parse_time(when) and dt.timedelta(0)<=retention_now-parse_time(when)<=dt.timedelta(days=35)}
-    article_by_id={x["evidence_id"]:x for x in earlier_good+new_article}
+    article_by_id={x["evidence_id"]:x for x in earlier_good+new_article+google_article}
     article=list(article_by_id.values())
     article_audit["cached_substantive_reused"]=len(earlier_good)
     article_audit["cumulative_substantive_current_corpus"]=len(article)
@@ -1075,6 +1084,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
          "adjacent":ds.get("access_gaps",[])},
       "adaptive_search_results":audit,
       "publisher_article_enrichment_audit":article_audit,
+      "safe_google_news_to_publisher_audit":google_audit,
       "coin_descriptive_sources_audit":profile_audit,
       "curated_original_project_sources_audit":primary_audit,
       "combined_project_background_gaps":effective_project_gaps,
@@ -1121,6 +1131,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "new_public_source_discovery_file":"docs/intelligence/discovered_public_feeds.json",
        "source_probe_history_file":"docs/intelligence/source_probe_history.json",
        "article_attempt_history_file":"docs/intelligence/article_attempt_history.json",
+       "google_news_resolution_history_file":"docs/intelligence/google_news_resolution_history.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
        "original_issuer_project_context_file":"docs/intelligence/primary_coin_context.json",
@@ -1158,6 +1169,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "policy":"Short attributed text only; timestamped accumulated cache; robots respected; NOT verified claims."})
     write(out/"article_attempt_history.json",{"attempts":past_attempts,
           "cooldown_hours":72,"never_conflate_url_with_verified_event":True})
+    write(out/"google_news_resolution_history.json",google_history)
     export=out/"export";export.mkdir(parents=True,exist_ok=True)
     p=export/"evidence_index.jsonl"
     with p.open("w",encoding="utf-8") as f:
