@@ -84,53 +84,70 @@ Results are auditable separately in
 `coverage_audit.json → safe_google_news_to_publisher_audit`; they only improve
 the article coverage when substantive original text was actually retrieved.
 
-## Publisher RSS/Atom instead of opaque search links
+## Publisher RSS/Atom, public releases and project-site articles
 
-`src/coin_primary_feed_research.py` probes up to 12 previously untried
-project websites per run, using website links from strictly identity-matched
-coin profiles. It respects public HTTPS/robots checks, inspects advertised
-RSS/Atom links and a standard /feed/ fallback, and requires the coin to be
-mentioned in BOTH the publisher title and a substantive publisher-provided
-description. It does not mark the underlying claim or token-price impact as
-independently verified. A 72-hour per-domain cooldown is persisted in
-`docs/intelligence/coin_feed_probe_history.json`.
+`src/coin_primary_feed_research.py` discovers RSS/Atom links from exact-linked
+coin project websites, with robots checks. Dedicated-project feeds may use generic
+titles if substantive body text identifies the project; multi-asset exchanges
+require an asset match in both title and text. Probe results are stored with
+a per-domain cooldown in `docs/intelligence/coin_feed_probe_history.json`.
 
-The initial 12-site live test found **four unique substantive articles about
-Ethereum Classic (ETC)**; this lifted individual article coverage from
-**41/100 to 42/100**. The full-corpus substantive lead ratio increased to
-**19.24%** while preserving every low-information row in the denominator.
-58 coins still lack substantial individual article text. Further feeds are
-examined in subsequent scheduled executions without any paid API.
+`src/coin_repository_releases.py` retrieves source-linked software releases
+using the **public GitHub REST API** (no API key). Repositories must be linked
+by exact CMC-ID/name/ticker-matched provider profiles and pass explicit
+identity safeguards. In particular, the unrelated Mimblewimble `BeamMW/beam`
+repository is quarantined for CMC #28298 gaming BEAM. Source release notes
+are labelled project software activity, **not** token-price catalysts.
+Results and source failures persist in
+`docs/intelligence/coin_repository_releases.json`.
 
-The opaque Google News resolution trial delivered **0/32 original publisher
-articles**; the system pauses that approach for 36 hours after 25+ failures
-with no success, instead of paying repeated fetch costs in GitHub Actions.
+`src/coin_project_sitemap_news.py` examines public project sitemaps and
+links to newer blog/news pages, subject to HTTP, DNS, robots and text-depth
+checks. Sitemap `lastmod` is *not* treated as a publication timestamp.
+Results are preserved in
+`docs/intelligence/coin_project_sitemap_history.json`.
 
-## Live verification, 14 November 2026
+`docs/intelligence/news_event_coverage.json` separately reports whether
+each coin has substantive individual article/event context, plus items
+with source-proven publication dates in the last 24h, 72h, and 7 days.
+No reliable new article does **not** imply no event happened. All original
+low-quality search leads remain in the full-corpus denominator.
 
-Multiple direct GitHub Actions runs of the `CMC100 Free Open Intelligence`
-workflow passed. At the latest verified run, **100/100** CMC100 coins had
-substantive source-linked individual **project background**. This is achieved
-through 98 substantial third-party profiles plus complementary original issuer
-documentation; eight original-issuer dossiers were extracted successfully.
+The opaque Google News redirect experiment yielded **0 substantive original
+articles out of 32 attempts**. The collector stops repeating that approach
+after sustained failures rather than incurring unnecessary network load.
 
-Every individual dossier has a source and identity association. Further audits
-require 100 distinct meaningful narrative excerpts (no repeated boilerplate)
-and explicitly reject insufficient or duplicated accounts.
+## Verified live result – 14 November 2026
 
-**Still NOT complete:** only **41/100** coins have substantive *individual
-article/event text*, leaving **59/100** without enough coin-specific news
-detail. The full original-corpus substantive excerpt ratio was **18.75%**,
-below the 20% threshold. The overall status therefore remains
-`PARTIAL_RESEARCH`, independent of complete background coverage.
-Event announcements cannot be inferred from static profiles. Primary-source
-claims and 24-hour price effects are not independently verified by this system.
+A fresh Github Actions run at cutoff **2026-11-14T13:36:14Z** completed
+successfully: workflow run
+`https://github.com/SnakU4/crypto-market-data/actions/runs/43595070607`.
 
-The source context pipeline now also includes
-`src/targeted_primary_context.py` (16 explicit CMC ID, name, and symbol
-mappings to official issuer or distinctly labelled secondary exchange
-documentation). See `docs/intelligence/primary_coin_context.json` and
-`coverage_audit.json → curated_original_project_sources_audit`.
-The 402/403/404 public-endpoint issue is handled by stopping repeated
-large-scale calls after a limited probe. Public rate limits, source licensing
-and availability can change.
+- **100/100** coins have individually distinct, substantive, source-backed
+  **project background** descriptions.
+- **56/100** coins now have substantive **individual news, software release,
+  governance or project-article context**; **44/100** remain without adequate
+  individual event/article context in the available source collection.
+  This count increased from **42/100** during the current improvements.
+- **17/100** coins have a source-published substantial event/article in the
+  last 24 hours, **33/100** in the last 72 hours, and **34/100** in the last
+  7 days. These are *source observations*, not verified market catalysts.
+- The substantive original-corpus excerpt share is **19.75%**. The raw
+  denominator is unchanged; background profile text does not inflate it.
+- Official GitHub REST API retrievals produced **eight** additional
+  substantive release notes in the initial successful run. Public website
+  sitemap inspection found **three** original substantive articles for two
+  projects in its first live run, at least one previously undercovered.
+- The overall gate correctly remains **`PARTIAL_RESEARCH`**. Full
+  coin-specific news coverage and independent causal verification are NOT
+  complete.
+
+For a zero-API-cost manual ChatGPT enrichment pass across the remaining
+gaps and all 100 coins, use `EVENT_RESEARCH_MANUAL_PROMPT.md` together with
+the latest GitHub Actions evidence artifact. The prompt distinguishes
+source-backed events from `NO_VERIFIABLE_NEW_EVENT_FOUND` and
+`NOT_YET_SEARCHED` and does not require inventing news for quiet coins.
+
+The previous primary-documentation matching and source license warnings
+continue to apply. All new additions are source-backed research **candidates**,
+not trade signals, investment advice, or proof of source claims.
