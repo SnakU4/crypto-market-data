@@ -1,11 +1,24 @@
 {
   "advertised_existing_feed_count": 0,
   "domain_cooldown_hours": 72,
-  "domains_attempted": 0,
-  "domains_found_content": 0,
+  "domains_attempted": 1,
+  "domains_found_content": 1,
   "domains_skipped_due_to_recent_probe": 83,
-  "new_feed_items": 0,
+  "new_feed_items": 20,
   "not_verified_facts": true,
-  "sources": [],
-  "substantive_feed_items": 0
+  "sources": [
+    {
+      "advertised_feeds": [
+        "https://ethereumclassic.org/rss.xml",
+        "https://ethereumclassic.org/rss-zh.xml",
+        "https://ethereumclassic.org/rss-ar.xml"
+      ],
+      "article_count": 20,
+      "domain": "ethereumclassic.org",
+      "feed_status": "OK",
+      "home_status": "OK",
+      "substantive": 16
+    }
+  ],
+  "substantive_feed_items": 16
 }
