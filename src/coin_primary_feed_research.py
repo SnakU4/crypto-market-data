@@ -17,6 +17,13 @@ import urllib.parse
 
 UTC=dt.timezone.utc
 HISTORY="docs/intelligence/coin_feed_probe_history.json"
+# Multi-asset exchanges require the coin to be identifiable in BOTH fields.
+# This prevents a generic exchange article from being attributed to every
+# associated exchange token. Project-owned publisher websites are more focused.
+MULTI_ASSET_PUBLISHERS={"binance.com","kucoin.com","bitfinex.com",
+    "bitget.com","okx.com","okex.com","gate.io","coinbase.com","paxos.com"}
+# The CMC100 #28298 gaming BEAM is not the older Beam Mimblewimble chain.
+PROJECT_WEBSITE_QUARANTINE={(28298,"beam.mw")}
 
 def stamp(t):
     return t.astimezone(UTC).isoformat(timespec="seconds").replace("+00:00","Z")
@@ -49,6 +56,7 @@ def collect(root,assets,profiles,events,cutoff,network=False,max_coins=12,
         if has_additional_information(e.get("title"),e.get("excerpt"))
         for cid in (e.get("candidate_cmc_ids") or [])}
     selected=[];seen_domains=set();skipped=collections.Counter()
+    quarantine=[]
     for asset in assets:
         cid=int(asset["cmc_id"])
         if cid in already_rich:continue
@@ -61,6 +69,10 @@ def collect(root,assets,profiles,events,cutoff,network=False,max_coins=12,
             u=urllib.parse.urlsplit(url)
             host=(u.hostname or "").lower().removeprefix("www.")
             if not host or host in seen_domains:continue
+            if (cid,host) in PROJECT_WEBSITE_QUARANTINE:
+                quarantine.append({"cmc_id":cid,"domain":host,
+                    "reason":"UNRELATED_BEAM_MIMBLEWIMBLE_PROJECT"})
+                continue
             past_item=past.get(host) or {}
             age=when(past_item.get("attempted_utc"))
             if age and dt.timedelta(0)<=dt.datetime.now(UTC)-age<=dt.timedelta(hours=72):
@@ -100,8 +112,14 @@ def collect(root,assets,profiles,events,cutoff,network=False,max_coins=12,
                     excerpt=row.get("excerpt") or ""
                     # Title + publisher summary MUST positively identify
                     # this coin. Website association is a candidate, not proof.
-                    if not title_relevant(title,asset):continue
+                    # Project-specific websites may publish generic release
+                    # titles; their substantive publisher text still has to
+                    # identify the linked project. Exchanges must identify
+                    # the asset in BOTH title and body because they discuss
+                    # thousands of other assets on one site.
                     if not title_relevant(excerpt,asset):continue
+                    if domain in MULTI_ASSET_PUBLISHERS and not title_relevant(title,asset):
+                        continue
                     if not has_additional_information(title,excerpt):continue
                     fullurl=str(row.get("url") or "")
                     if not fullurl.startswith("https://"):continue
@@ -139,6 +157,8 @@ def collect(root,assets,profiles,events,cutoff,network=False,max_coins=12,
         "coins_with_new_source_excerpts":len({x["candidate_cmc_ids"][0] for x in out}),
         "new_substantive_source_excerpts":len(out),"skipped":dict(skipped),
         "by_project":source_audit,"not_independent_primary_claims":True,
+        "publisher_website_identity_quarantine":quarantine,
+        "publisher_identity_rule":"PROJECT_SITE_BODY_MATCH; EXCHANGES_REQUIRE_TITLE_AND_BODY",
         "only_public_advertised_or_standard_feed_candidates":True}
     past={k:v for k,v in past.items() if isinstance(v,dict) and
           when(v.get("attempted_utc")) and dt.timedelta(0)<=dt.datetime.now(UTC)-when(v["attempted_utc"])<=dt.timedelta(days=35)}
