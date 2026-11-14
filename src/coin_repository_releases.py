@@ -166,7 +166,10 @@ def collect(root,assets,profiles,events,cutoff,network=False,
             t=parse((previous.get(key) or {}).get("checked_utc"))
             if t:
                 status=str((previous.get(key) or {}).get("status") or "")
-                cooldown=24 if status in ("HTTP_403","HTTP_429","ACCESS_OR_JSON_ERROR") else 12
+                # Old generic HTML endpoint explicitly blocked GitHub.
+                # Do not cache that implementation error against the new API.
+                cooldown=(0 if status=="UNSAFE_OR_NOT_PUBLIC" else
+                          24 if status in ("HTTP_403","HTTP_429","ACCESS_OR_JSON_ERROR") else 12)
                 if dt.timedelta(0)<=dt.datetime.now(UTC)-t<dt.timedelta(hours=cooldown):
                     break
             choices.append((asset,repo,key))
