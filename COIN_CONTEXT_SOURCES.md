@@ -68,6 +68,22 @@ Run the offline unit tests manually through the **workflow_dispatch-only**
 `Stage 1 Evidence Regression Tests` workflow. No push-trigger test workflow
 was introduced.
 
+## Coin-specific article enrichment from opaque Google News links
+
+When original publisher URLs are missing, `src/coin_news_resolution.py`
+tries up to 32 previously unattempted Google News candidate links per run,
+prioritizing coins with no substantive individual article. It accepts only
+a normal redirect or documented canonical **direct publisher URL**, checks
+public robots/access restrictions, extracts a limited attributed passage and
+checks the coin identity again in the actual publisher text. It does not
+decode Google News opaque IDs through unapproved services, evade paywalls,
+or mark price stories as independently verified catalysts. Rejected links
+stay in a seven-day retry history at
+`docs/intelligence/google_news_resolution_history.json`.
+Results are auditable separately in
+`coverage_audit.json → safe_google_news_to_publisher_audit`; they only improve
+the article coverage when substantive original text was actually retrieved.
+
 ## Live verification, 14 November 2026
 
 Multiple direct GitHub Actions runs of the `CMC100 Free Open Intelligence`
