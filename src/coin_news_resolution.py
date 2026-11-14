@@ -55,6 +55,17 @@ def collect(root,assets,events,existing=(),cutoff=None,network=False,
     try: history=json.loads(hist_path.read_text(encoding="utf8")).get("attempts",{})
     except (OSError,ValueError,TypeError):history={}
     if not isinstance(history,dict):history={}
+    recent_failures=[entry for entry in history.values() if isinstance(entry,dict)
+        and entry.get("status")!="SUBSTANTIVE"
+        and parse(entry.get("attempted_utc"))
+        and dt.timedelta(0)<=dt.datetime.now(UTC)-parse(entry["attempted_utc"])<=dt.timedelta(hours=36)]
+    recent_successes=any(isinstance(entry,dict) and entry.get("status")=="SUBSTANTIVE"
+        and parse(entry.get("attempted_utc"))
+        and dt.timedelta(0)<=dt.datetime.now(UTC)-parse(entry["attempted_utc"])<=dt.timedelta(hours=36)
+        for entry in history.values())
+    no_direct_publisher_circuit_open=len(recent_failures)>=25 and not recent_successes
+    if no_direct_publisher_circuit_open:
+        max_resolutions=0
     existing_ids={item.get("evidence_id") for item in existing if isinstance(item,dict)}
     try:from discovery_quality import has_additional_information
     except ImportError:from src.discovery_quality import has_additional_information
@@ -122,7 +133,9 @@ def collect(root,assets,events,existing=(),cutoff=None,network=False,
        "resolved_substantive_articles":len(successes),
        "newly_covered_coins":len({cid for cid,e in chosen if any(
            item["evidence_id"]==e["id"] for item in successes)}),
-       "statuses":dict(statuses),"no_unofficial_decode":True,
+       "statuses":dict(statuses),
+       "no_direct_publisher_circuit_open":no_direct_publisher_circuit_open,
+       "no_unofficial_decode":True,
        "no_primary_claims_verified":True,"historical_network_disabled":not network}
     # Keep a week-long retry window and 35 days of audit history.
     history={k:v for k,v in history.items() if isinstance(v,dict) and
