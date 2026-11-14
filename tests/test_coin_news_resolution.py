@@ -10,7 +10,7 @@ sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"src"))
 import coin_news_resolution as mod
 
 UTC=dt.timezone.utc
-NOW=dt.datetime(2026,11,14,12,tzinfo=UTC)
+NOW=dt.datetime.now(UTC)
 ARTICLE=("The XRP Ledger published details explaining how new settlement "
          "infrastructure would improve operational controls, implement a phased "
          "system migration, and mitigate counterparty settlement risks. "
