@@ -11,7 +11,7 @@
       "task_id": "T:7c1cfb9d0340"
     },
     {
-      "results": 9,
+      "results": 10,
       "status": "OK",
       "task_id": "T:07f31ec24d3d"
     },
@@ -46,7 +46,7 @@
       "task_id": "T:200d08633937"
     },
     {
-      "results": 8,
+      "results": 9,
       "status": "OK",
       "task_id": "T:fc35c83f416c"
     },
@@ -71,6 +71,11 @@
       "task_id": "T:386a7538b092"
     },
     {
+      "results": 12,
+      "status": "OK",
+      "task_id": "T:231514622f3b"
+    },
+    {
       "results": 8,
       "status": "OK",
       "task_id": "T:dfcc8f6766e0"
@@ -91,14 +96,9 @@
       "task_id": "T:4c936c7a4f7d"
     },
     {
-      "results": 8,
+      "results": 7,
       "status": "OK",
       "task_id": "T:ceb6af5cb5af"
-    },
-    {
-      "results": 12,
-      "status": "OK",
-      "task_id": "T:231514622f3b"
     }
   ],
   "no_auto_source_installation": true,
@@ -136,7 +136,7 @@
         "research:20437d1e5499dfbae1"
       ],
       "query": "\"resigns nvidia\" crypto financial markets when:2d",
-      "results": 9,
+      "results": 10,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:07f31ec24d3d",
@@ -223,7 +223,7 @@
     {
       "evidence_ids": [],
       "query": "\"Bitget Token\" crypto when:2d",
-      "results": 8,
+      "results": 9,
       "scope": "ASSET_RESEARCH",
       "status": "QUERIED",
       "task_id": "T:fc35c83f416c",
@@ -271,6 +271,19 @@
     },
     {
       "evidence_ids": [
+        "followup:cb7b1b714d512ac90f",
+        "followup:29988b0169ee81c20a",
+        "followup:10e7f764855ee599a5"
+      ],
+      "query": "\"nvidia stock\" crypto blockchain when:2d",
+      "results": 12,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:231514622f3b",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
         "followup:efa3841663ea161d84",
         "followup:148f5e5b2495a9bfb8",
         "followup:9d80354aea1dad3ffc"
@@ -299,7 +312,7 @@
       "evidence_ids": [
         "followup:80907df917f57bead7",
         "followup:f0a49984d062bd8da8",
-        "followup:dca5a609a4e57c02c7"
+        "followup:80907df917f57bead7"
       ],
       "query": "\"falls below\" crypto blockchain when:2d",
       "results": 12,
@@ -328,23 +341,10 @@
         "followup:9d80354aea1dad3ffc"
       ],
       "query": "\"global banking\" crypto blockchain when:2d",
-      "results": 8,
+      "results": 7,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:ceb6af5cb5af",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
-        "followup:cb7b1b714d512ac90f",
-        "followup:29988b0169ee81c20a",
-        "followup:10e7f764855ee599a5"
-      ],
-      "query": "\"nvidia stock\" crypto blockchain when:2d",
-      "results": 12,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:231514622f3b",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]
