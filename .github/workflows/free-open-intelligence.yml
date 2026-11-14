@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Verify production code syntax; optional offline tests run manually
-        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/targeted_primary_context.py src/primary_source_discovery.py src/coin_news_resolution.py
+        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/targeted_primary_context.py src/primary_source_discovery.py src/coin_news_resolution.py src/coin_primary_feed_research.py
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
@@ -72,6 +72,9 @@ jobs:
           assert m["google_news_resolution_history_file"] == "docs/intelligence/google_news_resolution_history.json"
           assert (p/"google_news_resolution_history.json").is_file()
           assert c["safe_google_news_to_publisher_audit"]["no_unofficial_decode"] is True
+          assert m["coin_project_feed_probe_history_file"]=="docs/intelligence/coin_feed_probe_history.json"
+          assert (p/"coin_feed_probe_history.json").is_file()
+          assert c["direct_coin_project_feed_discovery_audit"]["not_independent_primary_claims"]
           assert c["research_quality_gate"]["technical_source_integration"]=="PASSED"
           assert c["research_quality_gate"]["independently_primary_verified_claims"]==0
           assert c["research_quality_gate"]["material_research_status"] in ("PARTIAL_RESEARCH","REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION")
@@ -125,6 +128,7 @@ jobs:
             docs/intelligence/source_probe_history.json
             docs/intelligence/article_attempt_history.json
             docs/intelligence/google_news_resolution_history.json
+            docs/intelligence/coin_feed_probe_history.json
 
       - name: Publish concise reusable research output to public GitHub
         shell: bash
@@ -143,6 +147,7 @@ jobs:
             docs/intelligence/source_probe_history.json \
             docs/intelligence/article_attempt_history.json \
             docs/intelligence/google_news_resolution_history.json \
+            docs/intelligence/coin_feed_probe_history.json \
             docs/intelligence/knowledge_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Update free global, cross-sector and 100-coin intelligence $(date -u +%Y-%m-%dT%H:%MZ)"
