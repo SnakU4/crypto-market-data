@@ -965,8 +965,17 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 14,
+      "candidate_event_count": 15,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "Overview ======== The 1.2.3 node release is an important upgrade from version 1.2.2 that contains a number of performance improvements, most notably to initial block download (IBD) and block validation, together with new features and bug fixes. Important fixes and improvements in 1.2.3 ----------------------------------------- * Improved initial block download (IBD) and block validation performance. The CoinsDB (UTXO) database configuration has been simplified and re-tuned: a larger default file size, a dynamically calculated limit on open files, and a dedicated cache setting. See the configuration section below and the file [ibd-performance.md](ibd-performance.md) for more details. * TCP socket improvements: - The P2P socket loop now waits with poll() instead of select() on Linux and BSD. Windows and macOS remain on select(). - **-maxconnections** is no longer silently capped near 865 o",
+          "id": "R:ea7979e54c874e3dac07",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-10-06T09:09:04Z",
+          "title": "Bitcoin SV Version 1.2.3 Release Notes",
+          "url": "https://github.com/bitcoin-sv/bitcoin-sv/releases/tag/v1.2.3"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "People still treat BSV like a side project. That ends the moment the movie about the father of Bitcoin lands. Imagine the day this movie drops and the world has to look at the man they spent years calling a fraud. One film is about to hit the tiny BSV economy and X",
@@ -1047,15 +1056,6 @@
           "published_utc": "2026-11-06T14:11:49Z",
           "title": "Do you know Justin the @The_f_in_Farmer ? He just filmed a great video with @GavinMehl about BSV and how he realized that BSV is Bitcoin. https://t.co/QYHvOxuz9L - X",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ZRDQzR2NRZ3RGVzhMOFFSTHROWUxRajN2aDZhZ0NHZnNiNlNFdXJDY016OEc1bkxIVGVnTWNySXdoZ3dIYk1nRThuYXdjaDNaR0ZpanIyR2tBZGwxdGNuSTM0MGQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Buy Signal Bitcoin SV USD - 8 Nov 2026 @ 05:21 -> $16.45 Reddit",
-          "id": "expanded:b748e661fbf0403d00",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T10:24:02Z",
-          "title": "Buy Signal Bitcoin SV USD - 8 Nov 2026 @ 05:21 -> $16.45 - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbWR0OW1oN2JFdGNIS3NmSmI5dG1VSWdTeU4yRUFZdWVlZjlLSXhudjZCSklDRV9hRjFIcFpxbHhJcnRhSkZLZXFaWno0cXZTakRKaHlMalNXUFVWZ0NrTEpwRjZXNTJmcDFLNkJGV3ZudUlBbHU5TnBxSkNIMFFkMWdBSnhtYVB3ZmVxQlpSNFluenpwa3JPdUJsOVdabjJF?oc=5"
         }
       ],
       "cmc100_weight": 0.02,

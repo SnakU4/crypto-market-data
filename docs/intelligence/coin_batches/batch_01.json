@@ -4641,8 +4641,62 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 110,
+      "candidate_event_count": 116,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.34.0 Release Notes Bitcoin ABC version 0.34.0 is now available from: <https://download.bitcoinabc.org/0.34.0/> This release includes the following features and fixes: - A bug has been fixed in `proof-manager-cli` that could incorrectly report an invalid Avalanche proof delegation as valid. Network upgrade --------------- At the MTP time of `1794744000` (November 15, 2026 12:00:00 UTC), the following changes will be activated: - Bump automatic replay protection to the next upgrade, timestamp `1810382400` (May 15, 2027 12:00:00 UTC). To stay in sync with the network, node operators must update to version 0.34.x before the November 15, 2026 upgrade is activated.",
+          "id": "R:523c883a9fd1d989b6b9",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-10-01T14:22:54Z",
+          "title": "0.34.0",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.34.0"
+        },
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.34.3 Release Notes Bitcoin ABC version 0.34.3 is now available from: <https://download.bitcoinabc.org/0.34.3/> This release contains several bug fixes and performance improvements. Node operators are encouraged to update.",
+          "id": "R:531da53ef23cecad40b5",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-10-29T15:48:45Z",
+          "title": "0.34.3",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.34.3"
+        },
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.34.1 Release Notes Bitcoin ABC version 0.34.1 is now available from: <https://download.bitcoinabc.org/0.34.1/> This release includes the following features and fixes: - Add new format string placeholders for `walletnotify`: - `%b` - the hash of the block containting the transaction (`unconfirmed` if a mempool transaction) - `%h` - the height of the block containing the transaction (`-1` if a mempool transaction) - Add a `shutdownnotify` option to specify a command to execute synchronously before Bitcoin ABC has begun its shutdown sequence. - On non-Windows systems, an authenticated RPC caller allowed to create wallets could execute arbitrary commands as the node process account when `-walletnotify` was configured, by crafting a wallet name with regex replacement characters. Wallet notification placeholder replacement now treats wallet names literally. - Add new endpoints ",
+          "id": "R:6aadda602ba0b8f9e1da",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-10-12T14:28:26Z",
+          "title": "0.34.1",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.34.1"
+        },
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.33.13 Release Notes Bitcoin ABC version 0.33.13 is now available from: <https://download.bitcoinabc.org/0.33.13/> This release includes the following features and fixes: - A new `-chronikelectrumidletimeout` option is added to disconnect the electrum peers that have been inactive (did not send any request) for that amount of time. Default value is 600 (10 minutes) which should work fine with Electrum ABC clients. - Two new Chronik options, `-chronikmaxsubs` and `-chronikmaxsubsperip` have been added to let a Chronik node operator set limits to the total number of subscriptions and the number per IP address. Updated REST APIs ----------------- - Parameter validation for `/rest/getutxos` has been improved by rejecting truncated or overly large txids and malformed outpoint indices by raising an HTTP_BAD_REQUEST \"Parse error\". Previously, these malformed requests would be sil",
+          "id": "R:8696b1d5f42b98f4afbd",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-09-24T13:34:22Z",
+          "title": "0.33.13",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.33.13"
+        },
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.33.12 Release Notes Bitcoin ABC version 0.33.12 is now available from: <https://download.bitcoinabc.org/0.33.12/> This is a maintenance release with no user-visible change.",
+          "id": "R:90805b2fba00560ec74a",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-09-09T16:41:53Z",
+          "title": "0.33.12",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.33.12"
+        },
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "# Bitcoin ABC 0.34.2 Release Notes Bitcoin ABC version 0.34.2 is now available from: <https://download.bitcoinabc.org/0.34.2/> This release contains several bug fixes. Node operators are encouraged to update.",
+          "id": "R:c3486b928e8d21670197",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-10-20T10:37:34Z",
+          "title": "0.34.2",
+          "url": "https://github.com/Bitcoin-ABC/bitcoin-abc/releases/tag/v0.34.2"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The Bitcoin Cash Podcast #194: CashScript and Mina Movement with Rosco Kalis https://t.co/oHsnwPDrPA X",
@@ -4678,60 +4732,6 @@
           "published_utc": "2026-11-08T13:57:02Z",
           "title": "Buy Signal Zcash USD - 8 Nov 2026 @ 08:54 -> $1,265.21 - Reddit",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPam1jcm9Vei0wLVpNY1dZN1JVbktmYUJnWFFvZFprZTRYbjdUR1JncFFfanR2SmY1OENpYkpaTl94ZXhBSnZocnRENHhpNVdQMEs4dkFlNXk3Sm0tM1RJNTYybU5yR20tNGg3TDhDV2prWWJDSTFySldLRDZlLVQ3MGxCWTFuNlk3QktyeGRRRXdmRWIzeEhPcXdDcV8?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "What makes Bitcoin Cash useful in everyday life? Reddit",
-          "id": "expanded:0e1e3041d75644ab1e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T15:13:55Z",
-          "title": "What makes Bitcoin Cash useful in everyday life? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLVdYUExKLVIxXzBTZ19hdmtWWUhsWGUtbm1zU3ItbURqSjNBVGNka015cVdxZUZ0VjdIX1VxcFM4dWI3SWN1THIyOVlvZTkzWGdkdFpXWUZVZ1M3UFgtVU9WYWZEamplNVo3TzNDTUJ2eGs1N3A0WlBRd1hrQXdWYUtOa3NEcUowSnlUcmlVRU42Ui1YODJSR0RB?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "SolidSwap is Live: The First ERC-20 DEX on Bitcoin Cash SolidSwap is now live on BCH mainnet - a non-custodial AMM built with SolidCash that brings SushiSwap V2-style DeFi directly onto Bitcoin Cash. What you can do today: • Swap BCH ↔ ERC-20 toke X",
-          "id": "expanded:107575dae1396a7983",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T14:07:00Z",
-          "title": "SolidSwap is Live: The First ERC-20 DEX on Bitcoin Cash SolidSwap is now live on BCH mainnet - a non-custodial AMM built with SolidCash that brings SushiSwap V2-style DeFi directly onto Bitcoin Cash. What you can do today: • Swap ",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzQ0RZWWRsSGZjcW9Kbno5aHNjODJXYkZaSVFjcFNoSHdHNVNqRDZ2cTlTNVVYNnpvX0xBaU9WYkV0WkU4ZlI2bklDQ19rVHpjRHVRX0dUTDV2Zm9nTHFkX2thenk?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "General Protocols has updated its position on CHIP-2025-03 (Faster Blocks / FABLOUS). After more research, stakeholder feedback, and testing (including BCHN + Knuth implementations and a live 1-min testnet), they now formally approve the 1-minute block X",
-          "id": "expanded:116f9b865b3ab86433",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T17:02:00Z",
-          "title": "General Protocols has updated its position on CHIP-2025-03 (Faster Blocks / FABLOUS). After more research, stakeholder feedback, and testing (including BCHN + Knuth implementations and a live 1-min testnet), they now formally appr",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02RDdpQWdsVlpENXNEY3ppb2tYOHJ1ZkVNSkdtNDgtMkpUZVFMS3V0b3pIN05qaGRLX2ZQWnR5b0RMY0pTTWdzRWc4eVVjay1XYUtvZTRBaFlfNDRDdE9YOW1xYVg?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The Bitcoin Cash Podcast #195: SolidCash and Mina Movement with mainnet_pat https://t.co/K4ZXaGij5C X",
-          "id": "expanded:1251320d616049362c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T13:57:40Z",
-          "title": "The Bitcoin Cash Podcast #195: SolidCash and Mina Movement with mainnet_pat https://t.co/K4ZXaGij5C - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBNNUt4LWtBeTZ2SFc1QkliZXdacGxWbWkwc3VpQlBVYk1tak1OYTZoX1lrVzJWSHo3bmdQTVprVnBBVWVJb25QRlZmZzJwMmpfbkpiRVQ3bEZVQlMzV2k2X1dad1o?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "#bitcoincash #bch Adding new projects. @mainnet_pat https://t.co/ZBzJ23FkCt Now almost 300 Projects. X",
-          "id": "expanded:13fc45cf40ee05f018",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T05:40:06Z",
-          "title": "#bitcoincash #bch Adding new projects. @mainnet_pat https://t.co/ZBzJ23FkCt Now almost 300 Projects. - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuWXVROVNxSFZXU2RjdmtmX1hsNlhmcVJFSTZ1ZXRQMGg2WjdyaE9EMGJXa3FWQzJYc01kckRidGVSX3luWXhhMXh2RG9neDlxeU5ZOERBSVc0TFN3cVd6amdYemY?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The future of free money requires people to understand Why. That is why BCHers value education so much 🎓 X",
-          "id": "expanded:141307c351467aa850",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T23:04:00Z",
-          "title": "The future of free money requires people to understand Why. That is why BCHers value education so much 🎓 - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Yc3UwRFc2THRCXzlfS0w4RXBHRTFJQ241TldBMHlzTzJHRjdXLU4zSk9lNjN2bXB4d1gwcU1uNUVOUjRDbm9sNWFrN3ZmdTdYczRSc2FDRVBYcjRRWWZrbTFDR2k?oc=5"
         }
       ],
       "cmc100_weight": 0.22,

@@ -97,7 +97,7 @@
       "task_id": "T:4c936c7a4f7d"
     },
     {
-      "results": 7,
+      "results": 8,
       "status": "OK",
       "task_id": "T:ceb6af5cb5af"
     }
@@ -166,14 +166,93 @@
     "all_raw_titles_and_feeds_not_counted_without_substantive_text": true,
     "api": "GITHUB_PUBLIC_REST_RELEASES_KEYLESS",
     "cached_substantive_release_events": 0,
-    "coin_ids_targeted": 0,
-    "new_substantive_release_events": 0,
-    "newly_supported_coins": 0,
+    "coin_ids_targeted": 13,
+    "new_substantive_release_events": 8,
+    "newly_supported_coins": 3,
     "no_credential_or_paid_api": true,
     "no_verified_token_catalysts_claimed": true,
-    "probe_log": [],
+    "probe_log": [
+      {
+        "feed_entries": 7,
+        "repo": "ethereumproject/go-ethereum",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "gnosis/gnosisdb",
+        "status": "INVALID_REDIRECT",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 7,
+        "repo": "Bitcoin-ABC/bitcoin-abc",
+        "status": "OK",
+        "substantive_events": 7
+      },
+      {
+        "feed_entries": 0,
+        "repo": "tezos/tezos",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "nexofinance/NEXO-Token",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "quantnetwork/eth-contract-metadata",
+        "status": "HTTP_404",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 7,
+        "repo": "bitcoin-sv/bitcoin-sv",
+        "status": "OK",
+        "substantive_events": 1
+      },
+      {
+        "feed_entries": 0,
+        "repo": "paxosglobal/paxos-gold-contract",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 7,
+        "repo": "dfinity/ic",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "LayerZero-Labs/LayerZero",
+        "status": "INVALID_REDIRECT",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 7,
+        "repo": "mantlenetworkio/mantle",
+        "status": "OK",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 7,
+        "repo": "memecore-foundation/Go-MemeCore",
+        "status": "OK",
+        "substantive_events": 1
+      },
+      {
+        "feed_entries": 0,
+        "repo": "stablelabs/stable",
+        "status": "HTTP_404",
+        "substantive_events": 0
+      }
+    ],
     "provider_project_repo_association_is_not_token_event": true,
-    "repositories_probed": 0,
+    "repositories_probed": 13,
     "source_identity_quarantine": [
       {
         "cmc_id": 28298,
@@ -189,7 +268,7 @@
     }
   },
   "coin_substantive_news_freshness_summary": {
-    "coins_with_any_substantive_source_item": 51,
+    "coins_with_any_substantive_source_item": 55,
     "coins_with_substantive_published_item_24h": 17,
     "coins_with_substantive_published_item_72h": 33,
     "coins_with_substantive_published_item_7d": 34
@@ -342,122 +421,94 @@
   "direct_coin_project_feed_discovery_audit": {
     "by_project": [
       {
-        "coin": "BONK",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.bonkcoin.com"
-      },
-      {
-        "coin": "ZRO",
-        "feed_statuses": [
-          "home:OVERSIZED",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://layerzero.network"
-      },
-      {
-        "coin": "MNT",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.mantle.xyz/"
-      },
-      {
-        "coin": "BEAM",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.beam.mw/"
-      },
-      {
         "coin": "AERO",
         "feed_statuses": [
           "home:OK",
-          "feed:OK"
+          "feed:HTTPError"
         ],
         "substantive_items": 0,
-        "url": "https://app.aero.xyz/"
-      },
-      {
-        "coin": "ETHFI",
-        "feed_statuses": [
-          "home:ROBOTS_DISALLOW",
-          "feed:ROBOTS_DISALLOW"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.ether.fi/"
+        "url": "https://aero.xyz/"
       },
       {
         "coin": "MORPHO",
         "feed_statuses": [
-          "home:TRUNCATED_PUBLIC_HOMEPAGE",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://morpho.org/"
-      },
-      {
-        "coin": "TRUMP",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://gettrumpmemes.com"
-      },
-      {
-        "coin": "M",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://memecore.com"
-      },
-      {
-        "coin": "VVV",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://venice.ai"
-      },
-      {
-        "coin": "PI",
-        "feed_statuses": [
-          "home:OK",
-          "feed:OK",
-          "feed:OK"
-        ],
-        "substantive_items": 0,
-        "url": "https://minepi.com"
-      },
-      {
-        "coin": "ASTER",
-        "feed_statuses": [
           "home:OVERSIZED",
           "feed:HTTPError"
         ],
         "substantive_items": 0,
-        "url": "https://www.asterdex.com"
+        "url": "https://app.morpho.xyz"
+      },
+      {
+        "coin": "PUMP",
+        "feed_statuses": [
+          "home:HTTPError",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://www.pump.fun/board"
+      },
+      {
+        "coin": "XPL",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://www.plasma.to"
+      },
+      {
+        "coin": "CC",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://www.canton.network/"
+      },
+      {
+        "coin": "FF",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://app.falcon.finance/swap/mint"
+      },
+      {
+        "coin": "KITE",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://www.gokite.ai"
+      },
+      {
+        "coin": "PIEVERSE",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://pieverse.io"
+      },
+      {
+        "coin": "LIT",
+        "feed_statuses": [
+          "home:OK",
+          "feed:OK"
+        ],
+        "substantive_items": 1,
+        "url": "https://lighter.xyz/"
       }
     ],
-    "coins_with_new_source_excerpts": 0,
-    "new_substantive_source_excerpts": 0,
+    "coins_with_new_source_excerpts": 1,
+    "new_substantive_source_excerpts": 1,
     "not_independent_primary_claims": true,
     "only_public_advertised_or_standard_feed_candidates": true,
-    "project_domains_attempted": 12,
+    "project_domains_attempted": 9,
     "skipped": {
-      "recent_probe": 29
+      "recent_probe": 38
     }
   },
   "direct_research_full_source_audit": {
@@ -468,23 +519,23 @@
   "evidence_counts": {
     "adjacent_full_event_rows": 709,
     "adjacent_read_index_event_rows": 500,
-    "canonical_research_leads": 13112,
-    "cumulative_linked_repository_release_events": 0,
-    "direct_publisher_article_excerpts": 299,
-    "direct_publisher_article_fetch_attempted": 25,
+    "canonical_research_leads": 13121,
+    "cumulative_linked_repository_release_events": 8,
+    "direct_publisher_article_excerpts": 304,
+    "direct_publisher_article_fetch_attempted": 20,
     "engine_rows": 3218,
     "expanded_rows": 10339,
-    "free_adaptive_followup_leads": 208,
+    "free_adaptive_followup_leads": 209,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 14090,
-    "long_excerpts_by_character_count_not_claim_verification": 6023,
+    "long_excerpts_by_character_count_not_claim_verification": 6037,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "new_coin_project_feed_events": 0,
+    "new_coin_project_feed_events": 1,
     "new_source_discovery_items": 0,
     "non_asset_structured_market_and_network_observations": 2833,
     "research_event_rows": 3042,
-    "substantive_source_excerpt_leads": 2570
+    "substantive_source_excerpt_leads": 2584
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -520,11 +571,11 @@
     "coins_with_curated_project_source_context": 36,
     "coins_with_public_cross_exchange_market_data": 93,
     "coins_with_substantive_coin_specific_context": 100,
-    "coins_with_substantive_coinspecific_article_context": 51,
+    "coins_with_substantive_coinspecific_article_context": 55,
     "coins_with_substantive_dated_third_party_events": 0,
     "coins_with_substantive_project_background_combined": 100,
     "coins_with_substantive_project_source_context": 33,
-    "coins_without_substantive_coinspecific_article_context": 49,
+    "coins_without_substantive_coinspecific_article_context": 45,
     "coins_without_substantive_project_background": 2,
     "curated_exchange_only_docs_substantive": 0,
     "curated_issuer_docs_substantive": 8,
@@ -536,18 +587,17 @@
     "third_party_coin_profiles_available": 99
   },
   "publisher_article_enrichment_audit": {
-    "attempted": 25,
+    "attempted": 20,
     "by_scope": {
-      "ASSET_CANDIDATE": 4,
-      "GLOBAL_UNRESOLVED": 4
+      "GLOBAL_UNRESOLVED": 5
     },
-    "cached_substantive_reused": 291,
-    "candidate_coins_targeted": 6,
-    "candidate_coins_with_substantive_publisher_excerpt": 1,
-    "cumulative_substantive_current_corpus": 299,
+    "cached_substantive_reused": 299,
+    "candidate_coins_targeted": 5,
+    "candidate_coins_with_substantive_publisher_excerpt": 0,
+    "cumulative_substantive_current_corpus": 304,
     "selection_policy": "PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL",
-    "substantive": 8,
-    "succeeded": 14
+    "substantive": 5,
+    "succeeded": 10
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
@@ -562,11 +612,11 @@
     "material_research_status": "PARTIAL_RESEARCH",
     "project_background_context_status": "COMPLETE",
     "project_background_not_fresh_catalyst": true,
-    "publisher_excerpts": 299,
-    "publisher_source_attempted": 25,
+    "publisher_excerpts": 304,
+    "publisher_source_attempted": 20,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.196,
+    "substantive_context_share": 0.1969,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
@@ -612,6 +662,17 @@
         "substantive_published_last_72h": 0,
         "total": 411
       },
+      "direct_project_feed:DIRECT_SOURCE": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 1,
+        "feed_summary_count": 0,
+        "published_date_missing": 0,
+        "published_last_24h": 0,
+        "published_last_72h": 0,
+        "substantive": 1,
+        "substantive_published_last_72h": 0,
+        "total": 1
+      },
       "expanded:DIRECT_SOURCE": {
         "article_extract_count": 0,
         "distinct_source_domains": 20,
@@ -634,19 +695,46 @@
         "substantive_published_last_72h": 0,
         "total": 9524
       },
+      "linked_project_repository:DIRECT_SOURCE": {
+        "article_extract_count": 0,
+        "distinct_source_domains": 1,
+        "feed_summary_count": 0,
+        "published_date_missing": 0,
+        "published_last_24h": 0,
+        "published_last_72h": 0,
+        "substantive": 8,
+        "substantive_published_last_72h": 0,
+        "total": 8
+      },
       "research:DIRECT_SOURCE": {
-        "article_extract_count": 276,
+        "article_extract_count": 281,
         "distinct_source_domains": 82,
         "feed_summary_count": 2402,
         "published_date_missing": 10,
         "published_last_24h": 363,
         "published_last_72h": 1146,
-        "substantive": 2276,
+        "substantive": 2281,
         "substantive_published_last_72h": 981,
         "total": 2862
       }
     },
     "by_source_id": {
+      "COIN_PROJECT_SITE_39125": {
+        "substantive": 1,
+        "total": 1
+      },
+      "COIN_REPO_1831": {
+        "substantive": 6,
+        "total": 6
+      },
+      "COIN_REPO_35491": {
+        "substantive": 1,
+        "total": 1
+      },
+      "COIN_REPO_3602": {
+        "substantive": 1,
+        "total": 1
+      },
       "COIN_RESEARCH": {
         "substantive": 0,
         "total": 9204
@@ -1172,7 +1260,7 @@
         "total": 10
       },
       "huggingface_blog": {
-        "substantive": 39,
+        "substantive": 44,
         "total": 72
       },
       "huggingface_transformers_releases": {
@@ -1488,8 +1576,8 @@
         "total": 10
       }
     },
-    "direct_research_substantive_count": 2276,
-    "direct_research_substantive_ratio": 0.7952,
+    "direct_research_substantive_count": 2281,
+    "direct_research_substantive_ratio": 0.797,
     "direct_research_total": 2862,
     "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },

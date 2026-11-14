@@ -907,7 +907,7 @@
         "description_excerpt": "",
         "has_substantive_descriptive_context": false,
         "name": "World Liberty Financial",
-        "observed_utc": "2026-11-14T13:31:00Z",
+        "observed_utc": "2026-11-14T13:31:55Z",
         "primary_links_unverified": {
           "blockchain_site": [
             "https://etherscan.io/token/0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6",
@@ -1851,8 +1851,17 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 10,
+      "candidate_event_count": 11,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "PROJECT_SOFTWARE_RELEASE_NOT_VERIFIED_PRICE_CATALYST",
+          "excerpt": "<p><strong>Release Date:</strong> November 6, 2026</p> ## **Overview** This release fixes a remote node crash in the debug tracing API, updates third-party libraries that had published vulnerabilities, moves builds and CI to Go 1.27 and fixes the failing CI tests. All node operators are encouraged to upgrade. Nodes that expose the `debug` RPC namespace should upgrade immediately. This release has no consensus, database or configuration changes. --- ## **Security Fixes** ### **Node crash in keccak256PreimageTracer on trace timeout ([ethereum/go-ethereum#35858](https://github.com/ethereum/go-ethereum/pull/35858))** When a trace hit its timeout, the tracing API called the tracer’s `Stop` hook, which `keccak256PreimageTracer` did not implement, and the node process crashed. Any trace request that selected this tracer and timed out could trigger it. This affects v1.15.1 to v1.15.3. - `eth/tra",
+          "id": "R:07853974c8bf7aba446a",
+          "identity_status": "PROVIDER_LINKED_PROJECT_REPO_NOT_TOKEN_CAUSALITY",
+          "published_utc": "2026-11-06T09:46:45Z",
+          "title": "v1.15.4",
+          "url": "https://github.com/memecore-foundation/Go-MemeCore/releases/tag/v1.15.4"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Giovani Pugh(✸,✸)🌊RIVER (@ulich72283493) X",
@@ -1933,15 +1942,6 @@
           "published_utc": "2026-11-13T01:22:50Z",
           "title": "Tokenomics explained: supply, unlocks and emissions - CryptoTicker.io",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lVzU0eDFSVnF6bXJqUG9oV3lYM2UxZGdwaVFsUHRFZmVxLUVDUXpfc3dHNG1xaGY3UjM5Q1pPR1gtRzZjMUVzdENzOHNVVER0eXJXMTRaTXVWc3hZa1BnbnY5aUR1bFNHVlJDRw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "🚀 THE MEMECOIN BATTLE IS ON! 🔥 Four big names. Four communities. But who's really leading the pack? 👀 🐕 $DOGE 🐶 $SHIB 🐸 $PEPE 🟣 $M 💎 IF YOU COULD HOLD ONLY ONE, WHICH WOULD IT BE? 👇 DROP YOUR BIGGEST BAG, DEFEND YOUR X",
-          "id": "expanded:eb4d0dbdf760537223",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T18:37:18Z",
-          "title": "🚀 THE MEMECOIN BATTLE IS ON! 🔥 Four big names. Four communities. But who's really leading the pack? 👀 🐕 $DOGE 🐶 $SHIB 🐸 $PEPE 🟣 $M 💎 IF YOU COULD HOLD ONLY ONE, WHICH WOULD IT BE? 👇 DROP YOUR BIGGEST BAG, DEFEND YOUR - X",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Ha0VBVGp3d042MWVKSVc2ZndHMjMzN3kzRFI3M2hKTmtBRGRRcXN4eVJvbXlmaEItTnc5b193MkJnWDFrUF9ETWEtcUFSbEo2WGlWTnM5bmRIcDExeUtiZ3VMTFloeXVPc19J?oc=5"
         }
       ],
       "cmc100_weight": 0.09,
@@ -5562,8 +5562,17 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 167,
+      "candidate_event_count": 168,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "PUBLISHER_TEXT_NOT_FACT_VERIFIED",
+          "excerpt": "Charting on Lighter is now built on TradingView’s technology, bringing professional-grade candlesticks, indicators, and drawing tools directly into the Lighter trading experience.",
+          "id": "PF:b2bd1d9aa781e40742",
+          "identity_status": "PROJECT_SITE_ASSOCIATION_NOT_INDEPENDENTLY_CONFIRMED",
+          "published_utc": "2026-08-19T00:00:00Z",
+          "title": "Advanced Charting on Lighter, Powered by TradingView",
+          "url": "https://lighter.xyz/blog/advanced-charting-on-lighter-powered-by-tradingview"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Hair color Reddit",
@@ -5644,15 +5653,6 @@
           "published_utc": "2026-11-07T12:19:06Z",
           "title": "Is there anything I can do to make me look like less of a carrot ? - Reddit",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMlpOcHl4TVo4bWx2bGpqcGhWZ21yX1VvNFJtSkdjV0M0UDhCMVQ4dXdQNDlSOWFwOGR6SkRHbTBlX0xhTE81cDN1eG1sZEd6T3p5bGt5Zy1UNDMwYUZtRHBPWGZsQ3Zad2lfdWEtSC1ZT3dLZUhxX0tPU203M0VOYzM2dG5nLXU0S0QzVmNqdkZoQ0FiVU1Cb1ZkX2xyNU4yQVNheGw3TTE?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "@rambo_xbt lmk how this goes when they announce the thing everyone is front running X",
-          "id": "expanded:1783e9d34dc1fca3c0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T07:09:12Z",
-          "title": "@rambo_xbt lmk how this goes when they announce the thing everyone is front running - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5uMnZ5ODVGYUlmZ2lwV20xdGdxMDVxR0VBREppVVhTN3A4UmRqMlo2MHY1ai0wSVhrbkpDZW9iNTROdURKSDJ3T3NicHF2SlRuVTRXdWFpUzc3bWE4eHlrZVln?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
