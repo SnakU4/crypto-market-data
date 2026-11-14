@@ -84,6 +84,28 @@ Results are auditable separately in
 `coverage_audit.json → safe_google_news_to_publisher_audit`; they only improve
 the article coverage when substantive original text was actually retrieved.
 
+## Publisher RSS/Atom instead of opaque search links
+
+`src/coin_primary_feed_research.py` probes up to 12 previously untried
+project websites per run, using website links from strictly identity-matched
+coin profiles. It respects public HTTPS/robots checks, inspects advertised
+RSS/Atom links and a standard /feed/ fallback, and requires the coin to be
+mentioned in BOTH the publisher title and a substantive publisher-provided
+description. It does not mark the underlying claim or token-price impact as
+independently verified. A 72-hour per-domain cooldown is persisted in
+`docs/intelligence/coin_feed_probe_history.json`.
+
+The initial 12-site live test found **four unique substantive articles about
+Ethereum Classic (ETC)**; this lifted individual article coverage from
+**41/100 to 42/100**. The full-corpus substantive lead ratio increased to
+**19.24%** while preserving every low-information row in the denominator.
+58 coins still lack substantial individual article text. Further feeds are
+examined in subsequent scheduled executions without any paid API.
+
+The opaque Google News resolution trial delivered **0/32 original publisher
+articles**; the system pauses that approach for 36 hours after 25+ failures
+with no success, instead of paying repeated fetch costs in GitHub Actions.
+
 ## Live verification, 14 November 2026
 
 Multiple direct GitHub Actions runs of the `CMC100 Free Open Intelligence`
