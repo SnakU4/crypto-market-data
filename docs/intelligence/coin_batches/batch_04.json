@@ -255,10 +255,50 @@
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 20947,
         "coin_events": [],
+        "coin_markets": {
+          "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+          "observed_utc": "2026-11-14T12:09:42Z",
+          "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+          "reported_pair_count_with_usd_volume": 184,
+          "top_markets_by_reported_24h_volume": [
+            {
+              "exchange": "",
+              "pair": "SUI/USDT",
+              "volume_24h_usd": 167657610.65
+            },
+            {
+              "exchange": "",
+              "pair": "SUI/USDT",
+              "volume_24h_usd": 25881210.36
+            },
+            {
+              "exchange": "",
+              "pair": "SUI/USDT",
+              "volume_24h_usd": 16334787.83
+            },
+            {
+              "exchange": "",
+              "pair": "SUI/USDT",
+              "volume_24h_usd": 15498012.82
+            },
+            {
+              "exchange": "",
+              "pair": "SUI/USDT",
+              "volume_24h_usd": 14329141.56
+            },
+            {
+              "exchange": "",
+              "pair": "SUI/USDC",
+              "volume_24h_usd": 11505148.6
+            }
+          ],
+          "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 431609174.97
+        },
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Sui (SUI) is a scalable Layer 1 blockchain designed for secure and fast transactions, facilitating new decentralized applications and opportunities in the Web3 ecosystem. Its innovative architecture aims to optimize both performance and user experience.",
         "events_observed_utc": "2026-11-14T12:06:52Z",
         "has_substantive_descriptive_context": true,
+        "markets_observed_utc": "2026-11-14T12:09:42Z",
         "name": "Sui",
         "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
@@ -503,10 +543,50 @@
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 21159,
         "coin_events": [],
+        "coin_markets": {
+          "disclaimer": "Reported 24h volumes across pairs may double-count activity.",
+          "observed_utc": "2026-11-14T12:09:42Z",
+          "relation_status": "THIRD_PARTY_MARKET_AGGREGATE_NOT_EXECUTION_LIQUIDITY",
+          "reported_pair_count_with_usd_volume": 63,
+          "top_markets_by_reported_24h_volume": [
+            {
+              "exchange": "",
+              "pair": "ONDO/USDT",
+              "volume_24h_usd": 45195945.42
+            },
+            {
+              "exchange": "",
+              "pair": "ONDO/USDT",
+              "volume_24h_usd": 7360866.37
+            },
+            {
+              "exchange": "",
+              "pair": "ONDO/USDT",
+              "volume_24h_usd": 5259805.28
+            },
+            {
+              "exchange": "",
+              "pair": "ONDO/USDT",
+              "volume_24h_usd": 4395457.62
+            },
+            {
+              "exchange": "",
+              "pair": "ONDO/USDC",
+              "volume_24h_usd": 3950301.87
+            },
+            {
+              "exchange": "",
+              "pair": "ONDO/USD",
+              "volume_24h_usd": 3948712.39
+            }
+          ],
+          "total_reported_volume_across_pairs_usd_NOT_UNIQUE_TRADING_VOLUME": 102478390.12
+        },
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Ondo (ONDO) is a decentralized finance protocol designed to optimize yield generation through innovative staking and liquidity solutions. It aims to empower users with greater control and flexibility over their assets.",
         "events_observed_utc": "2026-11-14T12:06:52Z",
         "has_substantive_descriptive_context": true,
+        "markets_observed_utc": "2026-11-14T12:09:42Z",
         "name": "Ondo",
         "observed_utc": "2026-11-13T22:51:08Z",
         "primary_links_unverified": {
@@ -4200,7 +4280,7 @@
         "cmc_id": 28321,
         "context_type": "ORIGINAL_PROJECT_BACKGROUND_NOT_FRESH_NEWS",
         "description_excerpt": "All Articles Recent Searches Clear all No recent searches Popular Articles Articles View all Topics View all Tickets View all Sorry! nothing found for Information related to POL Contract and Migration Created by Deepanshu Rathor, Modified on Tue, 29 Apr, 2025 at 2:41 PM by Mayank Singhal You can find the $POL contract at the following ENS: pol-token.eth Contract Address: https://etherscan.io/token/0x455e53CBB86018Ac2",
-        "first_observed_utc": "2026-11-14T12:07:25Z",
+        "first_observed_utc": "2026-11-14T12:09:59Z",
         "identity_match": "CURATED_EXACT_CMC_ID_NAME_SYMBOL_AND_SOURCE_TERM",
         "name": "Polygon (prev. MATIC)",
         "source_kind": "ISSUER_DOCUMENTATION",
@@ -5529,8 +5609,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 30171,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Ethena (ENA) is a blockchain-based platform that aims to provide decentralized and secure financial services through smart contracts. It focuses on enabling efficient transactions and fostering a collaborative ecosystem for users.",
+        "events_observed_utc": "2026-11-14T12:09:35Z",
         "has_substantive_descriptive_context": true,
         "name": "Ethena",
         "observed_utc": "2026-11-13T22:51:08Z",
