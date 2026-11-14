@@ -103,9 +103,6 @@ def exact_match(assets, listing, provider=None):
         key = (project_name(asset["name"]), canonical(asset["symbol"]))
         rows = index.get(key, [])
         # Multiple active assets with same name and ticker are NOT safely identifiable.
-        if len(rows) == 1:
-            found[str(asset["cmc_id"])] = rows[0]["id"]
-            continue
         pinned=VERIFIED_PROVIDER_ALIASES.get((provider,int(asset["cmc_id"])))
         if pinned:
             matches=[x for x in listing if isinstance(x,dict)
@@ -115,6 +112,11 @@ def exact_match(assets, listing, provider=None):
                 and x.get("is_active") is not False]
             if len(matches)==1:
                 found[str(asset["cmc_id"])]=pinned[0]
+            # Fail closed if the pinned identity is missing, even if a
+            # different ticker/name match could be selected automatically.
+            continue
+        if len(rows) == 1:
+            found[str(asset["cmc_id"])] = rows[0]["id"]
     return found
 
 
@@ -125,7 +127,7 @@ def valid_profile(asset, raw, provider, received):
     alias=VERIFIED_PROVIDER_ALIASES.get((provider,int(asset["cmc_id"])))
     pinned_ok=bool(alias and str(raw.get("id"))==alias[0]
         and project_name(raw.get("name"))==project_name(alias[1]))
-    if canonical(raw.get("symbol"))!=canonical(asset["symbol"]) or not (strict or pinned_ok):
+    if canonical(raw.get("symbol"))!=canonical(asset["symbol"]) or (alias and not pinned_ok) or not (strict or pinned_ok):
         return None
     if provider == "coinpaprika":
         description = clean(raw.get("description"))
