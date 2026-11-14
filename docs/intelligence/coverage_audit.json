@@ -12,7 +12,7 @@
       "task_id": "T:7c1cfb9d0340"
     },
     {
-      "results": 10,
+      "results": 9,
       "status": "OK",
       "task_id": "T:07f31ec24d3d"
     },
@@ -47,12 +47,12 @@
       "task_id": "T:200d08633937"
     },
     {
-      "results": 9,
+      "results": 8,
       "status": "OK",
       "task_id": "T:fc35c83f416c"
     },
     {
-      "results": 10,
+      "results": 9,
       "status": "OK",
       "task_id": "T:be5169ccbd6d"
     },
@@ -92,7 +92,7 @@
       "task_id": "T:4c936c7a4f7d"
     },
     {
-      "results": 7,
+      "results": 8,
       "status": "OK",
       "task_id": "T:ceb6af5cb5af"
     },
@@ -161,6 +161,115 @@
     "strict_name_and_symbol_matching": true,
     "substantive_project_profiles": 98,
     "success": 1
+  },
+  "coin_linked_repository_release_audit": {
+    "all_raw_titles_and_feeds_not_counted_without_substantive_text": true,
+    "cached_substantive_release_events": 0,
+    "coin_ids_targeted": 13,
+    "new_substantive_release_events": 0,
+    "newly_supported_coins": 0,
+    "no_verified_token_catalysts_claimed": true,
+    "probe_log": [
+      {
+        "feed_entries": 0,
+        "repo": "ethereumproject/go-ethereum",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "gnosis/gnosisdb",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "Bitcoin-ABC/bitcoin-abc",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "tezos/tezos",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "nexofinance/NEXO-Token",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "quantnetwork/eth-contract-metadata",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "bitcoin-sv/bitcoin-sv",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "paxosglobal/paxos-gold-contract",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "dfinity/ic",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "LayerZero-Labs/LayerZero",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "mantlenetworkio/mantle",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "memecore-foundation/Go-MemeCore",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      },
+      {
+        "feed_entries": 0,
+        "repo": "stablelabs/stable",
+        "status": "UNSAFE_OR_NOT_PUBLIC",
+        "substantive_events": 0
+      }
+    ],
+    "provider_project_repo_association_is_not_token_event": true,
+    "repositories_probed": 13,
+    "source_identity_quarantine": [
+      {
+        "cmc_id": 28298,
+        "reason": "OTHER_PROJECT_BEAM_MIMBLEWIMBLE_NOT_CMC28298_GAMING",
+        "repo": "BeamMW/beam",
+        "symbol": "BEAM"
+      }
+    ],
+    "substantive_release_events_recent_hours": {
+      "24": 0,
+      "72": 0,
+      "168": 0
+    }
+  },
+  "coin_substantive_news_freshness_summary": {
+    "coins_with_any_substantive_source_item": 51,
+    "coins_with_substantive_published_item_24h": 17,
+    "coins_with_substantive_published_item_72h": 33,
+    "coins_with_substantive_published_item_7d": 34
   },
   "combined_project_background_gaps": [],
   "curated_original_project_sources_audit": {
@@ -265,127 +374,167 @@
       }
     ]
   },
+  "curated_project_publisher_attribution": {
+    "classification": "PROJECT_SOURCE_ACTIVITY_NOT_VERIFIED_TOKEN_CATALYST",
+    "coins": 36,
+    "source_event_counts_by_cmc_id": {
+      "1": 10,
+      "2": 10,
+      "52": 10,
+      "74": 10,
+      "328": 10,
+      "512": 10,
+      "1027": 120,
+      "1437": 40,
+      "1839": 10,
+      "1958": 10,
+      "2010": 10,
+      "2011": 2,
+      "2280": 10,
+      "3077": 10,
+      "3635": 10,
+      "3794": 40,
+      "4030": 10,
+      "4642": 10,
+      "4847": 40,
+      "5426": 20,
+      "6535": 10,
+      "6636": 40,
+      "7083": 41,
+      "7278": 101,
+      "7950": 10,
+      "8000": 40,
+      "8916": 10,
+      "11840": 50,
+      "11841": 55,
+      "20396": 10,
+      "22861": 10,
+      "23149": 10,
+      "28177": 10,
+      "28321": 20,
+      "29210": 10,
+      "33038": 30
+    }
+  },
   "direct_coin_project_feed_discovery_audit": {
     "by_project": [
-      {
-        "coin": "XRP",
-        "feed_statuses": [
-          "home:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://ripple.com/xrp"
-      },
-      {
-        "coin": "FIL",
-        "feed_statuses": [
-          "home:OK",
-          "feed:OK",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://protocol.ai"
-      },
-      {
-        "coin": "VET",
-        "feed_statuses": [
-          "home:TRUNCATED_PUBLIC_HOMEPAGE",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.vechain.org/"
-      },
-      {
-        "coin": "QNT",
-        "feed_statuses": [
-          "home:OK",
-          "feed:OK"
-        ],
-        "substantive_items": 2,
-        "url": "https://quant.network/"
-      },
-      {
-        "coin": "BSV",
-        "feed_statuses": [
-          "home:ROBOTS_DISALLOW",
-          "feed:ROBOTS_DISALLOW"
-        ],
-        "substantive_items": 0,
-        "url": "https://bitcoinsv.io/"
-      },
       {
         "coin": "FET",
         "feed_statuses": [
           "home:OK",
-          "feed:OK",
-          "feed:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://fetch.ai/"
+      },
+      {
+        "coin": "CRV",
+        "feed_statuses": [
+          "home:OK",
           "feed:OK"
         ],
         "substantive_items": 0,
-        "url": "https://www.superintelligence.io/"
+        "url": "https://www.curve.fi/"
       },
       {
-        "coin": "OKB",
-        "feed_statuses": [
-          "home:UNSAFE_OR_NOT_PUBLIC",
-          "feed:UNSAFE_OR_NOT_PUBLIC"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.okex.com/"
-      },
-      {
-        "coin": "LEO",
+        "coin": "RAY",
         "feed_statuses": [
           "home:OK",
           "feed:HTTPError"
         ],
         "substantive_items": 0,
-        "url": "https://www.bitfinex.com/"
+        "url": "https://raydium.io"
       },
       {
-        "coin": "GT",
+        "coin": "ICP",
         "feed_statuses": [
           "home:OK",
           "feed:HTTPError"
         ],
         "substantive_items": 0,
-        "url": "https://gatechain.io"
+        "url": "https://internetcomputer.org/"
       },
       {
-        "coin": "PAXG",
-        "feed_statuses": [
-          "home:OVERSIZED",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://www.paxos.com/paxgold"
-      },
-      {
-        "coin": "JST",
-        "feed_statuses": [
-          "home:HTTPError",
-          "feed:HTTPError"
-        ],
-        "substantive_items": 0,
-        "url": "https://just.network"
-      },
-      {
-        "coin": "RENDER",
+        "coin": "PENDLE",
         "feed_statuses": [
           "home:OK",
           "feed:HTTPError"
         ],
         "substantive_items": 0,
-        "url": "https://rendernetwork.com/"
+        "url": "https://pendle.finance"
+      },
+      {
+        "coin": "SUN",
+        "feed_statuses": [
+          "home:OK",
+          "feed:OK"
+        ],
+        "substantive_items": 0,
+        "url": "https://sun.io/#/home"
+      },
+      {
+        "coin": "BGB",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://www.bitget.com/"
+      },
+      {
+        "coin": "WLD",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://worldcoin.org"
+      },
+      {
+        "coin": "BTT",
+        "feed_statuses": [
+          "home:OK",
+          "feed:OK"
+        ],
+        "substantive_items": 0,
+        "url": "https://bt.io/"
+      },
+      {
+        "coin": "SUI",
+        "feed_statuses": [
+          "home:OK",
+          "feed:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://sui.io/"
+      },
+      {
+        "coin": "ONDO",
+        "feed_statuses": [
+          "home:OK",
+          "feed:HTTPError"
+        ],
+        "substantive_items": 0,
+        "url": "https://ondo.foundation"
+      },
+      {
+        "coin": "STRK",
+        "feed_statuses": [
+          "home:OK",
+          "feed:OK"
+        ],
+        "substantive_items": 0,
+        "url": "https://starknet.io/"
       }
     ],
-    "coins_with_new_source_excerpts": 1,
-    "new_substantive_source_excerpts": 2,
+    "coins_with_new_source_excerpts": 0,
+    "new_substantive_source_excerpts": 0,
     "not_independent_primary_claims": true,
     "only_public_advertised_or_standard_feed_candidates": true,
     "project_domains_attempted": 12,
     "skipped": {
-      "recent_probe": 12
+      "recent_probe": 17
     }
   },
   "direct_research_full_source_audit": {
@@ -396,22 +545,23 @@
   "evidence_counts": {
     "adjacent_full_event_rows": 709,
     "adjacent_read_index_event_rows": 500,
-    "canonical_research_leads": 13126,
-    "direct_publisher_article_excerpts": 275,
-    "direct_publisher_article_fetch_attempted": 43,
+    "canonical_research_leads": 13112,
+    "cumulative_linked_repository_release_events": 0,
+    "direct_publisher_article_excerpts": 291,
+    "direct_publisher_article_fetch_attempted": 34,
     "engine_rows": 3218,
     "expanded_rows": 10339,
-    "free_adaptive_followup_leads": 209,
+    "free_adaptive_followup_leads": 207,
     "global_research_quantitative_data_families": 3,
     "integrated_event_rows_before_dedup": 14090,
-    "long_excerpts_by_character_count_not_claim_verification": 6010,
+    "long_excerpts_by_character_count_not_claim_verification": 6015,
     "manual_high_context_selection_count": 300,
     "manual_verified_source_annotations_loaded": 0,
-    "new_coin_project_feed_events": 2,
-    "new_source_discovery_items": 20,
+    "new_coin_project_feed_events": 0,
+    "new_source_discovery_items": 0,
     "non_asset_structured_market_and_network_observations": 2833,
     "research_event_rows": 3042,
-    "substantive_source_excerpt_leads": 2557
+    "substantive_source_excerpt_leads": 2562
   },
   "excluded_ambiguous_okx_structured_records": 2,
   "global_observation_classification": "Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows.",
@@ -431,25 +581,21 @@
     "advertised_existing_feed_count": 0,
     "domain_cooldown_hours": 72,
     "domains_attempted": 1,
-    "domains_found_content": 1,
-    "domains_skipped_due_to_recent_probe": 83,
-    "new_feed_items": 20,
+    "domains_found_content": 0,
+    "domains_skipped_due_to_recent_probe": 84,
+    "new_feed_items": 0,
     "not_verified_facts": true,
     "sources": [
       {
-        "advertised_feeds": [
-          "https://ethereumclassic.org/rss.xml",
-          "https://ethereumclassic.org/rss-zh.xml",
-          "https://ethereumclassic.org/rss-ar.xml"
-        ],
-        "article_count": 20,
-        "domain": "ethereumclassic.org",
-        "feed_status": "OK",
+        "advertised_feeds": [],
+        "article_count": 0,
+        "domain": "quant.network",
+        "feed_status": "NOT_DISCOVERED",
         "home_status": "OK",
-        "substantive": 16
+        "substantive": 0
       }
     ],
-    "substantive_feed_items": 16
+    "substantive_feed_items": 0
   },
   "official_assets": 100,
   "per_coin": {
@@ -460,11 +606,11 @@
     "coins_with_curated_project_source_context": 36,
     "coins_with_public_cross_exchange_market_data": 93,
     "coins_with_substantive_coin_specific_context": 100,
-    "coins_with_substantive_coinspecific_article_context": 42,
+    "coins_with_substantive_coinspecific_article_context": 51,
     "coins_with_substantive_dated_third_party_events": 0,
     "coins_with_substantive_project_background_combined": 100,
     "coins_with_substantive_project_source_context": 33,
-    "coins_without_substantive_coinspecific_article_context": 58,
+    "coins_without_substantive_coinspecific_article_context": 49,
     "coins_without_substantive_project_background": 2,
     "curated_exchange_only_docs_substantive": 0,
     "curated_issuer_docs_substantive": 8,
@@ -476,18 +622,18 @@
     "third_party_coin_profiles_available": 99
   },
   "publisher_article_enrichment_audit": {
-    "attempted": 43,
+    "attempted": 34,
     "by_scope": {
-      "ASSET_CANDIDATE": 3,
-      "GLOBAL_UNRESOLVED": 23
+      "ASSET_CANDIDATE": 5,
+      "GLOBAL_UNRESOLVED": 14
     },
-    "cached_substantive_reused": 249,
-    "candidate_coins_targeted": 1,
+    "cached_substantive_reused": 272,
+    "candidate_coins_targeted": 6,
     "candidate_coins_with_substantive_publisher_excerpt": 1,
-    "cumulative_substantive_current_corpus": 275,
+    "cumulative_substantive_current_corpus": 291,
     "selection_policy": "PREFER_UNCOVERED_COINS_THEN_SECTOR_AND_GLOBAL",
-    "substantive": 26,
-    "succeeded": 32
+    "substantive": 19,
+    "succeeded": 24
   },
   "quality_caveat": "Search origin and provider metrics are NOT independently verified causal asset claims.",
   "research_quality_gate": {
@@ -502,11 +648,11 @@
     "material_research_status": "PARTIAL_RESEARCH",
     "project_background_context_status": "COMPLETE",
     "project_background_not_fresh_catalyst": true,
-    "publisher_excerpts": 275,
-    "publisher_source_attempted": 43,
+    "publisher_excerpts": 291,
+    "publisher_source_attempted": 34,
     "raw_all_leads_denominator_unchanged": true,
     "reason": "Extraction and discovery are not proof of independently verified 24h causal facts.",
-    "substantive_context_share": 0.1948,
+    "substantive_context_share": 0.1954,
     "substantive_context_target_met": false,
     "technical_source_integration": "PASSED"
   },
@@ -547,21 +693,10 @@
         "feed_summary_count": 0,
         "published_date_missing": 0,
         "published_last_24h": 0,
-        "published_last_72h": 364,
+        "published_last_72h": 357,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 411
-      },
-      "direct_project_feed:DIRECT_SOURCE": {
-        "article_extract_count": 0,
-        "distinct_source_domains": 1,
-        "feed_summary_count": 0,
-        "published_date_missing": 0,
-        "published_last_24h": 0,
-        "published_last_72h": 0,
-        "substantive": 2,
-        "substantive_published_last_72h": 0,
-        "total": 2
       },
       "expanded:DIRECT_SOURCE": {
         "article_extract_count": 0,
@@ -569,9 +704,9 @@
         "feed_summary_count": 0,
         "published_date_missing": 1,
         "published_last_24h": 0,
-        "published_last_72h": 120,
+        "published_last_72h": 118,
         "substantive": 224,
-        "substantive_published_last_72h": 112,
+        "substantive_published_last_72h": 110,
         "total": 236
       },
       "expanded:GOOGLE_NEWS_AGGREGATOR": {
@@ -580,39 +715,24 @@
         "feed_summary_count": 0,
         "published_date_missing": 0,
         "published_last_24h": 0,
-        "published_last_72h": 3689,
+        "published_last_72h": 3584,
         "substantive": 0,
         "substantive_published_last_72h": 0,
         "total": 9524
       },
-      "new_primary_source:DIRECT_SOURCE": {
-        "article_extract_count": 3,
-        "distinct_source_domains": 1,
-        "feed_summary_count": 9,
-        "published_date_missing": 0,
-        "published_last_24h": 0,
-        "published_last_72h": 0,
-        "substantive": 12,
-        "substantive_published_last_72h": 0,
-        "total": 12
-      },
       "research:DIRECT_SOURCE": {
-        "article_extract_count": 249,
+        "article_extract_count": 268,
         "distinct_source_domains": 82,
-        "feed_summary_count": 2419,
+        "feed_summary_count": 2406,
         "published_date_missing": 10,
-        "published_last_24h": 397,
-        "published_last_72h": 1150,
-        "substantive": 2249,
-        "substantive_published_last_72h": 984,
+        "published_last_24h": 363,
+        "published_last_72h": 1146,
+        "substantive": 2268,
+        "substantive_published_last_72h": 981,
         "total": 2862
       }
     },
     "by_source_id": {
-      "COIN_PROJECT_SITE_3155": {
-        "substantive": 2,
-        "total": 2
-      },
       "COIN_RESEARCH": {
         "substantive": 0,
         "total": 9204
@@ -624,10 +744,6 @@
       "DEVELOPER_COMMUNITY": {
         "substantive": 0,
         "total": 1
-      },
-      "DYNAMIC_ethereumclassic.org": {
-        "substantive": 12,
-        "total": 12
       },
       "GOVERNANCE_EVENTS": {
         "substantive": 1,
@@ -650,7 +766,7 @@
         "total": 59
       },
       "aave_blog": {
-        "substantive": 52,
+        "substantive": 57,
         "total": 61
       },
       "aave_governance": {
@@ -746,7 +862,7 @@
         "total": 10
       },
       "boe_press": {
-        "substantive": 49,
+        "substantive": 50,
         "total": 50
       },
       "btc_core_releases": {
@@ -930,7 +1046,7 @@
         "total": 8
       },
       "fed_monetary": {
-        "substantive": 8,
+        "substantive": 13,
         "total": 15
       },
       "fed_press": {
@@ -1142,7 +1258,7 @@
         "total": 10
       },
       "huggingface_blog": {
-        "substantive": 30,
+        "substantive": 35,
         "total": 72
       },
       "huggingface_transformers_releases": {
@@ -1422,7 +1538,7 @@
         "total": 1
       },
       "utoday_news": {
-        "substantive": 67,
+        "substantive": 70,
         "total": 70
       },
       "vechain_releases": {
@@ -1458,8 +1574,8 @@
         "total": 10
       }
     },
-    "direct_research_substantive_count": 2249,
-    "direct_research_substantive_ratio": 0.7858,
+    "direct_research_substantive_count": 2268,
+    "direct_research_substantive_ratio": 0.7925,
     "direct_research_total": 2862,
     "disclaimer": "Substantive source text, not verified 24h causal evidence."
   },

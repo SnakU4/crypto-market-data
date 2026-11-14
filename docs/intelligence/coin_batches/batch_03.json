@@ -1,8 +1,44 @@
 {
   "coins": [
     {
-      "candidate_event_count": 144,
+      "candidate_event_count": 152,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CODE_COLOR: CODE_GREEN_TESTNET RELEASE_VERSION: 2.14.0-rc.5 PROTOCOL_UPGRADE: FALSE DATABASE_UPGRADE: FALSE SECURITY_UPGRADE: FALSE This release includes #16587 on top of rc4",
+          "id": "research:78c0116a1038443393",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-19T11:22:21Z",
+          "title": "2.14.0-rc.5",
+          "url": "https://github.com/near/nearcore/releases/tag/2.14.0-rc.5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CODE_COLOR: CODE_YELLOW_MAINNET RELEASE_VERSION: 2.14.0 PROTOCOL_UPGRADE: TRUE DATABASE_UPGRADE: TRUE SECURITY_UPGRADE: FALSE Protocol Changes Remove gas rewards: executing a FunctionCall no longer pays part of the burned gas back to the contract account as a reward. The burnt_gas_reward parameter is changed from 30% (3/10) to 0%. See HSP-027 Added an ml_dsa_verify host function so contracts can verify FIPS 204 ML-DSA-65 signatures on-chain. It takes the signature (3309 bytes), an arbitrary-length message, and the raw 1952-byte public key, each passed either from memory or from a register, and returns 1 for a valid signature or 0 for an invalid one; a wrongly-sized signature or public key aborts the call with MlDsaVerifyInvalidInput . The message is verified as-is with an empty context string, so callers must not pre-hash it. It costs a fixed base cost of 540 Ggas and a dynamic per-byte cost of 11 Mgas per byte. The per-receipt storage proof limit now applies to every action in a recei",
+          "id": "research:b5eb17b983763288ea",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-26T18:59:52Z",
+          "title": "2.14.0",
+          "url": "https://github.com/near/nearcore/releases/tag/2.14.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CODE_COLOR: CODE_GREEN_TESTNET RELEASE_VERSION: 2.14.0-rc.6 PROTOCOL_UPGRADE: FALSE DATABASE_UPGRADE: FALSE SECURITY_UPGRADE: FALSE This release includes #16621 , #16630 and #16633 on top of rc5",
+          "id": "research:c4302e43e99d5e8d86",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-22T16:36:45Z",
+          "title": "2.14.0-rc.6",
+          "url": "https://github.com/near/nearcore/releases/tag/2.14.0-rc.6"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "CODE_COLOR: CODE_GREEN_TESTNET RELEASE_VERSION: 2.14.0-rc.7 PROTOCOL_UPGRADE: FALSE DATABASE_UPGRADE: FALSE SECURITY_UPGRADE: FALSE Includes #16637 on top of rc6",
+          "id": "research:d8325e8a03a957224f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-26T16:15:42Z",
+          "title": "2.14.0-rc.7",
+          "url": "https://github.com/near/nearcore/releases/tag/2.14.0-rc.7"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "🚨NEAR AI HIT BY VULNERABILITY THAT EXPOSED USER DATA! @near_ai said an attacker used a vulnerability in the inference engine running on its servers to access part of its infrastructure on November 8. The company closed the access, fixed the issue X",
@@ -56,42 +92,6 @@
           "published_utc": "2026-11-12T22:11:00Z",
           "title": "MercadoLibre (MELI) Stock Price Prediction: Analyst cuts meet a soft technical bid near $1,500 - Blockchain News",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMElRUW9ENVNpTjNoRy1yNmVxb2RZWC1Xbk5vVlRyYjFBcEdQLWJ6UkUtcmx0UzlBdVVYTFN0ZmVzenhidENXY2xyNjlDQlRfNXBma3B2ZE02eU9UTHZUU2E1RGlRT1NwdWhlYUdwOUg3YlQwN3VCZHktMlFjOTJtUGd5WW1HS0JVZlI0TjVPdnIxMGg3emhnUHdR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Constellation Energy (CEG) Stock Price Prediction: Buy-rating trim meets a constructive pullback near resistance Blockchain News",
-          "id": "expanded:0951f269149e9f88fd",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T22:28:00Z",
-          "title": "Constellation Energy (CEG) Stock Price Prediction: Buy-rating trim meets a constructive pullback near resistance - Blockchain News",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRzJTVzUzWWNIelFrZHNhWFR6SGl1c1RVcVJXa3VFNGFuSEV1eFF2c2l1YmdFZmE4TUJDcjBpakdueWU5WVhleXpPUU42TmZxVnpWTUxxbWUxdFFETXlCZ3lqMXZNYUowVWZMaWd1T1Q4MGlyaGhMRFZ6eUY2TVFkdzktbzVfTDBBVWw4aFdldENuRTNfZ2tzWDUtNA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Primordial Labs raises $18M to expand military voice-control software Reddit",
-          "id": "expanded:099394d86e7228290a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T15:33:18Z",
-          "title": "Primordial Labs raises $18M to expand military voice-control software - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ3pNVl9LZlIxcWVncEhzZVZ0N3BtbmliYWVEUlppU0NoQ0V5Tzl2NngwZnlVdWRJZW9wV2pNLXVtdVRTNWtBV21NSjZPbFVmY0h2aFBYN1hMQ29xYTdDUEg3dVhhTmxwVWNXc0ZVQnlKZnV2bmpIUUFWWUc2MzF2cWlnWFBvdDFsVlExTUJ3MEI3RzlNeGJUd3ZfN0ZleFp6MEE?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "BNB Chain Issues Urgent Fix for Critical State-Root Bug CoinTrust",
-          "id": "expanded:0ac727e60bed7781d6",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T05:14:29Z",
-          "title": "BNB Chain Issues Urgent Fix for Critical State-Root Bug - CoinTrust",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNS1cwWHlOdmlpTzgtaEdwUjdRMlprV0pUQ1FNVGxQWkQ5VEc1amRmSWNjQ3BvZHlrdy0yUVRfRHpMVWpVcGV6UnJnRmdKY3pFRmJfdjhBTlZnaUhsR3d2TXV4NWhtdFdOUDh2bzRGcjNYQWZKbEFfaWxDdmNJcndrMEFkLWR1QURKa2NHZEJPZHJiZXhzTW5MU9IBngFBVV95cUxQaEhzdnRhaWZYVlo3MElOamZtN2hGSlR3TUh3SlV3SXV6RlV2ZTNMelR0dUV1TkNVR1dpNmprYXFwdDZKSFVXNEVpdmpQMkhmQkU0NGo5OTZqeXlGT2czT01acjQzb2lqNTk2VDVJT1FTa2RXR3picFE5YllVenZScEZvYVU3eWtSZnpsbFYwYkpkc3FMN2FwaVpSNktpdw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Buy Signal NEAR Protocol USD - 7 Nov 2026 @ 00:42 -> $3.74 Reddit",
-          "id": "expanded:0b0e8783634de89204",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T05:45:03Z",
-          "title": "Buy Signal NEAR Protocol USD - 7 Nov 2026 @ 00:42 -> $3.74 - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa3JtN2tkS2d6aC1RWDFWOFh6a2pfTllJMjl2QThkR1h0YjRzaFBtRDNfa0RLMlBRZzhYZDJPczl5TjU3VnhzMTkteEZEVFFZd09HeHdFSnRJQkFFRTZFdzlXZjUtSHdDQWg5bjgyMVYzUG85VHNoRVlOZFZnS1oyS050V3FtZnNEbFFyMzI4cE5Weng2ZDM4elN0QThVSXZKWmFr?oc=5"
         }
       ],
       "cmc100_weight": 0.22,
@@ -732,13 +732,13 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 145,
+      "candidate_event_count": 151,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Governance & Network Polkadot’s active validator set is scheduled to move from 600 to 500, with nominators encouraged to review nominations to maintain rewards eligibility (via rossbulat ). Proposal #676 analysis outlines an independent Kusama running on a reduced JAM network with its own validators (via AndreyMcQueen ). Technical & Infrastructure Polkadot Devs highlighted the Product SDK, a TypeScript toolkit covering chain clients, transaction lifecycle tracking, multi-provider signing, typed contracts, and SS58/H160 utilities (via PolkadotDevs ). The new Polkadot testnet relay chain reportedly reduces infrastructure footprint, cutting validators from 152 to 58, cores from 56 to 19, and budget by 48.8% while hosting the Products Devnet (via VRCI_Global ). Chainspect reported Polkadot has maintained a Nakamoto coefficient above 100 for 348 consecutive days (via chainspect_app ). Ecosystem Polkadot marked five years since its first parachain, Statemint — now Asset Hub — onboarded to th",
           "id": "research:066d0e504bf5bdae3a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-05T10:45:57Z",
           "title": "Polkadot Socials Daily Digest: 2026-11-05",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-05/19251"
@@ -747,16 +747,25 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Governance Polkadex Referendum #36 is nearing close, proposing Runtime 392 to align Polkadex with polkadot-sdk stable2512 and release PDEX stuck in old locks; voting closes Oct. 29 at 17:00 UTC (via polkadex ). Kusama governance proposals #671 – #674 outline a potential shift: making Kusama a service on Polkadot JAM and allocating up to 5M DOT from Kusama Vision (via cryptoptify ). Nova Wallet advised KSM direct stakers to update validator selections as it takes its Kusama validators offline (via NovaWalletApp ). OpenGov #1961 is in Deciding to fix Asset Hub’s dotUSD recorded-supply discrepancy and unblock Snowbridge by restoring Bridge Hub weights; the proposal states balances are not changed (via JMiaozi ). Ecosystem dotUSD is live on Polkadot as a network-governed stablecoin with no corporate issuer, governed through the DOT DAO via OpenGov (via TTT_News_ ). PRDCTR_IO was profiled as building a dedicated prediction-markets AppChain on Aventus, secured through Polkadot (via GhostROnc",
           "id": "research:08b6f31f871953be72",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-29T06:54:41Z",
           "title": "Polkadot Socials Daily Digest: 2026-10-29",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-10-29/19171"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The regression test the Fellowship added for the dotUSD incident fits on one screen. Alice holds 1,000 dotUSD and no DOT. She sends one WithdrawAsset for her dotUSD plus 1 DOT. dotUSD sorts first and gets withdrawn, the DOT withdrawal fails, the instruction errors. Before the fix, her balance came back and the supply didn’t. Parity’s incident review went up yesterday ( review ) and explains it at a high level. I wanted to see both halves in code, the supply that drifted and the pool that priced it, so I read the fix in polkadot-sdk and that test ( tests.rs at 7b27d43 ). All of it is fixed and public, and I’m only looking at the code here, not at the disclosure timeline. The credit that dropped too late Since polkadot-sdk PR #10384 (merged 16 February 2026) the XCM executor keeps real imbalances in holding instead of plain numbers. That PR was actually written to keep total issuance correct during XCM programs. WithdrawAsset takes each asset from the origin as a Credit and collects them",
+          "id": "research:48cab8d4138efd858d",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-03T04:46:35Z",
+          "title": "How a dropped XCM credit lowered dotUSD supply, and why the pool priced it",
+          "url": "https://forum.polkadot.network/t/how-a-dropped-xcm-credit-lowered-dotusd-supply-and-why-the-pool-priced-it/19209"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "This release contains the changes from polkadot-stable2606-4 to polkadot-stable2606-5 . ℹ️ Please note: ⚠️ this is a patch release for the stable version stable2606 and contains only patches and fixes to the crates (list below). No binary or docker images will be provided for this release. Once published, polkadot-stable2606-5 will also be tagged as polkadot-v1.24.5 . The following crates were updated to the corresponding versions: Changed crates: pallet-revive-uapi@0.15.6 pallet-revive-fixtures@0.15.3 pallet-revive@0.21.1 📦 The complete changelog with full descriptions is attached to this release as CHANGELOG.md , and in machine-readable form as changelog.json . 💥 Breaking Changes None in this release. Changelog Smart Contracts (Revive) 🛠️ Runtime Dev #13689 : [pallet-revive] align terminate precompile with opcodes This PR aligns the terminate precompile with the opcodes. The precompile now pays out the balance immediately and only deletes the contract if this transaction created it, ",
           "id": "research:4a17e6ce14d833a0d1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-05T09:30:22Z",
           "title": "Polkadot stable2606-5",
           "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-stable2606-5"
@@ -765,7 +774,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Technical & Product Polkadex Runtime 392 is live, upgrading the chain to polkadot-sdk stable2512 , freeing PDEX stuck in old locks, and preparing the next roadmap step: cross-chain PDEX (via polkadex ). Polkadot’s JAM ecosystem has 45 clients in development across five language sets, backed by Web3 Foundation incentives totaling 10M DOT and 100K KSM for milestone delivery (via MSBIntel , leeky_k_crypt ). Kusama JAM Prime discussions outlined four possible 40-coretime-year allocation models: 8 cores for 5 years, 6 cores for 6 years 8 months, 4 cores for 10 years, or 2 cores for 20 years (via VRCI_Global ). Ecosystem & Community Polkadot Assemble momentum is focused on Mumbai, where FAIR announced a side event with talks, workshops, quizzes, and product-focused builder sessions (via dotAssemble , PolkadotDevs , fair_communityy ). WUD announced its Aura Awards competition starting November 1, with top-50 Mystery Box rewards and Aura scoring influenced by WUD and WUD Universe ownership (vi",
           "id": "research:5a512b79239687563f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-30T07:17:16Z",
           "title": "Polkadot Socials Daily Digest: 2026-10-30",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-10-30/19183"
@@ -774,16 +783,25 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Governance OpenGov referendum 1960 executed, with Polkadot runtime 2.5.1 preparing Asset Hub and Bridge Hub for upcoming AHMv2 and Individuality upgrades (via VRCI_Global ). Referendum 1958 passed with 99.83% approval, enabling the Polkadot App to onboard up to 1 million users with .dot usernames, with activation expected around Nov. 2 (via kaidloscopes , iseungh89354068 ). A Polkadot forum discussion highlighted MADAR, a Substrate chain testing “one operator, one vote” governance as an alternative to stake-weighted voting (via VRCI_Global ). Ecosystem Polkadot Assemble — Genesis Mumbai expanded community partnerships, with Web3 Aligarh and Hyderabad DAO joining a full-day builder event featuring talks, technical deep dives, and hands-on sessions (via Web3Aligarh , hyderabaddao , dotAssemble ). PROCESSING LOG Report Generated: 2026-11-02 10:04:15 Total X posts curated: 1960 Posts Filtered and Analysed: 1932 Data Source: X (Twitter) This report is auto-generated and provided for informa",
           "id": "research:6741008f8dc20b892b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-03T11:01:27Z",
           "title": "Polkadot Socials Daily Digest: 2026-11-02",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-02/19216"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "A Kusama Wish for Change needs a 666.67 KSM decision deposit before it can go to a vote. Governance takes that deposit from one account. A proposal can have support and still time out because nobody can carry the whole amount. We have built a contract that lets people and groups share it. The first pool is live for our Wish for Change #676 . We are asking for code review and people to try the Paseo rehearsal. This is experimental and has not had an independent review. We deployed before that review to leave time before #676 times out. A killed referendum loses the deposit, and a contract bug could also put contributions at risk. Kusama pool : real KSM. Paseo rehearsal : free test PAS. Source, tests and logs . Verified Kusama contract . How it works Each pool is fixed to one referendum and its exact deposit. It has no owner, admin key or upgrade path. People contribute from their own accounts. The payment that fills the pool tries to place the deposit in the same transaction. If placeme",
+          "id": "research:70d859cc82ba1c4dc5",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-30T16:11:37Z",
+          "title": "Collaborative decision deposits: live on Kusama, open for review",
+          "url": "https://forum.polkadot.network/t/collaborative-decision-deposits-live-on-kusama-open-for-review/19187"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "People often say that one day data will live on chain. Here is a case where it already does, and where the main result of using a blockchain is not financial. Since April 2026, home air sensors in Cyprus, on Koh Phangan in Thailand, on Réunion, across Europe and in 20+ countries have been sending their readings through Robonomics. Since 28 September, when Robonomics moved to Polkadot, the record lives on Polkadot. What has piled up (counted on 13 November, from 1 April, when the current index starts): 19M+ readings, 100M+ individual values: fine and coarse dust, temperature, humidity, pressure, street noise, CO₂ indoors 100+ sensors in 20+ countries almost half a million entries on chain Earlier readings are on chain too and will be re-indexed, so these numbers are floors. What the data has already shown Koh Phangan: very clean background air, with about 1,200 short, sharp pollution episodes inside it, mostly in the evening and right next to a single sensor. That is daily household tra",
           "id": "research:70f594bd38144bf607",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-13T18:45:12Z",
           "title": "Polkadot already holds an open dataset of the planet's air: 19M+ readings from citizen sensors",
           "url": "https://forum.polkadot.network/t/polkadot-already-holds-an-open-dataset-of-the-planets-air-19m-readings-from-citizen-sensors/19488"
@@ -792,7 +810,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Technical & Developer Updates X25519 encrypted messaging is live on Polkadot Hub, with the same pattern available on Kusama and Westend; the XMTP gateway is designed so it cannot read message contents (via VRCI_Global ). Polkadot SDK repo updates included staking-era points for Asset Hub/People blocks, Revive receipt-log bounds and exact deposit refunds, PSM account simplification, and tracing/dev executor fixes (via JMiaozi ). A design post outlined how Polkadot JAM could support trading without a centralized master key (via danicuki ). General Updates Polkadot and Kusama appeared in a monthly code-commit ranking alongside other major chains, highlighting continued developer activity visibility (via pnxgrp ). SubWallet summarized recent Polkadot shipping milestones, including Asset Hub-based balances, staking and governance activity, live dotUSD, the capped DOT supply model, and JAM progress (via subwalletapp ). PROCESSING LOG Report Generated: 2026-11-04 10:04:37 Total X posts curate",
           "id": "research:8bb18d5cf6c0e9cb93",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-04T14:26:45Z",
           "title": "Polkadot Socials Daily Digest: 2026-11-04",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-04/19232"
@@ -801,28 +819,10 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Governance Polkadot Referendum 1962, covering USDC funding for the Public RPC Multi-Asset Bounty, gained support as an alternative path for RPC provision in Polkadot (via saxemberg ). Coverage recapped Polkadot’s March 2026 OpenGov token-model reset, including a 2.1B DOT hard cap and 53.6% emissions reduction (via BSCNdecoded ). Technical Polkadot/Kusama binary release polkadot-v1.25.1 is now available (via ApertureMining ). Polkadot SDK repo activity included AHMv2 HRMP async deposit provider work, FRAME balance updates, node-side extrinsics-root verification, statement-store DHT work, and stable2609-1 tagging (via JMiaozi ). Legacy XCMv3 has a deprecation timeline: Polkadot SDK stable2612 , expected December 2026, will drop XCMv3, requiring parachains and apps to migrate to XCM v4 or v5 (via popmemecoin ). Ecosystem SoFi now supports buying, selling, and holding DOT in-app; the US national bank reports 17.1M members and added 1.2M members in Q3 (via MSBIntel ). Hydration added Wormho",
           "id": "research:a20c85a9de1660b6f1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-03T11:05:56Z",
           "title": "Polkadot Socials Daily Digest: 2026-11-03",
           "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-03/19217"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Hello everyone, I’m researching Polkadot’s transaction graph and investigating an unusual pattern of successful self-transfers involving astronomically large requested amounts. I would appreciate some clarification from people familiar with the historical Balances pallet implementation and Polkadot runtime upgrades. 1. What I observed I identified successful Balances.transfer extrinsics where the sender and recipient were the same account, but the requested transfer amount was far beyond any possible account balance. Two examples from my dataset: Example 1 — May 2, 2021 Block: 4880515 Extrinsic: 4880515-2 Runtime spec_version : 30 Transaction version: 7 Requested amount: approximately 12.65 trillion DOT Sender and recipient: identical Extrinsic result: System.ExtrinsicSuccess No Balances.Transfer event was emitted. Example 2 — July 5, 2022 Block: 11026623 Runtime spec_version : 9230 Transaction version: 12 Requested amount: approximately 16.395 trillion DOT Sender and recipient: identi",
-          "id": "research:bdace4d8b4200bb631",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-03T10:01:49Z",
-          "title": "Historical Polkadot Self-Transfers: When Did Balance Validation Move Before the Self-Transfer No-Op?",
-          "url": "https://forum.polkadot.network/t/historical-polkadot-self-transfers-when-did-balance-validation-move-before-the-self-transfer-no-op/19213"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Cryptocurrencies mostly bounced back on Thursday as signs that investors were buying the dip increased. Popcat, a popular Solana meme coin, rose to $0.65, 134% above its lowest point this year, making it one of the best-performing tokens in the market. WIF, Popcat, and Polkadot are rising Dogwifhat (WIF) token also rose for three consecutive […] The post Popcat, WIF, Polkadot Crypto Prices Rise as Traders Buy the Dip appeared first on BanklessTimes .",
-          "id": "research:e20db1d753b0779044",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-08-08T06:05:00Z",
-          "title": "Popcat, WIF, Polkadot Crypto Prices Rise as Traders Buy the Dip",
-          "url": "https://www.banklesstimes.com/news/2024/08/08/popcat-wif-polkadot-crypto-prices-rise-as-traders-buy-the-dip/"
         }
       ],
       "cmc100_weight": 0.07,
@@ -1162,97 +1162,97 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 94,
+      "candidate_event_count": 126,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #100 (Part 1 of 2) on Jul 27, 2026. Snapshot vote: link . Summary This proposal continues the protocol fee rollout approved in UNIfication, following proposals #93 , #94 , #95 , and #96 . It uses the expedited governance process where fee parameter update proposals go directly to a five-day Snapshot followed by an onchain vote. Protocol fees are now live across all v2 and v3 pools on 11 chains - Ethereum, Arbitrum, Base, Celo, OP Mainnet, Soneium, X Layer, Worldchain, Zora, BNB Chain, and Polygon. Last month, the protocol set a record burning 186,000 UNI in one day . Below we introduce a system for v4 protocol fees and propose to activate it on a subset of v4 pools on these same chains. Implementation Details v4’s hook architecture requires a different approach to fee activation than v2 or v3. v2 pools have a single LP fee tier and are charged a static fee. v3 has several LP fee tiers, each charged a static fee. Hooks ",
+          "id": "research:04f57390de068c6432",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-07T13:46:50Z",
+          "title": "[Executed] [Temp Check] Activate v4 Protocol Fees",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-activate-v4-protocol-fees/26162"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "1. Summary This proposal aims to upgrade Uniswap’s tokenomics by transforming the existing UNIfication mechanism into a direct reward engine for active participants and turning the DAO Treasury into a self-sustaining operation: Synthetic Hard Cap: Implement a governance rule where 100% of the 2% annual inflation tokens are routed directly to a dead address (0x000…dEaD) upon minting, permanently freezing the maximum supply. Pivoting UNIfication to Real Yield: Keep the highly effective UNIfication programmatic market-buyback mechanism exactly as it is, but change the final destination: instead of burning the bought-back UNI tokens, route 100% of them directly to the Uniswap Staking Contract as rewards for stakers. Self-Sustaining Treasury via Staking: The Uniswap DAO will stake its massive treasury reserves of UNI. This allows the Treasury to capture the lion’s share of the bought-back UNI rewards, providing ample, non-dilutive funding for grants, R&D, and operations without market-selli",
+          "id": "research:08758311283fb99f9f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-25T12:09:44Z",
+          "title": "RFC : Tokenomics overhaul : hard-capping supply via auto burn, pivoting unification to staking distribution and staking DAO treasury reserves",
+          "url": "https://gov.uniswap.org/t/rfc-tokenomics-overhaul-hard-capping-supply-via-auto-burn-pivoting-unification-to-staking-distribution-and-staking-dao-treasury-reserves/26132"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "MiCA is fully enforced. Uniswap serves EU users across multiple deployments. I haven’t seen governance discussion on how compliance will work without geo-blocking or fragmenting liquidity. I’ve built an open-source ZK compliance layer (Piyora) — users do KYC once with any provider, then generate a zero-knowledge proof in-browser (3-5 seconds) that says “I’m compliant” without revealing identity. Verified on-chain. Practically: Single Solidity modifier to integrate. No separate pools or permissioned deployments. 25K gas overhead per tx on L2 (~$0.002 on Base). One-time attestation: 280K gas (~$0.02). Uniswap never touches PII. No KYC data custody, no liability. Users re-prove every 7-30 days (auto-checks latest sanctions list). Built in Noir (~30K constraints, UltraPlonk). Open source. Working prototype. Not proposing a vote — genuinely checking: Is EU regulatory compliance being discussed anywhere I’m missing? Would governance consider a ZK-based approach vs traditional KYC gating? Wha",
           "id": "research:0bd73ac0fb9f902262",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-06-26T13:05:03Z",
           "title": "[Discussion] Privacy-Preserving MiCA Compliance — How Is Uniswap Handling EU Users?",
           "url": "https://gov.uniswap.org/t/discussion-privacy-preserving-mica-compliance-how-is-uniswap-handling-eu-users/26137"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "urc 3 title Hook TVL and Effective Liquidity Reporting author Matteen Mobasheran ( @matteenm ), Mark Toda ( @MarkToda ), Daniel Gretzke ( @gretzke ), Alice Henshaw ( @hensha256 ) status Discussion created 2026-06-11 Abstract This URC defines IHookStats , a read-only interface through which Uniswap v4 hooks report TVL and immediately swappable liquidity. Motivation Uniswap v4 custom accounting allows hooks to replace, augment, or reduce the core AMM swap calculation. This enables hooks that wrap assets, route to external venues, deploy active liquidity, use vaults, rehypothecate reserves, settle through off-pool balances, or implement custom liquidity mechanisms. DEX interfaces and routers need a standard way to discover hook TVL and immediately swappable liquidity. PoolManager events may not capture liquidity deployed through external protocols, vaults, ERC-6909 claims, JIT strategies, or other custom mechanisms. Specification The key words “MUST”, “MUST NOT”, “SHOULD”, “SHOULD NOT”, “",
+          "id": "research:10838fd7d1921722ea",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-30T16:33:33Z",
+          "title": "URC-3: Hook TVL and Effective Liquidity Reporting",
+          "url": "https://gov.uniswap.org/t/urc-3-hook-tvl-and-effective-liquidity-reporting/26155"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #98 on Jul 15, 2026. Snapshot vote: link . Summary Secure crosschain messaging is an integral part of Uniswap’s governance model. Governance votes like protocol fee adjustments are executed by UNI holders on Ethereum Mainnet and must subsequently be relayed to destination chains. This proposal updates Uniswap’s crosschain governance system to accommodate the latest best practices. Specifically, we propose to: Transition ownership of the Uniswap v2 and v4 contracts on Soneium and X Layer to CrossChainAccount contracts, which we consider to be the current best practice for executing messages from Ethereum Mainnet on the OP Stack Migrate the entire messaging system for the Avalanche and MegaETH deployments from LayerZero v1 (part of which is being deprecated ) to Wormhole Note that because Uniswap v3 on both Soneium and X Layer is owned by the v3OpenFeeAdapter , which is owned by the CrossChainAccount, we do not need to c",
+          "id": "research:1d41d17c0dac91734a",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-19T17:04:30Z",
+          "title": "[Executed] [Temp Check] - Update Crosschain Governance Parameters for Avalanche, MegaETH, Soneium, and X Layer",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-update-crosschain-governance-parameters-for-avalanche-megaeth-soneium-and-x-layer/26127"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #97 on Jun 1, 2026. Snapshot vote: link . With DUNI unlocking greater governance participation from UNI token holders, this proposal undelegates 12.5M UNI currently deployed via the Franchiser, returning the tokens to the Governance Timelock. Snapshot: https://snapshot.box/#/s:uniswapgovernance.eth/proposal/0xd41b2db93c0348e9061bf786dfcb610d8f35e8447f2e90b37b8f30a9b1a3091e Background & Motivation These UNI were delegated from the treasury in 2022 and 2023 – 2.5M to the Uniswap Foundation and 10M to a group of active delegates – during periods of low governance participation. The delegations were intended to bootstrap an active delegate base when quorum was at risk and the number of delegates that could meet the proposal threshold was small. Today, Uniswap’s governance environment looks very different. UNI holders have been actively delegating voting power, and since DUNI was established, passed proposals have averaged ",
+          "id": "research:33eea467347970ca4e",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-04-24T19:46:26Z",
+          "title": "[Executed] [Temp Check] - Return 12.5M Delegated Tokens to the Governance Timelock",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-return-12-5m-delegated-tokens-to-the-governance-timelock/26099"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Older threads kept for the record: early support questions, airdrop threads and off-topic posts. Read-only. 1 post - 1 participant Read full topic",
+          "id": "research:3a3bbd1d870e55cfc8",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-13T19:53:24Z",
+          "title": "About the Archive category",
+          "url": "https://gov.uniswap.org/t/about-the-archive-category/26347"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "test updates ( #932 ) * fix fork tests * allow fork cheatcodes * pr feedback yee * woohoo --------- Co-authored-by: Alice Henshaw <henshawalice@gmail.com> Co-authored-by: saucepoint <saucepoint@protonmail.com> Co-authored-by: dianakocsis <diana.kocsis@uniswap.org>",
           "id": "research:47a0ecb006af176a86",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2025-01-23T19:00:03Z",
           "title": "Uniswap Protocol v4",
           "url": "https://github.com/Uniswap/v4-core/releases/tag/v4.0.0"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Proposal Summary This proposal formally requests that Stable be recognized as a canonical chain within the Uniswap V3 deployment framework. The intent is to acknowledge the already-deployed Uniswap V3 contract suite on Stable, with Stable Swap ( swap.stable.xyz ) serving as a standalone, actively maintained frontend that routes trades through this deployment. By doing so, the Uniswap DAO would extend canonical coverage to a USDT-native, high-throughput Layer 1 purpose-built for stablecoin payments, while requiring no additional technical work beyond updating the canonical deployments registry. Proposal Stakeholders Proposer : Protofire / website: https://protofire.io / X (Twitter) handle: https://x.com/protofire Deployer : Protofire Bridge Provider : LayerZero ( https://layerzero.network ) About Stable Stable is a high-throughput, EVM-compatible Layer 1 “StableChain” purpose-built for USDT and stablecoin settlement. It treats USDT as a native gas asset, enabling gasless transfers, ultr",
-          "id": "research:6af6e5649d42a26cd4",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-04-08T22:57:31Z",
-          "title": "[RFC] Stable Application for Canonical Uniswap V3 Deployment",
-          "url": "https://gov.uniswap.org/t/rfc-stable-application-for-canonical-uniswap-v3-deployment/26080"
+          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #102 on Oct 5, 2026. Snapshot vote: link . This proposal is part of the protocol fee rollout, following proposals #93 , #94 , #95 , #96 , #99 , and #100 . It uses the expedited governance process approved in UNIfication, where fee parameter update proposals can bypass the RFC stage and go directly to a five-day Snapshot followed by an onchain vote. Since protocol fees went live on Ethereum mainnet in late December last year, the rollout has extended to eleven additional chains: Arbitrum, Base, OP Mainnet, Worldchain, X Layer, Soneium, Zora, Celo, BNB Chain, Polygon, and Robinhood Chain. The burn system is working as designed, with fees accumulating in TokenJars across chains. From there, searchers claim them in exchange for burning UNI by bridging it back to mainnet and sending it to the burn address. Arc is a Layer 1 built by Circle for the world’s financial markets, real-time money movement, and agentic economic acti",
+          "id": "research:615f42d9ff7aa763fc",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-18T14:39:50Z",
+          "title": "[Executed] [Temp Check] Protocol Fee Expansion: Arc",
+          "url": "https://gov.uniswap.org/t/executed-temp-check-protocol-fee-expansion-arc/26287"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The digital cooperative governing Uniswap, the biggest decentralised exchange, is voting on a proposal to take back some $42 million worth of governance tokens from delegates. Between 2022 and 2023, Uniswap’s decentralised autonomous organisation, or DAO, loaned out 12.5 million UNI to the nonprofit Uniswap Foundation and several top delegates in a bid to boost governance participation. According to Erin Koen, the proposal’s author and governance lead at Uniswap Labs, the protocol’s governance is now much more active, meaning that the loaned tokens have served their purpose. “Today, Uniswap’s governance environment looks very different,” Koen said. “UNI holders have been actively delegating voting power, and since DUNI was established, passed proposals have averaged roughly 75 million votes in turnout, exceeding quorum by approximately 88%.” DUNI, Uniswap’s Decentralized Unincorporated Nonprofit Association, is a legal entity that recognises onchain governance votes as legally binding ",
-          "id": "research:9de6ed48c7ea17be70",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-05-05T11:23:34Z",
-          "title": "Uniswap DAO votes to take back $42m of governance tokens loaned to delegates",
-          "url": "https://www.dlnews.com/articles/defi/uniswap-dao-votes-to-take-back-loaned-uni-tokens/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "urc 1 title Uniswap Request for Comment Process author Daniel Gretzke ( @gretzke ) status Discussion created 2026-03-30 Abstract A Uniswap Request for Comment (URC) is a design document providing information to the Uniswap ecosystem, or describing a new standard or process related to Uniswap. A URC should provide a clear technical description of the proposed change together with its rationale. URCs are meant to drive alignment around designs that other developers build on, and are not intended to be used for every product, protocol, or update Uniswap Labs or teams building on Uniswap ship. This document defines the URC process and specifies how proposals are authored, discussed, and finalized. It is maintained by URC editors and updated directly when the process changes. Changes are logged in the changelog at the end of this document. Motivation The Uniswap ecosystem produces widely used smart contracts and standards that are depended upon by a broad range of participants, including pr",
-          "id": "research:b00e7961936163e0ba",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-06-29T20:01:21Z",
-          "title": "URC-1: Uniswap Request for Comment Process",
-          "url": "https://gov.uniswap.org/t/urc-1-uniswap-request-for-comment-process/26152"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #101 on Oct 5, 2026. Snapshot vote: link . TL;DR DUNI owns the three Gauntlet-curated Morpho Vaults V2 behind Uniswap Earn: uniUSDC, uniUSDT and uniETH, all on Ethereum mainnet. Gauntlet has upgraded its signing infrastructure and needs to swap out some wallets configured in the Sentinel role on vault deployment. setIsSentinel , the function used to adjust addresses granted the Sentinel role, is owner-gated and the Owner is Uniswap governance’s mainnet Timelock. Background Uniswap Labs launched Uniswap Earn in July 2026. Consistent with past Uniswap Labs-originated protocol launches, the ownership roles on the smart contracts that power Uniswap Earn were assigned to Uniswap Governance. In Earn, a user deposits USDC, USDT or ETH in the Uniswap app, the deposit flows into a Morpho Vaults V2 instance, and Gauntlet curates the allocation. In the run up to launch, Gauntlet deployed the three vaults and transferred ownership",
-          "id": "research:bbda61a4dbe43d544d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-10T17:01:43Z",
-          "title": "[Executed] [Temp Check] Rotate Sentinel Addresses on the DUNI-Owned Uniswap Earn Vaults",
-          "url": "https://gov.uniswap.org/t/executed-temp-check-rotate-sentinel-addresses-on-the-duni-owned-uniswap-earn-vaults/26281"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Authors: SilentSwap Core Development Team Category: Protocol Integration / Privacy Infrastructure Status: Request for Comment - Phase 1 of the Uniswap governance process TL;DR We propose integrating an optional “Swap Privately” execution path directly into the Uniswap interface - the official web app and wallet - powered by SilentSwap’s non-custodial privacy infrastructure and implemented through Uniswap v4 Hooks and/or UniswapX . The goal is native UX integration: privacy-enhanced execution presented as a first-class option alongside the standard swap, not an external tool users have to find and trust separately. The integration can be fully white-labeled, so the experience remains entirely Uniswap’s. What this RFC asks for: Community and delegate feedback on (1) whether native execution privacy belongs in the Uniswap interface as an opt-in “Swap Privately” option, and (2) which integration architecture - v4 Hooks or UniswapX - should anchor a proof of concept. We recognize interface ",
-          "id": "research:ce9460a81b9f5cd536",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-07-23T12:15:43Z",
-          "title": "[RFC] Native Execution Privacy in the Uniswap Interface via v4 Hooks and UniswapX",
-          "url": "https://gov.uniswap.org/t/rfc-native-execution-privacy-in-the-uniswap-interface-via-v4-hooks-and-uniswapx/26208"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NEW: @Uniswap processed over $15B in stablecoin-to-stablecoin trading volume across EVM chains in the past 30 days. • Uniswap: 53.7% market share • All other DEXs combined: 46.3% Uniswap now handles more stable-to-stable volume than every other X",
-          "id": "expanded:0186cf429e46bb7ad0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T06:45:00Z",
-          "title": "NEW: @Uniswap processed over $15B in stablecoin-to-stablecoin trading volume across EVM chains in the past 30 days. • Uniswap: 53.7% market share • All other DEXs combined: 46.3% Uniswap now handles more stable-to-stable volume th",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ET3ZNdHNna0Rza0Q0bmhXcTMxYTFoWDJFMjlaQ3VxMGp2emdfZzlJeS0zVXlQbVFvSzZhMllTdkxtVmhvTUJlUGljalFCZllZcFBVaUZKY2c3bFhpa2k0?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "@KyleReidhead We called $UNI, $HOOD, $SKY, and $AERO before their big run-ups. Don't miss the next one, come join us for just $1: https://t.co/irjKYAIoor X",
-          "id": "expanded:0346563f0ae83d6635",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T14:32:00Z",
-          "title": "@KyleReidhead We called $UNI, $HOOD, $SKY, and $AERO before their big run-ups. Don't miss the next one, come join us for just $1: https://t.co/irjKYAIoor - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFZHhuV2d5Zm1vTENEOEVJeGI1R1ktaUtHdVVocVA2YWswQzlkNTFETklzYWZvd25BbGM0SGFHcUhCSER2VGpHcUdTbUZBSFozNXgzRnZ1eGtjUlZVMmRhTXJPcUo?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "OKXICE brings tokenised securities trading to US investors grafa.com",
-          "id": "expanded:0cf8725629ea292786",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T03:11:42Z",
-          "title": "OKXICE brings tokenised securities trading to US investors - grafa.com",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVVYxVDMtd2FMc1hKNEhGYXFTa1FKdjNQRjV5OVhIYnhodGFOajNRblF4dTNfUmE3RGgzMEZjTmJ0SU54OS1TRWlHVmEwdERXRTFvR2puakVEUU94N1RJTmxzaW5BQ1ZaX0FzcUdlWlhwbl9hNmw4bHc0VlNFOUt1cWNsUGpxc3I0UWtOWVphUE9oOElBVG51YWp5b045WmxWVzJjbTk2VUY5X1JQbmRoYUJSUUtDWTJFdzNycUF1cw?oc=5"
+          "excerpt": "This is a procedural inspection request to the Uniswap Foundation, in its capacity as the funder-of-record of the $15.5M Uniswap Labs bug bounty program operated by Cantina (docs.cantina.xyz). I am a security researcher Voltgzer0 . I submitted a Critical-severity finding to the Uniswap Labs bounty on 2026-06-05 (finding #784 , ContinuousClearingAuction). The finding was rejected the same day by the client representative acting in the Cantina interface. I filed a dispute the same day. That dispute has been sitting in the Cantina platform for 29 days without any Step-4 triage activity, without any assigned reviewer, and without any response. I am not asking the Foundation to adjudicate technical merits. I am asking the Foundation, on the record, to inspect a specific structural question: Does Cantina’s published mediation process, as it is currently operating for the Uniswap Labs bounty, satisfy the standard the Foundation was contemplating when the $15.5M program was authorized via UNIf",
+          "id": "research:69fd70f7bed74e242f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-04T21:38:30Z",
+          "title": "Foundation inspection request — Cantina bounty mediation policy enforcement (finding #784, 29-day stalled dispute)",
+          "url": "https://gov.uniswap.org/t/foundation-inspection-request-cantina-bounty-mediation-policy-enforcement-finding-784-29-day-stalled-dispute/26160"
         }
       ],
       "cmc100_weight": 0.18,
@@ -2154,13 +2154,13 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 286,
+      "candidate_event_count": 314,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the add cap for USDC on the Core Hub Tokenization Spoke from 1M to 2M. Increase the draw cap for USDC on the Core Hub Main Spoke from 40M to 50M. Increase the draw cap for USDT on the Core Hub Main Spoke from 20M to 30M. Increase the draw cap for USDG on the Global Dollar Hub USDG Maple Spoke from 46.4M to 55M. Aave V4 Arc: Increase the draw cap for USDC on the Core Hub USDC Maple Spoke from 41.6M to 50M. Cap Utilization The chart shows add cap utilization (left) and draw cap utilization (right) for Aave V4 reserves at or above 50% of either cap, split by hub. The draw cap panel excludes cross-hub credit lines, which are draw-only legs through which a spoke borrows from a hub against collateral supplied on another hub. Source: LlamaRisk, November 4, 2026 USDC (Core Hub) As of November 4",
           "id": "research:0199a7983fb17e0c2d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-04T18:37:31Z",
           "title": "Risk Stewards: Cap Increases on Aave V4 / 2026.11.04",
           "url": "https://governance.aave.com/t/risk-stewards-cap-increases-on-aave-v4-2026-11-04/26011"
@@ -2169,16 +2169,25 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "title: [Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3 author: @TokenLogic created: 2026-11-13 Summary This publication proposes a common set of reference e-modes for Ethena collateral on Aave V3 Core, Plasma, Mantle, Monad and Avalanche. The proposed parameters are 91% LTV and 93% LT for USDe against stablecoins, and 90% LTV and 92% LT for sUSDe against stablecoins. Legacy collateral on Core and Plasma would be retired through per-asset LTV-zero flags while keeping existing LTs, except Plasma #21 , whose LT returns from 93.1% to 93%, and Plasma #23 , which is aligned to the sUSDe reference parameters. The proposal also retires the matured PTs on Monad and in X Layer #7 and #8 , and removes USDe borrowing from Avalanche #4 . Motivation Overview Several legacy Ethena PT e-modes continue to accept USDe or sUSDe after their PTs have matured. Their parameters and borrowable assets differ from the reference e-modes, so users with similar collateral can face different parameters and a",
           "id": "research:05a1d012b693301f7f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-13T12:19:38Z",
           "title": "[Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3",
           "url": "https://governance.aave.com/t/direct-to-aip-ethena-e-mode-consolidation-on-aave-v3/26304"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Overview MetaMask is the world's leading self-custodial wallet, serving over 100 million users globally since 2016. As part of Consensys, the leading Ethereum software company founded by Ethereum co-founder Joseph Lubin, MetaMask operates as the primary gateway for millions to access Web3 and decentralized finance. As part of its strategy to make DeFi more accessible to everyday users, MetaMask selected Aave as its DeFi lending partner to power Stablecoin Earn, a feature that lets users earn yield directly inside their wallet. By integrating Aave's decentralized lending infrastructure, MetaMask gives users simple access to institutional-grade",
+          "id": "research:0a81db7b382881a16c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-07-31T00:00:00Z",
+          "title": "MetaMask",
+          "url": "https://aave.com/blog/metamask"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Early access to the Aave mobile app starts today, August 26. A limited group of users are receiving Ghost Passes, which are invites that grant a friend immediate access to Aave App by skipping the waitlist entirely. Early Access on iOS How Ghost Passes Work Open Aave App and check the activity section to see how many Ghost Passes you have. If you've received one, you'll also be notified by email or push notification. If you've received a Ghost Pass, follow the instructions in the app, pick a friend to send it to, and let them know they now have access. Who Gets Them We're sending Ghost Passes out in several batches. The first batch went to us",
           "id": "research:0cfe79e3abb00ff30f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-08-26T00:00:00Z",
           "title": "Introducing Aave App Ghost Passes",
           "url": "https://aave.com/blog/introducing-aave-app-ghost-passes"
@@ -2187,64 +2196,55 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Aave Labs has acquired the team and technology behind Avon, one of the leading teams working on fixed-rate lending onchain. Avon built fixed-rate and floating-rate lending markets and an onchain order book for onchain lending.",
           "id": "research:12a0f5469b683e6d86",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-06T00:00:00Z",
           "title": "Aave Labs Acquires Avon",
           "url": "https://aave.com/blog/avon-acquisition"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "title: [Direct-to-AIP] November 2026 - Funding Update author: @TokenLogic created: 2026-11-13 Summary This publication presents the November Funding Update, consisting of the following key activities: Acquire GHO to support the runway; Consolidate assets held on other networks onto Ethereum; Expand the MainnetSwapSteward; Deposit the ETH held by the Collector into Aave; Recover Merkl rewards held by the GSMs on Plasma and Monad; Bug bounty payment; and, Create and update Allowances to support Operations. Motivation This publication addresses near-term operational requirements, consolidates asset holdings across networks, and expands the MainnetSwapSteward to support the runway. The MainnetSwapSteward and Aave Finance Committee (AFC) will continue executing a rolling GHO acquisition strategy to maintain adequate runway and preserve sufficient budget to fund ongoing growth initiatives. Asset Consolidation The GHO held by the Collectors on Plasma, Monad, and Arbitrum, around 1.18M, will b",
+          "id": "research:134458f2f5fe1d4bba",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-13T14:05:46Z",
+          "title": "[Direct-to-AIP] November 2026 - Funding Update",
+          "url": "https://governance.aave.com/t/direct-to-aip-november-2026-funding-update/26312"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "1.17.0 (2022-12-28) Features add additional flashloan scenario ( 8888093 ) add unit test for reserve configuration ( 49d0f4e ) bump to beta version ( 348ce20 ) enable and disable flashloans ( bb62572 ) remove borrow enabled requirement ( 8b9221b ) switch bit used for flashloan enabled ( 748818f ) updated price oracle sentinel interface ( 0457e71 ) updates and tests ( 8d12d79 ) Bug Fixes Add license to L2Pool contract ( #765 ) ( 56fd7ba ) add validation to simpleFlashLoan ( bf652c2 ) Avoid emitting events when balanceIncrease is zero ( #745 ) ( 43f34c9 ) Capitalize license name of contracts ( fba69f0 ) CEI to fix reentrancy risk with reentrant tokens (eg ERC777) ( #704 ) ( 7fbdc6e ) check revert msg and event emission ( 284b492 ) Complete interfaces of IReserveInterestRateStrategy and IPoolDataProvider ( #766 ) ( a00dda8 ) Fix condition of full liquidation of collateral ( #753 ) ( 56bcf5d ) Fix docs param in burnScaled ( 6b504d4 ) Fix param of IAToken function ( 1cb9ba1 ) Fix test of in",
+          "id": "research:14996bd913eebcb55b",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2022-12-28T16:05:42Z",
+          "title": "v1.17.0",
+          "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.17.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "1.17.2 (2023-01-31) Bug Fixes expose error list and types at npm package ( #809 ) ( 0334bf2 )",
+          "id": "research:18163aa2544fe7979a",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2023-01-31T14:54:50Z",
+          "title": "v1.17.2",
+          "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.17.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Summary This post requests the release of a bounty payment for one valid submission received through the Aave bug bounty process, together with the corresponding Immunefi platform fee. Motivation A valid submission was received through the Aave Bug Bounty process. It has been validated and is ready for payout. Specification We recommend processing these payments as part of the next funding update. The requested transfers are: $1,000 to 0x0DDE46b923eB74F1860727914f179e82b9eE47B9 $100 to 0x7119f398b6C06095c6E8964C1f58e7C1BAa79E18 (immunefi.eth). This is the fee corresponding to 10% of the $1,000 bounty. The total requested amount is $1,100. This follows the same payout path used in prior bug bounty payout requests, most recently in October 2026 . Next Steps We will coordinate with TokenLogic on the inclusion of these payouts. Disclaimer Aave Labs is sharing this request as a service provider to the Aave DAO, as part of its approved scope of work in support of DAO operations. 1 post - 1 p",
           "id": "research:190496510d1f7f3cef",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-13T15:16:18Z",
           "title": "Aave Labs. Request for Bounty Payout - November 2026",
           "url": "https://governance.aave.com/t/aave-labs-request-for-bounty-payout-november-2026/26313"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Kraken, one of the oldest and largest cryptocurrency exchanges, now offers its users access to DeFi yields through a new product called DeFi Earn, powered by Aave.",
-          "id": "research:2aff3b76a58f32c794",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-01-26T00:00:00Z",
-          "title": "Kraken Launches DeFi Earn, Powered by Aave",
-          "url": "https://aave.com/blog/kraken-defi-earn"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Three AI security tools were run against Aave V3 and V4. Across 71 findings, no Critical or High severity issue was confirmed in either protocol.",
-          "id": "research:2db783b552318aa666",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-08-13T00:00:00Z",
-          "title": "AI-Assisted Security Review of Aave V3 & V4",
-          "url": "https://aave.com/blog/aave-v3-v4-ai-assisted-security-review"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase supply cap for cbBTC from 20,000 to 22,500. Reduce supply cap for weETH from 1,500,000 to 1,420,000. Reduce supply cap for WBTC from 38,200 to 35,500. Reduce supply cap for BTC.b from 225 to 40. Reduce supply cap for eBTC from 134 to 100. Aave V3 Mantle: Reduce supply cap for USDT0 from 312,500,000 to 150,000,000. Reduce borrow cap for USDT0 from 152,000,000 to 125,000,000. Reduce supply cap for sUSDe from 100,000,000 to 65,000,000. Reduce supply cap for USDe from 80,000,000 to 50,000,000. cbBTC (Aave V3 Core) cbBTC has reached 97.2% supply cap utilization on the Aave V3 Core instance. Supply Distribution Source: LlamaRisk, November 13, 2026 All of the top 20 cbBTC suppliers carry debt, with health factors between 1.11 and 3.07 and a median of 1.60, and supply is concentrated, with the larg",
-          "id": "research:33e65505a631ec569b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-13T15:42:33Z",
-          "title": "Risk Stewards: Supply and Borrow Cap Changes on Aave V3 / 2026.11.13",
-          "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-changes-on-aave-v3-2026-11-13/26317"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Whop's new Treasury feature lets 21 million+ online businesses earn up to 6% APY on their balances through Aave's lending market on Plasma.",
-          "id": "research:389c5f9632ce4148e0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-06-03T00:00:00Z",
-          "title": "How Aave Powers Whop Treasury",
-          "url": "https://aave.com/blog/aave-powers-whop-treasury"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "TokenLogic’s proposed interest split would hit some stablecoin lenders harder, while a major Plasma revenue component remains conditional. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
-          "id": "research:3d257e7b032bc6a477",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-13T18:30:35Z",
-          "title": "Aave plan could cut some lenders’ share of interest by 60%",
-          "url": "https://cryptoslate.com/aave-lenders-interest-share-cut-proposal/"
+          "excerpt": "Summary This thread will be used for technical maintenance updates across Aave deployments, to keep maintenance activity visible, structured, and easy for the DAO to track. It covers maintenance updates from November 2026 onward and is open to any DAO Service Provider responsible for a maintenance item. Context The Aave ecosystem spans multiple products, versions, and networks. Maintenance tasks are periodically required to keep this infrastructure consistent, secure, and aligned with the approved architecture. Maintenance updates prior to November 2026 are recorded in the previous maintenance thread , which established a clear and transparent format for this type of change. That thread remains the reference for historical updates. From November 2026 onward, maintenance updates will be posted here, so the DAO has a single place to review what is changing, why it is needed, and how execution is happening. Scope This thread is intended for updates that are technical, limited in scope, an",
+          "id": "research:1974984fe240f24258",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-13T10:58:38Z",
+          "title": "Technical Maintenance Proposals",
+          "url": "https://governance.aave.com/t/technical-maintenance-proposals/26300"
         }
       ],
       "cmc100_weight": 0.08,
@@ -2620,8 +2620,80 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 140,
+      "candidate_event_count": 150,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare (and Songbird) codebase to Avalanche 1.13.0. See Avalanche release notes and Flare release notes for more details. All nodes should upgrade to this version before the following dates: March 17, 2026 at 12 PM UTC for the Coston network, March 24, 2026 at 12 PM UTC for the Coston2 network, March 31, 2026 at 12 PM UTC for the Songbird network, April 14, 2026 at 12 PM UTC for the Flare network. Note: StakeAmount field from platform.getCurrentValidators results was removed, use weight instead.",
+          "id": "research:136904c3dc3d990ab3",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-03-26T13:36:03Z",
+          "title": "v1.13.0",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.13.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare and Songbird codebase to AvalancheGo v1.14.2. The upgrade is optional but encouraged. It is backwards compatible with v1.14.0 and does not schedule any new fork times. Note: Coreth and Subnet-EVM are now grafted into the AvalancheGo tree — there is no separate coreth module anymore. Go import paths change from github.com/ava-labs/coreth/... to github.com/ava-labs/avalanchego/graft/coreth/... , which affects downstream tools that import Coreth packages. Building from source now requires Go 1.25.11 or later.",
+          "id": "research:1a646cbaf76b57310c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-23T12:55:23Z",
+          "title": "v1.14.2",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.14.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare and Songbird codebase to AvalancheGo v1.14.0 (Granite upgrade). This release cannot run the Flare or Songbird mainnets. Starting a node with the Flare or Songbird network ID fails with the error mainnet is not supported . Only the Coston and Coston2 testnets are supported by this release. The changes go into effect June 11, 2026 at 12 PM UTC for the Coston network, June 16, 2026 at 12 PM UTC for the Coston2 network. Testnets should be updated to this version before these times. Note: The minimum C-chain gas price (base fee floor) is raised to 500 GWei.",
+          "id": "research:335891a96e0813f8e0",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-08T09:42:38Z",
+          "title": "v1.14.0-rc0",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.14.0-rc0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare (and Songbird) codebase to Avalanche 1.14.0. See Avalanche release notes and Flare release notes for more details. All nodes should upgrade to this version before the following dates: June 11, 2026 at 12 PM UTC for the Coston network, June 16, 2026 at 12 PM UTC for the Coston2 network, July 7, 2026 at 12 PM UTC for the Songbird network, July 14, 2026 at 12 PM UTC for the Flare network. Note: The minimum C-chain gas price (base fee floor) is raised to 500 GWei. For the Flare network, the maximum validator stake amount is increased from 200 million to 300 million FLR. For the Flare and Coston2 networks, the minimum delegation fee for validators is set to 20% (previously 0%). The deprecated top-level rewardOwner field has been removed from validator entries returned by platform.getCurrentValidators . It previously duplicated validationRewardOwner .",
+          "id": "research:5b7f9ee405354799e2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-01T13:34:33Z",
+          "title": "v1.14.0",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.14.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is a pre-release for the Coston2 network only . It updates the Flare and Songbird codebase to AvalancheGo v1.15.1 (Helicon upgrade). The node refuses to start on the Flare and Songbird networks ( mainnet is not supported ); the activation times for the Coston, Songbird and Flare networks will be scheduled in the final release. The changes go into effect November 3, 2026 at 12 PM UTC for the Coston2 network. Coston2 nodes should be updated to this version before this time. Your C-chain config.json may need changes to remain valid after the activation. Please read the notes before upgrading.",
+          "id": "research:9857eb1cb134a229be",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-29T16:12:01Z",
+          "title": "v1.15.1-rc.1 coston2",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.15.1-rc.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "⚠️ Rebuilt on November 11, 2026 — Songbird and Coston nodes must upgrade again. The initial v1.15.1 build had a bug in the Helicon transition on the Songbird and Coston networks: at the activation the C-chain failed to start with incompatible chain config: mismatching SongbirdTransition fork block timestamp in database . The v1.15.1 tag, the binaries and the Docker images ( flarefoundation/go-flare:v1.15.1 and v1.15.1-dless ) have been rebuilt from commit 9eacc2d2ad452489f8e9bfaf10af62553b9cdae2 , which contains the fix. Songbird and Coston nodes: install this build even if you already run v1.15.1, and restart. No resync or database changes are needed; a node that already failed at the activation recovers after the restart. Flare and Coston2 nodes: not affected by the bug. The rebuilt v1.15.1 is the recommended build for all networks. Building from source: the tag has moved, so run git fetch --tags --force && git checkout v1.15.1 before building. After the restart, info.getNodeVersion ",
+          "id": "research:d0466146db0781be65",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-11T10:31:33Z",
+          "title": "v1.15.1",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.15.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare and Songbird codebase to AvalancheGo v1.14.2. The upgrade is optional but encouraged. It is backwards compatible with v1.14.0 and does not schedule any new fork times. Note: Coreth and Subnet-EVM are now grafted into the AvalancheGo tree — there is no separate coreth module anymore. Go import paths change from github.com/ava-labs/coreth/... to github.com/ava-labs/avalanchego/graft/coreth/..., which affects downstream tools that import Coreth packages. Building from source now requires Go 1.25.11 or later.",
+          "id": "research:dc394e73a51bfc9e33",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-20T16:00:23Z",
+          "title": "v1.14.2-rc.0",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.14.2-rc.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release updates the Flare (and Songbird) codebase to Avalanche 1.13.0. See Avalanche release notes and Flare release notes for more details. All nodes should upgrade to this version before the following dates: March 17, 2026 at 12 PM UTC for the Coston network, March 24, 2026 at 12 PM UTC for the Coston2 network, March 31, 2026 at 12 PM UTC for the Songbird network, April 14, 2026 at 12 PM UTC for the Flare network.",
+          "id": "research:ded5ea08c820050309",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-03-19T16:06:29Z",
+          "title": "v1.13.0-rc1",
+          "url": "https://github.com/flare-foundation/go-flare/releases/tag/v1.13.0-rc1"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Flare CEO Wants XRP to Break Free From Ripple's Shadow Flare (@FlareNetworks) flare-networks:native CEO Hugo Philion (@HugoPhilion) has pushed back against recent FUD surrounding $XRP. He argues the token's future should not depend entirely on X",
@@ -2639,78 +2711,6 @@
           "published_utc": "2026-11-11T02:03:15Z",
           "title": "Student pilot, 28 hours in, and I keep botching the same landing flare - Reddit",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcTg2QmxSNUd5MFFqemN2TFl3MTVBNlhBODhlVmtoS1hFNXlMU19naEg5VVF0MnA0NkdleGx2eG9KclpSSmQwelNtSFpsR2szT0o1TC1lTmhWbTFUUm9MQVpHRGpob2xlRlVXU0ZQQWJrelNmQmhWMjA5eU5GM2xSNEdIbW51UlNGOHlQd3JjQWZ1c3B5aWNoMmNkOGV2NzAz?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "@Jebrpza Flare is the furthest thing from a one trick pony. Flare is both: 1) Working on expanding (even more) what can be done with XRP. 2) Broadening what Flare offers to the wider crypto market. I think the Flare community will be happily surprised by 2. X",
-          "id": "expanded:036f883d4327abb6e3",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T14:40:40Z",
-          "title": "@Jebrpza Flare is the furthest thing from a one trick pony. Flare is both: 1) Working on expanding (even more) what can be done with XRP. 2) Broadening what Flare offers to the wider crypto market. I think the Flare community will",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0wXzlBZExHRDM5Rk9zRkoyLUppNXVURnoweXRFekV3X0N4azJJc3d3NVloTzZGdDFMbHdNNVl3bTZsTWhjUzB5aWl6R04yZjl0YmxBYjlFWTBwTWJoYURZcnN3?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "I know they were nerfed but this is way too much Reddit",
-          "id": "expanded:04719d411ff4314f04",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T13:12:58Z",
-          "title": "I know they were nerfed but this is way too much - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN3hfLUpZaU1ZRHVaSXBKMDRQd0JySG5NUFZsVU9mVHdvUElGMGw3OW9aSkJJbkJSazJGYnp0Qld6S0V1WDdfZTE1aU1jSFFaaG5YQnVZa1doZ1c2SXl2clNBbHZiZ2Q3SDlLWXJpNUM3UElhY0RJd3dMellzYnlKcXpqN09QUm5xUjF4YXhRWUphN1F6Z0w2cW9fR0JBNGdNZURV?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "FLARE BROUGHT LIDO A SEATBELT. NOT AN INVINCIBILITY CLOAK. 😂🛡️ @LidoFinance says EarnETH and EarnUSD now have two loss-protection layers: @Firelightfi first, then the Lido DAO buffer. Cover applies at vault level, with no separate depositor X",
-          "id": "expanded:047299a12479d45725",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T16:40:00Z",
-          "title": "FLARE BROUGHT LIDO A SEATBELT. NOT AN INVINCIBILITY CLOAK. 😂🛡️ @LidoFinance says EarnETH and EarnUSD now have two loss-protection layers: @Firelightfi first, then the Lido DAO buffer. Cover applies at vault level, with no separate",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxakkxMk81WHR3eUlOLTduY0FRa2VEX2NzbTluWGZaazZLOWtRdFRYYWFVRnU2MUw1VklyUUdNQXU1eXVtRUN1a1ZBSHpVOXkwN09Jcl84bGNMOWQtRml0UVJZdDB3Qlk?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NBA 5-Out Quick Flare Breakdown YouTube Breakdown: https://t.co/QGh20QdSzk Full breakdown + 74 Video Counter Playlist: https://t.co/RpICUFzcSp A deep dive into how NBA teams have used quick flare action out of 5-Out with basically every NBA team ru X",
-          "id": "expanded:06499eea06ee24ab21",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T18:27:07Z",
-          "title": "NBA 5-Out Quick Flare Breakdown YouTube Breakdown: https://t.co/QGh20QdSzk Full breakdown + 74 Video Counter Playlist: https://t.co/RpICUFzcSp A deep dive into how NBA teams have used quick flare action out of 5-Out with basically",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uU1ZRdjRjTXcyWXFveFFRd2NUMEN0OUU2aDQzWmVQMGltSWNIMFFUSFdDbzNpdzA5ZXlmaXBkRko2VFRNMzRwdlFRWWJPMVZTSlBNRTZfSDhFOUdsYkc1bjM5OXlQQQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Flare fast-tracks a security fix after an exploit attempt @FlareNetworks ($FLR) is rolling out go-flare v1.15.1, a hard fork that patches a weakness in the upstream code its nodes run on. The fix was planned for later this month, but Flare moved it up after its monit X",
-          "id": "expanded:08712c6fde5c948ff2",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T22:43:00Z",
-          "title": "Flare fast-tracks a security fix after an exploit attempt @FlareNetworks ($FLR) is rolling out go-flare v1.15.1, a hard fork that patches a weakness in the upstream code its nodes run on. The fix was planned for later this month, ",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1rakVFcktBbmZqYnhfcDhTNmxMX3BiMmh0cFE2ZVFGejVlZGsxTmNObjNZS2tiYTUwVFR5ZjB5VEhNTHdYZ05hSEoxTFhQODRhNVlSQll2ZFNSUHljVW14N2UtM2Qxanc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Spouse and I cannot agree on how to limit dairy. Reddit",
-          "id": "expanded:09cdce9dc3da119c93",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T15:20:16Z",
-          "title": "Spouse and I cannot agree on how to limit dairy. - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV2xFSVFHUDVkVzRuek9ibUJiRnNKZ291am5HU2pGSEdnR1JxOUtsSlRxUnd6RzhDMUZwT0dvRWZjZDVQZGRIV212c3E0RF9sZGp5WEtHQ2tQQUxuR2o1QUpDTE1maFZSWjBmVHBlN0tReXlPUENRdVhqbENWT2o0bnFYSW9hdGpFdHBkN3IyRTNBc2g0MmNLWV92N0dxQk1OZkE?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "XRPL users can authorize $FLR Smart Accounts with one signature each. Your XRPL wallet signs each step, with no extra wallet or gas token needed. Flare’s tutorials show how users can start earning with Smart Accounts. Avoiding a second wallet is the right X",
-          "id": "expanded:0ca3e7f6ce9bc79bab",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T23:07:12Z",
-          "title": "XRPL users can authorize $FLR Smart Accounts with one signature each. Your XRPL wallet signs each step, with no extra wallet or gas token needed. Flare’s tutorials show how users can start earning with Smart Accounts. Avoiding a s",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BWWIxLXZnOTNrZlhhTDdXQ19pQkpSdGlROFBDeVB5M2VReWppTFktZXJ5U2plU0R0TzRpUFFSVTRISEhmd2xvNHA0WDVSU2lUR1pQS3VuRHUyaGtw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Trying to catch up re AI skills in UX in the context of fintech/B2B Saas. Which is best to learn for this niche: Claude, Figma MCP, Repit etc? Reddit",
-          "id": "expanded:0ce85046ecb4a87210",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T09:13:58Z",
-          "title": "Trying to catch up re AI skills in UX in the context of fintech/B2B Saas. Which is best to learn for this niche: Claude, Figma MCP, Repit etc? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcjlPNDNOcDZQbnNfMC0tOXMyN0t1cldVdmJmcXA4eWdXTzczdkVkLXZTdlIyQTdGSEdIR0dRTXdQMlExU1lzZnVQNTJ4MkNSRkY3MTZiWjBFOTQ2ckQtcTVTV25zVE90MnNvOWZnT3BDXzRJM2ZEaFVJTkw1M3ktX3pHUWNZV3lhUHNqVk83blZyZnRidjZMeHdSNlQ?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -2969,70 +2969,97 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 7,
+      "candidate_event_count": 46,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Lido Finance, the biggest player in the Decentralized Finance (DeFi) industry, has flipped popular blockchains like Ethereum, Jito, Solana, and Tron in 24-hour fees collected. Data by DeFi Llama shows that the platform made over $6.64 million in fees in the last 24 hours. In contrast, Ethereum made $1.98 million, while Jito, a top Solana […] The post Lido DAO Flips Ethereum, Jito, Solana, and Tron on a Key Metric appeared first on BanklessTimes .",
-          "id": "research:cb9ea5f228b71dc156",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-08-07T10:02:00Z",
-          "title": "Lido DAO Flips Ethereum, Jito, Solana, and Tron on a Key Metric",
-          "url": "https://www.banklesstimes.com/news/2024/08/07/lido-dao-flips-ethereum-jito-solana-and-tron-on-a-key-metric/"
+          "excerpt": "1. Identification Myrmidon Staking is a Danish non-custodial staking and blockchain infrastructure provider serving retail and institutional clients. We provide staking services across Ethereum, Cardano and Concordium , alongside managed validator infrastructure and blockchain APIs. We are applying for stVaults Professional Operator status to support the growth of our Pooled Ethereum Staking product, built on Lido V3 stVaults . Ethereum Experience: Operating Ethereum validators since 2023 , with approximately 1,200 ETH staked across our validators at peak . Slashing Record: Zero slashing incidents throughout our Ethereum operations. Infrastructure Development: Completed a comprehensive revamp of our infrastructure setup in 2026 . Legal Entity: MYRMIDON ApS, Denmark - CVR 43423843 . Contact: support@myrmidonstaking.com 2. Business Case Myrmidon Staking brings Lido V3 stVaults to a broader audience through an accessible pooled staking product, combining a simple user interface with profe",
+          "id": "research:05bbdd7a6f2532a50a",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-10T17:30:12Z",
+          "title": "Node Operator Admission: Myrmidon Staking as stVaults Professional Operator",
+          "url": "https://research.lido.fi/t/node-operator-admission-myrmidon-staking-as-stvaults-professional-operator/11896"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Wylie Aronow News — Latest Crypto Updates CryptoRank",
-          "id": "expanded:166443c6f6e7c40f4f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T16:20:57Z",
-          "title": "Wylie Aronow News — Latest Crypto Updates - CryptoRank",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11cFVwRHdFRFhnZU1zb05VTkZGeE1mdmVJb3Ztc05QZS11c0I3ODdSb3RYM0RYZ3c5dUtLSEtCZ0hfV1BOcHZXV1RoTW1oY2NMVnZZY1BlOUViQlU?oc=5"
+          "excerpt": "Hi all, NEST has been live since 10 August ( launch thread ) and has not bought a single LDO yet. Its budget counter stood at −$542,451 at the end of September and keeps falling on most days. I spent the last few weeks building a full model of the mechanism to understand whether this can be fixed by tuning parameters. Parameter tuning alone does not solve it. The model points instead to the budget and to how profit is defined as the main levers. Below is what I propose, followed by the reasoning. The full report, model and data are linked at the end. What I propose Step 1. Now, through votes, no contract changes 1. Cut the Foundations budget for 2027 materially and, in the same vote, set the NEST threshold equal to the approved budget. I am asking for around $30M, about 30% below the current $43.8M. In the model, buybacks start to grow meaningfully from a cut of about 20% (roughly $35M), and a 30% cut roughly doubles them compared with today. The approved Foundations budget would serve",
+          "id": "research:0dd61b82f65c4a604c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-07T03:45:47Z",
+          "title": "NEST: tying the buyback threshold to the approved budget",
+          "url": "https://research.lido.fi/t/nest-tying-the-buyback-threshold-to-the-approved-budget/11982"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Crypto India: ED Probes Hashpay Over Fake Crypto and 1% Daily Return Promises Coinpedia",
-          "id": "expanded:17cf5bd82cf94581c1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T11:30:31Z",
-          "title": "Crypto India: ED Probes Hashpay Over Fake Crypto and 1% Daily Return Promises - Coinpedia",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWnE2NUxOdGV5emhCZlo2cTd1bXB0bkZmRExXdml1MlFtRWR6eEZEaG9Yb0tCY2UtZnFha29GeDNseWM3VjY1S3VrT1oxcXMzd0xGNFF1UlR3cU1TdG9ZTFZqSHVqSUJGeXMySFVNSUNjc1ZoM0UwTFFiU0RZa3ByN1BlOXNzdkE0ck5NZXRQNWlZQjBlU2lsTno2VmFpX1gyaXRfbzdwOVB6VjQyMnhyS1k5ZFBYQzFYRGZF0gG7AUFVX3lxTE5acTY1TE50ZXl6aEJmWjZxN3VtcHRuRmZETFd2aXUyUW1FZHp4RkRob1hvS0JjZS1mcWFrb0Z4M2x5YzdWNjVLdWtPWjFxczN3TEY0UXVSVHdxTVN0b1lMVmpIdWpJQkZ5czJIVU1JQ2NzVmgzRTBMUWJTRFlrcHI3UGU5c3N2QTRyTk1ldFA1aVlCMGVTaWxOejZWYWlfWDJpdF9vN3A5UHpWNDIyeHJLWTlkUFhDMVhEZkU?o"
+          "excerpt": "LIPs implemented LIP-35: Staking Router v3 Audits 07-2026 Certora Staking Router v3 Security Audit Report 07-2026 MixBytes Staking Router v3 Upgrade Audit Report 07-2026 Statemind Staking Router v3 Audit Report PRs included epic: Staking Router v3 by @mkurayan , @Amuhar in #1811 , #1436 , #1928 Features feat: staking router 3.0 consolidation by @mkurayan in #1431 feat: MaxEB initial deposits by @Amuhar in #1412 feat: SRv3 accounting by @eddort in #1445 feat: sr refactor + share target allocation strategy lib by @krogla in #1447 feat: set withdrawalCredentials02 in migration_v4 by @Amuhar in #1456 feat: top up merkle proofs & predeposits by @Amuhar in #1616 feat: SRv3 pull model by @Amuhar in #1635 feat: remove pending deposits proofs/balance proofs, change obtainDepositData sign for top up by @Amuhar in #1642 feat: SR3 FastLane, report-dependent deposit pause, MinFirstAllocLib by @krogla in #1644 feat: SRv3 consolidation by @eddort in #1639 feat: top up debug event by @Amuhar in #1659 ",
+          "id": "research:13531aadd2cc979d05",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-24T16:12:26Z",
+          "title": "v4.0.0",
+          "url": "https://github.com/lidofinance/core/releases/tag/v4.0.0"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Bitcoin Price Crashes Below $74K as 47,300 BTC Move to Exchanges at a Loss: Is $70K Next? Coinpedia",
-          "id": "expanded:1f278a42128b37e68d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T15:24:09Z",
-          "title": "Bitcoin Price Crashes Below $74K as 47,300 BTC Move to Exchanges at a Loss: Is $70K Next? - Coinpedia",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRVR2cjF0UHQxT3ZUYl8yR3BSbUY5Y2piNkpvOEJJb1BWbmo0dENMMnZoY0dXemtlbEptYV9ScVFyVlo3RTVOd09aM2ZGT184MFVfSndBRkY0NVRwWmZaNnVIWkZMTVFIS1oyQy1hVXZQYTF3R1puTGtETFRoeTRCaS1BbE53UGREZmF6dEQ1SnlyRG1QX0FIR3l6UEdvUDMzSjJtM3hzMkYxTDFtU0dFNTBVNFhxSUNhRDBNekZFTdIBxAFBVV95cUxNQ2RoaE50M0Y5aFZOMkxaOWRSN29WUC1QREp4SVUtZ1REYUhkMEktUEVKYUo3VFR2R2JqYklxemlmcHY2UXp5SHM3MnlxNld3NnA2RVVvS21TRUUxbkdWLWgyVG11djJMNnc5eG5ycnRFVlozdkhUZDZ2T1JDeV9YUEhieVJQUmhSX2RiandPTFRoN1BEU3pualdveVFSSVdZclpqb25fV3NEVEVDRS1BbmhpLWN4R254U"
+          "excerpt": "Executive summary Ethereum’s upcoming enshrined Proposer-Builder Separation (ePBS) introduces new ways for validators to participate in block-building markets. Most importantly, it enables builders to compete directly for block proposals, with payments guaranteed by the Ethereum protocol, reducing the need for trusted intermediaries. This proposal seeks to preserve the principles of Lido’s existing MEV Policy while adapting it to ePBS: maximizing rewards for stakers, supporting open and competitive block-building markets, and ensuring that Node Operators (NOs) do not favor particular builders or withhold MEV rewards. Following the discussion in Lido’s call for an updated MEV policy . It proposes a two-track approach: 1. An open, permissionless market where Lido validators can accept bids from any builder meeting Ethereum’s protocol requirements, provided payments are guaranteed by the protocol. 2. A vetted market where builders and intermediaries offering additional payments outside Et",
+          "id": "research:1752599bbfb447e65c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-04T15:20:08Z",
+          "title": "[Proposal] Updated MEV Policy for Lido",
+          "url": "https://research.lido.fi/t/proposal-updated-mev-policy-for-lido/12183"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "HUGE! 15 Projects spent a record $638 MILLION on buybacks through August 2026. 13 of them have beaten BTC this year. Hyperliquid sends OVER 95% of its revenue into HYPE buybacks. hyperliquid:native is UP over 200%. PumpFun puts 50% of its reven X",
-          "id": "expanded:2cb43b94b542ffccd0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T05:54:33Z",
-          "title": "HUGE! 15 Projects spent a record $638 MILLION on buybacks through August 2026. 13 of them have beaten BTC this year. Hyperliquid sends OVER 95% of its revenue into HYPE buybacks. hyperliquid:native is UP over 200%. PumpFun puts 50",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9jRW5DS0FiZml4SDdCb3VJaXBsd01WdDNwanUxYkRETFo0TVJVNTFxZDRtTElFQnl3MHlXaHNwSmNHc1ZYY0psNTNlX3NVdWRsSWhmQmVmc2ctZ2dPNWdVTm5ScDBuVWpPcjRNbHlROA?oc=5"
+          "excerpt": "I am putting forward a comprehensive proposal for community discussion and subsequent Snapshot voting. The goal is to aggressively optimize the DAO’s operational expenditures and realign our token support mechanisms with current market realities. 1. Independent Financial Audit Proposal: Commission a full, external financial audit of all Lido DAO expenses and grant distributions for the 2025–2026 fiscal periods.Execution: Engage an independent, reputable Web3 auditing firm to identify inefficiencies, redundant outlays, and hidden costs. 2. Operational Downsizing (Lido Labs) Proposal: Implement a 50% reduction in workforce across Lido Labs. Rationale: In light of shifting market shares and intense competition in the institutional staking sector, our current burn rate is unsustainable. This restructuring will instantly lower our ongoing OpEx and safeguard the treasury. 3. NEST Buyback Framework Reform The current NEST smart-contract parameters are overly restrictive. We propose modifying ",
+          "id": "research:1c64703fec58259a57",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-14T19:51:56Z",
+          "title": "Proposal for Comprehensive Expense Optimization and NEST/stETH Buyback Parameter Restructuring",
+          "url": "https://research.lido.fi/t/proposal-for-comprehensive-expense-optimization-and-nest-steth-buyback-parameter-restructuring/11921"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Cat in a Dogs World Price Prediction 2026, 2027 – 2030: Will MEW Price Hit $0.001? Coinpedia",
-          "id": "expanded:36065f1c3e091f2560",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T10:56:45Z",
-          "title": "Cat in a Dogs World Price Prediction 2026, 2027 – 2030: Will MEW Price Hit $0.001? - Coinpedia",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLXVwZGVic0pCemMxVTBJRlJPdDhRS1l1d0pMSUM0Ni1Jd0ViaGJjcF9BWWEyZTZSQUJ5cDc0SWlEMV96eHhET244OV9FSWJDNkV1ZFgxZ196RjUxclZiaXVFUEhSelZEejBKUEU4RjJYOVdkQzJHcWQxeDVqM1VNRG91RkY4NTTSAYwBQVVfeXFMTXlMYnNFZmVxcjFWeEpLbWJSaFd4elNnZmdVZm04Q0cxOGJhMmhTZVpGSEpYcjdXYjNSUlJVYTNkX2xDOGVFNTRDSjJMdWczZG5hOXFGVTQ1dXpDdmN3U2ticUtrZHktSGhuZEZseUNmLW9qNERMS1VsUEh2RFJaMzY1NXZXUGdRMWdsZDk?oc=5"
+          "excerpt": "The biggest problem with LDO right now is not the product, not TVL, but value accrual. stETH is successful, and protocol revenue is stable, but none of that translates into LDO value. In the long run, this will cause Lido to be overtaken by protocols that are more willing to share value with token holders. I believe Lido DAO must think not only about protocol growth, but also about the future of LDO itself. If there were some form of value accrual — even if only a portion of protocol revenue were used for buybacks or incentives — many community members would be willing to stay long-term and contribute their time and skills. Talent, not capital, is the scarcest resource. Moreover, LDO does not have to be just a governance token. It can complement stETH in many ways. For example, on-chain credit cards, collateralized lending, payment scenarios — LDO could become a functional asset within the ecosystem, not just voting power. If these directions develop, LDO’s value would naturally increa",
+          "id": "research:1fbc51273aafa8d076",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-04T16:44:34Z",
+          "title": "Discussion on LDO Value Accrual and Long-Term Future — Inviting Community Suggestions",
+          "url": "https://research.lido.fi/t/discussion-on-ldo-value-accrual-and-long-term-future-inviting-community-suggestions/11858"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Lido DAO Price Today | Live LDO Price, Chart & Market Data Binance",
-          "id": "expanded:c8155a72194f1ef0b3",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T23:40:37Z",
-          "title": "Lido DAO Price Today | Live LDO Price, Chart & Market Data - Binance",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JVlFwUHI5QWNKRzl3Q0gzLTVKcEFxdjVwRXFVNHVHWHJDSlgzNG1lSFNvV3l0WFVKZ01leTJ4d2FFTllkbU9JenVIU2MyV0xWVjRQS044UQ?oc=5"
+          "excerpt": "TL;DR Lido Oracle 8.0.6 adds a temporary cap of 500 exit requests per Validators Exit Bus Oracle (VEBO) report. If the exit queue demand is larger, the rest is reported in the next frames (~5 hours each). This is an oracle-side change only - no contract or protocol changes. No action is required from anyone except the VEBO oracle committee members - they need to update to the new release. Background After the VEBO v3 upgrade, each exit request in submitReportData costs about 26.5k gas. At the same time, EIP-7825 (Fusaka) limits the gas of a single transaction to 2^24 = 16,777,216. In practice this means a report with ~600 exit requests may not fit into a single transaction by gas. The oracle daemon clamps the gas of every transaction it sends. Without a cap on the report size, a large exit report (for example, during a spike of withdrawal demand) could need more gas than one transaction is allowed to use. In that case the pre-flight check fails and the daemon cannot submit the report a",
+          "id": "research:2fc8478375831c10ba",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-31T16:43:44Z",
+          "title": "Capping the number of exit requests in a single VEBO oracle report",
+          "url": "https://research.lido.fi/t/capping-the-number-of-exit-requests-in-a-single-vebo-oracle-report/11840"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Status: Resolved Incident Date: August 7-8, 2026 Duration: Approximately 21 hours 36 minutes (August 8, 00:04 UTC - 21:40 UTC) Service recovery began: August 8, 2026, 05:40 UTC Published: September 20, 2026 Executive Summary On August 7-8, 2026, our Lido validator infrastructure hosted in the latitude data center (LON2) experienced a major outage. The incident was triggered by planned upstream facility maintenance at the latitude data center. During the maintenance window, the A power distribution line of the main power distribution system was isolated for electrical engineering work. The PDU supplying power to high-density validator cabinets experienced a circuit breaker trip under single-line operation, causing multiple validator servers to lose power. This incident exposed several critical issues: Lack of direct feedback from the data center - When making decisions at 00:30 UTC, the team did not receive real-time updates on incident handling progress from latitude, leading to decisi",
+          "id": "research:39dd9d57ff7f21bb3c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-20T09:54:45Z",
+          "title": "[Post-Mortem] Stakefish Lido Validator Connectivity Loss - August 7-8, 2026",
+          "url": "https://research.lido.fi/t/post-mortem-stakefish-lido-validator-connectivity-loss-august-7-8-2026/11942"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Audits 03-2026 Certora Lido V3 Security Assessment Fix Review 03-2026 MixBytes Lido V3 Security Audit What's Changed fix: forbid partial withdrawals for unhealthy vaults by @folkyatina in #1727 fix: redundant max liability shares check by @dry914 in #1673 fix: forbid partial withdrawals in jail by @folkyatina in #1743 fix: add safe cast for reported values by @folkyatina in #1755 refactor: optimize partial withdrawal check in VaultHub by @folkyatina in #1731 ci: fix state-mate paths and env vars by @tamtamchik in #1775 chore: remove mock upgrade in tests by @dry914 in #1770 chore: replace GateSeals with CircuitBreaker on hoodi by @failingtwice in #1776 Full Changelog : v3.0.1...v3.0.2",
+          "id": "research:3de25bf85747e78f1c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-04-23T15:51:43Z",
+          "title": "v3.0.2",
+          "url": "https://github.com/lidofinance/core/releases/tag/v3.0.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "⚠️ Not ready for production usage ⚠️ WIP protocol implementation for the future Lido V3.1 upgrade What's Changed feat: MaxEB initial deposits by @Amuhar in #1412 feat: staking router 3.0 consolidation by @mkurayan in #1431 feat: Staking Router 3.0 by @Amuhar in #1436 feat(SRv3): accounting by @eddort in #1445 feat: set withdrawalCredentials02 in migration_v4 by @Amuhar in #1456 feat: top up merkle proofs & predeposits by @Amuhar in #1616 feat: SRv3 pull model by @Amuhar in #1635 feat(SRv3): consolidation by @eddort in #1639 feat: SR3 FastLane, report-dependent deposit pause, resurrected MinFirstAllocLib, remove STAS & DepositTracker by @krogla in #1644 feat: top up debug event by @Amuhar in #1659 feat: add module maxEB getter by @krogla in #1668 feat(SRv3): AO sanity checks by @eddort in #1681 feat: align getProcessingState interface by @mkurayan in #1684 feat: replace FastLane with buffered ether allocation by @Psirex in #1690 feat: track only pending batches in the consolidation bus ",
+          "id": "research:476db09e20d7efcb2f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-24T15:47:28Z",
+          "title": "v3.1.0-rc.1 (Hoodi testnet)",
+          "url": "https://github.com/lidofinance/core/releases/tag/v3.1.0-rc.1"
         }
       ],
       "cmc100_weight": 0.01,
@@ -3710,7 +3737,7 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 83,
+      "candidate_event_count": 93,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -5171,97 +5198,97 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 71,
+      "candidate_event_count": 111,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Project Name: STRATEGIC POWER 360 Protocol Component: Public Light 3.0 (Algorithmic Governance & Auditing Layer) Author / Project Lead : Juan Carlos Farías Salazar Legal Jurisdiction: Wyoming, USA (DAO / DUNA Architecture) Full Technical Architecture & Whitepaper: STRATEGIC POWER 360 - Executive One-Pager 1. Abstract & Public Good Vision Latin America possesses vast natural and economic potential, yet systemic institutional corruption and administrative opacity persistently stunt regional development. STRATEGIC POWER 360 introduces Public Light 3.0, an open-source decentralized governance protocol designed to make institutional corruption technically impossible by design. By migrating public auditing, budget allocation, and executive accountability onto immutable smart contracts, we establish a transparent framework for regional economic sovereignty. 2. Core Technical Architecture Immutable Ledger & Bilateral Transparency: Every transaction, budget distribution, and resource allocation",
           "id": "research:08dd97c0848dbebf20",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-09-06T13:47:12Z",
           "title": "An Optimism Governance / Ecosystem Grant Proposal",
           "url": "https://gov.optimism.io/t/an-optimism-governance-ecosystem-grant-proposal/10852"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "I’d like to get feedback from Optimism builders and the broader Superchain community on a potential infrastructure primitive for applications, payment flows, smart accounts and autonomous transaction systems. The problem Authorization can happen upstream of execution. Between that authorization decision and the point where an action is actually released, the executable payload can potentially become stale, altered, replayed, or otherwise no longer correspond to what was originally authorized. A2SPA addresses that specific boundary. It is an execution-time authorization layer that cryptographically binds the exact executable payload and relevant constraints — such as destination, amount, parameters, permissions and freshness/nonce — to a signed authorization artifact. Immediately before execution, the actual payload is verified against that authorization. If the action reaching execution is not the action that was authorized, verification fails. In simplified terms: Authorize → bind exa",
+          "id": "research:2e8aec2c4b1b57989b",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-24T07:31:44Z",
+          "title": "Exploring execution-time authorization for Superchain applications",
+          "url": "https://gov.optimism.io/t/exploring-execution-time-authorization-for-superchain-applications/10882"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Hello Optimism Collective, We have developed Ag^τ, a proprietary, zero-FPU semantic compression engine designed to reduce L1 calldata costs and lower hardware overhead for EVM rollups. As Optimism scales, L1 data availability remains a significant cost center. While generic statistical compressors like Zstd provide roughly a 1.5x compression ratio on EVM transactions, Ag^τ uses a deterministic topological spiral accumulator to achieve a 4.00x compression ratio on standard EVM mempool data. Core Engineering Features 1. 4.00x L1 Calldata Compression By utilizing EVM-specific semantic dictionaries and address-deduplication, Ag^τ allows the op-batcher to pack 4 times more transactions into every L1 Ethereum block compared to current Zstd implementations. This directly reduces L1 footprint and lowers end-user gas fees. 2. Zero-Copy Semantic Peeking (O(1) Data Access) With Zstd, an RPC node or sequencer must decompress an entire block into heap memory just to extract a single transaction. Ag",
+          "id": "research:307ffcd844d6ff6a3f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-20T03:25:37Z",
+          "title": "[Builder Grant Proposal] Ag^τ Semantic Compression Engine: 4.00x Calldata Compression (33M+ tx/s)",
+          "url": "https://gov.optimism.io/t/builder-grant-proposal-ag-semantic-compression-engine-4-00x-calldata-compression-33m-tx-s/10817"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Caution We don't support running op-geth from this release. This is a library release only. op-geth is deprecated. This maintenance release includes Pion STUN/DTLS security updates and the changes below. What's Changed Refactor engine API errors by @joshklop in #790 chore(docker): switch runtime base image for smaller runtime by @falcorocks in #794 all: update superchain registry by @joshklop in #798 ci: remove docker image signing step from pipeline by @falcorocks in #799 fix(sdm): include PostExecTxType in Receipts.EncodeIndex by @nonsense in #797 ci: Remove the diff publishing in CI to op-geth.optimism.io by @ajsutton in #801 all: rename Interop hardfork to Lagoon by @digorithm in #803 fix(sdm): core/types: hash PostExecTx over its canonical encoding by @nonsense in #805 core/types, beacon/engine: add Glamsterdam compatibility types by @joshklop in #804 p2p/nat: migrate STUN networking to Pion v3 by @falcorocks in #807 New Contributors @digorithm made their first contribution in #80",
+          "id": "research:3109ce5a9f2303bbb1",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-08T13:44:18Z",
+          "title": "v1.101702.3",
+          "url": "https://github.com/ethereum-optimism/op-geth/releases/tag/v1.101702.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Proposal Type : Maintenance Upgrade Summary This proposal updates the recipient configured on Soneium’s four L2 fee vault predeploys ( SequencerFeeVault , BaseFeeVault , L1FeeVault , OperatorFeeVault ) from the current treasury 0xF07b3169ffF67A8AECdBb18d9761AEeE34591112 to the governor’s new wallet 0x34ffF1A1CB3C054E9eD1BbD36883B14A66E6C260 and lowers the minimum withdrawal amount on SequencerFeeVault , BaseFeeVault , L1FeeVault from the current 10 ETH to 5 ETH. OperatorFeeVault minimum withdrawal amount is unchanged from 0 ETH. Withdrawal networks are unchanged (all vault recipients continue to receive funds on L2). The update is performed in place via the vaults’ owner-gated setters; no implementation or proxy is upgraded. Neither execution affects protocol behavior, dispute game mechanics, bridge safety, or end users. Impacted stakeholders are limited to the chain governor and its treasury recipient. Motivation Sony Block Solutions Labs is retiring its current enterprise wallet prov",
+          "id": "research:3706396ef3ef9f6a57",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-21T15:28:24Z",
+          "title": "Maintenance Upgrade Proposal: Update Soneium Fee Vaults Recipient",
+          "url": "https://gov.optimism.io/t/maintenance-upgrade-proposal-update-soneium-fee-vaults-recipient/10822"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Proposal Type: Maintenance Upgrade Proposal Voting Cycle: Off-cycle (Special Voting Cycle, subject to the standard veto period) Executive Summary This proposal requests the Optimism Security Council execute the return of administrative ownership of the Swell chain (chain ID 1923) to AltLayer, the chain operator completing Swell’s wind-down. Its L1 contracts are currently owned by the standard OP Mainnet ProxyAdminOwner (the 2-of-2 of the Security Council and the Foundation Upgrade Safe). This proposal transfers the L1 ProxyAdmin ownership to AltLayer’s designated Safe, and updates the L2 ProxyAdmin owner to the aliased form of that same Safe, so AltLayer can independently complete the wind-down. Motivation Swell was deployed with the standard Optimism-governed keys holding its L1 ProxyAdmin. Swell is now winding down, and AltLayer is the operator responsible for completing that process. Handing over the L1 ProxyAdmin ownership to AltLayer is the appropriate course of action to enable t",
+          "id": "research:4c06ca82671c29be32",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-21T15:01:30Z",
+          "title": "Maintenance Upgrade: Swell Ownership Transfer to AltLayer",
+          "url": "https://gov.optimism.io/t/maintenance-upgrade-swell-ownership-transfer-to-altlayer/10773"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "I am putting together OP Security Proxy, which is a fast JSON-RPC middleware layer I wrote in Rust. You can check out the code at GitHub - Ishant5436/op-sec-proxy · GitHub . It essentially sits between a standard wallet or client and the public Optimism RPC nodes. The core mechanic is that whenever a transaction goes out via eth_sendRawTransaction, the proxy catches it. It then uses the revm engine to fork the network state locally and run a quick simulation. If it detects that the transaction is going to revert, halt, or burn the whole gas limit without touching the state, the proxy just drops it before it ever hits the public mempool. I built this because when you use Ethereum-equivalent chains, you still end up paying the L2 execution fee up to the point of failure if a transaction reverts on-chain. We see this all the time with MEV bots, slippage issues, or unexpected state changes. This proxy serves as a public good that stops regular users from paying for failed executions, savin",
+          "id": "research:4cec615e4144ec0997",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-15T03:54:41Z",
+          "title": "OP Security Proxy: A local RPC middleware to prevent paying for failed L2 executions",
+          "url": "https://gov.optimism.io/t/op-security-proxy-a-local-rpc-middleware-to-prevent-paying-for-failed-l2-executions/10810"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Hello Optimism Community, I wanted to take a moment to properly introduce myself to the forum. My name is Talha Karadayi, and I am a PhD researcher in Management & Organization Science, jointly affiliated with Istanbul University and Henley Business School. As part of my PhD Thesis, I am conducting an independent qualitative study exploring how Decentralized Autonomous Organizations (DAOs) shape their governance, decision-making, and organizational structures. While I am observing several ecosystems such as Optimism, ENS and Arbitrum . Even though it claims not to be a DAO, I am focusing heavily on Optimism due to the ideal of decentralization embedded in its mature governance framework, constitution, and working group structures. My goal here is purely academic: to understand the real-world organizational dynamics from the perspectives of active contributors, delegates, and working group members . I am not backed by any commercial entity; this is independent, open science research con",
           "id": "research:560e695c47b30bf3f1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-13T12:23:52Z",
           "title": "Call for Participation in PhD Research on Optimism Governance Dynamics",
           "url": "https://gov.optimism.io/t/call-for-participation-in-phd-research-on-optimism-governance-dynamics/10902"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Proposal Type: Maintenance Upgrade Proposal Voting Cycle: Off-cycle (Special Voting Cycle, subject to the standard veto period) Executive Summary This proposal transitions the ProxyAdmin Owner of Unichain Mainnet (chain ID 130) to the standard Optimism governed model: the same L1 and L2 ProxyAdmin Owners as OP Mainnet. On Mainnet this transitions ownership from the current 3-of-3 Safe (Chain Governor, Foundation Upgrade Safe, and Security Council) to the standard 2-of-2, removing the Chain Governor from the owner set. These changes are administrative and do not modify protocol behavior or affect end users. Motivation Optimism is preparing for the upcoming interop upgrade. Interop requires participating chains to share a common security model so they can be upgraded atomically, under the same governance, preserving the safety of the shared messaging layer. Aligning Unichain’s ProxyAdmin Owner with the standard Optimism governed configuration brings Unichain under the same security model",
-          "id": "research:b5e630881dadb590f2",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-02T08:29:18Z",
-          "title": "Maintenance Upgrade Proposal: Unichain ProxyAdmin Owner Transition to Standard Optimism Governance",
-          "url": "https://gov.optimism.io/t/maintenance-upgrade-proposal-unichain-proxyadmin-owner-transition-to-standard-optimism-governance/10839"
+          "excerpt": "Towards Mainnet Interop: Introducing the Inaugural Unichain and OP Mainnet set proposal type: informational / discussion Summary We, Optimism Foundation and Uniswap Labs are preparing to launch native OP Stack Interoperability on Mainnet with an inaugural set consisting of Unichain and OP Mainnet . Subject to final technical readiness and governance approval, the two chains will be upgraded into a common Interop set. This will allow transactions on one participating chain to consume and validate messages initiated on another participating chain at the protocol level, without relying on a separate third-party bridge validator set. The first release will focus on native ETH transfers between Unichain and OP Mainnet . Broader token support, application-level integrations, and the addition of further chains will follow after the initial system has been deployed and proven in production. This post is intended to: Communicate the proposed inaugural chain set; Explain why Unichain is a go-to-",
+          "id": "research:56ded91d6246d16f24",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-22T15:03:17Z",
+          "title": "Towards Mainnet Interop: Introducing the Inaugural Unichain and OP Mainnet set",
+          "url": "https://gov.optimism.io/t/towards-mainnet-interop-introducing-the-inaugural-unichain-and-op-mainnet-set/10919"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Hi everyone, Hi everyone, my name is Dorin, and I’m a student from Bucharest, Romania. For a university course project, I’m exploring whether a blockchain could be used to record the chain of custody of criminal evidence, so that no one could quietly alter a record after the fact. While working on it, I realized that the cryptography is the easy part; the harder question is who decides the rules. That led me to Optimism, which I chose as my case study because it has one of the most openly documented governance histories in the space. I’ve spent the past few weeks going through the Operating Manual’s version history, Agora votes and forum threads, and there are a few points I’d really appreciate help understanding. (Disclosure: I used AI tools to help with parts of the research.) Working Constitution. Section 1 limits the Working Constitution to no more than four years from its adoption, which by my reading ended around April 2026. In April, the Foundation said it would postpone any maj",
-          "id": "research:c1b6288126c08235e5",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-13T19:26:33Z",
-          "title": "Student research on Optimism governance: questions on the constitution, rule changes and token value",
-          "url": "https://gov.optimism.io/t/student-research-on-optimism-governance-questions-on-the-constitution-rule-changes-and-token-value/10903"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Project Name: STRATEGIC POWER 360 Protocol Component: Public Light 3.0 (Algorithmic Governance & Auditing Layer) Author / Project Lead: Juan Carlos Farías Salazar Legal Jurisdiction: Wyoming, USA (DAO / DUNA Architecture) Full Technical Architecture & Whitepaper: STRATEGIC POWER 360 - Executive One-Pager 1. Abstract & Public Good Vision Latin America possesses vast natural and economic potential, yet systemic institutional corruption and administrative opacity persistently stunt regional development. STRATEGIC POWER 360 introduces Public Light 3.0, an open-source decentralized governance protocol designed to make institutional corruption technically impossible by design. By migrating public auditing, budget allocation, and executive accountability onto immutable smart contracts, we establish a transparent framework for regional economic sovereignty. 2. Core Technical Architecture Immutable Ledger & Bilateral Transparency: Every transaction, budget distribution, and resource allocation ",
-          "id": "research:e5a2b6f337e4aea377",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-04T20:00:41Z",
-          "title": "Optimism Governance / Ecosystem Grant Proposal",
-          "url": "https://gov.optimism.io/t/optimism-governance-ecosystem-grant-proposal/10846"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "You can now mint 1,500+ tokenized stocks directly on @Optimism through ether․fi powered by @xStocksFi 🤝 You could already trade stocks. Now you can mint them, hold them, and use them as collateral. ETH, stables, stocks, gold, vaults, card. All in one pla X",
-          "id": "expanded:006fc72cf074a2234d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T16:43:14Z",
-          "title": "You can now mint 1,500+ tokenized stocks directly on @Optimism through ether․fi powered by @xStocksFi 🤝 You could already trade stocks. Now you can mint them, hold them, and use them as collateral. ETH, stables, stocks, gold, vaul",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mMDBZaGhTZ3ktMmRoazdJM0lpU3BsVzVqYjBydVBFbHdKYmxGbV9KRWphdTZsTFQ2c19lWEVoRF90ZXdYc1NPNmFYb0hwWmkxVVcyM1pFRkw3Y18wSWhnNUdtUnJ2MDVu?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Some 24-hour post game thoughts… +No season has ever been decided on November 10th. 20-point win, 20-point loss…doesn’t really matter. This team CAN still have a great season. +With that being said, we’ve seen this story FAR too often over the past tw X",
-          "id": "expanded:04a54b71b46c6eda42",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T02:59:02Z",
-          "title": "Some 24-hour post game thoughts… +No season has ever been decided on November 10th. 20-point win, 20-point loss…doesn’t really matter. This team CAN still have a great season. +With that being said, we’ve seen this story FAR too o",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uZkhmRk1MME1YVG8zNUQzV1VSVl9LOUdSNVpmRVdCckJxRjZseVFfNnZyTkY1UDF1Zkh0ZThXM3J4ODFkVmJxTTVWRDhtOVhoamkyQXoxR2t0a2Q4SlFiMA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": ". @aeroxyz continues its MEV tax pilot on Slipstream V3 pools (OP Mainnet). @Optimism confirmed OP is in Boarding Group 1 - value flows back to LPs & sAERO holders. New mechanics being tested live. https://t.co/znfHPOHH6x X",
-          "id": "expanded:05353bf63c8da6656e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T14:04:53Z",
-          "title": ". @aeroxyz continues its MEV tax pilot on Slipstream V3 pools (OP Mainnet). @Optimism confirmed OP is in Boarding Group 1 - value flows back to LPs & sAERO holders. New mechanics being tested live. https://t.co/znfHPOHH6x - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xbUtIVlNNX0FhamdQM0xtOHV0UVhPbjBkNWhDNG02OVNNS3BteFpHaTAxTTlTakJkYWRXWmhkdW1hdUY2TUVHQ216WjRiTE9iYTU2c0hBZ2stQWU0V0dtVDl0Zw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Ink is Quietly Printing Volume on The OP Stack Ink (@inkonchain) is putting up serious numbers. As per Optimism (@Optimism) $OP, the network has seen a total volume of $88 billion in perpetual futures volume since January 2026. The DEX volume for the n X",
-          "id": "expanded:05baa07938ae310c09",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T06:04:00Z",
-          "title": "Ink is Quietly Printing Volume on The OP Stack Ink (@inkonchain) is putting up serious numbers. As per Optimism (@Optimism) $OP, the network has seen a total volume of $88 billion in perpetual futures volume since January 2026. Th",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGak9CU3hJYjVRX256SFJPQWxQejlOVy1RVVNzVTFiRVRabHBQVFQ5VVRSMVlTWXpOYXBIWDNxVFB0SnpuNUtOUVpxamE3Rnl2ZlVjWXdXQjAxaGJF?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "CRYPTO TOKENS THAT COULD GET DESTROYED IN THE NEXT MARKET CRASH $BTC just plunged below $74K. Over $1 BILLION in crypto positions liquidated. If the selling continues, these 30 tokens could face serious pressure. $ARB → Token supply X",
-          "id": "expanded:0ef0e981f0fc8f5dc0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T13:00:01Z",
-          "title": "CRYPTO TOKENS THAT COULD GET DESTROYED IN THE NEXT MARKET CRASH $BTC just plunged below $74K. Over $1 BILLION in crypto positions liquidated. If the selling continues, these 30 tokens could face serious pressure. $ARB → Token supp",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAwcHlJemhycHRldVhuZ1hHdmV4NWlSWThxTmpEWm5yV083bGlfdTNyVXNOUE1rT2c4NUF5dFVkWGEwZjFMaXYtM0FHeFUtQTVib1ktY3VpTGItR256bWpPYXpn?oc=5"
+          "excerpt": "Overview Important This is a recommended release for all op-challenger operators. It updates dependencies, the Go toolchain and the image's base packages to fix vulnerabilities that image scanners can report against v1.11.0, including CVE-2026-116591 , CVE-2026-84243 and GHSA-53rm-773f-4q8c . None of the vulnerable code is reachable in op-challenger, cannon or kona-host, and there are no other operator-visible changes. Other changes Security github.com/klauspost/compress is updated from v1.18.7 to v1.20.2, fixing CVE-2026-116591 ( GHSA-fpmh-frq8-7rj8 ), a panic in its zstd decoder on two-block frames. op-challenger uses that decoder only to read the superchain registry built into the binary, so no external input reaches it ( #23965 ) The image's glibc-2.44 and libcrypt1-2.44 packages move from 2.44-r9 to 2.44-r18 , which fixes CVE-2026-84243 in libcrypt1 (fixed in 2.44-r16 ). The fixed packages come from rebuilding the image; no code changed op-challenger and cannon are built with Go 1",
+          "id": "research:5b4cc8d5ee11a23289",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-13T18:31:15Z",
+          "title": "op-challenger v1.12.0",
+          "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-challenger%2Fv1.12.0"
         }
       ],
       "cmc100_weight": 0.01,
@@ -5605,13 +5632,22 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 98,
+      "candidate_event_count": 119,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Since the DVP upgrade, ArbitrumDAO’s quorum is set as a share of delegated voting power: 50% for constitutional and 40% for non-constitutional proposals. This stopped token unlocks from pushing quorum up, but it moved the problem rather than solving it. Every delegated ARB that never votes now raises quorum without adding turnout, so incentives that reward delegation without checking whether that voting power is actually used can make quorum harder to reach. ABSTAIN votes count toward quorum and can carry thin proposals over the line, a large holder can delegate and stay silent to stall decisions, and lowering quorum again would make attacks cheaper. One possible answer is a neutral participation pool. The DAO funds it per epoch in advance, never per proposal, so nobody can buy turnout for their own vote. It pays only for votes actually cast: the same for FOR and AGAINST, less for ABSTAIN, with a cap per address. Rewards are computed from onchain VoteCast events and published as a Merk",
+          "id": "research:05bd922df4b3e957af",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-07T14:52:39Z",
+          "title": "Rewarding votes, not delegation: participation incentives under DVP quorum",
+          "url": "https://forum.arbitrum.foundation/t/rewarding-votes-not-delegation-participation-incentives-under-dvp-quorum/31553"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.12.0-ebe9e83-stripped This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines v3.12.0 - 2026-09-22 Configuration Add --execution.sequencer.poll-interval . [commit] Breaking: Remove --execution.sequencer.read-from-tx-queue-timeout . [commit] Add --execution.transaction-feed.enable . [commit] Add --execution.transaction-feed.addr . [commit] Add --execution.transaction-feed.port . [commit] Add --execution.transaction-feed.client-buf . [commit] Add --execution.transaction-feed.broadcast-buf . [commit] Add --execution.transaction-feed.write-timeout . [commit] Add --execution.transaction-feed.ping-interval . [commit] Add --execution.transaction-feed.handshake-timeout . [commit] Change the default of --node.batch-pos",
           "id": "research:0896f34800b42876d8",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-02T22:53:11Z",
           "title": "Arbitrum Nitro v3.12.0",
           "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.12.0"
@@ -5620,7 +5656,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Hi everyone, My name is Shay, and I’m currently working on my final project for a blockchain course, focusing on how decentralized Arbitrum really is in practice. I’ve been reading about BoLD and found it fascinating that validation on Arbitrum One is now permissionless, with the Arbitrum Foundation stepping in as the first active proposer. There’s one thing I couldn’t find a clear answer to, and I’d really appreciate hearing from people who are closer to it: are there actually independent parties running BoLD validators today? And if someone outside the Foundation wanted to take on the proposer role, what would that realistically involve? Also, as part of my research on Arbitrum’s decentralization, I came across the Security Council’s emergency action following the KelpDAO exploit earlier this year, and it’s been on my mind ever since. On one hand, it seems like exactly the kind of situation the Council was designed for. On the other hand, I keep wondering whether it sets a precedent ",
           "id": "research:090d270181607f3be7",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-14T17:21:40Z",
           "title": "reaserch questions - blockchain course, focusing on how decentralized Arbitrum really is in practice",
           "url": "https://forum.arbitrum.foundation/t/reaserch-questions-blockchain-course-focusing-on-how-decentralized-arbitrum-really-is-in-practice/31590"
@@ -5629,25 +5665,43 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "LG Electronics is piloting an onchain advertising network on Arbitrum. Developed by the company's Blockchain Research Lab, the project tests whether advertising performance can be recorded in a form that the people who rely on it can check. The work is aimed at one of digital advertising's oldest complaints - the industry counts everything and lets almost nobody check the count. Impressions, clicks and conversions are measured inside closed systems; settlement arrives weeks later through processes neither advertiser nor publisher can inspect; and disputes come down to contracts and audits. WARC forecasts global advertising spend at $1.3 trillion in 2026, a scale at which the gap between what is reported and what can be proven decides where budgets go and who gets paid. Pressure of that kind is pushing markets toward the programmable economy - rules that execute in software and results that can be verified. LG's own diagnosis has three parts. The first is ad fraud. Advertising is bought",
           "id": "research:0d0c2f096022de10ed",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-06-12T19:10:51Z",
           "title": "LG Electronics Pilots Onchain Advertising Network on Arbitrum",
           "url": "https://blog.arbitrum.io/lg-electronics-pilot/"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Following approval through Arbitrum governance , the ArbOS Elara upgrade is now live on the Arbitrum Platform, bringing new capabilities to dedicated blockchains and important improvements to Arbitrum One . New for dedicated blockchains: Protocol-level compliance filtering Customizable priority fees Alternative data API New on Arbitrum One: More efficient base fee tuning process 4x increase to Stylus smart contract capacity Watch the overview video Protocol-level compliance filtering for dedicated blockchains If the next generation of financial markets are going to interact with the programmable economy, they will need infrastructure that can adapt to their rules, users, and operating environments. We provide new protocol-level compliance filtering as policies that can be defined by the chain owner. Policies can be applied at the sequencer and state transition function layer to filter transactions before execution. The chain owner also receives records of filtered transactions via API ",
+          "id": "research:1124da5a82768ecacf",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-20T17:31:09Z",
+          "title": "ArbOS Elara: Compliance Filtering, Priority Fee Support",
+          "url": "https://blog.arbitrum.io/arbos-elara/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "The Arbitrum Developer Guild was first introduced in January 2024 alongside the Arbitrum Expansion Program. We have published the first version of the Guild’s specification and it is available in the Arbitrum Foundation’s documentation. The Guild is an invite-only and merit-based program facilitated by the Arbitrum Foundation. Membership is assessed based on demonstrated proof of work on the core Arbitrum Protocol or other high-impact technical contributions to the ecosystem. Members must also demonstrate strong alignment with Arbitrum such that their company’s success substantially depends on Arbitrum winning. The Guild is currently funded through 2% of Net Protocol Revenue from Arbitrum Chains alongside 3% of the Priority Gas Auctions (PGA) and the Sequencer Fast Feed proceeds from Arbitrum One. There are more than 30 Arbitrum Chains who are already contributing to the Guild. Each member will receive an allocated percentage of the funding on a regular cadence. This funding is intende",
           "id": "research:178636bdaf0f1bec6f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-23T13:52:34Z",
           "title": "Launching the Arbitrum Developer Guild",
           "url": "https://forum.arbitrum.foundation/t/launching-the-arbitrum-developer-guild/31604"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Creating a seamless user experience that allows users to smoothly interact with your product is one of the greatest challenges when building blockchain applications. Users can drop off at wallet creation, get stuck finding gas, abandon flows during approvals, or get confused by how to send transactions from one chain to another. That’s where ZeroDev comes in. As part of the full-stack product suite developed by Offchain , ZeroDev provides businesses like EdgeX , Glider , and Ethereal one place to build, launch and scale programmable accounts. SPONSORED By signing up with the code ARBZERODEV , teams building on Arbitrum can access 3 free months of the ZeroDev Growth Plan until the offer expires on August 22, 2026 . Claim Offer Instead of asking your users to manage seed phrases, gas tokens, and transaction approvals, ZeroDev developed a key set of features to help builders reduce that complexity: Smart Accounts Replace seed phrases, repeated signing, and rigid EOA flows with recoverable",
+          "id": "research:1f190bb4286b0cb737",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-27T15:16:52Z",
+          "title": "How ZeroDev Simplifies Wallet, Gas, and Cross-Chain Friction",
+          "url": "https://blog.arbitrum.io/zerodev/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "[CONSTITUTIONAL] AIP: Update Arbitrum One and Nova L1-Pricing Parameters for Ethereum Glamsterdam Abstract This proposal updates the parentGasFloorPerToken and perBatchGasCharge parameters on Arbitrum One and Arbitrum Nova in response to Ethereum’s Glamsterdam upgrade. Glamsterdam changes the Ethereum gas costs associated with posting Arbitrum chain batches. Without corresponding parameter updates, the L1 fee paid by Arbitrum One and Nova users may no longer accurately reflect the cost of posting batches to Ethereum. The proposal authorizes targeted updates to the live parameters through the ArbOwner precompile. It does not introduce an ArbOS software upgrade or change the underlying L1-pricing algorithm. Motivation Arbitrum’s L1-pricing system estimates Ethereum gas cost of each batch, then uses that estimate to set the L1 fee paid by Arbitrum users and the amount the batch poster is paid back. Two parameters feed into this estimate: parentGasFloorPerToken , which mirrors Ethereum’s m",
           "id": "research:1f2822fdb0005daebe",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-07T19:30:39Z",
           "title": "[CONSTITUTIONAL] AIP: Update Arbitrum One and Nova L1-Pricing Parameters for Ethereum Glamsterdam",
           "url": "https://forum.arbitrum.foundation/t/constitutional-aip-update-arbitrum-one-and-nova-l1-pricing-parameters-for-ethereum-glamsterdam/31555"
@@ -5656,46 +5710,19 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.2-3599aca This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines\\ If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.2-3599aca-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.2 - 2026-06-30 Configuration Add --node.dangerous.always-fallback-to-parent-chain-da to support retiring chains off AnyTrust. [commit] Add --execution.transaction-filtering.address-filter.s3.preallocate-memory (default true) to preallocate and commit the hash-list memory at startup, engaging only when s3.max-file-size-mb is set. [commit] Added Added consensus-v61 to dockerf",
           "id": "research:22d78880448152b271",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-07-06T19:47:28Z",
           "title": "Arbitrum Nitro v3.11.2",
           "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.2"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.3-beb2108 This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.3-beb2108-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.3 - 2026-08-03 Fixed Capture panics on prefetch-tx execution and log them instead of returning. [commit] Filter retryable submissions by who actually gets funds, and catch filtered L1 senders/depositors that previously slipped through. [commit] Changed Filtered transactions rejected by the sequencer now return the RPC error message \"Transaction rejected by chain policy\" inst",
-          "id": "research:26a2b1aa32b1b1fb8d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-08-18T14:35:40Z",
-          "title": "Arbitrum Nitro v3.11.3",
-          "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.3"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.4-7d5ac27 This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.4-7d5ac27-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.4 - 2026-09-09 Changed The BoLD staker's \"Waiting for more batches to post next assertion\" log now includes a reason field. [commit] Fixed Parent chain headers with the Glamsterdam devnet-8 fields blockAccessListHash (EIP-7928) and slotNumber (EIP-7843) are now decoded and reproduce the canonical block hash. [commit] eth_getProof now rejects requests with more than 1024 stor",
-          "id": "research:2857a7505ccaa96c65",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-25T22:58:24Z",
-          "title": "Arbitrum Nitro v3.11.4",
-          "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.4"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This release is available as a Docker Image on Docker Hub at offchainlabs/nitro-node:v3.11.5-7d41882 This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: /usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image offchainlabs/nitro-node:v3.11.5-7d41882-validator which has the extra script /usr/local/bin/split-val-entry.sh as the entrypoint. v3.11.5 - 2026-09-28 Changed Stylus activation is refused for eth_call and eth_estimateGas by default. [commit]",
-          "id": "research:3c8377e7a904e20fee",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-02T22:52:00Z",
-          "title": "Arbitrum Nitro v3.11.5",
-          "url": "https://github.com/OffchainLabs/nitro/releases/tag/v3.11.5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Earlier this year, a roadmap of the engineering work underway across the Arbitrum Platform outlined the path to help make it the best infrastructure for building financial products in the programmable economy. A key part of that roadmap is a multi-proving model powered by zero-knowledge (ZK) technology . Bringing ZK proving to Arbitrum One* and dedicated blockchains built with Arbitrum Platform can give the ecosystem a faster path to L1 withdrawals. Instead of relying solely on the traditional seven-day challenge window, ZK proving can reduce asset settlement times from days to hours . This helps increase capital efficiency for users, bridges, and protocols, without compromising the security of the Arbitrum Platform. The following milestones highlight the latest progress toward enabling live ZK proving. 1. Arbitrum blocks can now be ZK proven ZK proving now works in Arbitrum block validation. Point it at a real mainnet block and it generates a zero-knowledge proof that the block execut",
-          "id": "research:479a8fd7c5ba08ec00",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-08-20T13:37:49Z",
-          "title": "ZK Settlement is Coming to Arbitrum",
-          "url": "https://blog.arbitrum.io/zk-settlement-is-coming/"
+          "excerpt": "Upcoming On-chain Proposals 1. Adopting USDG as a Core Strategic Initiative for the ArbitrumDAO With Arbitrum joining the Global Dollar Network (resulting in the USDG being live on Arbitrum), Entropy proposes a coordinated effort across the Arbitrum Aligned Entities to grow USDG adoption, so that the DAO becomes the steward of USDG’s growth on Arbitrum and the recipient of the associated economic value. Accordingly, this proposal seeks approval to: Bolster the DRIP budget with an additional 100M ARB from the DAO treasury, adjust the season structure, broaden the program’s permitted activities, and extend its timeline Enable the ATMC to deploy assets in support of USDG growth, under the existing OAT oversight and AF custody Route AEP fees, net of the 20% allocated to the Arbitrum Developer Guild, to the TM Portfolio, and authorize the ATMC to convert them into USDG Confirm the USDG initiative as a Special Project under Entropy’s existing Year 2-3 scope of work Voting starts on October 2",
+          "id": "research:25040cb097803cdde0",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-27T13:49:28Z",
+          "title": "27 October, 2026 - Roundup of Active/Upcoming Votes",
+          "url": "https://forum.arbitrum.foundation/t/27-october-2026-roundup-of-active-upcoming-votes/31622"
         }
       ],
       "cmc100_weight": 0.05,
@@ -6499,16 +6526,70 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 108,
+      "candidate_event_count": 117,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release introduces the Toccata Hardfork , marking a major milestone described in KIP16 , KIP17 , KIP20 , and KIP21 , bringing native L1 covenant programming and infrastructure for based ZK applications to Kaspa. The hard fork is scheduled to activate on mainnet at DAA score 474,165,565 , roughly on June 30, 2026, at 16:15 UTC. Starting 24 hours before activation , nodes will connect only to peers using the new P2P protocol version 10 . Ensure your node is updated to maintain network connectivity. Node upgrade guide Ensure your node is updated to stay compatible with the Toccata Hardfork. For detailed instructions on upgrading and configuring your node, refer to the Toccata Guide . Full Changelog : v1.1.0...v2.0.0",
+          "id": "research:2972db99f7801ec343",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-05T12:45:06Z",
+          "title": "Mainnet Toccata Release - v2.0.0",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.0.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "chore(tn10/toccata): hard fork Fix typo Co-authored-by: IzioDev 9900846+IzioDev@users.noreply.github.com Co-authored-by: Ori Newman orinewman1@gmail.com",
+          "id": "research:3843e127498ed61886",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-05-15T20:02:05Z",
+          "title": "tn10-toc: chore(tn10/toccata): hard fork (#1006)",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/tn10-toc"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This pre-release schedules the Toccata ZK hardening hard fork on testnet-10. The release activates the final Toccata hardening layer on TN10, including Groth16 verifier hardening, updated ZK pricing behavior, and the SMT/seqcommit inactivity shortcut used by inactivity proofs. This activation is part of the final TN10 validation cycle before the accumulated Toccata logic is cleaned up and prepared for mainnet. Activation is scheduled for: May 28, 2026, ~16:00 UTC DAA Score: 476,232,000 TN10 nodes should upgrade before the activation point.",
+          "id": "research:557bbe3fa273f5103c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-05-27T19:42:20Z",
+          "title": "tn10-toc3",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/tn10-toc3"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Kaspa v2.1.0 is a feature, security, and maintenance release introducing P2P Protocol Version 11 with chunked Initial Block Download (IBD), network and P2P transport hardening, Stratum bridge hardening and performance enhancements, extraction of the standalone ZK SDK crate ( kaspa-txscript-zk-sdk ), an extensive workspace-wide arithmetic safety audit, and post-Toccata consensus streamlining. Highlights P2P Protocol Version 11 & Chunked IBD : Large IBD payloads (Pruning Point Proofs, headers, and trusted data) are now streamed in 20 MiB chunks, avoiding message-framing bottlenecks and timeouts during node sync. Protocol 11 maintains full backwards compatibility with Protocol 10 peers. P2P & Transport Hardening : Lowered P2P_MAX_MESSAGE_SIZE from 1 GB to 256 MB, enforced wire-level transaction and block limits (2 MB maximum block size), added immediate rejection of banned inbound peers, and bounded compressed parent counts ( MAX_UNCOMPRESSED_PARENTS ) against hashing DoS vectors. Stratum",
           "id": "research:80ac06be9386ff86d0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-09-22T14:34:15Z",
           "title": "Rusty Kaspa v2.1.0",
           "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This maintenance release builds on v2.0.0 with RPC and Wasm SDK improvements, operational tooling, and general node maintenance. Highlights Added new RPC support for Toccata seq-commit state and lane proofs. Added wallet/core and Wasm notifications for SMT sync progress. Added SMT database inspection tooling for operators and developers. Improved transaction-generation tooling for user-lane workflows. Node sync and error-reporting refinements. Refined covenant binding handling across client and wallet components. Upgrade Notes Mainnet operators are encouraged to upgrade. v2.0.1 can be used both as a drop-in update for v2.0.0 nodes and as the Toccata upgrade version for pre-Toccata 1.x nodes. For more background on the Toccata upgrade, see the v2.0.0 release notes or the Toccata Guide .",
+          "id": "research:a1225268625e9a56e8",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-16T09:30:41Z",
+          "title": "Mainnet Toccata Release - v2.0.1",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.0.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release scheduled the Toccata hardofork in testnet-10 to: May 18, 2026, 16:00 UTC DAA Score: 467,579,632",
+          "id": "research:a77c6025bb47e109e2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-05-16T19:46:07Z",
+          "title": "tn10-toc2",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/tn10-toc2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Toccata Mainnet pre-activation pre-release This pre-release is intended for community-wide mainnet sanity testing before the final Toccata rollout. The main goal is to verify that pre-activation mainnet behavior remains fully compatible with the current master release across a wider range of real-world node histories, upgrade paths, pruning states, and operator setups. This pre-release does not activate Toccata on mainnet. Operators who test it should expect one more upgrade when the final Toccata release is published. Key notes Node operators are encouraged to test this pre-release on mainnet, especially on nodes with different upgrade histories and pruning states. Operators, pools, and miners are encouraged to test with a limited subset of infrastructure rather than fully migrating operations. Miners may use this pre-release to sanity-test mining flows, but this does not replace testing on an activated testnet. Before activation, mainnet block templates only contain current transacti",
+          "id": "research:c0606da5a771363068",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-05T12:16:54Z",
+          "title": "v1.3.0-toc.5",
+          "url": "https://github.com/kaspanet/rusty-kaspa/releases/tag/v1.3.0-toc.5"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -6536,60 +6617,6 @@
           "published_utc": "2026-11-12T19:35:10Z",
           "title": "Dynamite Blockchain Corp. (KAS.CN) Stock Price, News, Quote & History - Yahoo! Finance Canada",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8yNmxkaUdYS2F4TkREc3BkUFlWZERfdG9sU18wTDhrbjFnRzViNHNYN2NKUlFPZlNhdlI4eldSdFlNa252blJvTWFyZ3J6N1JnOFNfag?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "🚨 KASPA JUST FLIPPED BITCOIN IN SUPPLY ISSUANCE! 🔥 96.85% OF $KAS HAS ALREADY BEEN MINED. BITCOIN? 95.73%. THAT MEANS KASPA HAS ALREADY ISSUED A LARGER SHARE OF ITS MAXIMUM SUPPLY, WITH LESS THAN 3.2% LEFT X",
-          "id": "expanded:0b942ac59fe931185d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T07:13:16Z",
-          "title": "🚨 KASPA JUST FLIPPED BITCOIN IN SUPPLY ISSUANCE! 🔥 96.85% OF $KAS HAS ALREADY BEEN MINED. BITCOIN? 95.73%. THAT MEANS KASPA HAS ALREADY ISSUED A LARGER SHARE OF ITS MAXIMUM SUPPLY, WITH LESS THAN 3.2% LEFT - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qSzI5bUJjbW40WDBfSHVhb0ZXTUJ2M2JYaFpxNXU3a2ZCQzl3RmF6c21qaUtqWWZCLXZjSGQ1dHAxUVMwTnlaSm1uSTFxU0ZYZnNjTjlrelg4d2QzSlhwUW9qdFpPcXM?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "murexchangerate.com: Find local best exchange rate forex dealer for any currency pair Reddit",
-          "id": "expanded:0baf55f7d93bcec26e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T08:21:12Z",
-          "title": "murexchangerate.com: Find local best exchange rate forex dealer for any currency pair - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQT2VXeWRWekZQcGEyMUpkd09PdHROZUs1SmpUUnQxbTRWZHR6ekdXRmYzWkdlcVFJS3RNejRwbHRPNDVmd2Z2dkFpaUllUWpveDRqWFpGSDdTWUZHdjI1bjZUS2FkNmlHdDZfS2t1ZXFtdVJvb2hBMGVhMmFINElQX3RBalNPdk0zcTRxVVhJTnFrQnd2ZVVlU0xZS1pJckdUazRVT1JucU1BUnZW?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Nervous about ashoka Reddit",
-          "id": "expanded:0dc8ffd01cbe10ac12",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T14:07:53Z",
-          "title": "Nervous about ashoka - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeGkxMjNlVHJoS25HTDROUXBtSDJWeko3TFd0NXloX3J3bTF1RGNOZS13TWlBMkx1QTl1NTY4azAybnpvUlpjbTBObHlISGpZQTVFNk93Uk1pM1p1SWRsUjd0OGlXQXA3S3hkTXNvanRsVkphWDBiUXlxNWp4aldUcm5meWpaNnc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "We must get $KAS #kaspa into Binance. X",
-          "id": "expanded:12c879ecd3a414143a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T14:08:46Z",
-          "title": "We must get $KAS #kaspa into Binance. - X",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE11dnZTc2NTNFJBMC1JT1VxS3llQXJva0xYVUpMMVRyTUJiTEhPaThGWDUyQ1dOZ21OZHNTWVBYc1JSRUQ2UjVqcWhuOEhoNjdqSEh6MkI1a3FpWVdaTHRFMlFRNEtJZw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$KAS Now all apps are available on PlayStore for Android! https://t.co/7xGDJUDMVy X",
-          "id": "expanded:18e95cc7ee908f6657",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T19:29:25Z",
-          "title": "$KAS Now all apps are available on PlayStore for Android! https://t.co/7xGDJUDMVy - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtZkV1NkxrYW9PVTcwVHhJa3RFQzN3MTFNZ2l4VnBPM3JZWVJKZkdDajRuSzZYRVRLaUp6dEpuU0hIVXpCVFFMOE5pV0x6SnkxRkxsMGE1ZWNYMS1MeExYdDlB?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Kaspa has recorded its largest daily net exchange inflow in the past 90 days, with approximately 115 million KAS moving onto exchanges. The spike marks a sharp reversal from the predominantly negative exchange flows seen in recent weeks and indicates a X",
-          "id": "expanded:1b29b83a4b561fab80",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T12:37:11Z",
-          "title": "Kaspa has recorded its largest daily net exchange inflow in the past 90 days, with approximately 115 million KAS moving onto exchanges. The spike marks a sharp reversal from the predominantly negative exchange flows seen in recent",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94OUZlWGctNFVTQXcxSjNUYjhZdHVNdmYxR3lJMmRpY0lPaURFaUhOby1PVXZ5cGFINUY5aVRIOERnVDZZV1FlODJrN2x5YTVEeTNsRlVjX1RhUm4xSUl4eA?oc=5"
         }
       ],
       "cmc100_weight": 0.04,

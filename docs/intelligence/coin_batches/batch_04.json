@@ -1281,8 +1281,62 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 38,
+      "candidate_event_count": 45,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Small reliability fixes and dependency updates. What's Changed chore(deps): bump linear/linear-release-action from 0.17.2 to 0.18.0 by @dependabot [bot] in #5245 chore(deps): bump go-libp2p to v0.50.0 by @rach-id in #5247 chore(deps): bump codecov/codecov-action from 7.0.0 to 7.1.1 by @dependabot [bot] in #5244 chore(deps): enforce 7-day dependency cooldown by @rootulp in #5249 fix(shrex): reserve what the server holds by @vgonkivs in #5251 chore: remove celestia-app v9 dependency by @vgonkivs in #5252 fix(ci): tolerate small project coverage fluctuations by @rootulp in #5290 fix(shrex): synchronize peer pool cleanup by @rootulp in #5293 fix(fibre/stateclient): bound the host query in GetHost by @kriss39 in #5297 fix(ci): pin reusable Docker workflows to commit SHA by @rootulp in #5289 fix(shrex/peers): don't keep pools in managers without shrexsub by @kriss39 in #5256 fix(nodebuilder/blob): stop prefixing blob data with 0x in submit by @0xShadowX in #5262 feat(das): add das_sampling_h",
+          "id": "research:0994809dfc7c762883",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-06T10:19:25Z",
+          "title": "v0.34.3-mocha",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3-mocha"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Highlights DAS: resume interrupted sampling after restart. If the node was stopped while a recent sampling job was still in progress, that height was dropped from the checkpoint and never sampled. In-flight recent jobs at or below the catchup head are now persisted and resumed on restart. State: validate gas price before building the fee. Negative, NaN, Inf or int64-overflowing gas price values now return an error instead of panicking in SubmitPayForBlob / SubmitMessage . P2P: removed the Binary Builders bootstrapper from the mainnet bootstrap list. What's Changed Resume interrupted recent DAS jobs after restart in #5266 Validate gas price before building transaction fees in #5274 Remove the Binary Builders bootstrapper in #5331 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parity script in #5327 Full Changelog : v0.34.3...v0.34.4",
+          "id": "research:5507a6c5817d2b31c3",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-27T13:58:39Z",
+          "title": "v0.34.4",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What's Changed Bump celestia-app to v10.4.0 mainnet in #5321 Reset RangeNamespaceData on ReadFrom in #5255 Bound proof node counts in wire decoders in #5270 Wait for consensus height before fetching blocks in API tests in #5318 Validate gas price before building transaction fees in #5274 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parity script in #5327 Remove the Binary Builders bootstrapper in #5331 Resume interrupted recent DAS jobs after restart in #5266 Full Changelog: v0.34.3-mocha...v0.34.4-mocha",
+          "id": "research:56d80df7e328df5b7e",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-26T15:32:32Z",
+          "title": "v0.34.4-mocha",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4-mocha"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Small reliability fixes and dependency updates. What's Changed ci: disable Mergify merge queue comments by @rootulp in #5240 chore(deps): bump celestia-app to v10.1.0-mocha by @ninabarbakadze in #5239 state: Fix flaky TestSubmitFromCustomAccount balance assertions by @rootulp in #5243 ci: authenticate Codecov uploads with OIDC by @rootulp in #5242 chore(deps): bump linear/linear-release-action from 0.17.2 to 0.18.0 by @dependabot [bot] in #5245 chore(deps): bump go-libp2p to v0.50.0 by @rach-id in #5247 chore(deps): bump codecov/codecov-action from 7.0.0 to 7.1.1 by @dependabot [bot] in #5244 chore(deps): enforce 7-day dependency cooldown by @rootulp in #5249 fix(shrex): reserve what the server holds by @vgonkivs in #5251 chore: remove celestia-app v9 dependency by @vgonkivs in #5252 fix(ci): tolerate small project coverage fluctuations by @rootulp in #5290 fix(shrex): synchronize peer pool cleanup by @rootulp in #5293 fix(fibre/stateclient): bound the host query in GetHost by @kriss39",
+          "id": "research:6ca9368b8c8d778323",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-06T10:20:41Z",
+          "title": "v0.34.3-corto",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3-corto"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What's Changed Bump celestia-app to v10.4.0-mocha and celestia-core to v0.42.3 in #5316 Bump celestia-app to v10.4.0 mainnet in #5321 Reset RangeNamespaceData on ReadFrom in #5255 Bound proof node counts in wire decoders in #5270 Wait for consensus height before fetching blocks in API tests in #5318 Validate gas price before building transaction fees in #5274 Bump Alpine from 3.24.1 to 3.24.2 in #5291 Bump Linear release action to 0.18.1 and update the dependency parity script in #5327 Remove the Binary Builders bootstrapper in #5331 Resume interrupted recent DAS jobs after restart in #5266 Full Changelog: v0.34.3-corto...release/v0.34.x",
+          "id": "research:88ec42cacab0639d80",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-14T10:15:36Z",
+          "title": "v0.34.4-corto",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.4-corto"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release contains security fixes and improvements. What's Changed Fix a lock-order deadlock in SHREX peer cooldown handling ( #5179 ). Limit the number of namespace-data rows read from a stream ( #5229 ). Support IPv6 literal endpoints ( #5168 ). Upgrade go-libp2p to v0.50.0, QUIC to v0.62.0, and WebTransport to v0.13.0 ( #5248 ). Upgrade NMT to v0.24.5 ( #5226 , #5230 ). Upgrade go-header to v0.8.7 and update other Go dependencies ( #5226 , #5234 ). Remove Corto from the bootstrapper health test ( #5227 ). Sync GitHub releases to the Linear release pipeline ( #5232 ). Update automatic PR reviewer assignments ( #5236 ). Full Changelog : v0.33.0...v0.33.2",
+          "id": "research:9517a1769422b63f84",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-23T11:19:18Z",
+          "title": "v0.33.2",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.2"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Cryptocurrency prices have entered a fresh bull market as the crypto fear and greed index moves from Monday’s fear zone to over 56. Bitcoin has helped this rebound, rallying over 10% in the last 24 hours. Sui token helped to lead the recovery, rising to $0.8360, much higher than this week’s low of $0.4615. This […] The post Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound appeared first on BanklessTimes .",
@@ -1303,75 +1357,21 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release adds initial support for Fibre. Highlights Fibre client support: celestia-node now ships a built-in Fibre client, exposed under the new fibre JSON-RPC namespace on Light and Bridge nodes. Blobs are uploaded to Fibre Storage Providers and settled on-chain via an escrow-funded payment model — all driven locally by the node rather than routed through a bridge. The fibre namespace exposes: Submit — upload a blob and settle its MsgPayForFibre payment on-chain in one call. Upload — upload off-chain and settle the payment in the background. Download — retrieve a blob by its BlobID. Deposit / Withdraw — fund and unwind the escrow account that pays for storage. QueryEscrowAccount / PendingWithdrawals — inspect escrow balance and pending exits. Verified-header state client: DA nodes resolve validator sets and Fibre host addresses from the locally verified header chain (ABCI queries with Merkle-proof verification), so host discovery and payment validation don't rely on a trusted gRPC",
+          "id": "research:e353cfb53acfc17529",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-07T13:11:57Z",
+          "title": "v0.34.3",
+          "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Celestia trends lower as sellers dominate and price slips below the 200-day average Traders Union",
           "id": "expanded:0ccc5ecb8a5853b3dc",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-12T11:41:32Z",
           "title": "Celestia trends lower as sellers dominate and price slips below the 200-day average - Traders Union",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2d0My1fdkxjMU1OZTNWZDZIUmlWd21IX2R4V2tfRFZLVGNSV25ROEJGTnltQUlzMkpXWjVteXVqNVlRTzFkVUdNa2Raak96X3pMb08wNVJpODFrd3VnRzJBalo2OEF6X3ZTOWV1alhLRWtCcnIxOW9oTVlBTFpYU2VBZlFfWUVEM0VnVGZsZjYxbmtsVExDazc0LS14cktzeVh3TXdSdw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "CRYPTO TOKENS THAT COULD GET DESTROYED IN THE NEXT MARKET CRASH $BTC just plunged below $74K. Over $1 BILLION in crypto positions liquidated. If the selling continues, these 30 tokens could face serious pressure. $ARB → Token supply X",
-          "id": "expanded:0ef0e981f0fc8f5dc0",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T13:00:01Z",
-          "title": "CRYPTO TOKENS THAT COULD GET DESTROYED IN THE NEXT MARKET CRASH $BTC just plunged below $74K. Over $1 BILLION in crypto positions liquidated. If the selling continues, these 30 tokens could face serious pressure. $ARB → Token supp",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAwcHlJemhycHRldVhuZ1hHdmV4NWlSWThxTmpEWm5yV083bGlfdTNyVXNOUE1rT2c4NUF5dFVkWGEwZjFMaXYtM0FHeFUtQTVib1ktY3VpTGItR256bWpPYXpn?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "It seems my @keplrwallet has been hacked. Seeing a few transaction without authorization Good news is, its a few cents each, and $INIT is somehow not affected (probably being freezed due to Initia itself being hacked) Although it seems the hacker has mana X",
-          "id": "expanded:136cfa270805e9630c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T16:34:09Z",
-          "title": "It seems my @keplrwallet has been hacked. Seeing a few transaction without authorization Good news is, its a few cents each, and $INIT is somehow not affected (probably being freezed due to Initia itself being hacked) Although it ",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPLUZCbjdSRXRkcl9vMHV4dWdrbXF2ZDNIek9Cb0RHVHZrdXpubXB1SUVrY0Y0Nl9KaWJ0Wm1TWHZ5aTZaYm9xakxiaDd5SWozXzNGdzFDOEctZlk4Sl9WNQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Celestia shows how Voyager reached 21M TPS in testing @celestia (celestia:native) published the engineering behind Voyager today, its design for a high-speed payments chain. Most chains chase speed by splitting work across many processor cores. Voya X",
-          "id": "expanded:1c58332d6be8d13394",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T19:18:00Z",
-          "title": "Celestia shows how Voyager reached 21M TPS in testing @celestia (celestia:native) published the engineering behind Voyager today, its design for a high-speed payments chain. Most chains chase speed by splitting work across many pr",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFMXp5Z3FSeDlodnJKZEJpbmpqM3BvNFgxcWZkelBGMGJDWU94ejlIelJobnQ2UzU0TU0weFQ0LUxPdVhwWHBEak53Q3ZSMFlOTjRTTWFYMlhPNGJK?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "FFXIV Tubbz now available for preorder (G'raha, Tataru, and Krile) Reddit",
-          "id": "expanded:2512615a97dac2bb61",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T15:25:26Z",
-          "title": "FFXIV Tubbz now available for preorder (G'raha, Tataru, and Krile) - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaHB1MVFleWVIT0dhYW1rLWVJelo4S20zaEU5d1NtZHVtNjd6NDBvMkN3dkJmX1g1OXFVRkNUaFBYZUJxMVkxbGZ3YTFxREpGTXJldmZtUkI3WlVoRk5HT1N1V3VUY3ZzMHJLa3FjSUFFcFFhODJPYjZPTzVGc3FDOXZXX2Zad2JDNHhzbFBjSlJSYVVuSVBDTg?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "TP $TIA WE KEEP LEARNING EVERYDAY X",
-          "id": "expanded:2f85c3b3a2a2804fa6",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T17:40:02Z",
-          "title": "TP $TIA WE KEEP LEARNING EVERYDAY - X",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5IcUhxYVNKNl8tTnR5T3ZVdFdYdXhhVk9hWVFNa1N1bDZXZTFWMDNQVGh1ODFuQ1kzdHZyMkRsRjM5TWhYeF9lUndNWDZpbnVrRHIxM3BPN1VXaGhiNDNr?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "$TIA The Unlocks Are Done. The Products Are Live. The Chart Is Turning 📈 Celestia is holding above the broken descending resistance on the weekly timeframe. A clean retest confirms that the structure is flipping bullish. - Final token unlocks completed Octob X",
-          "id": "expanded:3089c430b8936c095e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T11:00:13Z",
-          "title": "$TIA The Unlocks Are Done. The Products Are Live. The Chart Is Turning 📈 Celestia is holding above the broken descending resistance on the weekly timeframe. A clean retest confirms that the structure is flipping bullish. - Final t",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCcEg2ZXpOM2VYWlJKZmRybnk0T0s1WFBqNlVVUVBLcF9QQmwza2JUQ19GLVFpUnVycDlzNnlCMUFEMnd5ajhaajB6N3A5cUZ6Y1pzQzdUTldVbkZuT1ZQWS1sUFZFTjA1SVhZV1VB?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Why does twilight have wings? Reddit",
-          "id": "expanded:30b6fb6cfb6f7bc8dc",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T22:56:17Z",
-          "title": "Why does twilight have wings? - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcHhwWjlzQWtYVk42NFh2a3NKSXFRLVdCaVAzbDZSVUJBczRyVllaMzBBNmc4UkwwT0J5NnV0bDZnOHNIU1g4c0dmUHFKM2d2cndIclJmWXZZOUZPUnFQM2ZqSzZiTW5EQ2xKcUhZbkZaZkJHQmlhTnM4MXRnTmFDc0lrQVRoazZZNVljQg?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -2276,8 +2276,71 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 102,
+      "candidate_event_count": 109,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "v6.8.0-rc1 is the first release candidate of the v6.8 line, cut from release/v6.8 . See the v6.8 section of the CHANGELOG for the full list of changes. What's Changed Remove legacy sei_rpc_* dual-emit after evmrpc dashboard migration (PLT-326) by @amir-deris in #4023 [ConfigManager] Register Node Sections 1/4 by @bdchatham in #3992 Snapshot Engine + flatKV integration: phase 1 by @cody-littley in #3902 Rename SnapshotEngine to ViewManager by @cody-littley in #4025 fix(sei-tendermint): restore proposal tx-key decode bounds (CON-334) by @shemnon in #4011 Disable provider caching for instant-mined receipts by @masih in #4020 fix(sei-tendermint): bound P2P and consensus Prometheus label cardinality (PLT-1070, PLT-1071) by @amir-deris in #4029 Bound block reference parsing depth by @masih in #4030 Add semi-automated e2e major version upgrade test by @masih in #4019 [ConfigManager] Register Node Sections 2/4 by @bdchatham in #3993 [ConfigManager] Register Node Sections 3/4 by @bdchatham in #",
+          "id": "research:1aa722c3d5a392bad9",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-03T20:36:18Z",
+          "title": "v6.8.0-rc1",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.8.0-rc1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we ask all pacific-1 validators and node operators to update to v6.7.1 before the FlatKV migration starts (~17:00 UTC on 9 October 2026, when the migration proposal passes). atlantic-2 has already migrated, so operators there can update at their convenience. There is no governance proposal and no coordinated chain halt for this update. v6.7.1 is a patch release on top of v6.7.0 . It has eight fixes and one removal. Most fixes are for the EVM migration, which moves EVM state from memIAVL to FlatKV. Other fixes make state sync and seid rollback safer. v6.7.1 also removes the deprecated seid export command. 🎯 Who Should Update 🛡️ Validators Requested before the migration on pacific-1 . v6.7.1 fixes data races and rollback problems in the state commit store. 🖥️ RPC, full and archive nodes Requested before the migration on pacific-1 . v6.7.1 also fixes wrong contract nonces in the state store after state sync. 🌐 Networks pacific-1 before the migration",
+          "id": "research:2dfef6e80cc2979c87",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-08T11:26:42Z",
+          "title": "v6.7.1",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we recommend that all pacific-1 and atlantic-2 validators and node operators update to v6.7.3 . There is no governance proposal and no coordinated chain halt for this update. v6.7.3 is a patch release on top of v6.7.2 . It moves the state sync trust period from config.toml into seid , so every node on a network uses the same value. The trust period must stay shorter than the unbonding time. With the value built into the binary, the network can shorten its unbonding time without every operator editing config.toml . ⚠️ Check Before You Update seid now ignores trust-period in the [statesync] section of config.toml . State sync uses a trust period of 112 hours on pacific-1 , atlantic-2 and arctic-1 . If config.toml sets trust-period to another value, seid start logs a warning that begins with statesync.trust-period is set in config.toml each time the node starts. Earlier seid versions wrote trust-period = \"168h0m0s\" into config.toml , so most nodes w",
+          "id": "research:6b8bd0c0e49942dfc7",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-03T18:20:55Z",
+          "title": "v6.7.3",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "ℹ️ This is not a mandatory upgrade, but we ask all atlantic-2 and pacific-1 validators and node operators to update at their convenience. There is no governance proposal and no coordinated chain halt for this update. v6.7.2 is a patch release on top of v6.7.0 . Most fixes are improving reliability and some smaller bug fixes for RPC nodes. ✅ How to Update Build v6.7.2 with git fetch --tags && git checkout v6.7.2 && make install . Stop the node. Replace the seid binary with v6.7.2 . If you use Cosmovisor, replace the binary in upgrades/v6.7/bin/ . Start the node. Make sure that seid version shows v6.7.2 . Make sure that the node syncs new blocks. What's Changed Backport release/v6.7 : Export known peer address count as a Prometheus gauge by @seidroid [bot] in #4520 Backport release/v6.7 : Count only connected peers in /net_info n_peers by @seidroid [bot] in #4515 Backport release/v6.7 : Initialize app from last header when a frozen node restarts by @seidroid [bot] in #4507 Backport relea",
+          "id": "research:a38db020e201c7668c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-16T16:47:03Z",
+          "title": "v6.7.2",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "🚨 FlatKV Migration ⚠️ This release will be used for the FlatKV migration on atlantic-2 , triggered by governance proposal #256 . All nodes are recommended to upgrade to this release. ⬆️ What's Changed Bump version to v6.7.0-rc3 in prep for release by @alexander-sei in #4339 Backport release/v6.7 : fix(seidb): keep writes in the old DB until the migration boundary first moves by @seidroid [bot] in #4371 Backport release/v6.7: Raise goreleaser timeout to 2h ( #4375 ) by @masih in #4378 Backport release/v6.7 : Fix FlatKV state sync bad-hash scenario. by @seidroid [bot] in #4377 Backport release/v6.7 : fix(evmrpc): release eth_getLogs DB-read slots when a block read panics by @seidroid [bot] in #4397 Backport release/v6.7 : feat: add migration pause handler by @seidroid [bot] in #4409 Backport release/v6.7 : Log a pinned node's skipped migration kick-off once per batch size by @seidroid [bot] in #4411 Backport release/v6.7 : Apply compiled KV repair files at a fixed height and generate the",
+          "id": "research:c4fc0f4d709612df8d",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-01T19:10:01Z",
+          "title": "v6.7.0-rc4",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.0-rc4"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "🚨 Mandatory Mainnet (pacific-1) Upgrade - v6.7 ⚠️ This is a MANDATORY upgrade for all pacific-1 node operators and validators. Nodes that do not upgrade will halt at the upgrade height and fall out of consensus. 📋 Upgrade Summary 🏷️ Upgrade Name (on-chain plan) v6.7 📦 Version (git tag / binary) v6.7.0 🌐 Network pacific-1 (mainnet) 🔑 Commit 60dfac14112e1ff045337a76f1eef2157400141d 🗳️ Governance Proposal #125 (voting ends 2026-10-08T10:31 UTC ) ⏰ Target Upgrade Time 2026-10-08T16:30:00 UTC (approx.) 📏 Upgrade Height 236450000 ⏱️ Expected Downtime A few minutes Note: The on-chain Upgrade Name ( v6.7 ) is intentionally different from the git tag ( v6.7.0 ). Cosmovisor matches on the Upgrade Name , so the directory must be named v6.7 — see below. ⚠️ Check Before Upgrading v6.7 removes and tightens several APIs. If any of these affect your node, act before the upgrade height: WebSocket frame limit drops from 10 MiB to 5 MiB. If your clients send 5–10 MiB frames on :8546 , set max_request_bod",
+          "id": "research:d7fc42d4dcfd050126",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-05T11:58:38Z",
+          "title": "v6.7.0",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.7.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "ℹ️ This is NOT a mandatory upgrade for validators. There is no coordinated halt or governance proposal. Nodes can upgrade whenever they like with a normal binary swap and restart. ⚙️ v6.6.4 is a small patch release on top of v6.6.3 🚀, aimed at operators running nodes in freeze mode 🧊 ( #3978 ). A frozen node halts one block below its freeze height and never processes another block. On v6.6.3 the EVM HTTP and WS servers only start after a block is processed, so a frozen node that restarted came back with its data and Tendermint RPC fine but its EVM RPC stuck offline 🔌. This release fixes that ( #4448 ). On startup a frozen node now initializes the app from its last block header, which starts the EVM servers just as processing a block would ✅. 🎯 Who Should Upgrade 🧊 Frozen historical RPC operators Strongly recommended : EVM RPC comes back after a restart 🖥️ RPC / full-node operators Optional: nodes not in freeze mode behave exactly as before 🛡️ Validators Optional: no state-machine or co",
+          "id": "research:d903e33fda190512bd",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-06T10:29:03Z",
+          "title": "v6.6.4",
+          "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.6.4"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "🔥 UPDATE: Sei Network reports surpassing 101 million EVM addresses, 5.2 billion transactions, 3.5 million deployed contracts and $16 billion in cumulative DEX trading volume since its 2023 launch. X",
@@ -2304,69 +2367,6 @@
           "published_utc": "2026-11-07T12:39:32Z",
           "title": "It’s confirmed, the extended screen for BTS concert tour stage is back in Kaohsiung Taiwan. I hope they will do it all across the Asia #BTS_WORLDTOUR_ARIRANG_KAOHSIUNG #BTS_WORLDTOUR_ARIRANG - X",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE54RVhIVjFVdVF0TDZoUDA1cjRzZzEwN1BCNlBnUlE4NVRTM2tlQWhtMGMwWEtxOTh6T3AyVGFERU1LYUhPdFJ0VDRUeU9OQklNR2NoSXRVMWtkck9SWFUxSFg5R0JaUQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "\"Lee Cronin\" - Search X",
-          "id": "expanded:0e44a263ee5bead8ca",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T20:25:01Z",
-          "title": "\"Lee Cronin\" - Search - X",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aZWFlczg5Q3J0N3cwMWRCRlRGUTZ6Uk9HNmt6TlYwRksyQXUzTnNZMjNCbkE5TGRpY0hEWDJSOXl4THprUXVjUHJNRUlxVV8xemo3Q2NKM0ZOc2NyN0ptVVY2U2F2cmN5bXdnVWxSY3FzdVF3ZWRNUDRsNA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "@sintanaenergy #sei $sei.v PEL82 is just one of @sintanaenergy many assets. Yet another free carry funded by the major partners. Offers a pretty unique business model. Value underpinned by their 4.9% free carry on the huge Mopane discovery. All the other X",
-          "id": "expanded:0fabf571283cd880d4",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T07:07:42Z",
-          "title": "@sintanaenergy #sei $sei.v PEL82 is just one of @sintanaenergy many assets. Yet another free carry funded by the major partners. Offers a pretty unique business model. Value underpinned by their 4.9% free carry on the huge Mopane ",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9sM2FVandLZTNRMVBUQlBWaFNzWUdzSV9XZVZTeG5rUkpQR3hkZ2pQSjd0aUZxSWowY0ltbWFabVllR1BrQ0VFWndpR1d3UkFPU2tEcWlZMkp3Y185RUl4eVZId0o?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Ab3 na atwa wo pitsa sei X",
-          "id": "expanded:140bda25ab055b8d73",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T07:11:16Z",
-          "title": "Ab3 na atwa wo pitsa sei - X",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1iYTdOcHUyamdnVG1ONHZTelBfdElId0tXZVNrVi1GVXh0ZzI1emlULVVLTVdORWl6a1U5U2pMUlRROUw3UnRvaFIxeDVjZmMxWHMxNlFubUUyVXVF?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "People need to understand that Marinette is also suffering from the breakup Imagine breaking up with the boy she loves more than anything, the girl who is capable of giving her life for him Living without him hurts her deeply as well X",
-          "id": "expanded:159020af0051f584ed",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T14:27:02Z",
-          "title": "People need to understand that Marinette is also suffering from the breakup Imagine breaking up with the boy she loves more than anything, the girl who is capable of giving her life for him Living without him hurts her deeply as w",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wZXFxbWt4YmRxQkNSWVRuOE5scUs2ZW5ISXlqaE5SQ0ZISENyazFSXzQ1dlRldGpvSVU2WjdGY2NscDE5MVlRVjhBOC1WMnpvdXNtWkdMNWJwZzNuNExZTnF1ajFXUQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "its my day 🌝 https://t.co/kGiPL5ygaP X",
-          "id": "expanded:17909a5473bf0bf38c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T01:46:00Z",
-          "title": "its my day 🌝 https://t.co/kGiPL5ygaP - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE85X3h6T2xDT2diV29rWVprWDVxN0lQRld0N3JDdC1FdVJBa3FHUEZEMjBabWdoZU9JTzFkSmt5bDhWM2hYN0E2eFphZFNkelJYYkVnX2d3Y3F2NVNEc2xWXzZ2RQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "SIP-6 has passed. @Sei_Labs will now begin upgrading the chain to Autobahn for Sei Giga. Sei is moving closer to running entire financial markets onchain, with the capacity for orders, cancellations and price updates that trading demands. X",
-          "id": "expanded:17e88c5129e54ec0ec",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T15:59:58Z",
-          "title": "SIP-6 has passed. @Sei_Labs will now begin upgrading the chain to Autobahn for Sei Giga. Sei is moving closer to running entire financial markets onchain, with the capacity for orders, cancellations and price updates that trading ",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Kb3FIT0s0aElpanlLVkU4aTNsTGpUSzFGMnVwa1VNel91bHNsWU5kR0JLbko4Y0tVQkNjekJPc2hvczRlbHlnN1p1bGFCdEZjOEp1WmRORGxlNjF2dHZMMg?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Notice of Service Resumption Following the Security Incident at Binance Global (8th follow-up notice) Binance",
-          "id": "expanded:199a5cdd5bc9c8a90b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T17:48:33Z",
-          "title": "Notice of Service Resumption Following the Security Incident at Binance Global (8th follow-up notice) - Binance",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmdYclkyV3BoSWstdVVzelgxQzgxNHpwY0J0a185LXUzLUpWc0VOUEZvMVJ5amx3eXdVV0RTMk9rdUlhd0UyT0VSXzllUGhLblpiTUNNR0FBRFFMNzJsdjJMakJPc0xNaGFNRmw2aFV3SW96Y1RQM292dHRBWmxQakUzaUg1eHFlem5iZUdpV3NVUEU1?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -3771,13 +3771,22 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 78,
+      "candidate_event_count": 83,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "apps/mcp is a read-only service: it fetches prices with each caller's own Pyth Pro key, never holds one itself, and is off the price path. Like the other consumer apps, its changes can be self-authorized. Co-Authored-By: Claude Opus 5.5 noreply@anthropic.com",
+          "id": "research:18f8c0104e253ee40e",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-09T17:23:33Z",
+          "title": "mcp-server-v0.3.1: chore(greenlight): auto-approve the MCP server app",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.1"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "What's Changed feat(hip-3-pusher): remove Pyth Core (Hermes) as a price source by @jayantk in #3961 fix(xc_admin_frontend): render WithdrawFee governance instructions by @aditya520 in #3958 add(developer-hub): customer changelog entries for Aug 3–10, 2026 Pyth Pro window by @KemarTiti in #3964 feat(contract_manager): register stellar_mainnet and add a Stellar Lazer deployment audit by @jayantk in #3963 docs(developer-hub): list the Stellar mainnet Pyth Pro verifier by @jayantk in #3967 fix(developer-hub): menu-surface Subscribe popover + per-type changelog feeds by @aditya520 in #3965 docs: sync Sui pro push-feed status by @KemarTiti in #3969 deploy(pro-compatible) Etherlink Core contracts by @aditya520 in #3972 feat(evm): allow SetWormholeAddress without dual-verify by @keyvankhademi in #3973 docs(developer-hub): surface the OIS rewards pause on the OIS docs by @aditya520 in #3968 feat(staking): persistent 'OIS rewards paused' banner by @aditya520 in #3980 tejas/pfg 1554 tob tracer bu",
           "id": "research:4674313ec402d15183",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-26T15:20:52Z",
           "title": "pyth-js-v161",
           "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-js-v161"
@@ -3786,7 +3795,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Pyth Core is being deprecated, so no Pyth product may publish prices derived from it. The pusher ran a HermesListener against wss://hermes.pyth.network/ws and used it as the last failover tier in the BTC and PYTH oracle waterfalls, so Core prices could reach Hyperliquid whenever the higher tiers went stale. Removes the listener, the [hermes] config block and HermesConfig model, the \"hermes\" source registration in PriceState, the waterfall entries naming it, the validate_config probe, and the docs. Co-authored-by: Jayant Krishnamurthy 541339+jayantk@users.noreply.github.com Co-authored-by: Claude Opus 5 noreply@anthropic.com",
           "id": "research:7fa5f49c1528aa9578",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-08-10T17:44:06Z",
           "title": "hip-3-pusher-v0.4.0: feat(hip-3-pusher): remove Pyth Core (Hermes) as a price source (#3961)",
           "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/hip-3-pusher-v0.4.0"
@@ -3802,12 +3811,30 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "get_historical_price: a fully empty response now lists every requested feed in missing_feed_ids, as partial responses already did. Catalog: a row whose metadata drifts from the schema keeps its symbol and pyth_lazer_id, so the feed still resolves instead of \"Feed not found\"; only rows without both are dropped. Retry: a body cut off mid-stream (Node fetch TypeError \"terminated\", cause UND_ERR_*) is retried, for Router and History alike. Key check: the Router probe has its own 2 s timeout, and Router outages are remembered for a minute like rejected keys, so a hanging Router no longer stalls History-only tools for the full request timeout. Funding-rate skill: discovery requests limit 200 and pages if a feed is missing, instead of relying on the first page. Dropped comments that only restated the code. Co-Authored-By: Claude Opus 5.5 noreply@anthropic.com",
+          "id": "research:b26eda3159c2f43dc3",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-06T19:55:58Z",
+          "title": "mcp-server-v0.3.0: fix(mcp): address Devin review findings",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "What's Changed developer-hub: add IOTA usage docs, small fixes by @matej-douro in #3933 chore(greenlight): auto-approve contract_manager store record JSONs by @aditya520 in #3936 deploy(lazer): Flow EVM mainnet by @aditya520 in #3935 developer-hub: sunset Express Relay docs (OP-PIP-124) by @aditya520 in #3943 lazer/cardano/cli: update to latest Evolution SDK, small fixes by @matej-douro in #3942 developer-hub/docs: add Cardano testnet addresses by @matej-douro in #3944 docs(developer-hub): point Lazer SDK links at pyth-lazer-public by @jayantk in #3940 docs(developer-hub): repoint three 404ing GitHub links by @jayantk in #3941 docs(developer-hub): present-tense pro auth docs, document price range endpoint by @tejasbadadare in #3948 docs(developer-hub): remove GET /{channel}/streaming from history API docs by @tejasbadadare in #3949 fix(developer-hub): hide deprecated Entropy chains from chainlist by @aditya520 in #3947 deploy(pro-compatible) Flow EVM Mainnet by @aditya520 in #3950 feat",
           "id": "research:c66b95e82ed8466f5f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-08-07T17:50:10Z",
           "title": "pyth-evm-contract-v1.4.6",
           "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/pyth-evm-contract-v1.4.6"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Node.js 24.22.1 fixes the October 2026 security releases, including CVE-2026-111497 (Brotli decoder OOB write) and the TLS hostname bypasses CVE-2026-105483 and CVE-2026-106069 . Dockerfile.node: move both base stages to 24.22.1 with pinned digests .tool-versions and .nvmrc: pin nodejs 24.22.1 apps/mcp: bump version to 0.3.2 so the patched image can be tagged Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+          "id": "research:d68a6dbcefcd664009",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-23T17:53:00Z",
+          "title": "mcp-server-v0.3.2: chore(node): bump Node.js to 24.22.1 and mcp-server to 0.3.2 (#4069)",
+          "url": "https://github.com/pyth-network/pyth-crosschain/releases/tag/mcp-server-v0.3.2"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3835,33 +3862,6 @@
           "published_utc": "2026-11-10T14:00:01Z",
           "title": "By asset class, Pyth priced: - 95.9% of equities - 91.6% of commodities - 81.1% of indices - X",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nc1RRSnUtVG5GSGQ3RG82YUtVYVRXZmV2T0oycWRjZ2t5eEgzX3pPUTRSNEVPdFZIYzZEcGZsOUJOaDh5TVNvbFU0azlVbkJSbkkxcmRZUV9iT0xINVJQcThhbXlObHduYlU2LQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Pyth pricing Jensen Huang’s prenup perps at 100x leverage😂 $PYTH X",
-          "id": "expanded:0d97b40a3c1e7fe14d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T00:51:47Z",
-          "title": "Pyth pricing Jensen Huang’s prenup perps at 100x leverage😂 $PYTH - X",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92T19VME93NDJ3c0xwMHJobHBwcmxCR2tlU0tuZFFqZ1lJNUFnNHk2NDZ0Y0cwV3BrV2dMR3g5YjV5WmRPV1Nja21ZRnBKZDBXUUhpVzRXRzJmb25IR0hn?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Pyth Network Adds Real-Time NYSE Data to Expand Stock Market Access Coin Edition",
-          "id": "expanded:127e11faad2f17da36",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T16:52:00Z",
-          "title": "Pyth Network Adds Real-Time NYSE Data to Expand Stock Market Access - Coin Edition",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTXZra05mcWV0RlNSNWFIZ0VrTE5iTmlHOTdicWhmOUh3Tjh0eG1SQmY1eVg2em9XRjRRM2JJMHp5UDRMdTR1cmRQVnRmemk2NV84OGdmdTNiMmhfZHVEVXUyUmptV2pla2c2OTMyRklCSWpMT2xpaVl0UzFMOGdlSzRSYVhWUjB6Q3V5ME8zUHZoNi1XUHZjNEJzLU4yT3dyS1hVNjNYSENtLV9Ia0E?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Another day of domination for $PYTH. 🔥 It surged 5.6% with $31.63 million volume in the past 24 hours. We could see $0.1 in the next few days. Track #PYTH here: https://t.co/uuH8bHjUJA X",
-          "id": "expanded:19c946924e98de940e",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T06:53:59Z",
-          "title": "Another day of domination for $PYTH. 🔥 It surged 5.6% with $31.63 million volume in the past 24 hours. We could see $0.1 in the next few days. Track #PYTH here: https://t.co/uuH8bHjUJA - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ISmRySWo5Vzd2eGZ6QVRTNzVSMjNubU55SlE0RUlpLXpVM1F3MVJtdmdBengzZDNCVmNncFZpYWVIem9ZWmhVWElXaEFxb1dkUFhPOEgxcm5MN2d1WTJGaXV3cWV0LW8?oc=5"
         }
       ],
       "cmc100_weight": 0.03,
@@ -4448,25 +4448,97 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 2,
+      "candidate_event_count": 22,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Polygon (POL) Faces Pressure Amid Hard Fork Proposal CoinMarketCap",
-          "id": "expanded:2f1a61079e231c4401",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T20:03:00Z",
-          "title": "Polygon (POL) Faces Pressure Amid Hard Fork Proposal - CoinMarketCap",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rbGdLcUthcVJINzBRUU91aGx2Y2RRc3pEcDBvcUl0VHMzVUhBZVA1aC1LdjFNbjJXc09DUm9uWFpJOFFfdDBHY25PM1IxZklXNVluRUNvYkp3dm9RbFV2azVQa0hFcEFlMXZaVlhUa2M?oc=5"
+          "excerpt": "v2.10.3 is a security and stability release on top of v2.10.2 . It's the public release of v2.10.3-priv , which most validators and major RPC providers already run. No hardfork, no database schema change, no resync required. Nodes can be upgraded one at a time, in any order. Highlights Execution : parallel (BlockSTM V2) balance reads are resolved correctly across a self-destruct boundary ( #2403 ). Shared block caches are size-capped and per-tx code hashes memoized, which lowers importer memory under heavy keccak / ecrecover load. Log counting while tracing no longer copies logs ( #2460 ). Txpool : pending chains stranded behind a head that can't be mined are evicted after txpool.strandedlifetime . Filtered addresses also apply to SetCode (type 4) authorizations. The pool signer is no longer swapped when allow-unprotected-txs is set ( #2464 ). Storage trie preload : segmented BFS queue for the preload, plus optional address-cache persistence across restarts. On a mainnet sentry, preloa",
+          "id": "research:09fcd3d3387f485a87",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-15T06:37:27Z",
+          "title": "v2.10.3",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.3"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Polygon Price Prediction November 2026: POL Targets CryptoTicker.io",
-          "id": "expanded:d555571c9891b55c14",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T21:12:23Z",
-          "title": "Polygon Price Prediction November 2026: POL Targets - CryptoTicker.io",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObElkektKOXp3dHhaTThWZVUtQVVBUDlWdTlzd3ZWUFVLbWQ1VmtnSEpPTmdFX1k1TWZHUmJ1dC1GaE9sWGJGQXdsRnhyNXZWRVRhdG05YlB6WWpyNElhSDFnbUNGeC16Nks3UkVYaGZkS08yZkhnUnE1T3VUT0U2V3hId2J2dw?oc=5"
+          "excerpt": "This is just for testing. Please do not upgrade unless explicitly asked to do so. Full Changelog : v2.10.1-hotfix...v2.10.1-hotfix2",
+          "id": "research:101878b6c1b30013b2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-23T11:11:00Z",
+          "title": "v2.10.1-hotfix2",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.1-hotfix2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Full Changelog : v1.2.3...v1.3.3-test",
+          "id": "research:132f7079ca4848da9f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-06-19T06:46:00Z",
+          "title": "v1.3.3",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.3.3-test"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "🚨 ⚠️ ONLY USE ON AMOY NETWORK ⚠️ 🚨 This release must be installed on all nodes in the Amoy network for the upcoming Heimdall v1 to v2 migration, scheduled on Tuesday, June 24th, 2025 , between 07:00 PM and 09:00 PM UTC . The Amoy heimdall chain will halt at height 8788500 to initiate the migration. The -beta suffix indicates that this version is intended solely for Amoy use and will not be deployed on mainnet. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Set default span duration by @avalkov in #1283 helper: set the apocalypseHeight to 8788500 (to use for amoy only) by @pratikspatil024 in #1284 Full Changelog : v1.2.3...v1.6.0-beta",
+          "id": "research:2955efb93c26766adc",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-06-24T06:41:09Z",
+          "title": "v1.6.0-beta",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.6.0-beta"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release contains new features and bug fixes on top of v2.10.1. What's Changed v2.10.1 candidate by @cffls in #2374 build(deps): bump github.com/rabbitmq/amqp091-go from 1.10.0 to 1.13.0 by @dependabot [bot] in #2384 build(deps): bump google.golang.org/grpc from 1.79.3 to 1.83.1 by @dependabot [bot] in #2381 eth: avoid race in relay-fetch test setup by @pratikspatil024 in #2387 v2.10.1 to master by @pratikspatil024 in #2390 rpc: fix rpc_ep_workers_http being stopped on first request by @ChanHongMing in #2364 eth/downloader: classify unfillable skeletons as invalid by @rukimedo in #2389 build(deps): bump google.golang.org/grpc from 1.83.1 to 1.83.2 by @dependabot [bot] in #2395 eth: retry sync after peer-set replacements by @rukimedo in #2391 eth/downloader/whitelist: bound fork-check slice preallocation by @kriss39 in #2398 eth/downloader/whitelist: keep valid result meters monotonic by @kriss39 in #2399 sequencer: stop paying for a store that is not answering by @pratikspatil024 i",
+          "id": "research:487698b64a986d0ba9",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-22T23:17:41Z",
+          "title": "v2.10.2-beta2",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "🚨 ⚠️ ONLY USE ON AMOY NETWORK ⚠️ 🚨 This release is a FALLBACK VERSION and should not be installed on any node unless explicitly required. It is intended for use only if the upcoming Heimdall v1 to v2 migration fails on the Amoy network. The migration is scheduled for Tuesday, June 24th, 2025 , between 07:00 PM and 09:00 PM UTC . The Amoy chain will halt at height 8788500 to initiate the migration. The -beta suffix indicates that this version is exclusively for Amoy and will not be used on mainnet. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Full Changelog : v1.2.3...v1.5.0-beta",
+          "id": "research:49474df71e3ba0defc",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-06-24T06:41:26Z",
+          "title": "v1.5.0-beta",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.5.0-beta"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Hotfix Release: Bhilai Hard Fork on Mainnet NOTE: THIS RELEASE IS ONLY FOR MAINNET We are releasing a hotfix for the Bhilai Hard Fork on Mainnet , which upgrades the bor client to version v2.1.1 . Action Required: All mainnet operators are strongly recommended to upgrade their heimdall nodes to heimdall v1.2.4 to ensure continued compatibility and stability post-HF. This release addresses network compatibility issues and is essential for seamless participation in mainnet consensus following the Bhilai upgrade. Full Changelog : v1.2.3...v1.2.4",
+          "id": "research:4ca8a08300b8aa74ef",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-07-01T14:17:01Z",
+          "title": "v1.2.4",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.2.4"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is just for testing. Please do not upgrade unless explicitly asked to do so. What's Changed eth/downloader: restrict sync penalty exemptions to trusted peers by @vbhattaccmu in #2429 eth/downloader/whitelist: accept re-import of canonical blocks below the whitelisted entry by @lucca30 in #2432 Full Changelog : v2.10.1...v2.10.1-hotfix",
+          "id": "research:4d5da5b3c8194faaf2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-22T15:26:43Z",
+          "title": "v2.10.1-hotfix",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.1-hotfix"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "🚨 ⚠️ ONLY USE ON MAINNET NETWORK ⚠️ 🚨 This release is a FALLBACK VERSION and should not be installed on any node unless explicitly required. It is intended for use only if the upcoming Heimdall v1 to v2 migration fails on the mainnet network. The migration is scheduled for Thursday, July 10th, 2025 , between 2.00 PM and 5.00 PM UTC . The mainnet chain will halt at height 24404500 to initiate the migration. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Full Changelog : v1.2.3...v1.5.0",
+          "id": "research:7ea5f5b79b480a21b5",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-07-03T07:13:15Z",
+          "title": "v1.5.0",
+          "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.5.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What's Changed eth/sequencer: don't hold a build behind our own acked parent seal by @cffls in #2458 Full Changelog : v2.10.2-beta4...v2.10.2-beta5",
+          "id": "research:8b05811456d37e4eb7",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-28T21:01:37Z",
+          "title": "v2.10.2-beta5",
+          "url": "https://github.com/0xPolygon/bor/releases/tag/v2.10.2-beta5"
         }
       ],
       "cmc100_weight": 0.05,
@@ -4493,9 +4565,7 @@
         "okx_swap_open_interest": 1,
         "okx_swap_tickers": 1
       },
-      "missing_data": [
-        "coin_relevant_article_text"
-      ],
+      "missing_data": [],
       "name": "Polygon (prev. MATIC)",
       "perp_identity_status": "EXCHANGE_SYMBOL_MATCH_NOT_INDEPENDENT_CONTRACT_VERIFICATION",
       "perp_market": {
@@ -4715,8 +4785,62 @@
       }
     },
     {
-      "candidate_event_count": 108,
+      "candidate_event_count": 118,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "feat: Batch Read Of Richat Payload Stream chore: Remove a redundant and duplicated geyser_update_channel_depth logging Benchmark Raydium CLMM limit order quote chore: Bump YELLOWSTONE_GRPC_STREAM_BATCH_SIZE To 10000 chore: Track Richat Stream Message Pressure chore: Track Origin Of GMA Call chore: update kipeseli quoting fix: whalestreet quote chore: Sync values used in new clusters meaure how long quotes take and how many amm quote called chore: Track how many times a market failed to be added optional resource pruning on splits gated by resourcePruning param fix: Stop Retry Adding Of Market If It's Unsuccessful Consecutively chore: Introduce Europa Metrics Using Prometheus feat: replace price tracker fix: retry markets on batch rpc failure feat: deriverse integration feat: hadronfi integration fix: whirlpool dyntickarray overread fix: use prescaled prices for assetcache fix(hadron): register HadronAmm in the market loader retry market if try_send fails chore: Track Number Of Markets ",
+          "id": "research:4c61ea46139cd535ef",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-08T03:27:20Z",
+          "title": "v7.0.17",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.17"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What's Changed feat: update byreal sdk chore: Reduce CPU Time On Whirlpool AMM Update update bisonfi predict sdk chore: Partition AMM Keys By Their Shard ID For Updates chore: Add pod_name to Pyroscope chore: Saber compute amp factor on quote chore: Reduce Work By Avoiding Tracking AMM Update Context Slot chore: Rework Unready To Get Triggered For Delay Between Processed & Applied chore: Add an error log when pod goes unhealthy chore: Skip PriceTracker Run If Router Isn't Ready chore: New Metrics For Update Account chore: update sdk and snapshot latest market for bisonfi-predict chore: Remove flush threshold based on mailbox length feat: Extract disable-rfq-v2 build feature fix Extract Raydium CLMM limit-order fix fix: update riptide sdk bump: raydium-amm-v3 fork to 7af865f and refresh fixtures chore: update kipseli v2 chore: ungate byreal dyn fee feat: SCC HashMap For AmmKeyToAmmMap & Reduce Write/Read Lock Contention Using Arc feat: Keep the amm snapshot if it's been accessed at leas",
+          "id": "research:4c92cf8edc3803bbb7",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-06-18T06:28:02Z",
+          "title": "v7.0.16",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.0.16"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Changelog New AMM Integration & Updates Transaction version 1 support (tx construction, quotes and dynamic swaps) Meme Fun integration Hylo rebuilt on upstream SDK 2.3.10, routed through Hylo's router Gatorswap v3 pools Whirlpool pools with non-zero transfer fee mints HumidiFi settles through the rent-free shared-replay router swap Jupiter Lend AMM: accept Token-2022 mints with extensions, stop write-locking the swap signer, SDK slot time 250ms Archer and Kipseli SDK bumps Whitelist PropAMMs for API users Performances Cut routing-layer overhead in rbp/Bellman-Ford Bug Fixes Fix Denali check condition when paused Clamp Raydium Launchlab buy quote to remaining curve capacity Skip dead-end mints in dynamic intermediate token selection Crawler fetches each AMM's accounts in the same chunk, drop BinaryFi clock-behind guard Do not enforce pump v5 user as tx signer Don't add already tradeable tokens to pregraduation tokens Fix same pools reused with different U & V nodes Brent: correct v/w se",
+          "id": "research:568793c6ec88821687",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-19T08:35:25Z",
+          "title": "v7.1.3",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Change Log New AMM Integration Metric Amm Trench Amm Sanctum PAmm Sanctum Sols Jup Lend Dex Gatorswap Denali Perena Star V2 Archer Performances Speed up routing using pruning and interpolation Bug Fixes Pump mayhem sell failures Made routing to fit Raydium CLMM SOL/USDC hop & Pumpswap hop Dynamic slippage errors",
+          "id": "research:7a7130101b31d8c552",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-22T02:02:23Z",
+          "title": "v7.1.0",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Changelog New AMM Integration & Updates The Fantastical Finance Factory integration (formerly Dr Fraudsworth): ZIG/ZAG faction pools and the ZIG/ZAG <-> MOTION vault Sanctum Infinity Reserve V2 QuantumV2 with Token-2022 support BisonFi SDK 0.4.0 (batch-clock mode 2 quoting), and market-backed pools now pass the market tick account, which BisonFi will require on every swap Kipseli: stop quoting prices older than the pool's max_slot_gap , SDK synced with the deployed program Jupiter Lend: jlX tokens can route through any eligible pool, not only the Jupiter Lend pool Whitelist ZeroFi and Scorch PropAMMs for API users, exclude Obsidian Remove Metric (program closed) Alpenglow support: richat 14.1.1, yellowstone-grpc-proto 14.0.1 / client 15.0.0, account updates tracked per (slot, bank_id) . Servers that send no bank_id still work Agave 4.3.2 and v3 SPL interfaces Experimental RouteByPrice partition algorithm, opt-in via routingConstraints.partitionAlgo (default unchanged) Performances jema",
+          "id": "research:90a25caffaee190f5d",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-10T16:08:38Z",
+          "title": "v7.1.5",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Changelog New AMM Integration & Updates Meme Fun tapered curve (curve_shape) quoting ZeroFi quotes with the signed flag and routes through ZeroFiSwapV3 HumidiFi SDK bumped for 80-slot replay TTL Pump: route non-cashback coins through pump v3 and pump-amm v2, quote synthetic migration, ensure buyback ATA exists before using v3, lower no-ALT account cap for v2/v3 swaps Updated Denali quoting BisonFi tick quoting DAMM V1 0.5.7 and DBC 0.2.2 New set_close_authority_on_init transaction config Performances Remove remaining Bellman-Ford hot-loop overhead Reduce memory usage by not loading RG0 markets eagerly Pump Swap: stop re-updating every WSOL pool on each buyback-ATA write Bug Fixes Manifest: quote transfer-fee mints correctly and keep partial-fill AMMs off shared accounts Hadron: skip shared accounts when Hadron sits on a bypass leg Meteora: reject quotes for disabled pools Aquifer: decode Dex header only, ignore variable-length tail",
+          "id": "research:a06e3e05c3d7162c3d",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-19T08:35:29Z",
+          "title": "v7.1.4",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.4"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Jupiter ( JUP ) is refusing to follow the crypto market lower. While Bitcoin and major altcoins are experiencing a bloodbath, the Solana-based trading ecosystem is attracting attention for a different reason: its expanding business. JUP’s relative strength comes as Jupiter rolls out four new products, expands its revenue-generating ecosystem, and continues accumulating tokens through its buyback program. Investors appear increasingly interested in what the protocol is building rather than simply following Bitcoin’s direction. So what’s happening to the Jupiter crypto ecosystem? Jupiter (JUP) 24h 7d 30d 1y All time Jupiter Builds Its Own Crypto Fundamentals and Momentum Jupiter’s latest expansion, announced 2 days ago, introduces four products under its Aggregate Everything strategy: Baskets, Vaults, Pulse and Portfolio V3. Before this, Jupiter has already routed more than $2 trillion in cumulative crypto trading volume, but it now wants users to discover, own, earn from, and manage dig",
@@ -4728,84 +4852,30 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Changelog New AMM Integration & Updates Quay amm integration Humidifi router swap Quote hadron pools with token2022 transfer fees Resolve pump fees by quote mint and honour configurable creator fees Binary router for HumidiFi in distributed builds Pumpfun partial fill Performances Always order pool ALT before program ALT Pick the 2 fee accounts for pump curve/swap based on the pool key Bug Fixes Dedupe dynamic intermediate Check pump quote reserves cover output + fees Refresh is_cashback_coin in Pump during updates Rank dynamic intermediate candidates by USD value",
+          "id": "research:a71c0848f8eb28b7fc",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-18T14:51:17Z",
+          "title": "v7.1.2: [codex] fix docker publish image (#129)",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Change Log New AMM Integration & Updates Stableswap (Moon.pay Ghosty) Deriverse Updates BinaryFi Updates Perena Star V2 Junior/Senior Tranche Tessera V Updates Jupiter Lend Dex Updates Performances Default dynamic intermediate to true when there is a price source Reduce transaction size Bug Fixes Raydium Launchlab token-2022 mints quoting",
+          "id": "research:b175d5b6f8f3010bc2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-03T14:35:12Z",
+          "title": "v7.1.1",
+          "url": "https://github.com/jup-ag/metis-binary/releases/tag/v7.1.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Why sell when you can borrow to pay? With Borrow to Pay, keep your position, keep your upside and still spend on what you need. The smartest way to spend without letting go of what you’re holding onto ⤵️ X",
           "id": "expanded:0038f00955d587b9f2",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-10T16:00:00Z",
           "title": "Why sell when you can borrow to pay? With Borrow to Pay, keep your position, keep your upside and still spend on what you need. The smartest way to spend without letting go of what you’re holding onto ⤵️ - X",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xelZZdmFlbEIzSFY2YjVROW1mMW41VjhxeVNzZ2p6VllRaS14V0RQYml2UlcyS3A4SW9tSUllXzlQTVYtRlJqOUdBenNLYXNNZkFVMGlVb01INzFPNWpDLQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "We had a great run together. First, they unfollowed me. Now this. What's your go-to for swaps other than Jupiter? X",
-          "id": "expanded:0060bab675b0eb023c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T22:11:56Z",
-          "title": "We had a great run together. First, they unfollowed me. Now this. What's your go-to for swaps other than Jupiter? - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9pcXdzbWZDc2xtVHQwQmRhc1JYdXd4aGJ5bnk2VDZrTjJ5NnB4elluQ19WZ2tmUkc4QjU1anFfTHd0Y0lDSjFyMTRMU3FzRzR5cVhVMUwyXzBmQ2YtcXRUNzB2VldidWs?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "https://t.co/PA52QKAZ6p X",
-          "id": "expanded:01b43d35a6fd021370",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T16:30:08Z",
-          "title": "https://t.co/PA52QKAZ6p - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pN19QOU9oU1JaSGZhNUNvMGtOMkZhLWVxU2lVc3hEaG1MMm02dDBNMXpoSHdoQnNuTmpZTGgxbFdENzVEZ2gxaXpTaHpYT3lpRllfcklUU2JsV29pZXctZVF0MnItMVU?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "The best mobile wallet to onboard everyone to @solana is indeed Jupiter Mobile. 🤝 X",
-          "id": "expanded:0648e050fa6f9192ae",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T04:52:57Z",
-          "title": "The best mobile wallet to onboard everyone to @solana is indeed Jupiter Mobile. 🤝 - X",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pR2dlMTdBTzFadVJCNURyNUZyamxGLW5uOWJXcUl6V2Zkc2NPdG5QcE9JVThKT2J6eFBxdnAzRXZidnpwY0dZQTZzQWJLbXhaejkyRGxLS1JGRm5tbVRKaw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Never seen father since birth Reddit",
-          "id": "expanded:0d01921bf43ad93d64",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T18:35:14Z",
-          "title": "Never seen father since birth - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZTVCQU4yWjBWZ1VBdFNrai1HV3NhemV2TmdhU3RTRG83c0ZlT05ZU0tkWkxUZ05zV21oeE9kZnhnSTlHSmVEaWZ4VFZhUmpwMjZaYy1BRGFJQ2l3UnAyRmVuWlZPWHBzR3ZOeGlVY2Nsc0RfdjhJbmNTRFdjS3RMMVkzWlJMLVIxNjE3cTkxSVhLMU1lRVBPY1Z3?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Tether Gold (XAU₮) Becomes Tether’s Second Stablecoin to Complete a Big Four Audit Learn more: https://t.co/eO0asUwvlI X",
-          "id": "expanded:0db80607a330b2cbd2",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T13:04:24Z",
-          "title": "Tether Gold (XAU₮) Becomes Tether’s Second Stablecoin to Complete a Big Four Audit Learn more: https://t.co/eO0asUwvlI - X",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yelRHbVZvSl94bl9IT1cyUFZvQWNKTnVVbVNSUzUtTkYwSFJudlRydnlVZ0FIWWFEcWJQUGJzT2tHRWNwcjhVLWhTOFlPNXkydTdJNGh1aUkyYmM?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "5th from Your Jupiter and the grace / problems. Reddit",
-          "id": "expanded:0f7c5f979acf04b6db",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T11:14:52Z",
-          "title": "5th from Your Jupiter and the grace / problems. - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbDNwcGhGdFZSMEl4N3hKdEJGR1FWWnhlX2V2ZU04dGotTE9oZThIdmRXbW9idkdMbzctSEp2NElXN3JzdjF4YkF1cVVOdkNXcU9RQlhpajBtNUNkTk9BZEw1OGUzai05ZHdqYTBnSE1YeUllbTBMN2d6S1BGbmFkYlI1MXBsUXVZdU1YNG9JaXhvaENkOVNmdk9qZUp3ZzA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NASDAQ 100 EXTENDS GAINS; LAST UP 3.04% X",
-          "id": "expanded:10066b4745b0e8c4ed",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T18:28:59Z",
-          "title": "NASDAQ 100 EXTENDS GAINS; LAST UP 3.04% - X",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE05eWd4U2phOXFTb0YyckQzMzlLYklqOVF4UVNsVWhEVDdXNUhhZUZTSTNvNlh4Vm94TDJITk1ORkI4VV9VT09oRTB6aDdPM3d1QVQ5OVpWQ2dqMnV1Vnc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Tell me some combinations in female chart showing she is unlucky in love despite having a pure heart Reddit",
-          "id": "expanded:1011ad9e673c0e0483",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T07:33:41Z",
-          "title": "Tell me some combinations in female chart showing she is unlucky in love despite having a pure heart - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTWN1bS1DekQ3OHdQb0NZU3hQLUN6a25DSWhTaWhwQ0xuSzBmTUQ3T3ZkWnoxcUpTa01nZHQxaDlZMjNGWUVoNXY5Vmo3ZndEYTJRR0E1U0xiakV1Q200enFNc0RUb1M4ZW8xOUw5ZlNrck9qZURieHZ2V2pRQUxhN21FSzZvUENyQl95VGFkc3ZXMmp2NTdyaEFfTGx4bEt6YXRXaFlR?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
@@ -5938,7 +6008,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "title: [Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3 author: @TokenLogic created: 2026-11-13 Summary This publication proposes a common set of reference e-modes for Ethena collateral on Aave V3 Core, Plasma, Mantle, Monad and Avalanche. The proposed parameters are 91% LTV and 93% LT for USDe against stablecoins, and 90% LTV and 92% LT for sUSDe against stablecoins. Legacy collateral on Core and Plasma would be retired through per-asset LTV-zero flags while keeping existing LTs, except Plasma #21 , whose LT returns from 93.1% to 93%, and Plasma #23 , which is aligned to the sUSDe reference parameters. The proposal also retires the matured PTs on Monad and in X Layer #7 and #8 , and removes USDe borrowing from Avalanche #4 . Motivation Overview Several legacy Ethena PT e-modes continue to accept USDe or sUSDe after their PTs have matured. Their parameters and borrowable assets differ from the reference e-modes, so users with similar collateral can face different parameters and a",
           "id": "research:05a1d012b693301f7f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-13T12:19:38Z",
           "title": "[Direct-to-AIP] Ethena E-Mode Consolidation on Aave V3",
           "url": "https://governance.aave.com/t/direct-to-aip-ethena-e-mode-consolidation-on-aave-v3/26304"
@@ -5947,7 +6017,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Ethena Pay has launched Earn+, a feature that gives its users higher rewards on their dollars within the app. Earn+ utilizes Aave V4 on Avalanche, where a vault managed by Upshift and Steakhouse puts deposits to work in an onchain strategy built on Aave’s lending markets.",
           "id": "research:43cd309345328687af",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-28T00:00:00Z",
           "title": "Ethena Pay Launches Earn+, Powered by Aave",
           "url": "https://aave.com/blog/ethena-pay"

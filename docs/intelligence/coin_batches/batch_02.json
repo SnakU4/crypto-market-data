@@ -304,8 +304,53 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 30,
+      "candidate_event_count": 40,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.2 is a hardening release. No protocol fork is activated, and operators can upgrade in-place. What's Changed chore: remove hayabusa ascii art by @darrenvechain in #1556 feat: upgrade cli version by @darrenvechain in #1561 Update dockerfile by @otherview in #1566 Add docs by @vanja-vechain in #1560 move bandwidth metric to node by @libotony in #1557 chore: add INFO to start logs by @ShaunKav in #1563 Sanitize url on thorclient by @vanja-vechain in #1562 feat: use latest abi fucntionality by @darrenvechain in #1558 Adding Solo Mocked BFT Engine by @otherview in #1564 add r/w bytes and r/w syscalls to the promethus metrics by @libotony in #1567 Darren/chore/add metrics by @darrenvechain in #1559 minor: remove unsude return values in PrepareNext by @libotony in #1573 Vanja/feat/1016 add a feature in thor that reprocesses all transactions and blocks by @vanja-vechain in #1565 Code Builder in Permutation Testing by @otherview in #1574 en",
+          "id": "research:14a3fde641504aa15e",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-02-13T11:22:44Z",
+          "title": "v2.4.2",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.3 is a hardening & maintenance release focused on networking robustness, mempool/accounting correctness, and API safeguards. v2.4.3 introduces targeted improvements to P2P message handling, deferred transaction accounting, and API response safety , alongside routine dependency, CI, and tooling updates. Notably updated build environment to Go v1.26.1 . What's Changed Tweak external CI targets by @otherview in #1579 fix: remove legacy bootnode by @ShaunKav in #1582 Update to go v1.26.1 by @otherview in #1591 Two step decoding for received messages by @paologalligit in #1599 Sync crypto package with v1.17.1 by @moglu2017 in #1596 Enhance deferred tx accounting by @otherview in #1598 api: limit accounts star max data size can return by @libotony in #1600 Contributors Thanks to everyone who contributed to this release: @libotony @moglu2017 @otherview @paologalligit @ShaunKav Full Changelog : v2.4.2...v2.4.3",
+          "id": "research:15f6194b34ffd94391",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-03-26T11:34:06Z",
+          "title": "v2.4.3",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Important Optional but highly recommended upgrade. v2.4.4 is a hardening & maintenance release focused on runtime operability, mempool/consensus correctness, and observability. v2.4.4 focuses on runtime operability, mempool/consensus correctness, and observability, alongside routine build, CI, and dependency maintenance. The build environment is updated to Go v1.26.5. What's Changed Paolo/txpool metrics by @paologalligit in #1619 Runtime feature toggles via admin server by @libotony in #1620 Add inverted range early return + tests by @otherview in #1628 bft: use post-housekeep state for PoS threshold by @libotony in #1630 txpool: improve tx pricing logic and simplify re-pricing logic by @libotony in #1631 feat: add offset limit to logs pagination and db metrics by @moglu2017 in #1632 refactor code and clean up by @paologalligit in #1633 Bug Fixes & Correctness BFT: use post-housekeep state for the PoS threshold - corrects the state used when evaluating the PoS threshold ( #1630 ). Even",
+          "id": "research:7ade5517379bea4459",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-16T03:45:56Z",
+          "title": "v2.4.4",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.4.4"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Important Mandatory upgrade. This release activates a hardfork . All node operators must upgrade to v2.5.0 before the following block heights: Interstellar Hardfork Testnet Hardfork : Block 25,891,380 ~ Wed, 9 Sep 2026 11:14:40 UTC Mainnet Hardfork : Block 25,902,540 ~ Wed, 16 Sep 2026 11:15:10 UTC What's Changed Interstellar brings the VeChainThor EVM up to date with Ethereum's Cancun, Prague and Osaka releases in a single upgrade, as specified in VIP-255 . It closes the gap that has grown since Galactica (Shanghai), so that current Solidity and Vyper output, and libraries that rely on transient storage, MCOPY , BLS12-381 or secp256r1, run on VeChainThor unchanged. No configuration changes are required; operators can upgrade in-place. Ethereum transaction equivalence is not part of this upgrade and will be specified in its own VIP. EVM Upgrades (activated at the Interstellar block) Opcodes EIP-1153 Transient storage opcodes TLOAD / TSTORE ( #1601 ) EIP-5656 MCOPY memory copying instru",
+          "id": "research:c1c3cfa559657b1581",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-03T13:50:40Z",
+          "title": "v2.5.0 Interstellar",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Important Optional but highly recommended upgrade. v2.5.1 is a hardening & maintenance release. No protocol fork is activated, and operators can upgrade in-place. v2.5.1 carries robustness improvements across the P2P layer, block processing, the transaction pool and the public/admin APIs, together with a handful of API and SDK fixes. Most changes are internal; the user-visible ones are listed below. What's Changed Hardening & Robustness These changes tighten resource bounds and failure handling throughout the node. They do not change consensus rules: every bound is sized above what a valid block can hold under the current 40M block gas limit. Networking : new blocks received from a peer are handed off through a per-peer mailbox instead of being processed on the peer's read loop. Transaction broadcast now uses a single bounded queue and writer per peer. Future-block cache entries are capped per peer and bound to their header. Inbound connection attempts are rate-limited per source (one ",
+          "id": "research:ff7619482176aac34e",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-05T09:11:55Z",
+          "title": "v2.5.1",
+          "url": "https://github.com/vechain/thor/releases/tag/v2.5.1"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "@binance @BinanceHelpDesk X",
@@ -350,51 +395,6 @@
           "published_utc": "2026-11-07T19:54:15Z",
           "title": "Men’s Truth Network (@Colonial_Foot) - X",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5wNXJIMVBfTUZyX1A3cUVCZU52T2puUVdSdVhTVGRNc1p2Z0NNNlhpZW1JOTRLU21fZThDMmNmQlg?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "1/ AI agents are getting smarter. But would you trust one to spend your money, manage your accounts, or make decisions on your behalf? The tech industry is starting to pay as much attention to controlling and evaluating agents as it does to making them more X",
-          "id": "expanded:4f8209e8d5afc4e553",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T11:15:58Z",
-          "title": "1/ AI agents are getting smarter. But would you trust one to spend your money, manage your accounts, or make decisions on your behalf? The tech industry is starting to pay as much attention to controlling and evaluating agents as ",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54RU9lNnpUSFI3akJPSUd4STBvWjJOM2ppQVUzLU5pWXJPMnlOTnhNRm9kM0xUYjJvSncwbE15dG1oWmhlcFpIa3h0dUpzQW5vajlMRHNRSURyTlRueTM1SzNtWDlKYk0?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "October was the worst month of 2026 for crypto market breadth. Out of the top 85 coins (no stablecoins), 78 ended the month red and only 7 finished green. That’s 92% losers. It flipped fast. In September, 91% of coins were green. A month later, 92% were red. X",
-          "id": "expanded:50d31610175e1dd2d8",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-06T10:20:37Z",
-          "title": "October was the worst month of 2026 for crypto market breadth. Out of the top 85 coins (no stablecoins), 78 ended the month red and only 7 finished green. That’s 92% losers. It flipped fast. In September, 91% of coins were green. ",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ubmd1TldjbWxjZmpfa0V1UEZ0Qnh3UUw2UWctQjFMTTc2LWlZV0toSzZZeU1SSkNvQmZyX0V5b0pvQThrOExhem5FQmp5QWdqaWFOWUdRZzI1ZTlXck5HRmhvb3NjVm8?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "VeChain (VETUSD) Price Forecast & Predictions for 2026, 2027, 2028–2030, 2040 and Beyond LiteFinance",
-          "id": "expanded:52eeae454b63a66e4a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-12T17:45:34Z",
-          "title": "VeChain (VETUSD) Price Forecast & Predictions for 2026, 2027, 2028–2030, 2040 and Beyond - LiteFinance",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOHYwZHVuSHVOZUJ0cW1tc1B4TXhZcUJrdkFGQkpKTFExMy1lbnJ4U2dpazlpbnRYS1BhWnlSZlBuZjRHbVNuYkd3Rzh3b2tCZzFCMTJQNFVkVk9SeExqZmstVWRsUFBHMGN6VUtTTk9tT1lEUnViQ05WMnF0TU5CcmZR?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Reposts by Manpreet Singh (@imanpreet09) X",
-          "id": "expanded:6d34b4aafa24597c7f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T22:39:11Z",
-          "title": "Reposts by Manpreet Singh (@imanpreet09) - X",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8tX0syLVZvWVktb2tYZFFJRzN4M3g3S0ZHZm5kd29OSldCeXptYmpTSldBLVFkaTBVRnM3a2s5NXZ6V0U1VWpfbw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "@jaxoncoder Stop using them altogether. Simple as that X",
-          "id": "expanded:6e57a059fd928c7388",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T17:48:29Z",
-          "title": "@jaxoncoder Stop using them altogether. Simple as that - X",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOTVJIakk3emdSd0JPWkNJSlVObWRQMk1yeXppWmRSU01veEJhTTkwR2VlenNaZlFYM1pCekhXak1TWkxNOFBOSElPMGduTjdVdG1Gc09xWlU0U0pIcXdGNkdlOElscjg?oc=5"
         }
       ],
       "cmc100_weight": 0.02,
@@ -702,26 +702,8 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 126,
+      "candidate_event_count": 124,
       "candidate_events_NOT_VERIFIED": [
-        {
-          "claim_status": "PUBLISHER_TEXT_NOT_FACT_VERIFIED",
-          "excerpt": "The Clearing House will use Quant’s technology to bring on-chain capabilities to its tokenised deposit clearing and settlement network for financial institutions. NEW YORK, September 24, 2026 – The Clearing House announced the selection of Quant, a leading provider of programmable money infrastructure, to power its On-Chain Money Initiative , a new interoperable payments network that will enable financial institutions of all sizes to clear and settle tokenised deposit transactions. Quant’s technology will enable the network’s interoperability, orchestration, and transaction-management layer that coordinates the clearing and settlement of toke",
-          "id": "PF:046467e5ded39d70a2",
-          "identity_status": "PROJECT_SITE_ASSOCIATION_NOT_INDEPENDENTLY_CONFIRMED",
-          "published_utc": "2026-09-24T13:20:35Z",
-          "title": "The Clearing House Partners with Quant to Advance the On-Chain Money Initiative",
-          "url": "https://quant.network/press-releases/the-clearing-house-partners-with-quant-to-advance-the-on-chain-money-initiative/"
-        },
-        {
-          "claim_status": "PUBLISHER_TEXT_NOT_FACT_VERIFIED",
-          "excerpt": "Money is entering a new era, driven by two converging forces: blockchain and programmability. Quant is at the centre of this shift globally. Now, we’re proud to partner with The Clearing House in the US to set a new standard for tokenised deposits everywhere. The backdrop Financial institutions want payments and liquidity that are efficient, secure and always-on. Increasingly, consumers expect money to move the way everything else in their lives does: instantly, and without friction. Tokenised deposits let financial institutions meet this demand on their own terms, preserving traditional deposit relationships and keeping money inside the regu",
-          "id": "PF:2e344904c354b3778e",
-          "identity_status": "PROJECT_SITE_ASSOCIATION_NOT_INDEPENDENTLY_CONFIRMED",
-          "published_utc": "2026-09-24T13:16:42Z",
-          "title": "Quant powers The Clearing House’s On-Chain Money Initiative in the US",
-          "url": "https://quant.network/news/quant-powers-the-clearing-houses-on-chain-money-initiative-in-the-us/"
-        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "🏦 ONE INSTRUCTION, MULTIPLE BANK ACCOUNTS: $QNT IS TESTING IT Quant is one of 18 firms in the Bank of England’s Synchronisation Lab, alongside Swift and LSEG. In the test environment, Quant Flow uses a single instruction to move cash across s X",
@@ -793,6 +775,24 @@
           "published_utc": "2026-11-09T12:30:41Z",
           "title": "🤔 Why Can't You Stake Quant Yet? Quant almost doubled in six weeks. Most people think Quant staking is just a rumour, but the clue sits in the docs: since May they have a chapter on staking QNT with… $QNT #quant #cryptostaking Try",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1CZEN1WnVxTV9sNUIteXFYUktBbHJlZW9US2Q0OFNZUXdydm9JU05uZ1Y4d1BhWmZ4d1huZ0ZFWU9kV2tvYVVnUkxSOFpjenRXUVRRckx4bnlISmxONkx2Z1ZEblVWcVdCai1XT0xR?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "GUYSS WE ARE JUST 10 DAYS AWAYY!! Reddit",
+          "id": "expanded:10abd637d68180627a",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-09T05:24:44Z",
+          "title": "GUYSS WE ARE JUST 10 DAYS AWAYY!! - Reddit",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZm9oWVRYN0w0YnU0azcydENZQ1JUY201MVRTdTdDWkhLOWJFWTNTWU1QejBkSWFERkJwMm1OSEtKU3ZyUHJaVWhBN09FeS11R3BpbUFicGhzeDR1bE9ES0pzbnhHTlRJZFhHYnc3ODJFd3ZZeE1zY0xzcmgwSTc2WGREeE5seEh4RnRKZGQ2cVc?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Irving Patil (@comp_vicky11646) X",
+          "id": "expanded:12b9f8ae5f7af21144",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-12T21:20:01Z",
+          "title": "Irving Patil (@comp_vicky11646) - X",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1YUFFIcmY4TFNPOHlNc09nR2tMUWp3VHB5NzNuV2JOQkhjSnJCVkF5NG5lU2YwOTZqeGdHakd3dmRDc00?oc=5"
         }
       ],
       "cmc100_weight": 0.1,
@@ -1222,8 +1222,44 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 64,
+      "candidate_event_count": 74,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Bug fixes: Fixed error when deleting legacy versions. Resolved versiondb interface mismatch.",
+          "id": "research:1041e43529ed947917",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2025-09-18T08:59:48Z",
+          "title": "v6.0.1",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v6.0.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Content This release reduces memory use and makes tx event searches cancellable. It addresses out-of-memory crashes on nodes serving GET /cosmos/tx/v1beta1/txs (and CometBFT RPC tx_search) for queries that match a very large number of transactions. This is a non-consensus release . The state machine is unchanged, so nodes can upgrade at any time with a rolling restart. No upgrade height or governance proposal is needed. Bug fixes Tx search loads only the requested page. Previously the kv indexer loaded every matching transaction into memory before taking out the requested page, even for limit=100. It now sorts and pages matches using the index keys and loads only the transactions on the requested page. In benchmarks with 100k matches, peak memory fell from 459 MB to 45 MB and latency from 474 ms to 95 ms. ( crypto-org-chain/cometbft#69 ) Tx searches stop when the client disconnects. GetTxsEvent and GetTx called CometBFT with a background context, so a search kept running after the clie",
+          "id": "research:1caa3a8ee93b60ebe2",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-08T08:56:13Z",
+          "title": "v8.0.1",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v8.0.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Content This release rewrites the economics of the chain. v7 is built around a new tokenomics stack: x/inflation shapes how the network mints over time, and x/tieredrewards gives stakers a richer, tier-based reward system with a rewards pool that can backstop base yield when block fees alone fall short. The plan name is v7 for mainnet and v7.1.0-testnet for testnet. x/inflation Time-based inflation decay : after a configured decay epoch start height, the rate applied in minting is reduced using a monthly decay model (governed decay_rate), on top of the normal Cosmos x/mint calculation. Supply and burns : module params support max supply (enforced in BeginBlocker) and burned addresses whose balances are treated as out of circulation for that check. Details in ADR-007 x/tieredrewards Tiers define rules such as minimum lock, exit delay, bonus APY (capped for safety), and close-only tiers for wind-down. Stakers can manage positions (including flows such as exit with delegation back to the ",
+          "id": "research:4e5d333863eb0dacaf",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-05-25T06:43:57Z",
+          "title": "v7.2.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v7.2.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This binary is for upgrade plan v8 Content This release adds a module account converter to the upgrade handler to support migration during the chain upgrade ( #1304 ). On the tiered rewards module, two fixes harden position handling: vesting accounts are now blocked from creating tier positions ( #1305 ), and position delegator address derivation is protected against pre-creation squatting ( #1308 ). An NFT genesis fix validates the denom Id (IBC-aware) instead of Name, so denoms with free-form names now round-trip correctly through export/import ( #1312 ). Rounding out the release, ICS-721 is disabled ( #1298 ), and CI/tooling is improved by upgrading nixPkgs to the latest 25.11 patch ( #1311 ) and building upgrade-test binaries from source via flakes ( #1310 ).",
+          "id": "research:b1ecbdfbb3f2d54382",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-07-14T08:45:21Z",
+          "title": "v8.0.0",
+          "url": "https://github.com/crypto-org-chain/chain-main/releases/tag/v8.0.0"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Cronos price has gone parabolic, making it one of the best performing cryptocurrencies in the industry. The CRO token soared to a high of $0.1771, its highest swing since March 5. It has jumped by 40% on Monday and by 156% from its lowest level in August, giving it a market cap of over $4.6 […] The post Cronos Price Prediction as CRO Gets Severely Overbought appeared first on BanklessTimes .",
@@ -1277,42 +1313,6 @@
           "published_utc": "2026-11-09T17:36:29Z",
           "title": "TRON Records 15.11% Growth in Developer Commits as Ecosystem Development Gains Momentum Blockchain growth is often measured through transaction volume, active accounts, and total value locked. Developer activity offers another imp",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSa0hlUTVIZE51QVA4bWJpaWdMaTZWQXNkUnZEeGN5cWtvbl8yRHhRNFJQSGVmZWhLZ1gycGJaY1NSN2J0U2I5d2pCbElEc3ctaGFQVHRVOWZrNDM4R0I0?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "I got on Cronos a few days after block 1 Since then, I've watched it leave beta, cut blocks from 5.6s to 0.5s, and tracked 708+ projects along the way Some are gone, some still ship, I work at one of them now, and I am also an official ambassador 5 years of @Cr X",
-          "id": "expanded:1640616f6a9f08200f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T01:09:17Z",
-          "title": "I got on Cronos a few days after block 1 Since then, I've watched it leave beta, cut blocks from 5.6s to 0.5s, and tracked 708+ projects along the way Some are gone, some still ship, I work at one of them now, and I am also an off",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9fYkpTUzItYU5nbXc2a1I2eTA1SmZNQXNVbXZYZmFLTHhvYnJoM21kYVZaXzkxemxjeUVmbWNUMTVTd2s1ZHB1bzVCZkw5SldOYVV6OENBR0w2VXdm?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "🔥 WHEN CRONOS EVOLVES, THE GODS RISE! 🏛️⚡ 👀 New Cronos identity! 🔥 1.79M $CRO burned through ecosystem revenue! A NEW CHAPTER IS UNFOLDING! 👑 Meanwhile, at Pantheon God's Genesis: 🔥 43,257 $GENESIS burned in our reported fee- X",
-          "id": "expanded:18c37468baaff6ea91",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-08T21:46:55Z",
-          "title": "🔥 WHEN CRONOS EVOLVES, THE GODS RISE! 🏛️⚡ 👀 New Cronos identity! 🔥 1.79M $CRO burned through ecosystem revenue! A NEW CHAPTER IS UNFOLDING! 👑 Meanwhile, at Pantheon God's Genesis: 🔥 43,257 $GENESIS burned in our reported fee- - X",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05VGl0OVVtZWowb2U3cXBRbEdSeDRydzMybjRGM0l6MDk4Wm9qZzB1NjB0blVOWWtfRE9iVkI2NDY2bnEzaXVJSmNRRWlYd1hma0EyUGEtOF9yeDl2YldrVW9PUkZRQQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Crypto Dot Com Rips (hidden costs) Reddit",
-          "id": "expanded:195447cbd62dd875ea",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T20:09:23Z",
-          "title": "Crypto Dot Com Rips (hidden costs) - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQWxHNjRpSURyeHN2WXBRakR3R1pBMEJHYjVWWUY3V3YyN1o2SHRwZ0c0YmFKaE43X09NTF91NEdNM2IxTGlDcGJmeWo5SWMzRXM2ZjJUaWVQSVBKQ3g0Y1Rqd0FxX2x6MFp6eWw5V1BFc1JVMS11UDlKeUcyUVNjUVVQUi1YQQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "👑 SEASON 4 CLOSED. SEASON 5 UNLOCKED! 🦁🔥 Honored to receive the 🌟 Rising Star CROwn! Season 4 was about showing up, supporting the community, learning, and pushing myself to contribute more to the Cronos ecosystem. Congratulations to all th X",
-          "id": "expanded:1b51a3f92263bc40ff",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-10T14:55:43Z",
-          "title": "👑 SEASON 4 CLOSED. SEASON 5 UNLOCKED! 🦁🔥 Honored to receive the 🌟 Rising Star CROwn! Season 4 was about showing up, supporting the community, learning, and pushing myself to contribute more to the Cronos ecosystem. Congratulations",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5ODNSVDhsTnlXSXlWbGxwYUpsMldNQmliWWRuR3VZN1Z4QnR3MFMyNU5iTDdRRWFzb0xxS1dwLVhZc0MyRjVEUXVsaUNlRDMzSHM4MzJBT3pKRE9qeFJ4LQ?oc=5"
         }
       ],
       "cmc100_weight": 0.12,
@@ -1985,13 +1985,49 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 128,
+      "candidate_event_count": 149,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Gaia v29.0.0-rc0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v28.3.1 to v29.0.0-rc0 . 🚀 Highlights FEATURES Remove the x/params module ( #4125 ) Bump golang from 1.25 to 1.26 ( #4126 ) API-BREAKING As of cosmos-sdk v0.53.8, --gas auto gas simulation is broken for multisig senders. Multisig transactions must specify a fixed --gas value until this is fixed upstream. The legacy ParameterChangeProposal governance route and cosmos.params.v1beta1.Query service are no longer available. 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v29.0.0-rc0 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
+          "id": "research:036334840436e8668c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-10T23:47:53Z",
+          "title": "v29.0.0-rc0",
+          "url": "https://github.com/cosmos/gaia/releases/tag/v29.0.0-rc0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Summary The Cosmos Hub community pool holds 566,067.055810 USDC.n (Noble-issued USDC). Circle pauses the Noble USDC contract and all Cross-Chain Transfer Protocol (CCTP) routes to and from Noble on January 12, 2027. This proposal sends the full USDC.n balance of the community pool to a 4-of-6 DAODAO multisig composed of six Cosmos community members and validators to migrate to USDC.inj (Injective-issued USDC). The multisig will migrate the funds to USDC.inj and return the USDC.inj to the community pool. The multisig holds the funds for the duration of the migration only and has no other mandate. Changelog 2026-10-20: Draft posted for community discussion. 2026-10-21: Updated proposal with DAO address details and DAODAO links Background On September 10, 2026, Circle announced that it is discontinuing support for USDC and CCTP V1 on Noble as part of its transition to CCTP V2. Noble will not receive CCTP V2. The wind-down runs on the following schedule: October 13, 2026: New minting of US",
+          "id": "research:1ed3dd1d8c07585d5f",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-20T17:52:51Z",
+          "title": "Migrate Community Pool USDC.n to USDC.inj via a Community Multisig",
+          "url": "https://forum.cosmos.network/t/migrate-community-pool-usdc-n-to-usdc-inj-via-a-community-multisig/17492"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Gaia v28.0.0-rc0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v27.6.0 to v28.0.0 . 🚀 Highlights The Interchain Security (ICS) provider module has been removed. The upgrade handler will update the staking module’s max_validators parameter to match the provider module’s max_provider_consensus_validators parameter. 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v28.0.0-rc0 make install ⚡️ Download binaries Binaries for linux and darwin are available below.",
+          "id": "research:1fec308b0c38f39e48",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-07T17:59:47Z",
+          "title": "v28.0.0-rc0",
+          "url": "https://github.com/cosmos/gaia/releases/tag/v28.0.0-rc0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Gaia v28.2.1 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. 🚀 Highlights Important This patch must be applied from the software upgrade v28.2.0 set halt-height = 33086740 and upgrade to v28.3.1 . 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v28.2.1 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
+          "id": "research:27f5fb27820113f31c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-08T14:03:44Z",
+          "title": "v28.2.1",
+          "url": "https://github.com/cosmos/gaia/releases/tag/v28.2.1"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Akash Network’s core team wants to leave its Cosmos based blockchain and rebuild its computing marketplace on Solana Proposal 346 has 98.15% support, with turnout at 42.84% of bonded stake, according to Mintscan. The team says operating its own chain ties up AKT in security and consumes engineering resources. If the later marketplace cutover passes, the old chain would halt 90 days afterward. This reveals weakens within the IBC & Cosmos Labs should address this accordingly. If other teams/organizations follow, crossover will continue & becoming more common in the future. 3 posts - 3 participants Read full topic",
           "id": "research:3748937b64badebfba",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-27T22:05:07Z",
           "title": "Akash wants to ditch Cosmos for Solana sadly",
           "url": "https://forum.cosmos.network/t/akash-wants-to-ditch-cosmos-for-solana-sadly/17509"
@@ -2000,10 +2036,37 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Hey folks! This is the second Cosmos Quarterly , and the first one in the format every edition will use from now on: the quarter’s news, pillar by pillar, and what each team is working on next. If you want the story of how Cosmos Labs is structured and why, that lives in Quarterly #1 and we won’t retell it here. The Thursday Hub Weekly continues as it is. The short version of the quarter: The tokenomics phase 2 is finished, the Hub roadmap passed validation, and both are preparing for a review process in governance, ATOM went live on Paxos, an institutional staking API is coming through InfStones, the USDC migration is past halfway, post-quantum keys shipped, the IBC release for EVM and Besu networks is weeks away, and the enterprise team took the tokenization suite to banks and to SWIFT’s ledger. It was also a security-hardening quarter . Two vulnerabilities in shared code and one governance attack on an ecosystem chain hit between August and September. The Hub responded to all three ",
           "id": "research:3a44736f42e0e12415",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-29T17:26:19Z",
           "title": "Cosmos Quarterly #2 Q3-26 - Hardening, Interop, and the Hub & Tokenomics Roadmap",
           "url": "https://forum.cosmos.network/t/cosmos-quarterly-2-q3-26-hardening-interop-and-the-hub-tokenomics-roadmap/17517"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Hello Cosmos Community! We are introducing **SOBYA**, an independent blockchain project built to establish a secure, decentralized, and community-driven ecosystem. We have completed substantial development, integration, configuration, and automated testing. We are now preparing for the next major milestone: bringing independent validator operators into the network and preparing for public network launch. We are looking for experienced validators, infrastructure operators, and blockchain contributors who want to participate in a new network from its earliest stage. ## 1. About SOBYA SOBYA is built using the Cosmos ecosystem, with CometBFT consensus and EVM compatibility. Our goal is to combine the strengths of the Cosmos architecture with Ethereum-compatible infrastructure, enabling developers and users to interact with the network through familiar EVM tools and wallets. **Core network specifications:** * Project: SOBYA * Token name: SOBYA * Token symbol: SOBY * Native denomination: `as",
+          "id": "research:3b2370cef585ffc7ae",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-05T18:43:45Z",
+          "title": "SOBYA Blockchain — Seeking Independent Validator Operators for Mainnet Launch",
+          "url": "https://forum.cosmos.network/t/sobya-blockchain-seeking-independent-validator-operators-for-mainnet-launch/17543"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Gaia v28.3.1 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v28.3.1 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
+          "id": "research:3ec0c979a0c345d411",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-08T14:03:09Z",
+          "title": "v28.3.1",
+          "url": "https://github.com/cosmos/gaia/releases/tag/v28.3.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "What’s the status of the promised IBC expansions? Is this acceptable behavior from the Co-CEO? 11 posts - 4 participants Read full topic",
+          "id": "research:4794956be14a859179",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-23T22:19:57Z",
+          "title": "Status of IBC expansion?",
+          "url": "https://forum.cosmos.network/t/status-of-ibc-expansion/17505"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -2013,69 +2076,6 @@
           "published_utc": "2024-08-16T06:33:00Z",
           "title": "Cosmos Loses Key Support as ATOM Staking Yield Hits 18%",
           "url": "https://www.banklesstimes.com/news/2024/08/16/cosmos-loses-key-support-as-atom-staking-yield-hits-18/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Should the Cosmos Hub have its own price oracle? CosmWasm is now permissionless on the Hub, but there is no price oracle available to contracts. Pyth dropped CosmWasm, SEDA is EVM-only, and Band over IBC is slow and costs fees on every query. Without prices, we can’t build any advanced defi on the Hub. So these apps get built on chains like Injective or dYdX, and ATOM ends up used everywhere except on its own chain. Idea: integrate an enshrined oracle based on the Slinky fork. Validators would publish prices at every block, secured by the Hub’s own validator set, with no dependency on an external provider. And beyond the Hub: these prices could be distributed over IBC to any connected chain that lacks an oracle. The Hub would become an interchain’s price provider, with fees flowing back to ATOM stakers. Longer term: prices are only the first step. The same validator-voted mechanism could later carry other data the interchain needs, such as LST exchange rates, proof of reserves or other",
-          "id": "research:708c54c19d80ffcebf",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-16T15:37:29Z",
-          "title": "Oracle on Cosmos Hub",
-          "url": "https://forum.cosmos.network/t/oracle-on-cosmos-hub/17472"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Disclaimer: This is an independent proposal from an ordinary Cosmos community member. I am not affiliated with Cosmos Labs, the Interchain Foundation, or the Cosmos Hub development team. This is not an official initiative or a finalized technical specification. My intention is to share an idea and gather community feedback. TL;DR I would like to propose exploring ATOM Shield , a limited emergency freezing mechanism for native ATOM on the Cosmos Hub. The goal is to prevent stolen ATOM from being moved further during major security incidents, without halting the entire network, while leaving final decisions to decentralized governance. The proposed mechanism would work as follows: 1 Security Council member: Initiates an immediate freeze lasting up to 1 hour. Additional Council approval: Extends the freeze for up to 24 hours from the initial action. At least 2/3 of all active Council members within 24 hours: Confirms the freeze until governance reaches a decision. Cosmos Hub governance: D",
-          "id": "research:817d3d6da1b8ceb7ec",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-30T09:29:58Z",
-          "title": "[IDEA] ATOM Shield: Emergency Freezing and Governance-Based Asset Recovery for Cosmos Hub",
-          "url": "https://forum.cosmos.network/t/idea-atom-shield-emergency-freezing-and-governance-based-asset-recovery-for-cosmos-hub/17520"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Two threads here this month made me look at the same problem from both ends. In one , a holder has ATOM on UX Chain, which halted in July, and RoboMcGobo explained why the Hub can’t just release it: the escrow only opens when the other chain burns the voucher, and that chain makes no blocks. In the other, Akash’s proposal 346 (voting until 2 November) starts a migration that ends with akashnet-2 halting 90 days after a later cutover. So I went through ibc-go (v10.7.0, the version Gaia v29.0.1 runs; akashnet-2 runs v10.5.0, and the transfer code I cite is the same there) to list what has to happen before the last block, because after it nobody can fix anything from the other side. This is not about whether any chain should leave. It’s only about the tokens. Why tokens get stuck When a token leaves its home chain, it goes into that chain’s escrow for the channel and the other side mints a voucher. The escrow releases it only when a packet shows the voucher was burned, and that packet has",
-          "id": "research:a36a6fcdfd42f9a95a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-28T07:11:33Z",
-          "title": "What has to happen to IBC tokens before a Cosmos chain halts for good",
-          "url": "https://forum.cosmos.network/t/what-has-to-happen-to-ibc-tokens-before-a-cosmos-chain-halts-for-good/17510"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Hi everyone, We just opened the public testnet of Luggom, a Cosmos SDK app-chain with one job: turn a real tax payment into money you own, proven end to end with TLSNotary. No KYC. No third parties. The bank session never leaves the user's device. ## Why another chain? Because Cosmos is at its best when an app-chain brings a new kind of user. Luggom brings the taxpayer. There is no subsidy and no token sale. The inflow is a real payment that already leaves people's accounts every year. The chain's job is to prove it happened and mint against it. ## How it works 1. The user pays a real tax at their bank, as always. 2. TLSNotary proves the paid receipt without exposing the session. 3. The notary signs the attestation; the chain verifies it and mints. 4. Each receipt mines exactly once (payment_id + proof_commitment anti-replay). The desktop app (Tauri/Rust) builds the proof request and signs locally. The seed never leaves the device. What is live - chain-id: `luggom-test` - RPC: `https:/",
-          "id": "research:bb160d3d8161b30cdf",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-22T08:02:43Z",
-          "title": "Luggom — a Cosmos SDK app-chain where you mine LUG by paying real taxes (public testnet)",
-          "url": "https://forum.cosmos.network/t/luggom-a-cosmos-sdk-app-chain-where-you-mine-lug-by-paying-real-taxes-public-testnet/17496"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Mark could’ve won this easier Reddit",
-          "id": "expanded:008b21c4b658655657",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-07T04:49:29Z",
-          "title": "Mark could’ve won this easier - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaldEWXdGV24xUTJaY0xGYTFCdkZnNEtvS2JCM2stOEhrcG84UlItemdJVHBDQ1k2SXc0S1J5WkdIOTRNelNkbU5TOVZBS1U5b0pRTk1XLTY2amdPbVhuWDFoZmtKRXpPMkRLbGJaajh2dFVyOEFZVHJWclFGV0JDNldQU1NPaVp3OGc?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "#BBCTheSkyatNight X",
-          "id": "expanded:00d000c28e072a407b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-09T21:24:31Z",
-          "title": "#BBCTheSkyatNight - X",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE54WUFUMnJ1ODVjWjRhSE1PWXVPeEF3R19GSTVfNTl5NnhuZzVIWDNQWWl1cjhnOUViOExoSnBKR3RzVFFLZ09CdmV5QmJmSG8?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Wells Fargo CEO Charlie Scharf on the bank's latest earnings call: \"Last month, we launched tokenized deposits on our proprietary blockchain platform.\" The ~$2.3T bank is building its tokenized deposit engine on Cosmos. @cosmos X",
-          "id": "expanded:0d5569b91799320e17",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T10:00:02Z",
-          "title": "Wells Fargo CEO Charlie Scharf on the bank's latest earnings call: \"Last month, we launched tokenized deposits on our proprietary blockchain platform.\" The ~$2.3T bank is building its tokenized deposit engine on Cosmos. @cosmos - ",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mdk5aNzFjSzBjRkpKaFdzWWk2LVZsYXNKLUpmODlOSWNzU2xWTl95R3R3X2ZZOHJyTWZvWm45R3BRMnFZZWlXUzJqLWhHVXNVTm1DcTBzOWxBcG5qY2c?oc=5"
         }
       ],
       "cmc100_weight": 0.04,
@@ -2963,7 +2963,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release addresses minimum balance handling inconsistencies. A consensus upgrade is included in this release, to address this change. What's New Improvements to eval and hardening consensus requirements around minimum balance. Zstd support was added to agreement crash recovery snapshots. Changelog Bug Fixes eval: refuse to assemble a close-out that still requires a minimum balance Consensus: Add consensus version v43 with CloseRequiresBaseMinBalance agreement: restore zstd-compressed crash recovery snapshots Protocol Upgrade This release contains a protocol upgrade. Additional Resources Developer Portal Discord",
           "id": "research:018efb39e1212dd930",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-20T15:55:29Z",
           "title": "Algorand 5.0.4",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.4-stable"
@@ -2972,7 +2972,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Important Note Attention all node runners: please upgrade your nodes to v5.0.3 as soon as possible. This patch fixes an issue with DNSSEC validation that prevents nodes from bootstrapping into the network when started or restarted. The issue affects all types of nodes. Nodes that are currently connected to the network are functioning properly, but a new start or restart with versions less than 5.0.3 will not be able to validate DNSSEC signatures, which are required by default. This would result in the node being unable to connect to the network. If you have any questions about upgrading your nodes, please reach out to us in the node-runners channel of the Algorand Discord server. Node operators can ensure their nodes remain able to connect to the network by one of two approaches: Primary Approach: Upgrade Node Software Common Node Upgrade Paths Nodekit users: run ./nodekit upgrade Package manager users: upgrade via your package manager normally FUNC users: Open FUNC and update the Node",
           "id": "research:10d27873f594d0b8a2",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-12T01:25:55Z",
           "title": "Algorand 5.0.3",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.3-stable"
@@ -2981,7 +2981,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview A root key update broke DNSSEC lookups due to anchor updates. What's New Update anchor file to include new root. Changelog Bug Fixes dnssec: add root KSK-2024 trust anchor ( #6764 ) Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
           "id": "research:1b9f4e73404f28fb60",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-12T02:20:44Z",
           "title": "Algorand BetaNet 5.0.3",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.3-beta"
@@ -2990,7 +2990,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release improves node efficiency, expands the foundation for post-quantum accounts, and strengthens security and reliability. It also brings AVM arithmetic enhancements and API optimizations. What's New Performance : significantly reduced RAM and disk IO by algod running on default config. Post-quantum accounts : infrastructure for new signing schemes, including Falcon-512 and hybrid accounts. AVM : improved wide-integer arithmetic, including modular exponentiation, and stricter LogicSig argument validation. Security and stability : hardened DNSSEC validation, improved networking and ledger catchpoint processing. Changelog Enhancements API: compute block hash from header only in GetBlockHash ( #6818 ) API: Update oapi-codegen to v2.8.1 and drop unused embedded specs ( #6814 ) API: Stream JSON responses with encoding/json/v2 ( #6808 ) Account: refactor participation registry ( #6743 ) Agreement: enable zstd-compressed crash recovery snapshots ( #6781 ) Agreement: delete ol",
           "id": "research:34e99d5b3dd6c27611",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-11-06T16:03:10Z",
           "title": "Algorand BetaNet 5.1.0",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.1.0-beta"
@@ -2999,7 +2999,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release addresses minimum balance handling inconsistencies. A consensus upgrade is included in this release, to address this change. What's New Improvements to eval and hardening consensus requirements around minimum balance. Zstd support was added to agreement crash recovery snapshots. Changelog Bug Fixes eval: refuse to assemble a close-out that still requires a minimum balance Consensus: Add consensus version v43 with CloseRequiresBaseMinBalance agreement: restore zstd-compressed crash recovery snapshots Protocol Upgrade This release contains a protocol upgrade. Additional Resources Developer Portal Discord",
           "id": "research:35085ee4313f23b854",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-20T15:55:11Z",
           "title": "Algorand BetaNet 5.0.4",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.4-beta"
@@ -3008,7 +3008,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
           "id": "research:7b5d6bac992c2c1688",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-28T14:04:10Z",
           "title": "Algorand BetaNet 5.0.5",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.5-beta"
@@ -3017,7 +3017,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview Enhancements to checks to improve security and stability of operation. What's New Stricter checks around decoding. Changelog Bug Fixes eval: check decoding while generating Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Developer Portal Discord",
           "id": "research:a0ec8cb94066f8c786",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-28T14:04:26Z",
           "title": "Algorand 5.0.5",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.5-stable"
@@ -3026,7 +3026,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release improves safety and durability of node operation. What's New Strengthen handling around agreement verifications to improve stability. Changelog Enhancements agreement: discard stale cert bundles per spec bundle relay rule agreement: add bound check on step agreement: isolate bundle verification from untrusted periods Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
           "id": "research:c44be0cc383c6664be",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-09-15T14:54:59Z",
           "title": "Algorand 5.0.2",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.2-stable"
@@ -3035,7 +3035,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release improves safety and durability of node operation. What's New Strengthen handling around agreement verifications to improve stability. Changelog Enhancements agreement: discard stale cert bundles per spec bundle relay rule agreement: add bound check on step agreement: isolate bundle verification from untrusted periods Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
           "id": "research:c50773daf33d324c39",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-09-15T14:54:42Z",
           "title": "Algorand BetaNet 5.0.2",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.2-beta"
@@ -3044,7 +3044,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Overview This release improves safety and performance of nodes. (This is a backport of v5.0.1-stable.) What's New Improved verification and performance of stateproofs. Changelog Enhancements stateproof: reject mismatched hash type Protocol Upgrade This release does not contain a protocol upgrade. Additional Resources Algorand Forum Developer Portal",
           "id": "research:ff35abe9c2eb690bbe",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-09-01T14:53:00Z",
           "title": "Algorand BetaNet 5.0.1",
           "url": "https://github.com/algorand/go-algorand/releases/tag/v5.0.1-beta"
@@ -3548,7 +3548,7 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 102,
+      "candidate_event_count": 112,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -4199,13 +4199,67 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 95,
+      "candidate_event_count": 118,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Just wanted to share a link roundup that I saw @shannon share elsewhere because it’s so freaking awesome! Start with the Bitcoin Magazine piece and go from there! Tyler Evans, Chief Investment Officer of Nakamoto and UTXO, described the model as a way to generate yield while preserving Bitcoin’s settlement and custody features. CoinMarketCap Business Insider Benzinga Trading View ADVFN Brave New Coin Meta Trader Crypto Briefing Yellow Other Tidbits Not To Be Missed: Bitcoin Staking Whitepaper drop and discussion (which The Defiant covered ) Updated Stacks Roadmap Hermetica’s 75 BTC Cap Filled: Another 25 BTC Filled in 24 hours Zest Makes Its Debut on Binance Birdies chirping about much more soon too 1 post - 1 participant Read full topic",
+          "id": "research:0514caa7112410c8f6",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-05-29T03:04:40Z",
+          "title": "Press from the Bitcoin Staking announcement with UTXO",
+          "url": "https://forum.stacks.org/t/press-from-the-bitcoin-staking-announcement-with-utxo/18852"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "We’ll be doing scheduled forum maintenance and updates on Monday, August 31, between 6:00 and 9:00 PM PST. Expect brief downtime during that window. 2 posts - 2 participants Read full topic",
+          "id": "research:27bb5a0c7e4ea81239",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-28T15:57:25Z",
+          "title": "Forum maintenance: Monday, Aug 31, 6–9pm PST [Completed Early]",
+          "url": "https://forum.stacks.org/t/forum-maintenance-monday-aug-31-6-9pm-pst-completed-early/18962"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "A retrospective for the ecosystem, posted the same day as the public numbers. Numbers 11 streams (unchanged) and 0 to 1 organisations registered, all checkable at stackstream.xyz/api/stats. The 11 streams were opened by us and early testers around launch, not by organisations. Conversations Opened across teams, grant programmes, contributors and ecosystem partners. The strongest response came from DAOs paying contributors, the weakest from small product teams. Shipped this month Streams in any token, including a team’s own, opened from one link A warning on look-alike tokens Correct amounts for every token Prepared setup links an organisation can review and sign Linking streams to a workspace A public directory of registered organisations Live network totals on the site An open read API with an integration guide Next A sponsored creator test with a DAO, clearly labelled as funded by us. The contracts remain open source, independently audited, live on mainnet and backed by 125 passing t",
+          "id": "research:28288789362fe102ee",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-14T12:44:20Z",
+          "title": "StackStream, 30 days in the open",
+          "url": "https://forum.stacks.org/t/stackstream-30-days-in-the-open/19048"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release contains bugfixes and improvements to the stacks-node and stacks-signer binaries, ensuring more consistent block production. This release is compatible with chainstate directories from 4.0.x. This release is optional but recommended for all Stacks node and signer operators. Stacks Node This release includes the following changes: https://github.com/stacks-network/stacks-core/blob/4.0.2/CHANGELOG.md ⚠️ Breaking Changes Miner configurations must now set burnchain.wallet_name to an existing wallet (ASCII letters, digits and . _ - / ), regardless of the Bitcoin Core version; this also fixes compatibility with Bitcoin Core >= 31, which removed unnamed wallets. Loading is session-only: set wallet=<name> in bitcoin.conf to reload it after a bitcoind restart. After migratewallet , point wallet_name at the wallet holding the miner's addresses. Added Added an [[events_observer]] config option disable_contract_interface (default false ). When set to true for an observer, the contract",
+          "id": "research:2a790bb338113d404d",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-08-11T20:48:20Z",
+          "title": "Release 4.0.2",
+          "url": "https://github.com/stacks-network/stacks-core/releases/tag/4.0.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "For most of Bitcoin’s life, the story has been simple: Buy it. Hold it. Wait. But what if Bitcoin could actually work? Not just in DeFi loops. Not just in yield farms. But in the real economy — funding real businesses, moving real invoices, solving real cashflow problems. That’s the experiment I’m running with FlowFi-BTC. What is FlowFi-BTC? FlowFi is a tightly scoped pilot exploring how sBTC can be used for short-term real-world business financing (invoices, receivables, and similar needs), with transparency and on-chain tracking. This is not a massive protocol launch. This is not vaporware. This is a small, intentional experiment to answer a simple question: Can sBTC move from being productive in DeFi… to being productive in real life? Who I’m Looking For I’m currently looking for two kinds of people: 1. sBTC Capital Providers If you hold sBTC and you’re curious about putting a small amount of it to work in a real-world pilot (with clear terms and transparency), I want to hear from y",
+          "id": "research:2f03ae1d78b221c8ba",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-16T11:25:19Z",
+          "title": "Bitcoin Should Do More Than Just Sit. I’m Testing That Idea — And I Need You",
+          "url": "https://forum.stacks.org/t/bitcoin-should-do-more-than-just-sit-i-m-testing-that-idea-and-i-need-you/19011"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The Bond Staker and Esbee DAO 1. The Landscape: PoX-5 and Protocol Bonds PoX-5 is the Stacks protocol upgrade that introduces Bitcoin Staking — a mechanism whereby BTC-holders can earn yield from the Stacks Proof-of-Transfer (PoX) rewards without surrendering custody of their bitcoin. It was activated at Bitcoin block 960,230 (Epoch 4.0), and the genesis bond will start earning at block 966,350. The core instrument is the protocol bond : a six-month, dual-asset commitment consisting of: BTC leg : a timelock on Bitcoin L1, held under the user’s own keys, or an sBTC lock on Stacks STX leg : an STX lock inside the pox-5 Clarity contract on Stacks, gating participation and determining signing weight. The two legs are cryptographically linked: the Bitcoin script on L1 commits to a hash of the participant’s Stacks principal, and pox-5 refuses to register a bond it cannot match to a confirmed L1 UTXO. For sBTC locks, the link is encoded in Clarity. Rewards flow weekly into sBTC (via the sBTC ",
+          "id": "research:3132bf5252b0521f75",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-02T13:02:42Z",
+          "title": "Bond Staking and Esbee DAO",
+          "url": "https://forum.stacks.org/t/bond-staking-and-esbee-dao/18972"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "I recently was bridging a collection of tokens from Cosmos ecosystem with the intent of bringing that liquidity to Stacks. Whilst bridging from many Cosmos chains is very easy, bridging to Stacks is really hard. The “best” route for me was sending everything back into USDC on Arbitrim and Base, sending that to my CEX, swapping to STX, then sending that STX to Stacks. A lot of steps and way too much lost in fees. The USDC from ETH to USDCx on Stacks on AllBridge cost me 0.32 USD of ETH for 2.36 USDC bridged (test tx) and took just over 20 mins. So I didn’t go that route. I’d love to see STX and USDCx get added to a few of the large bridging protocols and make sure they offer good rates. I’m thinking: Across Squid deBridge Also can we get AllBridge to add USDCx swaps to lower fee EVM chains like Base and Arbitrim? Mainnet Ethereum is still the worst (slowest, most expensive) place to transact (after the Bitcoin L1). How can we get that to happen? Is this something the core team at Stacks",
           "id": "research:318613984e0111f128",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-24T10:24:45Z",
           "title": "Stacks added to popular bridges",
           "url": "https://forum.stacks.org/t/stacks-added-to-popular-bridges/19081"
@@ -4221,75 +4275,21 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Hi everyone, I’m Samuel, building Privara, a privacy-focused payment protocol on Stacks. We’ve completed our initial grant milestones and deployed a working mainnet payment flow. I’m now exploring how to extend its privacy model, particularly around selective disclosure. What’s implemented Privara currently uses secp256k1-based stealth-address derivation to generate one-time recipient addresses, reducing the ability to link payments through a persistent recipient address. The implementation also includes SIP-018-based payment authorization, sponsored transaction flows, and payment discovery mechanisms. These provide recipient-address privacy, not full transaction confidentiality. Amounts, transaction activity, and other on-chain metadata remain observable. What I’m exploring The next step is payment-scoped selective disclosure: allowing a recipient to share verifiable information about a specific payment with an auditor or counterparty without exposing unrelated payments or granting ac",
-          "id": "research:4972598b3813f7a78b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-27T03:05:56Z",
-          "title": "Privara: Exploring payment-scoped selective disclosure for privacy on Stacks",
-          "url": "https://forum.stacks.org/t/privara-exploring-payment-scoped-selective-disclosure-for-privacy-on-stacks/19112"
+          "excerpt": "Two points from the SIP-045 discussion stuck with me: The reserve is accrual-only in PoX-5 (disbursement only via a new SIP), so bond holders take any coverage shortfall themselves for now. @fluidvoice asked whether a “Growth Bond” (3% floor plus upside) could exist alongside the stable bond, since a fixed 3% may feel short-changed in a bull market. As far as I could see, that wasn’t picked up in the thread. I’ve built a testnet interest-rate swap on PoX yield ( GitHub - dannyy2000/RHO · GitHub ). Validation showed STX-only stackers don’t need it, but these two bond-side gaps could be served by a swap built outside the protocol, without waiting for PoX-6: Bond holders protecting against shortfall while the reserve is locked. Bond holders swapping part of their fixed 3% for upside. Would anyone holding bonds, or running a bond pool, actually use either? Honest “no” answers are just as useful. I’d rather find out now than build something nobody uses. 1 post - 1 participant Read full topi",
+          "id": "research:38ad772e7b2ef9b55c",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-09T17:15:42Z",
+          "title": "Bond-side rate products: shortfall cover and a \"Growth Bond\"?",
+          "url": "https://forum.stacks.org/t/bond-side-rate-products-shortfall-cover-and-a-growth-bond/19036"
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "hi stacks forum. we’re blip labs, a small team making free games on stacks where a bitcoin block picks each day’s map, so nobody could pick it, us included. what’s live: genesis run, a free browser game: playgenesis.run/play the bot cup, a separate league where bots play the same game through an open API: playgenesis.run/agents the 5-step fair check and open kits (MIT) are on the site and on github under blip-labs/blip along the way we sent two small fixes upstream: stacks explorer #2870 and leather mobile #2916 . nov 2-8 the bot cup runs a 50 STX contest for bot builders. rules are on the agents page. no token, nothing to buy. honest feedback on the game is the most useful thing you could give us. 7 posts - 2 participants Read full topic",
-          "id": "research:4a5f874c8edb5ad6ff",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-02T15:40:00Z",
-          "title": "Genesis Run: a provably fair Bitcoin-block game on Stacks, plus a league for bots (feedback welcome)",
-          "url": "https://forum.stacks.org/t/genesis-run-a-provably-fair-bitcoin-block-game-on-stacks-plus-a-league-for-bots-feedback-welcome/19208"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "https://tokengems.ai/ is a new project on Solana. It’s pretty simple. you can claim a token’s homepage if you control the wallet that minted it homepage lists all the token details people can post about the token on each feed Can someone build this for Stacks? What would be great is if the functionally of (now defunct) Vector.Fun could be included. That is to post any message about a token you need to pair that post with a trade (buy or sell) of the token. Removes a bunch of the spam2earn crowd immediately and encourages social trading. Even if we just had more data about tokens Stacks Explorer by Hiro that would be a good start. Hats off to ALEX Lab which is the only place I can find token data but it has been winding down over the past 12 months so it’s unclear how much longer it will be around 3 posts - 2 participants Read full topic",
-          "id": "research:72ddbeb8a871c94dae",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-24T22:13:31Z",
-          "title": "Can someone build TokenGems meets Vector.Fun for Stacks?",
-          "url": "https://forum.stacks.org/t/can-someone-build-tokengems-meets-vector-fun-for-stacks/19084"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Moving Assets On Stacks Blockchain Stacks is building Bitcoin-native finance. DeFi, stablecoins, payments, lending, trading, and financial applications are all creating new reasons for users to hold and use assets on Stacks. But there is a problem that sits underneath all of this growth: The liquidity users need is already distributed across the rest of the crypto ecosystem. A user may have ETH on Ethereum. Another has USDC on Base. Another has SOL on Solana. Another has BTC. Another has USDT on Arbitrum. They may want to use that capital on Stacks. The question is: How easily can they get there? That is the problem we started Hermes Bridge to solve. The idea is straightforward: Take assets from where users already have them and make them usable in the Stacks ecosystem. The liquidity is already there We don’t believe the answer is asking users to abandon the ecosystems where they already hold their assets. Ethereum has enormous liquidity. Base is growing rapidly. Solana has massive act",
-          "id": "research:889e85c7d525eba612",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-08-20T19:59:20Z",
-          "title": "Hermes Bridge: Building the Liquidity Gateway to Stacks",
-          "url": "https://forum.stacks.org/t/hermes-bridge-building-the-liquidity-gateway-to-stacks/18955"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Bitcoin price went parabolic on Monday as the path to $100,000 became clearer. BTC surged to $88,000 for the first time on record, and the Fear of Missing Out (FOMO) could push it much higher in the coming days. Stacks (STX), a key layer-2 network for the Bitcoin ecosystem could be the next big thing. […] The post Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next appeared first on BanklessTimes .",
-          "id": "research:955b24779489d79dad",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-11-12T02:44:01Z",
-          "title": "Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next",
-          "url": "https://www.banklesstimes.com/news/2024/11/12/missed-the-bitcoin-price-surge-stacks-stx-could-be-next/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Privacy has always been an interesting problem on public blockchains because transparency is one of the things that makes them useful in the first place. On Stacks, transaction history, balances, and addresses are publicly observable. That is valuable for verification, but there are applications where exposing the complete financial relationship between addresses is not desirable. That question is what led to Stacks Shield . Stacks Shield is an open-source privacy protocol for Stacks that uses zkSNARKs to allow users to move STX and SIP-10 assets through shielded notes while keeping the underlying note ownership and amounts private. What started as an exploration of private STX transactions has now grown into a multi-asset privacy system supporting STX, sBTC, and USDCx on Stacks Testnet , with a published developer SDK. This post introduces what we built, why we built it, how the system works, and where we want to take it next. From private STX to a multi-asset privacy layer The first ",
-          "id": "research:a570bb92f8c933d993",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-08-20T19:59:26Z",
-          "title": "Stacks Shield — Encrypted zero-knowledge for private peer-to-peer payments on Stacks",
-          "url": "https://forum.stacks.org/t/stacks-shield-encrypted-zero-knowledge-for-private-peer-to-peer-payments-on-stacks/18956"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Hello, I want to share a project I have been working on and would like feedback from the community. The short version. I built a verifier for zero-knowledge STARK proofs that runs as an ordinary Clarity contract. A complete proof, produced by a separate prover built on StarkWare’s open source Stwo library, is checked end to end by the contract and answers true or false. It needs no change to Stacks itself: no hard fork, no SIP, no new cryptography in the nodes. It works because STARK proofs are built entirely out of hashing and basic arithmetic, which are two things Clarity already has. Why this might matter to you. Once a contract can check a proof, a class of applications becomes possible on Stacks that is not possible today: compressing many transactions into one verified proof, proving that heavy off-chain computation was done correctly, trust-minimized bridges, and privacy designs with built-in accountability. The verifier is deliberately neutral infrastructure: open source, no to",
-          "id": "research:ac4222f98853cdb707",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-06-10T19:20:59Z",
-          "title": "Verifold: a STARK proof verification layer for Stacks",
-          "url": "https://forum.stacks.org/t/verifold-a-stark-proof-verification-layer-for-stacks/18887"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "We made a design decision in stacks-passkey-wallet that’s worth putting in front of this forum: the wallet is derived from the passkey rather than stored anywhere. The path: WebAuthn PRF output → HKDF → BIP-39 entropy → Stacks and Bitcoin keys. A pure function, so the same passkey always yields the same keys, and they’re re-derived each time they’re needed. The seed phrase is still fully available to the user: they can reveal it, write it down, and restore in any standard Stacks wallet. The honest limit: a key derived on demand in a browser session is hot-wallet-class security, and we treat it that way. The library is MIT, open source, with two separate kinds of evidence: 81/81 on its internal suite, and 43/43 plus 5 negative controls on an independent vector verifier that imports nothing from the library. Full write-up: We Re-Derive It. We Never Keep It. — DeOrganized Design questions are argued in the open in the repo’s GitHub Discussions: DeOrganized/stacks-passkey-wallet · Discussi",
-          "id": "research:bc93869890cbef217c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-09-25T15:28:15Z",
-          "title": "Design note: deriving a Stacks wallet from a passkey (WebAuthn PRF → HKDF → BIP-39)",
-          "url": "https://forum.stacks.org/t/design-note-deriving-a-stacks-wallet-from-a-passkey-webauthn-prf-hkdf-bip-39/19024"
+          "excerpt": "This release contains bugfixes and improvements to the stacks-node and stacks-signer binaries, ensuring more consistent block production. This release is compatible with chainstate directories from 4.0.x. This release is recommended for all Stacks node and signer operators. This release includes the following changes: https://github.com/stacks-network/stacks-core/blob/4.0.4/CHANGELOG.md ⚠️ Breaking Changes Removed reset_replay_set_after_fork_blocks and validate_with_replay_tx config from signer toml. removed replay_transactions config from miner toml. From Epoch 4.1, versioned smart-contract deploys (the VersionedSmartContract payload, which pins a Clarity version) are rejected as statically invalid: deploy new contracts with the unversioned SmartContract payload, which uses the epoch's default Clarity version (Clarity 7 in Epoch 4.1). Added Added public and custom Bitcoin signet support with chain ID 0x80000001 and signer network = \"signet\" . Each deployment requires its own working d",
+          "id": "research:479f0b28783cd25aef",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-09-24T00:24:54Z",
+          "title": "Release 4.0.4",
+          "url": "https://github.com/stacks-network/stacks-core/releases/tag/4.0.4"
         }
       ],
       "cmc100_weight": 0.03,
@@ -4902,8 +4902,17 @@
       "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 220,
+      "candidate_event_count": 239,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host. https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel What's Changed votor: count footer cert receive-limit hits under their own metric by @latent-9 in #15502 conformance: keep zero-stake delegations in block harness by @mjain-jump in #15711 streamer: allow 3000 unstaked connections, throttle unstaked to 100 TPS under global saturation by @stablebits in #15610 streamer: raise max unstaked TPS from 200 to 400 by @stablebits in #15611 streamer: set worker_threads = 2 in unstaked connection quic tests by @ataridev in #15695 streamer: set worker_threads = 2 in remaining quic tests by @ataridev in #15702 chore(deps): bump solana-address from 2.8.0 to 2.9.0 by @dependabot [bot] in #15738 Shredder: stop producing resigned shreds. by @alexpyattaev in #15607 gossip: bound crds lock holds in the shred-version filter by @efagerho in #15576 SIMD-0464: key feature by @buffalojoec in ",
+          "id": "research:05940d7410d588d988",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-09T07:32:49Z",
+          "title": "Release v4.5.0-alpha.2",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Solana trades below both of its key monthly moving averages. DTCC plans to connect its tokenization service to Solana in the second half of 2027. Solana is the second public blockchain on DTCC’s roadmap after Stellar. The November monthly close will show whether SOL’s last major Fibonacci support holds. Solana (SOL) traded near $81 on Thursday. That puts it almost 15% lower since November opened, down about 11% over the past seven days, and roughly $11 above the support level that has held its price up through 2026. The drop came on the same day the Depository Trust & Clearing Corporation (DTCC), the company behind the settlement and custody of most U.S. securities, said it plans to connect its tokenization service to Solana in the second half of 2027. The announcement did nothing to slow a sell-off that has now erased most of the rebound SOL made over the summer. BREAKING: @The_DTCC to tokenize custodied assets on Solana. announced plans to connect the DTCC Tokenization Service to Sol",
@@ -4924,9 +4933,36 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is a Testnet release. It is not suggested for Mainnet use. Alpenglow is now the only available consensus mode. The following configuration keys are no longer supported: [consensus] alpenglow , [tiles.tower] write_vote_history_file , and [tiles.txsend] txsend_src_port Added a new failover mechanism between two Firedancer validators, designed to be easy to use, fast, and secure. Refer to the failover guide for details Support for all Solana 4.4 features Support for geo_aware_leader_schedule ( SIMD-0675 ), validator_location_registration ( SIMD-0674 ), and stricter_shred_validation ( SIMD-0504 ) features Reduced mainnet memory usage from 159 to 142 GiB The transaction cache and cost tracker gained fallback disk paths, which will not be written during routine or healthy operations. Configurable at [paths] txncache and [paths] cost_tracker Added a new iavf kernel-bypass networking provider for Intel ice/i40e NICs through SR-IOV virtual functions Added an experimental auction scheduling",
+          "id": "research:12e8fd4b7a60c2d6fa",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-11T13:23:40Z",
+          "title": "Firedancer Testnet Release v26.11.0",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.11.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is a mainnet ready release. Improved repair performance through better peer selection and timeouts Improved performance and reliability of Alpenglow consensus implementation",
+          "id": "research:1f0298a9a60424e5d4",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-20T02:51:04Z",
+          "title": "Firedancer Mainnet Release v26.10.3",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.3"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is a mainnet ready release. Support for Alpenglow. It is enabled in the default testnet and devnet configs ( [consensus] alpenglow = true ). Migration from Tower to Alpenglow will not be supported. Support for all Solana 4.3 features. Reduced mainnet memory usage from 183 to 159 GiB. Faster snapshot loading, down to 40 seconds for mainnet. Configure parallelism with snapdc_tile_count and snapin_tile_count . Added support for requiring tower, or the new Alpenglow vote history file, in set-identity , with --vote-history-file argument. The validator can also write an Agave compatible tower or Alpenglow vote history file as it runs, for safe failover to Agave, see paths.vote_history . This breaks compatibility with admin commands from v26.9.x binaries. Added the firedancer wait command, which blocks until the validator reaches a safe state to be failed away from, or exited. Refer to the CLI documentation for more details. Improvements to automatic topology layout on low power machines",
+          "id": "research:2ba73a2d824eb4ffa0",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-10-14T02:13:14Z",
+          "title": "Firedancer Mainnet Release v26.10.2",
+          "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.10.2"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Akash Network’s core team wants to leave its Cosmos based blockchain and rebuild its computing marketplace on Solana Proposal 346 has 98.15% support, with turnout at 42.84% of bonded stake, according to Mintscan. The team says operating its own chain ties up AKT in security and consumes engineering resources. If the later marketplace cutover passes, the old chain would halt 90 days afterward. This reveals weakens within the IBC & Cosmos Labs should address this accordingly. If other teams/organizations follow, crossover will continue & becoming more common in the future. 3 posts - 3 participants Read full topic",
           "id": "research:3748937b64badebfba",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-10-27T22:05:07Z",
           "title": "Akash wants to ditch Cosmos for Solana sadly",
           "url": "https://forum.cosmos.network/t/akash-wants-to-ditch-cosmos-for-solana-sadly/17509"
@@ -4942,57 +4978,21 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This is stable release recommended for general adoption. It is also recommended for Testnet and Devnet. What's Changed v4.4: ignore RUSTSEC-2026-0418 (libz-sys) by @cfkelly18 in #16540 v4.4: ci: don't use sccache in docker run (backport of #16493 ) by @mergify [bot] in #16561 v4.4: ci: refine pipeline trigger condition (backport of #16674 ) by @mergify [bot] in #16678 v4.4: Normalize CI env variables also in the command environment (backport of #16214 ) by @mergify [bot] in #16684 v4.4: ignore RUSTSEC-2026-0433 (pulldown-cmark) by @nbelenkov in #16782 v4.4: fix(svm): apply ProgramData size floor during account loading (backport of #16769 ) by @mergify [bot] in #16775 Bump version to 4.4.1 by @agave-version-bumper[bot] in #16785 Full Changelog : v4.4.0...v4.4.1",
+          "id": "research:51fb60ed9fef3bb03a",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
+          "published_utc": "2026-11-05T19:38:43Z",
+          "title": "Release v4.4.1",
+          "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "TL;DR: Helius launched Solana Privacy Rings on mainnet on November 10. The default ring hides assets and amounts within private transfers, while sender and recipient addresses remain visible. Solana applications have a new way to offer confidential balances. Helius's launch announcement introduces Privacy Rings as programmable pools that execute on Solana, giving developers tools for private payments and financial applications on the same network. The feature addresses a practical obstacle for public-ledger payments. A business may want the settlement benefits of a blockchain without publishing every payment amount to competitors or employees. Individual users can have similar concerns about exposing the size and history of their financial activity. Confidentiality has a specific boundary The technical documentation separates confidentiality from anonymity. In the default confidential ring, assets, amounts and optional memos are encrypted during private transfers, while the participati",
           "id": "research:5478bda8fe553988d7",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
           "published_utc": "2026-11-13T07:00:00Z",
           "title": "Helius Launches Solana Privacy Rings With Confidential Balances and Transfers",
           "url": "https://www.newsbtc.com/news/solana/helius-solana-privacy-rings-confidential-balances-transfers/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Pi Network’s native token experienced heightened volatility over the past several days, driven by excitement about an upcoming ecosystem event and broader market dynamics. Solana’s SOL plunged 10% on a weekly basis and risks further declines, while Zcash (ZEC) lost its prestigious spot among the ten largest cryptocurrencies. PI’s Roller Coaster The token has been in a steep downfall over the last few months, and its condition worsened at the start of November, when it tumbled to a new all-time low of around $0.063. Earlier this week, the higher-than-expected inflation in the US poured another cold shower on the cryptocurrency market, but instead of following the red wave, PI surprisingly headed north and exceeded $0.07. X account BSCN said the ascent appeared technical as the token emerged from an oversold situation, along with a small increase in open interest for derivatives contracts. The team also focused on the upcoming Ecosystem Summit, which may have sparked enthusiasm across th",
-          "id": "research:590cd8e2d2781a0b0d",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-13T11:29:28Z",
-          "title": "Pi Network (PI) Hit by Volatility, Solana (SOL) Braces for Additional Sell-off: Bits Recap Nov 13",
-          "url": "https://cryptopotato.com/pi-network-pi-hit-by-volatility-solana-sol-braces-for-additional-sell-off-bits-recap-nov-13/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Bitcoin and other cryptocurrencies dropped sharply on Monday as last week’s recovery faded. After staying above $60,000 during the weekend, Bitcoin retreated to $58,000 on Monday morning. Jasmy, Solana, and Mantra slipped Other cryptocurrencies, such as JasmyCoin (JASMY), Solana (SOL), and Mantra (OM), dropped by a larger margin. Jasmy fell to $0.02, down over 15% from last week’s […] The post Why are Jasmy, Solana, and Mantra Token Prices Falling? appeared first on BanklessTimes .",
-          "id": "research:5bdfce5ff20e151ab1",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-08-12T09:30:00Z",
-          "title": "Why are Jasmy, Solana, and Mantra Token Prices Falling?",
-          "url": "https://www.banklesstimes.com/news/2024/08/12/why-are-jasmy-solana-and-mantra-token-prices-falling/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Solana’s price recovered dramatically just a day after the various economic markets experienced a bloodbath in terms of losses. According to CoinMarketCap data, the token emerged as one of the top gainers for the day. At press time, the coin was trading at $153.56, up 10.09% from the same time last day. Solana price recovery in tandem with […] The post Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know appeared first on BanklessTimes .",
-          "id": "research:5e2e31250cfa25ac9f",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-08-07T04:33:57Z",
-          "title": "Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know",
-          "url": "https://www.banklesstimes.com/news/2024/08/07/solana-sees-steady-recovery-after-market-sell-off-here-is-what-we-know/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Ethena’s USDe has been launched on Solana through LayerZero Labs, the team responsible for the omni-chain interoperability protocol LayerZero. This development has implications for ENA, Ethena Labs’ native token. According to a post by Ethena Labs, OFT—SOL is now a backing asset for USDe, pending a community vote. August 7th marks Ethena's Solana integration: – […] The post Ethena Price Prediction as Stablecoin USDe Goes Live on Solana appeared first on BanklessTimes .",
-          "id": "research:7b41866be04c7dfbac",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2024-08-08T08:10:00Z",
-          "title": "Ethena Price Prediction as Stablecoin USDe Goes Live on Solana",
-          "url": "https://www.banklesstimes.com/news/2024/08/08/ethena-price-prediction-as-stablecoin-usde-goes-live-on-solana/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Shares in Securitize have fallen sharply in the two weeks since the tokenisation firm began offering blockchain versions of Apple, Nvidia and Tesla stock. SECZ was trading at $7.81 at 1:13pm ET on Thursday, down 15% on the day, according to Yahoo Finance data . That is 38% below its $12.66 close on 8 October, the day Securitize announced Securitize Stocks, and 43% below its $13.82 close the next day. The stock jumped 11% on launch day and a further 9% the next session. It then gave up those gains, including drops of 14% on 12 October and 13% on 16 October. Citi downgraded the stock to neutral from buy on 13 October, citing questions over how much revenue Securitize can earn from tokenisation and the risk of lock-up expiries adding shares to the market, CoinDesk reported . The launch put 12 US stocks onchain, among them Apple, Microsoft, Nvidia, Alphabet, Tesla, Meta, Amazon, Netflix, Circle, Strategy and Palantir. \"Eligible investors can hold tokenized positions backed 1:1 by actual sh",
-          "id": "research:9f9f3c46cb9d52710b",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-10-22T18:18:21Z",
-          "title": "Securitize shares slide 38% since it put Apple and Nvidia stock on Solana",
-          "url": "https://www.dlnews.com/articles/markets/securitize-shares-fall-38percent-since-solana-stock-token-launch-or-dl-news/"
         }
       ],
       "cmc100_weight": 2.3,
@@ -5931,7 +5931,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Executed onchain. This proposal passed and was executed as Proposal #98 on Jul 15, 2026. Snapshot vote: link . Summary Secure crosschain messaging is an integral part of Uniswap’s governance model. Governance votes like protocol fee adjustments are executed by UNI holders on Ethereum Mainnet and must subsequently be relayed to destination chains. This proposal updates Uniswap’s crosschain governance system to accommodate the latest best practices. Specifically, we propose to: Transition ownership of the Uniswap v2 and v4 contracts on Soneium and X Layer to CrossChainAccount contracts, which we consider to be the current best practice for executing messages from Ethereum Mainnet on the OP Stack Migrate the entire messaging system for the Avalanche and MegaETH deployments from LayerZero v1 (part of which is being deprecated ) to Wormhole Note that because Uniswap v3 on both Soneium and X Layer is owned by the v3OpenFeeAdapter , which is owned by the CrossChainAccount, we do not need to c",
           "id": "research:1d41d17c0dac91734a",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-06-19T17:04:30Z",
           "title": "[Executed] [Temp Check] - Update Crosschain Governance Parameters for Avalanche, MegaETH, Soneium, and X Layer",
           "url": "https://gov.uniswap.org/t/executed-temp-check-update-crosschain-governance-parameters-for-avalanche-megaeth-soneium-and-x-layer/26127"
@@ -5958,7 +5958,7 @@
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Aave V4 goes live on Avalanche, its first multi-chain deployment, with a Core Liquidity Hub powering a Main, AVAX Correlated, and Forex market.",
           "id": "research:ecd45b9d14fc2280d8",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "identity_status": "CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT",
           "published_utc": "2026-07-15T00:00:00Z",
           "title": "Aave V4 Launches on Avalanche",
           "url": "https://aave.com/blog/aave-v4-live-avalanche"
