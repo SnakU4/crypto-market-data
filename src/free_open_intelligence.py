@@ -580,6 +580,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     except ImportError:from src.coin_context_sources import collect_profiles
     profile_doc,profile_audit=collect_profiles(root,assets,cutoff,
         network=bool(network and live_collection))
+    try:from targeted_primary_context import collect as collect_primary_context
+    except ImportError:from src.targeted_primary_context import collect as collect_primary_context
+    primary_doc,primary_audit=collect_primary_context(root,assets,cutoff,
+        network=bool(network and live_collection))
     all_events=[]
     for kind,rows in (("expanded",xr),("research",direct_events),
                       ("adjacent",adjacent.get("events") or [])):
@@ -758,9 +762,16 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             ff.append(entry)
         select=sorted(by_asset[cid],key=lambda x:(-x["priority"],x["id"]))[:10]
         background=profile_doc["profiles"].get(str(cid))
+        primary_source=primary_doc["profiles"].get(str(cid))
+        issuer_source=bool(primary_source and primary_source.get("substantive") and
+            primary_source.get("source_kind")=="ISSUER_DOCUMENTATION")
         context_origins=[]
         if background and background.get("has_substantive_descriptive_context"):
             context_origins.append("EXACT_MATCH_PUBLIC_COIN_PROFILE")
+        if issuer_source:
+            context_origins.append("EXACT_CURATED_PROJECT_ORIGINAL_DOCUMENTATION")
+        elif primary_source and primary_source.get("substantive"):
+            context_origins.append("EXACT_CURATED_EXCHANGE_LISTING_NOT_ISSUER_DOCUMENTATION")
         if background and any(e.get("has_substantive_event_details")
                               for e in background.get("coin_events",[])):
             context_origins.append("EXACT_MATCH_THIRD_PARTY_DATED_EVENT_DESCRIPTION")
@@ -768,6 +779,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             context_origins.append("CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED")
         card={
             "source_backed_project_profile":background,
+            "targeted_project_primary_context":primary_source,
+            "substantive_original_issuer_context":issuer_source,
             "substantive_coin_specific_context_present":bool(context_origins),
             "substantive_coin_specific_context_origins":context_origins,
             "source_backed_project_profile_substantive":bool(
@@ -802,7 +815,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                             ("mapped_protocol_fundamentals",bool(ff)),
                             ("coin_relevant_article_text",any(len(e["excerpt"])>=150 for e in by_asset[cid])),
                             ("source_backed_coin_description",bool(
-                                background and background.get("has_substantive_descriptive_context"))))
+                                (background and background.get("has_substantive_descriptive_context"))
+                                or issuer_source)))
                              if not ok]
         }
         cards.append(card)
@@ -921,6 +935,11 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
                     for e in rich)]
     }
 
+    effective_project_gaps=[{"cmc_id":x["cmc_id"],"symbol":x["symbol"],"name":x["name"]}
+        for x in assets if not (
+            profile_doc["profiles"].get(str(x["cmc_id"]),{}).get("has_substantive_descriptive_context")
+            or primary_doc["profiles"].get(str(x["cmc_id"]),{}).get("source_kind")=="ISSUER_DOCUMENTATION"
+            and primary_doc["profiles"].get(str(x["cmc_id"]),{}).get("substantive"))]
     # Observe the true information quality by access type. Do NOT improve
     # the full-corpus rate merely by excluding low-context headlines.
     source_depth=collections.defaultdict(lambda:{"total":0,"substantive":0,
@@ -994,6 +1013,10 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
               sum(any(x["family"] not in ("token_supply","trending","okx_orderbooks") for x in family_by_coin[i]) for i in ids),
           "candidate_news_links":sum(bool(by_asset[i]) for i in ids),
           "third_party_coin_profiles_available":profile_audit["profile_present"],
+          "curated_issuer_docs_substantive":primary_audit["substantive_issuer_dossiers"],
+          "curated_exchange_only_docs_substantive":primary_audit["substantive_exchange_only_dossiers"],
+          "coins_with_substantive_project_background_combined":100-len(effective_project_gaps),
+          "coins_missing_substantive_project_background_combined":len(effective_project_gaps),
           "coins_with_substantive_coin_specific_context":sum(
               x["substantive_coin_specific_context_present"] for x in cards),
           "coins_missing_substantive_coin_specific_context":sum(
@@ -1025,6 +1048,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
       "adaptive_search_results":audit,
       "publisher_article_enrichment_audit":article_audit,
       "coin_descriptive_sources_audit":profile_audit,
+      "curated_original_project_sources_audit":primary_audit,
+      "combined_project_background_gaps":effective_project_gaps,
       "source_context_audit":source_context_audit,
       "global_observation_classification":"Noncoin/unlinked data are first-class global/network evidence, NOT token cash flows."}
     total_leads=max(1,coverage["evidence_counts"]["canonical_research_leads"])
@@ -1032,8 +1057,8 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     coverage["research_quality_gate"]={
         "all_100_coins_have_substantive_source_linked_context":
             coverage["per_coin"]["coins_with_substantive_coin_specific_context"]==100,
-        "all_100_substantive_project_background":profile_audit["all_100_substantive_background"],
-        "project_background_context_status":"COMPLETE" if profile_audit["all_100_substantive_background"] else "INCOMPLETE",
+        "all_100_substantive_project_background":not effective_project_gaps,
+        "project_background_context_status":"COMPLETE" if not effective_project_gaps else "INCOMPLETE",
         "coin_specific_event_text_status":"COMPLETE" if not manual_context["undercovered_coins"] else "INCOMPLETE",
         "project_background_not_fresh_catalyst":True,
         "technical_source_integration":"PASSED",
@@ -1048,7 +1073,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
         "publisher_source_attempted":article_audit["attempted"],
         "all_100_contracts_verified":False,
         "material_research_status":"PARTIAL_RESEARCH" if (
-            depth_rate<0.20 or len(article)<30 or profile_audit["profile_gaps"]
+            depth_rate<0.20 or len(article)<30 or effective_project_gaps
             or manual_context["undercovered_coins"]
             or coverage["per_coin"]["coins_missing_substantive_coin_specific_context"]
         ) else "REQUIRES_INDEPENDENT_SEMANTIC_VALIDATION",
@@ -1068,6 +1093,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
        "article_attempt_history_file":"docs/intelligence/article_attempt_history.json",
        "knowledge_file":"docs/intelligence/knowledge_index.json",
        "source_backed_project_profile_file":"docs/intelligence/coin_profiles.json",
+       "original_issuer_project_context_file":"docs/intelligence/primary_coin_context.json",
        "coin_batch_files":[f"docs/intelligence/coin_batches/batch_{i+1:02d}.json" for i in range(5)],
        "full_evidence_export":"docs/intelligence/export/evidence_index.jsonl",
        "full_evidence_export_is_actions_artifact_only":True,
@@ -1091,6 +1117,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     write(out/"research_tasks.json",{"tasks":tasks,
           "audit":audit,"no_auto_source_installation":True})
     write(out/"coin_profiles.json",profile_doc)
+    write(out/"primary_coin_context.json",primary_doc)
     write(out/"coverage_audit.json",coverage)
     write(out/"knowledge_index.json",{"evidence_count":len(evidence),
           "by_plane":dict(collections.Counter(e["source_plane"] for e in evidence)),
