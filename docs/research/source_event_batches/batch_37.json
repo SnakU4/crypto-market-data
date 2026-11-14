@@ -1,804 +1,6 @@
 {
-  "capture_utc": "2026-11-13T22:40:50Z",
+  "capture_utc": "2026-11-14T03:20:41Z",
   "events": [
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a6557a907fbef595213954c2",
-      "excerpt": "Hotfix Release: Bhilai Hard Fork on Mainnet NOTE: THIS RELEASE IS ONLY FOR MAINNET We are releasing a hotfix for the Bhilai Hard Fork on Mainnet , which upgrades the bor client to version v2.1.1 . Action Required: All mainnet operators are strongly recommended to upgrade their heimdall nodes to heimdall v1.2.4 to ensure continued compatibility and stability post-HF. This release addresses network compatibility issues and is essential for seamless participation in mainnet consensus following the Bhilai upgrade. Full Changelog : v1.2.3...v1.2.4",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.2.4",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-07-01T14:17:01Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.2.4"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8bdee9cbadfd3d56517e0a3b",
-      "excerpt": "This is just for testing Full Changelog : v1.2.3...v1.2.4-test",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.2.4-test",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-07-01T11:01:43Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.2.4-test"
-    },
-    {
-      "cmc_ids": [
-        5805
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "cb92c15a66debe7b5c543e68",
-      "excerpt": "Avalanche uses Aave to securely access decentralized capital markets.",
-      "first_observed_utc": "2026-11-13T07:07:03Z",
-      "headline": "Avalanche",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {
-        "5805": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-07-01T00:00:00Z",
-      "source_id": "aave_blog",
-      "source_ids": [
-        "aave_blog"
-      ],
-      "url": "https://aave.com/blog/avalanche"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "869a61f8d3dd7182e4158c1b",
-      "excerpt": "The cryptocurrency market plunged today, June 27, amid profit-taking among investors after the recent rally. Bitcoin dropped by 0.45% to $106,500, while the market valuation of all tokens fell by 0.60% to $3.2 trillion. Let’s explore why Bitcoin and altcoins are falling and some of the top cryptos to buy. Why Bitcoin and Altcoins Are […] The post Best Hidden Gems Crypto to Buy as Bitcoin and Altcoins Crash appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Best Hidden Gems Crypto to Buy as Bitcoin and Altcoins Crash",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-26T22:32:36Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2025/06/26/best-hidden-gems-crypto-to-buy-as-bitcoin-and-altcoins-crash/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "fda8a4ca72e1d94ec59e2c22",
-      "excerpt": "🚨 ⚠️ ONLY USE ON AMOY NETWORK ⚠️ 🚨 This release is a FALLBACK VERSION and should not be installed on any node unless explicitly required. It is intended for use only if the upcoming Heimdall v1 to v2 migration fails on the Amoy network. The migration is scheduled for Tuesday, June 24th, 2025 , between 07:00 PM and 09:00 PM UTC . The Amoy chain will halt at height 8788500 to initiate the migration. The -beta suffix indicates that this version is exclusively for Amoy and will not be used on mainnet. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Full Changelog : v1.2.3...v1.5.0-beta",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.5.0-beta",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-24T06:41:26Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.5.0-beta"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8ffb6663ee3940bd73f4f74b",
-      "excerpt": "🚨 ⚠️ ONLY USE ON AMOY NETWORK ⚠️ 🚨 This release must be installed on all nodes in the Amoy network for the upcoming Heimdall v1 to v2 migration, scheduled on Tuesday, June 24th, 2025 , between 07:00 PM and 09:00 PM UTC . The Amoy heimdall chain will halt at height 8788500 to initiate the migration. The -beta suffix indicates that this version is intended solely for Amoy use and will not be deployed on mainnet. What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Prevent checkpoint submission prior to the apocalypse by @Raneet10 in #1281 Bor without heimdall by @avalkov in #1278 Set default span duration by @avalkov in #1283 helper: set the apocalypseHeight to 8788500 (to use for amoy only) by @pratikspatil024 in #1284 Full Changelog : v1.2.3...v1.6.0-beta",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.6.0-beta",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-24T06:41:09Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.6.0-beta"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a4511e2d6a6112e66bd18fe2",
-      "excerpt": "What's Changed Backport master to develop by @marcello33 in #1273 Packager updates by @djpolygon in #1276 Export milestones by @avalkov in #1277 amoy genesis file by @marcello33 in #1279 fix typo by @marcello33 in #1280 Full Changelog : v1.2.3...v1.3.3-test",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.3.3",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-19T06:46:00Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.3.3-test"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2323447d7a36d7f47a434b46",
-      "excerpt": "helper: set the apocalypseHeight to 8788500 (to use for amoy only) (…",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.4.1-beta",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-19T06:10:51Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.4.1-beta"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2368a048e0383c9d189c4e74",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v1.4.0-beta",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-17T13:43:19Z",
-      "source_id": "polygon_heimdall_releases",
-      "source_ids": [
-        "polygon_heimdall_releases"
-      ],
-      "url": "https://github.com/0xPolygon/heimdall/releases/tag/v1.4.0-beta"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "e631fb4fd60457b375c908a2",
-      "excerpt": "Aave V4's new Hub and Spoke architecture unifies liquidity and enables specialized markets.",
-      "first_observed_utc": "2026-11-13T07:07:03Z",
-      "headline": "Understanding Aave V4’s Architecture",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-12T00:00:00Z",
-      "source_id": "aave_blog",
-      "source_ids": [
-        "aave_blog"
-      ],
-      "url": "https://aave.com/blog/understanding-aave-v4s-architecture"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "531ffb076ac402c86249f513",
-      "excerpt": "What's Changed bug: ABIResolver.ABI() Out of Gas by @adraffy in #441 Add default fallback to AddrResolver by @adraffy in #442 Remove Forward Fallback from UniversalResolver by @adraffy in #443 chore: deploy ur by @TateB in #445 Full Changelog : v1.5.1...v1.5.2",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "v1.5.2",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-06-10T04:48:47Z",
-      "source_id": "ens_releases",
-      "source_ids": [
-        "ens_releases"
-      ],
-      "url": "https://github.com/ensdomains/ens-contracts/releases/tag/v1.5.2"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "555b4e5f613d71bc957d0343",
-      "excerpt": "What's Changed Conslidate BytesUtils and NameCoder Implementations by @adraffy in #423 fix: UniversalResolver.supportsInterface() by @adraffy in #426 fix: NameCoder disallow literal-0 hashed label by @adraffy in #428 Relax HexUtils to support unpadded, add ENSIP19.parse() by @adraffy in #436 Refactor UR into AUR w/ findResolver() + Forward Fallback by @adraffy in #427 Add AbstractUniveralResolver.findResolver() to IUniversalResolver by @adraffy in #440 chore: deploy new ur by @TateB in #439 Full Changelog : v1.4.0...v1.5.1",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "v1.5.1",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-05-30T01:52:39Z",
-      "source_id": "ens_releases",
-      "source_ids": [
-        "ens_releases"
-      ],
-      "url": "https://github.com/ensdomains/ens-contracts/releases/tag/v1.5.1"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "278c692690c3f3e56b3b8a20",
-      "excerpt": "v3.1.1 Release Notes - May 10, 2025 Operators that deploy BFT Fabric nodes are encouraged to upgrade to v3.1.1. Improvements and Fixes A goroutine leak in the BFT replication client has been sealed by @pfi79 . A deadlock in SmartBFT caused by a view change concurrent to a block commit is now fixed , thanks to @pfi79 . Dependencies Fabric v3.1.1 has been tested with the following dependencies: Go 1.24.2 CouchDB v3.4.2 Fabric docker images on docker.io and ghcr.io utilize Ubuntu 24.04. Changes and Removals See the v3.0.0 release notes for changes and removals between Fabric v2.x and Fabric v3.x. Deprecated features Block dissemination via gossip is deprecated and may be removed Block dissemination via gossip is deprecated and may be removed in a future release. Fabric peers can be configured to receive blocks directly from an ordering service node, and not gossip blocks, by using the following configuration: peer.gossip.orgLeader: true peer.gossip.useLeaderElection: false peer.gossip.state.enabled: false peer.deliveryclient.blockGossipEnabled: false",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v3.1.1",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-05-10T20:08:15Z",
-      "source_id": "hyperledger_fabric_releases",
-      "source_ids": [
-        "hyperledger_fabric_releases"
-      ],
-      "url": "https://github.com/hyperledger/fabric/releases/tag/v3.1.1"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "e4146867efcd99a78bab28fb",
-      "excerpt": "v2.5.13 Release Notes - April 29, 2025 v2.5.13 updates code dependencies. Dependencies Fabric v2.5.13 has been tested with the following dependencies: Go 1.24.2 CouchDB v3.4.2 Go dependencies have also been updated. Fabric docker images on Docker Hub and GitHub Container Registry utilize Ubuntu 22.04. Deprecations (existing) Ordering service system channel is deprecated v2.3 introduced the ability to manage an ordering service without a system channel. Managing an ordering service without a system channel has privacy, scalability, and operational benefits. The use of a system channel is deprecated and may be removed in a future release. For information about removal of the system channel, see the Create a channel without system channel documentation . FAB-15754: The 'Solo' consensus type is deprecated. The 'Solo' consensus type has always been marked non-production and should be in use only in test environments; however, for compatibility it is still available, but may be removed entirely in a future release. FAB-16408: The 'Kafka' consensus type is deprecated. The 'Raft' consensus type was introduced in v1.4.1 and has become the preferred production consensus type. There is a documented and tested migration path from Kafka to Raft, and existing users should migrate to the newer ",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v2.5.13",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-04-29T11:55:59Z",
-      "source_id": "hyperledger_fabric_releases",
-      "source_ids": [
-        "hyperledger_fabric_releases"
-      ],
-      "url": "https://github.com/hyperledger/fabric/releases/tag/v2.5.13"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "bb237a91e52aeb9aea037860",
-      "excerpt": "Notice Mandatory upgrade New Features Adapt to Ethereum Cancun Upgrade TIP-650 : Implement EIP-1153 Transient Storage Opcodes ( #6185 , #6195 , #6214 ) TIP-651 : Implement EIP-5656 MCOPY - Memory Copying Instruction ( #6185 , #6194 ) TIP-745 : Introduce EIP-4844 and EIP-7516 instructions ( #6232 , #6247 , #6270 , #6283 ) Core TIP-694 : Enhance Verification of Transaction Limitation at Consensus Layer ( #6172 , #6221 ) Improve consensus layer verification to prevent malicious blocks from being produced in maintenance periods. ( #6187 ) Improve consensus layer verification to prevent malicious blocks with header times not integer multiples of 3s from being produced. ( #6186 ) Refine SR ranking algorithm to ensure consistency in rare cases. ( #6173 ) TVM TIP-652 : Deprecate SELFDESTRUCT Note: TIP-652 does not change the behavior of SELFDESTRUCT but formally announces core developers' intention of changing it in future upgrades. It is recommended that the SELFDESTRUCT opcode be exposed to users to warn them about an upcoming change in semantics. Net Optimize P2P protocol and dispose solidified block list to avoid network bandwidth wasting. ( #6184 ) Increase scheduling frequency of block synchronization tasks to improve efficiency of block synchronization. ( #6183 ) Enhance transacti",
-      "first_observed_utc": "2026-11-13T07:07:06Z",
-      "headline": "GreatVoyage-v4.8.0(Kant)",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-04-29T08:54:59Z",
-      "source_id": "tron_releases",
-      "source_ids": [
-        "tron_releases"
-      ],
-      "url": "https://github.com/tronprotocol/java-tron/releases/tag/GreatVoyage-v4.8.0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8826f090af846d15a19b2e85",
-      "excerpt": "What's Changed Update mainnet from staging by @Arachnid in #377 don't use bunx in postinstall scripts by @talentlessguy in #381 return abi.encoded values from extended dns resolver by @mdtanrikulu in #382 Initial revision of MigrationHelper by @Arachnid in #387 fixup postinstall by running patch-package as a dep by @talentlessguy in #403 bug: BytesUtils.compare() Arithmetic Overflow by @adraffy in #420 chore: use triple slash natspec by @TateB in #422 UniversalResolver w/CCIPBatcher by @adraffy in #421 Add new deployment of the Universal Resolver by @Arachnid in #424 fix: mainnet batch gateway urls on UR by @TateB in #425 New Contributors @adraffy made their first contribution in #420 Full Changelog : v1.1.6...v1.4.0",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "v1.4.0",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-27T14:57:07Z",
-      "source_id": "ens_releases",
-      "source_ids": [
-        "ens_releases"
-      ],
-      "url": "https://github.com/ensdomains/ens-contracts/releases/tag/v1.4.0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b1d3b360b3aa8955144c327b",
-      "excerpt": "What's Changed Ignore release candidate tags when determining latest tag for docs by @EnriqueL8 in #1588 use trivy ECR DB by @shorsher in #1596 break out of infinite retry for submitted ops by @shorsher in #1595 Upgrade to FireFly Common v1.4.12 by @EnriqueL8 in #1590 Update the postgres version in Dockerfile by @EnriqueL8 in #1602 Filter receipt events by namespace when possible by @awrichar in #1601 Issue templates by @alex-semenyuk in #1603 Pull_request template by @alex-semenyuk in #1604 Add GitIgnore for Fabric binaries and fix Dockerfile git version by @EnriqueL8 in #1626 Add a language switcher in README.md file. by @Shawn-Shaw-x in #1610 Broken Swagger links in documentation by @lanasta in #1620 Bump github.com/rs/cors from 1.10.1 to 1.11.0 by @dependabot in #1627 Updated to upload artifact v4 by @EnriqueL8 in #1628 docs: add troubleshooting section with notes on multiparty messaging by @awrichar in #1629 Use PAT for Scorecard publishing by @ryjones in #1631 chore: fix function name by @fudancoder in #1543 Docs swagger links path fixes by @lanasta in #1633 chore: make function comments match function names by @cloudclaim in #1520 OpenSSF Scorecard: fine grained workflow permissions by @EnriqueL8 in #1618 Scorecard readme by @EnriqueL8 in #1635 Fix write permissions by @al",
-      "first_observed_utc": "2026-11-13T07:07:10Z",
-      "headline": "v1.3.3",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-25T13:20:31Z",
-      "source_id": "hyperledger_firefly_releases",
-      "source_ids": [
-        "hyperledger_firefly_releases"
-      ],
-      "url": "https://github.com/hyperledger-firefly/firefly/releases/tag/v1.3.3"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "03f20698e9fabbbd24a4d297",
-      "excerpt": "What's Changed fix IPFS typo in 'init --help' by @vineshtk in #1551 Make new monitoring config to be disabled by default by @Chengxuan in #1667 New Contributors @vineshtk made their first contribution in #1551 Full Changelog : v1.3.3-rc.1...v1.3.3-rc.2",
-      "first_observed_utc": "2026-11-13T07:07:10Z",
-      "headline": "v1.3.3-rc.2",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-19T09:50:25Z",
-      "source_id": "hyperledger_firefly_releases",
-      "source_ids": [
-        "hyperledger_firefly_releases"
-      ],
-      "url": "https://github.com/hyperledger-firefly/firefly/releases/tag/v1.3.3-rc.2"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a2e515c59f669458720518d3",
-      "excerpt": "v3.1.0 Release Notes - March 18, 2025 New features Performance optimization - Batching of chaincode writes Chaincodes that write large numbers of keys were inefficient since each key write required communication between the chaincode and the peer. The new feature enables a chaincode developer to batch multiple writes into a single communication between the chaincode and the peer. A batch can be started by calling StartWriteBatch() . The chaincode can then perform key writes as usual. Then when FinishWriteBatch() is called or the transaction execution ends the writes will be sent to the peer. Batches over a configured size will be split into multiple batch segments. The batching approach significantly improves performance for chaincodes that write to many keys. Note that the batching only impacts the endorsement phase. The transaction itself, as well as the validation and commit phases, remains the same as previous versions. The batch writes are configured with the following peer core.yaml chaincode properties: chaincode.runtimeParams.useWriteBatch - boolean that indicates whether write batching is enabled on peer chaincode.runtimeParams.maxSizeWriteBatch - integer that indicates the maximum number of keys written per batch segment. The new feature requires chaincode to utilize fa",
-      "first_observed_utc": "2026-11-12T20:05:46Z",
-      "headline": "v3.1.0",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-18T17:49:32Z",
-      "source_id": "hyperledger_fabric_releases",
-      "source_ids": [
-        "hyperledger_fabric_releases"
-      ],
-      "url": "https://github.com/hyperledger/fabric/releases/tag/v3.1.0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "0de12d051eef0984dc6cb407",
-      "excerpt": "What's Changed Ignore release candidate tags when determining latest tag for docs by @EnriqueL8 in #1588 use trivy ECR DB by @shorsher in #1596 break out of infinite retry for submitted ops by @shorsher in #1595 Upgrade to FireFly Common v1.4.12 by @EnriqueL8 in #1590 Update the postgres version in Dockerfile by @EnriqueL8 in #1602 Filter receipt events by namespace when possible by @awrichar in #1601 Issue templates by @alex-semenyuk in #1603 Pull_request template by @alex-semenyuk in #1604 Add GitIgnore for Fabric binaries and fix Dockerfile git version by @EnriqueL8 in #1626 Add a language switcher in README.md file. by @Shawn-Shaw-x in #1610 Broken Swagger links in documentation by @lanasta in #1620 Bump github.com/rs/cors from 1.10.1 to 1.11.0 by @dependabot in #1627 Updated to upload artifact v4 by @EnriqueL8 in #1628 docs: add troubleshooting section with notes on multiparty messaging by @awrichar in #1629 Use PAT for Scorecard publishing by @ryjones in #1631 chore: fix function name by @fudancoder in #1543 Docs swagger links path fixes by @lanasta in #1633 chore: make function comments match function names by @cloudclaim in #1520 OpenSSF Scorecard: fine grained workflow permissions by @EnriqueL8 in #1618 Scorecard readme by @EnriqueL8 in #1635 Fix write permissions by @al",
-      "first_observed_utc": "2026-11-13T07:07:10Z",
-      "headline": "v1.3.3-rc.1",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-14T10:05:53Z",
-      "source_id": "hyperledger_firefly_releases",
-      "source_ids": [
-        "hyperledger_firefly_releases"
-      ],
-      "url": "https://github.com/hyperledger-firefly/firefly/releases/tag/v1.3.3-rc.1"
-    },
-    {
-      "cmc_ids": [
-        1027
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "82f0019e523cafcd2cffe73d",
-      "excerpt": "Celo-Blockchain Release 1.8.9 The latest release sets the L2MigrationBlock for Mainnet: Block Number: 31056500 Mar 26th 2025 ~02:43:30 AM UTC Bug fixes Add batch request limit and response size limit in a RPC batch request ( #2357 ) Notes As this is the first Mainnet release from the v1.8.4 it is worth highlighting the Notes from the v1.8.5 : The PR \"Omit ethCompatible on RPC responses for non legacy txs ( #2302 )\" omits also the feeCurrency, gatewayFeeRecipient, and gatewayFee keys from the response when their values are empty. This is to avoid flooding with null information for rpc users that use only Ethereum-compatible transactions. Depending on the implementation of the RPC consumers this could be a breaking change. It is done to align RPC output with Ethereum clients in preparation of the L2 launch. Full Changelog : v1.8.8...v1.8.9 Docker Images geth: us.gcr.io/celo-org/geth:1.8.9 geth-all: us.gcr.io/celo-org/geth-all:1.8.9",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "Thank you L1, see you on Ethereum (v1.8.9)",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {
-        "1027": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-13T12:48:16Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.9"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "c0d5c72d3efbac534775b507",
-      "excerpt": "What's Changed This release can be skipped for mainnet. The latest release introduces a new command-line flag, --l2migrationblock , which expects a (future) block number. When specified, the node will pause at l2migrationblock - 1 block. This feature is designed to assist chain operators with the migration to the new Cel2 architecture. Notes The PR \"Omit ethCompatible on RPC responses for non legacy txs ( #2302 )\" omits also the feeCurrency , gatewayFeeRecipient , and gatewayFee keys from the response when their values are empty. This is to avoid flooding with null information for rpc users that use only Ethereum-compatible transactions. Depending on the implementation of the RPC consumers this could be a breaking change. It is done to align RPC output with Ethereum clients in preparation of the L2 launch. Full Changelog : v1.8.4...v1.8.5 Docker Images geth: us.gcr.io/celo-org/geth:1.8.5 geth-all: us.gcr.io/celo-org/geth-all:1.8.5",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "Celo-Blockchain Release 1.8.5",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-13T12:40:07Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.5"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "25f51aa73ff297d542c0c492",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "v1.8.9-stable",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-03-05T11:35:54Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.9-stable"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "71d6a282577351b544e19ec7",
-      "excerpt": "The Libreswan Project has released libreswan 5.2 This is a feature release. It adds support for RFC 5723 Session Resumption, RFC 9347 IPTFS and draft-ietf-ipsecme-ikev2-qr-alt protocol extensions. It adds support for ipsec interfaces on the BSDs and improves the Linux ipsec interface support. It fixes an interop issue with iOS/OSX IKEv1 padding interop, supports Linux kernel 6.10+ requirements and other minor bugfixes and features. This latest version of libreswan can be downloaded from: https://download.libreswan.org/libreswan-5.2.tar.gz https://download.libreswan.org/libreswan-5.2.tar.gz.asc The full changelog is available at: https://download.libreswan.org/CHANGES Please report bugs either via one of the mailinglists or at our github bug tracker: https://lists.libreswan.org/ https://github.com/libreswan/libreswan/issues See also https://libreswan.org/ v5.2 (Feb 26, 2025) IKEv2: add PPK in INTERMEDIATE exchange, draft-ietf-ipsecme-ikev2-qr-alt-04 [Vukasin] add initial support for RFC 5723 IKE_SESSION_RESUME [Nupur Agrawal, Andrew] fix crash in <> [Andrew, Ilya Maximets #1894 ] fix bogus ERROR when deleting connection [Andrew, Ilya Maximets #1914 ] IPsec Interface: add support on FreeBSD, NetBSD and OpenBSD [Andrew] add ipsec-interface-managed=no for namespaces [Andrew] IKEv1: r",
-      "first_observed_utc": "2026-11-13T07:07:09Z",
-      "headline": "5.2",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-02-26T23:12:24Z",
-      "source_id": "libreswan_releases",
-      "source_ids": [
-        "libreswan_releases"
-      ],
-      "url": "https://github.com/libreswan/libreswan/releases/tag/v5.2"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c5dc2eee1505b5da4d671fb6",
-      "excerpt": "The Libreswan Project has released libreswan 5.1 This is a bugfix release. Most importantly, a fix to work properly with Linux 6.9+ kernels, and a workaround for a but in reconnecting iOS/OSX clients that use IKEv1 with XAUTH/ModeConfig. The handling of ipsec interfaces was improved as well. This latest version of libreswan can be downloaded from: https://download.libreswan.org/libreswan-5.1.tar.gz https://download.libreswan.org/libreswan-5.1.tar.gz.asc The full changelog is available at: https://download.libreswan.org/CHANGES Please report bugs either via one of the mailinglists or at our github bug tracker: https://lists.libreswan.org/ https://github.com/libreswan/libreswan/issues See also https://libreswan.org/ v5.1 (Oct 8, 2024) IKEv2: fix race when initiator-responder cross rekey requests [Andrew] don't ignore Delete IKE SA request while waiting for Delete IKE SA response [Andrew] log arrival of first IKE_AUTH request that triggers DH [Andrew] rate limit logging of packets with invalid payloads IKEv1: fix Quick mode installing 0.0.0.0/0 when no MSG_CONFIG exchange [Andrew, Tuomo] fix iOS Quick mode request needing to re-recover lease [Andrew, Tuomo] fix regression where deleting ISAKMP deleted IPsec [Andrew, Tuomo] add config options of ah=sha2{256,512} [Andrew] add DH29,DH3",
-      "first_observed_utc": "2026-11-13T07:07:09Z",
-      "headline": "5.1",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-02-26T23:03:16Z",
-      "source_id": "libreswan_releases",
-      "source_ids": [
-        "libreswan_releases"
-      ],
-      "url": "https://github.com/libreswan/libreswan/releases/tag/v5.1"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "8bb3e8f1b1fdc2639bff27f0",
-      "excerpt": "US President Donald Trump’s trade war with China is having unexpected consequences for Bitcoin. Despite positive post-election signals from the crypto markets, which soared to an all-time high of $3.9 trillion, Trump’s latest moves may have some unintended effects. The US-China trade war, which Trump restarted soon after coming to office, is having negative effects on Bitcoin. Miners, […] The post Is Bitcoin in Trouble? Trade War Hits Miners Hard appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Is Bitcoin in Trouble? Trade War Hits Miners Hard",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-02-13T16:59:44Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2025/02/13/is-bitcoin-in-trouble-trade-war-hits-miners-hard/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "ebc3cbb97ec247ab483c4842",
-      "excerpt": "This release can be skipped for mainnet. The latest release sets the L2MigrationBlock for the Baklava testnet: Block Number: 28308600 Full Changelog : v1.8.7...v1.8.8 Docker Images geth: us.gcr.io/celo-org/geth:1.8.8 geth-all: us.gcr.io/celo-org/geth-all:1.8.8",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "Celo-Blockchain Release 1.8.8",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-02-06T12:11:45Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.8"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "UPGRADE"
-      ],
-      "event_id": "17b9759c6ab2901d547350ea",
-      "excerpt": "This release can be skipped for mainnet. The latest release sets the L2MigrationBlock for Alfajores testnet (already migrated but to keep a clean client): Block Number: 26384000 Sep-26-2024 08:14:35 AM UTC Full Changelog : v1.8.5...v1.8.7 Docker Images geth: us.gcr.io/celo-org/geth:1.8.7 geth-all: us.gcr.io/celo-org/geth-all:1.8.7",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "Celo-Blockchain Release 1.8.7",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-02-05T12:20:50Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.7"
-    },
-    {
-      "cmc_ids": [
-        7083
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "39e14a160c2edbd94a3183e9",
-      "excerpt": "test updates ( #932 ) * fix fork tests * allow fork cheatcodes * pr feedback yee * woohoo --------- Co-authored-by: Alice Henshaw <henshawalice@gmail.com> Co-authored-by: saucepoint <saucepoint@protonmail.com> Co-authored-by: dianakocsis <diana.kocsis@uniswap.org>",
-      "first_observed_utc": "2026-11-12T20:01:57Z",
-      "headline": "Uniswap Protocol v4",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
-      "match_methods": {
-        "7083": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2025-01-23T19:00:03Z",
-      "source_id": "uniswap_v4_releases",
-      "source_ids": [
-        "uniswap_v4_releases"
-      ],
-      "url": "https://github.com/Uniswap/v4-core/releases/tag/v4.0.0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "6d35b52e46c3fc2bb9c438b8",
-      "excerpt": "XRP price has surged remarkably, riding a bullish wave and recovering strongly after recent market dips. Over the past 24 hours, XRP has emerged as a standout performer amid a broader market rebound, sparking optimism among investors. This impressive momentum has ignited speculation about further gains and its potential impact on Ripple. As the cryptocurrency […] The post Why Is XRP Price Up Today? appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Why Is XRP Price Up Today?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-12-21T14:37:19Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2024/12/21/why-is-xrp-price-up-today/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d108d50f56e50741d66e44a0",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-13T07:07:07Z",
-      "headline": "v1.8.6",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-12-05T17:24:40Z",
-      "source_id": "celo_releases",
-      "source_ids": [
-        "celo_releases"
-      ],
-      "url": "https://github.com/celo-org/celo-blockchain/releases/tag/v1.8.6"
-    },
-    {
-      "cmc_ids": [
-        74
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "f3f55eb88b0e3b32cc2b1227",
-      "excerpt": "This is a new minor version release that fixes bugs that were inherited from upstream Bitcoin and Namecoin code. All users, on all platforms, are strongly recommended to upgrade. Please see the release notes for further information.",
-      "first_observed_utc": "2026-11-12T20:01:57Z",
-      "headline": "Dogecoin Core 1.14.9",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
-      "match_methods": {
-        "74": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-12-01T16:06:12Z",
-      "source_id": "doge_releases",
-      "source_ids": [
-        "doge_releases"
-      ],
-      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.9"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "129b28c8c0fb11a668e104af",
-      "excerpt": "Notice Mandatory upgrade New Features Core TIP-697 : Migrate pow operation from java.lang.Math to java.lang.StrictMath for cross-platform computational consistency. ( #6098 ) Change Solve temporary block synchronization failure in event subscription nodes due to event handling exceptions. ( #6096 ) Support graceful shutdown with signal -15 (SIGTERM) for nodes enabling backup . ( #6095 ) Improve duration metrics accuracy of gRPC interfaces. ( #6097 ) Optimize precompiled contracts. ( #6101 ) Integrity Check All available JAR files in this release are signed via this GPG key. For more information about the GPG public key, please refer to: Integrity Check . From the download listings below you should see links to the downloadable jar files as well as sig signature files. To verify the authenticity of any jar file, grab the jar and sig files with the same prefix name and then execute the verification process: GPG signature verification Not what we have but what we enjoy, constitutes our abundance. ---Epicurus",
-      "first_observed_utc": "2026-11-13T07:07:06Z",
-      "headline": "GreatVoyage-v4.7.7(Epicurus)",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-11-29T06:24:24Z",
-      "source_id": "tron_releases",
-      "source_ids": [
-        "tron_releases"
-      ],
-      "url": "https://github.com/tronprotocol/java-tron/releases/tag/GreatVoyage-v4.7.7"
-    },
-    {
-      "cmc_ids": [
-        1,
-        4847
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c75072cbdee6d3ad0eeead05",
-      "excerpt": "Bitcoin price went parabolic on Monday as the path to $100,000 became clearer. BTC surged to $88,000 for the first time on record, and the Fear of Missing Out (FOMO) could push it much higher in the coming days. Stacks (STX), a key layer-2 network for the Bitcoin ecosystem could be the next big thing. […] The post Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Missed the Bitcoin Price Surge: Stacks (STX) Could Be Next",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {
-        "1": "FULL_NAME",
-        "4847": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-11-12T02:44:01Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2024/11/12/missed-the-bitcoin-price-surge-stacks-stx-could-be-next/"
-    },
-    {
-      "cmc_ids": [
-        3635
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "f1afcbca614badabd0bdd500",
-      "excerpt": "Cronos price has gone parabolic, making it one of the best performing cryptocurrencies in the industry. The CRO token soared to a high of $0.1771, its highest swing since March 5. It has jumped by 40% on Monday and by 156% from its lowest level in August, giving it a market cap of over $4.6 […] The post Cronos Price Prediction as CRO Gets Severely Overbought appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Cronos Price Prediction as CRO Gets Severely Overbought",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {
-        "3635": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-11-11T20:35:21Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2024/11/11/cronos-price-prediction-as-cro-gets-severely-overbought/"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "86d16b11a0bbb291a232d14c",
-      "excerpt": "Bitcoin price remained on edge on Monday, falling for six consecutive days as investors remained fearful ahead of the US election. BTC, the OG of the crypto industry, was trading at $68,550, much lower than last week’s high of $73,645. Fear and uncertainty ahead of election Bitcoin price has pulled back, falling by over 6.7% […] The post Bitcoin Price Prediction: Will BTC Recover Ahead of US Election? appeared first on BanklessTimes .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Bitcoin Price Prediction: Will BTC Recover Ahead of US Election?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2024-11-04T10:49:30Z",
-      "source_id": "banklesstimes_news",
-      "source_ids": [
-        "banklesstimes_news"
-      ],
-      "url": "https://www.banklesstimes.com/news/2024/11/04/bitcoin-price-prediction-will-btc-recover-ahead-of-us-election/"
-    },
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
@@ -810,7 +12,7 @@
       "excerpt": "feat: Updated BulkRenewal contract with fixed duration, fixed item price, and target expiry options",
       "first_observed_utc": "2026-11-13T07:07:07Z",
       "headline": "v1.3.0-testnet",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-10-24T04:33:52Z",
@@ -831,7 +33,7 @@
       "excerpt": "What's Changed fix: doc site release action by @EnriqueL8 in #1556 Add explicit github actions permissions by @alex-semenyuk in #1560 Fixing protocol ID docs by @dwertent in #1564 Refactor maybePersistBlockchainEvent to Return a Boolean Indicating Event Creation Status by @dwertent in #1559 Tag image as latest only when releasing the latest tag by @dwertent in #1566 chore: Update documentation for custom smart contracts by @dwertent in #1562 Large JSON number support for input params by @matthew1001 in #1569 fix: get latest tag by @dwertent in #1570 Upgrade to Go 1.22 by @matthew1001 in #1573 chore: Ignore markdown files and GitHub workflows in Docker and Go wo… by @dwertent in #1565 chore: Fix Cache Mismatch by Deep Copying Operation by @dwertent in #1561 Update manifest for 1.3.2-rc.2 by @matthew1001 in #1578 Document support in v1.3.2 for large JSON numbers by @matthew1001 in #1577 Update ffcommon, ffsigner, ffevmconnect by @matthew1001 in #1579 Update firefly-tezosconnect by @alex-semenyuk in #1580 Handle large numbers when unmarshalling to an operation by @matthew1001 in #1581 Update installation instructions for FireFly CLI by @dwertent in #1572 Add more tests for missing coverage by @EnriqueL8 in #1582 Pull in the latest versions of UI, token connectors, and tezos connect ",
       "first_observed_utc": "2026-11-13T07:07:10Z",
       "headline": "v1.3.2",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-10-03T13:48:30Z",
@@ -852,7 +54,7 @@
       "excerpt": "What's Changed [release/v9.3] Make jsonrpc api interface compatible with eip-1898 by @chetan-zilliqa in #3949 [release/v9.3] Filter duplicate Eth logs at api level by @chetan-zilliqa in #3950 Full Changelog : v9.3.6...v9.3.7",
       "first_observed_utc": "2026-11-13T07:07:07Z",
       "headline": "v9.3.7",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-09-12T05:03:50Z",
@@ -873,7 +75,7 @@
       "excerpt": "Brett, the biggest meme coin in the Base Blockchain, has continued its bearish trend this week amid waning demand. The token has dropped for four consecutive weeks, reaching a low of $0.083, its lowest point since August 8. It has retreated by over 57% from its highest point this year. As a result, its market […] The post Brett, the Base Meme Coin, Sheds $1 Billion as Price Tanks appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Brett, the Base Meme Coin, Sheds $1 Billion as Price Tanks",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-16T10:45:00Z",
@@ -896,7 +98,7 @@
       "excerpt": "Cosmos token is on track for its fourth week in the red as its demand dries up and as the crypto industry faces challenges. ATOM dropped to $4.8 on Friday, its lowest point since 2021 and almost 90% below its highest point on record. Cosmos has lost market share Cosmos, which used to be one […] The post Cosmos Loses Key Support as ATOM Staking Yield Hits 18% appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Cosmos Loses Key Support as ATOM Staking Yield Hits 18%",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "3794": "FULL_NAME"
       },
@@ -919,7 +121,7 @@
       "excerpt": "Polygon price continued its downtrend this week as cryptocurrencies continued to underperform the broader market. MATIC token was trading at $0.403 on Friday, a few points above its 2022 low of $0.3178. Polygon has lost market share MATIC has crashed by over 86% from its highest point on record, underperforming coins like Ethereum and Bitcoin. […] The post Polygon Nears a Key Support: Time to Accumulate MATIC? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Polygon Nears a Key Support: Time to Accumulate MATIC?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-16T03:07:07Z",
@@ -942,7 +144,7 @@
       "excerpt": "Marathon Digital, the biggest Bitcoin mining company by market cap, is working to differentiate itself from its rivals like Riot Platforms, Bitfarms, and Core Scientific. The company has changed its business model in the past few months. Instead of being just a Bitcoin mining company and taking part in miner capitulation, it has decided to […] The post Bitcoin Miner, Marathon Digital, is Becoming a Mini MicroStrategy appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Bitcoin Miner, Marathon Digital, is Becoming a Mini MicroStrategy",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -967,7 +169,7 @@
       "excerpt": "Bitcoin price was attempting to retest and move above the important resistance point at $60,000 on Thursday as the crypto fear and greed index retreated. BTC was trading at $59,000 even as American equities continued their comeback. Bitcoin lags Dow Jones and other indices The Dow Jones rose by over 400 points while the Nasdaq […] The post Bitcoin Struggles to Hit $60k; BlackCardCoin, Mog Coin, Helium Sinks appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Bitcoin Struggles to Hit $60k; BlackCardCoin, Mog Coin, Helium Sinks",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -990,7 +192,7 @@
       "excerpt": "The top three cryptocurrencies we identified as potential scams are the Coinmarketcap token (CMC), AKELA, and Yescoin. Before emerging as a scam, a Coinmarketcap token presale promised users a 10% bonus. Their digital wallets were exposed to a crypto drainer when they tried to participate. On August 14, Coinmarketcap’s official X account posted a warning: […] The post Top 3 Cryptocurrencies Identified as Potential Scams: CMC, Akela, Yescoin appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Top 3 Cryptocurrencies Identified as Potential Scams: CMC, Akela, Yescoin",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-14T11:09:43Z",
@@ -1014,7 +216,7 @@
       "excerpt": "Blackrock is winning the crypto ETF race. Its iShares Bitcoin Trust (IBIT) has grown to become the biggest ETF in the industry with over $21 billion in assets, a move that has flipped the Grayscale Bitcoin Trust (GBTC), which had a pole position in the industry. Blackrock’s ETHA ETF has $742 million in assets Blackrock […] The post Blackrock’s ETHA is Leading the Spot Ethereum ETF Inflow Race appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Blackrock’s ETHA is Leading the Spot Ethereum ETF Inflow Race",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1027": "FULL_NAME"
       },
@@ -1039,7 +241,7 @@
       "excerpt": "With Shiba Inu’s recent launch of a fiat on-ramp service, users can buy BONE and USDC with MasterCard or Visa. The service eliminates the challenges of bridging tokens and navigating difficult exchanges, making BONE and USDC more accessible to users. Hopefully, this will enhance the tokens’ utility and value. Making BONE purchases more efficient The […] The post BONE Price Under Pressure: Will Shiba Inu’s Fiat On-ramp Reverse the Trend? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "BONE Price Under Pressure: Will Shiba Inu’s Fiat On-ramp Reverse the Trend?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "5994": "FULL_NAME"
       },
@@ -1062,7 +264,7 @@
       "excerpt": "While Generative AI has proven invaluable, many consumers worry that these AI tools might scam them out of money or sensitive information. BanklessTimes.com reports that over 70% of people fear scams from Generative AI. “Elizabeth Kerr, the site’s financial analyst, comments that cybercriminals are sadly manipulating Generative AI’s ability to generate highly accurate responses in […] The post Over 70% Worried About Scams from Generative AI appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Over 70% Worried About Scams from Generative AI",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-14T08:28:59Z",
@@ -1083,7 +285,7 @@
       "excerpt": "BlackCardCoin (BCCOIN) is today’s biggest winner on CoinGecko and Coinmarketcap, with remarkable gains of 77% in the last 24 hours. It is outperforming the global cryptocurrency market, which is up 9.70%. The asset could rise on news that its team injected $600,000 in liquidity into PancakeSwap, consisting of 100,000 BCCOIN and $300,000 in USDT. This is part of a strategy […] The post BlackCardCoin Soars 77%: Can The BCCOIN Rally Maintain Momentum? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "BlackCardCoin Soars 77%: Can The BCCOIN Rally Maintain Momentum?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-14T07:26:05Z",
@@ -1106,7 +308,7 @@
       "excerpt": "The Sui Blockchain is doing well, and developer and user interest continues to rise. The SUI token rose to a high of $1.1175 on Monday, its highest point since June 9, and 140% above its lowest point this month, making it one of the best-performing tokens in the market. Data by DeFi Llama shows that […] The post Sui Blockchain Flips Avalanche on a Key DEX Metric appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Sui Blockchain Flips Avalanche on a Key DEX Metric",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "5805": "FULL_NAME"
       },
@@ -1132,7 +334,7 @@
       "excerpt": "Bitcoin price crossed the important resistance of $60,000, triggering a mini rally among other altcoins. BTC was trading at $60,500 on Wednesday morning, a few points below its highest point last week of $62,723. Immutable X, Fantom, and Stacks rise THORChain (RUNE), one of the biggest decentralized exchanges (DEX), was the best performer on Thursday, […] The post Immutable X, Fantom, Stacks Rises as Bitcoin Crosses $60k appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Immutable X, Fantom, Stacks Rises as Bitcoin Crosses $60k",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME",
         "4847": "FULL_NAME"
@@ -1156,7 +358,7 @@
       "excerpt": "Blockchain business Essential announced that it had bagged $11 million in Series A funding, headed by Archetype, and included participation from multiple other prominent investors. Surprisingly, this comes at a time when funding in crypto and blockchain companies has taken a hit this quarter. Essential to provide “intent-centric” service The goal of Essential is to […] The post Blockchain Project Essential Bags $11M Series A Funding: Details Below appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Blockchain Project Essential Bags $11M Series A Funding: Details Below",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-13T22:18:07Z",
@@ -1177,7 +379,7 @@
       "excerpt": "Global spending on AI projects is rising, with the banking sector taking the lead in investments. According to BanklessTimes.com, banking services poured over $20.6 billion in AI investments in 2023. The site’s financial analyst, Elizabeth Kerr, comments, “The diverse application of AI technologies- including machine learning and NLP can drive meaningful results for banks, promising […] The post Banking Sector Leads AI Investment Surge with $20.6 B, Outpacing Retail appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Banking Sector Leads AI Investment Surge with $20.6 B, Outpacing Retail",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-13T16:43:26Z",
@@ -1198,7 +400,7 @@
       "excerpt": "A flash crash wiped $100 billion from the crypto market in three hours in January 2024. There was another one in March when the BTC-EUR 1% market depth on Coinbase dropped from 60 BTC to 16 BTC before returning to normal. In April, billions of dollars in value evaporated in a few hours. A flash […] The post The Flash Crash Phenomenon: Why Market Volatility Is More Dangerous Than Ever appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "The Flash Crash Phenomenon: Why Market Volatility Is More Dangerous Than Ever",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-13T11:59:02Z",
@@ -1219,7 +421,7 @@
       "excerpt": "The Zimbabwe ZiG currency has held quite well in the past four months as the government intensified plans to make it the country’s main medium of exchange. Data by the central bank shows that the USD to ZiG exchange rate was trading at 13.7, slightly higher than its first day open of 13.4. Zimbabwe ZiG […] The post USD to ZiG: Zimbabwe Gold Currency is Holding Well; Risks Remain appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "USD to ZiG: Zimbabwe Gold Currency is Holding Well; Risks Remain",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-13T09:05:00Z",
@@ -1242,7 +444,7 @@
       "excerpt": "The Bitcoin price is sending mixed signals, with bulls and bears divided on what to expect in the coming months. On Tuesday, BTC was trading at $59,152, up from last week’s low of $49,000. Bitcoin price technicals vs fundamentals Fundamentally, Bitcoin still has more room to run as spot Exchange-Traded Funds (ETFs) are seeing more […] The post Bitcoin at a Crossroads: What I Believe It Will Take to Rebound from the Recent Drop appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Bitcoin at a Crossroads: What I Believe It Will Take to Rebound from the Recent Drop",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1265,7 +467,7 @@
       "excerpt": "Helium’s HNT token has gained almost 50% over the past week on news that two leading US telecommunication companies have initiated tests to transfer traffic to the Helium Mobile Network. According to a statement, the first carrier’s subscribers total 185,378, up from 5,122 since June 18. This is the number of people connected to the […] The post Helium Sees 50% Surge: Why HNT is Increasing This Week appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Helium Sees 50% Surge: Why HNT is Increasing This Week",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-13T04:24:28Z",
@@ -1290,7 +492,7 @@
       "excerpt": "Bitcoin (BTC), Ethena (ENA), and Celestia (TIA) prices have held steady this week as attention shifts to the upcoming US Consumer Price Index (CPI) data. BTC was trading at $59,455 on Tuesday morning, higher than this month’s low of 49,000. Ethena, the creator of the USDe stablecoin, was trading at $0.3223, 45% higher than last […] The post US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "US CPI Data: How Will it Impact Bitcoin, Ethena, and Celestia Prices?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME",
         "22861": "FULL_NAME",
@@ -1317,7 +519,7 @@
       "excerpt": "Solana prices have been pointing towards a bearish move after tumbling over 2.3% for the day and being one of the worst performers. However, some market participants still have high hopes for the coin’s future trajectory. Solana weekly move shows volatile trading The price of Solana had extremely erratic fluctuations this past week, impacted by […] The post Solana Bearish Turn: Will The Market See a Price Drop to $130? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Solana Bearish Turn: Will The Market See a Price Drop to $130?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -1340,7 +542,7 @@
       "excerpt": "Despite price hikes and password restrictions, Netflix’s subscriber base has surged, bringing massive profits for the streaming service. According to Banklesstimes.com, Netflix’s subscribers have risen by 30% in the last four years. From Q2’21, Netflix had only 209 million subscribers; now, this figure has snowballed to 277 million in Q2’24. The site’s financial analyst, Elizabeth […] The post Netflix’s Paid Subscribers Worldwide Rise by 30% in 4 years appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Netflix’s Paid Subscribers Worldwide Rise by 30% in 4 years",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-12T14:56:35Z",
@@ -1361,7 +563,7 @@
       "excerpt": "The total number of TRON accounts has now surpassed 250 million. This milestone has raised questions about the future price of TRX, the native token of the TRON ecosystem. Currently, TRX is trading at $0.1276, and its value has shown minimal movement today. Although TRX remains quite a distance from its all-time high of $0.2317, […] The post TRON Hits 250 Million Accounts: Will It Spark TRX Price Rally? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "TRON Hits 250 Million Accounts: Will It Spark TRX Price Rally?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-12T11:16:25Z",
@@ -1384,7 +586,7 @@
       "excerpt": "Bitcoin and other cryptocurrencies dropped sharply on Monday as last week’s recovery faded. After staying above $60,000 during the weekend, Bitcoin retreated to $58,000 on Monday morning. Jasmy, Solana, and Mantra slipped Other cryptocurrencies, such as JasmyCoin (JASMY), Solana (SOL), and Mantra (OM), dropped by a larger margin. Jasmy fell to $0.02, down over 15% from last week’s […] The post Why are Jasmy, Solana, and Mantra Token Prices Falling? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Why are Jasmy, Solana, and Mantra Token Prices Falling?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -1407,7 +609,7 @@
       "excerpt": "On August 8, cryptocurrency exchange MEXC announced the Wrapped Dog (WDOG) listing in its Assessment Zone. Deposits are now open, and trading for the WDOG/USDT pair will commence at 10:00 UTC today. Withdrawals for traders will be available starting at 10:00 UTC tomorrow, August 13. 🚨#MEXC New Listing Alert! 📈 $WDOG /USDT will be listed […] The post MEXC Lists WDOG: Will the 46% Price Surge Hold or Fade? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "MEXC Lists WDOG: Will the 46% Price Surge Hold or Fade?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-12T08:25:24Z",
@@ -1428,7 +630,7 @@
       "excerpt": "After the cryptocurrency market experienced significant losses this morning, we learned that 14 cryptocurrencies are token unlocks nearly $230 million this week. This has raised concerns about increased volatility. Last week was turbulent, with significant price drops and pronounced bearish sentiment. The major upcoming releases are expected to deepen selling pressure. Data from TokenUnlocks reveals that […] The post Crypto Turbulence Ahead: $229 Million in Token Unlocks Set to Shake the Market appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Crypto Turbulence Ahead: $229 Million in Token Unlocks Set to Shake the Market",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-12T07:23:58Z",
@@ -1451,7 +653,7 @@
       "excerpt": "On Monday morning, the crypto industry was a sea of red as Bitcoin and other cryptocurrencies slumped. Bitcoin dropped from last week’s high of $62,000 to $58,000, triggering a deep dive among other altcoins and meme coins. Meme coins become worst performers Meme coins were among the worst performers due to their high volatility. Dogwifhat […] The post Meme Coin Price Crash: WIF, Pepe, Brett Cryptos Fall as BTC Hits $58k appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Meme Coin Price Crash: WIF, Pepe, Brett Cryptos Fall as BTC Hits $58k",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "24478": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1474,7 +676,7 @@
       "excerpt": "Hamster Kombat, the popular Telegram tap-to-earn platform, is under intense pressure from impatient community members to list the HMSTR token. It is still unclear when the final listing will happen, although the developers have committed to do it soon. In a recent note, the creators listed a few things to watch when it finally lists, […] The post Very Bad News for the Hamster Kombat (HMSTR) Token appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Very Bad News for the Hamster Kombat (HMSTR) Token",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-12T02:49:07Z",
@@ -1495,7 +697,7 @@
       "excerpt": "According to BanklessTimes.com, Nvidia’s gaming sector is down by nearly 30%. However, the AI chipmaker covered the downturn with an incredible rise in data revenue, which has surged six-fold since its fiscal year 2023. The site’s financial analyst, Elizabeth Kerr, comments, “The generative AI momentum is picking up, fueling the need for data centres and […] The post Nvidia Gaming Sector Revenue Drops 26% While Data Revenue Rockets 6x in 2 Years appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Nvidia Gaming Sector Revenue Drops 26% While Data Revenue Rockets 6x in 2 Years",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-09T18:05:26Z",
@@ -1518,7 +720,7 @@
       "excerpt": "Bitcoin price has recovered slightly from the blood bath that happened on Monday after global markets plunged due to economic uncertainties. At the press time, the BTC to AUD conversion shows that the OG-crypto currency is trading at A$87,197.40, up 1.3% as compared to same time last day. However, investors are still concerned about the […] The post Bitcoin Price Makes Comeback But Investors Still Concerned: Here is Why appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Bitcoin Price Makes Comeback But Investors Still Concerned: Here is Why",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1541,7 +743,7 @@
       "excerpt": "Crypto market might be done with its bad phase, with many in the industry hoping for a recovery soon. A report by Bybit in partnership with BlockScholes highlights that the latest Option Volatility shows that crypto market’s worst time might be over. Crypto market crash in tandem with global markets The poorer-than-expected nonfarm payroll report […] The post Crypto Market Likely Heads For Gains As Sell-Off Ends : Bybit Report appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Crypto Market Likely Heads For Gains As Sell-Off Ends : Bybit Report",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-09T14:08:18Z",
@@ -1564,7 +766,7 @@
       "excerpt": "According to the latest polling data, the odds of Kamala Harris as the United States president are rising. A Polymarket poll with over $556 million in assets places Kamala and Donald Trump at an equal 49%. Kamal Harris could beat Trump This poll is actually positive for Kamala since she has closed a gap that […] The post Polymarket: Kamala is Beating Trump, Bitcoin to be Fine appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Polymarket: Kamala is Beating Trump, Bitcoin to be Fine",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1589,7 +791,7 @@
       "excerpt": "Bitcoin mining difficulty hit a new high in 2024. It has been rising proportionally to Bitcoin’s price since about 2019. Before that, it was almost entirely flat. NEW: #Bitcoin miner difficulty hit a new ATH 🚀 pic.twitter.com/OOMWi8NdVU — Bitcoin Magazine (@BitcoinMagazine) August 8, 2024 How is Bitcoin mining measured? Bitcoin mining difficulty is measured in […] The post Bitcoin Mining Difficulty Hits New Heights: Are Bullish Trends on the Way? appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Bitcoin Mining Difficulty Hits New Heights: Are Bullish Trends on the Way?",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1614,7 +816,7 @@
       "excerpt": "Bitfarms (BITF) stock bounced back this week after the company published its quarterly financial results and after Bitcoin rallied. After bottoming at $1.65 on Monday, the stock has rebounded by almost 40% to $2.30. Other Bitcoin mining stocks have also crawled back in the past few days. CleanSpark jumped to over $12, up from Monday’s […] The post 3 Reasons Bitcoin Mining Stock Bitfarms is Rising appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "3 Reasons Bitcoin Mining Stock Bitfarms is Rising",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1637,7 +839,7 @@
       "excerpt": "Crypto exchange MEXC announced that the Ethernity token ERN was listed in the Assessment Zone today at 05:00 UTC. Deposits are open, and the ERN/USDT trading pair is available. However, withdrawals will open on August 10 at 05:00 UTC. 🚨#MEXC New Listing Alert! 📈 $ERN/USDT will be listed in the Assessment Zone on 2024-08-09 05:00 […] The post Ethernity Gains Traction as MEXC Announces ERN Listing appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Ethernity Gains Traction as MEXC Announces ERN Listing",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-09T05:30:41Z",
@@ -1661,7 +863,7 @@
       "excerpt": "Cryptocurrency prices have entered a fresh bull market as the crypto fear and greed index moves from Monday’s fear zone to over 56. Bitcoin has helped this rebound, rallying over 10% in the last 24 hours. Sui token helped to lead the recovery, rising to $0.8360, much higher than this week’s low of $0.4615. This […] The post Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Crypto Bull Run: Sui, Sei, Celestia, Injective tokens Lead Rebound",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "22861": "FULL_NAME",
         "7226": "FULL_NAME"
@@ -1685,7 +887,7 @@
       "excerpt": "In this post: The once-bustling NFT market has experienced a staggering reduction in active wallets. According to BanklessTimes.com, the number of wallets buying or selling NFTs has dropped by 75% in the last year. Speaking on the development, Edith Reads, a financial analyst from BanklessTimes, said: “ Several projects and digital assets are saturated in […] The post Number of Wallets Buying or Selling NFTs Drops by 75% in the Last Year appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Number of Wallets Buying or Selling NFTs Drops by 75% in the Last Year",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-08T12:02:29Z",
@@ -1706,7 +908,7 @@
       "excerpt": "Bitstamp, the oldest crypto exchange in the world, and fintech firm Stripe announced a partnership to support Stripe’s fiat-to-crypto onramp in the EU. The partnership will allow EU consumers to buy crypto directly and easily. Developers can embed Stripe onramp directly into their site or app, giving users a seamless checkout experience optimized for crypto […] The post Stripe and Bitstamp Announce Collaboration for Fiat-to-Crypto Onramping in the EU appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Stripe and Bitstamp Announce Collaboration for Fiat-to-Crypto Onramping in the EU",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2024-08-08T11:52:22Z",
@@ -1729,7 +931,7 @@
       "excerpt": "Solana price has staged a strong comeback this week, making it one of the best-performing layer-1 tokens in the industry. SOL has surged above $155 against USDT, increasing by over 41% from its lowest point this week. SOL token flips ETH However, Solana has just soared to a record high against Ethereum and is approaching […] The post Solana Price Forecast as it Hits a Record High on a Key Metric appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Solana Price Forecast as it Hits a Record High on a Key Metric",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -1755,7 +957,7 @@
       "excerpt": "Ethena’s USDe has been launched on Solana through LayerZero Labs, the team responsible for the omni-chain interoperability protocol LayerZero. This development has implications for ENA, Ethena Labs’ native token. According to a post by Ethena Labs, OFT—SOL is now a backing asset for USDe, pending a community vote. August 7th marks Ethena's Solana integration: – […] The post Ethena Price Prediction as Stablecoin USDe Goes Live on Solana appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Ethena Price Prediction as Stablecoin USDe Goes Live on Solana",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "30171": "FULL_NAME",
         "5426": "FULL_NAME"
@@ -1781,7 +983,7 @@
       "excerpt": "Cryptocurrencies mostly bounced back on Thursday as signs that investors were buying the dip increased. Popcat, a popular Solana meme coin, rose to $0.65, 134% above its lowest point this year, making it one of the best-performing tokens in the market. WIF, Popcat, and Polkadot are rising Dogwifhat (WIF) token also rose for three consecutive […] The post Popcat, WIF, Polkadot Crypto Prices Rise as Traders Buy the Dip appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Popcat, WIF, Polkadot Crypto Prices Rise as Traders Buy the Dip",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1807,7 +1009,7 @@
       "excerpt": "Stellar Lumens token price rose for the third consecutive day as the market reacted to the latest Ripple Labs and Securities and Exchange Commission (SEC) settlement. The XLM token rose to $0.103 on Thursday, up over 30% from its lowest point this year. It joined Ripple, whose XRP token jumped to $0.6178, 43% higher than […] The post Stellar Lumens Token Rises After Ripple XRP SEC Settlement appeared first on BanklessTimes .",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Stellar Lumens Token Rises After Ripple XRP SEC Settlement",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {
         "512": "FULL_NAME"
       },
@@ -1818,6 +1020,798 @@
         "banklesstimes_news"
       ],
       "url": "https://www.banklesstimes.com/news/2024/08/08/stellar-lumens-token-rises-after-ripple-xrp-sec-settlement/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a8b42573a787fd85d51d3bc3",
+      "excerpt": "ETH or Ethereum prices dwindled on Wednesday after a dormant wallet moved ETH worth $2 billion. Possible market pressure was created after hundreds of wallets connected to the $4.2 billion PlusToken Ponzi scheme were seized and started transferring thousands of ether (ETH). At the press time, Ethereum was trading at $2,438.02, down over 1.2%. On-chain […] The post Dormant Wallet’s $2B ETH Shift Creates Market Panic: What’s Happening? appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Dormant Wallet’s $2B ETH Shift Creates Market Panic: What’s Happening?",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-08T01:48:46Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/08/dormant-wallets-2-bln-eth-shift-creates-market-panic-whats-happening/"
+    },
+    {
+      "cmc_ids": [
+        74
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "45052642105f9e8ea91789f1",
+      "excerpt": "This is a new minor version release including important bugfixes to networking code. All users, on all platforms, are strongly recommended to upgrade. A full description of all changes is available in the release notes Note: availability of a notarized MacOS dmg is delayed due to a hiccup in the interaction with Apple's service, but it is expected to be provided at a later time. The unsigned, fully reproducible built MacOS version is available. Important bugfixes Reduced peer inv object counts Improved transaction request tracking Improved orphan transaction handling Reduced getheaders traffic for inv messages Improved reporting of difficulty adjustment errors Updates to pinned dependencies Updated freetype to version 2.11.0 Updated expat to version 2.6.2",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "Dogecoin Core 1.14.8",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
+      "match_methods": {
+        "74": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T22:02:48Z",
+      "source_id": "doge_releases",
+      "source_ids": [
+        "doge_releases"
+      ],
+      "url": "https://github.com/dogecoin/dogecoin/releases/tag/v1.14.8"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "16f76d861c45da052ad9fa82",
+      "excerpt": "Bitget on Wednesday announced a new welcome offer aimed at luring new customers and enhancing their cryptocurrency experience. In addition to taking advantage of an amazing 100% APR savings reward, new users can earn up to 40 USDT between August 5 and September 2. Bitget’s new move comes at a time when most crypto exchanges […] The post Bitget Introduces Welcome Offer For New Users: Here’s What Makes It Unique appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Bitget Introduces Welcome Offer For New Users: Here’s What Makes It Unique",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T15:00:51Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/bitget-introduces-welcome-offer-for-new-users-what-makes-it-unique/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a4ea54442b9f9ad808b8e3cb",
+      "excerpt": "Samsung has been a significant player in the smartphone market. However, its market share has decreased significantly over the last ten years. In Q2 2024, Samsungs global smartphone market share was 18.9 percent, which is quite a drop from its dominant position in the early 2010s. According to BanklessTimes.com, Samsung’s global smartphone shipment share decreased […] The post Samsung’s Global Smartphone Shipment Share Shrinks 38% in 10 Years appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Samsung’s Global Smartphone Shipment Share Shrinks 38% in 10 Years",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T10:56:41Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/samsungs-global-smartphone-shipment-share-shrinks-38-in-10-years/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "9757dc47ced00a9ddeaa07a2",
+      "excerpt": "By developing relevant skills and acquiring a solid understanding of the technology, you stand a good chance of getting a well-paid job in blockchain. Building a network won’t hurt either. This article provides an overview of the best-paid blockchain jobs and tips on how to land them. The Best-Paid Blockchain Job: Crypto Legal Expert This […] The post Crypto Goldmine: How to Land the Best-Paid Blockchain Jobs appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Crypto Goldmine: How to Land the Best-Paid Blockchain Jobs",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T10:53:10Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/crypto-goldmine-how-to-land-the-best-paid-blockchain-jobs/"
+    },
+    {
+      "cmc_ids": [
+        1027,
+        5426,
+        8000
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f6f5245f7f7f51df0b7fcc10",
+      "excerpt": "Lido Finance, the biggest player in the Decentralized Finance (DeFi) industry, has flipped popular blockchains like Ethereum, Jito, Solana, and Tron in 24-hour fees collected. Data by DeFi Llama shows that the platform made over $6.64 million in fees in the last 24 hours. In contrast, Ethereum made $1.98 million, while Jito, a top Solana […] The post Lido DAO Flips Ethereum, Jito, Solana, and Tron on a Key Metric appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Lido DAO Flips Ethereum, Jito, Solana, and Tron on a Key Metric",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "1027": "FULL_NAME",
+        "5426": "FULL_NAME",
+        "8000": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T10:02:00Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/lido-dao-flips-ethereum-jito-solana-and-tron-on-a-key-metric/"
+    },
+    {
+      "cmc_ids": [
+        1437
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "748d4faaf9daa7844d47386e",
+      "excerpt": "Zcash’s ZEC token is currently trading for $33.23, marking a 12.4% increase in the last 24 hours, according to CMC data. This surge is likely due to recent news that MetaMask, a leading crypto wallet, has pledged $150,000 to support the development of a MetaMask Snap, enabling support for Shielded ZEC. A member of the […] The post Zcash (ZEC) Surges as MetaMask Matches $150K to Enhance Privacy Features appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Zcash (ZEC) Surges as MetaMask Matches $150K to Enhance Privacy Features",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "1437": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T06:31:19Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/zcash-zec-surges-as-metamask-matches-150k-to-enhance-privacy-features/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8aa0a4d6a702e13928fdd949",
+      "excerpt": "Tap-to-earn games have become highly popular this year, with Hamster Kombat and TapSwap leading the way. The two networks have accumulated over 300 million and 70 million users globally and are expected to receive significant valuations when they start trading. Hamster Kombat’s YouTube channel has grown to over 36 million subscribers, while the number of […] The post A Big Risk for Hamster Kombat and TapSwap Has Emerged appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "A Big Risk for Hamster Kombat and TapSwap Has Emerged",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T06:09:00Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/a-big-risk-for-hamster-kombat-and-tapswap-has-emerged/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2a8841049f212f718663214e",
+      "excerpt": "Blockchain tracker Whale Alert reported that a Bitcoin whale recently activated a dormant Bitcoin address containing 250 BTC after 11.2 years. At the current price of $57,086 per BTC, the transfer is worth $14.27 million. In 2013, Bitcoin was only worth $29,245. What does the Bitcoin whale transfer mean? Dormant Bitcoin addresses from over a […] The post Bitcoin Whale Awakens 250 BTC Stash Worth $14M After 11.2 Years appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Bitcoin Whale Awakens 250 BTC Stash Worth $14M After 11.2 Years",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T05:57:00Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/bitcoin-whale-awakens-250-btc-stash-worth-14m-after-11-2-years/"
+    },
+    {
+      "cmc_ids": [
+        5426
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b4fefac67aa0b0221d7f4334",
+      "excerpt": "Solana’s price recovered dramatically just a day after the various economic markets experienced a bloodbath in terms of losses. According to CoinMarketCap data, the token emerged as one of the top gainers for the day. At press time, the coin was trading at $153.56, up 10.09% from the same time last day. Solana price recovery in tandem with […] The post Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Solana Sees Steady Recovery After Market Sell-Off: Here is What We Know",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "5426": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T04:33:57Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/solana-sees-steady-recovery-after-market-sell-off-here-is-what-we-know/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DEFI_ACTIVITY"
+      ],
+      "event_id": "d807dced1046aca1702628f6",
+      "excerpt": "According to Ki Young Ju, the Bitcoin price has numerous catalysts that could push it higher despite the recent volatility. On Wednesday morning, BTC was trading at $56,754, having risen for two consecutive days. This price was significantly higher than this week’s low of $49,000. Catalysts for Bitcoin In an X post, Young, who founded CryptoQuant, […] The post Bitcoin Price Prediction: Pro Identifies 4 On-Chain Catalysts appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Bitcoin Price Prediction: Pro Identifies 4 On-Chain Catalysts",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T02:41:41Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/bitcoin-price-prediction-pro-identifies-4-on-chain-catalysts/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "4b050dabb7ee9d6f278187f6",
+      "excerpt": "In the middle of market chaos, Binanace managed to stay stable and keep its investors’ confidence up. According to the crypto exchange, Binance had a net influx of US$1.2 billion in the last 24 hours despite the macroeconomic environment and market decline. Amid the macroeconomic climate and yesterday's market downturn, #Binance recorded a net inflow […] The post Binance Sees $1.2 Bln in Net Inflows Despite Market Turmoil: What’s Next? appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Binance Sees $1.2 Bln in Net Inflows Despite Market Turmoil: What’s Next?",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-07T01:34:17Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/07/binance-sees-1-2-bln-in-net-inflows-despite-market-turmoil-whats-next/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ae353b551db01ffcb648d384",
+      "excerpt": "Despite bleak global markets on August 5, including the cryptocurrency market, spot ether ETFs recorded inflows of more than $48 million that day, an X post by CoinGecko reveals. Notable ether inflows include ETHA with $47.1 million, ETHV with $16.6 million, FETH with $16.2 million, and ETHW with $7.2 million. Clearly, not each ether ETF […] The post Ether ETFs Defy Global Market Downturn with $48.7M Inflows appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Ether ETFs Defy Global Market Downturn with $48.7M Inflows",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T12:54:36Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/ether-etfs-defy-global-market-downturn-with-48-7m-inflows/"
+    },
+    {
+      "cmc_ids": [
+        7186
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3da53c9255402162b2eb6585",
+      "excerpt": "PlayToEarn, a leading Web3 games data aggregator, ranked the ten most popular PlayToEarn games on August 6. Pancake Protectors, using the CAKE token, is at the top of the list, and Axie Infinity is a distant second. NANITE is third, followed by The Sandbox and Illuvium. The top 10 are Celeros, Chibi Clash, Lumiterra, IN, […] The post CAKE Soars as Pancake Protectors Tops List of Play2Earn Games appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "CAKE Soars as Pancake Protectors Tops List of Play2Earn Games",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "7186": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T10:24:56Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/cake-soars-as-pancake-protectors-tops-list-of-play2earn-games/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "021e49a45c0d85e99ddc2706",
+      "excerpt": "The Blackrock USD Institutional Digital Liquidity Fund (BUIDL), Franklin Templeton’s OnChain US Government Money Market Fund (FOBXX), and Ondo Finance’s USDY token are bracing for a key event that could affect their growth. These assets have seen elevated growth in the past few months. BUIDL has accumulated over $519 million in assets, while FOBXX has […] The post Blackrock’s BUIDL, Franklin’s FOBXX, and USDY Brace for Key Event appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Blackrock’s BUIDL, Franklin’s FOBXX, and USDY Brace for Key Event",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T09:00:00Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/blackrocks-buidl-franklins-fobxx-and-usdy-brace-for-key-event/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "c35fab638fba4758fbc0d85f",
+      "excerpt": "The broader crypto market is recovering after yesterday’s Black Monday. Against this backdrop, the top gainers are TAO, BRETT, and AKT. At press time, the coins had added approximately 52%, 45%, and 43% to their value in the last 24 hours. TAO is a strong sell despite recent growth Bittensor’s native token has steadily increased, except for […] The post TAO, BRETT, AKT Shine as Crypto Market Bounces Back appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "TAO, BRETT, AKT Shine as Crypto Market Bounces Back",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T07:26:52Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/tao-brett-akt-shine-as-crypto-market-bounces-back/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "REGULATION"
+      ],
+      "event_id": "b9754d8421cc25d1cc9a2190",
+      "excerpt": "The US Securities and Exchange Commission (SEC) disputed leading crypto exchange Coinbase’s request for millions of records, including SEC Chair Gary Gensler’s private correspondence. This is the most recent development in the SEC vs. Coinbase saga. In a court filing dated August 5, the SEC stated that Coinbase violated the strict liability provisions of the […] The post SEC vs. Coinbase: Battle Over Millions of Unlogged Documents Heats Up appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "SEC vs. Coinbase: Battle Over Millions of Unlogged Documents Heats Up",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T06:24:36Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/sec-vs-coinbase-battle-over-millions-of-unlogged-documents-heats-up/"
+    },
+    {
+      "cmc_ids": [
+        1
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f3e27c7393f11e0e1f03a0a2",
+      "excerpt": "Bitcoin mining stocks may be ripe for a bullish breakout as BTC formed two important bullish patterns and as recession odds rose. CleanSpark (CLSK) stock price closed on Monday at $12.20, higher than the intraday low of $9.36, its lowest point since February 4th. It remains in a deep bear market, slipping by over 50% […] The post Bitcoin Mining Stocks CLSK, MARA, CORZ Rise as BTC Forms Bullish Patterns appeared first on BanklessTimes .",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Bitcoin Mining Stocks CLSK, MARA, CORZ Rise as BTC Forms Bullish Patterns",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {
+        "1": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-06T06:00:00Z",
+      "source_id": "banklesstimes_news",
+      "source_ids": [
+        "banklesstimes_news"
+      ],
+      "url": "https://www.banklesstimes.com/news/2024/08/06/bitcoin-mining-stocks-clsk-mara-corz-rise-as-btc-forms-bullish-patterns/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "a26e23106274b5a9a4cc4978",
+      "excerpt": "feat: New ExtendedDNSResolver with support for multiple record types",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v1.1.6-testnet",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-02T12:23:36Z",
+      "source_id": "ens_releases",
+      "source_ids": [
+        "ens_releases"
+      ],
+      "url": "https://github.com/ensdomains/ens-contracts/releases/tag/v1.1.6-testnet"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2235c698fa55f506f1d45c4d",
+      "excerpt": "feat: New ExtendedDNSResolver with support for multiple record types",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v1.1.6",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-08-02T12:20:51Z",
+      "source_id": "ens_releases",
+      "source_ids": [
+        "ens_releases"
+      ],
+      "url": "https://github.com/ensdomains/ens-contracts/releases/tag/v1.1.6"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "1f6ee4d66af91b6800149292",
+      "excerpt": "code freeze for migration into the sequencer repo",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "papyrus_mono_repo_05",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-23T09:25:07Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/papyrus_mono_repo_05"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "0e331bcdaeb7a503b4254ced",
+      "excerpt": "code freeze for migration into the sequencer repo",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "papyrus_mono_repo_04",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-23T09:09:47Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/papyrus_mono_repo_04"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "177c56c032e8b93fb30aa819",
+      "excerpt": "code freeze for migration into the sequencer repo",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "papyrus_mono_repo_03",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-23T08:56:16Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/papyrus_mono_repo_03"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7a5442e1b54df454511849a0",
+      "excerpt": "code freeze for migration into the sequencer repo",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "papyrus_mono_repo_02",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-23T08:37:09Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/papyrus_mono_repo_02"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "68790917d394b20c4d8bbf61",
+      "excerpt": "What's Changed [release/v9.3] Increase eth logs retention to approximately 7 days by @chetan-zilliqa in #3948 Full Changelog : v9.3.5...v9.3.6",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v9.3.6",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-18T02:21:18Z",
+      "source_id": "zilliqa_releases",
+      "source_ids": [
+        "zilliqa_releases"
+      ],
+      "url": "https://github.com/Zilliqa/zq1/releases/tag/v9.3.6"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ccc3b592ce2fd5d5c80e1012",
+      "excerpt": "Papyrus crates release candidate 0 for Starknet 0.13.2",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "crates-v0.4.0-rc.0",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-15T09:17:26Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/crates-v0.4.0-rc.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "9e2155e633e5aaa5d63ccda4",
+      "excerpt": "Papyrus tag for initial mono-repo allignment",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "papyrus_mono_repo_01",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-15T09:14:34Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/papyrus_mono_repo_01"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "e4ff46b332394c24b95e2be2",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "v0.4.0-rc.0",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-15T08:34:06Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/v0.4.0-rc.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d279e0d1ddb9c68ad967ab3a",
+      "excerpt": "pre-release 0.4.0 corresponding to Starknet 13.2, not on a designated…",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "v0.4.0-dev.1",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-08T13:10:35Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/v0.4.0-dev.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8fbb8dbf118e1892d5bd31bb",
+      "excerpt": "pre-release 0.4.0 corresponding to Starknet 13.2, not on a designated…",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "v0.4.0-dev.0",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-03T17:58:20Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/v0.4.0-dev.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ad15654615b20ec857f4bd46",
+      "excerpt": "Publish version v0.4.0-dev.4 to crates.io",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "crates-v0.4.0-dev.4",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-07-02T08:37:22Z",
+      "source_id": "starknet_papyrus_releases",
+      "source_ids": [
+        "starknet_papyrus_releases"
+      ],
+      "url": "https://github.com/starkware-libs/papyrus/releases/tag/crates-v0.4.0-dev.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7a10e0d9c2a6c58852706a86",
+      "excerpt": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation Jana Jaklic Fri, 06/28/2024 - 10:22",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-06-28T08:22:54Z",
+      "source_id": "eba_press",
+      "source_ids": [
+        "eba_press"
+      ],
+      "url": "https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "95e499d396e87697c1b71a03",
+      "excerpt": "1.19.4 (2024-06-19) Bug Fixes Fix typos on techpaper ( #950 ) ( 682e86c )",
+      "first_observed_utc": "2026-11-12T20:01:57Z",
+      "headline": "v1.19.4",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-06-25T17:57:27Z",
+      "source_id": "aave_v3_releases",
+      "source_ids": [
+        "aave_v3_releases"
+      ],
+      "url": "https://github.com/aave/aave-v3-core/releases/tag/v1.19.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a979ad76ef6ebddcd187bf15",
+      "excerpt": "What's Changed [release/v9.3] Only pick nodes in first half of committee to forward blocks by @JamesHinshelwood in #3939 [release/v9.3] Only consider DS guards when selecting who should forward blocks by @JamesHinshelwood in #3940 [release/v9.3] (fix): update VERSION to v9.3.5 by @mauromedda in #3941 Full Changelog : v9.3.4...v9.3.5",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v9.3.5",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-05-10T00:25:00Z",
+      "source_id": "zilliqa_releases",
+      "source_ids": [
+        "zilliqa_releases"
+      ],
+      "url": "https://github.com/Zilliqa/zq1/releases/tag/v9.3.5"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ea734d4710f2f30d2c5c039b",
+      "excerpt": "What's Changed [master] Allow API to be paused by @bzawisto in #3911 [master] Drop outdated consensus messages by @bzawisto in #3912 [master] Detect broken link as a sender by @bzawisto in #3913 [master] Allow ext seedpubs to communicate with public ones by @bzawisto in #3914 [master] Update ERC20isZRC2 example in EVMAcceptanceTests by @WuBruno in #3916 [master] Zil 5543 fireblocks fixes by @bzawisto in #3917 [master] Zil 5559 show pending transactions by @bzawisto in #3920 [master] Fix ZIL-5568 : TransactionIndex field is not hex string. by @chetan-zilliqa in #3919 [master] (fix): update the pipelines for the new GHA runners by @mauromedda in #3926 [master] Some bug fixes by @bzawisto in #3934 [master] Zil-5586 : seedpubs eth_getTransactionCount doesn't support pending block number by @chetan-zilliqa in #3931 [master] Return pending txn nonce only if config is set by @chetan-zilliqa in #3936 [master] Fixing block response by @bzawisto in #3937 [master] Log txn payload by @bzawisto in #3938 New Contributors @WuBruno made their first contribution in #3916 Full Changelog : v9.3.0...v9.3.4",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v9.3.4",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-05-09T08:17:53Z",
+      "source_id": "zilliqa_releases",
+      "source_ids": [
+        "zilliqa_releases"
+      ],
+      "url": "https://github.com/Zilliqa/zq1/releases/tag/v9.3.4"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "0a80622404a33c737d94934f",
+      "excerpt": "What's Changed [master] Return pending txn nonce only if config is set by @chetan-zilliqa in #3936 [master] Fixing block response by @bzawisto in #3937 Full Changelog : v9.3.4rc0...v9.3.4rc1",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v9.3.4rc1",
+      "last_observed_utc": "2026-11-14T03:20:54Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2024-05-07T09:22:38Z",
+      "source_id": "zilliqa_releases",
+      "source_ids": [
+        "zilliqa_releases"
+      ],
+      "url": "https://github.com/Zilliqa/zq1/releases/tag/v9.3.4rc1"
     }
   ]
 }

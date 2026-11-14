@@ -1,5 +1,5 @@
 {
-  "capture_utc": "2026-11-13T22:40:50Z",
+  "capture_utc": "2026-11-14T03:20:41Z",
   "cmc100_verified": 100,
   "coin_count_with_event_candidate": 43,
   "coin_metrics_with_defillama": 47,
@@ -88,7 +88,7 @@
       "coin_coverage": 0,
       "source_count": 14,
       "status": "PARTIAL",
-      "successful_sources": 12
+      "successful_sources": 14
     },
     "CRYPTO_REGIONAL_REPORTING": {
       "coin_coverage": 0,
@@ -309,7 +309,7 @@
       "successful_sources": 0
     },
     "ORDERBOOK_LIQUIDITY": {
-      "coin_coverage": 67,
+      "coin_coverage": 44,
       "gap": "SWAP_ORDERBOOK_SNAPSHOT_ONLY;USD_DEPTH_REQUIRES_VERIFIED_CONTRACT_SIZE",
       "source_count": 78,
       "status": "PARTIAL",
@@ -516,9 +516,9 @@
   "market_index_last_update": "2026-11-13T03:30:00.000Z",
   "perp_oi_change_24h_measured": 0,
   "rss_events_discarded_due_to_cap": 0,
-  "rss_events_seen_before_cap": 3087,
-  "rss_events_stored": 3087,
-  "rss_events_with_cmc_candidate": 537,
+  "rss_events_seen_before_cap": 3042,
+  "rss_events_stored": 3042,
+  "rss_events_with_cmc_candidate": 546,
   "rss_source_quality": {
     "aave_blog": {
       "items_parsed": 61,
@@ -529,7 +529,7 @@
     "aave_governance": {
       "items_parsed": 30,
       "nonempty_publisher_excerpt": 30,
-      "published_last_72h": 14,
+      "published_last_72h": 15,
       "source_family": "PRIMARY_GOVERNANCE"
     },
     "aave_v3_releases": {
@@ -543,6 +543,12 @@
       "nonempty_publisher_excerpt": 10,
       "published_last_72h": 0,
       "source_family": "PRIMARY_PROTOCOL_RELEASE"
+    },
+    "ambcrypto_news": {
+      "items_parsed": 16,
+      "nonempty_publisher_excerpt": 2,
+      "published_last_72h": 16,
+      "source_family": "CRYPTO_ORIGINAL_REPORTING"
     },
     "aptos_releases": {
       "items_parsed": 10,
@@ -730,6 +736,12 @@
       "published_last_72h": 7,
       "source_family": "PRIMARY_CLOUD_INFRA"
     },
+    "coincentral_news": {
+      "items_parsed": 10,
+      "nonempty_publisher_excerpt": 10,
+      "published_last_72h": 10,
+      "source_family": "CRYPTO_ORIGINAL_REPORTING"
+    },
     "coindesk": {
       "items_parsed": 25,
       "nonempty_publisher_excerpt": 0,
@@ -799,7 +811,7 @@
     "crypto_news_flash": {
       "items_parsed": 20,
       "nonempty_publisher_excerpt": 20,
-      "published_last_72h": 16,
+      "published_last_72h": 15,
       "source_family": "CRYPTO_ORIGINAL_REPORTING"
     },
     "cryptobriefing_news": {
@@ -853,7 +865,7 @@
     "defiant": {
       "items_parsed": 70,
       "nonempty_publisher_excerpt": 70,
-      "published_last_72h": 64,
+      "published_last_72h": 67,
       "source_family": "DEFI_NEWS"
     },
     "dlnews": {
@@ -973,7 +985,7 @@
     "forkast_news": {
       "items_parsed": 10,
       "nonempty_publisher_excerpt": 10,
-      "published_last_72h": 4,
+      "published_last_72h": 5,
       "source_family": "CRYPTO_REGIONAL_REPORTING"
     },
     "frax_releases": {
@@ -1009,7 +1021,7 @@
     "hackster_news": {
       "items_parsed": 25,
       "nonempty_publisher_excerpt": 25,
-      "published_last_72h": 25,
+      "published_last_72h": 24,
       "source_family": "CROSS_SECTOR_EMBEDDED"
     },
     "hashicorp_vault_releases": {
@@ -1033,7 +1045,7 @@
     "huggingface_blog": {
       "items_parsed": 70,
       "nonempty_publisher_excerpt": 0,
-      "published_last_72h": 7,
+      "published_last_72h": 6,
       "source_family": "PRIMARY_AI_RESEARCH"
     },
     "huggingface_transformers_releases": {
@@ -1181,9 +1193,9 @@
       "source_family": "PRIMARY_PROTOCOL_RELEASE"
     },
     "nature_news": {
-      "items_parsed": 70,
-      "nonempty_publisher_excerpt": 68,
-      "published_last_72h": 67,
+      "items_parsed": 0,
+      "nonempty_publisher_excerpt": 0,
+      "published_last_72h": 0,
       "source_family": "INDEPENDENT_SCIENCE"
     },
     "near_releases": {
@@ -1213,7 +1225,7 @@
     "nvidia_blog": {
       "items_parsed": 18,
       "nonempty_publisher_excerpt": 18,
-      "published_last_72h": 3,
+      "published_last_72h": 2,
       "source_family": "PRIMARY_AI_SEMICONDUCTOR"
     },
     "ondo_releases": {
@@ -1261,7 +1273,7 @@
     "polkadot_governance": {
       "items_parsed": 30,
       "nonempty_publisher_excerpt": 30,
-      "published_last_72h": 7,
+      "published_last_72h": 6,
       "source_family": "PRIMARY_GOVERNANCE"
     },
     "polkadot_releases": {
@@ -1302,7 +1314,7 @@
     },
     "pytorch_releases": {
       "items_parsed": 10,
-      "nonempty_publisher_excerpt": 6,
+      "nonempty_publisher_excerpt": 5,
       "published_last_72h": 10,
       "source_family": "CROSS_SECTOR_AI_INFRA"
     },
@@ -1325,8 +1337,8 @@
       "source_family": "CYBER_SECURITY_RESEARCH"
     },
     "science_magazine_news": {
-      "items_parsed": 10,
-      "nonempty_publisher_excerpt": 1,
+      "items_parsed": 9,
+      "nonempty_publisher_excerpt": 2,
       "published_last_72h": 0,
       "source_family": "INDEPENDENT_SCIENCE"
     },
@@ -1416,13 +1428,13 @@
     },
     "techcrunch": {
       "items_parsed": 20,
-      "nonempty_publisher_excerpt": 13,
+      "nonempty_publisher_excerpt": 14,
       "published_last_72h": 20,
       "source_family": "CROSS_SECTOR_TECH_NEWS"
     },
     "techspot_news": {
       "items_parsed": 30,
-      "nonempty_publisher_excerpt": 27,
+      "nonempty_publisher_excerpt": 28,
       "published_last_72h": 30,
       "source_family": "CROSS_SECTOR_TECH_NEWS"
     },
@@ -1482,8 +1494,8 @@
     },
     "utoday_news": {
       "items_parsed": 70,
-      "nonempty_publisher_excerpt": 42,
-      "published_last_72h": 50,
+      "nonempty_publisher_excerpt": 40,
+      "published_last_72h": 52,
       "source_family": "CRYPTO_ORIGINAL_REPORTING"
     },
     "vechain_releases": {
@@ -1538,43 +1550,43 @@
   "source_attempts": [
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "aave_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://aave.com/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "aave_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://governance.aave.com/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "aave_v3_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/aave/aave-v3-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "algorand_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/algorand/go-algorand/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -1583,346 +1595,346 @@
       ],
       "source_id": "alternative_fng",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://api.alternative.me/fng/?limit=2"
     },
     {
-      "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "error": null,
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "ambcrypto_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
-      "status": "ERROR",
+      "started_utc": "2026-11-14T03:20:56Z",
+      "status": "OK",
       "url": "https://ambcrypto.com/feed/"
     },
     {
       "error": "HTTP 429",
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "aptos_forum",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:04Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "ERROR",
       "url": "https://forum.aptoslabs.com/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "aptos_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:43Z",
       "status": "OK",
       "url": "https://github.com/aptos-labs/aptos-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "arbitrum_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://blog.arbitrum.io/rss/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:49Z",
       "source_id": "arbitrum_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://forum.arbitrum.foundation/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "arbitrum_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/OffchainLabs/nitro/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "ars_technica",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "arweave_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/ArweaveTeam/arweave/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "arxiv_ai",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://rss.arxiv.org/rss/cs.AI"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "arxiv_distributed",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://rss.arxiv.org/rss/cs.DC"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "arxiv_economics",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://rss.arxiv.org/rss/econ.GN"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "arxiv_security",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://rss.arxiv.org/rss/cs.CR"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "avax_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:43Z",
       "status": "OK",
       "url": "https://github.com/ava-labs/avalanchego/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "axelar_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/axelarnetwork/axelar-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "banklesstimes_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.banklesstimes.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "beincrypto_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://beincrypto.com/feed/"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "bis_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "ERROR",
       "url": "https://www.bis.org/rss/index.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "bitcoinist_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://bitcoinist.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "bitcoinmag",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://bitcoinmagazine.com/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "bleepingcomputer_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.bleepingcomputer.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "blockworks_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://blockworks.co/feed"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "bls_cpi",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "ERROR",
       "url": "https://www.bls.gov/feed/cpi.rss"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "bls_jobs",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "ERROR",
       "url": "https://www.bls.gov/feed/empsit.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "bnb_chain_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/bnb-chain/bsc/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "boe_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.bankofengland.co.uk/rss/news"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "btc_core_notices",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:56Z",
+      "started_utc": "2026-11-14T03:20:49Z",
       "status": "ERROR",
       "url": "https://bitcoincore.org/en/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:43Z",
       "source_id": "btc_core_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://github.com/bitcoin/bitcoin/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "btcecho_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.btc-echo.de/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "cardano_node_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/IntersectMBO/cardano-node/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "celestia_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/celestiaorg/celestia-node/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "celo_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/celo-org/celo-blockchain/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "cftc_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "ERROR",
       "url": "https://www.cftc.gov/RSS/PressReleases.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "chainlink_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://blog.chain.link/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "chainlink_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/smartcontractkit/chainlink/releases.atom"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "cisa_advisories",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "ERROR",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "cloudflare_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://blog.cloudflare.com/rss/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "cloudflare_quiche_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://github.com/cloudflare/quiche/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:01Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -1930,13 +1942,13 @@
       ],
       "source_id": "cmc_supply_batch_1",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:04Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=1%2C2%2C52%2C74%2C131%2C328%2C512%2C1027%2C1321%2C1437%2C1659%2C1831%2C1839%2C1958%2C1975%2C2010%2C2011%2C2087%2C2280%2C2634%2C2694%2C3077%2C3155%2C3602%2C3635%2C3773%2C3794%2C3897%2C3957%2C4030%2C4269%2C4642%2C4705%2C4847%2C5176%2C5426%2C5488%2C5690%2C5805%2C5994&convert=USD&skip_invalid=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:01Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -1944,13 +1956,13 @@
       ],
       "source_id": "cmc_supply_batch_2",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:04Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=6535%2C6538%2C6636%2C7083%2C7186%2C7226%2C7278%2C7950%2C8000%2C8526%2C8916%2C9481%2C10529%2C11092%2C11419%2C11840%2C11841%2C13502%2C16086%2C20396%2C20947%2C21159%2C21794%2C22691%2C22861%2C22974%2C23095%2C23149%2C24478%2C26997%2C27075%2C28081%2C28177%2C28298%2C28321%2C29210%2C29270%2C29420%2C29814%2C30171&convert=USD&skip_invalid=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:01Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "data",
@@ -1958,58 +1970,58 @@
       ],
       "source_id": "cmc_supply_batch_3",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:04Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://pro-api.coinmarketcap.com/public-api/v3/cryptocurrency/quotes/latest?id=32196%2C33038%2C33251%2C34104%2C34466%2C35336%2C35491%2C35509%2C35697%2C36341%2C36507%2C36645%2C37263%2C38482%2C38590%2C38828%2C38849%2C38892%2C39064%2C39125&convert=USD&skip_invalid=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "cnbc_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "cncf_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://www.cncf.io/feed/"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "coinbase_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "ERROR",
       "url": "https://www.coinbase.com/blog/rss.xml"
     },
     {
-      "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "error": null,
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "coincentral_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
-      "status": "ERROR",
+      "started_utc": "2026-11-14T03:20:57Z",
+      "status": "OK",
       "url": "https://coincentral.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "coindesk",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "categories",
@@ -2019,673 +2031,673 @@
       ],
       "source_id": "coingecko_trending",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://api.coingecko.com/api/v3/search/trending"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "coinjournal_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://coinjournal.net/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "coinspeaker_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://www.coinspeaker.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "cointelegraph",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://cointelegraph.com/rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "cointribune_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.cointribune.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "compound_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/compound-finance/compound-protocol/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "cosmos_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://blog.cosmos.network/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "cosmos_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://forum.cosmos.network/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "cosmos_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/cosmos/gaia/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "cronos_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/crypto-org-chain/chain-main/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "crowdstrike_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.crowdstrike.com/blog/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "crypto_news_flash",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.crypto-news-flash.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "cryptobriefing_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://cryptobriefing.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "cryptonews_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://cryptonews.com/news/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "cryptopolitan_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.cryptopolitan.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "cryptopotato_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://cryptopotato.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "cryptoslate",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://cryptoslate.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "darkreading_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.darkreading.com/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "datacenterdynamics_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.datacenterdynamics.com/en/rss/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "decrypt",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://decrypt.co/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "defiant",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://thedefiant.io/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "dlnews",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.dlnews.com/arc/outboundfeeds/rss/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "doge_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://github.com/dogecoin/dogecoin/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "eba_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.eba.europa.eu/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:43Z",
       "source_id": "ecb_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.ecb.europa.eu/rss/press.html"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "economist_finance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "OK",
       "url": "https://www.economist.com/finance-and-economics/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "eetimes_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.eetimes.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "eigenlayer_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/Layr-Labs/eigenlayer-contracts/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "ens_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/ensdomains/ens-contracts/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "esma_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.esma.europa.eu/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "eth_consensus_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:43Z",
       "status": "OK",
       "url": "https://github.com/ethereum/consensus-specs/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:43Z",
       "source_id": "eth_geth_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://github.com/ethereum/go-ethereum/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "eth_research",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://ethresear.ch/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "ethereum_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://blog.ethereum.org/feed.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "ethereum_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://ethereum-magicians.org/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "fed_monetary",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.federalreserve.gov/feeds/press_monetary.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "fed_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "filecoin_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/filecoin-project/lotus/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "finextra_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://www.finextra.com/rss/headlines.aspx"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "flare_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/flare-foundation/go-flare/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "forkast_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "OK",
       "url": "https://forkast.news/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "frax_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/FraxFinance/frax-solidity/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "fsb_press",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.fsb.org/feed/"
     },
     {
       "error": "HTTP 403",
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "fxstreet_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:57Z",
       "status": "ERROR",
       "url": "https://www.fxstreet.com/rss/news"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "github_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://github.blog/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "graph_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/graphprotocol/graph-node/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "hackaday_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "OK",
       "url": "https://hackaday.com/blog/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "hackster_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.hackster.io/news.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "hashicorp_vault_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:55Z",
       "status": "OK",
       "url": "https://github.com/hashicorp/vault/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "hedera_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "helium_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/helium/gateway-rs/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "huggingface_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://huggingface.co/blog/feed.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:55Z",
       "source_id": "huggingface_transformers_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/huggingface/transformers/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "hyperledger_besu_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/hyperledger/besu/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "hyperledger_cacti_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://github.com/hyperledger/cacti/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "hyperledger_fabric_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/hyperledger/fabric/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "hyperledger_firefly_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://github.com/hyperledger/firefly/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "icp_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/dfinity/ic/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "infoq_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.infoq.com/feed/"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "injective_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "ERROR",
       "url": "https://github.com/InjectiveLabs/injective-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:55Z",
       "source_id": "iota_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/iotaledger/iota/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "jupiter_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/jup-ag/jupiter-swap-api/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "kaspa_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/kaspanet/rusty-kaspa/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "krebsonsecurity",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://krebsonsecurity.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "kubernetes_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:55Z",
       "status": "OK",
       "url": "https://github.com/kubernetes/kubernetes/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "libp2p_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/libp2p/go-libp2p/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "libreswan_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://github.com/libreswan/libreswan/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "lido_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "ERROR",
       "url": "https://lido.fi/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "lido_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:56Z",
+      "started_utc": "2026-11-14T03:20:49Z",
       "status": "OK",
       "url": "https://research.lido.fi/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "lido_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/lidofinance/core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "lightning_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://github.com/lightningnetwork/lnd/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "linuxfoundation",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://www.linuxfoundation.org/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "litecoin_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/litecoin-project/litecoin/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:41Z",
       "response_records": 423,
       "response_shape": "array",
       "source_id": "llama_chains",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/v2/chains"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_protocol_records": 1646,
+      "observed_utc": "2026-11-14T03:20:42Z",
+      "response_protocol_records": 1652,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -2714,14 +2726,14 @@
       ],
       "source_id": "llama_dex",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/dexs?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_protocol_records": 3212,
+      "observed_utc": "2026-11-14T03:20:42Z",
+      "response_protocol_records": 3217,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -2750,14 +2762,14 @@
       ],
       "source_id": "llama_fees",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyFees"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_protocol_records": 1318,
+      "observed_utc": "2026-11-14T03:20:41Z",
+      "response_protocol_records": 1321,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -2786,13 +2798,13 @@
       ],
       "source_id": "llama_holder_revenue",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyHoldersRevenue"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "response_protocol_records": 41,
       "response_shape": "object",
       "response_top_level_keys": [
@@ -2822,13 +2834,13 @@
       ],
       "source_id": "llama_options",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "response_protocol_records": 146,
       "response_shape": "object",
       "response_top_level_keys": [
@@ -2858,25 +2870,25 @@
       ],
       "source_id": "llama_perp_oi",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/open-interest?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_records": 9026,
+      "observed_utc": "2026-11-14T03:20:42Z",
+      "response_records": 9039,
       "response_shape": "array",
       "source_id": "llama_protocols",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/protocols"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_protocol_records": 2855,
+      "observed_utc": "2026-11-14T03:20:42Z",
+      "response_protocol_records": 2860,
       "response_shape": "object",
       "response_top_level_keys": [
         "allChains",
@@ -2905,134 +2917,134 @@
       ],
       "source_id": "llama_revenue",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:41Z",
       "status": "OK",
       "url": "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyRevenue"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "response_records": 215,
       "response_shape": "array",
       "source_id": "llama_stablecoin_chains",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://stablecoins.llama.fi/stablecoinchains"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
-      "response_records": 3272,
+      "observed_utc": "2026-11-14T03:20:42Z",
+      "response_records": 3273,
       "response_shape": "array",
       "source_id": "llama_stablecoin_supply",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://stablecoins.llama.fi/stablecoincharts/all"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "maker_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://forum.makerdao.com/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:55Z",
       "source_id": "microsoft_quantum_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:55Z",
       "status": "OK",
       "url": "https://github.com/microsoft/quantum/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "microsoft_research",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.microsoft.com/en-us/research/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "mit_tech_review",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://www.technologyreview.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "monero_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/monero-project/monero/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "nature_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.nature.com/nature.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "near_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/near/nearcore/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "newsbtc_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://www.newsbtc.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "nist_cyber",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://www.nist.gov/news-events/cybersecurity/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:57Z",
       "source_id": "nvidia_ai_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/NVIDIA/TensorRT-LLM/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "nvidia_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://blogs.nvidia.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3041,13 +3053,13 @@
       ],
       "source_id": "okx_book_1",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BTC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3056,13 +3068,13 @@
       ],
       "source_id": "okx_book_1027",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3071,13 +3083,13 @@
       ],
       "source_id": "okx_book_11419",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=GRAM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3086,13 +3098,13 @@
       ],
       "source_id": "okx_book_11840",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=OP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3100,13 +3112,13 @@
       ],
       "source_id": "okx_book_11841",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ARB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3115,13 +3127,13 @@
       ],
       "source_id": "okx_book_131",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DASH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3130,13 +3142,13 @@
       ],
       "source_id": "okx_book_1321",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3144,13 +3156,13 @@
       ],
       "source_id": "okx_book_13502",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=WLD-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3159,13 +3171,13 @@
       ],
       "source_id": "okx_book_1437",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ZEC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3174,13 +3186,13 @@
       ],
       "source_id": "okx_book_1831",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BCH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3189,13 +3201,13 @@
       ],
       "source_id": "okx_book_1839",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BNB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3204,13 +3216,13 @@
       ],
       "source_id": "okx_book_1958",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TRX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3219,13 +3231,13 @@
       ],
       "source_id": "okx_book_1975",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LINK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3234,13 +3246,13 @@
       ],
       "source_id": "okx_book_2",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LTC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3249,13 +3261,13 @@
       ],
       "source_id": "okx_book_2010",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ADA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3264,13 +3276,13 @@
       ],
       "source_id": "okx_book_2011",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XTZ-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3278,13 +3290,13 @@
       ],
       "source_id": "okx_book_20947",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SUI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3292,13 +3304,13 @@
       ],
       "source_id": "okx_book_21159",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ONDO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3306,13 +3318,13 @@
       ],
       "source_id": "okx_book_21794",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=APT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3320,13 +3332,13 @@
       ],
       "source_id": "okx_book_22691",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STRK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3335,13 +3347,13 @@
       ],
       "source_id": "okx_book_2280",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=FIL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3349,13 +3361,13 @@
       ],
       "source_id": "okx_book_22861",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TIA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3363,13 +3375,13 @@
       ],
       "source_id": "okx_book_22974",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TAO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3377,13 +3389,13 @@
       ],
       "source_id": "okx_book_23095",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=BONK-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3391,163 +3403,153 @@
       ],
       "source_id": "okx_book_23149",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SEI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_24478",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PEPE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_26997",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ZRO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_28081",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SPX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_28177",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PYTH-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_28321",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=POL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_29210",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=JUP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_29270",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AERO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_29420",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=VIRTUAL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_29814",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ETHFI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_30171",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ENA-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3556,148 +3558,139 @@
       ],
       "source_id": "okx_book_3155",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=QNT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_32196",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=HYPE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_33038",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SKY-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_33251",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=WLFI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_34104",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=MORPHO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_34466",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PENGU-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_35336",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=TRUMP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_35509",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=VVV-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:07Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_35697",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_36341",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ASTER-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3706,58 +3699,55 @@
       ],
       "source_id": "okx_book_3635",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CRO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_36507",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PUMP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_36645",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XPL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_37263",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CC-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3766,13 +3756,13 @@
       ],
       "source_id": "okx_book_3773",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=FET-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3781,28 +3771,27 @@
       ],
       "source_id": "okx_book_3794",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ATOM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
-        "data",
         "msg"
       ],
       "source_id": "okx_book_38828",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:07Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=KITE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:04Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3811,13 +3800,13 @@
       ],
       "source_id": "okx_book_38849",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:08Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PIEVERSE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:04Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3826,13 +3815,13 @@
       ],
       "source_id": "okx_book_38892",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:08Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STABLE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3841,13 +3830,13 @@
       ],
       "source_id": "okx_book_3897",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=OKB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:04Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3856,13 +3845,13 @@
       ],
       "source_id": "okx_book_39064",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:08Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=NIGHT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:08Z",
+      "observed_utc": "2026-11-14T03:21:04Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3871,13 +3860,13 @@
       ],
       "source_id": "okx_book_39125",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:08Z",
+      "started_utc": "2026-11-14T03:21:03Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LIT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3886,13 +3875,13 @@
       ],
       "source_id": "okx_book_4030",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ALGO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3901,13 +3890,13 @@
       ],
       "source_id": "okx_book_4642",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=HBAR-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3916,13 +3905,13 @@
       ],
       "source_id": "okx_book_4847",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=STX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3931,13 +3920,13 @@
       ],
       "source_id": "okx_book_512",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XLM-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3946,13 +3935,13 @@
       ],
       "source_id": "okx_book_52",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=XRP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3961,13 +3950,13 @@
       ],
       "source_id": "okx_book_5426",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SOL-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3976,13 +3965,13 @@
       ],
       "source_id": "okx_book_5690",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=RENDER-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -3991,13 +3980,13 @@
       ],
       "source_id": "okx_book_5805",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AVAX-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4006,13 +3995,13 @@
       ],
       "source_id": "okx_book_5994",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=SHIB-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4021,13 +4010,13 @@
       ],
       "source_id": "okx_book_6535",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=NEAR-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4036,13 +4025,13 @@
       ],
       "source_id": "okx_book_6538",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=CRV-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4051,13 +4040,13 @@
       ],
       "source_id": "okx_book_6636",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DOT-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4066,13 +4055,13 @@
       ],
       "source_id": "okx_book_7083",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=UNI-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4081,13 +4070,13 @@
       ],
       "source_id": "okx_book_7226",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=INJ-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4096,13 +4085,13 @@
       ],
       "source_id": "okx_book_7278",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=AAVE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4111,13 +4100,13 @@
       ],
       "source_id": "okx_book_74",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:05Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=DOGE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:02Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4126,13 +4115,13 @@
       ],
       "source_id": "okx_book_8000",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=LDO-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4141,13 +4130,13 @@
       ],
       "source_id": "okx_book_8526",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=RAY-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4156,13 +4145,13 @@
       ],
       "source_id": "okx_book_8916",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=ICP-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:06Z",
+      "observed_utc": "2026-11-14T03:21:03Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4171,13 +4160,13 @@
       ],
       "source_id": "okx_book_9481",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:06Z",
+      "started_utc": "2026-11-14T03:21:02Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/market/books?instId=PENDLE-USDT-SWAP&sz=5"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:05Z",
+      "observed_utc": "2026-11-14T03:21:01Z",
       "response_shape": "object",
       "response_top_level_keys": [
         "code",
@@ -4186,573 +4175,573 @@
       ],
       "source_id": "okx_book_instruments",
       "source_type": "json",
-      "started_utc": "2026-11-13T22:41:04Z",
+      "started_utc": "2026-11-14T03:21:01Z",
       "status": "OK",
       "url": "https://www.okx.com/api/v5/public/instruments?instType=SWAP"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "ondo_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/ondoprotocol/ondo-v1/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "op_stack_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/ethereum-optimism/op-geth/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:55Z",
       "source_id": "openssl_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:55Z",
       "status": "OK",
       "url": "https://github.com/openssl/openssl/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:55Z",
       "source_id": "openzeppelin_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "optimism_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "ERROR",
       "url": "https://www.optimism.io/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:56Z",
+      "observed_utc": "2026-11-14T03:20:49Z",
       "source_id": "optimism_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://gov.optimism.io/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "optimism_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/ethereum-optimism/optimism/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "osmosis_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/osmosis-labs/osmosis/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "pancake_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "ERROR",
       "url": "https://github.com/pancakeswap/pancake-frontend/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "polkadot_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "ERROR",
       "url": "https://polkadot.com/blog/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "polkadot_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://forum.polkadot.network/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "polkadot_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/paritytech/polkadot-sdk/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "polygon_bor_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/maticnetwork/bor/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "polygon_core_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/0xPolygon/bor/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "polygon_heimdall_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/maticnetwork/heimdall/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "protos",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://protos.com/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "pyth_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/pyth-network/pyth-crosschain/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "pytorch_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/pytorch/pytorch/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "radix_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:54Z",
       "status": "OK",
       "url": "https://github.com/radixdlt/babylon-node/releases.atom"
     },
     {
       "error": "HTTP 500",
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:43Z",
       "source_id": "rekt_security",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "ERROR",
       "url": "https://rekt.news/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "reth_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/paradigmxyz/reth/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "schneier_security",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.schneier.com/feed/atom/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "science_magazine_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.science.org/rss/news_current.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "sec",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.sec.gov/news/pressreleases.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "securityweek_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.securityweek.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "sei_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/sei-protocol/sei-chain/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "semianalysis_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:20:59Z",
       "status": "OK",
       "url": "https://www.semianalysis.com/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "sky_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:56Z",
+      "started_utc": "2026-11-14T03:20:49Z",
       "status": "OK",
       "url": "https://forum.sky.money/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "sol_agave_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:43Z",
       "status": "OK",
       "url": "https://github.com/anza-xyz/agave/releases.atom"
     },
     {
       "error": "HTTP 429",
-      "observed_utc": "2026-11-13T22:40:51Z",
+      "observed_utc": "2026-11-14T03:20:43Z",
       "source_id": "solana_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "ERROR",
       "url": "https://solana.com/news/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "solana_firedancer_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://github.com/firedancer-io/firedancer/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:52Z",
       "source_id": "stacks_core_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:51Z",
       "status": "OK",
       "url": "https://github.com/stacks-network/stacks-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:56Z",
+      "observed_utc": "2026-11-14T03:20:49Z",
       "source_id": "stacks_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:49Z",
       "status": "OK",
       "url": "https://forum.stacks.org/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "starknet_cairo_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/starkware-libs/cairo/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "starknet_papyrus_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:54Z",
+      "started_utc": "2026-11-14T03:20:47Z",
       "status": "OK",
       "url": "https://github.com/starkware-libs/papyrus/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "stellar_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "ERROR",
       "url": "https://stellar.org/blog/feed"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "stellar_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/stellar/stellar-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:04Z",
+      "observed_utc": "2026-11-14T03:21:01Z",
       "source_id": "sui_forum",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "OK",
       "url": "https://forums.sui.io/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "sui_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:51Z",
+      "started_utc": "2026-11-14T03:20:43Z",
       "status": "OK",
       "url": "https://github.com/MystenLabs/sui/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "synthetix_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "ERROR",
       "url": "https://github.com/Synthetixio/synthetix/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "techcrunch",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://techcrunch.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:21:00Z",
       "source_id": "techspot_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:03Z",
+      "started_utc": "2026-11-14T03:21:00Z",
       "status": "OK",
       "url": "https://www.techspot.com/backend.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "tezos_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/tezos/tezos/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:51Z",
       "source_id": "the_register",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "OK",
       "url": "https://www.theregister.com/headlines.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:50Z",
+      "observed_utc": "2026-11-14T03:20:42Z",
       "source_id": "theblock",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:50Z",
+      "started_utc": "2026-11-14T03:20:42Z",
       "status": "OK",
       "url": "https://www.theblock.co/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "theverge_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.theverge.com/rss/index.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:47Z",
       "source_id": "ton_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/ton-blockchain/ton/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:58Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "tron_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:52Z",
       "status": "OK",
       "url": "https://github.com/tronprotocol/java-tron/releases.atom"
     },
     {
       "error": "HTTP 404",
-      "observed_utc": "2026-11-13T22:40:57Z",
+      "observed_utc": "2026-11-14T03:20:50Z",
       "source_id": "uniswap_blog",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:57Z",
+      "started_utc": "2026-11-14T03:20:50Z",
       "status": "ERROR",
       "url": "https://blog.uniswap.org/rss.xml"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:56Z",
+      "observed_utc": "2026-11-14T03:20:49Z",
       "source_id": "uniswap_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://gov.uniswap.org/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:55Z",
+      "observed_utc": "2026-11-14T03:20:48Z",
       "source_id": "uniswap_v3_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:55Z",
+      "started_utc": "2026-11-14T03:20:48Z",
       "status": "OK",
       "url": "https://github.com/Uniswap/v3-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:52Z",
+      "observed_utc": "2026-11-14T03:20:44Z",
       "source_id": "uniswap_v4_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/Uniswap/v4-core/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:01Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "utoday_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:01Z",
+      "started_utc": "2026-11-14T03:20:56Z",
       "status": "OK",
       "url": "https://u.today/rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:53Z",
       "source_id": "vechain_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:58Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/vechain/thor/releases.atom"
     },
     {
       "error": "HTTP 429",
-      "observed_utc": "2026-11-13T22:41:03Z",
+      "observed_utc": "2026-11-14T03:20:59Z",
       "source_id": "venturebeat_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "ERROR",
       "url": "https://venturebeat.com/feed/"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:00Z",
+      "observed_utc": "2026-11-14T03:20:56Z",
       "source_id": "vllm_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:00Z",
+      "started_utc": "2026-11-14T03:20:55Z",
       "status": "OK",
       "url": "https://github.com/vllm-project/vllm/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:41:02Z",
+      "observed_utc": "2026-11-14T03:20:58Z",
       "source_id": "wired_news",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:41:02Z",
+      "started_utc": "2026-11-14T03:20:58Z",
       "status": "OK",
       "url": "https://www.wired.com/feed/rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "xrp_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/XRPLF/rippled/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:54Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "zcash_governance",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:45Z",
       "status": "OK",
       "url": "https://forum.zcashcommunity.com/latest.rss"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:46Z",
       "source_id": "zcash_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:53Z",
+      "started_utc": "2026-11-14T03:20:46Z",
       "status": "OK",
       "url": "https://github.com/zcash/zcash/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:59Z",
+      "observed_utc": "2026-11-14T03:20:54Z",
       "source_id": "zilliqa_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:59Z",
+      "started_utc": "2026-11-14T03:20:53Z",
       "status": "OK",
       "url": "https://github.com/Zilliqa/Zilliqa/releases.atom"
     },
     {
       "error": null,
-      "observed_utc": "2026-11-13T22:40:53Z",
+      "observed_utc": "2026-11-14T03:20:45Z",
       "source_id": "zksync_releases",
       "source_type": "rss",
-      "started_utc": "2026-11-13T22:40:52Z",
+      "started_utc": "2026-11-14T03:20:44Z",
       "status": "OK",
       "url": "https://github.com/matter-labs/zksync-era/releases.atom"
     }
   ],
   "source_market_snapshot_utc": "2026-11-13T03:34:21Z",
   "sources_configured": 284,
-  "sources_failed": 22,
-  "sources_ok": 262,
+  "sources_failed": 20,
+  "sources_ok": 264,
   "status": "COLLECTED_PARTIAL",
   "successful_sources_with_zero_coin_mapping": [
     "PROTOCOL_FEES",

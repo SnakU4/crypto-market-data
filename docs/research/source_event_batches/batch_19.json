@@ -1,976 +1,6 @@
 {
-  "capture_utc": "2026-11-13T22:40:50Z",
+  "capture_utc": "2026-11-14T03:20:41Z",
   "events": [
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "49a52c6ca40780efe5761cfb",
-      "excerpt": "In this interview, Mastercard's Greg Ulrich discusses the nuances of building a trust framework for enabling secure AI-led transactions.",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "The Five Pillars of Trust for Agentic Commerce",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T11:00:00Z",
-      "source_id": "finextra_news",
-      "source_ids": [
-        "finextra_news"
-      ],
-      "url": "https://www.finextra.com/videoarticle/3632/the-five-pillars-of-trust-for-agentic-commerce?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    {
-      "cmc_ids": [
-        2010
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "75dec532561bd5e79454bb2e",
-      "excerpt": "Key takeaways Cardano (ADA) trades below $0.175 on Monday after declining more than 9% last week. Large Cardano whales holding between 10 million and 100 million ADA have offloaded approximately 50 million tokens since November 4, signaling weakening confidence. ADA risks extending its decline toward $0.156 as bearish technical indicators persist, while immediate resistance stands at $0.183. Cardano (ADA) remains under pressure on Monday, trading around $0.1748 after recording five consecutive weeks of losses. The cryptocurrency declined more than 9% last week, extending a downturn that began in early October as selling pressure continues to outweigh buying interest. Cardano whales dump 50 million ADA tokens Cardano’s largest investors have continued reducing their holdings, raising concerns about the cryptocurrency’s near-term price outlook. According to Santiment’s Supply Distribution data , wallets holding between 10 million and 100 million ADA have collectively offloaded approximately 50 million tokens since November 4. The decline suggests that this group of large holders has become increasingly cautious amid Cardano’s prolonged price weakness. Beyond whale distribution, Cardano’s broader on-chain and trading indicators continue to reflect cautious market sentiment. CryptoQu",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Cardano whales dump 50 million tokens amid bearish sentiment",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {
-        "2010": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T09:28:34Z",
-      "source_id": "coinjournal_news",
-      "source_ids": [
-        "coinjournal_news"
-      ],
-      "url": "https://coinjournal.net/news/cardano-whales-dump-50-million-tokens-amid-bearish-sentiment/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "ca2333e2f4f83c7c1321190c",
-      "excerpt": "The verified badge on an explorer shows that some source compiles to the code at an address. It doesn’t say which commit that source came from, and on a proxy it says nothing about the logic behind it. So when someone asks whether an upgradeable contract still runs the commit its audit covered, the honest answer is often a guess, and a few upgrades after launch the guess can be wrong. I’ve been writing down what a real check needs. Most of it is small. Rebuilding the commit To tie the address to the report you rebuild the audited commit with the same settings (solc version, optimizer runs, viaIR, evmVersion) and compare runtime bytecode. If the contract has immutables, it won’t match byte for byte. The constructor writes their values into the runtime code, so a fresh build has zeros where the deployed code has an oracle address or a fee. solc gives you the positions in evm.deployedBytecode.immutableReferences in the standard JSON output. Zero those ranges on the deployed side, compare, and then check the immutable values on their own. What this basically means is that a clean build with the wrong oracle baked in still passes the bytecode comparison. The end of the bytecode is the other place it breaks. solc appends the IPFS hash of the metadata file, and the metadata holds a hash",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "Checking that a deployed contract still runs the audited commit",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T08:43:10Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/checking-that-a-deployed-contract-still-runs-the-audited-commit/30318"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "LEGAL_CORPORATE"
-      ],
-      "event_id": "78a38ab1bb2e5e3a2eb9f6bc",
-      "excerpt": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT -NVIDIA AI Startup Partnership Forum at COEX. Representatives from the Ministry of Science and ICT and NVIDIA met with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors. NVIDIA also announced an investment in Korean startup Point2 , with additional investments planned in Motif Technologies , RLWRLD and Upstage. Point2 Technology, an AI interconnect company, builds scalable, radio frequency-based interconnects that move data between chips and racks in AI factories, offering an innovative alternative to conventional copper and optical interconnect solutions for AI cluster scale-up, delivering the reach, performance and efficiency needed for next-generation AI infrastructure. Motif Technologies , a Seoul-based AI lab, develops foundation models for building AI agents that carry out complex tasks, including Motif-3, a large language model released with open weights. RLWRLD, a physical AI startup based in San Francisco, Seoul and Tokyo, develops robotics foundation models that enable humanoid and industrial robots to perform complex real-world tasks that require five-finger dexterity, such as precisely inserting components, threading nuts onto bolts and kitting parts fro",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T08:00:53Z",
-      "source_id": "nvidia_blog",
-      "source_ids": [
-        "nvidia_blog"
-      ],
-      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "59b779471e81fefef54ab0bd",
-      "excerpt": "Tapping into the country’s strengths in manufacturing and engineering, NVIDIA is helping advance Korea’s physical AI ecosystem. The country’s industry leaders are applying accelerated computing, AI and simulation to everything from semiconductor manufacturing to robotics and autonomous vehicles. These efforts are helping bring physical AI from development into real-world production. Samsung Advances Semiconductor Engineering With Accelerated Computing and AI Physics Samsung Electronics is expanding its collaboration with NVIDIA to advance semiconductor innovation through accelerated computing and AI physics. The work spans materials research, process development and device engineering. In technology computer-aided design, Samsung is working with NVIDIA cuISS and NVIDIA cuDSS to accelerate computations involving sparse linear systems. The collaboration also extends to GPU acceleration for process and optical simulations. In materials research, Samsung’s sMOL platform has run selected quantum chemical calculations up to 5x faster end to end with NVIDIA cuEST . Samsung is also exploring NVIDIA cuEquivariance to speed up tensor operations used in training and inference for atomistic AI models. Samsung is developing chip-scale thermal and mechanical analysis workflows with NVIDIA Phys",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Korea Advances Physical AI Across Industries With NVIDIA",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T05:00:40Z",
-      "source_id": "nvidia_blog",
-      "source_ids": [
-        "nvidia_blog"
-      ],
-      "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d7c73c4b9a79782fc5fe85e7",
-      "excerpt": "As AI agents take on more work, they need capable open models and security that advances alongside them. Hyundai Motor Group is exploring NVIDIA NemoClaw blueprints and the NVIDIA OpenShell runtime, while AIM Intelligence is integrating its Starfort platform with NVIDIA OpenShell to support secure AI agents for employee productivity and enterprise workflows . A key component of the NVIDIA Open Agent Safety Platform, OpenShell provides a secure runtime with sandboxed execution and policy-based controls to safeguard sensitive data, manage access to enterprise tools and govern autonomous agent actions. AIM Intelligence , a Korean AI security company, is integrating its Starfort agent control platform with NVIDIA OpenShell. The goal is to combine OpenShell’s runtime access controls with Starfort’s detection of malicious instructions and data leakage. The company is also considering a preliminary proof of concept for the public energy sector, with potential applications across enterprise, industrial and robotics environments. On the model side, LG AI Research is opening application programming interface access for K-EXAONE-2.5, developed using NVIDIA Nemotron datasets, including Nemotron-Personas-Korea . Nemotron-Personas-Korea is an open dataset of 7 million fully synthetic Korean pe",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T05:00:39Z",
-      "source_id": "nvidia_blog",
-      "source_ids": [
-        "nvidia_blog"
-      ],
-      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "51e504680490a66d88e49def",
-      "excerpt": "NVIDIA and Korea’s Ministry of Science and ICT (MSIT) are expanding their collaboration across the country’s sovereign AI ecosystem, from AI semiconductors and data center infrastructure to talent, startups, models, agents and security. The collaboration lays the groundwork for Korean NPU and XPU companies to explore participation in the NVIDIA NVLink Fusion ecosystem, and includes NVIDIA training and certification programs, hackathons and technical seminars to strengthen GPU utilization. Through Korea’s AI for All initiative, NVIDIA will collaborate with three selected consortia and four leading Korean foundation model builders, using NVIDIA Dynamo software to optimize and scale AI inference. In addition, NVIDIA today announced a collaboration with SK Telecom and Rebellions, supported by MSIT, to advance sovereign AI infrastructure for Korean models and workloads with NVIDIA NVLink Fusion. Read more in the press release .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T05:00:04Z",
-      "source_id": "nvidia_blog",
-      "source_ids": [
-        "nvidia_blog"
-      ],
-      "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1d980cecae4ce0aab0632eb0",
-      "excerpt": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom , K-EXAONE 2.0 from LG AI Research , Solar Open 2 from Upstage and Motif-3 from Motif Technologies . As models grow beyond the capacity of a single GPU, they must be split across multiple GPUs, requiring careful coordination of request routing and communication to maintain performance. NVIDIA Dynamo is an open source, distributed inference-serving framework built to deploy models in multi-node environments at data center scale. It handles this routing and communication to maximize inference performance. Optimized for NVIDIA B200 GPUs, these recipes take the guesswork out of deployment, delivering up to 2x performance out of the box. They help developers bring Korea’s open models into production faster and turn them into broadly accessible AI for All services. Learn more about NVIDIA Dynamo .",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T05:00:00Z",
-      "source_id": "nvidia_blog",
-      "source_ids": [
-        "nvidia_blog"
-      ],
-      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "6605d541263edc679ff58b06",
-      "excerpt": "SAEP-25: Update the Allocation System Primitive section to record wound-down instances, rate limit IDs and current controllers Summary This proposal is submitted by Phoenix Labs in its role as a nested contributor, as defined in section A.6.1.1.1.2.2.2.2.1.2.1.1.1 of the Spark Artifact. The proposal recommends that Spark governance update the Allocation System Primitive section of the Spark Artifact ( A.6.1.1.1.2.6.1 ) to do six things: Record as Completed the ten Instances that have been wound down (Aave and Fluid on Ethereum Mainnet, Fluid and Aave on Base and Arbitrum, Aave on Avalanche), moving them and their directory entries from Active to Completed, and record three B2C2 transfer Instances and a Superstate USCC Instance on Ethereum Mainnet, all with Completed status. Record the RateLimitIDs of the Instances whose Rate Limit IDs documents this proposal replaces, in place of the statement that they will be specified in a future iteration, correct the stated rate limit values to those configured onchain, rename the transfer rate limit documents to match the operation, and fill the addresses still marked TBD in those Instances. Record the current ALM Controller contracts on Ethereum Mainnet, Base and Avalanche. Add directory entries for the Arbitrum Spark Savings v2 USDT Insta",
-      "first_observed_utc": "2026-11-12T20:05:49Z",
-      "headline": "SAEP-25: Update the Allocation System Primitive",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T04:14:32Z",
-      "source_id": "sky_governance",
-      "source_ids": [
-        "maker_governance",
-        "sky_governance"
-      ],
-      "url": "https://forum.skyeco.com/t/saep-25-update-the-allocation-system-primitive/28391"
-    },
-    {
-      "cmc_ids": [
-        1027
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "INSTITUTIONAL_FLOW",
-        "UPGRADE"
-      ],
-      "event_id": "4d0a733622dd06d0cf538a23",
-      "excerpt": "I read the upgrade control of 7 tokenized treasury and gold fund tokens on Ethereum straight from the chain. Snapshot: 9 Nov 2026. Read-only; nothing was tested on live contracts. Result (7 tokens I looked at, not a market ranking): 3: the upgrade owner is one externally owned address (no contract code), no on-chain delay 2: Safe multisig, 4-of-7, no delay found 1: older multisig, 3-of-6, no delay found 1: timelock, 24h minimum delay What this does NOT say: that any key is stored badly (it may sit behind HSM/MPC or issuer processes that are invisible from outside), that assets are at risk, or that other controls (pauses, legal, off-chain) are missing. It only shows who can change token code on-chain. How to reproduce with any public RPC. Three patterns cover all 7: A) EIP-1967 proxy: read the admin slot, then ask the admin for its owner. cast storage <token> 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103 cast call <admin> \"owner()(address)\" B) Owner stored on the token/proxy itself: cast call <token> \"owner()(address)\" C) Older proxy admin slot: cast storage <token> 0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b Then check what the owner is: cast code <owner> # empty = externally owned getThreshold() # Safe getMinDelay() # timelock I am not",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "Who can upgrade 7 tokenized treasury/gold tokens on Ethereum? A read-only look at upgrade control",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {
-        "1027": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T03:47:13Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/who-can-upgrade-7-tokenized-treasury-gold-tokens-on-ethereum-a-read-only-look-at-upgrade-control/30313"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a937cf982362806e930af4ec",
-      "excerpt": "[November 19, 2026] Proposed Changes to Spark for Upcoming Spell (Part 1 of 2) Introduction Goal of this update This update proposes seven changes across Ethereum, OP Mainnet, Unichain, Avalanche and X-Layer: [Ethereum] Spark Liquidity Layer - Upgrade the Ethereum ALM controller to MainnetController v1.11.0, which sends USDC over CCTP V2 instead of CCTP V1 on every route. [OP Mainnet] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on OP Mainnet: return its remaining USDS and sUSDS to Ethereum, and set every rate limit on OP Mainnet and on the Ethereum route to OP Mainnet to zero. [Unichain] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on Unichain: return its remaining USDS and sUSDS to Ethereum, and set every rate limit on Unichain and on the Ethereum route to Unichain to zero. [Avalanche] Spark Savings and Spark Liquidity Layer - Deprecate Avalanche: set the Spark Savings USDC deposit cap to zero and its maximum rate to 0%, and close the CCTP route to and from Ethereum. [Ethereum] SparkLend - Claim accrued SparkLend reserves and route them to the Spark Liquidity Layer and the Spark Operations Multisig (recurring). [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC vault on X-Layer to the spUSDC PAU through the ERC4626 facet. [Ethereum] Sp",
-      "first_observed_utc": "2026-11-12T20:05:49Z",
-      "headline": "[November 19, 2026] Proposed Changes to Spark for Upcoming Spell",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T03:10:09Z",
-      "source_id": "sky_governance",
-      "source_ids": [
-        "maker_governance",
-        "sky_governance"
-      ],
-      "url": "https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2faaa22367a6d00cc6a4fd19",
-      "excerpt": "Gaia v29.1.0 Release Notes 📝 Changelog Check out the changelog for a list of relevant changes or compare all changes from last release. Refer to the upgrading guide when migrating from v29.0.1 to v29.1.0 . 🚀 Highlights This is a state-breaking release that restores decoding of historical ParameterChangeProposal content, fixing governance proposal list, status-filtered, single-proposal and tally queries and state export ( #4199 ) This release bumps the following dependencies: Bump github.com/CosmWasm/wasmd from 0.60.9 to 0.60.10 ( #4201 ) Bump github.com/CosmWasm/wasmvm/v2 from 2.3.5 to 2.3.6 ( #4201 ) After confirming that the upgraded node runs normally, you can remove the old cache directories: <node home>/wasm/cache/modules/3858fb5318-wasmer24 <node home>/data/08-light-client/cache/modules/3858fb5318-wasmer24 🔨 Build from source git clone https://github.com/cosmos/gaia cd gaia && git checkout v29.1.0 make install ⚡️Download & Verification Binaries for linux and darwin are available below. You can verify all release binaries using the public verification keys and instructions provided here .",
-      "first_observed_utc": "2026-11-12T20:01:28Z",
-      "headline": "v29.1.0",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T01:44:12Z",
-      "source_id": "cosmos_releases",
-      "source_ids": [
-        "cosmos_releases"
-      ],
-      "url": "https://github.com/cosmos/gaia/releases/tag/v29.1.0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "955d33ec13c7aa53841af9b5",
-      "excerpt": "Posting a factual decode of recent ACLManager role activity on Aave V3 Ethereum, in the dated-report style already used in this category. Three RISK_ADMIN_ROLE grants since 2 September 2026: 2 Sep 2026, block 25891729 — granted to 0xbe28…7744 and 0x529e…F6c5 (two grants, same transaction) 30 Sep 2026, block 26089561 — granted to 0x6f48d9cdb8ee6e17c96b2d8aec128af426a295c1 The 30 Sep recipient is a verified contract named RiskSteward, 20,061 bytes of deployed code. All three grants were sent by 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A, which is the governance Executor. So these passed governance rather than originating from a standalone admin key — worth stating explicitly, since a RISK_ADMIN grant from an EOA would read very differently. Practical scope: RISK_ADMIN can change supply and borrow caps, LTVs, liquidation thresholds and reserve configuration without a full governance vote. Routing it through a RiskSteward contract constrains what the holder may change, which is the safer pattern, but each grant still widens the set of actors who can move risk parameters between votes. Context: the ARFC “Activate Aave Risk Stewards on Aave V4” thread is now closed with AIP #523 executed, so I’m posting this separately rather than reverting that thread. Method note: this is decoded fro",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "ACLManager: RISK_ADMIN_ROLE grants, Sep 2026 — decoded",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:45:03Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/aclmanager-risk-admin-role-grants-sep-2026-decoded/26139"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "INSTITUTIONAL_FLOW"
-      ],
-      "event_id": "7f4610953ef3b2cf5a0a438e",
-      "excerpt": "Hi @TokenLogic , thanks for the funding updates and for the treasury data on Aave Insights. We track the Aave DAO treasury from on-chain data for an independent treasury analysis service. We’d like to reconcile our reads with the Treasury panel on insights.aave.com ($260.65M at Q3 2026 close; AAVE $144.5M, ETH/BTC $52.4M, stablecoins $49.4M, other $14.4M). Reading the Collectors on every v3 network, the Ecosystem Reserve and the AFC Safes listed in the address book ( MiscEthereum : AFC, Ahab, AFC CEX Earn, Merit/Ahab, Incentive Budget), our ETH/BTC total matches yours. Stablecoins (about $18M) and AAVE (about $13M) still differ. Could you share: The list of addresses (and networks) included in the Aave Insights treasury total. Whether the total is net of GHO borrowed by the AFC and Ahab Safes (we book those borrows as DAO debt). Whether any v2 market positions, Umbrella or Safety Module balances, or off-chain/CEX balances (e.g. the CEX Earn programme) are included. A published wallet list would let anyone reproduce the figure on chain. We’d cite Aave Insights and TokenLogic as the source. Thanks! 2 posts - 1 participant Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Request: wallet list behind the Aave Insights treasury figure",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:44:15Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/request-wallet-list-behind-the-aave-insights-treasury-figure/26135"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "098e0ba26d03ada174d7e488",
-      "excerpt": "Hi, I’ve just accidentally sent USDC directly to the Aave V3 contract address instead of depositing it via the dApp interface. Is there still any chance of recovering these tokens, or are they lost? 4 posts - 3 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "USDC was mistakenly deposited to the Aave V3 contract address",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:44:00Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/usdc-was-mistakenly-deposited-to-the-aave-v3-contract-address/26133"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "fb54d8952d75fbe62c535455",
-      "excerpt": "Aave V3 computes liquidation risk per asset. Each collateral asset has its own maximum LTV and liquidation threshold, set independently. The health factor is a weighted average. There is no term for correlation between assets. I tested whether this independence assumption holds, using Aave’s own published parameters and public daily price data from Yahoo Finance. Nine major collateral assets, 2,123 trading days (September 2020 to October 2026). Method: For each asset, mark the days where a position at maximum LTV would cross the liquidation threshold. Then apply a column-shuffle permutation test (B = 2,000): shuffle each asset’s column independently to destroy cross-asset dependence while preserving each asset’s marginal rate. Compare the real count of simultaneous liquidation triggers to the shuffled distribution. Results: 4 assets hit same day: 57 real days vs 0.19 expected. 301× underpriced. 5 assets: 31 real days vs 0.004 expected. 6,889× underpriced. 6+ assets: 21 real days vs 0 in 2,000 shuffles. The independent model never produces this. All 36 pairwise asset combinations are significant at p < 0.001. Not one pair behaves independently under Aave’s own thresholds. The worst days are the ones you’d expect: 2021-05-19 (all 9 assets), 2022-05-11 (Terra/Luna), 2022-11-08 (FTX)",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Per-Asset Liquidation Thresholds Underpredict Co-Liquidation by 301×",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:56Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/per-asset-liquidation-thresholds-underpredict-co-liquidation-by-301x/26131"
-    },
-    {
-      "cmc_ids": [
-        1027,
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "86c8f47f68237485f1acc307",
-      "excerpt": "Dear Aave Governance Community, I am requesting assistance with the possible recovery of 2 AAVE tokens accidentally transferred from my Revolut account directly to the official AAVE token contract on Ethereum. Transaction details Token: AAVE Amount transferred: 2 AAVE Network: Ethereum Mainnet Date: 28 October 2026 Sending platform: Revolut Sending address: 0xF13bCF5eA0398f4623dd540A5Ce02C63015bC586 Receiving contract: 0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9 Transaction hash: 0xcbb2c93733d899dda7438fdec6169d92a2d2849ee4db0e6720b92ea0b0ae26b4 Transaction link: Ethereum (ETH) Blockchain Explorer Ethereum Transaction Hash: 0xcbb2c93733... | Etherscan Revolut 1 Call 0x4c9591ef Method on Revolut 5 | Success | Oct-28-2026 04:25:11 PM (UTC) Revolut confirms that the withdrawal was completed. The amount transferred was 2 AAVE, excluding the withdrawal fee. I contacted Aave Support and was advised to monitor the governance forum for future recovery initiatives. I understand that the Aave DAO previously supported recovery initiatives, including BGD Rescue Mission Phase 1 , which addressed certain accidental transfers to Aave smart contracts, including the AAVE token contract. I would be grateful if the community could clarify: Whether my transaction could be eligible for a future recove",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Recovery Request – 2 AAVE Accidentally Sent to AAVE Token Contract (Ethereum)",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "1027": "FULL_NAME",
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:49Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/recovery-request-2-aave-accidentally-sent-to-aave-token-contract-ethereum/26128"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "ee5a4fb83bffbc43685846c3",
-      "excerpt": "AAVE SECURITY SHIELD Propuesta comunitaria para reforzar la prevención de riesgos externos y la protección de los depositantes Tipo: Iniciativa comunitaria para discusión y evaluación preliminar Área: Seguridad, gestión de riesgos y resiliencia financiera Estado: Borrador conceptual previo a una posible ARFC Autoría: Iniciativa comunitaria independiente Solicitud inicial: Evaluar el interés de la comunidad en financiar o realizar un estudio de viabilidad, sin aprobar todavía modificaciones del protocolo. PARTE I. PRESENTACIÓN DE LA INICIATIVA 1. Resumen ejecutivo La pregunta que queremos plantear a la comunidad de Aave es: ¿Cómo puede Aave limitar la generación de nueva exposición crediticia durante un incidente de seguridad externo, sin perjudicar innecesariamente a sus usuarios? AAVE SECURITY SHIELD es una iniciativa comunitaria que propone estudiar una capa adicional de prevención, complementaria a los mecanismos de seguridad, gestión de riesgos y respuesta a emergencias existentes en el protocolo. El objetivo es investigar si determinados controles pueden proporcionar a Aave más tiempo para verificar una amenaza y contener su impacto antes de que se acumule una exposición significativa. La iniciativa propone evaluar mecanismos que permitan: Identificar amenazas externas media",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "[TEMP CHECK] AAVE SECURITY SHIELD – Exploring Preventive Risk Controls for External Security Incidents",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-09T00:43:34Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/temp-check-aave-security-shield-exploring-preventive-risk-controls-for-external-security-incidents/26124"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c0fda53aaaaa24c95b87a15d",
-      "excerpt": "Title: [EMERGENCY] Proposal to JAIL Validator with $500 Hidden Rule - 44k Keplr Victims Chain: Cosmos Hub Proposal Type: Social Slashing / Community Alert SUMMARY On Nov 7 2026, Web3Auth breach compromised 44,041 Keplr wallets (Google Login). My wallet cosmos1a5dykrp8fdnvayhmne0uq4dwacyzzzkdqm3ctnn was drained: Tx: 65cdf7ac0dcc9dbfaecb53a8dbdddc5f8a1d2e51fe5d1b6b06e2d06e76b576a Stolen: 29 ATOM + 3.52 OSMO + 1.09 TIA Separately, the validator I delegated to has a deceptive rule: “Wallets under $500 get 0% rewards” - NOT shown in Keplr UI. This targets users leaving small balances for airdrops. VIOLATION Hidden commission = Fraud Keplr promoted validator as trusted without disclosure DEMANDS A) JAIL validator for 21 days, then TOMBSTONE if confirmed. B) Slash 5% to compensate <$500 victims. C) Keplr must delist validator and add warning: “0% under $500” and refund. VOTE YES = Protect small holders, Jail deceptive validator NO = Allow $500 trap to continue 1 post - 3 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Creat voting to jail the hacker validator",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T23:41:11Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/creat-voting-to-jail-the-hacker-validator/17556"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "3007fcee676fa59fcd8726a8",
-      "excerpt": "Signed-off-by: Harry Mellor 19981378+hmellor@users.noreply.github.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-      "first_observed_utc": "2026-11-13T07:07:09Z",
-      "headline": "v0.34.0rc0: [Transformers backend] Migrate Gemma and StableLM (#66393)",
-      "last_observed_utc": "2026-11-13T22:41:00Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T18:38:57Z",
-      "source_id": "vllm_releases",
-      "source_ids": [
-        "vllm_releases"
-      ],
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc0"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "822f98c2f207e912a044a435",
-      "excerpt": "Status: filed as ethereum/ERCs pull request #2155 ; number ERC-8490 assigned on 2026-11-09. Reference repository: GitHub - garyyang-finchip/agent-meditation-mechanism: Agent Meditation Mechanism · GitHub . Sepolia evidence: recorded in the repository and summarized in a reply below. This draft proposes a minimal registry through which an AI agent records its own self-maintenance: what it checked, cleaned, repaired, updated and reconsidered about itself, as a versioned and attributable history. The name follows the human analogy of maintenance that happens in a quiet phase (sleep, meditation); the mechanism itself is deliberately dry. Why a registry at all. An agent keeps its identity while its code, dependencies, memories, skills, plans and ways of judging keep changing. Agent runtimes already do this maintenance in the background (self-checks, dependency walks, memory consolidation, re-planning, reflection), and the results stay local. Nothing connects the successive states of one agent into a history another party can recognize, and nothing lets a counterparty ask: which state is registered now, which layers were checked recently and which of them changed, under which rules in effect at the time, and did the cycle adopt an update, confirm that nothing needed to change, or fail?",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-8490: Agent Meditation Mechanism",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T18:19:20Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-8490-agent-meditation-mechanism/30304"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "29c0c99e65a763c0a876336e",
-      "excerpt": "Hi everyone, I would like to propose a conceptual hardware framework aimed at solving the PQC migration deadlock regarding network bandwidth and validator node security. I have designed a hybrid approach that integrates localized lattice structures within an HSM perimeter co-signed by quantum states. Looking forward to your feedback and technical critique! PROJECT: LATTICE-NOTATION (LN) Hybrid Hardware Security Module (HSM) for Post-Quantum Validation in Decentralized Networks The Core Bottleneck (The Problem) The migration of modern blockchain networks (such as Ethereum) to NIST-standard Post-Quantum Cryptography (PQC) faces a critical infrastructure barrier: Bandwidth Collapse: Next-generation lattice-based algorithms (e.g., ML-KEM/Kyber) utilize public keys and digital signatures that are exponentially larger than classical RSA/ECC equivalents. Under full cryptographic load, standard peer-to-peer (P2P) validator networks will experience severe latency and throughput degradation. The SNDL Threat (“Store Now, Decrypt Later”): Adversaries are actively harvesting encrypted network traffic today, intending to retroactively compromise validator infrastructure as soon as Cryptanalytically Relevant Quantum Computers (CRQCs) emerge. The Solution (The LN Concept) Project Lattice-Notatio",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "Solving PQC Bandwidth via Nybrind Wiesner Money & Lattice HSMs",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T17:35:57Z",
-      "source_id": "eth_research",
-      "source_ids": [
-        "eth_research"
-      ],
-      "url": "https://ethresear.ch/t/solving-pqc-bandwidth-via-nybrind-wiesner-money-lattice-hsms/26229"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "83b1f3bd215b3a374447d8d5",
-      "excerpt": "For developers building multi-agent systems , the design of information disclosure policies is a critical variable. A preprint published on Nov. 5, 2026 , examines how the precision of information provided to large language models (LLMs) affects their performance in trade and negotiation. The study suggests that increasing information does not consistently improve performance; instead, outcomes are highly dependent on the specific model and the structure of the market. The researchers evaluated ten LLMs across three controlled environments: multi-resource trade, bilateral bargaining, and double auctions. To isolate the impact of information, they held models, incentives, and market rules constant while varying the input levels. In trade, least disclosure provides agents with their own values, coarse disclosure adds the counterparty’s ordinal ranking, and full disclosure provides exact values. In bargaining, coarse information only signals whether a mutually profitable price exists, while full disclosure reveals buyer value and seller cost. In double auctions, least disclosure gives own value or cost, coarse adds within-side rankings, and full disclosure provides exact values or costs. The results demonstrate that the relationship between transparency and market efficiency varies ",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "In Controlled LLM Markets, Full Disclosure Helped Some Models and Hurt Others",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T15:32:35Z",
-      "source_id": "forkast_news",
-      "source_ids": [
-        "forkast_news"
-      ],
-      "url": "https://forkast.news/in-controlled-llm-markets-full-disclosure-helped-some-models-and-hurt-others/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "e549e97c18f0f1f08ba31e5f",
-      "excerpt": "OpenAI Agents SDK v0.24.0-alpha.7 is labeled a pre-release in the official release notes . The GitHub release API marks it as a prerelease and records publication at 2026-11-08T07:05:11Z in the release API record . The distinction matters: this is an account of what the alpha specifies, not a general-availability launch or evidence of adoption. Its practical significance for builders is narrower and more useful: one version changes assumptions across three separate configuration surfaces. The surfaces are environment execution, Model Context Protocol (MCP) approval configuration, and bundled reasoning defaults. They should not be collapsed into a single claim about security or model quality. A default for new environments, accepted strings in an MCP setting, and catalog defaults for three named models are different kinds of change. Each can be checked separately; the release notes do not say that every existing deployment is affected. For new Environments, the default becomes write_policy=\"strict\" , which requires a compatible Linux or macOS executor. The working directory remains writable. To configure additional directories, the release notes point to writable_roots . That is a concrete change to check when comparing a new Environment with an existing setup: the release gives a",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "OpenAI Agents SDK alpha changes three configuration surfaces",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T13:47:08Z",
-      "source_id": "forkast_news",
-      "source_ids": [
-        "forkast_news"
-      ],
-      "url": "https://forkast.news/openai-agents-sdk-alpha-changes-three-configuration-surfaces/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d9fb43ec00cb6057452106d5",
-      "excerpt": "TL;DR On an 8 GB M2 running leanVM at commit df7d122, hash-based accumulation did not beat leanVM’s full-verifier recursion inside an aggregator. Our best batching design also missed its 15% gate once the leaf size was tuned. Negative results (D1, D2, D3-S). Folding leanXMSS verifications directly needs at least 7.1M R1CS constraints per signature. That is about 450x leanVM’s per-signature cost (Inferred from measured WARP rates). Folding the whole leanVM step relation runs at 260 ns per witness element, against leanVM’s 55 ns per committed word (Verified rates). Accumulating children’s openings across merges spends about 57k cycles per step to save at most 46k (Verified counts). Cost anatomy (Verified). Verifying one child inside a merge costs 186.8k VM cycles. Its WHIR opening is 55% of that. Merkle hashing is 12% of the cycles but 79% of the Keccak calls. 73% of the JUMP rows are subfield checks. Batched child openings (B’-L1). One shared WHIR opening from level 1 saves 32.8k cycles per child (17.6%, Verified by cost emulation). A round-by-round sketch keeps leanVM’s bounds (Inferred). For 1,500 signatures it is still 2.4% slower at the slot deadline than the baseline at the baseline’s best configuration. Configuration rule (Verified on this machine). A merge node that steps f",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "Folding vs full-verifier recursion for PQ signature aggregation in leanVM: measurements and negative results",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T12:33:52Z",
-      "source_id": "eth_research",
-      "source_ids": [
-        "eth_research"
-      ],
-      "url": "https://ethresear.ch/t/folding-vs-full-verifier-recursion-for-pq-signature-aggregation-in-leanvm-measurements-and-negative-results/26227"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1ca79646327f3695820133a2",
-      "excerpt": "Summary. AIFP is a framework ERC for the information layer between agents. It defines a flow paradigm as a content-addressed, versioned description of an interaction context - which carriers (addressed delivery, shared object) and structural operators (fan-out, fan-in, feedback, n-party, select, forward, derive, merge) it uses, and how thirteen separately declared rule dimensions are set (discovery, observation, contribution, management, redistribution, history, time, disclosure timing, contributor visibility, admission basis, representation, object relations, ordering). A channel adopts exactly one paradigm version at any timepoint. Participation is recorded as separately addressable role bindings with a scope, a basis, a validity interval and the rule version they were granted under. Role acquisition is checked by composable predicates that answer one of four outcomes: satisfied, not satisfied, undeterminable, verifier error. Status. Draft. Filed as ethereum/ERCs PR #2152 ; the editors assigned the number ERC-8489 on 2026-11-09 ( ERCS/erc-8489.md , assets under assets/erc-8489/ ). Reference repository with the Foundry suite, the canonical validator and the vectors: garyyang-finchip/aif-paradigm . The reference stack is deployed on Sepolia and the boundary-case evidence run is r",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-8489: Agent Information Flow Paradigm",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T11:26:13Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-8489-agent-information-flow-paradigm/30300"
-    },
-    {
-      "cmc_ids": [
-        7278
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "TOKEN_SUPPLY"
-      ],
-      "event_id": "c14fc83f4a1efc7c7d547e25",
-      "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase borrow cap for USDC from 2,600,000,000 to 2,750,000,000. Increase supply cap for USDe from 550,000,000 to 750,000,000. USDC (Aave V3 Core) USDC has reached 99.0% borrow cap utilization (2.57B / 2.6B) on the Aave V3 Core instance. Borrow Distribution Source: LlamaRisk, November 8, 2026 The top 20 USDC borrowers run health factors between 1.02 and 3.07 with a median of 1.76, and the largest borrower accounts for about 14% of outstanding debt. Collateral behind these positions is mainly ETH and BTC assets, with 5 of the 20 posting WETH, 5 weETH, 4 wstETH, 4 cbBTC, and 3 WBTC, alongside 3 posting USDe and 3 sUSDe, so HF in the cohort tracks the ETH and BTC prices and, on the USDe and sUSDe positions, the exchange rate of those assets against the stablecoin debt. Recommendation We recommend raising the borrow cap from 2.6B to 2.75B on Aave V3 Core, which places the reserve at approximately 93.6% post-change borrow cap utilization. The proposed borrow cap corresponds to 96.6% reserve utilization at current supply, above the 94% optimal point. USDe (Aave V3 Core) USDe has reached 100.0% supp",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Risk Stewards: Supply and Borrow Cap Increases on Aave V3 / 2026.11.08",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T10:12:08Z",
-      "source_id": "aave_governance",
-      "source_ids": [
-        "aave_governance"
-      ],
-      "url": "https://governance.aave.com/t/risk-stewards-supply-and-borrow-cap-increases-on-aave-v3-2026-11-08/26107"
-    },
-    {
-      "cmc_ids": [
-        3794
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b5933264b22584fc8bd5e09a",
-      "excerpt": "Transaction: D2283D7E35CC2B844BB29D2C5B904CBE598DE8B92549EE6A106E4AD735311599 Height 33,766,882, Nov 7 2026, 10:18:55 UTC. Memo: “lsm recovery batch”. 27 messages: Send, Modify Withdraw Address and Tokenize Shares, repeated across several delegators. Attacker address (new owner of the tokenized shares and new withdraw address): cosmos1atuap9kfnt6y8ykvn3437e7j3z8qffh3qtnmwu Batch sender (self-send of 0.000001 ATOM in message #1 ): cosmos1pa0n22gcyyjnv6vqe9qgphrfhyhhf52t6kqud0 My address (victim): cosmos1tpkpt8l2aup6m2exjpw84mj9ww302q3dltfvls Messages #9 and #10: withdraw address changed, then 356.009956 ATOM tokenized (validator: Cryptostake_com). I never signed this transaction and never granted authz permissions to anyone. The authz grants query for my address currently returns an empty list. It is unclear how a single transaction could include actions for several unrelated delegators, so this looks like a mass key compromise or a compromised signing service. Addresses were copied from Mintscan, so please verify them against the transaction hash. Requests: 1. Flag the attacker address and track any Redeem, Undelegate or outgoing transfers. 2. Alert validators, exchanges and bridges so they can freeze or refuse the funds. 3. Help investigate how the transaction was signed for mul",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "URGENT SECURITY REPORT: theft of staked ATOM via LSM Tokenize Shares, Cosmos Hub",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "3794": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-08T00:27:03Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/urgent-security-report-theft-of-staked-atom-via-lsm-tokenize-shares-cosmos-hub/17550"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GOVERNANCE"
-      ],
-      "event_id": "887dc25291890bcefc4034bd",
-      "excerpt": "On behalf of Core GovOps, we are submitting the Atlas Edit Weekly Cycle proposal below. This proposal includes the following edits: Add weETH As Eligible Collateral For Morpho Vaults - Adds weETH as eligible collateral for Morpho vaults and sets a 60,000 weETH exposure cap shared between Spark and Grove. Add Morpho Vault Curation Governance Process - Defines which changes to Morpho vaults used by Prime Agents require governance approval and which require only disclosure, with announcement and reporting requirements. Adds a Morpho Vault Change Note Template that may be used instead of the Technical Scope Template for qualifying changes. Define The Governance Poll Process - Consolidates the rules for creating, reviewing, publishing and voting on Governance Polls into a single process definition. Replenish The Demand Side Buffer Through The Monthly Settlement Cycle - Replenishes the Demand Side Buffer monthly through the Monthly Settlement Cycle and updates how its payments are recognized as Expenses. Update Recognized Audit Firm Categories - Renames the audit firm tiers to Category 1 and Category 2, and moves OpenZeppelin, ConsenSys Diligence and Trail Of Bits to Category 1. Add Spark Foundation Grant For December 2026 - Authorizes the December 2026 grants to the Spark Foundation a",
-      "first_observed_utc": "2026-11-12T20:05:49Z",
-      "headline": "Atlas Edit Weekly Cycle Proposal - Week Of 2026-11-09",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T19:29:43Z",
-      "source_id": "sky_governance",
-      "source_ids": [
-        "maker_governance",
-        "sky_governance"
-      ],
-      "url": "https://forum.skyeco.com/t/atlas-edit-weekly-cycle-proposal-week-of-2026-11-09/28389"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "6ddf583b860ce340e4bd268b",
-      "excerpt": "In October 2025, Vitalik’s GKR tutorial was my first encounter with GKR. Its central observation, that the protocol commits only to a circuit’s input and output and never to the layers in between, made GKR look like the natural tool for proving hash-heavy computation. A year later, that has led to what is, as far as we know, the first machine-checked soundness bound for GKR on general layered circuits, in Isabelle/HOL. The same work produced a soundness proof for sparse-Merkle updates built on that bound, a partial refinement that ties the model to the Rust code, and a sparse prover whose release 1.2 proves 2.41–2.71× faster with byte-identical proofs and unchanged Isabelle theories. This post follows that work, StateSync-GKR, from the protocol and its field to the update a circuit encodes, the Rust code and the prover arithmetic. Two arXiv papers give the details: Soundness of the GKR Protocol for Sparse-Merkle Updates, with a Machine-Checked Core and StateSync-GKR: Design and Evaluation of a Reusable Sparse GKR Engine , whose appendix plots the measurements in 363 panels. All formal results are proved in the first paper, and Isabelle/HOL also checks the parts marked as machine-checked. The main results: The first machine-checked GKR soundness bound for general layered circuits,",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "GKR with a Machine-Checked Core, and a Sparse Prover Made Faster with Byte-Identical Proofs",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T15:08:19Z",
-      "source_id": "eth_research",
-      "source_ids": [
-        "eth_research"
-      ],
-      "url": "https://ethresear.ch/t/gkr-with-a-machine-checked-core-and-a-sparse-prover-made-faster-with-byte-identical-proofs/26226"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "d757308042b6b35e345bff5b",
-      "excerpt": "Are there any official reports, procedures, or verification regarding a compromise of Keplr? I really wouldn’t want my ATOMs drained. That would truly hurt… Is there any emergency procedure I should follow? I have liquid staking disabled. I use Atomic Wallet, and I use Keplr in both Firefox and Chrome. According to AI, it’s fine. Is it possible to convert an existing wallet into a multisig wallet? And require, for example, 2 out of 3 signatures for transactions? Thanks. 6 posts - 6 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Wallet vacuum 11/2026",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T14:49:53Z",
-      "source_id": "cosmos_governance",
-      "source_ids": [
-        "cosmos_governance"
-      ],
-      "url": "https://forum.cosmos.network/t/wallet-vacuum-11-2026/17549"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "b9dcd2ec498515901e2c0c18",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-12T20:01:27Z",
-      "headline": "Christine Lagarde: Interview with Yomiuri Shimbun",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T14:00:00Z",
-      "source_id": "ecb_press",
-      "source_ids": [
-        "ecb_press"
-      ],
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html"
-    },
-    {
-      "cmc_ids": [
-        6636
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7b2ac804f511064ce55a1cdd",
-      "excerpt": "Hi all, Open USD (OUSD) went live on 30 September. It’s backed by Visa, Mastercard, Stripe and Coinbase, issued by Bridge, and nearly all reserve income goes back to partners. It runs on Ethereum, Solana, Base and Tempo, but not on Polkadot. Is anyone working on bringing it to Polkadot Hub, natively or via Snowbridge? Thanks, Paul Schmidt, Heitaria Swiss AG 1 post - 1 participant Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "Plans to bring Open USD (OUSD) to Polkadot Hub?",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {
-        "6636": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T12:19:03Z",
-      "source_id": "polkadot_governance",
-      "source_ids": [
-        "polkadot_governance"
-      ],
-      "url": "https://forum.polkadot.network/t/plans-to-bring-open-usd-ousd-to-polkadot-hub/19289"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GOVERNANCE"
-      ],
-      "event_id": "a34c14240b88b9d16e111152",
-      "excerpt": "Hi Optomism, I’m [Your Name], a smart contract and zkVM protocol developer. I’ve been building BitcoinMerkleVerifier_ZK , a gas-optimized, zero-knowledge verification infrastructure designed to bring trustless Bitcoin interoperability directly to Optomism. The Problem We Solve: Existing cross-chain bridges rely on trusted multisig federations or vulnerable oracles, while running raw Bitcoin Merkle tree traversals and double-SHA256 loops on-chain is cost-prohibitive. Our Solution: Our protocol offloads heavy cryptographic Bitcoin Merkle path calculations off-chain into an SP1/RISC Zero zkVM guest program, submitting a compact ~192-byte Groth16 proof to the EVM contract. This slashes verification costs down to a flat ~200k gas while ensuring bulletproof security backed by OpenZeppelin circuit breakers ( Pausable ) and multi-sig governance. Why [Optimism]? Deploying this infrastructure on Optomism directly expands your ecosystem’s TVL by unlocking trustless Bitcoin-backed assets, cross-chain yield protocols, and BTCFi applications with maximum cryptographic security. Current Status & Deliverables: Smart contracts and Foundry test suites fully implemented. zkVM Rust guest program structured and optimized. Seeking [$5000 / Support] to fund our upcoming testnet deployment, security aud",
-      "first_observed_utc": "2026-11-12T20:05:48Z",
-      "headline": "Grant Proposal: Trustless ZK Bitcoin Verification Infrastructure for [Opromism]",
-      "last_observed_utc": "2026-11-13T22:40:56Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T09:19:37Z",
-      "source_id": "optimism_governance",
-      "source_ids": [
-        "optimism_governance"
-      ],
-      "url": "https://gov.optimism.io/t/grant-proposal-trustless-zk-bitcoin-verification-infrastructure-for-opromism/10966"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "28005e431498cd6dad5ee44f",
-      "excerpt": "TL;DR: An opt-in, public, per-account “protected” flag for ERC-20s. Small sends stay instant; anything bigger is scheduled and can be cancelled by a pre-registered backup wallet; a “stress” action sweeps everything to the backup and locks it, which also helps against wrench attacks. Turning protection on is instant; weakening it (off, higher limit, shorter waits, new backup) takes a delay the holder picks. Why: Today a stolen key or a coerced holder means an instant, final drain. Existing approaches are per-transfer (SLOW), need recipient cooperation (ERC-8236), need judges (ERC-20R), protect protocols rather than users (ERC-7265), or only work in one smart wallet. This puts the protection in the token, so it works for any holder and any wallet, including plain EOAs. How it works: protect(backup, dailyLimit, holdWindow, offDelay, lockDuration, fastLane) : instant. Over-limit transferFrom reverts (never returns true without moving tokens, so routers, vaults and lenders can’t be fooled). Over-limit transfer from an EOA may be auto-scheduled, so wallet “Send” buttons just work. queueTransfer → hold window → anyone can executeTransfer ; the owner or backup can cancelTransfer ; with the opt-in fast lane, the backup can approveTransfer to skip the wait. stress(account) : cancels everyt",
-      "first_observed_utc": "2026-11-12T20:01:31Z",
-      "headline": "ERC-XXXX: Protected Accounts for Fungible Tokens--*",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T07:28:16Z",
-      "source_id": "ethereum_governance",
-      "source_ids": [
-        "ethereum_governance"
-      ],
-      "url": "https://ethereum-magicians.org/t/erc-xxxx-protected-accounts-for-fungible-tokens/30297"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "458fe55b87d1dd76519a9646",
-      "excerpt": "Protocol This release introduces protocol version 40 On devnet , this protocol version can be enabled no earlier than 2026-11-07 18:29 UTC (start of epoch 15). Please ensure that you update your validators before this epoch change. Otherwise, if the upgrade threshold is reached, the protocol will remove you from the committee, and both you and your delegators will lose rewards. #13362 : Adds the meter_instantiation_loops feature flag and the max_instantiation_loop_graph_edges parameter for verifying published packages after consensus, set to the values already in use. #13452 : Packages named by a Move authenticator's type arguments are now inputs of the authenticator: nodes wait for them before executing the transaction, and they are charged as input reads unless they are system packages. #13306 : stake whose activation epoch change ran in safe mode is withdrawn as pending stake. #13490 : enhanced loading of the struct, enum and vector values in Move-call arguments, with the new limits max_move_call_argument_nodes (2,097,152 per Move call) and max_move_call_argument_nodes_total (16,777,216 per transaction). #13453 : new feature flag disallow_self_identifier_in_transactions (protocol 40): a transaction whose type arguments, Move call target or Move authenticator type arguments nam",
-      "first_observed_utc": "2026-11-13T07:07:08Z",
-      "headline": "[Devnet] v1.36.0-alpha",
-      "last_observed_utc": "2026-11-13T22:41:00Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T04:32:54Z",
-      "source_id": "iota_releases",
-      "source_ids": [
-        "iota_releases"
-      ],
-      "url": "https://github.com/iotaledger/iota/releases/tag/v1.36.0-alpha"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "7af60327b3a2b853b419c3d0",
-      "excerpt": "What exactly is Web3 Foundation doing these days? Looking at its recent YouTube videos, most of the content seems to focus on Bill Laboon talking about privacy, smart TVs, and data collection, with little connection to Polkadot or its actual development. Is Web3 Foundation still focused on supporting the Polkadot ecosystem, or has it become a PR platform for its executives? How much money is being spent on these campaigns, and what measurable results have they delivered? Polkadot needs real adoption, developers, and working products, not endless discussions about problems with the internet. Who is holding Web3 Foundation accountable for its spending and priorities? 5 posts - 4 participants Read full topic",
-      "first_observed_utc": "2026-11-12T20:01:30Z",
-      "headline": "What Are The People at W3F Actually Doing?",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-07T02:59:39Z",
-      "source_id": "polkadot_governance",
-      "source_ids": [
-        "polkadot_governance"
-      ],
-      "url": "https://forum.polkadot.network/t/what-are-the-people-at-w3f-actually-doing/19288"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "3c743379446753c873eccb8b",
-      "excerpt": "🚨 Mandatory Testnet (atlantic-2) Upgrade - v6.8 ⚠️ This is a MANDATORY upgrade for all atlantic-2 testnet node operators and validators. Nodes that do not upgrade will halt at the upgrade height and fall out of consensus. 📋 Upgrade Summary 🏷️ Upgrade Name (on-chain plan) v6.8 📦 Version (git tag / binary) v6.8.0-rc2 🌐 Network atlantic-2 (testnet) 🔑 Commit 35f6bf17497f4fc71f1b4e5ad0992bf0d3b3a25c 🗳️ Governance Proposal #261 ⏰ Target Upgrade Time 2026-11-10T16:30:00 UTC (approx.) 📏 Upgrade Height 282577035 ⏱️ Expected Downtime A few minutes Note: The on-chain Upgrade Name ( v6.8 ) is intentionally different from the git tag ( v6.8.0-rc2 ). Cosmovisor matches on the Upgrade Name , so the directory must be named v6.8 — see below. ⚠️ Check Before Upgrading v6.8 removes several modules and servers and changes some RPC defaults. If any of these affect your node, act before the upgrade height: The Cosmos gRPC ( :9090 ) and gRPC-Web ( :9091 ) servers are removed. Use Tendermint RPC or the REST/LCD API, which serve the same queries and broadcast. The [grpc] and [grpc-web] sections of app.toml are no longer read. --grpc.* and --grpc-web.* flags are accepted as no-ops, but --grpc-only now fails as an unknown flag, so remove it from your service unit. RPC rate limiting is on by default for nod",
-      "first_observed_utc": "2026-11-13T07:07:06Z",
-      "headline": "v6.8.0-rc2",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T23:30:11Z",
-      "source_id": "sei_releases",
-      "source_ids": [
-        "sei_releases"
-      ],
-      "url": "https://github.com/sei-protocol/sei-chain/releases/tag/v6.8.0-rc2"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1425091e181e5dc43806b69c",
-      "excerpt": "How large can EIP-8141’s validation budget be? A mempool DoS benchmark Authors: Stefano De Angelis , Daniil Ankushin , Manuel Arto . All at Nethermind. Thanks to Thomas for feedback and comments on the initial benchmarking plan . TL;DR EIP-8141 caps unpaid validation at MAX_VERIFY_GAS = 100k; too low for a Groth16 privacy transfer or post-quantum signatures . Raising the cap is a DoS risk, since validation and block processing share the node’s CPU. An attacker can send transactions that use the whole cap and then fail, taking CPU from block processing for free. We tested this risk on a Nethermind node, flooding it with such transactions at caps from 100k to 500k, on one CPU core (the worst case) and three machines. Without in-client protections, block processing on our slowest machine stays within a 25 ms delay budget only up to 15M gas/s. With Nethermind allowing up to about 100 failing tx/s per connection, that limits the cap to the current 100k. We show that a MAX_VERIFY_GAS = 300k is viable with an in-client protection that pauses transaction validation while the node processes a block. At 100 tx/s (30M gas/s), block processing then stays within 50 ms, even on p90 mainnet blocks. The cost moves to the mempool, which admits only 12–27% of honest frame transactions under the fl",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "How large can EIP-8141's validation budget be? A mempool DoS benchmark",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T23:26:40Z",
-      "source_id": "eth_research",
-      "source_ids": [
-        "eth_research"
-      ],
-      "url": "https://ethresear.ch/t/how-large-can-eip-8141s-validation-budget-be-a-mempool-dos-benchmark/26224"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "aff32afb63af01e7ea9a5edd",
-      "excerpt": "This October, GitHub saw more than 1.2 billion commits in one week—over 400% more than a year earlier. This is more commits than GitHub received in all of 2025. Chances are, you’re generating more code than you were a year ago. But ask yourself: do you feel 400% more productive than you were last year? Building software takes more than a good prompt. As AI speeds up implementation, software developers are feeling more pressure in other places: a Faros AI study found that pull requests spent 441% longer in review when teams went from low to high AI adoption. As a software developer, you gather requirements and steer implementation, review changes and evaluate test results, then investigate what happens in production. Agents can help you work more efficiently across all of these stages: Plan, Build, Verify, and Observe. We’ll walk through what an effective agentic engineering workflow looks like on GitHub. Plan: Get everyone and every agent on the same page See if this sounds familiar. You’re planning an API change. The design is in one tool, a compatibility requirement is buried in Slack, and an old pull request explains why the current implementation works this way. Before you can write a useful plan, you need to connect those details, compare approaches, and agree on how existin",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "Beyond code generation: A developer’s guide to agentic engineering",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T22:15:59Z",
-      "source_id": "github_blog",
-      "source_ids": [
-        "github_blog"
-      ],
-      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "0440ea44184941f6eb54013d",
-      "excerpt": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago. The exceptionally rare fossils reveal a creature unlike anything previously known, potentially a predator of smaller squid-like animals and a surprising survivor of a supposedly vanished family. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Friday Squid Blogging: New Jurassic Squid Predecessors",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T22:05:12Z",
-      "source_id": "schneier_security",
-      "source_ids": [
-        "schneier_security"
-      ],
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html/feed/atom/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "dd13a740ab5c75e5e709b761",
-      "excerpt": "Oversight and Transparency Committee (OAT) The Oversight and Transparency Committee (OAT), composed of Patrick McCorry, A.J. Warner, Pedro Breuer, Gavin Wang, and Traversi Normandi, has been fulfilling its mandate over the past month, working on the following: Ηolding recurring meetings with the OpCo team to provide support and feedback on their strategy and operations. Under the USDG proposal (see below), the OAT has been mandated to set the KPIs for the initiative. The OAT has already begun conversations with OpCo and Entropy for this purpose. The OAT continues to oversee OpCo’s role in the AGV wind-down. In addition, the OAT has taken on an operational role as one of the members of the GCP Foundation Council through the end of the year. The OAT continues in its role as Entropy’s counterparty, reviewing and approving ATMC allocation proposals. This month, we reviewed and approved several reallocations related to initiatives focused on growing USDG on Arbitrum One. The OAT also continues in its role as Entropy’s counterparty in the negotiation over the 10M ARB set aside. Negotiations are ongoing as we work to find the structure that best aligns incentives and protects the DAO’s interests. OpCo Cross-AAE Collaboration USDG After USDG launched on Arbitrum on October 6, OpCo remain",
-      "first_observed_utc": "2026-11-12T20:05:48Z",
-      "headline": "OpCo Update October 2026",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T21:54:23Z",
-      "source_id": "arbitrum_governance",
-      "source_ids": [
-        "arbitrum_governance"
-      ],
-      "url": "https://forum.arbitrum.foundation/t/opco-update-october-2026/31665"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "a7cebdfb806d09c7b772f068",
-      "excerpt": "Highlights Known Issues DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. Tensor-parallel serving with RPC orchestration may hang during model initialization when reusing an MPI worker pool across threads. Model Support Add Muse Spark Open model and configuration support #21042 , #20643 Add LTX-2.3 text-to-video and retake pipelines #18111 Add GLM-5.2 NVFP4 Modeling V2 targets for GB300 and SM103 #20524 , #20662 Add MiniMax-M3 NVFP4 low-latency decode for Blackwell and MiniMax-M3.1-Flash DSpark serving #20306 , #20922 Consolidate Kimi K3 native modeling and support NVFP4 KV caching #20893 , #20888 Add MiniMax-H3 CPU offloading and tensor parallelism for its text encoder and DiT #21301 , #19807 , #20176 Qualify the Qwen3.5 dense vision-language model for ModelExpress #20764 Enable DeepSeek-V4.1-Flash on SM120 #20769 API Remove unused LlmRequest fields (BREAKING) #21036 Remove obsolete TensorRT-backend compatibility surfaces (BREAKING) #21041 Default to eight serving frontends with a single-frontend fallback (BREAKING) #19379 Add image, video, and",
-      "first_observed_utc": "2026-11-13T07:07:10Z",
-      "headline": "v1.4.0rc3",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T21:38:32Z",
-      "source_id": "nvidia_ai_releases",
-      "source_ids": [
-        "nvidia_ai_releases"
-      ],
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "5b43fc99b84679b4f330f47e",
-      "excerpt": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-06T21:27:36Z",
-      "source_id": "darkreading_news",
-      "source_ids": [
-        "darkreading_news"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy"
-    },
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
@@ -982,7 +12,7 @@
       "excerpt": "Summary As part of regular governance upkeep, Uniswap Labs reviews the protocol infrastructure that governance owns and brings forward improvements as they are needed. This RFC proposes two technical updates: Upgrade the VolatilePair Hook on Ethereum Update the protocol fee releaser on X Layer Below we outline the background and proposed changes for both initiatives. Part 1: VolatilePair Hook Upgrade Background VolatilePair Hook is a Uniswap v4 dynamic-fee hook built by Uniswap Labs. It went live on Ethereum on October 14 with the ETH/USDC pool and has since launched on Robinhood Chain (ETH/USDG). Volatile pairs did more than $500 billion in volume on Uniswap this year. In a static-fee pool, when the price moves elsewhere, LPs end up absorbing the cost while the pool quotes a stale price and someone else trades against it to keep the difference. VolatilePair Hook prices both sides of the trade, setting separate buy and sell fees on every swap: When the pool price rises, buying costs more and selling costs less. When pool price falls, the fees flip. After a large price move, trades that push the price back pay a temporary fee . VolatilePair Hook was designed to keep value in the pool while quoting a competitive spread, enabling stronger and more consistent returns for LPs. The hoo",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "[RFC] Upgrade VolatilePair hook and update X Layer releaser",
-      "last_observed_utc": "2026-11-13T22:40:56Z",
+      "last_observed_utc": "2026-11-14T03:20:49Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T21:16:31Z",
@@ -1003,7 +33,7 @@
       "excerpt": "Summary Reth v2.10.1 is a maintenance release. Follow up to the EVM2 release with further performance and stability fixes. Update Priority User Class Priority Payload Builders Medium Non-Payload Builders Medium Binaries See pre-built binaries documentation. The binaries are signed with the PGP key: 50FB 7CC5 5B2E 8AFA 59FE 03B7 AA5E D56A 7FBF 253E System Architecture Binary PGP Signature x86_64 reth-v2.10.1-x86_64-unknown-linux-gnu.tar.gz PGP Signature aarch64 reth-v2.10.1-aarch64-unknown-linux-gnu.tar.gz PGP Signature",
       "first_observed_utc": "2026-11-12T20:05:47Z",
       "headline": "Reth v2.10.1",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
+      "last_observed_utc": "2026-11-14T03:20:48Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T18:53:31Z",
@@ -1024,7 +54,7 @@
       "excerpt": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "AI Gave Your Incident Archive a Second Job",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T18:27:30Z",
@@ -1047,7 +77,7 @@
       "excerpt": "Author: HyperLend Team Date: 2026-11-06 Summary This proposal seeks Aave DAO recognition of a new HyperLend deployment as a friendly fork of Aave, on Elysium, Kinetiq’s Layer 2 for the Hyperliquid ecosystem. The deployment will use the Aave v3.7 codebase and will consist only of Aave pools. HyperLend will share 50% of all revenue generated by the Elysium deployment with the Aave DAO. The remaining 50% will be used to buy back HyperLend’s token, HPL. Block Analitica will continue to serve as risk manager. Motivation HyperLend’s track record In early 2025, the Aave DAO recognized HyperLend as a friendly fork on HyperEVM ( TEMP CHECK , ARFC ). Since then, HyperLend has: Originated approximately $2B in loans ( Block Analitica dashboard ) Reached a peak total market size of over $900M ( Block Analitica dashboard ), and currently holds over $530M in TVL with $250M in active loans ( DefiLlama ) Operated securely and at scale for more than a year Worked continuously with Block Analitica on risk management We believe this record shows HyperLend can run an Aave-based money market responsibly. We want to bring that experience to a second network. Why Elysium Elysium is a high-throughput Arbitrum Orbit L2 built by Kinetiq. It settles to HyperEVM, runs co-located with HyperCore, and uses HYPE",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "[ARFC] Extend HyperLend's Friendly Fork Recognition to Elysium (Aave v3.7)",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1070,7 +100,7 @@
       "excerpt": "USDG October was USDG’s first full month live on Arbitrum One. Following the October 6th public launch, our focus shifted from securing launch partners to building out the integration pipeline and moving the USDG proposal through governance. USDG supply on Arbitrum One reached $61.32M by October 31st, tracked live at arbdata.com/usdg . In tandem with Offchain and the Arbitrum Foundation’s BD teams, we continued to grow USDG integrations on Arbitrum through the month. DeFi Saver added USDG and featured the opportunity in-app, Beefy listed the Gauntlet Premium USDG vault, Twyne launched a SyrupUSDG/USDG vault, and Aerodrome launched USDG pools on Arbitrum One. Since month-end, Zyfai and Jumper have integrated the USDG vaults. On October 15th, the Arbitrum Foundation launched the Arbitrum Stablecoin Growth Program , which pairs performance-based rewards from a 2M ARB pool with technical, marketing, and ecosystem support for teams that adopt USDG as their primary stablecoin on Arbitrum One. To help market the program and USDG on Arbitrum, a livestream was hosted with Uniswap, Paxos, GMX, and Maple. On the governance side, the proposal passed its offchain vote , which ran from October 15th to 22nd. The onchain vote opened on October 29th and closes November 12th. Treasury Management D",
       "first_observed_utc": "2026-11-12T20:05:48Z",
       "headline": "Entropy Advisors Monthly Update: October 2026",
-      "last_observed_utc": "2026-11-13T22:40:55Z",
+      "last_observed_utc": "2026-11-14T03:20:49Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T16:16:27Z",
@@ -1093,7 +123,7 @@
       "excerpt": "Overview This release improves node efficiency, expands the foundation for post-quantum accounts, and strengthens security and reliability. It also brings AVM arithmetic enhancements and API optimizations. What's New Performance : significantly reduced RAM and disk IO by algod running on default config. Post-quantum accounts : infrastructure for new signing schemes, including Falcon-512 and hybrid accounts. AVM : improved wide-integer arithmetic, including modular exponentiation, and stricter LogicSig argument validation. Security and stability : hardened DNSSEC validation, improved networking and ledger catchpoint processing. Changelog Enhancements API: compute block hash from header only in GetBlockHash ( #6818 ) API: Update oapi-codegen to v2.8.1 and drop unused embedded specs ( #6814 ) API: Stream JSON responses with encoding/json/v2 ( #6808 ) Account: refactor participation registry ( #6743 ) Agreement: enable zstd-compressed crash recovery snapshots ( #6781 ) Agreement: delete old router.Children entries in-place ( #6724 ) AVM: Bmath handrolled ( #6805 ) Build: use Go 1.27.3 ( #6794 ) Chore: remove gorilla/mux ( #6804 ) Ci: update coverage reports to always show full cross-package coverage information ( #6740 ) Ci: bind nightly/PR workflow inputs via env before shell ( #669",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "Algorand BetaNet 5.1.0",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "4030": "FULL_NAME"
       },
@@ -1118,7 +148,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Avalanche: Increase borrow cap for USDt from 22,800,000 to 30,000,000. Increase borrow cap for USDC from 64,600,000 to 70,000,000. Reduce borrow cap for WETH.e from 13,500 to 7,000. Reduce supply cap for DAI.e from 6,200,000 to 1. Reduce borrow cap for DAI.e from 5,414,000 to 1. Aave V3 Prime: Increase borrow cap for WETH from 17,000 to 19,000. Reduce supply cap for wstETH from 80,000 to 55,000. Aave V3 X Layer: Increase supply cap for USD₮0 from 100,000,000 to 150,000,000. Increase borrow cap for USD₮0 from 70,000,000 to 135,000,000. Increase supply cap for USDe from 75,000,000 to 100,000,000. Aave V3 Core: Increase supply cap for USDC from 3,000,000,000 to 3,500,000,000. Increase borrow cap for USDC from 2,270,000,000 to 2,600,000,000. Reduce supply cap for WETH from 2,700,000 to 2,200,000. Reduce supply cap for wstETH from 950,000 to 850,000. Reduce borrow cap for wstETH from 28,000 to 15,000. Reduce supply cap for DAI from 200,000,000 to 150,000,000. Reduce supply cap for EURC from 92,000,000 to 55,000,000. Reduce supply cap for USDS from 50,000,000 to 25,000,000. Reduce borrow cap for USDS from",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Cap and IRM Changes on Aave V3 / 2026.11.06",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1141,7 +171,7 @@
       "excerpt": "A year ago, NVIDIA open sourced its Aerial wireless software , joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless systems. Today, researchers and developers are using these tools to build 6G-ready networks that do more than just transmit data — receiving signals more effectively, keeping robots and autonomous systems connected when it matters most, and adapting in real time as devices move through the world. Over the past year, global developer adoption of NVIDIA AI Aerial and NVIDIA Sionna software has grown 10x, while NVIDIA’s open source 5G/6G tools have surpassed 1 million downloads. More than 8,000 research and academic institutions worldwide are using these platforms. The projects emerging today offer a view of how future networks could look. Each addresses a different challenge, but together point toward a broader ambition for building AI-native 6G networks that deliver connectivity, computing and sensing over a converged software-defined platform for billions of people, machines and agents. Networks That Help Ro",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T16:00:35Z",
@@ -1162,7 +192,7 @@
       "excerpt": "EBA E-mail alert 6 November, 2026 Date 06/11/2026 Anonymous (not verified) Fri, 11/06/2026 - 17:00 News & Press The EBA outlines next steps on supervisory reporting simplification and extends implementation timelines following consultation feedback on the ITS Final Q&As 2026_7830 Geographical allocation of exposures arising from synthetic securitisations for the purposes of the Countercyclical Capital Buffer (CCB) 2026_7945 Consolidated application and intragroup transferability of the permanent exemption from deduction of equity holdings in an insurance company from CET1",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "EBA E-mail alert 6 November, 2026",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T16:00:03Z",
@@ -1185,7 +215,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V4 reserves. Aave V4 Ethereum: Increase the draw cap for USDG on the Core Hub Main Spoke from 63.5M to 75M. Increase the add cap for WBTC on the Prime Hub Bluechip Spoke from 700 to 1,000. Increase the add cap for cbBTC on the Prime Hub Bluechip Spoke from 300 to 600. Increase the base rate for USDe on the Plus Hub from 6.60% to 7.00%. Aave V4 Avalanche: Increase the draw cap for USDC on the Core Hub Main Spoke from 9M to 15M. Aave V4 Base: Increase the add cap for GOOGLc on the Equities Hub MAG7 Spoke from 22K to 40K. Increase the add cap for METAc on the Equities Hub MAG7 Spoke from 5.8K to 10K. Increase the add cap for NVDAc on the Equities Hub MAG7 Spoke from 24K to 35K. Cap Utilization The chart shows add cap utilization (left) and draw cap utilization (right) for Aave V4 reserves at or above 50% of either cap, split by hub. The draw cap panel excludes cross-hub credit lines, which are draw-only legs through which a spoke borrows from a hub against collateral supplied on another hub. Source: LlamaRisk, November 6, 2026 USDG (Core Hub) USDG Main Spoke Borrow Distribution Source: LlamaRisk, November 6, 2026 USDG borr",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Cap and IRM Changes on Aave V4 / 2026.11.06",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1208,7 +238,7 @@
       "excerpt": "Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits 🤗 [Distributed] Set device_id only for NCCL ( #50281 ) by @michaelbenayoun and @3outeille Harden our Jinja sandboxing ( #50431 ) by @Rocketknight1 Full Changelog : v5.22.1...v5.22.2",
       "first_observed_utc": "2026-11-13T07:07:09Z",
       "headline": "Patch release v5.22.2",
-      "last_observed_utc": "2026-11-13T22:41:00Z",
+      "last_observed_utc": "2026-11-14T03:20:55Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T15:43:27Z",
@@ -1229,7 +259,7 @@
       "excerpt": "This is fascinating : The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking at Doppler curves, which plot the way a plane’s sound changes as it passes overhead because of the Doppler effect. This is the same familiar Doppler effect that causes the frequency of a siren to rise as it approaches and then fall as it passes by and moves away. More generally, it’s the phenomenon whereby the frequency of a wave perceived by an observer changes when the observer and the source of the wave are moving in relation to one another. […] It’s sound that’s relevant here, though, and specifically the sound of aeroplanes. Early in his video, Colsto brings up a map of the flights that were in the air at the time the video he’s tracing was recorded. Much of this information is publicly available. Aircraft equipped with Automatic Dependent Surveillance–Broadcast (ADS-B) transmit data about their position, velocity, and altitude, which flight-tracking services collect and make available to the public. While not every plane is tracked, the system provides an enormous amount of information about aircraft movements.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Pinpointing Location of Videos from Background Airplane Sounds",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T14:57:48Z",
@@ -1250,7 +280,7 @@
       "excerpt": "The highest priorities for the transition to post-quantum cryptography are the basic building blocks of authenticated key-agreement protocols such as TLS. Without these building blocks in place, secure communication on the Internet will not be possible once cryptographically relevant quantum computers come online. However, today we rely on quantum-vulnerable cryptography for much more than TLS. Privacy Pass is a protocol used by site operators like Cloudflare to help protect applications from abuse. One way we do this is by rate limiting individual clients so that no one client consumes too many of the site's resources. Normally this involves some combination of friction or loss of privacy for users: CAPTCHAs or other challenges to moderate traffic, along with accounts and fingerprinting to identify traffic.Privacy Pass was designed to avoid this tradeoff between friction and privacy. The basic idea is that a client gets issued a number of tokens , which they can redeem in exchange for access to the site. Crucially, each token is unlinkable to the client it was issued to, ensuring the client can use the site as they always had without sacrificing privacy. With 10 years of deployment experience under our belts — using Privacy Pass for applications such as privacy proxies (like iCl",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "The post-quantum future of web privacy",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T14:00:00Z",
@@ -1271,7 +301,7 @@
       "excerpt": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Why Europe's Freezer Hacks Spread So Far, So Fast",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T14:00:00Z",
@@ -1292,7 +322,7 @@
       "excerpt": "This is a testnet release. https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md What's Changed refactor(cli): use versioned messages and transactions throughout by @apfitzge in #15524 SIMD504: Shred wire format upstream by @alexpyattaev in #15522 keygen, cli: generate mnemonic entropy without bip39's rand feature by @kskalski in #16240 cost-model: decode system instructions with wincode by @kskalski in #16329 SIMD-565: Add secp256r1 syscalls by @samkim-crypto in #13918 chore(deps): bump arc-swap from 1.9.2 to 1.9.3 by @dependabot [bot] in #16383 chore: Clarify comment in multinode-demo script by @steviez in #16002 [solana-syscalls] clean up abort_on_invalid_curve (SIMD-0137) by @samkim-crypto in #16420 runtime: do not inherit rent epoch by @2501babe in #16387 bpf_loader: encode / decode instructions with wincode by @kskalski in #16415 ChannelSend/ChannelTryRecv traits implementations for wake-channel by @KirillLykov in #16426 SIMD504: discard shreds with invalid LAST_SHRED_IN_SLOT flags early by @alexpyattaev in #16414 chore(deps): bump ur-registry from 1.0.8 to 1.0.9 by @yihau in #16344 clippy: fix needless_borrows_for_generic_args and unnecessary_as_slice by @kskalski in #16273 Enable wincode in place of bincode on sdk interface crates by @kskalski in #16427 [solana-syscall",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "Release v4.5.0-beta.0",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T13:58:53Z",
@@ -1315,7 +345,7 @@
       "excerpt": "General Updates DOT holders are voting on Referendum 1966, the first of three weekly steps to reduce Polkadot’s active validator set from 600 to 320, with remaining validators expected to support Polkadot App requests by year-end (via MSBIntel: post , CoinBitDao: post ). Kusama introduced collaborative decision-deposit pools, enabling contributors to collectively meet referendum deposit requirements with one pool per referendum and no owner/admin key (via VRCI_Global: post , post ). Technical Polkadot Products demos showcased browser-to-native-app messaging, allowing websites to act as direct messaging endpoints for Polkadot Mobile Chats without third-party chat services or backend infrastructure; its key-isolated security model was also highlighted, where apps request actions from a verifying Host rather than handling user keys directly (via sergejns_: post , post , Biz_R_: post , post ). Ecosystem & Events Polkadot Assemble added Tangem as a wallet partner, offering selected attendees hardware wallets for Polkadot and Kusama assets, while HackTour India joined as an official community partner (via dotAssemble: post , HackTourIND: post , dotAssemble: post ). KusamaShield previewed its Polkadot Assemble agenda, including privacy tooling, zero knowledge, Gavin Wood’s “Allegality,”",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Polkadot Socials Daily Digest: 2026-11-06",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1338,7 +368,7 @@
       "excerpt": "Daniil Ankushin, Nethermind. Verify-budget figures: method by Daniil Ankushin, benchmark and measurements by Manuel Arto. On frame transactions a shielded pool pays its own gas, so a private withdrawal needs no relayer. We ran a real BN254 Groth16 pool this way on current Nethermind master: a withdrawal costs 679,322 gas. With EIP-8250 nonce keys, many withdrawals can come from the one pool address at once. Two things do not work yet. The proof check is over the spec cap on validation gas, and a pool cannot pay for a call from the user’s own address. The pool we ran is soispoke’s minimal-shielded-pool ( GitHub - soispoke/minimal-shielded-pool · GitHub ). How a withdrawal works In a withdrawal the pool is the sender. Its VERIFY code checks the zk proof and approves execution and payment. The user needs no funded account and does not appear in the transaction. Two drafts make this safe in a public mempool. With EIP-8250 the pool uses the note’s nullifiers as nonce keys. Each withdrawal has its own nonce key, so withdrawals with the pool as sender do not compete for one nonce. A side effect: a nullifier that was already used is a used nonce key, so the protocol refuses a double spend before the pool’s code runs. With EIP-8272 the transaction checks the pool’s Merkle root against a c",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "A privacy pool on frame transactions: what works, and the case that does not yet",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T13:00:55Z",
@@ -1359,7 +389,7 @@
       "excerpt": "In this interview, GlobalData's Phoebe Hodgson comments on the market reaction and implications to the Binance hack.",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Binance: What the Largest Ever Crypto Hack Means for Cyber Resilience",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T13:00:00Z",
@@ -1380,7 +410,7 @@
       "excerpt": "At Sibos 2026, Mastercard’s Marc Pettican talks about how advanced data analytics and AI can unlock working capital and early payment discounts.",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "How to Prioritise Data to Smooth Buyer and Supplier Relationships",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T11:00:00Z",
@@ -1401,7 +431,7 @@
       "excerpt": "Last week’s security notice on the Fearless Wallet browser extension ( notice ) says that from February 2025, unlocking the wallet sent your private key to a server run by the attacker. The notice links a write-up that walks through the code at fixed commits ( write-up ). I read it and then went through the repo history myself. None of it was hidden. It sat in public source the whole time. I audit smart contracts, not browser extensions, but the review lessons carry over to any code that touches keys. Like the write-up, I’m sticking to what the code and the history show, not who wrote it or why. How it got in, and how it left The code arrived in PR #1022 of soramitsu/fearless-wallet-web, titled “Ton Service”. It was open for ten weeks and merged on 19 February 2025 as one squashed commit, “TON ecosystem”: 251 files, 4,690 lines added and 6,119 removed. The PR has no review comments. The function that matters is about 25 lines, in a new 180 line file, inside a diff of almost 11,000 changed lines whose title says it adds TON. It left the same way. The code was deleted from the source on 25 June 2026, inside a release commit with about 80,000 changed lines. What each piece looked like in a diff The name. On every unlock the extension calls fetchJettonInfo() . Jettons are TON tokens,",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Fearless Wallet key leak: 16 months in public code, and the review checks that catch it",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T10:01:08Z",
@@ -1422,7 +452,7 @@
       "excerpt": "IC release-2026-11-06_03-19-raised-heap-limits",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "release-2026-11-06_03-19-raised-heap-limits",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T09:54:23Z",
@@ -1443,7 +473,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "release-2026-11-06_03-19-base",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T09:54:21Z",
@@ -1464,7 +494,7 @@
       "excerpt": "IC release-2026-11-06_03-19-enable-heap-limits",
       "first_observed_utc": "2026-11-12T20:05:45Z",
       "headline": "release-2026-11-06_03-19-enable-heap-limits",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T09:53:59Z",
@@ -1485,7 +515,7 @@
       "excerpt": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "UK Warns Its Critical Infrastructure Faces Grave Risk",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T09:00:00Z",
@@ -1506,7 +536,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:27Z",
       "headline": "ECB publishes consolidated banking data for end-June 2026",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:43Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T09:00:00Z",
@@ -1527,7 +557,7 @@
       "excerpt": "Can a valid original Polkadot.js mnemonic be rejected because of the account’s cryptographic type or derivation scheme, and can the original extension’s LevelDB storage help identify these parameters? 2 posts - 2 participants Read full topic",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Mnemonic rejection",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T06:19:27Z",
@@ -1548,7 +578,7 @@
       "excerpt": "See kubernetes-announce@ . Additional binary downloads are linked in the CHANGELOG . See the CHANGELOG for more details.",
       "first_observed_utc": "2026-11-13T07:07:08Z",
       "headline": "v1.38.0-beta.0",
-      "last_observed_utc": "2026-11-13T22:41:00Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T04:34:14Z",
@@ -1569,7 +599,7 @@
       "excerpt": "Glamsterdam, the next update for Ethereum, is currently being tested on testnets. During these tests Chainsecurity has found a few projects that would be vulnerable after Glamsterdam since they rely on certain invariants. These invariants will be broken by EIP-8037 and EIP-8038 which rework how much gas is charged for...",
       "first_observed_utc": "2026-11-06T14:06:13Z",
       "headline": "EIP-8037/EIP-8038 Glamsterdam",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T00:00:00Z",
@@ -1590,7 +620,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-06T00:00:00Z",
@@ -1613,7 +643,7 @@
       "excerpt": "Aave Labs has acquired the team and technology behind Avon, one of the leading teams working on fixed-rate lending onchain. Avon built fixed-rate and floating-rate lending markets and an onchain order book for onchain lending.",
       "first_observed_utc": "2026-11-13T07:07:03Z",
       "headline": "Aave Labs Acquires Avon",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1636,7 +666,7 @@
       "excerpt": "This Node and Miner minor release is recommended for gateway operators and storage providers. It bounds expensive lotus-gateway trace and replay requests and fixes sealing problems, including a panic on CommitFailed sectors missing CommR or CommD and a cancelled task blocking the scheduler. Review the upgrade warnings before upgrading. ✨ Notable Changes ⚠️ Upgrade warning: lotus-gateway now applies its message lookback to trace_transaction and to StateReplay with an empty tipset key, which previously reached any height. The default is 20 epochs (about 10 minutes). To look back further, raise --api-wait-lookback-limit and --api-max-lookback , or query a node directly. ( #13931 , #13958 ) ⚠️ Upgrade warning: API addresses that are URLs ending in /rpc/v<N> , such as KEY:https://api.node.glif.io/rpc/v1 , are now rejected because Lotus adds the RPC path itself. Remove the suffix. ( #13870 ) ⚠️ Upgrade warning: The debug endpoints ( /debug/pprof/* , /debug/vars , /debug/pprof-set/* ) on the daemon, miner, worker and wallet only answer local, non-browser-cross-origin clients. Set LOTUS_DEBUG_ALLOW_REMOTE=1 to serve all clients. ( #13913 ) ⚠️ Upgrade warning: A lookup by block number that stalls while the chain height index is warming after a restart now fails after 5 seconds with a -320",
       "first_observed_utc": "2026-11-13T07:07:06Z",
       "headline": "miner/v1.39.0",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T23:56:55Z",
@@ -1657,7 +687,7 @@
       "excerpt": "This Node and Miner minor release is recommended for gateway operators and storage providers. It bounds expensive lotus-gateway trace and replay requests and fixes sealing problems, including a panic on CommitFailed sectors missing CommR or CommD and a cancelled task blocking the scheduler. Review the upgrade warnings before upgrading. ✨ Notable Changes ⚠️ Upgrade warning: lotus-gateway now applies its message lookback to trace_transaction and to StateReplay with an empty tipset key, which previously reached any height. The default is 20 epochs (about 10 minutes). To look back further, raise --api-wait-lookback-limit and --api-max-lookback , or query a node directly. ( #13931 , #13958 ) ⚠️ Upgrade warning: API addresses that are URLs ending in /rpc/v<N> , such as KEY:https://api.node.glif.io/rpc/v1 , are now rejected because Lotus adds the RPC path itself. Remove the suffix. ( #13870 ) ⚠️ Upgrade warning: The debug endpoints ( /debug/pprof/* , /debug/vars , /debug/pprof-set/* ) on the daemon, miner, worker and wallet only answer local, non-browser-cross-origin clients. Set LOTUS_DEBUG_ALLOW_REMOTE=1 to serve all clients. ( #13913 ) ⚠️ Upgrade warning: A lookup by block number that stalls while the chain height index is warming after a restart now fails after 5 seconds with a -320",
       "first_observed_utc": "2026-11-13T07:07:06Z",
       "headline": "v1.39.0",
-      "last_observed_utc": "2026-11-13T22:40:59Z",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T23:56:32Z",
@@ -1678,7 +708,7 @@
       "excerpt": "Investors worry that Democratic dominance will slow down the AI boom",
       "first_observed_utc": "2026-11-13T07:10:50Z",
       "headline": "Markets realise they hate America’s blue wave",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T23:41:07Z",
@@ -1699,7 +729,7 @@
       "excerpt": "This version is backwards compatible to v1.15.0 . It is optional, but encouraged. The plugin version is unchanged at 47 and is compatible with version v1.15.2 . APIs Added a Gas-Used header to C-Chain /rpc responses with the total gas used by every completed eth_call in the request. admin.lockProfile and continuous profiling now write lock.profile in the binary pprof format, like the CPU and memory profiles. Configs Added --profile-continuous-mutex-fraction (default 1 , which keeps the existing behavior) to set the mutex profile fraction used by continuous profiling. Set it to 0 to stop recording mutex contention, or to n to sample 1 of every n events. Added the filter API to the C-Chain apis option. It serves the polling filter methods ( eth_newFilter , eth_newBlockFilter , eth_newPendingTransactionFilter , eth_getFilterChanges , eth_getFilterLogs , eth_uninstallFilter ), which moved out of subscription . It is enabled by default. A config that sets apis must add filter to keep serving these methods. Added the logs API to the C-Chain apis option. It serves eth_getLogs , which moved out of subscription . It is enabled by default. A config that sets apis must add logs to keep serving eth_getLogs . Metrics SAE state sync scores peers separately for each sync protocol, so avalanche_",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "v1.15.3 - API Cleanup",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T22:47:12Z",
@@ -1720,7 +750,7 @@
       "excerpt": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Operação de influência russa tem como alvo generalizado a América Latina",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T22:13:23Z",
@@ -1741,7 +771,7 @@
       "excerpt": "Erroneous or outdated DNS records can give attackers surprising powers over organizations' email systems.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "US Government Email Systems Open to Abuse Thanks to Typos",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-05T21:35:05Z",
@@ -1750,6 +780,957 @@
         "darkreading_news"
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "c425ae09135a98ced6a71b58",
+      "excerpt": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from an ill-conceived phishing simulation to a hacktivist attack on a US government agency.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T21:00:47Z",
+      "source_id": "darkreading_news",
+      "source_ids": [
+        "darkreading_news"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "51dc1d2f6b3bd6dfbc4a53cc",
+      "excerpt": "Last week at GitHub Universe, we announced our new Git storage architecture, capable of handling thousands of writes per second with reads that scale on demand. Through internal testing, we’ve demonstrated the ability to support 5,000 concurrent agents working on a repository, sending 7,200 pushes per second to a repo, all while serving read traffic with consistently low latency. This new architecture is the foundation for GitHub to support agentic development for hundreds of millions of developers, and we’ve been building it underneath GitHub while it keeps running. Over the past year, agents changed what a busy repository looks like on GitHub. In our first post in this series, we laid out the two principles behind our next-generation Git storage architecture: minimize coordination, and decouple storage from compute. In our last post , we covered the bridge: moving 99.99999% of repositories into Azure, scoping the write quorum to individual references, and standing up virtual replicas backed by Azure Blob Storage. We also left off with an observation: very little of a write needs to be ordered. Git objects are immutable and named by their contents, meaning two writers can store them at the same time without agreeing on anything. The part of a push that needs agreement is the ref",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "Inside GitHub’s new Git storage architecture",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T20:23:21Z",
+      "source_id": "github_blog",
+      "source_ids": [
+        "github_blog"
+      ],
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "09d02629fc9055f4205930be",
+      "excerpt": "After compromising websites, the Russian state-sponsored threat group is fingerprinting victims, then harvesting information from the interesting ones.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "APT29's Watering Holes Target Thousands of Mobile Users",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T20:05:39Z",
+      "source_id": "darkreading_news",
+      "source_ids": [
+        "darkreading_news"
+      ],
+      "url": "https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b1feafc8620ed538b62a3022",
+      "excerpt": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs that can execute those steps quickly and support many agents at once, all within the limits of available power. What this means: AI infrastructure providers need to support more agents without making each one wait longer to get work done. And critically, AI factories are power limited. This means operators need to choose infrastructure that maximizes the work done for every watt. Why it matters: NVIDIA Vera delivers both fast agent performance and high capacity per watt within a single CPU. That gives providers one CPU for a range of agent workloads, rather than having to mix and match fast and dense x86 parts to balance speed and capacity. The data that proves it: In a 100-megawatt data center comparison, NVIDIA found that a single Vera CPU performs better than the fastest x86 CPU and the most energy-efficient x86 CPU. Vera delivers industry-leading agent speed while enabling 1.6x more agents per watt versus the fastest x86 CPU. Vera delivers 2x faster agent speed with leading energy",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T20:00:41Z",
+      "source_id": "nvidia_blog",
+      "source_ids": [
+        "nvidia_blog"
+      ],
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "1ca6800c1ba92dee3165c78c",
+      "excerpt": "This is stable release recommended for general adoption. It is also recommended for Testnet and Devnet. What's Changed v4.4: ignore RUSTSEC-2026-0418 (libz-sys) by @cfkelly18 in #16540 v4.4: ci: don't use sccache in docker run (backport of #16493 ) by @mergify [bot] in #16561 v4.4: ci: refine pipeline trigger condition (backport of #16674 ) by @mergify [bot] in #16678 v4.4: Normalize CI env variables also in the command environment (backport of #16214 ) by @mergify [bot] in #16684 v4.4: ignore RUSTSEC-2026-0433 (pulldown-cmark) by @nbelenkov in #16782 v4.4: fix(svm): apply ProgramData size floor during account loading (backport of #16769 ) by @mergify [bot] in #16775 Bump version to 4.4.1 by @agave-version-bumper[bot] in #16785 Full Changelog : v4.4.0...v4.4.1",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "Release v4.4.1",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T19:38:43Z",
+      "source_id": "sol_agave_releases",
+      "source_ids": [
+        "sol_agave_releases"
+      ],
+      "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "d61e119b6caaff9b4a00a2ac",
+      "excerpt": "Hello Cosmos Community! We are introducing **SOBYA**, an independent blockchain project built to establish a secure, decentralized, and community-driven ecosystem. We have completed substantial development, integration, configuration, and automated testing. We are now preparing for the next major milestone: bringing independent validator operators into the network and preparing for public network launch. We are looking for experienced validators, infrastructure operators, and blockchain contributors who want to participate in a new network from its earliest stage. ## 1. About SOBYA SOBYA is built using the Cosmos ecosystem, with CometBFT consensus and EVM compatibility. Our goal is to combine the strengths of the Cosmos architecture with Ethereum-compatible infrastructure, enabling developers and users to interact with the network through familiar EVM tools and wallets. **Core network specifications:** * Project: SOBYA * Token name: SOBYA * Token symbol: SOBY * Native denomination: `asobya` * Decimal precision: 18 * Consensus: CometBFT * Architecture: Cosmos SDK * EVM compatibility: Integrated * CometBFT Chain ID: `sobya-1` * EVM Chain ID: `357812033857` * Maximum token supply: 1,000,000,000 SOBY * Inflation: Disabled ## 2. Development and Testing Completed We have not simply pre",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "SOBYA Blockchain — Seeking Independent Validator Operators for Mainnet Launch",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T18:43:45Z",
+      "source_id": "cosmos_governance",
+      "source_ids": [
+        "cosmos_governance"
+      ],
+      "url": "https://forum.cosmos.network/t/sobya-blockchain-seeking-independent-validator-operators-for-mainnet-launch/17543"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5c3e710c554683b4481720a0",
+      "excerpt": "This is the twenty-third of Hub Weekly Thursday recaps, straight from the Hub Unit team, per the cadence we committed to in the From Chaos to Stability to Growth post. Every Thursday, we will call out significant Cosmos Hub updates on the forum, with a short companion thread on X, recapping announcements, live events like validator or community calls, and ecosystem updates! For more info, see the linked posts, and contact me or @RoboMcGobo on telegram to submit news for the weekly. This week Robo is out, so I am covering This week: the Hub’s Token Transparency Framework filing, ATOM on Paxos Crypto Brokerage, Q3 delegations, USDC migration figures, and Proposal 1060 executed. The Hub’s Token Transparency Framework filing is live on Blockworks ATOM on Paxos Crypto Brokerage , now publicly announced Q3 ICF delegations : 14.47M ATOM to 50 validators, executed and verified on chain The USDC migration figures as of Friday, October 30, the dates that matter before January 12, and the two ways to move USDC.n today, via the migration guide or the Osmosis transmuter Proposal 1060 passed on November 3, the community multisig executed, and 566,067 USDC.inj is back in the community pool Gaia v29.1.0 : the governance-query fix is on testnet, with the mainnet upgrade planned around November 18",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "Hub Weekly Update #23: November 5, 2026",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T17:25:13Z",
+      "source_id": "cosmos_governance",
+      "source_ids": [
+        "cosmos_governance"
+      ],
+      "url": "https://forum.cosmos.network/t/hub-weekly-update-23-november-5-2026/17540"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7303cf34c367e5457bd8353b",
+      "excerpt": "AI Agents now act on the web for millions of people. To a Site, an Agent can take many forms. It may be indistinguishable from a human user carrying out a task, or it might look like one visitor carrying many Users. This removes the ability for the Site to recognize, serve, and hold accountable the user or users behind the Agent, and causes the Site to face the costs when something goes wrong. This post argues that in order for Sites to maximize the access they provide to Agents, the ecosystem must develop new mechanisms to preserve the relationship between Sites and Users. Traditionally, in Security and Fraud Prevention, that requires three things: Identity, Reputation, and Accountability, allowing Sites to answer: Is the person acting being truthful about who they are? Is that person trustworthy? And who answers for the action? “Personal AI Agents” (“Agents” for short) are automations that take instructions from a human (“User”) and pursue a goal by controlling a cloud computer or browser. They are usually hosted and maintained by an “Operator” as part of a managed service or consumer offering. Examples include Muse from Meta and dots from OpenAI, and more are launching all the time. Agents can potentially take any action online that their User could, without the limits that ho",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "Agents aren’t humans (but they kinda are)",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T17:03:04Z",
+      "source_id": "cloudflare_blog",
+      "source_ids": [
+        "cloudflare_blog"
+      ],
+      "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "5beef147a7815df463331e9f",
+      "excerpt": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving designs. Developers direct AI agents through natural-language instructions, review results and guide changes. Omniverse libraries provide GPU-accelerated physics, rendering and sensor simulation capabilities. Explore the projects below to see frontier AI models such as GPT-6 Astra at work, and check back for new examples from NVIDIA teams and developers across the ecosystem. Create Editable 3D Assets With Houdini and AI Agents Creating animated 3D content requires connecting modeling, simulation, materials and rendering. Nick Scarcella, a senior technical artist on NVIDIA’s BondLab team, directed AI agents — primarily using Claude — to work with CUDA libraries and Isaac Sim to create animations. The BondLab team uses SideFX Houdini and the NVIDIA ovrtx library to develop materials, lighting and the final rendered appearance. In one experiment, Scarcella guided Astra to recreate an OP-1 portable synthesizer using product images, manuals",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T17:00:35Z",
+      "source_id": "nvidia_blog",
+      "source_ids": [
+        "nvidia_blog"
+      ],
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/"
+    },
+    {
+      "cmc_ids": [
+        1027
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ed9a0ac1e56dd956b2ac279f",
+      "excerpt": "Hi all. We recently opened a discussion in the Solana SIMD repository about a new class of smart contracts we’re loosely calling “inference programs,” or “Actually Smart Contracts.” We’d value technical input from this community on whether a similar proposal could be feasible on Ethereum, before we write anything for it. The idea, briefly: a contract stores a prompt and the rules that shape it (a DAO constitution, a policy, a standard). Another contract asks it a question with evidence. AI models from different operators answer off chain, each signs a vote, and the caller checks the signed result before acting. The motivator was Anthropic’s recent work on zero-knowledge proofs of LLM inference . The Solana drafts and the discussion so far: Overview and drafts: Bringing Inference Programs To Solana Microsite with diagrams and a sandbox: asc.verafy.ai Discussion: solana-improvement-documents #724 We have no strong view on whether this is technically feasible, and we know there is a lot of prior work here that we may not have accounted for, including optimistic oracles and opML. The drafts were written with help from AI tools, so some of it may be poorly reasoned. The questions we’d most like help with: Is this better as an application-level ERC, or not a standard at all? Proofs of ",
+      "first_observed_utc": "2026-11-12T20:01:31Z",
+      "headline": "Would an ERC for inference programs (AI-evaluated contracts) be feasible on Ethereum?",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {
+        "1027": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:50:00Z",
+      "source_id": "ethereum_governance",
+      "source_ids": [
+        "ethereum_governance"
+      ],
+      "url": "https://ethereum-magicians.org/t/would-an-erc-for-inference-programs-ai-evaluated-contracts-be-feasible-on-ethereum/30291"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "af42b0a369b51f792835e55a",
+      "excerpt": "The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:48:36Z",
+      "source_id": "darkreading_news",
+      "source_ids": [
+        "darkreading_news"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "58fb10553c66f6d1763929ed",
+      "excerpt": "Summary Reth v2.10.0 is a hardening release. It fixes an engine panic after a reorg below the persisted tip, bounds eth_callBundle work, and stops reth download from deleting files outside the datadir. It also brings several RPC correctness fixes and P2P interop fixes. db repair-trie now verifies storage in parallel, and --tracing-otlp can write spans straight to a local file. SDK users: the commit-condition callback on BlockExecutor and BlockBuilder now also receives the transaction's state changes (see Breaking Changes). Backwards Compatibility Important v2.10.0 can be downgraded to v2.9.0. Update Priority User Class Priority Payload Builders High Non-Payload Builders High Breaking Changes SDK The commit-condition callback on BlockExecutor and BlockBuilder now also receives evm2::TxStateChanges , so payload builders can decide whether to keep a transaction based on its state changes as well as its result ( #28207 ) Features Performance db repair-trie verifies storage in parallel, with new --storage-workers (default: available CPUs) and --storage-lookahead (default: 1024) flags. A dry run now requires the node to be stopped ( #28078 ) CLI --tracing-otlp accepts file:///absolute/path and writes OTLP spans to a local file, with no collector needed ( #28215 ) Bug Fixes Engine & Tri",
+      "first_observed_utc": "2026-11-12T20:05:47Z",
+      "headline": "Reth v2.10.0",
+      "last_observed_utc": "2026-11-14T03:20:48Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:18:11Z",
+      "source_id": "reth_releases",
+      "source_ids": [
+        "reth_releases"
+      ],
+      "url": "https://github.com/paradigmxyz/reth/releases/tag/v2.10.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "e293b6147069020373ff7814",
+      "excerpt": "Walraswap: equilibrium-based decentralized exchange integrating external AMM liquidity This is an announcement of the research article with the same title and a brief informal intro for ethresear.ch. A classic approach to tackling MEV in decentralized exchanges on Ethereum is to enable a mechanism that receives trade orders during a block interval and settles all the swaps in a batch following a fairness criterion. It is an old problem. I imagine that an informed reader might feel somewhat skeptical. Thoughts of this kind were expressed in 2014 in this Reddit post . CoW Swap, UniswapX, 1inch’s Fusion, Sorella’s Angstrom, and Propellerheads’ Turbine have all tackled the problem using batch trading in one way or another. Walraswap started in 2023 at Flashbots, independently of the previous and closely related work by Ramseyer, Goyal, Goel, and Mazières: Augmenting Batch Exchanges… and SPEEDEX . The central feature in common: we treat the DEX problem from the point of view of the theory of equilibrium for an exchange economy with n tokens. To understand equilibrium in two sentences: given a finite set of trade orders, under mild hypotheses and neglecting transaction costs, there exists a price vector —an equilibrium — at which all the orders can be executed with no deficit or surplu",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "Walraswap: equilibrium-based decentralized exchange integrating external AMM liquidity",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:48Z",
+      "source_id": "eth_research",
+      "source_ids": [
+        "eth_research"
+      ],
+      "url": "https://ethresear.ch/t/walraswap-equilibrium-based-decentralized-exchange-integrating-external-amm-liquidity/26219"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "e944b7536cec799b63e475c1",
+      "excerpt": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it. “We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language models (LLMs) practical for working developers. Alexiuk’s preferred “rooftop” is YouTube , where he’s built a following teaching curious thousands how to build, fine-tune, evaluate and ship production LLM applications and agents. “I think the people who will most help us understand how to build and apply AI likely haven’t even heard of it yet,” he said. “Trying to get knowledge and information out to as many people as humanly possible is what continues to drive me.” Bringing NVIDIA Nemotron to Developers Everywhere Having spent years teaching developers to build with open models, Alexiuk has concluded that transparency isn’t a feature of good AI; it’s the precondition for it. “Fully open source AI is necessary for the democratization of intelligence,” he said. “You should have access to the weights, the data that went into it, the training recipes, everything.” That’s why, on his LinkedIn profile, Alexiuk styles himself “No. 1 Nemotron Fan,” referring to the NVIDIA Nemotron family of open s",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:05Z",
+      "source_id": "nvidia_blog",
+      "source_ids": [
+        "nvidia_blog"
+      ],
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "78c334a07f5db0875011c2ca",
+      "excerpt": "EBA E-mail alert 5 November, 2026 Date 05/11/2026 Anonymous (not verified) Thu, 11/05/2026 - 17:00 News & Press The EBA publishes revised Guidelines on internal governance, delivering greater proportionality and simplification for banks",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "EBA E-mail alert 5 November, 2026",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:02Z",
+      "source_id": "eba_press",
+      "source_ids": [
+        "eba_press"
+      ],
+      "url": "https://www.eba.europa.eu/node/20162"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b28ecfb79591f96a93e5ce4d",
+      "excerpt": "At a glance Formal methods for everyday software. PDD Kit helps you turn your intent into a formal spec, then proves the code your agent writes for every input and uses tests where a proof can’t reach. It takes formal methods beyond niche, specialist work to engineers without a formal methods background and to everyday applications, like the full-stack web app shown here. Exhaustive line-by-line human review can become difficult to scale as AI agents generate increasingly large amounts of code. The plan is supposed to be the contract between you and a coding agent, but nothing actually forces the agent to follow it. The tests it writes usually check what it built, rather than what you asked for. PDD Kit makes the agent keep the plan. It works with you to turn your intent into a formal specification in Verus (opens in new tab) , proves the agent’s code meets that spec for every input, and falls back to tests where a proof can’t reach. We tried it on a full-stack web app. Inside GitHub Next’s Chopin (opens in new tab) , we used PDD Kit to formally verify the login logic of Pet Store, a Rust (opens in new tab) storefront. Verus hardened the code and uncovered existing bugs, proving the absence of login bugs with respect to the specification. The developer reviewed the intent and nev",
+      "first_observed_utc": "2026-11-13T07:10:50Z",
+      "headline": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:00Z",
+      "source_id": "microsoft_research",
+      "source_ids": [
+        "microsoft_research"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "86e4d87385b407899816f001",
+      "excerpt": "Larger models, longer contexts and agentic applications are increasing GPU memory pressure while supply tightens and prices rise — a trend expected to continue through the near term. NVIDIA works closely with memory partners to rapidly adopt the latest memory technologies. NVIDIA was first to adopt HBM3e and HBM4 technologies into an accelerated computing stack. But the approach isn’t to simply pack more memory onto the GPU. It’s full-stack codesign. NVIDIA intentionally designs GPUs, CPUs, networking, storage and software together to get more useful work out of memory at every layer of the AI factory. That matters because an AI factory runs on a memory and storage hierarchy. GPU high-bandwidth memory (HBM) is the fastest, most expensive and most contested tier — with model weights and KV cache competing for limited capacity. Below it sit CPU memory, local SSDs and shared storage, each trading speed for more capacity at a lower cost per bit. How much useful work a byte does depends on how well the whole hierarchy is used: shrinking what must be stored, placing it on the right tier and bringing it back to the GPU before it’s needed. Byte for byte, NVIDIA makes the most efficient use of memory at every layer — and the results show it. From NVIDIA Blackwell Ultra to the Vera Rubin p",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:00Z",
+      "source_id": "nvidia_blog",
+      "source_ids": [
+        "nvidia_blog"
+      ],
+      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2993c3bddd49024d05647913",
+      "excerpt": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "first_observed_utc": "2026-11-06T14:06:13Z",
+      "headline": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:00Z",
+      "source_id": "fed_press",
+      "source_ids": [
+        "fed_press"
+      ],
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "1558c78d072630b6166d2a4e",
+      "excerpt": "Accessibility work often lives in issue trackers, contribution guidelines, audit reports, team knowledge, and conversations with users. When that information has no predictable home, people who encounter a barrier must search for it, and maintainers lose context as contributors and project ownership change. An ACCESSIBILITY.md file, now visible on repository overview pages, gives a project one durable place to explain its accessibility goals, contributor expectations, supported environments, known limitations, and process for reporting barriers. GitHub makes accessibility statements easier to find GitHub now recognizes the ACCESSIBILITY.md file in the repository’s root, .github/ directory, or docs/ directory. A repository can also inherit a statement from its organization’s .github/ repository. For public repositories, maintainers can add or propose a statement from Insights > Community Standards using a concise starter document. GitHub’s community health files help people understand how a project works: Contribution guidelines explain how to propose changes Codes of conduct establish expectations for participation Security policies explain how to report vulnerabilities Recognizing ACCESSIBILITY.md gives accessibility information a dedicated place alongside that guidance. New rep",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "Accessibility statements now have a home on GitHub",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T16:00:00Z",
+      "source_id": "github_blog",
+      "source_ids": [
+        "github_blog"
+      ],
+      "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "953ff450d3dd18b8c113ca73",
+      "excerpt": "fix: STData UB on out-of-range type; skip WasmVM death tests under vo…",
+      "first_observed_utc": "2026-11-12T20:01:29Z",
+      "headline": "3.5.0-custom-7",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T15:05:37Z",
+      "source_id": "xrp_releases",
+      "source_ids": [
+        "xrp_releases"
+      ],
+      "url": "https://github.com/XRPLF/rippled/releases/tag/3.5.0-custom-7"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "294fa077819eb29f5885ace9",
+      "excerpt": "Authors: Binance Proposal Type: Constitutional AIP Abstract This proposal asks the ArbitrumDAO to approve the release of the 8,425.997 ETH and 74,559,805.2 ARB currently immobilized on Arbitrum One. The funds were frozen by the Arbitrum Security Council as part of a wider ecosystem effort to halt the theft of funds due to the exploit of Binance’s hot wallet. The released funds will be returned to Binance, from whose wallet they were stolen, and applied as described under “Use of Funds” to help make affected Binance users whole. Motivation On 29th October 2026, the Arbitrum Security Council froze 8,425.997 ETH and 74,559,805.2 ARB held by the exploiter on Arbitrum One and moved the funds to 0x0000000000000000000000000000000000000DA0. This action by the Security Council, which was acting in a true security emergency situation, was part of a wider ecosystem effort that has frozen over $3bn . While Binance is committed to covering all losses from the SAFU Fund and the company’s treasury, we want to take this opportunity to work with Arbitrum Governance and recover the funds frozen by the Arbitrum Security Council. We are aware this involves going through the full governance process and may take approximately seven weeks or longer to complete. This proposal will return the frozen fund",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "[Constitutional] AIP: Approve Release of Frozen ETH and ARB",
+      "last_observed_utc": "2026-11-14T03:20:49Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T14:55:58Z",
+      "source_id": "arbitrum_governance",
+      "source_ids": [
+        "arbitrum_governance"
+      ],
+      "url": "https://forum.arbitrum.foundation/t/constitutional-aip-approve-release-of-frozen-eth-and-arb/31655"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3b9ff01df8f521f8b1ad6d40",
+      "excerpt": "v2.11.0 is a hardfork, security and stability release on top of v2.10.3 . It's the public release of v2.11.0-priv , which validators and major RPC providers already run. Uburu hardfork Already active on both networks: Network Fork block Amoy 51978200 Mainnet 96787900 Uburu updates the StateReceiver genesis contract ( 0x…1001 ) at the fork block. It changes how state syncs are executed and recorded. Operators on v2.11.0-priv : same code, switch to v2.11.0 at your next maintenance window. Nodes still on v2.10.3 or older stopped following the chain at the fork block. Upgrade immediately. Highlights Consensus and state sync : state-sync records are fetched from Heimdall one page at a time, as the per-block budget admits them. A failed fetch now fails the block, where before it committed it without state syncs. Span lookups by block number follow Heimdall's rule (the highest-id span containing the block). Locally sealed blocks are checked against whitelisted milestones before they're written. Header verification bounds block numbers and base fees on every import path. Execution : BlockSTM bounds speculative work per block and falls back to serial execution when the bound is hit. Stateless / witnesses : witness messages are bounded on receive, and witness-caused import failures are cha",
+      "first_observed_utc": "2026-11-12T20:05:46Z",
+      "headline": "v2.11.0",
+      "last_observed_utc": "2026-11-14T03:20:52Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T14:54:53Z",
+      "source_id": "polygon_core_releases",
+      "source_ids": [
+        "polygon_bor_releases",
+        "polygon_core_releases"
+      ],
+      "url": "https://github.com/0xPolygon/bor/releases/tag/v2.11.0"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "c38349f00863334ecd6e87f2",
+      "excerpt": "Hogwarts Legacy receives an NVIDIA DLSS 5 upgrade with 3D-Guided Neural Rendering today, bringing lifelike lighting and materials to the wizarding world on GeForce NOW . Blizzard Entertainment’s World of Warcraft: Forever also opens a new chapter in Azeroth, with a launch-week access reward available for GeForce NOW members. Meanwhile, Ubisoft brings fresh challenges with expansions for Tom Clancy’s The Division 2 and Anno 117: Pax Romana . It’s all part of a packed month of play, with two-dozen games joining the GeForce NOW library throughout November, including eight this week. Hogwarts in a New Light NVIDIA DLSS 5 with 3D-Guided Neural Rendering arrives in Hogwarts Legacy today, giving members a new reason to return to Hogwarts, streaming from Steam, Epic Games and Xbox with Play Anywhere support. Published by Warner Bros. Games under the Portkey Games label and developed by Avalanche Software, Hogwarts Legacy is an immersive, open-world action role-playing game set in the 1800s wizarding world. Begin as a fifth-year student, encounter magical creatures, brew potions and learn spells while exploring both recognizable and unfamiliar places. The update adds lifelike lighting and material detail while retaining underlying geometry and textures. Avalanche Software has tuned the in",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "‘Hogwarts Legacy’ Gets a Magical NVIDIA DLSS 5 Upgrade on GeForce NOW",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T14:00:34Z",
+      "source_id": "nvidia_blog",
+      "source_ids": [
+        "nvidia_blog"
+      ],
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-hogwarts-legacy-dlss-5/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b9e61f721c7b8b8985eb221b",
+      "excerpt": "Part 1 Introduction Goal of this update This update proposes seven changes across Ethereum Mainnet and Base for the Osero spell and two changes in the Sky Core spell, to connect the Osero Liquidity Layer on Ethereum Mainnet and Base through Circle CCTP and to onboard the Osero x Gauntlet USDC Prime Vault ( ogUSDCb , Morpho Vault V2) on Base. The November 19, 2026 Osero spell makes changes 1–2; the Osero Base payload it relays, executed by the Osero Executor on Base, makes changes 3–7. Changes 8–9 are requested from Sky Core for the November 19, 2026 Sky Core spell. [Ethereum] Configure CCTP toward Base ( Proposed actions #1 –4 ): Enable the CCTP Facet on the Osero Controller on Ethereum Mainnet Mint recipient: the Osero ALM Proxy on Base Fee caps: min 0 , max 0 LIMIT_USDC_TO_CCTP : unlimited LIMIT_USDC_TO_DOMAIN : maxAmount 10,000,000 USDC, slope 50,000,000 USDC/day [Ethereum] Relay the Osero Base payload to the Osero Receiver on Base ( Proposed actions #5 ) [Base] Set up the Osero Diamond PAU on Base ( Proposed actions #6 –8 ): Grant CONTROLLER on the Osero ALM Proxy on Base and the Osero ALM Rate Limits contract on Base to the Osero Controller on Base Grant ALLOCATOR_ROLE on the Osero AccessControls on Base to the Osero AdministeredAgent on Base Actors on the Osero Administered",
+      "first_observed_utc": "2026-11-12T20:05:49Z",
+      "headline": "[November 19, 2026] Proposed changes to Osero for upcoming Spell",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T14:00:27Z",
+      "source_id": "sky_governance",
+      "source_ids": [
+        "maker_governance",
+        "sky_governance"
+      ],
+      "url": "https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "34db71a0a700d7ffdbd6de2e",
+      "excerpt": "Abstract This standard defines a proxy that coordinates execution sessions by temporarily caching a program and its associated calldata in transient storage. The proxy forwards the cached program to a fixed implementation through DELEGATECALL and uses a handler flag to control whether subsequent reentrant invocations are dispatched. The program remains unchanged throughout an execution session, while the cached calldata is replaced on each accepted invocation. This enables a single implementation to coordinate callback-driven execution using different programs and calldata without deploying a new contract for each execution. Motivation Many advanced execution strategies require dynamically changing execution logic, particularly when interacting with external contracts that invoke callbacks during execution. Traditionally, dynamically changing the execution logic of a contract may require deploying a new contract containing the desired runtime code. This introduces deployment costs, including contract creation and code-deposit costs. Flash Loan Proxy separates the execution program from the implementation responsible for interpreting it. Instead of deploying a new contract for each program, callers provide the program as calldata. The proxy temporarily caches the program and forwa",
+      "first_observed_utc": "2026-11-12T20:01:31Z",
+      "headline": "ERC-8486: Flash Loan Proxy",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T13:13:39Z",
+      "source_id": "ethereum_governance",
+      "source_ids": [
+        "ethereum_governance"
+      ],
+      "url": "https://ethereum-magicians.org/t/erc-8486-flash-loan-proxy/30289"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GOVERNANCE",
+        "UPGRADE"
+      ],
+      "event_id": "d7997e56a0ade1fdc8279116",
+      "excerpt": "Proposal Type : Ratification Executive Summary This Ratification vote adds an Upgrade Authority Transfer policy to the Governing Policies section of the Standard Rollup Charter. It sets out how a Chain Governor may request that upgrade authority for its chain be transferred from the Security Council to an address of its choosing, so the chain can manage upgrades itself or through a third party. Under the policy, the Optimism Foundation confirms a valid request and publishes a public notice on the Governance Forum. After a mandatory 30-day notice period, the Security Council is directed to execute the transfer. Once the transfer is executed, the chain ceases to be a Standard Rollup. This is a non-fork upgrade. It changes Charter language only: no smart contract or node software changes are required, and this proposal executes no onchain transactions. Motivation The Standard Rollup Charter defines how a chain becomes a Standard Rollup, including authorizing the Security Council to perform upgrades. It does not define how a chain leaves. Today, a Chain Governor that wants to take back upgrade authority has no published path, and any transfer would require ad hoc governance action. This gap matters for three reasons: Predictability for Chain Governors. Handing upgrade authority to th",
+      "first_observed_utc": "2026-11-12T20:05:48Z",
+      "headline": "Proposal to introduce Upgrade Authority Transfer to the Standard Rollup Charter",
+      "last_observed_utc": "2026-11-14T03:20:49Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T13:07:32Z",
+      "source_id": "optimism_governance",
+      "source_ids": [
+        "optimism_governance"
+      ],
+      "url": "https://gov.optimism.io/t/proposal-to-introduce-upgrade-authority-transfer-to-the-standard-rollup-charter/10950"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "c48f40c917c2cd512985c9fd",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v2.5.1-rc.2",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T12:27:38Z",
+      "source_id": "vechain_releases",
+      "source_ids": [
+        "vechain_releases"
+      ],
+      "url": "https://github.com/vechain/thor/releases/tag/v2.5.1-rc.2"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "89f89d8f9214c1bb830e81ba",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v2.5.1-rc.1",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T12:27:24Z",
+      "source_id": "vechain_releases",
+      "source_ids": [
+        "vechain_releases"
+      ],
+      "url": "https://github.com/vechain/thor/releases/tag/v2.5.1-rc.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "9e32d6c76ce912bb70dd93b1",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v2.5.0-rc.1",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T12:26:53Z",
+      "source_id": "vechain_releases",
+      "source_ids": [
+        "vechain_releases"
+      ],
+      "url": "https://github.com/vechain/thor/releases/tag/v2.5.0-rc.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "c015fed1fc92be23ce5112ff",
+      "excerpt": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Bank rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T12:00:00Z",
+      "source_id": "boe_press",
+      "source_ids": [
+        "boe_press"
+      ],
+      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "48fccadf6f96640ca8eaea41",
+      "excerpt": "Lenders are feeling the hangover from years of Wild East capitalism",
+      "first_observed_utc": "2026-11-13T07:10:50Z",
+      "headline": "Indebted tycoons haunt China’s banking system",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T11:54:22Z",
+      "source_id": "economist_finance",
+      "source_ids": [
+        "economist_finance"
+      ],
+      "url": "https://www.economist.com/finance-and-economics/2026/11/05/indebted-tycoons-haunt-chinas-banking-system"
+    },
+    {
+      "cmc_ids": [
+        6636
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "25012f10e959dd79faa4a592",
+      "excerpt": "Governance & Network Polkadot’s active validator set is scheduled to move from 600 to 500, with nominators encouraged to review nominations to maintain rewards eligibility (via rossbulat ). Proposal #676 analysis outlines an independent Kusama running on a reduced JAM network with its own validators (via AndreyMcQueen ). Technical & Infrastructure Polkadot Devs highlighted the Product SDK, a TypeScript toolkit covering chain clients, transaction lifecycle tracking, multi-provider signing, typed contracts, and SS58/H160 utilities (via PolkadotDevs ). The new Polkadot testnet relay chain reportedly reduces infrastructure footprint, cutting validators from 152 to 58, cores from 56 to 19, and budget by 48.8% while hosting the Products Devnet (via VRCI_Global ). Chainspect reported Polkadot has maintained a Nakamoto coefficient above 100 for 348 consecutive days (via chainspect_app ). Ecosystem Polkadot marked five years since its first parachain, Statemint — now Asset Hub — onboarded to the network (via BillLaboon ). Memport completed its first full beta-test journey, with a tester finishing all four quests: uploading a Memory, creating a SHARD, connecting an AI agent through MCP, and applying a mental model to a task (via memportHQ ). Lumo Wallet added support for Polkadot and Kusam",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "Polkadot Socials Daily Digest: 2026-11-05",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
+      "match_methods": {
+        "6636": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T10:45:57Z",
+      "source_id": "polkadot_governance",
+      "source_ids": [
+        "polkadot_governance"
+      ],
+      "url": "https://forum.polkadot.network/t/polkadot-socials-daily-digest-2026-11-05/19251"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2e7384a75cd6650dc9183702",
+      "excerpt": "Barriers to commerce are rising—except in technology",
+      "first_observed_utc": "2026-11-13T07:10:50Z",
+      "headline": "AI is turning protectionists into free traders",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T10:22:20Z",
+      "source_id": "economist_finance",
+      "source_ids": [
+        "economist_finance"
+      ],
+      "url": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "da9336efc280cb9fa94a8128",
+      "excerpt": "The Nobel-prizewinner was fascinated by what happens when markets fail",
+      "first_observed_utc": "2026-11-13T07:10:50Z",
+      "headline": "William Nordhaus, favourite economist of the right and the left",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T10:17:54Z",
+      "source_id": "economist_finance",
+      "source_ids": [
+        "economist_finance"
+      ],
+      "url": "https://www.economist.com/finance-and-economics/2026/11/05/william-nordhaus-favourite-economist-of-the-right-and-the-left"
+    },
+    {
+      "cmc_ids": [
+        6636
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7d9978c65b560b6c156a8e8a",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "polkadot-v1.24.5",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {
+        "6636": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T09:30:49Z",
+      "source_id": "polkadot_releases",
+      "source_ids": [
+        "polkadot_releases"
+      ],
+      "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-v1.24.5"
+    },
+    {
+      "cmc_ids": [
+        6636
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a0156fb5466400b0dc3fdf1f",
+      "excerpt": "This release contains the changes from polkadot-stable2606-4 to polkadot-stable2606-5 . ℹ️ Please note: ⚠️ this is a patch release for the stable version stable2606 and contains only patches and fixes to the crates (list below). No binary or docker images will be provided for this release. Once published, polkadot-stable2606-5 will also be tagged as polkadot-v1.24.5 . The following crates were updated to the corresponding versions: Changed crates: pallet-revive-uapi@0.15.6 pallet-revive-fixtures@0.15.3 pallet-revive@0.21.1 📦 The complete changelog with full descriptions is attached to this release as CHANGELOG.md , and in machine-readable form as changelog.json . 💥 Breaking Changes None in this release. Changelog Smart Contracts (Revive) 🛠️ Runtime Dev #13689 : [pallet-revive] align terminate precompile with opcodes This PR aligns the terminate precompile with the opcodes. The precompile now pays out the balance immediately and only deletes the contract if this transaction created it, as SELFDESTRUCT does. The deposit is no longer refunded when terminate is called. TerminateArgs and schedule_termination are gone; the scheduling map just stores the beneficiary. … Crates: pallet-revive-fixtures (minor), pallet-revive (minor), pallet-revive-uapi (patch) Rust compiler versions The cr",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "Polkadot stable2606-5",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {
+        "6636": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T09:30:22Z",
+      "source_id": "polkadot_releases",
+      "source_ids": [
+        "polkadot_releases"
+      ],
+      "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-stable2606-5"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "6d4d786c22e46e2437b8be31",
+      "excerpt": "Important Optional but highly recommended upgrade. v2.5.1 is a hardening & maintenance release. No protocol fork is activated, and operators can upgrade in-place. v2.5.1 carries robustness improvements across the P2P layer, block processing, the transaction pool and the public/admin APIs, together with a handful of API and SDK fixes. Most changes are internal; the user-visible ones are listed below. What's Changed Hardening & Robustness These changes tighten resource bounds and failure handling throughout the node. They do not change consensus rules: every bound is sized above what a valid block can hold under the current 40M block gas limit. Networking : new blocks received from a peer are handed off through a per-peer mailbox instead of being processed on the peer's read loop. Transaction broadcast now uses a single bounded queue and writer per peer. Future-block cache entries are capped per peer and bound to their header. Inbound connection attempts are rate-limited per source (one per 30s for a non-LAN IPv4 address or IPv6 /64 prefix), matching go-ethereum ( #1699 ). Internal consistency fixes in the discv5 topic table. Block decoding : stricter bounds while decoding block headers and bodies (header field widths, total clause count per block). The existing per-tx and per-bloc",
+      "first_observed_utc": "2026-11-13T07:07:07Z",
+      "headline": "v2.5.1",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T09:11:55Z",
+      "source_id": "vechain_releases",
+      "source_ids": [
+        "vechain_releases"
+      ],
+      "url": "https://github.com/vechain/thor/releases/tag/v2.5.1"
+    },
+    {
+      "cmc_ids": [
+        6636
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f6fe904385427ae12928ae9a",
+      "excerpt": "new rc tag polkadot-stable2606-5-rc1",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "polkadot-stable2606-5-rc1",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {
+        "6636": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T09:09:45Z",
+      "source_id": "polkadot_releases",
+      "source_ids": [
+        "polkadot_releases"
+      ],
+      "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-stable2606-5-rc1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "b35bb5aa079a54146d7d922d",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:27Z",
+      "headline": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "last_observed_utc": "2026-11-14T03:20:43Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T08:00:00Z",
+      "source_id": "ecb_press",
+      "source_ids": [
+        "ecb_press"
+      ],
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d6f8534e0e4ef3d0e1509000",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:27Z",
+      "headline": "Piero Cipollone: Shaping the future of money",
+      "last_observed_utc": "2026-11-14T03:20:43Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T07:30:00Z",
+      "source_id": "ecb_press",
+      "source_ids": [
+        "ecb_press"
+      ],
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "SECURITY"
+      ],
+      "event_id": "823aa5ec1d261a6c97b479c2",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "How Adversaries Are Turning the Vulnerability Ecosystem Against Defenders",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T06:00:00Z",
+      "source_id": "crowdstrike_blog",
+      "source_ids": [
+        "crowdstrike_blog"
+      ],
+      "url": "https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/"
+    },
+    {
+      "cmc_ids": [
+        21794
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "UPGRADE"
+      ],
+      "event_id": "4525504f43ce1190fe0f6ef4",
+      "excerpt": "Co-authored-by: vsharongg 223564246+vsharongg@users.noreply.github.com",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "aptos-node-v1.50.0-rc: [aptos-release-v1.50] Bump version to 1.50.0 (#20892)",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {
+        "21794": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T04:40:37Z",
+      "source_id": "aptos_releases",
+      "source_ids": [
+        "aptos_releases"
+      ],
+      "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.50.0-rc"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "a268ea9382891c7739c6547d",
+      "excerpt": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder’s web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016. The security firm Layer3 Intel said it detected multiple residential proxy nodes beaconing out from the internet address network reserved for the Executive Office of the President ( AS2650 ). Layer3 said the proxy activity was relatively persistent between October 5 to November 3, and that a review of the proxies available from AS2650 showed they exited from the White House network 236 times during that period. The proxy tracking company Synthient said on Twitter/X that the activity it saw coming from AS2650 was related to multiple Windows 11 installations of a service called Infatica , a proxy program that is often integrated into “free” mobile and desktop applications . Infatica’s founder Vladimir Fomenko is a Russian man whose hosting firm King Servers was home to six of the eight internet addresses used by Russia’s state security services to compromise databases for election systems in Arizona and",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "Want to Rent an Internet Address at the White House?",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T04:36:17Z",
+      "source_id": "krebsonsecurity",
+      "source_ids": [
+        "krebsonsecurity"
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "7f41487a5cf3b1706cd29d77",
+      "excerpt": "STData(SerialIter&) loaded a wire value into SerializedTypeID before switching on it; an out-of-range value (65535) is undefined behaviour and trips UBSan. Switch on the raw integer; the default branch already rejects unknown types. Skip the two WasmVMDeathTest cases under ENABLE_VOIDSTAR, which is a debug build that does not abort on failed asserts, as BaseUintDeathTest does. Co-Authored-By: Claude Sonnet 5.5 noreply@anthropic.com",
+      "first_observed_utc": "2026-11-12T20:01:29Z",
+      "headline": "3.5.0-custom-6: fix: STData UB on out-of-range type and voidstar death tests",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-05T02:56:24Z",
+      "source_id": "xrp_releases",
+      "source_ids": [
+        "xrp_releases"
+      ],
+      "url": "https://github.com/XRPLF/rippled/releases/tag/3.5.0-custom-6"
     }
   ]
 }

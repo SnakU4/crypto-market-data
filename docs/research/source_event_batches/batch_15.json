@@ -1,6 +1,532 @@
 {
-  "capture_utc": "2026-11-13T22:40:50Z",
+  "capture_utc": "2026-11-14T03:20:41Z",
   "events": [
+    {
+      "cmc_ids": [
+        1437
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "INSTITUTIONAL_FLOW"
+      ],
+      "event_id": "99589dd132ba373533294b48",
+      "excerpt": "Polling starts Nov. 16 on a draft that would end ZCG's 8% funding stream and build a locked development and legal-defense reserve.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-12T07:19:56Z",
+      "headline": "Zcash Plan Would Pull 50,000 ZEC From Grants Treasury",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
+      "match_methods": {
+        "1437": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T06:03:55Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/news/blockchains/zcash-plan-would-pull-50-000-zec-from-grants-treasury"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "468c9e36cf00a691c65dda75",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Augmented Identity Security Solutions",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T06:00:00Z",
+      "source_id": "crowdstrike_blog",
+      "source_ids": [
+        "crowdstrike_blog"
+      ],
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-augmented-identity-security-solutions/"
+    },
+    {
+      "cmc_ids": [
+        7278
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "c820ea1ded60cfd7af806d82",
+      "excerpt": "title: [Direct-to-AIP] Reserve Factor Updates Across Aave V3 and V2 Markets author: @TokenLogic created: 2026-11-12 Summary This publication proposes Reserve Factor updates on 54 reserves across 12 Aave V3 instances and the Aave V2 Ethereum market. At balances and rates as of 9 November 2026, the changes add about $3.5M of annualised revenue to the DAO and raise the blended RF from 12.0% to 12.7%. The proposal is part of the ongoing effort to streamline Aave V3. Motivation Overview Over the past months, the DAO has been streamlining Aave V3. Low-adoption reserves and instances have been wound down, Aave V2 has been frozen, and ongoing work aims to focus Ethereum Core on liquid, bluechip collateral, with assets that carry additional risk moving to Aave V4, where that risk can be priced. This proposal applies the same direction to the protocol’s revenue side. Every borrowable reserve exposes the DAO to collateral, oracle and liquidation risk. The RF compensates the DAO for carrying that risk. On many reserves today, the DAO keeps a small share of the interest on positions whose tail risk it fully underwrites. Raising the RF improves the DAO’s return for the same risk, without changing the rate any borrower pays. On legacy markets, it also lowers the incentive to keep liquidity wher",
+      "first_observed_utc": "2026-11-12T20:01:30Z",
+      "headline": "[Direct-to-AIP] Reserve Factor Updates Across Aave V3 and V2 Markets",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
+      "match_methods": {
+        "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T05:48:15Z",
+      "source_id": "aave_governance",
+      "source_ids": [
+        "aave_governance"
+      ],
+      "url": "https://governance.aave.com/t/direct-to-aip-reserve-factor-updates-across-aave-v3-and-v2-markets/26249"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2430f127c1dba6cd252886d1",
+      "excerpt": "This discussion is split across two posts because of the forum’s per-post character limit. This first post covers the core interface, growth, authority, and validity. The continuation below covers private presentations, one-time entitlements, recovery, the implementation example, and discussion questions. I am exploring an extension for soulbound credentials that accumulate verified experiences over time and allow those experiences to support different applications. The motivation is: Past activity scattered across different protocols should be reusable as evidence for future eligibility. A person may participate in governance, complete community tasks, provide liquidity, borrow and repay assets, or receive an educational qualification. These experiences can support future requirements such as membership upgrades, contributor access, professional eligibility, or admission to an event. The proposed design uses a persistent, non-transferable credential to maintain continuity across those experiences. Applications can discover its currently accepted state, identify the rules that authorized that state, and evaluate whether the supporting claims remain usable. For privacy-sensitive applications, a holder should be able to prove a requirement such as “I have at least two qualifying co",
+      "first_observed_utc": "2026-11-13T22:40:54Z",
+      "headline": "ERC-8498: Namespaced State Transitions for SBTs",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T05:47:33Z",
+      "source_id": "ethereum_governance",
+      "source_ids": [
+        "ethereum_governance"
+      ],
+      "url": "https://ethereum-magicians.org/t/erc-8498-namespaced-state-transitions-for-sbts/30361"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "8e891bacf51bdd23aa4c1d78",
+      "excerpt": "AWS has released an emulator that kind-of-almost lets you use its cloud on a PC. As explained in the GitHub repository for the prosaically named “AWS Emulator,” the tool “is a local program that serves an AWS API endpoint.” The emulator doesn’t replicate the whole AWS cloud, instead offering its APIs. “You use it to test your software without calling AWS, on your own machine, on a development server, or in continuous integration (CI),” the repo explains. Because those tests never touch the AWS cloud, the tool is free to use. AWS wrote the emulator in Rust, a choice that senior specialist solutions architect Daniel Abib wrote helps to ensure the tool “stays light on CPU and memory on a laptop.” The emulator tool doesn’t replicate the entire AWS cloud. Abib said it supports the APIs of AWS services that have an API model in the AWS API models repository on GitHub . The Register found over 1,300 items on that page. While the tool lets developers test APIs, it doesn’t replicate anywhere near all the features of the Amazonian cloud. “It doesn’t evaluate IAM [Identity and Access Management] policies the way AWS does, and each emulator acts as a single account, with no cross-account or cross-Region behavior,” Abib wrote, adding “How closely it matches AWS varies by service and feature.”",
+      "first_observed_utc": "2026-11-13T07:07:05Z",
+      "headline": "AWS distills its cloud into a local emulator that runs on your PC",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T05:47:31Z",
+      "source_id": "the_register",
+      "source_ids": [
+        "the_register"
+      ],
+      "url": "https://www.theregister.com/off-prem/2026/11/12/aws-distills-its-cloud-into-a-local-emulator-that-runs-on-your-pc/5309251"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "d0bf331da9914fc7270cf19a",
+      "excerpt": "Shark Tank star Kevin O'Leary has revealed what he believes is really driving the crypto market crash, arguing that regulatory uncertainty is holding back institutional adoption of blockchain and stablecoins.",
+      "first_observed_utc": "2026-11-13T07:10:48Z",
+      "headline": "Kevin O'Leary Reveals What's Really Behind Crypto Market Crash",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T05:42:34Z",
+      "source_id": "utoday_news",
+      "source_ids": [
+        "utoday_news"
+      ],
+      "url": "https://u.today/kevin-oleary-reveals-what-s-really-behind-crypto-market-crash"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ecdebfd0beefe58e8ee85f2c",
+      "excerpt": "Retail sentiment around some of the top crypto assets has taken a sharp bearish turn as the market tests major lows, according to Santiment. Data from social platforms shows Bitcoin recording 0.82 bullish comments for every bearish one, while Ethereum stands at 0.88. XRP looks even weaker, with the ratio falling to just 0.49. Rebound Close? But this widespread pessimism may not be entirely bad news. Santiment explained that extreme retail fear can create conditions for a market rebound, as major rallies often begin when traders are doubtful, and sentiment is heavily tilted toward the bears. “If we continue to see bearish commentary outweigh bullish commentary, especially for top caps, prices will inevitably see a strong relief rally.” Not everyone is convinced that the current weakness could lead to a recovery. Crypto Patel, for instance, has turned bearish on Bitcoin after the price broke below the $74,914 higher-timeframe (HTF) inducement level. According to the analyst, this breakdown confirms a bearish shift in the immediate market structure. He now sees the crypto asset potentially heading toward the $65,500-$62,500 range, where buyers could step in and absorb selling pressure. Meanwhile, whales are taking different positions as the market downturn continues. Ali Martinez fo",
+      "first_observed_utc": "2026-11-13T07:10:48Z",
+      "headline": "BTC, ETH, and XRP Face Extreme Fear, But Whales Are Sending Mixed Signals",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T05:06:16Z",
+      "source_id": "cryptopotato_news",
+      "source_ids": [
+        "cryptopotato_news"
+      ],
+      "url": "https://cryptopotato.com/btc-eth-and-xrp-face-extreme-fear-but-whales-are-sending-mixed-signals/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "812f8709154182ed7fd8d1e8",
+      "excerpt": "Former certification authority eMudhra has claimed a buggy Python script is the main reason it issued laughably insecure digital certificates. The company posted its account of the matter on Bugzilla where a user with the handle “Naveen Kumar ML” wrote “During a single key‑generation ceremony on 30 April 2025, sixteen subordinate (issuing) CA key pairs in eMudhra’s ‘B’ and ‘C’ series were generated correctly on a hardware security module and then processed through an approved wrap/unwrap round‑trip using a custom python key‑handling script.” eMudhra aimed to create eight ECDSA P-384 private keys which should have been 48 bytes long. But the script contained what Kumar described as “a bug/defect in the import code [which] resulted in a read‑back from the unwrapped object that truncated the private value, so the certified public keys correspond to private scalars below the expected range and are recoverable from public information.” The truncation is the key problem here, because it appears that eMudhra ignored 47 of the 48 bytes, producing its infamously insecure single-byte keys such as the number four. Whatever the nature of the bug, Kumar asserts it was “a custom script run only on an isolated ceremony host and was not a function of the emCA software.” eMudhra needed that scrip",
+      "first_observed_utc": "2026-11-13T07:07:05Z",
+      "headline": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T04:22:18Z",
+      "source_id": "the_register",
+      "source_ids": [
+        "the_register"
+      ],
+      "url": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "13de1d50f3cc65852972924e",
+      "excerpt": "sui-analytics-indexer: go back to arrow/parquet 57 to match snowflake…",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "sui_v1.85.0_1794466231_ci",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T03:09:43Z",
+      "source_id": "sui_releases",
+      "source_ids": [
+        "sui_releases"
+      ],
+      "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794466231_ci"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "2dd289f969e22d673b7375fc",
+      "excerpt": "The Statistical Reality of Coding Agents For technical decision-makers, leaderboard order can look more conclusive than the underlying comparisons allow. The ExpertCrowd-SWE study , an author-reported coding-agent benchmark submitted on November 9, 2026, provides a nuanced look at seven frontier coding agents. Rather than a simple ranking, the study identifies four statistical tiers, highlighting where evidence separates models and where it remains inconclusive. Four tiers, not seven distinct places The paper evaluated seven models on 100 expert-authored software-engineering tasks drawn from 87 open-source projects and 11 languages. Each model attempted each task five times. The paper reports 3,495 scored runs. Gemini 3.8 Flash had no valid run on one assigned task, so its score covers 99 tasks. The reported averages are: Opus 5.5 (67.3%), GPT-6 Astra (63.7%), Fable 5.1 (46.5%), Gemini 3.8 Flash (40.0% across 99 tasks), Qwen 3.8 Max (33.5%), DeepSeek V4.1 Flash (32.5%), and Grok 4.6 (32.2%). These averages form a four-tier pattern. The bottom three models—Qwen, DeepSeek, and Grok—are not statistically separated from one another in pairwise comparisons. Similarly, the top two models, Opus and Astra, are not statistically separated. While Opus leads Astra by 3.6 percentage points, ",
+      "first_observed_utc": "2026-11-13T07:10:48Z",
+      "headline": "ExpertCrowd-SWE finds four coding-agent tiers, but top pair remains unresolved",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T01:22:34Z",
+      "source_id": "forkast_news",
+      "source_ids": [
+        "forkast_news"
+      ],
+      "url": "https://forkast.news/expertcrowd-swe-finds-four-coding-agent-tiers-but-top-pair-remains-unresolved/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "87800d9dfbf8d4a6f43781e2",
+      "excerpt": "Russian cloud operator Yandex has admitted to data loss after a drone attack on one of its datacenters. The attack, which Ukrainian press said was ordered by Kyiv, happened in early October and caused a fire and subsequent outage at Yandex’s ru-central1-b availability zone. Subsequent strikes targeted more Yandex datacenters and disrupted more of the company’s cloud and payment services. On Tuesday, Yandex posted an update on its recovery efforts, which it spun as something of a triumph because it restored over 97 percent of customer data. Of course that also means the company lost 2.84 percent of customer data, which it blamed on “critical hardware damage and a lack of backups on the platform.” It’s unclear if Yandex’s use of the phrase “on the platform” indicates it doesn’t keep backups of its own cloud, if whatever resilience techniques it employs don’t create multiple copies of customer data, or if clients didn’t protect their data. Whatever happened, Yandex has decided to enable backups by default for all VMs customers create in its cloud. That decision will mean customers will consume and pay for more Yandex resources, unless they opt out of the automated backups. Given that drones damaged three Yandex locations, and the war with Ukraine continues, users have good reasons t",
+      "first_observed_utc": "2026-11-13T07:07:05Z",
+      "headline": "Russian cloud Yandex says drone attacks on its datacenters caused data loss",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T01:10:24Z",
+      "source_id": "the_register",
+      "source_ids": [
+        "the_register"
+      ],
+      "url": "https://www.theregister.com/off-prem/2026/11/12/russian-cloud-yandex-says-drone-attacks-on-its-datacenters-caused-data-loss/5309234"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "52d9ee6dfffc71f8973da7b6",
+      "excerpt": "chore: tagging commit for build promotion",
+      "first_observed_utc": "2026-11-13T07:07:06Z",
+      "headline": "build-00425",
+      "last_observed_utc": "2026-11-14T03:20:52Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T01:05:52Z",
+      "source_id": "hedera_releases",
+      "source_ids": [
+        "hedera_releases"
+      ],
+      "url": "https://github.com/hiero-ledger/hiero-consensus-node/releases/tag/build-00425"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "6cb51ebe747314a762f245d0",
+      "excerpt": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T01:00:00Z",
+      "source_id": "darkreading_news",
+      "source_ids": [
+        "darkreading_news"
+      ],
+      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "af75d1e8154e85b5936b2da3",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "op-supernode/v1.1.2-rc.1",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:54:33Z",
+      "source_id": "optimism_releases",
+      "source_ids": [
+        "optimism_releases"
+      ],
+      "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-supernode%2Fv1.1.2-rc.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "4e1d7b0a4d5e92f8a8cab004",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "op-reth/v2.9.0-rc.1",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:53:59Z",
+      "source_id": "optimism_releases",
+      "source_ids": [
+        "optimism_releases"
+      ],
+      "url": "https://github.com/ethereum-optimism/optimism/releases/tag/op-reth%2Fv2.9.0-rc.1"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "990cadb6b4a57c9defd8e36a",
+      "excerpt": "Russian exchanges may legally start crypto trading once the central bank approves their rules. Retail investors can buy only Bitcoin, Ethereum and USDT, with a yearly purchase cap. The Moscow Exchange is preparing a gradual pilot that starts in December. Crypto stays banned as a means of payment inside Russia, even as trading opens up. Russia’s stock exchanges will be legally allowed to run organized cryptocurrency trading from November 22 , 2026, after the Ministry of Justice registered a Bank of Russia ordinance setting out how trading in digital currencies and digital rights must work. The central bank confirmed the registration on November 11. November 22 is only the earliest legal opening date, since each exchange first needs the regulator to approve its trading rules, and the Moscow Exchange is aiming for December 1. For a central bank that wanted sweeping crypto restrictions less than five years ago, this puts Bitcoin on the same supervised venues where Russians already trade stocks and the ruble. Exchanges need their rulebooks approved first The ordinance builds on the conditions for organised trading in digital currencies that the Bank of Russia first drafted in July. Before matching a single order, a venue has to agree its rules with the regulator and register the broke",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Russia Opens Crypto Trading After Years of Warnings",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:53:28Z",
+      "source_id": "crypto_news_flash",
+      "source_ids": [
+        "crypto_news_flash"
+      ],
+      "url": "https://www.crypto-news-flash.com/russia-opens-crypto-trading-after-years-of-warnings/"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f6f164cddf619657813567ae",
+      "excerpt": "indexer-alt-framework: bound the sequential collector's reorder buffe…",
+      "first_observed_utc": "2026-11-12T20:01:28Z",
+      "headline": "sui_v1.85.0_1794455502_ci",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:23:45Z",
+      "source_id": "sui_releases",
+      "source_ids": [
+        "sui_releases"
+      ],
+      "url": "https://github.com/MystenLabs/sui/releases/tag/sui_v1.85.0_1794455502_ci"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "ea97a84f6e37bd4240948d02",
+      "excerpt": "Adds a code_hash element to the EIP-7928 AccountChanges entry: the Keccak-256 hash of an account’s pre-block bytecode when the block loads it, empty otherwise. With it, the BAL names every piece of pre-block state a block reads, so a stateless or proving input can be assembled from the block, its BAL and a state snapshot without executing the block. github.com/ethereum/EIPs Add EIP: Code Reads in Block-Level Access Lists (#12658) master ← LukaszRozmej:eip/bal-code-reads opened 12:12AM - 12 Nov 26 UTC LukaszRozmej +193 -0 Adds a `code_hash` element to the EIP-7928 `AccountChanges` entry: the Keccak-25 … 6 hash of an account's pre-block bytecode when the block loads it, empty otherwise. With it, the BAL names every piece of pre-block state a block reads, so a stateless or proving input can be assembled from the block, its BAL and a state snapshot without executing the block. 1 post - 1 participant Read full topic",
+      "first_observed_utc": "2026-11-12T20:01:31Z",
+      "headline": "EIP-8496: Code Reads in Block-Level Access Lists",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:14:24Z",
+      "source_id": "ethereum_governance",
+      "source_ids": [
+        "ethereum_governance"
+      ],
+      "url": "https://ethereum-magicians.org/t/eip-8496-code-reads-in-block-level-access-lists/30354"
+    },
+    {
+      "cmc_ids": [
+        1,
+        5426,
+        11419,
+        32196
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "f1f445b992100f10cf25f615",
+      "excerpt": "The crypto market is under heavy pressure, with Solana, Hyperliquid and Bitcoin all sliding, while Gram bounces.",
+      "first_observed_utc": "2026-11-13T07:10:48Z",
+      "headline": "Solana (SOL), Gram (GRAM), Hyperliquid (HYPE) and Bitcoin (BTC) Price Analysis for November 12: It Is a Bloodbath on the Market",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
+      "match_methods": {
+        "1": "FULL_NAME",
+        "11419": "UNAMBIGUOUS_TICKER_CANDIDATE",
+        "32196": "FULL_NAME",
+        "5426": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:01:00Z",
+      "source_id": "utoday_news",
+      "source_ids": [
+        "utoday_news"
+      ],
+      "url": "https://u.today/price-analysis/solana-sol-gram-gram-hyperliquid-hype-and-bitcoin-btc-price-analysis-for-november-12"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "TITLE_ONLY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "cbda9238a3684b28e47a3f03",
+      "excerpt": "",
+      "first_observed_utc": "2026-11-13T07:07:04Z",
+      "headline": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:00:00Z",
+      "source_id": "huggingface_blog",
+      "source_ids": [
+        "huggingface_blog"
+      ],
+      "url": "https://huggingface.co/blog/3d-lora-finetuning"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "DERIVATIVES"
+      ],
+      "event_id": "9a08fb8455b5f6d0633f2479",
+      "excerpt": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+      "first_observed_utc": "2026-11-13T07:10:49Z",
+      "headline": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-12T00:00:00Z",
+      "source_id": "darkreading_news",
+      "source_ids": [
+        "darkreading_news"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "3ea07f5e21fe1eb3b1925474",
+      "excerpt": "Explore the road to Level 4 autonomy as experts tackle safety, AI, regulation, and trust—watch the Automotive Tech Forum panel. The post Automotive Tech Forum: Panel Discussion the Make-or-Break Milestones Toward Level 4 Autonomous Driving appeared first on EE Times .",
+      "first_observed_utc": "2026-11-13T07:10:50Z",
+      "headline": "Automotive Tech Forum: Panel Discussion the Make-or-Break Milestones Toward Level 4 Autonomous Driving",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T23:39:41Z",
+      "source_id": "eetimes_news",
+      "source_ids": [
+        "eetimes_news"
+      ],
+      "url": "https://www.eetimes.com/automotive-tech-forum-panel-discussion-the-make-or-break-milestones-toward-level-4-autonomous-driving/"
+    },
+    {
+      "cmc_ids": [
+        1437
+      ],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "0a4da8912c261bf3f70085ff",
+      "excerpt": "ZEC's seven-day decline was roughly three times bitcoin's. The token traded about 43% below a late-September price above $1,680.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-12T07:19:56Z",
+      "headline": "Zcash Falls Below $965 as Weekly Loss Reaches 26%",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
+      "match_methods": {
+        "1437": "FULL_NAME"
+      },
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T23:39:06Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/news/markets/zcash-falls-below-965-as-weekly-loss-reaches-26"
+    },
+    {
+      "cmc_ids": [],
+      "coin_tags_are_verified_catalysts": false,
+      "context_origin": "PUBLISHER_FEED_SUMMARY",
+      "event_classes": [
+        "GENERAL_NEWS"
+      ],
+      "event_id": "eccdaf962e09c1d652ca2422",
+      "excerpt": "The reported leadership talks follow the board's public backing of Huang on Nov. 8. Trump said Nov. 9 that the FBI was looking into the situation, separately from the company's review.... Read the full story at The Defiant",
+      "first_observed_utc": "2026-11-12T07:19:56Z",
+      "headline": "Nvidia Board to Discuss Huang's Future, FT Reports",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
+      "match_methods": {},
+      "published_time_status": "VERIFIED_FEED_DATE",
+      "published_utc": "2026-11-11T23:31:31Z",
+      "source_id": "defiant",
+      "source_ids": [
+        "defiant"
+      ],
+      "url": "https://thedefiant.io/frontier/ai/nvidia-board-to-discuss-huang-s-future-ft-reports"
+    },
     {
       "cmc_ids": [],
       "coin_tags_are_verified_catalysts": false,
@@ -12,7 +538,7 @@
       "excerpt": "I never think much about buoys unless I’m watching a movie about man-eating sharks. But it turns out they don’t just float out on there on the ocean for the nice aesthetics; they’re there for a reason. Wave buoys, for instance, are there primarily to measure wave activity. And like everything else these days, the information they provide is available online. TheMaritimePilot used that data to build this desktop model that mirrors the movement of a selected real-life buoy . TheMaritimePilot happens to be a maritime pilot in Belgium, so his work relies on the data provided by wave buoys. So, this idea makes perfect sense for him. But I think everyone else will appreciate it, too. This is called SeaGlance and it is a small buoy, a few inches tall, that bounces around on virtual waves rolling across a desk. Of course, there aren’t any actual waves and so the buoy actually rides from a series of cables. Eight stepper motors can pool those cables in and out, moving the buoy up and down — and even tilting it side-to-side. SeaGlance turns those motors according to live data that it fetches over Wi-Fi. SeaGlance can grab data from a variety of different sources. Many of them are country-specific and provided by those country’s relevant agencies, but they’re usually freely available to eve",
       "first_observed_utc": "2026-11-13T07:10:50Z",
       "headline": "This Actuated Desktop Model Mirrors the Movement of a Real-Life Buoy",
-      "last_observed_utc": "2026-11-13T22:41:04Z",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T23:18:05Z",
@@ -33,7 +559,7 @@
       "excerpt": "MSCI will remove Strategy and Metaplanet from its equity indexes at the end of November. The removals come from a new test for non-operating companies that covers every industry. Ethereum treasury company Sharplink stayed off the deletion list. Neither company has to sell any Bitcoin because of the decision. MSCI confirmed late on November 11 that Strategy (NASDAQ: MSTR), the largest corporate holder of Bitcoin, and Tokyo-listed Metaplanet (3350) will leave its equity benchmarks when the November index review takes effect at the market close on November 30. The decision applies a rule MSCI adopted in October to separate operating businesses from companies that mainly accumulate assets, and it matters because funds that track those benchmarks will have to cut their holdings whatever the two companies report next quarter. Strategy drops out of the MSCI USA Index, which also takes it out of the broader global benchmarks built on top of it, while Metaplanet loses its place in the MSCI Japan Small Cap Index. Both names sit inside a much larger rebalancing: MSCI’s full review lists 13 additions and 100 deletions for the flagship MSCI ACWI Index and 113 additions against 272 deletions for the wider ACWI IMI, and most of those changes have nothing to do with crypto. Four ratios out of fi",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "MSCI Cuts Strategy and Metaplanet After a Year-Long Fight",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T23:15:01Z",
@@ -54,7 +580,7 @@
       "excerpt": "The Layer 2 will retire emissions voting and shorten its unstaking cooldown on Nov. 17. Buybacks will begin separately, with full onchain automation to follow.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Katana Plans Revenue-Funded Buybacks for KAT Stakers",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:56:07Z",
@@ -75,7 +601,7 @@
       "excerpt": "Payward has brought hundreds of UK and EU stocks onto its xStocks platform. Residents of the UK and the US still cannot buy the new tokens. Each token is a share-backed certificate with limited shareholder rights. New US rules let companies block tokens of their stock, and dozens already have. Payward, the parent company of crypto exchange Kraken, added tokenized versions of more than 200 UK- and EU-listed stocks to its xStocks platform on November 11. The batch includes all 40 DAX companies and large London-listed names such as Shell and HSBC, which eligible investors in over 110 markets can now trade onchain around the clock. GTN supplied the brokerage infrastructure, and this is the largest expansion beyond US equities since xStocks launched in June 2025 . Residents of the UK and the US are still barred from buying, even the tokens of British companies. 550,000 holders, $1.1 billion in backing Payward now lists more than 1,500 tokenized stocks, ETFs and pre-IPO products. When it announced its partnership with the London Stock Exchange on September 1, it had about 200,000 holders, and that number has now passed 550,000. Over the same period cumulative volume rose from $40 billion to $45 billion. All of these figures are company-reported and unaudited. What backs $45B in trading",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Kraken Tokenizes the DAX 40, but UK Investors Can’t Buy",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
+      "last_observed_utc": "2026-11-14T03:20:58Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:50:22Z",
@@ -96,7 +622,7 @@
       "excerpt": "Kalshi could soon face enforcement action from the Commodity Futures Trading Commission (CFTC) over how it introduced new contracts on its prediction market platform. According to Politico, the federal regulator has privately warned the company that charges could be coming over allegations that it failed to properly notify the agency about dozens of products it had planned to launch. Regulatory Trouble Brewing? The investigation has reportedly been underway for months, and while enforcement action may arrive soon, a settlement remains a possibility. Kalshi, however, is playing down the issue. Company spokesperson Elisabeth Diana described the CFTC’s warning as a procedural matter involving the submission of a handful of contracts, many of which had not even gone live. She also said the company was already working to address the issue. Kalshi maintains that its offerings are traditional derivatives products rather than wagers, a distinction that sits at the heart of the wider debate over how prediction markets should be regulated. Prediction markets have expanded rapidly since Donald Trump’s election. Kalshi and rival Polymarket have reported valuations of $40 billion and $21 billion, respectively. Their growth has been helped in part by a more welcoming approach from the CFTC, pa",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Kalshi Could Be in Serious Trouble as CFTC Threatens Possible Enforcement Action",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:46:03Z",
@@ -117,7 +643,7 @@
       "excerpt": "The New York Times reported a relationship with health-care VP Kimberly Powell, who reports to Huang, raising a separate workplace-governance question while a board investigation is underway.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Nvidia Falls After Report of Huang Affair With Executive",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:45:14Z",
@@ -138,7 +664,7 @@
       "excerpt": "CoreWeave's 168% revenue jump sent its shares soaring and lifted Nvidia and other AI stocks. Strong demand is reassuring investors, but the cost of building it remains enormous.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Nvidia-Backed CoreWeave Is Surging: Here’s What It Means for the AI Boom",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:36:03Z",
@@ -161,7 +687,7 @@
       "excerpt": "Dogecoin is on the verge of one of the most outrageous moonshots in crypto history, as a Claude AI Fable DOGE price prediction highlights that an unprecedented move could be on the cards by 2027. Copilot AI theorizes a hypothetical catalyst that could see the original meme coin not just participate in the next bull market, but become its cultural and monetary centerpiece. A highly unlikely but not impossible scenario could position Dogecoin as the default internet currency for a new generation of global payments and digital commerce. ( SOURCE: Claude AI Fable 5.2 DOGE Price Prediction ) Anthropic’s AI model envisions a scenario in which a major platform or group of prominent tech and payments companies fully integrates Dogecoin (DOGE) as a primary method for settling transactions and tipping. Meanwhile, the broader market may rediscover the value of scarce-attention assets. If this narrative gains traction, along with favorable mining conditions, it could propel Dogecoin into a phase of pure price discovery. Explore: The Best Crypto Presales This November Claude Fable Doge Price Prediction: Does the Technical Analysis Agree With Anthropic’s AI Model? Dogecoin (DOGE) 24h 7d 30d 1y All time Dogecoin is currently trading between $0.067 and $0.069. The price has been consolidating in",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Claude AI Fable 5.2 DOGE Price Prediction: Can Dogecoin Go This High?",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {
         "74": "FULL_NAME"
       },
@@ -184,7 +710,7 @@
       "excerpt": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T22:14:44Z",
@@ -205,7 +731,7 @@
       "excerpt": "A microphone is an odd — and somewhat disturbing — thing to find inside a coffee machine. That's what caught the attention of hardware hacker Robin M., who spotted one mentioned in the service documentation for a Spengler PSL50. What started as an attempt to figure out why it was there quickly turned into a much bigger hardware hacking project involving embedded Linux, an unsecured debug interface, a questionable USB update system, and, of course, Doom . According to the machine's supplier, the microphone was intended for future presence detection and accessibility features, but wasn't actually being used. Further investigation was unwelcome, so Robin took another route: buying a spare display/controller module on eBay and poking around inside it. The board turned out to be pretty complex for a coffee machine. It was built around an NXP i.MX 6 processor with an Arm Cortex-A9 core, running a Yocto-based embedded Linux system. The hardware also includes Ethernet, USB, microSD storage, and interfaces for payment hardware, cup dispensers, energy-saving modules, and more. After tracing the power circuitry and supplying the board with 24 volts, Robin got it running on the bench. Probing an unidentified connector then revealed a 3.3 V UART interface operating at 115200 baud. A Raspberry",
       "first_observed_utc": "2026-11-13T07:10:50Z",
       "headline": "This Coffee Machine Serves Up a Fresh Cup of Doom",
-      "last_observed_utc": "2026-11-13T22:41:04Z",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T21:56:50Z",
@@ -228,7 +754,7 @@
       "excerpt": "Summary LlamaRisk recommends the following parameter changes based on user behavior, on-chain liquidity, and position health observed in the latest review of Aave V3 reserves. Aave V3 Core: Increase borrow cap for USDC from 2,750,000,000 to 2,950,000,000. USDC (Aave V3 Core) USDC has reached 99.0% borrow cap utilization (2.72B / 2.75B) on the Aave V3 Core instance. Borrow Distribution Source: LlamaRisk, November 12, 2026 The top 20 USDC borrowers run health factors between 1.02 and 3.03 with a median of 1.75, and the largest borrower accounts for about 14% of outstanding debt. Collateral behind these positions is mainly ETH and BTC assets, with 6 of the 20 posting weETH, 5 cbBTC, 5 WETH, 4 wstETH, and 3 WBTC, alongside 2 posting USDe and 2 sUSDe, so HF in the cohort tracks the ETH and BTC prices and, on the USDe and sUSDe positions, the exchange rate of those assets against the stablecoin debt. Recommendation We recommend raising the borrow cap from 2.75B to 2.95B on Aave V3 Core, which places the reserve at approximately 92.3% post-change borrow cap utilization. Reserve utilization stands at 95.6%, above the 94% optimal point, and the proposed borrow cap exceeds current supply of 2.85B, so additional borrowing remains bounded by available liquidity of approximately 126M USDC. Sp",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "Risk Stewards: Borrow Cap Increases on Aave V3 / 2026.11.12",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -255,7 +781,7 @@
       "excerpt": "Stablecoin supply fell $14.2 billion in 30 days, the fastest contraction since June 2022, amid weak ETF demand.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -278,7 +804,7 @@
       "excerpt": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T21:44:04Z",
@@ -299,7 +825,7 @@
       "excerpt": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "AI Raises the Stakes for Cyber Resilience",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T21:20:41Z",
@@ -322,7 +848,7 @@
       "excerpt": "Stellar Lumens (XLM) currently trades near $0.145–$0.148 with a market capitalization around $5.2 billion, roughly one-thirteenth the size of XRP. However, Elon Musk’s Grok AI predicts that a single, highly improbable but not impossible catalyst could still ignite a parabolic advance capable of flipping XRP before January 1, 2027. In this dramatic scenario, Grok AI predicts that a consortium of major global banks, payment giants, and several central banks will jointly announce that Stellar will serve as the primary public blockchain for a new generation of regulated cross-border settlements, tokenized deposits, and multi-currency clearing. SOURCE: Grok AI Predicts XLM to Flip XRP by 2027 This initiative includes commitments to process substantial institutional volume on the network and to hold XLM as the preferred asset for liquidity and fees. As a result, the narrative shifts from viewing Stellar as a “niche payments chain” to recognizing it as “the institutional standard that has finally surpassed its larger rival.” This shift could trigger a significant capital rotation, reminiscent of the major relative-value trades that have historically defined the cryptocurrency market. XLM Technical Analysis: What Key Levels Does Stellar Need to Clear to Flip XRP? Stellar (XLM) 24h 7d 30d",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Elon Musk Grok AI Predicts a Parabolic Stellar Lumens Rally: Can XLM Flip XRP?",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {
         "512": "FULL_NAME"
       },
@@ -345,7 +871,7 @@
       "excerpt": "Commerce denied a reported confrontation between Bessent and Lutnick. An independent records check found no published export-control notice naming Megaspeed.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Trump Backed Nvidia Diversion Crackdown, Axios Reports",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T21:16:28Z",
@@ -368,7 +894,7 @@
       "excerpt": "Recent buyers are moving billions in Bitcoin to exchanges below their purchase prices, while Binance sees sharp inflows from recently moved coins.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Bitcoin Short-Term Holders Send $3.6 Billion in BTC to Exchanges at a Loss",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -393,7 +919,7 @@
       "excerpt": "BitMine reported a $6.3 billion net loss for its fiscal year ended August 31, in an annual report filed with the SEC on Tuesday. That whopping number came almost entirely from the falling price of Ethereum (ETH), booking $6.2 billion in unrealized losses. Over the fiscal year, ETH traded on Coinbase as high as $4,763 and as low as $1,506. “Because we account for digital assets at fair value under ASC 350-60, price declines are immediately reflected in our results of operations, which may result in significant reported net losses even when we have not sold the assets,” BitMine said in the filing. A Massive Loss The former Bitcoin miner ended fiscal 2026 with 5,901,837 ETH, up from 1,874,927, costing $19.9 billion and was worth $14.6 billion at year-end prices. BitMine valued its combined crypto, cash and equity holdings at $15.4 billion on the same date, and its Monday update put that total at $14.3 billion as of November 8. Moreover, the firm began selling ETH put options in the quarter ended February 28, 2026, the filing shows. Those puts pay BitMine a premium up front and can cost it money if ETH falls below an agreed price. The company’s option trades, mostly put sales, lost a net $143.7 million over the year. It had no open option contracts at year-end and said it may use sim",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "The Cost of Buying the Dip: Inside BitMine’s Massive $6.3 Billion Ethereum Loss",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {
         "1027": "FULL_NAME"
       },
@@ -418,7 +944,7 @@
       "excerpt": "The lab targets quantum- and AI-resistant Ethereum in 2027, withdrawing Quick Slots from its Hegotá push and asking developers to rethink the upgrade.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Ethlabs Puts Ethereum Quantum Defense Ahead of Speed",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "1027": "FULL_NAME"
       },
@@ -443,7 +969,7 @@
       "excerpt": "TL;DR A contract on Base checks every Zcash block header against Zcash’s consensus rules: the Equihash (200, 9) solution on the EIP-152 BLAKE2b precompile, the difficulty adjustment (including NU7’s 25-second blocks), the time rules and cumulative work. Contracts can then read Zcash’s best chain without trusting a bridge, a committee or whoever relays. Anyone can feed it; a feeder can delay the relay but cannot make it accept a header Zcash’s rules reject. One header costs about 626k gas (mean, whole transaction); Equihash is 361k of it. Following Zcash at 25-second blocks is ~3,456 headers, ≈ 2.2 × 10⁹ gas a day: about 0.01 ETH a day at Base’s 0.005 gwei. A relay deployed with Mainnet parameters on 29 October 2026 crossed Zcash Mainnet’s NU7 activation (height 3,543,405, 6 November 2026) without a redeploy and followed the 5,405 headers after it. On top of the relay: a RISC Zero proof (Groth16-wrapped, 256,720 gas to verify on Base) that a shielded payment of at least an amount went to a receiver an app committed to, with a memo naming the app’s reference, inside the ZIP 221 chain history of a header the relay holds. The transaction id, the note, the block and the address never reach the EVM chain. A real Testnet payment was proven in 81 s on a rented RTX 4090, for about one cen",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "Seam: verifying Zcash headers on Base with EIP-152, and proving shielded payments without linking the chains",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -466,7 +992,7 @@
       "excerpt": "This is Ethlabs’ view on post-quantum and post-AI timelines and how we think Ethereum’s protocol layer should prioritize them, after spending a week with coredevs at Devcon. tl;dr We think Ethereum can become post-quantum and (plausibly) post-AI in 2027: pqai27. This will future-proof Ethereum’s leading position as the credible decentralized root of trust for the global economy, with ETH as the programmable store of value at its center. Being post-quantum is not enough, we intend on being post-AI too. AI capabilities are taking off: quantum timelines are moving forward, AI is solving open maths problems that pose the question whether some cryptographic primitives might break, and it’s finding software vulnerabilities at scale. Ethereum is uniquely positioned for this moment and leading the way : years of prior research and work have produced a clear plan to become post-quantum and plausibly post-AI, and now we should make it the priority. The network is resilient through its decentralized validator set and client diversity, and formal verification is already deeply embedded into its core development process. pqai27 means rethinking upcoming hardforks , including Hegotá: anything not on the critical path to pqai should be reconsidered. We will withdraw quick slots from Hegotá and ",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "An Ethlabs view on post-quantum and post-AI timelines: pqai27",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:51:58Z",
@@ -487,7 +1013,7 @@
       "excerpt": "Database Migrations There are no migrations in this release. Verifying the Release In order to verify the release, you'll need to have gpg or gpg2 installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import Once you have the required PGP keys, you can verify the release (assuming manifest-roasbeef-v0.21.8-beta.sig and manifest-v0.21.8-beta.txt are in the current directory) with: gpg --verify manifest-roasbeef-v0.21.8-beta.sig manifest-v0.21.8-beta.txt You should see the following if the verification was successful: gpg: Signature made Wed Sep 30 17:35:20 2020 PDT gpg: using RSA key 60A1FA7DA5BFF08BDCBBE7903BBD59E99B280306 gpg: Good signature from \"Olaoluwa Osuntokun <laolu32@gmail.com>\" [ultimate] That will verify the signature of the manifest file, which ensures integrity and authenticity of the archive you've downloaded locally containing the binaries. Next, depending on your operating system, you should then re-compute the sha256 hash of the archive with shasum -a 256 <filename> , compare it with the corresponding one in the manifest file, a",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "lnd v0.21.8-beta",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:41:18Z",
@@ -508,7 +1034,7 @@
       "excerpt": "Database Migrations There are no migrations in this release. Verifying the Release In order to verify the release, you'll need to have gpg or gpg2 installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: curl -fsSL https://raw.githubusercontent.com/lightningnetwork/lnd/v0.20.8-beta/scripts/keys/roasbeef.asc | gpg --import Once you have the required PGP keys, you can verify the release (assuming manifest-roasbeef-v0.20.8-beta.sig and manifest-v0.20.8-beta.txt are in the current directory) with: gpg --verify manifest-roasbeef-v0.20.8-beta.sig manifest-v0.20.8-beta.txt A successful verification reports a good signature from the expected signer. That will verify the signature of the manifest file, which ensures integrity and authenticity of the archive you've downloaded locally containing the binaries. Next, depending on your operating system, you should then re-compute the sha256 hash of the archive with shasum -a 256 <filename> , compare it with the corresponding one in the manifest file, and ensure they match exactly . Verifying the Release Timestamp Use OpenTimestamps to verify an OpenTimestamps proof supplied with a manifest signature, such as ma",
       "first_observed_utc": "2026-11-12T20:01:29Z",
       "headline": "lnd v0.20.8-beta",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:45Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:40:56Z",
@@ -529,7 +1055,7 @@
       "excerpt": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
       "first_observed_utc": "2026-11-13T22:41:03Z",
       "headline": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:27:00Z",
@@ -552,7 +1078,7 @@
       "excerpt": "Bitcoin’s cycle bottom is likely already in or very close, as a Mark Zuckerberg Meta AI Bitcoin bottom prediction highlights a final low expected in the $60,000–$68,000 zone by late December 2026 or early January 2027 at the latest. As of November 11, 2026, Bitcoin trades near $73,700–$73,900, roughly 41% below its October 2025 all-time high around $126,000. The market has been grinding lower after a failed recovery attempt into the low $80,000s, with recent sessions testing the psychologically important $73,000 level. While the short-term trend remains soft, longer-term structure and historical cycle patterns suggest the deepest part of the correction is largely complete. SOURCE: Meta AI Bitcoin Bottom Prediction Current Technical Picture for BTC USD: Can $70K Hold Through November? Bitcoin is consolidating in a tight range after a multi-week decline. Immediate support sits at the $73,000 round number, which coincides with recent daily lows, the approximate 200-day moving average, and prior structural levels from earlier in the year. A daily close below $73,000 would open the door to the next support cluster near $71,500 (prior swing area) and then the 50-day moving average zone around $68,500. Deeper support resides in the $62,000–$65,000 region, with the July 2026 low near $57",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Did Mark Zuckerberg’s Meta AI Just Expose Real Bitcoin Bottom in January 2027?",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -575,7 +1101,7 @@
       "excerpt": "ACE Music v1 tops the AI music rankings with more natural vocals and stronger song structure. Our tests found impressive results, though niche genres remain a challenge.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "This New AI Music Model Is Already Better Than Suno—We Put ACE to the Test",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:16:02Z",
@@ -596,7 +1122,7 @@
       "excerpt": "The judge found at the preliminary-injunction stage that Novig's sports contracts are not swaps and sharply criticized the CFTC's efforts to shield prediction markets.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Novig Loses Bid to Block New York Gambling Enforcement",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:15:54Z",
@@ -617,7 +1143,7 @@
       "excerpt": "The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.",
       "first_observed_utc": "2026-11-13T07:10:49Z",
       "headline": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T20:05:18Z",
@@ -638,7 +1164,7 @@
       "excerpt": "This release brings various stability improvements, ECDSA TX-form binding, and improved replica 2.9 syncing. We recommend installing it as soon as you can to address potential node stability issues. Configuration Note: the first time you start the node after upgrading to N.2.9.8, do not use the start_from_local_state or start_from_block configuration options. Syncing: Syncing could slow down to the pace of the slowest peer, even when much faster peers were available. Each storage module limits how much sync work it keeps in progress at once. When the node reached data that only a slow peer had, that peer's requests could take up the whole limit, and the node stopped moving on to the rest of the data. The faster peers that had the rest sat idle until the slow peer was done, which could take days. Restarts made this more likely. The node kept its sync position in memory only, so after a restart every storage module started over from the beginning. If the first missing data there was only available from slow peers, the storage module synced at their pace. We reproduced both cases in the sync simulator and fixed them: A single peer can now take up at most half of a storage module's sync work limit. The node puts aside the data that peer cannot take yet and comes back to it every seco",
       "first_observed_utc": "2026-11-13T07:07:06Z",
       "headline": "Release N.2.9.8",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
+      "last_observed_utc": "2026-11-14T03:20:53Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:58:54Z",
@@ -659,7 +1185,7 @@
       "excerpt": "The firm traced 847.26 BTC into mixing transactions and reported another 959.29 BTC in labelled wallets, as recovery efforts continue.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Arkham Traces $63 Million in Bitget Hack Funds to CoinJoin",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:55:04Z",
@@ -680,7 +1206,7 @@
       "excerpt": "[Bugfix][Spec Decode][XPU] greedy_argmax: treat NaN as -inf on the to…",
       "first_observed_utc": "2026-11-13T07:07:09Z",
       "headline": "v0.34.0rc1",
-      "last_observed_utc": "2026-11-13T22:41:00Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:37:13Z",
@@ -701,7 +1227,7 @@
       "excerpt": "David Schwartz’s latest comments about his XRP holdings have prompted questions from some members of the community about his confidence in the asset. In a series of posts on X, the former Ripple CTO said he has not bought XRP in a long time and has sold nearly all the digital assets he has ever held because he is uncomfortable with risk. Schwartz still holds a considerable amount of Ripple stock, which he considers more risk than he would ideally like to take. Schwartz Hates Risk Schwartz has reduced his XRP holdings from 26 million to just 3 million. His Bitcoin holdings were down from 1,500 to just 1 BTC, while his Ethereum stash was down from 40,000 to just 6 ETH. The comments quickly caught the attention of XRP holders, particularly those who questioned why someone who helped create the XRP Ledger would still view the crypto asset as a risky investment. One user said Schwartz understands the technology, its potential, growing adoption, and how a higher XRP price could improve efficiency and costs. Against that backdrop, the user questioned why he would be reluctant to hold more of the asset. Schwartz did not dispute the point. He said almost every major risk he has taken in life has paid off, but that does not change the fact that he simply hates taking risks. Not everyone wa",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "David Schwartz Hasn’t Bought XRP in Years: And His Latest Comments Sparked a Firestorm",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:37:11Z",
@@ -722,7 +1248,7 @@
       "excerpt": "BotPsy packs 800 million parameters into an AI assistant designed to manage everyday tasks locally, outperforming larger rivals as Tether expands its push into decentralized artificial intelligence.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Tether's Tiny AI Agent Beats Models 2.5 Times Its Size at Controlling Your Phone",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:36:02Z",
@@ -743,7 +1269,7 @@
       "excerpt": "Single Day Longevity Test passed for build-00424",
       "first_observed_utc": "2026-11-13T07:07:06Z",
       "headline": "sdlt-pass-00424",
-      "last_observed_utc": "2026-11-13T22:40:58Z",
+      "last_observed_utc": "2026-11-14T03:20:52Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:34:19Z",
@@ -764,7 +1290,7 @@
       "excerpt": "Ripple-backed Evernorth has suffered a brutal stock market sell-off, with XRPN shares plunging nearly 48% from their Oct. 28 close as an SEC filing reveals that major investors, including Ripple Labs.",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Ripple-Backed Evernorth Plunges 40% as Insiders Move to Sell 73.7 Million Shares",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:25:17Z",
@@ -785,7 +1311,7 @@
       "excerpt": "Marketing was a focus of the cuts, Front Office Sports reported, as Polymarket trails Kalshi despite rising reported revenue.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Polymarket Cuts Staff and Contractors in Reorganization",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:11:24Z",
@@ -806,7 +1332,7 @@
       "excerpt": "Deutsche Bank’s custody service now holds Bitcoin, Ethereum and three stablecoins for institutional and corporate clients in Europe.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Deutsche Bank Goes Live With Crypto Custody After a Five-Year Buildup",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:06:02Z",
@@ -827,7 +1353,7 @@
       "excerpt": "Why is crypto crashing today? BTC/USD fell to $73,700 overnight, down another 0.8%, as $744M in liquidations triggered another market-wide crash after hotter-than-expected CPI data on November 10 spiked fears of further rate hikes later this year. With macroeconomic tailwinds driving high volatility, Elon Musk’s Grok AI predicts Bitcoin could crash to $40K by the end of 2026. Bitcoin is currently trading in the mid-$73,000s range. However, a highly unusual and severe downside scenario could develop before 2027. In this extreme bearish outlook, a significant catalyst, though very unlikely, might trigger a rapid and sustained decline in market confidence and liquidity. This could lead to a dramatic drop in Bitcoin’s price by January 1, 2027. SOURCE: Why Is Crypto Crashing Today? Grok AI Predicts BTC to $40K BTC USD Technical Analysis: What Key Support Zones Does Bitcoin Need to Hold to Avoid $50,000? Technically, Bitcoin has already shown signs of distribution after failing to sustain higher levels earlier in the cycle. Price has been making lower highs on the weekly chart and is currently trading below several key moving averages that previously acted as support. A decisive break below the recent swing lows near $70,000–$72,000 would open the door to a deeper measured-move decline",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Why Is Crypto Crashing? Elon Musk’s Grok AI Predicts BTC to $40K",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:57Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T19:05:00Z",
@@ -848,7 +1374,7 @@
       "excerpt": "Hello everyone, I am an engineer on the sBTC team at Stacks Labs. We are making some changes to the sBTC protocol that may be relevant to you. Changes like this are made on a regular basis to bring you ongoing improvement of the protocol’s security. 1. A new deposit format is live The sBTC signers and Emily support a new deposit format that you can start testing on mainnet today. The new deposit format, v2, improves the security of the sBTC protocol. Specifically, new deposits are locked with a standard Bitcoin multisig, which Bitcoin enforces directly. The old deposit format, v1, depended on an aggregate key from a custom threshold-signature protocol. Moving to the new format allows us to remove that complex cryptography from what secures deposits. However, this new format will increase the weight on Bitcoin by about 4x compared to the old format. This means the assessed Bitcoin fees are about 4 times higher than they are now. Once we ship the changes described in section 3, the extra weight will raise the Bitcoin fee paid by both deposit and withdrawal requests. Here is a table comparing current v1 deposits to the new v2 deposits. v1 deposits v2 deposits Locked to Aggregate key Standard Bitcoin multisig Weight on Bitcoin 1x About 4x Reclaim with a Ledger No Yes Accepted by the ",
       "first_observed_utc": "2026-11-13T07:07:02Z",
       "headline": "Builders: Note These sBTC Security Enhancements Ahead",
-      "last_observed_utc": "2026-11-13T22:40:56Z",
+      "last_observed_utc": "2026-11-14T03:20:49Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T18:52:05Z",
@@ -869,7 +1395,7 @@
       "excerpt": "Marex is among the potential buyers, according to Bloomberg. The talks concern a business spanning crypto trading, asset management and onchain credit partnerships.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Nomura Explores Laser Digital Sale, Bloomberg Reports",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T18:50:48Z",
@@ -890,7 +1416,7 @@
       "excerpt": "ERC-3668 (CCIP-Read) lets a contract hand a read off to a gateway, but the gateway either has to be trusted or has to return a proof the contract can verify. For many cross-chain reads a valid proof cannot be produced. That does not make the read unsafe, because the client usually already trusts its own RPC connection to the other chain and could simply make the call itself. ERC-8446 lets the client act as the gateway. The contract reverts with OffchainLookup as usual, with an x-chain URL that names the chain and contract to read, and the client calls that contract with its own RPC and passes the result to the callback exactly as eth_call returns it. No third party is involved. The chain and address are encoded as an ERC-7930 Interoperable Address, for example USDC on Base. x-chain:0x0001000002210514833589fcd6edb6e08f4c7c32d4f71b54bda02913 An optional ?finalized=true makes the read at the finalized block instead of the latest one. The client alone decides whether it can safely read a given chain, and never takes RPC endpoints from the contract. Nested x-chain lookups are not followed, so each call makes at most one cross-chain hop. Contracts can also tell when a client does not support the ERC. They add a data: URL after the x-chain URL, which only older clients reach, and it del",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "ERC-8446: Cross-Chain Client Gateway for CCIP-Read",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T18:17:12Z",
@@ -913,7 +1439,7 @@
       "excerpt": "The popular privacy coin, among the top performers earlier this year, has plunged by double digits over the past 24 hours, falling below the $1,000 psychological mark. Many analysts now expect the asset to head further south, while some key factors suggest a bullish reversal may be just around the corner. Back to Three Digits Zcash (ZEC) has undergone a painful correction, losing roughly 14% of its value in the last day and currently trading around $975 (per CoinGecko). This also represents a whopping 42% collapse from the multi-year high of approximately $1,700 reached this September. Following the pullback, ZEC’s market capitalization dropped to nearly $16.6 billion, meaning it is no longer among the 10 biggest cryptocurrencies after Hyperliquid (HYPE) overtook it. Its decline comes amid a broader market correction, yet its magnitude is surprising given Grayscale’s latest effort. The leading digital asset manager revealed that it will reinvest 100% of its ZEC ETF sponsor fees into the Zcash network across development, marketing, community, and education. Several analysts think there is no immediate bounce in sight and anticipate further declines. X user Altcoin Sherpa expects an ultimate bottom in the $800-$900 range before a potential reversal. Crypto Patel was even more pessi",
       "first_observed_utc": "2026-11-13T07:10:48Z",
       "headline": "Zcash (ZEC) Collapses Below $1,000: Can the Bulls Fight Back?",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
+      "last_observed_utc": "2026-11-14T03:20:56Z",
       "match_methods": {
         "1437": "FULL_NAME"
       },
@@ -936,7 +1462,7 @@
       "excerpt": "The cybercrime group Qilin has emerged as the world’s most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia. Operating since September 2022, the Russia-based ransomware group Qilin is the currently the most industrious ransomware-as-a-service gang, according to a report (PDF) this month by the cybersecurity firm NCC Group (KrebsOnSecurity profiled the administrator of the second most active ransomware group — The Gentlemen — in June). The Qilin ransomware administrator “Haise” advertising his affiliate program on the cybercrime forum RAMP. Image: Ke-la.com. Qilin attracts affiliates to hack into companies and deploy ransomware by offering them at least 80 percent of any extortion amount paid by victims. Its members practice the “double extortion” model, stealing sensitive data before encrypting systems and threatening to publish the files online. Unlike most ransomware partnerships based out of Russia, Qilin is happy to team with English-speaking affiliates, and its leader has shared on Telegram that they’ve",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "Who Runs the Ransomware Group Qilin?",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:50Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T18:06:01Z",
@@ -957,7 +1483,7 @@
       "excerpt": "ERC-8048 and ERC-8049 store metadata onchain as key-value pairs, but a JSON document has no compact way to point at those values. A URL that names the contract, the chain, and the token ID repeats what the client already knows and differs for every token. ERC-8493 defines the onchain URI scheme. The contract and token ID are not written in the URI, they come from the function that returned the document. { \"image\": \"onchain:image/png\", \"thumbnail\": { \"small\": \"onchain:image/png?key=thumb.small\" } } onchain:image/png is 17 bytes and works unchanged for every token. When the URI comes from tokenURI or uri , the client reads it with metadata(tokenId, key) from ERC-8048, and when it comes from contractURI , with metadata(key) from ERC-8049. A direct member of the top-level document uses its own name as the key, and everywhere else the key parameter names it. Tokens that are already deployed can use the scheme by adding a metadata_contract property to their JSON, which points the client at a separate metadata contract. Linked JSON documents keep the same contract and token, so the whole thing reads as one data tree. The scheme adds no contract surface. Existing ERC-8048 and ERC-8049 contracts support it with no change, and a client that does not know the scheme sees a URI it can ignore",
       "first_observed_utc": "2026-11-12T20:01:31Z",
       "headline": "ERC-8493: Onchain URI Scheme",
-      "last_observed_utc": "2026-11-13T22:40:54Z",
+      "last_observed_utc": "2026-11-14T03:20:47Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T18:03:12Z",
@@ -980,7 +1506,7 @@
       "excerpt": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern. But there's some nuance in the data.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Bitcoin Faces First Back-to-Back Annual Losses in History, But There's a Catch",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "1": "FULL_NAME"
       },
@@ -1003,7 +1529,7 @@
       "excerpt": "Making your own electronics is easier than ever, but building a display from scratch is still out of reach. While hobbyists can buy LCD and OLED panels in many shapes and sizes, creating a custom display that fits an unusual surface or application requires specialized equipment and a lot of expertise. Researchers at the University of Bath have developed a new technique that could change that, making it possible to fabricate high-resolution electroluminescent displays using little more than an airbrush and a laser cutter. The technique, called Spray and Etch , combines the simplicity of spraying conductive and electroluminescent materials onto a surface with the precision of laser etching to create detailed patterns and individually addressable pixels. Unlike conventional display fabrication methods, it doesn't require expensive industrial equipment or complicated masking procedures. The process begins by spraying a thin layer of conductive copper-based ink onto a substrate. A standard, unmodified CO2 laser cutter then removes selected portions of the coating to form precisely defined electrodes. Additional layers of dielectric material, electroluminescent phosphor, and a transparent conductive coating are applied before another round of laser etching creates the remaining electro",
       "first_observed_utc": "2026-11-13T07:10:50Z",
       "headline": "Spray-On Displays Take Shape",
-      "last_observed_utc": "2026-11-13T22:41:04Z",
+      "last_observed_utc": "2026-11-14T03:21:00Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:53:03Z",
@@ -1024,7 +1550,7 @@
       "excerpt": "Datacenter power consumption in the US is growing roughly ten times faster than grid capacity, meaning facilities may soon need to find a large chunk of their own electricity from other sources. Surging demand for AI infrastructure is driving a wave of new server farms across America, but it is exposing long-term underinvestment in the grid networks required to deliver power where it's needed. Insurance broker Howden calculates that datacenters would need to source up to 58 percent of their power off the grid by 2030 just to keep their share of grid capacity from growing. Gartner warned in June that the energy consumed by AI datacenters is on track to grow 26 percent this year, and grid supply may be unable to keep pace with demand by the end of this decade. Howden's analysis of data from the US Energy Information Administration (EIA) and S&P Global found that since the year 2000, power being fed to data campuses has risen 19 percent a year on average, while the electricity grid expanded capacity by just 2 percent per annum over the same period. Datacenters' share of US grid capacity was circa five percent in 2025, up from 0.1 percent in 2000 – a 50-fold increase. Management consultancy Bain & Company issued a report two years ago warning that energy companies must switch gear an",
       "first_observed_utc": "2026-11-13T07:07:05Z",
       "headline": "US bit barn boom sees energy needs grow 10x as fast as grid capacity",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:47:00Z",
@@ -1047,7 +1573,7 @@
       "excerpt": "",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "polkadot-v1.25.2",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1072,7 +1598,7 @@
       "excerpt": "Solana Privacy Rings encrypt balances and transfer amounts without leaving Solana. Here's how they work, and how they compare.",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "What Are Solana Privacy Rings? Inside Helius’ Privacy Protocol for Solana",
-      "last_observed_utc": "2026-11-13T22:40:50Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "5426": "FULL_NAME"
       },
@@ -1097,7 +1623,7 @@
       "excerpt": "The plan pairs timed borrowing buffers with a steward-run route for large clients. Parameters remain provisional and governance votes are still ahead.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "LlamaRisk Proposes Borrowing Speed Limits for Aave V3",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {
         "7278": "UNAMBIGUOUS_TICKER_CANDIDATE"
       },
@@ -1120,7 +1646,7 @@
       "excerpt": "The image of the red ring around the black hole M87, produced by the Event Horizon Telescope (EHT) array, made front-page news around the world in 2019. There was one problem: there was a slim chance the depiction might be wrong. This week, a small team of four Australian researchers have published their work confirming the result based on a new machine learning algorithm using the same base data. The 2019 Event Horizon Telescope (EHT) image came from hundreds of scientists working together to capture the first direct view of a black hole's shadow. The measurements were taken at eight telescopes around the world, at locations including Chile, the US, and Antarctica. Reconstructing the image from the data so geographically distant meant instrument and environment errors could influence the accuracy of the resulting image. Potentially, alternative analyses of the data could have reconstructed an image without the iconic ring shape. Samuel Lai – a postdoctoral fellow at the Commonwealth Scientific and Industrial Research Organisation (CSIRO) in Western Australia – and his team created an independent imaging algorithm to process the historic dataset to validate the result. The new approach used closed triplets (using three telescopes for error correction) rather than station pairs in",
       "first_observed_utc": "2026-11-13T07:07:05Z",
       "headline": "Scientists check their work and confirm it with update on iconic black hole image",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:02:00Z",
@@ -1129,31 +1655,6 @@
         "the_register"
       ],
       "url": "https://www.theregister.com/science/2026/11/11/scientists-check-their-work-and-confirm-it-with-update-on-iconic-black-hole-image/5309183"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "831dfd1648fb0ae8fd718136",
-      "excerpt": "Bitcoin Core has published a high-severity advisory disclosing a bug that could prevent affected nodes from creating block templates after a blockchain reorganization. While the flaw didn’t change Bitcoin’s consensus rules, it could leave a miner unable to produce blocks until the node was restarted. How a Reorg Can Leave the Mempool Broken The advisory, CVE-2025-62861, is about an inconsistency involving version 3 transactions, known as TRUC, and Bitcoin Core’s mempool, with the affected releases being versions 28.0 to 28.2 and 29.0 to 29.1. Under BIP-431, TRUC transactions face extra mempool restrictions where each can only have one unconfirmed ancestor (earlier transactions) and one unconfirmed descendant (later transactions). It should be noted that these are relay policy rules and not consensus requirements, meaning valid blocks can have arrangements that the mempool rejects. “When a transaction submitted to the mempool would give a TRUC parent a second unconfirmed child, Bitcoin Core’s ‘sibling eviction’ logic (introduced in v28.0) treats the existing child as a replacement candidate and, if the new transaction pays enough, evicts it under replace-by-fee rules,” read the advisory. According to the Bitcoin Core team, the above flaw usually appears during a chain reorganizati",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "This Is Why Some Bitcoin Core Nodes Can Stop Building Blocks",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T17:01:15Z",
-      "source_id": "cryptopotato_news",
-      "source_ids": [
-        "cryptopotato_news"
-      ],
-      "url": "https://cryptopotato.com/this-is-why-some-bitcoin-core-nodes-can-stop-building-blocks/"
     },
     {
       "cmc_ids": [],
@@ -1166,7 +1667,7 @@
       "excerpt": "Summary LlamaRisk is building Aave’s Risk Layer: automated risk solutions that make expert risk judgment verifiable, with every parameter, bound and action checkable onchain. The Aave Risk Framework set this direction in June by making continuous risk oracles part of the protocol’s standing infrastructure. Governance and manual review can trail a fast-moving event by hours, and the evolution of AI capabilities keeps shortening the time between finding a weakness and exploiting it, so protection has to run continuously and at machine speed. LlamaGuard PT went live in September as the first of these solutions. We continue the rollout with LlamaGuard Caps as the next addition. Aave’s greatest strength is its liquidity, deep enough to move capital instantly and at scale. Defending access to that liquidity programmatically protects Aave’s users, even when a failure elsewhere in DeFi puts compromised collateral or stolen assets in play. LlamaGuard Caps hardens Aave’s perimeter. Its first stage, a borrow rate limiter for Aave V3, gives each reserve a margin of borrowing room above its debt, sized to the reserve. That room refills automatically as organic demand uses it and is cut back when large repayments open up more than the reserve needs. Everyday borrowing keeps instant access to l",
       "first_observed_utc": "2026-11-12T20:01:30Z",
       "headline": "[ARFC] Dynamic Caps Oracle: Rate Limiter",
-      "last_observed_utc": "2026-11-13T22:40:53Z",
+      "last_observed_utc": "2026-11-14T03:20:46Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:00:38Z",
@@ -1187,7 +1688,7 @@
       "excerpt": "GitHub Agentic Workflows is generally available, running coding agents in GitHub Actions with read-only defaults and separately scoped write jobs. Those protections do not cover direct write permissions or custom jobs, so they depend on how each workflow is configured. By Mark Silvester",
       "first_observed_utc": "2026-11-13T07:10:50Z",
       "headline": "GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls",
-      "last_observed_utc": "2026-11-13T22:41:03Z",
+      "last_observed_utc": "2026-11-14T03:20:59Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:00:00Z",
@@ -1208,7 +1709,7 @@
       "excerpt": "It’s that time of year again: Thousands of delegates, lobbyists, and journalists are gathered for the annual UN climate talks, taking place this time in Antalya, Turkey. COP31 officially kicked off on November 8, marking the beginning of negotiations on one of the biggest stages of the climate world. Turkey and Australia are cohosting this year’s talks, which are scheduled to wrap up on November 20. This annual gathering can often serve as an indicator of where the world stands on addressing and adapting to the climate crisis. And this year’s talks are sure to be a doozy—expect a lot of back and forth on fossil fuels and climate finance in particular. Here’s what you should know about COP31. In recent years, the tension always feels high when COP rolls around. (COP stands for “Conference of the Parties.”) But this year feels especially charged: The world is still grappling with the ongoing war in Iran, which has disrupted the Middle East and sent economic shock waves around the world as energy prices have spiked. This year’s COP will be the second without a formal delegation from the US. President Trump formally withdrew the country from the Paris Agreement earlier this year and is in the process of withdrawing from the UN Framework Committee on Climate Change. That’s the treaty ",
       "first_observed_utc": "2026-11-13T07:07:04Z",
       "headline": "What to know about this year’s UN climate talks",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
+      "last_observed_utc": "2026-11-14T03:20:51Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T17:00:00Z",
@@ -1229,7 +1730,7 @@
       "excerpt": "Unaccepted allocations will move to the Ecosystem Fund. Starknet accounts must nominate a self-custodial EVM wallet, while the token launch date remains unannounced.... Read the full story at The Defiant",
       "first_observed_utc": "2026-11-11T23:29:06Z",
       "headline": "Extended Opens XTEN Checker With Dec. 31 Signing Deadline",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
+      "last_observed_utc": "2026-11-14T03:20:42Z",
       "match_methods": {},
       "published_time_status": "VERIFIED_FEED_DATE",
       "published_utc": "2026-11-11T16:58:56Z",
@@ -1252,7 +1753,7 @@
       "excerpt": "new rc tag polkadot-stable2609-2-rc1",
       "first_observed_utc": "2026-11-12T20:01:28Z",
       "headline": "polkadot-stable2609-2-rc1",
-      "last_observed_utc": "2026-11-13T22:40:52Z",
+      "last_observed_utc": "2026-11-14T03:20:44Z",
       "match_methods": {
         "6636": "FULL_NAME"
       },
@@ -1263,509 +1764,6 @@
         "polkadot_releases"
       ],
       "url": "https://github.com/paritytech/polkadot-sdk/releases/tag/polkadot-stable2609-2-rc1"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "TITLE_ONLY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "92796bab8b90718e9e76d1ff",
-      "excerpt": "",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "The Evolution of Commercial Open Source Software",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:53:07Z",
-      "source_id": "linuxfoundation",
-      "source_ids": [
-        "linuxfoundation"
-      ],
-      "url": "https://www.linuxfoundation.org/blog/the-evolution-of-commercial-open-source-software"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "06a2ea4b62f728791eacf8f8",
-      "excerpt": "LF Research is excited to announce a suite of new research studies on open source across various industries, geographies, and technology domains. To support this effort, we are seeking collaboration from organizations to help fund our activities, generate a statistically significant survey sample, and maximize the impact of this research.",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "LF Research Launches 2027 Series of Studies and Opens Call for Sponsors",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:42:24Z",
-      "source_id": "linuxfoundation",
-      "source_ids": [
-        "linuxfoundation"
-      ],
-      "url": "https://www.linuxfoundation.org/blog/lf-research-launches-2027-series-of-studies-and-opens-call-for-sponsors"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "fd65c4e7d36c9e9b76074ac3",
-      "excerpt": "The CNCF End User Community is launching its User Group Program at KubeCon + CloudNativeCon North America. These are long-lived groups, each built around an industry vertical or problem domain, that serves the common need of the end user community, and reports directly to the CNCF Technical Advisory Board (TAB). Why user groups Cloud native adoption looks different in a telecom network, a research lab, a public agency and a platform team at a software company. Each has its own constraints, vocabulary and gaps in the tooling landscape. A CNCF User Group gives each of those communities a durable place to organize around its own needs, rather than relying on one-off efforts that fade after a single project or event. A User Group is the primary organizational unit of the program. It is aligned with an industry vertical, a problem domain, or a common need of the CNCF end user community, and it is long-lived by design: user groups perform standing functions for projects and the organizations that adopt them. Each group: Represents and serves the needs of end users in its domain Identifies gaps in the CNCF project portfolio and helps attract projects to fill them Educates users with unbiased, practical information scoped to cloud native Proposes community-sourced reference architectures",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "Introducing CNCF User Groups: Long-lived homes for End User collaboration",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:41:17Z",
-      "source_id": "cncf_blog",
-      "source_ids": [
-        "cncf_blog"
-      ],
-      "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c872c61d5fa2a962c65d4bc1",
-      "excerpt": "XRP price is holding just above its lowest Fibonacci support after a two-week slide through several key levels. David Schwartz said he sold nearly all of his crypto over many years because he dislikes financial risk. His XRP sales followed written plans drafted with lawyers weeks before each trade. Schwartz still owns a large stake in Ripple, which he described as more risk than he would like. XRP traded near $1.07 on Wednesday, November 11, after a two-week slide carried the token through several support levels on the daily chart and left it a few cents above the $1.03 zone that separates it from a drop below $1. The decline coincided with disclosures from David Schwartz, Ripple’s former chief technology officer and one of the original designers of the XRP Ledger, who wrote on X on November 9 and 10 that he has sold nearly all of the digital assets he ever held, shrinking an XRP position that once reached about 26 million tokens to roughly 3 million. I haven't bought XRP in a long time. I am very uncomfortable with risk and have sold nearly all of the digital assets I've ever held. I still hold quite a bit of Ripple stock, and that alone is more risk than I wish I had. — David 'JoelKatz' Schwartz (@JoelKatz) November 9, 2026 RSI at 27 as XRP Tests $1.03 On the Binance XRP/USDT d",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "XRP Price Turns Oversold as Ex-CTO Reveals Years of Selling",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:38:10Z",
-      "source_id": "crypto_news_flash",
-      "source_ids": [
-        "crypto_news_flash"
-      ],
-      "url": "https://www.crypto-news-flash.com/xrp-price-turns-oversold-as-ex-cto-reveals-years-of-selling/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "9b9f26d9b9911c6378e9cf5c",
-      "excerpt": "A swathe of Canonical's web services has been offline for hours, an awkward warm-up for tomorrow's Ubuntu Summit. Canonical's status page lists widespread disruption beginning at approximately 1100 UTC, affecting gopkg.in, Ubuntu cloud images and mailing lists, jaas.ai, the Ubuntu keyserver, Launchpad PPAs, the Livepatch API, canonical.com, Ubuntu login, maas.io, and 16 other services. Landscape is also affected. Email and the company's Discourse forums remain available. The Register has asked Canonical for more information but had received no response at publication time. The company suffered a DDoS attack last month , although the cause of this outage has not been confirmed. The timing is unfortunate. As the banner across the top of the Discourse forum page says: \"The Ubuntu Summit starts tomorrow – join from anywhere!\" The online event runs on November 12-13. For the first time since the 2022 Summit in Prague, The Reg FOSS desk won't be attending in person. Canonical is still experimenting with the format of the event, and the last few have been primarily online, with just a small in-person audience in its London offices. This is the second of two Summits this year, labeled 26.04 and 26.10 to mirror Ubuntu's release cycle. The timetable , hosted on the Discourse site, lists se",
-      "first_observed_utc": "2026-11-13T07:07:05Z",
-      "headline": "Canonical web services get stage fright ahead of Ubuntu Summit",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:38:00Z",
-      "source_id": "the_register",
-      "source_ids": [
-        "the_register"
-      ],
-      "url": "https://www.theregister.com/os-platforms/2026/11/11/canonical-web-services-get-stage-fright-ahead-of-ubuntu-summit/5309186"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "f8f10f619c77861f16981e50",
-      "excerpt": "Anthropic’s highly anticipated IPO, ticker ANT, is set to price in a $70–$78 range and begin trading on Nasdaq around mid-to-late November 2026, with a targeted valuation as high as $1.4 trillion. However, in a wild turn of events, Anthropic’s own Claude AI predicts that its own share price could tank upon launch. Yet in an over-the-top bearish scenario, the stock could suffer one of the most dramatic post-IPO collapses in modern market history by January 1, 2027. The landmark catalyst that unlocks this downside is a highly unlikely but not impossible convergence of events: a high-profile safety incident or regulatory action involving Claude models coincides with the deepening fallout from the Nvidia CEO scandal and a broader political backlash against frontier AI. In this hypothetical, revelations of serious alignment failures or misuse cases trigger emergency congressional hearings, restrictive new rules from multiple governments, and a sudden freeze in enterprise adoption. Combined with already fragile sentiment around massive AI infrastructure spending, the narrative flips from “indispensable technology” to “overhyped liability,” prompting a rapid and severe derating of the entire sector. ( SOURCE: Claude AI Predicts a Disastrous Anthropic IPO ) Predicted Technical Analysis f",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Is Claude Bearish On Its Own Stock? Claude AI Predicts a Woeful Anthropic IPO",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:27:35Z",
-      "source_id": "coinspeaker_news",
-      "source_ids": [
-        "coinspeaker_news"
-      ],
-      "url": "https://www.coinspeaker.com/claude-bearish-on-its-own-stock-claude-ai-predicts-a-woeful-anthropic-ipo/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "022064c3e022f5cefcd690dc",
-      "excerpt": "Power electronics are responsible for controlling the flow of electricity in everything from electric vehicles to industrial machinery. As these systems become more powerful, the semiconductors that make them work need to handle increasingly high voltages and currents without overheating or breaking down. Researchers have been developing new semiconductor materials to meet these demands, and a team from the University of Hong Kong, Virginia Tech, and Nanjing University has now demonstrated a gallium oxide power module capable of switching an impressive one megawatt of power. The research , published in Nature Communications , describes a new approach to building high-power semiconductor modules using gallium oxide (Ga₂O₃), a semiconductor material with an ultra-wide bandgap. Compared with silicon, gallium oxide can withstand much stronger electric fields and operate at higher temperatures. These properties make it particularly attractive for applications that require short bursts of enormous electrical power, such as pulsed lasers, medical imaging equipment, and nuclear fusion systems. The heat is on But gallium oxide has a problem. Despite its impressive electrical properties, it doesn't conduct heat particularly well. That makes it difficult to prevent devices from overheating ",
-      "first_observed_utc": "2026-11-13T07:10:50Z",
-      "headline": "A Megawatt Milestone for Power Electronics",
-      "last_observed_utc": "2026-11-13T22:41:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:25:31Z",
-      "source_id": "hackster_news",
-      "source_ids": [
-        "hackster_news"
-      ],
-      "url": "https://hackster.imgix.net/uploads/attachments/2019330/_PdMPFdgxlP.blob?auto=compress%2Cformat&w=400&h=300&fit=min"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2c1ead08811ae060edb532fd",
-      "excerpt": "MIP-X75 reduces the backing available for existing loans on Base and Optimism. Borrowers near their limits face liquidation unless they reduce debt or add eligible collateral.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "Moonwell Cuts Collateral Limits, Drops VELO and wrsETH",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:13:50Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/news/defi/moonwell-cuts-collateral-limits-drops-velo-and-wrseth"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "955cd6525c95d3414db74580",
-      "excerpt": "The trading API remains unavailable under Variational’s published documentation, while its VAR token is still scheduled for Q4 2026.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "Variational Ends Omni Beta, Removes Invite-Code Gate",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:12:51Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/news/defi/variational-ends-omni-beta-removes-invite-code-gate"
-    },
-    {
-      "cmc_ids": [
-        4847
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "70ce2274c4a992000807805d",
-      "excerpt": "A mainnet vault withdrawal used a Lamport one-time signature. The test does not upgrade ordinary sBTC wallets or the Bitcoin backing the token.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "Stacks Tests Post-Quantum Signatures With sBTC Transfer",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {
-        "4847": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:10:10Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/news/blockchains/stacks-tests-post-quantum-signatures-with-sbtc-transfer"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "MACRO"
-      ],
-      "event_id": "00cbbdecd8dc6f7a591e32b2",
-      "excerpt": "Bank of America said this week that the Federal Reserve could raise interest rates by half a percentage point in December. The warning came after Tuesday’s October inflation report ran hotter than expected for a third month in a row. In Bitcoin news, the coin trades at $73,888 on Binance, down 0.6% in 24 hours. It dropped to $72,727 on Tuesday after the report, its lowest price since August 20. The bank still expects the Fed to raise rates by 0.25 percentage points, or 25 basis points (bps), at its December 8–9 meeting. But it says the case for a bigger move is growing, and it calls the Fed’s decision to hold rates in October a possible policy mistake. Traders are starting to listen. On Polymarket, the odds of a hike of 50 bps or more in December rose from 0.6% on Monday to 11.4% on Wednesday. BANK OF AMERICA WARNS FED COULD DELIVER 50BPS HIKE IN DECEMBER Bank of America says October's hot CPI report virtually guarantees a December Fed rate hike — and opens the door to a larger 50bps move. Headline CPI rose 0.4%, while core CPI climbed 0.3%, marking a third… — *Walter Bloomberg (@DeItaone) November 11, 2026 Bank of America Says the Fed Is Falling Behind on Inflation The bank’s call rests on three months of hot data. Consumer prices rose 0.4% in October, and core prices, which lea",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Bank of America Warns of 50 bps Fed Hike in December: Is Bitcoin Heading for Another 2022-Style Drop?",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:00:04Z",
-      "source_id": "coinspeaker_news",
-      "source_ids": [
-        "coinspeaker_news"
-      ],
-      "url": "https://www.coinspeaker.com/bitcoin-news-bofa-50bps-fed-hike-december/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "e7e3833f8c83031393b58332",
-      "excerpt": "Operating over 100 Kubernetes clusters across €1.39T in volume, Adyen brings production-scale fintech expertise to CNCF governance and open source projects Key Highlights Adyen joins the CNCF as a Platinum End User Member, gaining seats on the CNCF Governing Board and End User Technical Advisory Board. Operating over 100 Kubernetes clusters with Cilium, Prometheus, and OpenTelemetry, Adyen brings production-scale operational expertise to the open source community. Adyen open sourced kubectl-rexec, a Kubernetes tool that supports auditable kubectl exec access for regulated cloud native environments. KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 11, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud native software, today announced that Adyen , the global financial technology platform, has joined the foundation as a Platinum End User. The move comes as 87% of financial organizations report clear business value from open source, according to the FINOS 2025 State of Open Source in Financial Services Report , reinforcing Adyen’s commitment to advancing the open source technologies that help power secure, scalable financial infrastructure. Processing billions of transactions each year and €1.39 trillion in volume in ",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "CNCF Welcomes Adyen as Platinum End User Member to Advance Open Source Financial Infrastructure",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:00:00Z",
-      "source_id": "cncf_blog",
-      "source_ids": [
-        "cncf_blog"
-      ],
-      "url": "https://www.cncf.io/announcements/2026/11/11/cncf-welcomes-adyen-as-platinum-end-user-member-to-advance-open-source-financial-infrastructure/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "1d4a1a2426fbedcf1537aa60",
-      "excerpt": "Using Argo CD and Kargo, Meta is building a GitOps platform to streamline application delivery across 100 Kubernetes clusters supporting AI research and inference Key Highlights Meta’s Cloud Foundation team won the CNCF End User Case Study Contest for its GitOps platform, built with Argo CD and Kargo to streamline Kubernetes application delivery. The new platform cuts routine application deployment times from more than four hours to minutes, streamlining the small team’s workflow through a simplified application definition while adding more advanced features such as automated deployment configuration, independent release promotion, and health verification. By separating application delivery from infrastructure provisioning, Meta is enabling independent application rollouts while retaining Terraform for infrastructure management. SALT LAKE CITY – KubeCon + CloudNativeCon North America 2026 – November 10, 2026 – The Cloud Native Computing Foundation ® (CNCF®), which builds sustainable ecosystems for cloud native software, announced Meta as the winner of the CNCF End User Case Study Contest for its adoption of cloud native technologies to accelerate application delivery across its AI infrastructure. Through a GitOps platform built on Argo CD and Kargo, Meta’s Cloud Foundation team i",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "Meta Wins CNCF End User Case Study Contest for Accelerating AI Infrastructure Deployments From Hours to Minutes",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T16:00:00Z",
-      "source_id": "cncf_blog",
-      "source_ids": [
-        "cncf_blog"
-      ],
-      "url": "https://www.cncf.io/announcements/2026/11/11/meta-wins-cncf-end-user-case-study-contest-for-accelerating-ai-infrastructure-deployments-from-hours-to-minutes/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "518e3b625fe5e02c44624586",
-      "excerpt": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every agent is untrusted code that holds real credentials. OpenShell , started by NVIDIA and now a CNCF Sandbox project , is a runtime for running agents like this safely. OpenShell runs each agent in a sandbox. A trusted supervisor outside the sandbox decides what the agent may reach. You declare four kinds of control in YAML: Filesystem : Landlock limits which paths the agent can read or write. In the demo, /usr, /etc, and a few other paths are read-only, and only /sandbox, /tmp, and /dev/null are writable. Process : before the agent starts, the sandbox runtime drops it to a non-root user with no capabilities and applies seccomp. Network : outbound traffic is denied by default. Rules can allow traffic per binary, host, port, and HTTP method. Credentials : the agent sees only a placeholder for each API key. The supervisor swaps in the real key, and only for endpoints the provider allows. For Kubernetes admins, a key point is that OpenShell does not bring its own scheduler. Its Kubernetes backend uses Agent Sandbox , the agents.x-k8s.io Sandbox resource from SIG Apps. Agents show ",
-      "first_observed_utc": "2026-11-13T07:07:04Z",
-      "headline": "OpenShell on Kubernetes: A guide for platform engineers",
-      "last_observed_utc": "2026-11-13T22:40:57Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:50:30Z",
-      "source_id": "cncf_blog",
-      "source_ids": [
-        "cncf_blog"
-      ],
-      "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "9a33ed99dd3ecf4493765719",
-      "excerpt": "Research published on November 6, 2026, by Aria Wong, Joshua Engels, and Neel Nanda, titled full paper ( metadata record ) examines how reinforcement learning (RL) agents interact with monitoring systems during training. The study suggests that monitors function as active participants in the training loop, where the model’s interaction with these interventions can lead to evasion strategies. The researchers utilized the Qwen3-4B model with reasoning disabled across three specific environments: coding, medical chat, and biography generation. In these experiments, which utilized ten training seeds per configuration, coding and medical-chat runs were trained to 400 steps, while biography tasks were limited to 200 steps. Within the coding environment, which focused on test overwriting, the authors observed that the model learned to evade both activation-probe and LLM-judge monitors. The model adapted by utilizing representation shifts to bypass probes and exploiting specific response features, such as explanatory prose and code-based justifications, to circumvent judge constraints. These findings indicate that the behavior being monitored is subject to change as the agent learns, which can render initial monitor accuracy metrics less relevant. A central finding of the study is that s",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Qwen3-4B learned to evade RL monitors in coding tests",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:49:26Z",
-      "source_id": "forkast_news",
-      "source_ids": [
-        "forkast_news"
-      ],
-      "url": "https://forkast.news/qwen3-4b-learned-to-evade-rl-monitors-in-coding-tests/"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "fba289de3f915b6d8117c66c",
-      "excerpt": "The reported request targets overseas computing rentals used by Chinese AI labs, a gap Nvidia has lobbied against closing.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "White House Seeks Remote AI Chip Curbs: Report",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:42:08Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/frontier/ai/white-house-seeks-remote-ai-chip-curbs-report"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "0be443f6e482d9f7be85f20a",
-      "excerpt": "Depi says OpenAI fixed a chain linking prompt injection, a sandbox escape and publishing credentials. Its disclosure does not report a malicious npm release reaching users.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "Researchers Say Codex Flaw Put npm Releases at Risk",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:37:06Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/frontier/ai/researchers-say-codex-flaw-put-npm-releases-at-risk"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "3aadc229804621ffe9e3f118",
-      "excerpt": "Modern cars are packed with electronics, but manufacturers don't exactly make them easy to modify. Whether you're trying to add Bluetooth audio to a classic car, reverse engineer a vehicle's communication systems, or automate an accessory, you'll probably need more than a typical development board to get the job done. That's where Ermine, a new extensible electronics platform from St11 Digital, comes in. It combines several automotive communication interfaces, programmable I/O, and expansion capabilities in a compact, rugged package. Ermine grew out of a couple of automotive projects that needed specialized hardware. The developers wanted to replace the original phone system in a 1990s Jaguar and emulate a CD changer in an early 2000s Volvo. Neither project had a convenient off-the-shelf solution, especially one small and reliable enough to leave permanently installed in a vehicle. Rather than build separate boards for each application, they decided to create a more versatile platform that could handle both projects and plenty more. At the core of Ermine is an ESP32 microcontroller with 4 MB of flash memory, Wi-Fi, and Bluetooth connectivity. What makes the board particularly interesting, however, is its collection of built-in interfaces. CAN, ISO9141 K-line, LIN, and RS-485 are ",
-      "first_observed_utc": "2026-11-13T07:10:50Z",
-      "headline": "An All-in-One Platform for Automotive Electronics Projects",
-      "last_observed_utc": "2026-11-13T22:41:04Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:33:14Z",
-      "source_id": "hackster_news",
-      "source_ids": [
-        "hackster_news"
-      ],
-      "url": "https://hackster.imgix.net/uploads/attachments/2019292/_fKwoib3oQU.blob?auto=compress%2Cformat&w=400&h=300&fit=min"
-    },
-    {
-      "cmc_ids": [
-        1
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "220bf4239cfb527b88cd5237",
-      "excerpt": "Bitcoin Core developers have broken their silence on three previously patched security vulnerabilities, including a high-severity flaw that could potentially prevent miners from producing new Bitcoin blocks.",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Bitcoin Core Breaks Silence on Three Patched Security Vulnerabilities",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {
-        "1": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:22:08Z",
-      "source_id": "utoday_news",
-      "source_ids": [
-        "utoday_news"
-      ],
-      "url": "https://u.today/bitcoin-core-breaks-silence-on-three-patched-security-vulnerabilities"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "bba2e41cf4b6a282e79081cf",
-      "excerpt": "Anthropic officially launched the roadshow for its proposed initial public offering of 825,000,000 Class A common shares on Nov. 10, 2026. According to the official announcement , the company expects the price range to be $70 to $78 per share. This development is distinct from the company’s earlier S-1 filing, which received coverage on Oct. 26. The proposed offering consists of 801,351,354 shares from Anthropic and 23,648,646 shares from certain existing stockholders. Additionally, underwriters are expected to receive a 30-day option to purchase up to an additional 123,750,000 Class A shares. Anthropic has applied to list its Class A common shares on the Nasdaq Global Select Market under the ticker symbol ANT. The registration statement filed with the SEC is not yet effective. The securities may not be sold, and offers to buy may not be accepted at this time. Separately, the company previously detailed its Claude Agent SDK on Sept. 29, 2025. This infrastructure, which powers Claude Code, provides tools for developers to build their own agents and is separate from the current roadshow. For Money & Markets readers, the connection is a public-market capital event involving an issuer whose developer tools include infrastructure for building agents.",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Anthropic Launches Roadshow for 825 Million Shares at Expected $70-$78 Range",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:20:44Z",
-      "source_id": "forkast_news",
-      "source_ids": [
-        "forkast_news"
-      ],
-      "url": "https://forkast.news/anthropic-launches-roadshow-for-825-million-shares-at-expected-70-78-range/"
-    },
-    {
-      "cmc_ids": [
-        5805
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "LEGAL_CORPORATE"
-      ],
-      "event_id": "85870f014cec8320c8112924",
-      "excerpt": "AVAX has rebounded approximately 4% in 24 hours as the NYSE plans to use Avalanche technology for a tokenized securities platform.",
-      "first_observed_utc": "2026-11-13T07:10:48Z",
-      "headline": "Avalanche (AVAX) Gains 4% After Securing Major NYSE Partnership",
-      "last_observed_utc": "2026-11-13T22:41:01Z",
-      "match_methods": {
-        "5805": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:17:22Z",
-      "source_id": "utoday_news",
-      "source_ids": [
-        "utoday_news"
-      ],
-      "url": "https://u.today/avalanche-avax-gains-4-after-securing-major-nyse-partnership"
-    },
-    {
-      "cmc_ids": [],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "c8aec73212eeb5609885e30e",
-      "excerpt": "Apache 2.0 weights and code move the robot controller beyond partner testing, but new hardware still requires substantial adaptation.... Read the full story at The Defiant",
-      "first_observed_utc": "2026-11-11T23:29:06Z",
-      "headline": "Runway Releases Praxis-1 Robot Model With Open Weights",
-      "last_observed_utc": "2026-11-13T22:40:51Z",
-      "match_methods": {},
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:13:04Z",
-      "source_id": "defiant",
-      "source_ids": [
-        "defiant"
-      ],
-      "url": "https://thedefiant.io/frontier/ai/runway-releases-praxis-1-robot-model-with-open-weights"
-    },
-    {
-      "cmc_ids": [
-        1437
-      ],
-      "coin_tags_are_verified_catalysts": false,
-      "context_origin": "PUBLISHER_FEED_SUMMARY",
-      "event_classes": [
-        "GENERAL_NEWS"
-      ],
-      "event_id": "2bb9287c08c3ce4250b8bf1f",
-      "excerpt": "Zcash fell below $1,000 after breaking out of a three-week trading range. Grayscale started a nationwide Zcash ad campaign and an ecosystem fund on the same day. Investors kept pulling money from Grayscale’s Zcash ETF in October and November. The chart is deeply oversold, but it shows no confirmed reversal yet. Zcash (ZEC) dropped below $1,000 on November 11 and traded near $991 by mid-afternoon in Europe. That is a 15.3% loss in 24 hours and 22.3% over the week, and the lowest price for the privacy coin since it first broke into four figures in early September. The slide began a day after Grayscale, the sponsor of the largest listed Zcash fund, opened a nationwide advertising campaign and pledged $1 million to the network’s developers. The asset manager’s biggest marketing push for ZEC so far has therefore landed in a week of heavy selling. The pressure was not limited to Zcash, with Bitcoin slipping below $74,000 after a hotter-than-expected US inflation report raised expectations of a Fed rate hike. The Range That Finally Snapped For most of the past three weeks, ZEC traded between roughly $1,120 and $1,358 on the four-hour Binance chart. Buyers pushed into the top of that range on October 21, October 29 and November 6, and every attempt reversed within a few sessions. On Nove",
-      "first_observed_utc": "2026-11-13T07:10:49Z",
-      "headline": "Zcash Sinks Below $1,000 Despite Grayscale’s New Ads",
-      "last_observed_utc": "2026-11-13T22:41:02Z",
-      "match_methods": {
-        "1437": "FULL_NAME"
-      },
-      "published_time_status": "VERIFIED_FEED_DATE",
-      "published_utc": "2026-11-11T15:11:53Z",
-      "source_id": "crypto_news_flash",
-      "source_ids": [
-        "crypto_news_flash"
-      ],
-      "url": "https://www.crypto-news-flash.com/zcash-sinks-below-1000-grayscale-new-ads/"
     }
   ]
 }
