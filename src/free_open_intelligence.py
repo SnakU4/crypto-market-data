@@ -953,7 +953,7 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
             narrative=primary.get("description_excerpt") or ""
         else:
             narrative=""
-        normalized=re.sub(r"\\s+"," ",narrative).casefold().strip()
+        normalized=re.sub(r"\s+"," ",narrative).casefold().strip()
         if len(normalized)<120:
             context_weak.append({"cmc_id":x["cmc_id"],"symbol":x["symbol"],
                                   "description_characters":len(normalized)})
