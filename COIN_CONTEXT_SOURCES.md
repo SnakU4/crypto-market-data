@@ -64,8 +64,35 @@ per-coin dossiers and quality audit. Existing scheduled execution stays in
 place. No new push-triggered workflow, paid API, token, proprietary data or
 automated LLM calls were added.
 
-Run the offline unit tests manually via `python -m unittest
-tests/test_coin_context_sources.py` (or `unittest discover`).
-The initial rollout has not yet established that 100/100 have qualifying
-descriptive and event context. Missing coverage is an explicit, measurable
-failure of the research target, not silently relabelled as completed.
+Run the offline unit tests manually through the **workflow_dispatch-only**
+`Stage 1 Evidence Regression Tests` workflow. No push-trigger test workflow
+was introduced.
+
+## Live verification, 14 November 2026
+
+Multiple direct GitHub Actions runs of the `CMC100 Free Open Intelligence`
+workflow passed. At the latest verified run, **100/100** CMC100 coins had
+substantive source-linked individual **project background**. This is achieved
+through 98 substantial third-party profiles plus complementary original issuer
+documentation; eight original-issuer dossiers were extracted successfully.
+
+Every individual dossier has a source and identity association. Further audits
+require 100 distinct meaningful narrative excerpts (no repeated boilerplate)
+and explicitly reject insufficient or duplicated accounts.
+
+**Still NOT complete:** only **41/100** coins have substantive *individual
+article/event text*, leaving **59/100** without enough coin-specific news
+detail. The full original-corpus substantive excerpt ratio was **18.75%**,
+below the 20% threshold. The overall status therefore remains
+`PARTIAL_RESEARCH`, independent of complete background coverage.
+Event announcements cannot be inferred from static profiles. Primary-source
+claims and 24-hour price effects are not independently verified by this system.
+
+The source context pipeline now also includes
+`src/targeted_primary_context.py` (16 explicit CMC ID, name, and symbol
+mappings to official issuer or distinctly labelled secondary exchange
+documentation). See `docs/intelligence/primary_coin_context.json` and
+`coverage_audit.json → curated_original_project_sources_audit`.
+The 402/403/404 public-endpoint issue is handled by stopping repeated
+large-scale calls after a limited probe. Public rate limits, source licensing
+and availability can change.
