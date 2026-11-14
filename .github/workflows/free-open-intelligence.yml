@@ -26,7 +26,10 @@ jobs:
           python-version: '3.12'
 
       - name: Verify production code syntax; optional offline tests run manually
-        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/primary_source_discovery.py
+        run: python -m py_compile src/free_open_intelligence.py src/coin_context_sources.py src/targeted_primary_context.py src/primary_source_discovery.py
+          python -m unittest discover -s tests -p 'test_targeted_primary_context.py' -v
+          python -m unittest discover -s tests -p 'test_coin_context_sources.py' -v
+          python -m unittest discover -s tests -p 'test_free_open_intelligence.py' -v
 
       - name: Integrate all research planes and EXECUTE bounded free follow-up searches
         run: |
@@ -49,6 +52,12 @@ jobs:
           assert c["per_coin"]["perp_markets_unquarantined"] <= 77
           assert "substantive_source_excerpt_leads" in c["evidence_counts"]
           assert m["source_backed_project_profile_file"]=="docs/intelligence/coin_profiles.json"
+          assert m["original_issuer_project_context_file"]=="docs/intelligence/primary_coin_context.json"
+          primary=json.loads((p/"primary_coin_context.json").read_text())
+          assert primary["audit"]["mapped_projects"] >= 15
+          assert all(row["source_kind"] in ("ISSUER_DOCUMENTATION","EXCHANGE_ANNOUNCEMENT_NOT_ISSUER")
+                     for row in primary["profiles"].values())
+          assert c["per_coin"]["coins_missing_substantive_project_background_combined"] + c["per_coin"]["coins_with_substantive_project_background_combined"] == 100
           profiles=json.loads((p/"coin_profiles.json").read_text())
           assert profiles["audit"]["assets"] == 100
           assert len(profiles["audit"]["profile_gaps"]) + profiles["audit"]["substantive_project_profiles"] == 100
@@ -103,6 +112,7 @@ jobs:
             docs/intelligence/manifest.json
             docs/intelligence/coverage_audit.json
             docs/intelligence/coin_profiles.json
+            docs/intelligence/primary_coin_context.json
             docs/intelligence/global_intelligence.json
             docs/intelligence/sector_intelligence.json
             docs/intelligence/coin_batches/
@@ -122,6 +132,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/intelligence/manifest.json docs/intelligence/coverage_audit.json \
             docs/intelligence/coin_profiles.json \
+            docs/intelligence/primary_coin_context.json \
             docs/intelligence/global_intelligence.json docs/intelligence/sector_intelligence.json \
             docs/intelligence/coin_batches docs/intelligence/open_discovery.json \
             docs/intelligence/research_tasks.json docs/intelligence/publisher_excerpts.json \
