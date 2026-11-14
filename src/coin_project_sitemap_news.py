@@ -29,7 +29,11 @@ def stamp(t):
 
 def parsed(t):
     try:
-        x=dt.datetime.fromisoformat(str(t).replace("Z","+00:00"))
+        value=str(t).replace("Z","+00:00")
+        x=dt.datetime.fromisoformat(value)
+        # XML sitemap lastmod commonly contains only YYYY-MM-DD.
+        if x.tzinfo is None and re.fullmatch(r"\d{4}-\d{2}-\d{2}",value):
+            x=x.replace(tzinfo=UTC)
         return x.astimezone(UTC) if x.tzinfo else None
     except (TypeError,ValueError,OverflowError):return None
 
@@ -74,9 +78,18 @@ def collect(root,assets,profiles,events,cutoff,network=False,
             max_domains=12,download=None,extractor=None):
     root=pathlib.Path(root)
     hist=root/HISTORY
-    try:past=json.loads(hist.read_text(encoding="utf-8")).get("domains",{})
-    except (OSError,ValueError,TypeError):past={}
+    try:previous=json.loads(hist.read_text(encoding="utf-8"))
+    except (OSError,ValueError,TypeError):previous={}
+    past=previous.get("domains",{})
     if not isinstance(past,dict):past={}
+    cached=[]
+    known_ids={int(a["cmc_id"]) for a in assets}
+    for row in previous.get("events",[]):
+        if not isinstance(row,dict):continue
+        ids=row.get("candidate_cmc_ids") or []
+        observed=parsed(row.get("first_observed_utc"))
+        if observed and observed<=cutoff and ids and ids[0] in known_ids:
+            cached.append(row)
     try:from discovery_quality import extract_article,has_additional_information
     except ImportError:from src.discovery_quality import extract_article,has_additional_information
     try:from coin_news_resolution import title_relevant
@@ -87,6 +100,7 @@ def collect(root,assets,profiles,events,cutoff,network=False,
     extractor=extractor or extract_article
     rich={cid for e in events for cid in (e.get("candidate_cmc_ids") or [])
           if has_additional_information(e.get("title"),e.get("excerpt"))}
+    rich.update(x["candidate_cmc_ids"][0] for x in cached)
     selected=[];skips=collections.Counter();seen=set();quarantined=[]
     for asset in assets:
         cid=int(asset["cmc_id"])
@@ -172,10 +186,13 @@ def collect(root,assets,profiles,events,cutoff,network=False,
     past={k:v for k,v in past.items() if isinstance(v,dict) and
           parsed(v.get("observed_utc")) and
           dt.timedelta(0)<=now-parsed(v["observed_utc"])<=dt.timedelta(days=30)}
+    combined={e["id"]:e for e in cached+out}
+    combined_items=list(combined.values())[-200:]
     summary={"project_sitemaps_probed":len(audit),
+             "cached_substantive_site_articles":len(cached),
              "new_substantive_undated_site_articles":len(out),
              "coins_with_new_substantive_site_articles":len({i["candidate_cmc_ids"][0] for i in out}),
              "sites":audit,"quarantine":quarantined,"skips":dict(skips),
              "sitemap_lastmod_is_not_article_publication_time":True,
              "never_claims_confirmed_token_catalyst":True}
-    return out,{"domains":past,"cooldown_hours":72},summary
+    return combined_items,{"domains":past,"events":combined_items,"cooldown_hours":72},summary
