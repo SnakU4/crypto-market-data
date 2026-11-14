@@ -585,12 +585,30 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
     primary_doc,primary_audit=collect_primary_context(root,assets,cutoff,
         network=bool(network and live_collection))
     all_events=[]
+    curated_source_ids={str(a["symbol"]):int(a["cmc_id"]) for a in assets}
+    explicit_project_source_counts=collections.Counter()
     for kind,rows in (("expanded",xr),("research",direct_events),
                       ("adjacent",adjacent.get("events") or [])):
         for e in rows:
             z=event_doc(kind,e,cutoff)
             if z:
                 z["candidate_cmc_ids"]=[i for i in z["candidate_cmc_ids"] if i in valid_ids]
+                # The original direct research collector knows the *publisher*
+                # of a source feed (e.g., monero-project/monero releases), even
+                # where the release title is only "v0.18.5.4" and cannot be
+                # found by keyword search. Restore that provenance-specific
+                # project association without calling it a token catalyst.
+                source=str(e.get("source_id") or "")
+                symbol=SOURCE_PROJECT_CONTEXT.get(source) if kind=="research" else None
+                linked_cid=curated_source_ids.get(symbol)
+                if linked_cid in valid_ids:
+                    z["candidate_cmc_ids"]=sorted(set(z["candidate_cmc_ids"]+[linked_cid]))
+                    z["source_project_mapping"]="EXPLICIT_CURATED_PUBLISHER_TO_CMC_COIN"
+                    z["source_project_mapping_status"]="PROJECT_RELEASE_OR_GOVERNANCE_NOT_PRICE_CAUSALITY"
+                    z["identity_status"]="CURATED_PROJECT_SOURCE_ASSOCIATION_NOT_TOKEN_EFFECT"
+                    explicit_project_source_counts[linked_cid]+=1
+                    if not z.get("themes"):
+                        z["scope"]="ASSET_CANDIDATE"
                 all_events.append(z)
     manual,manual_status=load_manual_findings(root,cutoff,valid_ids)
     dynamic_events=[];dynamic_audit={"domains_attempted":0,"domains_found_content":0,
@@ -1080,6 +1098,9 @@ def build(root=ROOT,out=None,cutoff=None,network=False,max_followups=22,max_arti
           "coins_with_substantive_project_source_context":sum(
               any(x["has_substantive_context"] for x in project_context[i]) for i in ids),
           "project_source_hint_caveat":"Project affiliation is contextual, NOT independent verification of token-price impact."},
+      "curated_project_publisher_attribution":{"coins":len(explicit_project_source_counts),
+          "source_event_counts_by_cmc_id":dict(explicit_project_source_counts),
+          "classification":"PROJECT_SOURCE_ACTIVITY_NOT_VERIFIED_TOKEN_CATALYST"},
       "direct_research_full_source_audit":direct_events_audit,
       "new_public_source_discovery_audit":dynamic_audit,
       "identity_quarantine":quarantined,
