@@ -41,6 +41,27 @@ class CoinContextTests(unittest.TestCase):
         self.assertEqual(cc.exact_match(assets,listed),{"10":"sun","11":"polygon","12":"chinese"})
         self.assertEqual(cc.project_name("Polygon (prev. MATIC)"),cc.project_name("Polygon"))
 
+    def test_explicit_provider_id_aliases_resolve_names_but_never_symbols_only(self):
+        assets=[{"cmc_id":3957,"name":"UNUS SED LEO","symbol":"LEO"},
+                {"cmc_id":35697,"name":"Pi","symbol":"PI"},
+                {"cmc_id":39064,"name":"Midnight","symbol":"NIGHT"},
+                {"cmc_id":38590,"name":"币安人生","symbol":"币安人生"}]
+        paprika=[{"id":"night-midnight","name":"Midnight","symbol":"NIGHT"},
+                 {"id":"night-midnight2","name":"Midnight","symbol":"NIGHT"},
+                 {"id":"pi2-pi-network","name":"Pi Network","symbol":"PI"},
+                 {"id":"bianrensheng-bianrensheng","name":"币安人生 (BinanceLife)","symbol":"币安人生"}]
+        self.assertEqual(cc.exact_match(assets,paprika,provider="coinpaprika"),
+                         {"35697":"pi2-pi-network","39064":"night-midnight2",
+                          "38590":"bianrensheng-bianrensheng"})
+        gecko=[{"id":"leo-token","name":"LEO Token","symbol":"LEO"},
+               {"id":"pi-network","name":"Pi Network","symbol":"PI"},
+               {"id":"counterfeit","name":"Pi","symbol":"PI"}]
+        self.assertEqual(cc.exact_match(assets,gecko,provider="coingecko"),
+                         {"3957":"leo-token","35697":"pi-network"})
+        self.assertIsNone(cc.valid_profile(assets[2],
+            {"id":"night-midnight","name":"Midnight","symbol":"NIGHT"},
+            "coinpaprika","2026-11-14T11:00:00Z"))
+
     def test_short_generic_profiles_do_not_count_as_substantive(self):
         asset = {"cmc_id": 1, "name": "Alpha", "symbol": "ABC"}
         row = {"id": "abc-alpha", "name": "Alpha", "symbol": "ABC",
