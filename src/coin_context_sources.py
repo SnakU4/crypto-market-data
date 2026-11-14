@@ -102,17 +102,19 @@ def valid_profile(asset, raw, provider, received):
         return None
     if provider == "coinpaprika":
         description = clean(raw.get("description"))
-        tags = [clean(t.get("name"), 70) for t in raw.get("tags", []) if isinstance(t, dict)]
+        tags = [clean(t.get("name"), 70) for t in (raw.get("tags") or [])
+                if isinstance(t, dict)]
         attrs = {k: raw.get(k) for k in ("type", "started_at", "proof_type",
             "hash_algorithm", "open_source", "development_status", "org_structure")
             if raw.get(k) is not None}
         team = [{"name": clean(member.get("name"), 70),
                  "role": clean(member.get("position"), 85)}
-                 for member in raw.get("team", [])
+                 for member in (raw.get("team") or [])
                  if isinstance(member, dict) and member.get("name")][:8]
         src_id = str(raw["id"])
         src_url = "https://coinpaprika.com/coin/" + urllib.parse.quote(src_id, safe="") + "/"
         links = raw.get("links") or {}
+        if not isinstance(links,dict):links={}
         url_types = ("website", "source_code", "explorer")
         citations = {k: [v for v in links.get(k, []) if isinstance(v, str) and v.startswith("https://")][:2]
                      for k in url_types if isinstance(links.get(k), list)}
@@ -122,7 +124,7 @@ def valid_profile(asset, raw, provider, received):
     else:
         lang = raw.get("description") or {}
         description = clean((lang.get("en") or lang.get("de") or "") if isinstance(lang, dict) else "", 450)
-        tags = [clean(t, 70) for t in raw.get("categories", []) if isinstance(t, str)]
+        tags = [clean(t, 70) for t in (raw.get("categories") or []) if isinstance(t, str)]
         attrs = {"genesis_date": raw.get("genesis_date"),
                  "asset_platform_id": raw.get("asset_platform_id"),
                  "block_time_in_minutes": raw.get("block_time_in_minutes")}
@@ -131,6 +133,7 @@ def valid_profile(asset, raw, provider, received):
         src_id = str(raw["id"])
         src_url = "https://www.coingecko.com/en/coins/" + urllib.parse.quote(src_id, safe="")
         links = raw.get("links") or {}
+        if not isinstance(links,dict):links={}
         citations = {}
         for key in ("homepage", "blockchain_site", "official_forum_url"):
             val = links.get(key) or []
@@ -287,23 +290,45 @@ def collect_profiles(root, assets, cutoff, network=False, opener=None, max_gecko
             try:
                 data = fetch_json(url, opener)
                 return asset, kind, extra_context(kind, data, stamp(dt.datetime.now(UTC)), cutoff), None
+            except urllib.error.HTTPError as exc:
+                return asset, kind, None, "HTTP_" + str(exc.code)
             except (ValueError, TypeError, KeyError, OSError, urllib.error.URLError) as exc:
                 return asset, kind, None, type(exc).__name__
         audit["extra_calls"] = 0
         audit["extra_ok"] = {"events":0, "markets":0}
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-            for asset, kind, data, err in pool.map(extra_call, extra_work):
-                audit["calls"] += 1
-                audit["extra_calls"] += 1
-                if data is not None:
-                    audit["success"] += 1
-                    audit["extra_ok"][kind] += 1
-                    profile = profiles[str(asset["cmc_id"])]
-                    profile["coin_" + kind] = data
-                    profile[kind + "_observed_utc"] = stamp(dt.datetime.now(UTC))
-                else:
-                    audit["errors"].append("coinpaprika_" + kind + ":" +
-                        asset["symbol"] + ":" + (err or "UNKNOWN_ERROR"))
+        audit["extra_endpoint_state"] = {}
+        def store_extra(asset,kind,data,err):
+            audit["calls"] += 1
+            audit["extra_calls"] += 1
+            if data is not None:
+                audit["success"] += 1
+                audit["extra_ok"][kind] += 1
+                profile = profiles[str(asset["cmc_id"])]
+                profile["coin_" + kind] = data
+                profile[kind + "_observed_utc"] = stamp(dt.datetime.now(UTC))
+            else:
+                audit["errors"].append("coinpaprika_" + kind + ":" +
+                    asset["symbol"] + ":" + (err or "UNKNOWN_ERROR"))
+        by_kind = {kind: [task for task in extra_work if task[1]==kind]
+                   for kind in ("events","markets")}
+        for kind, batch in by_kind.items():
+            if not batch:continue
+            # Probe three different assets before broad fan-out. 402/403/404
+            # failures on all three indicate that this endpoint is currently
+            # unavailable for the keyless GitHub runner, not 100 missing events.
+            probes=batch[:3]
+            probe_results=[extra_call(task) for task in probes]
+            for asset,k,data,err in probe_results:
+                store_extra(asset,k,data,err)
+            inaccessible = all(data is None and err in
+                ("HTTP_402","HTTP_403","HTTP_404","HTTP_429") for _,_,data,err in probe_results)
+            if inaccessible:
+                audit["extra_endpoint_state"][kind] = "DISABLED_AFTER_THREE_HTTP_FAILURES"
+                continue
+            audit["extra_endpoint_state"][kind] = "PROBES_ACCEPTED_CONTINUE"
+            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+                for asset,k,data,err in pool.map(extra_call, batch[3:]):
+                    store_extra(asset,k,data,err)
         missing = [a for a in assets if not profiles.get(str(a["cmc_id"]), {}).get("has_substantive_descriptive_context")]
         if missing and max_gecko > 0:
             try:
