@@ -71,9 +71,9 @@
       "task_id": "T:386a7538b092"
     },
     {
-      "results": 0,
+      "results": 7,
       "status": "OK",
-      "task_id": "T:73a47b8f5c49"
+      "task_id": "T:dfcc8f6766e0"
     },
     {
       "results": 12,
@@ -86,19 +86,19 @@
       "task_id": "T:aba7cbe84ed1"
     },
     {
-      "results": 12,
+      "results": 7,
       "status": "OK",
-      "task_id": "T:231514622f3b"
+      "task_id": "T:4c936c7a4f7d"
     },
     {
       "results": 7,
       "status": "OK",
-      "task_id": "T:dfcc8f6766e0"
+      "task_id": "T:ceb6af5cb5af"
     },
     {
       "results": 12,
       "status": "OK",
-      "task_id": "T:98c4f1164f9d"
+      "task_id": "T:231514622f3b"
     }
   ],
   "no_auto_source_installation": true,
@@ -271,15 +271,15 @@
     },
     {
       "evidence_ids": [
-        "followup:f63443bf42af77ae7a",
-        "followup:e39557137895c252aa",
-        "followup:d3e0b68c1da7cfed5c"
+        "followup:efa3841663ea161d84",
+        "followup:148f5e5b2495a9bfb8",
+        "followup:9d80354aea1dad3ffc"
       ],
-      "query": "\"nvidia yahoo\" crypto blockchain when:2d",
-      "results": 0,
+      "query": "\"banking finance\" crypto blockchain when:2d",
+      "results": 7,
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
-      "task_id": "T:73a47b8f5c49",
+      "task_id": "T:dfcc8f6766e0",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     },
     {
@@ -310,6 +310,32 @@
     },
     {
       "evidence_ids": [
+        "followup:efa3841663ea161d84",
+        "followup:148f5e5b2495a9bfb8",
+        "followup:9d80354aea1dad3ffc"
+      ],
+      "query": "\"finance review\" crypto blockchain when:2d",
+      "results": 7,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:4c936c7a4f7d",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
+        "followup:efa3841663ea161d84",
+        "followup:148f5e5b2495a9bfb8",
+        "followup:9d80354aea1dad3ffc"
+      ],
+      "query": "\"global banking\" crypto blockchain when:2d",
+      "results": 7,
+      "scope": "GLOBAL_OR_SECTOR",
+      "status": "QUERIED",
+      "task_id": "T:ceb6af5cb5af",
+      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
+    },
+    {
+      "evidence_ids": [
         "followup:cb7b1b714d512ac90f",
         "followup:29988b0169ee81c20a",
         "followup:10e7f764855ee599a5"
@@ -319,32 +345,6 @@
       "scope": "GLOBAL_OR_SECTOR",
       "status": "QUERIED",
       "task_id": "T:231514622f3b",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
-        "followup:efa3841663ea161d84",
-        "followup:148f5e5b2495a9bfb8",
-        "followup:c019f8e91a3170219f"
-      ],
-      "query": "\"banking finance\" crypto blockchain when:2d",
-      "results": 7,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:dfcc8f6766e0",
-      "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
-    },
-    {
-      "evidence_ids": [
-        "followup:f63443bf42af77ae7a",
-        "followup:e39557137895c252aa",
-        "followup:f63443bf42af77ae7a"
-      ],
-      "query": "\"elon musk\" crypto blockchain when:2d",
-      "results": 12,
-      "scope": "GLOBAL_OR_SECTOR",
-      "status": "QUERIED",
-      "task_id": "T:98c4f1164f9d",
       "trigger": "SECOND_HOP_FROM_NEW_FINDINGS"
     }
   ]
