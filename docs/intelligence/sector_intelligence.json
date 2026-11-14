@@ -2,7 +2,7 @@
   "open_ended_scope": true,
   "sectors": [
     {
-      "lead_count": 117,
+      "lead_count": 119,
       "sample": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -174,7 +174,7 @@
       "theme": "PAYMENTS"
     },
     {
-      "lead_count": 64,
+      "lead_count": 65,
       "sample": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -952,6 +952,92 @@
       "sample": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# PyTorch 2.15.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights Rewritten NCCL backend becomes the default , with a flight recorder that dumps on hangs and TORCH_DIST_USE_NCCL2=0 or nccl-legacy as rollback",
+          "id": "adjacent:bd6dc4f32b4a232b25",
+          "published_utc": "2026-10-28T17:09:49Z",
+          "title": "PyTorch 2.15.0 Release",
+          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
+          "id": "adjacent:bb2965096370f65799",
+          "published_utc": "2026-10-22T02:53:00Z",
+          "title": "lnd v0.20.6-beta.rc1",
+          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.20.6-beta.rc1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
+          "id": "adjacent:86210adeeb98c4976f",
+          "published_utc": "2026-10-22T02:52:48Z",
+          "title": "lnd v0.21.5-beta.rc1",
+          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.21.5-beta.rc1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structured state (#59299), is served by default (#60677, #60696), and also runs on `Cloudflare/clef-omni` (#61064), `LiquidAI/d1-3B` (#60676) and DiffusionGemma (#60466). The new `hf` tool and reasoning parser (`--tool-call-parser hf`, `--reasoning-parser hf`) reads the checkpoint's `resp",
+          "id": "adjacent:b06fcd8256b7e7fb44",
+          "published_utc": "2026-10-18T06:50:48Z",
+          "title": "v0.32.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sparse MQA logits for the indexer (#56254) and Mega-Gate fusing the gate GEMM with expert selection (#56266); decoder boundaries fuse the TP all-reduce, mHC input preparation (#57643) and the MoE finalize (#58586); a fused small-batch WO-A with inverse RoPE and MXFP8 quant on SM100/",
+          "id": "adjacent:915a33612965fd49a0",
+          "published_utc": "2026-10-05T06:44:55Z",
+          "title": "v0.31.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "This release is meant to fix the following regressions and silent correctness issues: ## Silent correctness fixes - Fix incorrect `torch.linalg.lstsq` solutions on MPS for complex batched underdetermined systems ([#196113](https://github.com/pytorch/pytorch/issues/196113)), fixed by [#196128](https://github.com/pytorch/pytorch/pull/196128) - Fix non-orthogonal `U` and inaccurate small singular values from `torch.linalg.svd` on MPS for rank-deficient and ill-conditioned inputs ([#196112](https://github.com/pytorch/p",
+          "id": "adjacent:2960c3be5f15d65274",
+          "published_utc": "2026-09-30T19:14:48Z",
+          "title": "PyTorch 2.14.1 Release",
+          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.30.0 ## Highlights This release features 762 commits from 315 contributors (104 new)! * **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on SM100 (#56893), DeepGEMM Mega-mHC (#56962), and async Engram prefetch with Engram DP sharding (#56512); DeepSeek-V4-Flash-Vision-Exp (#54566), also on ROCm (#55107) and with LoRA (#55897); GLM-5.3-Flash (#53906) with EPLB (#55119); K2-Horizon (#55063); Cohere Compass (#54774); Bailing V3 VL (#55",
+          "id": "adjacent:9eeeb2fc9fd07c6b26",
+          "published_utc": "2026-09-22T05:20:54Z",
+          "title": "v0.30.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.29.0 ## Highlights This release features 594 commits from 277 contributors (91 new)! * **Model Runner V2 is now the default for all models** (#53183), completing the rollout that began with pooling models (#48290). MRV2 also gained CUDA graph memory profiling for KV cache auto-sizing (#53306), batch-sharded sampling that cuts per-step logits memory by 1/TP (#50465), prompt embeds (#42963), `extract_hidden_states` speculation (#49811), padded FULL cudagraph dispatch for uniform decode under spec decode (#53407)",
+          "id": "adjacent:c0fb37eaf1e212a8e6",
+          "published_utc": "2026-09-09T08:54:49Z",
+          "title": "v0.29.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# PyTorch 2.14.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights NVGEMM brings CuTeDSL-generated CUTLASS kernels to Inductor, with epilogue fusion, scaled and NVFP4 GEMM, and grouped-reduction epilogues auto",
+          "id": "adjacent:f66775346df00797d3",
+          "published_utc": "2026-09-02T17:40:10Z",
+          "title": "PyTorch 2.14.0 Release",
+          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.0"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "# v0.28.0 ## Highlights This release features 584 commits from 270 contributors (76 new)! * **Kimi-K3 performance push**: a major optimization effort for Kimi-K3 across the stack — Decode Context Parallel (DCP) support (#50484), fused FlashKDA decode and prefill kernels (#50654, #51311, #52458), SiTU activation support for MegaMoE (#50510), GEMM-RS for sequence parallelism (#52079), combined all-gathers with 1.5~3x kernel-level speedup (#51070), an adaptive speculative token budget delivering ~60% better DSpark TTF",
+          "id": "adjacent:f6d06ed88424825cea",
+          "published_utc": "2026-08-26T09:46:30Z",
+          "title": "v0.28.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0"
+        }
+      ],
+      "theme": "DEVELOPER_NETWORKS"
+    },
+    {
+      "lead_count": 21,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Guest Post: Quantum-Resistant Wallets Could Support Institutional Blockchain Adoption The Quantum Insider",
           "id": "expanded:bcb9e34a13545d42ec",
           "published_utc": "2026-11-11T09:38:55Z",
@@ -1118,92 +1204,6 @@
         }
       ],
       "theme": "QUANTUM"
-    },
-    {
-      "lead_count": 20,
-      "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# PyTorch 2.15.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights Rewritten NCCL backend becomes the default , with a flight recorder that dumps on hangs and TORCH_DIST_USE_NCCL2=0 or nccl-legacy as rollback",
-          "id": "adjacent:bd6dc4f32b4a232b25",
-          "published_utc": "2026-10-28T17:09:49Z",
-          "title": "PyTorch 2.15.0 Release",
-          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
-          "id": "adjacent:bb2965096370f65799",
-          "published_utc": "2026-10-22T02:53:00Z",
-          "title": "lnd v0.20.6-beta.rc1",
-          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.20.6-beta.rc1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# Database Migrations There are no migrations in this release. # Verifying the Release In order to verify the release, you'll need to have `gpg` or `gpg2` installed on your system. Once you've obtained a copy (and hopefully verified that as well), you'll first need to import the keys that have signed this release if you haven't done so already: ``` curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import ``` Once you have the required PGP keys, you can verify the r",
-          "id": "adjacent:86210adeeb98c4976f",
-          "published_utc": "2026-10-22T02:52:48Z",
-          "title": "lnd v0.21.5-beta.rc1",
-          "url": "https://github.com/lightningnetwork/lnd/releases/tag/v0.21.5-beta.rc1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structured state (#59299), is served by default (#60677, #60696), and also runs on `Cloudflare/clef-omni` (#61064), `LiquidAI/d1-3B` (#60676) and DiffusionGemma (#60466). The new `hf` tool and reasoning parser (`--tool-call-parser hf`, `--reasoning-parser hf`) reads the checkpoint's `resp",
-          "id": "adjacent:b06fcd8256b7e7fb44",
-          "published_utc": "2026-10-18T06:50:48Z",
-          "title": "v0.32.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sparse MQA logits for the indexer (#56254) and Mega-Gate fusing the gate GEMM with expert selection (#56266); decoder boundaries fuse the TP all-reduce, mHC input preparation (#57643) and the MoE finalize (#58586); a fused small-batch WO-A with inverse RoPE and MXFP8 quant on SM100/",
-          "id": "adjacent:915a33612965fd49a0",
-          "published_utc": "2026-10-05T06:44:55Z",
-          "title": "v0.31.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "This release is meant to fix the following regressions and silent correctness issues: ## Silent correctness fixes - Fix incorrect `torch.linalg.lstsq` solutions on MPS for complex batched underdetermined systems ([#196113](https://github.com/pytorch/pytorch/issues/196113)), fixed by [#196128](https://github.com/pytorch/pytorch/pull/196128) - Fix non-orthogonal `U` and inaccurate small singular values from `torch.linalg.svd` on MPS for rank-deficient and ill-conditioned inputs ([#196112](https://github.com/pytorch/p",
-          "id": "adjacent:2960c3be5f15d65274",
-          "published_utc": "2026-09-30T19:14:48Z",
-          "title": "PyTorch 2.14.1 Release",
-          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.30.0 ## Highlights This release features 762 commits from 315 contributors (104 new)! * **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on SM100 (#56893), DeepGEMM Mega-mHC (#56962), and async Engram prefetch with Engram DP sharding (#56512); DeepSeek-V4-Flash-Vision-Exp (#54566), also on ROCm (#55107) and with LoRA (#55897); GLM-5.3-Flash (#53906) with EPLB (#55119); K2-Horizon (#55063); Cohere Compass (#54774); Bailing V3 VL (#55",
-          "id": "adjacent:9eeeb2fc9fd07c6b26",
-          "published_utc": "2026-09-22T05:20:54Z",
-          "title": "v0.30.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.29.0 ## Highlights This release features 594 commits from 277 contributors (91 new)! * **Model Runner V2 is now the default for all models** (#53183), completing the rollout that began with pooling models (#48290). MRV2 also gained CUDA graph memory profiling for KV cache auto-sizing (#53306), batch-sharded sampling that cuts per-step logits memory by 1/TP (#50465), prompt embeds (#42963), `extract_hidden_states` speculation (#49811), padded FULL cudagraph dispatch for uniform decode under spec decode (#53407)",
-          "id": "adjacent:c0fb37eaf1e212a8e6",
-          "published_utc": "2026-09-09T08:54:49Z",
-          "title": "v0.29.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# PyTorch 2.14.0 Release Notes - [Highlights](#highlights) - [Backwards Incompatible Changes](#backwards-incompatible-changes) - [Deprecations](#deprecations) - [New Features](#new-features) - [Improvements](#improvements) - [Bug fixes](#bug-fixes) - [Performance](#performance) - [Documentation](#documentation) - [Security](#security) - [Developers](#developers) # Highlights NVGEMM brings CuTeDSL-generated CUTLASS kernels to Inductor, with epilogue fusion, scaled and NVFP4 GEMM, and grouped-reduction epilogues auto",
-          "id": "adjacent:f66775346df00797d3",
-          "published_utc": "2026-09-02T17:40:10Z",
-          "title": "PyTorch 2.14.0 Release",
-          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.0"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "# v0.28.0 ## Highlights This release features 584 commits from 270 contributors (76 new)! * **Kimi-K3 performance push**: a major optimization effort for Kimi-K3 across the stack — Decode Context Parallel (DCP) support (#50484), fused FlashKDA decode and prefill kernels (#50654, #51311, #52458), SiTU activation support for MegaMoE (#50510), GEMM-RS for sequence parallelism (#52079), combined all-gathers with 1.5~3x kernel-level speedup (#51070), an adaptive speculative token budget delivering ~60% better DSpark TTF",
-          "id": "adjacent:f6d06ed88424825cea",
-          "published_utc": "2026-08-26T09:46:30Z",
-          "title": "v0.28.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0"
-        }
-      ],
-      "theme": "DEVELOPER_NETWORKS"
     },
     {
       "lead_count": 16,
@@ -1438,7 +1438,7 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Confidential sources “lifeblood” of free press, court rules in LinkedIn fight.",
+          "excerpt": "Text settings Story text Size Small Standard Large Width * Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Trump administration’s fight to stop suspected leaks of top-secret military information on LinkedIn can’t sweep in “a vast number of confidential sources” of random journalists “who have no conceivable relationship” to the Department of Justice’s investigation, an appeals court ruled Tuesday. The order came after the DOJ asked LinkedIn to turn over 18 months of communications from targeted journalists who collectively published more than 1,000 articles on many different topics over that time period. ",
           "id": "adjacent:8d78676331c355bb80",
           "published_utc": "2026-11-11T18:05:26Z",
           "title": "Trump admin loses fight to spy on random journalists’ LinkedIn DMs",
@@ -1454,6 +1454,68 @@
         }
       ],
       "theme": "REGULATION"
+    },
+    {
+      "lead_count": 7,
+      "sample": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+          "id": "adjacent:6d45ef51909a5d1ab2",
+          "published_utc": "2026-10-21T13:00:00Z",
+          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+          "url": "https://blog.cloudflare.com/webmcp-commerce/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks GBHackers News",
+          "id": "expanded:fd00c9b1f1207e7394",
+          "published_utc": "2026-11-11T09:41:10Z",
+          "title": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks - GBHackers News",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NNjhsQ0ZkTkY0amlFREl4VTFJLW5YU0hiRGM1WDdHbVJKRXdiZVhRTzd3SExTeEp4Y0pWelBLRndmRXRXMHhseGhRa3NON2NTOURZa2lqbXVaTlh5T2tKS1AzSFdBRlXSAWdBVV95cUxNTTY4bENGZE5GNGppRURJeFUxSS1uWFNIYkRjNVg3R21SSkV3YmVYUU83d0hMU3hKeGNKVnpQS0Z3ZkV0VzB4bHhoUWtzTjdjUzlEWWtpam11Wk5YeU9rSktQM0hXQUZV?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "In Brief Posted: 9:17 AM PST · November 12, 2026 Image Credits: Skyhobo / Getty Images Zack Whittaker United Airlines blocks AI agents from booking flights, citing cybersecurity risks United Airlines said it will restrict access to AI agents seeking to book flights and manage reservations on their users’ behalf, citing a risk to cybersecurity and undermining federal regulations. The airline is the latest American corporate giant to prevent customers from using AI agents and autonomous assistants to access their systems. The move comes as airlines and banks are struggling to differentiate between real customers and AI systems operating on thei",
+          "id": "adjacent:579308075bec6374f6",
+          "published_utc": "2026-11-12T17:17:58Z",
+          "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+          "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Wirex launches Navoka AI agent with dedicated IBAN and payment card The Paypers",
+          "id": "adjacent:e80936b3c389a34393",
+          "published_utc": "2026-11-12T15:59:14Z",
+          "title": "Wirex launches Navoka AI agent with dedicated IBAN and payment card - The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV29waUR5RERvd2tJRTI0Yi1GQUE4a1A3dkpVcHliNmhGRjRSY2x1Zi1NX2FUdmhiVnVVTHZkbGdlZmNjd3J1MndsbnZJTTBiLTl1RWdlM3p4NzZpd2xtcnBJOHdpTVg2dFJyeUFGSVZPNnBPUFFIMDhMMm93Mkt3aEhpVUwtTVFYdlBiaG9pYnhuRk5NSU9TQ3FTNHRVWkE5SUs2TF8tOA?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Adobe expands Creative Cloud AI agents to give creatives more time to focus on ideas Tech Edition",
+          "id": "adjacent:39948de139febb73f0",
+          "published_utc": "2026-11-11T16:25:29Z",
+          "title": "Adobe expands Creative Cloud AI agents to give creatives more time to focus on ideas - Tech Edition",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWndTZnl5SG9kWXVxc3EtRWZHbEpyZUpmRGFRaEZQX3ZyTmpOMExDeGZEZlI1NnZZNTdlaTNaZVFpR2ZHYmlmRWxteUZ1enZEcWVrYlBia2dtc1lYT080TU1mdjlvNjJuSmYzaEZWckNMTGN5Mk9UZnBmRml0TGlESjB2ZFk0TU9mOWdUYkJONVVDenJCRUFtcElCWllPSEkxU2J4bXRxQXR4UTA3?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Microsoft Researchers Turn AI Agents Into Hidden Backdoors by Modifying Fewer Than 10 Neurons GBHackers News",
+          "id": "adjacent:3edda28ae4772cf83e",
+          "published_utc": "2026-11-11T09:23:43Z",
+          "title": "Microsoft Researchers Turn AI Agents Into Hidden Backdoors by Modifying Fewer Than 10 Neurons - GBHackers News",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fXzQtc0RwUHJfakpwMk1MRTU4bVNJakpJdnBxbGFGQlc2VHdIWGFTZEFDU1hEaHQxVnRRM0pYLXp3VXk3YUkzb0ZjM2dWZDIyb2pHbHBoS2vSAVhBVV95cUxOX180LXNEcFByX2pKcDJNTEU1OG1TSWpKSXZwcWxhRkJXNlR3SFhhU2RBQ1NYRGh0MVZ0UTNKWC16d1V5N2FJM29GYzNnVmQyMm9qR2xwaEtr?oc=5"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Digital Identity Becomes Critical as AI Agents Expand Investing.com",
+          "id": "adjacent:2796485a6dbf54bc65",
+          "published_utc": "2026-11-11T07:32:23Z",
+          "title": "Digital Identity Becomes Critical as AI Agents Expand - Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdVRtbHFBM25tenU0QXFaMjVFcmdVQlFqT1FnNnVSMEtfNXJkZU1DMkxjUFB3eTBiVDFCMGRvdGJCQldSZi1OVXZpZGRHbWxZU0pfWFF0RFUtNmhSOTZCb0huc05zMU9tcDNCUWJjSkEzX3p2YWdrcDA5dFYxWlFkSWNRZlptT1ZYSjM5SHlUOEFtbzRBU00ya3RPbG04cGc?oc=5"
+        }
+      ],
+      "theme": "AUTONOMOUS_AGENTS"
     },
     {
       "lead_count": 7,
@@ -1640,60 +1702,6 @@
         }
       ],
       "theme": "ROBOTICS"
-    },
-    {
-      "lead_count": 6,
-      "sample": [
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
-          "id": "adjacent:6d45ef51909a5d1ab2",
-          "published_utc": "2026-10-21T13:00:00Z",
-          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
-          "url": "https://blog.cloudflare.com/webmcp-commerce/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks GBHackers News",
-          "id": "expanded:fd00c9b1f1207e7394",
-          "published_utc": "2026-11-11T09:41:10Z",
-          "title": "Corelight Warns AI Agents Can Silently Run Unreviewed Code With Privileged Access to Enterprise Networks - GBHackers News",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NNjhsQ0ZkTkY0amlFREl4VTFJLW5YU0hiRGM1WDdHbVJKRXdiZVhRTzd3SExTeEp4Y0pWelBLRndmRXRXMHhseGhRa3NON2NTOURZa2lqbXVaTlh5T2tKS1AzSFdBRlXSAWdBVV95cUxNTTY4bENGZE5GNGppRURJeFUxSS1uWFNIYkRjNVg3R21SSkV3YmVYUU83d0hMU3hKeGNKVnpQS0Z3ZkV0VzB4bHhoUWtzTjdjUzlEWWtpam11Wk5YeU9rSktQM0hXQUZV?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Wirex launches Navoka AI agent with dedicated IBAN and payment card The Paypers",
-          "id": "adjacent:e80936b3c389a34393",
-          "published_utc": "2026-11-12T15:59:14Z",
-          "title": "Wirex launches Navoka AI agent with dedicated IBAN and payment card - The Paypers",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV29waUR5RERvd2tJRTI0Yi1GQUE4a1A3dkpVcHliNmhGRjRSY2x1Zi1NX2FUdmhiVnVVTHZkbGdlZmNjd3J1MndsbnZJTTBiLTl1RWdlM3p4NzZpd2xtcnBJOHdpTVg2dFJyeUFGSVZPNnBPUFFIMDhMMm93Mkt3aEhpVUwtTVFYdlBiaG9pYnhuRk5NSU9TQ3FTNHRVWkE5SUs2TF8tOA?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Adobe expands Creative Cloud AI agents to give creatives more time to focus on ideas Tech Edition",
-          "id": "adjacent:39948de139febb73f0",
-          "published_utc": "2026-11-11T16:25:29Z",
-          "title": "Adobe expands Creative Cloud AI agents to give creatives more time to focus on ideas - Tech Edition",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWndTZnl5SG9kWXVxc3EtRWZHbEpyZUpmRGFRaEZQX3ZyTmpOMExDeGZEZlI1NnZZNTdlaTNaZVFpR2ZHYmlmRWxteUZ1enZEcWVrYlBia2dtc1lYT080TU1mdjlvNjJuSmYzaEZWckNMTGN5Mk9UZnBmRml0TGlESjB2ZFk0TU9mOWdUYkJONVVDenJCRUFtcElCWllPSEkxU2J4bXRxQXR4UTA3?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Microsoft Researchers Turn AI Agents Into Hidden Backdoors by Modifying Fewer Than 10 Neurons GBHackers News",
-          "id": "adjacent:3edda28ae4772cf83e",
-          "published_utc": "2026-11-11T09:23:43Z",
-          "title": "Microsoft Researchers Turn AI Agents Into Hidden Backdoors by Modifying Fewer Than 10 Neurons - GBHackers News",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fXzQtc0RwUHJfakpwMk1MRTU4bVNJakpJdnBxbGFGQlc2VHdIWGFTZEFDU1hEaHQxVnRRM0pYLXp3VXk3YUkzb0ZjM2dWZDIyb2pHbHBoS2vSAVhBVV95cUxOX180LXNEcFByX2pKcDJNTEU1OG1TSWpKSXZwcWxhRkJXNlR3SFhhU2RBQ1NYRGh0MVZ0UTNKWC16d1V5N2FJM29GYzNnVmQyMm9qR2xwaEtr?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Digital Identity Becomes Critical as AI Agents Expand Investing.com",
-          "id": "adjacent:2796485a6dbf54bc65",
-          "published_utc": "2026-11-11T07:32:23Z",
-          "title": "Digital Identity Becomes Critical as AI Agents Expand - Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdVRtbHFBM25tenU0QXFaMjVFcmdVQlFqT1FnNnVSMEtfNXJkZU1DMkxjUFB3eTBiVDFCMGRvdGJCQldSZi1OVXZpZGRHbWxZU0pfWFF0RFUtNmhSOTZCb0huc05zMU9tcDNCUWJjSkEzX3p2YWdrcDA5dFYxWlFkSWNRZlptT1ZYSjM5SHlUOEFtbzRBU00ya3RPbG04cGc?oc=5"
-        }
-      ],
-      "theme": "AUTONOMOUS_AGENTS"
     },
     {
       "lead_count": 6,

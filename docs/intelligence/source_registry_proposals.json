@@ -17,10 +17,10 @@
           "url": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-framework-v1.50.0-rc"
         }
       ],
-      "lead_count": 821,
+      "lead_count": 822,
       "scopes": {
         "ASSET_CANDIDATE": 64,
-        "GLOBAL_UNRESOLVED": 728,
+        "GLOBAL_UNRESOLVED": 729,
         "SECTOR": 29
       },
       "source_plane_count": 3,
@@ -68,6 +68,29 @@
       "lead_count": 72,
       "scopes": {
         "GLOBAL_UNRESOLVED": 72
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "theregister.com",
+      "examples": [
+        {
+          "evidence_id": "expanded:501a971e3ec8995a7c",
+          "url": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555"
+        },
+        {
+          "evidence_id": "expanded:ade6dd4d233f35a7ed",
+          "url": "https://www.theregister.com/cyber-crime/2026/11/12/doj-takes-aim-at-12b-in-binance-loot-as-fbi-disrupts-north-korean-scam/5309523"
+        },
+        {
+          "evidence_id": "expanded:0c494317b4da9c9e9f",
+          "url": "https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531"
+        }
+      ],
+      "lead_count": 71,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 71
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -144,96 +167,49 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "nature.com",
-      "examples": [
-        {
-          "evidence_id": "research:b5b416d2d0198b7ed5",
-          "url": "https://www.nature.com/articles/d41586-026-03516-y"
-        },
-        {
-          "evidence_id": "research:1d72aac4a000696831",
-          "url": "https://www.nature.com/articles/d41586-026-03679-8"
-        },
-        {
-          "evidence_id": "research:80a398a0d6ad68e3af",
-          "url": "https://www.nature.com/articles/d41586-026-03456-7"
-        }
-      ],
-      "lead_count": 70,
-      "scopes": {
-        "ASSET_CANDIDATE": 1,
-        "GLOBAL_UNRESOLVED": 69
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
       "domain": "thedefiant.io",
       "examples": [
         {
-          "evidence_id": "research:27277c912f8093366d",
-          "url": "https://thedefiant.io/frontier/ai/nvidia-approached-arm-ceo-haas-in-search-ft-reports"
+          "evidence_id": "research:77bf699d3967f0a261",
+          "url": "https://thedefiant.io/news/markets/bitcoin-drops-below-67-000-as-crypto-selloff-deepens"
         },
         {
-          "evidence_id": "research:dc14bef83cf128b840",
-          "url": "https://thedefiant.io/frontier/markets/amd-sinks-9-as-chip-rally-falters-after-huang-exit"
+          "evidence_id": "research:b9d4d6386d1cfd4e4c",
+          "url": "https://thedefiant.io/news/markets/aave-slides-30-in-four-weeks-trailing-bitcoin-and-ether"
         },
         {
-          "evidence_id": "research:ce3f2a4d18845e745c",
-          "url": "https://thedefiant.io/converge/cefi/coinbase-wins-final-occ-clearance-for-us-trust-company"
+          "evidence_id": "research:a22281697fa6efb393",
+          "url": "https://thedefiant.io/news/defi/gho-s-61-supply-drop-reflects-an-accounting-change"
         }
       ],
       "lead_count": 70,
       "scopes": {
-        "ASSET_CANDIDATE": 17,
-        "GLOBAL_UNRESOLVED": 53
+        "ASSET_CANDIDATE": 19,
+        "GLOBAL_UNRESOLVED": 51
       },
       "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "theregister.com",
-      "examples": [
-        {
-          "evidence_id": "expanded:501a971e3ec8995a7c",
-          "url": "https://www.theregister.com/ai-and-ml/2026/11/13/alibabas-qwen38-re-educated-with-a-more-western-worldview/5309555"
-        },
-        {
-          "evidence_id": "expanded:ade6dd4d233f35a7ed",
-          "url": "https://www.theregister.com/cyber-crime/2026/11/12/doj-takes-aim-at-12b-in-binance-loot-as-fbi-disrupts-north-korean-scam/5309523"
-        },
-        {
-          "evidence_id": "expanded:0c494317b4da9c9e9f",
-          "url": "https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531"
-        }
-      ],
-      "lead_count": 70,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 70
-      },
-      "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
       "domain": "u.today",
       "examples": [
         {
+          "evidence_id": "research:017f98916e3a9c3cd6",
+          "url": "https://u.today/key-bullish-shiba-inu-shib-metric-surges-by-30-when-to-expect-the-reversal"
+        },
+        {
+          "evidence_id": "research:d9f54fb2dc07f69f25",
+          "url": "https://u.today/hyperliquid-hype-prints-growth-amid-panic-stellar-xlm-avoids-sell-off-bitcoin-btc-losses-are-not"
+        },
+        {
           "evidence_id": "research:143f75e7e99a75033d",
           "url": "https://u.today/nakamoto-sells-more-bitcoin-btc"
-        },
-        {
-          "evidence_id": "research:3ac67b595eef0d5228",
-          "url": "https://u.today/strategy-sends-crucial-message-on-bitcoins-quantum-security"
-        },
-        {
-          "evidence_id": "research:0f33950ab0e91861ca",
-          "url": "https://u.today/incredibly-bullish-on-aifi-coinbase-ceo-bets-on-a-5-trillion-boom"
         }
       ],
       "lead_count": 70,
       "scopes": {
-        "ASSET_CANDIDATE": 38,
-        "GLOBAL_UNRESOLVED": 32
+        "ASSET_CANDIDATE": 39,
+        "GLOBAL_UNRESOLVED": 31
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -336,16 +312,16 @@
       "domain": "wired.com",
       "examples": [
         {
+          "evidence_id": "research:87f64dc17236ef337a",
+          "url": "https://www.wired.com/story/the-faa-nationwide-ground-stop-is-over/"
+        },
+        {
           "evidence_id": "research:7a14106ff06a82c820",
           "url": "https://www.wired.com/story/best-early-black-friday-airpods-deals-11-13-2026/"
         },
         {
           "evidence_id": "research:efe4e3f409637a0aa1",
           "url": "https://www.wired.com/story/faa-grounds-all-us-flights-until-further-notice/"
-        },
-        {
-          "evidence_id": "research:f79aafa8aaae260861",
-          "url": "https://www.wired.com/story/atlas-coffee-club-black-friday-2026/"
         }
       ],
       "lead_count": 50,
@@ -455,16 +431,16 @@
       "domain": "cryptopotato.com",
       "examples": [
         {
+          "evidence_id": "research:17942d7a9490b10968",
+          "url": "https://cryptopotato.com/tsmc-confirms-employee-data-leak-as-hackers-try-to-sell-46000-records-for-bitcoin/"
+        },
+        {
           "evidence_id": "research:e4dd9e86d1fb748373",
           "url": "https://cryptopotato.com/nakamoto-extends-60m-kraken-loan-adds-bitcoin-derivatives-to-its-collateral/"
         },
         {
           "evidence_id": "research:fd018b107ef4c43044",
           "url": "https://cryptopotato.com/kalshi-cuts-ties-with-donald-trump-jr-amid-conflict-of-interest-concerns-over-polymarket/"
-        },
-        {
-          "evidence_id": "research:7d8224e253502c1edb",
-          "url": "https://cryptopotato.com/bitcoin-fear-and-greed-drops-to-a-4-month-low-a-blessing-in-disguise/"
         }
       ],
       "lead_count": 36,
@@ -479,22 +455,46 @@
       "domain": "arstechnica.com",
       "examples": [
         {
+          "evidence_id": "research:7703d1ad05c64efa65",
+          "url": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/"
+        },
+        {
+          "evidence_id": "research:25bcb0f8740875a888",
+          "url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/"
+        },
+        {
           "evidence_id": "research:a6e2c6137354f95be9",
           "url": "https://arstechnica.com/health/2026/11/millions-in-us-use-unapproved-glp-1s-and-use-them-in-unapproved-ways/"
-        },
-        {
-          "evidence_id": "research:54d53b8613e1b061e3",
-          "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
-        },
-        {
-          "evidence_id": "research:9d02dfbf52d7cb99f8",
-          "url": "https://arstechnica.com/science/2026/11/in-elephants-the-resilience-of-communities-has-its-limits/"
         }
       ],
-      "lead_count": 32,
+      "lead_count": 34,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 27,
+        "GLOBAL_UNRESOLVED": 29,
         "SECTOR": 5
+      },
+      "source_plane_count": 2,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "techcrunch.com",
+      "examples": [
+        {
+          "evidence_id": "research:879c7057d936efae33",
+          "url": "https://techcrunch.com/2026/11/13/amazons-new-kindle-colorsoft-is-a-premium-e-reader-with-a-premium-price/"
+        },
+        {
+          "evidence_id": "research:75958dd7d252654935",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+        },
+        {
+          "evidence_id": "research:8c75b3e0a198dede7c",
+          "url": "https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/"
+        }
+      ],
+      "lead_count": 33,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 22,
+        "SECTOR": 11
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -547,43 +547,19 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "techcrunch.com",
-      "examples": [
-        {
-          "evidence_id": "research:8c75b3e0a198dede7c",
-          "url": "https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/"
-        },
-        {
-          "evidence_id": "research:b2c6319df4f6320a6f",
-          "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/"
-        },
-        {
-          "evidence_id": "research:f06c659eed71c31b8b",
-          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
-        }
-      ],
-      "lead_count": 31,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 22,
-        "SECTOR": 9
-      },
-      "source_plane_count": 2,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
       "domain": "cnbc.com",
       "examples": [
-        {
-          "evidence_id": "research:64a2fc93363a933824",
-          "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html"
-        },
         {
           "evidence_id": "research:18f95d5851cc25f41e",
           "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html"
         },
         {
-          "evidence_id": "research:4db1b557c0657fc586",
-          "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
+          "evidence_id": "research:0d5c88bd70c6ac89d9",
+          "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html"
+        },
+        {
+          "evidence_id": "research:91bcb0d9d64d0c5596",
+          "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html"
         }
       ],
       "lead_count": 30,
@@ -621,22 +597,22 @@
       "domain": "cryptobriefing.com",
       "examples": [
         {
-          "evidence_id": "research:fcc04105a2c5b7999f",
-          "url": "https://cryptobriefing.com/fed-survey-ai-top-financial-stability-risk/"
+          "evidence_id": "research:e3f13f85af4a73cf64",
+          "url": "https://cryptobriefing.com/feds-jefferson-ai-labor-disruptions-may-need-non-monetary-solutions/"
         },
         {
-          "evidence_id": "research:52053d3c8ef45fce31",
-          "url": "https://cryptobriefing.com/dhs-ai-nationwide-flight-grounding/"
+          "evidence_id": "research:9b54a802c1630e99b5",
+          "url": "https://cryptobriefing.com/google-gemini-wallet-bank-connections-us/"
         },
         {
-          "evidence_id": "research:9adb469e1b176ff4ce",
-          "url": "https://cryptobriefing.com/jensen-huang-resigns-from-nvidia-140b-stake-held-in-shared-trusts/"
+          "evidence_id": "research:2a592f86a2f96add87",
+          "url": "https://cryptobriefing.com/faa-ground-stop-leads-air-canada-to-cancel-us-flights-tonight/"
         }
       ],
       "lead_count": 30,
       "scopes": {
-        "ASSET_CANDIDATE": 4,
-        "GLOBAL_UNRESOLVED": 26
+        "ASSET_CANDIDATE": 5,
+        "GLOBAL_UNRESOLVED": 25
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -907,16 +883,16 @@
       "domain": "techspot.com",
       "examples": [
         {
+          "evidence_id": "research:4ea8602f675c8e6b83",
+          "url": "https://www.techspot.com/news/114557-bing-now-has-ai-operator-search-results-without.html"
+        },
+        {
           "evidence_id": "research:315a93ff3e97a70428",
           "url": "https://www.techspot.com/news/114552-intel-stages-surprise-desktop-cpu-comeback-amd-market.html"
         },
         {
           "evidence_id": "research:3a821ea167d3fbc20d",
           "url": "https://www.techspot.com/news/114554-nintendo-takes-down-144-github-repositories-hosting-switch.html"
-        },
-        {
-          "evidence_id": "research:04f0361e86c5a5b2d7",
-          "url": "https://www.techspot.com/news/114553-legend-zelda-ocarina-time-remake-sells-5-million.html"
         }
       ],
       "lead_count": 30,
@@ -930,22 +906,22 @@
       "domain": "btc-echo.de",
       "examples": [
         {
+          "evidence_id": "research:0c7862d186c993c331",
+          "url": "https://www.btc-echo.de/news/bitcoin-befindet-sich-in-einem-langfristigen-baerenmarkt-240917/"
+        },
+        {
           "evidence_id": "research:8774805dbbbcf1cec5",
           "url": "https://www.btc-echo.de/news/zinsangst-kehrt-zurueck-bitcoin-und-gold-fallen-der-dollar-steigt-240918/"
         },
         {
           "evidence_id": "research:1cf1f992b00c4202d0",
           "url": "https://www.btc-echo.de/news/anleger-ziehen-weiter-geld-aus-den-krypto-etfs-ab-240952/"
-        },
-        {
-          "evidence_id": "research:523e395609f07fffc1",
-          "url": "https://www.btc-echo.de/news/chainlink-moodys-testet-kreditratings-auf-der-blockchain-kann-link-profitieren-240750/"
         }
       ],
       "lead_count": 25,
       "scopes": {
-        "ASSET_CANDIDATE": 13,
-        "GLOBAL_UNRESOLVED": 12
+        "ASSET_CANDIDATE": 14,
+        "GLOBAL_UNRESOLVED": 11
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -954,16 +930,16 @@
       "domain": "coindesk.com",
       "examples": [
         {
+          "evidence_id": "research:2bf17b76c59fd878da",
+          "url": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out"
+        },
+        {
           "evidence_id": "research:a5ee03de0932bd264e",
           "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off"
         },
         {
           "evidence_id": "research:c751fa442c5d067cae",
           "url": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations"
-        },
-        {
-          "evidence_id": "research:9234a6dc1aefa77d66",
-          "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-heads-for-sixth-weekly-loss-as-anthropic-s-blockbuster-ipo-looms"
         }
       ],
       "lead_count": 25,
@@ -1050,16 +1026,16 @@
       "domain": "cryptopolitan.com",
       "examples": [
         {
-          "evidence_id": "research:c001c29f81fe46cb5f",
-          "url": "https://www.cryptopolitan.com/amds-lisa-su-named-ceo-of-the-year/"
+          "evidence_id": "research:daf0f1183e4ebee2f9",
+          "url": "https://www.cryptopolitan.com/openais-chatgpt-wallet-lets-ai-agents-check-out-without-it-becoming-a-bank/"
         },
         {
-          "evidence_id": "research:78db47e9fc098cdee4",
-          "url": "https://www.cryptopolitan.com/white-house-nominates-four-to-sec-and-cftc-as-clarity-act-stalls/"
+          "evidence_id": "research:fe959f94274588eb71",
+          "url": "https://www.cryptopolitan.com/openai-microsoft-crowdstrike-roll-out-rival-controls-for-rogue-ai-agents/"
         },
         {
-          "evidence_id": "research:bab9120ddda34b5b41",
-          "url": "https://www.cryptopolitan.com/ethereum-foundation-hires-erigon-rebuffo/"
+          "evidence_id": "research:b75998d15de700512f",
+          "url": "https://www.cryptopolitan.com/uber-ai-vendor-breach-exposed-driver-license/"
         }
       ],
       "lead_count": 22,
@@ -1142,29 +1118,6 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "schneier.com",
-      "examples": [
-        {
-          "evidence_id": "research:4ad5234d068480ff57",
-          "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html/feed/atom/"
-        },
-        {
-          "evidence_id": "research:75b326fd2db3b9682c",
-          "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html/feed/atom/"
-        },
-        {
-          "evidence_id": "research:911618926b60a91c80",
-          "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html/feed/atom/"
-        }
-      ],
-      "lead_count": 20,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 20
-      },
-      "source_plane_count": 2,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
       "domain": "theblock.co",
       "examples": [
         {
@@ -1207,6 +1160,30 @@
       "lead_count": 18,
       "scopes": {
         "GLOBAL_UNRESOLVED": 18
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "ambcrypto.com",
+      "examples": [
+        {
+          "evidence_id": "research:337aa98aa6da1e0417",
+          "url": "https://ambcrypto.com/thailand-sec-proposes-5-million-baht-daily-cap-on-stablecoin-transfers-why/"
+        },
+        {
+          "evidence_id": "research:040325b3da32b8ec7a",
+          "url": "https://ambcrypto.com/how-tsmcs-employee-data-leak-raises-questions-over-cloud-security/"
+        },
+        {
+          "evidence_id": "research:6f3d8c79d7db7b09e0",
+          "url": "https://ambcrypto.com/arthur-hayes-pitches-flop-token-as-food-for-your-ai-agent-heres-how/"
+        }
+      ],
+      "lead_count": 16,
+      "scopes": {
+        "ASSET_CANDIDATE": 7,
+        "GLOBAL_UNRESOLVED": 9
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -1282,29 +1259,6 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "forkast.news",
-      "examples": [
-        {
-          "evidence_id": "research:0012ece9ee13957a70",
-          "url": "https://forkast.news/nvidia-leadership-transition-and-regulatory-inquiries-a-status-report/"
-        },
-        {
-          "evidence_id": "research:bd63d39ddbda5c085a",
-          "url": "https://forkast.news/expertcrowd-swe-finds-four-coding-agent-tiers-but-top-pair-remains-unresolved/"
-        },
-        {
-          "evidence_id": "research:5bc6095c4a3979e419",
-          "url": "https://forkast.news/qwen3-4b-learned-to-evade-rl-monitors-in-coding-tests/"
-        }
-      ],
-      "lead_count": 15,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 15
-      },
-      "source_plane_count": 2,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
       "domain": "infoq.com",
       "examples": [
         {
@@ -1355,45 +1309,45 @@
       "domain": "beincrypto.com",
       "examples": [
         {
-          "evidence_id": "research:39a3562e08e1ee80e8",
-          "url": "https://beincrypto.com/us-flights-shut-down-outage-stock-market-risk/"
+          "evidence_id": "research:48545bafa7dad8fd25",
+          "url": "https://beincrypto.com/elon-musk-jensen-huang-nvidia-ceo-return/"
         },
         {
-          "evidence_id": "research:0c215b5dcea9c1e5f3",
-          "url": "https://beincrypto.com/ambani-mittal-musk-starlink-kill-switch-india/"
+          "evidence_id": "research:20f22c8b03da336d5c",
+          "url": "https://beincrypto.com/one-third-bitcoin-supply-faces-quantum-risk/"
         },
         {
-          "evidence_id": "research:084cda5a4c86cb05ea",
-          "url": "https://beincrypto.com/twenty-one-capital-bitcoin-profit-gone/"
+          "evidence_id": "research:e9f376aa42748c2e31",
+          "url": "https://beincrypto.com/xrp-price-crash-warning-key-levels-to-watch/"
         }
       ],
       "lead_count": 12,
       "scopes": {
-        "ASSET_CANDIDATE": 5,
-        "GLOBAL_UNRESOLVED": 7
+        "ASSET_CANDIDATE": 4,
+        "GLOBAL_UNRESOLVED": 8
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "semianalysis.com",
+      "domain": "hackaday.com",
       "examples": [
         {
-          "evidence_id": "research:8d5cc5182d8c78756c",
-          "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/"
+          "evidence_id": "research:1d5f0484eccabd808a",
+          "url": "https://hackaday.com/2026/11/13/x-window-system-on-the-esp32/"
         },
         {
-          "evidence_id": "research:24e484db97a9b39a64",
-          "url": "https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/"
+          "evidence_id": "research:5469d9336efee0e18d",
+          "url": "https://hackaday.com/2026/11/13/using-a-toothbrushs-nfc-chip-to-unlock-a-computer/"
         },
         {
-          "evidence_id": "research:3199014f802bba547c",
-          "url": "https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/"
+          "evidence_id": "research:5eca525536173679a1",
+          "url": "https://hackaday.com/2026/11/13/drop-in-vintage-cpu-replacements-with-the-tranzputer-project/"
         }
       ],
-      "lead_count": 12,
+      "lead_count": 11,
       "scopes": {
-        "GLOBAL_UNRESOLVED": 12
+        "GLOBAL_UNRESOLVED": 11
       },
       "source_plane_count": 2,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -1436,6 +1390,29 @@
         {
           "evidence_id": "research:c910130b6e23976edb",
           "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/"
+        }
+      ],
+      "lead_count": 10,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 10
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "coincentral.com",
+      "examples": [
+        {
+          "evidence_id": "research:2810086e8a1ea67c42",
+          "url": "https://coincentral.com/wise-stock-rises-after-raising-full-year-revenue-outlook-on-23-sales-growth/"
+        },
+        {
+          "evidence_id": "research:f3222d40904ef31b58",
+          "url": "https://coincentral.com/cohu-cohu-stock-semiconductor-gets-107-upside-call-from-jefferies/"
+        },
+        {
+          "evidence_id": "research:8af077f10eab7d0fb8",
+          "url": "https://coincentral.com/cathie-woods-ark-buys-coreweave-dip-and-sells-palantir-despite-strong-earnings-beat/"
         }
       ],
       "lead_count": 10,
@@ -1520,22 +1497,22 @@
       "domain": "cryptoslate.com",
       "examples": [
         {
+          "evidence_id": "research:4260ada649357678c9",
+          "url": "https://cryptoslate.com/unocoin-halts-all-services-after-hackers-bypass-bitgo-freeze/"
+        },
+        {
+          "evidence_id": "research:ef0a394d1175dca613",
+          "url": "https://cryptoslate.com/binance-funds-theft-us-court-orders-cover-over-1-2-billion-with-return-unresolved/"
+        },
+        {
           "evidence_id": "research:10ed99c3d635e8c88c",
           "url": "https://cryptoslate.com/diesel-prices-plunge-8-yet-bitcoin-traders-face-a-squeeze/"
-        },
-        {
-          "evidence_id": "research:868184d7620aabc8e9",
-          "url": "https://cryptoslate.com/xrp-loans-trigger-883-liquidations-and-53m-remains-at-risk/"
-        },
-        {
-          "evidence_id": "research:980d14fde35e30b0a3",
-          "url": "https://cryptoslate.com/fbi-warns-facestealer-turns-crypto-victims-into-bait-for-the-next-attack/"
         }
       ],
       "lead_count": 10,
       "scopes": {
-        "ASSET_CANDIDATE": 5,
-        "GLOBAL_UNRESOLVED": 5
+        "ASSET_CANDIDATE": 4,
+        "GLOBAL_UNRESOLVED": 6
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
@@ -1600,6 +1577,29 @@
         {
           "evidence_id": "research:30e7785d986bcdc1b8",
           "url": "https://www.esma.europa.eu/press-news/esma-news/esmas-third-sanctions-report-highlights-need-greater-convergence-enforcement"
+        }
+      ],
+      "lead_count": 10,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 10
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
+      "domain": "forkast.news",
+      "examples": [
+        {
+          "evidence_id": "research:fa9175b2aa512c7f49",
+          "url": "https://forkast.news/evaluating-ai-research-agents-swarmevolve-vs-scientist-world/"
+        },
+        {
+          "evidence_id": "research:0012ece9ee13957a70",
+          "url": "https://forkast.news/nvidia-leadership-transition-and-regulatory-inquiries-a-status-report/"
+        },
+        {
+          "evidence_id": "research:bd63d39ddbda5c085a",
+          "url": "https://forkast.news/expertcrowd-swe-finds-four-coding-agent-tiers-but-top-pair-remains-unresolved/"
         }
       ],
       "lead_count": 10,
@@ -1772,19 +1772,19 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
-      "domain": "science.org",
+      "domain": "schneier.com",
       "examples": [
         {
-          "evidence_id": "research:377ff18accecba37b5",
-          "url": "https://www.science.org/content/article/can-researchers-bring-order-confusing-world-ai-benchmarks"
+          "evidence_id": "research:4ad5234d068480ff57",
+          "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html/feed/atom/"
         },
         {
-          "evidence_id": "research:c415784cd002f39887",
-          "url": "https://www.science.org/content/article/researchers-have-wish-list-can-new-congress-deliver"
+          "evidence_id": "research:75b326fd2db3b9682c",
+          "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html/feed/atom/"
         },
         {
-          "evidence_id": "research:44c5068f24cdb96c44",
-          "url": "https://www.science.org/content/article/pathogen-hunters-track-microbes-around-world-are-their-data-real"
+          "evidence_id": "research:911618926b60a91c80",
+          "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html/feed/atom/"
         }
       ],
       "lead_count": 10,
@@ -1818,6 +1818,29 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
+      "domain": "semianalysis.com",
+      "examples": [
+        {
+          "evidence_id": "research:8d5cc5182d8c78756c",
+          "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/"
+        },
+        {
+          "evidence_id": "research:24e484db97a9b39a64",
+          "url": "https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/"
+        },
+        {
+          "evidence_id": "research:3199014f802bba547c",
+          "url": "https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/"
+        }
+      ],
+      "lead_count": 10,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 10
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
       "domain": "theverge.com",
       "examples": [
         {
@@ -1825,12 +1848,12 @@
           "url": "https://www.theverge.com/news/1033489/faa-ground-stop"
         },
         {
-          "evidence_id": "research:c817e0fd9e7876d3a5",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+          "evidence_id": "research:d28982a38c469c7a60",
+          "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search"
         },
         {
-          "evidence_id": "research:1776491c4ef1350fba",
-          "url": "https://www.theverge.com/gadgets/1033185/nothing-cmf-speaker-s-m-black-friday-deal-sale"
+          "evidence_id": "research:c817e0fd9e7876d3a5",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
         }
       ],
       "lead_count": 10,
@@ -1864,6 +1887,29 @@
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
     },
     {
+      "domain": "science.org",
+      "examples": [
+        {
+          "evidence_id": "research:1a7ad0e8d249e17851",
+          "url": "https://www.science.org/content/article/honey-bees-inject-venom-two-stroke-stinger"
+        },
+        {
+          "evidence_id": "research:0f13268922f402040e",
+          "url": "https://www.science.org/content/article/did-ai-or-human-write-paper-new-detector-decides-examining-its-ideas"
+        },
+        {
+          "evidence_id": "research:aea3feba246f404cd7",
+          "url": "https://www.science.org/content/article/problems-22-scientific-fields-had-solutions-hiding-plain-sight-ai-has-found-them"
+        }
+      ],
+      "lead_count": 9,
+      "scopes": {
+        "GLOBAL_UNRESOLVED": 9
+      },
+      "source_plane_count": 1,
+      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
+    },
+    {
       "domain": "bitcoinist.com",
       "examples": [
         {
@@ -1883,29 +1929,6 @@
       "scopes": {
         "ASSET_CANDIDATE": 4,
         "GLOBAL_UNRESOLVED": 4
-      },
-      "source_plane_count": 1,
-      "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"
-    },
-    {
-      "domain": "hackaday.com",
-      "examples": [
-        {
-          "evidence_id": "research:5469d9336efee0e18d",
-          "url": "https://hackaday.com/2026/11/13/using-a-toothbrushs-nfc-chip-to-unlock-a-computer/"
-        },
-        {
-          "evidence_id": "research:5eca525536173679a1",
-          "url": "https://hackaday.com/2026/11/13/drop-in-vintage-cpu-replacements-with-the-tranzputer-project/"
-        },
-        {
-          "evidence_id": "research:4c8bb0ff2a7fe715d7",
-          "url": "https://hackaday.com/2026/11/13/hackaday-podcast-episode-394-linux-in-weird-places-yet-more-hidden-sdrs-and-a-supercon-wrapup/"
-        }
-      ],
-      "lead_count": 7,
-      "scopes": {
-        "GLOBAL_UNRESOLVED": 7
       },
       "source_plane_count": 1,
       "status": "DISCOVERED_PUBLISHER_CANDIDATE_NOT_AUTOMATICALLY_TRUSTED"

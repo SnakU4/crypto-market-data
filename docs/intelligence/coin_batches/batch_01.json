@@ -1,7 +1,7 @@
 {
   "coins": [
     {
-      "candidate_event_count": 409,
+      "candidate_event_count": 418,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -50,15 +50,6 @@
         },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Bitcoin Core has published a high-severity advisory disclosing a bug that could prevent affected nodes from creating block templates after a blockchain reorganization. While the flaw didn’t change Bitcoin’s consensus rules, it could leave a miner unable to produce blocks until the node was restarted. How a Reorg Can Leave the Mempool Broken The advisory, CVE-2025-62861, is about an inconsistency involving version 3 transactions, known as TRUC, and Bitcoin Core’s mempool, with the affected releases being versions 28.0 to 28.2 and 29.0 to 29.1. Under BIP-431, TRUC transactions face extra mempool restrictions where each can only have one unconfirmed ancestor (earlier transactions) and one unconfirmed descendant (later transactions). It should be noted that these are relay policy rules and not consensus requirements, meaning valid blocks can have arrangements that the mempool rejects. “When a transaction submitted to the mempool would give a TRUC parent a second unconfirmed child, Bitcoin ",
-          "id": "research:00cdd84121ebc1818c",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T17:01:15Z",
-          "title": "This Is Why Some Bitcoin Core Nodes Can Stop Building Blocks",
-          "url": "https://cryptopotato.com/this-is-why-some-bitcoin-core-nodes-can-stop-building-blocks/"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Tree-SHA512: 04112697368f9aa4eeb72d405afc11b6c8c1d15a0005684ec912bcb6a43e50d37fec61991d45490f2059aa420f0db85150949dd1b5d33785a2eff1283850ef5d",
           "id": "research:0128dd82390b7510aa",
           "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
@@ -92,6 +83,15 @@
           "published_utc": "2026-11-12T19:20:10Z",
           "title": "“Teuerster Fehler der KI-Revolution”: Bitcoin korrigiert nach Nvidia-Rücktritt",
           "url": "https://www.btc-echo.de/news/teuerster-fehler-der-ki-revolution-krypto-industrie-kritisiert-nvidia-240888/"
+        },
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "Twenty One Capital reported a $1.087 billion third-quarter profit on Friday. The money came from Bitcoin (BTC) rising in value, and about 60% of it has already disappeared. Bitcoin has fallen since the quarter closed on Sept. 30. The Texas firm’s coins are now worth about $700 million less than it paid. Where Did Twenty One Capital’s $1 Billion Profit Come From? US accounting rules require companies to book changes in the value of crypto they hold as profit or loss. No coins need to be sold. At the end of September, each Bitcoin was worth about $83,700, the company’s quarterly filing shows. That price lifted its 43,514 coins by $1.093 billion. Bitcoin Price Performance Since September 30. Source: TradingView Meanwhile, the business itself reported no revenue. It posted a $4.8 million operating loss for the quarter. Chief Executive Officer (CEO) Rapha Zagury, who took over after Jack Mallers stepped down in July, drew the same line. “But gains from an asset we own are not the same as ea",
+          "id": "research:084cda5a4c86cb05ea",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T19:34:41Z",
+          "title": "Twenty One Capital Made $1 Billion in Bitcoin Profit. 60% is Already Gone",
+          "url": "https://beincrypto.com/twenty-one-capital-bitcoin-profit-gone/"
         }
       ],
       "cmc100_weight": 68.34,
@@ -265,7 +265,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Bitcoin",
-            "chain_tvl_usd": 3630801412.13,
+            "chain_tvl_usd": 3557524237.44,
             "cmc_id": 1,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -274,16 +274,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 68334.4,
-            "bid": 68334.3,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 67378.2,
+            "bid": 67378.1,
+            "book_source_utc": "2026-11-14T03:21:01Z",
             "cmc_id": 1,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "BTC-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.01463,
-            "top5_ask_usd": 63065.82,
-            "top5_bid_usd": 243140.13
+            "spread_bps": 0.01484,
+            "top5_ask_usd": 109179.64,
+            "top5_bid_usd": 376744.65
           }
         },
         {
@@ -304,14 +304,14 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 20111606.0,
+            "circulating_supply": 20111659.0,
             "cmc_id": 1,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.019Z",
             "symbol": "BTC",
-            "total_supply": 20111606.0
+            "total_supply": 20111659.0
           }
         },
         {
@@ -321,12 +321,12 @@
             "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
             "mapping": "EXACT_NAME_AND_SYMBOL",
             "name": "Bitcoin",
-            "rank": 2
+            "rank": 0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 20111606.0,
+        "circulating_supply": 20111659.0,
         "cmc_id": 1,
         "coin_name": "Bitcoin",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -341,7 +341,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BTC",
-        "total_supply": 20111606.0
+        "total_supply": 20111659.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -357,8 +357,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Bitcoin (BTC) is a decentralized digital currency that enables peer-to-peer transactions without intermediaries, using blockchain technology to ensure security and transparency. It was created in 2009 by an anonymous entity known as Satoshi Nakamoto.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "Bitcoin",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -426,7 +428,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "BTC"
+      "substantive_original_issuer_context": false,
+      "symbol": "BTC",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 125,
@@ -693,7 +697,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Litecoin",
-            "chain_tvl_usd": 838841.82,
+            "chain_tvl_usd": 831789.84,
             "cmc_id": 2,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -702,16 +706,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 49.18,
-            "bid": 49.17,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 48.86,
+            "bid": 48.85,
+            "book_source_utc": "2026-11-14T03:21:01Z",
             "cmc_id": 2,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "LTC-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.03355,
-            "top5_ask_usd": 63230.52,
-            "top5_bid_usd": 38025.67
+            "spread_bps": 2.04687,
+            "top5_ask_usd": 62604.92,
+            "top5_bid_usd": 31027.61
           }
         },
         {
@@ -732,29 +736,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 77826861.291181,
+            "circulating_supply": 77827586.304059,
             "cmc_id": 2,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 84000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.036Z",
             "symbol": "LTC",
             "total_supply": 84000000.0
-          }
-        },
-        {
-          "family": "trending",
-          "observation": {
-            "cmc_id": 2,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "Litecoin",
-            "rank": 7
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 77826861.291181,
+        "circulating_supply": 77827586.304059,
         "cmc_id": 2,
         "coin_name": "Litecoin",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -764,8 +758,7 @@
         "research_metric_families": [
           "chain_tvl",
           "protocol_tvl",
-          "token_supply",
-          "trending"
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "LTC",
@@ -784,8 +777,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Litecoin (LTC) is a peer-to-peer cryptocurrency designed for fast and low-cost transactions, often referred to as the \"silver to Bitcoin's gold.\" It was created in 2011 by Charlie Lee to improve upon Bitcoin's technology with faster block generation times.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "Litecoin",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -867,7 +862,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "LTC"
+      "substantive_original_issuer_context": false,
+      "symbol": "LTC",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 273,
@@ -1133,16 +1130,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1.009,
-            "bid": 1.0089,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.9982,
+            "bid": 0.9981,
+            "book_source_utc": "2026-11-14T03:21:01Z",
             "cmc_id": 52,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "XRP-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.99113,
-            "top5_ask_usd": 138743.73,
-            "top5_bid_usd": 190171.3
+            "spread_bps": 1.00185,
+            "top5_ask_usd": 155987.87,
+            "top5_bid_usd": 147634.7
           }
         },
         {
@@ -1153,9 +1150,19 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 100000000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.119Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.092Z",
             "symbol": "XRP",
             "total_supply": 99985583260.0
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 52,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "XRP",
+            "rank": 14
           }
         }
       ],
@@ -1168,7 +1175,8 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "token_supply"
+          "token_supply",
+          "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "XRP",
@@ -1185,8 +1193,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 52,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "XRP is a digital currency designed for fast and low-cost international money transfers, primarily used by the Ripple payment network. It aims to facilitate secure cross-border transactions and improve the efficiency of global banking systems.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "XRP",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -1270,7 +1280,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "XRP"
+      "substantive_original_issuer_context": false,
+      "symbol": "XRP",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 195,
@@ -1536,16 +1548,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.06431,
-            "bid": 0.0643,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.06302,
+            "bid": 0.06301,
+            "book_source_utc": "2026-11-14T03:21:01Z",
             "cmc_id": 74,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "DOGE-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.55509,
-            "top5_ask_usd": 121253.28,
-            "top5_bid_usd": 180325.17
+            "spread_bps": 1.58692,
+            "top5_ask_usd": 141923.92,
+            "top5_bid_usd": 181683.75
           }
         },
         {
@@ -1566,29 +1578,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 156736832860.16806,
+            "circulating_supply": 156739412860.16806,
             "cmc_id": 74,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.221Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.181Z",
             "symbol": "DOGE",
-            "total_supply": 156736832860.16806
-          }
-        },
-        {
-          "family": "trending",
-          "observation": {
-            "cmc_id": 74,
-            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
-            "mapping": "EXACT_NAME_AND_SYMBOL",
-            "name": "Dogecoin",
-            "rank": 10
+            "total_supply": 156739412860.16806
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 156736832860.16806,
+        "circulating_supply": 156739412860.16806,
         "cmc_id": 74,
         "coin_name": "Dogecoin",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1597,12 +1599,11 @@
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
           "protocol_tvl",
-          "token_supply",
-          "trending"
+          "token_supply"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "DOGE",
-        "total_supply": 156736832860.16806
+        "total_supply": 156739412860.16806
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1619,8 +1620,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 74,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Dogecoin (DOGE) is a cryptocurrency that started as a joke featuring the Shiba Inu dog from the popular meme, but it has grown into a widely used digital currency for tipping, charity, and online transactions. Initially created for fun, Dogecoin has gained a large community and significant market presence.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "Dogecoin",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -1689,11 +1692,22 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "DOGE"
+      "substantive_original_issuer_context": false,
+      "symbol": "DOGE",
+      "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 202,
+      "candidate_event_count": 203,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The ranking highlights a shift towards integrating privacy features into broader crypto infrastructure, indicating evolving priorities in the sector. The post Santiment ranks Dash, Chainlink and HOPR as top privacy projects by development activity appeared first on Crypto Briefing .",
+          "id": "research:30d4c988d3ad3a01d0",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T23:05:33Z",
+          "title": "Santiment ranks Dash, Chainlink and HOPR as top privacy projects by development activity",
+          "url": "https://cryptobriefing.com/santiment-privacy-projects-development-activity-dash/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "“Sir, we’ll give you a 30% discount!” I was standing at the billing counter of a Lifestyle store when the manager suddenly said this. I was surprised. 😳 But the reason behind this unexpected gesture was even sweeter… I have their EDGE membership, which hon X",
@@ -1774,15 +1788,6 @@
           "published_utc": "2026-11-12T16:29:33Z",
           "title": "what’s the MOST BORING thing for an extreme demon to do - Reddit",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRE5iZU5mSmFCR1hVQjg5UjRqZUdsWmNDdXlUSDlXdWxWcGR2QXBfMTRZdlJuLV9obUdPSEZScno5VXBaNUlnZEI2Ym1XNU50dVVFVHllVkhEVWlEQlRrbW9FYnBJdngzU3JRTHRwRk1SVlFIT2F1TzJVUHl0U1ltaFdPWEh6WFJCVVZHNHRXN0MxX2ZDdWVWTlE2MENIX25LcnRoVl9xUQ?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "Is350 regret Reddit",
-          "id": "expanded:1a7118d58ec803acc2",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-13T00:07:46Z",
-          "title": "Is350 regret - Reddit",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oS1Zmem9ydWtIREVNU1NDWWQ5ZWxKU3ltNlgtbVRtUVBNN1ozSl9FdUQ5LVVaaFd2Ry1xTjVkaEJ4ZjBmd2xMa1pkNVViVFB5VGlzVi1wUnNUemMtalFsZWJnZnYwSTBvMGdSNzFYaWE?oc=5"
         }
       ],
       "cmc100_weight": 0.03,
@@ -1855,7 +1860,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Dash",
-            "chain_tvl_usd": 66898.96,
+            "chain_tvl_usd": 65405.25,
             "cmc_id": 131,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -1864,34 +1869,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 40.75,
-            "bid": 40.74,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 40.33,
+            "bid": 40.32,
+            "book_source_utc": "2026-11-14T03:21:01Z",
             "cmc_id": 131,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "DASH-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 2.45429,
-            "top5_ask_usd": 4184.4,
-            "top5_bid_usd": 1807.42
+            "spread_bps": 2.47985,
+            "top5_ask_usd": 3479.36,
+            "top5_bid_usd": 3500.66
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 12894358.289871,
+            "circulating_supply": 12894481.211886,
             "cmc_id": 131,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 18900000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.158Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.140Z",
             "symbol": "DASH",
-            "total_supply": 12894358.289871
+            "total_supply": 12894481.211886
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 12894358.289871,
+        "circulating_supply": 12894481.211886,
         "cmc_id": 131,
         "coin_name": "Dash",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -1904,7 +1909,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "DASH",
-        "total_supply": 12894358.289871
+        "total_supply": 12894481.211886
       },
       "source_backed_project_profile": {
         "categories": [
@@ -1923,8 +1928,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 131,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Dash (DASH) is a digital currency that enables fast, low-cost transactions and enhanced privacy features through its unique two-tier network. It aims to provide a user-friendly experience for everyday transactions.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "Dash",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -2006,7 +2013,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "DASH"
+      "substantive_original_issuer_context": false,
+      "symbol": "DASH",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 126,
@@ -2235,19 +2244,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 18830650.379668,
+            "circulating_supply": 18830731.979512,
             "cmc_id": 328,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.019Z",
             "symbol": "XMR",
-            "total_supply": 18830650.379668
+            "total_supply": 18830731.979512
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 18830650.379668,
+        "circulating_supply": 18830731.979512,
         "cmc_id": 328,
         "coin_name": "Monero",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2259,7 +2268,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "XMR",
-        "total_supply": 18830650.379668
+        "total_supply": 18830731.979512
       },
       "source_backed_project_profile": {
         "categories": [
@@ -2271,8 +2280,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 328,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Monero (XMR) is a privacy-focused cryptocurrency that utilizes advanced cryptographic techniques to ensure secure and anonymous transactions. It aims to provide users with complete control over their financial privacy.",
+        "events_observed_utc": "2026-11-14T12:06:43Z",
         "has_substantive_descriptive_context": true,
         "name": "Monero",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -2352,10 +2363,12 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "XMR"
+      "substantive_original_issuer_context": false,
+      "symbol": "XMR",
+      "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 143,
+      "candidate_event_count": 144,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -2619,7 +2632,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Stellar",
-            "chain_tvl_usd": 207281054.48,
+            "chain_tvl_usd": 204553134.47,
             "cmc_id": 512,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -2628,34 +2641,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.14579,
-            "bid": 0.14578,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.14388,
+            "bid": 0.14387,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 512,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "XLM-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.68594,
-            "top5_ask_usd": 2038.63,
-            "top5_bid_usd": 3601.52
+            "spread_bps": 0.69505,
+            "top5_ask_usd": 3374.67,
+            "top5_bid_usd": 1378.03
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 35405694829.43159,
+            "circulating_supply": 35407570964.66487,
             "cmc_id": 512,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 50001806812.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.031Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.019Z",
             "symbol": "XLM",
             "total_supply": 50001786837.39707
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 35405694829.43159,
+        "circulating_supply": 35407570964.66487,
         "cmc_id": 512,
         "coin_name": "Stellar",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -2682,8 +2695,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 512,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Stellar (XLM) is a decentralized blockchain platform designed to facilitate cross-border transactions and provide financial services to the unbanked. It uses its native cryptocurrency, Lumens (XLM), to enable fast and low-cost transfers.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Stellar",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -2767,10 +2782,12 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "XLM"
+      "substantive_original_issuer_context": false,
+      "symbol": "XLM",
+      "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 290,
+      "candidate_event_count": 291,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3054,7 +3071,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Ethereum",
-            "chain_tvl_usd": 39323989951.26,
+            "chain_tvl_usd": 39137432998.46,
             "cmc_id": 1027,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3063,34 +3080,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 1928.45,
-            "bid": 1928.44,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 1904.71,
+            "bid": 1904.7,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1027,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ETH-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.05186,
-            "top5_ask_usd": 109431.98,
-            "top5_bid_usd": 225508.55
+            "spread_bps": 0.0525,
+            "top5_ask_usd": 291193.65,
+            "top5_bid_usd": 102790.67
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 122215668.805792,
+            "circulating_supply": 122218624.400395,
             "cmc_id": 1027,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.236Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.201Z",
             "symbol": "ETH",
-            "total_supply": 122215668.805792
+            "total_supply": 122218624.400395
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 122215668.805792,
+        "circulating_supply": 122218624.400395,
         "cmc_id": 1027,
         "coin_name": "Ethereum",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3103,7 +3120,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ETH",
-        "total_supply": 122215668.805792
+        "total_supply": 122218624.400395
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3119,8 +3136,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1027,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Ethereum (ETH) is a decentralized platform that enables developers to build and deploy smart contracts and decentralized applications (dApps) using blockchain technology. It facilitates peer-to-peer transactions and applications without a central authority.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Ethereum",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -3204,7 +3223,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "ETH"
+      "substantive_original_issuer_context": false,
+      "symbol": "ETH",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 21,
@@ -3369,34 +3390,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 6.406,
-            "bid": 6.405,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 6.335,
+            "bid": 6.334,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1321,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ETC-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.56116,
-            "top5_ask_usd": 8866.87,
-            "top5_bid_usd": 8298.98
+            "spread_bps": 1.57866,
+            "top5_ask_usd": 8616.34,
+            "top5_bid_usd": 15921.2
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 159016961.575956,
+            "circulating_supply": 159018903.847956,
             "cmc_id": 1321,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 210700000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.052Z",
             "symbol": "ETC",
             "total_supply": 210700000.0
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 159016961.575956,
+        "circulating_supply": 159018903.847956,
         "cmc_id": 1321,
         "coin_name": "Ethereum Classic",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3424,8 +3445,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1321,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Ethereum Classic (ETC) is a decentralized blockchain platform that enables smart contracts and decentralized applications, originating from a split of the original Ethereum network in 2016. It maintains the original Ethereum blockchain's principles, promoting immutability and resistance to censorship.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Ethereum Classic",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -3508,10 +3531,12 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "ETC"
+      "substantive_original_issuer_context": false,
+      "symbol": "ETC",
+      "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 191,
+      "candidate_event_count": 192,
       "candidate_events_NOT_VERIFIED": [
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
@@ -3795,7 +3820,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Zcash",
-            "chain_tvl_usd": 2452038.4,
+            "chain_tvl_usd": 2390150.22,
             "cmc_id": 1437,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -3804,34 +3829,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 926.33,
-            "bid": 926.32,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 924.01,
+            "bid": 924.0,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1437,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ZEC-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.10795,
-            "top5_ask_usd": 750.33,
-            "top5_bid_usd": 10754.28
+            "spread_bps": 0.10822,
+            "top5_ask_usd": 13379.67,
+            "top5_bid_usd": 4629.15
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 16964064.182311,
+            "circulating_supply": 16964370.572222,
             "cmc_id": 1437,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.052Z",
             "symbol": "ZEC",
-            "total_supply": 16964064.182311
+            "total_supply": 16964370.572222
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 16964064.182311,
+        "circulating_supply": 16964370.572222,
         "cmc_id": 1437,
         "coin_name": "Zcash",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -3844,7 +3869,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "ZEC",
-        "total_supply": 16964064.182311
+        "total_supply": 16964370.572222
       },
       "source_backed_project_profile": {
         "categories": [
@@ -3858,8 +3883,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1437,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Zcash (ZEC) is a cryptocurrency that offers enhanced privacy features through zero-knowledge proofs, allowing users to make transactions without revealing their identities. It aims to provide secure and anonymous digital transactions while maintaining the transparency of the blockchain.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Zcash",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -3943,7 +3970,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "ZEC"
+      "substantive_original_issuer_context": false,
+      "symbol": "ZEC",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 6,
@@ -4030,7 +4059,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Gnosis",
-            "chain_tvl_usd": 80156576.88,
+            "chain_tvl_usd": 79904100.91,
             "cmc_id": 1659,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -4039,19 +4068,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 2639508.815431,
+            "circulating_supply": 2639508.579743,
             "cmc_id": 1659,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.052Z",
             "symbol": "GNO",
             "total_supply": 2999934.745771
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 2639508.815431,
+        "circulating_supply": 2639508.579743,
         "cmc_id": 1659,
         "coin_name": "Gnosis",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -4082,8 +4111,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1659,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Gnosis (GNO) is a decentralized platform that enables users to create and manage prediction markets and decentralized applications, utilizing blockchain technology for secure and transparent transactions. Its native token, GNO, is used for governance and incentivizing participation in the Gnosis ecosystem.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Gnosis",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -4165,7 +4196,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "GNO"
+      "substantive_original_issuer_context": false,
+      "symbol": "GNO",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 110,
@@ -4330,34 +4363,34 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 221.19,
-            "bid": 221.18,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 218.5,
+            "bid": 218.49,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1831,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "BCH-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.45211,
-            "top5_ask_usd": 2674.48,
-            "top5_bid_usd": 5586.66
+            "spread_bps": 0.45768,
+            "top5_ask_usd": 2231.12,
+            "top5_bid_usd": 1891.81
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 20116365.625,
+            "circulating_supply": 20116434.375,
             "cmc_id": 1831,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 21000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.104Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.074Z",
             "symbol": "BCH",
-            "total_supply": 20116365.625
+            "total_supply": 20116434.375
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 20116365.625,
+        "circulating_supply": 20116434.375,
         "cmc_id": 1831,
         "coin_name": "Bitcoin Cash",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -4369,7 +4402,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BCH",
-        "total_supply": 20116365.625
+        "total_supply": 20116434.375
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4384,8 +4417,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1831,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Bitcoin Cash (BCH) is a cryptocurrency that was created as a fork of Bitcoin in 2017, aiming to enable faster and cheaper transactions by increasing block size limits. It seeks to provide a more practical digital cash solution for everyday transactions.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "Bitcoin Cash",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -4464,7 +4499,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "BCH"
+      "substantive_original_issuer_context": false,
+      "symbol": "BCH",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 250,
@@ -4730,38 +4767,38 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 630.57,
-            "bid": 630.56,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 622.6,
+            "bid": 622.59,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1839,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "BNB-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.15859,
-            "top5_ask_usd": 1015.22,
-            "top5_bid_usd": 16602.37
+            "spread_bps": 0.16062,
+            "top5_ask_usd": 1257.7,
+            "top5_bid_usd": 12146.64
           }
         },
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 131510659.39,
+            "circulating_supply": 131510648.53,
             "cmc_id": 1839,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
-            "max_supply": 131510659.39,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.141Z",
+            "max_supply": 131510648.53,
+            "supply_last_updated_utc": "2026-11-14T03:20:48.105Z",
             "symbol": "BNB",
-            "total_supply": 131510659.39
+            "total_supply": 131510648.53
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 131510659.39,
+        "circulating_supply": 131510648.53,
         "cmc_id": 1839,
         "coin_name": "BNB",
         "evidence_is_price_catalyst": "UNDETERMINED",
-        "max_supply": 131510659.39,
+        "max_supply": 131510648.53,
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
@@ -4769,7 +4806,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "BNB",
-        "total_supply": 131510659.39
+        "total_supply": 131510648.53
       },
       "source_backed_project_profile": {
         "categories": [
@@ -4786,8 +4823,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1839,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "BNB is the native cryptocurrency of the Binance exchange, used for trading fee discounts and various decentralized applications within the Binance ecosystem. Additionally, it plays a key role in the Binance Smart Chain, supporting smart contracts and decentralized finance (DeFi) applications.",
+        "events_observed_utc": "2026-11-14T12:06:44Z",
         "has_substantive_descriptive_context": true,
         "name": "BNB",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -4871,7 +4910,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "BNB"
+      "substantive_original_issuer_context": false,
+      "symbol": "BNB",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 119,
@@ -5138,7 +5179,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Tron",
-            "chain_tvl_usd": 4815002771.31,
+            "chain_tvl_usd": 4793044779.66,
             "cmc_id": 1958,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -5147,16 +5188,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.31193,
-            "bid": 0.31192,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.31167,
+            "bid": 0.31166,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1958,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "TRX-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 0.32059,
-            "top5_ask_usd": 14180.55,
-            "top5_bid_usd": 9138.73
+            "spread_bps": 0.32086,
+            "top5_ask_usd": 6529.91,
+            "top5_bid_usd": 4534.51
           }
         },
         {
@@ -5177,19 +5218,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 95038857815.18637,
+            "circulating_supply": 95039463306.42427,
             "cmc_id": 1958,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.161Z",
             "symbol": "TRX",
-            "total_supply": 95038895735.29807
+            "total_supply": 95039447252.64568
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 95038857815.18637,
+        "circulating_supply": 95039463306.42427,
         "cmc_id": 1958,
         "coin_name": "TRON",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -5203,7 +5244,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "TRX",
-        "total_supply": 95038895735.29807
+        "total_supply": 95039447252.64568
       },
       "source_backed_project_profile": {
         "categories": [
@@ -5219,8 +5260,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1958,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "TRON (TRX) is a decentralized platform designed to build and deploy decentralized applications (dApps) and smart contracts on its blockchain. It aims to revolutionize the digital content ecosystem by enabling direct sharing and distribution without intermediaries.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "TRON",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -5304,11 +5347,22 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "TRX"
+      "substantive_original_issuer_context": false,
+      "symbol": "TRX",
+      "targeted_project_primary_context": null
     },
     {
-      "candidate_event_count": 161,
+      "candidate_event_count": 162,
       "candidate_events_NOT_VERIFIED": [
+        {
+          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
+          "excerpt": "The ranking highlights a shift towards integrating privacy features into broader crypto infrastructure, indicating evolving priorities in the sector. The post Santiment ranks Dash, Chainlink and HOPR as top privacy projects by development activity appeared first on Crypto Briefing .",
+          "id": "research:30d4c988d3ad3a01d0",
+          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
+          "published_utc": "2026-11-13T23:05:33Z",
+          "title": "Santiment ranks Dash, Chainlink and HOPR as top privacy projects by development activity",
+          "url": "https://cryptobriefing.com/santiment-privacy-projects-development-activity-dash/"
+        },
         {
           "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
           "excerpt": "Chainlink schließt erfolgreich ein Pilotprojekt mit Moody’s ab und baut seine Stellung als führender Infrastrukturanbieter für tokenisierte Assets weiter aus. Was der Test zeigt und warum der LINK-Kurs davon bislang wenig spürt. Source: BTC-ECHO BTC-ECHO",
@@ -5389,15 +5443,6 @@
           "published_utc": "2026-11-10T22:17:31Z",
           "title": "Crypto was the email. Chainlink is building the rest of the internet. https://t.co/fIvz1NdazH - X",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JSVlhR18xWVlKXzZxVUJEZDFvR1MyZTRZVjdMcWQ0cWNWTHhxdEVlOTRRVFh4d2tPaVNrXzZqTjBDRE9lVkFSWG04XzNLX2JUSmk4eWZ0bHY5RXljblFnLXljZw?oc=5"
-        },
-        {
-          "claim_status": "NOT_INDEPENDENTLY_VERIFIED",
-          "excerpt": "NASDAQ 100 EXTENDS GAINS; LAST UP 3.04% X",
-          "id": "expanded:10066b4745b0e8c4ed",
-          "identity_status": "SEARCH_OR_TEXT_CANDIDATE_NOT_VERIFIED",
-          "published_utc": "2026-11-11T18:28:59Z",
-          "title": "NASDAQ 100 EXTENDS GAINS; LAST UP 3.04% - X",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE05eWd4U2phOXFTb0YyckQzMzlLYklqOVF4UVNsVWhEVDdXNUhhZUZTSTNvNlh4Vm94TDJITk1ORkI4VV9VT09oRTB6aDdPM3d1QVQ5OVpWQ2dqMnV1Vnc?oc=5"
         }
       ],
       "cmc100_weight": 0.36,
@@ -5469,16 +5514,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 9.799,
-            "bid": 9.798,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 9.659,
+            "bid": 9.658,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 1975,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "LINK-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.02056,
-            "top5_ask_usd": 9100.88,
-            "top5_bid_usd": 11041.73
+            "spread_bps": 1.03536,
+            "top5_ask_usd": 23079.97,
+            "top5_bid_usd": 19189.55
           }
         },
         {
@@ -5489,9 +5534,19 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 1000000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.052Z",
             "symbol": "LINK",
             "total_supply": 1000000000.0
+          }
+        },
+        {
+          "family": "trending",
+          "observation": {
+            "cmc_id": 1975,
+            "interpretation": "SEARCH_ATTENTION_NOT_BUY_PRESSURE",
+            "mapping": "EXACT_NAME_AND_SYMBOL",
+            "name": "Chainlink",
+            "rank": 9
           }
         }
       ],
@@ -5504,7 +5559,8 @@
         "perp_exchange": "OKX",
         "perp_oi_change_24h_pct": null,
         "research_metric_families": [
-          "token_supply"
+          "token_supply",
+          "trending"
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "LINK",
@@ -5527,8 +5583,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 1975,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Chainlink (LINK) is a decentralized oracle network that enables smart contracts to securely interact with real-world data and off-chain resources. It aims to bridge the gap between blockchain technology and external data sources for enhanced functionality.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "Chainlink",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -5612,7 +5670,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "LINK"
+      "substantive_original_issuer_context": false,
+      "symbol": "LINK",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 181,
@@ -5879,7 +5939,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Cardano",
-            "chain_tvl_usd": 49254330.11,
+            "chain_tvl_usd": 48593453.62,
             "cmc_id": 2010,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -5888,16 +5948,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.1673,
-            "bid": 0.1672,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.1647,
+            "bid": 0.1646,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 2010,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "ADA-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 5.97907,
-            "top5_ask_usd": 437509.72,
-            "top5_bid_usd": 461601.53
+            "spread_bps": 6.07349,
+            "top5_ask_usd": 510950.76,
+            "top5_bid_usd": 443489.73
           }
         },
         {
@@ -5923,7 +5983,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 45000000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.147Z",
             "symbol": "ADA",
             "total_supply": 44994648344.19421
           }
@@ -5959,8 +6019,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2010,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Cardano (ADA) is a decentralized platform that enables the development and execution of smart contracts and decentralized applications with a focus on scalability, sustainability, and interoperability. It utilizes a unique proof-of-stake consensus mechanism called Ouroboros to enhance energy efficiency.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "Cardano",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -6044,7 +6106,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "ADA"
+      "substantive_original_issuer_context": false,
+      "symbol": "ADA",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 41,
@@ -6231,7 +6295,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Tezos",
-            "chain_tvl_usd": 18907333.08,
+            "chain_tvl_usd": 18811395.09,
             "cmc_id": 2011,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -6240,16 +6304,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.2353,
-            "bid": 0.235,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.2306,
+            "bid": 0.2304,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 2011,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "XTZ-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 12.75781,
-            "top5_ask_usd": 3328.36,
-            "top5_bid_usd": 5219.29
+            "spread_bps": 8.67679,
+            "top5_ask_usd": 2031.17,
+            "top5_bid_usd": 3088.26
           }
         },
         {
@@ -6270,19 +6334,19 @@
         {
           "family": "token_supply",
           "observation": {
-            "circulating_supply": 1101378959.813567,
+            "circulating_supply": 1101385967.181562,
             "cmc_id": 2011,
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.191Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.161Z",
             "symbol": "XTZ",
-            "total_supply": 1121321029.692383
+            "total_supply": 1121328037.060378
           }
         }
       ],
       "research_coin_features": {
-        "circulating_supply": 1101378959.813567,
+        "circulating_supply": 1101385967.181562,
         "cmc_id": 2011,
         "coin_name": "Tezos",
         "evidence_is_price_catalyst": "UNDETERMINED",
@@ -6296,7 +6360,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "XTZ",
-        "total_supply": 1121321029.692383
+        "total_supply": 1121328037.060378
       },
       "source_backed_project_profile": {
         "categories": [
@@ -6309,8 +6373,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2011,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Tezos (XTZ) is a decentralized blockchain platform that enables smart contracts and decentralized applications while allowing users to participate in its governance through a formal voting process. Its self-amending protocol facilitates upgrades without the need for hard forks.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "Tezos",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -6394,7 +6460,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "XTZ"
+      "substantive_original_issuer_context": false,
+      "symbol": "XTZ",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 20,
@@ -6526,7 +6594,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": 200000000.0,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.180Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.147Z",
             "symbol": "KCS",
             "total_supply": 142155021.277395
           }
@@ -6557,8 +6625,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2087,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "KuCoin Token (KCS) is the native cryptocurrency of the KuCoin exchange, enabling users to receive trading fee discounts, participate in token sales, and earn rewards. Holding KCS also allows users to benefit from the exchange's profit-sharing model.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "KuCoin Token",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -6630,7 +6700,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "KCS"
+      "substantive_original_issuer_context": false,
+      "symbol": "KCS",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 29,
@@ -6897,7 +6969,7 @@
           "family": "chain_tvl",
           "observation": {
             "chain": "Filecoin",
-            "chain_tvl_usd": 2108497.05,
+            "chain_tvl_usd": 2053170.35,
             "cmc_id": 2280,
             "interpretation": "CHAIN_ACTIVITY_NOT_TOKEN_VALUE_ACCRUAL",
             "mapping_confidence": "EXACT_CHAIN_NAME"
@@ -6906,16 +6978,16 @@
         {
           "family": "okx_orderbooks",
           "observation": {
-            "ask": 0.7035,
-            "bid": 0.7034,
-            "book_source_utc": "2026-11-13T22:41:05Z",
+            "ask": 0.6916,
+            "bid": 0.6915,
+            "book_source_utc": "2026-11-14T03:21:02Z",
             "cmc_id": 2280,
             "depth_status": "VALIDATED_CONTRACT_VALUE",
             "instrument_id": "FIL-USDT-SWAP",
             "source": "OKX_ORDERBOOK_LEVEL5",
-            "spread_bps": 1.42157,
-            "top5_ask_usd": 33979.89,
-            "top5_bid_usd": 10758.44
+            "spread_bps": 1.44603,
+            "top5_ask_usd": 32514.43,
+            "top5_bid_usd": 14925.01
           }
         },
         {
@@ -6941,9 +7013,9 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.082Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.052Z",
             "symbol": "FIL",
-            "total_supply": 1956850179.0
+            "total_supply": 1956849807.0
           }
         }
       ],
@@ -6962,7 +7034,7 @@
         ],
         "spot_quote_updated_utc": "2026-11-13T03:33:05.000Z",
         "symbol": "FIL",
-        "total_supply": 1956850179.0
+        "total_supply": 1956849807.0
       },
       "source_backed_project_profile": {
         "categories": [
@@ -6981,8 +7053,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2280,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "Filecoin (FIL) is a decentralized storage network that enables users to rent out their unused hard drive space in exchange for Filecoin tokens. It incentivizes file storage and retrieval on the blockchain, ensuring data can be stored reliably and efficiently.",
+        "events_observed_utc": "2026-11-14T12:06:45Z",
         "has_substantive_descriptive_context": true,
         "name": "Filecoin",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -7032,7 +7106,9 @@
         "CURATED_PROJECT_PUBLICATION_NOT_TOKEN_EFFECT_VERIFIED"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "FIL"
+      "substantive_original_issuer_context": false,
+      "symbol": "FIL",
+      "targeted_project_primary_context": null
     },
     {
       "candidate_event_count": 56,
@@ -7174,7 +7250,7 @@
             "interpretation": "REPORTED_SUPPLY_SNAPSHOT_NOT_A_VERIFIED_UNLOCK_EVENT",
             "mapping_confidence": "EXACT_OFFICIAL_CMC_ID",
             "max_supply": null,
-            "supply_last_updated_utc": "2026-11-13T22:40:48.060Z",
+            "supply_last_updated_utc": "2026-11-14T03:20:48.036Z",
             "symbol": "XDC",
             "total_supply": 38106044476.65
           }
@@ -7204,8 +7280,10 @@
         ],
         "claim_status": "THIRD_PARTY_DESCRIPTION_NOT_INDEPENDENTLY_FACT_CHECKED",
         "cmc_id": 2634,
+        "coin_events": [],
         "context_type": "EVERGREEN_PROJECT_BACKGROUND_NOT_DATED_CATALYST",
         "description_excerpt": "XDC Network (XDC) is a hybrid blockchain platform designed for enterprise use, enabling fast and low-cost transactions while providing smart contract functionalities. It aims to improve cross-border trade and streamline processes in various industries.",
+        "events_observed_utc": "2026-11-14T12:06:46Z",
         "has_substantive_descriptive_context": true,
         "name": "XDC Network",
         "observed_utc": "2026-11-13T22:51:08Z",
@@ -7273,7 +7351,9 @@
         "EXACT_MATCH_PUBLIC_COIN_PROFILE"
       ],
       "substantive_coin_specific_context_present": true,
-      "symbol": "XDC"
+      "substantive_original_issuer_context": false,
+      "symbol": "XDC",
+      "targeted_project_primary_context": null
     }
   ],
   "version": "free-open-intelligence-v1"

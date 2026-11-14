@@ -1,143 +1,34 @@
 {
-  "advertised_existing_feed_count": 3,
+  "advertised_existing_feed_count": 1,
   "domain_cooldown_hours": 72,
-  "domains_attempted": 14,
-  "domains_found_content": 4,
-  "domains_skipped_due_to_recent_probe": 67,
-  "new_feed_items": 37,
+  "domains_attempted": 2,
+  "domains_found_content": 1,
+  "domains_skipped_due_to_recent_probe": 81,
+  "new_feed_items": 7,
   "not_verified_facts": true,
   "sources": [
     {
-      "advertised_feeds": [],
+      "advertised_feeds": [
+        "https://bitcoinist.com/feed/"
+      ],
       "article_count": 0,
-      "domain": "crowdstrike.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "eba.europa.eu",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "article_count": 0,
-      "domain": "eetimes.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "TimeoutError",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "esma.europa.eu",
-      "feed_status": "NOT_DISCOVERED",
+      "domain": "bitcoinist.com",
+      "duplicate_feed_url": "https://bitcoinist.com/feed/",
+      "feed_status": "ALREADY_COLLECTED",
       "home_status": "OK",
       "substantive": 0
     },
     {
       "advertised_feeds": [
-        "https://forkast.news/feed/",
-        "https://forkast.news/comments/feed/"
+        "https://hackaday.com/feed/",
+        "https://hackaday.com/comments/feed/"
       ],
       "article_count": 7,
-      "domain": "forkast.news",
-      "duplicate_feed_url": "https://forkast.news/feed/",
+      "domain": "hackaday.com",
       "feed_status": "OK",
       "home_status": "OK",
-      "substantive": 4
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "fsb.org",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [],
-      "article_count": 0,
-      "domain": "microsoft.com",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://www.newsbtc.com/feed/"
-      ],
-      "article_count": 0,
-      "domain": "newsbtc.com",
-      "duplicate_feed_url": "https://www.newsbtc.com/feed/",
-      "feed_status": "ALREADY_COLLECTED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://www.schneier.com/feed/",
-        "https://www.schneier.com/comments/feed/"
-      ],
-      "article_count": 10,
-      "domain": "schneier.com",
-      "feed_status": "OK",
-      "home_status": "OK",
-      "substantive": 10
-    },
-    {
-      "article_count": 0,
-      "domain": "science.org",
-      "feed_status": "NOT_DISCOVERED",
-      "home_status": "HTTPError",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://www.securityweek.com/feed/"
-      ],
-      "article_count": 0,
-      "domain": "securityweek.com",
-      "duplicate_feed_url": "https://www.securityweek.com/feed/",
-      "feed_status": "ALREADY_COLLECTED",
-      "home_status": "OK",
-      "substantive": 0
-    },
-    {
-      "advertised_feeds": [
-        "https://semianalysis.com/feed/",
-        "https://semianalysis.com/comments/feed/"
-      ],
-      "article_count": 10,
-      "domain": "semianalysis.com",
-      "feed_status": "OK",
-      "home_status": "OK",
-      "substantive": 10
-    },
-    {
-      "advertised_feeds": [
-        "https://theverge.com/rss/index.xml"
-      ],
-      "article_count": 10,
-      "domain": "theverge.com",
-      "feed_status": "OK",
-      "home_status": "TRUNCATED_PUBLIC_HOMEPAGE",
-      "substantive": 10
-    },
-    {
-      "advertised_feeds": [
-        "https://coinjournal.net/feed/"
-      ],
-      "article_count": 0,
-      "domain": "coinjournal.net",
-      "duplicate_feed_url": "https://coinjournal.net/feed/",
-      "feed_status": "ALREADY_COLLECTED",
-      "home_status": "OK",
-      "substantive": 0
+      "substantive": 7
     }
   ],
-  "substantive_feed_items": 34
+  "substantive_feed_items": 7
 }
